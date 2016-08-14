@@ -296,6 +296,9 @@
 	"99": {
 		"name": "Rieslaner "
 	},
+	"129": {
+		"name": "Riesling"
+	},
 	"100": {
 		"name": "Rondo"
 	},
@@ -382,9 +385,6 @@
 	},
 	"128": {
 		"name": "Weißer Gutedel"
-	},
-	"129": {
-		"name": "Weißer Riesling"
 	},
 	"130": {
 		"name": "Wildmuskat"
