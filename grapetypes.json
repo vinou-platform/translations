@@ -41,14 +41,8 @@
 	"14": {
 		"name": "Blauer Limberger "
 	},
-	"15": {
-		"name": "Blauer Portugieser "
-	},
 	"16": {
 		"name": "Blauer Silvaner "
-	},
-	"17": {
-		"name": "Blauer Spätburgunder (Pinot noir)"
 	},
 	"18": {
 		"name": "Blauer Trollinger "
@@ -149,11 +143,14 @@
 	"50": {
 		"name": "Gelber Muskateller "
 	},
+	"105": {
+		"name": "Gewürztraminer (Roter Traminer)"
+	},
 	"51": {
 		"name": "Goldriesling "
 	},
 	"52": {
-		"name": "Grauburgunder (Pinot Grigio Ruländer) "
+		"name": "Grauburgunder (Pinot Grigio) "
 	},
 	"53": {
 		"name": "Grüner Silvaner"
@@ -266,6 +263,9 @@
 	"89": {
 		"name": "Piroso"
 	},
+	"15": {
+		"name": "Portugieser "
+	},
 	"90": {
 		"name": "Primera"
 	},
@@ -314,9 +314,6 @@
 	"104": {
 		"name": "Roter Muskateller "
 	},
-	"105": {
-		"name": "Roter Traminer (Gewürztraminer)"
-	},
 	"106": {
 		"name": "Rubinet"
 	},
@@ -325,6 +322,9 @@
 	},
 	"108": {
 		"name": "Saphira"
+	},
+	"132": {
+		"name": "Sauvignon Blanc"
 	},
 	"109": {
 		"name": "Scheurebe "
@@ -355,6 +355,9 @@
 	},
 	"118": {
 		"name": "Sophie"
+	},
+	"17": {
+		"name": "Spätburgunder (Pinot noir)"
 	},
 	"119": {
 		"name": "St. Laurent"
