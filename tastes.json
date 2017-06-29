@@ -12,13 +12,15 @@
 		"10": "extra herb (extra brut)"
 	},
 	"en": {
-		"1": "dry",
-		"2": "medium-dry",
-		"3": "off-dry",
-		"4": "semi-sweet",
-		"5": "mild",
-		"7": "sweet",
-		"9": "dry (brut)",
-		"10": "extra dry (extra brut)"
+ 		"1":"dry",
+ 		"2":"semidry",
+ 		"3":"off-dry",
+ 		"4":"semi-sweet",
+ 		"5":"mild",
+ 		"6":"sweet",
+ 		"7":"extra-sweet",
+ 		"8":"herb-based",
+ 		"9":"brut",
+ 		"10":"extra brut"
 	}
 }
