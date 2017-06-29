@@ -150,7 +150,7 @@
 		"name": "Goldriesling "
 	},
 	"52": {
-		"name": "Grauburgunder (Pinot Grigio) "
+		"name": "Grauburgunder"
 	},
 	"53": {
 		"name": "Grüner Silvaner"
@@ -357,7 +357,7 @@
 		"name": "Sophie"
 	},
 	"17": {
-		"name": "Spätburgunder (Pinot noir)"
+		"name": "Spätburgunder"
 	},
 	"119": {
 		"name": "St. Laurent"
@@ -369,7 +369,7 @@
 		"name": "Sulmer "
 	},
 	"122": {
-		"name": "Syrah (Shiraz)"
+		"name": "Syrah"
 	},
 	"123": {
 		"name": "Tauberschwarz "
@@ -381,7 +381,7 @@
 		"name": "Villaris"
 	},
 	"126": {
-		"name": "Weißer Burgunder (Pinot blanc)"
+		"name": "Weißer Burgunder"
 	},
 	"127": {
 		"name": "Weißer Elbling"
@@ -394,5 +394,23 @@
 	},
 	"131": {
 		"name": "Würzer"
+	},
+	"132": {
+		"name": "Silvaner"
+	},
+	"133": {
+		"name": "Tempranillo"
+	},
+	"134": {
+		"name": "Pinot Blanc"
+	},
+	"135": {
+		"name": "Pinot Noir"
+	},
+	"136": {
+		"name": "Pinot Grigio"
+	},
+	"137": {
+		"name": "Shiraz"
 	}
 }
