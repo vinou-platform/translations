@@ -323,9 +323,6 @@
 	"108": {
 		"name": "Saphira"
 	},
-	"132": {
-		"name": "Sauvignon Blanc"
-	},
 	"109": {
 		"name": "Scheurebe "
 	},
@@ -396,7 +393,7 @@
 		"name": "Würzer"
 	},
 	"132": {
-		"name": "Silvaner"
+		"name": "Sauvignon Blanc"
 	},
 	"133": {
 		"name": "Tempranillo"
@@ -412,5 +409,11 @@
 	},
 	"137": {
 		"name": "Shiraz"
+	},
+	"138": {
+		"name": "Silvaner"
+	},
+	"139": {
+		"name": "Cabernet Blanc"
 	}
 }
