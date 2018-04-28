@@ -17,7 +17,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Vinou\\Translations\\": "Classes"
+            "Vinou\\Translations": "Classes"
         }
     }
 }
