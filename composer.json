@@ -16,8 +16,8 @@
         "GPL-2.0+"
     ],
     "autoload": {
-        "psr-0": {
-            "Vinou\\Translations": "Classes"
+        "psr-4": {
+            "Vinou\\Translations\\": "Classes/"
         }
     }
 }
