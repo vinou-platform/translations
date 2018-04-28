@@ -52,4 +52,9 @@ class Translation {
 		return $this->data[$key][$id];
 	}
 
+	public function getFullFile($key = NULL) {
+		is_null($key) ? $key = $this->countryCode : $key = $key;
+		return file_get_contents($this->llPath.$key.'.json');
+	}
+
 }
