@@ -1,0 +1,23 @@
+{
+    "name": "vinou/translations",
+    "type": "library",
+    "description": "Vinou Translation files",
+    "keywords": [
+        "Vinou",
+        "Translations"
+    ],
+    "homepage": "http://vinou.de",
+    "authors": [{
+        "name": "Vinou GmbH",
+        "role": "Developer",
+        "homepage": "https://www.vinou.de"
+    }],
+    "license": [
+        "GPL-2.0+"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vinou\\": "Classes"
+        }
+    }
+}
