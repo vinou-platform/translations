@@ -7,10 +7,11 @@ namespace Vinou\Translations\Utilities;
 */
 class Translation {
 
-	protected $data = [];
-	protected $countryCode = 'de';
-	protected $llPath = NULL;
-	protected $extKey = 'vinou';
+	public $data = [];
+	public $countryCode = 'de';
+	public $llPath = NULL;
+	public $extKey = 'vinou';
+	public $dictionary = NULL;
 
 	public function __construct($countryCode = NULL) {
 		$this->llPath = __DIR__.'/../../Resources/';
@@ -18,15 +19,14 @@ class Translation {
 	}
 
 	private function init($countryCode) {
-		$allwineregions = json_decode(file_get_contents($this->llPath.'wineregions.json'),true);
-		$this->data['regions'] = $allwineregions[$countryCode];
-		$allwinetypes = json_decode(file_get_contents($this->llPath.'winetypes.json'),true);
-		$this->data['winetypes'] = $allwinetypes[$countryCode];
-		$alltastes = json_decode(file_get_contents($this->llPath.'tastes.json'),true);
-		$this->data['tastes'] = $alltastes[$countryCode];
+		$this->dictionary = json_decode(file_get_contents($this->llPath.$countryCode.'.json'),TRUE);
 
-		$grapetypes = array();
-		foreach (json_decode(file_get_contents($this->llPath.'grapetypes.json'),true) as $id => $grapetype) {
+		$this->data['regions'] = $this->dictionary['wineregions'];
+		$this->data['winetypes'] = $this->dictionary['winetypes'];
+		$this->data['tastes'] = $this->dictionary['tastes'];
+
+		$grapetypes = [];
+		foreach ($this->dictionary['grapetypes'] as $id => $grapetype) {
 			$grapetypes[$id] = $grapetype['name'];
 		}
 		$this->data['grapetypes'] = $grapetypes;
