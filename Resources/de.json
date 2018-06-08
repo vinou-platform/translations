@@ -167,6 +167,7 @@
 	"db_users_resetpassword_title":"Passwort zurücksetzen",
 	"db_users_resetpassword_submit":"Passwort neu setzen",
 	"db_users_resetpassword_send":"Ihr Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
+	"db_users_sendpasswordresetmail": "Passwort-Mail verschicken",
 	"db_users_gotologin":"Zum Login",
 	"db_users_createtitle":"Benutzer anlegen",
 	"db_users_edittitle":"Benutzer bearbeiten",

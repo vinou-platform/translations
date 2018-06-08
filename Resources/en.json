@@ -153,6 +153,7 @@
 	"db_users_resetpassword_title":"Password reset",
 	"db_users_resetpassword_submit":"Set new password",
 	"db_users_resetpassword_send":"New password is set. The used link is not valid anymore.",
+	"db_users_sendpasswordresetmail": "Send password mail",
 	"db_users_gotologin":"Go to login",
 	"db_users_createtitle":"Create User",
 	"db_users_edittitle":"Edit User",
