@@ -1,3 +1,25 @@
 {
 	"formhint_required": "champ obligatoire",
+	"countries": {
+		"de":"Alemagne",
+		"en":"Grande-Bretagne",
+		"fr":"France"
+	},
+	"languages": {
+		"de": {
+			"title": "Allemand",
+			"code": "de",
+			"iso": "de_DE"
+		},
+		"en": {
+			"title": "Anglais",
+			"code": "en",
+			"iso": "en_GB"
+		},
+		"fr": {
+			"title": "Français",
+			"code": "fr",
+			"iso": "fr_FR"
+		}
+	}
 }

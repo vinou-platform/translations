@@ -951,8 +951,25 @@
 	},
 	"countries": {
 		"de":"Deutschland",
-		"en":"England",
+		"en":"Großbritanien",
 		"fr":"Frankreich"
+	},
+	"languages": {
+		"de": {
+			"title": "Deutsch",
+			"code": "de",
+			"iso": "de_DE"
+		},
+		"en": {
+			"title": "Englisch",
+			"code": "en",
+			"iso": "en_GB"
+		},
+		"fr": {
+			"title": "Französisch",
+			"code": "fr",
+			"iso": "fr_FR"
+		}
 	},
 	"wineregions": {
 		"de": {

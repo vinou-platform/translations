@@ -485,6 +485,28 @@
  		"9":"brut",
  		"10":"extra brut"
 	},
+	"countries": {
+		"de":"Germany",
+		"en":"Great Britain",
+		"fr":"France"
+	},
+	"languages": {
+		"de": {
+			"title": "German",
+			"code": "de",
+			"iso": "de_DE"
+		},
+		"en": {
+			"title": "English",
+			"code": "en",
+			"iso": "en_GB"
+		},
+		"fr": {
+			"title": "French",
+			"code": "fr",
+			"iso": "fr_FR"
+		}
+	},
 	"winetypes":{
 		"red":"Redwine",
 		"white":"Whitewine",
