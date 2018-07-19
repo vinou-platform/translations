@@ -104,6 +104,8 @@
 	"wines_edit_form_dirty":"Current wine was modified. Do you like to save the changes?",
 	"wines_edit_translation_create_copy":"Would you like to take over the fields of {wine.name}?",
 	"db_wines_name":"Name",
+	"db_wines_winery":"Winery",
+	"db_wines_winery_search":"Search winery",
 	"db_wines_categories":"Categories",
 	"db_wines_quantity":"Current stock",
 	"db_wines_shoplink":"Shoplink",

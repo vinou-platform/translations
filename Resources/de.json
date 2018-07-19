@@ -113,6 +113,8 @@
 	"wines_edit_form_dirty":"Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
 	"wines_edit_translation_create_copy":"Möchten Sie die Angaben aus {wine.name} übernehmen?",
 	"db_wines_name":"Name",
+	"db_wines_winery":"Weingut",
+	"db_wines_winery_search":"Weingut suchen",
 	"db_wines_categories":"Kategorien",
 	"db_wines_quantity":"Aktueller Bestand",
 	"db_wines_shoplink":"Link zum Shop",
