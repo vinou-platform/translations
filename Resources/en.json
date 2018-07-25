@@ -9,6 +9,7 @@
 	"changepw":"Change password",
 	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
+	"wineries_modal_delete":"Do you really want to delete this winery?",
 	"category_modal_delete":"Do you really want to delete this category?",
 	"customers_modal_delete":"Do you really want to delete this customer?",
 	"users_modal_delete":"Do you really want to delete this user?",
@@ -38,6 +39,7 @@
 	"no":"No",
 	"module_dashboard":"Dashboard",
 	"module_winery":"Winery",
+	"module_wineries":"Weineries",
 	"module_wines":"Wines",
 	"module_winelists":"Winelists",
 	"module_qrcodes":"QR-Codes",
@@ -91,6 +93,38 @@
 	"login_passwordempty":"Passwort nicht angegeben",
 	"login_wronglogin":"Email or password not correct.",
 	"login_wrongreset":"Email or matching user not found.",
+
+	"wineries_add1":"Add",
+	"wineries_add2":"winery",
+	"wineries_create1":"Create",
+	"wineries_create2":"winery",
+	"wineries_gallery_filter_hint":"e.g. name, country, region",
+	"wineries_filter_country":"Filter by country",
+	"wineries_filter_no_country":"Show wineries without country",
+	"wineries_filter_select_all":"Select all",
+	"wineries_filter_select_none":"Clear selection",
+
+	"wineries_search_modaltitle":"Search for winery",
+	"wineries_create_modaltitle":"Create winery",
+	"wineries_edit_modaltitle":"Edit winery",
+
+	"wineries_createtitle":"Create winery",
+	"fieldset_find_winery_title":"Search for winery",
+
+	"db_wineries_winery_search":"e.g. name, country, region",
+	"db_wineries_company":"Company",
+	"db_wineries_name":"Contact Person",
+	"db_wineries_address":"Address",
+	"db_wineries_zip":"Zip",
+	"db_wineries_city":"City",
+	"db_wineries_country":"Country",
+	"db_wineries_region":"Wine region",
+	"db_wineries_taxid":"TaxID",
+	"db_wineries_phone":"Phone",
+	"db_wineries_fax":"Fax",
+	"db_wineries_mail":"Email",
+	"db_wineries_www":"Website",
+
 	"wines_create1":"Create",
 	"wines_create2":"Wine",
 	"wines_galleryFilterHint":"e.g. name, articlenumber, vintage",
@@ -446,6 +480,11 @@
 		"user_image_uploaded": "Image uploaded!",
 		"user_image_deleted": "Image deleted!",
 		"user_image_uploaderror": "Error during imageprocessing!",
+		"winery_created": "Winery created!",
+		"winery_changed": "Winery updated!",
+		"winery_deleted": "Winer deleted!",
+		"winery_image_uploaded": "Image uploaded!",
+		"winery_image_deleted": "Image deleted!",
 		"wine_created": "Wine created!",
 		"wine_changed": "Wine updated!",
 		"wine_duplicated": "Wine duplicated!",
@@ -465,6 +504,9 @@
 		"token_copy": "To copy then token press Ctrl+C and Enter"
 	},
 	"hints": {
+		"wineries": {
+			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
+		},
 		"wines": {
 			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 500x2000px<br/>Fileformat: .png (exempted)"
 		},

@@ -9,6 +9,7 @@
 	"changepw":"Passwort ändern",
 	"wineregions_none":"keine Angabe",
 	"wines_modal_delete":"Möchten Sie diesen Wein wirklich löschen?",
+	"wineries_modal_delete":"Möchten Sie dieses Weingut wirklich löschen?",
 	"category_modal_delete":"Möchten Sie diese Kategorie wirklich löschen?",
 	"customers_modal_delete":"Möchten Sie diesen Kunden wirklich löschen?",
 	"users_modal_delete":"Möchten Sie diesen Benutzer wirklich löschen?",
@@ -43,6 +44,7 @@
 	"no":"Nein",
 	"module_dashboard":"Dashboard",
 	"module_winery":"Weingut",
+	"module_wineries":"Weingüter",
 	"module_wines":"Weine",
 	"module_winelists":"Weinlisten",
 	"module_qrcodes":"QR-Codes",
@@ -99,6 +101,38 @@
 	"login_passwordempty":"Passwort nicht angegeben",
 	"login_wronglogin":"E-Mail Addresse oder Passwort nicht korrekt.",
 	"login_wrongreset":"E-Mail Addresse oder passender Benutzer nicht gefunden.",
+
+	"wineries_add1":"Neues Weingut",
+	"wineries_add2":"hinzufügen",
+	"wineries_create1":"Neues Weingut",
+	"wineries_create2":"anlegen",
+	"wineries_gallery_filter_hint":"z.B. Name, Land, Region",
+	"wineries_filter_country":"Land auswählen",
+	"wineries_filter_no_country":"Weingüter ohne Land anzeigen",
+	"wineries_filter_select_all":"Alle auswählen",
+	"wineries_filter_select_none":"Auswahl aufheben",
+
+	"wineries_search_modaltitle":"Weingut suchen",
+	"wineries_create_modaltitle":"Weingut hinzufügen",
+	"wineries_edit_modaltitle":"Weingut bearbeiten",
+
+	"wineries_createtitle":"Weingut anlegen",
+	"fieldset_find_winery_title":"Nach Weingut Suchen",
+
+	"db_wineries_winery_search":"z.B. Name, Land, Region",
+	"db_wineries_company":"Bezeichnung",
+	"db_wineries_name":"Ansprechpartner",
+	"db_wineries_address":"Straße + Hausnummer",
+	"db_wineries_zip":"PLZ",
+	"db_wineries_city":"Stadt",
+	"db_wineries_country":"Land",
+	"db_wineries_region":"Weinregion",
+	"db_wineries_taxid":"USt-IdNr.",
+	"db_wineries_phone":"Telefon",
+	"db_wineries_fax":"Fax",
+	"db_wineries_mail":"Emailadresse",
+	"db_wineries_www":"Internetseite",
+
 	"wines_create1":"Neuen",
 	"wines_create2":"Wein anlegen",
 	"wines_galleryFilterHint":"z.B. Name, Artikelnummer, Jahrgang ",
@@ -203,7 +237,7 @@
 	"db_customers_name":"Ansprechpartner",
 	"db_customers_company":"Firma",
 	"db_customers_winery":"Weingut",
-	"db_customers_taxid":"SteuerID",
+	"db_customers_taxid":"USt-IdNr.",
 	"db_customers_address":"Straße + Hausnummer",
 	"db_customers_zip":"PLZ",
 	"db_customers_city":"Stadt",
@@ -488,6 +522,11 @@
 		"user_image_uploaded": "Bild hochgeladen!",
 		"user_image_deleted": "Bild gelöscht!",
 		"user_image_uploaderror": "Fehler beim Bildupload!",
+		"winery_created": "Wingut angelegt!",
+		"winery_changed": "Weingut aktualisiert!",
+		"winery_deleted": "Weingut gelöscht!",
+		"winery_image_uploaded": "Bild hochgeladen!",
+		"winery_image_deleted": "Bild gelöscht!",
 		"wine_created": "Wein angelegt!",
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
@@ -507,6 +546,9 @@
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
 	},
 	"hints": {
+		"wineries": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		},
 		"wines": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 500x2000px<br/>Datei-Format: .png (freigestellt)"
 		},
