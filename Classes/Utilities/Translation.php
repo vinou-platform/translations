@@ -3,85 +3,57 @@ namespace Vinou\Translations\Utilities;
 
 
 /**
-* Translation
-*/
+ * Translation
+ */
 class Translation {
 
 	public $data = [];
 	public $countryCode = 'de';
-	public $llPath = NULL;
+	public $llPath = null;
 	public $extKey = 'vinou';
-	public $dictionary = NULL;
 
-	public function __construct($countryCode = NULL) {
-		$this->llPath = __DIR__.'/../../Resources/';
-		is_null($countryCode) ? $this->init($this->countryCode) : $this->init($countryCode);
+	private $dictionary = [];
+
+	public function __construct($countryCode = null) {
+		$this->llPath = __DIR__ . '/../../Resources/';
+		if (!is_null($countryCode))
+			$this->countryCode = $countryCode;
 	}
 
-	private function init($countryCode) {
-		$this->dictionary = json_decode(file_get_contents($this->llPath.$countryCode.'.json'),TRUE);
-
-		$this->data['regions'] = $this->dictionary['wineregions'];
-		$this->data['winetypes'] = $this->dictionary['winetypes'];
-		$this->data['tastes'] = $this->dictionary['tastes'];
-
-		$grapetypes = [];
-		foreach ($this->dictionary['grapetypes'] as $id => $grapetype) {
-			$grapetypes[$id] = $grapetype['name'];
-		}
-		$this->data['grapetypes'] = $grapetypes;
+	public function getRegion($id) {
+		return $this->getValueByKey('regions', $id);
 	}
 
-	public function getRegion($id){
-		if (isset($this->data['regions'][$id])) {
-			return $this->data['regions'][$id];
-		} else {
-			return false;
-		}
+	public function getType($type) {
+		return $this->getValueByKey('winetypes', $type);
 	}
 
-	public function getType($type){
-		if (isset($this->data['winetypes'][$type])) {
-			return $this->data['winetypes'][$type];
-		} else {
-			return false;
-		}
+	public function getTaste($id) {
+		return $this->getValueByKey('tastes', $id);
 	}
 
-	public function getTaste($id){
-		if (isset($this->data['tastes'][$id])) {
-			return $this->data['tastes'][$id];
-		} else {
-			return false;
-		}
+	public function getGrapeType($id) {
+		return $this->getValueByKey('grapetypes', $id);
 	}
 
-	public function getGrapeType($id){
-		if (isset($this->data['grapetypes'][$id])) {
-			return $this->data['grapetypes'][$id];
-		} else {
-			return false;
-		}
+	public function getValueByKey($key, $id) {
+		$this->loadCountryCode($this->countryCode);
+		return isset($this->data[$key][$id]) ? $this->data[$key][$id] : false;
 	}
 
-	public function getValueByKey($key,$id){
-		if (isset($this->data[$key][$id])) {
-			return $this->data[$key][$id];
-		} else {
-			return false;
+	// TODO switch $countryCode and $selector param order to match implementation in angular.
+	public function get($countryCode = null, $selector = null) {
+		if (is_null($countryCode))
+			$countryCode = $this->countryCode;
+		$this->loadCountryCode($countryCode);
+		$result = $this->dictionary[$countryCode];
+		if (!is_null($selector)) {
+			$result = self::findKeyInArray($selector, $result);
+			if (is_array($result))
+				$result = json_encode([$countryCode, $selector]);
+			// if (is_string($result)) $result = ['value' => $result];
 		}
-	}
-
-	public function get($countryCode = NULL,$selector = NULL) {
-		is_null($countryCode) ? $countryCode = $this->countryCode : $countryCode = $countryCode;
-		$all = json_decode(file_get_contents($this->llPath.$countryCode.'.json'),TRUE);
-		if (is_null($selector)) {
-			return $all;
-		} else {
-			$returnArr = $this->findKeyInArray($selector,$all);
-			// if (is_string($returnArr)) $returnArr = ['value' => $returnArr];
-			return $returnArr;
-		}
+		return $result;
 	}
 
 	/**
@@ -91,28 +63,35 @@ class Translation {
 	 * @param array $wine
 	 * @return array
 	 */
-	public function localizeWine($wine = NULL) {
+	public function localizeWine($wine = null) {
+		$this->loadCountryCode($this->countryCode);
 		foreach ($wine as $property => $value) {
 			switch ($property) {
 				case 'grapetypes':
 					if (!empty($value)) {
 						$grapetypes = [];
-						foreach ($value as $grapetype) {
-							if ($this->getGrapeType($grapetype) !== false) {
-								$grapetypes[$grapetype] = $this->getGrapeType($grapetype);
-							}
+						foreach ($value as $id) {
+							$grapetype = $this->getGrapeType($id);
+							if ($grapetype !== false)
+								$grapetypes[$id] = $grapetype;
 						}
 						$wine[$property] = $grapetypes;
 					}
 					break;
 				case 'type':
-					if ($this->getType($value) !== false) $wine[$property] = $this->getType($value);
+					$value = $this->getType($value);
+					if ($value !== false)
+						$wine[$property] = $value;
 					break;
 				case 'tastes_id':
-					if ($this->getTaste($value) !== false) $wine[$property] = $this->getTaste($value);
+					$value = $this->getTaste($value);
+					if ($value !== false)
+						$wine[$property] = $value;
 					break;
 				case 'region':
-					if ($this->getRegion($value) !== false) $wine[$property] = $this->getRegion($value);
+					$value = $this->getRegion($value);
+					if ($value !== false)
+						$wine[$property] = $value;
 					break;
 				default:
 					$wine[$property] = $value;
@@ -122,13 +101,32 @@ class Translation {
 		return $wine;
 	}
 
+	protected function loadCountryCode($code, $setDefault = false) {
+		if (!isset($this->dictionary[$code])) {
+			$this->dictionary[$code] = json_decode(file_get_contents($this->llPath . $code . '.json'), true);
 
-	protected function findKeyInArray($keyArray,$array) {
-		$searchArray = $array;
-		foreach ($keyArray as $key) {
-			if (isset($searchArray[$key])) {
-				$searchArray = $searchArray[$key];
+			// Initialize lookups.
+			if (($code == $this->countryCode) || $setDefault) {
+				$dictionary = $this->dictionary[$code];
+				$this->data['regions'] = $dictionary['wineregions'];
+				$this->data['winetypes'] = $dictionary['winetypes'];
+				$this->data['tastes'] = $dictionary['tastes'];
+
+				$grapetypes = [];
+				foreach ($dictionary['grapetypes'] as $id => $grapetype) {
+					$grapetypes[$id] = $grapetype['name'];
+				}
+				$this->data['grapetypes'] = $grapetypes;
 			}
+		}
+		if ($setDefault)
+			$this->countryCode = $code;
+	}
+
+	protected static function findKeyInArray($keyArray, $searchArray) {
+		foreach ($keyArray as $key) {
+			if (isset($searchArray[$key]))
+				$searchArray = $searchArray[$key];
 		}
 		return $searchArray;
 	}
