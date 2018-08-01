@@ -458,6 +458,33 @@
 	"filter_date_start": "Von",
 	"filter_date_end": "Bis",
 	"view_beta_create": "ACHTUNG! Dieses Features befindet sich im Alpha Stadium, eventuell sind bestimmte Ansichten noch nicht verfügbar. Ansicht dennoch anlegen?",
+	"customer": {
+		"field": {
+			"email": "E-Mail",
+			"phone": "Telefon",
+			"copyright": "© Copyright {company} 2018"
+		}
+	},
+	"wine": {
+		"field": {
+			"acid": "Säuregehalt",
+			"alcohol": "Alkoholgehalt",
+			"articlenumber": "Art.-Nr.",
+			"bottlesize": "Flaschengröße",
+			"category": "Kategorie",
+			"description": "Beschreibung",
+			"drinktemperature": "Trinktemperatur",
+			"image": {
+				"error": {
+					"notfound": "Bild konnte nicht gefunden werden"
+				}
+			},
+			"place": "Lage",
+			"sweetness": "Restsüße",
+			"taste": "Geschmacksrichtung",
+			"vintage": "Jahrgang"
+		}
+	},
 	"toasts": {
 		"address_saved": "Adresse gespeichert!",
 		"address_changed": "Adresse aktualisiert!",

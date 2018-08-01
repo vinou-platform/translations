@@ -416,6 +416,33 @@
 	"filter_date_start": "Start",
 	"filter_date_end": "End",
 	"view_beta_create": "Caution! This feature is currently alpha some views might not be available. Still create view?",
+	"customer": {
+		"field": {
+			"email": "E-Mail",
+			"phone": "Phone",
+			"copyright": "© Copyright {company} 2018"
+		}
+	},
+	"wine": {
+		"field": {
+			"acid": "Acid",
+			"alcohol": "Alcohol",
+			"articlenumber": "Art.-Nr.",
+			"bottlesize": "Bottle size",
+			"category": "Category",
+			"description": "Description",
+			"drinktemperature": "Temperature",
+			"image": {
+				"error": {
+					"notfound": "Image not found"
+				}
+			},
+			"place": "Place",
+			"sweetness": "Sweetness",
+			"taste": "Taste",
+			"vintage": "Vintage"
+		}
+	},
 	"toasts": {
 		"address_saved": "Address saved!",
 		"address_changed": "Address update!",
