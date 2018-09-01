@@ -1,4 +1,23 @@
 {
+	"modules": {
+		"dashboard":"Dashboard",
+		"winery":"Weingut",
+		"wineries":"Weingüter",
+		"wines":"Weine",
+		"winelists":"Weinlisten",
+		"qrcodes":"QR-Codes",
+		"news":"Aktuelles",
+		"users":"Benutzer",
+		"customers":"Mandanten",
+		"categories":"Kategorien",
+		"clients":"Kunden",
+		"orders":"Bestellungen",
+		"clientletters":"Kundenbriefe",
+		"tokens":"Verknüpfungen",
+		"settings":"Einstellungen",
+		"cronjobs":"Cronjobs",
+		"network":"Mein Netzwerk"
+	},
 	"de":"Deutschland",
 	"en":"England",
 	"fr":"Frankreich",

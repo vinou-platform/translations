@@ -1,4 +1,23 @@
 {
+	"modules": {
+		"dashboard":"Dashboard",
+		"winery":"Winery",
+		"wineries":"Weineries",
+		"wines":"Wines",
+		"winelists":"Winelists",
+		"qrcodes":"QR-Codes",
+		"news":"News",
+		"users":"Users",
+		"customers":"Clients",
+		"categories":"Categories",
+		"clients":"Customers",
+		"orders":"Orders",
+		"clientletters":"Client letters",
+		"tokens":"Connections",
+		"settings":"Settings",
+		"cronjobs":"Cronjobs",
+		"network":"My network"
+	},
 	"de":"Germany",
 	"en":"England",
 	"fr":"France",
