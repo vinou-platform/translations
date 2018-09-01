@@ -2,7 +2,7 @@
 	"modules": {
 		"dashboard":"Dashboard",
 		"winery":"Winery",
-		"wineries":"Weineries",
+		"wineries":"Wineries",
 		"wines":"Wines",
 		"winelists":"Winelists",
 		"qrcodes":"QR-Codes",
