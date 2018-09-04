@@ -1029,6 +1029,9 @@
 		},
 		"140": {
 			"name": "Cabertin"
+		},
+		"141": {
+			"name": "Malbec"
 		}
 	},
 	"tastes": {
@@ -1241,6 +1244,7 @@
 		"red":"Rotwein",
 		"white":"Weißwein",
 		"rose":"Rosé",
+		"rotling":"Rotling",
 		"secco": "Secco",
 		"sparkling":"Sekt",
 		"destilate":"Destillat",
