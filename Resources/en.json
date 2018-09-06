@@ -426,6 +426,20 @@
 			"copyright": "© Copyright {company} 2018"
 		}
 	},
+	"network": {
+		"field": {
+			"search": {
+				"placeholder": " ",
+				"wineries": "Enter winery",
+				"wines": "Enter wine",
+				"wineriesandwines": "Enter winery or wine",
+				"merchants": "Enter merchant"
+			}
+		},
+		"search": {
+			"title": "Search in Vinou-Network"
+		}
+	},
 	"wine": {
 		"field": {
 			"acid": "Acid",

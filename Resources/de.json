@@ -468,6 +468,20 @@
 			"copyright": "© Copyright {company} 2018"
 		}
 	},
+	"network": {
+		"field": {
+			"search": {
+				"placeholder": " ",
+				"wineries": "Weingut eingeben",
+				"wines": "Wein eingeben",
+				"wineriesandwines": "Weingut oder Wein eingeben",
+				"merchants": "Händler eingeben"
+			}
+		},
+		"search": {
+			"title": "Im Vinou-Netzwerk suchen"
+		}
+	},
 	"wine": {
 		"field": {
 			"acid": "Säuregehalt",
