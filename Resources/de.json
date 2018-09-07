@@ -500,6 +500,24 @@
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
 			"vintage": "Jahrgang"
+		},
+		"gallery": {
+			"new": {
+				"main": "Neuen Wein",
+				"subline": "anlegen"
+			},
+			"sortby": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"filter": {
+				"category": "Kategorie auswählen",
+				"winetype": "Weintyp filtern"
+			}
 		}
 	},
 	"toasts": {

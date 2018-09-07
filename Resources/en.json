@@ -458,6 +458,24 @@
 			"sweetness": "Sweetness",
 			"taste": "Taste",
 			"vintage": "Vintage"
+		},
+		"gallery": {
+			"new": {
+				"main": "Create new",
+				"subline": "wine"
+			},
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"sortdirection": {
+				"label": "Sort direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"filter": {
+				"category": "Select category",
+				"winetype": "Filter by wine type"
+			}
 		}
 	},
 	"toasts": {
