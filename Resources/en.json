@@ -18,6 +18,14 @@
 		"cronjobs":"Cronjobs",
 		"network":"My network"
 	},
+	"tabs": {
+		"all": {
+			"general": "General"
+		},
+		"wines": {
+			"vinougusto": "Vinou-Gusto"
+		}
+	},
 	"de":"Germany",
 	"en":"England",
 	"fr":"France",
@@ -528,6 +536,7 @@
 		"wine_image_uploaded": "Image uploaded!",
 		"wine_image_deleted": "Image deleted!",
 		"wine_expertise_generated": "Expertise generated!",
+		"wine_savours_updated": "Vinou-Gusto updated!",
 		"stock_booking_ingoing_success": "Ingoing stock booked",
 		"stock_booking_outgoing_success": "Outgoing stock booked",
 		"stock_booking_ingoing_failed": "Ingoing stock could not be booked",
@@ -1204,5 +1213,56 @@
 		"sparkling":"Champagne",
 		"destilate":"Destillate",
 		"general":"Others"
+	},
+	"savours":{
+		"categories": {
+			"meat":"Meat",
+			"preparation":"Preparation",
+			"milkproducts":"Milkproducts",
+			"vegetables":"Vegetables",
+			"styles":"Styles",
+			"bread":"Breas",
+			"sweets":"Sweets"
+		},
+		"beef":"Beef",
+		"pork":"Pork",
+		"poultry":"Poultry",
+		"venison":"Venison",
+		"fish":"Fish",
+		"shellfish":"Shellfish",
+		"shell":"Seeshells",
+		"sausage":"Sausage",
+		"grilled":"Grilled",
+		"fried":"Fried",
+		"smoked":"Smoked",
+		"baked":"Baked",
+		"steamed":"Steamed",
+		"dairyproduct":"Dairyproduct",
+		"softcheese":"Soft cheese",
+		"bluecheese":"Blue cheese",
+		"hardcheese":"Hard cheese",
+		"bulb":"Blub",
+		"salad":"Salad",
+		"tubers":"Tubes",
+		"nightshades":"Tomatos",
+		"mushrooms":"Mushrooms",
+		"nuts":"Nuts",
+		"treenuts":"Treenuts",
+		"pepper":"Pepper",
+		"chili":"Chili",
+		"spicy":"Hot & Spicy",
+		"herbs":"Herbs",
+		"cinnamon":"Cinnamon",
+		"exotic":"Exotic (Anis)",
+		"toast":"Toast",
+		"bread":"Bread",
+		"wholebread":"Wholebread",
+		"pumpernickel":"Pumpernickel",
+		"fruits":"Fruits",
+		"cake":"Cake",
+		"creme":"Creme",
+		"ice":"Ice",
+		"chocolate":"Chocolate",
+		"coffee":"Coffee"
 	}
 }

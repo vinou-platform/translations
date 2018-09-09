@@ -18,6 +18,17 @@
 		"cronjobs":"Cronjobs",
 		"network":"Mein Netzwerk"
 	},
+	"tabs": {
+		"all": {
+			"general": "Allgemein"
+		},
+		"wines": {
+			"vinougusto": "Vinou-Gusto"
+		}
+	},
+	"price": "Preis",
+	"quantity": "Bestand",
+	"articlenumber": "Artikelnummer",
 	"de":"Deutschland",
 	"en":"England",
 	"fr":"Frankreich",
@@ -570,6 +581,7 @@
 		"wine_image_uploaded": "Bild hochgeladen!",
 		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
+		"wine_savours_updated": "Vinou-Gusto aktualisiert!",
 		"stock_booking_ingoing_success": "Wareneingang gebucht",
 		"stock_booking_outgoing_success": "Warenausgang gebucht",
 		"stock_booking_ingoing_failed": "Wareneingang - Buchung fehlgeschlagen",
@@ -1249,5 +1261,56 @@
 		"sparkling":"Sekt",
 		"destilate":"Destillat",
 		"general":"Sonstiges"
+	},
+	"savours":{
+		"categories": {
+			"meat":"Fleisch",
+			"preparation":"Zubereitung",
+			"milkproducts":"Milchprodukte",
+			"vegetables":"Gemüse",
+			"styles":"Styles",
+			"bread":"Brot",
+			"sweets":"Süßigkeiten"
+		},
+		"beef":"Rind",
+		"pork":"Schwein",
+		"poultry":"Geflügel",
+		"venison":"Wild",
+		"fish":"Fisch",
+		"shellfish":"Krebstiere",
+		"shell":"Muscheln",
+		"sausage":"Wurst",
+		"grilled":"Gegrillt",
+		"fried":"Gebraten",
+		"smoked":"Geräuchert",
+		"baked":"Gebacken",
+		"steamed":"Gedünsted",
+		"dairyproduct":"Molkereiprodukte",
+		"softcheese":"Weichkäse",
+		"bluecheese":"Edel-Schimmel",
+		"hardcheese":"Hartkäse",
+		"bulb":"Zwiebelgewächse",
+		"salad":"Salat",
+		"tubers":"Knollen o. Rüben",
+		"nightshades":"Tomaten / Nachtschattengewächse",
+		"mushrooms":"Pilze",
+		"nuts":"Nüsse",
+		"treenuts":"Schalenfrüchte",
+		"pepper":"Pfeffer",
+		"chili":"Chili",
+		"spicy":"Hot & Spicy",
+		"herbs":"Kräuter",
+		"cinnamon":"Backgewürz",
+		"exotic":"Exotische Gewürze",
+		"toast":"Weißbrot",
+		"bread":"Brot",
+		"wholebread":"Vollkorn",
+		"pumpernickel":"Pumpernickel",
+		"fruits":"Früchte",
+		"cake":"Kuchen",
+		"creme":"Creme",
+		"ice":"Eis",
+		"chocolate":"Schokolade",
+		"coffee":"Kaffee"
 	}
 }
