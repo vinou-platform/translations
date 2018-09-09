@@ -479,6 +479,20 @@
 			"copyright": "© Copyright {company} 2018"
 		}
 	},
+	"network": {
+		"field": {
+			"search": {
+				"placeholder": " ",
+				"wineries": "Weingut eingeben",
+				"wines": "Wein eingeben",
+				"wineriesandwines": "Weingut oder Wein eingeben",
+				"merchants": "Händler eingeben"
+			}
+		},
+		"search": {
+			"title": "Im Vinou-Netzwerk suchen"
+		}
+	},
 	"wine": {
 		"field": {
 			"acid": "Säuregehalt",
@@ -497,6 +511,24 @@
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
 			"vintage": "Jahrgang"
+		},
+		"gallery": {
+			"new": {
+				"main": "Neuen Wein",
+				"subline": "anlegen"
+			},
+			"sortby": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"filter": {
+				"category": "Kategorie auswählen",
+				"winetype": "Weintyp filtern"
+			}
 		}
 	},
 	"toasts": {
