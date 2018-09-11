@@ -529,6 +529,11 @@
 				"category": "Kategorie auswählen",
 				"winetype": "Weintyp filtern"
 			}
+		},
+		"vinougusto": {
+			"title": "Deine Speiseempfehlung für diesen Wein",
+			"expertisetitle": "Speiseempfehlung",
+			"winepasstitle": "Passt gut zu"
 		}
 	},
 	"toasts": {
