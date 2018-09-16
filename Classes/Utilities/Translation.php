@@ -70,7 +70,7 @@ class Translation {
 		$this->loadCountryCode($this->countryCode);
 		foreach ($wine as $property => $value) {
 			switch ($property) {
-				case 'grapetypes':
+				case 'grapetypeIds':
 					if (!empty($value)) {
 						$grapetypes = [];
 						foreach ($value as $id) {
@@ -78,7 +78,7 @@ class Translation {
 							if ($grapetype !== false)
 								$grapetypes[$id] = $grapetype;
 						}
-						$wine[$property] = $grapetypes;
+						$wine['grapetypes'] = $grapetypes;
 					}
 					break;
 				case 'type':
