@@ -484,6 +484,11 @@
 				"category": "Select category",
 				"winetype": "Filter by wine type"
 			}
+		},
+		"vinougusto": {
+			"title": "Your food recommendation to this wine",
+			"expertisetitle": "Food recommendation",
+			"winepasstitle": "Good with"
 		}
 	},
 	"toasts": {
