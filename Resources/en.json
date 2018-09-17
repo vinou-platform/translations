@@ -491,6 +491,31 @@
 			"title": "Your food recommendation to this wine",
 			"expertisetitle": "Food recommendation",
 			"winepasstitle": "Good with"
+		},
+		"stockrotation": {
+			"errors": {
+				"noitems": "No stock rotation exists"
+			},
+			"date": {
+				"label": "Date"
+			},
+			"source": {
+				"label": "Type",
+				"items": {
+					"stock": "Stock",
+					"position": "Delivery to client"
+				}
+			},
+			"type": {
+				"label": "In-/Outbound",
+				"items": {
+					"ingoing": "Inbound",
+					"outgoing": "Outbound"
+				}
+			},
+			"quantity": {
+				"label": "Quantity"
+			}
 		}
 	},
 	"toasts": {

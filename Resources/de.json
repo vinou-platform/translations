@@ -536,6 +536,31 @@
 			"title": "Deine Speiseempfehlung für diesen Wein",
 			"expertisetitle": "Speiseempfehlung",
 			"winepasstitle": "Passt gut zu"
+		},
+		"stockrotation": {
+			"errors": {
+				"noitems": "Keine Lagerbewegungen vorhanden"
+			},
+			"date": {
+				"label": "Datum"
+			},
+			"source": {
+				"label": "Art",
+				"items": {
+					"stock": "Lager",
+					"position": "Lieferung an Kunde"
+				}
+			},
+			"type": {
+				"label": "Ein-/Ausgang",
+				"items": {
+					"ingoing": "Eingang",
+					"outgoing": "Ausgang"
+				}
+			},
+			"quantity": {
+				"label": "Menge"
+			}
 		}
 	},
 	"toasts": {
