@@ -16,14 +16,16 @@
 		"tokens":"Verknüpfungen",
 		"settings":"Einstellungen",
 		"cronjobs":"Cronjobs",
-		"network":"Mein Netzwerk"
+		"network":"Mein Netzwerk",
+		"merchants":"Händler"
 	},
 	"tabs": {
 		"all": {
 			"general": "Allgemein"
 		},
 		"wines": {
-			"vinougusto": "Vinou-Gusto"
+			"vinougusto": "Vinou-Gusto",
+			"stockrotation": "Lagerbewegungen"
 		}
 	},
 	"price": "Preis",

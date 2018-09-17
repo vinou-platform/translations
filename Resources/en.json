@@ -16,14 +16,16 @@
 		"tokens":"Connections",
 		"settings":"Settings",
 		"cronjobs":"Cronjobs",
-		"network":"My network"
+		"network":"My network",
+		"merchants":"Merchants"
 	},
 	"tabs": {
 		"all": {
 			"general": "General"
 		},
 		"wines": {
-			"vinougusto": "Vinou-Gusto"
+			"vinougusto": "Vinou-Gusto",
+			"stockrotation": "Stock rotation"
 		}
 	},
 	"de":"Germany",
