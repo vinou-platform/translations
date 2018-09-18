@@ -372,6 +372,8 @@
 				"retour": "Retour",
 				"bottling": "Bottling",
 				"correction": "Correction",
+				"delivery": "Delivery",
+				"sponsoring": "Sponsoring",
 				"promotion": "Promotion"
 			}
 		},
@@ -683,8 +685,14 @@
 		"14": {
 			"name": "Blauer Limberger "
 		},
+		"15": {
+			"name": "Portugieser "
+		},
 		"16": {
 			"name": "Blauer Silvaner "
+		},
+		"17": {
+			"name": "Spätburgunder"
 		},
 		"18": {
 			"name": "Blauer Trollinger "
@@ -784,9 +792,6 @@
 		},
 		"50": {
 			"name": "Gelber Muskateller "
-		},
-		"105": {
-			"name": "Gewürztraminer (Roter Traminer)"
 		},
 		"51": {
 			"name": "Goldriesling "
@@ -905,9 +910,6 @@
 		"89": {
 			"name": "Piroso"
 		},
-		"15": {
-			"name": "Portugieser "
-		},
 		"90": {
 			"name": "Primera"
 		},
@@ -956,6 +958,9 @@
 		"104": {
 			"name": "Roter Muskateller "
 		},
+		"105": {
+			"name": "Gewürztraminer (Roter Traminer)"
+		},
 		"106": {
 			"name": "Rubinet"
 		},
@@ -994,9 +999,6 @@
 		},
 		"118": {
 			"name": "Sophie"
-		},
-		"17": {
-			"name": "Spätburgunder"
 		},
 		"119": {
 			"name": "St. Laurent"
@@ -1060,6 +1062,12 @@
 		},
 		"140": {
 			"name": "Cabertin"
+		},
+		"142": {
+			"name": "Cabernet Franc"
+		},
+		"143": {
+			"name": "Lagrein"
 		}
 	},
 	"tastes": {
