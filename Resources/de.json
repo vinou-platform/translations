@@ -17,7 +17,8 @@
 		"settings":"Einstellungen",
 		"cronjobs":"Cronjobs",
 		"network":"Mein Netzwerk",
-		"merchants":"Händler"
+		"merchants":"Händler",
+		"products":"Produkte"
 	},
 	"tabs": {
 		"all": {
@@ -562,6 +563,60 @@
 			},
 			"quantity": {
 				"label": "Menge"
+			}
+		}
+	},
+	"product": {
+		"form": {
+			"edit": {
+				"title": "Produkt bearbeiten"
+			},
+			"create": {
+				"title": "Produkt anlegen"
+			}
+		},
+		"field": {
+			"name": "Name",
+			"articlenumber": "Artikelnummer",
+			"net": "Netto-Preis",
+			"tax": "MwSt.",
+			"taxrate": "Steuersatz",
+			"gross": "Brutto-Preis",
+			"description": "Beschreibung",
+			"image": {
+				"error": {
+					"notfound": "Bild konnte nicht gefunden werden"
+				}
+			},
+			"active": "aktiv",
+			"nostock": "nicht auf Lager",
+			"nostocktext": "Anzeigetext wenn nicht auf Lager",
+			"quantity": "Bestand"
+		},
+		"gallery": {
+			"new": {
+				"main": "Neues Produkt",
+				"subline": "anlegen"
+			},
+			"filter": {
+				"searchhint": "z.B. Name, Artikelnummer"
+			}
+		},
+		"messages": {
+			"hints": {
+				"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+				"noentries": "Noch keine Einträge vorhanden"
+			},
+			"dialog": {
+				"delete": "Wollen Sie das Produkt wirklich löschen?"
+			},
+			"toasts": {
+				"created": "Produkt angelegt!",
+				"changed": "Produkt geändert!",
+				"deleted": "Produkt gelöscht!",
+				"image_uploaded": "Produktbild hochgeladen!",
+				"image_deleted": "Produktbild gelöscht",
+				"copied": "Produkt dupliziert"
 			}
 		}
 	},

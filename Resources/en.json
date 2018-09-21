@@ -17,7 +17,8 @@
 		"settings":"Settings",
 		"cronjobs":"Cronjobs",
 		"network":"My network",
-		"merchants":"Merchants"
+		"merchants":"Merchants",
+		"products":"Products"
 	},
 	"tabs": {
 		"all": {
@@ -517,6 +518,60 @@
 			},
 			"quantity": {
 				"label": "Quantity"
+			}
+		}
+	},
+	"product": {
+		"form": {
+			"edit": {
+				"title": "Edit product"
+			},
+			"create": {
+				"title": "Create product"
+			}
+		},
+		"field": {
+			"name": "Name",
+			"articlenumber": "Articlenumber",
+			"net": "Price net",
+			"tax": "Tax",
+			"taxrate": "Taxrate",
+			"gross": "Price gross",
+			"description": "Description",
+			"image": {
+				"error": {
+					"notfound": "Image could not be found"
+				}
+			},
+			"active": "visible",
+			"nostock": "not in stock",
+			"nostocktext": "text if not in stock",
+			"quantity": "Quantity"
+		},
+		"gallery": {
+			"new": {
+				"main": "New product",
+				"subline": ""
+			},
+			"filter": {
+				"searchhint": "for example name or articlenumber"
+			}
+		},
+		"messages": {
+			"hints": {
+				"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
+				"noentries": "No entries found"
+			},
+			"dialog": {
+				"delete": "Would you really delete this product?"
+			},
+			"toasts": {
+				"created": "Product created!",
+				"changed": "Product changed!",
+				"deleted": "Product deleted!",
+				"image_uploaded": "Productimage uploaded!",
+				"image_deleted": "Productimage deleted!",
+				"copied": "Product copied!"
 			}
 		}
 	},
