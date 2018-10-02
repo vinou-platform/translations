@@ -499,6 +499,18 @@
 		}
 	},
 	"wine": {
+		"fieldset": {
+			"general":"Allgemeines",
+			"stock":"Bestände",
+			"grapetype":"Rebsorten",
+			"region":"Regionales",
+			"facts":"Daten & Fakten",
+			"analyse":"Analyse",
+			"additional":"Beschreibung",
+			"composition": "Zusammensetzung",
+			"qrcode":"QR-Code",
+			"bottle": "Flasche"
+		},
 		"field": {
 			"acid": "Säuregehalt",
 			"alcohol": "Alkoholgehalt",
@@ -515,7 +527,40 @@
 			"place": "Lage",
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
-			"vintage": "Jahrgang"
+			"vintage": "Jahrgang",
+			"weight": "Gewicht (in g)",
+			"barcode": "EAN-Code",
+			"terroir": "Boden",
+			"maturation": "Ausbau",
+			"cap": "Verschluss",
+			"cap_types": {
+				"screw": "Schraubverschluss",
+				"cork":	"Naturkorken",
+				"plastic": "Kunststoffkorken",
+				"glas":	"Glasverschluss"
+			},
+			"quality": "Qualitätsstufe",
+			"quality_types": {
+				"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+				"table": "Wein mit Rebsorten- order Jahrgangsangabe",
+				"superior": "Landwein",
+				"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+				"cabinet": "Kabinett",
+				"spaetlese": "Spätlese",
+				"selection": "Auslese",
+				"beerenauslese": "Beerenauslese",
+				"trockenbeerenauslese": "Trockenbeerenauslese",
+				"icewine": "Eiswein"
+			},
+			"allergens": "Allergene",
+			"allergen_types": {
+				"sulphide": "Sulfit",
+				"eggwhite": "Ei",
+				"fish": "Fisch",
+				"milk": "Milch"
+			},
+			"bio": "Bio zertifiziert",
+			"vegan": "Vegan"
 		},
 		"gallery": {
 			"new": {

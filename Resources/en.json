@@ -454,6 +454,18 @@
 		}
 	},
 	"wine": {
+		"fieldset": {
+			"general":"General",
+			"stock":"Stock",
+			"grapetype":"Grapetypes",
+			"region":"Regional",
+			"facts":"Facts & Numbers",
+			"analyse":"Analyse",
+			"additional":"Description",
+			"composition": "Composition",
+			"qrcode":"QR-Code",
+			"bottle": "Bottle"
+		},
 		"field": {
 			"acid": "Acid",
 			"alcohol": "Alcohol",
@@ -470,7 +482,40 @@
 			"place": "Place",
 			"sweetness": "Sweetness",
 			"taste": "Taste",
-			"vintage": "Vintage"
+			"vintage": "Vintage",
+			"weight": "Weight (in g)",
+			"barcode": "GTIN",
+			"terroir": "Terroir",
+			"maturation": "Maturation",
+			"cap": "Cap",
+			"cap_types": {
+				"screw": "Screw cap",
+				"cork":	"Natural cork",
+				"plastic": "Synthetic cork",
+				"glas":	"Glas"
+			},
+			"quality": "Classification",
+			"quality_types": {
+				"notspecified": "Wine without grapetype or vintage",
+				"table": "Wine with grapetype or vintage (tablewine)",
+				"superior": "Superior tablewine",
+				"origin": "Quality wine produced in specific regions",
+				"cabinet": "Cabinet",
+				"spaetlese": "Spätlese",
+				"selection": "Selection",
+				"beerenauslese": "Beerenauslese",
+				"trockenbeerenauslese": "Trockenbeerenauslese",
+				"icewine": "Icewine"
+			},
+			"allergens": "Allergens",
+			"allergen_types": {
+				"sulphide": "Sulphide",
+				"eggwhite": "Eggwhite",
+				"fish": "Fish",
+				"milk": "Milk"
+			},
+			"bio": "bio certified",
+			"vegan": "vegan"
 		},
 		"gallery": {
 			"new": {
