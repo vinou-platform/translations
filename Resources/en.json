@@ -22,7 +22,8 @@
 	},
 	"tabs": {
 		"all": {
-			"general": "General"
+			"general": "General",
+			"notes": "Notes"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -620,6 +621,11 @@
 			}
 		}
 	},
+	"note": {
+		"field": {
+			"content": "Content"
+		}
+	},
 	"toasts": {
 		"address_saved": "Address saved!",
 		"address_changed": "Address update!",
@@ -708,7 +714,13 @@
 		"stock_booking_ingoing_failed": "Ingoing stock could not be booked",
 		"stock_booking_outgoing_failed": "Outgoing stock could not be booked",
 		"view_slider_created": "Slider created!",
-		"view_facebook_created": "Facebook-Iframe created!"
+		"view_facebook_created": "Facebook-Iframe created!",
+		"notes": {
+			"saved": "Note saved!",
+			"saveerror": "Note could not saved!",
+			"delete": "Note deleted!",
+			"deleteerror": "Note could not deleted!"
+		}
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"
