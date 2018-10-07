@@ -670,6 +670,14 @@
 	"note": {
 		"field": {
 			"content": "Inhalt"
+		},
+		"messages": {
+			"toasts": {
+				"saved": "Notiz gespeichert!",
+				"saveerror": "Notiz konnte nicht gespeichert werden!",
+				"delete": "Notiz gelöscht!",
+				"deleteerror": "Notiz konnte nicht gelöscht werden!"
+			}
 		}
 	},
 	"toasts": {

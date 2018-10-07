@@ -624,6 +624,14 @@
 	"note": {
 		"field": {
 			"content": "Content"
+		},
+		"messages": {
+			"toasts": {
+				"saved": "Note saved!",
+				"saveerror": "Note could not saved!",
+				"delete": "Note deleted!",
+				"deleteerror": "Note could not deleted!"
+			}
 		}
 	},
 	"toasts": {
