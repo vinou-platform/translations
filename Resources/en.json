@@ -1216,7 +1216,11 @@
 		"pt":"Portugal",
 		"ru":"Romania",
 		"si":"Slovenia",
-		"es":"Spain"
+		"es":"Spain",
+		"hu":"Hungary",
+		"cl":"Chile",
+		"sx":"Sint Maarten",
+		"ro":"Romania"
 	},
 	"languages": {
 		"de": {

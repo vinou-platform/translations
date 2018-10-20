@@ -1262,7 +1262,11 @@
 		"pt":"Portugal",
 		"ru":"Rumänien",
 		"si":"Slowenien",
-		"es":"Spanien"
+		"es":"Spanien",
+		"hu":"Ungarn",
+		"cl":"Chile",
+		"sx":"Sint Maarten",
+		"ro":"Rumänien"
 	},
 	"languages": {
 		"de": {
