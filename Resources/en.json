@@ -109,89 +109,6 @@
 	"login_wronglogin":"Email or password not correct.",
 	"login_wrongreset":"Email or matching user not found.",
 
-	"wineries_add1":"Add",
-	"wineries_add2":"winery",
-	"wineries_create1":"Create",
-	"wineries_create2":"winery",
-	"wineries_gallery_filter_hint":"e.g. name, country, region",
-	"wineries_filter_country":"Filter by country",
-	"wineries_filter_no_country":"Show wineries without country",
-	"wineries_filter_select_all":"Select all",
-	"wineries_filter_select_none":"Clear selection",
-
-	"wineries_search_modaltitle":"Search for winery",
-	"wineries_create_modaltitle":"Create winery",
-	"wineries_edit_modaltitle":"Edit winery",
-
-	"wineries_createtitle":"Create winery",
-	"fieldset_find_winery_title":"Search for winery",
-
-	"db_wineries_winery_search":"e.g. name, country, region",
-	"db_wineries_company":"Company",
-	"db_wineries_name":"Contact Person",
-	"db_wineries_address":"Address",
-	"db_wineries_zip":"Zip",
-	"db_wineries_city":"City",
-	"db_wineries_country":"Country",
-	"db_wineries_region":"Wine region",
-	"db_wineries_taxid":"TaxID",
-	"db_wineries_phone":"Phone",
-	"db_wineries_fax":"Fax",
-	"db_wineries_mail":"Email",
-	"db_wineries_www":"Website",
-
-	"wines_create1":"Create",
-	"wines_create2":"Wine",
-	"wines_galleryFilterHint":"e.g. name, articlenumber, vintage",
-	"wines_create_modaltitle":"Create new wine",
-	"wines_edit_modaltitle":"Edit wine",
-	"wines_edit_language_original":"{language} (original)",
-	"wines_edit_language_translated":"Language: {language}",
-	"wines_edit_other_translations":"Translations",
-	"wines_edit_translation_original":"{title} (original)",
-	"wines_edit_translation_new":"{title} (new)",
-	"wines_edit_form_dirty":"Current wine was modified. Do you like to save the changes?",
-	"wines_edit_translation_create_copy":"Would you like to take over the fields of {wine.name}?",
-	"db_wines_name":"Name",
-	"db_wines_winery":"Winery",
-	"db_wines_winery_search":"Search winery",
-	"db_wines_categories":"Categories",
-	"db_wines_quantity":"Current stock",
-	"db_wines_shoplink":"Shoplink",
-	"db_wines_shoplink_active":"activate Shoplink",
-	"db_wines_qrcode":"QR-Code",
-	"db_wines_qrcode_redirect":"QR-Code redirect",
-	"db_wines_articlenumber":"Articlenumber",
-	"db_wines_tastes_id":"Taste",
-	"db_wines_vintage":"Vintage",
-	"db_wines_alcohol":"Alcohol",
-	"db_wines_sweetness":"Sweetness",
-	"db_wines_acid":"Acid",
-	"db_wines_bottlesize":"Bottlesize",
-	"db_wines_drinktemperature":"Temperature",
-	"db_wines_winetypes":"Winetypes",
-	"db_wines_price":"Price",
-	"db_wines_place":"Place",
-	"db_wines_description":"Description",
-	"db_wines_image":"Image",
-	"db_wines_active":"active",
-	"db_wines_region":"Region",
-	"db_wines_countrycode":"Origin",
-	"db_wines_type":"Type",
-	"db_wines_type_red":"Red Wine",
-	"db_wines_type_white":"White Wine",
-	"db_wines_type_distillate":"Distillate",
-	"db_wines_type_sparkling":"Sparkling Wine",
-	"db_wines_type_rose":"Rosé",
-	"db_wines_grapetypes":"Grapetypes",
-	"db_wines_grapetypes_placeholder":"Search Grapetype",
-	"db_wines_cuvee":"Cuvée",
-	"db_wines_qrlink":"Targetaddress for QR-Code",
-	"db_wines_qrlinkempty":"Targetaddress for QR-Code (Winepass if empty)",
-	"db_wines_qrcode_create":"QR-Code will be created after first save",
-	"db_wines_nostock":"sold out",
-	"db_wines_nostocktext":"alternativ text for sold out",
-	"db_wines_createtitle":"Create Wine",
 	"db_categories_image":"Image",
 	"db_category_createtitle":"Create Category",
 	"db_category_edittitle":"Edit Category",
@@ -454,6 +371,67 @@
 			"title": "Search in Vinou-Network"
 		}
 	},
+	"winery": {
+		"action": {
+			"add": {
+				"main": "Add winery",
+				"sub": ""
+			},
+			"create": {
+				"main": "Create winery",
+				"sub": "",
+				"title":"Create winery",
+				"modaltitle": "Create winery"
+			},
+			"edit": {
+				"modaltitle": "Edit winery"
+			},
+			"search": {
+				"placeholder": "e.g. name, country, region",
+				"title": "Search for winery",
+				"modaltitle": "Search winery"
+			},
+			"wineselection": {
+				"enable": "enable wineselection",
+				"disable": "disable wineselection"
+			}
+		},
+		"fieldset": {
+			"general": "General",
+			"description": "Description",
+			"wines": "Weine"
+		},
+		"field": {
+			"company": "Company",
+			"name": "Contact person",
+			"address": "Address",
+			"zip": "Zip",
+			"city": "City",
+			"country": "Country",
+			"region": "Wineregion",
+			"taxid": "VAT-Id",
+			"phone": "Phone",
+			"fax": "Fax",
+			"mail": "E-Mail",
+			"www": "Website"
+		},
+		"list": {
+			"filter": {
+				"country": "Choose Country",
+				"no_country": "Show wineries without country",
+				"select": {
+					"all": "Choose all",
+					"none": "Clear selection"
+				}
+			}
+		},
+		"messages": {
+			"hints": {
+				"loadingwines": "loading wines",
+				"winesselectinfo": "The following list contains all public wines of this winery. To transfer some wines into your product range activate the wineselection."
+			}
+		}
+	},
 	"wine": {
 		"fieldset": {
 			"general":"General",
@@ -465,29 +443,24 @@
 			"additional":"Description",
 			"composition": "Composition",
 			"qrcode":"QR-Code",
-			"bottle": "Bottle"
+			"bottle": "Bottle",
+			"profile": "Wine-Profile"
 		},
 		"field": {
 			"acid": "Acid",
+			"active":"active",
 			"alcohol": "Alcohol",
-			"articlenumber": "Art.-Nr.",
-			"bottlesize": "Bottle size",
-			"category": "Category",
-			"description": "Description",
-			"drinktemperature": "Temperature",
-			"image": {
-				"error": {
-					"notfound": "Image not found"
-				}
+			"allergens": "Allergens",
+			"allergen_types": {
+				"sulphide": "Sulphide",
+				"eggwhite": "Eggwhite",
+				"fish": "Fish",
+				"milk": "Milk"
 			},
-			"place": "Place",
-			"sweetness": "Sweetness",
-			"taste": "Taste",
-			"vintage": "Vintage",
-			"weight": "Weight (in g)",
+			"articlenumber": "Art.-Nr.",
 			"barcode": "GTIN",
-			"terroir": "Terroir",
-			"maturation": "Maturation",
+			"bio": "Bio certified",
+			"bottlesize": "Bottlesize",
 			"cap": "Cap",
 			"cap_types": {
 				"screw": "Screw cap",
@@ -495,6 +468,36 @@
 				"plastic": "Synthetic cork",
 				"glas":	"Glas"
 			},
+			"category": "Category",
+			"countrycode":"Country",
+			"cuvee":"Cuvée",
+			"description": "Description",
+			"drinktemperature": "Drinktemperature",
+			"grapetypes": {
+				"label": "Grapetypes",
+				"placeholder":"Search for grapetypes"
+			},
+			"image": {
+				"label": "Bottlepicture",
+				"error": {
+					"notfound": "Image could not be resolved"
+				}
+			},
+			"instock":"in stock",
+			"maturation": "Maturation",
+			"name":"Name",
+			"nostock":"sold out",
+			"nostocktext":"alternativ text for sold out",
+			"place": "Place",
+			"price": {
+				"label": "Price",
+				"none": "not specified"
+			},
+			"qrcode":"QR-Code",
+			"qrcode_redirect":"QR-Code Redirect",
+			"qrcode_create":"QR-Code will be created after first save",
+			"qrlink":"Targetaddress for QR-Code",
+			"qrlinkempty":"Targetaddress for QR-Code (Winepass if empty)",
 			"quality": "Classification",
 			"quality_types": {
 				"notspecified": "Wine without grapetype or vintage",
@@ -508,15 +511,21 @@
 				"trockenbeerenauslese": "Trockenbeerenauslese",
 				"icewine": "Icewine"
 			},
-			"allergens": "Allergens",
-			"allergen_types": {
-				"sulphide": "Sulphide",
-				"eggwhite": "Eggwhite",
-				"fish": "Fish",
-				"milk": "Milk"
-			},
-			"bio": "bio certified",
-			"vegan": "vegan"
+			"quantity": "Current Stock",
+			"region":"Region",
+			"shoplink":"Shoplink",
+			"shoplink_active":"activate Shoplink",
+			"sweetness": "Sweetness",
+			"taste": "Taste",
+			"terroir": "Terroir",
+			"type":"Type",
+			"vegan": "Vegan",
+			"vintage": "Vintage",
+			"weight": "Weight (in g)",
+			"winery": {
+				"label": "Winery",
+				"placeholder":"Search winery"
+			}
 		},
 		"gallery": {
 			"new": {
@@ -565,6 +574,20 @@
 			"quantity": {
 				"label": "Quantity"
 			}
+		},
+		"language": {
+			"original":"{language} (Original)",
+			"translated":"Language: {language}"
+		},
+		"translation": {
+			"other":"Translations",
+			"original":"{title} (Original)",
+			"new":"{title} (New)"
+		},
+		"messages": {
+			"formdirty":"Current wine was modified. Do you like to save the changes?",
+			"createcopy": "Would you like to take over the fields of {wine.name}?",
+			"fieldempty": "not specified"
 		}
 	},
 	"product": {

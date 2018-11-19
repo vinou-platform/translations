@@ -121,94 +121,6 @@
 	"login_wronglogin":"E-Mail Addresse oder Passwort nicht korrekt.",
 	"login_wrongreset":"E-Mail Addresse oder passender Benutzer nicht gefunden.",
 
-	"wineries_add1":"Neues Weingut",
-	"wineries_add2":"hinzufügen",
-	"wineries_create1":"Neues Weingut",
-	"wineries_create2":"anlegen",
-	"wineries_gallery_filter_hint":"z.B. Name, Land, Region",
-	"wineries_filter_country":"Land auswählen",
-	"wineries_filter_no_country":"Weingüter ohne Land anzeigen",
-	"wineries_filter_select_all":"Alle auswählen",
-	"wineries_filter_select_none":"Auswahl aufheben",
-
-	"wineries_search_modaltitle":"Weingut suchen",
-	"wineries_create_modaltitle":"Weingut hinzufügen",
-	"wineries_edit_modaltitle":"Weingut bearbeiten",
-
-	"wineries_createtitle":"Weingut anlegen",
-	"fieldset_find_winery_title":"Nach Weingut Suchen",
-
-	"db_wineries_winery_search":"z.B. Name, Land, Region",
-	"db_wineries_company":"Bezeichnung",
-	"db_wineries_name":"Ansprechpartner",
-	"db_wineries_address":"Straße + Hausnummer",
-	"db_wineries_zip":"PLZ",
-	"db_wineries_city":"Stadt",
-	"db_wineries_country":"Land",
-	"db_wineries_region":"Weinregion",
-	"db_wineries_taxid":"USt-IdNr.",
-	"db_wineries_phone":"Telefon",
-	"db_wineries_fax":"Fax",
-	"db_wineries_mail":"Emailadresse",
-	"db_wineries_www":"Internetseite",
-
-	"wines_create1":"Neuen",
-	"wines_create2":"Wein anlegen",
-	"wines_galleryFilterHint":"z.B. Name, Artikelnummer, Jahrgang ",
-	"wines_grapetypes_empty":"- keine Angabe -",
-	"wines_create_modaltitle":"Wein anlegen",
-	"wines_edit_modaltitle":"Wein bearbeiten",
-	"wines_edit_language_original":"{language} (Original)",
-	"wines_edit_language_translated":"Sprache: {language}",
-	"wines_edit_other_translations":"Übersetzungen",
-	"wines_edit_translation_original":"{title} (Original)",
-	"wines_edit_translation_new":"{title} (Neu)",
-	"wines_edit_form_dirty":"Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
-	"wines_edit_translation_create_copy":"Möchten Sie die Angaben aus {wine.name} übernehmen?",
-	"db_wines_name":"Name",
-	"db_wines_winery":"Weingut",
-	"db_wines_winery_search":"Weingut suchen",
-	"db_wines_categories":"Kategorien",
-	"db_wines_quantity":"Aktueller Bestand",
-	"db_wines_shoplink":"Link zum Shop",
-	"db_wines_shoplink_active":"Link zum Shop aktiv",
-	"db_wines_qrcode":"QR-Code",
-	"db_wines_qrcode_redirect":"QR-Code Redirect",
-	"db_wines_articlenumber":"Artikelnummer",
-	"db_wines_tastes_id":"Geschmack",
-	"db_wines_vintage":"Jahrgang",
-	"db_wines_alcohol":"Alkohol",
-	"db_wines_sweetness":"Süße",
-	"db_wines_acid":"Säuregehalt",
-	"db_wines_bottlesize":"Inhalt",
-	"db_wines_drinktemperature":"Trinktemperatur",
-	"db_wines_winetypes":"Typ",
-	"db_wines_price":"Preis",
-	"db_wines_place":"Lage",
-	"db_wines_description":"Beschreibung",
-	"db_wines_image":"Flaschenbild",
-	"db_wines_active":"aktiv",
-	"db_wines_region":"Anbauregion",
-	"db_wines_type":"Rot-/Weiß-/Apfelwein",
-	"db_wines_region":"Anbauregion",
-	"db_wines_countrycode":"Herkunft",
-	"db_wines_type":"Typ",
-	"db_wines_type_red":"Rotwein",
-	"db_wines_type_white":"Weißwein",
-	"db_wines_type_distillate":"Destillat",
-	"db_wines_type_sparkling":"Sekt",
-	"db_wines_type_secco":"Secco",
-	"db_wines_type_rose":"Rosé",
-	"db_wines_type_general":"Sonstiges",
-	"db_wines_grapetypes":"Rebsorten",
-	"db_wines_grapetypes_placeholder":"Rebsorte suchen",
-	"db_wines_cuvee":"Cuvée",
-	"db_wines_qrlink":"Zieladresse für QR-Code",
-	"db_wines_qrlinkempty":"Zieladresse für QR-Code (Weinpass wenn leer)",
-	"db_wines_qrcode_create":"Der QR-Code wird nach dem ersten Speichern generiert",
-	"db_wines_nostock":"ausgetrunken",
-	"db_wines_nostocktext":"Anzeige Text wenn ausgetrunken (z.B. verfügbar ab...)",
-	"db_wines_createtitle":"Wein anlegen",
 	"db_categories_image":"Bild",
 	"db_category_createtitle":"Kategorie anlegen",
 	"db_category_edittitle":"Kategorie bearbeiten",
@@ -420,16 +332,6 @@
 			"outgoing": "Ausgang"
 		}
 	},
-	"taste_1": "trocken",
-	"taste_2": "halbtrocken",
-	"taste_3": "feinherb",
-	"taste_4": "lieblich",
-	"taste_5": "mild",
-	"taste_6": "süß",
-	"taste_7": "edelsüß",
-	"taste_8": "naturherb",
-	"taste_9": "herb (brut)",
-	"taste_10": "extra herb (extra brut)",
 	"form_error_required": "Bitte füllen sie dieses Feld aus",
 	"form_error_checkrequired": "Dieses Feld muss bestätigt werden",
 	"formhint_required": "Pflichtfeld",
@@ -500,7 +402,88 @@
 			"title": "Im Vinou-Netzwerk suchen"
 		}
 	},
+	"winery": {
+		"action": {
+			"add": {
+				"main": "Neues Weingut",
+				"sub": "hinzufügen"
+			},
+			"create": {
+				"main": "Neues Weingut",
+				"sub": "anlegen",
+				"title":"Weingut anlegen",
+				"modaltitle": "Weingut hinzufügen"
+			},
+			"edit": {
+				"modaltitle": "Weingut bearbeiten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Land, Region",
+				"title": "Nach Weingut Suchen",
+				"modaltitle": "Weingut suchen"
+			},
+			"wineselection": {
+				"enable": "Weinselektion aktivieren",
+				"disable": "Weinselektion deaktivieren"
+			}
+		},
+		"fieldset": {
+			"general": "Allgemein",
+			"description": "Beschreibung",
+			"wines": "Weine"
+		},
+		"field": {
+			"company": "Bezeichnung",
+			"name": "Ansprechpartner",
+			"address": "Straße + Hausnummer",
+			"zip": "PLZ",
+			"city": "Stadt",
+			"country": "Land",
+			"region": "Weinregion",
+			"taxid": "USt-IdNr.",
+			"phone": "Telefon",
+			"fax": "Fax",
+			"mail": "Emailadresse",
+			"www": "Internetseite"
+		},
+		"list": {
+			"filter": {
+				"country": "Land auswählen",
+				"no_country": "Weingüter ohne Land anzeigen",
+				"select": {
+					"all": "Alle auswählen",
+					"none": "Auswahl aufheben"
+				}
+			}
+		},
+		"messages": {
+			"hints": {
+				"loadingwines": "Weine werden geladen",
+				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in dein Sortiment zu übernehmen aktiviere die Weinselektion."
+			}
+		}
+	},
 	"wine": {
+		"action": {
+			"add": {
+				"main": "Neuen Wein",
+				"sub": "hinzufügen"
+			},
+			"create": {
+				"main": "Neuen Wein",
+				"sub": "anlegen",
+				"title":"Wein anlegen",
+				"modaltitle": "Wein hinzufügen"
+			},
+			"edit": {
+				"modaltitle": "Wein bearbeiten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Land, Region",
+				"title": "Nach Wein Suchen",
+				"modaltitle": "Wein suchen"
+			}
+		},
 		"fieldset": {
 			"general":"Allgemeines",
 			"stock":"Bestände",
@@ -511,29 +494,24 @@
 			"additional":"Beschreibung",
 			"composition": "Zusammensetzung",
 			"qrcode":"QR-Code",
-			"bottle": "Flasche"
+			"bottle": "Flasche",
+			"profile": "Wein-Profil"
 		},
 		"field": {
 			"acid": "Säuregehalt",
+			"active":"aktiv",
 			"alcohol": "Alkoholgehalt",
-			"articlenumber": "Art.-Nr.",
-			"bottlesize": "Flaschengröße",
-			"category": "Kategorie",
-			"description": "Beschreibung",
-			"drinktemperature": "Trinktemperatur",
-			"image": {
-				"error": {
-					"notfound": "Bild konnte nicht gefunden werden"
-				}
+			"allergens": "Allergene",
+			"allergen_types": {
+				"sulphide": "Sulfit",
+				"eggwhite": "Ei",
+				"fish": "Fisch",
+				"milk": "Milch"
 			},
-			"place": "Lage",
-			"sweetness": "Restsüße",
-			"taste": "Geschmacksrichtung",
-			"vintage": "Jahrgang",
-			"weight": "Gewicht (in g)",
+			"articlenumber": "Art.-Nr.",
 			"barcode": "EAN-Code",
-			"terroir": "Boden",
-			"maturation": "Ausbau",
+			"bio": "Bio zertifiziert",
+			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
 			"cap_types": {
 				"screw": "Schraubverschluss",
@@ -541,6 +519,36 @@
 				"plastic": "Kunststoffkorken",
 				"glas":	"Glasverschluss"
 			},
+			"category": "Kategorie",
+			"countrycode":"Herkunft",
+			"cuvee":"Cuvée",
+			"description": "Beschreibung",
+			"drinktemperature": "Trinktemperatur",
+			"grapetypes": {
+				"label": "Rebsorten",
+				"placeholder":"Rebsorte suchen"
+			},
+			"image": {
+				"label": "Flaschenbild",
+				"error": {
+					"notfound": "Bild konnte nicht gefunden werden"
+				}
+			},
+			"instock":"auf Lager",
+			"maturation": "Ausbau",
+			"name":"Name",
+			"nostock":"ausgetrunken",
+			"nostocktext":"Anzeige Text wenn ausgetrunken (z.B. verfügbar ab...)",
+			"place": "Lage",
+			"price": {
+				"label": "Preis",
+				"none": "keine Angabe"
+			},
+			"qrcode":"QR-Code",
+			"qrcode_redirect":"QR-Code Redirect",
+			"qrcode_create":"Der QR-Code wird nach dem ersten Speichern generiert",
+			"qrlink":"Zieladresse für QR-Code",
+			"qrlinkempty":"Zieladresse für QR-Code (Weinpass wenn leer)",
 			"quality": "Qualitätsstufe",
 			"quality_types": {
 				"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
@@ -554,15 +562,21 @@
 				"trockenbeerenauslese": "Trockenbeerenauslese",
 				"icewine": "Eiswein"
 			},
-			"allergens": "Allergene",
-			"allergen_types": {
-				"sulphide": "Sulfit",
-				"eggwhite": "Ei",
-				"fish": "Fisch",
-				"milk": "Milch"
-			},
-			"bio": "Bio zertifiziert",
-			"vegan": "Vegan"
+			"quantity": "Aktueller Bestand",
+			"region":"Anbauregion",
+			"shoplink":"Link zum Shop",
+			"shoplink_active":"Link zum Shop aktiv",
+			"sweetness": "Restsüße",
+			"taste": "Geschmacksrichtung",
+			"terroir": "Boden",
+			"type":"Typ",
+			"vegan": "Vegan",
+			"vintage": "Jahrgang",
+			"weight": "Gewicht (in g)",
+			"winery": {
+				"label": "Weingut",
+				"placeholder":"Weingut suchen"
+			}
 		},
 		"gallery": {
 			"new": {
@@ -611,6 +625,20 @@
 			"quantity": {
 				"label": "Menge"
 			}
+		},
+		"language": {
+			"original":"{language} (Original)",
+			"translated":"Sprache: {language}"
+		},
+		"translation": {
+			"other":"Übersetzungen",
+			"original":"{title} (Original)",
+			"new":"{title} (Neu)"
+		},
+		"messages": {
+			"formdirty":"Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
+			"createcopy": "Möchten Sie die Angaben aus {wine.name} übernehmen?",
+			"fieldempty": "keine Angabe"
 		}
 	},
 	"product": {
