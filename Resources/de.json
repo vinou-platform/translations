@@ -400,6 +400,11 @@
 		},
 		"search": {
 			"title": "Im Vinou-Netzwerk suchen"
+		},
+		"errors": {
+			"connect": {
+				"nowinesselected": "Es wurden keine Weine ausgewählt! Willst du das Weingut importieren?"
+			}
 		}
 	},
 	"winery": {
@@ -459,7 +464,12 @@
 		"messages": {
 			"hints": {
 				"loadingwines": "Weine werden geladen",
-				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in dein Sortiment zu übernehmen aktiviere die Weinselektion."
+				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in dein Sortiment zu übernehmen aktiviere die Weinselektion.",
+				"connectwinery": "Mit Weingut verbinden und alle (selektierten) Weine importieren"
+			},
+			"toasts": {
+				"created": "Weingut wurde angelegt",
+				"connected": "Du bist nun mit dem Weingut verbunden."
 			}
 		}
 	},
@@ -638,7 +648,13 @@
 		"messages": {
 			"formdirty":"Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
 			"createcopy": "Möchten Sie die Angaben aus {wine.name} übernehmen?",
-			"fieldempty": "keine Angabe"
+			"fieldempty": "keine Angabe",
+			"hints": {
+				"connectwine": "Mit Wein verbinden"
+			},
+			"toasts": {
+				"connected": "Wein wurde ins Sortiment übertragen."
+			}
 		}
 	},
 	"product": {

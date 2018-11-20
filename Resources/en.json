@@ -428,7 +428,12 @@
 		"messages": {
 			"hints": {
 				"loadingwines": "loading wines",
-				"winesselectinfo": "The following list contains all public wines of this winery. To transfer some wines into your product range activate the wineselection."
+				"winesselectinfo": "The following list contains all public wines of this winery. To transfer some wines into your product range activate the wineselection.",
+				"connectwine": "Connect winery"
+			},
+			"toasts": {
+				"created": "Winery created",
+				"connected": "Winery connected."
 			}
 		}
 	},
@@ -587,7 +592,10 @@
 		"messages": {
 			"formdirty":"Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
-			"fieldempty": "not specified"
+			"fieldempty": "not specified",
+			"toasts": {
+				"connected": "Wine connected"
+			}
 		}
 	},
 	"product": {
