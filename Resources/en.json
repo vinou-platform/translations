@@ -196,25 +196,6 @@
 	"db_address_zip":"Zip",
 	"db_address_city":"City",
 	"db_address_country":"Land",
-	"clients_galleryFilterHint":"e.g. name, company, address",
-	"clients_create1":"Neuen",
-	"clients_create2":"Kunden anlegen",
-	"db_clients_createtitle":"Create Client",
-	"db_clients_edittitle":"Edit Client",
-	"db_clients_name":"Contact Person",
-	"db_clients_company":"Company",
-	"db_clients_taxid":"TaxID",
-	"db_clients_address":"Address",
-	"db_clients_zip":"Zip",
-	"db_clients_city":"City",
-	"db_clients_country":"Country",
-	"db_clients_mail":"Email",
-	"db_clients_www":"Website",
-	"db_clients_phone":"Phone",
-	"db_clients_fax":"Fax",
-	"db_clients_active":"active",
-	"db_clients_image":"Logo",
-	"db_clients_rebate":"Rebate",
 	"db_tokens_createtitle":"Create Connection",
 	"db_tokens_edittitle":"Edit Connection",
 	"db_tokens_token":"Token",
@@ -662,6 +643,87 @@
 				"saveerror": "Note could not saved!",
 				"delete": "Note deleted!",
 				"deleteerror": "Note could not deleted!"
+			}
+		}
+	},
+	"client": {
+		"action": {
+			"create": {
+				"main": "Create new",
+				"sub": "client",
+				"title":"Create client",
+				"modaltitle": "Create client"
+			},
+			"edit": {
+				"modaltitle": "Edit client"
+			},
+			"search": {
+				"placeholder": "e.g. name, company, address"
+			}
+		},
+		"fieldset": {
+			"general": "General",
+			"contact": "Contact data",
+			"settings": "Settings",
+			"addresses": "Additional addresses"
+		},
+		"field": {
+			"name":"Complete name",
+			"contactname": "Contact name",
+			"number": "Client number",
+			"company":"Company",
+			"taxid":"VAT-ID",
+			"address":"Street",
+			"zip":"Zip",
+			"city":"City",
+			"country":"Country",
+			"mail":"E-Mail",
+			"www":"Website",
+			"phone":"Phone",
+			"fax":"Fax",
+			"active":"active",
+			"image":"Logo",
+			"rebate":"Rebate",
+			"type": {
+				"label": "Type",
+				"private": "Private",
+				"company": "Company"
+
+			}
+		}
+	},
+	"address": {
+		"action": {
+			"create": {
+				"main": "Create new",
+				"sub": "address",
+				"title": "Create address",
+				"modaltitle": "Create address"
+			},
+			"edit": {
+				"modaltitle": "Edit address"
+			},
+			"save": {
+				"title": "Save address"
+			}
+		},
+		"field": {
+			"name":"Contact person",
+			"company":"Company",
+			"address":"Street",
+			"zip":"Zip",
+			"city":"City",
+			"country":"Country"
+		}
+	},
+	"order": {
+		"action": {
+			"create": {
+				"main": "Create new",
+				"sub": "order"
+			},
+			"search": {
+				"placeholder": "e.g. name, customernumber, address"
 			}
 		}
 	},

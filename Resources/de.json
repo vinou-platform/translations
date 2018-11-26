@@ -213,25 +213,6 @@
 	"db_address_zip":"PLZ",
 	"db_address_city":"Stadt",
 	"db_address_country":"Land",
-	"clients_galleryFilterHint":"z.B. Name, Firma, Addresse",
-	"clients_create1":"Neuen",
-	"clients_create2":"Kunden anlegen",
-	"db_clients_createtitle":"Kunden anlegen",
-	"db_clients_edittitle":"Kunden bearbeiten",
-	"db_clients_name":"Ansprechpartner",
-	"db_clients_company":"Firma",
-	"db_clients_taxid":"SteuerID",
-	"db_clients_address":"Straße + Hausnummer",
-	"db_clients_zip":"PLZ",
-	"db_clients_city":"Stadt",
-	"db_clients_country":"Land",
-	"db_clients_mail":"Emailadresse",
-	"db_clients_www":"Internetseite",
-	"db_clients_phone":"Telefon",
-	"db_clients_fax":"Fax",
-	"db_clients_active":"aktiv",
-	"db_clients_image":"Logo",
-	"db_clients_rebate":"Rabatt",
 	"db_winelists_name":"Name",
 	"db_winelists_description":"Beschriebung",
 	"db_winelists_pricecalc":"Preisberechnung",
@@ -721,6 +702,87 @@
 				"saveerror": "Notiz konnte nicht gespeichert werden!",
 				"delete": "Notiz gelöscht!",
 				"deleteerror": "Notiz konnte nicht gelöscht werden!"
+			}
+		}
+	},
+	"client": {
+		"action": {
+			"create": {
+				"main": "Neuen Kunden",
+				"sub": "anlegen",
+				"title":"Kunden anlegen",
+				"modaltitle": "Kunden anlegen"
+			},
+			"edit": {
+				"modaltitle": "Kunden bearbeiten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Firma, Addresse"
+			}
+		},
+		"fieldset": {
+			"general": "Allgemeines",
+			"contact": "Kontaktdaten",
+			"settings": "Einstellungen",
+			"addresses": "Weitere Adressen"
+		},
+		"field": {
+			"name":"Vollständiger Name",
+			"contactname": "Ansprechpartner",
+			"number": "Kundennummer",
+			"company":"Firma",
+			"taxid":"SteuerID",
+			"address":"Straße + Hausnummer",
+			"zip":"PLZ",
+			"city":"Stadt",
+			"country":"Land",
+			"mail":"Emailadresse",
+			"www":"Internetseite",
+			"phone":"Telefon",
+			"fax":"Fax",
+			"active":"aktiv",
+			"image":"Logo",
+			"rebate":"Rabatt",
+			"type": {
+				"label": "Typ",
+				"private": "Privatperson",
+				"company": "Firmenkunde"
+
+			}
+		}
+	},
+	"address": {
+		"action": {
+			"create": {
+				"main": "Neue Adresse",
+				"sub": "anlegen",
+				"title": "Adresse anlegen",
+				"modaltitle": "Adresse anlegen"
+			},
+			"edit": {
+				"modaltitle": "Adresse bearbeiten"
+			},
+			"save": {
+				"title": "Adresse speichern"
+			}
+		},
+		"field": {
+			"name":"Name/Ansprechpartner",
+			"company":"Firma",
+			"address":"Straße + Hausnummer",
+			"zip":"PLZ",
+			"city":"Stadt",
+			"country":"Land"
+		}
+	},
+	"order": {
+		"action": {
+			"create": {
+				"main": "Neue Bestellung",
+				"sub": "erfassen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Kundennummer, Adresse"
 			}
 		}
 	},
