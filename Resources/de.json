@@ -159,12 +159,7 @@
 	"customers_create1":"Neuen",
 	"customers_create2":"Mandanten anlegen",
 	"customers_galleryFilterHint":"z.B. Name, Firma, Addresse",
-	"db_customers_register_title": "Probeaccount registrieren",
-	"db_customers_register_description": "<p>Mit Ihrem Vinou<sup>®</sup> Probeaccount können Sie <b>1 Monate lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats können Sie sich für die weitere Nutzung von Vinou<sup>®</sup> entscheiden oder Ihr Account wird automatisch deaktiviert. Sie werden bequem per E-Mail benachrichtigt und können dann Ihre Wahl treffen.</p>",
-	"db_customers_register_submit": "Account erstellen",
-	"db_customers_register_send": "Herzlichen Glückwunsch, Ihr Account wurde erstellt. Sie erhalten in den nächsten Minuten eine E-Mail um Ihr Passwort zu setzen und Ihren Account zu aktivieren",
 	"db_customers_createtitle":"Mandanten anlegen",
-	"db_customers_register_voucher":"Ich habe einen Gutschein-Code",
 	"db_customers_name":"Ansprechpartner",
 	"db_customers_company":"Firma",
 	"db_customers_winery":"Weingut",
@@ -355,10 +350,43 @@
 	"filter_date_end": "Bis",
 	"view_beta_create": "ACHTUNG! Dieses Features befindet sich im Alpha Stadium, eventuell sind bestimmte Ansichten noch nicht verfügbar. Ansicht dennoch anlegen?",
 	"customer": {
+		"page": {
+			"register": {
+				"title": "Probeaccount registrieren",
+				"description": "<p>Mit Ihrem Vinou<sup>®</sup> Probeaccount können Sie <b>1 Monate lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats können Sie sich für die weitere Nutzung von Vinou<sup>®</sup> entscheiden oder Ihr Account wird automatisch deaktiviert. Sie werden bequem per E-Mail benachrichtigt und können dann Ihre Wahl treffen.</p>",
+				"submit": "Account erstellen",
+				"send": "Herzlichen Glückwunsch, Ihr Account wurde erstellt. Sie erhalten in den nächsten Minuten eine E-Mail um Ihr Passwort zu setzen und Ihren Account zu aktivieren",
+				"company": "Firmendaten",
+				"contact": "Kontaktperson"
+			},
+			"verify": {
+				"title": "Verifikation zusenden",
+				"success": "Eine Verifikation mit dem Aktivierungs-Link wurde <b>per Post</b> an die Adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b> verschickt. Nach erfolgreicher Aktivierung kannst du alle Funktionen unseres Netzwerkes 30 Tage lang kostenfrei testen.",
+				"error": "Die Verifikation konnte nicht verschickt werden.<br><br>Bitte nimm mit uns Kontakt auf, damit Du umgehend starten kannst. Du erreichst uns unter:<br><a href='mailto:kontakt@vinou.de'>kontakt@vinou.de</a> &middot; <a href='tel:+4961316245390'>+49(0) 6131 62 45 390</a>",
+				"send": "Verifikation wird verschickt"
+			},
+			"upgrade": {
+				"title": "Mitgliedschaft upgraden",
+				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
+				"teaser": {
+					"publish":"<b>Sie nutzen zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou vollständig zu nutzen aktivieren Sie bitte Vinou-Commerce",
+					"trial":"<b>Sie nutzen zur Zeit Vinou im Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig zu nutzen aktivieren Sie bitte Vinou-Commerce"
+				},
+				"linktext": "Jetzt upgraden!",
+				"bank": "Bankdaten für SEPA-Lastschrift"
+			}
+		},
 		"field": {
 			"email": "E-Mail",
 			"phone": "Telefon",
+			"voucher":"Ich habe einen Gutschein-Code",
 			"copyright": "© Copyright {company} 2018"
+		},
+		"messages": {
+			"toasts": {
+				"upgrade": "Vinou-Commerce activated!",
+				"upgrade_error": "An error occured. Vinou-Commerce wasn't activated!"
+			}
 		}
 	},
 	"network": {
@@ -801,8 +829,6 @@
 		"customer_image_deleted": "Bild gelöscht!",
 		"customer_changed": "Kundendaten aktualisiert!",
 		"customer_authid_changed": "AuthId wurde geändert!",
-		"customer_activated": "Vinou-Commerce wurde aktiviert!",
-		"customer_activation_error": "Ein Fehler ist aufgetreten, Vinou-Commerce konnte nicht aktiviert werden!",
 		"customer_deleted": "Mandant gelöscht!",
 		"customer_created": "Mandant angelegt!",
 		"customer_updated": "Mandant aktualisiert!",
@@ -891,11 +917,7 @@
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
 		},
 		"customer": {
-			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1000px Breite<br/>Datei-Format: .png (freigestellt)",
-			"activate": {
-				"publish":"<b>Sie nutzen zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou vollständig zu nutzen aktivieren Sie bitte Vinou-Commerce",
-				"trial":"<b>Sie nutzen zur Zeit Vinou im Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig zu nutzen aktivieren Sie bitte Vinou-Commerce"
-			}
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1000px Breite<br/>Datei-Format: .png (freigestellt)"
 		},
 		"clients": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1000px Breite<br/>Datei-Format: .png (freigestellt)"
