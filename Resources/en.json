@@ -335,6 +335,13 @@
 				"error": "Oops, an error occured. The verification could not be sent.<br><br>Please contact us to start networking as soon as possible. Use contact:<br><a href='mailto:kontakt@vinou.de'>kontakt@vinou.de</a> &middot; <a href='tel:+4961316245390'>+49(0) 6131 62 45 390</a>",
 				"send": "Send verification"
 			},
+			"activate": {
+				"title": "Finish verification",
+				"description": "Only one step until your personal membership. Please insert name, e-mail and password to create an administrator user for your Vinou-Account.",
+				"user": "Create administrator",
+				"submit": "Finish verification",
+				"success": "verification finished"
+			},
 			"upgrade": {
 				"title": "Upgrade Membership",
 				"description": "Being a Vinou-Commerce member you can use all features by paying a monthly fee of 40 EUR excluding VAT. Each negotiated order generates a promotion fee of 1 EUR excluding VAT. The monthly fee will be invoiced every month in advance. The promotion fee will be invoiced at 1st of following month",
@@ -354,8 +361,9 @@
 		},
 		"messages": {
 			"toasts": {
-				"upgrade": "Vinou-Commerce wurde aktiviert!",
-				"upgrade_error": "Ein Fehler ist aufgetreten, Vinou-Commerce konnte nicht aktiviert werden!"
+				"upgrade": "Vinou-Commerce activated!",
+				"upgrade_error": "An error occured. Vinou-Commerce wasn't activated!",
+				"activation_error": "An error occured. Account could not be activated!"
 			}
 		}
 	},
