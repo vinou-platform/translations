@@ -353,9 +353,9 @@
 		"page": {
 			"register": {
 				"title": "Probeaccount registrieren",
-				"description": "<p>Mit Ihrem Vinou<sup>®</sup> Probeaccount können Sie <b>1 Monate lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats können Sie sich für die weitere Nutzung von Vinou<sup>®</sup> entscheiden oder Ihr Account wird automatisch deaktiviert. Sie werden bequem per E-Mail benachrichtigt und können dann Ihre Wahl treffen.</p>",
+				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Commerce entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Publishing Mitgliedschaft nuten. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
 				"submit": "Account erstellen",
-				"send": "Herzlichen Glückwunsch, Ihr Account wurde erstellt. Sie erhalten in den nächsten Minuten eine E-Mail um Ihr Passwort zu setzen und Ihren Account zu aktivieren",
+				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
 				"contact": "Kontaktperson"
 			},
@@ -365,12 +365,12 @@
 				"reinvitelink": "Neue Einladung anfordern",
 				"contact": "Du erreichst uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 				"success": {
-					"common": "Eine Verifikation mit dem Aktivierungs-Link wurde <b>per Post</b> an die Adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b> verschickt. Nach erfolgreicher Aktivierung kannst du alle Funktionen unseres Netzwerkes 30 Tage lang kostenfrei testen.",
-					"reinvite": "Eine neue Einladung wurde an <b>{customer.mail}</b> gesendet. Bitte folge dem Link in der E-Mail, um dich zu verifizieren."
+					"common": "Eine Verifikation mit dem Aktivierungs-Link wurde <b>per Post</b> an die Adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b> verschickt. Nach erfolgreicher Aktivierung kannst Du alle Funktionen unseres Netzwerkes 30 Tage lang kostenfrei testen.",
+					"reinvite": "Eine neue Einladung wurde an <b>{customer.mail}</b> gesendet. Bitte folge dem Link in der E-Mail, um Dich zu verifizieren."
 				},
 				"error": {
 					"common": "Die Verifikation konnte nicht verschickt werden.<br><br>Bitte nimm mit uns Kontakt auf, damit Du umgehend starten kannst.",
-					"completed": "Du hast dich bereits verifiziert und ein Aktivierungs-Link wurde <b>per Post</b> an die Adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b> verschickt. Nach erfolgreicher Aktivierung kannst du alle Funktionen unseres Netzwerkes 30 Tage lang kostenfrei testen.<br><br>Wenn du keine Postkarte erhalten hast, nimm bitte mit uns Kontakt auf, damit du umgehend starten kannst.",
+					"completed": "Du hast Dich bereits verifiziert und ein Aktivierungs-Link wurde <b>per Post</b> an die Adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b> verschickt. Nach erfolgreicher Aktivierung kannst Du alle Funktionen unseres Netzwerkes 30 Tage lang kostenfrei testen.<br><br>Wenn Du keine Postkarte erhalten hast, nimm bitte mit uns Kontakt auf, damit Du umgehend starten kannst.",
 					"expired": "Die Verifikation konnte nicht verschickt werden, da der Einladungszeitraum bereits abgelaufen ist.<br><br>Bitte klicke auf den nachfolgenden Link, um eine neue Einladung zu erhalten oder nimm mit uns Kontakt auf, damit Du umgehend starten kannst."
 				}
 			},
@@ -386,8 +386,8 @@
 				"title": "Mitgliedschaft upgraden",
 				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
 				"teaser": {
-					"publish":"<b>Sie nutzen zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou vollständig zu nutzen aktivieren Sie bitte Vinou-Commerce",
-					"trial":"<b>Sie nutzen zur Zeit Vinou im Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig zu nutzen aktivieren Sie bitte Vinou-Commerce"
+					"publish":"<b>Du nutzt zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce",
+					"trial":"<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce"
 				},
 				"linktext": "Jetzt upgraden!",
 				"bank": "Bankdaten für SEPA-Lastschrift"
