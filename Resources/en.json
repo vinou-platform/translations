@@ -10,7 +10,7 @@
 		"users":"Users",
 		"customers":"Clients",
 		"categories":"Categories",
-		"clients":"Customers",
+		"clients":"Member",
 		"orders":"Orders",
 		"clientletters":"Client letters",
 		"tokens":"Connections",
@@ -141,46 +141,7 @@
 	"db_users_role":"Role",
 	"db_users_active":"active",
 	"db_users_image":"Image",
-	"db_users_customers_id":"belongs to Customer",
-	"customers_create1":"Create",
-	"customers_create2":"Client",
-	"customers_galleryFilterHint":"e.g. name, company, address",
-	"db_customers_createtitle":"Create Customer",
-	"db_customers_name":"Contact Person",
-	"db_customers_company":"Company",
-	"db_customers_winery":"Winery",
-	"db_customers_taxid":"TaxID",
-	"db_customers_address":"Address",
-	"db_customers_zip":"Zip",
-	"db_customers_city":"City",
-	"db_customers_zipcity":"Zip + City",
-	"db_customers_country":"Country",
-	"db_customers_mail":"Email",
-	"db_customers_www":"Website",
-	"db_customers_phone":"Phone",
-	"db_customers_fax":"Fax",
-	"db_customers_active":"active",
-	"db_customers_image":"Logo",
-	"db_customers_freetext":"Freetext",
-	"db_customers_active": "activ",
-	"db_customers_activate": "Account activation",
-	"db_customers_cop":"I've read the <a href='http://www.interfrog.de/agb.pdf' target='blank'>conditions of purchase</a> and agree",
-	"db_customers_trust":"I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
-	"db_customers_payment":"I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
-	"db_customers_pricing_acquisition": "in aquisition",
-	"db_customers_pricing_trial": "Trial",
-	"db_customers_pricing_publish": "Publishing",
-	"db_customers_pricing_regular": "Commerce",
-	"db_customers_pricing":"Account model",
-	"db_customers_crstamp":"Date of registration",
-	"db_customers_expire":"Expirationdate",
-	"db_customers_voucher":"Voucher",
-	"db_customers_source":"Acquired by",
-	"db_customers_notice":"Systemmails allowed",
-	"db_customers_type":"Customer type",
-	"db_customers_type_winery":"Winery",
-	"db_customers_type_merchant":"Merchant",
-	"customer_activate_modal":"Activate Vinou-Commerce?",
+	"db_users_customers_id":"belongs to member",
 	"db_winecategories_name":"Name",
 	"db_winecategories_description":"Description",
 	"db_winecategories_image":"Image",
@@ -353,13 +314,73 @@
 				"bank": "Bancaccount for SEPA direct debit mandate"
 			}
 		},
+		"action": {
+			"create": {
+				"main": "Create",
+				"sub": "new member",
+				"title":"Create new member",
+				"modaltitle": "Create new member"
+			},
+			"renewauth": {
+				"button": "Renew AuthID!"
+			},
+			"search": {
+				"placeholder": "e.g. name, company, address"
+			}
+		},
+		"fieldset": {
+			"membership": "Membership",
+			"contact": "Contact data",
+			"description": "Description",
+			"settings": "Settings"
+		},
 		"field": {
 			"email": "E-Mail",
 			"phone": "Phone",
 			"voucher":"I've got a voucher",
-			"copyright": "© Copyright {company} 2018"
+			"copyright": "© Copyright {company} 2018",
+			"name":"Contact Person",
+			"company":"Company",
+			"winery":"Winery",
+			"taxid":"TaxID",
+			"address":"Address",
+			"zip":"Zip",
+			"city":"City",
+			"zipcity":"Zip + City",
+			"country":"Country",
+			"www":"Website",
+			"fax":"Fax",
+			"active":"active",
+			"image":"Logo",
+			"freetext":"Freetext",
+			"active": "activ",
+			"activate": "Account activation",
+			"cop":"I've read the <a href='http://www.interfrog.de/agb.pdf' target='blank'>conditions of purchase</a> and agree",
+			"trust":"I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
+			"payment":"I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
+			"pricing": {
+				"label": "Account model",
+				"acquisition": "in aquisition",
+				"trial": "Trial",
+				"publish": "Publishing",
+				"regular": "Commerce",
+				"invitation": "Invited"
+			},
+			"crstamp":"Date of registration",
+			"expire":"Expirationdate",
+			"voucher":"Voucher",
+			"source":"Acquired by",
+			"notice":"Systemmails allowed",
+			"type": {
+				"label": "Member type",
+				"winery":"Winery",
+				"merchant":"Merchant"
+			}
 		},
 		"messages": {
+			"dialog": {
+				"activate": "Completely activate membership?"
+			},
 			"toasts": {
 				"upgrade": "Vinou-Commerce activated!",
 				"upgrade_error": "An error occured. Vinou-Commerce wasn't activated!",
