@@ -468,6 +468,62 @@
 			}
 		}
 	},
+	"merchant": {
+		"action": {
+			"add": {
+				"main": "Add",
+				"sub": "merchant"
+			},
+			"create": {
+				"title" : "Create merchant"
+			},
+			"search": {
+				"placeholder" : "e.g. company, contact or address"
+			}
+		},
+		"fieldset": {
+			"general": "General",
+			"description": "Description"
+		},
+		"field": {
+			"company": "Company",
+			"name": "Contact person",
+			"address": "Address",
+			"zip": "Zip",
+			"city": "City",
+			"country": "Country",
+			"taxid": "Vat-ID",
+			"phone": "Phone",
+			"fax": "Fax",
+			"mail": "Mail",
+			"www": "Website"
+		},
+		"list": {
+			"filter": {
+				"country": "Choose country",
+				"select": {
+					"all": "choose all",
+					"none": "select none"
+				},
+				"no_country": "Show merchants without country"
+			}
+		},
+		"messages": {
+			"dialog": {
+				"delete": "Do you really want to delete the merchant?"
+			},
+			"toasts": {
+				"deleted": "Merchant deleted!",
+				"connected": "Merchant connected and added to list",
+				"created": "Merchant created"
+			},
+			"hints": {
+				"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
+				"noentries": "No entries found",
+				"connectmerchant": "Connect to merchant"
+			}
+		}
+	},
 	"wine": {
 		"fieldset": {
 			"general":"General",

@@ -498,6 +498,62 @@
 			}
 		}
 	},
+	"merchant": {
+		"action": {
+			"add": {
+				"main": "Neuen Händler",
+				"sub": "anlegen"
+			},
+			"create": {
+				"title" : "Händler anlegen"
+			},
+			"search": {
+				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
+			}
+		},
+		"fieldset": {
+			"general": "Allgemein",
+			"description": "Beschreibung"
+		},
+		"field": {
+			"company": "Firmenname",
+			"name": "Ansprechpartner",
+			"address": "Straße, Hausnummer",
+			"zip": "PLZ",
+			"city": "Stadt",
+			"country": "Land",
+			"taxid": "USt-IdNr",
+			"phone": "Telefon",
+			"fax": "Fax",
+			"mail": "E-Mail",
+			"www": "Internetseite"
+		},
+		"list": {
+			"filter": {
+				"country": "Land auswählen",
+				"select": {
+					"all": "Alle auswählen",
+					"none": "Auswahl aufheben"
+				},
+				"no_country": "Händler ohne Land anzeigen"
+			}
+		},
+		"messages": {
+			"dialog": {
+				"delete": "Willst Du den Händler wirklich löschen?"
+			},
+			"toasts": {
+				"deleted": "Der Händler wurde gelöscht!",
+				"connected": "Der Händler wurde als Lieferant aufgenommen",
+				"created": "Der Händler wurde angelegt"
+			},
+			"hints": {
+				"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+				"noentries": "Noch keine Einträge vorhanden",
+				"connectmerchant": "Mit Händler verbinden"
+			}
+		}
+	},
 	"wine": {
 		"action": {
 			"add": {
