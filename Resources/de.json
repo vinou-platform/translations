@@ -1232,7 +1232,7 @@
 			"name": "Morio Muskat "
 		},
 		"75": {
-			"name": "Rivaner (Müller Thurgau)"
+			"name": "Müller Thurgau"
 		},
 		"76": {
 			"name": "Muskat Ottonel "
@@ -1434,6 +1434,9 @@
 		},
 		"143": {
 			"name": "Lagrein"
+		},
+		"144": {
+			"name": "Rivaner"
 		}
 	},
 	"tastes": {
@@ -1446,7 +1449,8 @@
 		"7": "edelsüß",
 		"8": "naturherb",
 		"9": "herb (brut)",
-		"10": "extra herb (extra brut)"
+		"10": "extra herb (extra brut)",
+		"11": "feinfruchtig"
 	},
 	"countries": {
 		"de":"Deutschland",
