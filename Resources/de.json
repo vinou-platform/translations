@@ -31,6 +31,11 @@
 			"stockrotation": "Lagerbewegungen"
 		}
 	},
+	"loader": {
+		"inline": {
+			"label": "Daten werden geladen ..."
+		}
+	},
 	"price": "Preis",
 	"quantity": "Bestand",
 	"articlenumber": "Artikelnummer",
@@ -883,6 +888,56 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, Kundennummer, Adresse"
+			}
+		}
+	},
+	"settings": {
+		"account": {
+			"title": "Account-Einstellungen",
+			"description": "Verwalte hier deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
+		},
+		"membership": {
+			"title": "Mitgliedschaft",
+			"description": "Das ist der Status deiner aktuellen Mitgliedschaft"
+		},
+		"customer": {
+			"title": "Rechnungsinformationen",
+			"description": "Hier verwaltest Deine Daten für deine Vinou-Mitgliedschaft. Diese Informationen werden nicht öffentlich angezeigt."
+		},
+		"mycompanies": {
+			"merchants": {
+				"title": "Meine Weinhandlung",
+				"description": "Lege hier zusätzliche Firmierungen für Deine Weinhandlung an. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
+			},
+			"wineries": {
+				"title": "Mein Weingut",
+				"description": "Lege hier zusätzliche Weingüter an um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
+			}
+		},
+		"payments": {
+			"title": "Zahlungsmethoden",
+			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten."
+		},
+		"packages": {
+			"title": "Versandoptionen",
+			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. um den Deinen Vinou-Shop zu betreiben."
+		},
+		"technical": {
+			"title": "Technik",
+			"description": "Für einige Dinge kannst Du auch einige technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
+		},
+		"templates": {
+			"title": "Vorlagen",
+			"description": "In Vinou können alle PDF-Dokumente mit einer individuellen Vorlage versehen werden."
+		},
+		"mail": {
+			"title": "E-Mail Setup",
+			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen."
+		},
+		"messages": {
+			"hints": {
+				"nomerchants": "Keine Händlerinformationen verfügbar",
+				"nowineries": "Keine Weingutsinformationen verfügbar"
 			}
 		}
 	},

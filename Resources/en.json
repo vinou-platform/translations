@@ -30,6 +30,11 @@
 			"stockrotation": "Stock rotation"
 		}
 	},
+	"loader": {
+		"inline": {
+			"label": "Loading data ..."
+		}
+	},
 	"de":"Germany",
 	"en":"England",
 	"fr":"France",
@@ -830,6 +835,56 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, customernumber, address"
+			}
+		}
+	},
+	"settings": {
+		"account": {
+			"title": "Account settings",
+			"description": "Adminstrate your invoice address, membership oder bank account e.g."
+		},
+		"membership": {
+			"title": "Membership",
+			"description": "Check and manage the current status of your membership."
+		},
+		"customer": {
+			"title": "Invoice information",
+			"description": "Administrate information for your Vinou-Membership. These informations won't be shown public in network."
+		},
+		"mycompanies": {
+			"merchants": {
+				"title": "My wine store",
+				"description": "Define additional companies for your wine store. These are public informations shown within the Vinou network."
+			},
+			"wineries": {
+				"title": "My winery",
+				"description": "Define additiona wineries to sell your wines for example as winery or as bottler. These are public informations shown within the Vinou network."
+			}
+		},
+		"payments": {
+			"title": "Payment methods",
+			"description": "With different payment methods you're able to make your webshop more attractive to your clients."
+		},
+		"packages": {
+			"title": "Package options",
+			"description": "Configure your package options regarding count of bottles or weight of an order. This is really important to use your webshop."
+		},
+		"technical": {
+			"title": "Technology",
+			"description": "For some aspects you need to configure some technical stuff. This is the place to do that."
+		},
+		"templates": {
+			"title": "Templates",
+			"description": "In Vinou you are able to change all PDF-Documents by creating your own templates."
+		},
+		"mail": {
+			"title": "E-Mail setup",
+			"description": "The Vinou-Network and also your webshop are sending automated mail notifications. To use this you need to configure an SMTP-Mailbox."
+		},
+		"messages": {
+			"hints": {
+				"nomerchants": "No stores available",
+				"nowineries": "No wineries available"
 			}
 		}
 	},
