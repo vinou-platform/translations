@@ -302,7 +302,7 @@
 		"page": {
 			"register": {
 				"title": "Probeaccount registrieren",
-				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Commerce entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Publishing Mitgliedschaft nuten. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
+				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Commerce entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Publishing Mitgliedschaft nutzen. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
 				"submit": "Account erstellen",
 				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
