@@ -293,7 +293,10 @@
 				"submit": "Create account",
 				"send": "Congratulations your account was created. Within the next minutes you'll receive an email to activate your user and set a password.",
 				"company": "Company",
-				"contact": "Contact"
+				"contact": "Contact",
+				"field": {
+					"type": "I'm a:"
+				}
 			},
 			"verify": {
 				"title": "Send verification",
@@ -888,6 +891,9 @@
 			}
 		}
 	},
+	"errors": {
+        "customer_wrongregister": "Something went wrong during the registration process please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
+    },
 	"toasts": {
 		"address_saved": "Address saved!",
 		"address_changed": "Address update!",

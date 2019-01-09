@@ -306,7 +306,10 @@
 				"submit": "Account erstellen",
 				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
-				"contact": "Kontaktperson"
+				"contact": "Kontaktperson",
+				"field": {
+					"type": "Ich bin ein:"
+				}
 			},
 			"verify": {
 				"title": "Verifikation zusenden",
@@ -1037,6 +1040,9 @@
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
+	},
+	"errors": {
+		"customer_wrongregister": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat"
 	},
 	"hints": {
 		"wineries": {
