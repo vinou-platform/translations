@@ -571,7 +571,7 @@
 			"create": {
 				"main": "Neuen Wein",
 				"sub": "anlegen",
-				"title":"Wein anlegen",
+				"title": "Wein anlegen",
 				"modaltitle": "Wein hinzufügen"
 			},
 			"edit": {
@@ -581,6 +581,9 @@
 				"placeholder": "z.B. Name, Land, Region",
 				"title": "Nach Wein Suchen",
 				"modaltitle": "Wein suchen"
+			},
+			"export": {
+				"inventory": "Inventurliste herunterladen"
 			}
 		},
 		"fieldset": {

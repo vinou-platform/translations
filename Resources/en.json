@@ -533,6 +533,29 @@
 		}
 	},
 	"wine": {
+		"action": {
+			"add": {
+				"main": "Add wine",
+				"sub": ""
+			},
+			"create": {
+				"main": "Create wine",
+				"sub": "",
+				"title": "Create wine",
+				"modaltitle": "Create wine"
+			},
+			"edit": {
+				"modaltitle": "Edit wine"
+			},
+			"search": {
+				"placeholder": "e.g. name, country, region",
+				"title": "Search for wine",
+				"modaltitle": "Search wine"
+			},
+			"export": {
+				"inventory": "Inventurliste herunterladen"
+			}
+		},
 		"fieldset": {
 			"general":"General",
 			"stock":"Stock",
