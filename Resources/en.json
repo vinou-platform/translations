@@ -408,6 +408,14 @@
 		},
 		"search": {
 			"title": "Search in Vinou-Network"
+		},
+		"errors": {
+			"connect": {
+				"nowinesselected": "No wines select would you import the winery instead?"
+			}
+		},
+		"actions": {
+			"load-more": "Load more ..."
 		}
 	},
 	"winery": {
