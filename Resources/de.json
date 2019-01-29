@@ -600,7 +600,8 @@
 			"composition": "Zusammensetzung",
 			"qrcode":"QR-Code",
 			"bottle": "Flasche",
-			"profile": "Wein-Profil"
+			"profile": "Wein-Profil",
+			"network": "Mein Netzwerk"
 		},
 		"field": {
 			"acid": "Säuregehalt",
@@ -642,6 +643,10 @@
 			"instock":"auf Lager",
 			"maturation": "Ausbau",
 			"name":"Name",
+			"networkvisibility": {
+				"label": "Zeige diesen Wein im Netzwerk",
+				"description": "Wenn dein Wein nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
+			},
 			"nostock":"ausgetrunken",
 			"nostocktext":"Anzeige Text wenn ausgetrunken (z.B. verfügbar ab...)",
 			"place": "Lage",

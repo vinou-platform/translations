@@ -575,7 +575,8 @@
 			"composition": "Composition",
 			"qrcode":"QR-Code",
 			"bottle": "Bottle",
-			"profile": "Wine-Profile"
+			"profile": "Wine-Profile",
+			"network": "My network"
 		},
 		"field": {
 			"acid": "Acid",
@@ -617,6 +618,10 @@
 			"instock":"in stock",
 			"maturation": "Maturation",
 			"name":"Name",
+			"networkvisibility": {
+				"label": "Show this wine on network",
+				"description": "If you don't want your wine to be visible on the Vinou© Network, you can disable all network features here."
+			},
 			"nostock":"sold out",
 			"nostocktext":"alternativ text for sold out",
 			"place": "Place",
