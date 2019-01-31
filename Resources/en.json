@@ -556,7 +556,7 @@
 				"modaltitle": "Edit wine"
 			},
 			"search": {
-				"placeholder": "e.g. name, country, region",
+				"placeholder": "e.g. name, country, region, vintage, articlenumber",
 				"title": "Search for wine",
 				"modaltitle": "Search wine"
 			},

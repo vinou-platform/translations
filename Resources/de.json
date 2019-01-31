@@ -581,7 +581,7 @@
 				"modaltitle": "Wein bearbeiten"
 			},
 			"search": {
-				"placeholder": "z.B. Name, Land, Region",
+				"placeholder": "z.B. Name, Land, Region, Jahrgang, Artikelnummer",
 				"title": "Nach Wein Suchen",
 				"modaltitle": "Wein suchen"
 			},
