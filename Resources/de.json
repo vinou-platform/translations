@@ -649,6 +649,7 @@
 			},
 			"nostock":"ausgetrunken",
 			"nostocktext":"Anzeige Text wenn ausgetrunken (z.B. verfügbar ab...)",
+			"stockunknown": "keine Bestandsinformation verfügbar",
 			"place": "Lage",
 			"price": {
 				"label": "Preis",

@@ -624,6 +624,7 @@
 			},
 			"nostock":"sold out",
 			"nostocktext":"alternativ text for sold out",
+			"stockunknown": "no information available",
 			"place": "Place",
 			"price": {
 				"label": "Price",
