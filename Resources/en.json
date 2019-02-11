@@ -1508,13 +1508,12 @@
 		"nl":"Netherlands",
 		"at":"Austria",
 		"pt":"Portugal",
-		"ru":"Romania",
+		"ro":"Romania",
 		"si":"Slovenia",
 		"es":"Spain",
 		"hu":"Hungary",
 		"cl":"Chile",
-		"sx":"Sint Maarten",
-		"ro":"Romania"
+		"sx":"Sint Maarten"
 	},
 	"languages": {
 		"de": {
@@ -1655,7 +1654,7 @@
 			"9007":"Azores",
 			"9008":"Tagus (Ribatejo)"
 		},
-		"ru": {
+		"ro": {
 			"10000":"Moldova",
 			"10001":"Walachia",
 			"10002":"Muntenia (Great Wallachia)",

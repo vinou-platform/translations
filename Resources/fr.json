@@ -12,9 +12,12 @@
 		"nl":"Pays-Bas",
 		"at":"Autriche",
 		"pt":"Portugal",
-		"ru":"Roumanie",
+		"ro":"Roumanie",
 		"si":"Slovénie",
-		"es":"Espagne"
+		"es":"Espagne",
+		"hu":"Hongrie",
+		"cl":"Chili",
+		"sx":"Saint-Martin"
 	},
 	"languages": {
 		"de": {
@@ -198,6 +201,7 @@
 		"red":"Rouge",
 		"white":"Blanc",
 		"rose":"Rosé",
+		"rotling":"Rotling",
 		"secco": "Secco",
 		"sparkling":"Champagne",
 		"destilate":"Distillats",

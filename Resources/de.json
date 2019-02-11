@@ -1537,13 +1537,12 @@
 		"nl":"Niederlande",
 		"at":"Österreich",
 		"pt":"Portugal",
-		"ru":"Rumänien",
+		"ro":"Rumänien",
 		"si":"Slowenien",
 		"es":"Spanien",
 		"hu":"Ungarn",
 		"cl":"Chile",
-		"sx":"Sint Maarten",
-		"ro":"Rumänien"
+		"sx":"Sint Maarten"
 	},
 	"languages": {
 		"de": {
@@ -1684,7 +1683,7 @@
 			"9007":"Azoren",
 			"9008":"Tejo (Ribatejo)"
 		},
-		"ru": {
+		"ro": {
 			"10000":"Moldova (Moldau)",
 			"10001":"Walachei",
 			"10002":"Muntenia (Große Walachei)",
