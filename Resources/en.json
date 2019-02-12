@@ -1533,6 +1533,41 @@
 		}
 	},
 	"wineregions": {
+		"at": {
+			"8000":"Wachau",
+			"8001":"Kremstal",
+			"8002":"Kamptal",
+			"8003":"Traisental",
+			"8004":"Wagram",
+			"8005":"Weinviertel",
+			"8006":"Carnuntum",
+			"8007":"Thermenregion",
+			"8008":"Lake Neusiedl",
+			"8009":"Leithaberg",
+			"8010":"Rosalia",
+			"8011":"Mittelburgenland",
+			"8012":"Eisenberg",
+			"8013":"Vienna",
+			"8014":"Volcano land Styria",
+			"8015":"South Styria",
+			"8016":"West Styria",
+			"8017":"Bergland"
+		},
+		"be": {
+			"3000":"Hageland (VL)",
+			"3001":"Haspengouw (VL)",
+			"3002":"Heuvelland (VL)",
+			"3003":"Côtes de Sambre et Meuse (WA)"
+		},
+		"bg": {
+			"4000":"Danube plain",
+			"4001":"Black Sea Region",
+			"4002":"Rosental",
+			"4003":"Oberthrakische low level",
+			"4004":"Struma Valley"
+		},
+		"cl": {
+		},
 		"de": {
 			"1000":"Ahr",
 			"1001":"Baden",
@@ -1547,6 +1582,31 @@
 			"1010":"Saale-Unstrut-Region",
 			"1011":"Sachsen",
 			"1012":"Württemberg"
+		},
+		"en": {
+		},
+		"es": {
+			"12000":"Denominación de Origen",
+			"12001":"Vinos de Calidad V.C.P.R.D.",
+			"12002":"Vinos de la Tierra",
+			"12003":"Vino de Mesa",
+			"12004":"Andalusia",
+			"12005":"Asturias",
+			"12006":"Aragon",
+			"12007":"Balearic Islands",
+			"12008":"Basque country",
+			"12009":"Canary Islands",
+			"12010":"Cantabria",
+			"12011":"Castile-La Mancha",
+			"12012":"Castile and Leon",
+			"12013":"Catalonia",
+			"12014":"Extremadura",
+			"12015":"Galicia",
+			"12016":"La Rioja",
+			"12017":"Community of Madrid",
+			"12018":"Murcia",
+			"12019":"Navarra",
+			"12020":"Valencia"
 		},
 		"fr": {
 			"2000":"Alsace",
@@ -1564,19 +1624,6 @@
 			"2013":"Vallée de la Loire",
 			"2014":"Vallée du Rhône"
 		},
-		"be": {
-			"3000":"Hageland (VL)",
-			"3001":"Haspengouw (VL)",
-			"3002":"Heuvelland (VL)",
-			"3003":"Côtes de Sambre et Meuse (WA)"
-		},
-		"bg": {
-			"4000":"Danube plain",
-			"4001":"Black Sea Region",
-			"4002":"Rosental",
-			"4003":"Oberthrakische low level",
-			"4004":"Struma Valley"
-		},
 		"gr": {
 			"5000":"Thrace",
 			"5001":"Macedonia",
@@ -1592,6 +1639,8 @@
 			"5012":"Dodecanese",
 			"5013":"North Aegean",
 			"5014":"Crete"
+		},
+		"hu": {
 		},
 		"it": {
 			"6000":"Abruzzo",
@@ -1615,6 +1664,8 @@
 			"6018":"Umbria",
 			"6019":"Veneto"
 		},
+		"mt": {
+		},
 		"nl": {
 			"7000":"Limburg",
 			"7001":"Achterhoek",
@@ -1622,26 +1673,6 @@
 			"7003":"Betuwe",
 			"7004":"Veluwe",
 			"7005":"Zeeland"
-		},
-		"at": {
-			"8000":"Wachau",
-			"8001":"Kremstal",
-			"8002":"Kamptal",
-			"8003":"Traisental",
-			"8004":"Wagram",
-			"8005":"Weinviertel",
-			"8006":"Carnuntum",
-			"8007":"Thermenregion",
-			"8008":"Lake Neusiedl",
-			"8009":"Leithaberg",
-			"8010":"Rosalia",
-			"8011":"Mittelburgenland",
-			"8012":"Eisenberg",
-			"8013":"Vienna",
-			"8014":"Volcano land Styria",
-			"8015":"South Styria",
-			"8016":"West Styria",
-			"8017":"Bergland"
 		},
 		"pt": {
 			"9000":"Vinho Verde",
@@ -1669,28 +1700,7 @@
 			"11001":"Adriatic coast (Primorska)",
 			"11002":"Save Valley (Posavje)"
 		},
-		"es": {
-			"12000":"Denominación de Origen",
-			"12001":"Vinos de Calidad V.C.P.R.D.",
-			"12002":"Vinos de la Tierra",
-			"12003":"Vino de Mesa",
-			"12004":"Andalusia",
-			"12005":"Asturias",
-			"12006":"Aragon",
-			"12007":"Balearic Islands",
-			"12008":"Basque country",
-			"12009":"Canary Islands",
-			"12010":"Cantabria",
-			"12011":"Castile-La Mancha",
-			"12012":"Castile and Leon",
-			"12013":"Catalonia",
-			"12014":"Extremadura",
-			"12015":"Galicia",
-			"12016":"La Rioja",
-			"12017":"Community of Madrid",
-			"12018":"Murcia",
-			"12019":"Navarra",
-			"12020":"Valencia"
+		"sx": {
 		}
 	},
 	"winetypes":{

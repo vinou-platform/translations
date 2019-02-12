@@ -1526,22 +1526,22 @@
 		"11": "feinfruchtig"
 	},
 	"countries": {
-		"de":"Deutschland",
-		"en":"Großbritanien",
-		"fr":"Frankreich",
+		"at":"Österreich",
 		"be":"Belgien",
 		"bg":"Bulgarien",
+		"cl":"Chile",
+		"de":"Deutschland",
+		"en":"Großbritanien",
+		"es":"Spanien",
+		"fr":"Frankreich",
 		"gr":"Griechenland",
+		"hu":"Ungarn",
 		"it":"Italien",
 		"mt":"Malta",
 		"nl":"Niederlande",
-		"at":"Österreich",
 		"pt":"Portugal",
 		"ro":"Rumänien",
 		"si":"Slowenien",
-		"es":"Spanien",
-		"hu":"Ungarn",
-		"cl":"Chile",
 		"sx":"Sint Maarten"
 	},
 	"languages": {
@@ -1562,6 +1562,41 @@
 		}
 	},
 	"wineregions": {
+		"at": {
+			"8000":"Wachau",
+			"8001":"Kremstal",
+			"8002":"Kamptal",
+			"8003":"Traisental",
+			"8004":"Wagram",
+			"8005":"Weinviertel",
+			"8006":"Carnuntum",
+			"8007":"Thermenregion",
+			"8008":"Neusiedlersee",
+			"8009":"Leithaberg",
+			"8010":"Rosalia",
+			"8011":"Mittelburgenland",
+			"8012":"Eisenberg",
+			"8013":"Wien",
+			"8014":"Vulkanland Steiermark",
+			"8015":"Südsteiermark",
+			"8016":"Weststeiermark",
+			"8017":"Bergland"
+		},
+		"be": {
+			"3000":"Hageland (VL)",
+			"3001":"Haspemgouw (VL)",
+			"3002":"Heuvelland (VL)",
+			"3003":"Côtes de Sambre et Meuse (WA)"
+		},
+		"bg": {
+			"4000":"Donauebene",
+			"4001":"Schwarzmeerregion",
+			"4002":"Rosental",
+			"4003":"Oberthrakische Tiefebene",
+			"4004":"Struma-Tal"
+		},
+		"cl": {
+		},
 		"de": {
 			"1000":"Ahr",
 			"1001":"Baden",
@@ -1576,6 +1611,31 @@
 			"1010":"Saale-Unstrut-Region",
 			"1011":"Sachsen",
 			"1012":"Württemberg"
+		},
+		"en": {
+		},
+		"es": {
+			"12000":"Denominación de Origen",
+			"12001":"Vinos de Calidad V.C.P.R.D.",
+			"12002":"Vinos de la Tierra",
+			"12003":"Vino de Mesa",
+			"12004":"Andalusien",
+			"12005":"Asturien",
+			"12006":"Aragonien",
+			"12007":"Balearen",
+			"12008":"Baskenland",
+			"12009":"Kanarische Inseln",
+			"12010":"Kantabrien",
+			"12011":"Kastilien-La Mancha",
+			"12012":"Kastilien-León",
+			"12013":"Katalonien",
+			"12014":"Extremadura",
+			"12015":"Galicien",
+			"12016":"La Rioja",
+			"12017":"Autonome Gemeinschaft Madrid",
+			"12018":"Murcia",
+			"12019":"Navarra",
+			"12020":"Valencia"
 		},
 		"fr": {
 			"2000":"Alsace",
@@ -1593,19 +1653,6 @@
 			"2013":"Vallée de la Loire",
 			"2014":"Vallée du Rhône"
 		},
-		"be": {
-			"3000":"Hageland (VL)",
-			"3001":"Haspemgouw (VL)",
-			"3002":"Heuvelland (VL)",
-			"3003":"Côtes de Sambre et Meuse (WA)"
-		},
-		"bg": {
-			"4000":"Donauebene",
-			"4001":"Schwarzmeerregion",
-			"4002":"Rosental",
-			"4003":"Oberthrakische Tiefebene",
-			"4004":"Struma-Tal"
-		},
 		"gr": {
 			"5000":"Thrakien",
 			"5001":"Makedonien",
@@ -1621,6 +1668,8 @@
 			"5012":"Dodekanes",
 			"5013":"Nördliche Ägäis",
 			"5014":"Kreta"
+		},
+		"hu": {
 		},
 		"it": {
 			"6000":"Abruzzen",
@@ -1644,6 +1693,8 @@
 			"6018":"Umbrien",
 			"6019":"Venetien"
 		},
+		"mt": {
+		},
 		"nl": {
 			"7000":"Limburg",
 			"7001":"Achterhoek",
@@ -1651,26 +1702,6 @@
 			"7003":"Betuwe",
 			"7004":"Veluwe",
 			"7005":"Zeeland"
-		},
-		"at": {
-			"8000":"Wachau",
-			"8001":"Kremstal",
-			"8002":"Kamptal",
-			"8003":"Traisental",
-			"8004":"Wagram",
-			"8005":"Weinviertel",
-			"8006":"Carnuntum",
-			"8007":"Thermenregion",
-			"8008":"Neusiedlersee",
-			"8009":"Leithaberg",
-			"8010":"Rosalia",
-			"8011":"Mittelburgenland",
-			"8012":"Eisenberg",
-			"8013":"Wien",
-			"8014":"Vulkanland Steiermark",
-			"8015":"Südsteiermark",
-			"8016":"Weststeiermark",
-			"8017":"Bergland"
 		},
 		"pt": {
 			"9000":"Vinho Verde",
@@ -1698,28 +1729,7 @@
 			"11001":"Adria-Küstenland (Primorska)",
 			"11002":"Save-Tal (Posavje)"
 		},
-		"es": {
-			"12000":"Denominación de Origen",
-			"12001":"Vinos de Calidad V.C.P.R.D.",
-			"12002":"Vinos de la Tierra",
-			"12003":"Vino de Mesa",
-			"12004":"Andalusien",
-			"12005":"Asturien",
-			"12006":"Aragonien",
-			"12007":"Balearen",
-			"12008":"Baskenland",
-			"12009":"Kanarische Inseln",
-			"12010":"Kantabrien",
-			"12011":"Kastilien-La Mancha",
-			"12012":"Kastilien-León",
-			"12013":"Katalonien",
-			"12014":"Extremadura",
-			"12015":"Galicien",
-			"12016":"La Rioja",
-			"12017":"Autonome Gemeinschaft Madrid",
-			"12018":"Murcia",
-			"12019":"Navarra",
-			"12020":"Valencia"
+		"sx": {
 		}
 	},
 	"winetypes":{

@@ -37,96 +37,6 @@
 		}
 	},
 	"wineregions": {
-		"de": {
-			"1000":"Ahr",
-			"1001":"Baden",
-			"1002":"Franken",
-			"1003":"Hessische Bergstraße",
-			"1004":"Mittelrhein",
-			"1005":"Mosel",
-			"1006":"Nahe",
-			"1007":"Pfalz",
-			"1008":"Rheingau",
-			"1009":"Rheinhessen",
-			"1010":"Saale-Unstrut-Region",
-			"1011":"Sachsen",
-			"1012":"Württemberg"
-		},
-		"fr": {
-			"2000":"Alsace",
-			"2001":"Armagnac",
-			"2002":"Bordeaux",
-			"2003":"Bourgogne",
-			"2004":"Champagne",
-			"2005":"Cognac",
-			"2006":"Corse",
-			"2007":"Jura",
-			"2009":"Languedoc-Roussillon",
-			"2010":"Provence",
-			"2011":"Savoie",
-			"2012":"Sud-Ouest",
-			"2013":"Vallée de la Loire",
-			"2014":"Vallée du Rhône"
-		},
-		"be": {
-			"3000":"Hageland (VL)",
-			"3001":"Hesbaye (VL)",
-			"3002":"Heuvelland (VL)",
-			"3003":"Côtes de Sambre et Meuse (WA)"
-		},
-		"bg": {
-			"4000":"plaine du Danube",
-			"4001":"Région de la Mer Noire",
-			"4002":"Rosental",
-			"4003":"Oberthrakische bas niveau",
-			"4004":"Struma Valley"
-		},
-		"gr": {
-			"5000":"Thrace",
-			"5001":"Macédoine",
-			"5002":"Épire",
-			"5003":"Thessalie",
-			"5004":"Grèce centrale",
-			"5005":"Grèce centrale",
-			"5006":"Attique",
-			"5007":"Îles ioniennes",
-			"5009":"Péloponnèse",
-			"5010":"Égée méridionale",
-			"5011":"Cyclades",
-			"5012":"Dodécanèse",
-			"5013":"Égée septentrionale",
-			"5014":"Crète"
-		},
-		"it": {
-			"6000":"Abruzzes",
-			"6001":"Vallée d'Aoste",
-			"6002":"Pouilles",
-			"6003":"Basilicate",
-			"6004":"Emilie-Romagne",
-			"6005":"Frioul Vénétie Julienne",
-			"6006":"Calabre",
-			"6007":"Campanie",
-			"6008":"Lazio",
-			"6009":"Ligurie",
-			"6010":"Lombardie",
-			"6011":"marques",
-			"6012":"Molise",
-			"6013":"Piémont",
-			"6014":"Sardaigne",
-			"6015":"Sicile",
-			"6016":"toscane",
-			"6017":"Trentin-Haut-Adige",
-			"6018":"Ombrie",
-			"6019":"Vénétie"
-		},
-		"nl": {
-			"7000":"Limburg",
-			"7001":"achterhoek",
-			"7002":"Village viticole Groesbeek",
-			"7003":"Betuwe",
-			"7004":"Veluwe",
-			"7005":"Zélande"
-		},
 		"at": {
 			"8000":"Wachau",
 			"8001":"Kremstal",
@@ -147,31 +57,37 @@
 			"8016":"Styrie Ouest",
 			"8017":"Bergland"
 		},
-		"pt": {
-			"9000":"Vinho Verde",
-			"9001":"Douro",
-			"9002":"Dão",
-			"9003":"Estremadura",
-			"9004":"Terras do Sado",
-			"9005":"Alentejo",
-			"9006":"Madère",
-			"9007":"Açores",
-			"9008":"Tage (Ribatejo)"
+		"be": {
+			"3000":"Hageland (VL)",
+			"3001":"Hesbaye (VL)",
+			"3002":"Heuvelland (VL)",
+			"3003":"Côtes de Sambre et Meuse (WA)"
 		},
-		"ru": {
-			"10000":"Moldavie",
-			"10001":"Valachie",
-			"10002":"Munténie (Grande Valachie)",
-			"10003":"Olténie (Petite Valachie)",
-			"10004":"Transylvanie (Transylvanie)",
-			"10005":"Dobrogée (Dobroudja)",
-			"10006":"Banat",
-			"10007":"Crişana (zone hurlante)"
+		"bg": {
+			"4000":"plaine du Danube",
+			"4001":"Région de la Mer Noire",
+			"4002":"Rosental",
+			"4003":"Oberthrakische bas niveau",
+			"4004":"Struma Valley"
 		},
-		"si": {
-			"11000":"Drautal (Podravje)",
-			"11001":"Côte adriatique (Primorska)",
-			"11002":"Sauver la vallée (Posavje)"
+		"cl": {
+		},
+		"de": {
+			"1000":"Ahr",
+			"1001":"Baden",
+			"1002":"Franken",
+			"1003":"Hessische Bergstraße",
+			"1004":"Mittelrhein",
+			"1005":"Mosel",
+			"1006":"Nahe",
+			"1007":"Pfalz",
+			"1008":"Rheingau",
+			"1009":"Rheinhessen",
+			"1010":"Saale-Unstrut-Region",
+			"1011":"Sachsen",
+			"1012":"Württemberg"
+		},
+		"en": {
 		},
 		"es": {
 			"12000":"Denominación de Origen",
@@ -195,6 +111,100 @@
 			"12018":"Murcia",
 			"12019":"Navarra",
 			"12020":"Valencia"
+		},
+		"fr": {
+			"2000":"Alsace",
+			"2001":"Armagnac",
+			"2002":"Bordeaux",
+			"2003":"Bourgogne",
+			"2004":"Champagne",
+			"2005":"Cognac",
+			"2006":"Corse",
+			"2007":"Jura",
+			"2009":"Languedoc-Roussillon",
+			"2010":"Provence",
+			"2011":"Savoie",
+			"2012":"Sud-Ouest",
+			"2013":"Vallée de la Loire",
+			"2014":"Vallée du Rhône"
+		},
+		"gr": {
+			"5000":"Thrace",
+			"5001":"Macédoine",
+			"5002":"Épire",
+			"5003":"Thessalie",
+			"5004":"Grèce centrale",
+			"5005":"Grèce centrale",
+			"5006":"Attique",
+			"5007":"Îles ioniennes",
+			"5009":"Péloponnèse",
+			"5010":"Égée méridionale",
+			"5011":"Cyclades",
+			"5012":"Dodécanèse",
+			"5013":"Égée septentrionale",
+			"5014":"Crète"
+		},
+		"hu": {
+		},
+		"it": {
+			"6000":"Abruzzes",
+			"6001":"Vallée d'Aoste",
+			"6002":"Pouilles",
+			"6003":"Basilicate",
+			"6004":"Emilie-Romagne",
+			"6005":"Frioul Vénétie Julienne",
+			"6006":"Calabre",
+			"6007":"Campanie",
+			"6008":"Lazio",
+			"6009":"Ligurie",
+			"6010":"Lombardie",
+			"6011":"marques",
+			"6012":"Molise",
+			"6013":"Piémont",
+			"6014":"Sardaigne",
+			"6015":"Sicile",
+			"6016":"toscane",
+			"6017":"Trentin-Haut-Adige",
+			"6018":"Ombrie",
+			"6019":"Vénétie"
+		},
+		"mt": {
+		},
+		"nl": {
+			"7000":"Limburg",
+			"7001":"achterhoek",
+			"7002":"Village viticole Groesbeek",
+			"7003":"Betuwe",
+			"7004":"Veluwe",
+			"7005":"Zélande"
+		},
+		"pt": {
+			"9000":"Vinho Verde",
+			"9001":"Douro",
+			"9002":"Dão",
+			"9003":"Estremadura",
+			"9004":"Terras do Sado",
+			"9005":"Alentejo",
+			"9006":"Madère",
+			"9007":"Açores",
+			"9008":"Tage (Ribatejo)"
+		},
+		"ro": {
+			"10000":"Moldavie",
+			"10001":"Valachie",
+			"10002":"Munténie (Grande Valachie)",
+			"10003":"Olténie (Petite Valachie)",
+			"10004":"Transylvanie (Transylvanie)",
+			"10005":"Dobrogée (Dobroudja)",
+			"10006":"Banat",
+			"10007":"Crişana (zone hurlante)"
+		},
+		"si": {
+			"11000":"Drautal (Podravje)",
+			"11001":"Côte adriatique (Primorska)",
+			"11002":"Sauver la vallée (Posavje)"
+		},
+		"sx": {
 		}
 	},
 	"winetypes":{
