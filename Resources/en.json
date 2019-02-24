@@ -576,7 +576,8 @@
 			"qrcode":"QR-Code",
 			"bottle": "Bottle",
 			"profile": "Wine-Profile",
-			"network": "My network"
+			"network": "My network",
+			"shopsettings": "Shop settings"
 		},
 		"field": {
 			"acid": "Acid",

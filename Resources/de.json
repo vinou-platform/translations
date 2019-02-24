@@ -601,7 +601,8 @@
 			"qrcode":"QR-Code",
 			"bottle": "Flasche",
 			"profile": "Wein-Profil",
-			"network": "Mein Netzwerk"
+			"network": "Mein Netzwerk",
+			"shopsettings": "Shop-Einstellungen"
 		},
 		"field": {
 			"acid": "Säuregehalt",
