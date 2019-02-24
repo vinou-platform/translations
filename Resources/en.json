@@ -577,7 +577,7 @@
 			"bottle": "Bottle",
 			"profile": "Wine-Profile",
 			"network": "My network",
-			"shopsettings": "Shop settings"
+			"shopsettings": "Website and shop settings"
 		},
 		"field": {
 			"acid": "Acid",
@@ -618,6 +618,7 @@
 			},
 			"inshop":"Im Shop anzeigen",
 			"instock":"in stock",
+			"inwinelist":"Show in winelist",
 			"maturation": "Maturation",
 			"name":"Name",
 			"networkvisibility": {

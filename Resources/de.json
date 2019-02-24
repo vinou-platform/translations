@@ -602,7 +602,7 @@
 			"bottle": "Flasche",
 			"profile": "Wein-Profil",
 			"network": "Mein Netzwerk",
-			"shopsettings": "Shop-Einstellungen"
+			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
 			"acid": "Säuregehalt",
@@ -643,6 +643,7 @@
 			},
 			"inshop":"Im Shop anzeigen",
 			"instock":"auf Lager",
+			"inwinelist":"In Weinliste anzeigen",
 			"maturation": "Ausbau",
 			"name":"Name",
 			"networkvisibility": {
