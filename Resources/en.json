@@ -615,6 +615,7 @@
 					"notfound": "Image could not be resolved"
 				}
 			},
+			"inshop":"Im Shop anzeigen",
 			"instock":"in stock",
 			"maturation": "Maturation",
 			"name":"Name",
@@ -652,9 +653,11 @@
 			"region":"Region",
 			"shoplink":"Shoplink",
 			"shoplink_active":"activate Shoplink",
+			"sorting":"Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
 			"taste": "Taste",
 			"terroir": "Terroir",
+			"topseller": "Topseller",
 			"type":"Type",
 			"vegan": "Vegan",
 			"vintage": "Vintage",

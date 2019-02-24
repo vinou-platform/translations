@@ -640,6 +640,7 @@
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"inshop":"Im Shop anzeigen",
 			"instock":"auf Lager",
 			"maturation": "Ausbau",
 			"name":"Name",
@@ -677,9 +678,11 @@
 			"region":"Anbauregion",
 			"shoplink":"Link zum Shop",
 			"shoplink_active":"Link zum Shop aktiv",
+			"sorting":"Manueller Sortierindex (z.B. für den Shop)",
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
+			"topseller": "Topseller",
 			"type":"Typ",
 			"vegan": "Vegan",
 			"vintage": "Jahrgang",
