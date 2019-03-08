@@ -841,7 +841,7 @@
 			"fax":"Fax",
 			"active":"active",
 			"image":"Logo",
-			"rebate":"Rebate",
+			"rebate":"Rebate (in %)",
 			"type": {
 				"label": "Type",
 				"private": "Private",
@@ -852,7 +852,7 @@
 			"bic": "BIC",
 			"invoice_type": "Invoice type",
 			"term_of_payment": "Term of payment (days)",
-			"discount": "Discount",
+			"discount": "Discount (in %)",
 			"term_of_discount": "Term of discount (days)"
 		}
 	},

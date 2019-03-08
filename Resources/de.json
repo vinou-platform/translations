@@ -869,7 +869,7 @@
 			"fax":"Fax",
 			"active":"aktiv",
 			"image":"Logo",
-			"rebate":"Rabatt",
+			"rebate":"Rabatt (in %)",
 			"type": {
 				"label": "Typ",
 				"private": "Privatperson",
@@ -880,7 +880,7 @@
 			"bic": "BIC",
 			"invoice_type": "Rechnungstyp",
 			"term_of_payment": "Zahlungsziel (in Tagen)",
-			"discount": "Skonto",
+			"discount": "Skonto (in %)",
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
 		}
 	},
