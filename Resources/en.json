@@ -821,7 +821,9 @@
 			"general": "General",
 			"contact": "Contact data",
 			"settings": "Settings",
-			"addresses": "Additional addresses"
+			"addresses": "Additional addresses",
+			"bankingdetails": "Banking details",
+			"paymentsettings": "Method of payment"
 		},
 		"field": {
 			"name":"Complete name",
@@ -844,8 +846,14 @@
 				"label": "Type",
 				"private": "Private",
 				"company": "Company"
-
-			}
+			},
+			"bank": "Bank",
+			"iban": "IBAN",
+			"bic": "BIC",
+			"invoice_type": "Invoice type",
+			"term_of_payment": "Term of payment (days)",
+			"discount": "Discount",
+			"term_of_discount": "Term of discount (days)"
 		}
 	},
 	"address": {

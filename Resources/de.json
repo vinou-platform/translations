@@ -849,7 +849,9 @@
 			"general": "Allgemeines",
 			"contact": "Kontaktdaten",
 			"settings": "Einstellungen",
-			"addresses": "Weitere Adressen"
+			"addresses": "Weitere Adressen",
+			"bankingdetails": "Bankverbindung",
+			"paymentsettings": "Zahlungsmodalitäten"
 		},
 		"field": {
 			"name":"Vollständiger Name",
@@ -872,8 +874,14 @@
 				"label": "Typ",
 				"private": "Privatperson",
 				"company": "Firmenkunde"
-
-			}
+			},
+			"bank": "Kreditinstitut",
+			"iban": "IBAN",
+			"bic": "BIC",
+			"invoice_type": "Rechnungstyp",
+			"term_of_payment": "Zahlungsziel (in Tagen)",
+			"discount": "Skonto",
+			"term_of_discount": "Skonto Zeitraum (in Tagen)"
 		}
 	},
 	"address": {
