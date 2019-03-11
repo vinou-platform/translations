@@ -516,7 +516,11 @@
 				"sub": "anlegen"
 			},
 			"create": {
-				"title" : "Händler anlegen"
+				"title" : "Händler anlegen",
+				"modaltitle": "Händler hinzufügen"
+			},
+			"edit": {
+				"modaltitle": "Händler bearbeiten"
 			},
 			"search": {
 				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"

@@ -491,7 +491,11 @@
 				"sub": "merchant"
 			},
 			"create": {
-				"title" : "Create merchant"
+				"title" : "Create merchant",
+				"modaltitle": "Create merchant"
+			},
+			"edit": {
+				"modaltitle": "Edit merchant"
 			},
 			"search": {
 				"placeholder" : "e.g. company, contact or address"
