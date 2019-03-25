@@ -20,6 +20,16 @@
 		"merchants":"Merchants",
 		"products":"Products"
 	},
+	"general": {
+		"fieldsets": {
+			"general": "General",
+			"settings": "Settings"
+		},
+		"fields": {
+			"empty": "Please select",
+			"required": "Required"
+		}
+	},
 	"tabs": {
 		"all": {
 			"general": "General",
@@ -846,11 +856,7 @@
 			"active":"active",
 			"image":"Logo",
 			"rebate":"Rebate (in %)",
-			"type": {
-				"label": "Type",
-				"private": "Private",
-				"company": "Company"
-			},
+			"type": "Type",
 			"bank": "Bank",
 			"iban": "IBAN",
 			"bic": "BIC",
@@ -858,6 +864,13 @@
 			"term_of_payment": "Term of payment (days)",
 			"discount": "Discount (in %)",
 			"term_of_discount": "Term of discount (days)"
+		},
+		"types": {
+			"private": "Private",
+			"gastronomy": "Gastronomy",
+			"specializedtrade": "Specialized trade",
+			"foodretailing": "Food retailing",
+			"export": "Export"
 		}
 	},
 	"address": {
