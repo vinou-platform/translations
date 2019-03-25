@@ -846,11 +846,6 @@
 			"active":"active",
 			"image":"Logo",
 			"rebate":"Rebate (in %)",
-			"type": {
-				"label": "Type",
-				"private": "Private",
-				"company": "Company"
-			},
 			"type": "Type",
 			"types": {
 				"private": "Private",
