@@ -851,6 +851,14 @@
 				"private": "Private",
 				"company": "Company"
 			},
+			"type": "Type",
+			"types": {
+				"private": "Private",
+				"gastronomy": "Gastronomy",
+				"specializedtrade": "Specialized trade",
+				"foodretailing": "Food retailing",
+				"export": "Export"
+			},
 			"bank": "Bank",
 			"iban": "IBAN",
 			"bic": "BIC",

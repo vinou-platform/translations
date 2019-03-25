@@ -874,10 +874,13 @@
 			"active":"aktiv",
 			"image":"Logo",
 			"rebate":"Rabatt (in %)",
-			"type": {
-				"label": "Typ",
+			"type": "Typ",
+			"types": {
 				"private": "Privatperson",
-				"company": "Firmenkunde"
+				"gastronomy": "Gastronomie",
+				"specializedtrade": "Fachhandel",
+				"foodretailing": "Lebensmitteleinzelhandel",
+				"export": "Export"
 			},
 			"bank": "Kreditinstitut",
 			"iban": "IBAN",
