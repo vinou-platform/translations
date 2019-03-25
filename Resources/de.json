@@ -20,6 +20,16 @@
 		"merchants":"Händler",
 		"products":"Produkte"
 	},
+	"general": {
+		"fieldsets": {
+			"general": "Allgemein",
+			"settings": "Einstellungen"
+		},
+		"fields": {
+			"empty": "Bitte wählen",
+			"required": "Pflichtfeld"
+		}
+	},
 	"tabs": {
 		"all": {
 			"general": "Allgemein",
@@ -875,13 +885,6 @@
 			"image":"Logo",
 			"rebate":"Rabatt (in %)",
 			"type": "Typ",
-			"types": {
-				"private": "Privatperson",
-				"gastronomy": "Gastronomie",
-				"specializedtrade": "Fachhandel",
-				"foodretailing": "Lebensmitteleinzelhandel",
-				"export": "Export"
-			},
 			"bank": "Kreditinstitut",
 			"iban": "IBAN",
 			"bic": "BIC",
@@ -889,6 +892,13 @@
 			"term_of_payment": "Zahlungsziel (in Tagen)",
 			"discount": "Skonto (in %)",
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+		},
+		"types": {
+			"private": "Privatperson",
+			"gastronomy": "Gastronomie",
+			"specializedtrade": "Fachhandel",
+			"foodretailing": "Lebensmitteleinzelhandel",
+			"export": "Export"
 		}
 	},
 	"address": {
