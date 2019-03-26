@@ -584,6 +584,7 @@
 			"grapetype":"Grapetypes",
 			"region":"Regional",
 			"facts":"Facts & Numbers",
+			"prices": "Prices",
 			"analyse":"Analyse",
 			"additional":"Description",
 			"composition": "Composition",
@@ -646,6 +647,9 @@
 			"price": {
 				"label": "Price",
 				"none": "not specified"
+			},
+			"prices": {
+				"standard": "Default price"
 			},
 			"qrcode":"QR-Code",
 			"qrcode_redirect":"QR-Code Redirect",
@@ -857,6 +861,7 @@
 			"image":"Logo",
 			"rebate":"Rebate (in %)",
 			"type": "Type",
+			"pricerange": "Price range",
 			"bank": "Bank",
 			"iban": "IBAN",
 			"bic": "BIC",
@@ -908,6 +913,26 @@
 			}
 		}
 	},
+	"pricerange": {
+		"empty": "No price ranges defined.",
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "price range"
+			}
+		},
+		"fields": {
+			"clients": "Clients"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this price range?"
+		},
+		"toasts": {
+			"created": "Price range created!",
+			"changed": "Price range changed!",
+			"deleted": "Price range deleted!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account settings",
@@ -938,6 +963,10 @@
 		"packages": {
 			"title": "Package options",
 			"description": "Configure your package options regarding count of bottles or weight of an order. This is really important to use your webshop."
+		},
+		"priceranges": {
+			"title": "Preis ranges",
+			"description": "Configure your price ranges to setup individual client prices."
 		},
 		"technical": {
 			"title": "Technology",

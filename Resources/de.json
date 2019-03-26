@@ -609,6 +609,7 @@
 			"grapetype":"Rebsorten",
 			"region":"Regionales",
 			"facts":"Daten & Fakten",
+			"prices": "Preise",
 			"analyse":"Analyse",
 			"additional":"Beschreibung",
 			"composition": "Zusammensetzung",
@@ -671,6 +672,18 @@
 			"price": {
 				"label": "Preis",
 				"none": "keine Angabe"
+			},
+			"prices": {
+				"standard": "Standardpreis",
+				"action": {
+					"create": {
+						"main": "Neuen Preis",
+						"sub": "erstellen"
+					},
+					"delete": {
+						"confirm": "Möchtest du diesen Preis wirklich löschen?"
+					}
+				}
 			},
 			"qrcode":"QR-Code",
 			"qrcode_redirect":"QR-Code Redirect",
@@ -885,6 +898,7 @@
 			"image":"Logo",
 			"rebate":"Rabatt (in %)",
 			"type": "Typ",
+			"pricerange": "Preisklasse",
 			"bank": "Kreditinstitut",
 			"iban": "IBAN",
 			"bic": "BIC",
@@ -936,6 +950,26 @@
 			}
 		}
 	},
+	"pricerange": {
+		"empty": "Derzeit sind keine Preisklassen angelegt.",
+		"actions": {
+			"create": {
+				"main": "Neue Preisklasse",
+				"sub": "anlegen"
+			}
+		},
+		"fields": {
+			"clients": "Kunden"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Preisklasse wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Preisklasse angelegt!",
+			"changed": "Preisklasse geändert!",
+			"deleted": "Preisklasse gelöscht!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
@@ -966,6 +1000,10 @@
 		"packages": {
 			"title": "Versandoptionen",
 			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. um den Deinen Vinou-Shop zu betreiben."
+		},
+		"priceranges": {
+			"title": "Preisklassen",
+			"description": "Konfiguriere Deine Preisklassen um individuelle Kundenpreise festlegen zu können."
 		},
 		"technical": {
 			"title": "Technik",
