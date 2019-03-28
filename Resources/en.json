@@ -914,12 +914,49 @@
 		}
 	},
 	"packagingunit": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "packaging unit"
+			}
+		},
 		"field": {
-			"capacity": "Capacity",
-			"width": "Width",
-			"height": "Height",
-			"length": "Length",
-			"weight": "Weight"
+			"capacity": {
+				"label": "Capacity (Bottles)",
+				"unit": "Bottles"
+			},
+			"width": {
+				"label": "Width",
+				"unit": "(in cm)"
+			},
+			"height": {
+				"label": "Height",
+				"unit": "(in cm)"
+			},
+			"length": {
+				"label": "Length",
+				"unit": "(in cm)"
+			},
+			"weight": {
+				"label": "Weight",
+				"unit": "(in g)"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this packaging unit?"
+		},
+		"toasts": {
+			"created": "Packaging unit created",
+			"changed": "Packaging unit changed",
+			"deleted": "Packaging unit deleted"
+		},
+		"views": {
+			"edit": {
+				"title": "Edit packaging unit"
+			},
+			"gallery": {
+				"empty": "No packaging units exists"
+			}
 		}
 	},
 	"pricerange": {

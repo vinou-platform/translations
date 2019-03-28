@@ -958,13 +958,39 @@
 			}
 		},
 		"field": {
-			"capacity": "Füllmenge",
-			"width": "Breite",
-			"height": "Höhe",
-			"length": "Tiefe",
-			"weight": "Leergewicht"
+			"capacity": {
+				"label": "Füllmenge (Flaschen)",
+				"unit": "Flaschen"
+			},
+			"width": {
+				"label": "Breite",
+				"unit": "(in cm)"
+			},
+			"height": {
+				"label": "Höhe",
+				"unit": "(in cm)"
+			},
+			"length": {
+				"label": "Tiefe",
+				"unit": "(in cm)"
+			},
+			"weight": {
+				"label": "Leergewicht",
+				"unit": "(in g)"
+			}
+		},
+		"dialogs": {
+			"delete": "Wollen Sie die Versandeinheit wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Versandeinheit angelegt",
+			"changed": "Versandeinheit geändert",
+			"deleted": "Versandeinheit gelöscht"
 		},
 		"views": {
+			"edit": {
+				"title": "Versandeinheit editieren"
+			},
 			"gallery": {
 				"empty": "Keine Versandeinheiten angelegt"
 			}
