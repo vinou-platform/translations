@@ -919,6 +919,26 @@
 			}
 		}
 	},
+	"packagingunit": {
+		"actions": {
+			"create": {
+				"main": "Neue Versandeinheit",
+				"sub": "anlegen"
+			}
+		},
+		"field": {
+			"capacity": "Füllmenge",
+			"width": "Breite",
+			"height": "Höhe",
+			"length": "Tiefe",
+			"weight": "Leergewicht"
+		},
+		"views": {
+			"gallery": {
+				"empty": "Keine Versandeinheiten angelegt"
+			}
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
@@ -948,7 +968,11 @@
 		},
 		"packages": {
 			"title": "Versandoptionen",
-			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. um den Deinen Vinou-Shop zu betreiben."
+			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig um den Deinen Vinou-Shop zu betreiben."
+		},
+		"packagingunits": {
+			"title": "Versandeinheiten",
+			"description": "Konfiguriere die Kartons die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
 		},
 		"technical": {
 			"title": "Technik",

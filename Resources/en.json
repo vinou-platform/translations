@@ -891,6 +891,15 @@
 			}
 		}
 	},
+	"packagingunit": {
+		"field": {
+			"capacity": "Capacity",
+			"width": "Width",
+			"height": "Height",
+			"length": "Length",
+			"weight": "Weight"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account settings",
@@ -921,6 +930,10 @@
 		"packages": {
 			"title": "Package options",
 			"description": "Configure your package options regarding count of bottles or weight of an order. This is really important to use your webshop."
+		},
+		"packagingunits": {
+			"title": "Packaging units",
+			"description": "Configure your boxes to send your wines that will be used for shipment. These boxes will be used also to calculate your shipment labels."
 		},
 		"technical": {
 			"title": "Technology",
