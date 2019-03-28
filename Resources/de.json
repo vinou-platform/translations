@@ -20,6 +20,16 @@
 		"merchants":"Händler",
 		"products":"Produkte"
 	},
+	"general": {
+		"fieldsets": {
+			"general": "Allgemein",
+			"settings": "Einstellungen"
+		},
+		"fields": {
+			"empty": "Bitte wählen",
+			"required": "Pflichtfeld"
+		}
+	},
 	"tabs": {
 		"all": {
 			"general": "Allgemein",
@@ -516,7 +526,11 @@
 				"sub": "anlegen"
 			},
 			"create": {
-				"title" : "Händler anlegen"
+				"title" : "Händler anlegen",
+				"modaltitle": "Händler hinzufügen"
+			},
+			"edit": {
+				"modaltitle": "Händler bearbeiten"
 			},
 			"search": {
 				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
@@ -595,6 +609,7 @@
 			"grapetype":"Rebsorten",
 			"region":"Regionales",
 			"facts":"Daten & Fakten",
+			"prices": "Preise",
 			"analyse":"Analyse",
 			"additional":"Beschreibung",
 			"composition": "Zusammensetzung",
@@ -657,6 +672,18 @@
 			"price": {
 				"label": "Preis",
 				"none": "keine Angabe"
+			},
+			"prices": {
+				"standard": "Standardpreis",
+				"action": {
+					"create": {
+						"main": "Neuen Preis",
+						"sub": "erstellen"
+					},
+					"delete": {
+						"confirm": "Möchtest du diesen Preis wirklich löschen?"
+					}
+				}
 			},
 			"qrcode":"QR-Code",
 			"qrcode_redirect":"QR-Code Redirect",
@@ -870,11 +897,8 @@
 			"active":"aktiv",
 			"image":"Logo",
 			"rebate":"Rabatt (in %)",
-			"type": {
-				"label": "Typ",
-				"private": "Privatperson",
-				"company": "Firmenkunde"
-			},
+			"type": "Typ",
+			"pricerange": "Preisklasse",
 			"bank": "Kreditinstitut",
 			"iban": "IBAN",
 			"bic": "BIC",
@@ -882,6 +906,13 @@
 			"term_of_payment": "Zahlungsziel (in Tagen)",
 			"discount": "Skonto (in %)",
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+		},
+		"types": {
+			"private": "Privatperson",
+			"gastronomy": "Gastronomie",
+			"specializedtrade": "Fachhandel",
+			"foodretailing": "Lebensmitteleinzelhandel",
+			"export": "Export"
 		}
 	},
 	"address": {
@@ -939,6 +970,26 @@
 			}
 		}
 	},
+	"pricerange": {
+		"empty": "Derzeit sind keine Preisklassen angelegt.",
+		"actions": {
+			"create": {
+				"main": "Neue Preisklasse",
+				"sub": "anlegen"
+			}
+		},
+		"fields": {
+			"clients": "Kunden"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Preisklasse wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Preisklasse angelegt!",
+			"changed": "Preisklasse geändert!",
+			"deleted": "Preisklasse gelöscht!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
@@ -973,6 +1024,10 @@
 		"packagingunits": {
 			"title": "Versandeinheiten",
 			"description": "Konfiguriere die Kartons die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
+		},
+		"priceranges": {
+			"title": "Preisklassen",
+			"description": "Konfiguriere Deine Preisklassen um individuelle Kundenpreise festlegen zu können."
 		},
 		"technical": {
 			"title": "Technik",
