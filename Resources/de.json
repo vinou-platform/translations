@@ -996,6 +996,19 @@
 			}
 		}
 	},
+	"shipment": {
+		"field": {
+			"defaultcarrier": "Standard-Versanddienstleister"
+		},
+		"toasts": {
+			"changed": "Standard-Versanddienstleister geändert"
+		},
+		"views": {
+			"edit": {
+				"title": "Versandeinstellungen editieren"
+			}
+		}
+	},
 	"pricerange": {
 		"empty": "Derzeit sind keine Preisklassen angelegt.",
 		"actions": {
@@ -1054,6 +1067,10 @@
 		"priceranges": {
 			"title": "Preisklassen",
 			"description": "Konfiguriere Deine Preisklassen um individuelle Kundenpreise festlegen zu können."
+		},
+		"shipment": {
+			"title": "Versandeinstellungen",
+			"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
 		},
 		"technical": {
 			"title": "Technik",

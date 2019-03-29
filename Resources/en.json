@@ -959,6 +959,19 @@
 			}
 		}
 	},
+	"shipment": {
+		"field": {
+			"defaultcarrier": "Default carrier"
+		},
+		"toasts": {
+			"changed": "Default carrier changed"
+		},
+		"views": {
+			"edit": {
+				"title": "Edit shipment settings"
+			}
+		}
+	},
 	"pricerange": {
 		"empty": "No price ranges defined.",
 		"actions": {
@@ -1017,6 +1030,10 @@
 		"priceranges": {
 			"title": "Preis ranges",
 			"description": "Configure your price ranges to setup individual client prices."
+		},
+		"shipment": {
+			"title": "Shipment settings",
+			"description": "Configure shipment e.g. to select a default shipment carrier."
 		},
 		"technical": {
 			"title": "Technology",
