@@ -27,7 +27,15 @@
 		},
 		"fields": {
 			"empty": "Bitte wählen",
-			"required": "Pflichtfeld"
+			"required": "Pflichtfeld",
+			"range": {
+				"from": "von",
+				"of": "ab",
+				"to": "bis"
+			},
+			"price": {
+				"none": "kostenfrei"
+			}
 		}
 	},
 	"tabs": {
@@ -65,8 +73,6 @@
 	"users_modal_delete":"Möchten Sie diesen Benutzer wirklich löschen?",
 	"token_modal_delete": "Möchten Sie diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
-	"package_modal_delete":"Möchten Sie diese Versandoption wirklich löschen?",
-	"package_modal_rangeerror":"Diese Einstellung kollidiert mit einer anderen Versandoption!",
 	"address_modal_delete":"Möchten Sie diese Adresse wirklich löschen?",
 	"orders_modal_cancel":"Möchten Sie diese Bestellung wirklich stornieren?",
 	"orders_modal_create":"Sie erfassen eine Bestellung was möchten sie tun?",
@@ -181,14 +187,6 @@
 	"db_tokens_mode_dev":"Entwicklung (Hostüberprüfung aus)",
 	"db_tokens_mode_live":"Live (Hostüberprüfung an)",
 	"db_tokens_mode_hint": "<b>ACHTUNG:</b> Solange die Schnittstelle sich im <b>Entwicklungsmodus</b> befindet können mit Hilfe des Tokens und der Authid Daten unabhängig vom Zielserver abgefragt werden.",
-	"db_packages_createtitle":"Versandoption erstellen",
-	"db_packages_edittitle":"Versandoption bearbeiten",
-	"db_packages_type":"Typ",
-	"db_packages_type_bottles":"Nach Flaschenanzahl",
-	"db_packages_type_weight":"Nach Gewicht (in g)",
-	"db_packages_min":"Min",
-	"db_packages_max":"Max",
-	"db_packages_price":"Preis",
 	"db_payments_createtitle":"Zahlungseingang anlegen",
 	"db_payments_edittitle":"Zahlungseingang bearbeiten",
 	"db_payments_type":"Typ",
@@ -950,6 +948,44 @@
 			}
 		}
 	},
+	"packaging": {
+		"actions": {
+			"create": {
+				"main": "Versandoption",
+				"sub": "erstellen"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Versandoption erstellen"
+			},
+			"edit": {
+				"title": "Versandoption bearbeiten"
+			},
+			"gallery": {
+				"empty": "Keine Versandoptionen vorhanden"
+			}
+		},
+		"dialogs": {
+			"delete":"Möchten Sie diese Versandoption wirklich löschen?"
+		},
+		"toasts": {
+			"created":"Versandoption erstellt",
+			"changed":"Versandoption geändert",
+			"deleted":"Versandoption gelöscht",
+			"rangeerror":"Diese Einstellung kollidiert mit einer anderen Versandoption!"
+		},
+		"field": {
+			"type": "Typ",
+			"min": "Min",
+			"max": "Max",
+			"price": "Preis"
+		},
+		"types": {
+			"bottles": "Flaschen",
+			"weight": "Gramm"
+		}
+	},
 	"packagingunit": {
 		"actions": {
 			"create": {
@@ -1056,7 +1092,7 @@
 			"title": "Zahlungsmethoden",
 			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten."
 		},
-		"packages": {
+		"packagings": {
 			"title": "Versandoptionen",
 			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig um den Deinen Vinou-Shop zu betreiben."
 		},

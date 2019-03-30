@@ -27,7 +27,15 @@
 		},
 		"fields": {
 			"empty": "Please select",
-			"required": "Required"
+			"required": "Required",
+			"range": {
+				"from": "from",
+				"of": "from",
+				"to": "to"
+			},
+			"price": {
+				"none": "free of charge"
+			}
 		}
 	},
 	"tabs": {
@@ -59,8 +67,6 @@
 	"category_modal_delete":"Do you really want to delete this category?",
 	"customers_modal_delete":"Do you really want to delete this customer?",
 	"users_modal_delete":"Do you really want to delete this user?",
-	"package_modal_delete":"Do you really want to delete this package option?",
-	"package_modal_rangeerror":"This settings conflicts with an other package option!",
 	"address_modal_delete":"Do you really want to delete this address?",
 	"orders_modal_cancel":"Do you really want to cancel this order?",
 	"orders_modal_create":"You're creating an order, what do you want to do?",
@@ -168,14 +174,6 @@
 	"db_tokens_mode_dev":"Development (dont validate host)",
 	"db_tokens_mode_live":"Live (validate host)",
 	"db_tokens_mode_hint": "<b>Warning:</b> If connection is set to <b>Development</b>-Mode each server that has token and authid can access your winedata.",
-	"db_packages_createtitle":"Create Package",
-	"db_packages_edittitle":"Edit Package",
-	"db_packages_type":"Type",
-	"db_packages_type_bottles":"Count bottles",
-	"db_packages_type_weight":"Count weight (in g)",
-	"db_packages_min":"min",
-	"db_packages_max":"max",
-	"db_packages_price":"price",
 	"db_payments_createtitle":"Create payment receipe",
 	"db_payments_edittitle":"Create payment receipe",
 	"db_payments_type":"Type",
@@ -913,6 +911,44 @@
 			}
 		}
 	},
+	"packaging": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "packaging"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Create packaging"
+			},
+			"edit": {
+				"title": "Edit packaging"
+			},
+			"gallery": {
+				"empty": "No packagings found"
+			}
+		},
+		"dialogs": {
+			"delete": "Do really want to delete this packaging?"
+		},
+		"toasts": {
+			"created":"Packaging created",
+			"changed":"Packaging changed",
+			"deleted":"Packaging deleted",
+			"rangeerror":"Packaging collides with another packaging!"
+		},
+		"field": {
+			"type": "Type",
+			"min": "Min",
+			"max": "Max",
+			"price": "Price"
+		},
+		"types": {
+			"bottles": "Bottles",
+			"weight": "Gramm"
+		}
+	},
 	"packagingunit": {
 		"actions": {
 			"create": {
@@ -1019,7 +1055,7 @@
 			"title": "Payment methods",
 			"description": "With different payment methods you're able to make your webshop more attractive to your clients."
 		},
-		"packages": {
+		"packagings": {
 			"title": "Package options",
 			"description": "Configure your package options regarding count of bottles or weight of an order. This is really important to use your webshop."
 		},
