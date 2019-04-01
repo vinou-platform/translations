@@ -997,14 +997,27 @@
 	},
 	"shipment": {
 		"field": {
-			"defaultcarrier": "Default carrier"
+			"carrier": "Carrier",
+			"service": "Type of shipment",
+			"defaultcarrier": "Default carrier",
+			"onlyonecarrier": "Use carrier exclusively?"
 		},
 		"toasts": {
-			"changed": "Default carrier changed"
+			"send": "Shipment registered by carrier",
+			"changed": "Changed default carrier"
 		},
 		"views": {
 			"edit": {
 				"title": "Edit shipment settings"
+			},
+			"create": {
+				"title": "Send order"
+			},
+			"shipments": {
+				"title": "Shipments"
+			},
+			"gallery": {
+				"empty": "No shipments exists"
 			}
 		}
 	},

@@ -1034,14 +1034,27 @@
 	},
 	"shipment": {
 		"field": {
-			"defaultcarrier": "Standard-Versanddienstleister"
+			"carrier": "Versanddienstleister",
+			"service": "Sendungsart",
+			"defaultcarrier": "Standard-Versanddienstleister",
+			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?"
 		},
 		"toasts": {
+			"send": "Sendungen bei Versanddienstleister erfasst",
 			"changed": "Standard-Versanddienstleister geändert"
 		},
 		"views": {
 			"edit": {
 				"title": "Versandeinstellungen editieren"
+			},
+			"create": {
+				"title": "Bestellung versenden"
+			},
+			"shipments": {
+				"title": "Sendungen"
+			},
+			"gallery": {
+				"empty": "Keine Sendungsdaten vorhanden"
 			}
 		}
 	},
