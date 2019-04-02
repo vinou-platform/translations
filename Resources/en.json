@@ -455,6 +455,7 @@
 		},
 		"fieldset": {
 			"general": "General",
+			"contact": "Contact",
 			"description": "Description",
 			"wines": "Weine"
 		},
