@@ -939,6 +939,13 @@
 		}
 	},
 	"order": {
+		"views": {
+			"view": {
+				"tabs": {
+					"shipments": "Sendungen"
+				}
+			}
+		},
 		"action": {
 			"create": {
 				"main": "Neue Bestellung",

@@ -902,6 +902,13 @@
 		}
 	},
 	"order": {
+		"views": {
+			"view": {
+				"tabs": {
+					"shipments": "Shipments"
+				}
+			}
+		},
 		"action": {
 			"create": {
 				"main": "Create new",
