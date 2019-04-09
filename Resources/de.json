@@ -1045,7 +1045,12 @@
 			"carrier": "Versanddienstleister",
 			"service": "Sendungsart",
 			"defaultcarrier": "Standard-Versanddienstleister",
-			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?"
+			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
+			"shipcloudapikey": {
+				"label": "ShipCloud API-Schlüssel",
+				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst du ihn hier verbinden.",
+				"error": "Ungültiger Schlüssel"
+			}
 		},
 		"toasts": {
 			"send": "Sendungen bei Versanddienstleister erfasst",

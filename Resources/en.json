@@ -1008,7 +1008,12 @@
 			"carrier": "Carrier",
 			"service": "Type of shipment",
 			"defaultcarrier": "Default carrier",
-			"onlyonecarrier": "Use carrier exclusively?"
+			"onlyonecarrier": "Use carrier exclusively?",
+			"shipcloudapikey": {
+				"label": "ShipCloud API-Key",
+				"description": "Connect your own ShipCloud account.",
+				"error": "API-Key invalid"
+			}
 		},
 		"toasts": {
 			"send": "Shipment registered by carrier",
