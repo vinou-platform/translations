@@ -1043,16 +1043,28 @@
 	"shipment": {
 		"field": {
 			"carrier": "Versanddienstleister",
-			"service": "Sendungsart",
 			"defaultcarrier": "Standard-Versanddienstleister",
 			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
+			"service": "Sendungsart",
 			"shipcloudapikey": {
 				"label": "ShipCloud API-Schlüssel",
 				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst du ihn hier verbinden.",
 				"error": "Ungültiger Schlüssel"
 			}
 		},
+		"actions": {
+			"activate": "Versand aktivieren",
+			"deactivate": "Verand deaktivieren"
+		},
+		"dialogs": {
+			"activate": {
+				"title": "Versand aktivieren",
+				"content": "Hiermit stimmst du unseren <a href=\"AGB\" target=\"_blank\">AGB</a> zu und..."
+			}
+		},
 		"toasts": {
+			"activated": "Versand aktiviert",
+			"deactivated": "Versand deaktiviert",
 			"send": "Sendungen bei Versanddienstleister erfasst",
 			"changed": "Standard-Versanddienstleister geändert"
 		},

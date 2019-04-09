@@ -1006,16 +1006,28 @@
 	"shipment": {
 		"field": {
 			"carrier": "Carrier",
-			"service": "Type of shipment",
 			"defaultcarrier": "Default carrier",
 			"onlyonecarrier": "Use carrier exclusively?",
+			"service": "Type of shipment",
 			"shipcloudapikey": {
 				"label": "ShipCloud API-Key",
 				"description": "Connect your own ShipCloud account.",
 				"error": "API-Key invalid"
 			}
 		},
+		"actions": {
+			"activate": "Activate shipment",
+			"deactivate": "Deactivate shipment"
+		},
+		"dialogs": {
+			"activate": {
+				"title": "Activate shipment",
+				"content": "Hereby you accept our <a href=\"/legals\" target=\"_blank\">legals</a> and..."
+			}
+		},
 		"toasts": {
+			"activated": "Shipment activated",
+			"deactivated": "Shipment deactivated",
 			"send": "Shipment registered by carrier",
 			"changed": "Changed default carrier"
 		},
