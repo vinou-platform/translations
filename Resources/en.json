@@ -1044,6 +1044,27 @@
 			"gallery": {
 				"empty": "No shipments exists"
 			}
+		},
+		"servicetypes": {
+			"dhl": {
+				"standard": "DHL Standard",
+				"dhl_europaket": "DHL Euro Package",
+				"returns": "DHL Retoure"
+			},
+			"dpd": {
+				"standard": "DPD Standard",
+				"one_day": "DPD Express",
+				"one_day_early": "DPD 12:00",
+				"returns": "DPD Retoure"
+			},
+			"ups": {
+				"standard": "UPS Standard",
+				"one_day": "UPS Express",
+				"one_day_early": "UPS Express Plus",
+				"ups_express_1200": "UPS Express 12:00",
+				"ups_expedited": "UPS Expedited",
+				"returns": "UPS Retoure"
+			}
 		}
 	},
 	"pricerange": {
