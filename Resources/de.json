@@ -945,6 +945,8 @@
 			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
+			"name": "Name",
+			"description": "Beschreibung",
 			"inshop": "Im Shop anzeigen",
 			"inwinelist": "In Weinliste anzeigen",
 			"networkvisibility": {

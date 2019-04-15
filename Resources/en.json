@@ -917,6 +917,8 @@
 			"shopsettings": "Website & Shop settings"
 		},
 		"field": {
+			"name": "Name",
+			"description": "Description",
 			"inshop":"Im Shop anzeigen",
 			"inwinelist":"Show in winelist",
 			"networkvisibility": {
