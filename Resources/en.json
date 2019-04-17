@@ -752,6 +752,23 @@
 			}
 		}
 	},
+	"winecategory": {
+		"fieldset": {
+			"general": "General",
+			"description": "Description",
+			"network": "My Network",
+			"shopsettings": "Website & shop settings"
+		},
+		"field": {
+			"inshop": "Show in shop",
+			"inwinelist": "Show in wine list",
+			"networkvisibility": {
+				"label": "Show this category on network",
+				"description": "If you don't want this category to be visible on the Vinou© Network, you can disable all network features here."
+			},
+			"sorting": "Manual index (e.g. for shop use)"
+		}
+	},
 	"product": {
 		"form": {
 			"edit": {
