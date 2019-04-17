@@ -1016,12 +1016,12 @@
 			}
 		},
 		"actions": {
-			"activate": "Activate shipment",
-			"deactivate": "Deactivate shipment"
+			"activate": "Activate shipment management",
+			"deactivate": "Deactivate shipment management"
 		},
 		"dialogs": {
 			"activate": {
-				"title": "Activate shipment",
+				"title": "Activate shipment management",
 				"content": "Hereby you accept our <a href=\"/legals\" target=\"_blank\">legals</a> and..."
 			}
 		},
@@ -1128,6 +1128,7 @@
 		},
 		"shipment": {
 			"title": "Shipment settings",
+			"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
 			"description": "Configure shipment e.g. to select a default shipment carrier."
 		},
 		"technical": {

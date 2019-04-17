@@ -1053,13 +1053,13 @@
 			}
 		},
 		"actions": {
-			"activate": "Versand aktivieren",
-			"deactivate": "Verand deaktivieren"
+			"activate": "Versandmanagement aktivieren",
+			"deactivate": "Versandmanagement deaktivieren"
 		},
 		"dialogs": {
 			"activate": {
-				"title": "Versand aktivieren",
-				"content": "Hiermit stimmst du unseren <a href=\"AGB\" target=\"_blank\">AGB</a> zu und..."
+				"title": "Versandmanagement aktivieren",
+				"content": "Das Vinou-Versandmanagement wird über den Anbieter <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> realisiert, dafür fallen <strong>zusätzliche Gebühren für Deine Sendungen</strong> an. Mit Klick auf Ja bestätigst Du die aktuellen <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>Konditionen des Versandmanagements</strong></a>. Die Nutzung des Vinou-Versandmanagements kann jederzeit über die Versandeinstellungen deaktiviert werden."
 			}
 		},
 		"toasts": {
@@ -1165,6 +1165,7 @@
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",
+			"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
 			"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
 		},
 		"technical": {
