@@ -934,6 +934,9 @@
 			"search": {
 				"placeholder": "e.g. name, customernumber, address"
 			}
+		},
+		"toasts": {
+			"createerror": "Order could not be created. Please check your details and try again."
 		}
 	},
 	"packaging": {

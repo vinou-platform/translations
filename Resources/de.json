@@ -971,6 +971,9 @@
 			"search": {
 				"placeholder": "z.B. Name, Kundennummer, Adresse"
 			}
+		},
+		"toasts": {
+			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
 		}
 	},
 	"packaging": {
