@@ -146,6 +146,7 @@
 	"fieldset_payment_title":"Zahlungsart",
 	"fieldset_positions_title":"Positionen",
 	"fieldset_customer_title":"Kundendaten",
+	"fieldset_quickactions": "Quickactions",
 	"settings_addresses":"Adressen",
 	"settings_packaging":"Versandoption",
 	"settings_advanced":"Erweiterte Einstellungen",
