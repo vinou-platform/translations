@@ -889,8 +889,16 @@
 		}
 	},
 	"note": {
+		"action": {
+			"create": {
+				"main": "Neue Notiz",
+				"sub": "anlegen"
+			}
+		},
 		"field": {
-			"content": "Inhalt"
+			"content": "Inhalt",
+			"wrote": "schrieb",
+			"edited": "bearbeitet"
 		},
 		"messages": {
 			"toasts": {
