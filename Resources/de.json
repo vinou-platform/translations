@@ -268,6 +268,18 @@
 	"users_create_modaltitle":"Benutzer anlegen",
 	"users_edit_modaltitle":"Benutzer bearbeiten",
 	"users_settings_modaltitle":"Einstellungen bearbeiten",
+	"users": {
+		"fields": {
+			"active_users": "Aktive Benutzer"
+		},
+		"stat_types": {
+			"active": "Aktiv",
+			"admin": "Admin",
+			"default": "Regulär",
+			"interfrog": "Interfrog",
+			"total": "Total"
+		}
+	},
 	"db_users_login_title":"Anmelden",
 	"db_users_login_submit":"Anmelden",
 	"db_users_lostpassword":"Passwort vergessen?",
@@ -554,6 +566,7 @@
 			"voucher":"Gutschein-Code",
 			"source":"Akquiriert durch",
 			"notice":"Systemmails senden",
+			"state": "Status",
 			"type": {
 				"label": "Typ",
 				"winery":"Weingut",
@@ -724,6 +737,9 @@
 				"noentries": "Noch keine Einträge vorhanden",
 				"connectmerchant": "Mit Händler verbinden"
 			}
+		},
+		"stat_types": {
+			"": ""
 		}
 	},
 	"wine": {
@@ -820,6 +836,7 @@
 			},
 			"nostock":"ausgetrunken",
 			"nostocktext":"Anzeige Text wenn ausgetrunken (z.B. verfügbar ab...)",
+			"public_wines": "Öffentliche Weine",
 			"stockunknown": "keine Bestandsinformation verfügbar",
 			"place": "Lage",
 			"price": {
@@ -863,6 +880,12 @@
 			"shoplink_active":"Link zum Shop aktiv",
 			"sorting":"Manueller Sortierindex (z.B. für den Shop)",
 			"sweetness": "Restsüße",
+			"stat_types": {
+				"has_image": "Mit Bild",
+				"has_price": "Mit Preis",
+				"public": "Öffentlich",
+				"total": "Total"
+			},
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
 			"topseller": "Topseller",
