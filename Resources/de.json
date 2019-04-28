@@ -383,10 +383,21 @@
 	"templates_contract": "Vorlage für Auftrag",
 	"templates_invoice": "Vorlage für Rechnung",
 	"templates_delivery": "Vorlage für Lieferschein",
+	"templates": {
+		"placeholders": {		
+			"vinou_contract": "Vinou-Auftrag (Standard)",
+			"vinou_delivery_note": "Vinou-Lieferschein (Standard)",
+			"vinou_expertise": "Vinou-Expertise (Standard)",
+			"vinou_invoice": "Vinou-Rechnung (Standard)",
+			"vinou_offer": "Vinou-Angebot (Standard)"
+		}
+	},
 	"paypal_edittitle": "Paypal-Einstellungen bearbeiten",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
 	"paypal_paypalappmode": "Modus",
+	"paypal_appmode_sandbox": "Sandbox",
+	"paypal_appmode_live": "Live",
 	"bank_edittitle": "Bankverbindung bearbeiten",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
@@ -1308,7 +1319,8 @@
 		},
 		"payments": {
 			"title": "Zahlungsmethoden",
-			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten."
+			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten.",
+			"bankaccount": "Bankverbindung"
 		},
 		"packagings": {
 			"title": "Versandoptionen",
