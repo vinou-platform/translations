@@ -75,6 +75,7 @@
 	"wineries_modal_delete":"Möchten Sie dieses Weingut wirklich löschen?",
 	"category_modal_delete":"Möchten Sie diese Kategorie wirklich löschen?",
 	"customers_modal_delete":"Möchten Sie diesen Kunden wirklich löschen?",
+	"users_modules": "Module",
 	"users_modal_delete":"Möchten Sie diesen Benutzer wirklich löschen?",
 	"token_modal_delete": "Möchten Sie diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
