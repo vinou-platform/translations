@@ -956,11 +956,31 @@
 		}
 	},
 	"order": {
+		"field": {
+			"documents": "Dokumente"
+		},
+		"documenttypes": {
+			"invoice": "Rechnung",
+			"delivery": "Lieferschein",
+			"shipment": "Packetaufkleber",
+			"creditadvice": "Gutschrift"
+		},
+		"documents": {
+			"invoice": "Rechnungen",
+			"delivery": "Lieferscheine",
+			"shipment": "Packetaufkleber",
+			"creditadvice": "Gutschriften"
+		},
 		"views": {
 			"view": {
 				"tabs": {
+					"documents": "Dokumente",
 					"shipments": "Sendungen"
 				}
+			},
+			"documents": {
+				"title": "Dokumente",
+				"empty": "Es liegen keine {label} zu dieser Bestellung vor."
 			}
 		},
 		"action": {
@@ -1060,6 +1080,9 @@
 	"shipment": {
 		"field": {
 			"carrier": "Versanddienstleister",
+			"packagingUnit": {
+				"namewithcapacity": "{capacity}er Karton"
+			},
 			"defaultcarrier": "Standard-Versanddienstleister",
 			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
 			"service": "Sendungsart",
