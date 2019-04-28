@@ -514,6 +514,9 @@
 				"title":"Neues Mitglied anlegen",
 				"modaltitle": "Neues Mitglied anlegen"
 			},
+			"login": {
+				"login": "Einloggen"
+			},
 			"renewauth": {
 				"button": "AuthID Erneuern!"
 			},
