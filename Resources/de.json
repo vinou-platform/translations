@@ -278,6 +278,10 @@
 				"delivery": "Anlieferung",
 				"sponsoring": "Sponsoring",
 				"promotion": "Werbung"
+			},
+			"book": {
+				"main": "Warenein-/ausgang buchen",
+				"sub": "buchen"
 			}
 		},
 		"type": {
@@ -673,6 +677,11 @@
 			"cuvee":"Cuvée",
 			"description": "Beschreibung",
 			"drinktemperature": "Trinktemperatur",
+			"expertise_show": {
+				"main": "Expertise",
+				"sub": "anzeigen",
+				"title": "Expertise in neuem Fenster öffnen"
+			},
 			"grapetypes": {
 				"label": "Rebsorten",
 				"placeholder":"Rebsorte suchen"
@@ -713,6 +722,7 @@
 				}
 			},
 			"qrcode":"QR-Code",
+			"qrcode_download_vector": "QR-Code als Vektor-Datei herunterladen",
 			"qrcode_redirect":"QR-Code Redirect",
 			"qrcode_create":"Der QR-Code wird nach dem ersten Speichern generiert",
 			"qrlink":"Zieladresse für QR-Code",
@@ -743,6 +753,11 @@
 			"vegan": "Vegan",
 			"vintage": "Jahrgang",
 			"weight": "Gewicht (in g)",
+			"winepass_show": {
+				"main": "Weinpass",
+				"sub": "anzeigen",
+				"winepass_show_title": "Weinpass in neuem Fenster öffnen"
+			},
 			"winery": {
 				"label": "Weingut",
 				"placeholder":"Weingut suchen"
