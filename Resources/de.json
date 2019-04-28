@@ -348,7 +348,7 @@
 				"sub": "anlegen"
 			}
 		}
-	}
+	},
 	"order_view_invoice":"Rechnung",
 	"order_create_invoice":"Rechnung erzeugen",
 	"order_view_delivery":"Lieferschein",
