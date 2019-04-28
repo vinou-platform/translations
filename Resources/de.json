@@ -37,6 +37,7 @@
 				"of": "ab",
 				"to": "bis"
 			},
+			"taxid": "UStID",
 			"price": {
 				"none": "kostenfrei"
 			}
@@ -586,9 +587,13 @@
 			"country": "Land",
 			"taxid": "USt-IdNr",
 			"phone": "Telefon",
-			"fax": "Fax",
+			"phone_callto": "Anrufen",
+ 			"fax": "Fax",
+			"fax_sendto": "Fax senden an",
 			"mail": "E-Mail",
-			"www": "Internetseite"
+			"email_sendto": "E-Mail schreiben an",
+			"www": "Internetseite",
+			"www_visit_site": "Internetseite besuchen"
 		},
 		"list": {
 			"filter": {
