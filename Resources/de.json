@@ -412,6 +412,7 @@
 		},
 		"field": {
 			"email": "E-Mail",
+			"password": "Passwort",
 			"phone": "Telefon",
 			"voucher":"Ich habe einen Gutschein-Code",
 			"copyright": "© Copyright {company} 2018",
