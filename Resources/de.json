@@ -30,6 +30,8 @@
 			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
 			"search_placeholder": "Name oder Beschreibung",
+			"imprint": "Impressum",
+			"dataprotection": "Datenschutz",
 			"range": {
 				"from": "von",
 				"of": "ab",
