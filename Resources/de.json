@@ -102,8 +102,10 @@
 	"categories": {
 		"actions": {
 			"create_category": {
-			"main": "Neue Kategorie",
-			"sub": "anlegen"
+				"main": "Neue",
+				"sub": "Kategorie anlegen",
+				"dashboard_main": "Neue Kategorie",
+				"dashboard_sub": "anlegen"
 			}
 		},
 		"fields": {
