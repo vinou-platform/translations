@@ -371,7 +371,7 @@
 				"promotion": "Werbung"
 			},
 			"book": {
-				"main": "Warenein-/ausgang buchen",
+				"main": "Warenein-/ausgang",
 				"sub": "buchen"
 			}
 		},
@@ -771,6 +771,7 @@
 			},
 			"articlenumber": "Art.-Nr.",
 			"barcode": "EAN-Code",
+			"barcode_download_vector": "EAN-Code als Vektor-Datei herunterladen",
 			"bio": "Bio zertifiziert",
 			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
@@ -861,6 +862,7 @@
 			"vegan": "Vegan",
 			"vintage": "Jahrgang",
 			"weight": "Gewicht (in g)",
+			"wine_without_category": "Weine ohne Kategorie anzeigen",
 			"winepass_show": {
 				"main": "Weinpass",
 				"sub": "anzeigen",
