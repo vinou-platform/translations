@@ -341,6 +341,14 @@
 	"db_cronjobs_command": "Ausgeführter Befehl",
 	"db_cronjobs_cron": "Ausführungszeitpunkt (Crontab)",
 	"db_cronjobs_active": "aktivieren",
+	"cronjobs": {
+		"actions": {
+			"create": {
+				"main": "Neuen Cronjob",
+				"sub": "anlegen"
+			}
+		}
+	}
 	"order_view_invoice":"Rechnung",
 	"order_create_invoice":"Rechnung erzeugen",
 	"order_view_delivery":"Lieferschein",
