@@ -337,6 +337,7 @@
 	"db_stock_parentid": "Wein",
 	"db_stock": {
 		"field": {
+			"analysis_data": "Analysedaten",
 			"type": "Typ",
 			"quantity": "Menge",
 			"description": "Beschreibung",
