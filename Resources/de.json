@@ -956,6 +956,7 @@
 			"active": "aktiv",
 			"nostock": "nicht auf Lager",
 			"nostocktext": "Anzeigetext wenn nicht auf Lager",
+			"prices": "Preise",
 			"quantity": "Bestand"
 		},
 		"gallery": {
