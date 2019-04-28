@@ -79,7 +79,71 @@
 	"token_modal_delete": "Möchten Sie diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
 	"address_modal_delete":"Möchten Sie diese Adresse wirklich löschen?",
-	"orders_modal_cancel":"Möchten Sie diese Bestellung wirklich stornieren?",
+	"orders": {
+		"actions": {
+			"add_position": "+ Position hinzufügen"
+		},
+		"fieldsets": {
+			"edit_view": "Ansicht bearbeiten",
+			"search_product": "Produkt suchen",
+			"packaging_shipping": "Verpackung und Versand"
+		},
+		"fields": {	
+			"brutto_sum": "Brutto-Summe der Bestellung",
+			"delivery_note_created": "Lieferschein erstellt",
+			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
+			"excl_vat": "zzgl. MwSt.",
+			"filter_orders": "Bestellung filtern",
+			"loading_positions": "Positionen werden geladen ...",
+			"invoice_created": "Rechnung erstellt",
+			"invoice_not_yet_created": "Rechnung wurde noch nicht erstellt",
+			"netto_sum": "Netto-Summe",
+			"next_payment_type": "Weiter zur Zahlungsart",
+			"next_delivering_addr": "Weiter zur Lieferadresse",
+			"no_payment_income_yet": "Zahlung noch nicht eingegangen",
+			"order_dispatched": "Bestellung versendet",
+			"order_not_yet_dispatched": "Bestellung noch nicht versendet",
+			"order_date": "Bestelleingang",
+			"order_cancelled_date": "Bestellund storniert",
+			"payment_income_date": "Zahlungseingang", 
+			"quantity": "Stück",
+			"state": "Status",
+			"payment_income": {
+				"main": "Zahlung",
+				"sub": "eingegangen"
+			},
+			"booking_payment_income": {
+				"main": "Zahlungseingang",
+				"sub": "buchen"
+			},
+			"generate_invoice_and_delivering_note": {
+				"main": "Rechnung und Lieferschein generieren",
+				"sub": "Barzahlung buchen"
+			},
+			"invoice_and_delivering_note": {
+				"main": "Rechnung und Lieferschein",
+				"sub": "generieren"
+			},
+			"order_to_dispatch": {
+				"main": "Bestellung",
+				"sub": "in den Versand geben"
+			},
+			"invoice_create": {
+				"main": "Rechnung",
+				"create": "erzeugen",
+				"show": "anzeigen"
+			},
+			"delivery_note_create": {
+				"main": "Lieferschein",
+				"create": "erzeugen",
+				"show": "anzeigen"
+			},
+			"voucher_create": {
+				"main": "Gutschein",
+				"create": "erzeugen"
+			}
+		}
+	},	"orders_modal_cancel":"Möchten Sie diese Bestellung wirklich stornieren?",
 	"orders_modal_create":"Sie erfassen eine Bestellung was möchten sie tun?",
 	"orders_modal_create_withinvoice":"Erfassen und Rechnung und Lieferschein generieren",
 	"orders_modal_create_only":"Nur erfassen",
@@ -94,6 +158,9 @@
 	"order_wrong_quantity": "Bitte geben sie für die Anzahl eine Zahl größer als 0 ein",
 	"orders_rebate_general":"Pauschal-Rabatt (Brutto)",
 	"rebates": {
+		"actions": {
+			"add_rebate": "+ Rabattposition hinzufügen"
+		},
 		"title":"Rabatte",
 		"methods": {
 			"general":"Pauschal-Rabatt (Brutto)",
@@ -150,6 +217,9 @@
 	"fieldset_positions_title":"Positionen",
 	"fieldset_customer_title":"Kundendaten",
 	"fieldset_quickactions": "Quickactions",
+	"field_yard_sale": "Hofverkauf",
+	"field_same_invoice_addr": "Wie Rechnungsadresse",
+	"field_shipping_different_location": "Abweichende Lieferadresse",
 	"settings_addresses":"Adressen",
 	"settings_packaging":"Versandoption",
 	"settings_advanced":"Erweiterte Einstellungen",
@@ -984,7 +1054,9 @@
 			"invoice_type": "Rechnungstyp",
 			"term_of_payment": "Zahlungsziel (in Tagen)",
 			"discount": "Skonto (in %)",
-			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+			"search_client": "Kunde suchen",
+			"term_of_discount": "Skonto Zeitraum (in Tagen)",
+			"search_client": "Kunde suchen"
 		},
 		"types": {
 			"private": "Privatperson",
@@ -1012,7 +1084,7 @@
 		"field": {
 			"name":"Name/Ansprechpartner",
 			"company":"Firma",
-			"address":"Straße + Hausnummer",
+			"address":"Straße und Hausnummer",
 			"zip":"PLZ",
 			"city":"Stadt",
 			"country":"Land"
@@ -1034,6 +1106,9 @@
 			"search": {
 				"placeholder": "z.B. Name, Kundennummer, Adresse"
 			}
+		},
+		"fields": {
+			"processiong_data": "Daten werden verarbeitet ..."
 		},
 		"toasts": {
 			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
