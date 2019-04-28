@@ -28,6 +28,8 @@
 		"fields": {
 			"empty": "Bitte wählen",
 			"required": "Pflichtfeld",
+			"upload_image": "Bild auswählen und hochladen",
+			"search_placeholder": "Name oder Beschreibung",
 			"range": {
 				"from": "von",
 				"of": "ab",
@@ -93,6 +95,32 @@
 		"methods": {
 			"general":"Pauschal-Rabatt (Brutto)",
 			"percent":"Prozentualer Rabatt"
+		}
+	},
+	"categories": {
+		"actions": {
+			"create_category": {
+			"main": "Neue Kategorie",
+			"sub": "anlegen"
+			}
+		},
+		"fields": {
+			"create_slider": {
+				"main": "Slider für Vinotheken-Display",
+				"sub": "anlegen"
+			},
+			"view_slider": {
+				"main": "Slider für Vinotheken-Display",
+				"sub": "ansehen"
+			},
+			"create_fb_iframe": {
+				"main": "Facebook-Iframe",
+				"sub": "anlegen"
+			},
+			"view_fb_iframe": {
+				"main": "Facebook-Iframe",
+				"sub": "ansehen"
+			}
 		}
 	},
 	"currenttoken": "Bisherige Token",
