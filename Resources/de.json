@@ -195,7 +195,16 @@
 			}
 		}
 	},
-	"currenttoken": "Bisherige Token",
+	"currenttoken_old": "Bisherige Token",
+	"currenttoken": "Aktuelle Verbindung",
+	"tokens": {
+		"actions": {
+			"create": {
+				"main": "Neue Verbindung",
+				"sub": "anlegen"
+			}
+		}
+	},
 	"yes":"Ja",
 	"no":"Nein",
 	"fieldset_general_title":"Allgemeines",
