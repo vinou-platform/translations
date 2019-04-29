@@ -5,7 +5,7 @@
 		"wineries":"Wineries",
 		"wines":"Wines",
 		"winelists":"Winelists",
-		"qrcodes":"QR-Codes",
+		"qrcodes":"QR codes",
 		"news":"News",
 		"users":"Users",
 		"customers":"Clients",
@@ -28,11 +28,16 @@
 		"fields": {
 			"empty": "Please select",
 			"required": "Required",
+			"upload_image": "Select image to upload",
+			"search_placeholder": "Name or description",
+			"imprint": "Imprint",
+			"dataprotection": "Dataprotection",
 			"range": {
 				"from": "from",
 				"of": "from",
 				"to": "to"
 			},
+			"taxid": "Tax-ID",
 			"price": {
 				"none": "free of charge"
 			}
@@ -53,25 +58,97 @@
 			"label": "Loading data ..."
 		}
 	},
+	"price": "Price",
+	"quantity": "Stock",
+	"articlenumber": "Articlenumber",
 	"de":"Germany",
 	"en":"England",
 	"fr":"France",
 	"fileupload":"Choose file",
-	"delete_image":"Delete Image",
+	"delete_image":"Delete image",
 	"delete_image_secure":"Do you really want to delete the image?",
-	"delete_template_secure":"Do you really want to delete the template?",
+	"delete_template_secure":"Do you really want to delete this template for epertises?",
 	"changepw":"Change password",
 	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
 	"wineries_modal_delete":"Do you really want to delete this winery?",
 	"category_modal_delete":"Do you really want to delete this category?",
 	"customers_modal_delete":"Do you really want to delete this customer?",
+	"users_modules": "Modules",
 	"users_modal_delete":"Do you really want to delete this user?",
+	"token_modal_delete": "Do you really want to delete this token?",
+	"token_modal_error": "There is already a token for this domain/IP",
 	"address_modal_delete":"Do you really want to delete this address?",
+	"orders": {
+		"actions": {
+			"add_position": "+ Add position"
+		},
+		"fieldsets": {
+			"edit_view": "Edit view",
+			"search_product": "Search product",
+			"packaging_shipping": "Packaging and shipping"
+		},
+		"fields": {	
+			"brutto_sum": "Order brutto summary",
+			"delivery_note_created": "Delivery note created",
+			"delivery_note_not_yet_created": "Delivery note not yet created",
+			"excl_vat": "excl. VAT",
+			"filter_orders": "Filter orders",
+			"loading_positions": "Loading positions ...",
+			"invoice_created": "Invoice created",
+			"invoice_not_yet_created": "Invoice not yet created",
+			"netto_sum": "Netto summary",
+			"next_payment_type": "Next - payment type",
+			"next_delivering_addr": "Next - delivery adress",
+			"no_payment_income_yet": "Payment not yet income",
+			"order_dispatched": "Order dispatched",
+			"order_not_yet_dispatched": "Order not yet dispatched",
+			"order_date": "Order date",
+			"order_cancelled_date": "Order cancelled",
+			"payment_income_date": "Payment income date", 
+			"quantity": "Quantity",
+			"state": "State",
+			"payment_income": {
+				"main": "Payment",
+				"sub": "income"
+			},
+			"booking_payment_income": {
+				"main": "Book",
+				"sub": "Payment income"
+			},
+			"generate_invoice_and_delivering_note": {
+				"main": "Generate invoice and delivery note",
+				"sub": "Booking cash payment"
+			},
+			"invoice_and_delivering_note": {
+				"main": "Generate",
+				"sub": "Invoice and delivery note"
+			},
+			"order_to_dispatch": {
+				"main": "Dispatch",
+				"sub": "Order"
+			},
+			"invoice_create": {
+				"main": "Invoice",
+				"create": "create",
+				"show": "show"
+			},
+			"delivery_note_create": {
+				"main": "Delivery note",
+				"create": "create",
+				"show": "show"
+			},
+			"voucher_create": {
+				"main": "Voucher",
+				"create": "create"
+			}
+		}
+	},
 	"orders_modal_cancel":"Do you really want to cancel this order?",
 	"orders_modal_create":"You're creating an order, what do you want to do?",
 	"orders_modal_create_withinvoice":"Create order with invoice and delivery note",
 	"orders_modal_create_only":"Create only",
+	"orders_modal_sent":"Do you really want to set this order as dispatched",
 	"orders_position_delete":"Do you really want to delete this item?",
 	"orders_position_update":"Do you really want to update this item?",
 	"orders_position_add":"Do you really want to add this item",
@@ -80,11 +157,53 @@
 	"orders_modal_onlydelivery_create":"Create delivery note now?",
 	"orders_modal_creditadvice_create":"Warning: Do really want to create credit advise now an cancel order?",
 	"order_wrong_quantity": "Please enter an ammount greater than 0",
+	"orders_rebate_general":"Default rebat (gross)",
 	"rebates": {
+		"actions": {
+			"add_rebate": "+ Adds rebat"
+		},
 		"title":"Rebates",
 		"methods": {
 			"general":"General rebate (gross)",
 			"percent":"Percental rebate"
+		}
+	},
+	"categories": {
+		"action": {
+			"create_category": {
+				"main": "Add",
+				"sub": "new category",
+				"dashboard_main": "Add",
+				"dashboard_sub": "New Category"
+			}
+		},
+		"fields": {
+			"create_slider": {
+				"main": "Add slider for",
+				"sub": "Vinothek display"
+			},
+			"view_slider": {
+				"main": "Show slider for",
+				"sub": "Vinothek display"
+			},
+			"create_fb_iframe": {
+				"main": "Add",
+				"sub": "Facebook-Iframe"
+			},
+			"view_fb_iframe": {
+				"main": "Show",
+				"sub": "Facebook-Iframe"
+			}
+		}
+	},
+	"currenttoken_old": "Current token",
+	"currenttoken": "Current token",
+	"tokens": {
+		"actions": {
+			"create": {
+				"main": "Add new",
+				"sub": "Token"
+			}
 		}
 	},
 	"yes":"Yes",
@@ -105,8 +224,12 @@
 	"fieldset_billing_title":"Billingaddress",
 	"fieldset_delivery_title":"Deliveryaddress",
 	"fieldset_payment_title":"Payment",
-	"fieldset_customer_title":"Account",
 	"fieldset_positions_title":"Items",
+	"fieldset_customer_title":"Account",
+	"fieldset_quickactions": "Quickactions",
+	"field_yard_sale": "Hofverkauf",
+	"field_same_invoice_addr": "Wie Rechnungsadresse",
+	"field_shipping_different_location": "Abweichende Lieferadresse",
 	"settings_addresses":"Addresses",
 	"settings_packaging":"Shipment costs",
 	"settings_advanced":"Advanced Settings",
@@ -115,35 +238,54 @@
 	"settings_payments":"Paymentmethods",
 	"settings_connections":"Connections",
 	"sysTool_account":"Settings",
+	"options": "Options",
+	"addtoken": "Add token",
+	"referer": "Valid until",
 	"login":"Login",
 	"logout":"Logout",
-	"edit":"edit",
-	"save":"save",
-	"cancel":"cancel",
-	"repeatpw":"repeat password",
-	"language":"language",
+	"edit":"Edit",
+	"save":"Save",
+	"cancel":"Cancel",
+	"repeatpw":"Retype password",
+	"language":"Language",
 	"modal_delete_wine":"Do you really want to delete this wine?",
 	"test":"english",
-	"login_emailempty":"E-Mail Addresse nicht angegeben",
-	"login_emailnotvalid":"E-Mail Addresse nicht valide",
-	"login_passwordempty":"Passwort nicht angegeben",
+	"login_emailempty":"Email field empty",
+	"login_emailnotvalid":"The email addresse not valid",
+	"login_passwordempty":"Password not entered",
 	"login_wronglogin":"Email or password not correct.",
 	"login_wrongreset":"Email or matching user not found.",
-
 	"db_categories_image":"Image",
-	"db_category_createtitle":"Create Category",
-	"db_category_edittitle":"Edit Category",
-	"users_create1":"Create",
-	"users_create2":"User",
+	"db_category_createtitle":"Create category",
+	"db_category_edittitle":"Edit category",
+	"users_create1":"Add",
+	"users_create2":"New User",
+	"users_create_main": "Add new",
+	"users_create_sub": "User",
+	"users_modification": "Last modification",
+	"users_default_person_placeholder": "John Doe",
+	"users_default_person_mail_placeholder": "john.doe@mail.com",
 	"users_galleryFilterHint":"e.g. name, address",
 	"users_create_modaltitle":"Create new user",
 	"users_edit_modaltitle":"Edit user",
 	"users_settings_modaltitle":"Edit user settings",
+	"users": {
+		"fields": {
+			"active_users": "Active users"
+		},
+		"stat_types": {
+			"active": "Active",
+			"admin": "Admin",
+			"default": "Default",
+			"interfrog": "Interfrog",
+			"total": "Total"
+		}
+	},
 	"db_users_login_title":"Login",
 	"db_users_login_submit":"Log in",
-	"db_users_lostpassword_title":"Link request",
 	"db_users_lostpassword":"Lost Password?",
 	"db_users_gotoregister":"No account? <a href='/register'>Register now!</a>",
+	"db_users_lostpassword_title":"Request activation link",
 	"db_users_lostpassword_submit":"Request reset email",
 	"db_users_lostpassword_send":"An email with reset link was send. This link expires in 24 hours. Use this to reset your password.",
 	"db_users_resetpassword_title":"Password reset",
@@ -153,14 +295,15 @@
 	"db_users_gotologin":"Go to login",
 	"db_users_createtitle":"Create User",
 	"db_users_edittitle":"Edit User",
-	"db_users_userdatatitle":"Userdata",
-	"db_users_settingstitle":"App-Settings",
-	"db_users_passwordmatch":"Password repeat didn'nt match",
+	"db_users_userdatatitle":"Edit user data",
+	"db_users_settingstitle":"Edit app settings",
+	"db_users_passwordmatch":"Password retype didn't match",
 	"db_users_name":"Name",
 	"db_users_mail":"Email",
 	"db_users_password":"Password",
 	"db_users_role":"Role",
 	"db_users_active":"active",
+	"db_users_beta":"Beta user",
 	"db_users_image":"Image",
 	"db_users_customers_id":"belongs to member",
 	"db_winecategories_name":"Name",
@@ -171,14 +314,14 @@
 	"db_tokens_token":"Token",
 	"db_tokens_referer":"Domain",
 	"db_tokens_mode":"Mode",
-	"db_tokens_mode_dev":"Development (dont validate host)",
+	"db_tokens_mode_dev":"Development (Host validation disabled)",
 	"db_tokens_mode_live":"Live (validate host)",
 	"db_tokens_mode_hint": "<b>Warning:</b> If connection is set to <b>Development</b>-Mode each server that has token and authid can access your winedata.",
 	"db_payments_createtitle":"Create payment receipe",
 	"db_payments_edittitle":"Create payment receipe",
 	"db_payments_type":"Type",
 	"db_payments_type_cash":"Cash",
-	"db_payments_type_bank":"Bank account",
+	"db_payments_type_bank":"Bank transaction",
 	"db_payments_type_paypal":"Paypal",
 	"db_payments_bookingstamp":"Booking day",
 	"db_payments_details":"Details",
@@ -190,7 +333,7 @@
 	"db_orders_viewtitle":"View Orderdetails",
 	"db_orders_status_new":"New",
 	"db_orders_status_need_payment":"Prepayment expected",
-	"db_orders_status_prepaid":"Prepaid, Delivery preparation",
+	"db_orders_status_prepaid":"Prepaid completed, delivery preparation",
 	"db_orders_status_in_payment":"Wait for payment",
 	"db_orders_status_payed":"Payment received",
 	"db_orders_status_need_package":"Delivery preparation",
@@ -210,16 +353,25 @@
 	"db_cronjobs_command": "Command",
 	"db_cronjobs_cron": "Execution time (Crontab)",
 	"db_cronjobs_active": "activate",
+	"cronjobs": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Cronjob"
+			}
+		}
+	},
 	"order_view_invoice":"Invoice",
 	"order_create_invoice":"Create invoice",
 	"order_view_delivery":"Delivery Note",
 	"order_create_delivery":"Create Delivery Note",
 	"account_myWinery": "My Winery",
 	"account_myUser": "My User",
-	"db_stock_createtitle": "Warenein-/ausgang buchen",
-	"db_stock_parentid": "Wein",
+	"db_stock_createtitle": "Booking stock income/outgoing",
+	"db_stock_parentid": "Wine",
 	"db_stock": {
 		"field": {
+			"analysis_data": "Analysis data",
 			"type": "Type",
 			"quantity": "Quantity",
 			"description": "Description",
@@ -237,6 +389,10 @@
 				"delivery": "Delivery",
 				"sponsoring": "Sponsoring",
 				"promotion": "Promotion"
+			},
+			"book": {
+				"main": "Booking",
+				"sub": "Stock in/out"
 			}
 		},
 		"type": {
@@ -252,7 +408,7 @@
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port on SMTP-Server",
 	"mailsetup_smtpuser": "Username",
-	"mailsetup_smtppassword": "Passwort",
+	"mailsetup_smtppassword": "Password",
 	"mailsetup_smtpencrypt": "Encryption",
 	"mailsetup_senderemail": "email for outbound",
 	"mailsetup_sendername": "sendername for outbound",
@@ -262,15 +418,26 @@
 	"templates_contract": "Template for contract",
 	"templates_invoice": "Template for invoice",
 	"templates_delivery": "Template for delivery note",
+	"templates": {
+		"placeholders": {		
+			"vinou_contract": "Vinou contract (Default)",
+			"vinou_delivery_note": "Vinou delivery note (Default)",
+			"vinou_expertise": "Vinou expertise (Default)",
+			"vinou_invoice": "Vinou invoice (Default)",
+			"vinou_offer": "Vinou offer (Default)"
+		}
+	},
 	"paypal_edittitle": "Edit paypal-settings",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
 	"paypal_paypalappmode": "Mode",
+	"paypal_appmode_sandbox": "Sandbox",
+	"paypal_appmode_live": "Live",
 	"bank_edittitle": "Edit bank account",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
-	"bank_bankname": "creditinstitut",
-	"bank_owner": "owner of account",
+	"bank_bankname": "Creditinstitut",
+	"bank_owner": "Account owner",
 	"cashlink_createtitle": "Register Cashlink",
 	"cashlink_viewtitle": "Your Cashlink account data",
 	"cashlink_business_title": "Company data",
@@ -308,16 +475,26 @@
 			},
 			"verify": {
 				"title": "Send verification",
-				"success": "We send a verifcation letter containing an activation link to <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. After activation you're able to use all of our network functions for free for 30 days.",
-				"error": "Oops, an error occured. The verification could not be sent.<br><br>Please contact us to start networking as soon as possible. Use contact:<br><a href='mailto:kontakt@vinou.de'>kontakt@vinou.de</a> &middot; <a href='tel:+4961316245390'>+49(0) 6131 62 45 390</a>",
-				"send": "Send verification"
+				"send": "Verification mail sent",
+				"reinvitelink": "Request new invitation",
+				"contact": "Get in contact with us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"success": {
+					"common": "We send a verifcation letter containing an activation link to <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. After activation you're able to use all of our network functions for free for 30 days.",
+					"reinvite": "An invitation has been sent to <b>{customer.mail}</b>. Use the link in the mail to get verified."
+				},
+				"error": {
+					"common": "Oops, an error occured. The verification could not be sent.<br><br>Please contact us to start networking as soon as possible.",
+					"completed": "You are already verified. A letter with an activation link is sent to you <b>by mail</b> to address: <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. After successfully activation you are welcome to test the full functionallity of our network for a trial of 30 days.<br><br>If you did not receive a postcard from us, please feel free to contact us, to get started immediately.",
+					"expired": "Oops, an error occured. The verification could not be sent. Invitation term is expired.<br><br>Please contact us to start networking as soon as possible. Use contact:<br><a href='mailto:kontakt@vinou.de'>kontakt@vinou.de</a> &middot; <a href='tel:+4961316245390'>+49(0) 6131 62 45 390</a>"
+				}
 			},
 			"activate": {
 				"title": "Finish verification",
 				"description": "Only one step until your personal membership. Please insert name, e-mail and password to create an administrator user for your Vinou-Account.",
 				"user": "Create administrator",
 				"submit": "Finish verification",
-				"success": "verification finished"
+				"success": "verification finished",
+				"error": "The verification could not be finished. Please try again or get in contact with us to get started immediately.<br><br>Contact us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>"
 			},
 			"upgrade": {
 				"title": "Upgrade Membership",
@@ -337,8 +514,11 @@
 				"title":"Create new member",
 				"modaltitle": "Create new member"
 			},
+			"login": {
+				"login": "Einloggen"
+			},
 			"renewauth": {
-				"button": "Renew AuthID!"
+				"button": "Renew Auth ID!"
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
@@ -352,25 +532,27 @@
 		},
 		"field": {
 			"email": "E-Mail",
+			"password": "Passwort",
 			"phone": "Phone",
 			"voucher":"I've got a voucher",
 			"copyright": "© Copyright {company} 2018",
-			"name":"Contact Person",
+			"name":"Contact person",
 			"company":"Company",
 			"winery":"Winery",
-			"taxid":"TaxID",
+			"taxid":"Tax ID",
 			"address":"Address",
 			"zip":"Zip",
 			"city":"City",
-			"zipcity":"Zip + City",
+			"zipcity":"Zip - City",
 			"country":"Country",
 			"www":"Website",
 			"fax":"Fax",
 			"active":"active",
 			"image":"Logo",
 			"freetext":"Freetext",
-			"active": "activ",
-			"activate": "Account activation",
+			"authid":"Developer Auth ID",
+			"template": "Expertisen Template",
+			"active_old": "activ",
 			"cop":"I've read the <a href='http://www.interfrog.de/agb.pdf' target='blank'>conditions of purchase</a> and agree",
 			"trust":"I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
 			"payment":"I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
@@ -384,9 +566,10 @@
 			},
 			"crstamp":"Date of registration",
 			"expire":"Expirationdate",
-			"voucher":"Voucher",
+			"voucher_old":"Voucher",
 			"source":"Acquired by",
 			"notice":"Systemmails allowed",
+			"state": "Status",
 			"type": {
 				"label": "Member type",
 				"winery":"Winery",
@@ -400,7 +583,8 @@
 			"toasts": {
 				"upgrade": "Vinou-Commerce activated!",
 				"upgrade_error": "An error occured. Vinou-Commerce wasn't activated!",
-				"activation_error": "An error occured. Account could not be activated!"
+				"activation_error": "An error occured. Account could not be activated!",
+				"activation_success": "Welcome at Vinou!"
 			}
 		}
 	},
@@ -411,6 +595,7 @@
 				"wineries": "Enter winery",
 				"wines": "Enter wine",
 				"wineriesandwines": "Enter winery or wine",
+				"results": "Searchresults for",
 				"merchants": "Enter merchant"
 			}
 		},
@@ -455,7 +640,7 @@
 			"general": "General",
 			"contact": "Contact",
 			"description": "Description",
-			"wines": "Weine"
+			"wines": "Wines"
 		},
 		"field": {
 			"company": "Company",
@@ -465,7 +650,7 @@
 			"city": "City",
 			"country": "Country",
 			"region": "Wineregion",
-			"taxid": "VAT-Id",
+			"taxid": "Tax ID",
 			"phone": "Phone",
 			"fax": "Fax",
 			"mail": "E-Mail",
@@ -521,11 +706,15 @@
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country",
-			"taxid": "Vat-ID",
+			"taxid": "Tax-ID",
 			"phone": "Phone",
+			"phone_callto": "Call to",
 			"fax": "Fax",
+			"fax_sendto": "Send fax to",
 			"mail": "Mail",
-			"www": "Website"
+			"email_sendto": "Send email to",
+			"www": "Website",
+			"www_visit_site": "Visit website"
 		},
 		"list": {
 			"filter": {
@@ -557,11 +746,11 @@
 		"action": {
 			"add": {
 				"main": "Add wine",
-				"sub": ""
+				"sub": " "
 			},
 			"create": {
-				"main": "Create wine",
-				"sub": "",
+				"main": "Add",
+				"sub": "New Wine",
 				"title": "Create wine",
 				"modaltitle": "Create wine"
 			},
@@ -574,7 +763,7 @@
 				"modaltitle": "Search wine"
 			},
 			"export": {
-				"inventory": "Inventurliste herunterladen"
+				"inventory": "Download inventory list"
 			}
 		},
 		"fieldset": {
@@ -604,8 +793,9 @@
 				"fish": "Fish",
 				"milk": "Milk"
 			},
-			"articlenumber": "Art.-Nr.",
+			"articlenumber": "Art.-No.",
 			"barcode": "GTIN",
+			"barcode_download_vector": "Download GTIN code as vektor file",
 			"bio": "Bio certified",
 			"bottlesize": "Bottlesize",
 			"cap": "Cap",
@@ -620,6 +810,11 @@
 			"cuvee":"Cuvée",
 			"description": "Description",
 			"drinktemperature": "Drinktemperature",
+			"expertise_show": {
+				"main": "Show expertise",
+				"sub": "",
+				"title": "Open expertise in new window"
+			},
 			"grapetypes": {
 				"label": "Grapetypes",
 				"placeholder":"Search for grapetypes"
@@ -641,6 +836,7 @@
 			},
 			"nostock":"sold out",
 			"nostocktext":"alternativ text for sold out",
+			"public_wines": "Public wines",
 			"stockunknown": "no information available",
 			"place": "Place",
 			"price": {
@@ -648,13 +844,23 @@
 				"none": "not specified"
 			},
 			"prices": {
-				"standard": "Default price"
+				"standard": "Default price",
+				"action": {
+					"create": {
+						"main": "New price",
+						"sub": ""
+					},
+					"delete": {
+						"confirm": "Do you really want to delete the selected price?"
+					}
+				}
 			},
 			"qrcode":"QR-Code",
+			"qrcode_download_vector": "Download QR code as vector file",
 			"qrcode_redirect":"QR-Code Redirect",
 			"qrcode_create":"QR-Code will be created after first save",
-			"qrlink":"Targetaddress for QR-Code",
-			"qrlinkempty":"Targetaddress for QR-Code (Winepass if empty)",
+			"qrlink":"Target address for QR code",
+			"qrlinkempty":"Target address for QR code (Winepass if empty)",
 			"quality": "Classification",
 			"quality_types": {
 				"notspecified": "Wine without grapetype or vintage",
@@ -674,6 +880,12 @@
 			"shoplink_active":"activate Shoplink",
 			"sorting":"Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
+			"stat_types": {
+				"has_image": "With picture",
+				"has_price": "With price",
+				"public": "Public",
+				"total": "Total"
+			},
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
@@ -681,6 +893,12 @@
 			"vegan": "Vegan",
 			"vintage": "Vintage",
 			"weight": "Weight (in g)",
+			"wine_without_category": "Show wines without categories",
+			"winepass_show": {
+				"main": "Show winepass",
+				"sub": "",
+				"winepass_show_title": "Show winepass in new window"
+			},
 			"winery": {
 				"label": "Winery",
 				"placeholder":"Search winery"
@@ -747,6 +965,9 @@
 			"formdirty":"Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
 			"fieldempty": "not specified",
+			"hints": {
+				"connectwine": "Connect to wine"
+			},
 			"toasts": {
 				"connected": "Wine connected"
 			}
@@ -781,8 +1002,8 @@
 		"field": {
 			"name": "Name",
 			"articlenumber": "Articlenumber",
-			"net": "Price net",
-			"tax": "Tax",
+			"net": "Price netto",
+			"tax": "VAT",
 			"taxrate": "Taxrate",
 			"gross": "Price gross",
 			"description": "Description",
@@ -794,6 +1015,7 @@
 			"active": "visible",
 			"nostock": "not in stock",
 			"nostocktext": "text if not in stock",
+			"prices": "Preise",
 			"quantity": "Quantity"
 		},
 		"gallery": {
@@ -824,8 +1046,16 @@
 		}
 	},
 	"note": {
+		"action": {
+			"create": {
+				"main": "Create Note",
+				"sub": ""
+			}
+		},
 		"field": {
-			"content": "Content"
+			"content": "Content",
+			"wrote": "wrote",
+			"edited": "edited"
 		},
 		"messages": {
 			"toasts": {
@@ -864,7 +1094,7 @@
 			"contactname": "Contact name",
 			"number": "Client number",
 			"company":"Company",
-			"taxid":"VAT-ID",
+			"taxid":"Tax ID",
 			"address":"Street",
 			"zip":"Zip",
 			"city":"City",
@@ -884,6 +1114,7 @@
 			"invoice_type": "Invoice type",
 			"term_of_payment": "Term of payment (days)",
 			"discount": "Discount (in %)",
+			"search_client": "Kunde suchen",
 			"term_of_discount": "Term of discount (days)"
 		},
 		"types": {
@@ -934,6 +1165,9 @@
 			"search": {
 				"placeholder": "e.g. name, customernumber, address"
 			}
+		},
+		"fields": {
+			"processiong_data": "Processing data ..."
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
@@ -1132,7 +1366,8 @@
 		},
 		"payments": {
 			"title": "Payment methods",
-			"description": "With different payment methods you're able to make your webshop more attractive to your clients."
+			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
+			"bankaccount": "Bankverbindung"
 		},
 		"packagings": {
 			"title": "Package options",
@@ -1170,9 +1405,6 @@
 			}
 		}
 	},
-	"errors": {
-        "customer_wrongregister": "Something went wrong during the registration process please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
-    },
 	"toasts": {
 		"address_saved": "Address saved!",
 		"address_changed": "Address update!",
@@ -1269,6 +1501,9 @@
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"
+	},
+	"errors": {
+		"customer_wrongregister": "Something went wrong during the registration process please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
 	},
 	"hints": {
 		"wineries": {
@@ -1727,16 +1962,17 @@
 		}
 	},
 	"tastes": {
- 		"1":"dry",
- 		"2":"semidry",
- 		"3":"off-dry",
- 		"4":"semi-sweet",
- 		"5":"mild",
- 		"6":"sweet",
- 		"7":"extra-sweet",
- 		"8":"herb-based",
- 		"9":"brut",
- 		"10":"extra brut"
+		"1":"dry",
+		"2":"semidry",
+		"3":"off-dry",
+		"4":"semi-sweet",
+		"5":"mild",
+		"6":"sweet",
+		"7":"extra-sweet",
+		"8":"herb-based",
+		"9":"brut",
+		"10":"extra brut",
+		"11": "frooty"
 	},
 	"countries": {
 		"de":"Germany",
@@ -1962,7 +2198,7 @@
 			"milkproducts":"Milkproducts",
 			"vegetables":"Vegetables",
 			"styles":"Styles",
-			"bread":"Breas",
+			"bread":"Breads",
 			"sweets":"Sweets"
 		},
 		"beef":"Beef",
