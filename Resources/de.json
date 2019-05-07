@@ -27,6 +27,7 @@
 		},
 		"fields": {
 			"empty": "Bitte wählen",
+			"please_select": "Bitte wählen",
 			"required": "Pflichtfeld",
 			"range": {
 				"from": "von",
@@ -41,8 +42,8 @@
 	"tabs": {
 		"all": {
 			"general": "Allgemein",
-			"notes": "Notizen"
-
+			"notes": "Notizen",
+			"contacts": "Kontaktpersonen"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -69,6 +70,7 @@
 	"wines_modal_delete":"Möchten Sie diesen Wein wirklich löschen?",
 	"wineries_modal_delete":"Möchten Sie dieses Weingut wirklich löschen?",
 	"category_modal_delete":"Möchten Sie diese Kategorie wirklich löschen?",
+	"contacts_modal_delete":"Möchten Sie diesen Kontakt wirklich löschen?",
 	"customers_modal_delete":"Möchten Sie diesen Kunden wirklich löschen?",
 	"users_modal_delete":"Möchten Sie diesen Benutzer wirklich löschen?",
 	"token_modal_delete": "Möchten Sie diesen Token wirklich löschen?",
@@ -886,6 +888,10 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, Firma, Addresse"
+			},
+			"contactperson": {
+				"main": "Neue Kontaktperson",
+				"sub": "anlegen"
 			}
 		},
 		"fieldset": {
@@ -911,6 +917,7 @@
 			"phone":"Telefon",
 			"fax":"Fax",
 			"active":"aktiv",
+			"department": "Abteilung",
 			"image":"Logo",
 			"rebate":"Rabatt (in %)",
 			"type": "Typ",
@@ -922,6 +929,14 @@
 			"term_of_payment": "Zahlungsziel (in Tagen)",
 			"discount": "Skonto (in %)",
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+		},
+		"department_types": {
+			"finance": "Buchhaltung",
+			"hr": "Personalabteilung",
+			"purchase": "Einkauf",
+			"shop": "Verkauf",
+			"delivery": "Versand",
+			"winecellar": "Weinkeller"
 		},
 		"types": {
 			"private": "Privatperson",
@@ -953,6 +968,17 @@
 			"zip":"PLZ",
 			"city":"Stadt",
 			"country":"Land"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Kontaktperson",
+				"sub": "anlegen"
+			},
+			"save": {
+				"title": "Kontakt speichern"
+			}
 		}
 	},
 	"order": {
@@ -1246,6 +1272,7 @@
 		"client_saved": "Kunde gespeichert!",
 		"client_changed": "Kunde aktualisiert!",
 		"client_deleted": "Kunde gelöscht!",
+		"contact_deleted": "Kontaktperson gelöscht!",
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
@@ -1322,7 +1349,11 @@
 			"saveerror": "Notiz konnte nicht gespeichert werden!",
 			"delete": "Notiz gelöscht!",
 			"deleteerror": "Notiz konnte nicht gelöscht werden!"
-		}
+		},
+		"contacts_saved": "Kontaktperson gespeichert!",
+		"contacts_saveerror": "Kontakt konnte nicht gespeichert werden!",
+		"contacts_deleted": "Kontaktperson gelöscht!",
+		"contacts_deleteerror": "Kontaktperson konnte nicht gelöscht werden!"
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"

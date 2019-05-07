@@ -27,6 +27,7 @@
 		},
 		"fields": {
 			"empty": "Please select",
+			"please_select": "Please select",
 			"required": "Required",
 			"range": {
 				"from": "from",
@@ -41,7 +42,8 @@
 	"tabs": {
 		"all": {
 			"general": "General",
-			"notes": "Notes"
+			"notes": "Notes",
+			"contacts": "Contact persons"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -63,6 +65,7 @@
 	"changepw":"Change password",
 	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
+	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"wineries_modal_delete":"Do you really want to delete this winery?",
 	"category_modal_delete":"Do you really want to delete this category?",
 	"customers_modal_delete":"Do you really want to delete this customer?",
@@ -849,6 +852,10 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
+			},
+			"contactperson": {
+				"main": "Add Contact",
+				"sub": " "
 			}
 		},
 		"fieldset": {
@@ -916,6 +923,17 @@
 			"zip":"Zip",
 			"city":"City",
 			"country":"Country"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Add Contact",
+				"sub": " "
+			},
+			"save": {
+				"title": "Save contact"
+			}
 		}
 	},
 	"order": {
@@ -1212,6 +1230,7 @@
 		"client_saved": "Client saved!",
 		"client_changed": "Client updated!",
 		"client_deleted": "Client deleted!",
+		"contact_deleted": "Contact deleted",
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
@@ -1288,7 +1307,11 @@
 			"saveerror": "Note could not saved!",
 			"delete": "Note deleted!",
 			"deleteerror": "Note could not deleted!"
-		}
+		},
+		"contacts_saved": "Contact added.",
+		"contacts_saveerror": "Error adding contact!",
+		"contacts_deleted": "Contact deleted.",
+		"contacts_deleteerror": "Error deleting contact!"
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"
