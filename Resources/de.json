@@ -395,7 +395,7 @@
 			"authid":"Developer Auth ID",
 			"template": "Expertisen Template",
 			"active": "aktiv",
-			"cop":"Ich habe die <a href='http://www.interfrog.de/agb.pdf' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
+			"cop":"Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"trust":"Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
 			"payment":"Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
 			"pricing": {
