@@ -931,12 +931,19 @@
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
 		},
 		"department_types": {
+			"branch_administration": "Filialleitung",
+			"branch_administration_assistant": "Stellvertretende Filialleitung",
+			"distribution": "Vertrieb",
+			"event_management": "Veranstaltungsmanagement",
 			"finance": "Buchhaltung",
-			"hr": "Personalabteilung",
+			"logistics": "Logistik",
+			"management": "Geschäftsführung",
+			"marketing": "Marketing",
+			"product_management": "Produktmanagent",
 			"purchase": "Einkauf",
-			"shop": "Verkauf",
-			"delivery": "Versand",
-			"winecellar": "Weinkeller"
+			"restaurant_administration": "Restaurantleitung",
+			"sommelier": "Sommelier",
+			"support": "Support"
 		},
 		"types": {
 			"private": "Privatperson",

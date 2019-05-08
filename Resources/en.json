@@ -881,6 +881,7 @@
 			"phone":"Phone",
 			"fax":"Fax",
 			"active":"active",
+			"department":"Department",
 			"image":"Logo",
 			"rebate":"Rebate (in %)",
 			"type": "Type",
@@ -892,6 +893,21 @@
 			"term_of_payment": "Term of payment (days)",
 			"discount": "Discount (in %)",
 			"term_of_discount": "Term of discount (days)"
+		},
+		"department_types": {
+			"branch_administration": "Branch administration",
+			"branch_administration_assistant": "Assistant branch administration",
+			"distribution": "Distribution",
+			"event_management": "Event management",
+			"finance": "Finance",
+			"logistics": "Logistics",
+			"management": "Management",
+			"marketing": "Marketing",
+			"product_management": "Product managent",
+			"purchase": "Purchase",
+			"restaurant_administration": "Restaurant administration",
+			"sommelier": "Sommelier",
+			"support": "Support"
 		},
 		"types": {
 			"private": "Private",
