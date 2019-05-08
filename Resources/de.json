@@ -554,7 +554,7 @@
 			"freetext": "Freitext",
 			"authid": "Developer Auth ID",
 			"template": "Expertisen Template",
-			"cop": "Ich habe die <a href='http://www.interfrog.de/agb.pdf' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
+			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
 			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
 			"pricing": {
@@ -1153,11 +1153,31 @@
 		}
 	},
 	"order": {
+		"field": {
+			"documents": "Dokumente"
+		},
+		"documenttypes": {
+			"invoice": "Rechnung",
+			"delivery": "Lieferschein",
+			"shipment": "Packetaufkleber",
+			"creditadvice": "Gutschrift"
+		},
+		"documents": {
+			"invoice": "Rechnungen",
+			"delivery": "Lieferscheine",
+			"shipment": "Packetaufkleber",
+			"creditadvice": "Gutschriften"
+		},
 		"views": {
 			"view": {
 				"tabs": {
+					"documents": "Dokumente",
 					"shipments": "Sendungen"
 				}
+			},
+			"documents": {
+				"title": "Dokumente",
+				"empty": "Es liegen keine {label} zu dieser Bestellung vor."
 			}
 		},
 		"action": {
@@ -1263,6 +1283,9 @@
 	"shipment": {
 		"field": {
 			"carrier": "Versanddienstleister",
+			"packagingUnit": {
+				"namewithcapacity": "{capacity}er Karton"
+			},
 			"defaultcarrier": "Standard-Versanddienstleister",
 			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
 			"service": "Sendungsart",

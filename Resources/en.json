@@ -554,7 +554,7 @@
 			"freetext": "Freetext",
 			"authid": "Developer Auth ID",
 			"template": "Expertisen Template",
-			"cop": "I've read the <a href='http://www.interfrog.de/agb.pdf' target='blank'>conditions of purchase</a> and agree",
+			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
 			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
 			"payment": "I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
 			"pricing": {
@@ -1153,11 +1153,31 @@
 		}
 	},
 	"order": {
+		"field": {
+			"documents": "Documents"
+		},
+		"documenttypes": {
+			"invoice": "Invoice",
+			"delivery": "Delivery note",
+			"shipment": "Shipment label",
+			"creditadvice": "Credit advice"
+		},
+		"documents": {
+			"invoice": "Invoices",
+			"delivery": "Delivery notes",
+			"shipment": "Shipment labels",
+			"creditadvice": "Credit advices"
+		},
 		"views": {
 			"view": {
 				"tabs": {
+					"documents": "Documents",
 					"shipments": "Shipments"
 				}
+			},
+			"documents": {
+				"title": "Document",
+				"empty": "There are no {label} regarding this order."
 			}
 		},
 		"action": {
@@ -1263,6 +1283,9 @@
 	"shipment": {
 		"field": {
 			"carrier": "Carrier",
+			"packagingUnit": {
+				"namewithcapacity": "Box of {capacity}"
+			},
 			"defaultcarrier": "Default carrier",
 			"onlyonecarrier": "Use carrier exclusively?",
 			"service": "Type of shipment",
