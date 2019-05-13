@@ -79,6 +79,21 @@
 	"token_modal_delete": "Do you really want to delete this token?",
 	"token_modal_error": "There is already a token for this domain/IP",
 	"address_modal_delete": "Do you really want to delete this address?",
+	"dashboard": {
+		"actions": {
+			"create": {
+				"wine_main": " ",
+				"wine_sub": "Add Wine",
+				"category_main": " ",
+				"category_sub": "Add Category",
+				"user_main": " ",
+				"user_sub": "Add User"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
+		}
+	},
 	"orders": {
 		"actions": {
 			"add_position": "+ Add position"
@@ -260,8 +275,6 @@
 	"db_categories_image": "Image",
 	"db_category_createtitle": "Create category",
 	"db_category_edittitle": "Edit category",
-	"users_create1": "Add",
-	"users_create2": "New User",
 	"users_create_main": "Add User",
 	"users_create_sub": " ",
 	"users_modification": "Last modification",
@@ -272,6 +285,10 @@
 	"users_edit_modaltitle": "Edit user",
 	"users_settings_modaltitle": "Edit user settings",
 	"users": {
+		"action": {
+			"main": "Add",
+			"sub": "New User"
+		},
 		"fields": {
 			"active_users": "Active users"
 		},

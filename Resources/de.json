@@ -79,6 +79,21 @@
 	"token_modal_delete": "Möchten Sie diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
 	"address_modal_delete": "Möchten Sie diese Adresse wirklich löschen?",
+	"dashboard": {
+		"actions": {
+			"create": {
+				"wine_main": "Neuen",
+				"wine_sub": "Wein anlegen",
+				"category_main": "Neue",
+				"category_sub": "Kategorie anlegen",
+				"user_main": "Neuen",
+				"user_sub": "Benutzer anlegen"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
+		}
+	},
 	"orders": {
 		"actions": {
 			"add_position": "+ Position hinzufügen"
@@ -260,8 +275,6 @@
 	"db_categories_image": "Bild",
 	"db_category_createtitle": "Kategorie anlegen",
 	"db_category_edittitle": "Kategorie bearbeiten",
-	"users_create1": "Neuen",
-	"users_create2": "Benutzer anlegen",
 	"users_create_main": "Neuen Benutzer",
 	"users_create_sub": "anlegen",
 	"users_modification": "Letzte Änderung",
@@ -272,6 +285,10 @@
 	"users_edit_modaltitle": "Benutzer bearbeiten",
 	"users_settings_modaltitle": "Einstellungen bearbeiten",
 	"users": {
+		"action": {
+			"main": "Neuen",
+			"sub": "Benutzer anlegen"
+		},
 		"fields": {
 			"active_users": "Aktive Benutzer"
 		},
