@@ -32,6 +32,7 @@
 			"search_placeholder": "Name oder Beschreibung",
 			"imprint": "Impressum",
 			"dataprotection": "Datenschutz",
+			"termsandconditions": "AGB",
 			"range": {
 				"from": "von",
 				"of": "ab",
@@ -187,28 +188,24 @@
 	},
 	"categories": {
 		"actions": {
-			"create_category": {
+			"create": {
 				"main": "Neue Kategorie",
-				"sub": "anlegen",
-				"dashboard_main": "Neue",
-				"dashboard_sub": "Kategorie anlegen"
-			}
-		},
-		"fields": {
-			"create_slider": {
-				"main": "Slider für Vinotheken-Display",
 				"sub": "anlegen"
 			},
-			"view_slider": {
-				"main": "Slider für Vinotheken-Display",
+			"createfbiframe": {
+				"main": "Facebook-Iframe",
+				"sub": "anlegen"
+			},
+			"viewfbiframe": {
+				"main": "Facebook-Iframe",
 				"sub": "ansehen"
 			},
-			"create_fb_iframe": {
-				"main": "Facebook-Iframe",
+			"createslider": {
+				"main": "Slider für Vinotheken-Display",
 				"sub": "anlegen"
 			},
-			"view_fb_iframe": {
-				"main": "Facebook-Iframe",
+			"viewslider": {
+				"main": "Slider für Vinotheken-Display",
 				"sub": "ansehen"
 			}
 		}
@@ -732,7 +729,7 @@
 			"mail": "E-Mail",
 			"email_sendto": "E-Mail schreiben an",
 			"www": "Internetseite",
-			"www_visit_site": "Internetseite besuchen"
+			"wwwvisitsite": "Internetseite besuchen"
 		},
 		"list": {
 			"filter": {
@@ -784,6 +781,10 @@
 			},
 			"export": {
 				"inventory": "Inventurliste herunterladen"
+			},
+			"barcode" : {
+				"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
+				"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
 			}
 		},
 		"fieldset": {
@@ -815,7 +816,6 @@
 			},
 			"articlenumber": "Art.-Nr.",
 			"barcode": "EAN-Code",
-			"barcode_download_vector": "EAN-Code als Vektor-Datei herunterladen",
 			"bio": "Bio zertifiziert",
 			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
@@ -876,7 +876,6 @@
 				}
 			},
 			"qrcode": "QR-Code",
-			"qrcode_download_vector": "QR-Code als Vektor-Datei herunterladen",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
 			"qrlink": "Zieladresse für QR-Code",

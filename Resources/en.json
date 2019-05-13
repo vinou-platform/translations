@@ -32,6 +32,7 @@
 			"search_placeholder": "Name or description",
 			"imprint": "Imprint",
 			"dataprotection": "Dataprotection",
+			"termsandconditions": "Terms and conditions",
 			"range": {
 				"from": "from",
 				"of": "from",
@@ -187,29 +188,25 @@
 	},
 	"categories": {
 		"actions": {
-			"create_category": {
+			"createcategory": {
 				"main": "Add Category",
-				"sub": " ",
-				"dashboard_main": "Add",
-				"dashboard_sub": "New Category"
-			}
-		},
-		"fields": {
-			"create_slider": {
-				"main": "Add slider for",
-				"sub": "Vinothek display"
+				"sub": " "
 			},
-			"view_slider": {
-				"main": "Show slider for",
-				"sub": "Vinothek display"
-			},
-			"create_fb_iframe": {
+			"createfbiframe": {
 				"main": "Add",
 				"sub": "Facebook-Iframe"
 			},
-			"view_fb_iframe": {
+			"viewfbiframe": {
 				"main": "Show",
 				"sub": "Facebook-Iframe"
+			},
+			"createslider": {
+				"main": "Add slider for",
+				"sub": "Vinothek display"
+			},
+			"viewslider": {
+				"main": "Show slider for",
+				"sub": "Vinothek display"
 			}
 		}
 	},
@@ -732,7 +729,7 @@
 			"mail": "Mail",
 			"email_sendto": "Send email to",
 			"www": "Website",
-			"www_visit_site": "Visit website"
+			"wwwvisitsite": "Visit website"
 		},
 		"list": {
 			"filter": {
@@ -771,8 +768,8 @@
 				"sub": " ",
 				"dashboard_main": "Add",
 				"dashboard_sub": "New Wine",
-				"title": "Create wine",
-				"modaltitle": "Create wine"
+				"title": "Add wine",
+				"modaltitle": "Add wine"
 			},
 			"edit": {
 				"modaltitle": "Edit wine"
@@ -784,6 +781,10 @@
 			},
 			"export": {
 				"inventory": "Download inventory list"
+			},
+			"barcode" : {
+				"barcodedownloadvector": "Download GTIN code as vektor file",
+				"qrcodedownloadvector": "Download QR code as vector file"
 			}
 		},
 		"fieldset": {
@@ -815,7 +816,6 @@
 			},
 			"articlenumber": "Art.-No.",
 			"barcode": "GTIN",
-			"barcode_download_vector": "Download GTIN code as vektor file",
 			"bio": "Bio certified",
 			"bottlesize": "Bottlesize",
 			"cap": "Cap",
@@ -876,7 +876,6 @@
 				}
 			},
 			"qrcode": "QR code",
-			"qrcode_download_vector": "Download QR code as vector file",
 			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
 			"qrlink": "Target address for QR code",
