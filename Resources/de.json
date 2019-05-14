@@ -1215,13 +1215,6 @@
 		},
 		"toasts": {
 			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
-		},
-		"views": {
-			"view": {
-				"tabs": {
-					"documents": "Dokumente"
-				}
-			}
 		}
 	},
 	"packaging": {

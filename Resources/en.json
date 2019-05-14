@@ -1215,13 +1215,6 @@
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
-		},
-		"views": {
-			"view": {
-				"tabs": {
-					"documents": "Documents"
-				}
-			}
 		}
 	},
 	"packaging": {
