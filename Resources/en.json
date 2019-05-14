@@ -95,72 +95,6 @@
 			"quickactions": "Quickactions"
 		}
 	},
-	"orders": {
-		"actions": {
-			"add_position": "+ Add position"
-		},
-		"fieldsets": {
-			"edit_view": "Edit view",
-			"search_product": "Search product",
-			"packaging_shipping": "Packaging and shipping"
-		},
-		"fields": {	
-			"brutto_sum": "Order brutto summary",
-			"delivery_note_created": "Delivery note created",
-			"delivery_note_not_yet_created": "Delivery note not yet created",
-			"excl_vat": "excl. VAT",
-			"filter_orders": "Filter orders",
-			"loading_positions": "Loading positions ...",
-			"invoice_created": "Invoice created",
-			"invoice_not_yet_created": "Invoice not yet created",
-			"netto_sum": "Netto summary",
-			"next_payment_type": "Next - payment type",
-			"next_delivering_addr": "Next - delivery adress",
-			"no_payment_income_yet": "Payment not yet income",
-			"order_dispatched": "Order dispatched",
-			"order_not_yet_dispatched": "Order not yet dispatched",
-			"order_date": "Order date",
-			"order_cancelled_date": "Order cancelled",
-			"payment_income_date": "Payment income date", 
-			"quantity": "Quantity",
-			"search_product": "Search product",
-			"state": "State",
-			"payment_income": {
-				"main": "Payment",
-				"sub": "income"
-			},
-			"booking_payment_income": {
-				"main": "Book",
-				"sub": "Payment income"
-			},
-			"generate_invoice_and_delivering_note": {
-				"main": "Generate invoice and delivery note",
-				"sub": "Booking cash payment"
-			},
-			"invoice_and_delivering_note": {
-				"main": "Generate",
-				"sub": "Invoice and delivery note"
-			},
-			"order_to_dispatch": {
-				"main": "Dispatch",
-				"sub": "Order"
-			},
-			"invoice_create": {
-				"main": "Invoice",
-				"create": "create",
-				"show": "show"
-			},
-			"delivery_note_create": {
-				"main": "Delivery note",
-				"create": "create",
-				"show": "show"
-			},
-			"voucher_create": {
-				"main": "Voucher",
-				"create": "create"
-			}
-		}
-	},
 	"orders_modal_cancel": "Do you really want to cancel this order?",
 	"orders_modal_create": "You're creating an order, what do you want to do?",
 	"orders_modal_create_withinvoice": "Create order with invoice and delivery note",
@@ -177,7 +111,7 @@
 	"orders_rebate_general": "Default rebat (gross)",
 	"rebates": {
 		"actions": {
-			"add_rebate": "+ Adds rebat",
+			"add_rebate": "+ Add rebate",
 			"add_position": "Add position"
 		},
 		"title": "Rebates",
@@ -1177,6 +1111,7 @@
 			}
 		},
 		"action": {
+			"add_position": "+ Add position",
 			"create": {
 				"main": "Create Order",
 				"sub": " "
@@ -1185,8 +1120,67 @@
 				"placeholder": "e.g. name, customernumber, address"
 			}
 		},
+		"fieldsets": {
+			"edit_view": "Edit view",
+			"search_product": "Search product",
+			"packaging_shipping": "Packaging and shipping"
+		},
 		"fields": {
-			"processiong_data": "Processing data ..."
+			"processiong_data": "Processing data ...",
+			"brutto_sum": "Order brutto summary",
+			"delivery_note_created": "Delivery note created",
+			"delivery_note_not_yet_created": "Delivery note not yet created",
+			"excl_vat": "excl. VAT",
+			"filter_orders": "Filter orders",
+			"loading_positions": "Loading positions ...",
+			"invoice_created": "Invoice created",
+			"invoice_not_yet_created": "Invoice not yet created",
+			"netto_sum": "Netto summary",
+			"next_payment_type": "Next - payment type",
+			"next_delivering_addr": "Next - delivery adress",
+			"no_payment_income_yet": "Payment not yet income",
+			"order_dispatched": "Order dispatched",
+			"order_not_yet_dispatched": "Order not yet dispatched",
+			"order_date": "Order date",
+			"order_cancelled_date": "Order cancelled",
+			"payment_income_date": "Payment income date", 
+			"quantity": "Qty",
+			"search_product": "Search product",
+			"state": "State",
+			"payment_income": {
+				"main": "Payment",
+				"sub": "income"
+			},
+			"booking_payment_income": {
+				"main": "Book",
+				"sub": "Payment income"
+			},
+			"generate_invoice_and_delivering_note": {
+				"main": "Generate invoice and delivery note",
+				"sub": "Booking cash payment"
+			},
+			"invoice_and_delivering_note": {
+				"main": "Generate",
+				"sub": "Invoice and delivery note"
+			},
+			"order_to_dispatch": {
+				"main": "Dispatch",
+				"sub": "Order"
+			},
+			"invoice_create": {
+				"main": "Invoice",
+				"create": "create",
+				"show": "show"
+			},
+			"delivery_note_create": {
+				"main": "Delivery note",
+				"create": "create",
+				"show": "show"
+			},
+			"voucher_create": {
+				"main": "Voucher",
+				"create": "create"
+			}
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
