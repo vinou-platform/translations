@@ -106,7 +106,8 @@
 	"orders_modal_invoice_create": "Möchten Sie Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
-	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und damit Bestellung stornieren?",
+	"orders_modal_creditadvice_create_old": "ACHTUNG: Gutschrift jetzt erstellen und damit Bestellung stornieren?",
+	"orders_modal_creditadvice_create": "ACHTUNG: Soll die ausgewählte Bestellung storniert und eine Gutschrift erstellt werden?",
 	"order_wrong_quantity": "Bitte geben sie für die Anzahl eine Zahl größer als 0 ein",
 	"orders_rebate_general": "Pauschal-Rabatt (Brutto)",
 	"rebates": {
@@ -286,7 +287,7 @@
 	"db_orders_status_prepaid": "Vorauszahlung eingegangen",
 	"db_orders_status_in_payment": "wartet auf Bezahlung",
 	"db_orders_status_payed": "Bezahlung eingegangen",
-	"db_orders_status_need_package": "In der Versandvorbereitung",
+	"db_orders_status_need_package": "In Versandvorbereitung",
 	"db_orders_status_in_delivery": "In Auslieferung",
 	"db_orders_status_delivered": "Ausgeliefert (Zahlung offen)",
 	"db_orders_status_closed": "Abgeschlossen",
@@ -1118,6 +1119,26 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, Kundennummer, Adresse"
+			},
+			"invoice_create": {
+				"main": "Rechnung",
+				"create": "erzeugen",
+				"print": "drucken",
+				"show": "anzeigen"
+			},
+			"delivery_note_create": {
+				"main": "Lieferschein",
+				"create": "erzeugen",
+				"print": "drucken",
+				"show": "anzeigen"
+			},
+			"cancel_order": {
+				"main": "Bestellung",
+				"create": "abbrechen"
+			},
+			"voucher_create": {
+				"main": "Gutschrift",
+				"create": "erzeugen"
 			}
 		},
 		"fieldsets": {
@@ -1166,24 +1187,21 @@
 			"order_to_dispatch": {
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
-			},
-			"invoice_create": {
-				"main": "Rechnung",
-				"create": "erzeugen",
-				"show": "anzeigen"
-			},
-			"delivery_note_create": {
-				"main": "Lieferschein",
-				"create": "erzeugen",
-				"show": "anzeigen"
-			},
-			"voucher_create": {
-				"main": "Gutschein",
-				"create": "erzeugen"
 			}
+		},
+		"documenttypes": {
+			"delivery": "Lieferschein",
+			"invoice": "Rechnung"
 		},
 		"toasts": {
 			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
+		},
+		"views": {
+			"view": {
+				"tabs": {
+					"documents": "Dokumente"
+				}
+			}
 		}
 	},
 	"packaging": {

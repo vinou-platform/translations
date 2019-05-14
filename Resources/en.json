@@ -106,9 +106,10 @@
 	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
 	"orders_modal_onlyinvoice_create": "Create invoice now?",
 	"orders_modal_onlydelivery_create": "Create delivery note now?",
-	"orders_modal_creditadvice_create": "Warning: Do really want to create credit advise now an cancel order?",
-	"order_wrong_quantity": "Please enter an ammount greater than 0",
-	"orders_rebate_general": "Default rebat (gross)",
+	"orders_modal_creditadvice_create_old": "Warning: Do you really want to create credit advise now and cancel order?",
+	"orders_modal_creditadvice_create": "Warning: Do you really want to cancel the selected order and create a credit voucher?",
+	"order_wrong_quantity": "Please enter an amount greater than 0",
+	"orders_rebate_general": "Default rebate (gross)",
 	"rebates": {
 		"actions": {
 			"add_rebate": "+ Add rebate",
@@ -1118,6 +1119,26 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, customernumber, address"
+			},
+			"invoice_create": {
+				"main": "Invoice",
+				"create": "create",
+				"print": "print",
+				"show": "show"
+			},
+			"delivery_note_create": {
+				"main": "Delivery note",
+				"create": "create",
+				"print": "print",
+				"show": "show"
+			},
+			"cancel_order": {
+				"main": "Cancel order",
+				"create": " "
+			},
+			"voucher_create": {
+				"main": "Create",
+				"create": "credit voucher"
 			}
 		},
 		"fieldsets": {
@@ -1166,24 +1187,21 @@
 			"order_to_dispatch": {
 				"main": "Dispatch",
 				"sub": "Order"
-			},
-			"invoice_create": {
-				"main": "Invoice",
-				"create": "create",
-				"show": "show"
-			},
-			"delivery_note_create": {
-				"main": "Delivery note",
-				"create": "create",
-				"show": "show"
-			},
-			"voucher_create": {
-				"main": "Voucher",
-				"create": "create"
 			}
+		},
+		"documenttypes": {
+			"delivery": "Delivery note",
+			"invoice": "Invoice note"
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
+		},
+		"views": {
+			"view": {
+				"tabs": {
+					"documents": "Documents"
+				}
+			}
 		}
 	},
 	"packaging": {
@@ -1205,7 +1223,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Do really want to delete this packaging?"
+			"delete": "Do you really want to delete this packaging?"
 		},
 		"toasts": {
 			"created": "Packaging created",
