@@ -310,7 +310,7 @@
 	"db_cronjobs_command": "Command",
 	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Execution time (Crontab)",
-	"db_cronjobs_cron_description": "* * * * *",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "activate",
 	"cronjobs": {
 		"actions": {
@@ -523,7 +523,7 @@
 				"invitation": "Invited"
 			},
 			"crstamp": "Date of registration",
-			"expire": "Expirationdate",
+			"expire": "Expiration date",
 			"voucher_old": "Voucher",
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",

@@ -310,7 +310,7 @@
 	"db_cronjobs_command": "Ausgeführter Befehl",
 	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Ausführungszeitpunkt (Crontab)",
-	"db_cronjobs_cron_description": "* * * * *",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "aktivieren",
 	"cronjobs": {
 		"actions": {
