@@ -225,12 +225,17 @@
 		},
 		"fields": {
 			"active_users": "Aktive Benutzer"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Aktiv",
 			"admin": "Admin",
 			"default": "Regulär",
 			"interfrog": "Interfrog",
+			"has_image": "Mit Bild",
+			"has_price": "Mit Preis",
+			"public": "Öffentlich",
 			"total": "Total"
 		}
 	},
@@ -303,8 +308,12 @@
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
 	"db_cronjobs_description": "Beschreibung",
+	"db_cronjobs_description_placeholder": "Beschreibung für neuen Cronjob",
+	"db_cronjobs_galleryFilterHint": "z.B. Name, Beschreibung",
 	"db_cronjobs_command": "Ausgeführter Befehl",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Ausführungszeitpunkt (Crontab)",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "aktivieren",
 	"cronjobs": {
 		"actions": {
@@ -836,12 +845,6 @@
 			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"sweetness": "Restsüße",
-			"stat_types": {
-				"has_image": "Mit Bild",
-				"has_price": "Mit Preis",
-				"public": "Öffentlich",
-				"total": "Total"
-			},
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
 			"topseller": "Topseller",
@@ -1241,10 +1244,6 @@
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
 			}
-		},
-		"documenttypes": {
-			"delivery": "Lieferschein",
-			"invoice": "Rechnung"
 		},
 		"toasts": {
 			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."

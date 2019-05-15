@@ -225,12 +225,17 @@
 		},
 		"fields": {
 			"active_users": "Active users"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Active",
 			"admin": "Admin",
 			"default": "Default",
 			"interfrog": "Interfrog",
+			"has_image": "With picture",
+			"has_price": "With price",
+			"public": "Public",
 			"total": "Total"
 		}
 	},
@@ -303,8 +308,12 @@
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
 	"db_cronjobs_description": "Description",
+	"db_cronjobs_description_placeholder": "Description for new cronjob",
+	"db_cronjobs_galleryFilterHint": "i.e. name, description",
 	"db_cronjobs_command": "Command",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Execution time (Crontab)",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "activate",
 	"cronjobs": {
 		"actions": {
@@ -517,7 +526,7 @@
 				"invitation": "Invited"
 			},
 			"crstamp": "Date of registration",
-			"expire": "Expirationdate",
+			"expire": "Expiration date",
 			"voucher_old": "Voucher",
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",
@@ -836,12 +845,6 @@
 			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
-			"stat_types": {
-				"has_image": "With picture",
-				"has_price": "With price",
-				"public": "Public",
-				"total": "Total"
-			},
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
@@ -1241,10 +1244,6 @@
 				"main": "Dispatch",
 				"sub": "Order"
 			}
-		},
-		"documenttypes": {
-			"delivery": "Delivery note",
-			"invoice": "Invoice note"
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
