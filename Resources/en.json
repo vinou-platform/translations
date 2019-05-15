@@ -222,12 +222,17 @@
 		},
 		"fields": {
 			"active_users": "Active users"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Active",
 			"admin": "Admin",
 			"default": "Default",
 			"interfrog": "Interfrog",
+			"has_image": "With picture",
+			"has_price": "With price",
+			"public": "Public",
 			"total": "Total"
 		}
 	},
@@ -837,12 +842,6 @@
 			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
-			"stat_types": {
-				"has_image": "With picture",
-				"has_price": "With price",
-				"public": "Public",
-				"total": "Total"
-			},
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
@@ -1211,10 +1210,6 @@
 				"main": "Dispatch",
 				"sub": "Order"
 			}
-		},
-		"documenttypes": {
-			"delivery": "Delivery note",
-			"invoice": "Invoice note"
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."

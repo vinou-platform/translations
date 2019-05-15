@@ -222,12 +222,17 @@
 		},
 		"fields": {
 			"active_users": "Aktive Benutzer"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Aktiv",
 			"admin": "Admin",
 			"default": "Regulär",
 			"interfrog": "Interfrog",
+			"has_image": "Mit Bild",
+			"has_price": "Mit Preis",
+			"public": "Öffentlich",
 			"total": "Total"
 		}
 	},
@@ -837,12 +842,6 @@
 			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"sweetness": "Restsüße",
-			"stat_types": {
-				"has_image": "Mit Bild",
-				"has_price": "Mit Preis",
-				"public": "Öffentlich",
-				"total": "Total"
-			},
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
 			"topseller": "Topseller",
@@ -1211,10 +1210,6 @@
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
 			}
-		},
-		"documenttypes": {
-			"delivery": "Lieferschein",
-			"invoice": "Rechnung"
 		},
 		"toasts": {
 			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
