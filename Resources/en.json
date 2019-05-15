@@ -1209,10 +1209,6 @@
 				"sub": "Order"
 			}
 		},
-		"documenttypes": {
-			"delivery": "Delivery note",
-			"invoice": "Invoice note"
-		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
 		}
@@ -2288,5 +2284,86 @@
 		"ice": "Ice",
 		"chocolate": "Chocolate",
 		"coffee": "Coffee"
+	},
+	"apps": {
+		"vinou-gusto": {
+			"dialogs": {
+				"access": {
+					"title": "Please grant access",
+					"toasts": {
+						"accessdenied": "Access denied"
+					}
+				},
+				"nointernet": {
+					"title": "No network available",
+					"msg": "In order to use all functionality, you need a network connection."
+				},
+				"updateavailable": {
+					"title": "Update available",
+					"msg": "New version available. Please install now to continue using this app."
+				},
+				"openexpertise": {
+					"title": "Open with"
+				},
+				"createwine": {
+					"title": "Create new wine",
+					"msg": "Do you really want to cancel? All changes will be lost."
+				},
+				"winenotfound": {
+					"title": "No wine found",
+					"msg": "Would you like to create a new wine?"
+				}
+			},
+			"views": {
+				"main": {
+					"myfavs": "My Favourites",
+					"findwines": "Find wines",
+					"scanwine": "Scan wines",
+					"imprint": "Imprint",
+					"dataprotection": "Data Protection"
+				},
+				"winery": {
+					"title": "Create wine",
+					"subtitle": "Search for winery or create new one",
+					"nextstep": "Create wine"
+				},
+				"wine": {
+					"title": "Create wine",
+					"subtitle": "Search for wine or create new one",
+					"prevstep": "Create winery",
+					"nextstep": "Bottle image"
+				},
+				"bottle": {
+					"title": "Create wine",
+					"subtitle": "Picture wine bottle and add image",
+					"prevstep": "Create wine",
+					"actions": {
+						"makepicture": "Picture bottle",
+						"save": "Save"
+					}
+				},
+				"favourites": {
+					"title": "My wines"
+				},
+				"scan": {
+					"actions": {
+						"apply": "Apply"
+					},
+					"toasts": {
+						"nfcstart": "Hold your device close to the NFC tag please.",
+						"nfcdisabled": "Please activate NFC and try again.",
+						"unsupportedtag": "NFC Tag not supported."
+					}
+				},
+				"search": {
+					"title": "Suchen",
+					"toasts": {
+						"winenotfound": "No wine found",
+						"winesaved": "Wine saved locally.",
+						"winerynotfound": "No winery found."
+					}
+				}
+			}
+		}
 	}
 }
