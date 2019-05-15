@@ -106,7 +106,6 @@
 	"orders_modal_invoice_create": "Möchten Sie Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
-	"orders_modal_creditadvice_create_old": "ACHTUNG: Gutschrift jetzt erstellen und damit Bestellung stornieren?",
 	"orders_modal_creditadvice_create": "ACHTUNG: Soll die ausgewählte Bestellung storniert und eine Gutschrift erstellt werden?",
 	"order_wrong_quantity": "Bitte geben sie für die Anzahl eine Zahl größer als 0 ein",
 	"orders_rebate_general": "Pauschal-Rabatt (Brutto)",
@@ -301,8 +300,12 @@
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
 	"db_cronjobs_description": "Beschreibung",
+	"db_cronjobs_description_placeholder": "Beschreibung für neuen Cronjob",
+	"db_cronjobs_galleryFilterHint": "z.B. Name, Beschreibung",
 	"db_cronjobs_command": "Ausgeführter Befehl",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Ausführungszeitpunkt (Crontab)",
+	"db_cronjobs_cron_description": "* * * * *",
 	"db_cronjobs_active": "aktivieren",
 	"cronjobs": {
 		"actions": {

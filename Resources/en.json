@@ -106,7 +106,6 @@
 	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
 	"orders_modal_onlyinvoice_create": "Create invoice now?",
 	"orders_modal_onlydelivery_create": "Create delivery note now?",
-	"orders_modal_creditadvice_create_old": "Warning: Do you really want to create credit advise now and cancel order?",
 	"orders_modal_creditadvice_create": "Warning: Do you really want to cancel the selected order and create a credit voucher?",
 	"order_wrong_quantity": "Please enter an amount greater than 0",
 	"orders_rebate_general": "Default rebate (gross)",
@@ -301,8 +300,12 @@
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
 	"db_cronjobs_description": "Description",
+	"db_cronjobs_description_placeholder": "Description for new cronjob",
+	"db_cronjobs_galleryFilterHint": "i.e. name, description",
 	"db_cronjobs_command": "Command",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Execution time (Crontab)",
+	"db_cronjobs_cron_description": "* * * * *",
 	"db_cronjobs_active": "activate",
 	"cronjobs": {
 		"actions": {
