@@ -27,6 +27,7 @@
 		},
 		"fields": {
 			"empty": "Please select",
+			"please_select": "Please select",
 			"required": "Required",
 			"upload_image": "Select image to upload",
 			"search_placeholder": "Name or description",
@@ -47,7 +48,8 @@
 	"tabs": {
 		"all": {
 			"general": "General",
-			"notes": "Notes"
+			"notes": "Notes",
+			"contacts": "Contact persons"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -68,12 +70,13 @@
 	"fileupload": "Choose file",
 	"delete_image": "Delete image",
 	"delete_image_secure": "Do you really want to delete the image?",
-	"delete_template_secure": "Do you really want to delete this template for epertises?",
+	"delete_template_secure": "Do you really want to delete this template for expertises?",
 	"changepw": "Change password",
 	"wineregions_none": "no information",
 	"wines_modal_delete": "Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete this winery?",
 	"category_modal_delete": "Do you really want to delete this category?",
+	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Do you really want to delete this user?",
@@ -1035,6 +1038,10 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
+			},
+			"contactperson": {
+				"main": "Add Contact",
+				"sub": " "
 			}
 		},
 		"fieldset": {
@@ -1060,6 +1067,7 @@
 			"phone": "Phone",
 			"fax": "Fax",
 			"active": "active",
+			"department":"Department",
 			"image": "Logo",
 			"rebate": "Rebate (in %)",
 			"type": "Type",
@@ -1072,6 +1080,21 @@
 			"discount": "Discount (in %)",
 			"search_client": "Search client",
 			"term_of_discount": "Term of discount (days)"
+		},
+		"department_types": {
+			"branch_administration": "Branch administration",
+			"branch_administration_assistant": "Assistant branch administration",
+			"distribution": "Distribution",
+			"event_management": "Event management",
+			"finance": "Finance",
+			"logistics": "Logistics",
+			"management": "Management",
+			"marketing": "Marketing",
+			"product_management": "Product managent",
+			"purchase": "Purchase",
+			"restaurant_administration": "Restaurant administration",
+			"sommelier": "Sommelier",
+			"support": "Support"
 		},
 		"types": {
 			"private": "Private",
@@ -1103,6 +1126,17 @@
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Add Contact",
+				"sub": " "
+			},
+			"save": {
+				"title": "Save contact"
+			}
 		}
 	},
 	"order": {
@@ -1473,6 +1507,7 @@
 		"client_saved": "Client saved!",
 		"client_changed": "Client updated!",
 		"client_deleted": "Client deleted!",
+		"contact_deleted": "Contact deleted",
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
@@ -1549,7 +1584,11 @@
 			"saveerror": "Note could not saved!",
 			"delete": "Note deleted!",
 			"deleteerror": "Note could not deleted!"
-		}
+		},
+		"contacts_saved": "Contact added.",
+		"contacts_saveerror": "Error adding contact!",
+		"contacts_deleted": "Contact deleted.",
+		"contacts_deleteerror": "Error deleting contact!"
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"

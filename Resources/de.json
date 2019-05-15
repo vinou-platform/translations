@@ -27,6 +27,7 @@
 		},
 		"fields": {
 			"empty": "Bitte wählen",
+			"please_select": "Bitte wählen",
 			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
 			"search_placeholder": "Name oder Beschreibung",
@@ -47,7 +48,8 @@
 	"tabs": {
 		"all": {
 			"general": "Allgemein",
-			"notes": "Notizen"
+			"notes": "Notizen",
+			"contacts": "Kontaktpersonen"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -74,6 +76,7 @@
 	"wines_modal_delete": "Möchten Sie diesen Wein wirklich löschen?",
 	"wineries_modal_delete": "Möchten Sie dieses Weingut wirklich löschen?",
 	"category_modal_delete": "Möchten Sie diese Kategorie wirklich löschen?",
+	"contacts_modal_delete":"Möchten Sie diesen Kontakt wirklich löschen?",
 	"customers_modal_delete": "Möchten Sie diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
 	"users_modal_delete": "Möchten Sie diesen Benutzer wirklich löschen?",
@@ -106,7 +109,7 @@
 	"orders_modal_invoice_create": "Möchten Sie Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
-	"orders_modal_creditadvice_create": "ACHTUNG: Soll die ausgewählte Bestellung storniert und eine Gutschrift erstellt werden?",
+	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?",
 	"order_wrong_quantity": "Bitte geben sie für die Anzahl eine Zahl größer als 0 ein",
 	"orders_rebate_general": "Pauschal-Rabatt (Brutto)",
 	"rebates": {
@@ -1035,6 +1038,10 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, Firma, Addresse"
+			},
+			"contactperson": {
+				"main": "Neue Kontaktperson",
+				"sub": "anlegen"
 			}
 		},
 		"fieldset": {
@@ -1062,6 +1069,7 @@
 			"active": "aktiv",
 			"image": "Logo",
 			"rebate": "Rabatt (in %)",
+			"department": "Abteilung",
 			"type": "Typ",
 			"pricerange": "Preisklasse",
 			"bank": "Kreditinstitut",
@@ -1072,6 +1080,21 @@
 			"discount": "Skonto (in %)",
 			"search_client": "Kunde suchen",
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+		},
+		"department_types": {
+			"branch_administration": "Filialleitung",
+			"branch_administration_assistant": "Stellvertretende Filialleitung",
+			"distribution": "Vertrieb",
+			"event_management": "Veranstaltungsmanagement",
+			"finance": "Buchhaltung",
+			"logistics": "Logistik",
+			"management": "Geschäftsführung",
+			"marketing": "Marketing",
+			"product_management": "Produktmanagent",
+			"purchase": "Einkauf",
+			"restaurant_administration": "Restaurantleitung",
+			"sommelier": "Sommelier",
+			"support": "Support"
 		},
 		"types": {
 			"private": "Privatperson",
@@ -1103,6 +1126,17 @@
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Kontaktperson",
+				"sub": "anlegen"
+			},
+			"save": {
+				"title": "Kontakt speichern"
+			}
 		}
 	},
 	"order": {
@@ -1473,6 +1507,7 @@
 		"client_saved": "Kunde gespeichert!",
 		"client_changed": "Kunde aktualisiert!",
 		"client_deleted": "Kunde gelöscht!",
+		"contact_deleted": "Kontaktperson gelöscht!",
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
@@ -1549,7 +1584,11 @@
 			"saveerror": "Notiz konnte nicht gespeichert werden!",
 			"delete": "Notiz gelöscht!",
 			"deleteerror": "Notiz konnte nicht gelöscht werden!"
-		}
+		},
+		"contacts_saved": "Kontaktperson gespeichert!",
+		"contacts_saveerror": "Kontakt konnte nicht gespeichert werden!",
+		"contacts_deleted": "Kontaktperson gelöscht!",
+		"contacts_deleteerror": "Kontaktperson konnte nicht gelöscht werden!"
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
