@@ -1011,8 +1011,8 @@
 		},
 		"field": {
 			"content": "Content",
-			"wrote": "wrote",
-			"edited": "edited"
+			"wrote": "Wrote on",
+			"edited": "Edited on"
 		},
 		"messages": {
 			"toasts": {
@@ -1428,7 +1428,7 @@
 	"settings": {
 		"account": {
 			"title": "Account settings",
-			"description": "Adminstrate your invoice address, membership oder bank account e.g."
+			"description": "Administrate your invoice address, membership, bank account etc."
 		},
 		"membership": {
 			"title": "Membership",
@@ -1436,12 +1436,12 @@
 		},
 		"customer": {
 			"title": "Invoice information",
-			"description": "Administrate information for your Vinou-Membership. These informations won't be shown public in network."
+			"description": "Administrate your Vinou membership settings. These information are not public and won’t be shown in the Vinou network."
 		},
 		"mycompanies": {
 			"merchants": {
 				"title": "My wine store",
-				"description": "Define additional companies for your wine store. These are public informations shown within the Vinou network."
+				"description": "Define additional companies for your wine store. These information are public and will be shown within the Vinou network."
 			},
 			"wineries": {
 				"title": "My winery",
@@ -1451,7 +1451,7 @@
 		"payments": {
 			"title": "Payment methods",
 			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
-			"bankaccount": "Bankverbindung"
+			"bankaccount": "Bank account"
 		},
 		"packagings": {
 			"title": "Package options",
@@ -1459,10 +1459,10 @@
 		},
 		"packagingunits": {
 			"title": "Packaging units",
-			"description": "Configure your boxes to send your wines that will be used for shipment. These boxes will be used also to calculate your shipment labels."
+			"description": "Configure your shipment boxes. These settings will also be used to calculate shipment label."
 		},
 		"priceranges": {
-			"title": "Preis ranges",
+			"title": "Price ranges",
 			"description": "Configure your price ranges to setup individual client prices."
 		},
 		"shipment": {

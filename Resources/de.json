@@ -1011,8 +1011,8 @@
 		},
 		"field": {
 			"content": "Inhalt",
-			"wrote": "schrieb",
-			"edited": "bearbeitet"
+			"wrote": "Geschrieben am",
+			"edited": "Bearbeitet am"
 		},
 		"messages": {
 			"toasts": {
