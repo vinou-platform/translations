@@ -1,24 +1,24 @@
 {
 	"modules": {
-		"dashboard":"Dashboard",
-		"winery":"Winery",
-		"wineries":"Wineries",
-		"wines":"Wines",
-		"winelists":"Winelists",
-		"qrcodes":"QR-Codes",
-		"news":"News",
-		"users":"Users",
-		"customers":"Clients",
-		"categories":"Categories",
-		"clients":"Member",
-		"orders":"Orders",
-		"clientletters":"Client letters",
-		"tokens":"Connections",
-		"settings":"Settings",
-		"cronjobs":"Cronjobs",
-		"network":"My network",
-		"merchants":"Merchants",
-		"products":"Products"
+		"dashboard": "Dashboard",
+		"winery": "Winery",
+		"wineries": "Wineries",
+		"wines": "Wines",
+		"winelists": "Winelists",
+		"qrcodes": "QR codes",
+		"news": "News",
+		"users": "Users",
+		"customers": "Clients",
+		"categories": "Categories",
+		"clients": "Member",
+		"orders": "Orders",
+		"clientletters": "Client letters",
+		"tokens": "Connections",
+		"settings": "Settings",
+		"cronjobs": "Cronjobs",
+		"network": "My network",
+		"merchants": "Merchants",
+		"products": "Products"
 	},
 	"general": {
 		"fieldsets": {
@@ -28,11 +28,17 @@
 		"fields": {
 			"empty": "Please select",
 			"required": "Required",
+			"upload_image": "Select image to upload",
+			"search_placeholder": "Name or description",
+			"imprint": "Imprint",
+			"dataprotection": "Dataprotection",
+			"termsandconditions": "Terms and conditions",
 			"range": {
 				"from": "from",
 				"of": "from",
 				"to": "to"
 			},
+			"taxid": "Tax-ID",
 			"price": {
 				"none": "free of charge"
 			}
@@ -53,155 +59,243 @@
 			"label": "Loading data ..."
 		}
 	},
-	"de":"Germany",
-	"en":"England",
-	"fr":"France",
-	"fileupload":"Choose file",
-	"delete_image":"Delete Image",
-	"delete_image_secure":"Do you really want to delete the image?",
-	"delete_template_secure":"Do you really want to delete the template?",
-	"changepw":"Change password",
-	"wineregions_none":"no information",
-	"wines_modal_delete":"Do you really want to delete this wine?",
-	"wineries_modal_delete":"Do you really want to delete this winery?",
-	"category_modal_delete":"Do you really want to delete this category?",
-	"customers_modal_delete":"Do you really want to delete this customer?",
-	"users_modal_delete":"Do you really want to delete this user?",
-	"address_modal_delete":"Do you really want to delete this address?",
-	"orders_modal_cancel":"Do you really want to cancel this order?",
-	"orders_modal_create":"You're creating an order, what do you want to do?",
-	"orders_modal_create_withinvoice":"Create order with invoice and delivery note",
-	"orders_modal_create_only":"Create only",
-	"orders_position_delete":"Do you really want to delete this item?",
-	"orders_position_update":"Do you really want to update this item?",
-	"orders_position_add":"Do you really want to add this item",
-	"orders_modal_invoice_create":"Do you really want to create invoice and a delivery note to sent this order?",
-	"orders_modal_onlyinvoice_create":"Create invoice now?",
-	"orders_modal_onlydelivery_create":"Create delivery note now?",
-	"orders_modal_creditadvice_create":"Warning: Do really want to create credit advise now an cancel order?",
-	"order_wrong_quantity": "Please enter an ammount greater than 0",
-	"rebates": {
-		"title":"Rebates",
-		"methods": {
-			"general":"General rebate (gross)",
-			"percent":"Percental rebate"
+	"price": "Price",
+	"quantity": "Stock",
+	"articlenumber": "Articlenumber",
+	"de": "Germany",
+	"en": "England",
+	"fr": "France",
+	"fileupload": "Choose file",
+	"delete_image": "Delete image",
+	"delete_image_secure": "Do you really want to delete the image?",
+	"delete_template_secure": "Do you really want to delete this template for epertises?",
+	"changepw": "Change password",
+	"wineregions_none": "no information",
+	"wines_modal_delete": "Do you really want to delete this wine?",
+	"wineries_modal_delete": "Do you really want to delete this winery?",
+	"category_modal_delete": "Do you really want to delete this category?",
+	"customers_modal_delete": "Do you really want to delete this customer?",
+	"users_modules": "Modules",
+	"users_modal_delete": "Do you really want to delete this user?",
+	"token_modal_delete": "Do you really want to delete this token?",
+	"token_modal_error": "There is already a token for this domain/IP",
+	"address_modal_delete": "Do you really want to delete this address?",
+	"dashboard": {
+		"actions": {
+			"create": {
+				"wine_main": " ",
+				"wine_sub": "Add Wine",
+				"category_main": " ",
+				"category_sub": "Add Category",
+				"user_main": " ",
+				"user_sub": "Add User"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
 		}
 	},
-	"yes":"Yes",
-	"no":"No",
-	"fieldset_general_title":"General",
-	"fieldset_region_title":"Regional",
-	"fieldset_grapetype_title":"Grapetype",
-	"fieldset_stock_title":"Stocks",
-	"fieldset_facts_title":"Facts",
-	"fieldset_analyse_title":"Analyse",
-	"fieldset_additional_title":"Description & Image",
-	"fieldset_qrcode_title":"QR-Code",
-	"fieldset_contact_title":"Contact",
-	"fieldset_description_title":"Description",
-	"fieldset_settings_title":"Settings",
-	"fieldset_packages_title":"Package options",
-	"fieldset_addresses_title":"Additional Addresses",
-	"fieldset_billing_title":"Billingaddress",
-	"fieldset_delivery_title":"Deliveryaddress",
-	"fieldset_payment_title":"Payment",
-	"fieldset_customer_title":"Account",
-	"fieldset_positions_title":"Items",
-	"settings_addresses":"Addresses",
-	"settings_packaging":"Shipment costs",
-	"settings_advanced":"Advanced Settings",
-	"settings_templates":"Template administration",
-	"settings_mailsetup":"SMTP Mailbox for email delivery",
-	"settings_payments":"Paymentmethods",
-	"settings_connections":"Connections",
-	"sysTool_account":"Settings",
-	"login":"Login",
-	"logout":"Logout",
-	"edit":"edit",
-	"save":"save",
-	"cancel":"cancel",
-	"repeatpw":"repeat password",
-	"language":"language",
-	"modal_delete_wine":"Do you really want to delete this wine?",
-	"test":"english",
-	"login_emailempty":"E-Mail Addresse nicht angegeben",
-	"login_emailnotvalid":"E-Mail Addresse nicht valide",
-	"login_passwordempty":"Passwort nicht angegeben",
-	"login_wronglogin":"Email or password not correct.",
-	"login_wrongreset":"Email or matching user not found.",
-
-	"db_categories_image":"Image",
-	"db_category_createtitle":"Create Category",
-	"db_category_edittitle":"Edit Category",
-	"users_create1":"Create",
-	"users_create2":"User",
-	"users_galleryFilterHint":"e.g. name, address",
-	"users_create_modaltitle":"Create new user",
-	"users_edit_modaltitle":"Edit user",
-	"users_settings_modaltitle":"Edit user settings",
-	"db_users_login_title":"Login",
-	"db_users_login_submit":"Log in",
-	"db_users_lostpassword_title":"Link request",
-	"db_users_lostpassword":"Lost Password?",
-	"db_users_gotoregister":"No account? <a href='/register'>Register now!</a>",
-	"db_users_lostpassword_submit":"Request reset email",
-	"db_users_lostpassword_send":"An email with reset link was send. This link expires in 24 hours. Use this to reset your password.",
-	"db_users_resetpassword_title":"Password reset",
-	"db_users_resetpassword_submit":"Set new password",
-	"db_users_resetpassword_send":"New password is set. The used link is not valid anymore.",
+	"orders_modal_cancel": "Do you really want to cancel this order?",
+	"orders_modal_create": "You're creating an order, what do you want to do?",
+	"orders_modal_create_withinvoice": "Create order with invoice and delivery note",
+	"orders_modal_create_only": "Create only",
+	"orders_modal_sent": "Do you really want to set this order as dispatched",
+	"orders_position_delete": "Do you really want to delete this item?",
+	"orders_position_update": "Do you really want to update this item?",
+	"orders_position_add": "Do you really want to add this item",
+	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
+	"orders_modal_onlyinvoice_create": "Create invoice now?",
+	"orders_modal_onlydelivery_create": "Create delivery note now?",
+	"orders_modal_creditadvice_create_old": "Warning: Do you really want to create credit advise now and cancel order?",
+	"orders_modal_creditadvice_create": "Warning: Do you really want to cancel the selected order and create a credit voucher?",
+	"order_wrong_quantity": "Please enter an amount greater than 0",
+	"orders_rebate_general": "Default rebate (gross)",
+	"rebates": {
+		"actions": {
+			"add_rebate": "+ Add rebate",
+			"add_position": "Add position"
+		},
+		"title": "Rebates",
+		"methods": {
+			"general": "General rebate (gross)",
+			"percent": "Percental rebate"
+		}
+	},
+	"categories": {
+		"actions": {
+			"createcategory": {
+				"main": "Add Category",
+				"sub": " "
+			},
+			"createfbiframe": {
+				"main": "Add",
+				"sub": "Facebook-Iframe"
+			},
+			"viewfbiframe": {
+				"main": "Show",
+				"sub": "Facebook-Iframe"
+			},
+			"createslider": {
+				"main": "Add slider for",
+				"sub": "Vinothek display"
+			},
+			"viewslider": {
+				"main": "Show slider for",
+				"sub": "Vinothek display"
+			}
+		}
+	},
+	"currenttoken_old": "Current token",
+	"currenttoken": "Current token",
+	"tokens": {
+		"actions": {
+			"create": {
+				"main": "Add Token",
+				"sub": " "
+			}
+		}
+	},
+	"yes": "Yes",
+	"no": "No",
+	"fieldset_general_title": "General",
+	"fieldset_region_title": "Regional",
+	"fieldset_grapetype_title": "Grapetype",
+	"fieldset_stock_title": "Stocks",
+	"fieldset_facts_title": "Facts",
+	"fieldset_analyse_title": "Analyse",
+	"fieldset_additional_title": "Description & Image",
+	"fieldset_qrcode_title": "QR-Code",
+	"fieldset_contact_title": "Contact",
+	"fieldset_description_title": "Description",
+	"fieldset_settings_title": "Settings",
+	"fieldset_packages_title": "Package options",
+	"fieldset_addresses_title": "Additional Addresses",
+	"fieldset_billing_title": "Billingaddress",
+	"fieldset_delivery_title": "Deliveryaddress",
+	"fieldset_payment_title": "Payment",
+	"fieldset_positions_title": "Items",
+	"fieldset_customer_title": "Account",
+	"fieldset_quickactions": "Quickactions",
+	"field_yard_sale": "Yard sale",
+	"field_same_invoice_addr": "Same as billing address",
+	"field_shipping_different_location": "Different delivery address",
+	"settings_addresses": "Addresses",
+	"settings_packaging": "Shipment costs",
+	"settings_advanced": "Advanced Settings",
+	"settings_templates": "Template administration",
+	"settings_mailsetup": "SMTP Mailbox for email delivery",
+	"settings_payments": "Paymentmethods",
+	"settings_connections": "Connections",
+	"sysTool_account": "Settings",
+	"options": "Options",
+	"addtoken": "Add token",
+	"referer": "Valid until",
+	"login": "Login",
+	"logout": "Logout",
+	"edit": "Edit",
+	"save": "Save",
+	"cancel": "Cancel",
+	"repeatpw": "Retype password",
+	"language": "Language",
+	"modal_delete_wine": "Do you really want to delete this wine?",
+	"test": "english",
+	"login_emailempty": "Email field empty",
+	"login_emailnotvalid": "The email addresse not valid",
+	"login_passwordempty": "Password not entered",
+	"login_wronglogin": "Email or password not correct.",
+	"login_wrongreset": "Email or matching user not found.",
+	"db_categories_image": "Image",
+	"db_category_createtitle": "Create category",
+	"db_category_edittitle": "Edit category",
+	"users_create_main": "Add User",
+	"users_create_sub": " ",
+	"users_modification": "Last modification",
+	"users_default_person_placeholder": "John Doe",
+	"users_default_person_mail_placeholder": "john.doe@mail.com",
+	"users_galleryFilterHint": "e.g. name, address",
+	"users_create_modaltitle": "Create new user",
+	"users_edit_modaltitle": "Edit user",
+	"users_settings_modaltitle": "Edit user settings",
+	"users": {
+		"action": {
+			"main": "Add",
+			"sub": "New User"
+		},
+		"fields": {
+			"active_users": "Active users"
+		},
+		"stat_types": {
+			"active": "Active",
+			"admin": "Admin",
+			"default": "Default",
+			"interfrog": "Interfrog",
+			"total": "Total"
+		}
+	},
+	"db_users_login_title": "Login",
+	"db_users_login_submit": "Log in",
+	"db_users_lostpassword": "Lost Password?",
+	"db_users_gotoregister": "No account? <a href='/register'>Register now!</a>",
+	"db_users_lostpassword_title": "Request activation link",
+	"db_users_lostpassword_submit": "Request reset email",
+	"db_users_lostpassword_send": "An email with reset link was send. This link expires in 24 hours. Use this to reset your password.",
+	"db_users_resetpassword_title": "Password reset",
+	"db_users_resetpassword_submit": "Set new password",
+	"db_users_resetpassword_send": "New password is set. The used link is not valid anymore.",
 	"db_users_sendpasswordresetmail": "Send password mail",
-	"db_users_gotologin":"Go to login",
-	"db_users_createtitle":"Create User",
-	"db_users_edittitle":"Edit User",
-	"db_users_userdatatitle":"Userdata",
-	"db_users_settingstitle":"App-Settings",
-	"db_users_passwordmatch":"Password repeat didn'nt match",
-	"db_users_name":"Name",
-	"db_users_mail":"Email",
-	"db_users_password":"Password",
-	"db_users_role":"Role",
-	"db_users_active":"active",
-	"db_users_image":"Image",
-	"db_users_customers_id":"belongs to member",
-	"db_winecategories_name":"Name",
-	"db_winecategories_description":"Description",
-	"db_winecategories_image":"Image",
-	"db_tokens_createtitle":"Create Connection",
-	"db_tokens_edittitle":"Edit Connection",
-	"db_tokens_token":"Token",
-	"db_tokens_referer":"Domain",
-	"db_tokens_mode":"Mode",
-	"db_tokens_mode_dev":"Development (dont validate host)",
-	"db_tokens_mode_live":"Live (validate host)",
+	"db_users_gotologin": "Go to login",
+	"db_users_createtitle": "Create User",
+	"db_users_edittitle": "Edit User",
+	"db_users_userdatatitle": "Edit user data",
+	"db_users_settingstitle": "Edit app settings",
+	"db_users_passwordmatch": "Password retype didn't match",
+	"db_users_name": "Name",
+	"db_users_mail": "Email",
+	"db_users_password": "Password",
+	"db_users_role": "Role",
+	"db_users_active": "active",
+	"db_users_beta": "Beta user",
+	"db_users_image": "Image",
+	"db_users_customers_id": "belongs to member",
+	"db_winecategories_name": "Name",
+	"db_winecategories_description": "Description",
+	"db_winecategories_image": "Image",
+	"db_tokens_createtitle": "Create Connection",
+	"db_tokens_edittitle": "Edit Connection",
+	"db_tokens_token": "Token",
+	"db_tokens_referer": "Domain",
+	"db_tokens_mode": "Mode",
+	"db_tokens_mode_dev": "Development (Host validation disabled)",
+	"db_tokens_mode_live": "Live (validate host)",
 	"db_tokens_mode_hint": "<b>Warning:</b> If connection is set to <b>Development</b>-Mode each server that has token and authid can access your winedata.",
-	"db_payments_createtitle":"Create payment receipe",
-	"db_payments_edittitle":"Create payment receipe",
-	"db_payments_type":"Type",
-	"db_payments_type_cash":"Cash",
-	"db_payments_type_bank":"Bank account",
-	"db_payments_type_paypal":"Paypal",
-	"db_payments_bookingstamp":"Booking day",
-	"db_payments_details":"Details",
-	"db_payments_gross":"Amount",
-	"db_payments_invoice":"Invoice",
-	"db_payments_order":"Order",
-	"db_orders_createtitle":"Create Order",
-	"db_orders_edittitle":"Edit Order",
-	"db_orders_viewtitle":"View Orderdetails",
-	"db_orders_status_new":"New",
-	"db_orders_status_need_payment":"Prepayment expected",
-	"db_orders_status_prepaid":"Prepaid, Delivery preparation",
-	"db_orders_status_in_payment":"Wait for payment",
-	"db_orders_status_payed":"Payment received",
-	"db_orders_status_need_package":"Delivery preparation",
-	"db_orders_status_in_delivery":"In Delivery",
-	"db_orders_status_delivered":"Delivered (Payment needed)",
-	"db_orders_status_closed":"Completed",
-	"db_orders_status_cancelled":"Cancelled",
-	"db_orders_payment_cash":"Cash",
-	"db_orders_payment_prepaid":"Prepaid",
-	"db_orders_payment_invoice":"Invoice",
-	"db_orders_payment_paypal":"Paypal",
+	"db_payments_createtitle": "Create payment receipe",
+	"db_payments_edittitle": "Create payment receipe",
+	"db_payments_type": "Type",
+	"db_payments_type_cash": "Cash",
+	"db_payments_type_bank": "Bank transaction",
+	"db_payments_type_paypal": "Paypal",
+	"db_payments_bookingstamp": "Booking day",
+	"db_payments_details": "Details",
+	"db_payments_gross": "Amount",
+	"db_payments_invoice": "Invoice",
+	"db_payments_order": "Order",
+	"db_orders_createtitle": "Create Order",
+	"db_orders_edittitle": "Edit Order",
+	"db_orders_viewtitle": "View Orderdetails",
+	"db_orders_status_new": "New",
+	"db_orders_status_need_payment": "Prepayment expected",
+	"db_orders_status_prepaid": "Prepaid completed, delivery preparation",
+	"db_orders_status_in_payment": "Wait for payment",
+	"db_orders_status_payed": "Payment received",
+	"db_orders_status_need_package": "Delivery preparation",
+	"db_orders_status_in_delivery": "In Delivery",
+	"db_orders_status_delivered": "Delivered (Payment needed)",
+	"db_orders_status_closed": "Completed",
+	"db_orders_status_cancelled": "Cancelled",
+	"db_orders_payment_cash": "Cash",
+	"db_orders_payment_prepaid": "Prepaid",
+	"db_orders_payment_invoice": "Invoice",
+	"db_orders_payment_paypal": "Paypal",
 	"db_orders_createdby": "Created by",
 	"db_orders_showEditor": "Show creator",
 	"db_cronjobs_createtitle": "Create cronjob",
@@ -210,16 +304,25 @@
 	"db_cronjobs_command": "Command",
 	"db_cronjobs_cron": "Execution time (Crontab)",
 	"db_cronjobs_active": "activate",
-	"order_view_invoice":"Invoice",
-	"order_create_invoice":"Create invoice",
-	"order_view_delivery":"Delivery Note",
-	"order_create_delivery":"Create Delivery Note",
+	"cronjobs": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Cronjob"
+			}
+		}
+	},
+	"order_view_invoice": "Invoice",
+	"order_create_invoice": "Create invoice",
+	"order_view_delivery": "Delivery Note",
+	"order_create_delivery": "Create Delivery Note",
 	"account_myWinery": "My Winery",
 	"account_myUser": "My User",
-	"db_stock_createtitle": "Warenein-/ausgang buchen",
-	"db_stock_parentid": "Wein",
+	"db_stock_createtitle": "Booking stock income/outgoing",
+	"db_stock_parentid": "Wine",
 	"db_stock": {
 		"field": {
+			"analysis_data": "Analysis data",
 			"type": "Type",
 			"quantity": "Quantity",
 			"description": "Description",
@@ -237,6 +340,10 @@
 				"delivery": "Delivery",
 				"sponsoring": "Sponsoring",
 				"promotion": "Promotion"
+			},
+			"book": {
+				"main": "Booking Stock",
+				"sub": "income/outgoing"
 			}
 		},
 		"type": {
@@ -252,7 +359,7 @@
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port on SMTP-Server",
 	"mailsetup_smtpuser": "Username",
-	"mailsetup_smtppassword": "Passwort",
+	"mailsetup_smtppassword": "Password",
 	"mailsetup_smtpencrypt": "Encryption",
 	"mailsetup_senderemail": "email for outbound",
 	"mailsetup_sendername": "sendername for outbound",
@@ -262,15 +369,26 @@
 	"templates_contract": "Template for contract",
 	"templates_invoice": "Template for invoice",
 	"templates_delivery": "Template for delivery note",
+	"templates": {
+		"placeholders": {		
+			"vinou_contract": "Vinou contract (Default)",
+			"vinou_delivery_note": "Vinou delivery note (Default)",
+			"vinou_expertise": "Vinou expertise (Default)",
+			"vinou_invoice": "Vinou invoice (Default)",
+			"vinou_offer": "Vinou offer (Default)"
+		}
+	},
 	"paypal_edittitle": "Edit paypal-settings",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
 	"paypal_paypalappmode": "Mode",
+	"paypal_appmode_sandbox": "Sandbox",
+	"paypal_appmode_live": "Live",
 	"bank_edittitle": "Edit bank account",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
-	"bank_bankname": "creditinstitut",
-	"bank_owner": "owner of account",
+	"bank_bankname": "Creditinstitut",
+	"bank_owner": "Account owner",
 	"cashlink_createtitle": "Register Cashlink",
 	"cashlink_viewtitle": "Your Cashlink account data",
 	"cashlink_business_title": "Company data",
@@ -308,23 +426,33 @@
 			},
 			"verify": {
 				"title": "Send verification",
-				"success": "We send a verifcation letter containing an activation link to <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. After activation you're able to use all of our network functions for free for 30 days.",
-				"error": "Oops, an error occured. The verification could not be sent.<br><br>Please contact us to start networking as soon as possible. Use contact:<br><a href='mailto:kontakt@vinou.de'>kontakt@vinou.de</a> &middot; <a href='tel:+4961316245390'>+49(0) 6131 62 45 390</a>",
-				"send": "Send verification"
+				"send": "Verification mail sent",
+				"reinvitelink": "Request new invitation",
+				"contact": "Get in contact with us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"success": {
+					"common": "We send a verifcation letter containing an activation link to <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. After activation you're able to use all of our network functions for free for 30 days.",
+					"reinvite": "An invitation has been sent to <b>{customer.mail}</b>. Use the link in the mail to get verified."
+				},
+				"error": {
+					"common": "Oops, an error occured. The verification could not be sent.<br><br>Please contact us to start networking as soon as possible.",
+					"completed": "You are already verified. A letter with an activation link is sent to you <b>by mail</b> to address: <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. After successfully activation you are welcome to test the full functionallity of our network for a trial of 30 days.<br><br>If you did not receive a postcard from us, please feel free to contact us, to get started immediately.",
+					"expired": "Oops, an error occured. The verification could not be sent. Invitation term is expired.<br><br>Please contact us to start networking as soon as possible. Use contact:<br><a href='mailto:kontakt@vinou.de'>kontakt@vinou.de</a> &middot; <a href='tel:+4961316245390'>+49(0) 6131 62 45 390</a>"
+				}
 			},
 			"activate": {
 				"title": "Finish verification",
 				"description": "Only one step until your personal membership. Please insert name, e-mail and password to create an administrator user for your Vinou-Account.",
 				"user": "Create administrator",
 				"submit": "Finish verification",
-				"success": "verification finished"
+				"success": "verification finished",
+				"error": "The verification could not be finished. Please try again or get in contact with us to get started immediately.<br><br>Contact us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>"
 			},
 			"upgrade": {
 				"title": "Upgrade Membership",
 				"description": "Being a Vinou-Commerce member you can use all features by paying a monthly fee of 40 EUR excluding VAT. Each negotiated order generates a promotion fee of 1 EUR excluding VAT. The monthly fee will be invoiced every month in advance. The promotion fee will be invoiced at 1st of following month",
 				"teaser": {
-					"publish":"<b>You are using Vinou-Publishing.</b> To activate the full featured Version please upgrade to Vinou-Commerce.",
-					"trial":"<b>You are using Vinou within the trial phase.</b> To continously using all features please upgrade to Vinou-Commerce."
+					"publish": "<b>You are using Vinou-Publishing.</b> To activate the full featured Version please upgrade to Vinou-Commerce.",
+					"trial": "<b>You are using Vinou within the trial phase.</b> To continously using all features please upgrade to Vinou-Commerce."
 				},
 				"linktext": "Upgrade now!",
 				"bank": "Bancaccount for SEPA direct debit mandate"
@@ -334,11 +462,14 @@
 			"create": {
 				"main": "Create",
 				"sub": "new member",
-				"title":"Create new member",
+				"title": "Create new member",
 				"modaltitle": "Create new member"
 			},
+			"login": {
+				"login": "Einloggen"
+			},
 			"renewauth": {
-				"button": "Renew AuthID!"
+				"button": "Renew Auth ID!"
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
@@ -352,28 +483,29 @@
 		},
 		"field": {
 			"email": "E-Mail",
+			"password": "Passwort",
 			"phone": "Phone",
-			"voucher":"I've got a voucher",
+			"voucher": "I've got a voucher",
 			"copyright": "© Copyright {company} 2018",
-			"name":"Contact Person",
-			"company":"Company",
-			"winery":"Winery",
-			"taxid":"TaxID",
-			"address":"Address",
-			"zip":"Zip",
-			"city":"City",
-			"zipcity":"Zip + City",
-			"country":"Country",
-			"www":"Website",
-			"fax":"Fax",
-			"active":"active",
-			"image":"Logo",
-			"freetext":"Freetext",
-			"active": "activ",
-			"activate": "Account activation",
-			"cop":"I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
-			"trust":"I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
-			"payment":"I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
+			"name": "Contact person",
+			"company": "Company",
+			"winery": "Winery",
+			"taxid": "Tax ID",
+			"address": "Address",
+			"zip": "Zip",
+			"city": "City",
+			"zipcity": "Zip - City",
+			"country": "Country",
+			"www": "Website",
+			"fax": "Fax",
+			"active": "active",
+			"image": "Logo",
+			"freetext": "Freetext",
+			"authid": "Developer Auth ID",
+			"template": "Expertisen Template",
+			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
+			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
+			"payment": "I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
 			"pricing": {
 				"label": "Account model",
 				"acquisition": "in aquisition",
@@ -382,15 +514,16 @@
 				"regular": "Commerce",
 				"invitation": "Invited"
 			},
-			"crstamp":"Date of registration",
-			"expire":"Expirationdate",
-			"voucher":"Voucher",
-			"source":"Acquired by",
-			"notice":"Systemmails allowed",
+			"crstamp": "Date of registration",
+			"expire": "Expirationdate",
+			"voucher_old": "Voucher",
+			"source": "Acquired by",
+			"notice": "Systemmails allowed",
+			"state": "Status",
 			"type": {
 				"label": "Member type",
-				"winery":"Winery",
-				"merchant":"Merchant"
+				"winery": "Winery",
+				"merchant": "Merchant"
 			}
 		},
 		"messages": {
@@ -400,7 +533,8 @@
 			"toasts": {
 				"upgrade": "Vinou-Commerce activated!",
 				"upgrade_error": "An error occured. Vinou-Commerce wasn't activated!",
-				"activation_error": "An error occured. Account could not be activated!"
+				"activation_error": "An error occured. Account could not be activated!",
+				"activation_success": "Welcome at Vinou!"
 			}
 		}
 	},
@@ -411,6 +545,7 @@
 				"wineries": "Enter winery",
 				"wines": "Enter wine",
 				"wineriesandwines": "Enter winery or wine",
+				"results": "Searchresults for",
 				"merchants": "Enter merchant"
 			}
 		},
@@ -429,13 +564,13 @@
 	"winery": {
 		"action": {
 			"add": {
-				"main": "Add winery",
-				"sub": ""
+				"main": "Add Winery",
+				"sub": " "
 			},
 			"create": {
 				"main": "Create winery",
-				"sub": "",
-				"title":"Create winery",
+				"sub": " ",
+				"title": "Create winery",
 				"modaltitle": "Create winery"
 			},
 			"edit": {
@@ -447,15 +582,15 @@
 				"modaltitle": "Search winery"
 			},
 			"wineselection": {
-				"enable": "enable wineselection",
-				"disable": "disable wineselection"
+				"enable": "Enable wine selection",
+				"disable": "Disable wine selection"
 			}
 		},
 		"fieldset": {
 			"general": "General",
 			"contact": "Contact",
 			"description": "Description",
-			"wines": "Weine"
+			"wines": "Wines"
 		},
 		"field": {
 			"company": "Company",
@@ -465,7 +600,7 @@
 			"city": "City",
 			"country": "Country",
 			"region": "Wineregion",
-			"taxid": "VAT-Id",
+			"taxid": "Tax ID",
 			"phone": "Phone",
 			"fax": "Fax",
 			"mail": "E-Mail",
@@ -485,7 +620,7 @@
 			"hints": {
 				"loadingwines": "loading wines",
 				"winesselectinfo": "The following list contains all public wines of this winery. To transfer some wines into your product range activate the wineselection.",
-				"connectwine": "Connect winery"
+				"connectwinery": "Connect winery"
 			},
 			"toasts": {
 				"created": "Winery created",
@@ -521,11 +656,15 @@
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country",
-			"taxid": "Vat-ID",
+			"taxid": "Tax-ID",
 			"phone": "Phone",
+			"phone_callto": "Call to",
 			"fax": "Fax",
+			"fax_sendto": "Send fax to",
 			"mail": "Mail",
-			"www": "Website"
+			"email_sendto": "Send email to",
+			"www": "Website",
+			"wwwvisitsite": "Visit website"
 		},
 		"list": {
 			"filter": {
@@ -557,13 +696,15 @@
 		"action": {
 			"add": {
 				"main": "Add wine",
-				"sub": ""
+				"sub": " "
 			},
 			"create": {
-				"main": "Create wine",
-				"sub": "",
-				"title": "Create wine",
-				"modaltitle": "Create wine"
+				"main": "Add Wine",
+				"sub": " ",
+				"dashboard_main": "Add",
+				"dashboard_sub": "New Wine",
+				"title": "Add wine",
+				"modaltitle": "Add wine"
 			},
 			"edit": {
 				"modaltitle": "Edit wine"
@@ -574,20 +715,24 @@
 				"modaltitle": "Search wine"
 			},
 			"export": {
-				"inventory": "Inventurliste herunterladen"
+				"inventory": "Download inventory list"
+			},
+			"barcode" : {
+				"barcodedownloadvector": "Download GTIN code as vektor file",
+				"qrcodedownloadvector": "Download QR code as vector file"
 			}
 		},
 		"fieldset": {
-			"general":"General",
-			"stock":"Stock",
-			"grapetype":"Grapetypes",
-			"region":"Regional",
-			"facts":"Facts & Numbers",
+			"general": "General",
+			"stock": "Stock",
+			"grapetype": "Grapetypes",
+			"region": "Regional",
+			"facts": "Facts & Numbers",
 			"prices": "Prices",
-			"analyse":"Analyse",
-			"additional":"Description",
+			"analyse": "Analyse",
+			"additional": "Description",
 			"composition": "Composition",
-			"qrcode":"QR-Code",
+			"qrcode": "QR code",
 			"bottle": "Bottle",
 			"profile": "Wine-Profile",
 			"network": "My network",
@@ -595,7 +740,7 @@
 		},
 		"field": {
 			"acid": "Acid",
-			"active":"active",
+			"active": "active",
 			"alcohol": "Alcohol",
 			"allergens": "Allergens",
 			"allergen_types": {
@@ -604,7 +749,7 @@
 				"fish": "Fish",
 				"milk": "Milk"
 			},
-			"articlenumber": "Art.-Nr.",
+			"articlenumber": "Art.-No.",
 			"barcode": "GTIN",
 			"bio": "Bio certified",
 			"bottlesize": "Bottlesize",
@@ -616,31 +761,37 @@
 				"glas":	"Glas"
 			},
 			"category": "Category",
-			"countrycode":"Country",
-			"cuvee":"Cuvée",
+			"countrycode": "Country",
+			"cuvee": "Cuvée",
 			"description": "Description",
-			"drinktemperature": "Drinktemperature",
+			"drinktemperature": "Drink temperature",
+			"expertise_show": {
+				"main": "Show expertise",
+				"sub": " ",
+				"title": "Open expertise in new window"
+			},
 			"grapetypes": {
 				"label": "Grapetypes",
-				"placeholder":"Search for grapetypes"
+				"placeholder": "Search for grapetypes"
 			},
 			"image": {
-				"label": "Bottlepicture",
+				"label": "Bottle picture",
 				"error": {
 					"notfound": "Image could not be resolved"
 				}
 			},
-			"inshop":"Im Shop anzeigen",
-			"instock":"in stock",
-			"inwinelist":"Show in winelist",
+			"inshop": "Show shop",
+			"instock": "in stock",
+			"inwinelist": "Show in winelist",
 			"maturation": "Maturation",
-			"name":"Name",
+			"name": "Name",
 			"networkvisibility": {
 				"label": "Show this wine on network",
 				"description": "If you don't want your wine to be visible on the Vinou© Network, you can disable all network features here."
 			},
-			"nostock":"sold out",
-			"nostocktext":"alternativ text for sold out",
+			"nostock": "sold out",
+			"nostocktext": "alternativ text for sold out",
+			"public_wines": "Public wines",
 			"stockunknown": "no information available",
 			"place": "Place",
 			"price": {
@@ -648,13 +799,22 @@
 				"none": "not specified"
 			},
 			"prices": {
-				"standard": "Default price"
+				"standard": "Default price",
+				"action": {
+					"create": {
+						"main": "New price",
+						"sub": " "
+					},
+					"delete": {
+						"confirm": "Do you really want to delete the selected price?"
+					}
+				}
 			},
-			"qrcode":"QR-Code",
-			"qrcode_redirect":"QR-Code Redirect",
-			"qrcode_create":"QR-Code will be created after first save",
-			"qrlink":"Targetaddress for QR-Code",
-			"qrlinkempty":"Targetaddress for QR-Code (Winepass if empty)",
+			"qrcode": "QR code",
+			"qrcode_redirect": "QR code redirect",
+			"qrcode_create": "QR code will be created after first save",
+			"qrlink": "Target address for QR code",
+			"qrlinkempty": "Target address for QR code (Winepass if empty)",
 			"quality": "Classification",
 			"quality_types": {
 				"notspecified": "Wine without grapetype or vintage",
@@ -669,27 +829,39 @@
 				"icewine": "Icewine"
 			},
 			"quantity": "Current Stock",
-			"region":"Region",
-			"shoplink":"Shoplink",
-			"shoplink_active":"activate Shoplink",
-			"sorting":"Manual index (e.g. for shop use)",
+			"region": "Region",
+			"shoplink": "Shoplink",
+			"shoplink_active": "activate Shoplink",
+			"sorting": "Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
+			"stat_types": {
+				"has_image": "With picture",
+				"has_price": "With price",
+				"public": "Public",
+				"total": "Total"
+			},
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
-			"type":"Type",
+			"type": "Type",
 			"vegan": "Vegan",
 			"vintage": "Vintage",
 			"weight": "Weight (in g)",
+			"wine_without_category": "Show wines without categories",
+			"winepass_show": {
+				"main": "Show winepass",
+				"sub": " ",
+				"title": "Show winepass in new window"
+			},
 			"winery": {
 				"label": "Winery",
-				"placeholder":"Search winery"
+				"placeholder": "Search winery"
 			}
 		},
 		"gallery": {
 			"new": {
-				"main": "Create new",
-				"subline": "wine"
+				"main": "Create Wine",
+				"subline": " "
 			},
 			"sortby": {
 				"label": "Sort view by:"
@@ -735,18 +907,21 @@
 			}
 		},
 		"language": {
-			"original":"{language} (Original)",
-			"translated":"Language: {language}"
+			"original": "{language} (Original)",
+			"translated": "Language: {language}"
 		},
 		"translation": {
-			"other":"Translations",
-			"original":"{title} (Original)",
-			"new":"{title} (New)"
+			"other": "Translations",
+			"original": "{title} (Original)",
+			"new": "{title} (New)"
 		},
 		"messages": {
-			"formdirty":"Current wine was modified. Do you like to save the changes?",
+			"formdirty": "Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
 			"fieldempty": "not specified",
+			"hints": {
+				"connectwine": "Connect to wine"
+			},
 			"toasts": {
 				"connected": "Wine connected"
 			}
@@ -781,8 +956,8 @@
 		"field": {
 			"name": "Name",
 			"articlenumber": "Articlenumber",
-			"net": "Price net",
-			"tax": "Tax",
+			"net": "Price netto",
+			"tax": "VAT",
 			"taxrate": "Taxrate",
 			"gross": "Price gross",
 			"description": "Description",
@@ -794,12 +969,13 @@
 			"active": "visible",
 			"nostock": "not in stock",
 			"nostocktext": "text if not in stock",
+			"prices": "Prices",
 			"quantity": "Quantity"
 		},
 		"gallery": {
 			"new": {
-				"main": "New product",
-				"subline": ""
+				"main": "Add Product",
+				"subline": " "
 			},
 			"filter": {
 				"searchhint": "for example name or articlenumber"
@@ -824,8 +1000,16 @@
 		}
 	},
 	"note": {
+		"action": {
+			"create": {
+				"main": "Create Note",
+				"sub": " "
+			}
+		},
 		"field": {
-			"content": "Content"
+			"content": "Content",
+			"wrote": "wrote",
+			"edited": "edited"
 		},
 		"messages": {
 			"toasts": {
@@ -839,10 +1023,10 @@
 	"client": {
 		"action": {
 			"create": {
-				"main": "Create new",
-				"sub": "client",
-				"title":"Create client",
-				"modaltitle": "Create client"
+				"main": "Add Client",
+				"sub": " ",
+				"title": "Add client",
+				"modaltitle": "Add client"
 			},
 			"edit": {
 				"modaltitle": "Edit client"
@@ -860,22 +1044,22 @@
 			"paymentsettings": "Method of payment"
 		},
 		"field": {
-			"name":"Complete name",
+			"name": "Complete name",
 			"contactname": "Contact name",
 			"number": "Client number",
-			"company":"Company",
-			"taxid":"VAT-ID",
-			"address":"Street",
-			"zip":"Zip",
-			"city":"City",
-			"country":"Country",
-			"mail":"E-Mail",
-			"www":"Website",
-			"phone":"Phone",
-			"fax":"Fax",
-			"active":"active",
-			"image":"Logo",
-			"rebate":"Rebate (in %)",
+			"company": "Company",
+			"taxid": "Tax ID",
+			"address": "Street",
+			"zip": "Zip",
+			"city": "City",
+			"country": "Country",
+			"mail": "E-Mail",
+			"www": "Website",
+			"phone": "Phone",
+			"fax": "Fax",
+			"active": "active",
+			"image": "Logo",
+			"rebate": "Rebate (in %)",
 			"type": "Type",
 			"pricerange": "Price range",
 			"bank": "Bank",
@@ -884,6 +1068,7 @@
 			"invoice_type": "Invoice type",
 			"term_of_payment": "Term of payment (days)",
 			"discount": "Discount (in %)",
+			"search_client": "Search client",
 			"term_of_discount": "Term of discount (days)"
 		},
 		"types": {
@@ -897,8 +1082,8 @@
 	"address": {
 		"action": {
 			"create": {
-				"main": "Create new",
-				"sub": "address",
+				"main": "Create Address",
+				"sub": " ",
 				"title": "Create address",
 				"modaltitle": "Create address"
 			},
@@ -910,12 +1095,12 @@
 			}
 		},
 		"field": {
-			"name":"Contact person",
-			"company":"Company",
-			"address":"Street",
-			"zip":"Zip",
-			"city":"City",
-			"country":"Country"
+			"name": "Contact person",
+			"company": "Company",
+			"address": "Street",
+			"zip": "Zip",
+			"city": "City",
+			"country": "Country"
 		}
 	},
 	"order": {
@@ -947,12 +1132,81 @@
 			}
 		},
 		"action": {
+			"add_position": "+ Add position",
 			"create": {
-				"main": "Create new",
-				"sub": "order"
+				"main": "Create Order",
+				"sub": " "
 			},
 			"search": {
 				"placeholder": "e.g. name, customernumber, address"
+			},
+			"invoice_create": {
+				"main": "Invoice",
+				"create": "create",
+				"print": "print",
+				"show": "show"
+			},
+			"delivery_note_create": {
+				"main": "Delivery note",
+				"create": "create",
+				"print": "print",
+				"show": "show"
+			},
+			"cancel_order": {
+				"main": "Cancel order",
+				"create": " "
+			},
+			"voucher_create": {
+				"main": "Create",
+				"create": "credit voucher"
+			}
+		},
+		"fieldsets": {
+			"edit_view": "Edit view",
+			"search_product": "Search product",
+			"packaging_shipping": "Packaging and shipping"
+		},
+		"fields": {
+			"processiong_data": "Processing data ...",
+			"brutto_sum": "Order brutto summary",
+			"delivery_note_created": "Delivery note created",
+			"delivery_note_not_yet_created": "Delivery note not yet created",
+			"excl_vat": "excl. VAT",
+			"filter_orders": "Filter orders",
+			"loading_positions": "Loading positions ...",
+			"invoice_created": "Invoice created",
+			"invoice_not_yet_created": "Invoice not yet created",
+			"netto_sum": "Netto summary",
+			"next_payment_type": "Next - payment type",
+			"next_delivering_addr": "Next - delivery adress",
+			"no_payment_income_yet": "Payment not yet income",
+			"order_dispatched": "Order dispatched",
+			"order_not_yet_dispatched": "Order not yet dispatched",
+			"order_date": "Order date",
+			"order_cancelled_date": "Order cancelled",
+			"payment_income_date": "Payment income date", 
+			"quantity": "Qty",
+			"search_product": "Search product",
+			"state": "State",
+			"payment_income": {
+				"main": "Payment",
+				"sub": "income"
+			},
+			"booking_payment_income": {
+				"main": "Book",
+				"sub": "Payment income"
+			},
+			"generate_invoice_and_delivering_note": {
+				"main": "Generate invoice and delivery note",
+				"sub": "Booking cash payment"
+			},
+			"invoice_and_delivering_note": {
+				"main": "Generate",
+				"sub": "Invoice and delivery note"
+			},
+			"order_to_dispatch": {
+				"main": "Dispatch",
+				"sub": "Order"
 			}
 		},
 		"toasts": {
@@ -978,13 +1232,13 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Do really want to delete this packaging?"
+			"delete": "Do you really want to delete this packaging?"
 		},
 		"toasts": {
-			"created":"Packaging created",
-			"changed":"Packaging changed",
-			"deleted":"Packaging deleted",
-			"rangeerror":"Packaging collides with another packaging!"
+			"created": "Packaging created",
+			"changed": "Packaging changed",
+			"deleted": "Packaging deleted",
+			"rangeerror": "Packaging collides with another packaging!"
 		},
 		"field": {
 			"type": "Type",
@@ -1155,7 +1409,8 @@
 		},
 		"payments": {
 			"title": "Payment methods",
-			"description": "With different payment methods you're able to make your webshop more attractive to your clients."
+			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
+			"bankaccount": "Bankverbindung"
 		},
 		"packagings": {
 			"title": "Package options",
@@ -1193,9 +1448,6 @@
 			}
 		}
 	},
-	"errors": {
-        "customer_wrongregister": "Something went wrong during the registration process please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
-    },
 	"toasts": {
 		"address_saved": "Address saved!",
 		"address_changed": "Address update!",
@@ -1292,6 +1544,9 @@
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"
+	},
+	"errors": {
+		"customer_wrongregister": "Something went wrong during the registration process please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
 	},
 	"hints": {
 		"wineries": {
@@ -1750,35 +2005,36 @@
 		}
 	},
 	"tastes": {
- 		"1":"dry",
- 		"2":"semidry",
- 		"3":"off-dry",
- 		"4":"semi-sweet",
- 		"5":"mild",
- 		"6":"sweet",
- 		"7":"extra-sweet",
- 		"8":"herb-based",
- 		"9":"brut",
- 		"10":"extra brut"
+		"1": "dry",
+		"2": "semidry",
+		"3": "off-dry",
+		"4": "semi-sweet",
+		"5": "mild",
+		"6": "sweet",
+		"7": "extra-sweet",
+		"8": "herb-based",
+		"9": "brut",
+		"10": "extra brut",
+		"11": "frooty"
 	},
 	"countries": {
-		"de":"Germany",
-		"en":"Great Britain",
-		"fr":"France",
-		"be":"Belgium",
-		"bg":"Bulgaria",
-		"gr":"Greece",
-		"it":"Italy",
-		"mt":"Malta",
-		"nl":"Netherlands",
-		"at":"Austria",
-		"pt":"Portugal",
-		"ro":"Romania",
-		"si":"Slovenia",
-		"es":"Spain",
-		"hu":"Hungary",
-		"cl":"Chile",
-		"sx":"Sint Maarten"
+		"de": "Germany",
+		"en": "Great Britain",
+		"fr": "France",
+		"be": "Belgium",
+		"bg": "Bulgaria",
+		"gr": "Greece",
+		"it": "Italy",
+		"mt": "Malta",
+		"nl": "Netherlands",
+		"at": "Austria",
+		"pt": "Portugal",
+		"ro": "Romania",
+		"si": "Slovenia",
+		"es": "Spain",
+		"hu": "Hungary",
+		"cl": "Chile",
+		"sx": "Sint Maarten"
 	},
 	"languages": {
 		"de": {
@@ -1799,234 +2055,315 @@
 	},
 	"wineregions": {
 		"at": {
-			"8000":"Wachau",
-			"8001":"Kremstal",
-			"8002":"Kamptal",
-			"8003":"Traisental",
-			"8004":"Wagram",
-			"8005":"Weinviertel",
-			"8006":"Carnuntum",
-			"8007":"Thermenregion",
-			"8008":"Lake Neusiedl",
-			"8009":"Leithaberg",
-			"8010":"Rosalia",
-			"8011":"Mittelburgenland",
-			"8012":"Eisenberg",
-			"8013":"Vienna",
-			"8014":"Volcano land Styria",
-			"8015":"South Styria",
-			"8016":"West Styria",
-			"8017":"Bergland"
+			"8000": "Wachau",
+			"8001": "Kremstal",
+			"8002": "Kamptal",
+			"8003": "Traisental",
+			"8004": "Wagram",
+			"8005": "Weinviertel",
+			"8006": "Carnuntum",
+			"8007": "Thermenregion",
+			"8008": "Lake Neusiedl",
+			"8009": "Leithaberg",
+			"8010": "Rosalia",
+			"8011": "Mittelburgenland",
+			"8012": "Eisenberg",
+			"8013": "Vienna",
+			"8014": "Volcano land Styria",
+			"8015": "South Styria",
+			"8016": "West Styria",
+			"8017": "Bergland"
 		},
 		"be": {
-			"3000":"Hageland (VL)",
-			"3001":"Haspengouw (VL)",
-			"3002":"Heuvelland (VL)",
-			"3003":"Côtes de Sambre et Meuse (WA)"
+			"3000": "Hageland (VL)",
+			"3001": "Haspengouw (VL)",
+			"3002": "Heuvelland (VL)",
+			"3003": "Côtes de Sambre et Meuse (WA)"
 		},
 		"bg": {
-			"4000":"Danube plain",
-			"4001":"Black Sea Region",
-			"4002":"Rosental",
-			"4003":"Oberthrakische low level",
-			"4004":"Struma Valley"
+			"4000": "Danube plain",
+			"4001": "Black Sea Region",
+			"4002": "Rosental",
+			"4003": "Oberthrakische low level",
+			"4004": "Struma Valley"
 		},
 		"cl": {
 		},
 		"de": {
-			"1000":"Ahr",
-			"1001":"Baden",
-			"1002":"Franken",
-			"1003":"Hessische Bergstraße",
-			"1004":"Mittelrhein",
-			"1005":"Mosel",
-			"1006":"Nahe",
-			"1007":"Pfalz",
-			"1008":"Rheingau",
-			"1009":"Rheinhessen",
-			"1010":"Saale-Unstrut-Region",
-			"1011":"Sachsen",
-			"1012":"Württemberg"
+			"1000": "Ahr",
+			"1001": "Baden",
+			"1002": "Franken",
+			"1003": "Hessische Bergstraße",
+			"1004": "Mittelrhein",
+			"1005": "Mosel",
+			"1006": "Nahe",
+			"1007": "Pfalz",
+			"1008": "Rheingau",
+			"1009": "Rheinhessen",
+			"1010": "Saale-Unstrut-Region",
+			"1011": "Sachsen",
+			"1012": "Württemberg"
 		},
 		"en": {
 		},
 		"es": {
-			"12000":"Denominación de Origen",
-			"12001":"Vinos de Calidad V.C.P.R.D.",
-			"12002":"Vinos de la Tierra",
-			"12003":"Vino de Mesa",
-			"12004":"Andalusia",
-			"12005":"Asturias",
-			"12006":"Aragon",
-			"12007":"Balearic Islands",
-			"12008":"Basque country",
-			"12009":"Canary Islands",
-			"12010":"Cantabria",
-			"12011":"Castile-La Mancha",
-			"12012":"Castile and Leon",
-			"12013":"Catalonia",
-			"12014":"Extremadura",
-			"12015":"Galicia",
-			"12016":"La Rioja",
-			"12017":"Community of Madrid",
-			"12018":"Murcia",
-			"12019":"Navarra",
-			"12020":"Valencia"
+			"12000": "Denominación de Origen",
+			"12001": "Vinos de Calidad V.C.P.R.D.",
+			"12002": "Vinos de la Tierra",
+			"12003": "Vino de Mesa",
+			"12004": "Andalusia",
+			"12005": "Asturias",
+			"12006": "Aragon",
+			"12007": "Balearic Islands",
+			"12008": "Basque country",
+			"12009": "Canary Islands",
+			"12010": "Cantabria",
+			"12011": "Castile-La Mancha",
+			"12012": "Castile and Leon",
+			"12013": "Catalonia",
+			"12014": "Extremadura",
+			"12015": "Galicia",
+			"12016": "La Rioja",
+			"12017": "Community of Madrid",
+			"12018": "Murcia",
+			"12019": "Navarra",
+			"12020": "Valencia"
 		},
 		"fr": {
-			"2000":"Alsace",
-			"2001":"Armagnac",
-			"2002":"Bordeaux",
-			"2003":"Bourgogne",
-			"2004":"Champagne",
-			"2005":"Cognac",
-			"2006":"Corse",
-			"2007":"Jura",
-			"2009":"Languedoc-Roussillon",
-			"2010":"Provence",
-			"2011":"Savoie",
-			"2012":"Sud-Ouest",
-			"2013":"Vallée de la Loire",
-			"2014":"Vallée du Rhône"
+			"2000": "Alsace",
+			"2001": "Armagnac",
+			"2002": "Bordeaux",
+			"2003": "Bourgogne",
+			"2004": "Champagne",
+			"2005": "Cognac",
+			"2006": "Corse",
+			"2007": "Jura",
+			"2009": "Languedoc-Roussillon",
+			"2010": "Provence",
+			"2011": "Savoie",
+			"2012": "Sud-Ouest",
+			"2013": "Vallée de la Loire",
+			"2014": "Vallée du Rhône"
 		},
 		"gr": {
-			"5000":"Thrace",
-			"5001":"Macedonia",
-			"5002":"Epirus",
-			"5003":"Thessaly",
-			"5004":"Central Greece",
-			"5005":"Middle Greece",
-			"5006":"Attica",
-			"5007":"Ionian Islands",
-			"5009":"Peloponnese",
-			"5010":"Southern Aegean",
-			"5011":"Cyclades",
-			"5012":"Dodecanese",
-			"5013":"North Aegean",
-			"5014":"Crete"
+			"5000": "Thrace",
+			"5001": "Macedonia",
+			"5002": "Epirus",
+			"5003": "Thessaly",
+			"5004": "Central Greece",
+			"5005": "Middle Greece",
+			"5006": "Attica",
+			"5007": "Ionian Islands",
+			"5009": "Peloponnese",
+			"5010": "Southern Aegean",
+			"5011": "Cyclades",
+			"5012": "Dodecanese",
+			"5013": "North Aegean",
+			"5014": "Crete"
 		},
 		"hu": {
 		},
 		"it": {
-			"6000":"Abruzzo",
-			"6001":"Aosta Valley",
-			"6002":"Apulia",
-			"6003":"Basilicata",
-			"6004":"Emilia-Romagna",
-			"6005":"Friuli Venezia Giulia",
-			"6006":"Calabria",
-			"6007":"Campania",
-			"6008":"Lazio",
-			"6009":"Liguria",
-			"6010":"Lombardy",
-			"6011":"Marken",
-			"6012":"Molise",
-			"6013":"Piedmont",
-			"6014":"Sardinia",
-			"6015":"Sicily",
-			"6016":"Tuscany",
-			"6017":"Trentino-Alto Adige",
-			"6018":"Umbria",
-			"6019":"Veneto"
+			"6000": "Abruzzo",
+			"6001": "Aosta Valley",
+			"6002": "Apulia",
+			"6003": "Basilicata",
+			"6004": "Emilia-Romagna",
+			"6005": "Friuli Venezia Giulia",
+			"6006": "Calabria",
+			"6007": "Campania",
+			"6008": "Lazio",
+			"6009": "Liguria",
+			"6010": "Lombardy",
+			"6011": "Marken",
+			"6012": "Molise",
+			"6013": "Piedmont",
+			"6014": "Sardinia",
+			"6015": "Sicily",
+			"6016": "Tuscany",
+			"6017": "Trentino-Alto Adige",
+			"6018": "Umbria",
+			"6019": "Veneto"
 		},
 		"mt": {
 		},
 		"nl": {
-			"7000":"Limburg",
-			"7001":"Achterhoek",
-			"7002":"Wine village Groesbeek",
-			"7003":"Betuwe",
-			"7004":"Veluwe",
-			"7005":"Zeeland"
+			"7000": "Limburg",
+			"7001": "Achterhoek",
+			"7002": "Wine village Groesbeek",
+			"7003": "Betuwe",
+			"7004": "Veluwe",
+			"7005": "Zeeland"
 		},
 		"pt": {
-			"9000":"Vinho Verde",
-			"9001":"Douro",
-			"9002":"Dão",
-			"9003":"Estremadura",
-			"9004":"Terras do Sado",
-			"9005":"Alentejo",
-			"9006":"Madeira",
-			"9007":"Azores",
-			"9008":"Tagus (Ribatejo)"
+			"9000": "Vinho Verde",
+			"9001": "Douro",
+			"9002": "Dão",
+			"9003": "Estremadura",
+			"9004": "Terras do Sado",
+			"9005": "Alentejo",
+			"9006": "Madeira",
+			"9007": "Azores",
+			"9008": "Tagus (Ribatejo)"
 		},
 		"ro": {
-			"10000":"Moldova",
-			"10001":"Walachia",
-			"10002":"Muntenia (Great Wallachia)",
-			"10003":"Oltenia (Little Wallachia)",
-			"10004":"Transylvania (Transylvania)",
-			"10005":"Dobrogea (Dobruja)",
-			"10006":"Banat",
-			"10007":"Crişana (shrieking area)"
+			"10000": "Moldova",
+			"10001": "Walachia",
+			"10002": "Muntenia (Great Wallachia)",
+			"10003": "Oltenia (Little Wallachia)",
+			"10004": "Transylvania (Transylvania)",
+			"10005": "Dobrogea (Dobruja)",
+			"10006": "Banat",
+			"10007": "Crişana (shrieking area)"
 		},
 		"si": {
-			"11000":"Drautal (Podravje)",
-			"11001":"Adriatic coast (Primorska)",
-			"11002":"Save Valley (Posavje)"
+			"11000": "Drautal (Podravje)",
+			"11001": "Adriatic coast (Primorska)",
+			"11002": "Save Valley (Posavje)"
 		},
 		"sx": {
 		}
 	},
 	"winetypes":{
-		"red":"Redwine",
-		"white":"Whitewine",
-		"rose":"Rosé",
-		"rotling":"Rotling",
+		"red": "Redwine",
+		"white": "Whitewine",
+		"rose": "Rosé",
+		"rotling": "Rotling",
 		"secco": "Secco",
-		"sparkling":"Champagne",
-		"destilate":"Destillate",
-		"general":"Others"
+		"sparkling": "Champagne",
+		"destilate": "Destillate",
+		"general": "Others"
 	},
 	"savours":{
 		"categories": {
-			"meat":"Meat",
-			"preparation":"Preparation",
-			"milkproducts":"Milkproducts",
-			"vegetables":"Vegetables",
-			"styles":"Styles",
-			"bread":"Breas",
-			"sweets":"Sweets"
+			"meat": "Meat",
+			"preparation": "Preparation",
+			"milkproducts": "Milkproducts",
+			"vegetables": "Vegetables",
+			"styles": "Styles",
+			"bread": "Breads",
+			"sweets": "Sweets"
 		},
-		"beef":"Beef",
-		"pork":"Pork",
-		"poultry":"Poultry",
-		"venison":"Venison",
-		"fish":"Fish",
-		"shellfish":"Shellfish",
-		"shell":"Seeshells",
-		"sausage":"Sausage",
-		"grilled":"Grilled",
-		"fried":"Fried",
-		"smoked":"Smoked",
-		"baked":"Baked",
-		"steamed":"Steamed",
-		"dairyproduct":"Dairyproduct",
-		"softcheese":"Soft cheese",
-		"bluecheese":"Blue cheese",
-		"hardcheese":"Hard cheese",
-		"bulb":"Blub",
-		"salad":"Salad",
-		"tubers":"Tubes",
-		"nightshades":"Tomatos",
-		"mushrooms":"Mushrooms",
-		"nuts":"Nuts",
-		"treenuts":"Treenuts",
-		"pepper":"Pepper",
-		"chili":"Chili",
-		"spicy":"Hot & Spicy",
-		"herbs":"Herbs",
-		"cinnamon":"Cinnamon",
-		"exotic":"Exotic (Anis)",
-		"toast":"Toast",
-		"bread":"Bread",
-		"wholebread":"Wholebread",
-		"pumpernickel":"Pumpernickel",
-		"fruits":"Fruits",
-		"cake":"Cake",
-		"creme":"Creme",
-		"ice":"Ice",
-		"chocolate":"Chocolate",
-		"coffee":"Coffee"
+		"beef": "Beef",
+		"pork": "Pork",
+		"poultry": "Poultry",
+		"venison": "Venison",
+		"fish": "Fish",
+		"shellfish": "Shellfish",
+		"shell": "Seeshells",
+		"sausage": "Sausage",
+		"grilled": "Grilled",
+		"fried": "Fried",
+		"smoked": "Smoked",
+		"baked": "Baked",
+		"steamed": "Steamed",
+		"dairyproduct": "Dairyproduct",
+		"softcheese": "Soft cheese",
+		"bluecheese": "Blue cheese",
+		"hardcheese": "Hard cheese",
+		"bulb": "Blub",
+		"salad": "Salad",
+		"tubers": "Tubes",
+		"nightshades": "Tomatos",
+		"mushrooms": "Mushrooms",
+		"nuts": "Nuts",
+		"treenuts": "Treenuts",
+		"pepper": "Pepper",
+		"chili": "Chili",
+		"spicy": "Hot & Spicy",
+		"herbs": "Herbs",
+		"cinnamon": "Cinnamon",
+		"exotic": "Exotic (Anis)",
+		"toast": "Toast",
+		"bread": "Bread",
+		"wholebread": "Wholebread",
+		"pumpernickel": "Pumpernickel",
+		"fruits": "Fruits",
+		"cake": "Cake",
+		"creme": "Creme",
+		"ice": "Ice",
+		"chocolate": "Chocolate",
+		"coffee": "Coffee"
+	},
+	"apps": {
+		"vinou-gusto": {
+			"dialogs": {
+				"access": {
+					"title": "Please grant access",
+					"toasts": {
+						"accessdenied": "Access denied"
+					}
+				},
+				"nointernet": {
+					"title": "No network available",
+					"msg": "In order to use all functionality, you need a network connection."
+				},
+				"updateavailable": {
+					"title": "Update available",
+					"msg": "New version available. Please install now to continue using this app."
+				},
+				"openexpertise": {
+					"title": "Open with"
+				},
+				"createwine": {
+					"title": "Create new wine",
+					"msg": "Do you really want to cancel? All changes will be lost."
+				},
+				"winenotfound": {
+					"title": "No wine found",
+					"msg": "Would you like to create a new wine?"
+				}
+			},
+			"views": {
+				"main": {
+					"myfavs": "My Favourites",
+					"findwines": "Find wines",
+					"scanwine": "Scan wines",
+					"imprint": "Imprint",
+					"dataprotection": "Data Protection"
+				},
+				"winery": {
+					"title": "Create wine",
+					"subtitle": "Search for winery or create new one",
+					"nextstep": "Create wine"
+				},
+				"wine": {
+					"title": "Create wine",
+					"subtitle": "Search for wine or create new one",
+					"prevstep": "Create winery",
+					"nextstep": "Bottle image"
+				},
+				"bottle": {
+					"title": "Create wine",
+					"subtitle": "Picture wine bottle and add image",
+					"prevstep": "Create wine",
+					"actions": {
+						"makepicture": "Picture bottle",
+						"save": "Save"
+					}
+				},
+				"favourites": {
+					"title": "My wines"
+				},
+				"scan": {
+					"actions": {
+						"apply": "Apply"
+					},
+					"toasts": {
+						"nfcstart": "Hold your device close to the NFC tag please.",
+						"nfcdisabled": "Please activate NFC and try again.",
+						"unsupportedtag": "NFC Tag not supported."
+					}
+				},
+				"search": {
+					"title": "Suchen",
+					"toasts": {
+						"winenotfound": "No wine found",
+						"winesaved": "Wine saved locally.",
+						"winerynotfound": "No winery found."
+					}
+				}
+			}
+		}
 	}
 }
