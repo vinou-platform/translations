@@ -728,10 +728,8 @@
 			"export": {
 				"inventory": "Download inventory list"
 			},
-			"barcode" : {
-				"barcodedownloadvector": "Download GTIN code as vektor file",
-				"qrcodedownloadvector": "Download QR code as vector file"
-			}
+			"barcodedownloadvector": "Download GTIN code as vektor file",
+			"qrcodedownloadvector": "Download QR code as vector file"
 		},
 		"fieldset": {
 			"general": "General",

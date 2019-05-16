@@ -728,10 +728,8 @@
 			"export": {
 				"inventory": "Inventurliste herunterladen"
 			},
-			"barcode" : {
-				"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
-				"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
-			}
+			"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
+			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
 		},
 		"fieldset": {
 			"general": "Allgemeines",
