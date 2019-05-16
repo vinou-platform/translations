@@ -42,8 +42,7 @@
 	"tabs": {
 		"all": {
 			"general": "General",
-			"notes": "Notes",
-			"contacts": "Contact persons"
+			"notes": "Notes"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -53,6 +52,21 @@
 	"loader": {
 		"inline": {
 			"label": "Loading data ..."
+		}
+	},
+	"dashboard": {
+		"actions": {
+			"create": {
+				"category_main": "Create",
+				"category_sub": "Category",
+				"user_main": "Add",
+				"user_sub": "new User",
+				"wine_main": "Add",
+				"wine_sub": "Wine"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
 		}
 	},
 	"de":"Germany",

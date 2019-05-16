@@ -55,6 +55,21 @@
 			"label": "Daten werden geladen ..."
 		}
 	},
+	"dashboard": {
+		"actions": {
+			"create": {
+				"category_main": "Neue",
+				"category_sub": "Kategorie erstellen",
+				"user_main": "Neuen",
+				"user_sub": "Benutzer erstellen",
+				"wine_main": "Neuen",
+				"wine_sub": "Wein erstellen"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
+		}
+	},
 	"price": "Preis",
 	"quantity": "Bestand",
 	"articlenumber": "Artikelnummer",
@@ -952,7 +967,7 @@
 			"restaurant_administration": "Restaurantleitung",
 			"sommelier": "Sommelier",
 			"support": "Support"
-		},
+		}, 
 		"tabs": {
 			"additionaladdresses": "Weitere Adressen",
 			"contacts": "Kontaktpersonen",
@@ -985,7 +1000,7 @@
 		"field": {
 			"name":"Name/Ansprechpartner",
 			"company":"Firma",
-			"address":"Straße + Hausnummer",
+			"address":"Straße und Hausnummer",
 			"zip":"PLZ",
 			"city":"Stadt",
 			"country":"Land"
