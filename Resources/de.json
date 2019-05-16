@@ -864,7 +864,15 @@
 	},
 	"note": {
 		"field": {
-			"content": "Inhalt"
+			"content": "Inhalt",
+			"edited": "Bearbeitete am",
+			"wrote": "Schrieb am"
+		},
+		"action": {
+			"create": {
+				"main": "Neue Notiz",
+				"sub": "erstellen"
+			}
 		},
 		"messages": {
 			"toasts": {
@@ -944,6 +952,12 @@
 			"restaurant_administration": "Restaurantleitung",
 			"sommelier": "Sommelier",
 			"support": "Support"
+		},
+		"tabs": {
+			"additionaladdresses": "Weitere Adressen",
+			"contacts": "Kontaktpersonen",
+			"general": "Allgemein",
+			"notes": "Notizen"
 		},
 		"types": {
 			"private": "Privatperson",
