@@ -1426,8 +1426,16 @@
 		},
 		"shipment": {
 			"title": "Shipment settings",
-			"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
-			"description": "Configure shipment e.g. to select a default shipment carrier."
+			"description": "Set your freight free limit and whether you want to use the Vinou shipment management.",
+			"freightfreelimit": {
+				"title": "Freight free limit",
+				"description": "Configure order total from when packaging is free of charge."
+			},
+			"management": {
+				"title": "Shipment management",
+				"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
+				"description": "Configure shipment e.g. to select a default shipment carrier."
+			}
 		},
 		"technical": {
 			"title": "Technology",

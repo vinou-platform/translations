@@ -1426,8 +1426,16 @@
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",
-			"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
-			"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou Versandmanagement benutzen möchtest.",
+			"freightfreelimit": {
+				"title": "Frachtfreigrenze",
+				"description": "Konfiguriere ab welchem Bestellwert der Versand kostenfrei ist."
+			},
+			"management": {
+				"title": "Versandmanagement",
+				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
+				"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+			}
 		},
 		"technical": {
 			"title": "Technik",
