@@ -27,6 +27,7 @@
 		},
 		"fields": {
 			"empty": "Please select",
+			"please_select": "Please select",
 			"required": "Required",
 			"upload_image": "Select image to upload",
 			"search_placeholder": "Name or description",
@@ -47,7 +48,8 @@
 	"tabs": {
 		"all": {
 			"general": "General",
-			"notes": "Notes"
+			"notes": "Notes",
+			"contacts": "Contact persons"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -68,12 +70,13 @@
 	"fileupload": "Choose file",
 	"delete_image": "Delete image",
 	"delete_image_secure": "Do you really want to delete the image?",
-	"delete_template_secure": "Do you really want to delete this template for epertises?",
+	"delete_template_secure": "Do you really want to delete this template for expertises?",
 	"changepw": "Change password",
 	"wineregions_none": "no information",
 	"wines_modal_delete": "Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete this winery?",
 	"category_modal_delete": "Do you really want to delete this category?",
+	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Do you really want to delete this user?",
@@ -106,7 +109,6 @@
 	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
 	"orders_modal_onlyinvoice_create": "Create invoice now?",
 	"orders_modal_onlydelivery_create": "Create delivery note now?",
-	"orders_modal_creditadvice_create_old": "Warning: Do you really want to create credit advise now and cancel order?",
 	"orders_modal_creditadvice_create": "Warning: Do you really want to cancel the selected order and create a credit voucher?",
 	"order_wrong_quantity": "Please enter an amount greater than 0",
 	"orders_rebate_general": "Default rebate (gross)",
@@ -223,12 +225,17 @@
 		},
 		"fields": {
 			"active_users": "Active users"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Active",
 			"admin": "Admin",
 			"default": "Default",
 			"interfrog": "Interfrog",
+			"has_image": "With picture",
+			"has_price": "With price",
+			"public": "Public",
 			"total": "Total"
 		}
 	},
@@ -301,8 +308,12 @@
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
 	"db_cronjobs_description": "Description",
+	"db_cronjobs_description_placeholder": "Description for new cronjob",
+	"db_cronjobs_galleryFilterHint": "i.e. name, description",
 	"db_cronjobs_command": "Command",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Execution time (Crontab)",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "activate",
 	"cronjobs": {
 		"actions": {
@@ -515,7 +526,7 @@
 				"invitation": "Invited"
 			},
 			"crstamp": "Date of registration",
-			"expire": "Expirationdate",
+			"expire": "Expiration date",
 			"voucher_old": "Voucher",
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",
@@ -717,10 +728,8 @@
 			"export": {
 				"inventory": "Download inventory list"
 			},
-			"barcode" : {
-				"barcodedownloadvector": "Download GTIN code as vektor file",
-				"qrcodedownloadvector": "Download QR code as vector file"
-			}
+			"barcodedownloadvector": "Download GTIN code as vektor file",
+			"qrcodedownloadvector": "Download QR code as vector file"
 		},
 		"fieldset": {
 			"general": "General",
@@ -834,12 +843,6 @@
 			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
-			"stat_types": {
-				"has_image": "With picture",
-				"has_price": "With price",
-				"public": "Public",
-				"total": "Total"
-			},
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
@@ -1008,8 +1011,8 @@
 		},
 		"field": {
 			"content": "Content",
-			"wrote": "wrote",
-			"edited": "edited"
+			"wrote": "Wrote on",
+			"edited": "Edited on"
 		},
 		"messages": {
 			"toasts": {
@@ -1033,6 +1036,10 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
+			},
+			"contactperson": {
+				"main": "Add Contact",
+				"sub": " "
 			}
 		},
 		"fieldset": {
@@ -1058,6 +1065,7 @@
 			"phone": "Phone",
 			"fax": "Fax",
 			"active": "active",
+			"department":"Department",
 			"image": "Logo",
 			"rebate": "Rebate (in %)",
 			"type": "Type",
@@ -1070,6 +1078,21 @@
 			"discount": "Discount (in %)",
 			"search_client": "Search client",
 			"term_of_discount": "Term of discount (days)"
+		},
+		"department_types": {
+			"branch_administration": "Branch administration",
+			"branch_administration_assistant": "Assistant branch administration",
+			"distribution": "Distribution",
+			"event_management": "Event management",
+			"finance": "Finance",
+			"logistics": "Logistics",
+			"management": "Management",
+			"marketing": "Marketing",
+			"product_management": "Product managent",
+			"purchase": "Purchase",
+			"restaurant_administration": "Restaurant administration",
+			"sommelier": "Sommelier",
+			"support": "Support"
 		},
 		"types": {
 			"private": "Private",
@@ -1101,6 +1124,17 @@
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Add Contact",
+				"sub": " "
+			},
+			"save": {
+				"title": "Save contact"
+			}
 		}
 	},
 	"order": {
@@ -1387,7 +1421,7 @@
 	"settings": {
 		"account": {
 			"title": "Account settings",
-			"description": "Adminstrate your invoice address, membership oder bank account e.g."
+			"description": "Administrate your invoice address, membership, bank account etc."
 		},
 		"membership": {
 			"title": "Membership",
@@ -1395,12 +1429,12 @@
 		},
 		"customer": {
 			"title": "Invoice information",
-			"description": "Administrate information for your Vinou-Membership. These informations won't be shown public in network."
+			"description": "Administrate your Vinou membership settings. These information are not public and won’t be shown in the Vinou network."
 		},
 		"mycompanies": {
 			"merchants": {
 				"title": "My wine store",
-				"description": "Define additional companies for your wine store. These are public informations shown within the Vinou network."
+				"description": "Define additional companies for your wine store. These information are public and will be shown within the Vinou network."
 			},
 			"wineries": {
 				"title": "My winery",
@@ -1410,7 +1444,7 @@
 		"payments": {
 			"title": "Payment methods",
 			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
-			"bankaccount": "Bankverbindung"
+			"bankaccount": "Bank account"
 		},
 		"packagings": {
 			"title": "Package options",
@@ -1418,10 +1452,10 @@
 		},
 		"packagingunits": {
 			"title": "Packaging units",
-			"description": "Configure your boxes to send your wines that will be used for shipment. These boxes will be used also to calculate your shipment labels."
+			"description": "Configure your shipment boxes. These settings will also be used to calculate shipment label."
 		},
 		"priceranges": {
-			"title": "Preis ranges",
+			"title": "Price ranges",
 			"description": "Configure your price ranges to setup individual client prices."
 		},
 		"shipment": {
@@ -1472,6 +1506,7 @@
 		"client_saved": "Client saved!",
 		"client_changed": "Client updated!",
 		"client_deleted": "Client deleted!",
+		"contact_deleted": "Contact deleted",
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
@@ -1548,7 +1583,11 @@
 			"saveerror": "Note could not saved!",
 			"delete": "Note deleted!",
 			"deleteerror": "Note could not deleted!"
-		}
+		},
+		"contacts_saved": "Contact added.",
+		"contacts_saveerror": "Error adding contact!",
+		"contacts_deleted": "Contact deleted.",
+		"contacts_deleteerror": "Error deleting contact!"
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"
