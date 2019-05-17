@@ -1245,13 +1245,6 @@
 		},
 		"toasts": {
 			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
-		},
-		"views": {
-			"view": {
-				"tabs": {
-					"documents": "Dokumente"
-				}
-			}
 		}
 	},
 	"packaging": {
@@ -1467,8 +1460,16 @@
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",
-			"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
-			"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou Versandmanagement benutzen möchtest.",
+			"freightfreelimit": {
+				"title": "Frachtfreigrenze",
+				"description": "Konfiguriere ab welchem Bestellwert der Versand kostenfrei ist."
+			},
+			"management": {
+				"title": "Versandmanagement",
+				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
+				"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+			}
 		},
 		"technical": {
 			"title": "Technik",
@@ -2330,5 +2331,86 @@
 		"ice": "Eis",
 		"chocolate": "Schokolade",
 		"coffee": "Kaffee"
+	},
+	"apps": {
+		"vinou-gusto": {
+			"dialogs": {
+				"access": {
+					"title": "Bitte Zugriff erlauben",
+					"toasts": {
+						"accessdenied": "Zugriff verweigert"
+					}
+				},
+				"nointernet": {
+					"title": "Kein Internet verfügbar",
+					"msg": "Um alle Funktionen nutzen zu können, benötigen Sie eine Internetverbindung."
+				},
+				"updateavailable": {
+					"title": "Update verfügbar",
+					"msg": "Es ist eine neuere Version verfügbar. Bitte jetzt installieren, um die App weiterzubenutzen."
+				},
+				"openexpertise": {
+					"title": "Öffnen mit"
+				},
+				"createwine": {
+					"title": "Wein anlegen",
+					"msg": "Wollen Sie ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
+				},
+				"winenotfound": {
+					"title": "Kein Wein gefunden",
+					"msg": "Wollen Sie einen neuen Wein anlegen?"
+				}
+			},
+			"views": {
+				"main": {
+					"myfavs": "Meine Favoriten",
+					"findwines": "Weine finden",
+					"scanwine": "Wein scannen",
+					"imprint": "Impressum",
+					"dataprotection": "Datenschutz"
+				},
+				"winery": {
+					"title": "Wein erfassen",
+					"subtitle": "Weingut suchen oder neu erfassen",
+					"nextstep": "Wein anlegen"
+				},
+				"wine": {
+					"title": "Wein erfassen",
+					"subtitle": "Wein suchen oder neu erfassen",
+					"prevstep": "Weingut anlegen",
+					"nextstep": "Flaschenbild"
+				},
+				"bottle": {
+					"title": "Wein efassen",
+					"subtitle": "Weinflasche fotografieren und hinzufügen",
+					"prevstep": "Wein anlegen",
+					"actions": {
+						"makepicture": "Flasche fotografieren",
+						"save": "Speichern"
+					}
+				},
+				"favourites": {
+					"title": "Meine Weine"
+				},
+				"scan": {
+					"actions": {
+						"apply": "Übernehmen"
+					},
+					"toasts": {
+						"nfcstart": "Bitte Gerät an den NFC Tag halten.",
+						"nfcdisabled": "Bitte NFC aktivieren und erneut versuchen.",
+						"unsupportedtag": "NFC Tag nicht unterstützt"
+					}
+				},
+				"search": {
+					"title": "Suchen",
+					"toasts": {
+						"winenotfound": "Kein Wein gefunden",
+						"winesaved": "Wein lokal abgespeichert",
+						"winerynotfound": "Kein Weingut gefunden"
+					}
+				}
+			}
+		}
 	}
 }

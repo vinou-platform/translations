@@ -1245,13 +1245,6 @@
 		},
 		"toasts": {
 			"createerror": "Order could not be created. Please check your details and try again."
-		},
-		"views": {
-			"view": {
-				"tabs": {
-					"documents": "Documents"
-				}
-			}
 		}
 	},
 	"packaging": {
@@ -1467,8 +1460,16 @@
 		},
 		"shipment": {
 			"title": "Shipment settings",
-			"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
-			"description": "Configure shipment e.g. to select a default shipment carrier."
+			"description": "Set your freight free limit and whether you want to use the Vinou shipment management.",
+			"freightfreelimit": {
+				"title": "Freight free limit",
+				"description": "Configure order total from when packaging is free of charge."
+			},
+			"management": {
+				"title": "Shipment management",
+				"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
+				"description": "Configure shipment e.g. to select a default shipment carrier."
+			}
 		},
 		"technical": {
 			"title": "Technology",
@@ -2330,5 +2331,86 @@
 		"ice": "Ice",
 		"chocolate": "Chocolate",
 		"coffee": "Coffee"
+	},
+	"apps": {
+		"vinou-gusto": {
+			"dialogs": {
+				"access": {
+					"title": "Please grant access",
+					"toasts": {
+						"accessdenied": "Access denied"
+					}
+				},
+				"nointernet": {
+					"title": "No network available",
+					"msg": "In order to use all functionality, you need a network connection."
+				},
+				"updateavailable": {
+					"title": "Update available",
+					"msg": "New version available. Please install now to continue using this app."
+				},
+				"openexpertise": {
+					"title": "Open with"
+				},
+				"createwine": {
+					"title": "Create new wine",
+					"msg": "Do you really want to cancel? All changes will be lost."
+				},
+				"winenotfound": {
+					"title": "No wine found",
+					"msg": "Would you like to create a new wine?"
+				}
+			},
+			"views": {
+				"main": {
+					"myfavs": "My Favourites",
+					"findwines": "Find wines",
+					"scanwine": "Scan wines",
+					"imprint": "Imprint",
+					"dataprotection": "Data Protection"
+				},
+				"winery": {
+					"title": "Create wine",
+					"subtitle": "Search for winery or create new one",
+					"nextstep": "Create wine"
+				},
+				"wine": {
+					"title": "Create wine",
+					"subtitle": "Search for wine or create new one",
+					"prevstep": "Create winery",
+					"nextstep": "Bottle image"
+				},
+				"bottle": {
+					"title": "Create wine",
+					"subtitle": "Picture wine bottle and add image",
+					"prevstep": "Create wine",
+					"actions": {
+						"makepicture": "Picture bottle",
+						"save": "Save"
+					}
+				},
+				"favourites": {
+					"title": "My wines"
+				},
+				"scan": {
+					"actions": {
+						"apply": "Apply"
+					},
+					"toasts": {
+						"nfcstart": "Hold your device close to the NFC tag please.",
+						"nfcdisabled": "Please activate NFC and try again.",
+						"unsupportedtag": "NFC Tag not supported."
+					}
+				},
+				"search": {
+					"title": "Suchen",
+					"toasts": {
+						"winenotfound": "No wine found",
+						"winesaved": "Wine saved locally.",
+						"winerynotfound": "No winery found."
+					}
+				}
+			}
+		}
 	}
 }
