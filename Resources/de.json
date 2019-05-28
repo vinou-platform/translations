@@ -1035,7 +1035,7 @@
 				"modaltitle": "Kunden bearbeiten"
 			},
 			"search": {
-				"placeholder": "z.B. Name, Firma, Addresse"
+				"placeholder": "z.B. Name, Firma, Adresse"
 			},
 			"contactperson": {
 				"main": "Neue Kontaktperson",
@@ -1094,6 +1094,9 @@
 			"sommelier": "Sommelier",
 			"support": "Support"
 		},
+		"tabs": {
+			"additionaladdresses": "Rechnungs-/Lieferadressen"
+		},
 		"types": {
 			"private": "Privatperson",
 			"gastronomy": "Gastronomie",
@@ -1123,7 +1126,16 @@
 			"address": "Straße und Hausnummer",
 			"zip": "PLZ",
 			"city": "Stadt",
-			"country": "Land"
+			"country": "Land",
+			"addresstype": "Adresstyp"
+		},
+		"address_types": {
+			"invoice": "Rechnungsadresse",
+			"shipping": "Lieferadresse"
+		},
+		"types": {
+			"delivery": "Lieferadresse",
+			"invoice": "Rechnungsadresse"
 		}
 	},
 	"contacts": {
