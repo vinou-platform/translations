@@ -48,8 +48,7 @@
 	"tabs": {
 		"all": {
 			"general": "General",
-			"notes": "Notes",
-			"contacts": "Contact persons"
+			"notes": "Notes"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -61,21 +60,31 @@
 			"label": "Loading data ..."
 		}
 	},
-	"price": "Price",
-	"quantity": "Stock",
-	"articlenumber": "Articlenumber",
-	"de": "Germany",
-	"en": "England",
-	"fr": "France",
-	"fileupload": "Choose file",
-	"delete_image": "Delete image",
-	"delete_image_secure": "Do you really want to delete the image?",
-	"delete_template_secure": "Do you really want to delete this template for expertises?",
-	"changepw": "Change password",
-	"wineregions_none": "no information",
-	"wines_modal_delete": "Do you really want to delete this wine?",
-	"wineries_modal_delete": "Do you really want to delete this winery?",
-	"category_modal_delete": "Do you really want to delete this category?",
+	"dashboard": {
+		"actions": {
+			"create": {
+				"category_main": "Create",
+				"category_sub": "Category",
+				"user_main": "Add",
+				"user_sub": "new User",
+				"wine_main": "Add",
+				"wine_sub": "Wine"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
+		}
+	},
+	"de":"Germany",
+	"en":"England",
+	"fr":"France",
+	"fileupload":"Choose file",
+	"delete_image":"Delete Image",
+	"delete_image_secure":"Do you really want to delete the image?",
+	"delete_template_secure":"Do you really want to delete the template?",
+	"changepw":"Change password",
+	"wineregions_none":"no information",
+	"wines_modal_delete":"Do you really want to delete this wine?",
 	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
@@ -1011,8 +1020,14 @@
 		},
 		"field": {
 			"content": "Content",
-			"wrote": "Wrote on",
-			"edited": "Edited on"
+			"edited": "edited on",
+			"wrote": "wrote on"
+		},
+		"action": {
+			"create": {
+				"main": "Create new",
+				"sub": "Note"
+			}
 		},
 		"messages": {
 			"toasts": {
@@ -1093,6 +1108,12 @@
 			"restaurant_administration": "Restaurant administration",
 			"sommelier": "Sommelier",
 			"support": "Support"
+		},
+		"tabs": {
+			"additionaladdresses": "Additional addresses",
+			"contacts": "Contact persons",
+			"general": "General",
+			"notes": "Notes"
 		},
 		"types": {
 			"private": "Private",
