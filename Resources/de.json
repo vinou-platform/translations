@@ -1056,7 +1056,7 @@
 				"modaltitle": "Kunden bearbeiten"
 			},
 			"search": {
-				"placeholder": "z.B. Name, Firma, Addresse"
+				"placeholder": "z.B. Name, Firma, Adresse"
 			},
 			"contactperson": {
 				"main": "Neue Kontaktperson",
@@ -1121,6 +1121,9 @@
 			"general": "Allgemein",
 			"notes": "Notizen"
 		},
+		"tabs": {
+			"additionaladdresses": "Rechnungs-/Lieferadressen"
+		},
 		"types": {
 			"private": "Privatperson",
 			"gastronomy": "Gastronomie",
@@ -1145,12 +1148,21 @@
 			}
 		},
 		"field": {
-			"name":"Name/Ansprechpartner",
-			"company":"Firma",
-			"address":"Straße und Hausnummer",
-			"zip":"PLZ",
-			"city":"Stadt",
-			"country":"Land"
+			"name": "Name/Ansprechpartner",
+			"company": "Firma",
+			"address": "Straße und Hausnummer",
+			"zip": "PLZ",
+			"city": "Stadt",
+			"country": "Land",
+			"addresstype": "Adresstyp"
+		},
+		"address_types": {
+			"invoice": "Rechnungsadresse",
+			"shipping": "Lieferadresse"
+		},
+		"types": {
+			"delivery": "Lieferadresse",
+			"invoice": "Rechnungsadresse"
 		}
 	},
 	"contacts": {

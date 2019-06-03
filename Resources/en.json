@@ -1110,7 +1110,7 @@
 			"support": "Support"
 		},
 		"tabs": {
-			"additionaladdresses": "Additional addresses",
+			"additionaladdresses": "Invoice/Shipping addresses",
 			"contacts": "Contact persons",
 			"general": "General",
 			"notes": "Notes"
@@ -1121,6 +1121,10 @@
 			"specializedtrade": "Specialized trade",
 			"foodretailing": "Food retailing",
 			"export": "Export"
+		},
+		"types": {
+			"delivery": "Delivery address",
+			"invoice": "Invoice address"
 		}
 	},
 	"address": {
@@ -1144,7 +1148,12 @@
 			"address": "Street",
 			"zip": "Zip",
 			"city": "City",
-			"country": "Country"
+			"country": "Country",
+			"addresstype": "Address type"
+		},
+		"address_types": {
+			"invoice": "Invoice address",
+			"shipping": "Shipping address"
 		}
 	},
 	"contacts": {
