@@ -26,6 +26,7 @@
 			"settings": "Settings"
 		},
 		"fields": {
+			"default": "Default",
 			"empty": "Please select",
 			"please_select": "Please select",
 			"required": "Required",
