@@ -1123,7 +1123,7 @@
 			"notes": "Notizen"
 		},
 		"tabs": {
-			"additionaladdresses": "Rechnungs-/Lieferadressen"
+			"additionaladdresses": "Adressen"
 		},
 		"types": {
 			"private": "Privatperson",
@@ -1149,13 +1149,18 @@
 			}
 		},
 		"field": {
+			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
 			"company": "Firma",
 			"address": "Straße und Hausnummer",
+			"address_alt": "Anschrift",
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land",
-			"addresstype": "Adresstyp"
+			"defaultinvoiceaddress": "Standardrechnungsadresse",
+			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
+			"addresstype": "Adresstyp",
+			"searchaddress": "Lieferadresse suchen"
 		},
 		"address_types": {
 			"invoice": "Rechnungsadresse",
@@ -1245,6 +1250,7 @@
 			"brutto_sum": "Brutto-Summe der Bestellung",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
+			"delivering_addr": "Lieferadresse",
 			"excl_vat": "zzgl. MwSt.",
 			"filter_orders": "Bestellung filtern",
 			"loading_positions": "Positionen werden geladen ...",

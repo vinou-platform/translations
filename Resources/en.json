@@ -1123,6 +1123,9 @@
 			"foodretailing": "Food retailing",
 			"export": "Export"
 		},
+		"tabs": {
+			"additionaladdresses": "Addresses"
+		},
 		"types": {
 			"delivery": "Delivery address",
 			"invoice": "Invoice address"
@@ -1144,13 +1147,18 @@
 			}
 		},
 		"field": {
+			"fullname": "Name",
 			"name": "Contact person",
 			"company": "Company",
 			"address": "Street",
+			"address_alt": "Address",
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country",
-			"addresstype": "Address type"
+			"defaultinvoiceaddress": "Default invoice address",
+			"defaultinvoicemsg": "This address is set in the 'General' tab.",
+			"addresstype": "Address type",
+			"searchaddress": "Lieferadresse suchen"
 		},
 		"address_types": {
 			"invoice": "Invoice address",
@@ -1236,6 +1244,7 @@
 			"brutto_sum": "Order brutto summary",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
+			"delivering_addr": "Delivery address",
 			"excl_vat": "excl. VAT",
 			"filter_orders": "Filter orders",
 			"loading_positions": "Loading positions ...",
