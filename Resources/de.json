@@ -28,7 +28,7 @@
 		"fields": {
 			"default": "Standard",
 			"empty": "Bitte wählen",
-			"please_select": "Bitte wählen",
+			"none": "Keine Angabe",
 			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
 			"search_placeholder": "Name oder Beschreibung",
