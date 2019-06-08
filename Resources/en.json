@@ -1254,6 +1254,7 @@
 			"next_payment_type": "Next - payment type",
 			"next_delivering_addr": "Next - delivery adress",
 			"no_payment_income_yet": "Payment not yet income",
+			"nocustomerslected": "To create an invoice for an order a client must be selected before. Please select a client first.",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
