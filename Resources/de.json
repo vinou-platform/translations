@@ -1131,38 +1131,26 @@
 		"action": {
 			"create": {
 				"main": "Neue Adresse",
-				"sub": "anlegen",
-				"title": "Adresse anlegen",
-				"modaltitle": "Adresse anlegen"
+				"sub": "anlegen"
 			},
-			"edit": {
-				"modaltitle": "Adresse bearbeiten"
-			},
-			"save": {
-				"title": "Adresse speichern"
-			}
+			"save": "Adresse speichern"
 		},
 		"field": {
 			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
 			"company": "Firma",
 			"address": "Straße und Hausnummer",
-			"address_alt": "Anschrift",
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land",
 			"defaultinvoiceaddress": "Standardrechnungsadresse",
 			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
-			"addresstype": "Adresstyp",
+			"type": "Adresstyp",
 			"searchaddress": "Lieferadresse suchen"
 		},
-		"address_types": {
+		"types": {
 			"invoice": "Rechnungsadresse",
 			"shipping": "Lieferadresse"
-		},
-		"types": {
-			"delivery": "Lieferadresse",
-			"invoice": "Rechnungsadresse"
 		}
 	},
 	"contacts": {

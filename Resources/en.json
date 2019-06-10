@@ -1130,32 +1130,24 @@
 		"action": {
 			"create": {
 				"main": "Create Address",
-				"sub": " ",
-				"title": "Create address",
-				"modaltitle": "Create address"
+				"sub": " "
 			},
-			"edit": {
-				"modaltitle": "Edit address"
-			},
-			"save": {
-				"title": "Save address"
-			}
+			"save": "Save address"
 		},
 		"field": {
 			"fullname": "Name",
 			"name": "Contact person",
 			"company": "Company",
 			"address": "Street",
-			"address_alt": "Address",
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country",
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
-			"addresstype": "Address type",
+			"type": "Address type",
 			"searchaddress": "Lieferadresse suchen"
 		},
-		"address_types": {
+		"types": {
 			"invoice": "Invoice address",
 			"shipping": "Shipping address"
 		}
