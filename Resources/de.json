@@ -44,16 +44,10 @@
 			"price": {
 				"none": "kostenfrei"
 			}
-		}
-	},
-	"tabs": {
-		"all": {
+		},
+		"tabs": {
 			"general": "Allgemein",
 			"notes": "Notizen"
-		},
-		"wines": {
-			"vinougusto": "Vinou-Gusto",
-			"stockrotation": "Lagerbewegungen"
 		}
 	},
 	"loader": {
@@ -932,6 +926,10 @@
 			"other": "Übersetzungen",
 			"original": "{title} (Original)",
 			"new": "{title} (Neu)"
+		},
+		"tabs": {
+			"vinougusto": "Vinou-Gusto",
+			"stockrotation": "Lagerbewegungen"
 		},
 		"messages": {
 			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
