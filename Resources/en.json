@@ -1111,7 +1111,7 @@
 			"support": "Support"
 		},
 		"tabs": {
-			"additionaladdresses": "Invoice/Shipping addresses",
+			"addresses": "Addresses",
 			"contacts": "Contact persons",
 			"general": "General",
 			"notes": "Notes"
@@ -1122,9 +1122,6 @@
 			"specializedtrade": "Specialized trade",
 			"foodretailing": "Food retailing",
 			"export": "Export"
-		},
-		"tabs": {
-			"additionaladdresses": "Addresses"
 		},
 		"types": {
 			"delivery": "Delivery address",

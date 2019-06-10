@@ -49,8 +49,7 @@
 	"tabs": {
 		"all": {
 			"general": "Allgemein",
-			"notes": "Notizen",
-			"contacts": "Kontaktpersonen"
+			"notes": "Notizen"
 		},
 		"wines": {
 			"vinougusto": "Vinou-Gusto",
@@ -1117,13 +1116,10 @@
 			"support": "Support"
 		}, 
 		"tabs": {
-			"additionaladdresses": "Weitere Adressen",
+			"addresses": "Adressen",
 			"contacts": "Kontaktpersonen",
 			"general": "Allgemein",
 			"notes": "Notizen"
-		},
-		"tabs": {
-			"additionaladdresses": "Adressen"
 		},
 		"types": {
 			"private": "Privatperson",
