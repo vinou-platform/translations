@@ -1136,6 +1136,7 @@
 			"save": "Adresse speichern"
 		},
 		"field": {
+			"type": "Adresstyp",
 			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
 			"company": "Firma",
@@ -1145,7 +1146,6 @@
 			"country": "Land",
 			"defaultinvoiceaddress": "Standardrechnungsadresse",
 			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
-			"type": "Adresstyp",
 			"searchaddress": "Lieferadresse suchen"
 		},
 		"types": {

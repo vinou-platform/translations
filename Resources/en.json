@@ -1135,6 +1135,7 @@
 			"save": "Save address"
 		},
 		"field": {
+			"type": "Address type",
 			"fullname": "Name",
 			"name": "Contact person",
 			"company": "Company",
@@ -1144,7 +1145,6 @@
 			"country": "Country",
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
-			"type": "Address type",
 			"searchaddress": "Lieferadresse suchen"
 		},
 		"types": {
