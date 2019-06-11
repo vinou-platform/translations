@@ -26,6 +26,7 @@
 			"settings": "Settings"
 		},
 		"fields": {
+			"default": "Default",
 			"empty": "Please select",
 			"please_select": "Please select",
 			"required": "Required",
@@ -43,17 +44,10 @@
 			"price": {
 				"none": "free of charge"
 			}
-		}
-	},
-	"tabs": {
-		"all": {
-			"general": "General",
-			"notes": "Notes",
-			"contacts": "Contact persons"
 		},
-		"wines": {
-			"vinougusto": "Vinou-Gusto",
-			"stockrotation": "Stock rotation"
+		"tabs": {
+			"general": "General",
+			"notes": "Notes"
 		}
 	},
 	"loader": {
@@ -61,21 +55,31 @@
 			"label": "Loading data ..."
 		}
 	},
-	"price": "Price",
-	"quantity": "Stock",
-	"articlenumber": "Articlenumber",
-	"de": "Germany",
-	"en": "England",
-	"fr": "France",
-	"fileupload": "Choose file",
-	"delete_image": "Delete image",
-	"delete_image_secure": "Do you really want to delete the image?",
-	"delete_template_secure": "Do you really want to delete this template for expertises?",
-	"changepw": "Change password",
-	"wineregions_none": "no information",
-	"wines_modal_delete": "Do you really want to delete this wine?",
-	"wineries_modal_delete": "Do you really want to delete this winery?",
-	"category_modal_delete": "Do you really want to delete this category?",
+	"dashboard": {
+		"actions": {
+			"create": {
+				"category_main": "Create",
+				"category_sub": "Category",
+				"user_main": "Add",
+				"user_sub": "new User",
+				"wine_main": "Add",
+				"wine_sub": "Wine"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
+		}
+	},
+	"de":"Germany",
+	"en":"England",
+	"fr":"France",
+	"fileupload":"Choose file",
+	"delete_image":"Delete Image",
+	"delete_image_secure":"Do you really want to delete the image?",
+	"delete_template_secure":"Do you really want to delete the template?",
+	"changepw":"Change password",
+	"wineregions_none":"no information",
+	"wines_modal_delete":"Do you really want to delete this wine?",
 	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
@@ -918,6 +922,10 @@
 			"original": "{title} (Original)",
 			"new": "{title} (New)"
 		},
+		"tabs": {
+			"vinougusto": "Vinou-Gusto",
+			"stockrotation": "Stock rotation"
+		},
 		"messages": {
 			"formdirty": "Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
@@ -1011,8 +1019,14 @@
 		},
 		"field": {
 			"content": "Content",
-			"wrote": "Wrote on",
-			"edited": "Edited on"
+			"edited": "edited on",
+			"wrote": "wrote on"
+		},
+		"action": {
+			"create": {
+				"main": "Create new",
+				"sub": "Note"
+			}
 		},
 		"messages": {
 			"toasts": {
@@ -1094,36 +1108,48 @@
 			"sommelier": "Sommelier",
 			"support": "Support"
 		},
+		"tabs": {
+			"addresses": "Addresses",
+			"contacts": "Contact persons",
+			"general": "General",
+			"notes": "Notes"
+		},
 		"types": {
 			"private": "Private",
 			"gastronomy": "Gastronomy",
 			"specializedtrade": "Specialized trade",
 			"foodretailing": "Food retailing",
 			"export": "Export"
+		},
+		"types": {
+			"delivery": "Delivery address",
+			"invoice": "Invoice address"
 		}
 	},
 	"address": {
 		"action": {
 			"create": {
 				"main": "Create Address",
-				"sub": " ",
-				"title": "Create address",
-				"modaltitle": "Create address"
+				"sub": " "
 			},
-			"edit": {
-				"modaltitle": "Edit address"
-			},
-			"save": {
-				"title": "Save address"
-			}
+			"save": "Save address"
 		},
 		"field": {
+			"type": "Address type",
+			"fullname": "Name",
 			"name": "Contact person",
 			"company": "Company",
 			"address": "Street",
 			"zip": "Zip",
 			"city": "City",
-			"country": "Country"
+			"country": "Country",
+			"defaultinvoiceaddress": "Default invoice address",
+			"defaultinvoicemsg": "This address is set in the 'General' tab.",
+			"searchaddress": "Lieferadresse suchen"
+		},
+		"types": {
+			"invoice": "Invoice address",
+			"shipping": "Shipping address"
 		}
 	},
 	"contacts": {
@@ -1205,6 +1231,7 @@
 			"brutto_sum": "Order brutto summary",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
+			"delivering_addr": "Delivery address",
 			"excl_vat": "excl. VAT",
 			"filter_orders": "Filter orders",
 			"loading_positions": "Loading positions ...",
@@ -1214,6 +1241,7 @@
 			"next_payment_type": "Next - payment type",
 			"next_delivering_addr": "Next - delivery adress",
 			"no_payment_income_yet": "Payment not yet income",
+			"nocustomerselected": "To create an invoice for an order a client must be selected before. Please select a client first.",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
