@@ -1385,6 +1385,15 @@
 				"content": "Das Vinou-Versandmanagement wird über den Anbieter <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> realisiert, dafür fallen <strong>zusätzliche Gebühren für Deine Sendungen</strong> an. Mit Klick auf Ja bestätigst Du die aktuellen <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>Konditionen des Versandmanagements</strong></a>. Die Nutzung des Vinou-Versandmanagements kann jederzeit über die Versandeinstellungen deaktiviert werden."
 			}
 		},
+		"messages": {
+			"errors": {
+				"common": "Bei Erstellung der Versandetiketten ist ein Fehler aufgetreten.",
+				"internal": "Bitte versuche es später noch einmal oder kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"invalidaddress": "Bitte prüfe die Absendeanschrift (Firmenanschrift unter Einstellungen) und prüfe ob in den Bestelldaten die Empfängeradresse und Bestellungsdetails korrekt eingetragen sind.",
+				"invalidapikey": "Der ShipCloud-API-Key wurde nicht gefunden oder ist ungültig. <br/><br/>Bitte prüfe die Angaben unter Einstellungen > Versandmanagement.",
+				"toomanyrequests": "Die maximale Anzahl Sendungen für das ausgewählte Versandangebot über ShipCloud wurde erreicht. Bitte buche ein geeignetes Versandabonnement unter: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+			}
+		},
 		"toasts": {
 			"activated": "Versand aktiviert",
 			"deactivated": "Versand deaktiviert",

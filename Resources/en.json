@@ -1384,6 +1384,15 @@
 				"content": "Hereby you accept our <a href=\"/legals\" target=\"_blank\">legals</a> and..."
 			}
 		},
+		"messages": {
+			"errors": {
+				"common": "An error occured while processing shipment labels.",
+				"internal": "Please try again later or get in contact with us: <br/><br/><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"invalidaddress": "Please check your sender address (Address data for your company within the settings) and check all order data and shipment address for possible typos.",
+				"invalidapikey": "Your ShipCloud-API-Key could not be found or is invalid. <br/><br/>Please check your data within the settings > delivery management options.",
+				"toomanyrequests": "Maximum amount of deliveries in your current delivery plan via ShipCloud is reached. Please upgrade your plan under: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+			}
+		},
 		"toasts": {
 			"activated": "Shipment activated",
 			"deactivated": "Shipment deactivated",
