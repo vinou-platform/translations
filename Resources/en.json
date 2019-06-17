@@ -1146,7 +1146,7 @@
 			"defaultdeliveryaddress": "Default shipping address",
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
-			"searchaddress": "Lieferadresse suchen"
+			"searchaddress": "Search delivery address"
 		},
 		"types": {
 			"invoice": "Invoice address",
@@ -1199,7 +1199,7 @@
 				"sub": " "
 			},
 			"search": {
-				"placeholder": "e.g. name, customernumber, address"
+				"placeholder": "e.g. name, customer number, address"
 			},
 			"invoice_create": {
 				"main": "Invoice",
