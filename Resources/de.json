@@ -1144,6 +1144,7 @@
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land",
+			"defaultdeliveryaddress": "Standardlieferadresse",
 			"defaultinvoiceaddress": "Standardrechnungsadresse",
 			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
 			"searchaddress": "Lieferadresse suchen"

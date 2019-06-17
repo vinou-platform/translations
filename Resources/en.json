@@ -1143,6 +1143,7 @@
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country",
+			"defaultdeliveryaddress": "Default shipping address",
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
 			"searchaddress": "Lieferadresse suchen"
