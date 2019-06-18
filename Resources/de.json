@@ -1301,7 +1301,8 @@
 			"created": "Versandoption erstellt",
 			"changed": "Versandoption geändert",
 			"deleted": "Versandoption gelöscht",
-			"rangeerror": "Diese Einstellung kollidiert mit einer anderen Versandoption!"
+			"rangeerror": "Diese Einstellung kollidiert mit einer anderen Versandoption!",
+			"inputerror": "Die eingegebenen Werte sind nicht zulässig!"
 		},
 		"field": {
 			"type": "Typ",

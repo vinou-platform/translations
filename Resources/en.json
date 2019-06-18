@@ -1300,7 +1300,8 @@
 			"created": "Packaging created",
 			"changed": "Packaging changed",
 			"deleted": "Packaging deleted",
-			"rangeerror": "Packaging collides with another packaging!"
+			"rangeerror": "Packaging collides with another packaging!",
+			"inputerror": "Values you entered are not vaild for these fields!"
 		},
 		"field": {
 			"type": "Type",
