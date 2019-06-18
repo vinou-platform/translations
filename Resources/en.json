@@ -127,30 +127,6 @@
 			"percent": "Percental rebate"
 		}
 	},
-	"categories": {
-		"actions": {
-			"createcategory": {
-				"main": "Add Category",
-				"sub": " "
-			},
-			"createfbiframe": {
-				"main": "Add",
-				"sub": "Facebook-Iframe"
-			},
-			"viewfbiframe": {
-				"main": "Show",
-				"sub": "Facebook-Iframe"
-			},
-			"createslider": {
-				"main": "Add slider for",
-				"sub": "Vinothek display"
-			},
-			"viewslider": {
-				"main": "Show slider for",
-				"sub": "Vinothek display"
-			}
-		}
-	},
 	"currenttoken_old": "Current token",
 	"currenttoken": "Current token",
 	"tokens": {
@@ -941,11 +917,13 @@
 	"winecategory": {
 		"fieldset": {
 			"general": "General",
-			"description": "Description",
 			"network": "My Network",
 			"shopsettings": "Website & shop settings"
 		},
 		"field": {
+			"name": "Name",
+			"description": "Description",
+			"crstamp": "Creation date",
 			"inshop": "Show in shop",
 			"inwinelist": "Show in wine list",
 			"networkvisibility": {
@@ -953,6 +931,38 @@
 				"description": "If you don't want this category to be visible on the Vinou© Network, you can disable all network features here."
 			},
 			"sorting": "Manual index (e.g. for shop use)"
+		},
+		"actions": {
+			"create": {
+				"main": "Add Category",
+				"sub": " "
+			},
+			"createfacebookiframe": {
+				"main": "Add",
+				"sub": "Facebook-Iframe"
+			},
+			"viewfacebookiframe": {
+				"main": "Show",
+				"sub": "Facebook-Iframe"
+			},
+			"createslider": {
+				"main": "Add slider for",
+				"sub": "Vinothek display"
+			},
+			"viewslider": {
+				"main": "Show slider for",
+				"sub": "Vinothek display"
+			}
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"sortdirection": {
+				"label": "Sort direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			}
 		}
 	},
 	"product": {

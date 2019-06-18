@@ -132,30 +132,6 @@
 			"percent": "Prozentualer Rabatt"
 		}
 	},
-	"categories": {
-		"actions": {
-			"create": {
-				"main": "Neue Kategorie",
-				"sub": "anlegen"
-			},
-			"createfbiframe": {
-				"main": "Facebook-Iframe",
-				"sub": "anlegen"
-			},
-			"viewfbiframe": {
-				"main": "Facebook-Iframe",
-				"sub": "ansehen"
-			},
-			"createslider": {
-				"main": "Slider für Vinotheken-Display",
-				"sub": "anlegen"
-			},
-			"viewslider": {
-				"main": "Slider für Vinotheken-Display",
-				"sub": "ansehen"
-			}
-		}
-	},
 	"currenttoken_old": "Bisherige Token",
 	"currenttoken": "Aktuelle Verbindung",
 	"tokens": {
@@ -946,11 +922,13 @@
 	"winecategory": {
 		"fieldset": {
 			"general": "Allgemeines",
-			"description": "Beschreibung",
 			"network": "Mein Netzwerk",
 			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"crstamp": "Erstellungsdatum",
 			"inshop": "Im Shop anzeigen",
 			"inwinelist": "In Weinliste anzeigen",
 			"networkvisibility": {
@@ -958,6 +936,38 @@
 				"description": "Wenn die Kategorie nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
 			},
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)"
+		},
+		"actions": {
+			"create": {
+				"main": "Neue Kategorie",
+				"sub": "anlegen"
+			},
+			"createfacebookiframe": {
+				"main": "Facebook-Iframe",
+				"sub": "anlegen"
+			},
+			"viewfacebookiframe": {
+				"main": "Facebook-Iframe",
+				"sub": "ansehen"
+			},
+			"createslider": {
+				"main": "Slider für Vinotheken-Display",
+				"sub": "anlegen"
+			},
+			"viewslider": {
+				"main": "Slider für Vinotheken-Display",
+				"sub": "ansehen"
+			}
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			}
 		}
 	},
 	"product": {
