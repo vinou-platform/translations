@@ -1239,7 +1239,7 @@
 			"packaging_shipping": "Verpackung und Versand"
 		},
 		"fields": {
-			"processiong_data": "Daten werden verarbeitet ...",
+			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Brutto-Summe der Bestellung",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",

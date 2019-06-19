@@ -1238,7 +1238,7 @@
 			"packaging_shipping": "Packaging and shipping"
 		},
 		"fields": {
-			"processiong_data": "Processing data ...",
+			"processing_data": "Processing data ...",
 			"brutto_sum": "Order brutto summary",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
