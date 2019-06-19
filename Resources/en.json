@@ -26,7 +26,9 @@
 			"settings": "Settings"
 		},
 		"fields": {
+			"default": "Default",
 			"empty": "Please select",
+			"please_select": "Please select",
 			"required": "Required",
 			"upload_image": "Select image to upload",
 			"search_placeholder": "Name or description",
@@ -42,16 +44,10 @@
 			"price": {
 				"none": "free of charge"
 			}
-		}
-	},
-	"tabs": {
-		"all": {
+		},
+		"tabs": {
 			"general": "General",
 			"notes": "Notes"
-		},
-		"wines": {
-			"vinougusto": "Vinou-Gusto",
-			"stockrotation": "Stock rotation"
 		}
 	},
 	"loader": {
@@ -59,21 +55,32 @@
 			"label": "Loading data ..."
 		}
 	},
-	"price": "Price",
-	"quantity": "Stock",
-	"articlenumber": "Articlenumber",
-	"de": "Germany",
-	"en": "England",
-	"fr": "France",
-	"fileupload": "Choose file",
-	"delete_image": "Delete image",
-	"delete_image_secure": "Do you really want to delete the image?",
-	"delete_template_secure": "Do you really want to delete this template for epertises?",
-	"changepw": "Change password",
-	"wineregions_none": "no information",
-	"wines_modal_delete": "Do you really want to delete this wine?",
-	"wineries_modal_delete": "Do you really want to delete this winery?",
-	"category_modal_delete": "Do you really want to delete this category?",
+	"dashboard": {
+		"actions": {
+			"create": {
+				"category_main": "Create",
+				"category_sub": "Category",
+				"user_main": "Add",
+				"user_sub": "new User",
+				"wine_main": "Add",
+				"wine_sub": "Wine"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
+		}
+	},
+	"de":"Germany",
+	"en":"England",
+	"fr":"France",
+	"fileupload":"Choose file",
+	"delete_image":"Delete Image",
+	"delete_image_secure":"Do you really want to delete the image?",
+	"delete_template_secure":"Do you really want to delete the template?",
+	"changepw":"Change password",
+	"wineregions_none":"no information",
+	"wines_modal_delete":"Do you really want to delete this wine?",
+	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Do you really want to delete this user?",
@@ -106,7 +113,6 @@
 	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
 	"orders_modal_onlyinvoice_create": "Create invoice now?",
 	"orders_modal_onlydelivery_create": "Create delivery note now?",
-	"orders_modal_creditadvice_create_old": "Warning: Do you really want to create credit advise now and cancel order?",
 	"orders_modal_creditadvice_create": "Warning: Do you really want to cancel the selected order and create a credit voucher?",
 	"order_wrong_quantity": "Please enter an amount greater than 0",
 	"orders_rebate_general": "Default rebate (gross)",
@@ -119,30 +125,6 @@
 		"methods": {
 			"general": "General rebate (gross)",
 			"percent": "Percental rebate"
-		}
-	},
-	"categories": {
-		"actions": {
-			"createcategory": {
-				"main": "Add Category",
-				"sub": " "
-			},
-			"createfbiframe": {
-				"main": "Add",
-				"sub": "Facebook-Iframe"
-			},
-			"viewfbiframe": {
-				"main": "Show",
-				"sub": "Facebook-Iframe"
-			},
-			"createslider": {
-				"main": "Add slider for",
-				"sub": "Vinothek display"
-			},
-			"viewslider": {
-				"main": "Show slider for",
-				"sub": "Vinothek display"
-			}
 		}
 	},
 	"currenttoken_old": "Current token",
@@ -223,12 +205,17 @@
 		},
 		"fields": {
 			"active_users": "Active users"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Active",
 			"admin": "Admin",
 			"default": "Default",
 			"interfrog": "Interfrog",
+			"has_image": "With picture",
+			"has_price": "With price",
+			"public": "Public",
 			"total": "Total"
 		}
 	},
@@ -301,8 +288,12 @@
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
 	"db_cronjobs_description": "Description",
+	"db_cronjobs_description_placeholder": "Description for new cronjob",
+	"db_cronjobs_galleryFilterHint": "i.e. name, description",
 	"db_cronjobs_command": "Command",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Execution time (Crontab)",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "activate",
 	"cronjobs": {
 		"actions": {
@@ -515,7 +506,7 @@
 				"invitation": "Invited"
 			},
 			"crstamp": "Date of registration",
-			"expire": "Expirationdate",
+			"expire": "Expiration date",
 			"voucher_old": "Voucher",
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",
@@ -717,10 +708,8 @@
 			"export": {
 				"inventory": "Download inventory list"
 			},
-			"barcode" : {
-				"barcodedownloadvector": "Download GTIN code as vektor file",
-				"qrcodedownloadvector": "Download QR code as vector file"
-			}
+			"barcodedownloadvector": "Download GTIN code as vektor file",
+			"qrcodedownloadvector": "Download QR code as vector file"
 		},
 		"fieldset": {
 			"general": "General",
@@ -834,12 +823,6 @@
 			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
 			"sweetness": "Sweetness",
-			"stat_types": {
-				"has_image": "With picture",
-				"has_price": "With price",
-				"public": "Public",
-				"total": "Total"
-			},
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
@@ -915,6 +898,10 @@
 			"original": "{title} (Original)",
 			"new": "{title} (New)"
 		},
+		"tabs": {
+			"vinougusto": "Vinou-Gusto",
+			"stockrotation": "Stock rotation"
+		},
 		"messages": {
 			"formdirty": "Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
@@ -930,11 +917,13 @@
 	"winecategory": {
 		"fieldset": {
 			"general": "General",
-			"description": "Description",
 			"network": "My Network",
 			"shopsettings": "Website & shop settings"
 		},
 		"field": {
+			"name": "Name",
+			"description": "Description",
+			"crstamp": "Creation date",
 			"inshop": "Show in shop",
 			"inwinelist": "Show in wine list",
 			"networkvisibility": {
@@ -942,6 +931,38 @@
 				"description": "If you don't want this category to be visible on the Vinou© Network, you can disable all network features here."
 			},
 			"sorting": "Manual index (e.g. for shop use)"
+		},
+		"actions": {
+			"create": {
+				"main": "Add Category",
+				"sub": " "
+			},
+			"createfacebookiframe": {
+				"main": "Add",
+				"sub": "Facebook-Iframe"
+			},
+			"viewfacebookiframe": {
+				"main": "Show",
+				"sub": "Facebook-Iframe"
+			},
+			"createslider": {
+				"main": "Add slider for",
+				"sub": "Vinothek display"
+			},
+			"viewslider": {
+				"main": "Show slider for",
+				"sub": "Vinothek display"
+			}
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"sortdirection": {
+				"label": "Sort direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			}
 		}
 	},
 	"product": {
@@ -1008,8 +1029,14 @@
 		},
 		"field": {
 			"content": "Content",
-			"wrote": "wrote",
-			"edited": "edited"
+			"edited": "edited on",
+			"wrote": "wrote on"
+		},
+		"action": {
+			"create": {
+				"main": "Create new",
+				"sub": "Note"
+			}
 		},
 		"messages": {
 			"toasts": {
@@ -1033,6 +1060,10 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
+			},
+			"contactperson": {
+				"main": "Add Contact",
+				"sub": " "
 			}
 		},
 		"fieldset": {
@@ -1058,6 +1089,7 @@
 			"phone": "Phone",
 			"fax": "Fax",
 			"active": "active",
+			"department":"Department",
 			"image": "Logo",
 			"rebate": "Rebate (in %)",
 			"type": "Type",
@@ -1071,36 +1103,75 @@
 			"search_client": "Search client",
 			"term_of_discount": "Term of discount (days)"
 		},
+		"department_types": {
+			"branch_administration": "Branch administration",
+			"branch_administration_assistant": "Assistant branch administration",
+			"distribution": "Distribution",
+			"event_management": "Event management",
+			"finance": "Finance",
+			"logistics": "Logistics",
+			"management": "Management",
+			"marketing": "Marketing",
+			"product_management": "Product managent",
+			"purchase": "Purchase",
+			"restaurant_administration": "Restaurant administration",
+			"sommelier": "Sommelier",
+			"support": "Support"
+		},
+		"tabs": {
+			"addresses": "Addresses",
+			"contacts": "Contact persons",
+			"general": "General",
+			"notes": "Notes"
+		},
 		"types": {
 			"private": "Private",
 			"gastronomy": "Gastronomy",
 			"specializedtrade": "Specialized trade",
 			"foodretailing": "Food retailing",
 			"export": "Export"
+		},
+		"types": {
+			"delivery": "Delivery address",
+			"invoice": "Invoice address"
 		}
 	},
 	"address": {
 		"action": {
 			"create": {
 				"main": "Create Address",
-				"sub": " ",
-				"title": "Create address",
-				"modaltitle": "Create address"
+				"sub": " "
 			},
-			"edit": {
-				"modaltitle": "Edit address"
-			},
-			"save": {
-				"title": "Save address"
-			}
+			"save": "Save address"
 		},
 		"field": {
+			"type": "Address type",
+			"fullname": "Name",
 			"name": "Contact person",
 			"company": "Company",
 			"address": "Street",
 			"zip": "Zip",
 			"city": "City",
-			"country": "Country"
+			"country": "Country",
+			"defaultdeliveryaddress": "Default shipping address",
+			"defaultinvoiceaddress": "Default invoice address",
+			"defaultinvoicemsg": "This address is set in the 'General' tab.",
+			"searchaddress": "Search delivery address"
+		},
+		"types": {
+			"invoice": "Invoice address",
+			"shipping": "Shipping address"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Add Contact",
+				"sub": " "
+			},
+			"save": {
+				"title": "Save contact"
+			}
 		}
 	},
 	"order": {
@@ -1138,7 +1209,7 @@
 				"sub": " "
 			},
 			"search": {
-				"placeholder": "e.g. name, customernumber, address"
+				"placeholder": "e.g. name, customer number, address"
 			},
 			"invoice_create": {
 				"main": "Invoice",
@@ -1167,10 +1238,11 @@
 			"packaging_shipping": "Packaging and shipping"
 		},
 		"fields": {
-			"processiong_data": "Processing data ...",
+			"processing_data": "Processing data ...",
 			"brutto_sum": "Order brutto summary",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
+			"delivering_addr": "Delivery address",
 			"excl_vat": "excl. VAT",
 			"filter_orders": "Filter orders",
 			"loading_positions": "Loading positions ...",
@@ -1180,6 +1252,7 @@
 			"next_payment_type": "Next - payment type",
 			"next_delivering_addr": "Next - delivery adress",
 			"no_payment_income_yet": "Payment not yet income",
+			"nocustomerselected": "To create an invoice for an order a client must be selected before. Please select a client first.",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
@@ -1322,6 +1395,16 @@
 				"content": "Hereby you accept our <a href=\"/legals\" target=\"_blank\">legals</a> and..."
 			}
 		},
+		"messages": {
+			"errors": {
+				"common": "An error occured while processing shipment labels.",
+				"contact": "If you still have troubles, please feel free to get in contact with us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"internal": "Please try again later.",
+				"invalidaddress": "Please check your sender address (Address data for your company within the settings) and check all order data and shipment address for possible typos.",
+				"invalidapikey": "Your ShipCloud-API-Key could not be found or is invalid. <br/><br/>Please check your data within the settings > delivery management options.",
+				"toomanyrequests": "Maximum amount of deliveries in your current delivery plan via ShipCloud is reached. Please upgrade your plan under: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+			}
+		},
 		"toasts": {
 			"activated": "Shipment activated",
 			"deactivated": "Shipment deactivated",
@@ -1387,7 +1470,7 @@
 	"settings": {
 		"account": {
 			"title": "Account settings",
-			"description": "Adminstrate your invoice address, membership oder bank account e.g."
+			"description": "Administrate your invoice address, membership, bank account etc."
 		},
 		"membership": {
 			"title": "Membership",
@@ -1395,12 +1478,12 @@
 		},
 		"customer": {
 			"title": "Invoice information",
-			"description": "Administrate information for your Vinou-Membership. These informations won't be shown public in network."
+			"description": "Administrate your Vinou membership settings. These information are not public and won’t be shown in the Vinou network."
 		},
 		"mycompanies": {
 			"merchants": {
 				"title": "My wine store",
-				"description": "Define additional companies for your wine store. These are public informations shown within the Vinou network."
+				"description": "Define additional companies for your wine store. These information are public and will be shown within the Vinou network."
 			},
 			"wineries": {
 				"title": "My winery",
@@ -1410,7 +1493,7 @@
 		"payments": {
 			"title": "Payment methods",
 			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
-			"bankaccount": "Bankverbindung"
+			"bankaccount": "Bank account"
 		},
 		"packagings": {
 			"title": "Package options",
@@ -1418,16 +1501,24 @@
 		},
 		"packagingunits": {
 			"title": "Packaging units",
-			"description": "Configure your boxes to send your wines that will be used for shipment. These boxes will be used also to calculate your shipment labels."
+			"description": "Configure your shipment boxes. These settings will also be used to calculate shipment label."
 		},
 		"priceranges": {
-			"title": "Preis ranges",
+			"title": "Price ranges",
 			"description": "Configure your price ranges to setup individual client prices."
 		},
 		"shipment": {
 			"title": "Shipment settings",
-			"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
-			"description": "Configure shipment e.g. to select a default shipment carrier."
+			"description": "Set your freight free limit and whether you want to use the Vinou shipment management.",
+			"freightfreelimit": {
+				"title": "Freight free limit",
+				"description": "Configure order total from when packaging is free of charge."
+			},
+			"management": {
+				"title": "Shipment management",
+				"inactive": "Activate shipment management service by Vinou and shipcloud to generate shipment labels directly by using the Vinou WebApplication",
+				"description": "Configure shipment e.g. to select a default shipment carrier."
+			}
 		},
 		"technical": {
 			"title": "Technology",
@@ -1464,6 +1555,7 @@
 		"client_saved": "Client saved!",
 		"client_changed": "Client updated!",
 		"client_deleted": "Client deleted!",
+		"contact_deleted": "Contact deleted",
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
@@ -1540,7 +1632,11 @@
 			"saveerror": "Note could not saved!",
 			"delete": "Note deleted!",
 			"deleteerror": "Note could not deleted!"
-		}
+		},
+		"contacts_saved": "Contact added.",
+		"contacts_saveerror": "Error adding contact!",
+		"contacts_deleted": "Contact deleted.",
+		"contacts_deleteerror": "Error deleting contact!"
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"

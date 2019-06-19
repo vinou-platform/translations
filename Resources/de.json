@@ -26,7 +26,9 @@
 			"settings": "Einstellungen"
 		},
 		"fields": {
+			"default": "Standard",
 			"empty": "Bitte wählen",
+			"none": "Keine Angabe",
 			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
 			"search_placeholder": "Name oder Beschreibung",
@@ -42,21 +44,30 @@
 			"price": {
 				"none": "kostenfrei"
 			}
-		}
-	},
-	"tabs": {
-		"all": {
+		},
+		"tabs": {
 			"general": "Allgemein",
 			"notes": "Notizen"
-		},
-		"wines": {
-			"vinougusto": "Vinou-Gusto",
-			"stockrotation": "Lagerbewegungen"
 		}
 	},
 	"loader": {
 		"inline": {
 			"label": "Daten werden geladen ..."
+		}
+	},
+	"dashboard": {
+		"actions": {
+			"create": {
+				"category_main": "Neue",
+				"category_sub": "Kategorie erstellen",
+				"user_main": "Neuen",
+				"user_sub": "Benutzer erstellen",
+				"wine_main": "Neuen",
+				"wine_sub": "Wein erstellen"
+			}
+		},
+		"fieldset": {
+			"quickactions": "Quickactions"
 		}
 	},
 	"price": "Preis",
@@ -74,6 +85,7 @@
 	"wines_modal_delete": "Möchten Sie diesen Wein wirklich löschen?",
 	"wineries_modal_delete": "Möchten Sie dieses Weingut wirklich löschen?",
 	"category_modal_delete": "Möchten Sie diese Kategorie wirklich löschen?",
+	"contacts_modal_delete":"Möchten Sie diesen Kontakt wirklich löschen?",
 	"customers_modal_delete": "Möchten Sie diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
 	"users_modal_delete": "Möchten Sie diesen Benutzer wirklich löschen?",
@@ -106,8 +118,7 @@
 	"orders_modal_invoice_create": "Möchten Sie Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
-	"orders_modal_creditadvice_create_old": "ACHTUNG: Gutschrift jetzt erstellen und damit Bestellung stornieren?",
-	"orders_modal_creditadvice_create": "ACHTUNG: Soll die ausgewählte Bestellung storniert und eine Gutschrift erstellt werden?",
+	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?",
 	"order_wrong_quantity": "Bitte geben sie für die Anzahl eine Zahl größer als 0 ein",
 	"orders_rebate_general": "Pauschal-Rabatt (Brutto)",
 	"rebates": {
@@ -119,30 +130,6 @@
 		"methods": {
 			"general": "Pauschal-Rabatt (Brutto)",
 			"percent": "Prozentualer Rabatt"
-		}
-	},
-	"categories": {
-		"actions": {
-			"create": {
-				"main": "Neue Kategorie",
-				"sub": "anlegen"
-			},
-			"createfbiframe": {
-				"main": "Facebook-Iframe",
-				"sub": "anlegen"
-			},
-			"viewfbiframe": {
-				"main": "Facebook-Iframe",
-				"sub": "ansehen"
-			},
-			"createslider": {
-				"main": "Slider für Vinotheken-Display",
-				"sub": "anlegen"
-			},
-			"viewslider": {
-				"main": "Slider für Vinotheken-Display",
-				"sub": "ansehen"
-			}
 		}
 	},
 	"currenttoken_old": "Bisherige Token",
@@ -223,12 +210,17 @@
 		},
 		"fields": {
 			"active_users": "Aktive Benutzer"
-		},
-		"stat_types": {
+		}
+	},
+	"statistics": {
+		"types": {
 			"active": "Aktiv",
 			"admin": "Admin",
 			"default": "Regulär",
 			"interfrog": "Interfrog",
+			"has_image": "Mit Bild",
+			"has_price": "Mit Preis",
+			"public": "Öffentlich",
 			"total": "Total"
 		}
 	},
@@ -301,8 +293,12 @@
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
 	"db_cronjobs_description": "Beschreibung",
+	"db_cronjobs_description_placeholder": "Beschreibung für neuen Cronjob",
+	"db_cronjobs_galleryFilterHint": "z.B. Name, Beschreibung",
 	"db_cronjobs_command": "Ausgeführter Befehl",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
 	"db_cronjobs_cron": "Ausführungszeitpunkt (Crontab)",
+	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "aktivieren",
 	"cronjobs": {
 		"actions": {
@@ -717,10 +713,8 @@
 			"export": {
 				"inventory": "Inventurliste herunterladen"
 			},
-			"barcode" : {
-				"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
-				"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
-			}
+			"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
+			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
 		},
 		"fieldset": {
 			"general": "Allgemeines",
@@ -834,12 +828,6 @@
 			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"sweetness": "Restsüße",
-			"stat_types": {
-				"has_image": "Mit Bild",
-				"has_price": "Mit Preis",
-				"public": "Öffentlich",
-				"total": "Total"
-			},
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
 			"topseller": "Topseller",
@@ -915,6 +903,10 @@
 			"original": "{title} (Original)",
 			"new": "{title} (Neu)"
 		},
+		"tabs": {
+			"vinougusto": "Vinou-Gusto",
+			"stockrotation": "Lagerbewegungen"
+		},
 		"messages": {
 			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
 			"createcopy": "Möchten Sie die Angaben aus {wine.name} übernehmen?",
@@ -930,11 +922,13 @@
 	"winecategory": {
 		"fieldset": {
 			"general": "Allgemeines",
-			"description": "Beschreibung",
 			"network": "Mein Netzwerk",
 			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"crstamp": "Erstellungsdatum",
 			"inshop": "Im Shop anzeigen",
 			"inwinelist": "In Weinliste anzeigen",
 			"networkvisibility": {
@@ -942,6 +936,38 @@
 				"description": "Wenn die Kategorie nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
 			},
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)"
+		},
+		"actions": {
+			"create": {
+				"main": "Neue Kategorie",
+				"sub": "anlegen"
+			},
+			"createfacebookiframe": {
+				"main": "Facebook-Iframe",
+				"sub": "anlegen"
+			},
+			"viewfacebookiframe": {
+				"main": "Facebook-Iframe",
+				"sub": "ansehen"
+			},
+			"createslider": {
+				"main": "Slider für Vinotheken-Display",
+				"sub": "anlegen"
+			},
+			"viewslider": {
+				"main": "Slider für Vinotheken-Display",
+				"sub": "ansehen"
+			}
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			}
 		}
 	},
 	"product": {
@@ -1008,8 +1034,14 @@
 		},
 		"field": {
 			"content": "Inhalt",
-			"wrote": "schrieb",
-			"edited": "bearbeitet"
+			"edited": "Bearbeitete am",
+			"wrote": "Schrieb am"
+		},
+		"action": {
+			"create": {
+				"main": "Neue Notiz",
+				"sub": "erstellen"
+			}
 		},
 		"messages": {
 			"toasts": {
@@ -1032,7 +1064,11 @@
 				"modaltitle": "Kunden bearbeiten"
 			},
 			"search": {
-				"placeholder": "z.B. Name, Firma, Addresse"
+				"placeholder": "z.B. Name, Firma, Adresse"
+			},
+			"contactperson": {
+				"main": "Neue Kontaktperson",
+				"sub": "anlegen"
 			}
 		},
 		"fieldset": {
@@ -1060,6 +1096,7 @@
 			"active": "aktiv",
 			"image": "Logo",
 			"rebate": "Rabatt (in %)",
+			"department": "Abteilung",
 			"type": "Typ",
 			"pricerange": "Preisklasse",
 			"bank": "Kreditinstitut",
@@ -1070,6 +1107,27 @@
 			"discount": "Skonto (in %)",
 			"search_client": "Kunde suchen",
 			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+		},
+		"department_types": {
+			"branch_administration": "Filialleitung",
+			"branch_administration_assistant": "Stellvertretende Filialleitung",
+			"distribution": "Vertrieb",
+			"event_management": "Veranstaltungsmanagement",
+			"finance": "Buchhaltung",
+			"logistics": "Logistik",
+			"management": "Geschäftsführung",
+			"marketing": "Marketing",
+			"product_management": "Produktmanagent",
+			"purchase": "Einkauf",
+			"restaurant_administration": "Restaurantleitung",
+			"sommelier": "Sommelier",
+			"support": "Support"
+		}, 
+		"tabs": {
+			"addresses": "Adressen",
+			"contacts": "Kontaktpersonen",
+			"general": "Allgemein",
+			"notes": "Notizen"
 		},
 		"types": {
 			"private": "Privatperson",
@@ -1083,24 +1141,38 @@
 		"action": {
 			"create": {
 				"main": "Neue Adresse",
-				"sub": "anlegen",
-				"title": "Adresse anlegen",
-				"modaltitle": "Adresse anlegen"
+				"sub": "anlegen"
 			},
-			"edit": {
-				"modaltitle": "Adresse bearbeiten"
-			},
-			"save": {
-				"title": "Adresse speichern"
-			}
+			"save": "Adresse speichern"
 		},
 		"field": {
+			"type": "Adresstyp",
+			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
 			"company": "Firma",
 			"address": "Straße und Hausnummer",
 			"zip": "PLZ",
 			"city": "Stadt",
-			"country": "Land"
+			"country": "Land",
+			"defaultdeliveryaddress": "Standardlieferadresse",
+			"defaultinvoiceaddress": "Standardrechnungsadresse",
+			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
+			"searchaddress": "Lieferadresse suchen"
+		},
+		"types": {
+			"invoice": "Rechnungsadresse",
+			"shipping": "Lieferadresse"
+		}
+	},
+	"contacts": {
+		"actions": {
+			"create": {
+				"main": "Kontaktperson",
+				"sub": "anlegen"
+			},
+			"save": {
+				"title": "Kontakt speichern"
+			}
 		}
 	},
 	"order": {
@@ -1167,10 +1239,11 @@
 			"packaging_shipping": "Verpackung und Versand"
 		},
 		"fields": {
-			"processiong_data": "Daten werden verarbeitet ...",
+			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Brutto-Summe der Bestellung",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
+			"delivering_addr": "Lieferadresse",
 			"excl_vat": "zzgl. MwSt.",
 			"filter_orders": "Bestellung filtern",
 			"loading_positions": "Positionen werden geladen ...",
@@ -1180,6 +1253,7 @@
 			"next_payment_type": "Weiter zur Zahlungsart",
 			"next_delivering_addr": "Weiter zur Lieferadresse",
 			"no_payment_income_yet": "Zahlung noch nicht eingegangen",
+			"nocustomerselected": "Für die Erstellung der Rechnung wird eine Kundenadresse benötigt. Bitte wählen Sie zu erst einen Kunden aus.",
 			"order_dispatched": "Bestellung versendet",
 			"order_not_yet_dispatched": "Bestellung noch nicht versendet",
 			"order_date": "Bestelleingang",
@@ -1322,6 +1396,16 @@
 				"content": "Das Vinou-Versandmanagement wird über den Anbieter <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> realisiert, dafür fallen <strong>zusätzliche Gebühren für Deine Sendungen</strong> an. Mit Klick auf Ja bestätigst Du die aktuellen <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>Konditionen des Versandmanagements</strong></a>. Die Nutzung des Vinou-Versandmanagements kann jederzeit über die Versandeinstellungen deaktiviert werden."
 			}
 		},
+		"messages": {
+			"errors": {
+				"common": "Bei Erstellung der Versandetiketten ist ein Fehler aufgetreten.",
+				"contact": "Sollte das Problem weiterhin auftreten kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"internal": "Bitte versuche es später noch einmal",
+				"invalidaddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen) und prüfe ob in den Bestelldaten die Empfängeradresse und die Bestellungsdetails korrekt eingetragen sind.",
+				"invalidapikey": "Der ShipCloud-API-Key wurde nicht gefunden oder ist ungültig. <br/><br/>Bitte prüfe die Angaben unter Einstellungen > Versandmanagement.",
+				"toomanyrequests": "Die maximale Anzahl Sendungen für das ausgewählte Versandangebot über ShipCloud wurde erreicht. Bitte buche ein geeignetes Versandabonnement unter: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+			}
+		},
 		"toasts": {
 			"activated": "Versand aktiviert",
 			"deactivated": "Versand deaktiviert",
@@ -1426,8 +1510,16 @@
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",
-			"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
-			"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou Versandmanagement benutzen möchtest.",
+			"freightfreelimit": {
+				"title": "Frachtfreigrenze",
+				"description": "Konfiguriere ab welchem Bestellwert der Versand kostenfrei ist."
+			},
+			"management": {
+				"title": "Versandmanagement",
+				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
+				"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+			}
 		},
 		"technical": {
 			"title": "Technik",
@@ -1464,6 +1556,7 @@
 		"client_saved": "Kunde gespeichert!",
 		"client_changed": "Kunde aktualisiert!",
 		"client_deleted": "Kunde gelöscht!",
+		"contact_deleted": "Kontaktperson gelöscht!",
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
@@ -1540,7 +1633,11 @@
 			"saveerror": "Notiz konnte nicht gespeichert werden!",
 			"delete": "Notiz gelöscht!",
 			"deleteerror": "Notiz konnte nicht gelöscht werden!"
-		}
+		},
+		"contacts_saved": "Kontaktperson gespeichert!",
+		"contacts_saveerror": "Kontakt konnte nicht gespeichert werden!",
+		"contacts_deleted": "Kontaktperson gelöscht!",
+		"contacts_deleteerror": "Kontaktperson konnte nicht gelöscht werden!"
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
