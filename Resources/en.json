@@ -633,6 +633,7 @@
 				"modaltitle": "Edit merchant"
 			},
 			"search": {
+				"title": "Search merchant",
 				"placeholder" : "e.g. company, contact or address"
 			}
 		},
@@ -1545,6 +1546,7 @@
 		"address_saved": "Address saved!",
 		"address_changed": "Address update!",
 		"address_deleted": "Address deleted!",
+		"bank_settings_error": "An error occured while saving the bank account!",
 		"category_image_needed": "You need to save the category before uploading an image!",
 		"category_image_uploaded": "Image uploaded!",
 		"category_image_deleted": "Image deleted!",
@@ -1569,7 +1571,11 @@
 		"customer_created": "Customer created!",
 		"customer_updated": "Customer updated!",
 		"customer_image_createerror": "To upload an image please save customer first!",
-		"bank_settings_error": "An error occured while saving the bank account!",
+		"merchant_created": "Merchant created!",
+		"merchant_changed": "Merchant updated!",
+		"merchant_deleted": "Merchant deleted!",
+		"merchant_image_uploaded": "Image uploaded!",
+		"merchant_image_deleted": "Image deleted!",
 		"order_created": "Order saved!",
 		"order_created_withinvoice": "Order saved, invoice and delivery note generated!",
 		"order_cancelled": "Credit advice created and order cancelled!",
@@ -1612,7 +1618,7 @@
 		"user_lostpassword_senderror": "Error sending email!",
 		"winery_created": "Winery created!",
 		"winery_changed": "Winery updated!",
-		"winery_deleted": "Winer deleted!",
+		"winery_deleted": "Winery deleted!",
 		"winery_image_uploaded": "Image uploaded!",
 		"winery_image_deleted": "Image deleted!",
 		"wine_created": "Wine created!",

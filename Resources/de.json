@@ -638,6 +638,7 @@
 				"modaltitle": "Händler bearbeiten"
 			},
 			"search": {
+				"title": "Nach Händler suchen",
 				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
@@ -1546,6 +1547,7 @@
 		"address_saved": "Adresse gespeichert!",
 		"address_changed": "Adresse aktualisiert!",
 		"address_deleted": "Adresse gelöscht!",
+		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
 		"category_image_needed": "Um ein Bild hochzuladen müssen sie die Kategorie vorher speichern!",
 		"category_image_uploaded": "Bild hochgeladen!",
 		"category_image_deleted": "Bild gelöscht!",
@@ -1570,7 +1572,11 @@
 		"customer_created": "Mandant angelegt!",
 		"customer_updated": "Mandant aktualisiert!",
 		"customer_image_createerror": "Um ein Bild hochzuladen müssen sie den Mandanten vorher speichern!",
-		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
+		"merchant_created": "Händler angelegt!",
+		"merchant_changed": "Händler aktualisiert!",
+		"merchant_deleted": "Händler gelöscht!",
+		"merchant_image_uploaded": "Bild hochgeladen!",
+		"merchant_image_deleted": "Bild gelöscht!",
 		"order_created": "Bestellung angelegt!",
 		"order_created_withinvoice": "Bestellung angelegt, Rechnung und Lieferschein generiert!",
 		"order_cancelled": "Gutschrift erstellt und Bestellung storniert!",
