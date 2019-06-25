@@ -1261,6 +1261,7 @@
 			"quantity": "Qty",
 			"search_product": "Search product",
 			"state": "State",
+			"note": "Order note",
 			"payment_income": {
 				"main": "Payment",
 				"sub": "income"
@@ -1584,6 +1585,7 @@
 		"order_delivery_created": "Delivery note generated!",
 		"order_payment_changed": "Payment type updated!",
 		"order_cashlink_send": "Cashlink sent!",
+		"order_note_saved": "Note saved!",
 		"package_created": "Package saved!",
 		"package_changed": "Package updated!",
 		"package_deleted": "Package deleted!",

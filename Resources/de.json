@@ -1262,6 +1262,7 @@
 			"quantity": "Stück",
 			"search_product": "Produkt suchen",
 			"state": "Status",
+			"note": "Anmerkung",
 			"payment_income": {
 				"main": "Zahlung",
 				"sub": "eingegangen"
@@ -1585,6 +1586,7 @@
 		"order_delivery_created": "Lieferschein erstellt!",
 		"order_payment_changed": "Zahlungsart aktualisiert!",
 		"order_cashlink_send": "Cashlink versendet!",
+		"order_note_saved": "Anmerkung aktualisiert!",
 		"package_created": "Versandoption angelegt!",
 		"package_changed": "Versandoption aktualisiert!",
 		"package_deleted": "Versandoption gelöscht!",
