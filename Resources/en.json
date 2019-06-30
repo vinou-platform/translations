@@ -43,11 +43,28 @@
 			"taxid": "Tax-ID",
 			"price": {
 				"none": "free of charge"
-			}
+			},
+			"crstamp": "Date of creation",
+			"chstamp": "Last update",
+			"title": "Title",
+			"gender": "Gender",
+			"first_name": "Firstname",
+			"last_name": "Lastname",
+			"salutation": "Salutation"
 		},
 		"tabs": {
 			"general": "General",
 			"notes": "Notes"
+		},
+		"titles": {
+			"dr": "Dr.",
+			"prof": "Prof.",
+			"profdr": "Prof. Dr."
+		},
+		"gender": {
+			"m": "Mr.",
+			"f": "Mrs.",
+			"d": "Divers"
 		}
 	},
 	"loader": {
@@ -1067,8 +1084,22 @@
 				"sub": " "
 			}
 		},
+		"gallery": {
+			"sortby": {
+				"label": "Sort list by:"
+			},
+			"sortdirection": {
+				"label": "Direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"filter": {
+				"type": "Filter type of client"
+			}
+		},
 		"fieldset": {
 			"general": "General",
+			"contactperson": "Contact person",
 			"contact": "Contact data",
 			"settings": "Settings",
 			"addresses": "Additional addresses",
@@ -1076,7 +1107,6 @@
 			"paymentsettings": "Method of payment"
 		},
 		"field": {
-			"name": "Complete name",
 			"contactname": "Contact name",
 			"number": "Client number",
 			"company": "Company",
@@ -1130,11 +1160,25 @@
 			"gastronomy": "Gastronomy",
 			"specializedtrade": "Specialized trade",
 			"foodretailing": "Food retailing",
-			"export": "Export"
+			"export": "Export",
+			"other": "Other"
 		},
-		"types": {
-			"delivery": "Delivery address",
-			"invoice": "Invoice address"
+		"messages": {
+			"hints": {
+				"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
+				"noentries": "No entries found"
+			},
+			"dialog": {
+				"delete": "Would you really delete this client?"
+			},
+			"toasts": {
+				"created": "Client created!",
+				"changed": "Client changed!",
+				"deleted": "Client deleted!",
+				"image_uploaded": "Uploaded image for client!",
+				"image_deleted": "Delete image for client!",
+				"copied": "Client duplicated"
+			}
 		}
 	},
 	"address": {
@@ -1254,6 +1298,7 @@
 			"next_delivering_addr": "Next - delivery adress",
 			"no_payment_income_yet": "Payment not yet income",
 			"nocustomerselected": "To create an invoice for an order a client must be selected before. Please select a client first.",
+			"note": "comments",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
