@@ -2176,7 +2176,10 @@
 		"at": "Österreich",
 		"be": "Belgien",
 		"bg": "Bulgarien",
+		"ca": "Canada",
+		"ch": "Schweiz",
 		"cl": "Chile",
+		"cz": "Tschechien",
 		"de": "Deutschland",
 		"en": "Großbritanien",
 		"es": "Spanien",
@@ -2188,8 +2191,10 @@
 		"nl": "Niederlande",
 		"pt": "Portugal",
 		"ro": "Rumänien",
+		"se": "Schweden",
 		"si": "Slowenien",
-		"sx": "Sint Maarten"
+		"sx": "Sint Maarten",
+		"uk": "Vereinigtes Königreich"
 	},
 	"languages": {
 		"de": {

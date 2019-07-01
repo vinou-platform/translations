@@ -2168,23 +2168,28 @@
 		"11": "frooty"
 	},
 	"countries": {
-		"de": "Germany",
-		"en": "Great Britain",
-		"fr": "France",
+		"at": "Austria",
 		"be": "Belgium",
 		"bg": "Bulgaria",
+		"ca": "Canada",
+		"ch": "Switzerland",
+		"cl": "Chile",
+		"cz": "Czech Republic",
+		"de": "Germany",
+		"en": "Great Britain",
+		"es": "Spain",
+		"fr": "France",
 		"gr": "Greece",
+		"hu": "Hungary",
 		"it": "Italy",
 		"mt": "Malta",
 		"nl": "Netherlands",
-		"at": "Austria",
 		"pt": "Portugal",
 		"ro": "Romania",
+		"se": "Sweden",
 		"si": "Slovenia",
-		"es": "Spain",
-		"hu": "Hungary",
-		"cl": "Chile",
-		"sx": "Sint Maarten"
+		"sx": "Sint Maarten",
+		"uk": "United Kingdom"
 	},
 	"languages": {
 		"de": {
