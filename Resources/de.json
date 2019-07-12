@@ -4,6 +4,7 @@
 		"winery": "Weingut",
 		"wineries": "Weingüter",
 		"wines": "Weine",
+		"wines.statistics": "Statistiken",
 		"winelists": "Weinlisten",
 		"qrcodes": "QR-Codes",
 		"news": "Aktuelles",
@@ -11,14 +12,17 @@
 		"customers": "Mitglieder",
 		"categories": "Kategorien",
 		"clients": "Kunden",
+		"clients.statistics": "Statistiken",
 		"orders": "Bestellungen",
+		"orders.statistics": "Statistiken",
 		"clientletters": "Kundenbriefe",
 		"tokens": "Verknüpfungen",
 		"settings": "Einstellungen",
 		"cronjobs": "Cronjobs",
 		"network": "Mein Netzwerk",
 		"merchants": "Händler",
-		"products": "Produkte"
+		"products": "Produkte",
+		"products.statistics": "Statistiken"
 	},
 	"general": {
 		"fieldsets": {
