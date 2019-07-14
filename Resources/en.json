@@ -491,7 +491,8 @@
 			"membership": "Membership",
 			"contact": "Contact data",
 			"description": "Description",
-			"settings": "Settings"
+			"settings": "Settings",
+			"invoice": "Invoice data"
 		},
 		"field": {
 			"email": "E-Mail",
@@ -502,7 +503,8 @@
 			"name": "Contact person",
 			"company": "Company",
 			"winery": "Winery",
-			"taxid": "Tax ID",
+			"tax_id": "Tax number",
+			"vat_id": "Vat-ID",
 			"address": "Address",
 			"zip": "Zip",
 			"city": "City",

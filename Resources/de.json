@@ -496,7 +496,8 @@
 			"membership": "Mitgliedschaft",
 			"contact": "Kontaktdaten",
 			"description": "Beschreibung",
-			"settings": "Einstellungen"
+			"settings": "Einstellungen",
+			"invoice": "Rechnungsangaben"
 		},
 		"field": {
 			"email": "E-Mail",
@@ -507,7 +508,8 @@
 			"name": "Ansprechpartner",
 			"company": "Firma",
 			"winery": "Weingut",
-			"taxid": "USt-ID.",
+			"tax_id": "Steuernummer",
+			"vat_id": "USt-ID.",
 			"address": "Straße und Hausnummer",
 			"zip": "PLZ",
 			"city": "Stadt",
