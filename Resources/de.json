@@ -356,7 +356,9 @@
 				"correction": "Korrektur",
 				"delivery": "Anlieferung",
 				"sponsoring": "Sponsoring",
-				"promotion": "Werbung"
+				"promotion": "Werbung",
+				"invoice": "Rechnung",
+				"creditadvice": "Gutschrift"
 			},
 			"book": {
 				"main": "Warenein-/ausgang",
