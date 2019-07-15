@@ -160,6 +160,8 @@
 	},
 	"yes": "Yes",
 	"no": "No",
+	"ok": "OK",
+	"cancel": "Cancel",
 	"fieldset_general_title": "General",
 	"fieldset_region_title": "Regional",
 	"fieldset_grapetype_title": "Grapetype",
@@ -173,15 +175,13 @@
 	"fieldset_settings_title": "Settings",
 	"fieldset_packages_title": "Package options",
 	"fieldset_addresses_title": "Additional Addresses",
-	"fieldset_billing_title": "Billingaddress",
-	"fieldset_delivery_title": "Deliveryaddress",
-	"fieldset_payment_title": "Payment",
+	"fieldset_billing_title": "Billing address",
+	"fieldset_delivery_title": "Delivery",
+	"fieldset_payment_title": "Payment settings",
 	"fieldset_positions_title": "Items",
+	"fieldset_summary_title": "Order summary",
 	"fieldset_customer_title": "Account",
 	"fieldset_quickactions": "Quickactions",
-	"field_yard_sale": "Yard sale",
-	"field_same_invoice_addr": "Same as billing address",
-	"field_shipping_different_location": "Different delivery address",
 	"settings_addresses": "Addresses",
 	"settings_packaging": "Shipment costs",
 	"settings_advanced": "Advanced Settings",
@@ -1228,9 +1228,6 @@
 		}
 	},
 	"order": {
-		"field": {
-			"documents": "Documents"
-		},
 		"documenttypes": {
 			"invoice": "Invoice",
 			"delivery": "Delivery note",
@@ -1283,6 +1280,10 @@
 			"voucher_create": {
 				"main": "Create",
 				"create": "credit voucher"
+			},
+			"shippingotheraddress": {
+				"main": "Different",
+				"sub": "delivery address"
 			}
 		},
 		"fieldsets": {
@@ -1292,30 +1293,37 @@
 		},
 		"fields": {
 			"processing_data": "Processing data ...",
-			"brutto_sum": "Order brutto summary",
+			"brutto_sum": "Brutto summary",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
 			"delivering_addr": "Delivery address",
+			"documents": "Documents",
 			"excl_vat": "excl. VAT",
 			"filter_orders": "Filter orders",
 			"loading_positions": "Loading positions ...",
 			"invoice_created": "Invoice created",
 			"invoice_not_yet_created": "Invoice not yet created",
 			"netto_sum": "Netto summary",
-			"next_payment_type": "Next - payment type",
+			"next_delivery": "Next - delivery",
 			"next_delivering_addr": "Next - delivery adress",
+			"next_payment_type": "Next - payment type",
+			"next_positions": "Next - positions",
 			"no_payment_income_yet": "Payment not yet income",
 			"nocustomerselected": "To create an invoice for an order a client must be selected before. Please select a client first.",
-			"note": "comments",
+			"note": "Order note",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
 			"order_cancelled_date": "Order cancelled",
 			"payment_income_date": "Payment income date", 
+			"parcel": "Postal package",
 			"quantity": "Qty",
+			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",
 			"state": "State",
-			"note": "Order note",
+			"vatincluded": "incl. VAT {tax}",
+			"vatexcluded": "excl. VAT {tax}",
+			"yardsale": "Yard sale",
 			"payment_income": {
 				"main": "Payment",
 				"sub": "income"
