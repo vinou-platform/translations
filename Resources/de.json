@@ -1301,7 +1301,7 @@
 			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Gesamtsumme Brutto",
 			"cashback": "Skonto (in %)",
-			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto gewährt. Zahlbetrag: {gross_cashback}.",
+			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto gewährt. Zahlbetrag: {grossCashback}.",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
 			"deliveryaddress": "Lieferadresse",
