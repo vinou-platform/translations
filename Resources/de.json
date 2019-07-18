@@ -1118,7 +1118,7 @@
 			"settings": "Einstellungen",
 			"addresses": "Weitere Adressen",
 			"bankingdetails": "Bankverbindung",
-			"paymentsettings": "Zahlungsmodalitäten"
+			"paymentsettings": "Abrechnung"
 		},
 		"field": {
 			"contactname": "Ansprechpartner",
@@ -1135,18 +1135,21 @@
 			"fax": "Fax",
 			"active": "aktiv",
 			"image": "Logo",
-			"rebate": "Rabatt (in %)",
 			"department": "Abteilung",
 			"type": "Typ",
-			"pricerange": "Preisklasse",
 			"bank": "Kreditinstitut",
 			"iban": "IBAN",
 			"bic": "BIC",
+			"rebate": "Rabatt (in %)",
+			"pricerange": "Preisklasse",
 			"invoice_type": "Rechnungstyp",
-			"term_of_payment": "Zahlungsziel (in Tagen)",
-			"discount": "Skonto (in %)",
-			"search_client": "Kunde suchen",
-			"term_of_discount": "Skonto Zeitraum (in Tagen)"
+			"payment_type": "Zahlungsart",
+			"payment_period": "Zahlungsziel (in Tagen)",
+			"cash_discount": "Skonto (in %)",
+			"discount_period": "Skonto Zeitraum (in Tagen)",
+			"unique_mandate_reference": "SEPA-Lastschrift-Mandat",
+			"tax_free": "Umsatzsteuerbefreit",
+			"search_client": "Kunde suchen"
 		},
 		"department_types": {
 			"branch_administration": "Filialleitung",
@@ -1162,7 +1165,7 @@
 			"restaurant_administration": "Restaurantleitung",
 			"sommelier": "Sommelier",
 			"support": "Support"
-		}, 
+		},
 		"tabs": {
 			"addresses": "Adressen",
 			"contacts": "Kontaktpersonen",
@@ -1240,6 +1243,17 @@
 			"shipment": "Packetaufkleber",
 			"creditadvice": "Gutschrift"
 		},
+		"paymenttypes": {
+			"cash": "Barzahlung",
+			"invoice": "Per Rechnung",
+			"prepaid": "Vorkasse",
+			"debit": "SEPA-Lastschrift",
+			"paypal": "Paypal"
+		},
+		"pricingtypes": {
+			"net": "Netto-Rechnung",
+			"gross": "Brutto-Rechnung"
+		},
 		"documents": {
 			"invoice": "Rechnungen",
 			"delivery": "Lieferscheine",
@@ -1301,7 +1315,8 @@
 			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Gesamtsumme Brutto",
 			"cashback": "Skonto (in %)",
-			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto gewährt. Zahlbetrag: {grossCashback}.",
+			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto ({cashbackPeriod} Tage) gewährt. Zahlbetrag: {grossCashback}.",
+			"cashback_period": "Skonto-Zeitraum (in Tagen)",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
 			"deliveryaddress": "Lieferadresse",
@@ -1329,6 +1344,7 @@
 			"parcel": "Paketsendung",
 			"payment_income_date": "Zahlungseingang",
 			"payment_type": "Zahlungsart",
+			"payment_period": "Zahlungsziel (in Tagen)",
 			"pricingtype": "Rechnungstyp",
 			"pricingnet": "Netto Rechnung",
 			"pricinggross": "Brutto Rechnung",

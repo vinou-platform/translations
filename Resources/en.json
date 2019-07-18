@@ -1113,7 +1113,7 @@
 			"settings": "Settings",
 			"addresses": "Additional addresses",
 			"bankingdetails": "Banking details",
-			"paymentsettings": "Method of payment"
+			"paymentsettings": "Payment settings"
 		},
 		"field": {
 			"contactname": "Contact name",
@@ -1131,17 +1131,20 @@
 			"active": "active",
 			"department":"Department",
 			"image": "Logo",
-			"rebate": "Rebate (in %)",
 			"type": "Type",
 			"pricerange": "Price range",
 			"bank": "Bank",
 			"iban": "IBAN",
 			"bic": "BIC",
+			"rebate": "Rebate (in %)",
 			"invoice_type": "Invoice type",
-			"term_of_payment": "Term of payment (days)",
-			"discount": "Discount (in %)",
-			"search_client": "Search client",
-			"term_of_discount": "Term of discount (days)"
+			"payment_type": "Type of payment",
+			"payment_period": "Period of payment",
+			"cash_discount": "Cashback",
+			"discount_period": "Cashback period",
+			"unique_mandate_reference": "Debit mandate reference",
+			"tax_free": "Tax free",
+			"search_client": "Search client"
 		},
 		"department_types": {
 			"branch_administration": "Branch administration",
@@ -1235,6 +1238,17 @@
 			"shipment": "Shipment label",
 			"creditadvice": "Credit advice"
 		},
+		"paymenttypes": {
+			"cash": "Cash",
+			"invoice": "Invoice",
+			"prepaid": "Prepaid",
+			"debit": "Debit",
+			"paypal": "Paypal"
+		},
+		"pricingtypes": {
+			"net": "Net invoice",
+			"gross": "Gross invoice"
+		},
 		"documents": {
 			"invoice": "Invoices",
 			"delivery": "Delivery notes",
@@ -1296,7 +1310,8 @@
 			"processing_data": "Processing data ...",
 			"brutto_sum": "Brutto summary",
 			"cashback": "Cashback (in %)",
-			"cashbacksum": "For this order you receive {cashback}% cashback discount. Payment amount: {grossCashback}.",
+			"cashbacksum": "For this order you receive {cashback}% cashback discount. The cashback is valid within the next {cashbackPeriod} days. Payment amount: {grossCashback}.",
+			"cashback_period": "Cashback period (days)",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
 			"deliveryaddress": "Delivery address",
@@ -1323,6 +1338,7 @@
 			"order_cancelled_date": "Order cancelled",
 			"payment_income_date": "Payment income date", 
 			"payment_type": "Payment type",
+			"payment_period": "Payment period (days)",
 			"parcel": "Postal package",
 			"pricingtype": "Invoice type",
 			"pricingnet": "Netto invoice",
