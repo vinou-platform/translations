@@ -1673,7 +1673,7 @@
 		"merchant_image_uploaded": "Bild hochgeladen!",
 		"merchant_image_deleted": "Bild gelöscht!",
 		"order_created": "Bestellung angelegt!",
-		"order_created_withinvoice": "Bestellung angelegt, Rechnung und Lieferschein generiert!",
+		"order_updated": "Bestellung geändert!",
 		"order_cancelled": "Gutschrift erstellt und Bestellung storniert!",
 		"order_deleted": "Bestellung gelöscht!",
 		"order_sent": "Bestellung versendet!",

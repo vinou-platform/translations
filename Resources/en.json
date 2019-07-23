@@ -1667,7 +1667,7 @@
 		"merchant_image_uploaded": "Image uploaded!",
 		"merchant_image_deleted": "Image deleted!",
 		"order_created": "Order saved!",
-		"order_created_withinvoice": "Order saved, invoice and delivery note generated!",
+		"order_updated": "Order saved!",
 		"order_cancelled": "Credit advice created and order cancelled!",
 		"order_deleted": "Order deleted!",
 		"order_sent": "Order versendet!",
