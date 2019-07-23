@@ -512,6 +512,7 @@
 			"winery": "Weingut",
 			"taxid": "Steuernummer",
 			"vatid": "USt-ID.",
+			"creditorid": "Gläubiger-ID",
 			"address": "Straße und Hausnummer",
 			"zip": "PLZ",
 			"city": "Stadt",

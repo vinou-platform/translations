@@ -507,6 +507,7 @@
 			"winery": "Winery",
 			"taxid": "Tax number",
 			"vatid": "Vat-ID",
+			"creditorid": "Creditor-ID",
 			"address": "Address",
 			"zip": "Zip",
 			"city": "City",
