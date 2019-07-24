@@ -820,7 +820,7 @@
 				"none": "keine Angabe"
 			},
 			"prices": {
-				"standard": "Standardpreis",
+				"standard": "Standard Nettopreis",
 				"action": {
 					"create": {
 						"main": "Neuen Preis",

@@ -815,7 +815,7 @@
 				"none": "not specified"
 			},
 			"prices": {
-				"standard": "Default price",
+				"standard": "Default netto price",
 				"action": {
 					"create": {
 						"main": "New price",
