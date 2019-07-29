@@ -1141,8 +1141,8 @@
 			"invoice_type": "Invoice type",
 			"payment_type": "Type of payment",
 			"payment_period": "Period of payment",
-			"cash_discount": "Cashback",
-			"discount_period": "Cashback period",
+			"cashback": "Cashback",
+			"cashback_period": "Cashback period",
 			"unique_mandate_reference": "Debit mandate reference",
 			"tax_free": "Tax free",
 			"search_client": "Search client"
@@ -1246,7 +1246,7 @@
 			"debit": "Debit",
 			"paypal": "Paypal"
 		},
-		"pricingtypes": {
+		"invoicetypes": {
 			"net": "Net invoice",
 			"gross": "Gross invoice"
 		},

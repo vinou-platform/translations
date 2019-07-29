@@ -1146,8 +1146,8 @@
 			"invoice_type": "Rechnungstyp",
 			"payment_type": "Zahlungsart",
 			"payment_period": "Zahlungsziel (in Tagen)",
-			"cash_discount": "Skonto (in %)",
-			"discount_period": "Skonto Zeitraum (in Tagen)",
+			"cashback": "Skonto (in %)",
+			"cashback_period": "Skonto Zeitraum (in Tagen)",
 			"unique_mandate_reference": "SEPA-Lastschrift-Mandat",
 			"tax_free": "Umsatzsteuerbefreit",
 			"search_client": "Kunde suchen"
@@ -1251,7 +1251,7 @@
 			"debit": "SEPA-Lastschrift",
 			"paypal": "Paypal"
 		},
-		"pricingtypes": {
+		"invoicetypes": {
 			"net": "Netto-Rechnung",
 			"gross": "Brutto-Rechnung"
 		},
@@ -1644,13 +1644,11 @@
 		"address_changed": "Adresse aktualisiert!",
 		"address_deleted": "Adresse gelöscht!",
 		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
-		"category_image_needed": "Um ein Bild hochzuladen müssen sie die Kategorie vorher speichern!",
 		"category_image_uploaded": "Bild hochgeladen!",
 		"category_image_deleted": "Bild gelöscht!",
 		"category_saved": "Kategorie gespeichert!",
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
-		"client_image_needed": "Um ein Bild hochzuladen müssen sie den Kunden vorher speichern!",
 		"client_image_uploaded": "Bild hochgeladen!",
 		"client_image_deleted": "Bild gelöscht!",
 		"client_saved": "Kunde gespeichert!",
