@@ -382,6 +382,7 @@
 	"mailsetup_smtpencrypt": "Verschlüsselung",
 	"mailsetup_senderemail": "E-Mail für ausgehende E-Mails",
 	"mailsetup_sendername": "Absender für ausgehende E-Mails",
+	"templates_creditadvice": "Vorlage für Gutschrift",
 	"templates_edittitle": "Vorlagen bearbeiten",
 	"templates_expertise": "Vorlage für PDF-Expertise",
 	"templates_enquiry": "Vorlage für Angebot",
@@ -391,6 +392,7 @@
 	"templates": {
 		"placeholders": {		
 			"vinou_contract": "Vinou-Auftrag (Standard)",
+			"vinou_creditadvice": "Vinou-Gutschrift (Standard)",
 			"vinou_delivery_note": "Vinou-Lieferschein (Standard)",
 			"vinou_expertise": "Vinou-Expertise (Standard)",
 			"vinou_invoice": "Vinou-Rechnung (Standard)",
