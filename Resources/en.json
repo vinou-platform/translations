@@ -377,6 +377,7 @@
 	"mailsetup_smtpencrypt": "Encryption",
 	"mailsetup_senderemail": "email for outbound",
 	"mailsetup_sendername": "sendername for outbound",
+	"templates_creditadvice": "Template for credit advices",
 	"templates_edittitle": "Edit Templates",
 	"templates_expertise": "Template for Wine-Factsheet",
 	"templates_enquiry": "Template for enquiry",
@@ -386,6 +387,7 @@
 	"templates": {
 		"placeholders": {		
 			"vinou_contract": "Vinou contract (Default)",
+			"vinou_creditadvice": "Vinou credit advice (Default)",
 			"vinou_delivery_note": "Vinou delivery note (Default)",
 			"vinou_expertise": "Vinou expertise (Default)",
 			"vinou_invoice": "Vinou invoice (Default)",
@@ -815,7 +817,7 @@
 				"none": "not specified"
 			},
 			"prices": {
-				"standard": "Default price",
+				"standard": "Default netto price",
 				"action": {
 					"create": {
 						"main": "New price",
