@@ -1204,6 +1204,7 @@
 	"address": {
 		"action": {
 			"create": {
+				"title": "Adresse anlegen",
 				"main": "Neue Adresse",
 				"sub": "anlegen"
 			},

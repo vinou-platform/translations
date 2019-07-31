@@ -1199,7 +1199,8 @@
 	"address": {
 		"action": {
 			"create": {
-				"main": "Create Address",
+				"title": "Create address",
+				"main": "Create address",
 				"sub": " "
 			},
 			"save": "Save address"
