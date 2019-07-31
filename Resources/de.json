@@ -1087,11 +1087,11 @@
 			"create": {
 				"main": "Neuen Kunden",
 				"sub": "anlegen",
-				"title": "Kunden anlegen",
-				"modaltitle": "Kunden anlegen"
+				"title": "Kunde anlegen",
+				"modaltitle": "Kunde anlegen"
 			},
 			"edit": {
-				"modaltitle": "Kunden bearbeiten"
+				"modaltitle": "Kunde bearbeiten"
 			},
 			"search": {
 				"placeholder": "z.B. Name, Firma, Adresse"

@@ -222,7 +222,7 @@
 	"users": {
 		"action": {
 			"main": "Add",
-			"sub": "New User"
+			"sub": "new user"
 		},
 		"fields": {
 			"active_users": "Active users"
@@ -583,7 +583,7 @@
 	"winery": {
 		"action": {
 			"add": {
-				"main": "Add Winery",
+				"main": "Add winery",
 				"sub": " "
 			},
 			"create": {
@@ -719,10 +719,10 @@
 				"sub": " "
 			},
 			"create": {
-				"main": "Add Wine",
+				"main": "Add wine",
 				"sub": " ",
 				"dashboard_main": "Add",
-				"dashboard_sub": "New Wine",
+				"dashboard_sub": "New wine",
 				"title": "Add wine",
 				"modaltitle": "Add wine"
 			},
@@ -1053,7 +1053,7 @@
 	"note": {
 		"action": {
 			"create": {
-				"main": "Create Note",
+				"main": "Create note",
 				"sub": " "
 			}
 		},
@@ -1065,7 +1065,7 @@
 		"action": {
 			"create": {
 				"main": "Create new",
-				"sub": "Note"
+				"sub": "note"
 			}
 		},
 		"messages": {
@@ -1080,7 +1080,7 @@
 	"client": {
 		"action": {
 			"create": {
-				"main": "Add Client",
+				"main": "Add client",
 				"sub": " ",
 				"title": "Add client",
 				"modaltitle": "Add client"
@@ -1092,7 +1092,7 @@
 				"placeholder": "e.g. name, company, address"
 			},
 			"contactperson": {
-				"main": "Add Contact",
+				"main": "Add contact",
 				"sub": " "
 			}
 		},
@@ -1227,7 +1227,7 @@
 	"contacts": {
 		"actions": {
 			"create": {
-				"main": "Add Contact",
+				"main": "Add contact",
 				"sub": " "
 			},
 			"save": {
@@ -1274,7 +1274,7 @@
 		"action": {
 			"add_position": "+ Add position",
 			"create": {
-				"main": "Create Order",
+				"main": "Create order",
 				"sub": " "
 			},
 			"search": {
