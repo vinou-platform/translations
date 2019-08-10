@@ -1379,6 +1379,7 @@
 			}
 		},
 		"toasts": {
+			"priceschanged": "The price of one or more products has changed. Order sum was updated to {price}.",
 			"createerror": "Order could not be created. Please check your details and try again."
 		}
 	},
