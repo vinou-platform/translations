@@ -69,6 +69,12 @@
 			"m": "Mr.",
 			"f": "Mrs.",
 			"d": "Divers"
+		},
+		"filter": {
+			"select": {
+				"all": "Choose all",
+				"none": "Clear selection"
+			}
 		}
 	},
 	"loader": {
@@ -628,11 +634,7 @@
 		"list": {
 			"filter": {
 				"country": "Choose Country",
-				"no_country": "Show wineries without country",
-				"select": {
-					"all": "Choose all",
-					"none": "Clear selection"
-				}
+				"no_country": "Show wineries without country"
 			}
 		},
 		"messages": {
@@ -689,10 +691,6 @@
 		"list": {
 			"filter": {
 				"country": "Choose country",
-				"select": {
-					"all": "choose all",
-					"none": "select none"
-				},
 				"no_country": "Show merchants without country"
 			}
 		},

@@ -69,6 +69,12 @@
 			"m": "Herr",
 			"f": "Frau",
 			"d": "Divers"
+		},
+		"filter": {
+			"select": {
+				"all": "Alle auswählen",
+				"none": "Auswahl aufheben"
+			}
 		}
 	},
 	"loader": {
@@ -633,11 +639,7 @@
 		"list": {
 			"filter": {
 				"country": "Land auswählen",
-				"no_country": "Weingüter ohne Land anzeigen",
-				"select": {
-					"all": "Alle auswählen",
-					"none": "Auswahl aufheben"
-				}
+				"no_country": "Weingüter ohne Land anzeigen"
 			}
 		},
 		"messages": {
@@ -694,10 +696,6 @@
 		"list": {
 			"filter": {
 				"country": "Land auswählen",
-				"select": {
-					"all": "Alle auswählen",
-					"none": "Auswahl aufheben"
-				},
 				"no_country": "Händler ohne Land anzeigen"
 			}
 		},
