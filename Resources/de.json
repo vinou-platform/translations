@@ -54,7 +54,10 @@
 			"gender": "Anrede",
 			"first_name": "Vorname",
 			"last_name": "Nachname",
-			"salutation": "Briefanrede"
+			"salutation": {
+				"title": "Briefanrede",
+				"placeholder": "z.B.: Sehr geehrter Herr Max Mustermann"
+			}
 		},
 		"tabs": {
 			"general": "Allgemein",

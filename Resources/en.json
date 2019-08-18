@@ -54,7 +54,10 @@
 			"gender": "Gender",
 			"first_name": "Firstname",
 			"last_name": "Lastname",
-			"salutation": "Salutation"
+			"salutation": {
+				"title": "Salutation",
+				"placeholder": "e.g. Dear Mr. John Doe",
+			}
 		},
 		"tabs": {
 			"general": "General",
