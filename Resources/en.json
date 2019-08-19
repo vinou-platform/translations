@@ -1227,6 +1227,10 @@
 		}
 	},
 	"contacts": {
+		"fields": {
+			"defaultcontact": "Default contact",
+			"defaultcontactmsg": "This contact is set in the 'General' tab."
+		},
 		"actions": {
 			"create": {
 				"main": "Add contact",

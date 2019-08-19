@@ -1232,6 +1232,10 @@
 		}
 	},
 	"contacts": {
+		"fields": {
+			"defaultcontact": "Standardansprechpartner",
+			"defaultcontactmsg": "Der hier angegebene Ansprechpartner wird im Reiter 'Allgemein' gesetzt."
+		},
 		"actions": {
 			"create": {
 				"main": "Kontaktperson",
