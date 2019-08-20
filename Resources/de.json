@@ -22,7 +22,11 @@
 		"network": "Mein Netzwerk",
 		"merchants": "Händler",
 		"products": "Produkte",
-		"products.statistics": "Statistiken"
+		"products.statistics": "Statistiken",
+		"cellar": "Mein Keller",
+		"cellar.book": "Kellerbuch",
+		"cellar.barrels": "Behälter",
+		"cellar.substances": "Stoffe"
 	},
 	"general": {
 		"fieldsets": {
@@ -398,7 +402,7 @@
 	"templates_invoice": "Vorlage für Rechnung",
 	"templates_delivery": "Vorlage für Lieferschein",
 	"templates": {
-		"placeholders": {		
+		"placeholders": {
 			"vinou_contract": "Vinou-Auftrag (Standard)",
 			"vinou_creditadvice": "Vinou-Gutschrift (Standard)",
 			"vinou_delivery_note": "Vinou-Lieferschein (Standard)",

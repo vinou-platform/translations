@@ -22,7 +22,11 @@
 		"network": "My network",
 		"merchants": "Merchants",
 		"products": "Products",
-		"products.statistics": "Statistics"
+		"products.statistics": "Statistics",
+		"cellar": "Cellar",
+		"cellar.book": "Book",
+		"cellar.barrels": "Barrels",
+		"cellar.substances": "Substances"
 	},
 	"general": {
 		"fieldsets": {
@@ -393,7 +397,7 @@
 	"templates_invoice": "Template for invoice",
 	"templates_delivery": "Template for delivery note",
 	"templates": {
-		"placeholders": {		
+		"placeholders": {
 			"vinou_contract": "Vinou contract (Default)",
 			"vinou_creditadvice": "Vinou credit advice (Default)",
 			"vinou_delivery_note": "Vinou delivery note (Default)",
@@ -1346,7 +1350,7 @@
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
 			"order_cancelled_date": "Order cancelled",
-			"payment_income_date": "Payment income date", 
+			"payment_income_date": "Payment income date",
 			"payment_type": "Payment type",
 			"payment_period": "Payment period (days)",
 			"parcel": "Postal package",
