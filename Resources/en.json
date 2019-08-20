@@ -56,7 +56,7 @@
 			"last_name": "Lastname",
 			"salutation": {
 				"title": "Salutation",
-				"placeholder": "e.g. Dear Mr. John Doe",
+				"placeholder": "e.g. Dear Mr. John Doe"
 			}
 		},
 		"tabs": {
