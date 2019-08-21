@@ -193,9 +193,9 @@
 			"sortby": {
 				"label": "Sort view by:"
 			},
-			"status": {
-				"readyForFilling": "Ready for Filling"
-			},
+		},
+		"types": {
+			"readyforfilling": "Ready for Filling"
 		}
 	},
 	"barrels": {

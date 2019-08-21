@@ -197,10 +197,10 @@
 			},
 			"sortby": {
 				"label": "Sortierrichtung:"
-			},
-			"status": {
-				"readyForFilling": "Zur Füllung fertig"
 			}
+		},
+		"types": {
+			"readyforfilling": "Ready for Filling"
 		}
 	},
 	"barrels": {
