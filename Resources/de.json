@@ -189,6 +189,18 @@
 				"main": "Rohwein",
 				"sub": "anlegen"
 			}
+		},
+		"filters": {
+			"label": "Ansicht einschränken",
+			"groupby": {
+				"label": "Ansicht gruppieren nach:"
+			},
+			"sortby": {
+				"label": "Sortierrichtung:"
+			},
+			"status": {
+				"readyForFilling": "Zur Füllung fertig"
+			}
 		}
 	},
 	"barrels": {

@@ -184,6 +184,18 @@
 				"main": "Add Raw Wine",
 				"sub": " "
 			}
+		},
+		"filters": {
+			"label": "Filter View",
+			"groupby": {
+				"label": "Group view by:"
+			},
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"status": {
+				"readyForFilling": "Ready for Filling"
+			},
 		}
 	},
 	"barrels": {
