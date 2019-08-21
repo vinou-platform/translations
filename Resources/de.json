@@ -197,6 +197,9 @@
 			},
 			"sortby": {
 				"label": "Sortierrichtung:"
+			},
+			"showeditor": {
+				"label": "Erfasser anzeigen"
 			}
 		},
 		"types": {

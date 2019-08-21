@@ -193,6 +193,9 @@
 			"sortby": {
 				"label": "Sort view by:"
 			},
+			"showeditor": {
+				"label": "Erfasser anzeigen"
+			}
 		},
 		"types": {
 			"readyforfilling": "Ready for Filling"
