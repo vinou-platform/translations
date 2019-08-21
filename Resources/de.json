@@ -180,21 +180,36 @@
 	"no": "Nein",
 	"ok": "OK",
 	"cancel": "Abbrechen",
-	"cellar": {
-		"book": {
-			"actions": {
-				"create": {
-					"main": "Rohwein",
-					"sub": "anlegen"
-				}
-			}
+	"cellarWines": {
+		"fields": {
+			"filter_rawWines": "Rohweine Filtern"
 		},
-		"barrels": {
-			"actions": {
-				"create": {
-					"main": "Behälter",
-					"sub": "anlegen"
-				}
+		"actions": {
+			"create": {
+				"main": "Rohwein",
+				"sub": "anlegen"
+			}
+		}
+	},
+	"barrels": {
+		"fields": {
+
+		},
+		"actions": {
+			"create": {
+				"main": "Behälter",
+				"sub": "anlegen"
+			}
+		}
+	},
+	"cellarSubstances": {
+		"fields": {
+
+		},
+		"actions": {
+			"create": {
+				"main": "Stoff",
+				"sub": "anlegen"
 			}
 		}
 	},

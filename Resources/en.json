@@ -175,21 +175,36 @@
 	"no": "No",
 	"ok": "OK",
 	"cancel": "Cancel",
-	"cellar": {
-		"book": {
-			"actions": {
-				"create": {
-					"main": "Add Raw Wine",
-					"sub": " "
-				}
-			}
+	"cellarWines": {
+		"fields": {
+			"filter_rawWines": "Filter Raw Wines"
 		},
-		"barrels": {
-			"actions": {
-				"create": {
-					"main": "Add Barrel",
-					"sub": " "
-				}
+		"actions": {
+			"create": {
+				"main": "Add Raw Wine",
+				"sub": " "
+			}
+		}
+	},
+	"barrels": {
+		"fields": {
+
+		},
+		"actions": {
+			"create": {
+				"main": "Add Barrel",
+				"sub": " "
+			}
+		}
+	},
+	"cellarSubstances": {
+		"fields": {
+
+		},
+		"actions": {
+			"create": {
+				"main": "Add Substance",
+				"sub": " "
 			}
 		}
 	},
