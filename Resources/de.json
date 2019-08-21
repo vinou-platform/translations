@@ -188,6 +188,11 @@
 			"create": {
 				"main": "Rohwein",
 				"sub": "anlegen"
+			},
+			"export": {
+				"book": "Kellerbuch",
+				"barrellist": "Behälterliste",
+				"substancelist": "Stoffliste"
 			}
 		},
 		"filters": {

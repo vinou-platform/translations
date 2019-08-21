@@ -183,6 +183,11 @@
 			"create": {
 				"main": "Add Raw Wine",
 				"sub": " "
+			},
+			"export": {
+				"book": "Cellar Book",
+				"barrellist": "Barrel List",
+				"substancelist": "Substance List"
 			}
 		},
 		"filters": {
