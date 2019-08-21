@@ -180,6 +180,24 @@
 	"no": "Nein",
 	"ok": "OK",
 	"cancel": "Abbrechen",
+	"cellar": {
+		"book": {
+			"actions": {
+				"create": {
+					"main": "Rohwein",
+					"sub": "anlegen"
+				}
+			}
+		},
+		"barrels": {
+			"actions": {
+				"create": {
+					"main": "Behälter",
+					"sub": "anlegen"
+				}
+			}
+		}
+	},
 	"fieldset_general_title": "Allgemeines",
 	"fieldset_region_title": "Regionales",
 	"fieldset_grapetype_title": "Rebsorte",

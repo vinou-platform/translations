@@ -175,6 +175,24 @@
 	"no": "No",
 	"ok": "OK",
 	"cancel": "Cancel",
+	"cellar": {
+		"book": {
+			"actions": {
+				"create": {
+					"main": "Add Raw Wine",
+					"sub": " "
+				}
+			}
+		},
+		"barrels": {
+			"actions": {
+				"create": {
+					"main": "Add Barrel",
+					"sub": " "
+				}
+			}
+		}
+	},
 	"fieldset_general_title": "General",
 	"fieldset_region_title": "Regional",
 	"fieldset_grapetype_title": "Grapetype",
