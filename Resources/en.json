@@ -224,6 +224,29 @@
 				"main": "Add Barrel",
 				"sub": " "
 			}
+		},
+		"types": {
+			"metal": "Metal",
+			"wood": "Wood",
+			"plastic": "Plastic/Composite",
+			"barrique": "Barrique",
+			"clay": "Clay",
+			"beton": "Beton",
+			"glas": "Glas"
+		}
+	},
+	"measurements": {
+		"fields": {
+
+		},
+		"types": {
+			"temperature": "Temperature",
+			"weight": "Weight",
+			"fillLevel": "Fill level",
+			"acid": "Acid",
+			"residualSugar": "Residual sugar",
+			"alcohol": "Alkoholgehalt",
+			"density": "Dichte"
 		}
 	},
 	"cellarSubstances": {
