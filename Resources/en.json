@@ -204,6 +204,15 @@
 		},
 		"types": {
 			"readyforfilling": "Ready for Filling"
+		},
+		"views": {
+			"gallery": {
+				"winenumber": "Wine No.",
+				"winename": "Description",
+				"winechstamp": "Last Changes",
+				"barrels": "Barrels",
+				"currentState": "Aktueller Zustand"
+			}
 		}
 	},
 	"barrels": {
