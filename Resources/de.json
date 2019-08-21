@@ -220,6 +220,29 @@
 				"main": "Behälter",
 				"sub": "anlegen"
 			}
+		},
+		"types": {
+			"metal": "Metall",
+			"wood": "Holz",
+			"plastic": "Plastik/Verbundmaterial",
+			"barrique": "Barrique",
+			"clay": "Ton",
+			"beton": "Beton",
+			"glas": "Glas"
+		}
+	},
+	"measurements": {
+		"fields": {
+
+		},
+		"types": {
+			"temperature": "Temperatur",
+			"weight": "Gewicht",
+			"fillLevel": "Füllstand",
+			"acid": "Säuregehalt",
+			"residualSugar": "Restsüße",
+			"alcohol": "Alkoholgehalt",
+			"density": "Dichte"
 		}
 	},
 	"cellarSubstances": {
