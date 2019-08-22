@@ -266,7 +266,8 @@
 			"barrelnumber": "Barrel-Nr.",
 			"label": "Label",
 			"chstamp": "Last Changes",
-			"filllevel": "Fill level"
+			"filllevel": "Fill level",
+			"currentState": "Current State"
 		}
 	},
 	"measurements": {

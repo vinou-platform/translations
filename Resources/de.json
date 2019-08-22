@@ -272,7 +272,8 @@
 				"barrelnumber": "Behälter-Nr.",
 				"label": "Bezeichnung",
 				"chstamp": "Zuletzt geändert",
-				"filllevel": "Füllstand"
+				"filllevel": "Füllstand",
+				"currentState": "Aktueller Zustand"
 			}
 		}
 	},
