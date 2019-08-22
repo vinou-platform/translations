@@ -338,7 +338,7 @@
 			"potassiumHydrogenCarbonate": "Potassium hydrogen carbonate",
 			"carbonateLime": "Carbonate lime",
 			"doubleSalt": "Double salt",
-			"dl": "DL wine acid",
+			"dl-tarticAcid": "DL wine acid",
 			"potassiumSorbate": "Potassium sorbate",
 			"sorbicAcid": "Sorbic acid",
 			"oakChips": "Oakchips",
@@ -357,6 +357,9 @@
 			"carboneDioxide": "Carbone dioxide",
 			"ascorbicAcid": "Ascorbic acid",
 			"vitaminB1": "Vitamin B1"
+		},
+		"toasts": {
+			"edit": "Edit substance"
 		}
 	},
 	"substanceLogs": {
@@ -376,6 +379,11 @@
 			"edit": {
 				"modaltitle": "Edit substance"
 			}
+		},
+		"toasts": {
+			"add": "Added substance",
+			"drop": "Dropped substance",
+			"edit": "Saved substance receipt or dispatch"
 		}
 	},
 	"fieldset_general_title": "General",

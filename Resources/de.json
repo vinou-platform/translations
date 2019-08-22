@@ -345,7 +345,7 @@
 			"potassiumHydrogenCarbonate": "Kaliumhydrogencarbonat",
 			"carbonateLime": "Kohlensaurer Kalk",
 			"doubleSalt": "Doppelsalz",
-			"dl": "DL-Weinsäure",
+			"dl-tarticAcid": "DL-Weinsäure",
 			"potassiumSorbate": "Kaliumsorbat",
 			"sorbicAcid": "Sorbinsäure",
 			"oakChips": "Eichenholz Chips",
@@ -364,6 +364,9 @@
 			"carboneDioxide": "Kohlendioxid",
 			"ascorbicAcid": "Ascorbinsäure",
 			"vitaminB1": "Vitamin B1"
+		},
+		"toasts": {
+			"edit": "Stoff bearbeitet"
 		}
 	},
 	"substanceLogs": {
@@ -381,8 +384,13 @@
 				"modaltitle": "Stoffabgang erfassen"
 			},
 			"edit": {
-				"modaltitle": "Stoffzugang bearbeiten"
+				"modaltitle": "Stoffzu-/abgang bearbeiten"
 			}
+		},
+		"toasts": {
+			"add": "Stoffzugang erfasst",
+			"drop": "Stoffabgang erfasst",
+			"edit": "Stoffzu-/abgang bearbeitet"
 		}
 	},
 	"fieldset_general_title": "Allgemeines",
