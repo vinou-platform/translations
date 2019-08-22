@@ -180,6 +180,33 @@
 	"no": "Nein",
 	"ok": "OK",
 	"cancel": "Abbrechen",
+	"cellarActions": {
+		"fields": {
+			"addition": "Zugabe",
+			"withdrawal": "Entnahme",
+			"filllevel": "Füllstand",
+			"barrels": "Behälter",
+			"mustweight": "Mostgewicht",
+			"mustacidity": "Mostsäure",
+			"bottles": "Lagerbestand",
+			"note": "Bemerkung"
+		},
+		"types": {
+			"dealcoholization": "Entalkoholisierung",
+			"alcoholization": "Alkoholisierung",
+			"acidification": "Säuerung",
+			"deacidification": "Entsäuerung",
+			"substanceadd": "Stoffzugabe",
+			"sweetening": "Süßung",
+			"wineaddition": "Wein-Hinzugabe",
+			"winewithdrawal": "Wein-Entnahme",
+			"blending": "Verschneidung",
+			"bottling": "Abfüllung",
+			"wateraddition": "Wasser-Hinzugabe",
+			"concentration": "Konzentrierung",
+			"marcLiquidation": "Tresterverwertung"
+		}
+	},
 	"cellarWines": {
 		"fields": {
 			"filter_rawWines": "Rohweine Filtern"

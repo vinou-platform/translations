@@ -215,6 +215,33 @@
 			}
 		}
 	},
+	"cellarActions": {
+		"fields": {
+			"addition": "addition",
+			"withdrawal": "withdrawal",
+			"filllevel": "fill level",
+			"barrels": "barrels",
+			"mustweight": "must weight",
+			"mustacidity": "must acidity",
+			"bottles": "bottles",
+			"note": "note"
+		},
+		"types": {
+			"dealcoholization": "Dealcoholization",
+			"alcoholization": "Alcoholization",
+			"acidification": "Acidification",
+			"deacidification": "Deacidification",
+			"substanceadd": "Substance added",
+			"sweetening": "Sweetening",
+			"wineaddition": "Wine addition",
+			"winewithdrawal": "Withdrawal",
+			"blending": "Blending",
+			"bottling": "Bottling",
+			"wateraddition": "Water addition",
+			"concentration": "Concentration",
+			"marcLiquidation": "Marc Liquidation"
+		}
+	},
 	"barrels": {
 		"fields": {
 
