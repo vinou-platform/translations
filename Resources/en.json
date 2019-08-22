@@ -215,6 +215,14 @@
 			}
 		}
 	},
+	"barrels": {
+		"types": {
+			"barrelnumber": "Barrel-Nr.",
+			"label": "Label",
+			"chstamp": "Last Changes",
+			"filllevel": "Fill level"
+		}
+	},
 	"cellarActions": {
 		"fields": {
 			"addition": "addition",
