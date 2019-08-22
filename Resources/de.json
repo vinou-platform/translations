@@ -311,9 +311,17 @@
 	},
 	"substances": {
 		"fields": {
-
+			"type": "Stoff-Typ",
+			"unit": "Einheit (z.B. g oder l)",
+			"note": "Notizen"
 		},
 		"actions": {
+			"add": {
+				"modaltitle": "Stoff anlegen"
+			},
+			"edit": {
+				"modaltitle": "Stoff bearbeiten"
+			},
 			"create": {
 				"main": "Stoff",
 				"sub": "anlegen"
@@ -356,6 +364,25 @@
 			"carboneDioxide": "Kohlendioxid",
 			"ascorbicAcid": "Ascorbinsäure",
 			"vitaminB1": "Vitamin B1"
+		}
+	},
+	"substanceLogs": {
+		"fields": {
+			"substance_id": "Stoff",
+			"value": "Menge",
+			"unit": "Einheit (z.B. g oder l)",
+			"note": "Notizen"
+		},
+		"actions": {
+			"add": {
+				"modaltitle": "Stoffzugang erfassen"
+			},
+			"drop": {
+				"modaltitle": "Stoffabgang erfassen"
+			},
+			"edit": {
+				"modaltitle": "Stoffzugang bearbeiten"
+			}
 		}
 	},
 	"fieldset_general_title": "Allgemeines",
