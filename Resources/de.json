@@ -282,7 +282,7 @@
 			"density": "Dichte"
 		}
 	},
-	"cellarSubstances": {
+	"substances": {
 		"fields": {
 
 		},
@@ -291,6 +291,44 @@
 				"main": "Stoff",
 				"sub": "anlegen"
 			}
+		},
+		"views": {
+			"gallery": {
+				"substance": "Stofftyp",
+				"chstamp": "Zuletzt geändert",
+				"stock": "Vorhandene Menge"
+			}
+		},
+		"types": {
+			"saccharose": "Saccharose",
+			"rectifiedConcentratedGrapeMust": "Rektifiziertes Traubenmostkonzentrat",
+			"concentratedGrapeMust": "Konzentrierter Traubenmost",
+			"alcohol": "Alkohol",
+			"tarticAcid": "Weinsäure",
+			"malicAcid": "Äpfelsäure",
+			"lacticAcid": "Milchsäure",
+			"potassiumHydrogenCarbonate": "Kaliumhydrogencarbonat",
+			"carbonateLime": "Kohlensaurer Kalk",
+			"doubleSalt": "Doppelsalz",
+			"dl": "DL-Weinsäure",
+			"potassiumSorbate": "Kaliumsorbat",
+			"sorbicAcid": "Sorbinsäure",
+			"oakChips": "Eichenholz Chips",
+			"dimethylDicarbonate": "DMDC DimethylDikarbonat",
+			"activatedCarbon": "Aktivkohle",
+			"sulfurDioxide": "Schwefeldioxide",
+			"potassiumFerrocyanide": "Kaliumhexayanoferrat",
+			"casein": "Kasein",
+			"lysozyme": "Lysozym",
+			"albumin": "Albumin",
+			"fishProduct": "Fischerzeugnis",
+			"glutenContainingCerealProduct": "Glutenhaltiges Erzeugnis",
+			"bentonite": "Bentonit",
+			"gelatin": "Gelatine",
+			"tannin": "Tannine",
+			"carboneDioxide": "Kohlendioxid",
+			"ascorbicAcid": "Ascorbinsäure",
+			"vitaminB1": "Vitamin B1"
 		}
 	},
 	"fieldset_general_title": "Allgemeines",
