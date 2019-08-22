@@ -193,6 +193,7 @@
 			"substances": "Stoffe"
 		},
 		"types": {
+			"enrichment": "Anreicherung",
 			"dealcoholization": "Entalkoholisierung",
 			"alcoholization": "Alkoholisierung",
 			"acidification": "Säuerung",
