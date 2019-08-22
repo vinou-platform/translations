@@ -215,14 +215,6 @@
 			}
 		}
 	},
-	"barrels": {
-		"types": {
-			"barrelnumber": "Barrel-Nr.",
-			"label": "Label",
-			"chstamp": "Last Changes",
-			"filllevel": "Fill level"
-		}
-	},
 	"cellarActions": {
 		"fields": {
 			"addition": "addition",
@@ -269,6 +261,12 @@
 			"clay": "Clay",
 			"beton": "Beton",
 			"glas": "Glas"
+		},
+		"gallery": {
+			"barrelnumber": "Barrel-Nr.",
+			"label": "Label",
+			"chstamp": "Last Changes",
+			"filllevel": "Fill level"
 		}
 	},
 	"measurements": {

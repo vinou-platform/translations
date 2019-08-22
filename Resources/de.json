@@ -180,14 +180,6 @@
 	"no": "Nein",
 	"ok": "OK",
 	"cancel": "Abbrechen",
-	"barrels": {
-		"types": {
-			"barrelnumber": "Behälter-Nr.",
-			"label": "Bezeichnung",
-			"chstamp": "Zuletzt geändert",
-			"filllevel": "Füllstand"
-		}
-	},
 	"cellarActions": {
 		"fields": {
 			"addition": "Zugabe",
@@ -274,6 +266,14 @@
 			"clay": "Ton",
 			"beton": "Beton",
 			"glas": "Glas"
+		},
+		"views": {
+			"gallery": {
+				"barrelnumber": "Behälter-Nr.",
+				"label": "Bezeichnung",
+				"chstamp": "Zuletzt geändert",
+				"filllevel": "Füllstand"
+			}
 		}
 	},
 	"measurements": {
