@@ -189,7 +189,8 @@
 			"mustweight": "Mostgewicht",
 			"mustacidity": "Mostsäure",
 			"bottles": "Lagerbestand",
-			"note": "Bemerkung"
+			"note": "Bemerkung",
+			"substances": "Stoffe"
 		},
 		"types": {
 			"dealcoholization": "Entalkoholisierung",

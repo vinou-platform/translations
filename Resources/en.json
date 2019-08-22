@@ -224,7 +224,8 @@
 			"mustweight": "must weight",
 			"mustacidity": "must acidity",
 			"bottles": "bottles",
-			"note": "note"
+			"note": "note",
+			"substances": "Substances"
 		},
 		"types": {
 			"dealcoholization": "Dealcoholization",
