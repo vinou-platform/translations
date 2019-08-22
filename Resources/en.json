@@ -287,9 +287,17 @@
 	},
 	"substances": {
 		"fields": {
-
+			"type": "Substance type",
+			"unit": "Unit (e.g. g or l)",
+			"note": "Notes"
 		},
 		"actions": {
+			"add": {
+				"modaltitle": "Add substance"
+			},
+			"edit": {
+				"modaltitle": "Edit substance"
+			},
 			"create": {
 				"main": "Add",
 				"sub": "substance"
@@ -332,6 +340,25 @@
 			"carboneDioxide": "Carbone dioxide",
 			"ascorbicAcid": "Ascorbic acid",
 			"vitaminB1": "Vitamin B1"
+		}
+	},
+	"substanceLogs": {
+		"fields": {
+			"substance_id": "Substance",
+			"value": "Amount",
+			"unit": "Unit (e.g. g or l)",
+			"note": "Notes"
+		},
+		"actions": {
+			"add": {
+				"modaltitle": "Substance receipt"
+			},
+			"drop": {
+				"modaltitle": "Substance dispatch"
+			},
+			"edit": {
+				"modaltitle": "Edit substance"
+			}
 		}
 	},
 	"fieldset_general_title": "General",
