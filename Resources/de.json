@@ -393,6 +393,14 @@
 			"edit": "Stoffzu-/abgang bearbeitet"
 		}
 	},
+	"cellarActionLog": {
+		"fields": {
+			"type": "Vorgang",
+			"substance": "Stoff",
+			"value": "Wert",
+			"bookingStamp": "Buchungstag"
+		}
+	},
 	"fieldset_general_title": "Allgemeines",
 	"fieldset_region_title": "Regionales",
 	"fieldset_grapetype_title": "Rebsorte",

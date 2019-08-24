@@ -386,6 +386,14 @@
 			"edit": "Saved substance receipt or dispatch"
 		}
 	},
+	"cellarActionLog": {
+		"fields": {
+			"type": "Action",
+			"substance": "Substance",
+			"value": "Value",
+			"bookingStamp": "Entry Date"
+		}
+	},
 	"fieldset_general_title": "General",
 	"fieldset_region_title": "Regional",
 	"fieldset_grapetype_title": "Grapetype",
