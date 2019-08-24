@@ -250,13 +250,13 @@
 			"alcoholization": "Alcoholization",
 			"acidification": "Acidification",
 			"deacidification": "Deacidification",
-			"substanceadd": "Substance added",
+			"substanceAdd": "Substance added",
 			"sweetening": "Sweetening",
-			"wineaddition": "Wine addition",
-			"winewithdrawal": "Withdrawal",
+			"wineAddition": "Wine addition",
+			"wineWithdrawal": "Withdrawal",
 			"blending": "Blending",
 			"bottling": "Bottling",
-			"wateraddition": "Water addition",
+			"waterAddition": "Water addition",
 			"concentration": "Concentration",
 			"marcLiquidation": "Marc Liquidation"
 		}

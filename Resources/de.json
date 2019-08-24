@@ -215,13 +215,13 @@
 			"alcoholization": "Alkoholisierung",
 			"acidification": "Säuerung",
 			"deacidification": "Entsäuerung",
-			"substanceadd": "Stoffzugabe",
+			"substanceAdd": "Stoffzugabe",
 			"sweetening": "Süßung",
-			"wineaddition": "Wein-Hinzugabe",
-			"winewithdrawal": "Wein-Entnahme",
+			"wineAddition": "Wein-Hinzugabe",
+			"wineWithdrawal": "Wein-Entnahme",
 			"blending": "Verschneidung",
 			"bottling": "Abfüllung",
-			"wateraddition": "Wasser-Hinzugabe",
+			"waterAddition": "Wasser-Hinzugabe",
 			"concentration": "Konzentrierung",
 			"marcLiquidation": "Tresterverwertung"
 		}
