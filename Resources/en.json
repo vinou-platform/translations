@@ -175,74 +175,34 @@
 	"no": "No",
 	"ok": "OK",
 	"cancel": "Cancel",
-	"cellarWines": {
-		"fields": {
-			"filter_rawWines": "Filter Raw Wines"
-		},
-		"actions": {
-			"create": {
-				"main": "Add Raw Wine",
-				"sub": " "
-			},
-			"export": {
-				"book": "Cellar Book",
-				"barrellist": "Barrel List",
-				"substancelist": "Substance List"
-			}
-		},
-		"filters": {
-			"label": "Filter View",
-			"groupby": {
-				"label": "Group view by:"
-			},
-			"sortby": {
-				"label": "Sort view by:"
-			},
-			"showeditor": {
-				"label": "Erfasser anzeigen"
-			}
-		},
-		"types": {
-			"readyforfilling": "Ready for Filling"
-		},
-		"views": {
-			"gallery": {
-				"winenumber": "Wine No.",
-				"winename": "Description",
-				"winechstamp": "Last Changes",
-				"barrels": "Barrels",
-				"currentState": "Aktueller Zustand"
-			}
-		}
-	},
-	"cellarActions": {
+	"cellarAction": {
 		"fields": {
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
-			"filllevel": "Fill-Level",
+			"filllevel": "Fill level",
 			"note": "Note",
 			"substance": "Substance",
 			"method": "Method",
 			"amount": "Amount",
-			"baseAmount": "Base Amount",
-			"increasedAmount": "Increased Amount",
+			"baseAmount": "Base amount",
+			"increasedAmount": "Increased amount",
 			"total": "Total",
 			"before": "Before",
 			"after": "After",
-			"description": "Description/Wine-Name",
-			"previousBarrel": "Previous-Barrel",
-			"targetBarrel": "Target-Barrel",
+			"description": "Description/Wine name",
+			"previousBarrel": "Previous barrel",
+			"targetBarrel": "Target barrel",
 			"blendedWith": "Blended with",
-			"blendingWithdrawal": "Blending Withdrawal",
+			"blendingWithdrawal": "Blending withdrawal",
 			"alcohol": "Alcohol",
-			"residualSugar": "Residual Sugar",
+			"residualSugar": "Residual sugar",
 			"acidity": "Acidity",
 			"dismount": "Dismount",
 			"usage": "Usage",
 			"temperature": "Temperature",
-			"mustWeight": "Mustweight",
-			"mustAcidity": "Mustacidity"
+			"mustWeight": "Must weight",
+			"mustAcidity": "Must acidity"
 		},
 		"types": {
 			"enrichment": "Enrichment",
@@ -258,17 +218,61 @@
 			"bottling": "Bottling",
 			"waterAddition": "Water addition",
 			"concentration": "Concentration",
-			"marcLiquidation": "Marc Liquidation"
+			"marcLiquidation": "Marc liquidation"
 		}
 	},
-	"barrels": {
+	"cellarWine": {
+		"actions": {
+			"create": {
+				"main": "Create",
+				"sub": "new wine"
+			},
+			"export": {
+				"book": "Cellar book",
+				"barrellist": "Barrel list",
+				"substancelist": "Substance list"
+			}
+		},
+		"filters": {
+			"label": "Filter view",
+			"groupby": {
+				"label": "Group view by:"
+			},
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"showeditor": {
+				"label": "Show editor"
+			}
+		},
+		"types": {
+			"readyforfilling": "Ready for Filling"
+		},
+		"views": {
+			"gallery": {
+				"winenumber": "Wine no.",
+				"winename": "Description",
+				"winechstamp": "Last changes",
+				"barrels": "Barrels",
+				"currentState": "Current state"
+			}
+		}
+	},
+	"barrel": {
 		"fields": {
-
+			"number": "Barrel-no.",
+			"label": "Label",
+			"type": "Type/Material",
+			"capacity": "Capacity in liter",
+			"location": "Location",
+			"manufacturer": "Manufacturer",
+			"clarifying": "Barrel for clarification?",
+			"note": "Notices"
 		},
 		"actions": {
 			"create": {
-				"main": "Add Barrel",
-				"sub": " "
+				"main": "Create new",
+				"sub": "barrel"
 			}
 		},
 		"types": {
@@ -280,15 +284,31 @@
 			"beton": "Beton",
 			"glas": "Glas"
 		},
-		"gallery": {
-			"barrelnumber": "Barrel-Nr.",
-			"label": "Label",
-			"chstamp": "Last Changes",
-			"filllevel": "Fill level",
-			"currentState": "Current State"
+		"views": {
+			"edit": {
+				"createTitle": "Create new barrel",
+				"editTitle": "Edit barrel"
+			},
+			"gallery": {
+				"empty": "empty"
+				"barrelnumber": "Barrel-no.",
+				"label": "Label",
+				"chstamp": "Last changes",
+				"filllevel": "Fill level",
+				"currentState": "Current state"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this barrel?"
+		},
+		"toasts": {
+			"created": "Barrel created."
+			"changed": "Barrel changed.",
+			"duplicated": "Barrel duplicated.",
+			"deleted": "Barrel deleted."
 		}
 	},
-	"measurements": {
+	"measurement": {
 		"fields": {
 
 		},
@@ -298,11 +318,11 @@
 			"fillLevel": "Fill level",
 			"acid": "Acid",
 			"residualSugar": "Residual sugar",
-			"alcohol": "Alkoholgehalt",
-			"density": "Dichte"
+			"alcohol": "Contained alcohol",
+			"density": "Density"
 		}
 	},
-	"substances": {
+	"substance": {
 		"fields": {
 			"type": "Substance type",
 			"unit": "Unit (e.g. g or l)",
@@ -341,7 +361,7 @@
 			"dl-tarticAcid": "DL wine acid",
 			"potassiumSorbate": "Potassium sorbate",
 			"sorbicAcid": "Sorbic acid",
-			"oakChips": "Oakchips",
+			"oakChips": "Oak chips",
 			"dimethylDicarbonate": "DMDC dimethyl dicarbonate",
 			"activatedCarbon": "Activated carbon",
 			"sulfurDioxide": "Sulfur dioxide",
@@ -349,8 +369,8 @@
 			"casein": "Casein",
 			"lysozyme": "Lysozyme",
 			"albumin": "Albumin",
-			"fishProduct": "Fish produce",
-			"glutenContainingCerealProduct": "Gluten containing cereal produce",
+			"fishProduct": "Fish product",
+			"glutenContainingCerealProduct": "Gluten containing cereal product",
 			"bentonite": "Bentonite",
 			"gelatin": "Gelatin",
 			"tannin": "Tannin",

@@ -180,7 +180,7 @@
 	"no": "Nein",
 	"ok": "OK",
 	"cancel": "Abbrechen",
-	"cellarActions": {
+	"cellarAction": {
 		"fields": {
 			"barrels": "Behälter",
 			"addition": "Zugang",
@@ -226,13 +226,10 @@
 			"marcLiquidation": "Tresterverwertung"
 		}
 	},
-	"cellarWines": {
-		"fields": {
-			"filter_rawWines": "Rohweine Filtern"
-		},
+	"cellarWine": {
 		"actions": {
 			"create": {
-				"main": "Rohwein",
+				"main": "Neues Weinkonto",
 				"sub": "anlegen"
 			},
 			"export": {
@@ -254,7 +251,7 @@
 			}
 		},
 		"types": {
-			"readyforfilling": "Ready for Filling"
+			"readyforfilling": "Bereit zur Abfüllung"
 		},
 		"views": {
 			"gallery": {
@@ -266,9 +263,16 @@
 			}
 		}
 	},
-	"barrels": {
+	"barrel": {
 		"fields": {
-
+			"number": "Behälter-Nr.",
+			"label": "Kennzeichnung",
+			"type": "Typ/Material",
+			"capacity": "Fassungsvermögen in Liter",
+			"location": "Aufstellort",
+			"manufacturer": "Hersteller",
+			"clarifying": "Behälter zur Klärung?",
+			"note": "Notizen"
 		},
 		"actions": {
 			"create": {
@@ -286,16 +290,30 @@
 			"glas": "Glas"
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Behälter anlegen",
+				"editTitle": "Behälter bearbeiten"
+			},
 			"gallery": {
+				"empty": "leer",
 				"barrelnumber": "Behälter-Nr.",
 				"label": "Bezeichnung",
 				"chstamp": "Zuletzt geändert",
 				"filllevel": "Füllstand",
 				"currentState": "Aktueller Zustand"
 			}
+		},
+		"dialogs": {
+			"delete": "Willst Du den Behälter wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Behälter erstellt.",
+			"changed": "Behälter bearbeitet.",
+			"duplicated": "Behälter dupliziert.",
+			"deleted": "Behälter gelöscht."
 		}
 	},
-	"measurements": {
+	"measurement": {
 		"fields": {
 
 		},
@@ -309,7 +327,7 @@
 			"density": "Dichte"
 		}
 	},
-	"substances": {
+	"substance": {
 		"fields": {
 			"type": "Stoff-Typ",
 			"unit": "Einheit (z.B. g oder l)",
