@@ -82,6 +82,20 @@
 				"all": "Alle auswählen",
 				"none": "Auswahl aufheben"
 			}
+		},
+		"filters": {
+			"sortBy": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortDirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"groupBy": {
+				"label": "Ansicht gruppieren nach:",
+				"none": "Keine Gruppierung"
+			}
 		}
 	},
 	"loader": {
@@ -300,7 +314,13 @@
 				"label": "Bezeichnung",
 				"chstamp": "Zuletzt geändert",
 				"filllevel": "Füllstand",
-				"currentState": "Aktueller Zustand"
+				"currentState": "Aktueller Zustand",
+				"filters": {
+					"search": {
+						"placeholder": "Z.B.: Behälter-Nr., Aufstellort, Hersteller"
+					},
+					"hideemptybarrels": "Leere Behälter ausblenden"
+				}
 			}
 		},
 		"dialogs": {

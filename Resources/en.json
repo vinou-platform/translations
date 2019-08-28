@@ -82,6 +82,20 @@
 				"all": "Choose all",
 				"none": "Clear selection"
 			}
+		},
+		"filters": {
+			"sortBy": {
+				"label": "Sort view by:"
+			},
+			"sortDirection": {
+				"label": "Sort direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"groupBy": {
+				"label": "Group view by:",
+				"none": "No grouping"
+			}
 		}
 	},
 	"loader": {
@@ -295,7 +309,13 @@
 				"label": "Label",
 				"chstamp": "Last changes",
 				"filllevel": "Fill level",
-				"currentState": "Current state"
+				"currentState": "Current state",
+				"filters": {
+					"search": {
+						"placeholder": "E.g.: Barrel-no., Location, Manufacturer"
+					},
+					"hideemptybarrels": "Hide empty barrels"
+				}
 			}
 		},
 		"dialogs": {
