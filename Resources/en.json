@@ -312,7 +312,7 @@
 					"search": {
 						"placeholder": "E.g.: Barrel-no., Location, Manufacturer"
 					},
-					"hideemptybarrels": "Hide empty barrels"
+					"hideEmptyBarrels": "Hide empty barrels"
 				}
 			}
 		},

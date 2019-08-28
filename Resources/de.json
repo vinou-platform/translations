@@ -317,7 +317,7 @@
 					"search": {
 						"placeholder": "Z.B.: Behälter-Nr., Aufstellort, Hersteller"
 					},
-					"hideemptybarrels": "Leere Behälter ausblenden"
+					"hideEmptyBarrels": "Leere Behälter ausblenden"
 				}
 			}
 		},
