@@ -77,12 +77,6 @@
 			"f": "Mrs.",
 			"d": "Divers"
 		},
-		"filter": {
-			"select": {
-				"all": "Choose all",
-				"none": "Clear selection"
-			}
-		},
 		"filters": {
 			"sortBy": {
 				"label": "Sort view by:"
@@ -95,6 +89,10 @@
 			"groupBy": {
 				"label": "Group view by:",
 				"none": "No grouping"
+			},
+			"select": {
+				"all": "Choose all",
+				"none": "Clear selection"
 			}
 		}
 	},

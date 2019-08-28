@@ -77,12 +77,6 @@
 			"f": "Frau",
 			"d": "Divers"
 		},
-		"filter": {
-			"select": {
-				"all": "Alle auswählen",
-				"none": "Auswahl aufheben"
-			}
-		},
 		"filters": {
 			"sortBy": {
 				"label": "Ansicht sortieren nach:"
@@ -95,6 +89,10 @@
 			"groupBy": {
 				"label": "Ansicht gruppieren nach:",
 				"none": "Keine Gruppierung"
+			},
+			"select": {
+				"all": "Alle auswählen",
+				"none": "Auswahl aufheben"
 			}
 		}
 	},
