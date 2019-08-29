@@ -261,6 +261,10 @@
 			"readyforfilling": "Ready for Filling"
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Create new wine",
+				"editTitle": "Edit wine"
+			},
 			"gallery": {
 				"winenumber": "Wine no.",
 				"winename": "Description",
