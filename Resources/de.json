@@ -266,6 +266,10 @@
 			"readyforfilling": "Bereit zur Abfüllung"
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Weinkonto anlegen",
+				"editTitle": "Weinkonto bearbeiten"
+			},
 			"gallery": {
 				"winenumber": "Wein-Nr.",
 				"winename": "Bezeichnung",
