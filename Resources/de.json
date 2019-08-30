@@ -855,7 +855,27 @@
 				"trockenbeerenauslese": "Trockenbeerenauslese",
 				"icewine": "Eiswein",
 				"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
-				"strawwine": "Strohwein"
+				"strawwine": "Strohwein",
+				"es": {
+					"origin": "[ES] Denominación de Origen Protegida (DOP)",
+					"superior": "[ES] Indicación Geográfica Protegida (IGP)",
+					"table": "[ES] Vino"
+				},
+				"fr": {
+					"cabinet": "[FR] Appellation contrôlée (AC)",
+					"origin": "[FR] Appellation d'origine contrôlée (AOC)",
+					"spaetlese": "[FR] Vin doux naturel",
+					"specialquality": "[FR] Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+					"superior": "[FR] Vin de pays",
+					"table": "[FR] Vin de table"
+				},
+				"it": {
+					"cabinet": "[IT] Denominazione di origine controllata e garantita (DOCG)",
+					"origin": "[IT] Denominazione di origine controllata (DOC)",
+					"specialquality": "[IT] Vino dolce naturale",
+					"superior": "[IT] Vino tipico",
+					"table": "[IT] Vino da tavola"
+				}
 			},
 			"quantity": "Aktueller Bestand",
 			"region": "Anbauregion",
