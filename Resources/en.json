@@ -306,7 +306,7 @@
 				"editTitle": "Edit barrel"
 			},
 			"gallery": {
-				"empty": "empty"
+				"empty": "empty",
 				"barrelnumber": "Barrel-no.",
 				"label": "Label",
 				"chstamp": "Last changes",
@@ -324,7 +324,7 @@
 			"delete": "Do you really want to delete this barrel?"
 		},
 		"toasts": {
-			"created": "Barrel created."
+			"created": "Barrel created.",
 			"changed": "Barrel changed.",
 			"duplicated": "Barrel duplicated.",
 			"deleted": "Barrel deleted."
