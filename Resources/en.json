@@ -617,6 +617,9 @@
 				"disable": "Disable wine selection"
 			}
 		},
+		"tabs": {
+			"files": "Files"
+		},
 		"fieldset": {
 			"general": "General",
 			"contact": "Contact",
@@ -642,6 +645,9 @@
 				"country": "Choose Country",
 				"no_country": "Show wineries without country"
 			}
+		},
+		"files": {
+			"title": "Files regarding this winery"
 		},
 		"messages": {
 			"hints": {
@@ -900,6 +906,9 @@
 			"expertisetitle": "Food recommendation",
 			"winepasstitle": "Good with"
 		},
+		"files": {
+			"title": "Files regarding this wine"
+		},
 		"stockrotation": {
 			"errors": {
 				"noitems": "No stock rotation exists"
@@ -936,6 +945,7 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
+			"files": "Files",
 			"stockrotation": "Stock rotation"
 		},
 		"messages": {
@@ -1576,6 +1586,33 @@
 			"created": "Price range created!",
 			"changed": "Price range changed!",
 			"deleted": "Price range deleted!"
+		}
+	},
+	"file": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "file"
+			},
+			"save": "Save file"
+		},
+		"fields": {
+			"title": "Title",
+			"description": "Description",
+			"identifier": "Identifier (for external use)",
+			"file": "Fileupload",
+			"public": {
+				"true": "public visible",
+				"false": "only internal"
+			}
+		},
+		"list": {
+			"empty": "No files found"
+		},
+		"toasts": {
+			"created": "File created!",
+			"changed": "File changed!",
+			"deleted": "File deleted!"
 		}
 	},
 	"settings": {
