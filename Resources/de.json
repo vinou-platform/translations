@@ -618,6 +618,9 @@
 				"disable": "Weinselektion deaktivieren"
 			}
 		},
+		"tabs": {
+			"files": "Dateien"
+		},
 		"fieldset": {
 			"general": "Allgemein",
 			"contact": "Kontakt",
@@ -643,6 +646,9 @@
 				"country": "Land auswählen",
 				"no_country": "Weingüter ohne Land anzeigen"
 			}
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Weingut"
 		},
 		"messages": {
 			"hints": {
@@ -898,6 +904,9 @@
 			"expertisetitle": "Speiseempfehlung",
 			"winepasstitle": "Passt gut zu"
 		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Wein"
+		},
 		"stockrotation": {
 			"errors": {
 				"noitems": "Keine Lagerbewegungen vorhanden"
@@ -934,6 +943,7 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
+			"files": "Dateien",
 			"stockrotation": "Lagerbewegungen"
 		},
 		"messages": {
@@ -1575,6 +1585,33 @@
 			"created": "Preisklasse angelegt!",
 			"changed": "Preisklasse geändert!",
 			"deleted": "Preisklasse gelöscht!"
+		}
+	},
+	"file": {
+		"actions": {
+			"create": {
+				"main": "Neue Datei",
+				"sub": "anlegen"
+			},
+			"save": "Datei speichern"
+		},
+		"fields": {
+			"title": "Titel",
+			"description": "Beschreibung",
+			"identifier": "Identifier (für externen Zugriff)",
+			"file": "Dateiupload",
+			"public": {
+				"true": "öffentlich sichtbar",
+				"false": "nur intern sichtbar"
+			}
+		},
+		"list": {
+			"empty": "Keine Dateien vorhanden"
+		},
+		"toasts": {
+			"created": "Datei angelegt!",
+			"changed": "Datei geändert!",
+			"deleted": "Datei gelöscht!"
 		}
 	},
 	"settings": {
