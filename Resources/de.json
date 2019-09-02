@@ -194,6 +194,14 @@
 	"cancel": "Abbrechen",
 	"cellarAction": {
 		"fields": {
+			"wine": {
+				"label": "Weinkonto",
+				"placeholder": "Weinkonto suchen"
+			},
+			"barrel": {
+				"label": "Behälter",
+				"placeholder": "Behälter suchen"
+			},
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
@@ -217,11 +225,24 @@
 			"acidity": "Säure",
 			"dismount": "Abgabe",
 			"usage": "Verwendung",
-			"temperature": "Temperatur",
-			"mustWeight": "Mostgewicht",
-			"mustAcidity": "Mostsäure"
+			"temperature": "Temperatur"
+		},
+		"actions": {
+			"create": {
+				"main": "Neuen Vorgang",
+				"sub": "erfassen"
+			},
+			"edit": {
+				"main": "Vorgang",
+				"sub": "bearbeiten"
+			},
+			"createHarvest": {
+				"main": "Erntemeldung",
+				"sub": " "
+			}
 		},
 		"types": {
+			"harvest": "Erntemeldung",
 			"enrichment": "Anreicherung",
 			"dealcoholization": "Entalkoholisierung",
 			"alcoholization": "Alkoholisierung",
@@ -236,11 +257,35 @@
 			"waterAddition": "Wasser-Hinzugabe",
 			"concentration": "Konzentrierung",
 			"marcLiquidation": "Tresterverwertung"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Vorgang erfassen",
+				"editTitle": "Vorgang bearbeiten"
+			},
+			"harvestEdit": {
+				"createTitle": "Erntemeldung",
+				"editTitle": "Erntemeldung bearbeiten",
+				"details": "Details",
+				"backToWineSelect": "Zurück zur Auswahl"
+			}
 		}
 	},
 	"cellarWine": {
+		"fields": {
+			"barrelNumbers": "Behälter",
+			"chstamp": "Zuletzt geändert",
+			"inputWeight": "Eingangsmenge",
+			"inputVolume": "Eingangsmenge",
+			"mustAcidity": "Mostsäure",
+			"mustWeight": "Mostgewicht",
+			"name": "Bezeichnung",
+			"number": "Wein-Nr.",
+			"referenceNumber": "AP-Nummer"
+		},
 		"actions": {
 			"create": {
+				"title": "Weinkonto anlegen",
 				"main": "Neues Weinkonto",
 				"sub": "anlegen"
 			},
@@ -271,12 +316,17 @@
 				"editTitle": "Weinkonto bearbeiten"
 			},
 			"gallery": {
-				"winenumber": "Wein-Nr.",
-				"winename": "Bezeichnung",
-				"winechstamp": "Zuletzt geändert",
-				"barrels": "Behälter",
 				"currentState": "Aktueller Zustand"
 			}
+		},
+		"dialogs": {
+			"delete": "Willst Du das Weinkonto wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Weinkonto erstellt.",
+			"changed": "Weinkonto bearbeitet.",
+			"duplicated": "Weinkonto dupliziert.",
+			"deleted": "Weinkonto gelöscht."
 		}
 	},
 	"barrel": {

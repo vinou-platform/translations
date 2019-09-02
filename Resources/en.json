@@ -189,6 +189,14 @@
 	"cancel": "Cancel",
 	"cellarAction": {
 		"fields": {
+			"wine": {
+				"label": "Wine",
+				"placeholder": "Search wine"
+			},
+			"barrel": {
+				"label": "Barrel",
+				"placeholder": "Search barrel"
+			},
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
@@ -212,11 +220,24 @@
 			"acidity": "Acidity",
 			"dismount": "Dismount",
 			"usage": "Usage",
-			"temperature": "Temperature",
-			"mustWeight": "Must weight",
-			"mustAcidity": "Must acidity"
+			"temperature": "Temperature"
+		},
+		"actions": {
+			"create": {
+				"main": "Log new",
+				"sub": "action"
+			},
+			"edit": {
+				"main": "Edit",
+				"sub": "action"
+			},
+			"createHarvest": {
+				"main": "Grape harvest",
+				"sub": " "
+			}
 		},
 		"types": {
+			"harvest": "Grape harvest",
 			"enrichment": "Enrichment",
 			"dealcoholization": "Dealcoholization",
 			"alcoholization": "Alcoholization",
@@ -231,11 +252,35 @@
 			"waterAddition": "Water addition",
 			"concentration": "Concentration",
 			"marcLiquidation": "Marc liquidation"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Log new action",
+				"editTitle": "Edit action"
+			},
+			"harvestEdit": {
+				"createTitle": "Grape harvest",
+				"editTitle": "Edit grape harvest",
+				"details": "Details",
+				"backToWineSelect": "Select wine"
+			}
 		}
 	},
 	"cellarWine": {
+		"fields": {
+			"barrelNumbers": "Barrels",
+			"chstamp": "Last changes",
+			"inputWeight": "Input weight",
+			"inputVolume": "Input volume",
+			"mustAcidity": "Must acidity",
+			"mustWeight": "Must weight",
+			"name": "Title",
+			"number": "Wine no.",
+			"referenceNumber": "Ref.-no."
+		},
 		"actions": {
 			"create": {
+				"title": "Create new wine",
 				"main": "Create",
 				"sub": "new wine"
 			},
@@ -266,12 +311,17 @@
 				"editTitle": "Edit wine"
 			},
 			"gallery": {
-				"winenumber": "Wine no.",
-				"winename": "Description",
-				"winechstamp": "Last changes",
-				"barrels": "Barrels",
 				"currentState": "Current state"
 			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this wine?"
+		},
+		"toasts": {
+			"created": "Wine created.",
+			"changed": "Wine changed.",
+			"duplicated": "Wine duplicated.",
+			"deleted": "Wine deleted."
 		}
 	},
 	"barrel": {
