@@ -638,7 +638,12 @@
 			"phone": "Phone",
 			"fax": "Fax",
 			"mail": "E-Mail",
-			"www": "Website"
+			"www": "Website",
+			"freetext": "Description",
+			"vineyard": "Vineyard area",
+			"harvest": "Yearly harvest",
+			"bestplaces": "Best places",
+			"memberof": "Member of"
 		},
 		"list": {
 			"filter": {

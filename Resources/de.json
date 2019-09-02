@@ -643,7 +643,12 @@
 			"phone": "Telefon",
 			"fax": "Fax",
 			"mail": "E-Mail",
-			"www": "Internetseite"
+			"www": "Internetseite",
+			"freetext": "Beschreibung",
+			"vineyard": "Rebfläche",
+			"harvest": "Ertrag",
+			"bestplaces": "Beste Lagen",
+			"memberof": "Mitglied bei"
 		},
 		"list": {
 			"filter": {
