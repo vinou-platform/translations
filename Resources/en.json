@@ -3631,17 +3631,18 @@
 		}
 	},
 	"tastes": {
-		"1": "dry",
-		"2": "semidry",
 		"3": "off-dry",
-		"4": "semi-sweet",
-		"5": "mild",
-		"6": "sweet",
-		"7": "extra-sweet",
 		"8": "herb-based",
-		"9": "brut",
 		"10": "extra brut",
-		"11": "frooty"
+		"9": "brut",
+		"12": "extra-dry",
+		"1": "dry",
+		"11": "frooty",
+		"2": "semidry",
+		"5": "mild",
+		"4": "semi-sweet",
+		"6": "sweet",
+		"7": "extra-sweet"
 	},
 	"countries": {
 		"at": "Austria",
