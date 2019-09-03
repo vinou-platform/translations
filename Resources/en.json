@@ -617,6 +617,9 @@
 				"disable": "Disable wine selection"
 			}
 		},
+		"tabs": {
+			"files": "Files"
+		},
 		"fieldset": {
 			"general": "General",
 			"contact": "Contact",
@@ -635,13 +638,21 @@
 			"phone": "Phone",
 			"fax": "Fax",
 			"mail": "E-Mail",
-			"www": "Website"
+			"www": "Website",
+			"freetext": "Description",
+			"vineyard": "Vineyard area",
+			"harvest": "Yearly harvest",
+			"bestplaces": "Best places",
+			"memberof": "Member of"
 		},
 		"list": {
 			"filter": {
 				"country": "Choose Country",
 				"no_country": "Show wineries without country"
 			}
+		},
+		"files": {
+			"title": "Files regarding this winery"
 		},
 		"messages": {
 			"hints": {
@@ -913,6 +924,9 @@
 			"expertisetitle": "Food recommendation",
 			"winepasstitle": "Good with"
 		},
+		"files": {
+			"title": "Files regarding this wine"
+		},
 		"stockrotation": {
 			"errors": {
 				"noitems": "No stock rotation exists"
@@ -949,6 +963,7 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
+			"files": "Files",
 			"stockrotation": "Stock rotation"
 		},
 		"messages": {
@@ -1591,6 +1606,33 @@
 			"deleted": "Price range deleted!"
 		}
 	},
+	"file": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "file"
+			},
+			"save": "Save file"
+		},
+		"fields": {
+			"title": "Title",
+			"description": "Description",
+			"identifier": "Identifier (for external use)",
+			"file": "Fileupload",
+			"public": {
+				"true": "public visible",
+				"false": "only internal"
+			}
+		},
+		"list": {
+			"empty": "No files found"
+		},
+		"toasts": {
+			"created": "File created!",
+			"changed": "File changed!",
+			"deleted": "File deleted!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account settings",
@@ -1668,13 +1710,12 @@
 		"address_changed": "Address update!",
 		"address_deleted": "Address deleted!",
 		"bank_settings_error": "An error occured while saving the bank account!",
-		"category_image_needed": "You need to save the category before uploading an image!",
 		"category_image_uploaded": "Image uploaded!",
 		"category_image_deleted": "Image deleted!",
 		"category_saved": "Category saved!",
 		"category_changed": "Category updated!",
 		"category_deleted": "Category deleted!",
-		"client_image_needed": "You need to save the client before uploading an image!",
+		"category_duplicated": "Category duplicated!",
 		"client_image_uploaded": "Image uploaded!",
 		"client_image_deleted": "Image deleted!",
 		"client_saved": "Client saved!",
@@ -1697,6 +1738,7 @@
 		"merchant_deleted": "Merchant deleted!",
 		"merchant_image_uploaded": "Image uploaded!",
 		"merchant_image_deleted": "Image deleted!",
+		"merchant_save_error": "Error saving winery!",
 		"order_created": "Order saved!",
 		"order_updated": "Order saved!",
 		"order_creditadvice_created": "Credit advice created and order cancelled!",
@@ -1743,6 +1785,7 @@
 		"winery_deleted": "Winery deleted!",
 		"winery_image_uploaded": "Image uploaded!",
 		"winery_image_deleted": "Image deleted!",
+		"winery_save_error": "Error saving winery!",
 		"wine_created": "Wine created!",
 		"wine_changed": "Wine updated!",
 		"wine_duplicated": "Wine duplicated!",

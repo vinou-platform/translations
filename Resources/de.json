@@ -622,6 +622,9 @@
 				"disable": "Weinselektion deaktivieren"
 			}
 		},
+		"tabs": {
+			"files": "Dateien"
+		},
 		"fieldset": {
 			"general": "Allgemein",
 			"contact": "Kontakt",
@@ -640,13 +643,21 @@
 			"phone": "Telefon",
 			"fax": "Fax",
 			"mail": "E-Mail",
-			"www": "Internetseite"
+			"www": "Internetseite",
+			"freetext": "Beschreibung",
+			"vineyard": "Rebfläche",
+			"harvest": "Ertrag",
+			"bestplaces": "Beste Lagen",
+			"memberof": "Mitglied bei"
 		},
 		"list": {
 			"filter": {
 				"country": "Land auswählen",
 				"no_country": "Weingüter ohne Land anzeigen"
 			}
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Weingut"
 		},
 		"messages": {
 			"hints": {
@@ -918,6 +929,9 @@
 			"expertisetitle": "Speiseempfehlung",
 			"winepasstitle": "Passt gut zu"
 		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Wein"
+		},
 		"stockrotation": {
 			"errors": {
 				"noitems": "Keine Lagerbewegungen vorhanden"
@@ -954,6 +968,7 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
+			"files": "Dateien",
 			"stockrotation": "Lagerbewegungen"
 		},
 		"messages": {
@@ -1597,6 +1612,33 @@
 			"deleted": "Preisklasse gelöscht!"
 		}
 	},
+	"file": {
+		"actions": {
+			"create": {
+				"main": "Neue Datei",
+				"sub": "anlegen"
+			},
+			"save": "Datei speichern"
+		},
+		"fields": {
+			"title": "Titel",
+			"description": "Beschreibung",
+			"identifier": "Identifier (für externen Zugriff)",
+			"file": "Dateiupload",
+			"public": {
+				"true": "öffentlich sichtbar",
+				"false": "nur intern sichtbar"
+			}
+		},
+		"list": {
+			"empty": "Keine Dateien vorhanden"
+		},
+		"toasts": {
+			"created": "Datei angelegt!",
+			"changed": "Datei geändert!",
+			"deleted": "Datei gelöscht!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
@@ -1679,6 +1721,7 @@
 		"category_saved": "Kategorie gespeichert!",
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
+		"category_duplicated": "Kategorie kopiert!",
 		"client_image_uploaded": "Bild hochgeladen!",
 		"client_image_deleted": "Bild gelöscht!",
 		"client_saved": "Kunde gespeichert!",
@@ -1700,6 +1743,7 @@
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
 		"merchant_image_uploaded": "Bild hochgeladen!",
+		"merchant_save_error": "Speichern fehlgeschlagen!",
 		"merchant_image_deleted": "Bild gelöscht!",
 		"order_created": "Bestellung angelegt!",
 		"order_updated": "Bestellung geändert!",
@@ -1747,6 +1791,7 @@
 		"winery_deleted": "Weingut gelöscht!",
 		"winery_image_uploaded": "Bild hochgeladen!",
 		"winery_image_deleted": "Bild gelöscht!",
+		"winery_save_error": "Speichern fehlgeschlagen!",
 		"wine_created": "Wein angelegt!",
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
