@@ -790,7 +790,7 @@
 			"cap_types": {
 				"screw": "Screw cap",
 				"cork":	"Natural cork",
-				"crowncap": "Crown cap",
+				"crownCap": "Crown cap",
 				"plastic": "Synthetic cork",
 				"glas":	"Glas"
 			},
@@ -3865,8 +3865,8 @@
 		"secco": "Secco",
 		"sparkling": "Champagne",
 		"destilate": "Destillate",
-		"grapejuice": "Grape juice",
-		"wine_based_drinks": "Wine-based drinks",
+		"grapeJuice": "Grape juice",
+		"wineBasedDrink": "Wine-based drink",
 		"spritzer": "Spritzer (mixture of wine and sparkling water chiefly)",
 		"general": "Others"
 	},
