@@ -269,6 +269,10 @@
 				"details": "Details",
 				"backToWineSelect": "Zurück zur Auswahl"
 			}
+		},
+		"toasts": {
+			"created": "Vorgang erstellt.",
+			"changed": "Vorgang bearbeitet."
 		}
 	},
 	"cellarWine": {

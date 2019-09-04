@@ -264,6 +264,10 @@
 				"details": "Details",
 				"backToWineSelect": "Select wine"
 			}
+		},
+		"toasts": {
+			"created": "Action created.",
+			"changed": "Action changed."
 		}
 	},
 	"cellarWine": {
