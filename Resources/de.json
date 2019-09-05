@@ -1110,6 +1110,7 @@
 			"cap_types": {
 				"screw": "Schraubverschluss",
 				"cork":	"Naturkorken",
+				"crownCap": "Kronkorken",
 				"plastic": "Kunststoffkorken",
 				"glas":	"Glasverschluss"
 			},
@@ -4185,6 +4186,9 @@
 		"secco": "Secco",
 		"sparkling": "Sekt",
 		"destilate": "Destillat",
+		"grapeJuice": "Traubensaft",
+		"wineBasedDrink": "Weinhaltiges Getränk",
+		"spritzer": "Weinschorle",
 		"general": "Sonstiges"
 	},
 	"savours":{
