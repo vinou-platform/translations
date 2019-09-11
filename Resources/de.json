@@ -3637,18 +3637,21 @@
 		}
 	},
 	"tastes": {
-		"3": "feinherb",
-		"8": "naturherb",
-		"10": "extra herb (extra brut)",
-		"9": "herb (brut)",
-		"12": "extra trocken",
 		"1": "trocken",
-		"11": "feinfruchtig",
 		"2": "halbtrocken",
-		"5": "mild",
+		"3": "feinherb",
 		"4": "lieblich",
 		"6": "süß",
-		"7": "edelsüß"
+		"7": "edelsüß",
+		"11": "feinfruchtig",
+		"13": "brut zeró",
+		"8": "brut nature (naturherb)",
+		"10": "extra brut (extra herb)",
+		"9": "brut (herb)",
+		"12": "trés sec (extra trocken)",
+		"14": "sec (trocken)",
+		"15": "demi-sec (halbtrocken)",
+		"5": "doux (mild)"
 	},
 	"countries": {
 		"at": "Österreich",
