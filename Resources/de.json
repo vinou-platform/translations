@@ -3957,13 +3957,17 @@
 		"2": "halbtrocken",
 		"3": "feinherb",
 		"4": "lieblich",
-		"5": "mild",
 		"6": "süß",
 		"7": "edelsüß",
-		"8": "naturherb",
-		"9": "herb (brut)",
-		"10": "extra herb (extra brut)",
-		"11": "feinfruchtig"
+		"11": "feinfruchtig",
+		"13": "brut zeró",
+		"8": "brut nature (naturherb)",
+		"10": "extra brut (extra herb)",
+		"9": "brut (herb)",
+		"12": "trés sec (extra trocken)",
+		"14": "sec (trocken)",
+		"15": "demi-sec (halbtrocken)",
+		"5": "doux (mild)"
 	},
 	"countries": {
 		"at": "Österreich",
