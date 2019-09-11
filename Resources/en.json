@@ -3636,13 +3636,17 @@
 		"2": "semidry",
 		"3": "off-dry",
 		"4": "semi-sweet",
-		"5": "mild",
 		"6": "sweet",
 		"7": "extra-sweet",
-		"8": "herb-based",
-		"9": "brut",
+		"11": "frooty",
+		"13": "brut zeró",
+		"8": "herb-based (brut nature)",
 		"10": "extra brut",
-		"11": "frooty"
+		"9": "brut",
+		"12": "extra-dry (trés sec)",
+		"14": "dry (sec)",
+		"15": "semidry (demi-sec)",
+		"5": "mild (doux)"
 	},
 	"countries": {
 		"at": "Austria",
