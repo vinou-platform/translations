@@ -550,6 +550,8 @@
 				"regular": "Commerce",
 				"invitation": "Eingeladen"
 			},
+			"smallbusiness": "Kleinunternehmen",
+			"taxfreeInvoiceNotes": "Steuerfreie Rechnungen",
 			"crstamp": "Datum der Registrierung",
 			"expire": "Ablaufzeitpunkt der Testphase",
 			"voucher_old": "Gutschein-Code",
