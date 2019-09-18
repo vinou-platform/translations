@@ -865,6 +865,7 @@
 				"winzersekt": "Winzersekt",
 				"cremant": "Crémant",
 				"icewine": "Icewine",
+				"champagneSpecificRegion": "Champagne produced in specific regions",
 				"specialquality": "Quality wine with special ripeness and harvest.",
 				"strawwine": "Strawwine",
 				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
@@ -3876,6 +3877,7 @@
 		"grapeJuice": "Grape juice",
 		"wineBasedDrink": "Wine-based drink",
 		"spritzer": "Spritzer (mixture of wine and sparkling water chiefly)",
+		"vingris": "Vin gris",
 		"general": "Others"
 	},
 	"savours":{

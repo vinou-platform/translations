@@ -870,6 +870,7 @@
 				"winzersekt": "Winzersekt",
 				"cremant": "Crémant",
 				"icewine": "Eiswein",
+				"champagneSpecificRegion": "Sekt b.A.",
 				"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
 				"strawwine": "Strohwein",
 				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
@@ -3882,6 +3883,7 @@
 		"grapeJuice": "Traubensaft",
 		"wineBasedDrink": "Weinhaltiges Getränk",
 		"spritzer": "Weinschorle",
+		"vingris": "Weißherbst",
 		"general": "Sonstiges"
 	},
 	"savours":{
