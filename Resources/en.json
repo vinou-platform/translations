@@ -545,6 +545,8 @@
 				"regular": "Commerce",
 				"invitation": "Invited"
 			},
+			"smallbusiness": "Smallbusiness company",
+			"taxfreeInvoiceNotes": "Taxfree invoice notes",
 			"crstamp": "Date of registration",
 			"expire": "Expiration date",
 			"voucher_old": "Voucher",
