@@ -1073,6 +1073,7 @@
 			"qrcodedownloadvector": "Download QR code as vector file"
 		},
 		"fieldset": {
+			"allergens": "Allergens",
 			"general": "General",
 			"stock": "Stock",
 			"grapetype": "Grapetypes",
@@ -1120,6 +1121,10 @@
 				"main": "Show expertise",
 				"sub": " ",
 				"title": "Open expertise in new window"
+			},
+			"allergens": {
+				"label": "Allergens",
+				"placeholder": "Search for allergens"
 			},
 			"grapetypes": {
 				"label": "Grapetypes",
@@ -2164,6 +2169,50 @@
 	"buttons": {
 		"customer": {
 			"activate": "Activate now"
+		}
+	},
+	"allergens": {
+		"1": {
+			"name": "Cereals containing gluten"
+		},
+		"2": {
+			"name": "Crustaceans"
+		},
+		"3": {
+			"name": "Eggs"
+		},
+		"4": {
+			"name": "Fish"
+		},
+		"5": {
+			"name": "Peanuts"
+		},
+		"6": {
+			"name": "Soya beans"
+		},
+		"7": {
+			"name": "Milk"
+		},
+		"8": {
+			"name": "Nuts"
+		},
+		"9": {
+			"name": "Celery"
+		},
+		"10": {
+			"name": "Mustard"
+		},
+		"11": {
+			"name": "Sesame seeds"
+		},
+		"12": {
+			"name": "Sulphur dioxid and sulphites"
+		},
+		"13": {
+			"name": "Lupin"
+		},
+		"14": {
+			"name": "Molluscs"
 		}
 	},
 	"grapetypes": {

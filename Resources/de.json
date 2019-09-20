@@ -1078,6 +1078,7 @@
 			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
 		},
 		"fieldset": {
+			"allergens": "Allergene",
 			"general": "Allgemeines",
 			"stock": "Bestände",
 			"grapetype": "Rebsorten",
@@ -1125,6 +1126,10 @@
 				"main": "Expertise",
 				"sub": "anzeigen",
 				"title": "Expertise in neuem Fenster öffnen"
+			},
+			"allergens": {
+				"label": "Allergene",
+				"placeholder": "Allergene suchen"
 			},
 			"grapetypes": {
 				"label": "Rebsorten",
@@ -2170,6 +2175,50 @@
 	"buttons": {
 		"customer": {
 			"activate": "Jetzt aktivieren"
+		}
+	},
+	"allergens": {
+		"1": {
+			"name": "Glutenhaltige Getreide"
+		},
+		"2": {
+			"name": "Krebstiere"
+		},
+		"3": {
+			"name": "Ei"
+		},
+		"4": {
+			"name": "Fisch"
+		},
+		"5": {
+			"name": "Erdnüsse"
+		},
+		"6": {
+			"name": "Sojabohnen"
+		},
+		"7": {
+			"name": "Milch"
+		},
+		"8": {
+			"name": "Schalenfrüchte"
+		},
+		"9": {
+			"name": "Selerie"
+		},
+		"10": {
+			"name": "Senf"
+		},
+		"11": {
+			"name": "Sesamsamen"
+		},
+		"12": {
+			"name": "Schwefeloxid und Sulphite"
+		},
+		"13": {
+			"name": "Lupinen"
+		},
+		"14": {
+			"name": "Weichtiere"
 		}
 	},
 	"grapetypes": {
