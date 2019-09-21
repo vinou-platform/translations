@@ -194,19 +194,52 @@
 	"cancel": "Abbrechen",
 	"cellarAction": {
 		"fields": {
-			"wine": {
-				"label": "Weinkonto",
-				"placeholder": "Weinkonto suchen"
-			},
+			"additionVolume": "Füllmenge",
 			"barrel": {
 				"label": "Behälter",
 				"placeholder": "Behälter suchen"
 			},
+			"bookingStamp": {
+				"label": "Buchungstag",
+				"placeholder": "dd.MM.YYYY"
+			},
+			"clarifyingOnly": "Zeige nur Behälter zur Klärung",
+			"filtrationPurpose": {
+				"label": "Feststoffverwendung",
+				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
+			},
+			"lossRelocation": "Umfüllung der Reststoffe?",
+			"lossVolume": "Verlust",
+			"marc": "Trester",
+			"note": "Anmerkung / Verwendung",
+			"purpose": {
+				"label": "Verwendung",
+				"placeholder": " "
+			},
+			"sludgePurpose": {
+				"label": "Trubverwendung",
+				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
+			},
+			"sludgeRelocation": "Trubumfüllung?",
+			"sludgeVolume": "Trub",
+			"sourceBarrel": {
+				"label": "Quellbehälter",
+				"placeholder": "Behälter suchen"
+			},
+			"targetBarrel": {
+				"label": "Zielbehälter",
+				"placeholder": "Behälter suchen"
+			},
+			"wine": {
+				"label": "Weinkonto",
+				"placeholder": "Weinkonto suchen"
+			},
+			"withdrawalVolume": "Entnahme",
+
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
 			"filllevel": "Füllhöhe",
-			"note": "Bemerkungen",
 			"substance": "Stoff",
 			"method": "Verfahren",
 			"amount": "Menge",
@@ -217,7 +250,6 @@
 			"after": "nach",
 			"description": "Beschreibung/Wein Name",
 			"previousBarrel": "Ursprungs-Behälter",
-			"targetBarrel": "Ziel-Behälter",
 			"blendedWith": "Verschnitten mit",
 			"blendingWithdrawal": "Verschnitt-Abgabe",
 			"alcohol": "Alkohol",
@@ -233,16 +265,74 @@
 				"sub": "erfassen"
 			},
 			"edit": {
-				"main": "Vorgang",
-				"sub": "bearbeiten"
+				"main": "Eintrag",
+				"sub": "korrigieren"
 			},
+
 			"createHarvest": {
-				"main": "Erntemeldung",
+				"main": "Ernte",
 				"sub": " "
+			},
+			"createMarcLiquidation": {
+				"main": "Trester",
+				"sub": "Verwertung"
+			},
+			"createStaticSettling": {
+				"main": "Entschleimung",
+				"sub": " "
+			},
+			"createFiltration": {
+				"main": "Filtrierung",
+				"sub": " "
+			},
+			"createRelocation": {
+				"main": "Umlagerung",
+				"sub": " "
+			},
+			"createDecanting": {
+				"main": "Abstich",
+				"sub": " "
+			},
+			"createPrivateConsumption": {
+				"main": "Eigenverbrauch",
+				"sub": "erfassen"
+			},
+			"createShrinkage": {
+				"main": "Schwund",
+				"sub": "erfassen"
+			},
+
+			"createWineAddition": {
+				"main": "Beifüllung",
+				"sub": " "
+			},
+
+			"createBarrelLog": {
+				"main": "Umfüllung",
+				"sub": "hinzufügen"
+			},
+			"createBarrelAddition": {
+				"main": "Eingangsbehälter",
+				"sub": "hinzufügen"
 			}
 		},
 		"types": {
-			"harvest": "Erntemeldung",
+			"harvest": "Ernte",
+			"marcLiquidation": "Tresterverwertung",
+			"staticSettling": "Entschleimung",
+			"filtration": "Filtrierung",
+			"relocation": "Umlagerung",
+			"privateConsumption": "Eigenverbrauch",
+			"shrinkage": "Schwund",
+			"decanting": "Abstich",
+
+			"wineAddition": "Beifüllung",
+			"blending": "Verschnitt",
+
+			"bottling": "Abfüllung",
+			"accountClosure": "Kontoabschluss",
+
+
 			"enrichment": "Anreicherung",
 			"dealcoholization": "Entalkoholisierung",
 			"alcoholization": "Alkoholisierung",
@@ -250,13 +340,9 @@
 			"deacidification": "Entsäuerung",
 			"substanceAdd": "Stoffzugabe",
 			"sweetening": "Süßung",
-			"wineAddition": "Wein-Hinzugabe",
-			"wineWithdrawal": "Wein-Entnahme",
-			"blending": "Verschneidung",
 			"bottling": "Abfüllung",
 			"waterAddition": "Wasser-Hinzugabe",
-			"concentration": "Konzentrierung",
-			"marcLiquidation": "Tresterverwertung"
+			"concentration": "Konzentrierung"
 		},
 		"views": {
 			"edit": {
@@ -264,9 +350,6 @@
 				"editTitle": "Vorgang bearbeiten"
 			},
 			"harvestEdit": {
-				"createTitle": "Erntemeldung",
-				"editTitle": "Erntemeldung bearbeiten",
-				"details": "Details",
 				"backToWineSelect": "Zurück zur Auswahl"
 			}
 		},
@@ -285,7 +368,8 @@
 			"mustWeight": "Mostgewicht",
 			"name": "Bezeichnung",
 			"number": "Wein-Nr.",
-			"referenceNumber": "AP-Nummer"
+			"referenceNumber": "AP-Nummer",
+			"volume": "Bestand"
 		},
 		"actions": {
 			"create": {
@@ -406,22 +490,20 @@
 	"substance": {
 		"fields": {
 			"type": "Stoff-Typ",
-			"unit": "Einheit (z.B. g oder l)",
+			"unit": "Einheit",
 			"note": "Notizen"
 		},
 		"actions": {
-			"add": {
-				"modaltitle": "Stoff anlegen"
-			},
-			"edit": {
-				"modaltitle": "Stoff bearbeiten"
-			},
 			"create": {
 				"main": "Stoff",
 				"sub": "anlegen"
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Stoff anlegen",
+				"editTitle": "Stoff bearbeiten"
+			},
 			"gallery": {
 				"substance": "Stofftyp",
 				"chstamp": "Zuletzt geändert",
@@ -434,7 +516,7 @@
 			"concentratedGrapeMust": "Konzentrierter Traubenmost",
 			"alcohol": "Alkohol",
 			"tarticAcid": "Weinsäure",
-			"malicAcid": "Äpfelsäure",
+			"malicAcid": "Apfelsäure",
 			"lacticAcid": "Milchsäure",
 			"potassiumHydrogenCarbonate": "Kaliumhydrogencarbonat",
 			"carbonateLime": "Kohlensaurer Kalk",
@@ -459,40 +541,36 @@
 			"ascorbicAcid": "Ascorbinsäure",
 			"vitaminB1": "Vitamin B1"
 		},
+		"dialogs": {
+			"delete": "Willst Du die Substanz wirklich löschen?"
+		},
 		"toasts": {
-			"edit": "Stoff bearbeitet"
+			"created": "Stoff erstellt.",
+			"changed": "Stoff bearbeitet.",
+			"deleted": "Stoff gelöscht."
 		}
 	},
-	"substanceLogs": {
+	"substanceLog": {
 		"fields": {
-			"substance_id": "Stoff",
-			"value": "Menge",
-			"unit": "Einheit (z.B. g oder l)",
+			"substance": "Stoff",
+			"quantity": "Menge",
 			"note": "Notizen"
 		},
-		"actions": {
-			"add": {
-				"modaltitle": "Stoffzugang erfassen"
+		"views": {
+			"editAddition": {
+				"createTitle": "Stoffzugang erfassen",
+				"editTitle": "Stoffzugang bearbeiten"
 			},
-			"drop": {
-				"modaltitle": "Stoffabgang erfassen"
-			},
-			"edit": {
-				"modaltitle": "Stoffzu-/abgang bearbeiten"
+			"editWithdrawal": {
+				"createTitle": "Stoffabgang erfassen",
+				"editTitle": "Stoffabgang bearbeiten"
 			}
 		},
 		"toasts": {
-			"add": "Stoffzugang erfasst",
-			"drop": "Stoffabgang erfasst",
-			"edit": "Stoffzu-/abgang bearbeitet"
-		}
-	},
-	"cellarActionLog": {
-		"fields": {
-			"type": "Vorgang",
-			"substance": "Stoff",
-			"value": "Wert",
-			"bookingStamp": "Buchungstag"
+			"createdAddition": "Stoffzugang erfasst.",
+			"changedAddition": "Stoffzugang bearbeitet.",
+			"createdWithdrawal": "Stoffabgang erfasst.",
+			"changedWithdrawal": "Stoffabgang bearbeitet."
 		}
 	},
 	"fieldset_general_title": "Allgemeines",

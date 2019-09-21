@@ -189,19 +189,52 @@
 	"cancel": "Cancel",
 	"cellarAction": {
 		"fields": {
-			"wine": {
-				"label": "Wine",
-				"placeholder": "Search wine"
-			},
+			"additionVolume": "Addition amount",
 			"barrel": {
 				"label": "Barrel",
 				"placeholder": "Search barrel"
 			},
+			"bookingStamp": {
+				"label": "Buchungstag",
+				"placeholder": "MM/dd/YYYY"
+			},
+			"clarifyingOnly": "Show only clarifying barrels",
+			"filtrationPurpose": {
+				"label": "Filtration residues purpose",
+				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
+			},
+			"lossRelocation": "Loss relocation?",
+			"lossVolume": "Loss amount",
+			"marc": "Grape marc",
+			"note": "Note / Purpose",
+			"purpose": {
+				"label": "Purpose",
+				"placeholder": " "
+			},
+			"sludgeLiquidation": "Sludge liquidation?",
+			"sludgePurpose": {
+				"label": "Purpose",
+				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
+			},
+			"sludgeVolume": "Sludge",
+			"sourceBarrel": {
+				"label": "Source barrel",
+				"placeholder": "Search barrel"
+			},
+			"targetBarrel": {
+				"label": "Target barrel",
+				"placeholder": "Search barrel"
+			},
+			"wine": {
+				"label": "Wine",
+				"placeholder": "Search wine"
+			},
+			"withdrawalVolume": "Withdrawal amount",
+
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
 			"filllevel": "Fill level",
-			"note": "Note",
 			"substance": "Substance",
 			"method": "Method",
 			"amount": "Amount",
@@ -228,16 +261,73 @@
 				"sub": "action"
 			},
 			"edit": {
-				"main": "Edit",
+				"main": "Right",
 				"sub": "action"
 			},
 			"createHarvest": {
 				"main": "Grape harvest",
 				"sub": " "
+			},
+			"createMarcLiquidation": {
+				"main": "Grape marc",
+				"sub": "liquidation"
+			},
+			"createStaticSettling": {
+				"main": "Static",
+				"sub": "settling"
+			},
+			"createFiltration": {
+				"main": "Filtration",
+				"sub": " "
+			},
+			"createRelocation": {
+				"main": "Relocation",
+				"sub": " "
+			},
+			"createDecanting": {
+				"main": "Decanting",
+				"sub": " "
+			},
+			"createPrivateConsumption": {
+				"main": "Private",
+				"sub": "consumption"
+			},
+			"createShrinkage": {
+				"main": "Log",
+				"sub": "shrinkage"
+			},
+
+			"createWineAddition": {
+				"main": "Wine",
+				"sub": "addition"
+			},
+
+			"createBarrelLog": {
+				"main": "Add target",
+				"sub": " "
+			},
+			"createBarrelAddition": {
+				"main": "Add target",
+				"sub": " "
 			}
 		},
 		"types": {
 			"harvest": "Grape harvest",
+			"marcLiquidation": "Marc liquidation",
+			"staticSettling": "Static settling",
+			"filtration": "Filtration",
+			"relocation": "Relocation",
+			"privateConsumption": "Private consumption",
+			"shrinkage": "Shrinkage",
+
+			"decanting": "Decanting",
+			"blending": "Blending",
+
+			"bottling": "Bottling",
+			"accountClosure": "Account closure",
+
+			"wineAddition": "Wine addition",
+
 			"enrichment": "Enrichment",
 			"dealcoholization": "Dealcoholization",
 			"alcoholization": "Alcoholization",
@@ -245,13 +335,8 @@
 			"deacidification": "Deacidification",
 			"substanceAdd": "Substance added",
 			"sweetening": "Sweetening",
-			"wineAddition": "Wine addition",
-			"wineWithdrawal": "Withdrawal",
-			"blending": "Blending",
-			"bottling": "Bottling",
 			"waterAddition": "Water addition",
-			"concentration": "Concentration",
-			"marcLiquidation": "Marc liquidation"
+			"concentration": "Concentration"
 		},
 		"views": {
 			"edit": {
@@ -259,9 +344,6 @@
 				"editTitle": "Edit action"
 			},
 			"harvestEdit": {
-				"createTitle": "Grape harvest",
-				"editTitle": "Edit grape harvest",
-				"details": "Details",
 				"backToWineSelect": "Select wine"
 			}
 		},
@@ -280,7 +362,8 @@
 			"mustWeight": "Must weight",
 			"name": "Title",
 			"number": "Wine no.",
-			"referenceNumber": "Ref.-no."
+			"referenceNumber": "Ref.-no.",
+			"volume": "Stock"
 		},
 		"actions": {
 			"create": {
@@ -401,22 +484,20 @@
 	"substance": {
 		"fields": {
 			"type": "Substance type",
-			"unit": "Unit (e.g. g or l)",
+			"unit": "Unit",
 			"note": "Notes"
 		},
 		"actions": {
-			"add": {
-				"modaltitle": "Add substance"
-			},
-			"edit": {
-				"modaltitle": "Edit substance"
-			},
 			"create": {
 				"main": "Add",
 				"sub": "substance"
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Add substance",
+				"editTitle": "Edit substance"
+			},
 			"gallery": {
 				"substance": "Substance",
 				"chstamp": "Last change",
@@ -454,40 +535,36 @@
 			"ascorbicAcid": "Ascorbic acid",
 			"vitaminB1": "Vitamin B1"
 		},
+		"dialogs": {
+			"delete": "Do you really want to delete this substance?"
+		},
 		"toasts": {
-			"edit": "Edit substance"
+			"created": "Substance created.",
+			"changed": "Substance changed.",
+			"deleted": "Substance deleted."
 		}
 	},
-	"substanceLogs": {
+	"substanceLog": {
 		"fields": {
-			"substance_id": "Substance",
-			"value": "Amount",
-			"unit": "Unit (e.g. g or l)",
+			"substance": "Substance",
+			"quantity": "Amount",
 			"note": "Notes"
 		},
-		"actions": {
-			"add": {
-				"modaltitle": "Substance receipt"
+		"views": {
+			"editAddition": {
+				"createTitle": "Substance receipt",
+				"editTitle": "Edit substance receipt"
 			},
-			"drop": {
-				"modaltitle": "Substance dispatch"
-			},
-			"edit": {
-				"modaltitle": "Edit substance"
+			"editWithdrawal": {
+				"createTitle": "Substance dispatch",
+				"editTitle": "Edit substance dispatch"
 			}
 		},
 		"toasts": {
-			"add": "Added substance",
-			"drop": "Dropped substance",
-			"edit": "Saved substance receipt or dispatch"
-		}
-	},
-	"cellarActionLog": {
-		"fields": {
-			"type": "Action",
-			"substance": "Substance",
-			"value": "Value",
-			"bookingStamp": "Entry Date"
+			"createdAddition": "Added substance receipt.",
+			"changedAddition": "Changed substance receipt.",
+			"createdWithdrawal": "Added substance dispatch.",
+			"changedWithdrawal": "Changed substance dispatch."
 		}
 	},
 	"fieldset_general_title": "General",
