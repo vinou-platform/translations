@@ -264,6 +264,7 @@
 				"main": "Right",
 				"sub": "action"
 			},
+
 			"createHarvest": {
 				"main": "Grape harvest",
 				"sub": " "
@@ -272,6 +273,7 @@
 				"main": "Grape marc",
 				"sub": "liquidation"
 			},
+
 			"createStaticSettling": {
 				"main": "Static",
 				"sub": "settling"
@@ -296,47 +298,93 @@
 				"main": "Log",
 				"sub": "shrinkage"
 			},
+			"createConcentration": {
+				"main": "Concentration",
+				"sub": " "
+			},
+			"createDealcoholization": {
+				"main": "Dealcoholization",
+				"sub": " "
+			},
 
 			"createWineAddition": {
 				"main": "Wine",
 				"sub": "addition"
 			},
-
-			"createBarrelLog": {
-				"main": "Add target",
+			"createBlending": {
+				"main": "Blending",
 				"sub": " "
 			},
-			"createBarrelAddition": {
-				"main": "Add target",
+
+			"createSubstanceAdd": {
+				"main": "Add",
+				"sub": "substance"
+			},
+			"createEnrichment": {
+				"main": "Enrichment",
 				"sub": " "
+			},
+			"createSweetening": {
+				"main": "Sweetening",
+				"sub": " "
+			},
+			"createAcidifikation": {
+				"main": "Acidifikation",
+				"sub": " "
+			},
+			"createDeacidifikation": {
+				"main": "Deacidifikation",
+				"sub": " "
+			},
+			"createAlcoholization": {
+				"main": "Alcoholization",
+				"sub": " "
+			},
+			"createWaterAddition": {
+				"main": "Water",
+				"sub": "addition"
+			},
+
+			"createBottling": {
+				"main": "Bottling",
+				"sub": " "
+			},
+			"createAccountClosure": {
+				"main": "Close account",
+				"sub": " "
+			},
+
+			"addTargetBarrel": {
+				"main": "Add target",
+				"sub": "barrel"
 			}
 		},
 		"types": {
 			"harvest": "Grape harvest",
 			"marcLiquidation": "Marc liquidation",
+
+			"relocation": "Relocation",
+			"decanting": "Decanting",
 			"staticSettling": "Static settling",
 			"filtration": "Filtration",
-			"relocation": "Relocation",
 			"privateConsumption": "Private consumption",
 			"shrinkage": "Shrinkage",
-
-			"decanting": "Decanting",
-			"blending": "Blending",
-
-			"bottling": "Bottling",
-			"accountClosure": "Account closure",
+			"concentration": "Concentration",
+			"dealcoholization": "Dealcoholization",
 
 			"wineAddition": "Wine addition",
+			"blending": "Blending",
 
+			"substanceAdd": "Substance added",
 			"enrichment": "Enrichment",
-			"dealcoholization": "Dealcoholization",
-			"alcoholization": "Alcoholization",
+			"sweetening": "Sweetening",
 			"acidification": "Acidification",
 			"deacidification": "Deacidification",
-			"substanceAdd": "Substance added",
-			"sweetening": "Sweetening",
+			"alcoholization": "Alcoholization",
 			"waterAddition": "Water addition",
-			"concentration": "Concentration"
+
+			"bottling": "Bottling",
+			"accountClosure": "Account closure"
 		},
 		"views": {
 			"edit": {
@@ -469,13 +517,12 @@
 	},
 	"measurement": {
 		"fields": {
-
+			"currentValue": "Current value",
+			"targetValue": "Target value"
 		},
 		"types": {
 			"temperature": "Temperature",
-			"weight": "Weight",
-			"fillLevel": "Fill level",
-			"acid": "Acid",
+			"acidity": "Acid",
 			"residualSugar": "Residual sugar",
 			"alcohol": "Contained alcohol",
 			"density": "Density"

@@ -277,6 +277,7 @@
 				"main": "Trester",
 				"sub": "Verwertung"
 			},
+
 			"createStaticSettling": {
 				"main": "Entschleimung",
 				"sub": " "
@@ -301,48 +302,93 @@
 				"main": "Schwund",
 				"sub": "erfassen"
 			},
+			"createConcentration": {
+				"main": "Konzentrierung",
+				"sub": " "
+			},
+			"createDealcoholization": {
+				"main": "Entalkoholisierung",
+				"sub": " "
+			},
 
 			"createWineAddition": {
 				"main": "Beifüllung",
 				"sub": " "
 			},
-
-			"createBarrelLog": {
-				"main": "Umfüllung",
-				"sub": "hinzufügen"
+			"createBlending": {
+				"main": "Verschnitt",
+				"sub": " "
 			},
-			"createBarrelAddition": {
-				"main": "Eingangsbehälter",
+
+			"createSubstanceAdd": {
+				"main": "Stoffzugabe",
+				"sub": " "
+			},
+			"createEnrichment": {
+				"main": "Anreicherung",
+				"sub": " "
+			},
+			"createSweetening": {
+				"main": "Süßung",
+				"sub": " "
+			},
+			"createAcidifikation": {
+				"main": "Säuerung",
+				"sub": " "
+			},
+			"createDeacidifikation": {
+				"main": "Entsäuerung",
+				"sub": " "
+			},
+			"createAlcoholization": {
+				"main": "Alkoholisierung",
+				"sub": " "
+			},
+			"createWaterAddition": {
+				"main": "Wasser",
+				"sub": "Hinzugabe"
+			},
+
+			"createBottling": {
+				"main": "Abfüllung",
+				"sub": " "
+			},
+			"createAccountClosure": {
+				"main": "Kontoabschluss",
+				"sub": " "
+			},
+
+			"addTargetBarrel": {
+				"main": "Zielbehälter",
 				"sub": "hinzufügen"
 			}
 		},
 		"types": {
 			"harvest": "Ernte",
 			"marcLiquidation": "Tresterverwertung",
+
+			"relocation": "Umlagerung",
+			"decanting": "Abstich",
 			"staticSettling": "Entschleimung",
 			"filtration": "Filtrierung",
-			"relocation": "Umlagerung",
 			"privateConsumption": "Eigenverbrauch",
 			"shrinkage": "Schwund",
-			"decanting": "Abstich",
+			"concentration": "Konzentrierung",
+			"dealcoholization": "Entalkoholisierung",
 
 			"wineAddition": "Beifüllung",
 			"blending": "Verschnitt",
 
-			"bottling": "Abfüllung",
-			"accountClosure": "Kontoabschluss",
-
-
+			"substanceAdd": "Stoffzugabe",
 			"enrichment": "Anreicherung",
-			"dealcoholization": "Entalkoholisierung",
-			"alcoholization": "Alkoholisierung",
+			"sweetening": "Süßung",
 			"acidification": "Säuerung",
 			"deacidification": "Entsäuerung",
-			"substanceAdd": "Stoffzugabe",
-			"sweetening": "Süßung",
+			"alcoholization": "Alkoholisierung",
+			"waterAddition": "Wasser Hinzugabe",
+
 			"bottling": "Abfüllung",
-			"waterAddition": "Wasser-Hinzugabe",
-			"concentration": "Konzentrierung"
+			"accountClosure": "Kontoabschluss"
 		},
 		"views": {
 			"edit": {
@@ -475,13 +521,12 @@
 	},
 	"measurement": {
 		"fields": {
-
+			"currentValue": "Aktueller Wert",
+			"targetValue": "Zielwert"
 		},
 		"types": {
 			"temperature": "Temperatur",
-			"weight": "Gewicht",
-			"fillLevel": "Füllstand",
-			"acid": "Säuregehalt",
+			"acidity": "Säuregehalt",
 			"residualSugar": "Restsüße",
 			"alcohol": "Alkoholgehalt",
 			"density": "Dichte"
