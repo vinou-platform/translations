@@ -77,7 +77,19 @@
 			"f": "Mrs.",
 			"d": "Divers"
 		},
-		"filter": {
+		"filters": {
+			"sortBy": {
+				"label": "Sort view by:"
+			},
+			"sortDirection": {
+				"label": "Sort direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"groupBy": {
+				"label": "Group view by:",
+				"none": "No grouping"
+			},
 			"select": {
 				"all": "Choose all",
 				"none": "Clear selection"
@@ -175,6 +187,434 @@
 	"no": "No",
 	"ok": "OK",
 	"cancel": "Cancel",
+	"cellarAction": {
+		"fields": {
+			"additionVolume": "Addition amount",
+			"barrel": {
+				"label": "Barrel",
+				"placeholder": "Search barrel"
+			},
+			"bookingStamp": {
+				"label": "Buchungstag",
+				"placeholder": "MM/dd/YYYY"
+			},
+			"clarifyingOnly": "Show only clarifying barrels",
+			"filtrationPurpose": {
+				"label": "Filtration residues purpose",
+				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
+			},
+			"lossRelocation": "Loss relocation?",
+			"lossVolume": "Loss amount",
+			"marc": "Grape marc",
+			"note": "Note / Purpose",
+			"purpose": {
+				"label": "Purpose",
+				"placeholder": " "
+			},
+			"sludgeLiquidation": "Sludge liquidation?",
+			"sludgePurpose": {
+				"label": "Purpose",
+				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
+			},
+			"sludgeVolume": "Sludge",
+			"sourceBarrel": {
+				"label": "Source barrel",
+				"placeholder": "Search barrel"
+			},
+			"targetBarrel": {
+				"label": "Target barrel",
+				"placeholder": "Search barrel"
+			},
+			"wine": {
+				"label": "Wine",
+				"placeholder": "Search wine"
+			},
+			"withdrawalVolume": "Withdrawal amount",
+
+			"barrels": "Barrels",
+			"addition": "Addition",
+			"withdrawal": "Withdrawal",
+			"filllevel": "Fill level",
+			"substance": "Substance",
+			"method": "Method",
+			"amount": "Amount",
+			"baseAmount": "Base amount",
+			"increasedAmount": "Increased amount",
+			"total": "Total",
+			"before": "Before",
+			"after": "After",
+			"description": "Description/Wine name",
+			"previousBarrel": "Previous barrel",
+			"targetBarrel": "Target barrel",
+			"blendedWith": "Blended with",
+			"blendingWithdrawal": "Blending withdrawal",
+			"alcohol": "Alcohol",
+			"residualSugar": "Residual sugar",
+			"acidity": "Acidity",
+			"dismount": "Dismount",
+			"usage": "Usage",
+			"temperature": "Temperature"
+		},
+		"actions": {
+			"create": {
+				"main": "Log new",
+				"sub": "action"
+			},
+			"edit": {
+				"main": "Right",
+				"sub": "action"
+			},
+
+			"createHarvest": {
+				"main": "Grape harvest",
+				"sub": " "
+			},
+			"createMarcLiquidation": {
+				"main": "Grape marc",
+				"sub": "liquidation"
+			},
+
+			"createStaticSettling": {
+				"main": "Static",
+				"sub": "settling"
+			},
+			"createFiltration": {
+				"main": "Filtration",
+				"sub": " "
+			},
+			"createRelocation": {
+				"main": "Relocation",
+				"sub": " "
+			},
+			"createDecanting": {
+				"main": "Decanting",
+				"sub": " "
+			},
+			"createPrivateConsumption": {
+				"main": "Private",
+				"sub": "consumption"
+			},
+			"createShrinkage": {
+				"main": "Log",
+				"sub": "shrinkage"
+			},
+			"createConcentration": {
+				"main": "Concentration",
+				"sub": " "
+			},
+			"createDealcoholization": {
+				"main": "Dealcoholization",
+				"sub": " "
+			},
+
+			"createWineAddition": {
+				"main": "Wine",
+				"sub": "addition"
+			},
+			"createBlending": {
+				"main": "Blending",
+				"sub": " "
+			},
+
+			"createSubstanceAdd": {
+				"main": "Add",
+				"sub": "substance"
+			},
+			"createEnrichment": {
+				"main": "Enrichment",
+				"sub": " "
+			},
+			"createSweetening": {
+				"main": "Sweetening",
+				"sub": " "
+			},
+			"createAcidifikation": {
+				"main": "Acidifikation",
+				"sub": " "
+			},
+			"createDeacidifikation": {
+				"main": "Deacidifikation",
+				"sub": " "
+			},
+			"createAlcoholization": {
+				"main": "Alcoholization",
+				"sub": " "
+			},
+			"createWaterAddition": {
+				"main": "Water",
+				"sub": "addition"
+			},
+
+			"createBottling": {
+				"main": "Bottling",
+				"sub": " "
+			},
+			"createAccountClosure": {
+				"main": "Close account",
+				"sub": " "
+			},
+
+			"addTargetBarrel": {
+				"main": "Add target",
+				"sub": "barrel"
+			}
+		},
+		"types": {
+			"harvest": "Grape harvest",
+			"marcLiquidation": "Marc liquidation",
+
+			"relocation": "Relocation",
+			"decanting": "Decanting",
+			"staticSettling": "Static settling",
+			"filtration": "Filtration",
+			"privateConsumption": "Private consumption",
+			"shrinkage": "Shrinkage",
+			"concentration": "Concentration",
+			"dealcoholization": "Dealcoholization",
+
+			"wineAddition": "Wine addition",
+			"blending": "Blending",
+
+			"substanceAdd": "Substance added",
+			"enrichment": "Enrichment",
+			"sweetening": "Sweetening",
+			"acidification": "Acidification",
+			"deacidification": "Deacidification",
+			"alcoholization": "Alcoholization",
+			"waterAddition": "Water addition",
+
+			"bottling": "Bottling",
+			"accountClosure": "Account closure"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Log new action",
+				"editTitle": "Edit action"
+			},
+			"harvestEdit": {
+				"backToWineSelect": "Select wine"
+			}
+		},
+		"toasts": {
+			"created": "Action created.",
+			"changed": "Action changed."
+		}
+	},
+	"cellarWine": {
+		"fields": {
+			"barrelNumbers": "Barrels",
+			"chstamp": "Last changes",
+			"inputWeight": "Input weight",
+			"inputVolume": "Input volume",
+			"mustAcidity": "Must acidity",
+			"mustWeight": "Must weight",
+			"name": "Title",
+			"number": "Wine no.",
+			"referenceNumber": "Ref.-no.",
+			"volume": "Stock"
+		},
+		"actions": {
+			"create": {
+				"title": "Create new wine",
+				"main": "Create",
+				"sub": "new wine"
+			},
+			"export": {
+				"cellarBook": "Cellar book",
+				"barrelList": "Barrel list",
+				"grapeMarcLogs": "Grape marc log",
+				"substanceLogs": "Substance log"
+			}
+		},
+		"filters": {
+			"label": "Filter view",
+			"groupby": {
+				"label": "Group view by:"
+			},
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"showeditor": {
+				"label": "Show editor"
+			}
+		},
+		"types": {
+			"readyforfilling": "Ready for Filling"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Create new wine",
+				"editTitle": "Edit wine"
+			},
+			"gallery": {
+				"currentState": "Current state"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this wine?"
+		},
+		"toasts": {
+			"created": "Wine created.",
+			"changed": "Wine changed.",
+			"duplicated": "Wine duplicated.",
+			"deleted": "Wine deleted."
+		}
+	},
+	"barrel": {
+		"fields": {
+			"number": "Barrel-no.",
+			"label": "Label",
+			"type": "Type/Material",
+			"capacity": "Capacity in liter",
+			"location": "Location",
+			"manufacturer": "Manufacturer",
+			"clarifying": "Barrel for clarification?",
+			"note": "Notices"
+		},
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "barrel"
+			}
+		},
+		"types": {
+			"metal": "Metal",
+			"wood": "Wood",
+			"plastic": "Plastic/Composite",
+			"barrique": "Barrique",
+			"clay": "Clay",
+			"beton": "Beton",
+			"glas": "Glas"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Create new barrel",
+				"editTitle": "Edit barrel"
+			},
+			"gallery": {
+				"empty": "empty",
+				"barrelnumber": "Barrel-no.",
+				"label": "Label",
+				"chstamp": "Last changes",
+				"filllevel": "Fill level",
+				"currentState": "Current state",
+				"filters": {
+					"search": {
+						"placeholder": "E.g.: Barrel-no., Location, Manufacturer"
+					},
+					"hideEmptyBarrels": "Hide empty barrels"
+				}
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this barrel?"
+		},
+		"toasts": {
+			"created": "Barrel created.",
+			"changed": "Barrel changed.",
+			"duplicated": "Barrel duplicated.",
+			"deleted": "Barrel deleted."
+		}
+	},
+	"measurement": {
+		"fields": {
+			"currentValue": "Current value",
+			"targetValue": "Target value"
+		},
+		"types": {
+			"temperature": "Temperature",
+			"acidity": "Acid",
+			"residualSugar": "Residual sugar",
+			"alcohol": "Contained alcohol",
+			"density": "Density"
+		}
+	},
+	"substance": {
+		"fields": {
+			"type": "Substance type",
+			"unit": "Unit",
+			"note": "Notes"
+		},
+		"actions": {
+			"create": {
+				"main": "Add",
+				"sub": "substance"
+			}
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Add substance",
+				"editTitle": "Edit substance"
+			},
+			"gallery": {
+				"substance": "Substance",
+				"chstamp": "Last change",
+				"stock": "Stock"
+			}
+		},
+		"types": {
+			"saccharose": "Saccharose",
+			"rectifiedConcentratedGrapeMust": "Rectified concentrated grapemust",
+			"concentratedGrapeMust": "Concentrated grapemust",
+			"alcohol": "Alcohol",
+			"tarticAcid": "Tartic acid",
+			"malicAcid": "Malic Acid",
+			"lacticAcid": "Lactic Acid",
+			"potassiumHydrogenCarbonate": "Potassium hydrogen carbonate",
+			"carbonateLime": "Carbonate lime",
+			"doubleSalt": "Double salt",
+			"dl-tarticAcid": "DL wine acid",
+			"potassiumSorbate": "Potassium sorbate",
+			"sorbicAcid": "Sorbic acid",
+			"oakChips": "Oak chips",
+			"dimethylDicarbonate": "DMDC dimethyl dicarbonate",
+			"activatedCarbon": "Activated carbon",
+			"sulfurDioxide": "Sulfur dioxide",
+			"potassiumFerrocyanide": "Potassium ferro cyanide",
+			"casein": "Casein",
+			"lysozyme": "Lysozyme",
+			"albumin": "Albumin",
+			"fishProduct": "Fish product",
+			"glutenContainingCerealProduct": "Gluten containing cereal product",
+			"bentonite": "Bentonite",
+			"gelatin": "Gelatin",
+			"tannin": "Tannin",
+			"carboneDioxide": "Carbone dioxide",
+			"ascorbicAcid": "Ascorbic acid",
+			"vitaminB1": "Vitamin B1"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this substance?"
+		},
+		"toasts": {
+			"created": "Substance created.",
+			"changed": "Substance changed.",
+			"deleted": "Substance deleted."
+		}
+	},
+	"substanceLog": {
+		"fields": {
+			"substance": "Substance",
+			"quantity": "Amount",
+			"note": "Notes"
+		},
+		"views": {
+			"editAddition": {
+				"createTitle": "Substance receipt",
+				"editTitle": "Edit substance receipt"
+			},
+			"editWithdrawal": {
+				"createTitle": "Substance dispatch",
+				"editTitle": "Edit substance dispatch"
+			}
+		},
+		"toasts": {
+			"createdAddition": "Added substance receipt.",
+			"changedAddition": "Changed substance receipt.",
+			"createdWithdrawal": "Added substance dispatch.",
+			"changedWithdrawal": "Changed substance dispatch."
+		}
+	},
 	"fieldset_general_title": "General",
 	"fieldset_region_title": "Regional",
 	"fieldset_grapetype_title": "Grapetype",

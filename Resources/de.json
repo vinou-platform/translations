@@ -77,7 +77,19 @@
 			"f": "Frau",
 			"d": "Divers"
 		},
-		"filter": {
+		"filters": {
+			"sortBy": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortDirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"groupBy": {
+				"label": "Ansicht gruppieren nach:",
+				"none": "Keine Gruppierung"
+			},
 			"select": {
 				"all": "Alle auswählen",
 				"none": "Auswahl aufheben"
@@ -112,20 +124,20 @@
 	"fr": "Frankreich",
 	"fileupload": "Datei auswählen",
 	"delete_image": "Bild löschen",
-	"delete_image_secure": "Möchten Sie dieses Bild wirklich löschen?",
-	"delete_template_secure": "Möchten Sie ihre Vorlage für Expertisen wirklich löschen?",
+	"delete_image_secure": "Möchtest du dieses Bild wirklich löschen?",
+	"delete_template_secure": "Möchtest du ihre Vorlage für Expertisen wirklich löschen?",
 	"changepw": "Passwort ändern",
 	"wineregions_none": "keine Angabe",
-	"wines_modal_delete": "Möchten Sie diesen Wein wirklich löschen?",
-	"wineries_modal_delete": "Möchten Sie dieses Weingut wirklich löschen?",
-	"category_modal_delete": "Möchten Sie diese Kategorie wirklich löschen?",
-	"contacts_modal_delete":"Möchten Sie diesen Kontakt wirklich löschen?",
-	"customers_modal_delete": "Möchten Sie diesen Kunden wirklich löschen?",
+	"wines_modal_delete": "Möchtest du diesen Wein wirklich löschen?",
+	"wineries_modal_delete": "Möchtest du dieses Weingut wirklich löschen?",
+	"category_modal_delete": "Möchtest du diese Kategorie wirklich löschen?",
+	"contacts_modal_delete":"Möchtest du diesen Kontakt wirklich löschen?",
+	"customers_modal_delete": "Möchtest du diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
-	"users_modal_delete": "Möchten Sie diesen Benutzer wirklich löschen?",
-	"token_modal_delete": "Möchten Sie diesen Token wirklich löschen?",
+	"users_modal_delete": "Möchtest du diesen Benutzer wirklich löschen?",
+	"token_modal_delete": "Möchtest du diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
-	"address_modal_delete": "Möchten Sie diese Adresse wirklich löschen?",
+	"address_modal_delete": "Möchtest du diese Adresse wirklich löschen?",
 	"dashboard": {
 		"actions": {
 			"create": {
@@ -141,19 +153,19 @@
 			"quickactions": "Quickactions"
 		}
 	},
-	"orders_modal_cancel": "Möchten Sie diese Bestellung wirklich stornieren?",
-	"orders_modal_create": "Sie erfassen eine Bestellung was möchten sie tun?",
+	"orders_modal_cancel": "Möchtest du diese Bestellung wirklich stornieren?",
+	"orders_modal_create": "Du erfasst eine Bestellung, was möchtest du tun?",
 	"orders_modal_create_withinvoice": "Erfassen und Rechnung und Lieferschein generieren",
 	"orders_modal_create_only": "Nur erfassen",
-	"orders_modal_sent": "Möchten sie die Bestellung als Versendet markieren?",
-	"orders_position_delete": "Möchten Sie diese Position wirklich löschen?",
-	"orders_position_update": "Möchten Sie diese Position wirklich anpassen?",
-	"orders_position_add": "Möchten Sie diese Position wirklich hinzufügen?",
-	"orders_modal_invoice_create": "Möchten Sie Rechnung und Lieferschein für den Versand generieren?",
+	"orders_modal_sent": "Möchtest du die Bestellung als Versendet markieren?",
+	"orders_position_delete": "Möchtest du diese Position wirklich löschen?",
+	"orders_position_update": "Möchtest du diese Position wirklich anpassen?",
+	"orders_position_add": "Möchtest du diese Position wirklich hinzufügen?",
+	"orders_modal_invoice_create": "Möchtest du Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
 	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?",
-	"order_wrong_quantity": "Bitte geben sie für die Anzahl eine Zahl größer als 0 ein",
+	"order_wrong_quantity": "Bitte gib für die Anzahl eine Zahl größer als 0 ein",
 	"orders_rebate_general": "Pauschal-Rabatt (Brutto)",
 	"rebates": {
 		"actions": {
@@ -180,6 +192,433 @@
 	"no": "Nein",
 	"ok": "OK",
 	"cancel": "Abbrechen",
+	"cellarAction": {
+		"fields": {
+			"additionVolume": "Füllmenge",
+			"barrel": {
+				"label": "Behälter",
+				"placeholder": "Behälter suchen"
+			},
+			"bookingStamp": {
+				"label": "Buchungstag",
+				"placeholder": "dd.MM.YYYY"
+			},
+			"clarifyingOnly": "Zeige nur Behälter zur Klärung",
+			"filtrationPurpose": {
+				"label": "Feststoffverwendung",
+				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
+			},
+			"lossRelocation": "Umfüllung der Reststoffe?",
+			"lossVolume": "Verlust",
+			"marc": "Trester",
+			"note": "Anmerkung / Verwendung",
+			"purpose": {
+				"label": "Verwendung",
+				"placeholder": " "
+			},
+			"sludgePurpose": {
+				"label": "Trubverwendung",
+				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
+			},
+			"sludgeRelocation": "Trubumfüllung?",
+			"sludgeVolume": "Trub",
+			"sourceBarrel": {
+				"label": "Quellbehälter",
+				"placeholder": "Behälter suchen"
+			},
+			"targetBarrel": {
+				"label": "Zielbehälter",
+				"placeholder": "Behälter suchen"
+			},
+			"wine": {
+				"label": "Weinkonto",
+				"placeholder": "Weinkonto suchen"
+			},
+			"withdrawalVolume": "Entnahme",
+
+			"barrels": "Behälter",
+			"addition": "Zugang",
+			"withdrawal": "Abgang",
+			"filllevel": "Füllhöhe",
+			"substance": "Stoff",
+			"method": "Verfahren",
+			"amount": "Menge",
+			"baseAmount": "Erhöht von",
+			"increasedAmount": "Erhöht auf",
+			"total": "Gesamt",
+			"before": "vor",
+			"after": "nach",
+			"description": "Beschreibung/Wein Name",
+			"previousBarrel": "Ursprungs-Behälter",
+			"blendedWith": "Verschnitten mit",
+			"blendingWithdrawal": "Verschnitt-Abgabe",
+			"alcohol": "Alkohol",
+			"residualSugar": "Restzucker",
+			"acidity": "Säure",
+			"dismount": "Abgabe",
+			"usage": "Verwendung",
+			"temperature": "Temperatur"
+		},
+		"actions": {
+			"create": {
+				"main": "Neuen Vorgang",
+				"sub": "erfassen"
+			},
+			"edit": {
+				"main": "Eintrag",
+				"sub": "korrigieren"
+			},
+
+			"createHarvest": {
+				"main": "Ernte",
+				"sub": " "
+			},
+			"createMarcLiquidation": {
+				"main": "Trester",
+				"sub": "Verwertung"
+			},
+
+			"createStaticSettling": {
+				"main": "Entschleimung",
+				"sub": " "
+			},
+			"createFiltration": {
+				"main": "Filtrierung",
+				"sub": " "
+			},
+			"createRelocation": {
+				"main": "Umlagerung",
+				"sub": " "
+			},
+			"createDecanting": {
+				"main": "Abstich",
+				"sub": " "
+			},
+			"createPrivateConsumption": {
+				"main": "Eigenverbrauch",
+				"sub": "erfassen"
+			},
+			"createShrinkage": {
+				"main": "Schwund",
+				"sub": "erfassen"
+			},
+			"createConcentration": {
+				"main": "Konzentrierung",
+				"sub": " "
+			},
+			"createDealcoholization": {
+				"main": "Entalkoholisierung",
+				"sub": " "
+			},
+
+			"createWineAddition": {
+				"main": "Beifüllung",
+				"sub": " "
+			},
+			"createBlending": {
+				"main": "Verschnitt",
+				"sub": " "
+			},
+
+			"createSubstanceAdd": {
+				"main": "Stoffzugabe",
+				"sub": " "
+			},
+			"createEnrichment": {
+				"main": "Anreicherung",
+				"sub": " "
+			},
+			"createSweetening": {
+				"main": "Süßung",
+				"sub": " "
+			},
+			"createAcidifikation": {
+				"main": "Säuerung",
+				"sub": " "
+			},
+			"createDeacidifikation": {
+				"main": "Entsäuerung",
+				"sub": " "
+			},
+			"createAlcoholization": {
+				"main": "Alkoholisierung",
+				"sub": " "
+			},
+			"createWaterAddition": {
+				"main": "Wasser",
+				"sub": "Hinzugabe"
+			},
+
+			"createBottling": {
+				"main": "Abfüllung",
+				"sub": " "
+			},
+			"createAccountClosure": {
+				"main": "Kontoabschluss",
+				"sub": " "
+			},
+
+			"addTargetBarrel": {
+				"main": "Zielbehälter",
+				"sub": "hinzufügen"
+			}
+		},
+		"types": {
+			"harvest": "Ernte",
+			"marcLiquidation": "Tresterverwertung",
+
+			"relocation": "Umlagerung",
+			"decanting": "Abstich",
+			"staticSettling": "Entschleimung",
+			"filtration": "Filtrierung",
+			"privateConsumption": "Eigenverbrauch",
+			"shrinkage": "Schwund",
+			"concentration": "Konzentrierung",
+			"dealcoholization": "Entalkoholisierung",
+
+			"wineAddition": "Beifüllung",
+			"blending": "Verschnitt",
+
+			"substanceAdd": "Stoffzugabe",
+			"enrichment": "Anreicherung",
+			"sweetening": "Süßung",
+			"acidification": "Säuerung",
+			"deacidification": "Entsäuerung",
+			"alcoholization": "Alkoholisierung",
+			"waterAddition": "Wasser Hinzugabe",
+
+			"bottling": "Abfüllung",
+			"accountClosure": "Kontoabschluss"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Vorgang erfassen",
+				"editTitle": "Vorgang bearbeiten"
+			},
+			"harvestEdit": {
+				"backToWineSelect": "Zurück zur Auswahl"
+			}
+		},
+		"toasts": {
+			"created": "Vorgang erstellt.",
+			"changed": "Vorgang bearbeitet."
+		}
+	},
+	"cellarWine": {
+		"fields": {
+			"barrelNumbers": "Behälter",
+			"chstamp": "Zuletzt geändert",
+			"inputWeight": "Eingangsmenge",
+			"inputVolume": "Eingangsmenge",
+			"mustAcidity": "Mostsäure",
+			"mustWeight": "Mostgewicht",
+			"name": "Bezeichnung",
+			"number": "Wein-Nr.",
+			"referenceNumber": "AP-Nummer",
+			"volume": "Bestand"
+		},
+		"actions": {
+			"create": {
+				"title": "Weinkonto anlegen",
+				"main": "Neues Weinkonto",
+				"sub": "anlegen"
+			},
+			"export": {
+				"cellarBook": "Kellerbuch",
+				"barrelList": "Behälterliste",
+				"grapeMarcLogs": "Tresterbuch",
+				"substanceLogs": "Stoffliste"
+			}
+		},
+		"filters": {
+			"label": "Ansicht einschränken",
+			"groupby": {
+				"label": "Ansicht gruppieren nach:"
+			},
+			"sortby": {
+				"label": "Sortierrichtung:"
+			},
+			"showeditor": {
+				"label": "Erfasser anzeigen"
+			}
+		},
+		"types": {
+			"readyforfilling": "Bereit zur Abfüllung"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Weinkonto anlegen",
+				"editTitle": "Weinkonto bearbeiten"
+			},
+			"gallery": {
+				"currentState": "Aktueller Zustand"
+			}
+		},
+		"dialogs": {
+			"delete": "Willst Du das Weinkonto wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Weinkonto erstellt.",
+			"changed": "Weinkonto bearbeitet.",
+			"duplicated": "Weinkonto dupliziert.",
+			"deleted": "Weinkonto gelöscht."
+		}
+	},
+	"barrel": {
+		"fields": {
+			"number": "Behälter-Nr.",
+			"label": "Kennzeichnung",
+			"type": "Typ/Material",
+			"capacity": "Fassungsvermögen in Liter",
+			"location": "Aufstellort",
+			"manufacturer": "Hersteller",
+			"clarifying": "Behälter zur Klärung?",
+			"note": "Notizen"
+		},
+		"actions": {
+			"create": {
+				"main": "Behälter",
+				"sub": "anlegen"
+			}
+		},
+		"types": {
+			"metal": "Metall",
+			"wood": "Holz",
+			"plastic": "Plastik/Verbundmaterial",
+			"barrique": "Barrique",
+			"clay": "Ton",
+			"beton": "Beton",
+			"glas": "Glas"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Behälter anlegen",
+				"editTitle": "Behälter bearbeiten"
+			},
+			"gallery": {
+				"empty": "leer",
+				"barrelnumber": "Behälter-Nr.",
+				"label": "Bezeichnung",
+				"chstamp": "Zuletzt geändert",
+				"filllevel": "Füllstand",
+				"currentState": "Aktueller Zustand",
+				"filters": {
+					"search": {
+						"placeholder": "Z.B.: Behälter-Nr., Aufstellort, Hersteller"
+					},
+					"hideEmptyBarrels": "Leere Behälter ausblenden"
+				}
+			}
+		},
+		"dialogs": {
+			"delete": "Willst Du den Behälter wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Behälter erstellt.",
+			"changed": "Behälter bearbeitet.",
+			"duplicated": "Behälter dupliziert.",
+			"deleted": "Behälter gelöscht."
+		}
+	},
+	"measurement": {
+		"fields": {
+			"currentValue": "Aktueller Wert",
+			"targetValue": "Zielwert"
+		},
+		"types": {
+			"temperature": "Temperatur",
+			"acidity": "Säuregehalt",
+			"residualSugar": "Restsüße",
+			"alcohol": "Alkoholgehalt",
+			"density": "Dichte"
+		}
+	},
+	"substance": {
+		"fields": {
+			"type": "Stoff-Typ",
+			"unit": "Einheit",
+			"note": "Notizen"
+		},
+		"actions": {
+			"create": {
+				"main": "Stoff",
+				"sub": "anlegen"
+			}
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Stoff anlegen",
+				"editTitle": "Stoff bearbeiten"
+			},
+			"gallery": {
+				"substance": "Stofftyp",
+				"chstamp": "Zuletzt geändert",
+				"stock": "Vorhandene Menge"
+			}
+		},
+		"types": {
+			"saccharose": "Saccharose",
+			"rectifiedConcentratedGrapeMust": "Rektifiziertes Traubenmostkonzentrat",
+			"concentratedGrapeMust": "Konzentrierter Traubenmost",
+			"alcohol": "Alkohol",
+			"tarticAcid": "Weinsäure",
+			"malicAcid": "Apfelsäure",
+			"lacticAcid": "Milchsäure",
+			"potassiumHydrogenCarbonate": "Kaliumhydrogencarbonat",
+			"carbonateLime": "Kohlensaurer Kalk",
+			"doubleSalt": "Doppelsalz",
+			"dl-tarticAcid": "DL-Weinsäure",
+			"potassiumSorbate": "Kaliumsorbat",
+			"sorbicAcid": "Sorbinsäure",
+			"oakChips": "Eichenholz Chips",
+			"dimethylDicarbonate": "DMDC DimethylDikarbonat",
+			"activatedCarbon": "Aktivkohle",
+			"sulfurDioxide": "Schwefeldioxide",
+			"potassiumFerrocyanide": "Kaliumhexayanoferrat",
+			"casein": "Kasein",
+			"lysozyme": "Lysozym",
+			"albumin": "Albumin",
+			"fishProduct": "Fischerzeugnis",
+			"glutenContainingCerealProduct": "Glutenhaltiges Erzeugnis",
+			"bentonite": "Bentonit",
+			"gelatin": "Gelatine",
+			"tannin": "Tannine",
+			"carboneDioxide": "Kohlendioxid",
+			"ascorbicAcid": "Ascorbinsäure",
+			"vitaminB1": "Vitamin B1"
+		},
+		"dialogs": {
+			"delete": "Willst Du die Substanz wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Stoff erstellt.",
+			"changed": "Stoff bearbeitet.",
+			"deleted": "Stoff gelöscht."
+		}
+	},
+	"substanceLog": {
+		"fields": {
+			"substance": "Stoff",
+			"quantity": "Menge",
+			"note": "Notizen"
+		},
+		"views": {
+			"editAddition": {
+				"createTitle": "Stoffzugang erfassen",
+				"editTitle": "Stoffzugang bearbeiten"
+			},
+			"editWithdrawal": {
+				"createTitle": "Stoffabgang erfassen",
+				"editTitle": "Stoffabgang bearbeiten"
+			}
+		},
+		"toasts": {
+			"createdAddition": "Stoffzugang erfasst.",
+			"changedAddition": "Stoffzugang bearbeitet.",
+			"createdWithdrawal": "Stoffabgang erfasst.",
+			"changedWithdrawal": "Stoffabgang bearbeitet."
+		}
+	},
 	"fieldset_general_title": "Allgemeines",
 	"fieldset_region_title": "Regionales",
 	"fieldset_grapetype_title": "Rebsorte",
@@ -218,7 +657,7 @@
 	"cancel": "Abbrechen",
 	"repeatpw": "Passwort wiederholen",
 	"language": "Sprache",
-	"modal_delete_wine": "Möchten Sie diesen Wein wirklich löschen?",
+	"modal_delete_wine": "Möchtest du diesen Wein wirklich löschen?",
 	"test": "deutsch",
 	"login_emailempty": "E-Mail Adresse nicht angegeben",
 	"login_emailnotvalid": "E-Mail Adresse nicht gültig",
@@ -264,7 +703,7 @@
 	"db_users_gotoregister": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
 	"db_users_lostpassword_title": "Link anfordern",
 	"db_users_lostpassword_submit": "E-Mail anfordern",
-	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutzen Sie diesen Link um Ihr Passwort zurück zu setzen",
+	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link um dein Passwort zurück zu setzen",
 	"db_users_resetpassword_title": "Passwort zurücksetzen",
 	"db_users_resetpassword_submit": "Passwort neu setzen",
 	"db_users_resetpassword_send": "Ihr Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
@@ -382,7 +821,7 @@
 			"outgoing": "Ausgang"
 		}
 	},
-	"form_error_required": "Bitte füllen sie dieses Feld aus",
+	"form_error_required": "Bitte fülle dieses Feld aus",
 	"form_error_checkrequired": "Dieses Feld muss bestätigt werden",
 	"formhint_required": "Pflichtfeld",
 	"formhint_multiple": "Mehrfachauswahl möglich (STRG + Klick)",
@@ -985,8 +1424,8 @@
 			"stockrotation": "Lagerbewegungen"
 		},
 		"messages": {
-			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchten Sie die Änderungen speichern?",
-			"createcopy": "Möchten Sie die Angaben aus {wine.name} übernehmen?",
+			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest du die Änderungen speichern?",
+			"createcopy": "Möchtest du die Angaben aus {wine.name} übernehmen?",
 			"fieldempty": "keine Angabe",
 			"hints": {
 				"connectwine": "Mit Wein verbinden"
@@ -1091,7 +1530,7 @@
 				"noentries": "Noch keine Einträge vorhanden"
 			},
 			"dialog": {
-				"delete": "Wollen Sie das Produkt wirklich löschen?"
+				"delete": "Willst du das Produkt wirklich löschen?"
 			},
 			"toasts": {
 				"created": "Produkt angelegt!",
@@ -1238,7 +1677,7 @@
 				"noentries": "Noch keine Einträge vorhanden"
 			},
 			"dialog": {
-				"delete": "Wollen Sie den Kunden wirklich löschen?"
+				"delete": "Willst du den Kunden wirklich löschen?"
 			},
 			"toasts": {
 				"created": "Kunde angelegt!",
@@ -1393,7 +1832,7 @@
 			"next_positions": "Weiter zu den Positionen",
 			"next_summary": "Weiter zur Bestellübersicht",
 			"no_payment_income_yet": "Zahlung noch nicht eingegangen",
-			"nocustomerselected": "Für die Erstellung der Rechnung wird eine Kundenadresse benötigt. Bitte wählen Sie zu erst einen Kunden aus.",
+			"nocustomerselected": "Für die Erstellung der Rechnung wird eine Kundenadresse benötigt. Bitte wähle zuerst einen Kunden aus.",
 			"note": "Anmerkungen",
 			"order_dispatched": "Bestellung versendet",
 			"order_not_yet_dispatched": "Bestellung noch nicht versendet",
@@ -1462,7 +1901,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Möchten Sie diese Versandoption wirklich löschen?"
+			"delete": "Willst du diese Versandoption wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Versandoption erstellt",
@@ -1512,7 +1951,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Wollen Sie die Versandeinheit wirklich löschen?"
+			"delete": "Willst du die Versandeinheit wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Versandeinheit angelegt",
@@ -1751,7 +2190,7 @@
 		"customer_deleted": "Mandant gelöscht!",
 		"customer_created": "Mandant angelegt!",
 		"customer_updated": "Mandant aktualisiert!",
-		"customer_image_createerror": "Um ein Bild hochzuladen müssen sie den Mandanten vorher speichern!",
+		"customer_image_createerror": "Um ein Bild hochzuladen musst du den Mandanten vorher speichern!",
 		"merchant_created": "Händler angelegt!",
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
@@ -1792,8 +2231,8 @@
 		"user_created": "Benutzer angelegt!",
 		"user_changed": "Benutzer aktualisiert!",
 		"user_deleted": "Benutzer gelöscht",
-		"user_deleteerror": "Sie können nicht den aktuell angemeldeten Benutzer löschen!",
-		"user_image_needed": "Um ein Bild hochzuladen müssen sie den Benutzer vorher speichern!",
+		"user_deleteerror": "Du kannst den aktuell angemeldeten Benutzer nicht löschen!",
+		"user_image_needed": "Um ein Bild hochzuladen musst du den Benutzer vorher speichern!",
 		"user_image_uploaded": "Bild hochgeladen!",
 		"user_image_deleted": "Bild gelöscht!",
 		"user_image_uploaderror": "Fehler beim Bildupload!",
@@ -1809,7 +2248,7 @@
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
 		"wine_deleted": "Wein gelöscht!",
-		"wine_image_needed": "Um ein Bild hochzuladen müssen sie den Wein vorher speichern!",
+		"wine_image_needed": "Um ein Bild hochzuladen musst du den Wein vorher speichern!",
 		"wine_image_uploaded": "Bild hochgeladen!",
 		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
@@ -3999,7 +4438,7 @@
 				},
 				"nointernet": {
 					"title": "Kein Internet verfügbar",
-					"msg": "Um alle Funktionen nutzen zu können, benötigen Sie eine Internetverbindung."
+					"msg": "Um alle Funktionen nutzen zu können, benötigst du eine Internetverbindung."
 				},
 				"updateavailable": {
 					"title": "Update verfügbar",
@@ -4010,11 +4449,11 @@
 				},
 				"createwine": {
 					"title": "Wein anlegen",
-					"msg": "Wollen Sie ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
+					"msg": "Willst du ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
 				},
 				"winenotfound": {
 					"title": "Kein Wein gefunden",
-					"msg": "Wollen Sie einen neuen Wein anlegen?"
+					"msg": "Willst du einen neuen Wein anlegen?"
 				}
 			},
 			"views": {
