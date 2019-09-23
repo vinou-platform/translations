@@ -420,9 +420,10 @@
 				"sub": "new wine"
 			},
 			"export": {
-				"book": "Cellar book",
-				"barrellist": "Barrel list",
-				"substancelist": "Substance list"
+				"cellarBook": "Cellar book",
+				"barrelList": "Barrel list",
+				"grapeMarcLogs": "Grape marc log",
+				"substanceLogs": "Substance log"
 			}
 		},
 		"filters": {

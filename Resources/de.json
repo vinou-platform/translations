@@ -424,9 +424,10 @@
 				"sub": "anlegen"
 			},
 			"export": {
-				"book": "Kellerbuch",
-				"barrellist": "Behälterliste",
-				"substancelist": "Stoffliste"
+				"cellarBook": "Kellerbuch",
+				"barrelList": "Behälterliste",
+				"grapeMarcLogs": "Tresterbuch",
+				"substanceLogs": "Stoffliste"
 			}
 		},
 		"filters": {
