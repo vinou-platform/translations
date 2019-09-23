@@ -240,24 +240,7 @@
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
 			"filllevel": "Füllhöhe",
-			"substance": "Stoff",
-			"method": "Verfahren",
-			"amount": "Menge",
-			"baseAmount": "Erhöht von",
-			"increasedAmount": "Erhöht auf",
-			"total": "Gesamt",
-			"before": "vor",
-			"after": "nach",
-			"description": "Beschreibung/Wein Name",
-			"previousBarrel": "Ursprungs-Behälter",
-			"blendedWith": "Verschnitten mit",
-			"blendingWithdrawal": "Verschnitt-Abgabe",
-			"alcohol": "Alkohol",
-			"residualSugar": "Restzucker",
-			"acidity": "Säure",
-			"dismount": "Abgabe",
-			"usage": "Verwendung",
-			"temperature": "Temperatur"
+			"substance": "Stoff"
 		},
 		"actions": {
 			"create": {

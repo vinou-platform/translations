@@ -235,25 +235,7 @@
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
 			"filllevel": "Fill level",
-			"substance": "Substance",
-			"method": "Method",
-			"amount": "Amount",
-			"baseAmount": "Base amount",
-			"increasedAmount": "Increased amount",
-			"total": "Total",
-			"before": "Before",
-			"after": "After",
-			"description": "Description/Wine name",
-			"previousBarrel": "Previous barrel",
-			"targetBarrel": "Target barrel",
-			"blendedWith": "Blended with",
-			"blendingWithdrawal": "Blending withdrawal",
-			"alcohol": "Alcohol",
-			"residualSugar": "Residual sugar",
-			"acidity": "Acidity",
-			"dismount": "Dismount",
-			"usage": "Usage",
-			"temperature": "Temperature"
+			"substance": "Substance"
 		},
 		"actions": {
 			"create": {
