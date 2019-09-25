@@ -161,6 +161,17 @@
 			"percent": "Percental rebate"
 		}
 	},
+	"offers": {
+		"action": {
+			"create": {			
+				"main": "Create offer",
+				"sub": " "
+			}
+		},
+		"fields": {
+			"offerCreateTitle": "Create offer"
+		}
+	},
 	"currenttoken_old": "Current token",
 	"currenttoken": "Current token",
 	"tokens": {

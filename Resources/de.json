@@ -166,6 +166,17 @@
 			"percent": "Prozentualer Rabatt"
 		}
 	},
+	"offers": {
+		"action": {
+			"create": {			
+				"main": "Angebot",
+				"sub": "erstellen"
+			}
+		},
+		"fields": {
+			"offerCreateTitle": "Angebot erstellen"
+		}
+	},
 	"currenttoken_old": "Bisherige Token",
 	"currenttoken": "Aktuelle Verbindung",
 	"tokens": {
