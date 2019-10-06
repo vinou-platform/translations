@@ -161,15 +161,50 @@
 			"percent": "Percental rebate"
 		}
 	},
-	"offers": {
+	"offer": {
 		"action": {
-			"create": {			
-				"main": "Create offer",
+			"cancelOffer": {
+				"main": "Cancel Offer",
+				"sub": " ",
+				"cancelled": "Has been cancelled"
+			},
+			"create": {
+				"main": "Create Offer",
+				"sub": " "
+			},
+			"createOrder": {
+				"main": "Create Order",
+				"sub": "from offer",
+				"cancel": "Cancel offer"
+			},
+			"print": {
+				"main": "Print offer",
 				"sub": " "
 			}
 		},
 		"fields": {
-			"offerCreateTitle": "Create offer"
+			"createTitle": "Create offer",
+			"createDate": "Offer created",
+			"cancelDate": "Offer cancelled",
+			"next_summary": "next offerpreview",
+			"title": "Offer",
+			"status": {
+				"cancelled": "Offer cancelled",
+				"new": "Offer created"
+			}
+		},
+		"fieldset": {
+			"summary_title": "Offerpreview"
+		},
+		"modal": {
+			"cancelOffer": "Do you really want to cancel this offer?",
+			"createFromOffer": "Create new order from current offer. What would you like to do?"
+		},
+		"toasts": {
+			"created": "Offer has been created",
+			"offerCancelled": "Offer has been cancelled.",
+			"documentCreated": "Offer created",
+			"updated": "Offer updated"
 		}
 	},
 	"currenttoken_old": "Current token",
@@ -315,6 +350,7 @@
 	"db_orders_edittitle": "Edit Order",
 	"db_orders_viewtitle": "View Orderdetails",
 	"db_orders_status_new": "New",
+	"db_orders_status_offer": "Offers",
 	"db_orders_status_need_payment": "Prepayment expected",
 	"db_orders_status_payed": "Prepaid completed, delivery preparation",
 	"db_orders_status_in_payment": "Wait for payment",
@@ -1305,7 +1341,8 @@
 			"invoice": "Invoice",
 			"delivery": "Delivery note",
 			"shipment": "Shipment label",
-			"creditadvice": "Credit advice"
+			"creditadvice": "Credit advice",
+			"offer": "Offer"
 		},
 		"paymenttypes": {
 			"cash": "Cash",

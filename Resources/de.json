@@ -166,15 +166,50 @@
 			"percent": "Prozentualer Rabatt"
 		}
 	},
-	"offers": {
+	"offer": {
 		"action": {
-			"create": {			
+			"cancelOffer": {
+				"main": "Angebot",
+				"sub": "stornieren",
+				"cancelled": "storniert"
+			},
+			"create": {
 				"main": "Angebot",
 				"sub": "erstellen"
+			},
+			"createOrder": {
+				"main": "Als Bestellung",
+				"sub": "erfassen",
+				"cancel": "Angebot stornieren"
+			},
+			"print": {
+				"main": "Angebot",
+				"sub": "drucken"
 			}
 		},
 		"fields": {
-			"offerCreateTitle": "Angebot erstellen"
+			"createTitle": "Angebot erstellen",
+			"createDate": "Angebot erstellt",
+			"cancelDate": "Angebot storniert",
+			"next_summary": "Weiter zur Angebotsübersicht",
+			"title": "Angebot",
+			"status": {
+				"cancelled": "Angebot storniert",
+				"new": "Angebot erstellt"
+			}
+		},
+		"fieldset": {
+			"summary_title": "Angebotsübersicht"
+		},
+		"modal": {
+			"cancelOffer": "Soll das Angebot wirklich storniert werden?",
+			"createFromOffer": "Aus Angebot eine Bestellung erfassen. Was möchten sie tun?"
+		},
+		"toasts": {
+			"created": "Angebot erstellt",
+			"offerCancelled": "Das Angebot wurde storniert.",
+			"documentCreated": "Angebot erstellt",
+			"updated": "Angebot aktualisiert"
 		}
 	},
 	"currenttoken_old": "Bisherige Token",
@@ -319,10 +354,11 @@
 	"db_orders_createtitle": "Bestellung anlegen",
 	"db_orders_edittitle": "Bestellung bearbeiten",
 	"db_orders_viewtitle": "Bestellung ansehen",
+	"db_orders_status_offer": "Angebote",
 	"db_orders_status_new": "Eingegangen",
 	"db_orders_status_need_payment": "Vorkasse Zahlung erwartet",
 	"db_orders_status_payed": "Vorauszahlung eingegangen",
-	"db_orders_status_in_payment": "wartet auf Bezahlung",
+	"db_orders_status_in_payment": "Wartet auf Bezahlung",
 	"db_orders_status_need_package": "In Versandvorbereitung",
 	"db_orders_status_in_delivery": "In Auslieferung",
 	"db_orders_status_delivered": "Ausgeliefert (Zahlung offen)",
@@ -1310,7 +1346,8 @@
 			"invoice": "Rechnung",
 			"delivery": "Lieferschein",
 			"shipment": "Packetaufkleber",
-			"creditadvice": "Gutschrift"
+			"creditadvice": "Gutschrift",
+			"offer": "Angebot"
 		},
 		"paymenttypes": {
 			"cash": "Barzahlung",
