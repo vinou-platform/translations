@@ -1053,7 +1053,8 @@
 			"general": "Allgemein",
 			"contact": "Kontakt",
 			"description": "Beschreibung",
-			"wines": "Weine"
+			"wines": "Weine",
+			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
 			"company": "Bezeichnung",
@@ -1072,7 +1073,9 @@
 			"vineyard": "Rebfläche",
 			"harvest": "Ertrag",
 			"bestplaces": "Beste Lagen",
-			"memberof": "Mitglied bei"
+			"memberof": "Mitglied bei",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"charindex": "Alphabetischer Index"
 		},
 		"list": {
 			"filter": {
