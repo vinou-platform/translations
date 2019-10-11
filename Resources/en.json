@@ -1262,7 +1262,9 @@
 				"none": "not specified"
 			},
 			"prices": {
-				"standard": "Default netto price",
+				"gross": "Gross",
+				"net": "Net",
+				"standard": "Default price",
 				"action": {
 					"create": {
 						"main": "New price",
