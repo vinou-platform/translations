@@ -24,7 +24,7 @@
 		"products": "Produkte",
 		"products.statistics": "Statistiken",
 		"cellar": "Mein Keller",
-		"cellar.book": "Kellerbuch",
+		"cellar.book": "Weine",
 		"cellar.barrels": "Behälter",
 		"cellar.substances": "Stoffe"
 	},
@@ -1053,7 +1053,8 @@
 			"general": "Allgemein",
 			"contact": "Kontakt",
 			"description": "Beschreibung",
-			"wines": "Weine"
+			"wines": "Weine",
+			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
 			"company": "Bezeichnung",
@@ -1072,7 +1073,9 @@
 			"vineyard": "Rebfläche",
 			"harvest": "Ertrag",
 			"bestplaces": "Beste Lagen",
-			"memberof": "Mitglied bei"
+			"memberof": "Mitglied bei",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"charindex": "Alphabetischer Index"
 		},
 		"list": {
 			"filter": {

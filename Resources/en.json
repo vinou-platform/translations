@@ -24,7 +24,7 @@
 		"products": "Products",
 		"products.statistics": "Statistics",
 		"cellar": "Cellar",
-		"cellar.book": "Book",
+		"cellar.book": "Wines",
 		"cellar.barrels": "Barrels",
 		"cellar.substances": "Substances"
 	},
@@ -1048,7 +1048,8 @@
 			"general": "General",
 			"contact": "Contact",
 			"description": "Description",
-			"wines": "Wines"
+			"wines": "Wines",
+			"shopsettings": "Website & Shop-Settings"
 		},
 		"field": {
 			"company": "Company",
@@ -1067,7 +1068,9 @@
 			"vineyard": "Vineyard area",
 			"harvest": "Yearly harvest",
 			"bestplaces": "Best places",
-			"memberof": "Member of"
+			"memberof": "Member of",
+			"sorting": "Manual index (e.g. for shop use)",
+			"charindex": "Alphabetic index"
 		},
 		"list": {
 			"filter": {
