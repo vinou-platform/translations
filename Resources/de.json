@@ -103,17 +103,21 @@
 	},
 	"dashboard": {
 		"actions": {
-			"create": {
-				"category_main": "Neue",
-				"category_sub": "Kategorie erstellen",
-				"user_main": "Neuen",
-				"user_sub": "Benutzer erstellen",
-				"wine_main": "Neuen",
-				"wine_sub": "Wein erstellen"
+			"createWine": {
+				"main": "Neuen Wein",
+				"sub": "anlegen"
+			},
+			"createClient": {
+				"main": "Neuen Kunden",
+				"sub": "anlegen"
+			},
+			"createOrder": {
+				"main": "Neue Bestellung",
+				"sub": "anlegen"
 			}
 		},
-		"fieldset": {
-			"quickactions": "Quickactions"
+		"fieldSets": {
+			"quickActions": "Schnellaktionen"
 		}
 	},
 	"price": "Preis",
@@ -138,21 +142,6 @@
 	"token_modal_delete": "Möchtest du diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
 	"address_modal_delete": "Möchtest du diese Adresse wirklich löschen?",
-	"dashboard": {
-		"actions": {
-			"create": {
-				"wine_main": "Neuen",
-				"wine_sub": "Wein anlegen",
-				"category_main": "Neue",
-				"category_sub": "Kategorie anlegen",
-				"user_main": "Neuen",
-				"user_sub": "Benutzer anlegen"
-			}
-		},
-		"fieldset": {
-			"quickactions": "Quickactions"
-		}
-	},
 	"orders_modal_cancel": "Möchtest du diese Bestellung wirklich stornieren?",
 	"orders_modal_create": "Du erfasst eine Bestellung, was möchtest du tun?",
 	"orders_modal_create_withinvoice": "Erfassen und Rechnung und Lieferschein generieren",
@@ -1168,8 +1157,6 @@
 			"create": {
 				"main": "Neuen Wein",
 				"sub": "anlegen",
-				"dashboard_main": "Neuen",
-				"dashboard_sub": "Wein anlegen",
 				"title": "Wein anlegen",
 				"modaltitle": "Wein hinzufügen"
 			},
