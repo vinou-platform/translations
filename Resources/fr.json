@@ -103,13 +103,17 @@
 	},
 	"dashboard": {
 		"actions": {
-			"create": {
-				"category_main": "Créer",
-				"category_sub": "Catégorie",
-				"user_main": "Ajouter",
-				"user_sub": "Utilisateurs",
-				"wine_main": "Ajouter",
-				"wine_sub": "Vin"
+			"createWine": {
+				"main": "Ajouter",
+				"sub": "Vin"
+			},
+			"createClient": {
+				"main": "Créer",
+				"sub": "Client",
+			},
+			"createOrder": {
+				"main": "Créer",
+				"sub": "ordre"
 			}
 		},
 		"fieldset": {
@@ -138,21 +142,6 @@
 	"token_modal_delete": "Voulez-vous vraiment supprimer ce jeton?",
 	"token_modal_error": "Il y a déjà un jeton pour ce domaine/IP",
 	"address_modal_delete": "Voulez-vous vraiment supprimer cet adresse?",
-	"dashboard": {
-		"actions": {
-			"create": {
-				"wine_main": "Créer",
-				"wine_sub": "Vin",
-				"category_main": "Créer",
-				"category_sub": "Catégorie",
-				"user_main": "Créer",
-				"user_sub": "Utilisateurs"
-			}
-		},
-		"fieldset": {
-			"quickactions": "Actions rapides"
-		}
-	},
 	"orders_modal_cancel": "Voulez-vous vraiment annuler cet ordre?",
 	"orders_modal_create": "Vous créez un ordre, que voulez-vous faire?",
 	"orders_modal_create_withinvoice": "Créer un ordre avec facture et bon de livraison",
@@ -1053,7 +1042,8 @@
 			"general": "Général",
 			"contact": "Contact",
 			"description": "Description",
-			"wines": "Vins"
+			"wines": "Vins",
+			"shopsettings": "paramètres du site et de la boutique en ligne"
 		},
 		"field": {
 			"company": "Désignation",
@@ -1072,7 +1062,9 @@
 			"vineyard": "Superficie viticole",
 			"harvest": "Rendement",
 			"bestplaces": "Meilleurs emplacements",
-			"memberof": "Membre de"
+			"memberof": "Membre de",
+			"sorting": "Index de tri manuel (par ex. boutique en ligne)",
+			"charindex": "Index alphabétique"
 		},
 		"list": {
 			"filter": {
@@ -1165,8 +1157,6 @@
 			"create": {
 				"main": "Créer",
 				"sub": "Vin",
-				"dashboard_main": "Créer",
-				"dashboard_sub": "Vin",
 				"title": "Créer vin",
 				"modaltitle": "Ajouter vin"
 			},
@@ -4159,7 +4149,7 @@
 	},
 	"languages": {
 		"de": {
-			"title": "allemand",
+			"title": "Allemand",
 			"code": "de",
 			"iso": "de_DE"
 		},
@@ -4172,6 +4162,11 @@
 			"title": "Français",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italien",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
