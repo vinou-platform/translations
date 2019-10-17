@@ -1267,6 +1267,7 @@
 			"prices": {
 				"gross": "Gross",
 				"net": "Net",
+				"taxrate": "Taxrate",
 				"standard": "Default price",
 				"action": {
 					"create": {
@@ -1478,6 +1479,9 @@
 				"title": "Create product"
 			}
 		},
+		"fieldset": {
+			"prices": "Prices"
+		},
 		"field": {
 			"name": "Name",
 			"articlenumber": "Articlenumber",
@@ -1491,10 +1495,24 @@
 					"notfound": "Image could not be found"
 				}
 			},
+			"prices": {
+				"gross": "Gross",
+				"net": "Net",
+				"taxrate": "Taxrate",
+				"standard": "Default price",
+				"action": {
+					"create": {
+						"main": "Create Price",
+						"sub": " "
+					},
+					"delete": {
+						"confirm": "Do you really want to delete the selected price?"
+					}
+				}
+			},
 			"active": "visible",
 			"nostock": "not in stock",
 			"nostocktext": "text if not in stock",
-			"prices": "Prices",
 			"quantity": "Stock",
 			"quantityabbr": "pc."
 		},

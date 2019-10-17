@@ -1272,6 +1272,7 @@
 			"prices": {
 				"gross": "Brutto",
 				"net": "Netto",
+				"taxrate": "Steuersatz",
 				"standard": "Standardpreis",
 				"action": {
 					"create": {
@@ -1483,6 +1484,9 @@
 				"title": "Produkt anlegen"
 			}
 		},
+		"fieldset": {
+			"prices": "Preise"
+		},
 		"field": {
 			"name": "Name",
 			"articlenumber": "Artikelnummer",
@@ -1496,10 +1500,24 @@
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"prices": {
+				"gross": "Brutto",
+				"net": "Netto",
+				"taxrate": "Steuersatz",
+				"standard": "Standardpreis",
+				"action": {
+					"create": {
+						"main": "Neuen Preis",
+						"sub": "erstellen"
+					},
+					"delete": {
+						"confirm": "Möchtest du diesen Preis wirklich löschen?"
+					}
+				}
+			},
 			"active": "aktiv",
 			"nostock": "nicht auf Lager",
 			"nostocktext": "Anzeigetext wenn nicht auf Lager",
-			"prices": "Preise",
 			"quantity": "Bestand",
 			"quantityabbr": "Stk."
 		},
