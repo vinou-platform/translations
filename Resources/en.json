@@ -103,17 +103,21 @@
 	},
 	"dashboard": {
 		"actions": {
-			"create": {
-				"category_main": "Create",
-				"category_sub": "Category",
-				"user_main": "Add",
-				"user_sub": "new User",
-				"wine_main": "Add",
-				"wine_sub": "Wine"
+			"createWine": {
+				"main": "Add wine",
+				"sub": " "
+			},
+			"createClient": {
+				"main": "Add client",
+				"sub": " "
+			},
+			"createOrder": {
+				"main": "Add order",
+				"sub": " "
 			}
 		},
-		"fieldset": {
-			"quickactions": "Quickactions"
+		"fieldsets": {
+			"quickActions": "Quick actions"
 		}
 	},
 	"de":"Germany",
@@ -133,21 +137,6 @@
 	"token_modal_delete": "Do you really want to delete this token?",
 	"token_modal_error": "There is already a token for this domain/IP",
 	"address_modal_delete": "Do you really want to delete this address?",
-	"dashboard": {
-		"actions": {
-			"create": {
-				"wine_main": " ",
-				"wine_sub": "Add Wine",
-				"category_main": " ",
-				"category_sub": "Add Category",
-				"user_main": " ",
-				"user_sub": "Add User"
-			}
-		},
-		"fieldset": {
-			"quickactions": "Quickactions"
-		}
-	},
 	"orders_modal_cancel": "Do you really want to cancel this order?",
 	"orders_modal_create": "You're creating an order, what do you want to do?",
 	"orders_modal_create_withinvoice": "Create order with invoice and delivery note",
@@ -1163,8 +1152,6 @@
 			"create": {
 				"main": "Add wine",
 				"sub": " ",
-				"dashboard_main": "Add",
-				"dashboard_sub": "New wine",
 				"title": "Add wine",
 				"modaltitle": "Add wine"
 			},
