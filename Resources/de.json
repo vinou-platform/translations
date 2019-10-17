@@ -893,7 +893,7 @@
 			},
 			"upgrade": {
 				"title": "Mitgliedschaft upgraden",
-				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
+				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt. an. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
 				"teaser": {
 					"publish": "<b>Du nutzt zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce",
 					"trial": "<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce"
@@ -952,7 +952,7 @@
 			"template": "Expertisen Template",
 			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
-			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
+			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und die Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
 			"pricing": {
 				"label": "Mitgliedschaft",
 				"acquisition": "in Akquise",
@@ -1624,7 +1624,7 @@
 			"logistics": "Logistik",
 			"management": "Geschäftsführung",
 			"marketing": "Marketing",
-			"product_management": "Produktmanagent",
+			"product_management": "Produktmanagement",
 			"purchase": "Einkauf",
 			"restaurant_administration": "Restaurantleitung",
 			"sommelier": "Sommelier",
@@ -4371,7 +4371,7 @@
 		"fried": "Gebraten",
 		"smoked": "Geräuchert",
 		"baked": "Gebacken",
-		"steamed": "Gedünsted",
+		"steamed": "Gedünstet",
 		"dairyproduct": "Molkereiprodukte",
 		"softcheese": "Weichkäse",
 		"bluecheese": "Edel-Schimmel",
