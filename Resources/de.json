@@ -116,7 +116,7 @@
 				"sub": "anlegen"
 			}
 		},
-		"fieldSets": {
+		"fieldset": {
 			"quickActions": "Schnellaktionen"
 		}
 	},
@@ -4162,6 +4162,11 @@
 			"title": "Französisch",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italienisch",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
