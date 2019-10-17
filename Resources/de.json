@@ -1907,7 +1907,22 @@
 			"type": "Typ",
 			"min": "Min",
 			"max": "Max",
-			"price": "Preis"
+			"price": "Preis",
+			"prices": {
+				"gross": "Brutto",
+				"net": "Netto",
+				"taxrate": "Steuersatz",
+				"standard": "Standardpreis",
+				"action": {
+					"create": {
+						"main": "Neuen Preis",
+						"sub": "erstellen"
+					},
+					"delete": {
+						"confirm": "Möchtest du diesen Preis wirklich löschen?"
+					}
+				}
+			}
 		},
 		"types": {
 			"bottles": "Flaschen",
