@@ -1251,23 +1251,12 @@
 			"nostocktext": "Il testo veniva visualizzato quando il contenuto era ubriaco (per esempio disponibile da...)",
 			"public_wines": "Vini pubblici",
 			"stockunknown": "Nessuna informazione di stock",
-			"place": "posizione",
+			"place": "Posizione",
 			"price": {
-				"label": "prezzo",
+				"label": "Prezzo",
 				"none": "Nessuna informazione"
 			},
-			"prices": {
-				"standard": "Prezzo netto standard",
-				"action": {
-					"create": {
-						"main": "Nuovo prezzo",
-						"sub": "creato"
-					},
-					"delete": {
-						"confirm": "Sei sicuro di voler eliminare questo prezzo?"
-					}
-				}
-			},
+			"prices": "Prezzi",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
@@ -1457,6 +1446,24 @@
 				"asc": "Ascendente",
 				"desc": "Discendente"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Lordo",
+		"net": "Rete",
+		"taxrate": "Un'aliquota di tassazione",
+		"standard": "Prezzo standard",
+		"action": {
+			"create": {
+				"main": "Nuovo prezzo",
+				"sub": "creato"
+			},
+			"delete": {
+				"confirm": "Sei sicuro di voler eliminare questo prezzo?"
+			}
+		},
+		"fieldset": {
+			"prices": "Prezzi"
 		}
 	},
 	"product": {

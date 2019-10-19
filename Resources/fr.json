@@ -1256,18 +1256,7 @@
 				"label": "Prix",
 				"none": "Pas d'information"
 			},
-			"prices": {
-				"standard": "Prix net standard",
-				"action": {
-					"create": {
-						"main": "Créer",
-						"sub": "Prix"
-					},
-					"delete": {
-						"confirm": "Voulez-vous vraiment supprimer ce prix?"
-					}
-				}
-			},
+			"prices": "Prix",
 			"qrcode": "Code QR",
 			"qrcode_redirect": "Code QR Redirect",
 			"qrcode_create": "Le code QR est généré après la première sauvegarde.",
@@ -1457,6 +1446,24 @@
 				"asc": "Ascendant",
 				"desc": "Descendant"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Brut",
+		"net": "Net",
+		"taxrate": "Taux d'imposition",
+		"standard": "Prix standard",
+		"action": {
+			"create": {
+				"main": "Créer",
+				"sub": "Prix"
+			},
+			"delete": {
+				"confirm": "Voulez-vous vraiment supprimer ce prix?"
+			}
+		},
+		"fieldset": {
+			"prices": "Prix" 
 		}
 	},
 	"product": {
