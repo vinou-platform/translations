@@ -29,7 +29,7 @@
 		"cellar.substances": "Sostanza"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "Generale",
 			"settings": "Opzioni"
 		},
@@ -116,7 +116,7 @@
 				"sub": "Creare"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"quickactions": "Quickactions"
 		}
 	},
@@ -919,7 +919,7 @@
 				"placeholder": "Per esempio: nome, azienda, indirizzo"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Membri",
 			"contact": "Contatto",
 			"description": "Descrizione",
@@ -1038,7 +1038,7 @@
 		"tabs": {
 			"files": "File"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Generale",
 			"contact": "Contatto",
 			"description": "Descrizione",
@@ -1105,7 +1105,7 @@
 				"placeholder" : "per esempio: Nom de l'entreprise, personne de contact ou adresse"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Generale",
 			"description": "Descrizione"
 		},
@@ -1174,7 +1174,7 @@
 			"barcodedownloadvector": "Scarica il codice EAN come file vettoriale",
 			"qrcodedownloadvector": "Scarica il codice QR come file vettoriale"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergeni",
 			"general": "Generale",
 			"stock": "Stock",
@@ -1398,7 +1398,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "Generale",
 			"network": "La mia rete",
 			"shopsettings": "Impostazione sito Web e negozio"
@@ -1462,8 +1462,8 @@
 				"confirm": "Sei sicuro di voler eliminare questo prezzo?"
 			}
 		},
-		"fieldset": {
-			"prices": "Prezzi"
+		"fieldSets": {
+			"title": "Prezzi"
 		}
 	},
 	"product": {
@@ -1581,7 +1581,7 @@
 				"type": "Filtra il tipo di cliente"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Generale",
 			"contactperson": "Persona di contatto",
 			"contact": "Contatton",
@@ -1783,7 +1783,7 @@
 				"sub": "Indirizzo di consegna"
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Modificare vista",
 			"search_product": "Cerca prodotto",
 			"packaging_shipping": "Imballaggio e spedizione"

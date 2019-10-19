@@ -29,7 +29,7 @@
 		"cellar.substances": "Substances"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
 		},
@@ -116,7 +116,7 @@
 				"sub": " "
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"quickActions": "Quick actions"
 		}
 	},
@@ -914,7 +914,7 @@
 				"placeholder": "e.g. name, company, address"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Membership",
 			"contact": "Contact data",
 			"description": "Description",
@@ -1033,7 +1033,7 @@
 		"tabs": {
 			"files": "Files"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"contact": "Contact",
 			"description": "Description",
@@ -1100,7 +1100,7 @@
 				"placeholder" : "e.g. company, contact or address"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"description": "Description"
 		},
@@ -1169,7 +1169,7 @@
 			"barcodedownloadvector": "Download GTIN code as vektor file",
 			"qrcodedownloadvector": "Download QR code as vector file"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergens",
 			"general": "General",
 			"stock": "Stock",
@@ -1393,7 +1393,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"network": "My Network",
 			"shopsettings": "Website & shop settings"
@@ -1457,8 +1457,8 @@
 				"confirm": "Do you really want to delete the selected price?"
 			}
 		},
-		"fieldset": {
-			"prices": "Prices"
+		"fieldSets": {
+			"title": "Prices"
 		}
 	},
 	"product": {
@@ -1576,7 +1576,7 @@
 				"type": "Filter type of client"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"contactperson": "Contact person",
 			"contact": "Contact data",
@@ -1778,7 +1778,7 @@
 				"sub": "delivery address"
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Edit view",
 			"search_product": "Search product",
 			"packaging_shipping": "Packaging and shipping"

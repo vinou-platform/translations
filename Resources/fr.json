@@ -29,7 +29,7 @@
 		"cellar.substances": "Substances"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "Général",
 			"settings": "Configuration"
 		},
@@ -116,7 +116,7 @@
 				"sub": "ordre"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"quickactions": "Actions rapides"
 		}
 	},
@@ -919,7 +919,7 @@
 				"placeholder": "p.ex. nom, entreprise, adresse"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Adhésion",
 			"contact": "Coordonnées",
 			"description": "Description",
@@ -1038,7 +1038,7 @@
 		"tabs": {
 			"files": "Fichiers"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Général",
 			"contact": "Contact",
 			"description": "Description",
@@ -1105,7 +1105,7 @@
 				"placeholder" : "p.ex. nom de l'entreprise, personne de contact ou adresse"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Général",
 			"description": "Description"
 		},
@@ -1174,7 +1174,7 @@
 			"barcodedownloadvector": "Téléchargez le code EAN sous forme de fichier vectoriel",
 			"qrcodedownloadvector": "Téléchargez le code QR sous forme de fichier vectoriel"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergènes",
 			"general": "Général",
 			"stock": "Stock",
@@ -1398,7 +1398,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "Général",
 			"network": "Mon réseau",
 			"shopsettings": "Configuration du site Web & de la boutique"
@@ -1462,8 +1462,8 @@
 				"confirm": "Voulez-vous vraiment supprimer ce prix?"
 			}
 		},
-		"fieldset": {
-			"prices": "Prix" 
+		"fieldSets": {
+			"title": "Prix" 
 		}
 	},
 	"product": {
@@ -1581,7 +1581,7 @@
 				"type": "Filtrer type de client"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Général",
 			"contactperson": "Personne de contact",
 			"contact": "Coordonnées",
@@ -1783,7 +1783,7 @@
 				"sub": "Différente"
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Éditer vue",
 			"search_product": "Rechercher produit",
 			"packaging_shipping": "Emballage et expédition"

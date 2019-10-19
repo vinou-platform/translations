@@ -29,7 +29,7 @@
 		"cellar.substances": "Stoffe"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"settings": "Einstellungen"
 		},
@@ -116,7 +116,7 @@
 				"sub": "anlegen"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"quickActions": "Schnellaktionen"
 		}
 	},
@@ -893,7 +893,7 @@
 			},
 			"upgrade": {
 				"title": "Mitgliedschaft upgraden",
-				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt. an. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
+				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
 				"teaser": {
 					"publish": "<b>Du nutzt zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce",
 					"trial": "<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce"
@@ -919,7 +919,7 @@
 				"placeholder": "z.B. Name, Firma, Addresse"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Mitgliedschaft",
 			"contact": "Kontaktdaten",
 			"description": "Beschreibung",
@@ -952,7 +952,7 @@
 			"template": "Expertisen Template",
 			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
-			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und die Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
+			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
 			"pricing": {
 				"label": "Mitgliedschaft",
 				"acquisition": "in Akquise",
@@ -1038,7 +1038,7 @@
 		"tabs": {
 			"files": "Dateien"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"contact": "Kontakt",
 			"description": "Beschreibung",
@@ -1105,7 +1105,7 @@
 				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"description": "Beschreibung"
 		},
@@ -1174,7 +1174,7 @@
 			"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
 			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergene",
 			"general": "Allgemeines",
 			"stock": "Bestände",
@@ -1398,7 +1398,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemeines",
 			"network": "Mein Netzwerk",
 			"shopsettings": "Website & Shop-Einstellungen"
@@ -1462,8 +1462,8 @@
 				"confirm": "Möchtest du diesen Preis wirklich löschen?"
 			}
 		},
-		"fieldset": {
-			"prices": "Preise"
+		"fieldSets": {
+			"title": "Preise"
 		}
 	},
 	"product": {
@@ -1474,6 +1474,9 @@
 			"create": {
 				"title": "Produkt anlegen"
 			}
+		},
+		"fieldSets": {
+			"prices": "Preise"
 		},
 		"field": {
 			"name": "Name",
@@ -1488,10 +1491,10 @@
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"prices": "Preise",
 			"active": "aktiv",
 			"nostock": "nicht auf Lager",
 			"nostocktext": "Anzeigetext wenn nicht auf Lager",
-			"prices": "Preise",
 			"quantity": "Bestand",
 			"quantityabbr": "Stk."
 		},
@@ -1581,7 +1584,7 @@
 				"type": "Kundentyp filtern"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemeines",
 			"contactperson": "Ansprechpartner",
 			"contact": "Kontaktdaten",
@@ -1631,7 +1634,7 @@
 			"logistics": "Logistik",
 			"management": "Geschäftsführung",
 			"marketing": "Marketing",
-			"product_management": "Produktmanagement",
+			"product_management": "Produktmanagent",
 			"purchase": "Einkauf",
 			"restaurant_administration": "Restaurantleitung",
 			"sommelier": "Sommelier",
@@ -1783,7 +1786,7 @@
 				"sub": "Lieferadresse"
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Ansicht bearbeiten",
 			"search_product": "Produkt suchen",
 			"packaging_shipping": "Verpackung und Versand"
@@ -1894,7 +1897,22 @@
 			"type": "Typ",
 			"min": "Min",
 			"max": "Max",
-			"price": "Preis"
+			"price": "Preis",
+			"prices": {
+				"gross": "Brutto",
+				"net": "Netto",
+				"taxrate": "Steuersatz",
+				"standard": "Standardpreis",
+				"action": {
+					"create": {
+						"main": "Neuen Preis",
+						"sub": "erstellen"
+					},
+					"delete": {
+						"confirm": "Möchtest du diesen Preis wirklich löschen?"
+					}
+				}
+			}
 		},
 		"types": {
 			"bottles": "Flaschen",
@@ -4169,11 +4187,6 @@
 			"title": "Französisch",
 			"code": "fr",
 			"iso": "fr_FR"
-		},
-		"it": {
-			"title": "Italienisch",
-			"code": "it",
-			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
@@ -4383,7 +4396,7 @@
 		"fried": "Gebraten",
 		"smoked": "Geräuchert",
 		"baked": "Gebacken",
-		"steamed": "Gedünstet",
+		"steamed": "Gedünsted",
 		"dairyproduct": "Molkereiprodukte",
 		"softcheese": "Weichkäse",
 		"bluecheese": "Edel-Schimmel",
