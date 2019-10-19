@@ -1256,21 +1256,7 @@
 				"label": "Preis",
 				"none": "keine Angabe"
 			},
-			"prices": {
-				"gross": "Brutto",
-				"net": "Netto",
-				"taxrate": "Steuersatz",
-				"standard": "Standardpreis",
-				"action": {
-					"create": {
-						"main": "Neuen Preis",
-						"sub": "erstellen"
-					},
-					"delete": {
-						"confirm": "Möchtest du diesen Preis wirklich löschen?"
-					}
-				}
-			},
+			"prices": "Preise",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
@@ -1460,6 +1446,24 @@
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Brutto",
+		"net": "Netto",
+		"taxrate": "Steuersatz",
+		"standard": "Standardpreis",
+		"action": {
+			"create": {
+				"main": "Neuen Preis",
+				"sub": "erstellen"
+			},
+			"delete": {
+				"confirm": "Möchtest du diesen Preis wirklich löschen?"
+			}
+		},
+		"fieldset": {
+			"title": "Preise"
 		}
 	},
 	"product": {

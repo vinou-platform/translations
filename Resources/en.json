@@ -1251,21 +1251,7 @@
 				"label": "Price",
 				"none": "not specified"
 			},
-			"prices": {
-				"gross": "Gross",
-				"net": "Net",
-				"taxrate": "Taxrate",
-				"standard": "Default price",
-				"action": {
-					"create": {
-						"main": "New price",
-						"sub": " "
-					},
-					"delete": {
-						"confirm": "Do you really want to delete the selected price?"
-					}
-				}
-			},
+			"prices": "Prices",
 			"qrcode": "QR code",
 			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
@@ -1455,6 +1441,24 @@
 				"asc": "Ascending",
 				"desc": "Descending"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Gross",
+		"net": "Net",
+		"taxrate": "Taxrate",
+		"standard": "Default price",
+		"action": {
+			"create": {
+				"main": "New price",
+				"sub": " "
+			},
+			"delete": {
+				"confirm": "Do you really want to delete the selected price?"
+			}
+		},
+		"fieldset": {
+			"prices": "Prices"
 		}
 	},
 	"product": {
