@@ -4163,6 +4163,11 @@
 			"title": "French",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italian",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
