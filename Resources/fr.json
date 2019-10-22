@@ -105,11 +105,11 @@
 		"actions": {
 			"createWine": {
 				"main": "Ajouter",
-				"sub": "Vin"
+				"sub": "vin"
 			},
 			"createClient": {
 				"main": "Créer",
-				"sub": "Client",
+				"sub": "client",
 			},
 			"createOrder": {
 				"main": "Créer",
@@ -234,11 +234,11 @@
 		"actions": {
 			"create": {
 				"main": "Nouveau processus",
-				"sub": "Couvrir"
+				"sub": "couvrir"
 			},
 			"edit": {
 				"main": "Entrée",
-				"sub": "Correcter"
+				"sub": "correcter"
 			},
 
 			"createHarvest": {
@@ -247,7 +247,7 @@
 			},
 			"createMarcLiquidation": {
 				"main": "Marc",
-				"sub": "Utilisation"
+				"sub": "utilisation"
 			},
 
 			"createStaticSettling": {
@@ -268,11 +268,11 @@
 			},
 			"createPrivateConsumption": {
 				"main": "Consommation personnelle",
-				"sub": "Répertorier"
+				"sub": "répertorier"
 			},
 			"createShrinkage": {
 				"main": "Rétrécissement",
-				"sub": "Répertorier"
+				"sub": "répertorier"
 			},
 			"createConcentration": {
 				"main": "Concentration",
@@ -318,7 +318,7 @@
 			},
 			"createWaterAddition": {
 				"main": "Eau",
-				"sub": "Ajout"
+				"sub": "ajout"
 			},
 
 			"createBottling": {
@@ -332,7 +332,7 @@
 
 			"addTargetBarrel": {
 				"main": "Récipient de cible",
-				"sub": "Ajouter"
+				"sub": "ajouter"
 			}
 		},
 		"types": {
@@ -449,8 +449,8 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Recipient",
-				"sub": "Creér"
+				"main": "Créer un",
+				"sub": "conteneur"
 			}
 		},
 		"types": {
@@ -514,7 +514,7 @@
 		"actions": {
 			"create": {
 				"main": "Matiére",
-				"sub": "Creér"
+				"sub": "creér"
 			}
 		},
 		"views": {
@@ -651,7 +651,7 @@
 	"users": {
 		"action": {
 			"main": "Creér",
-			"sub": "Utilisateur"
+			"sub": "utilisateur"
 		},
 		"fields": {
 			"active_users": "Utilisateurs actifs"
@@ -790,7 +790,7 @@
 		},
 		"type": {
 			"ingoing": "D'entrée",
-			"outgoing": "Sortie"
+			"outgoing": "Retrait"
 		}
 	},
 	"form_error_required": "Veuillez remplir ce champ",
@@ -859,7 +859,7 @@
 		"page": {
 			"register": {
 				"title": "Enregistrer un compte d'essai",
-				"description": "<p>Avec votre<sup>®</sup> compte d'essai de Vinou, <b>vous pouvez utiliser toutes les fonctionnalités de Vinou<sup>®</sup> pendant 30 jours gratuitement.</b>. Après expiration de période d'essai, vous pourrez opter pour l'adhésion payante Vinou-Commerce. Peu importe ce que tu fais. Vous pouvez continuer à utiliser Vinou après 30 jours avec l’adhésion gratuite à Vinou Publishing. Dans tous les cas, vous serez facilement averti par e-mail et pourrez ensuite faire votre choix.</p>",
+				"description": "<p>Avec votre compte d'essai de Vinou<sup>®</sup>, <b>vous pouvez utiliser toutes les fonctionnalités de Vinou<sup>®</sup> pendant 30 jours gratuitement.</b>. Après expiration de période d'essai, vous pourrez opter pour l'adhésion payante Vinou-Commerce. Peu importe ce que tu fais. Vous pouvez continuer à utiliser Vinou après 30 jours avec l’adhésion gratuite à Vinou Publishing. Dans tous les cas, vous serez facilement averti par e-mail et pourrez ensuite faire votre choix.</p>",
 				"submit": "Créer compte",
 				"send": "Félicitations, votre compte a été créé. Vous recevrez un email dans les prochaines minutes pour définir votre mot de passe et activer votre abonnement.",
 				"company": "Données de l'entreprise",
@@ -905,7 +905,7 @@
 		"action": {
 			"create": {
 				"main": "Créer",
-				"sub": "Utilisateur",
+				"sub": "utilisateur",
 				"title": "Créer Membre",
 				"modaltitle": "Créer Membre"
 			},
@@ -936,7 +936,7 @@
 			"company": "Entreprise",
 			"winery": "Établissement vinicole",
 			"taxid": "Numéro fiscal",
-			"vatid": "USt-ID.",
+			"vatid": "NIF",
 			"creditorid": "ID de créanciers",
 			"address": "Rue et numéro",
 			"zip": "Code postal",
@@ -1013,12 +1013,12 @@
 	"winery": {
 		"action": {
 			"add": {
-				"main": "Créer",
-				"sub": "Établissement vinicole"
+				"main": "Créer établissement",
+				"sub": "vinicole"
 			},
 			"create": {
-				"main": "Créer",
-				"sub": "Établissement vinicole",
+				"main": "Créer établissement",
+				"sub": "vinicole",
 				"title": "Créer établissement vinicole",
 				"modaltitle": "Créer établissement vinicole"
 			},
@@ -1091,7 +1091,7 @@
 		"action": {
 			"add": {
 				"main": "Créer",
-				"sub": "Marchand"
+				"sub": "marchand"
 			},
 			"create": {
 				"title" : "Créer marchand",
@@ -1152,11 +1152,11 @@
 		"action": {
 			"add": {
 				"main": "Ajouter",
-				"sub": "Nouveau vin"
+				"sub": "nouveau vin"
 			},
 			"create": {
-				"main": "Créer",
-				"sub": "Vin",
+				"main": "Créer Vin",
+				"sub": " ",
 				"title": "Créer vin",
 				"modaltitle": "Ajouter vin"
 			},
@@ -1221,7 +1221,7 @@
 			"drinktemperature": "Température de consommation",
 			"expertise_show": {
 				"main": "Expertise",
-				"sub": "Afficher",
+				"sub": "afficher",
 				"title": "Expertise ouverte dans une nouvelle fenêtre"
 			},
 			"allergens": {
@@ -1312,7 +1312,7 @@
 			"wine_without_category": "Afficher vins sans catégorie",
 			"winepass_show": {
 				"main": "Passe du vin",
-				"sub": "Afficher",
+				"sub": "afficher",
 				"title": "Ouvrir passe du vin dans une nouvelle fenêtre"
 			},
 			"winery": {
@@ -1323,7 +1323,7 @@
 		"gallery": {
 			"new": {
 				"main": "Créer",
-				"subline": "Vin"
+				"subline": "vin"
 			},
 			"sortby": {
 				"label": "Trier vue par"
@@ -1418,7 +1418,7 @@
 		"actions": {
 			"create": {
 				"main": "Créer",
-				"sub": "Catégorie"
+				"sub": "catégorie"
 			},
 			"createfacebookiframe": {
 				"main": "Creér",
@@ -1429,12 +1429,12 @@
 				"sub": "Facebook-Iframe"
 			},
 			"createslider": {
-				"main": "Créer",
-				"sub": "Slider für Vinotheken-Display"
+				"main": "Créer curseur",
+				"sub": "pour l'affichage de Vinouthek"
 			},
 			"viewslider": {
-				"main": "Regarder",
-				"sub": "Slider für Vinotheken-Display"
+				"main": "Regarder curseur",
+				"sub": "pour l'affichage de Vinouthek"
 			}
 		},
 		"gallery": {
@@ -1456,7 +1456,7 @@
 		"action": {
 			"create": {
 				"main": "Créer",
-				"sub": "Prix"
+				"sub": "prix"
 			},
 			"delete": {
 				"confirm": "Voulez-vous vraiment supprimer ce prix?"
@@ -1498,7 +1498,7 @@
 		"gallery": {
 			"new": {
 				"main": "Créer",
-				"subline": "Produit"
+				"subline": "produit"
 			},
 			"filter": {
 				"searchhint": "p.ex. nom, numéro de réference"
@@ -1526,7 +1526,7 @@
 		"action": {
 			"create": {
 				"main": "Créer",
-				"sub": "Note"
+				"sub": "note"
 			}
 		},
 		"field": {
@@ -1537,7 +1537,7 @@
 		"action": {
 			"create": {
 				"main": "Créer",
-				"sub": "Note"
+				"sub": "note"
 			}
 		},
 		"messages": {
@@ -1553,7 +1553,7 @@
 		"action": {
 			"create": {
 				"main": "Créer",
-				"sub": "Client",
+				"sub": "client",
 				"title": "Créer client",
 				"modaltitle": "Créer client"
 			},
@@ -1565,7 +1565,7 @@
 			},
 			"contactperson": {
 				"main": "Créer",
-				"sub": "Personne de contact"
+				"sub": "personne de contact"
 			}
 		},
 		"gallery": {
@@ -1705,8 +1705,8 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Créer",
-				"sub": "Personne de contact"
+				"main": "Créer personne",
+				"sub": "de contact"
 			},
 			"save": {
 				"title": "Enregistrer contact"
@@ -1718,6 +1718,7 @@
 			"invoice": "Facture",
 			"delivery": "Bon de livraison",
 			"shipment": "Étiquette de l'emballage",
+			"offer": "Offres",
 			"creditadvice": "Crédit"
 		},
 		"paymenttypes": {
@@ -1772,15 +1773,15 @@
 			},
 			"cancel_order": {
 				"main": "Annuler",
-				"create": "Ordre"
+				"create": "ordre"
 			},
 			"voucher_create": {
 				"main": "Créer",
-				"create": "Crédit"
+				"create": "crédit"
 			},
 			"shippingotheraddress": {
 				"main": "Adresse de livraison",
-				"sub": "Différente"
+				"sub": "différente"
 			}
 		},
 		"fieldSets": {
@@ -1841,8 +1842,8 @@
 				"sub": "reçu"
 			},
 			"booking_payment_income": {
-				"main": "Réserver",
-				"sub": "Réception du paiement"
+				"main": "Réserver réception",
+				"sub": "du paiement"
 			},
 			"generate_invoice_and_delivering_note": {
 				"main": "Créer facture et bon de livraison",
@@ -1865,8 +1866,8 @@
 	"packaging": {
 		"actions": {
 			"create": {
-				"main": "Créer",
-				"sub": "Option d'expédition'"
+				"main": "Créer option",
+				"sub": "d'expédition'"
 			}
 		},
 		"views": {
@@ -1904,8 +1905,8 @@
 	"packagingunit": {
 		"actions": {
 			"create": {
-				"main": "Créer",
-				"sub": "Unité d'expédition"
+				"main": "Créer Unité",
+				"sub": "d'expédition"
 			}
 		},
 		"field": {
@@ -2028,8 +2029,8 @@
 		"empty": "Actuellement, aucune classe de prix n'a été créée.",
 		"actions": {
 			"create": {
-				"main": "Créer",
-				"sub": "Classe de prix"
+				"main": "Créer classe",
+				"sub": "de prix"
 			}
 		},
 		"fields": {
@@ -2048,7 +2049,7 @@
 		"actions": {
 			"create": {
 				"main": "Creér",
-				"sub": "Fichier"
+				"sub": "fichier"
 			},
 			"save": "Enregistrer fichier"
 		},

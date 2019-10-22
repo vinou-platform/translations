@@ -60,12 +60,12 @@
 			"last_name": "Nome",
 			"salutation": {
 				"title": "Saluto",
-				"placeholder": "z.B.: Cara signore Mario Rossi"
+				"placeholder": "Ad es.: Cara signore Mario Rossi"
 			}
 		},
 		"tabs": {
 			"general": "Generale",
-			"notes": "annotazioni"
+			"notes": "Annotazioni"
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -105,15 +105,15 @@
 		"actions": {
 			"createWine": {
 				"main": "Nuovo",
-				"sub": "Elaborare vino"
+				"sub": "elaborare vino"
 			},
 			"createClient": {
 				"main": "Nuovo cliente",
-				"sub": "Creare",
+				"sub": "creare",
 			},
 			"createOrder": {
 				"main": "Nuovo ordine",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		},
 		"fieldSets": {
@@ -131,7 +131,7 @@
 	"delete_image_secure": "Vuoi veramente cancellare la foto",
 	"delete_template_secure": "Vuoi veramente cancellare questo esperienza",
 	"changepw": "Cambiare password",
-	"wineregions_none": "non disponible",
+	"wineregions_none": "Non disponible",
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
 	"category_modal_delete": "Vuoi veramente cancellare questa categoria",
@@ -144,8 +144,8 @@
 	"address_modal_delete": "Vuoi veramente cancellare questo indirizzo",
 	"orders_modal_cancel": "Vuoi veramente cancellare questo ordine",
 	"orders_modal_create": "Tu registri un ordine cosa vuoi fare",
-	"orders_modal_create_withinvoice": "registrare e generare fattura e bolla di consegna",
-	"orders_modal_create_only": " solo raccogliere",
+	"orders_modal_create_withinvoice": "Registrare e generare fattura e bolla di consegna",
+	"orders_modal_create_only": "Registra solo",
 	"orders_modal_sent": "Vuoi contrassegnare l'ordine come inviato?",
 	"orders_position_delete": "Vuoi veramente cancellare questo posto?",
 	"orders_position_update": "Vuoi veramente adattare questo posto?",
@@ -153,7 +153,7 @@
 	"orders_modal_invoice_create": "Vuoi generare bolletta e bolla di consegna per l'ordine",
 	"orders_modal_onlyinvoice_create": "Crea boletta ora",
 	"orders_modal_onlydelivery_create": "Crea bolla di consegna ora",
-	"orders_modal_creditadvice_create": "Attenzione: ACHTUNG: Crea credito ora e cancellare ordine?",
+	"orders_modal_creditadvice_create": "Attenzione: Crea credito ora e cancellare ordine?",
 	"order_wrong_quantity": "Inserisci un numero maggiore di 0",
 	"orders_rebate_general": "Sconto tutto compreso",
 	"rebates": {
@@ -163,7 +163,7 @@
 		},
 		"title": "Sconti",
 		"methods": {
-			"general": "l'opzione di sconto",
+			"general": "L'opzione di sconto",
 			"percent": "Sconto percentuale"
 		}
 	},
@@ -173,11 +173,11 @@
 		"actions": {
 			"create": {
 				"main": "Connessione nuova",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		}
 	},
-	"yes": "sì",
+	"yes": "Sì",
 	"no": "No",
 	"ok": "OK",
 	"cancel": "Abortire",
@@ -192,31 +192,31 @@
 				"label": "Giorno di transazione",
 				"placeholder": "dd.MM.YYYY"
 			},
-			"clarifyingOnly": "mostra solo i recipiente per chiarimenti",
+			"clarifyingOnly": "Mostra solo i recipiente per chiarimenti",
 			"filtrationPurpose": {
 				"label": "Solidi usando",
-				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
+				"placeholder": "Ad es., In vigna come org. Fertilizzante applicato."
 			},
 			"lossRelocation": "Travasare dei residui",
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",
-			"note": "Nota/ utilizzo",
+			"note": "Nota/utilizzo",
 			"purpose": {
-				"label": "utilizzo",
+				"label": "Utilizzo",
 				"placeholder": " "
 			},
 			"sludgePurpose": {
-				"label": "utilizzo di fecce",
-				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
+				"label": "Utilizzo di fecce",
+				"placeholder": "Ad es., In vigna come org. Fertilizzante applicato."
 			},
 			"sludgeRelocation": "Travasare di fecce",
 			"sludgeVolume": "Fecce",
 			"sourceBarrel": {
-				"label": "Recipiente della fonte",
+				"label": "Contenitore della sorgente",
 				"placeholder": "Ricerca recipiente"
 			},
 			"targetBarrel": {
-				"label": "Recipiente di destinazione",
+				"label": "Contenitori bersaglio",
 				"placeholder": "Ricerca recipiente"
 			},
 			"wine": {
@@ -234,7 +234,7 @@
 		"actions": {
 			"create": {
 				"main": "Nuovo Processo",
-				"sub": "Raccogliere"
+				"sub": "raccogliere"
 			},
 			"edit": {
 				"main": "Voce",
@@ -247,7 +247,7 @@
 			},
 			"createMarcLiquidation": {
 				"main": "Vinaccia",
-				"sub": "Valorizzazione"
+				"sub": "valorizzazione"
 			},
 
 			"createStaticSettling": {
@@ -268,11 +268,11 @@
 			},
 			"createPrivateConsumption": {
 				"main": "Autoconsumo",
-				"sub": "Raccogliere"
+				"sub": "raccogliere"
 			},
 			"createShrinkage": {
 				"main": "Perdita",
-				"sub": "Raccogliere"
+				"sub": "raccogliere"
 			},
 			"createConcentration": {
 				"main": "Concentrazione",
@@ -318,7 +318,7 @@
 			},
 			"createWaterAddition": {
 				"main": "Acqua",
-				"sub": "Aggiungere"
+				"sub": "aggiungere"
 			},
 
 			"createBottling": {
@@ -326,18 +326,18 @@
 				"sub": " "
 			},
 			"createAccountClosure": {
-				"main": "Conclusion del conto",
-				"sub": " "
+				"main": "Conclusion",
+				"sub": "del conto"
 			},
 
 			"addTargetBarrel": {
 				"main": "Recipiente di destinazione",
-				"sub": "Aggiungere"
+				"sub": "aggiungere"
 			}
 		},
 		"types": {
 			"harvest": "Raccolto",
-			"marcLiquidation": "valorizzazione dei vinaccia",
+			"marcLiquidation": "Valorizzazione dei vinaccia",
 
 			"relocation": "Ricollocamento",
 			"decanting": "Travaso",
@@ -365,35 +365,35 @@
 		"views": {
 			"edit": {
 				"createTitle": "Creare processo",
-				"editTitle": "modifica processo"
+				"editTitle": "Modifica processo"
 			},
 			"harvestEdit": {
 				"backToWineSelect": "Torna alla selezione"
 			}
 		},
 		"toasts": {
-			"created": "processo è stato creato",
-			"changed": "processo è stato modificato"
+			"created": "Processo è stato creato",
+			"changed": "Processo è stato modificato"
 		}
 	},
 	"cellarWine": {
 		"fields": {
 			"barrelNumbers": "Recipiente",
-			"chstamp": "modifivata da ultimo",
-			"inputWeight": "quantità ricevuta",
-			"inputVolume": "quantità ricevuta",
-			"mustAcidity": "acido del mosto",
+			"chstamp": "Modifivata da ultimo",
+			"inputWeight": "Peso accesso",
+			"inputVolume": "Quantità ricevuta",
+			"mustAcidity": "Acido del mosto",
 			"mustWeight": "Peso del mosto",
 			"name": "Denominazione",
 			"number": "Vino-Nr.",
-			"referenceNumber": "AP-Nummer",
+			"referenceNumber": "Numero di omologazione ufficiale",
 			"volume": "Stock"
 		},
 		"actions": {
 			"create": {
 				"title": "Crea un Conto del vino",
 				"main": "Nuovo conto del vino",
-				"sub": "Creare"
+				"sub": "creare"
 			},
 			"export": {
 				"cellarBook": "Cantina",
@@ -411,7 +411,7 @@
 				"label": "Direzione di ordinamento:"
 			},
 			"showeditor": {
-				"label": "Erfasser anzeigen"
+				"label": "Mostra editor"
 			}
 		},
 		"types": {
@@ -420,7 +420,7 @@
 		"views": {
 			"edit": {
 				"createTitle": "Creare conto del vino",
-				"editTitle": "modifica conto del vino"
+				"editTitle": "Modifica conto del vino"
 			},
 			"gallery": {
 				"currentState": "Stato attuale"
@@ -430,10 +430,10 @@
 			"delete": "Vuoi veramente cancellare questo conto del vino?"
 		},
 		"toasts": {
-			"created": "conto del vino è stato creato",
-			"changed": "conto del vino è stato modificato",
-			"duplicated": "conto del vino è stato duplicato",
-			"deleted": "conto del vino è stato cancellato"
+			"created": "Conto del vino è stato creato",
+			"changed": "Conto del vino è stato modificato",
+			"duplicated": "Conto del vino è stato duplicato",
+			"deleted": "Conto del vino è stato cancellato"
 		}
 	},
 	"barrel": {
@@ -444,7 +444,7 @@
 			"capacity": "Capacità espressa in litri",
 			"location": "Posto dell'elaborazione",
 			"manufacturer": "Produttore",
-			"clarifying": "recipiente per chiarificazione?",
+			"clarifying": "Recipiente per chiarificazione?",
 			"note": "Note"
 		},
 		"actions": {
@@ -455,7 +455,7 @@
 		},
 		"types": {
 			"metal": "Metallo",
-			"wood": "legna",
+			"wood": "Legna",
 			"plastic": "Plastica/materiali compositi",
 			"barrique": "Barrique",
 			"clay": "Argilla",
@@ -465,20 +465,20 @@
 		"views": {
 			"edit": {
 				"createTitle": "Creare recipiente",
-				"editTitle": "modificare recipiente"
+				"editTitle": "Modificare recipiente"
 			},
 			"gallery": {
-				"empty": "vuoto",
+				"empty": "Vuoto",
 				"barrelnumber": "Recipiente-Nr.",
 				"label": "Denominazione",
 				"chstamp": "Modificata da ultimo ",
 				"filllevel": "Serbatoio",
-				"currentState": "condizione attuale",
+				"currentState": "Condizione attuale",
 				"filters": {
 					"search": {
-						"placeholder": "Z.B.: Recipiente-Nr., Aufstellort, Hersteller"
+						"placeholder": "Ad es.: Recipiente-Nr., Installazione site, Fabbricante"
 					},
-					"hideEmptyBarrels": "nascondere recipiente vuoti"
+					"hideEmptyBarrels": "Nascondere recipiente vuoti"
 				}
 			}
 		},
@@ -520,12 +520,12 @@
 		"views": {
 			"edit": {
 				"createTitle": "Creare sostanze",
-				"editTitle": "modificare sostanze"
+				"editTitle": "Modificare sostanze"
 			},
 			"gallery": {
 				"substance": "Tipo di sostanze",
 				"chstamp": "Modificata da ultimo",
-				"stock": "quantità presente"
+				"stock": "Quantità presente"
 			}
 		},
 		"types": {
@@ -560,11 +560,11 @@
 			"vitaminB1": "Vitamina B1"
 		},
 		"dialogs": {
-			"delete": "Willst Du die Substanz wirklich löschen?"
+			"delete": "Vuoi davvero cancellare la sostanza?"
 		},
 		"toasts": {
 			"created": "Creare sostanze.",
-			"changed": "modificare sostanze.",
+			"changed": "Modificare sostanze.",
 			"deleted": "Cancellare sostanze."
 		}
 	},
@@ -577,7 +577,7 @@
 		"views": {
 			"editAddition": {
 				"createTitle": "Creare accesso di sostanze",
-				"editTitle": "modificare accesso di sostanze"
+				"editTitle": "Modificare accesso di sostanze"
 			},
 			"editWithdrawal": {
 				"createTitle": "Creare calo di sostanze",
@@ -585,8 +585,8 @@
 			}
 		},
 		"toasts": {
-			"createdAddition": "accesso di sostanze è stato creato.",
-			"changedAddition": "accesso di sostanze è stato modificato.",
+			"createdAddition": "Accesso di sostanze è stato creato.",
+			"changedAddition": "Accesso di sostanze è stato modificato.",
 			"createdWithdrawal": "Calo di sostanze è stato creato.",
 			"changedWithdrawal": "Calo di sostanze è stato modificato."
 		}
@@ -606,16 +606,16 @@
 	"fieldset_addresses_title": "Indirizzi supplementare",
 	"fieldset_billing_title": "Indirizzo di fattura",
 	"fieldset_delivery_title": "Spedizione",
-	"fieldset_payment_title": "modalità di pagamento",
+	"fieldset_payment_title": "Modalità di pagamento",
 	"fieldset_positions_title": "Posto",
-	"fieldset_summary_title": "visione generale del ordine",
+	"fieldset_summary_title": "Visione generale del ordine",
 	"fieldset_customer_title": "Dati dei clienti",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Indirizzi",
 	"settings_packaging": "Opzioni di spedizione",
 	"settings_advanced": "Impostazioni avanzate. ",
 	"settings_templates": "Amministrare modelli",
-	"settings_mailsetup": "SMTP Postfach für E-Mail-Versand",
+	"settings_mailsetup": "Cassetta postale SMTP per recapito e-mail",
 	"settings_payments": "Metodi di pagamento",
 	"settings_connections": "Collegamenti.",
 	"sysTool_account": "Impostazioni",
@@ -638,13 +638,13 @@
 	"login_wrongreset": "Non trovato indirizzo E-Mail o utente.",
 	"db_categories_image": "Immagine.",
 	"db_category_createtitle": "Creare categoria",
-	"db_category_edittitle": "modificare categoria",
+	"db_category_edittitle": "Modificare categoria",
 	"users_create_main": "Nuovo utente",
 	"users_create_sub": "Creare",
 	"users_modification": "Ultima modifica",
 	"users_default_person_placeholder": "Pino Pompi",
-	"users_default_person_mail_placeholder": "muster@mail.com",
-	"users_galleryFilterHint": "as es. Nome, E-Mail",
+	"users_default_person_mail_placeholder": "esempio@mail.com",
+	"users_galleryFilterHint": "Ad es. Nome, E-Mail",
 	"users_create_modaltitle": "Creare utente",
 	"users_edit_modaltitle": "Modificare utente",
 	"users_settings_modaltitle": "Modificare impostazioni",
@@ -654,7 +654,7 @@
 			"sub": "Creare utente"
 		},
 		"fields": {
-			"active_users": "utente attivamente"
+			"active_users": "Utente attivamente"
 		}
 	},
 	"statistics": {
@@ -672,7 +672,7 @@
 	"db_users_login_title": "Accesso",
 	"db_users_login_submit": "Accesso",
 	"db_users_lostpassword": "Dimenticare password?",
-	"db_users_gotoregister": "ancora nessun account? <a href='/register'>Registrare qui</a>",
+	"db_users_gotoregister": "Ancora nessun account? <a href='/register'>Registrare qui</a>",
 	"db_users_lostpassword_title": "Chiedere Link",
 	"db_users_lostpassword_submit": "Chiedere E-Mail",
 	"db_users_lostpassword_send": "Email con un Link di reimpostazione  è stata inviata. Questo è valida per 24 ore. Usare Link per resettare password.",
@@ -691,15 +691,15 @@
 	"db_users_password": "Password",
 	"db_users_role": "Parte",
 	"db_users_active": "Attivamente",
-	"db_users_beta": "è Beta-User",
+	"db_users_beta": "È Beta-User",
 	"db_users_image": "Immagine",
-	"db_users_customers_id": "è membro",
+	"db_users_customers_id": "È membro",
 	"db_winecategories_name": "Nome",
 	"db_winecategories_description": "Descrizione",
 	"db_winecategories_image": "Immagine",
 	"db_tokens_createtitle": "Creare interfaccia",
 	"db_tokens_edittitle": "Modificare interfaccia",
-	"db_tokens_token": "interfaccia(Token)",
+	"db_tokens_token": "Interfaccia (Token)",
 	"db_tokens_referer": "Domain",
 	"db_tokens_mode": "Modalità ",
 	"db_tokens_mode_dev": "Realizzazione (controllare dell'host essere finito)",
@@ -721,8 +721,8 @@
 	"db_orders_viewtitle": "Guardare ordine",
 	"db_orders_status_new": "Ricevute",
 	"db_orders_status_need_payment": "Attendere Pagamento anticipato",
-	"db_orders_status_payed": "pagamento m anticipato ricevute",
-	"db_orders_status_in_payment": "aspettare pagamento",
+	"db_orders_status_payed": "Pagamento m anticipato ricevute",
+	"db_orders_status_in_payment": "Aspettare pagamento",
 	"db_orders_status_need_package": "Preparazione del pagamento",
 	"db_orders_status_in_delivery": "In consegna",
 	"db_orders_status_delivered": "È stata consegnata (ancora pagato)",
@@ -738,10 +738,10 @@
 	"db_cronjobs_edittitle": "Modificare Cronjob",
 	"db_cronjobs_description": "Descrizione ",
 	"db_cronjobs_description_placeholder": "Descrizione per Nuovo  Cronjob",
-	"db_cronjobs_galleryFilterHint": "z.B. Nome, descrizione",
-	"db_cronjobs_command": "comando concluso",
+	"db_cronjobs_galleryFilterHint": "Ad es. Nome, descrizione",
+	"db_cronjobs_command": "Comando concluso",
 	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
-	"db_cronjobs_cron": "momento dell'esecuzione (Crontab)",
+	"db_cronjobs_cron": "Momento dell'esecuzione (Crontab)",
 	"db_cronjobs_cron_placeholder": "* * * * *",
 	"db_cronjobs_active": "Attivare",
 	"cronjobs": {
@@ -767,7 +767,7 @@
 			"quantity": "Quantità",
 			"description": "Descrizione",
 			"winenumber": "Numero di Vino",
-			"apnumber": "AP-Nummero",
+			"apnumber": "Numero dell'esame ufficiale",
 			"alcohol": "Alcol",
 			"sweetness": "Densità",
 			"acid": "Acidità",
@@ -793,10 +793,10 @@
 			"outgoing": "Uscita"
 		}
 	},
-	"form_error_required": "compilare questo campo per favore",
+	"form_error_required": "Compilare questo campo per favore",
 	"form_error_checkrequired": "Questo campo deve essere confermato",
-	"formhint_required": "campo obbligatore",
-	"formhint_multiple": " scelta multipla è possibile (STRG + Klick)",
+	"formhint_required": "Campo obbligatore",
+	"formhint_multiple": " Scelta multipla è possibile (Ctrl + click)",
 	"mailsetup_edittitle": "Modificare impostazion SMTP",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port an SMTP-Server",
@@ -804,10 +804,10 @@
 	"mailsetup_smtppassword": "Password",
 	"mailsetup_smtpencrypt": "Codifica.",
 	"mailsetup_senderemail": "E-Mail dell' E-Mails uscire",
-	"mailsetup_sendername": "lo speditore dell'E-Mails uscire. ausgehende E-Mails",
-	"templates_creditadvice": "modello di accredito",
+	"mailsetup_sendername": "Mittente per e-mail in uscita",
+	"templates_creditadvice": "Modello di accredito",
 	"templates_edittitle": "Modificare modello",
-	"templates_expertise": "modello di esperienza",
+	"templates_expertise": "Modello di esperienza",
 	"templates_enquiry": "Modello di offerta",
 	"templates_contract": "Modello di ordine",
 	"templates_invoice": "Modello di fattura",
@@ -832,7 +832,7 @@
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
 	"bank_bankname": "Nome istituto di credito",
-	"bank_owner": "titolare di un conto",
+	"bank_owner": "Titolare di un conto",
 	"cashlink_createtitle": "Registrare Cashlink",
 	"cashlink_viewtitle": "Dati di Cashlink du loro",
 	"cashlink_business_title": "Dati dei ditta",
@@ -843,9 +843,9 @@
 	"cashlink_business_street_number": "Numero civico",
 	"cashlink_business_zipcode": "CAP",
 	"cashlink_business_city": "Città",
-	"cashlink_bank_title": "coordinate bancarie di conto",
+	"cashlink_bank_title": "Coordinate bancarie di conto",
 	"cashlink_owner_title": "Datti di contatto",
-	"cashlink_owner_firstname": "cognome ",
+	"cashlink_owner_firstname": "Cognome ",
 	"cashlink_owner_lastname": "Nome",
 	"cashlink_owner_street": "Strada",
 	"cashlink_owner_street_number": "Numero civico",
@@ -871,14 +871,14 @@
 			"verify": {
 				"title": "Inviare verifica",
 				"send": "Una verifica è trasportato",
-				"reinvitelink": "chiamare nuovo invito",
-				"contact": "puoi contattare noi per:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"reinvitelink": "Chiamare nuovo invito",
+				"contact": "Puoi contattare noi per:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 				"success": {
 					"common": "Verifica con link per attivare è stato inviato <b>per Post</b> all'indirizzo <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>.Dopo attivazione successo puoi usare tutte le funzioni della nostra rete gratuitamente 30 giorni.",
-					"reinvite": "un nuovo invito a <b>{customer.mail}</b> è stato inviato.   Per favore, Cliccare sul link nella email per verificare."
+					"reinvite": "Un nuovo invito a <b>{customer.mail}</b> è stato inviato.   Per favore, Cliccare sul link nella email per verificare."
 				},
 				"error": {
-					"common": " la verifica non potevo essere spedita.<br><br> mettersi in contatto con noi per potelo avviare immediatamente",
+					"common": "La verifica non potevo essere spedita.<br><br> mettersi in contatto con noi per potelo avviare immediatamente",
 					"completed": "Ti sei già registrato e link per attivare è stata mandata. <b>per posta</b> All'indirizzo <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. NDopo attivazione successo puoi usare tutte le funzioni della nostra rete gratuitamente 30 giorni.<br><br>contattaci se si non hai ricevuto  una cartolina così puoi iniziare.",
 					"expired": "Non è stato possibile inviare la verifica, perché termine ultimo invito è già scaduto.<br><br Fa clic sul link per ricevere un nuovo invito o mettersi in contatto con noi."
 				}
@@ -904,7 +904,7 @@
 		},
 		"action": {
 			"create": {
-				"main": "nuovo membro",
+				"main": "Nuovo membro",
 				"sub": "creare",
 				"title": "Creare nuovo membro",
 				"modaltitle": "Creare nuovo membro"
@@ -916,7 +916,7 @@
 				"button": "Rinnova ID di autenticazione!"
 			},
 			"search": {
-				"placeholder": "Per esempio: nome, azienda, indirizzo"
+				"placeholder": "Ad es.: nome, azienda, indirizzo"
 			}
 		},
 		"fieldSets": {
@@ -936,7 +936,7 @@
 			"company": "Società",
 			"winery": "cantina",
 			"taxid": "Codice fiscale",
-			"vatid": "USt-ID.",
+			"vatid": "Numero di vendita tax-identificazione",
 			"creditorid": "ID creditore",
 			"address": "Via e numero",
 			"zip": "Codice postale",
@@ -1007,14 +1007,14 @@
 			}
 		},
 		"actions": {
-			"load-more": "carica di più..."
+			"load-more": "Carica di più..."
 		}
 	},
 	"winery": {
 		"action": {
 			"add": {
-				"main": "Neues Weingut",
-				"sub": "hinzufügen"
+				"main": "Nuova vigna",
+				"sub": "creato"
 			},
 			"create": {
 				"main": "Nuova vigna",
@@ -1026,7 +1026,7 @@
 				"modaltitle": "modificare vigna"
 			},
 			"search": {
-				"placeholder": "Per esempio: Nom, Paga, Regione",
+				"placeholder": "Per es.: Nom, Paga, Regione",
 				"title": "Trova una vigna",
 				"modaltitle": "Trova una vigna"
 			},
@@ -1043,7 +1043,7 @@
 			"contact": "Contatto",
 			"description": "Descrizione",
 			"wines": "Vini",
-			"shopsettings": "impostazioni del sito web e del negozio online"
+			"shopsettings": "Impostazioni del sito web e del negozio online"
 		},
 		"field": {
 			"company": "Designazione",
@@ -1063,7 +1063,7 @@
 			"harvest": "Resa",
 			"bestplaces": "Le migliori posizioni",
 			"memberof": "Membro di",
-			"sorting": "Indice di ordinamento manuale (per esempio webshop)",
+			"sorting": "Indice di ordinamento manuale (per es. webshop)",
 			"charindex": "Indice alfabetico"
 		},
 		"list": {
@@ -1102,7 +1102,7 @@
 			},
 			"search": {
 				"title": "Rechercher marchand",
-				"placeholder" : "per esempio: Nom de l'entreprise, personne de contact ou adresse"
+				"placeholder" : "Per es.: Nom de l'entreprise, personne de contact ou adresse"
 			}
 		},
 		"fieldSets": {
@@ -1128,7 +1128,7 @@
 		},
 		"list": {
 			"filter": {
-				"country": "Land auswählen",
+				"country": "Seleziona la nazione",
 				"no_country": "Mostra commerciante senza paes"
 			}
 		},
@@ -1137,12 +1137,12 @@
 				"delete": "Sei sicuro di voler eliminare questo mercante"
 			},
 			"toasts": {
-				"deleted": "mercante è stato cancellato!",
+				"deleted": "Mercante è stato cancellato!",
 				"connected": "Il commerciante è stato aggiunto come fornitore",
-				"created": "mercante è stato creato"
+				"created": "Mercante è stato creato"
 			},
 			"hints": {
-				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (liberato)",
 				"noentries": "Nessuna voce ancora",
 				"connectmerchant": "Connettiti con il mercante"
 			}
@@ -1151,20 +1151,20 @@
 	"wine": {
 		"action": {
 			"add": {
-				"main": "aggiungere",
-				"sub": "aggiungere Vino"
+				"main": "Aggiungere",
+				"sub": "Vino"
 			},
 			"create": {
 				"main": "Nuovo vino",
 				"sub": "Creato",
 				"title": "Creare vino",
-				"modaltitle": "aggiungere vino"
+				"modaltitle": "Aggiungere vino"
 			},
 			"edit": {
 				"modaltitle": "Modificare vino"
 			},
 			"search": {
-				"placeholder": "z.B. Nom, Paese, regione, annata, numero di riferimento",
+				"placeholder": "Ad es. Nom, Paese, regione, annata, numero di riferimento",
 				"title": "Cerca vino",
 				"modaltitle": "Cerca vino"
 			},
@@ -1239,7 +1239,7 @@
 				}
 			},
 			"inshop": "Mostra nel negozio",
-			"instock": "In stock",
+			"instock": "In magazzino",
 			"inwinelist": "Mostra nella lista dei vini",
 			"maturation": "Maturazione",
 			"name": "Nom",
@@ -1247,8 +1247,8 @@
 				"label": "Mostra questo vino nella rete",
 				"description": "Se il tuo vino non appare sulla rete Vinou ©, puoi disattivare tutte le funzionalità della rete qui."
 			},
-			"nostock": "ubriaco",
-			"nostocktext": "Il testo veniva visualizzato quando il contenuto era ubriaco (per esempio disponibile da...)",
+			"nostock": "Ubriaco",
+			"nostocktext": "Il testo veniva visualizzato quando il contenuto era ubriaco (per es. disponibile da...)",
 			"public_wines": "Vini pubblici",
 			"stockunknown": "Nessuna informazione di stock",
 			"place": "Posizione",
@@ -1259,10 +1259,10 @@
 			"prices": "Prezzi",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
-			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
-			"qrlink": "Zieladresse für QR-Code",
-			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
-			"quality": "Qualitätsstufe",
+			"qrcode_create": "Il codice QR viene generato dopo il salvataggio.",
+			"qrlink": "Destinazione da memorizzare nel codice qr",
+			"qrlinkempty": "Indirizzo di destinazione per qr-code (Vino passa quando vuoto)",
+			"quality": "Livello di qualità",
 			"quality_types": {
 				"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
 				"table": "Wein mit Rebsorten- order Jahrgangsangabe",
@@ -1296,11 +1296,11 @@
 				"it_superior": "|IT| Vino tipico",
 				"it_table": "|IT| Vino da tavola"
 			},
-			"quantity": "stock",
+			"quantity": "Stock",
 			"region": "Regione di cultura",
 			"shoplink": "Link al negozio",
 			"shoplink_active": "Link al negozio attivo",
-			"sorting": "Indice di ordinamento manuale (per esempio per negozio)",
+			"sorting": "Indice di ordinamento manuale (per es. per negozio)",
 			"sweetness": "Zucchero residuo",
 			"taste": "Sapore",
 			"terroir": "Terra",
@@ -1341,7 +1341,7 @@
 		"vinougusto": {
 			"title": "La tua raccomandazione sul cibo per questo vino",
 			"expertisetitle": "Raccomandazione alimentare",
-			"winepasstitle": "si adatta bene"
+			"winepasstitle": "Si adatta bene"
 		},
 		"files": {
 			"title": "File e documenti su questo vino"
@@ -1361,10 +1361,10 @@
 				}
 			},
 			"type": {
-				"label": "ingresso / uscita",
+				"label": "Ingresso/uscita",
 				"items": {
-					"ingoing": "ingresso",
-					"outgoing": "uscita"
+					"ingoing": "Ingresso",
+					"outgoing": "Uscita"
 				}
 			},
 			"quantity": {
@@ -1413,7 +1413,7 @@
 				"label": "Mostra questa categoria nella rete",
 				"description": "Se la categoria non appare sulla rete Vinou ©, è possibile disabilitare tutte le funzionalità di rete qui."
 			},
-			"sorting": "Indice di ordinamento manuale (per esempio: per negozio)"
+			"sorting": "Indice di ordinamento manuale (per es.: per negozio)"
 		},
 		"actions": {
 			"create": {
@@ -1422,19 +1422,19 @@
 			},
 			"createfacebookiframe": {
 				"main": "Facebook-Iframe",
-				"sub": "Creare"
+				"sub": "creare"
 			},
 			"viewfacebookiframe": {
 				"main": "Facebook-Iframe",
-				"sub": "Guardare"
+				"sub": "guardare"
 			},
 			"createslider": {
 				"main": "Slider für Vinotheken-Display",
-				"sub": "Creare"
+				"sub": "creare"
 			},
 			"viewslider": {
 				"main": "Slider für Vinotheken-Display",
-				"sub": "Guardare"
+				"sub": "guardare"
 			}
 		},
 		"gallery": {
@@ -1477,8 +1477,8 @@
 		},
 		"field": {
 			"name": "Nom",
-			"articlenumber": "numero di riferimento",
-			"net": "prezzo neetto",
+			"articlenumber": "Numero di riferimento",
+			"net": "Prezzo neetto",
 			"tax": "IVA.",
 			"taxrate": "Aliquota fiscale",
 			"gross": "Prezzo lordo",
@@ -1488,8 +1488,8 @@
 					"notfound": "L'immagine non è stata trovata"
 				}
 			},
-			"active": "attivamente",
-			"nostock": "non disponibile",
+			"active": "Attivamente",
+			"nostock": "Non disponibile",
 			"nostocktext": "Testo se non disponibile",
 			"prices": "Prezzi",
 			"quantity": "Stock",
@@ -1501,21 +1501,21 @@
 				"subline": "creare"
 			},
 			"filter": {
-				"searchhint": "p.e. Nome, numero articolo"
+				"searchhint": "Ad es. Nome, numero articolo"
 			}
 		},
 		"messages": {
 			"hints": {
-				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Dimensioni: 1000x1000px<br/> Formato file: .png (esente)",
+				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Dimensioni: 1000x1000px<br/> Formato file: .png (liberato)",
 				"noentries": "Nessuna voce ancora"
 			},
 			"dialog": {
 				"delete": "Sei sicuro di voler eliminare questo prodotto??"
 			},
 			"toasts": {
-				"created": "prodotto è stato creato",
-				"changed": "prodotto è stato modificato",
-				"deleted": "prodotto è stato cancellato!",
+				"created": "Prodotto è stato creato",
+				"changed": "Prodotto è stato modificato",
+				"deleted": "Prodotto è stato cancellato!",
 				"image_uploaded": "Immagine del prodotto téléchargée!",
 				"image_deleted": "Immagine del prodotto eliminata",
 				"copied": "Prodotto duplicato"
@@ -1526,18 +1526,18 @@
 		"action": {
 			"create": {
 				"main": "Nuova nota",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		},
 		"field": {
-			"content": "contenuto",
+			"content": "Contenuto",
 			"edited": "Modificato il",
 			"wrote": "Scritto il"
 		},
 		"action": {
 			"create": {
 				"main": "Nuova nota",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		},
 		"messages": {
@@ -1561,11 +1561,11 @@
 				"modaltitle": "Modificare cliente"
 			},
 			"search": {
-				"placeholder": "z.B. Nom, Società, Indirizzo"
+				"placeholder": "Ad es. Nom, Società, Indirizzo"
 			},
 			"contactperson": {
 				"main": "Nuova Persona di contatto",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		},
 		"gallery": {
@@ -1588,14 +1588,14 @@
 			"settings": "Configurazione",
 			"addresses": "Altri indirizzi",
 			"bankingdetails": "Coordinate bancarie",
-			"paymentsettings": "fatturazione"
+			"paymentsettings": "Fatturazione"
 		},
 		"field": {
 			"contactname": "Persona di contatto",
 			"number": "Numero cliente",
 			"company": "Azienda",
 			"taxid": "Numero di identificazione fiscale",
-			"address": "via e numero",
+			"address": "Via e numero",
 			"address_supplement": "Indirizzo aggiuntivo",
 			"zip": "Codice postale",
 			"city": "Città",
@@ -1604,7 +1604,7 @@
 			"www": "Sito web",
 			"phone": "Telefono",
 			"fax": "Fax",
-			"active": "attivamente",
+			"active": "Attivamente",
 			"image": "Logo",
 			"department": "Reparto",
 			"type": "Tipo",
@@ -1653,7 +1653,7 @@
 		},
 		"messages": {
 			"hints": {
-				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Formato File: .png (freigestellt)",
+				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Formato File: .png (liberato)",
 				"noentries": "Nessuna voce ancora"
 			},
 			"dialog": {
@@ -1672,24 +1672,24 @@
 	"address": {
 		"action": {
 			"create": {
-				"title": "Adresse anlegen",
-				"main": "Neue Adresse",
-				"sub": "anlegen"
+				"title": "Creare indirizzo",
+				"main": "Crea nuovo ",
+				"sub": "indirizzo"
 			},
-			"save": "Adresse speichern"
+			"save": "Salva indirizzo"
 		},
 		"field": {
-			"type": "Adresstyp",
-			"fullname": "Name",
-			"name": "Name/Ansprechpartner",
-			"company": "Firma",
-			"address": "Straße und Hausnummer",
-			"address_supplement": "Adresszusatz",
-			"zip": "PLZ",
-			"city": "Stadt",
-			"country": "Land",
-			"defaultdeliveryaddress": "Standardlieferadresse",
-			"defaultinvoiceaddress": "Standardrechnungsadresse",
+			"type": "Address-type",
+			"fullname": "Nome",
+			"name": "Nome/Contatto",
+			"company": "Società",
+			"address": "Via e numero civico",
+			"address_supplement": "Indirizzo aggiuntivo",
+			"zip": "Codice postale",
+			"city": "Città",
+			"country": "Nazione",
+			"defaultdeliveryaddress": "Indirizzo di consegna standard",
+			"defaultinvoiceaddress": "Indirizzo di fatturazione standard",
 			"defaultinvoicemsg": "L'indirizzo specificato qui è impostato nel campo 'Generale'",
 			"searchaddress": "Cerca l'indirizzo di consegna"
 		},
@@ -1705,8 +1705,8 @@
 		},
 		"actions": {
 			"create": {
-				"main": "persona di contatto",
-				"sub": "Creare"
+				"main": "Persona di contatto",
+				"sub": "creare"
 			},
 			"save": {
 				"title": "Salva contatto"
@@ -1715,9 +1715,10 @@
 	},
 	"order": {
 		"documenttypes": {
-			"invoice": "fattura",
+			"invoice": "Fattura",
 			"delivery": "Bolla di consegna",
 			"shipment": "Etichetta del pacco",
+			"offer": "Offerte",
 			"creditadvice": "Credito"
 		},
 		"paymenttypes": {
@@ -1753,20 +1754,20 @@
 			"add_position": "+ Aggiungi posizione",
 			"create": {
 				"main": "Nuovo rdine",
-				"sub": "Creare"
+				"sub": "creare"
 			},
 			"search": {
-				"placeholder": "z.B. Nom, numero di client, Indirizzo"
+				"placeholder": "Ad es. Nom, numero di client, Indirizzo"
 			},
 			"invoice_create": {
 				"main": "Fattura",
 				"create": "Creare",
-				"print": "stampa",
-				"show": "affiggere"
+				"print": "Stampa",
+				"show": "Affiggere"
 			},
 			"delivery_note_create": {
-				"main": "Lieferschein",
-				"create": "Creare",
+				"main": "Bolla di consegna",
+				"create": "creare",
 				"print": "stampa",
 				"show": "affiggere"
 			},
@@ -1776,11 +1777,11 @@
 			},
 			"voucher_create": {
 				"main": "Credito",
-				"create": "Creare"
+				"create": "creare"
 			},
 			"shippingotheraddress": {
-				"main": "Diverso",
-				"sub": "Indirizzo di consegna"
+				"main": "Diverso indirizzo",
+				"sub": "di consegna"
 			}
 		},
 		"fieldSets": {
@@ -1826,18 +1827,18 @@
 			"pricingnet": "Fattura netta",
 			"pricinggross": "Fattura lordo",
 			"quantity": "Prezzo",
-			"rebate": "Sconto(in %)",
+			"rebate": "Sconto (in %)",
 			"rebatesum": "Sconto",
 			"same_invoice_addr": "Come l'indirizzo di fatturazione",
-			"search_product": "cerca prodotto",
+			"search_product": "Cerca prodotto",
 			"shipping_different_location": "Indirizzo di consegna diverso",
 			"state": "Stato",
 			"taxfree": "IVA esente",
 			"vatincluded": "IVA inclusa {tax} ",
-			"vatexcluded": "più {tax} IVA.",
+			"vatexcluded": "Più {tax} IVA.",
 			"yardsale": "Vendita dell'azienda agricola",
 			"payment_income": {
-				"main": "pagamento",
+				"main": "Pagamento",
 				"sub": "ricevuto"
 			},
 			"booking_payment_income": {
@@ -1866,7 +1867,7 @@
 		"actions": {
 			"create": {
 				"main": "Opzione di spedizione",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		},
 		"views": {
@@ -1897,7 +1898,7 @@
 			"price": "Prezzo"
 		},
 		"types": {
-			"bottles": "bottiglia",
+			"bottles": "Bottiglia",
 			"weight": "Grammo"
 		}
 	},
@@ -1905,7 +1906,7 @@
 		"actions": {
 			"create": {
 				"main": "Nuova unità di spedizione",
-				"sub": "Creare"
+				"sub": "creare"
 			}
 		},
 		"field": {
@@ -2033,7 +2034,7 @@
 			}
 		},
 		"fields": {
-			"clients": "clienti"
+			"clients": "Clienti"
 		},
 		"dialogs": {
 			"delete": "Sei sicuro di voler eliminare questa classe di prezzo??"
@@ -2048,17 +2049,17 @@
 		"actions": {
 			"create": {
 				"main": "Nuovi dati",
-				"sub": "Creare"
+				"sub": "creare"
 			},
 			"save": "Salva il file"
 		},
 		"fields": {
 			"title": "Titolo",
 			"description": "Descrizione",
-			"identifier": "Identifier (für externen Zugriff)",
+			"identifier": "Identificazione (per accesso esterno)",
 			"file": "Download del file",
 			"public": {
-				"true": "pubblicamente visibile",
+				"true": "Pubblicamente visibile",
 				"false": "visibile solo all'interno"
 			}
 		},
@@ -2077,7 +2078,7 @@
 			"description": "Gestisci il tuo indirizzo di fatturazione, il tuo abbonamento, i tuoi dati bancari, ecc."
 		},
 		"membership": {
-			"title": "abbonamento",
+			"title": "Abbonamento",
 			"description": "Questo è lo stato del tuo abbonamento attuale"
 		},
 		"customer": {
@@ -2091,13 +2092,13 @@
 			},
 			"wineries": {
 				"title": "La mia vigna",
-				"description": "Crea qui altre vigna, ad esempio per vendere i tuoi vini come azienda vinicola o imbottigliatrice. Queste informazioni sono pubblicamente visibili sulla rete Vinou."
+				"description": "Crea qui altre vigna, ad es. per vendere i tuoi vini come azienda vinicola o imbottigliatrice. Queste informazioni sono pubblicamente visibili sulla rete Vinou."
 			}
 		},
 		"payments": {
 			"title": "Metodi di pagamento",
 			"description": "Utilizzando diversi metodi di pagamento, puoi offrire ai tuoi clienti finali più opzioni nel negozio online.",
-			"bankaccount": "Bankverbindung"
+			"bankaccount": "Banca"
 		},
 		"packagings": {
 			"title": "Opzione di spedizione",
@@ -2121,15 +2122,15 @@
 			"management": {
 				"title": "Gestione delle spedizioni",
 				"inactive": "Abilita la gestione delle spedizioni Vinou con ShipCloud per utilizzare rapidamente ed economicamente le etichette di spedizione Vinou.",
-				"description": "Configura le tue spedizioni per definire, ad esempio, un fornitore di servizi logistici standard."
+				"description": "Configura le tue spedizioni per definire, ad es., un fornitore di servizi logistici standard."
 			}
 		},
 		"technical": {
-			"title": "Technik",
+			"title": "Tecnica",
 			"description": "Per alcune cose, puoi anche eseguire impostazioni tecniche. Puoi trovare queste impostazioni qui."
 		},
 		"templates": {
-			"title": "modelli",
+			"title": "Modelli",
 			"description": "In Vinou, tutti i documenti PDF possono essere forniti con un modello individuale."
 		},
 		"mail": {
@@ -2178,7 +2179,7 @@
 		"merchant_save_error": "Impossibile salvare!",
 		"merchant_image_deleted": "Immagine cancellata!",
 		"order_created": "Ordine è stato creato",
-		"order_updated": "Ordine è stato Modificato",
+		"order_updated": "Ordine è stato modificato",
 		"order_creditadvice_created": "Credito creato e ordine annullato!",
 		"order_cancelled": "Ordine annullato!",
 		"order_deleted": "Ordine cancellato!",
@@ -2189,7 +2190,7 @@
 		"order_billing_as_delivery": "Adresse de facturation enregistrée comme adresse de livraison!",
 		"order_billingaddress_create": "Indirizzo creato!",
 		"order_invoice_created": "Fatturazione creata!",
-		"order_noupdate": "Kein Update notwendig!",
+		"order_noupdate": "Nessun aggiornamento necessario!",
 		"order_deliveryaddress_create": "Indirizzo di consegna creato e ordine aggiornato!",
 		"order_delivery_created": "Nota di consegna creata!",
 		"order_payment_changed": "Tipo di pagamento aggiornato!",
@@ -2258,22 +2259,22 @@
 	},
 	"hints": {
 		"wineries": {
-			"imagesize": "<b>raccomandazione per una presentazione ottimale</b><br>Size: 1000x1000px<br/>Formato file: .png (Esente)"
+			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: 1000x1000px<br/>Formato file: .png (liberato)"
 		},
 		"wines": {
-			"imagesize": "<b>raccomandazione per una presentazione ottimale</b><br>Size: 500x2000px<br/>Formato file: .png (Esente)"
+			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: 500x2000px<br/>Formato file: .png (liberato)"
 		},
 		"categories": {
-			"imagesize": "<b>raccomandazione per una presentazione ottimale</b><br>Size: mind. 1500px Breite<br/>Formato file: .png (Esente)"
+			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: min. 1500px larghezza<br/>Formato file: .png (liberato)"
 		},
 		"users": {
-			"imagesize": "<b>raccomandazione per una presentazione ottimale</b><br>Size: 1000x1000px<br/>Formato file: .png (freigestellt)"
+			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: 1000x1000px<br/>Formato file: .png (liberato)"
 		},
 		"customer": {
-			"imagesize": "<b>raccomandazione per una presentazione ottimale</b><br>Size: mind. 1000px larghezza<br/>Formato file: .png (Esente)"
+			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: mind. 1000px larghezza<br/>Formato file: .png (liberato)"
 		},
 		"clients": {
-			"imagesize": "<b>raccomandazione per una presentazione ottimale</b><br>Size: mind. 1000px larghezza<br/>Formato file: .png (Esente)"
+			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: mind. 1000px larghezza<br/>Formato file: .png (liberato)"
 		}
 	},
 	"buttons": {
@@ -4130,29 +4131,29 @@
 		"5": "doux (mild)"
 	},
 	"countries": {
-		"at": "Österreich",
-		"be": "Belgien",
-		"bg": "Bulgarien",
+		"at": "Austria",
+		"be": "Belgio",
+		"bg": "Bulgaria",
 		"ca": "Canada",
-		"ch": "Schweiz",
+		"ch": "Svizzera",
 		"cl": "Chile",
-		"cz": "Tschechien",
-		"de": "Deutschland",
-		"en": "Großbritanien",
-		"es": "Spanien",
-		"fr": "Frankreich",
-		"gr": "Griechenland",
-		"hr": "Kroatien",
-		"hu": "Ungarn",
-		"it": "Italien",
+		"cz": "Repubblica Ceca",
+		"de": "Germania",
+		"en": "Gran Bretagna",
+		"es": "Spagna",
+		"fr": "Francia",
+		"gr": "Grecia",
+		"hr": "Croazia",
+		"hu": "Ungheria",
+		"it": "Italia",
 		"mt": "Malta",
-		"nl": "Niederlande",
-		"pt": "Portugal",
-		"ro": "Rumänien",
-		"se": "Schweden",
-		"si": "Slowenien",
+		"nl": "Paesi Bassi",
+		"pt": "Portogallo",
+		"ro": "Romania",
+		"se": "Svezia",
+		"si": "Slovenia",
 		"sx": "Sint Maarten",
-		"uk": "Vereinigtes Königreich"
+		"uk": "Regno Unito"
 	},
 	"languages": {
 		"de": {
@@ -4349,7 +4350,7 @@
 	},
 	"winetypes":{
 		"red": "Rosso",
-		"white": "bianco",
+		"white": "Bianco",
 		"rose": "Rosato",
 		"rotling": "Rotling",
 		"secco": "Secco",
@@ -4365,7 +4366,7 @@
 		"categories": {
 			"meat": "Carne",
 			"preparation": "Preparazione",
-			"milkproducts": "prodotti lattiero-caseari",
+			"milkproducts": "Prodotti lattiero-caseari",
 			"vegetables": "Verdura",
 			"styles": "Styles",
 			"bread": "Pane",
@@ -4392,7 +4393,7 @@
 		"salad": "Insalata",
 		"tubers": "Tuberi o rape",
 		"nightshades": "Pomodori / Solanaceae",
-		"mushrooms": "Pilze",
+		"mushrooms": "Funghi",
 		"nuts": "Noccioline",
 		"treenuts": "Frutta buccia",
 		"pepper": "Pepe",
@@ -4410,7 +4411,7 @@
 		"creme": "Creme",
 		"ice": "Ghiaccio",
 		"chocolate": "Cioccolato",
-		"coffee": "caffè"
+		"coffee": "Caffè"
 	},
 	"apps": {
 		"vinou-gusto": {
