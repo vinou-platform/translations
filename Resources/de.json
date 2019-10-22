@@ -4133,12 +4133,12 @@
 		"at": "Österreich",
 		"be": "Belgien",
 		"bg": "Bulgarien",
-		"ca": "Canada",
+		"ca": "Kanada",
 		"ch": "Schweiz",
 		"cl": "Chile",
 		"cz": "Tschechien",
 		"de": "Deutschland",
-		"en": "Großbritanien",
+		"en": "Großbritannien",
 		"es": "Spanien",
 		"fr": "Frankreich",
 		"gr": "Griechenland",
@@ -4174,6 +4174,11 @@
 			"title": "Italienisch",
 			"code": "it",
 			"iso": "it_IT"
+		},
+		"es": {
+			"title": "Spanisch",
+			"code": "es",
+			"iso": "es_ES"
 		}
 	},
 	"wineregions": {
