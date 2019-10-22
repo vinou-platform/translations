@@ -167,6 +167,52 @@
 			"percent": "Remise en pourcentage"
 		}
 	},
+	"offer": {
+		"action": {
+			"cancelOffer": {
+				"main": "Annuler l'offre",
+				"sub": " ",
+				"cancelled": "L'offre est annulée"
+			},
+			"create": {
+				"main": "Créer une offre",
+				"sub": " "
+			},
+			"createOrder": {
+				"main": "Créer un ordre",
+				"sub": " ",
+				"cancel": "L'offre est annulée"
+			},
+			"print": {
+				"main": "Offre",
+				"sub": "d'impression"
+			}
+		},
+		"fields": {
+			"createTitle": "Créer une offre",
+			"createDate": "Offre créée",
+			"cancelDate": "Offre annulée",
+			"next_summary": "Continuer à l'aperçu de l'offre",
+			"title": "Offre",
+			"status": {
+				"cancelled": "L'offre est annulée",
+				"new": "Offre créée"
+			}
+		},
+		"fieldset": {
+			"summary_title": "Aperçu des offres"
+		},
+		"modal": {
+			"cancelOffer": "L'offre doit-elle vraiment être annulée?",
+			"createFromOffer": "Entrez une commande d'offre. Que voulez vous faire?"
+		},
+		"toasts": {
+			"created": "Offre créée.",
+			"offerCancelled": "L'offre est annulée.",
+			"documentCreated": "Offre créée.",
+			"updated": "L'offre a été mise à jour."
+		}
+	},
 	"currenttoken_old": "Jeton actuel",
 	"currenttoken": "Connexion actuel",
 	"tokens": {
@@ -719,6 +765,7 @@
 	"db_orders_createtitle": "Créer ordre",
 	"db_orders_edittitle": "Éditer ordre",
 	"db_orders_viewtitle": "Regarder ordre",
+	"db_orders_status_offer": "Offres",
 	"db_orders_status_new": "Reçu",
 	"db_orders_status_need_payment": "Paiement anticipé attendu",
 	"db_orders_status_payed": "Paiement anticipé reçu",
@@ -4175,6 +4222,11 @@
 			"title": "Italien",
 			"code": "it",
 			"iso": "it_IT"
+		},
+		"es": {
+			"title": "Espagnol",
+			"code": "es",
+			"iso": "es_ES"
 		}
 	},
 	"wineregions": {

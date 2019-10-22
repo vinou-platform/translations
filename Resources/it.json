@@ -167,6 +167,52 @@
 			"percent": "Sconto percentuale"
 		}
 	},
+	"offer": {
+		"action": {
+			"cancelOffer": {
+				"main": "Annulla offerta",
+				"sub": " ",
+				"cancelled": "L'offerta è stata annullata"
+			},
+			"create": {
+				"main": "Creare un'offerta",
+				"sub": " "
+			},
+			"createOrder": {
+				"main": "Crea ordine",
+				"sub": " ",
+				"cancel": "L'offerta è stata annullata"
+			},
+			"print": {
+				"main": "Offerta ",
+				"sub": "di stampa"
+			}
+		},
+		"fields": {
+			"createTitle": "Creare un'offerta",
+			"createDate": "Offerta creata",
+			"cancelDate": "Offerta annullata",
+			"next_summary": "Passare alla panoramica dell'offerta",
+			"title": "Offerta",
+			"status": {
+				"cancelled": "L'offerta è stata annullata",
+				"new": "Offerta creata"
+			}
+		},
+		"fieldset": {
+			"summary_title": "panoramica delle offerte"
+		},
+		"modal": {
+			"cancelOffer": "L'offerta dovrebbe davvero essere cancellata?",
+			"createFromOffer": "Inserisci un ordine dall'offerta. Che cosa vuoi fare?"
+		},
+		"toasts": {
+			"created": "Offerta creata.",
+			"offerCancelled": "Offerta annullata.",
+			"documentCreated": "Offerta creata.",
+			"updated": "L'offerta è stata aggiornata."
+		}
+	},
 	"currenttoken_old": "Token finora",
 	"currenttoken": "Connessione corrente",
 	"tokens": {
@@ -719,6 +765,7 @@
 	"db_orders_createtitle": "Creare ordine",
 	"db_orders_edittitle": "Modificare ordine",
 	"db_orders_viewtitle": "Guardare ordine",
+	"db_orders_status_offer": "Offerte",
 	"db_orders_status_new": "Ricevute",
 	"db_orders_status_need_payment": "Attendere Pagamento anticipato",
 	"db_orders_status_payed": "Pagamento m anticipato ricevute",
@@ -4175,6 +4222,11 @@
 			"title": "Italiano",
 			"code": "it",
 			"iso": "it_IT"
+		},
+		"es": {
+			"title": "Spagnolo",
+			"code": "es",
+			"iso": "es_ES"
 		}
 	},
 	"wineregions": {
