@@ -109,7 +109,7 @@
 			},
 			"createClient": {
 				"main": "Créer",
-				"sub": "client",
+				"sub": "client"
 			},
 			"createOrder": {
 				"main": "Créer",
