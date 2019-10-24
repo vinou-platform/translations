@@ -1774,6 +1774,9 @@
 			"shippingotheraddress": {
 				"main": "Abweichende",
 				"sub": "Lieferadresse"
+			},
+			"export": {
+				"collection": "Rechnungen für ausgewählten Zeitraum herunterladen"
 			}
 		},
 		"fieldsets": {

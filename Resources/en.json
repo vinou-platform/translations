@@ -1769,6 +1769,9 @@
 			"shippingotheraddress": {
 				"main": "Different",
 				"sub": "delivery address"
+			},
+			"export": {
+				"collection": "Download invoices for selected time period."
 			}
 		},
 		"fieldsets": {
