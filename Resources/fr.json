@@ -120,13 +120,6 @@
 			"quickactions": "Actions rapides"
 		}
 	},
-	"price": "Prix",
-	"quantity": "Quantité",
-	"articlenumber": "Numéro de référence",
-	"de": "Allemagne",
-	"en": "Grande-Bretagne",
-	"fr": "France",
-	"fileupload": "Sélectionner le fichier",
 	"delete_image": "Supprimer l'image",
 	"delete_image_secure": "Voulez-vous vraiment supprimer cette image?",
 	"delete_template_secure": "Voulez-vous vraiment supprimer ce modèle d'expertise?",
@@ -165,52 +158,6 @@
 		"methods": {
 			"general": "Remise forfaitaire (brute)",
 			"percent": "Remise en pourcentage"
-		}
-	},
-	"offer": {
-		"action": {
-			"cancelOffer": {
-				"main": "Annuler l'offre",
-				"sub": " ",
-				"cancelled": "L'offre est annulée"
-			},
-			"create": {
-				"main": "Créer une offre",
-				"sub": " "
-			},
-			"createOrder": {
-				"main": "Créer un ordre",
-				"sub": " ",
-				"cancel": "L'offre est annulée"
-			},
-			"print": {
-				"main": "Offre",
-				"sub": "d'impression"
-			}
-		},
-		"fields": {
-			"createTitle": "Créer une offre",
-			"createDate": "Offre créée",
-			"cancelDate": "Offre annulée",
-			"next_summary": "Continuer à l'aperçu de l'offre",
-			"title": "Offre",
-			"status": {
-				"cancelled": "L'offre est annulée",
-				"new": "Offre créée"
-			}
-		},
-		"fieldset": {
-			"summary_title": "Aperçu des offres"
-		},
-		"modal": {
-			"cancelOffer": "L'offre doit-elle vraiment être annulée?",
-			"createFromOffer": "Entrez une commande d'offre. Que voulez vous faire?"
-		},
-		"toasts": {
-			"created": "Offre créée.",
-			"offerCancelled": "L'offre est annulée.",
-			"documentCreated": "Offre créée.",
-			"updated": "L'offre a été mise à jour."
 		}
 	},
 	"currenttoken_old": "Jeton actuel",
@@ -672,7 +619,6 @@
 	"logout": "Se déconnecter",
 	"edit": "´Éditer",
 	"save": "Enregistrer",
-	"cancel": "Annuler",
 	"repeatpw": "Répéter le mot de passe",
 	"language": "Langue",
 	"modal_delete_wine": "Voulez-vous vraiment supprimer ce vin?",
@@ -1242,7 +1188,10 @@
 			"acid": "Teneur en acide",
 			"active": "Aktif",
 			"alcohol": "Teneur en alcool",
-			"allergens": "Allergènes",
+			"allergens": {
+				"label": "Allergènes",
+				"placeholder": "Rechercher allergènes"
+			},
 			"allergen_types": {
 				"sulphide": "Sulfite",
 				"eggwhite": "œuf",
@@ -1270,10 +1219,6 @@
 				"main": "Expertise",
 				"sub": "afficher",
 				"title": "Expertise ouverte dans une nouvelle fenêtre"
-			},
-			"allergens": {
-				"label": "Allergènes",
-				"placeholder": "Rechercher allergènes"
 			},
 			"grapetypes": {
 				"label": "Cépag",
@@ -1570,12 +1515,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Créer",
-				"sub": "note"
-			}
-		},
 		"field": {
 			"content": "Content",
 			"edited": "Édité sur",

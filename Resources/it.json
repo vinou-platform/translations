@@ -120,13 +120,6 @@
 			"quickactions": "Quickactions"
 		}
 	},
-	"price": "Prezzo",
-	"quantity": "Quantità",
-	"articlenumber": "Numero dell'articolo",
-	"de": "Germania",
-	"en": " Inghilterra",
-	"fr": "Francia",
-	"fileupload": "Seleziona un file",
 	"delete_image": "Cancellare le foto",
 	"delete_image_secure": "Vuoi veramente cancellare la foto",
 	"delete_template_secure": "Vuoi veramente cancellare questo esperienza",
@@ -165,52 +158,6 @@
 		"methods": {
 			"general": "L'opzione di sconto",
 			"percent": "Sconto percentuale"
-		}
-	},
-	"offer": {
-		"action": {
-			"cancelOffer": {
-				"main": "Annulla offerta",
-				"sub": " ",
-				"cancelled": "L'offerta è stata annullata"
-			},
-			"create": {
-				"main": "Creare un'offerta",
-				"sub": " "
-			},
-			"createOrder": {
-				"main": "Crea ordine",
-				"sub": " ",
-				"cancel": "L'offerta è stata annullata"
-			},
-			"print": {
-				"main": "Offerta ",
-				"sub": "di stampa"
-			}
-		},
-		"fields": {
-			"createTitle": "Creare un'offerta",
-			"createDate": "Offerta creata",
-			"cancelDate": "Offerta annullata",
-			"next_summary": "Passare alla panoramica dell'offerta",
-			"title": "Offerta",
-			"status": {
-				"cancelled": "L'offerta è stata annullata",
-				"new": "Offerta creata"
-			}
-		},
-		"fieldset": {
-			"summary_title": "panoramica delle offerte"
-		},
-		"modal": {
-			"cancelOffer": "L'offerta dovrebbe davvero essere cancellata?",
-			"createFromOffer": "Inserisci un ordine dall'offerta. Che cosa vuoi fare?"
-		},
-		"toasts": {
-			"created": "Offerta creata.",
-			"offerCancelled": "Offerta annullata.",
-			"documentCreated": "Offerta creata.",
-			"updated": "L'offerta è stata aggiornata."
 		}
 	},
 	"currenttoken_old": "Token finora",
@@ -672,7 +619,6 @@
 	"logout": "Esci",
 	"edit": "Modificare",
 	"save": "Salvare",
-	"cancel": "Interrompere",
 	"repeatpw": "Ripetere password",
 	"language": "Lingua",
 	"modal_delete_wine": "Vuoi veramente cancellare questo vino?",
@@ -1242,7 +1188,10 @@
 			"acid": "Contenuto acido",
 			"active": "Attivamente",
 			"alcohol": "Teneur en alcool",
-			"allergens": "Allergeni",
+			"allergens": {
+				"label": "Allergeni",
+				"placeholder": "Ricerca Allergeni"
+			},
 			"allergen_types": {
 				"sulphide": "Sulfite",
 				"eggwhite": "Ouvo",
@@ -1270,10 +1219,6 @@
 				"main": "Esperienza",
 				"sub": "affiggere",
 				"title": "Apri l'esperienza in una nuova finestra"
-			},
-			"allergens": {
-				"label": "Allergeni",
-				"placeholder": "Ricerca Allergeni"
 			},
 			"grapetypes": {
 				"label": "Uva",
@@ -1570,12 +1515,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Nuova nota",
-				"sub": "creare"
-			}
-		},
 		"field": {
 			"content": "Contenuto",
 			"edited": "Modificato il",

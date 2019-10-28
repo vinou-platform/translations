@@ -120,13 +120,6 @@
 			"quickActions": "Schnellaktionen"
 		}
 	},
-	"price": "Preis",
-	"quantity": "Bestand",
-	"articlenumber": "Artikelnummer",
-	"de": "Deutschland",
-	"en": "England",
-	"fr": "Frankreich",
-	"fileupload": "Datei auswählen",
 	"delete_image": "Bild löschen",
 	"delete_image_secure": "Möchtest du dieses Bild wirklich löschen?",
 	"delete_template_secure": "Möchtest du ihre Vorlage für Expertisen wirklich löschen?",
@@ -626,7 +619,6 @@
 	"logout": "Abmelden",
 	"edit": "Bearbeiten",
 	"save": "Speichern",
-	"cancel": "Abbrechen",
 	"repeatpw": "Passwort wiederholen",
 	"language": "Sprache",
 	"modal_delete_wine": "Möchtest du diesen Wein wirklich löschen?",
@@ -1195,7 +1187,10 @@
 			"acid": "Säuregehalt",
 			"active": "aktiv",
 			"alcohol": "Alkoholgehalt",
-			"allergens": "Allergene",
+			"allergens": {
+				"label": "Allergene",
+				"placeholder": "Allergene suchen"
+			},
 			"allergen_types": {
 				"sulphide": "Sulfit",
 				"eggwhite": "Ei",
@@ -1223,10 +1218,6 @@
 				"main": "Expertise",
 				"sub": "anzeigen",
 				"title": "Expertise in neuem Fenster öffnen"
-			},
-			"allergens": {
-				"label": "Allergene",
-				"placeholder": "Allergene suchen"
 			},
 			"grapetypes": {
 				"label": "Rebsorten",
@@ -1523,12 +1514,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Neue Notiz",
-				"sub": "anlegen"
-			}
-		},
 		"field": {
 			"content": "Inhalt",
 			"edited": "Bearbeitete am",
