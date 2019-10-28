@@ -1059,7 +1059,8 @@
 			"bestplaces": "Best places",
 			"memberof": "Member of",
 			"sorting": "Manual index (e.g. for shop use)",
-			"charindex": "Alphabetic index"
+			"charindex": "Alphabetic index",
+			"certificateId": "OFA Certification-ID"
 		},
 		"list": {
 			"filter": {
@@ -4393,6 +4394,21 @@
 		"ice": "Ice",
 		"chocolate": "Chocolate",
 		"coffee": "Coffee"
+	},
+	"organicFoodAssociations": {
+		"field": {
+			"label": "Member in Organic Food Associations"
+		},
+		"associations": {
+			"1000": "Biokreis",
+			"1001": "Bioland",
+			"1002": "BioPark",
+			"1003": "Bio Suisse",
+			"1004": "Demeter",
+			"1005": "EcoVin",
+			"1006": "Gää e.V.",
+			"1007": "Naturland"
+		}
 	},
 	"apps": {
 		"vinou-gusto": {

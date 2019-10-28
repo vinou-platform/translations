@@ -1064,7 +1064,8 @@
 			"bestplaces": "Beste Lagen",
 			"memberof": "Mitglied bei",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
-			"charindex": "Alphabetischer Index"
+			"charindex": "Alphabetischer Index",
+			"certificateId": "BIO-Zertifikats-ID"
 		},
 		"list": {
 			"filter": {
@@ -4399,6 +4400,22 @@
 		"ice": "Eis",
 		"chocolate": "Schokolade",
 		"coffee": "Kaffee"
+	},
+	"organicFoodAssociations": {
+		"field": {
+			"label": "Mitglied bei Bio-Verband",
+			"placeholder": "Bioverband auswählen"
+		},
+		"associations": {
+			"1000": "Biokreis",
+			"1001": "Bioland",
+			"1002": "BioPark",
+			"1003": "Bio Suisse",
+			"1004": "Demeter",
+			"1005": "EcoVin",
+			"1006": "Gää e.V.",
+			"1007": "Naturland"
+		}
 	},
 	"apps": {
 		"vinou-gusto": {
