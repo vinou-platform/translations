@@ -29,7 +29,7 @@
 		"cellar.substances": "Substances"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
 		},
@@ -116,20 +116,18 @@
 				"sub": " "
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"quickActions": "Quick actions"
 		}
 	},
-	"de":"Germany",
-	"en":"England",
-	"fr":"France",
-	"fileupload":"Choose file",
 	"delete_image":"Delete Image",
 	"delete_image_secure":"Do you really want to delete the image?",
 	"delete_template_secure":"Do you really want to delete the template?",
 	"changepw":"Change password",
 	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
+	"wineries_modal_delete": "Do you really want to delete the selected winery?",
+	"category_modal_delete": "Do you really want to delete the selected category?",
 	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
@@ -141,7 +139,7 @@
 	"orders_modal_create": "You're creating an order, what do you want to do?",
 	"orders_modal_create_withinvoice": "Create order with invoice and delivery note",
 	"orders_modal_create_only": "Create only",
-	"orders_modal_sent": "Do you really want to set this order as dispatched",
+	"orders_modal_sent": "Do you really want to set this order as dispatched?",
 	"orders_position_delete": "Do you really want to delete this item?",
 	"orders_position_update": "Do you really want to update this item?",
 	"orders_position_add": "Do you really want to add this item",
@@ -621,7 +619,6 @@
 	"logout": "Logout",
 	"edit": "Edit",
 	"save": "Save",
-	"cancel": "Cancel",
 	"repeatpw": "Retype password",
 	"language": "Language",
 	"modal_delete_wine": "Do you really want to delete this wine?",
@@ -914,7 +911,7 @@
 				"placeholder": "e.g. name, company, address"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Membership",
 			"contact": "Contact data",
 			"description": "Description",
@@ -1033,7 +1030,7 @@
 		"tabs": {
 			"files": "Files"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"contact": "Contact",
 			"description": "Description",
@@ -1101,7 +1098,7 @@
 				"placeholder" : "e.g. company, contact or address"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"description": "Description"
 		},
@@ -1170,7 +1167,7 @@
 			"barcodedownloadvector": "Download GTIN code as vektor file",
 			"qrcodedownloadvector": "Download QR code as vector file"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergens",
 			"general": "General",
 			"stock": "Stock",
@@ -1191,7 +1188,10 @@
 			"acid": "Acid",
 			"active": "active",
 			"alcohol": "Alcohol",
-			"allergens": "Allergens",
+			"allergens": {
+				"label": "Allergens",
+				"placeholder": "Search for allergens"
+			},
 			"allergen_types": {
 				"sulphide": "Sulphide",
 				"eggwhite": "Eggwhite",
@@ -1219,10 +1219,6 @@
 				"main": "Show expertise",
 				"sub": " ",
 				"title": "Open expertise in new window"
-			},
-			"allergens": {
-				"label": "Allergens",
-				"placeholder": "Search for allergens"
 			},
 			"grapetypes": {
 				"label": "Grapetypes",
@@ -1252,18 +1248,7 @@
 				"label": "Price",
 				"none": "not specified"
 			},
-			"prices": {
-				"standard": "Default netto price",
-				"action": {
-					"create": {
-						"main": "New price",
-						"sub": " "
-					},
-					"delete": {
-						"confirm": "Do you really want to delete the selected price?"
-					}
-				}
-			},
+			"prices": "Prices",
 			"qrcode": "QR code",
 			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
@@ -1405,7 +1390,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"network": "My Network",
 			"shopsettings": "Website & shop settings"
@@ -1453,6 +1438,24 @@
 				"asc": "Ascending",
 				"desc": "Descending"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Gross",
+		"net": "Net",
+		"taxrate": "Taxrate",
+		"standard": "Default price",
+		"action": {
+			"create": {
+				"main": "New price",
+				"sub": " "
+			},
+			"delete": {
+				"confirm": "Do you really want to delete the selected price?"
+			}
+		},
+		"fieldSets": {
+			"title": "Prices"
 		}
 	},
 	"product": {
@@ -1512,12 +1515,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Create note",
-				"sub": " "
-			}
-		},
 		"field": {
 			"content": "Content",
 			"edited": "edited on",
@@ -1570,7 +1567,7 @@
 				"type": "Filter type of client"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"contactperson": "Contact person",
 			"contact": "Contact data",
@@ -1772,7 +1769,7 @@
 				"sub": "delivery address"
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Edit view",
 			"search_product": "Search product",
 			"packaging_shipping": "Packaging and shipping"
@@ -1819,6 +1816,7 @@
 			"rebatesum": "Rebate",
 			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",
+			"shipping_different_location": "Different delivery location",
 			"state": "State",
 			"taxfree": "Tax free",
 			"vatincluded": "incl. VAT {tax}",
@@ -4157,6 +4155,11 @@
 			"title": "French",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italian",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
