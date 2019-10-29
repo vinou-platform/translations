@@ -568,7 +568,8 @@
 		"fields": {
 			"substance": "sustancia",
 			"quantity": "cantidad",
-			"note": "notas"
+			"note": "notas",
+			"stock": "inventario"
 		},
 		"views": {
 			"editAddition": {

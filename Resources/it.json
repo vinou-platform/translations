@@ -568,7 +568,8 @@
 		"fields": {
 			"substance": "Sostanze#",
 			"quantity": "Quantità",
-			"note": "Annotazioni"
+			"note": "Annotazioni",
+			"stock": "Stock"
 		},
 		"views": {
 			"editAddition": {
