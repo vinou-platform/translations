@@ -120,7 +120,7 @@
 			}
 		},
 		"fieldSets": {
-			"quickactions": "Quickactions"
+			"quickActions": "Quickactions"
 		}
 	},
 	"delete_image": "Cancellare le foto",

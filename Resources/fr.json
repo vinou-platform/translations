@@ -120,7 +120,7 @@
 			}
 		},
 		"fieldSets": {
-			"quickactions": "Actions rapides"
+			"quickActions": "Actions rapides"
 		}
 	},
 	"delete_image": "Supprimer l'image",
