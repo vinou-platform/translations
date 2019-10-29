@@ -48,7 +48,6 @@
 				"of": "from",
 				"to": "to"
 			},
-			"taxid": "Tax-ID",
 			"price": {
 				"none": "free of charge"
 			},
