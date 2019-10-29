@@ -4152,6 +4152,11 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Espagnol",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "Français",
 			"code": "fr",
@@ -4161,11 +4166,6 @@
 			"title": "Italien",
 			"code": "it",
 			"iso": "it_IT"
-		},
-		"es": {
-			"title": "Espagnol",
-			"code": "es",
-			"iso": "es_ES"
 		}
 	},
 	"wineregions": {
