@@ -61,7 +61,11 @@
 			"salutation": {
 				"title": "Salutation",
 				"placeholder": "p.ex.: Cher monsieur Jean Dupont"
-			}
+			},
+			"phoneAction": "Appeler",
+			"faxAction": "Envoyer fax",
+			"emailAction": "Écrire un courriel",
+			"wwwAction": "Visitez site web"
 		},
 		"tabs": {
 			"general": "Général",
@@ -1111,13 +1115,9 @@
 			"country": "Pays",
 			"taxid": "Numéro d'identification à la taxe sur la valeur ajourtée",
 			"phone": "Téléphone",
-			"phone_callto": "Appeler",
  			"fax": "Fax",
-			"fax_sendto": "Envoyer fax à",
 			"mail": "Courriel",
-			"email_sendto": "Écrire un courriel à",
-			"www": "Site web",
-			"wwwvisitsite": "Visitez site web"
+			"www": "Site web"
 		},
 		"list": {
 			"filter": {

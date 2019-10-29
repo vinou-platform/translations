@@ -61,7 +61,11 @@
 			"salutation": {
 				"title": "Saluto",
 				"placeholder": "Ad es.: Cara signore Mario Rossi"
-			}
+			},
+			"phone_callto": "Chiamata",
+			"fax_sendto": "Invia fax",
+			"email_sendto": "Scrivi una mail",
+			"wwwvisitsite": "Visita il sito Web"
 		},
 		"tabs": {
 			"general": "Generale",
@@ -1111,13 +1115,9 @@
 			"country": "Paese",
 			"taxid": "Numero di identificazione per l'imposta sul valore aggiunto",
 			"phone": "Telefono",
-			"phone_callto": "Chiamata",
  			"fax": "Fax",
-			"fax_sendto": "Invia fax a",
 			"mail": "E-Mail",
-			"email_sendto": "Scrivi una mail a",
-			"www": "Sito Web",
-			"wwwvisitsite": "Visita il sito Web"
+			"www": "Sito Web"
 		},
 		"list": {
 			"filter": {

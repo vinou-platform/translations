@@ -61,7 +61,11 @@
 			"salutation": {
 				"title": "Briefanrede",
 				"placeholder": "z.B.: Sehr geehrter Herr Max Mustermann"
-			}
+			},
+			"phoneAction": "Anrufen", // phone_callto
+			"faxAction": "Fax senden", // fax_sendto
+			"mailAction": "E-Mail schreiben", // email_sendto
+			"wwwAction": "Internetseite besuchen" // wwwvisitsite
 		},
 		"tabs": {
 			"general": "Allgemein",
@@ -1110,13 +1114,9 @@
 			"country": "Land",
 			"taxid": "USt-ID",
 			"phone": "Telefon",
-			"phone_callto": "Anrufen",
  			"fax": "Fax",
-			"fax_sendto": "Fax senden an",
 			"mail": "E-Mail",
-			"email_sendto": "E-Mail schreiben an",
-			"www": "Internetseite",
-			"wwwvisitsite": "Internetseite besuchen"
+			"www": "Internetseite"
 		},
 		"list": {
 			"filter": {

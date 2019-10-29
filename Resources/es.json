@@ -61,7 +61,11 @@
 			"salutation": {
 				"title": "encabezamiento",
 				"placeholder": "p.ej.: Estimado Señor Max Mustermann"
-			}
+			},
+			"phoneAction": "llamar",
+			"faxAction": "enviar fax",
+			"emailAction": "escribir correo electrónico",
+			"wwwAction": "visitar página web"
 		},
 		"tabs": {
 			"general": "generalidades",
@@ -1111,13 +1115,9 @@
 			"country": "país",
 			"taxid": "número de identificación a efectos de la IVA",
 			"phone": "teléfono",
-			"phone_callto": "llamar",
  			"fax": "fax",
-			"fax_sendto": "enviar fax a",
 			"mail": "corre electrónico",
-			"email_sendto": "escribir correo electrónico a",
-			"www": "página web",
-			"wwwvisitsite": "visitar página web"
+			"www": "página web"
 		},
 		"list": {
 			"filter": {

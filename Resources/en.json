@@ -62,6 +62,10 @@
 				"title": "Salutation",
 				"placeholder": "e.g. Dear Mr. John Doe"
 			}
+			"phoneAction": "Call",
+			"faxAction": "Send fax",
+			"mailAction": "Send email",
+			"wwwAction": "Visit website"
 		},
 		"tabs": {
 			"general": "General",
@@ -1110,13 +1114,9 @@
 			"country": "Country",
 			"taxid": "Tax-ID",
 			"phone": "Phone",
-			"phone_callto": "Call to",
 			"fax": "Fax",
-			"fax_sendto": "Send fax to",
 			"mail": "Mail",
-			"email_sendto": "Send email to",
-			"www": "Website",
-			"wwwvisitsite": "Visit website"
+			"www": "Website"
 		},
 		"list": {
 			"filter": {
