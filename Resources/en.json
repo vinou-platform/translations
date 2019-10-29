@@ -1056,8 +1056,7 @@
 			"bestplaces": "Best places",
 			"memberof": "Member of",
 			"sorting": "Manual index (e.g. for shop use)",
-			"charindex": "Alphabetic index",
-			"certificateId": "OFA Certification-ID"
+			"charindex": "Alphabetic index"
 		},
 		"list": {
 			"filter": {
@@ -4400,17 +4399,8 @@
 	},
 	"organicFoodAssociations": {
 		"field": {
-			"label": "Member in Organic Food Associations"
-		},
-		"associations": {
-			"1000": "Biokreis",
-			"1001": "Bioland",
-			"1002": "BioPark",
-			"1003": "Bio Suisse",
-			"1004": "Demeter",
-			"1005": "EcoVin",
-			"1006": "Gää e.V.",
-			"1007": "Naturland"
+			"label": "Member in Organic Food Associations",
+			"placeholder": "Select organic food association"
 		}
 	},
 	"apps": {

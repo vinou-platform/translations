@@ -1056,8 +1056,7 @@
 			"bestplaces": "Beste Lagen",
 			"memberof": "Mitglied bei",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
-			"charindex": "Alphabetischer Index",
-			"certificateId": "BIO-Zertifikats-ID"
+			"charindex": "Alphabetischer Index"
 		},
 		"list": {
 			"filter": {

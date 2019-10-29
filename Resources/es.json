@@ -4404,6 +4404,12 @@
 		"chocolate": "chocolate",
 		"coffee": "café"
 	},
+	"organicFoodAssociations": {
+		"field": {
+			"label": "Miembro de la asociación orgánica",
+			"placeholder": "Seleccione vendaje orgánico"
+		}
+	},
 	"apps": {
 		"vinou-gusto": {
 			"dialogs": {
