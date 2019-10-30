@@ -60,7 +60,7 @@
 			"salutation": {
 				"title": "Salutation",
 				"placeholder": "e.g. Dear Mr. John Doe"
-			}
+			},
 			"phoneAction": "Call {name}",
 			"faxAction": "Send fax to {name}",
 			"mailAction": "Send email to {name}",

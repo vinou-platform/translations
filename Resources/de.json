@@ -61,10 +61,10 @@
 				"title": "Briefanrede",
 				"placeholder": "z.B.: Sehr geehrter Herr Max Mustermann"
 			},
-			"phoneAction": "{name} anrufen", // phone_callto
-			"faxAction": "Fax an {name} senden", // fax_sendto
-			"mailAction": "E-Mail an {name} schreiben", // email_sendto
-			"wwwAction": "Internetseite von {name} besuchen" // wwwvisitsite
+			"phoneAction": "{name} anrufen",
+			"faxAction": "Fax an {name} senden",
+			"mailAction": "E-Mail an {name} schreiben",
+			"wwwAction": "Internetseite von {name} besuchen"
 		},
 		"tabs": {
 			"general": "Allgemein",
