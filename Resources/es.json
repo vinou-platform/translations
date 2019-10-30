@@ -48,7 +48,6 @@
 				"of": "de",
 				"to": "a"
 			},
-			"taxid": "número de identificación a efectos del IVA",
 			"price": {
 				"none": "gratuito"
 			},
@@ -61,7 +60,11 @@
 			"salutation": {
 				"title": "encabezamiento",
 				"placeholder": "p.ej.: Estimado Señor Max Mustermann"
-			}
+			},
+			"phoneAction": "llamar a {name}",
+			"faxAction": "enviar fax a {name}",
+			"mailAction": "escribir correo electrónico a {name}",
+			"wwwAction": "visitar página web {name}"
 		},
 		"tabs": {
 			"general": "generalidades",
@@ -117,7 +120,7 @@
 			}
 		},
 		"fieldSets": {
-			"quickactions": "Quickactions"
+			"quickActions": "Quickactions"
 		}
 	},
 	"delete_image": "borrar imágen",
@@ -565,7 +568,8 @@
 		"fields": {
 			"substance": "sustancia",
 			"quantity": "cantidad",
-			"note": "notas"
+			"note": "notas",
+			"stock": "inventario"
 		},
 		"views": {
 			"editAddition": {
@@ -1111,13 +1115,9 @@
 			"country": "país",
 			"taxid": "número de identificación a efectos de la IVA",
 			"phone": "teléfono",
-			"phone_callto": "llamar",
  			"fax": "fax",
-			"fax_sendto": "enviar fax a",
 			"mail": "corre electrónico",
-			"email_sendto": "escribir correo electrónico a",
-			"www": "página web",
-			"wwwvisitsite": "visitar página web"
+			"www": "página web"
 		},
 		"list": {
 			"filter": {
@@ -4152,6 +4152,11 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "español",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "frances",
 			"code": "fr",
@@ -4161,11 +4166,6 @@
 			"title": "italiano",
 			"code": "it",
 			"iso": "it_IT"
-		},
-		"es": {
-			"title": "español",
-			"code": "es",
-			"iso": "es_ES"
 		}
 	},
 	"wineregions": {

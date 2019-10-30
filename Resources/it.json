@@ -48,7 +48,6 @@
 				"of": "Dal",
 				"to": "A"
 			},
-			"taxid": "Partita IVA",
 			"price": {
 				"none": "Gratuite"
 			},
@@ -61,7 +60,11 @@
 			"salutation": {
 				"title": "Saluto",
 				"placeholder": "Ad es.: Cara signore Mario Rossi"
-			}
+			},
+			"phoneAction": "Chiamata {name}",
+			"faxAction": "Invia fax a {name}",
+			"mailAction": "Scrivi una mail a {name}",
+			"wwwAction": "Visita il sito Web {name}"
 		},
 		"tabs": {
 			"general": "Generale",
@@ -117,7 +120,7 @@
 			}
 		},
 		"fieldSets": {
-			"quickactions": "Quickactions"
+			"quickActions": "Quickactions"
 		}
 	},
 	"delete_image": "Cancellare le foto",
@@ -565,7 +568,8 @@
 		"fields": {
 			"substance": "Sostanze#",
 			"quantity": "Quantità",
-			"note": "Annotazioni"
+			"note": "Annotazioni",
+			"stock": "Stock"
 		},
 		"views": {
 			"editAddition": {
@@ -1111,13 +1115,9 @@
 			"country": "Paese",
 			"taxid": "Numero di identificazione per l'imposta sul valore aggiunto",
 			"phone": "Telefono",
-			"phone_callto": "Chiamata",
  			"fax": "Fax",
-			"fax_sendto": "Invia fax a",
 			"mail": "E-Mail",
-			"email_sendto": "Scrivi una mail a",
-			"www": "Sito Web",
-			"wwwvisitsite": "Visita il sito Web"
+			"www": "Sito Web"
 		},
 		"list": {
 			"filter": {
@@ -4152,6 +4152,11 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Spagnolo",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "Francese",
 			"code": "fr",
@@ -4161,11 +4166,6 @@
 			"title": "Italiano",
 			"code": "it",
 			"iso": "it_IT"
-		},
-		"es": {
-			"title": "Spagnolo",
-			"code": "es",
-			"iso": "es_ES"
 		}
 	},
 	"wineregions": {

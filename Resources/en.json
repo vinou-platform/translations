@@ -48,7 +48,6 @@
 				"of": "from",
 				"to": "to"
 			},
-			"taxid": "Tax-ID",
 			"price": {
 				"none": "free of charge"
 			},
@@ -61,7 +60,11 @@
 			"salutation": {
 				"title": "Salutation",
 				"placeholder": "e.g. Dear Mr. John Doe"
-			}
+			},
+			"phoneAction": "Call {name}",
+			"faxAction": "Send fax to {name}",
+			"mailAction": "Send email to {name}",
+			"wwwAction": "Visit website of {name}"
 		},
 		"tabs": {
 			"general": "General",
@@ -565,7 +568,8 @@
 		"fields": {
 			"substance": "Substance",
 			"quantity": "Amount",
-			"note": "Notes"
+			"note": "Notes",
+			"stock": "Stock"
 		},
 		"views": {
 			"editAddition": {
@@ -1110,13 +1114,9 @@
 			"country": "Country",
 			"taxid": "Tax-ID",
 			"phone": "Phone",
-			"phone_callto": "Call to",
 			"fax": "Fax",
-			"fax_sendto": "Send fax to",
 			"mail": "Mail",
-			"email_sendto": "Send email to",
-			"www": "Website",
-			"wwwvisitsite": "Visit website"
+			"www": "Website"
 		},
 		"list": {
 			"filter": {
@@ -4149,6 +4149,11 @@
 			"title": "English",
 			"code": "en",
 			"iso": "en_GB"
+		},
+		"es": {
+			"title": "Spanish",
+			"code": "es",
+			"iso": "es_ES"
 		},
 		"fr": {
 			"title": "French",

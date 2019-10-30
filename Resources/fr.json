@@ -48,7 +48,6 @@
 				"of": "de",
 				"to": "à"
 			},
-			"taxid": "Numéro d'identification de la taxe de vente",
 			"price": {
 				"none": "gratuit"
 			},
@@ -61,7 +60,11 @@
 			"salutation": {
 				"title": "Salutation",
 				"placeholder": "p.ex.: Cher monsieur Jean Dupont"
-			}
+			},
+			"phoneAction": "Appeler à {name}",
+			"faxAction": "Envoyer fax à {name}",
+			"mailAction": "Écrire un courriel à {name}",
+			"wwwAction": "Visitez site web de {name}"
 		},
 		"tabs": {
 			"general": "Général",
@@ -117,7 +120,7 @@
 			}
 		},
 		"fieldSets": {
-			"quickactions": "Actions rapides"
+			"quickActions": "Actions rapides"
 		}
 	},
 	"delete_image": "Supprimer l'image",
@@ -565,7 +568,8 @@
 		"fields": {
 			"substance": "Substance",
 			"quantity": "Quantité",
-			"note": "Notes"
+			"note": "Notes",
+			"stock": "Stock"
 		},
 		"views": {
 			"editAddition": {
@@ -1111,13 +1115,9 @@
 			"country": "Pays",
 			"taxid": "Numéro d'identification à la taxe sur la valeur ajourtée",
 			"phone": "Téléphone",
-			"phone_callto": "Appeler",
  			"fax": "Fax",
-			"fax_sendto": "Envoyer fax à",
 			"mail": "Courriel",
-			"email_sendto": "Écrire un courriel à",
-			"www": "Site web",
-			"wwwvisitsite": "Visitez site web"
+			"www": "Site web"
 		},
 		"list": {
 			"filter": {
@@ -4152,6 +4152,11 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Espagnol",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "Français",
 			"code": "fr",
@@ -4161,11 +4166,6 @@
 			"title": "Italien",
 			"code": "it",
 			"iso": "it_IT"
-		},
-		"es": {
-			"title": "Espagnol",
-			"code": "es",
-			"iso": "es_ES"
 		}
 	},
 	"wineregions": {
