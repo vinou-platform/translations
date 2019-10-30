@@ -61,10 +61,10 @@
 				"title": "Salutation",
 				"placeholder": "p.ex.: Cher monsieur Jean Dupont"
 			},
-			"phoneAction": "Appeler",
-			"faxAction": "Envoyer fax",
-			"emailAction": "Écrire un courriel",
-			"wwwAction": "Visitez site web"
+			"phoneAction": "Appeler à {name}",
+			"faxAction": "Envoyer fax à {name}",
+			"mailAction": "Écrire un courriel à {name}",
+			"wwwAction": "Visitez site web de {name}"
 		},
 		"tabs": {
 			"general": "Général",

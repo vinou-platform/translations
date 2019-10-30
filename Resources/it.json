@@ -61,10 +61,10 @@
 				"title": "Saluto",
 				"placeholder": "Ad es.: Cara signore Mario Rossi"
 			},
-			"phone_callto": "Chiamata",
-			"fax_sendto": "Invia fax",
-			"email_sendto": "Scrivi una mail",
-			"wwwvisitsite": "Visita il sito Web"
+			"phoneAction": "Chiamata {name}",
+			"faxAction": "Invia fax a {name}",
+			"mailAction": "Scrivi una mail a {name}",
+			"wwwAction": "Visita il sito Web {name}"
 		},
 		"tabs": {
 			"general": "Generale",

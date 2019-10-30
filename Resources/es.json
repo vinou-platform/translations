@@ -61,10 +61,10 @@
 				"title": "encabezamiento",
 				"placeholder": "p.ej.: Estimado Señor Max Mustermann"
 			},
-			"phoneAction": "llamar",
-			"faxAction": "enviar fax",
-			"emailAction": "escribir correo electrónico",
-			"wwwAction": "visitar página web"
+			"phoneAction": "llamar a {name}",
+			"faxAction": "enviar fax a {name}",
+			"mailAction": "escribir correo electrónico a {name}",
+			"wwwAction": "visitar página web {name}"
 		},
 		"tabs": {
 			"general": "generalidades",
