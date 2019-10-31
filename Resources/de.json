@@ -4406,16 +4406,6 @@
 		"field": {
 			"label": "Mitglied bei Bio-Verband",
 			"placeholder": "Bioverband auswählen"
-		},
-		"associations": {
-			"1000": "Biokreis",
-			"1001": "Bioland",
-			"1002": "BioPark",
-			"1003": "Bio Suisse",
-			"1004": "Demeter",
-			"1005": "EcoVin",
-			"1006": "Gää e.V.",
-			"1007": "Naturland"
 		}
 	},
 	"apps": {
