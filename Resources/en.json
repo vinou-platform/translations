@@ -767,6 +767,7 @@
 			"alcohol": "Alcohol",
 			"sweetness": "Sweetness",
 			"acid": "Acid",
+			"user": "Customer",
 			"purpose": {
 				"label": "Purpose",
 				"empty": "Please Choose",

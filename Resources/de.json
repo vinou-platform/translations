@@ -767,6 +767,7 @@
 			"alcohol": "Alkohol",
 			"sweetness": "Restsüße",
 			"acid": "Säuregehalt",
+			"user": "Kunde",
 			"purpose": {
 				"label": "Art",
 				"empty": "Bitte wählen",

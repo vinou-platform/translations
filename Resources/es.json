@@ -768,6 +768,7 @@
 			"alcohol": "alcohol",
 			"sweetness": "azucar residual",
 			"acid": "acidez",
+			"user": "cliente",
 			"purpose": {
 				"label": "tipo",
 				"empty": "Por favor seleccione",

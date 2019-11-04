@@ -768,6 +768,7 @@
 			"alcohol": "Alcol",
 			"sweetness": "Densità",
 			"acid": "Acidità",
+			"user": "Cliente",
 			"purpose": {
 				"label": "Tipo",
 				"empty": "Per piacere, seleziona",
