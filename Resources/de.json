@@ -4137,7 +4137,8 @@
 		"se": "Schweden",
 		"si": "Slowenien",
 		"sx": "Sint Maarten",
-		"uk": "Vereinigtes Königreich"
+		"uk": "Vereinigtes Königreich",
+		"za": "Südafrika"
 	},
 	"languages": {
 		"de": {
@@ -4335,6 +4336,32 @@
 			"11002": "Save-Tal (Posavje)"
 		},
 		"sx": {
+		},
+		"za": {
+			"13000": "Bot River",
+			"13001": "Breddekloof",
+			"13002": "Cape Agulhas",
+			"13003": "Cape Town",
+			"13004": "Cederberg",
+			"13005": "Central Orange River",
+			"13006": "Darling",
+			"13007": "Elgin",
+			"13008": "Franschhoek",
+			"13009": "Klein Karoo",
+			"13010": "Kwazulu-Natal",
+			"13011": "Malgas",
+			"13012": "Olifants River",
+			"13013": "Overberg",
+			"13014": "Paarl",
+			"13015": "Plettenberg Bay",
+			"13016": "Robertson",
+			"13017": "Stellenbosch",
+			"13018": "Sutherland Karoo",
+			"13019": "Swartland",
+			"13020": "Tulbagh",
+			"13021": "Walker Bay",
+			"13022": "Wellington",
+			"13023": "Worcester"
 		}
 	},
 	"winetypes":{
