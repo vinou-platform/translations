@@ -1224,12 +1224,14 @@
 				"label": "Uva",
 				"placeholder": "Ricerca uva"
 			},
+			"gross": "Prezzo lordo",
 			"image": {
 				"label": "Immagine della bottiglia",
 				"error": {
 					"notfound": "L'immagine non è stata trovata"
 				}
 			},
+			"inclVat": "IVA.",
 			"inshop": "Mostra nel negozio",
 			"instock": "In magazzino",
 			"inwinelist": "Mostra nella lista dei vini",
