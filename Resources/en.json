@@ -29,7 +29,7 @@
 		"cellar.substances": "Substances"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
 		},
@@ -48,7 +48,6 @@
 				"of": "from",
 				"to": "to"
 			},
-			"taxid": "Tax-ID",
 			"price": {
 				"none": "free of charge"
 			},
@@ -61,7 +60,11 @@
 			"salutation": {
 				"title": "Salutation",
 				"placeholder": "e.g. Dear Mr. John Doe"
-			}
+			},
+			"phoneAction": "Call {name}",
+			"faxAction": "Send fax to {name}",
+			"mailAction": "Send email to {name}",
+			"wwwAction": "Visit website of {name}"
 		},
 		"tabs": {
 			"general": "General",
@@ -116,20 +119,18 @@
 				"sub": " "
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"quickActions": "Quick actions"
 		}
 	},
-	"de":"Germany",
-	"en":"England",
-	"fr":"France",
-	"fileupload":"Choose file",
 	"delete_image":"Delete Image",
 	"delete_image_secure":"Do you really want to delete the image?",
 	"delete_template_secure":"Do you really want to delete the template?",
 	"changepw":"Change password",
 	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
+	"wineries_modal_delete": "Do you really want to delete the selected winery?",
+	"category_modal_delete": "Do you really want to delete the selected category?",
 	"contacts_modal_delete":"Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
@@ -141,7 +142,7 @@
 	"orders_modal_create": "You're creating an order, what do you want to do?",
 	"orders_modal_create_withinvoice": "Create order with invoice and delivery note",
 	"orders_modal_create_only": "Create only",
-	"orders_modal_sent": "Do you really want to set this order as dispatched",
+	"orders_modal_sent": "Do you really want to set this order as dispatched?",
 	"orders_position_delete": "Do you really want to delete this item?",
 	"orders_position_update": "Do you really want to update this item?",
 	"orders_position_add": "Do you really want to add this item",
@@ -567,7 +568,8 @@
 		"fields": {
 			"substance": "Substance",
 			"quantity": "Amount",
-			"note": "Notes"
+			"note": "Notes",
+			"stock": "Stock"
 		},
 		"views": {
 			"editAddition": {
@@ -621,7 +623,6 @@
 	"logout": "Logout",
 	"edit": "Edit",
 	"save": "Save",
-	"cancel": "Cancel",
 	"repeatpw": "Retype password",
 	"language": "Language",
 	"modal_delete_wine": "Do you really want to delete this wine?",
@@ -914,7 +915,7 @@
 				"placeholder": "e.g. name, company, address"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Membership",
 			"contact": "Contact data",
 			"description": "Description",
@@ -1033,7 +1034,7 @@
 		"tabs": {
 			"files": "Files"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"contact": "Contact",
 			"description": "Description",
@@ -1100,7 +1101,7 @@
 				"placeholder" : "e.g. company, contact or address"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"description": "Description"
 		},
@@ -1113,13 +1114,9 @@
 			"country": "Country",
 			"taxid": "Tax-ID",
 			"phone": "Phone",
-			"phone_callto": "Call to",
 			"fax": "Fax",
-			"fax_sendto": "Send fax to",
 			"mail": "Mail",
-			"email_sendto": "Send email to",
-			"www": "Website",
-			"wwwvisitsite": "Visit website"
+			"www": "Website"
 		},
 		"list": {
 			"filter": {
@@ -1169,7 +1166,7 @@
 			"barcodedownloadvector": "Download GTIN code as vektor file",
 			"qrcodedownloadvector": "Download QR code as vector file"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergens",
 			"general": "General",
 			"stock": "Stock",
@@ -1190,7 +1187,10 @@
 			"acid": "Acid",
 			"active": "active",
 			"alcohol": "Alcohol",
-			"allergens": "Allergens",
+			"allergens": {
+				"label": "Allergens",
+				"placeholder": "Search for allergens"
+			},
 			"allergen_types": {
 				"sulphide": "Sulphide",
 				"eggwhite": "Eggwhite",
@@ -1218,10 +1218,6 @@
 				"main": "Show expertise",
 				"sub": " ",
 				"title": "Open expertise in new window"
-			},
-			"allergens": {
-				"label": "Allergens",
-				"placeholder": "Search for allergens"
 			},
 			"grapetypes": {
 				"label": "Grapetypes",
@@ -1251,18 +1247,7 @@
 				"label": "Price",
 				"none": "not specified"
 			},
-			"prices": {
-				"standard": "Default netto price",
-				"action": {
-					"create": {
-						"main": "New price",
-						"sub": " "
-					},
-					"delete": {
-						"confirm": "Do you really want to delete the selected price?"
-					}
-				}
-			},
+			"prices": "Prices",
 			"qrcode": "QR code",
 			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
@@ -1404,7 +1389,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"network": "My Network",
 			"shopsettings": "Website & shop settings"
@@ -1452,6 +1437,24 @@
 				"asc": "Ascending",
 				"desc": "Descending"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Gross",
+		"net": "Net",
+		"taxrate": "Taxrate",
+		"standard": "Default price",
+		"action": {
+			"create": {
+				"main": "New price",
+				"sub": " "
+			},
+			"delete": {
+				"confirm": "Do you really want to delete the selected price?"
+			}
+		},
+		"fieldSets": {
+			"title": "Prices"
 		}
 	},
 	"product": {
@@ -1511,12 +1514,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Create note",
-				"sub": " "
-			}
-		},
 		"field": {
 			"content": "Content",
 			"edited": "edited on",
@@ -1569,7 +1566,7 @@
 				"type": "Filter type of client"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "General",
 			"contactperson": "Contact person",
 			"contact": "Contact data",
@@ -1774,7 +1771,7 @@
 				"collection": "Download invoices for selected time period."
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Edit view",
 			"search_product": "Search product",
 			"packaging_shipping": "Packaging and shipping"
@@ -1821,6 +1818,7 @@
 			"rebatesum": "Rebate",
 			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",
+			"shipping_different_location": "Different delivery location",
 			"state": "State",
 			"taxfree": "Tax free",
 			"vatincluded": "incl. VAT {tax}",
@@ -4142,7 +4140,8 @@
 		"se": "Sweden",
 		"si": "Slovenia",
 		"sx": "Sint Maarten",
-		"uk": "United Kingdom"
+		"uk": "United Kingdom",
+		"za": "South Africa"
 	},
 	"languages": {
 		"de": {
@@ -4155,10 +4154,20 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Spanish",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "French",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italian",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
@@ -4330,6 +4339,32 @@
 			"11002": "Save Valley (Posavje)"
 		},
 		"sx": {
+		},
+		"za": {
+			"13000": "Bot River",
+			"13001": "Breddekloof",
+			"13002": "Cape Agulhas",
+			"13003": "Cape Town",
+			"13004": "Cederberg",
+			"13005": "Central Orange River",
+			"13006": "Darling",
+			"13007": "Elgin",
+			"13008": "Franschhoek",
+			"13009": "Klein Karoo",
+			"13010": "Kwazulu-Natal",
+			"13011": "Malgas",
+			"13012": "Olifants River",
+			"13013": "Overberg",
+			"13014": "Paarl",
+			"13015": "Plettenberg Bay",
+			"13016": "Robertson",
+			"13017": "Stellenbosch",
+			"13018": "Sutherland Karoo",
+			"13019": "Swartland",
+			"13020": "Tulbagh",
+			"13021": "Walker Bay",
+			"13022": "Wellington",
+			"13023": "Worcester"
 		}
 	},
 	"winetypes":{

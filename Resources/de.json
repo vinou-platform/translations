@@ -29,7 +29,7 @@
 		"cellar.substances": "Stoffe"
 	},
 	"general": {
-		"fieldsets": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"settings": "Einstellungen"
 		},
@@ -48,7 +48,6 @@
 				"of": "ab",
 				"to": "bis"
 			},
-			"taxid": "UStID",
 			"price": {
 				"none": "kostenfrei"
 			},
@@ -61,7 +60,11 @@
 			"salutation": {
 				"title": "Briefanrede",
 				"placeholder": "z.B.: Sehr geehrter Herr Max Mustermann"
-			}
+			},
+			"phoneAction": "{name} anrufen",
+			"faxAction": "Fax an {name} senden",
+			"mailAction": "E-Mail an {name} schreiben",
+			"wwwAction": "Internetseite von {name} besuchen"
 		},
 		"tabs": {
 			"general": "Allgemein",
@@ -120,13 +123,6 @@
 			"quickActions": "Schnellaktionen"
 		}
 	},
-	"price": "Preis",
-	"quantity": "Bestand",
-	"articlenumber": "Artikelnummer",
-	"de": "Deutschland",
-	"en": "England",
-	"fr": "Frankreich",
-	"fileupload": "Datei auswählen",
 	"delete_image": "Bild löschen",
 	"delete_image_secure": "Möchtest du dieses Bild wirklich löschen?",
 	"delete_template_secure": "Möchtest du ihre Vorlage für Expertisen wirklich löschen?",
@@ -572,7 +568,8 @@
 		"fields": {
 			"substance": "Stoff",
 			"quantity": "Menge",
-			"note": "Notizen"
+			"note": "Notizen",
+			"stock": "Bestand"
 		},
 		"views": {
 			"editAddition": {
@@ -626,7 +623,6 @@
 	"logout": "Abmelden",
 	"edit": "Bearbeiten",
 	"save": "Speichern",
-	"cancel": "Abbrechen",
 	"repeatpw": "Passwort wiederholen",
 	"language": "Sprache",
 	"modal_delete_wine": "Möchtest du diesen Wein wirklich löschen?",
@@ -919,7 +915,7 @@
 				"placeholder": "z.B. Name, Firma, Addresse"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Mitgliedschaft",
 			"contact": "Kontaktdaten",
 			"description": "Beschreibung",
@@ -1038,7 +1034,7 @@
 		"tabs": {
 			"files": "Dateien"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"contact": "Kontakt",
 			"description": "Beschreibung",
@@ -1105,7 +1101,7 @@
 				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"description": "Beschreibung"
 		},
@@ -1118,13 +1114,9 @@
 			"country": "Land",
 			"taxid": "USt-ID",
 			"phone": "Telefon",
-			"phone_callto": "Anrufen",
  			"fax": "Fax",
-			"fax_sendto": "Fax senden an",
 			"mail": "E-Mail",
-			"email_sendto": "E-Mail schreiben an",
-			"www": "Internetseite",
-			"wwwvisitsite": "Internetseite besuchen"
+			"www": "Internetseite"
 		},
 		"list": {
 			"filter": {
@@ -1174,7 +1166,7 @@
 			"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
 			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergene",
 			"general": "Allgemeines",
 			"stock": "Bestände",
@@ -1195,7 +1187,10 @@
 			"acid": "Säuregehalt",
 			"active": "aktiv",
 			"alcohol": "Alkoholgehalt",
-			"allergens": "Allergene",
+			"allergens": {
+				"label": "Allergene",
+				"placeholder": "Allergene suchen"
+			},
 			"allergen_types": {
 				"sulphide": "Sulfit",
 				"eggwhite": "Ei",
@@ -1223,10 +1218,6 @@
 				"main": "Expertise",
 				"sub": "anzeigen",
 				"title": "Expertise in neuem Fenster öffnen"
-			},
-			"allergens": {
-				"label": "Allergene",
-				"placeholder": "Allergene suchen"
 			},
 			"grapetypes": {
 				"label": "Rebsorten",
@@ -1256,18 +1247,7 @@
 				"label": "Preis",
 				"none": "keine Angabe"
 			},
-			"prices": {
-				"standard": "Standard Nettopreis",
-				"action": {
-					"create": {
-						"main": "Neuen Preis",
-						"sub": "erstellen"
-					},
-					"delete": {
-						"confirm": "Möchtest du diesen Preis wirklich löschen?"
-					}
-				}
-			},
+			"prices": "Preise",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
@@ -1409,7 +1389,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemeines",
 			"network": "Mein Netzwerk",
 			"shopsettings": "Website & Shop-Einstellungen"
@@ -1457,6 +1437,24 @@
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			}
+		}
+	},
+	"prices": {
+		"gross": "Brutto",
+		"net": "Netto",
+		"taxrate": "Steuersatz",
+		"standard": "Standardpreis",
+		"action": {
+			"create": {
+				"main": "Neuen Preis",
+				"sub": "erstellen"
+			},
+			"delete": {
+				"confirm": "Möchtest du diesen Preis wirklich löschen?"
+			}
+		},
+		"fieldSets": {
+			"title": "Preise"
 		}
 	},
 	"product": {
@@ -1516,12 +1514,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Neue Notiz",
-				"sub": "anlegen"
-			}
-		},
 		"field": {
 			"content": "Inhalt",
 			"edited": "Bearbeitete am",
@@ -1574,7 +1566,7 @@
 				"type": "Kundentyp filtern"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemeines",
 			"contactperson": "Ansprechpartner",
 			"contact": "Kontaktdaten",
@@ -1779,7 +1771,7 @@
 				"collection": "Rechnungen für ausgewählten Zeitraum herunterladen"
 			}
 		},
-		"fieldsets": {
+		"fieldSets": {
 			"edit_view": "Ansicht bearbeiten",
 			"search_product": "Produkt suchen",
 			"packaging_shipping": "Verpackung und Versand"
@@ -4129,12 +4121,12 @@
 		"at": "Österreich",
 		"be": "Belgien",
 		"bg": "Bulgarien",
-		"ca": "Canada",
+		"ca": "Kanada",
 		"ch": "Schweiz",
 		"cl": "Chile",
 		"cz": "Tschechien",
 		"de": "Deutschland",
-		"en": "Großbritanien",
+		"en": "Großbritannien",
 		"es": "Spanien",
 		"fr": "Frankreich",
 		"gr": "Griechenland",
@@ -4148,7 +4140,8 @@
 		"se": "Schweden",
 		"si": "Slowenien",
 		"sx": "Sint Maarten",
-		"uk": "Vereinigtes Königreich"
+		"uk": "Vereinigtes Königreich",
+		"za": "Südafrika"
 	},
 	"languages": {
 		"de": {
@@ -4161,10 +4154,20 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Spanisch",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "Französisch",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italienisch",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
@@ -4336,6 +4339,32 @@
 			"11002": "Save-Tal (Posavje)"
 		},
 		"sx": {
+		},
+		"za": {
+			"13000": "Bot River",
+			"13001": "Breddekloof",
+			"13002": "Cape Agulhas",
+			"13003": "Cape Town",
+			"13004": "Cederberg",
+			"13005": "Central Orange River",
+			"13006": "Darling",
+			"13007": "Elgin",
+			"13008": "Franschhoek",
+			"13009": "Klein Karoo",
+			"13010": "Kwazulu-Natal",
+			"13011": "Malgas",
+			"13012": "Olifants River",
+			"13013": "Overberg",
+			"13014": "Paarl",
+			"13015": "Plettenberg Bay",
+			"13016": "Robertson",
+			"13017": "Stellenbosch",
+			"13018": "Sutherland Karoo",
+			"13019": "Swartland",
+			"13020": "Tulbagh",
+			"13021": "Walker Bay",
+			"13022": "Wellington",
+			"13023": "Worcester"
 		}
 	},
 	"winetypes":{

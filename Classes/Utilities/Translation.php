@@ -131,14 +131,21 @@ class Translation {
 		return true;
 	}
 
-	protected static function findKeyInArray($keyArray, $searchArray) {
-		if (!is_array($keyArray))
-			$keyArray = explode('.', $keyArray);
-		foreach ($keyArray as $key) {
-			if (isset($searchArray[$key]))
-				$searchArray = $searchArray[$key];
+	/**
+	 * @see \Tools\HelperUtility::findKeyInArray()
+	 */
+	protected static function findKeyInArray($keys, /*array*/ $array) {
+		if (!is_array($keys))
+			$keys = explode('.', $keys);
+		foreach ($keys as $key) {
+			if (is_array($array) && array_key_exists($key, $array))
+				$array = $array[$key];
+			else {
+				$array = null;
+				break;
+			}
 		}
-		return $searchArray;
+		return $array;
 	}
 
 }
