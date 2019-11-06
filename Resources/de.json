@@ -1767,9 +1767,7 @@
 				"main": "Abweichende",
 				"sub": "Lieferadresse"
 			},
-			"export": {
-				"collection": "Rechnungen für ausgewählten Zeitraum herunterladen"
-			}
+			"downloadInvoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
 		},
 		"fieldSets": {
 			"edit_view": "Ansicht bearbeiten",

@@ -1767,9 +1767,7 @@
 				"main": "Different",
 				"sub": "delivery address"
 			},
-			"export": {
-				"collection": "Download invoices for selected time period."
-			}
+			"downloadInvoices": "Download invoices for selected period"
 		},
 		"fieldSets": {
 			"edit_view": "Edit view",
