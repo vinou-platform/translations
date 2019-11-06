@@ -1769,7 +1769,8 @@
 			"shippingotheraddress": {
 				"main": "Diverso indirizzo",
 				"sub": "di consegna"
-			}
+			},
+			"downloadInvoices": "Scarica fatture per il periodo selezionato"
 		},
 		"fieldSets": {
 			"edit_view": "Modificare vista",
