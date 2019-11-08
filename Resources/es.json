@@ -1770,7 +1770,9 @@
 				"main": "divergentes",
 				"sub": "boletín de entrega"
 			},
-			"downloadInvoices": "Descargar facturas para el período seleccionado"
+			"export": {
+				"invoices": "Descargar facturas para el período seleccionado"
+			}
 		},
 		"fieldSets": {
 			"edit_view": "editar muestra",

@@ -1770,7 +1770,9 @@
 				"main": "Adresse de livraison",
 				"sub": "différente"
 			},
-			"downloadInvoices": "Télécharger les factures pour la période sélectionnée"
+			"export": {
+				"invoices": "Télécharger les factures pour la période sélectionnée"
+			}
 		},
 		"fieldSets": {
 			"edit_view": "Éditer vue",
