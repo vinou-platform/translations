@@ -767,7 +767,10 @@
 			"alcohol": "Alkohol",
 			"sweetness": "Restsüße",
 			"acid": "Säuregehalt",
+			"company": "Firma",
+			"clientId": "Kundennr.",
 			"user": "Kunde",
+			"orderId": "Bestellnummer",
 			"purpose": {
 				"label": "Art",
 				"empty": "Bitte wählen",
