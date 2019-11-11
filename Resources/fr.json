@@ -768,6 +768,9 @@
 			"alcohol": "Alcool",
 			"sweetness": "Sucre résiduel",
 			"acid": "Teneur en acide",
+			"companyAndUser": "Société/Client",
+			"clientId": "Numéro de client",
+			"orderId": "Numéro de commande",
 			"user": "client",
 			"purpose": {
 				"label": "Type",

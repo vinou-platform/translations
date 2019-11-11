@@ -767,6 +767,9 @@
 			"alcohol": "Alcohol",
 			"sweetness": "Sweetness",
 			"acid": "Acid",
+			"companyAndUser": "Company/Customer",
+			"clientId": "Customer ID",
+			"orderId": "Order no.",
 			"user": "Customer",
 			"purpose": {
 				"label": "Purpose",

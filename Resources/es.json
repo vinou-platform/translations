@@ -768,6 +768,9 @@
 			"alcohol": "alcohol",
 			"sweetness": "azucar residual",
 			"acid": "acidez",
+			"companyAndUser": "empresa/cliente",
+			"clientId": "número de cliente",
+			"orderId": "número de pedido",
 			"user": "cliente",
 			"purpose": {
 				"label": "tipo",

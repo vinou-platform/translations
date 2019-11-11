@@ -768,6 +768,9 @@
 			"alcohol": "Alcol",
 			"sweetness": "Densità",
 			"acid": "Acidità",
+			"companyAndUser": "Società/Cliente",
+			"clientId": "Numero cliente",
+			"orderId": "Numero d'ordine",
 			"user": "Cliente",
 			"purpose": {
 				"label": "Tipo",
