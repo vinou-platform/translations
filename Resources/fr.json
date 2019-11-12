@@ -769,6 +769,7 @@
 			"sweetness": "Sucre résiduel",
 			"acid": "Teneur en acide",
 			"client": "Client",
+			"orderNumber": "N° de commande",
 			"purpose": {
 				"label": "Type",
 				"empty": "Veuillez choisir",

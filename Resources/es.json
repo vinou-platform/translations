@@ -769,6 +769,7 @@
 			"sweetness": "azucar residual",
 			"acid": "acidez",
 			"client": "cliente",
+			"orderNumber": "Nº de pedido",
 			"purpose": {
 				"label": "tipo",
 				"empty": "Por favor seleccione",

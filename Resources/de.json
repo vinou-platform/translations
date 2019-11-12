@@ -768,6 +768,7 @@
 			"sweetness": "Restsüße",
 			"acid": "Säuregehalt",
 			"client": "Kunde",
+			"orderNumber": "Bestellnr.",
 			"purpose": {
 				"label": "Art",
 				"empty": "Bitte wählen",

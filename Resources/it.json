@@ -769,6 +769,7 @@
 			"sweetness": "Densità",
 			"acid": "Acidità",
 			"client": "Cliente",
+			"orderNumber": "N° d'ordine",
 			"purpose": {
 				"label": "Tipo",
 				"empty": "Per piacere, seleziona",
