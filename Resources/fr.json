@@ -1224,12 +1224,14 @@
 				"label": "Cépag",
 				"placeholder": "Rechercher cépag"
 			},
+			"gross": "Prix brut",
 			"image": {
 				"label": "Image de la bouteille",
 				"error": {
 					"notfound": "L'image n'a pas pu être trouvée"
 				}
 			},
+			"inclVat": "TVA.",
 			"inshop": "Afficher dans la boutique",
 			"instock": "En stock",
 			"inwinelist": "Afficher dans la liste des vins",
