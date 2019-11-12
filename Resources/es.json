@@ -1228,12 +1228,14 @@
 				"label": "variedades de uva",
 				"placeholder": "buscar variedad de uva"
 			},
+			"gross": "precio bruto",
 			"image": {
 				"label": "logotipo de botella",
 				"error": {
 					"notfound": "No ha podido encontrar imágen"
 				}
 			},
+			"inclVat": "IVA.",
 			"inshop": "señalar en shop",
 			"instock": "en almacén",
 			"inwinelist": "señalar en lista de vino",

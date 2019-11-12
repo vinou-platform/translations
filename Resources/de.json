@@ -1227,12 +1227,14 @@
 				"label": "Rebsorten",
 				"placeholder": "Rebsorte suchen"
 			},
+			"gross": "Brutto-Preis",
 			"image": {
 				"label": "Flaschenbild",
 				"error": {
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"inclVat": "MwSt.",
 			"inshop": "Im Shop anzeigen",
 			"instock": "auf Lager",
 			"inwinelist": "In Weinliste anzeigen",

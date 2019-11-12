@@ -1227,12 +1227,14 @@
 				"label": "Grapetypes",
 				"placeholder": "Search for grapetypes"
 			},
+			"gross": "Gross price",
 			"image": {
 				"label": "Bottle picture",
 				"error": {
 					"notfound": "Image could not be resolved"
 				}
 			},
+			"inclVat": "VAT",
 			"inshop": "Show shop",
 			"instock": "in stock",
 			"inwinelist": "Show in winelist",
