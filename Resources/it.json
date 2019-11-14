@@ -1821,6 +1821,8 @@
 			"pricinggross": "Fattura lordo",
 			"quantity": "Prezzo",
 			"rebate": "Sconto (in %)",
+			"rebateGross": "Sconto lordo (in {currency})",
+			"rebateNet": "Sconto netta (in {currency})",
 			"rebatesum": "Sconto",
 			"same_invoice_addr": "Come l'indirizzo di fatturazione",
 			"search_product": "Cerca prodotto",

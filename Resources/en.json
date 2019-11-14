@@ -1819,6 +1819,8 @@
 			"pricinggross": "Gross invoice",
 			"quantity": "Qty",
 			"rebate": "Rebate (in %)",
+			"rebateGross": "Gross rebate (in {currency})",
+			"rebateNet": "Netto rebate (in {currency})",
 			"rebatesum": "Rebate",
 			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",

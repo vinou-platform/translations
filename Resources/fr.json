@@ -1821,6 +1821,8 @@
 			"pricinggross": "Facture brute",
 			"quantity": "Pièce",
 			"rebate": "Remise (en %)",
+			"rebateGross": "Remise brute (en {currency})",
+			"rebateNet": "Remise nette (en {currency})",
 			"rebatesum": "Remise",
 			"same_invoice_addr": "Comme l'adresse de facturation",
 			"search_product": "Rechercher produit",

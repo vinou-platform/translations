@@ -1821,6 +1821,8 @@
 			"pricinggross": "cuenta bruto",
 			"quantity": "piezas",
 			"rebate": "desuento (en %)",
+			"rebateGross": "desuento bruto (en {currency})",
+			"rebateNet": "desuento neto (en {currency})",
 			"rebatesum": "descuento",
 			"same_invoice_addr": "como dirección de cuenta",
 			"search_product": "buscar producto",
