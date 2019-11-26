@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Nouveau processus",
-				"sub": "couvrir"
+				"main": "Processus couvrir",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Entrée",
-				"sub": "correcter"
+				"main": "Entrée correcter",
+				"sub": " "
 			},
 
 			"createHarvest": {

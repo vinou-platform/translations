@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Log new",
-				"sub": "action"
+				"main": "Log action",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Right",
-				"sub": "action"
+				"main": "Right action",
+				"sub": " "
 			},
 
 			"createHarvest": {

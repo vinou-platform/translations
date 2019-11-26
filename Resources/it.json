@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Nuovo Processo",
-				"sub": "raccogliere"
+				"main": "Processo raccogliere",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Voce",
-				"sub": "corretto"
+				"main": "Voce corretto",
+				"sub": " "
 			},
 
 			"createHarvest": {

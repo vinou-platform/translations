@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Neuen Vorgang",
-				"sub": "erfassen"
+				"main": "Vorgang erfassen",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Eintrag",
-				"sub": "korrigieren"
+				"main": "Eintrag korrigieren",
+				"sub": " "
 			},
 
 			"createHarvest": {

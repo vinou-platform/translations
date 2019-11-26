@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "proceso nuevo",
-				"sub": "digitar"
+				"main": "proceso digitar",
+				"sub": " "
 			},
 			"edit": {
-				"main": "inscripción",
-				"sub": "corregir"
+				"main": "inscripción corregir",
+				"sub": " "
 			},
 
 			"createHarvest": {
