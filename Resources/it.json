@@ -558,7 +558,8 @@
 			"tannin": "Tannini",
 			"carboneDioxide": "Anidride carbonica",
 			"ascorbicAcid": "Acido ascorbico",
-			"vitaminB1": "Vitamina B1"
+			"vitaminB1": "Vitamina B1",
+			"yeast": "Lievito"
 		},
 		"dialogs": {
 			"delete": "Vuoi davvero cancellare la sostanza?"

@@ -558,7 +558,8 @@
 			"tannin": "Tannin",
 			"carboneDioxide": "Carbone dioxide",
 			"ascorbicAcid": "Ascorbic acid",
-			"vitaminB1": "Vitamin B1"
+			"vitaminB1": "Vitamin B1",
+			"yeast": "Yeast"
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this substance?"
