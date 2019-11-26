@@ -270,6 +270,10 @@
 				"main": "Log",
 				"sub": "shrinkage"
 			},
+			"createLoss": {
+				"main": "Log",
+				"sub": "loss"
+			},
 			"createConcentration": {
 				"main": "Concentration",
 				"sub": " "
@@ -341,6 +345,7 @@
 			"filtration": "Filtration",
 			"privateConsumption": "Private consumption",
 			"shrinkage": "Shrinkage",
+			"loss": "Loss",
 			"concentration": "Concentration",
 			"dealcoholization": "Dealcoholization",
 

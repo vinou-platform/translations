@@ -270,6 +270,10 @@
 				"main": "Schwund",
 				"sub": "erfassen"
 			},
+			"createLoss": {
+				"main": "Verlust",
+				"sub": "erfassen"
+			},
 			"createConcentration": {
 				"main": "Konzentrierung",
 				"sub": " "
@@ -341,6 +345,7 @@
 			"filtration": "Filtrierung",
 			"privateConsumption": "Eigenverbrauch",
 			"shrinkage": "Schwund",
+			"loss": "Verlust",
 			"concentration": "Konzentrierung",
 			"dealcoholization": "Entalkoholisierung",
 

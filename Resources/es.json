@@ -270,6 +270,10 @@
 				"main": "reducción",
 				"sub": "digitar"
 			},
+			"createLoss": {
+				"main": "perdida",
+				"sub": "digitar"
+			},
 			"createConcentration": {
 				"main": "concentración",
 				"sub": " "
@@ -341,6 +345,7 @@
 			"filtration": "filtración",
 			"privateConsumption": "consumo propio",
 			"shrinkage": "reducción",
+			"loss": "perdida",
 			"concentration": "concentración",
 			"dealcoholization": "desalcoholización",
 

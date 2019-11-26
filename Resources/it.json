@@ -267,6 +267,10 @@
 				"sub": "raccogliere"
 			},
 			"createShrinkage": {
+				"main": "Riduzione",
+				"sub": "raccogliere"
+			},
+			"createLoss": {
 				"main": "Perdita",
 				"sub": "raccogliere"
 			},
@@ -340,7 +344,8 @@
 			"staticSettling": "Demucillaginazione ",
 			"filtration": "Filtrazione.",
 			"privateConsumption": "Autoconsumo",
-			"shrinkage": "Perdita",
+			"shrinkage": "Riduzione",
+			"loss": "Perdita",
 			"concentration": "Concentrazione",
 			"dealcoholization": "Disalcoolazione",
 

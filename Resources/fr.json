@@ -270,6 +270,10 @@
 				"main": "Rétrécissement",
 				"sub": "répertorier"
 			},
+			"createLoss": {
+				"main": "Perte",
+				"sub": "répertorier"
+			},
 			"createConcentration": {
 				"main": "Concentration",
 				"sub": " "
@@ -341,6 +345,7 @@
 			"filtration": "Filtration",
 			"privateConsumption": "Consommation personnelle",
 			"shrinkage": "Rétrécissement",
+			"loss": "Perte",
 			"concentration": "Concentration",
 			"dealcoholization": "Désalcoolisation",
 
