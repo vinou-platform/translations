@@ -510,7 +510,9 @@
 		"fields": {
 			"type": "Substance type",
 			"unit": "Unit",
-			"note": "Notes"
+			"note": "Notes",
+			"productName": "Product name",
+			"productVendor": "Vendor"
 		},
 		"actions": {
 			"create": {
@@ -524,7 +526,7 @@
 				"editTitle": "Edit substance"
 			},
 			"gallery": {
-				"substance": "Substance",
+				"substance": "Substance/product name",
 				"chstamp": "Last change",
 				"stock": "Stock"
 			}

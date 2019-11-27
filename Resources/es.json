@@ -510,7 +510,9 @@
 		"fields": {
 			"type": "tipo de sustancia",
 			"unit": "escala",
-			"note": "notas"
+			"note": "notas",
+			"productName": "Nombre del producto",
+			"productVendor": "Proveedor"
 		},
 		"actions": {
 			"create": {
@@ -524,7 +526,7 @@
 				"editTitle": "editar sustancia"
 			},
 			"gallery": {
-				"substance": "tipo de sustancia",
+				"substance": "sustancia/Nombre del producto",
 				"chstamp": "cambiado por último",
 				"stock": "cantidad disponible"
 			}

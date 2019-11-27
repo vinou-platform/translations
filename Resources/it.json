@@ -510,7 +510,9 @@
 		"fields": {
 			"type": "Tipo di sostanze",
 			"unit": "Unità di misura",
-			"note": "Annotazioni"
+			"note": "Annotazioni",
+			"productName": "Nome del prodotto",
+			"productVendor": "Fornitore"
 		},
 		"actions": {
 			"create": {
@@ -524,7 +526,7 @@
 				"editTitle": "Modificare sostanze"
 			},
 			"gallery": {
-				"substance": "Tipo di sostanze",
+				"substance": "Sostanze/Nome del prodotto",
 				"chstamp": "Modificata da ultimo",
 				"stock": "Quantità presente"
 			}

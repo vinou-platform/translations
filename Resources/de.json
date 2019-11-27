@@ -510,7 +510,9 @@
 		"fields": {
 			"type": "Stoff-Typ",
 			"unit": "Einheit",
-			"note": "Notizen"
+			"note": "Notizen",
+			"productName": "Produktbez.",
+			"productVendor": "Hersteller"
 		},
 		"actions": {
 			"create": {
@@ -524,7 +526,7 @@
 				"editTitle": "Stoff bearbeiten"
 			},
 			"gallery": {
-				"substance": "Stofftyp",
+				"substance": "Stofftyp/Produktbez.",
 				"chstamp": "Zuletzt geändert",
 				"stock": "Vorhandene Menge"
 			}

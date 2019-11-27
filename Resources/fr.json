@@ -510,7 +510,9 @@
 		"fields": {
 			"type": "Type de matière",
 			"unit": "Unité",
-			"note": "Notes"
+			"note": "Notes",
+			"productName": "Nom du produit",
+			"productVendor": "Vendeur"
 		},
 		"actions": {
 			"create": {
@@ -524,7 +526,7 @@
 				"editTitle": "Éditer matière"
 			},
 			"gallery": {
-				"substance": "Type de matière",
+				"substance": "Matière/Nom du produit",
 				"chstamp": "Modification dernière",
 				"stock": "Stock"
 			}
