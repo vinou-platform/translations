@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Neuen Vorgang",
-				"sub": "erfassen"
+				"main": "Vorgang erfassen",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Eintrag",
-				"sub": "korrigieren"
+				"main": "Eintrag korrigieren",
+				"sub": " "
 			},
 
 			"createHarvest": {
@@ -268,6 +268,10 @@
 			},
 			"createShrinkage": {
 				"main": "Schwund",
+				"sub": "erfassen"
+			},
+			"createLoss": {
+				"main": "Verlust",
 				"sub": "erfassen"
 			},
 			"createConcentration": {
@@ -341,6 +345,7 @@
 			"filtration": "Filtrierung",
 			"privateConsumption": "Eigenverbrauch",
 			"shrinkage": "Schwund",
+			"loss": "Verlust",
 			"concentration": "Konzentrierung",
 			"dealcoholization": "Entalkoholisierung",
 
@@ -505,7 +510,9 @@
 		"fields": {
 			"type": "Stoff-Typ",
 			"unit": "Einheit",
-			"note": "Notizen"
+			"note": "Notizen",
+			"productName": "Produktbez.",
+			"productVendor": "Hersteller"
 		},
 		"actions": {
 			"create": {
@@ -519,7 +526,7 @@
 				"editTitle": "Stoff bearbeiten"
 			},
 			"gallery": {
-				"substance": "Stofftyp",
+				"substance": "Stofftyp/Produktbez.",
 				"chstamp": "Zuletzt geändert",
 				"stock": "Vorhandene Menge"
 			}
@@ -553,7 +560,8 @@
 			"tannin": "Tannine",
 			"carboneDioxide": "Kohlendioxid",
 			"ascorbicAcid": "Ascorbinsäure",
-			"vitaminB1": "Vitamin B1"
+			"vitaminB1": "Vitamin B1",
+			"yeast": "Hefe"
 		},
 		"dialogs": {
 			"delete": "Willst Du die Substanz wirklich löschen?"
@@ -761,12 +769,14 @@
 			"analysis_data": "Analysedaten",
 			"type": "Typ",
 			"quantity": "Menge",
-			"description": "Beschreibung",
+			"description": "Beschreibung, Lieferant, Rechnungsnr., ...",
 			"winenumber": "Weinnummer",
 			"apnumber": "AP-Nummer",
 			"alcohol": "Alkohol",
 			"sweetness": "Restsüße",
 			"acid": "Säuregehalt",
+			"client": "Kunde",
+			"orderNumber": "Bestellnr.",
 			"purpose": {
 				"label": "Art",
 				"empty": "Bitte wählen",
@@ -1223,12 +1233,14 @@
 				"label": "Rebsorten",
 				"placeholder": "Rebsorte suchen"
 			},
+			"gross": "Brutto-Preis",
 			"image": {
 				"label": "Flaschenbild",
 				"error": {
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"inclVat": "MwSt.",
 			"inshop": "Im Shop anzeigen",
 			"instock": "auf Lager",
 			"inwinelist": "In Weinliste anzeigen",
@@ -1767,7 +1779,9 @@
 				"main": "Abweichende",
 				"sub": "Lieferadresse"
 			},
-			"downloadInvoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
+			"export": {
+				"invoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
+			}
 		},
 		"fieldSets": {
 			"edit_view": "Ansicht bearbeiten",
@@ -1813,6 +1827,8 @@
 			"pricinggross": "Brutto Rechnung",
 			"quantity": "Stück",
 			"rebate": "Rabatt (in %)",
+			"rebateGross": "Bruttorabatt (in {currency})",
+			"rebateNet": "Nettorabatt (in {currency})",
 			"rebatesum": "Rabatt",
 			"same_invoice_addr": "Wie Rechnungsadresse",
 			"search_product": "Produkt suchen",
@@ -4096,6 +4112,12 @@
 		},
 		"596": {
 			"name": "Zweigelt"
+		},
+		"597": {
+			"name": "Lugana"
+		},
+		"598": {
+			"name": "Gascogne"
 		}
 	},
 	"tastes": {

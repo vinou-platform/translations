@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Nuovo Processo",
-				"sub": "raccogliere"
+				"main": "Processo raccogliere",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Voce",
-				"sub": "corretto"
+				"main": "Voce corretto",
+				"sub": " "
 			},
 
 			"createHarvest": {
@@ -267,6 +267,10 @@
 				"sub": "raccogliere"
 			},
 			"createShrinkage": {
+				"main": "Riduzione",
+				"sub": "raccogliere"
+			},
+			"createLoss": {
 				"main": "Perdita",
 				"sub": "raccogliere"
 			},
@@ -340,7 +344,8 @@
 			"staticSettling": "Demucillaginazione ",
 			"filtration": "Filtrazione.",
 			"privateConsumption": "Autoconsumo",
-			"shrinkage": "Perdita",
+			"shrinkage": "Riduzione",
+			"loss": "Perdita",
 			"concentration": "Concentrazione",
 			"dealcoholization": "Disalcoolazione",
 
@@ -505,7 +510,9 @@
 		"fields": {
 			"type": "Tipo di sostanze",
 			"unit": "Unità di misura",
-			"note": "Annotazioni"
+			"note": "Annotazioni",
+			"productName": "Nome del prodotto",
+			"productVendor": "Fornitore"
 		},
 		"actions": {
 			"create": {
@@ -519,7 +526,7 @@
 				"editTitle": "Modificare sostanze"
 			},
 			"gallery": {
-				"substance": "Tipo di sostanze",
+				"substance": "Sostanze/Nome del prodotto",
 				"chstamp": "Modificata da ultimo",
 				"stock": "Quantità presente"
 			}
@@ -553,7 +560,8 @@
 			"tannin": "Tannini",
 			"carboneDioxide": "Anidride carbonica",
 			"ascorbicAcid": "Acido ascorbico",
-			"vitaminB1": "Vitamina B1"
+			"vitaminB1": "Vitamina B1",
+			"yeast": "Lievito"
 		},
 		"dialogs": {
 			"delete": "Vuoi davvero cancellare la sostanza?"
@@ -762,12 +770,14 @@
 			"analysis_data": "Dati analitici",
 			"type": "Tipo",
 			"quantity": "Quantità",
-			"description": "Descrizione",
+			"description": "Descrizione, fornitore, fattura n., ...",
 			"winenumber": "Numero di Vino",
 			"apnumber": "Numero dell'esame ufficiale",
 			"alcohol": "Alcol",
 			"sweetness": "Densità",
 			"acid": "Acidità",
+			"client": "Cliente",
+			"orderNumber": "N° d'ordine",
 			"purpose": {
 				"label": "Tipo",
 				"empty": "Per piacere, seleziona",
@@ -1224,12 +1234,14 @@
 				"label": "Uva",
 				"placeholder": "Ricerca uva"
 			},
+			"gross": "Prezzo lordo",
 			"image": {
 				"label": "Immagine della bottiglia",
 				"error": {
 					"notfound": "L'immagine non è stata trovata"
 				}
 			},
+			"inclVat": "IVA.",
 			"inshop": "Mostra nel negozio",
 			"instock": "In magazzino",
 			"inwinelist": "Mostra nella lista dei vini",
@@ -1769,7 +1781,9 @@
 				"main": "Diverso indirizzo",
 				"sub": "di consegna"
 			},
-			"downloadInvoices": "Scarica fatture per il periodo selezionato"
+			"export": {
+				"invoices": "Scarica fatture per il periodo selezionato"
+			}
 		},
 		"fieldSets": {
 			"edit_view": "Modificare vista",
@@ -1815,6 +1829,8 @@
 			"pricinggross": "Fattura lordo",
 			"quantity": "Prezzo",
 			"rebate": "Sconto (in %)",
+			"rebateGross": "Sconto lordo (in {currency})",
+			"rebateNet": "Sconto netta (in {currency})",
 			"rebatesum": "Sconto",
 			"same_invoice_addr": "Come l'indirizzo di fatturazione",
 			"search_product": "Cerca prodotto",
@@ -4098,6 +4114,12 @@
 		},
 		"596": {
 			"name": "Zweigelt"
+		},
+		"597": {
+			"name": "Lugana"
+		},
+		"598": {
+			"name": "Gascogne"
 		}
 	},
 	"tastes": {

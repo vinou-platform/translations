@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Log new",
-				"sub": "action"
+				"main": "Log action",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Right",
-				"sub": "action"
+				"main": "Right action",
+				"sub": " "
 			},
 
 			"createHarvest": {
@@ -269,6 +269,10 @@
 			"createShrinkage": {
 				"main": "Log",
 				"sub": "shrinkage"
+			},
+			"createLoss": {
+				"main": "Log",
+				"sub": "loss"
 			},
 			"createConcentration": {
 				"main": "Concentration",
@@ -341,6 +345,7 @@
 			"filtration": "Filtration",
 			"privateConsumption": "Private consumption",
 			"shrinkage": "Shrinkage",
+			"loss": "Loss",
 			"concentration": "Concentration",
 			"dealcoholization": "Dealcoholization",
 
@@ -505,7 +510,9 @@
 		"fields": {
 			"type": "Substance type",
 			"unit": "Unit",
-			"note": "Notes"
+			"note": "Notes",
+			"productName": "Product name",
+			"productVendor": "Vendor"
 		},
 		"actions": {
 			"create": {
@@ -519,7 +526,7 @@
 				"editTitle": "Edit substance"
 			},
 			"gallery": {
-				"substance": "Substance",
+				"substance": "Substance/product name",
 				"chstamp": "Last change",
 				"stock": "Stock"
 			}
@@ -553,7 +560,8 @@
 			"tannin": "Tannin",
 			"carboneDioxide": "Carbone dioxide",
 			"ascorbicAcid": "Ascorbic acid",
-			"vitaminB1": "Vitamin B1"
+			"vitaminB1": "Vitamin B1",
+			"yeast": "Yeast"
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this substance?"
@@ -761,12 +769,14 @@
 			"analysis_data": "Analysis data",
 			"type": "Type",
 			"quantity": "Quantity",
-			"description": "Description",
+			"description": "Description, supplier, invoice-no., ...",
 			"winenumber": "Winenumber",
 			"apnumber": "AP-Number",
 			"alcohol": "Alcohol",
 			"sweetness": "Sweetness",
 			"acid": "Acid",
+			"client": "Customer",
+			"orderNumber": "Order-no.",
 			"purpose": {
 				"label": "Purpose",
 				"empty": "Please Choose",
@@ -1223,12 +1233,14 @@
 				"label": "Grapetypes",
 				"placeholder": "Search for grapetypes"
 			},
+			"gross": "Gross price",
 			"image": {
 				"label": "Bottle picture",
 				"error": {
 					"notfound": "Image could not be resolved"
 				}
 			},
+			"inclVat": "VAT",
 			"inshop": "Show shop",
 			"instock": "in stock",
 			"inwinelist": "Show in winelist",
@@ -1767,7 +1779,9 @@
 				"main": "Different",
 				"sub": "delivery address"
 			},
-			"downloadInvoices": "Download invoices for selected period"
+			"export": {
+				"invoices": "Download invoices for selected period"
+			}
 		},
 		"fieldSets": {
 			"edit_view": "Edit view",
@@ -1813,6 +1827,8 @@
 			"pricinggross": "Gross invoice",
 			"quantity": "Qty",
 			"rebate": "Rebate (in %)",
+			"rebateGross": "Gross rebate (in {currency})",
+			"rebateNet": "Netto rebate (in {currency})",
 			"rebatesum": "Rebate",
 			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",
@@ -4096,6 +4112,12 @@
 		},
 		"596": {
 			"name": "Zweigelt"
+		},
+		"597": {
+			"name": "Lugana"
+		},
+		"598": {
+			"name": "Gascogne"
 		}
 	},
 	"tastes": {

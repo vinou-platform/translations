@@ -229,12 +229,12 @@
 		},
 		"actions": {
 			"create": {
-				"main": "proceso nuevo",
-				"sub": "digitar"
+				"main": "proceso digitar",
+				"sub": " "
 			},
 			"edit": {
-				"main": "inscripción",
-				"sub": "corregir"
+				"main": "inscripción corregir",
+				"sub": " "
 			},
 
 			"createHarvest": {
@@ -268,6 +268,10 @@
 			},
 			"createShrinkage": {
 				"main": "reducción",
+				"sub": "digitar"
+			},
+			"createLoss": {
+				"main": "perdida",
 				"sub": "digitar"
 			},
 			"createConcentration": {
@@ -341,6 +345,7 @@
 			"filtration": "filtración",
 			"privateConsumption": "consumo propio",
 			"shrinkage": "reducción",
+			"loss": "perdida",
 			"concentration": "concentración",
 			"dealcoholization": "desalcoholización",
 
@@ -505,7 +510,9 @@
 		"fields": {
 			"type": "tipo de sustancia",
 			"unit": "escala",
-			"note": "notas"
+			"note": "notas",
+			"productName": "Nombre del producto",
+			"productVendor": "Proveedor"
 		},
 		"actions": {
 			"create": {
@@ -519,7 +526,7 @@
 				"editTitle": "editar sustancia"
 			},
 			"gallery": {
-				"substance": "tipo de sustancia",
+				"substance": "sustancia/Nombre del producto",
 				"chstamp": "cambiado por último",
 				"stock": "cantidad disponible"
 			}
@@ -553,7 +560,8 @@
 			"tannin": "taninos",
 			"carboneDioxide": "dióxido de carbono",
 			"ascorbicAcid": "ácido ascórbico",
-			"vitaminB1": "vitamina B1"
+			"vitaminB1": "vitamina B1",
+			"yeast": "Levadura"
 		},
 		"dialogs": {
 			"delete": "Quieres borrar esa sustancia seguramente?"
@@ -762,12 +770,14 @@
 			"analysis_data": "datos de análisis",
 			"type": "tipo",
 			"quantity": "cantidad",
-			"description": "descripción",
+			"description": "descripción, proveedor, factura no., ...",
 			"winenumber": "número de vino",
 			"apnumber": "número de prueba oficial",
 			"alcohol": "alcohol",
 			"sweetness": "azucar residual",
 			"acid": "acidez",
+			"client": "cliente",
+			"orderNumber": "Nº de pedido",
 			"purpose": {
 				"label": "tipo",
 				"empty": "Por favor seleccione",
@@ -1224,12 +1234,14 @@
 				"label": "variedades de uva",
 				"placeholder": "buscar variedad de uva"
 			},
+			"gross": "precio bruto",
 			"image": {
 				"label": "logotipo de botella",
 				"error": {
 					"notfound": "No ha podido encontrar imágen"
 				}
 			},
+			"inclVat": "IVA.",
 			"inshop": "señalar en shop",
 			"instock": "en almacén",
 			"inwinelist": "señalar en lista de vino",
@@ -1769,7 +1781,9 @@
 				"main": "divergentes",
 				"sub": "boletín de entrega"
 			},
-			"downloadInvoices": "Descargar facturas para el período seleccionado"
+			"export": {
+				"invoices": "Descargar facturas para el período seleccionado"
+			}
 		},
 		"fieldSets": {
 			"edit_view": "editar muestra",
@@ -1815,6 +1829,8 @@
 			"pricinggross": "cuenta bruto",
 			"quantity": "piezas",
 			"rebate": "desuento (en %)",
+			"rebateGross": "desuento bruto (en {currency})",
+			"rebateNet": "desuento neto (en {currency})",
 			"rebatesum": "descuento",
 			"same_invoice_addr": "como dirección de cuenta",
 			"search_product": "buscar producto",
@@ -4098,6 +4114,12 @@
 		},
 		"596": {
 			"name": "Zweigelt"
+		},
+		"597": {
+			"name": "Lugana"
+		},
+		"598": {
+			"name": "Gascogne"
 		}
 	},
 	"tastes": {
