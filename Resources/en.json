@@ -1457,6 +1457,7 @@
 	"prices": {
 		"gross": "Gross",
 		"net": "Net",
+		"price": "Price",
 		"taxrate": "Taxrate",
 		"standard": "Default price",
 		"action": {

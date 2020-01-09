@@ -1458,6 +1458,7 @@
 	"prices": {
 		"gross": "bruto",
 		"net": "neto",
+		"price": "Precio",
 		"taxrate": "tipo impositivo",
 		"standard": "precio estándar",
 		"action": {

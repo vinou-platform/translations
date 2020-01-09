@@ -1458,6 +1458,7 @@
 	"prices": {
 		"gross": "Lordo",
 		"net": "Rete",
+		"price": "Prezzo",
 		"taxrate": "Un'aliquota di tassazione",
 		"standard": "Prezzo standard",
 		"action": {

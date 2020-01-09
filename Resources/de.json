@@ -1457,6 +1457,7 @@
 	"prices": {
 		"gross": "Brutto",
 		"net": "Netto",
+		"price": "Preis",
 		"taxrate": "Steuersatz",
 		"standard": "Standardpreis",
 		"action": {
