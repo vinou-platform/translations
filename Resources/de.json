@@ -967,8 +967,10 @@
 				"regular": "Commerce",
 				"invitation": "Eingeladen"
 			},
-			"smallbusiness": "Kleinunternehmen",
-			"taxfreeInvoiceNotes": "Steuerfreie Rechnungen",
+			"smallBusiness": {
+				"label": "Kleinunternehmer",
+				"description": "Kein Ausweis von Umsatzsteuer gemäß § 19 UStG"
+			},
 			"crstamp": "Datum der Registrierung",
 			"expire": "Ablaufzeitpunkt der Testphase",
 			"voucher_old": "Gutschein-Code",
@@ -983,7 +985,8 @@
 		},
 		"messages": {
 			"dialog": {
-				"activate": "Account vollständig aktivieren?"
+				"activate": "Account vollständig aktivieren?",
+				"smallBusiness": "Möchtest du die Kleinunternehmereinstellung wirklich ändern?<br/>Alle Preise Deiner Weine, Produkte, Versandoptionen, etc. werden hierdurch angepasst und müssen überprüft werden."
 			},
 			"toasts": {
 				"upgrade": "Vinou-Commerce wurde aktiviert!",

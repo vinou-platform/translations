@@ -968,8 +968,10 @@
 				"regular": "Commerce",
 				"invitation": "invitado"
 			},
-			"smallbusiness": "pequeña empresa",
-			"taxfreeInvoiceNotes": "cuentas libre de impuestos",
+			"smallBusiness": {
+				"label": "pequeña empresa",
+				"description": "cuentas libre de impuestos"
+			},
 			"crstamp": "fecha de registración",
 			"expire": "fecha de vencimiento del período de prueba",
 			"voucher_old": "código de vale",
@@ -984,7 +986,8 @@
 		},
 		"messages": {
 			"dialog": {
-				"activate": "Activar cuenta completamente?"
+				"activate": "Activar cuenta completamente?",
+				"smallBusiness": "Realmente quieres cambiar la configuración de la pequeña empresa?<br/>Todos los precios de sus vinos, productos y opciones de envío se ajustarán y deberán verificarse."
 			},
 			"toasts": {
 				"upgrade": "Vinou-Commerce ha sido activado!",

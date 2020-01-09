@@ -967,8 +967,10 @@
 				"regular": "Commerce",
 				"invitation": "Invited"
 			},
-			"smallbusiness": "Smallbusiness company",
-			"taxfreeInvoiceNotes": "Taxfree invoice notes",
+			"smallBusiness": {
+				"label": "Small business company",
+				"description": "Tax free invoice notes"
+			},
 			"crstamp": "Date of registration",
 			"expire": "Expiration date",
 			"voucher_old": "Voucher",
@@ -983,7 +985,8 @@
 		},
 		"messages": {
 			"dialog": {
-				"activate": "Completely activate membership?"
+				"activate": "Completely activate membership?",
+				"smallBusiness": "Do you really want to change the small business setting?<br/>All prices of your wines, products and shipment options will get adjusted and must be verified."
 			},
 			"toasts": {
 				"upgrade": "Vinou-Commerce activated!",

@@ -968,8 +968,10 @@
 				"regular": "Commerce",
 				"invitation": "Invité"
 			},
-			"smallbusiness": "Petite entreprise",
-			"taxfreeInvoiceNotes": "Factures hors taxes",
+			"smallBusiness": {
+				"label": "Petite entreprise",
+				"description": "Factures hors taxes"
+			},
 			"crstamp": "Date d'enregistrement",
 			"expire": "Date d'expiration de la phase de test",
 			"voucher_old": "Code promo",
@@ -984,7 +986,8 @@
 		},
 		"messages": {
 			"dialog": {
-				"activate": "Activer le compte complètement?"
+				"activate": "Activer le compte complètement?",
+				"smallBusiness": "Voulez-vous vraiment changer le cadre des petites entreprises?<br/>Tous les prix de vos vins, produits et options d'expédition seront ajustés et devront être vérifiés."
 			},
 			"toasts": {
 				"upgrade": "Vinou Commerce a été activé!",

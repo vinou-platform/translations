@@ -968,8 +968,10 @@
 				"regular": "Commerce",
 				"invitation": "È stato invitato"
 			},
-			"smallbusiness": "Piccola impresa",
-			"taxfreeInvoiceNotes": "Fatture esenti da imposte",
+			"smallBusiness": {
+				"label": "Piccola impresa",
+				"description": "Fatture esenti da imposte"
+			},
 			"crstamp": "Data di registrazione",
 			"expire": "Data di scadenza della fase di prova",
 			"voucher_old": "Codice promozionale",
@@ -984,7 +986,8 @@
 		},
 		"messages": {
 			"dialog": {
-				"activate": "Attivare completamente l'account?"
+				"activate": "Attivare completamente l'account?",
+				"smallBusiness": "Vuoi davvero cambiare l'impostazione delle piccole imprese?<br/>Tutti i prezzi dei tuoi vini, prodotti e opzioni di spedizione verranno adeguati e devono essere verificati."
 			},
 			"toasts": {
 				"upgrade": "Vinou Commerce attivato!",
