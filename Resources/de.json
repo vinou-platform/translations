@@ -4161,7 +4161,15 @@
 		"si": "Slowenien",
 		"sx": "Sint Maarten",
 		"uk": "Vereinigtes Königreich",
-		"za": "Südafrika"
+		"za": "Südafrika",
+		"dk": "Dänemark",
+		"no": "Norwegen",
+		"fi": "Finnland",
+		"pl": "Polen",
+		"ee": "Estland",
+		"lt": "Litauen",
+		"lv": "Lettland",
+		"lu": "Luxemburg"
 	},
 	"languages": {
 		"de": {
