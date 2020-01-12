@@ -26,7 +26,9 @@
 		"cellar": "Mi bodega",
 		"cellar.book": "Mi libro de bodega",
 		"cellar.barrels": "recipientes",
-		"cellar.substances": "sustancias"
+		"cellar.substances": "sustancias",
+		"apps": "Aplicaciones",
+		"licenses": "Licencias"
 	},
 	"general": {
 		"fieldSets": {

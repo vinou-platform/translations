@@ -26,7 +26,9 @@
 		"cellar": "Ma cave",
 		"cellar.book": "Livre de la cave",
 		"cellar.barrels": "Récipient",
-		"cellar.substances": "Substances"
+		"cellar.substances": "Substances",
+		"apps": "Applications",
+		"licenses": "Licences"
 	},
 	"general": {
 		"fieldSets": {

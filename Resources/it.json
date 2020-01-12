@@ -26,7 +26,9 @@
 		"cellar": "Cantina",
 		"cellar.book": "Libro della cantina",
 		"cellar.barrels": "Recipiente",
-		"cellar.substances": "Sostanza"
+		"cellar.substances": "Sostanza",
+		"apps": "Applicazioni",
+		"licenses": "Licenze"
 	},
 	"general": {
 		"fieldSets": {

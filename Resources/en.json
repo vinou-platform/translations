@@ -26,7 +26,9 @@
 		"cellar": "Cellar",
 		"cellar.book": "Wines",
 		"cellar.barrels": "Barrels",
-		"cellar.substances": "Substances"
+		"cellar.substances": "Substances",
+		"apps": "Applications",
+		"licenses": "Licenses"
 	},
 	"general": {
 		"fieldSets": {
