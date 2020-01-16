@@ -48,9 +48,7 @@
 				"of": "de",
 				"to": "a"
 			},
-			"price": {
-				"none": "gratuito"
-			},
+			"freeOfCharge": "gratuito",
 			"crstamp": "fecha de creación",
 			"chstamp": "fecha de cambio",
 			"title": "titúlo",
@@ -127,7 +125,6 @@
 	"delete_image_secure": "Quieres borrar esa imágen seguramente?",
 	"delete_template_secure": "Quieres borrar su modelo de peritaje seguramente?",
 	"changepw": "cambiar contraseña",
-	"wineregions_none": "no hay datos",
 	"wines_modal_delete": "Quieres borrar ese vino seguramente?",
 	"wineries_modal_delete": "Quieres borrar esa propiedad vinícola seguramente?",
 	"category_modal_delete": "Quieres borrar esa categoría seguramente?",
@@ -1246,10 +1243,7 @@
 			"nostocktext": "Si vaciado señala texto (e.j. disponible a partir de...)",
 			"public_wines": "vinos publicos",
 			"place": "sitio",
-			"price": {
-				"label": "precio",
-				"none": "no hay indicaciones"
-			},
+			"price": "precio",
 			"prices": "precios",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
@@ -1385,7 +1379,6 @@
 		"messages": {
 			"formdirty": "El vino actual ha sido editado.Quieres grabar esos cambios?",
 			"createcopy": "Quieres aceptar esos datos de {nombre de vino}?",
-			"fieldempty": "no hay indicaciones",
 			"hints": {
 				"connectwine": "conectar con vino"
 			},

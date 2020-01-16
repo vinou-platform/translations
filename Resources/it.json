@@ -48,9 +48,7 @@
 				"of": "Dal",
 				"to": "A"
 			},
-			"price": {
-				"none": "Gratuite"
-			},
+			"freeOfCharge": "Gratuite",
 			"crstamp": "Data di creazione",
 			"chstamp": "Date di modifica",
 			"title": "Titolo accademico",
@@ -127,7 +125,6 @@
 	"delete_image_secure": "Vuoi veramente cancellare la foto",
 	"delete_template_secure": "Vuoi veramente cancellare questo esperienza",
 	"changepw": "Cambiare password",
-	"wineregions_none": "Non disponible",
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
 	"category_modal_delete": "Vuoi veramente cancellare questa categoria",
@@ -1246,10 +1243,7 @@
 			"nostocktext": "Il testo veniva visualizzato quando il contenuto era ubriaco (per es. disponibile da...)",
 			"public_wines": "Vini pubblici",
 			"place": "Posizione",
-			"price": {
-				"label": "Prezzo",
-				"none": "Nessuna informazione"
-			},
+			"price": "Prezzo",
 			"prices": "Prezzi",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
@@ -1385,7 +1379,6 @@
 		"messages": {
 			"formdirty": "Il vino attuale è stato modificato. Vuoi salvare le modifiche?",
 			"createcopy": "Vuoi prendere le informazioni dalla {wine.name} ?",
-			"fieldempty": "Nessuna informazione",
 			"hints": {
 				"connectwine": "Connettiti con il vino"
 			},

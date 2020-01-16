@@ -48,9 +48,7 @@
 				"of": "from",
 				"to": "to"
 			},
-			"price": {
-				"none": "free of charge"
-			},
+			"freeOfCharge": "free of charge",
 			"crstamp": "Date of creation",
 			"chstamp": "Last update",
 			"title": "Title",
@@ -127,7 +125,6 @@
 	"delete_image_secure":"Do you really want to delete the image?",
 	"delete_template_secure":"Do you really want to delete the template?",
 	"changepw":"Change password",
-	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete the selected winery?",
 	"category_modal_delete": "Do you really want to delete the selected category?",
@@ -1245,10 +1242,7 @@
 			"nostocktext": "alternativ text for sold out",
 			"public_wines": "Public wines",
 			"place": "Place",
-			"price": {
-				"label": "Price",
-				"none": "not specified"
-			},
+			"price": "Price",
 			"prices": "Prices",
 			"qrcode": "QR code",
 			"qrcode_redirect": "QR code redirect",
@@ -1384,7 +1378,6 @@
 		"messages": {
 			"formdirty": "Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
-			"fieldempty": "not specified",
 			"hints": {
 				"connectwine": "Connect to wine"
 			},
