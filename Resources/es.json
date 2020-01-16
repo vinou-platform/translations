@@ -1155,11 +1155,7 @@
 		}
 	},
 	"wine": {
-		"action": {
-			"add": {
-				"main": "nuevo",
-				"sub": "añadir vino"
-			},
+		"actions": {
 			"create": {
 				"main": "nuevo vino",
 				"sub": "crear",
@@ -1169,16 +1165,26 @@
 			"edit": {
 				"modaltitle": "editar vino"
 			},
+			"export": {
+				"inventory": "descargar inventario",
+				"barcodeVector": "descargar EAN-Code como archivo vector",
+				"qrCodeVector": "descargar QR-Code como archivo vector"
+			},
 			"search": {
 				"placeholder": "e.j. nombre, país, región, cosecha, número de artículo",
 				"title": "buscar a vino",
 				"modaltitle": "buscar vino"
 			},
-			"export": {
-				"inventory": "descargar inventario"
+			"showExpertise": {
+				"main": "peritaje",
+				"sub": "señalar",
+				"title": "abrir peritaje en nueva ventanilla"
 			},
-			"barcodedownloadvector": "descargar EAN-Code como archivo vector",
-			"qrcodedownloadvector": "descargar QR-Code como archivo vector"
+			"showWinepass": {
+				"main": "pasaporte de vino",
+				"sub": "señalar",
+				"title": "abrir pasaporte de vino en nueva ventanilla"
+			}
 		},
 		"fieldSets": {
 			"allergens": "alergenos",
@@ -1205,34 +1211,16 @@
 				"label": "alergenos",
 				"placeholder": "buscar alergenos"
 			},
-			"allergen_types": {
-				"sulphide": "sulfito",
-				"eggwhite": "huevo",
-				"fish": "pescado",
-				"milk": "leche"
-			},
 			"articlenumber": "número de artículo",
 			"barcode": "EAN-Code",
 			"bio": "certificado como biológico",
 			"bottlesize": "tamaño de botella",
 			"cap": "cierre",
-			"cap_types": {
-				"screw": "cierre de rosca",
-				"cork":	"corcho natural",
-				"crownCap": "chapa",
-				"plastic": "corcho plástico",
-				"glas":	"cierre de vidrio"
-			},
 			"category": "categoría",
 			"countrycode": "origen",
 			"cuvee": "cubierto",
 			"description": "descripción",
 			"drinktemperature": "temperatura óptima para beber",
-			"expertise_show": {
-				"main": "peritaje",
-				"sub": "señalar",
-				"title": "abrir peritaje en nueva ventanilla"
-			},
 			"grapetypes": {
 				"label": "variedades de uva",
 				"placeholder": "buscar variedad de uva"
@@ -1257,7 +1245,6 @@
 			"nostock": "vaciado",
 			"nostocktext": "Si vaciado señala texto (e.j. disponible a partir de...)",
 			"public_wines": "vinos publicos",
-			"stockunknown": "no hay informaciones sobre inventarios disponibles",
 			"place": "sitio",
 			"price": {
 				"label": "precio",
@@ -1270,44 +1257,12 @@
 			"qrlink": "direción de destino para QR-Code",
 			"qrlinkempty": "direción de destino para QR-Code ( si pasaporte de vino está vacío)",
 			"quality": "grada de calidad",
-			"quality_types": {
-				"notspecified": "vino sin indicación de la variedad de uva o del año",
-				"table": "vino con indicación de la variedad de uva o del año",
-				"superior": "vino del país",
-				"origin": "vino de calidad de ciertos terrenos cultivados",
-				"cabinet": "garbinete",
-				"spaetlese": "rebusca",
-				"selection": "selección",
-				"beerenauslese": "selección de bayas",
-				"trockenbeerenauslese": "selección de bayas secas",
-				"sparklingWine": "vino espumoso",
-				"champagne": "cava",
-				"winzersekt": "cava del viticultor",
-				"cremant": "Crémant",
-				"icewine": "vino hecho con uvas congeladas",
-				"champagneSpecificRegion": "cava b.A.",
-				"specialquality": "vino de calidad de madurez y manera de vendimia especial, Prädikatswein",
-				"strawwine": "vino de paja",
-				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-				"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-				"es_table": "|ES| Vino de mesa",
-				"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-				"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-				"fr_spaetlese": "|FR| Vin doux naturel",
-				"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-				"fr_superior": "|FR| Vin de pays",
-				"fr_table": "|FR| Vin de table",
-				"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-				"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-				"it_specialquality": "|IT| Vino dolce naturale",
-				"it_superior": "|IT| Vino tipico",
-				"it_table": "|IT| Vino da tavola"
-			},
 			"quantity": "inventario acutal",
 			"region": "región de terreno cultivado",
 			"shoplink": "enlace al shop",
 			"shoplink_active": "enlace al shop activado",
 			"sorting": "índice de clasificación manual (e.j. para el shop)",
+			"stockunknown": "N/A",
 			"sweetness": "azucar residual",
 			"taste": "sabor",
 			"terroir": "suelo",
@@ -1316,16 +1271,50 @@
 			"vegan": "vegano",
 			"vintage": "cosecha",
 			"weight": "peso (en gramos)",
-			"wine_without_category": "señalar vinos sin categoría",
-			"winepass_show": {
-				"main": "pasaporte de vino",
-				"sub": "señalar",
-				"title": "abrir pasaporte de vino en nueva ventanilla"
-			},
 			"winery": {
 				"label": "propiedad vinícola",
 				"placeholder": "buscar propiedad vinícola"
 			}
+		},
+		"cap_types": {
+			"screw": "cierre de rosca",
+			"cork":	"corcho natural",
+			"crownCap": "chapa",
+			"plastic": "corcho plástico",
+			"glas":	"cierre de vidrio"
+		},
+		"quality_types": {
+			"notspecified": "vino sin indicación de la variedad de uva o del año",
+			"table": "vino con indicación de la variedad de uva o del año",
+			"superior": "vino del país",
+			"origin": "vino de calidad de ciertos terrenos cultivados",
+			"cabinet": "garbinete",
+			"spaetlese": "rebusca",
+			"selection": "selección",
+			"beerenauslese": "selección de bayas",
+			"trockenbeerenauslese": "selección de bayas secas",
+			"sparklingWine": "vino espumoso",
+			"champagne": "cava",
+			"winzersekt": "cava del viticultor",
+			"cremant": "Crémant",
+			"icewine": "vino hecho con uvas congeladas",
+			"champagneSpecificRegion": "cava b.A.",
+			"specialquality": "vino de calidad de madurez y manera de vendimia especial, Prädikatswein",
+			"strawwine": "vino de paja",
+			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
+			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
+			"es_table": "|ES| Vino de mesa",
+			"fr_cabinet": "|FR| Appellation contrôlée (AC)",
+			"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
+			"fr_spaetlese": "|FR| Vin doux naturel",
+			"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"fr_superior": "|FR| Vin de pays",
+			"fr_table": "|FR| Vin de table",
+			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
+			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
+			"it_specialquality": "|IT| Vino dolce naturale",
+			"it_superior": "|IT| Vino tipico",
+			"it_table": "|IT| Vino da tavola"
 		},
 		"gallery": {
 			"new": {
@@ -1342,6 +1331,7 @@
 			},
 			"filter": {
 				"category": "seleccionar categoría",
+				"noCategory": "señalar vinos sin categoría",
 				"winetype": "filtrar tipo de vino"
 			}
 		},

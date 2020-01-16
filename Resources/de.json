@@ -1154,11 +1154,7 @@
 		}
 	},
 	"wine": {
-		"action": {
-			"add": {
-				"main": "Neuen",
-				"sub": "Wein hinzufügen"
-			},
+		"actions": {
 			"create": {
 				"main": "Neuen Wein",
 				"sub": "anlegen",
@@ -1168,16 +1164,26 @@
 			"edit": {
 				"modaltitle": "Wein bearbeiten"
 			},
+			"export": {
+				"inventory": "Inventurliste herunterladen",
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen",
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			},
 			"search": {
 				"placeholder": "z.B. Name, Land, Region, Jahrgang, Artikelnummer",
 				"title": "Nach Wein Suchen",
 				"modaltitle": "Wein suchen"
 			},
-			"export": {
-				"inventory": "Inventurliste herunterladen"
+			"showExpertise": {
+				"main": "Expertise",
+				"sub": "anzeigen",
+				"title": "Expertise in neuem Fenster öffnen"
 			},
-			"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
-			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
+			"showWinepass": {
+				"main": "Weinpass",
+				"sub": "anzeigen",
+				"title": "Weinpass in neuem Fenster öffnen"
+			}
 		},
 		"fieldSets": {
 			"allergens": "Allergene",
@@ -1204,34 +1210,16 @@
 				"label": "Allergene",
 				"placeholder": "Allergene suchen"
 			},
-			"allergen_types": {
-				"sulphide": "Sulfit",
-				"eggwhite": "Ei",
-				"fish": "Fisch",
-				"milk": "Milch"
-			},
 			"articlenumber": "Art.-Nr.",
 			"barcode": "EAN-Code",
 			"bio": "Bio zertifiziert",
 			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
-			"cap_types": {
-				"screw": "Schraubverschluss",
-				"cork":	"Naturkorken",
-				"crownCap": "Kronkorken",
-				"plastic": "Kunststoffkorken",
-				"glas":	"Glasverschluss"
-			},
 			"category": "Kategorie",
 			"countrycode": "Herkunft",
 			"cuvee": "Cuvée",
 			"description": "Beschreibung",
 			"drinktemperature": "Trinktemperatur",
-			"expertise_show": {
-				"main": "Expertise",
-				"sub": "anzeigen",
-				"title": "Expertise in neuem Fenster öffnen"
-			},
 			"grapetypes": {
 				"label": "Rebsorten",
 				"placeholder": "Rebsorte suchen"
@@ -1256,7 +1244,6 @@
 			"nostock": "ausgetrunken",
 			"nostocktext": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
 			"public_wines": "Öffentliche Weine",
-			"stockunknown": "keine Bestandsinformation verfügbar",
 			"place": "Lage",
 			"price": {
 				"label": "Preis",
@@ -1269,44 +1256,12 @@
 			"qrlink": "Zieladresse für QR-Code",
 			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
 			"quality": "Qualitätsstufe",
-			"quality_types": {
-				"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
-				"table": "Wein mit Rebsorten- order Jahrgangsangabe",
-				"superior": "Landwein",
-				"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
-				"cabinet": "Kabinett",
-				"spaetlese": "Spätlese",
-				"selection": "Auslese",
-				"beerenauslese": "Beerenauslese",
-				"trockenbeerenauslese": "Trockenbeerenauslese",
-				"sparklingWine": "Schaumwein",
-				"champagne": "Sekt",
-				"winzersekt": "Winzersekt",
-				"cremant": "Crémant",
-				"icewine": "Eiswein",
-				"champagneSpecificRegion": "Sekt b.A.",
-				"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
-				"strawwine": "Strohwein",
-				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-				"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-				"es_table": "|ES| Vino de mesa",
-				"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-				"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-				"fr_spaetlese": "|FR| Vin doux naturel",
-				"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-				"fr_superior": "|FR| Vin de pays",
-				"fr_table": "|FR| Vin de table",
-				"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-				"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-				"it_specialquality": "|IT| Vino dolce naturale",
-				"it_superior": "|IT| Vino tipico",
-				"it_table": "|IT| Vino da tavola"
-			},
 			"quantity": "Aktueller Bestand",
 			"region": "Anbauregion",
 			"shoplink": "Link zum Shop",
 			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"stockunknown": "n/a",
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
@@ -1315,16 +1270,50 @@
 			"vegan": "Vegan",
 			"vintage": "Jahrgang",
 			"weight": "Gewicht (in g)",
-			"wine_without_category": "Weine ohne Kategorie anzeigen",
-			"winepass_show": {
-				"main": "Weinpass",
-				"sub": "anzeigen",
-				"title": "Weinpass in neuem Fenster öffnen"
-			},
 			"winery": {
 				"label": "Weingut",
 				"placeholder": "Weingut suchen"
 			}
+		},
+		"cap_types": {
+			"screw": "Schraubverschluss",
+			"cork":	"Naturkorken",
+			"crownCap": "Kronkorken",
+			"plastic": "Kunststoffkorken",
+			"glas":	"Glasverschluss"
+		},
+		"quality_types": {
+			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- order Jahrgangsangabe",
+			"superior": "Landwein",
+			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"selection": "Auslese",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Schaumwein",
+			"champagne": "Sekt",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Eiswein",
+			"champagneSpecificRegion": "Sekt b.A.",
+			"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
+			"strawwine": "Strohwein",
+			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
+			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
+			"es_table": "|ES| Vino de mesa",
+			"fr_cabinet": "|FR| Appellation contrôlée (AC)",
+			"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
+			"fr_spaetlese": "|FR| Vin doux naturel",
+			"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"fr_superior": "|FR| Vin de pays",
+			"fr_table": "|FR| Vin de table",
+			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
+			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
+			"it_specialquality": "|IT| Vino dolce naturale",
+			"it_superior": "|IT| Vino tipico",
+			"it_table": "|IT| Vino da tavola"
 		},
 		"gallery": {
 			"new": {
@@ -1341,6 +1330,7 @@
 			},
 			"filter": {
 				"category": "Kategorie auswählen",
+				"noCategory": "Weine ohne Kategorie anzeigen",
 				"winetype": "Weintyp filtern"
 			}
 		},
