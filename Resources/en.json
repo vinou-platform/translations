@@ -48,9 +48,7 @@
 				"of": "from",
 				"to": "to"
 			},
-			"price": {
-				"none": "free of charge"
-			},
+			"freeOfCharge": "free of charge",
 			"crstamp": "Date of creation",
 			"chstamp": "Last update",
 			"title": "Title",
@@ -127,7 +125,6 @@
 	"delete_image_secure":"Do you really want to delete the image?",
 	"delete_template_secure":"Do you really want to delete the template?",
 	"changepw":"Change password",
-	"wineregions_none":"no information",
 	"wines_modal_delete":"Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete the selected winery?",
 	"category_modal_delete": "Do you really want to delete the selected category?",
@@ -1154,11 +1151,7 @@
 		}
 	},
 	"wine": {
-		"action": {
-			"add": {
-				"main": "Add wine",
-				"sub": " "
-			},
+		"actions": {
 			"create": {
 				"main": "Add wine",
 				"sub": " ",
@@ -1168,16 +1161,26 @@
 			"edit": {
 				"modaltitle": "Edit wine"
 			},
+			"export": {
+				"inventory": "Download inventory list",
+				"barcodeVector": "Download GTIN code as vektor file",
+				"qrCodeVector": "Download QR code as vector file"
+			},
 			"search": {
 				"placeholder": "e.g. name, country, region, vintage, articlenumber",
 				"title": "Search for wine",
 				"modaltitle": "Search wine"
 			},
-			"export": {
-				"inventory": "Download inventory list"
+			"showExpertise": {
+				"main": "Show expertise",
+				"sub": " ",
+				"title": "Open expertise in new window"
 			},
-			"barcodedownloadvector": "Download GTIN code as vektor file",
-			"qrcodedownloadvector": "Download QR code as vector file"
+			"showWinepass": {
+				"main": "Show winepass",
+				"sub": " ",
+				"title": "Show winepass in new window"
+			}
 		},
 		"fieldSets": {
 			"allergens": "Allergens",
@@ -1204,34 +1207,16 @@
 				"label": "Allergens",
 				"placeholder": "Search for allergens"
 			},
-			"allergen_types": {
-				"sulphide": "Sulphide",
-				"eggwhite": "Eggwhite",
-				"fish": "Fish",
-				"milk": "Milk"
-			},
 			"articlenumber": "Art.-No.",
 			"barcode": "GTIN",
 			"bio": "Bio certified",
 			"bottlesize": "Bottlesize",
 			"cap": "Cap",
-			"cap_types": {
-				"screw": "Screw cap",
-				"cork":	"Natural cork",
-				"crownCap": "Crown cap",
-				"plastic": "Synthetic cork",
-				"glas":	"Glas"
-			},
 			"category": "Category",
 			"countrycode": "Country",
 			"cuvee": "Cuvée",
 			"description": "Description",
 			"drinktemperature": "Drink temperature",
-			"expertise_show": {
-				"main": "Show expertise",
-				"sub": " ",
-				"title": "Open expertise in new window"
-			},
 			"grapetypes": {
 				"label": "Grapetypes",
 				"placeholder": "Search for grapetypes"
@@ -1256,12 +1241,8 @@
 			"nostock": "sold out",
 			"nostocktext": "alternativ text for sold out",
 			"public_wines": "Public wines",
-			"stockunknown": "no information available",
 			"place": "Place",
-			"price": {
-				"label": "Price",
-				"none": "not specified"
-			},
+			"price": "Price",
 			"prices": "Prices",
 			"qrcode": "QR code",
 			"qrcode_redirect": "QR code redirect",
@@ -1269,44 +1250,12 @@
 			"qrlink": "Target address for QR code",
 			"qrlinkempty": "Target address for QR code (Winepass if empty)",
 			"quality": "Classification",
-			"quality_types": {
-				"notspecified": "Wine without grapetype or vintage",
-				"table": "Wine with grapetype or vintage (tablewine)",
-				"superior": "Superior tablewine",
-				"origin": "Quality wine produced in specific regions",
-				"cabinet": "Cabinet",
-				"spaetlese": "Spätlese",
-				"selection": "Selection",
-				"beerenauslese": "Beerenauslese",
-				"trockenbeerenauslese": "Trockenbeerenauslese",
-				"sparklingWine": "Sparkling wine",
-				"champagne": "Champagne",
-				"winzersekt": "Winzersekt",
-				"cremant": "Crémant",
-				"icewine": "Icewine",
-				"champagneSpecificRegion": "Champagne produced in specific regions",
-				"specialquality": "Quality wine with special ripeness and harvest.",
-				"strawwine": "Strawwine",
-				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-				"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-				"es_table": "|ES| Vino de mesa",
-				"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-				"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-				"fr_spaetlese": "|FR| Vin doux naturel",
-				"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-				"fr_superior": "|FR| Vin de pays",
-				"fr_table": "|FR| Vin de table",
-				"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-				"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-				"it_specialquality": "|IT| Vino dolce naturale",
-				"it_superior": "|IT| Vino tipico",
-				"it_table": "|IT| Vino da tavola"
-			},
 			"quantity": "Current Stock",
 			"region": "Region",
 			"shoplink": "Shoplink",
 			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
+			"stockunknown": "n/a",
 			"sweetness": "Sweetness",
 			"taste": "Taste",
 			"terroir": "Terroir",
@@ -1315,16 +1264,60 @@
 			"vegan": "Vegan",
 			"vintage": "Vintage",
 			"weight": "Weight (in g)",
-			"wine_without_category": "Show wines without categories",
-			"winepass_show": {
-				"main": "Show winepass",
-				"sub": " ",
-				"title": "Show winepass in new window"
-			},
 			"winery": {
 				"label": "Winery",
 				"placeholder": "Search winery"
 			}
+		},
+		"cap_types": {
+			"screw": "Screw cap",
+			"cork":	"Natural cork",
+			"crownCap": "Crown cap",
+			"plastic": "Synthetic cork",
+			"glas":	"Glas"
+		},
+		"quality_types": {
+			"notspecified": "Wine without grapetype or vintage",
+			"table": "Wine with grapetype or vintage (tablewine)",
+			"superior": "Superior tablewine",
+			"origin": "Quality wine produced in specific regions",
+			"cabinet": "Cabinet",
+			"spaetlese": "Spätlese",
+			"selection": "Selection",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Sparkling wine",
+			"champagne": "Champagne",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Icewine",
+			"champagneSpecificRegion": "Champagne produced in specific regions",
+			"specialquality": "Quality wine with special ripeness and harvest.",
+			"strawwine": "Strawwine",
+			"estate": "Estate wine",
+			"local": "Local wine",
+			"singlesite": "Single site wine",
+			"de_vdpGutswein": "|DE| VDP.Gutswein",
+			"de_vdpOrtswein": "|DE| VDP.Ortswein",
+			"de_vdpErsteLage": "|DE| VDP.Erste Lage",
+			"de_vdpGrosseLage": "|DE| VDP.Große Lage",
+			"de_vdpGrossesGewaechs": "|DE| VDP.Großes Gewächs",
+			"de_vdpGutssekt": "|DE| VDP.Gutssekt",
+			"de_vdpOrtssekt": "|DE| VDP.Ortssekt",
+			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
+			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
+			"es_table": "|ES| Vino de mesa",
+			"fr_cabinet": "|FR| Appellation contrôlée (AC)",
+			"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
+			"fr_spaetlese": "|FR| Vin doux naturel",
+			"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"fr_superior": "|FR| Vin de pays",
+			"fr_table": "|FR| Vin de table",
+			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
+			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
+			"it_specialquality": "|IT| Vino dolce naturale",
+			"it_superior": "|IT| Vino tipico",
+			"it_table": "|IT| Vino da tavola"
 		},
 		"gallery": {
 			"new": {
@@ -1341,6 +1334,7 @@
 			},
 			"filter": {
 				"category": "Select category",
+				"noCategory": "Show wines without categories",
 				"winetype": "Filter by wine type"
 			}
 		},
@@ -1394,7 +1388,6 @@
 		"messages": {
 			"formdirty": "Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
-			"fieldempty": "not specified",
 			"hints": {
 				"connectwine": "Connect to wine"
 			},
@@ -4173,7 +4166,11 @@
 		"ee": "Estonia",
 		"lt": "Lithuania",
 		"lv": "Latvia",
-		"lu": "Luxembourg"
+		"lu": "Luxembourg",
+		"ar": "Argentina",
+		"au": "Australia",
+		"nz": "New Zealand",
+		"us": "United states of amerika (USA)"
 	},
 	"languages": {
 		"de": {
@@ -4236,8 +4233,6 @@
 			"4003": "Oberthrakische low level",
 			"4004": "Struma Valley"
 		},
-		"cl": {
-		},
 		"de": {
 			"1000": "Ahr",
 			"1001": "Baden",
@@ -4276,7 +4271,17 @@
 			"12017": "Community of Madrid",
 			"12018": "Murcia",
 			"12019": "Navarra",
-			"12020": "Valencia"
+			"12020": "Valencia",
+			"12021": "Penedès",
+			"12022": "Priory",
+			"12023": "Terra Alta",
+			"12024": "Toro",
+			"12025": "Ribera del Duero",
+			"12026": "Campo de Borja",
+			"12027": "Catalayud",
+			"12028": "Jumilla",
+			"12029": "Almansa",
+			"12030": "Carinena"
 		},
 		"fr": {
 			"2000": "Alsace",
@@ -4292,7 +4297,12 @@
 			"2011": "Savoie",
 			"2012": "Sud-Ouest",
 			"2013": "Vallée de la Loire",
-			"2014": "Vallée du Rhône"
+			"2014": "Vallée du Rhône",
+			"2015": "Roussillon",
+			"2016": "Cotes de Provence",
+			"2017": "Chablis",
+			"2018": "Rhone",
+			"2019": "Loire"
 		},
 		"gr": {
 			"5000": "Thrace",
@@ -4396,7 +4406,27 @@
 			"13020": "Tulbagh",
 			"13021": "Walker Bay",
 			"13022": "Wellington",
-			"13023": "Worcester"
+			"13023": "Worcester",
+			"13024": "Constantia"
+		},
+		"ar": {
+			"14001": "Mendoza"
+		},
+		"au": {
+			"15001": "South-Eastern Australia"
+		},
+		"cl": {
+			"16001": "Colchagua Valley",
+			"16002": "Casablanca",
+			"16003": "Central Valley",
+			"16004": "Maule Valley"
+		},
+		"nz": {
+			"17001": "Marlborough"
+		},
+		"us": {
+			"18001": "California",
+			"18002": "Lodi"
 		}
 	},
 	"winetypes":{
