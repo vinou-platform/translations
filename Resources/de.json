@@ -2077,6 +2077,30 @@
 			"deleted": "Datei gelöscht!"
 		}
 	},
+	"fileImport": {
+		"actions": {
+			"upload": {
+				"title": "1. Schritt - Daten bereitstellen",
+				"description": "Erlaubt sind Textdaten (csv, txt) und Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest du <a href='http://www.vinou.de/vorlagen'>hier</a>."
+			},
+			"analyse": {
+				"title": "2. Schritt - Daten analysieren",
+				"description": "Bitte schließe während der Analyse, nicht das Fenster nur so kann später ein optimaler Import erfolgen.",
+				"start": "Analyse starten"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Datenimport"
+			}
+		},
+		"fields": {
+			"file": "Dateiupload"
+		},
+		"toasts": {
+			"fileuploaded": "Datei hochgeladen!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
