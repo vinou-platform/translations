@@ -48,9 +48,7 @@
 				"of": "de",
 				"to": "à"
 			},
-			"price": {
-				"none": "gratuit"
-			},
+			"freeOfCharge": "gratuit",
 			"crstamp": "Date de création",
 			"chstamp": "Date de modification",
 			"title": "Titre",
@@ -127,7 +125,6 @@
 	"delete_image_secure": "Voulez-vous vraiment supprimer cette image?",
 	"delete_template_secure": "Voulez-vous vraiment supprimer ce modèle d'expertise?",
 	"changepw": "Changer ce mot de pass",
-	"wineregions_none": "Pas d'information",
 	"wines_modal_delete": "Voulez-vous vraiment supprimer ce vin?",
 	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
 	"category_modal_delete": "Voulez-vous vraiment supprimer cette catégorie?",
@@ -1155,11 +1152,7 @@
 		}
 	},
 	"wine": {
-		"action": {
-			"add": {
-				"main": "Ajouter",
-				"sub": "nouveau vin"
-			},
+		"actions": {
 			"create": {
 				"main": "Créer Vin",
 				"sub": " ",
@@ -1169,16 +1162,26 @@
 			"edit": {
 				"modaltitle": "Éditer vin"
 			},
+			"export": {
+				"inventory": "Télécharger la liste d'inventaire",
+				"barcodeVector": "Téléchargez le code EAN sous forme de fichier vectoriel",
+				"qrCodeVector": "Téléchargez le code QR sous forme de fichier vectoriel"
+			},
 			"search": {
 				"placeholder": "p.ex. nom, pays, région, millésime, numéro de référence",
 				"title": "Rechercher vin",
 				"modaltitle": "Rechercher vin"
 			},
-			"export": {
-				"inventory": "Télécharger la liste d'inventaire"
+			"showExpertise": {
+				"main": "Expertise",
+				"sub": "afficher",
+				"title": "Expertise ouverte dans une nouvelle fenêtre"
 			},
-			"barcodedownloadvector": "Téléchargez le code EAN sous forme de fichier vectoriel",
-			"qrcodedownloadvector": "Téléchargez le code QR sous forme de fichier vectoriel"
+			"showWinepass": {
+				"main": "Passe du vin",
+				"sub": "afficher",
+				"title": "Ouvrir passe du vin dans une nouvelle fenêtre"
+			}
 		},
 		"fieldSets": {
 			"allergens": "Allergènes",
@@ -1205,34 +1208,16 @@
 				"label": "Allergènes",
 				"placeholder": "Rechercher allergènes"
 			},
-			"allergen_types": {
-				"sulphide": "Sulfite",
-				"eggwhite": "œuf",
-				"fish": "Poisson",
-				"milk": "Lait"
-			},
 			"articlenumber": "Numéro de référence",
 			"barcode": "Code EAN",
 			"bio": "Certifié biologique",
 			"bottlesize": "Taille de la bouteille",
 			"cap": "Obturateur",
-			"cap_types": {
-				"screw": "Bouchon à vis",
-				"cork":	"Liège naturel",
-				"crownCap": "Capsule",
-				"plastic": "Liège plastique",
-				"glas":	"Obturateur pour gaz"
-			},
 			"category": "Categorie",
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Description",
 			"drinktemperature": "Température de consommation",
-			"expertise_show": {
-				"main": "Expertise",
-				"sub": "afficher",
-				"title": "Expertise ouverte dans une nouvelle fenêtre"
-			},
 			"grapetypes": {
 				"label": "Cépag",
 				"placeholder": "Rechercher cépag"
@@ -1257,12 +1242,8 @@
 			"nostock": "Pas de stock",
 			"nostocktext": "Texte affiché s'il n'y a pas de stock (p.ex. disponible de...)",
 			"public_wines": "Vins publics",
-			"stockunknown": "Aucune information sur le stock",
 			"place": "Emplacement",
-			"price": {
-				"label": "Prix",
-				"none": "Pas d'information"
-			},
+			"price": "Prix",
 			"prices": "Prix",
 			"qrcode": "Code QR",
 			"qrcode_redirect": "Code QR Redirect",
@@ -1270,44 +1251,12 @@
 			"qrlink": "Adresse de destination pour le code QR",
 			"qrlinkempty": "Adresse de destination pour le code QR (Passe du vin si vide)",
 			"quality": "Niveau de qualité",
-			"quality_types": {
-				"notspecified": "|DE| Wein ohne Rebsorten- oder Jahrgangsangabe",
-				"table": "|DE| Wein mit Rebsorten- order Jahrgangsangabe",
-				"superior": "|DE| Landwein",
-				"origin": "|DE| Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
-				"cabinet": "|DE| Kabinett",
-				"spaetlese": "|DE| Spätlese",
-				"selection": "|DE| Auslese",
-				"beerenauslese": "|DE| Beerenauslese",
-				"trockenbeerenauslese": "|DE| Trockenbeerenauslese",
-				"sparklingWine": "|DE| Schaumwein",
-				"champagne": "|DE| Sekt",
-				"winzersekt": "|DE| Winzersekt",
-				"cremant": "|DE| Crémant",
-				"icewine": "|DE| Eiswein",
-				"champagneSpecificRegion": "|DE| Sekt b.A.",
-				"specialquality": "|DE| QW besonderer Reife und Lesart, Prädikatswein",
-				"strawwine": "|DE| Strohwein",
-				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-				"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-				"es_table": "|ES| Vino de mesa",
-				"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-				"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-				"fr_spaetlese": "|FR| Vin doux naturel",
-				"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-				"fr_superior": "|FR| Vin de pays",
-				"fr_table": "|FR| Vin de table",
-				"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-				"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-				"it_specialquality": "|IT| Vino dolce naturale",
-				"it_superior": "|IT| Vino tipico",
-				"it_table": "|IT| Vino da tavola"
-			},
 			"quantity": "Stock",
 			"region": "Région de culture",
 			"shoplink": "Lien vers la boutique",
 			"shoplink_active": "Lien vers la boutique aktife",
 			"sorting": "Index de tri manuel (p.ex. pour le magasin)",
+			"stockunknown": "Aucune information",
 			"sweetness": "Sucre résiduel",
 			"taste": "Saveur",
 			"terroir": "Terroir",
@@ -1316,16 +1265,60 @@
 			"vegan": "Végétalien",
 			"vintage": "Millésime",
 			"weight": "Poids (en g)",
-			"wine_without_category": "Afficher vins sans catégorie",
-			"winepass_show": {
-				"main": "Passe du vin",
-				"sub": "afficher",
-				"title": "Ouvrir passe du vin dans une nouvelle fenêtre"
-			},
 			"winery": {
 				"label": "Établissement vinicole",
 				"placeholder": "Rechercher établissement vinicole"
 			}
+		},
+		"cap_types": {
+			"screw": "Bouchon à vis",
+			"cork":	"Liège naturel",
+			"crownCap": "Capsule",
+			"plastic": "Liège plastique",
+			"glas":	"Obturateur pour gaz"
+		},
+		"quality_types": {
+			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- order Jahrgangsangabe",
+			"superior": "Landwein",
+			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"selection": "Auslese",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Schaumwein",
+			"champagne": "Sekt",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Eiswein",
+			"champagneSpecificRegion": "Sekt b.A.",
+			"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
+			"strawwine": "Strohwein",
+			"estate": "Estate wine",
+			"local": "Vin local",
+			"singlesite": "Vin de terroir",
+			"de_vdpGutswein": "|DE| VDP.Gutswein",
+			"de_vdpOrtswein": "|DE| VDP.Ortswein",
+			"de_vdpErsteLage": "|DE| VDP.Erste Lage",
+			"de_vdpGrosseLage": "|DE| VDP.Große Lage",
+			"de_vdpGrossesGewaechs": "|DE| VDP.Großes Gewächs",
+			"de_vdpGutssekt": "|DE| VDP.Gutssekt",
+			"de_vdpOrtssekt": "|DE| VDP.Ortssekt",
+			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
+			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
+			"es_table": "|ES| Vino de mesa",
+			"fr_cabinet": "Appellation contrôlée (AC)",
+			"fr_origin": "Appellation d'origine contrôlée (AOC)",
+			"fr_spaetlese": "Vin doux naturel",
+			"fr_specialquality": "Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"fr_superior": "Vin de pays",
+			"fr_table": "Vin de table",
+			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
+			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
+			"it_specialquality": "|IT| Vino dolce naturale",
+			"it_superior": "|IT| Vino tipico",
+			"it_table": "|IT| Vino da tavola"
 		},
 		"gallery": {
 			"new": {
@@ -1342,6 +1335,7 @@
 			},
 			"filter": {
 				"category": "Sélectionnez categorie",
+				"noCategory": "Afficher vins sans catégorie",
 				"winetype": "Filtrer type du vin"
 			}
 		},
@@ -1395,7 +1389,6 @@
 		"messages": {
 			"formdirty": "Le vin actuel a été édité. Voulez-vous enregistrer les modifications?",
 			"createcopy": "Voulez-vous prendre les informations de {wine.name}?",
-			"fieldempty": "Pas d'information",
 			"hints": {
 				"connectwine": "Connectez-vous avec du vin"
 			},

@@ -48,9 +48,7 @@
 				"of": "Dal",
 				"to": "A"
 			},
-			"price": {
-				"none": "Gratuite"
-			},
+			"freeOfCharge": "Gratuite",
 			"crstamp": "Data di creazione",
 			"chstamp": "Date di modifica",
 			"title": "Titolo accademico",
@@ -127,7 +125,6 @@
 	"delete_image_secure": "Vuoi veramente cancellare la foto",
 	"delete_template_secure": "Vuoi veramente cancellare questo esperienza",
 	"changepw": "Cambiare password",
-	"wineregions_none": "Non disponible",
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
 	"category_modal_delete": "Vuoi veramente cancellare questa categoria",
@@ -1155,11 +1152,7 @@
 		}
 	},
 	"wine": {
-		"action": {
-			"add": {
-				"main": "Aggiungere",
-				"sub": "Vino"
-			},
+		"actions": {
 			"create": {
 				"main": "Nuovo vino",
 				"sub": "Creato",
@@ -1169,16 +1162,26 @@
 			"edit": {
 				"modaltitle": "Modificare vino"
 			},
+			"export": {
+				"inventory": "Scarica l'elenco dell'inventario",
+				"barcodeVector": "Scarica il codice EAN come file vettoriale",
+				"qrCodeVector": "Scarica il codice QR come file vettoriale"
+			},
 			"search": {
 				"placeholder": "Ad es. Nom, Paese, regione, annata, numero di riferimento",
 				"title": "Cerca vino",
 				"modaltitle": "Cerca vino"
 			},
-			"export": {
-				"inventory": "Scarica l'elenco dell'inventario"
+			"showExpertise": {
+				"main": "Esperienza",
+				"sub": "affiggere",
+				"title": "Apri l'esperienza in una nuova finestra"
 			},
-			"barcodedownloadvector": "Scarica il codice EAN come file vettoriale",
-			"qrcodedownloadvector": "Scarica il codice QR come file vettoriale"
+			"showWinepass": {
+				"main": "Passa il vino",
+				"sub": "Affiggere",
+				"title": "Apri wine pass in una nuova finestra"
+			}
 		},
 		"fieldSets": {
 			"allergens": "Allergeni",
@@ -1205,34 +1208,16 @@
 				"label": "Allergeni",
 				"placeholder": "Ricerca Allergeni"
 			},
-			"allergen_types": {
-				"sulphide": "Sulfite",
-				"eggwhite": "Ouvo",
-				"fish": "Pesce",
-				"milk": "Latte"
-			},
 			"articlenumber": "Numero di riferimento",
 			"barcode": "Codice EAN",
 			"bio": "Organico certificato",
 			"bottlesize": "Dimensione della bottiglia",
 			"cap": "Otturatore",
-			"cap_types": {
-				"screw": "Tappo a vite",
-				"cork":	"Sughero naturale",
-				"crownCap": "Capsula",
-				"plastic": "Sughero di plastica",
-				"glas":	"Chiusura in vetro"
-			},
 			"category": "Categoria",
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Descrizione",
 			"drinktemperature": "Temperatura di consumo",
-			"expertise_show": {
-				"main": "Esperienza",
-				"sub": "affiggere",
-				"title": "Apri l'esperienza in una nuova finestra"
-			},
 			"grapetypes": {
 				"label": "Uva",
 				"placeholder": "Ricerca uva"
@@ -1257,12 +1242,8 @@
 			"nostock": "Ubriaco",
 			"nostocktext": "Il testo veniva visualizzato quando il contenuto era ubriaco (per es. disponibile da...)",
 			"public_wines": "Vini pubblici",
-			"stockunknown": "Nessuna informazione di stock",
 			"place": "Posizione",
-			"price": {
-				"label": "Prezzo",
-				"none": "Nessuna informazione"
-			},
+			"price": "Prezzo",
 			"prices": "Prezzi",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
@@ -1270,44 +1251,12 @@
 			"qrlink": "Destinazione da memorizzare nel codice qr",
 			"qrlinkempty": "Indirizzo di destinazione per qr-code (Vino passa quando vuoto)",
 			"quality": "Livello di qualità",
-			"quality_types": {
-				"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
-				"table": "Wein mit Rebsorten- order Jahrgangsangabe",
-				"superior": "Landwein",
-				"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
-				"cabinet": "Kabinett",
-				"spaetlese": "Spätlese",
-				"selection": "Auslese",
-				"beerenauslese": "Beerenauslese",
-				"trockenbeerenauslese": "Trockenbeerenauslese",
-				"sparklingWine": "Schaumwein",
-				"champagne": "Sekt",
-				"winzersekt": "Winzersekt",
-				"cremant": "Crémant",
-				"icewine": "Eiswein",
-				"champagneSpecificRegion": "Sekt b.A.",
-				"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
-				"strawwine": "Strohwein",
-				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-				"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-				"es_table": "|ES| Vino de mesa",
-				"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-				"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-				"fr_spaetlese": "|FR| Vin doux naturel",
-				"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-				"fr_superior": "|FR| Vin de pays",
-				"fr_table": "|FR| Vin de table",
-				"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-				"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-				"it_specialquality": "|IT| Vino dolce naturale",
-				"it_superior": "|IT| Vino tipico",
-				"it_table": "|IT| Vino da tavola"
-			},
 			"quantity": "Stock",
 			"region": "Regione di cultura",
 			"shoplink": "Link al negozio",
 			"shoplink_active": "Link al negozio attivo",
 			"sorting": "Indice di ordinamento manuale (per es. per negozio)",
+			"stockunknown": "N/A",
 			"sweetness": "Zucchero residuo",
 			"taste": "Sapore",
 			"terroir": "Terra",
@@ -1316,16 +1265,60 @@
 			"vegan": "Vegan",
 			"vintage": "Annata",
 			"weight": "Peso(in g)",
-			"wine_without_category": "Mostra vini senza categoria",
-			"winepass_show": {
-				"main": "Passa il vino",
-				"sub": "Affiggere",
-				"title": "Apri wine pass in una nuova finestra"
-			},
 			"winery": {
 				"label": "Vigna",
 				"placeholder": "Ricerca vigna"
 			}
+		},
+		"cap_types": {
+			"screw": "Tappo a vite",
+			"cork":	"Sughero naturale",
+			"crownCap": "Capsula",
+			"plastic": "Sughero di plastica",
+			"glas":	"Chiusura in vetro"
+		},
+		"quality_types": {
+			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- order Jahrgangsangabe",
+			"superior": "Landwein",
+			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"selection": "Auslese",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Schaumwein",
+			"champagne": "Sekt",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Eiswein",
+			"champagneSpecificRegion": "Sekt b.A.",
+			"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
+			"strawwine": "Strohwein",
+			"estate": "Vino della tenuta",
+			"local": "Vino locale",
+			"singlesite": "Vino pagato",
+			"de_vdpGutswein": "|DE| VDP.Gutswein",
+			"de_vdpOrtswein": "|DE| VDP.Ortswein",
+			"de_vdpErsteLage": "|DE| VDP.Erste Lage",
+			"de_vdpGrosseLage": "|DE| VDP.Große Lage",
+			"de_vdpGrossesGewaechs": "|DE| VDP.Großes Gewächs",
+			"de_vdpGutssekt": "|DE| VDP.Gutssekt",
+			"de_vdpOrtssekt": "|DE| VDP.Ortssekt",
+			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
+			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
+			"es_table": "|ES| Vino de mesa",
+			"fr_cabinet": "|FR| Appellation contrôlée (AC)",
+			"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
+			"fr_spaetlese": "|FR| Vin doux naturel",
+			"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"fr_superior": "|FR| Vin de pays",
+			"fr_table": "|FR| Vin de table",
+			"it_cabinet": "Denominazione di origine controllata e garantita (DOCG)",
+			"it_origin": "Denominazione di origine controllata (DOC)",
+			"it_specialquality": "Vino dolce naturale",
+			"it_superior": "Vino tipico",
+			"it_table": "Vino da tavola"
 		},
 		"gallery": {
 			"new": {
@@ -1342,6 +1335,7 @@
 			},
 			"filter": {
 				"category": "Seleziona la categoria",
+				"noCategory": "Mostra vini senza categoria",
 				"winetype": "Filtro tipo di vino"
 			}
 		},
@@ -1395,7 +1389,6 @@
 		"messages": {
 			"formdirty": "Il vino attuale è stato modificato. Vuoi salvare le modifiche?",
 			"createcopy": "Vuoi prendere le informazioni dalla {wine.name} ?",
-			"fieldempty": "Nessuna informazione",
 			"hints": {
 				"connectwine": "Connettiti con il vino"
 			},
