@@ -1295,6 +1295,16 @@
 			"champagneSpecificRegion": "Sekt b.A.",
 			"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
 			"strawwine": "Strohwein",
+			"estate": "Vino della tenuta",
+			"local": "Vino locale",
+			"singlesite": "Vino pagato",
+			"de_vdpGutswein": "|DE| VDP.Gutswein",
+			"de_vdpOrtswein": "|DE| VDP.Ortswein",
+			"de_vdpErsteLage": "|DE| VDP.Erste Lage",
+			"de_vdpGrosseLage": "|DE| VDP.Große Lage",
+			"de_vdpGrossesGewaechs": "|DE| VDP.Großes Gewächs",
+			"de_vdpGutssekt": "|DE| VDP.Gutssekt",
+			"de_vdpOrtssekt": "|DE| VDP.Ortssekt",
 			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
 			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
 			"es_table": "|ES| Vino de mesa",
@@ -1304,11 +1314,11 @@
 			"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
 			"fr_superior": "|FR| Vin de pays",
 			"fr_table": "|FR| Vin de table",
-			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-			"it_specialquality": "|IT| Vino dolce naturale",
-			"it_superior": "|IT| Vino tipico",
-			"it_table": "|IT| Vino da tavola"
+			"it_cabinet": "Denominazione di origine controllata e garantita (DOCG)",
+			"it_origin": "Denominazione di origine controllata (DOC)",
+			"it_specialquality": "Vino dolce naturale",
+			"it_superior": "Vino tipico",
+			"it_table": "Vino da tavola"
 		},
 		"gallery": {
 			"new": {
