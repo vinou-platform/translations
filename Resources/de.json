@@ -1278,7 +1278,7 @@
 		},
 		"quality_types": {
 			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
-			"table": "Wein mit Rebsorten- order Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
 			"superior": "Landwein",
 			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
 			"cabinet": "Kabinett",
