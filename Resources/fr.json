@@ -4168,7 +4168,11 @@
 		"ee": "Estonie",
 		"lt": "Lituanie",
 		"lv": "Lettonie",
-		"lu": "Luxembourg"
+		"lu": "Luxembourg",
+		"ar": "Argentine",
+		"au": "Australie",
+		"nz": "Nouvelle Zélande",
+		"us": "Ètats-Unis d'Amérique (USA)"
 	},
 	"languages": {
 		"de": {
@@ -4231,8 +4235,6 @@
 			"4003":"Oberthrakische bas niveau",
 			"4004":"Struma Valley"
 		},
-		"cl": {
-		},
 		"de": {
 			"1000":"Ahr",
 			"1001":"Baden",
@@ -4271,7 +4273,17 @@
 			"12017":"Communauté de Madrid",
 			"12018":"Murcia",
 			"12019":"Navarra",
-			"12020":"Valencia"
+			"12020":"Valencia",
+			"12021": "Penedès",
+			"12022": "Prieuré",
+			"12023": "Terra Alta",
+			"12024": "Toro",
+			"12025": "Ribera del Duero",
+			"12026": "Campo de Borja",
+			"12027": "Catalayud",
+			"12028": "Jumilla",
+			"12029": "Almansa",
+			"12030": "Carinena"
 		},
 		"fr": {
 			"2000":"Alsace",
@@ -4287,7 +4299,12 @@
 			"2011":"Savoie",
 			"2012":"Sud-Ouest",
 			"2013":"Vallée de la Loire",
-			"2014":"Vallée du Rhône"
+			"2014":"Vallée du Rhône",
+			"2015": "Roussillon",
+			"2016": "Côtes de Provence",
+			"2017": "Chablis",
+			"2018": "Rhône",
+			"2019": "Loire"
 		},
 		"gr": {
 			"5000":"Thrace",
@@ -4391,7 +4408,27 @@
 			"13020": "Tulbagh",
 			"13021": "Walker Bay",
 			"13022": "Wellington",
-			"13023": "Worcester"
+			"13023": "Worcester",
+			"13024": "Constantia"
+		},
+		"ar": {
+			"14001": "Mendoza"
+		},
+		"au": {
+			"15001": "Australié du Sud-Est"
+		},
+		"cl": {
+			"16001": "Vallée de Colchagua",
+			"16002": "Casablanca",
+			"16003": "Vallée centrale",
+			"16004": "Vallée de la Maule"
+		},
+		"nz": {
+			"17001": "Marlborough"
+		},
+		"us": {
+			"18001": "Californie",
+			"18002": "Lodi"
 		}
 	},
 	"winetypes":{
