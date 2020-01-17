@@ -2070,6 +2070,49 @@
 			"deleted": "Datei gelöscht!"
 		}
 	},
+	"fileImport": {
+		"actions": {
+			"upload": {
+				"title": "1. Schritt - Daten bereitstellen",
+				"description": "Erlaubt sind Textdaten (csv, txt) und Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest du <a href='http://www.vinou.de/vorlagen'>hier</a>."
+			},
+			"analyse": {
+				"title": "2. Schritt - Daten analysieren",
+				"description": "Bitte schließe während der Analyse, nicht das Fenster nur so kann später ein optimaler Import erfolgen.",
+				"start": "Analyse starten"
+			},
+			"execute": {
+				"start": "Import ausführen"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Datenimport"
+			},
+			"analyseresult": {
+				"title": "Analyseergebnis",
+				"headrow": "Kopfzeile",
+				"headrowdetected": "Die Kopfzeile <strong>wurde richtig erkannt</strong>",
+				"headrowfailed": "Die Kopfzeile <strong>ist fehlerhaft oder nicht vorhanden</strong>",
+				"total": "Gesamte Datei",
+				"totalcount": "<strong>{count} Zeilen</strong> in der Datei erkannt",
+				"totaldatacount": "<strong>{count} Datensätze</strong> für Import vorbereitet",
+				"unreadable": "<strong>{count}</strong> nicht identifizierbare Felder",
+				"noproperty": "<strong>{count}</strong> Felder die nicht importiert werden"
+			}
+		},
+		"fields": {
+			"file": "Dateiupload"
+		},
+		"toasts": {
+			"fileuploadedsuccess": "Datei hochgeladen!",
+			"fileuploadedfailed": "Datei-Upload fehlgeschlagen!",
+			"importanalysesuccess": "Datei-Analyse erfolgreich",
+			"importanalysefailed": "Datei-Analyse fehlgeschlagen!",
+			"importexecutedsuccess": "Import Ausführung erfolgreich!",
+			"importexecutedfailed": "Import Ausführung fehlgeschlagen!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
