@@ -2083,7 +2083,7 @@
 			},
 			"upload": {
 				"title": "1. Schritt - Daten bereitstellen",
-				"description": "Erlaubt sind Textdaten (csv, txt) und Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest du <a href='http://www.vinou.de/vorlagen'>hier</a>."
+				"description": "Erlaubt sind Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest du <a href='http://www.vinou.de/vorlagen'>hier</a>."
 			},
 			"analyse": {
 				"title": "2. Schritt - Daten analysieren",

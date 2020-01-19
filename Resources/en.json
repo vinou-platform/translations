@@ -2070,6 +2070,58 @@
 			"deleted": "File deleted!"
 		}
 	},
+	"fileImport": {
+		"actions": {
+			"analyse": "Start analyse",
+			"execute": "Execute import"
+		},
+		"views": {
+			"create": {
+				"title": "Data import"
+			},
+			"upload": {
+				"title": "Step 1 - Upload data",
+				"description": "Only Excel files allowed (xls, xlsx). Filesize should be smaller than 5 MB. <strong>Please make sure that file contains a valid headline that contains only allowed fields. </strong> An example file could be downloaded <a href='http://www.vinou.de/vorlagen'>here</a>."
+			},
+			"analyse": {
+				"title": "Step 2 - Analyse data",
+				"description": "Don't close the modal during analyse process.",
+				"result": "Step 2 - Analyse result",
+				"headrow": "Headline",
+				"headrowdetected": "The headline <strong>is detected as valid</strong>",
+				"headrowfailed": "The headline <strong>is invalid or not existing</strong>",
+				"total": "Whole file",
+				"totalcount": "<strong>{count} rows</strong> detected",
+				"totaldatacount": "<strong>{count} entries</strong> prepared for import",
+				"unreadable": "<strong>{count}</strong> wrong fieldnames",
+				"noproperty": "<strong>{count}</strong> fields that couldn't be imported"
+			},
+			"execute": {
+				"title": "Step 3 - Import data",
+				"importstatus": "{imported} of {total} imported"
+			},
+			"importresult": {
+				"title": "Import finished",
+				"description": "Data successfulls imported",
+				"errors": {
+					"headline": "IMPORTANT! The file contains faulty data",
+					"text": "<strong>{aborted} entries</strong> were not imported. The Lines <strong>{errors}</strong> are faulty. These lines can be duplicates."
+				}
+			}
+		},
+		"fields": {
+			"file": "Fileupload"
+		},
+		"toasts": {
+			"fileuploadedsuccess": "File uploaded!",
+			"fileuploadedfailed": "File upload failed!",
+			"importanalysesuccess": "File analyse successful",
+			"importanalysefailed": "File analyse failed!",
+			"importnextpackage": "Next import package started",
+			"importexecutedsuccess": "Import execution successful!",
+			"importexecutedfailed": "Import execution failed!"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account settings",
