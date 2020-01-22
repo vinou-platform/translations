@@ -138,9 +138,6 @@
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
 	"address_modal_delete": "Möchtest du diese Adresse wirklich löschen?",
 	"orders_modal_cancel": "Möchtest du diese Bestellung wirklich stornieren?",
-	"orders_modal_create": "Du erfasst eine Bestellung, was möchtest du tun?",
-	"orders_modal_create_withinvoice": "Erfassen und Rechnung und Lieferschein generieren",
-	"orders_modal_create_only": "Nur erfassen",
 	"orders_modal_sent": "Möchtest du die Bestellung als Versendet markieren?",
 	"orders_position_delete": "Möchtest du diese Position wirklich löschen?",
 	"orders_position_update": "Möchtest du diese Position wirklich anpassen?",
@@ -1709,6 +1706,21 @@
 			}
 		}
 	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Gutschrift erstellt und Bestellung storniert!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Lieferschein erstellt!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Rechnung erstellt!"
+		}
+	},
 	"order": {
 		"documenttypes": {
 			"invoice": "Rechnung",
@@ -1858,9 +1870,22 @@
 				"sub": "in den Versand geben"
 			}
 		},
+		"dialogs": {
+			"create": {
+				"msg": "Du erfasst eine Bestellung, was möchtest du tun?",
+				"save": "Nur erfassen",
+				"withInvoice": "Erfassen und Rechnung generieren",
+				"withDocuments": "Erfassen und Rechnung und Lieferschein generieren"
+			}
+		},
 		"toasts": {
-			"priceschanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
-			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
+			"cancelled": "Bestellung storniert!",
+			"created": "Bestellung angelegt!",
+			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut.",
+			"deleted": "Bestellung gelöscht!",
+			"pricesChanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
+			"sent": "Bestellung versendet!",
+			"updated": "Bestellung geändert!"
 		}
 	},
 	"packaging": {
@@ -2230,21 +2255,13 @@
 		"merchant_image_uploaded": "Bild hochgeladen!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
 		"merchant_image_deleted": "Bild gelöscht!",
-		"order_created": "Bestellung angelegt!",
-		"order_updated": "Bestellung geändert!",
-		"order_creditadvice_created": "Gutschrift erstellt und Bestellung storniert!",
-		"order_cancelled": "Bestellung storniert!",
-		"order_deleted": "Bestellung gelöscht!",
-		"order_sent": "Bestellung versendet!",
 		"order_position_add": "Position hinzugefügt!",
 		"order_position_changed": "Position aktualisiert!",
 		"order_position_deleted": "Position gelöscht!",
 		"order_billing_as_delivery": "Rechnungsadresse als Lieferadresse gespeichert!",
 		"order_billingaddress_create": "Adresse angelegt!",
-		"order_invoice_created": "Rechnung erstellt!",
 		"order_noupdate": "Kein Update notwendig!",
 		"order_deliveryaddress_create": "Lieferadresse angelegt und Bestellung aktualisiert!",
-		"order_delivery_created": "Lieferschein erstellt!",
 		"order_payment_changed": "Zahlungsart aktualisiert!",
 		"order_cashlink_send": "Cashlink versendet!",
 		"order_note_saved": "Anmerkung aktualisiert!",

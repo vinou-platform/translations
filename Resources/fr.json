@@ -136,9 +136,6 @@
 	"token_modal_error": "Il y a déjà un jeton pour ce domaine/IP",
 	"address_modal_delete": "Voulez-vous vraiment supprimer cet adresse?",
 	"orders_modal_cancel": "Voulez-vous vraiment annuler cet ordre?",
-	"orders_modal_create": "Vous créez un ordre, que voulez-vous faire?",
-	"orders_modal_create_withinvoice": "Créer un ordre avec facture et bon de livraison",
-	"orders_modal_create_only": "Créer seulement",
 	"orders_modal_sent": "Voulez-vous vraiment marquer cet ordre comme expédiée",
 	"orders_position_delete": "Voulez-vous vraiment supprimer cette position?",
 	"orders_position_update": "Voulez-vous vraiment ajuster cette position?",
@@ -1708,6 +1705,21 @@
 			}
 		}
 	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Crédit créé et ordre annulé!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Bon de livraison créé!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Facturation créée!"
+		}
+	},
 	"order": {
 		"documenttypes": {
 			"invoice": "Facture",
@@ -1858,9 +1870,22 @@
 				"sub": "à l'expédition"
 			}
 		},
+		"dialogs": {
+			"create": {
+				"msg": "Vous créez un ordre, que voulez-vous faire?",
+				"save": "Créer seulement",
+				"withInvoice": "Créer un ordre avec facture",
+				"withDocuments": "Créer un ordre avec facture et bon de livraison"
+			}
+		},
 		"toasts": {
-			"priceschanged": "Les prix d'un ou plusieurs produits ont changé. Le nouveau prix total est {price}.",
-			"createerror": "L'ordre n'a pas pu être détecté. Veuillez vérifier vos coordonnées et réessayer."
+			"cancelled": "Ordre annulé!",
+			"created": "Ordre créé!",
+			"createerror": "L'ordre n'a pas pu être détecté. Veuillez vérifier vos coordonnées et réessayer.",
+			"deleted": "Ordre supprimé!",
+			"pricesChanged": "Les prix d'un ou plusieurs produits ont changé. Le nouveau prix total est {price}.",
+			"sent": "Ordre expédié!",
+			"updated": "Ordre changé!"
 		}
 	},
 	"packaging": {
@@ -2178,21 +2203,13 @@
 		"merchant_image_uploaded": "Image téléchargée!",
 		"merchant_save_error": "Échec de la enregistrement!",
 		"merchant_image_deleted": "Image supprimée!",
-		"order_created": "Ordre créé!",
-		"order_updated": "Ordre changé!",
-		"order_creditadvice_created": "Crédit créé et ordre annulé!",
-		"order_cancelled": "Ordre annulé!",
-		"order_deleted": "Ordre supprimé!",
-		"order_sent": "Ordre expédié!",
 		"order_position_add": "Position ajoutée!",
 		"order_position_changed": "Position mise à jour!",
 		"order_position_deleted": "Position supprimée!",
 		"order_billing_as_delivery": "Adresse de facturation enregistrée comme adresse de livraison!",
 		"order_billingaddress_create": "Adresse créé!",
-		"order_invoice_created": "Facturation créée!",
 		"order_noupdate": "Aucune mise à jour nécessaire!",
 		"order_deliveryaddress_create": "Adresse de livraison créée et ordre mise à jour!",
-		"order_delivery_created": "Bon de livraison créé!",
 		"order_payment_changed": "Type de paiement mis à jour!",
 		"order_cashlink_send": "Cashlink envoyé!",
 		"order_note_saved": "Remarque mise à jour!",

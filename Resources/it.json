@@ -136,9 +136,6 @@
 	"token_modal_error": "Esistono già un token per questo dominio/IP",
 	"address_modal_delete": "Vuoi veramente cancellare questo indirizzo",
 	"orders_modal_cancel": "Vuoi veramente cancellare questo ordine",
-	"orders_modal_create": "Tu registri un ordine cosa vuoi fare",
-	"orders_modal_create_withinvoice": "Registrare e generare fattura e bolla di consegna",
-	"orders_modal_create_only": "Registra solo",
 	"orders_modal_sent": "Vuoi contrassegnare l'ordine come inviato?",
 	"orders_position_delete": "Vuoi veramente cancellare questo posto?",
 	"orders_position_update": "Vuoi veramente adattare questo posto?",
@@ -1708,6 +1705,21 @@
 			}
 		}
 	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Credito creato e ordine annullato!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Nota di consegna creata!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Fatturazione creata!"
+		}
+	},
 	"order": {
 		"documenttypes": {
 			"invoice": "Fattura",
@@ -1858,9 +1870,22 @@
 				"sub": "dare nella spedizione"
 			}
 		},
+		"dialogs": {
+			"create": {
+				"msg": "Tu registri un ordine cosa vuoi fare",
+				"save": "Registra solo",
+				"withInvoice": "Registrare e generare fattura",
+				"withDocuments": "Registrare e generare fattura e bolla di consegna"
+			}
+		},
 		"toasts": {
-			"priceschanged": "I prezzi di uno o più prodotti sono cambiati. Il nuovo prezzo totale è {prezzo}.",
-			"createerror": "Non è stato possibile rilevare l'ordine. Controlla i tuoi dati e riprova."
+			"cancelled": "Ordine annullato!",
+			"created": "Ordine è stato creato",
+			"createerror": "Non è stato possibile rilevare l'ordine. Controlla i tuoi dati e riprova.",
+			"deleted": "Ordine cancellato!",
+			"pricesChanged": "I prezzi di uno o più prodotti sono cambiati. Il nuovo prezzo totale è {prezzo}.",
+			"sent": "Ordine spedito!",
+			"updated": "Ordine è stato modificato"
 		}
 	},
 	"packaging": {
@@ -2178,21 +2203,13 @@
 		"merchant_image_uploaded": "Immagine eliminata!",
 		"merchant_save_error": "Impossibile salvare!",
 		"merchant_image_deleted": "Immagine cancellata!",
-		"order_created": "Ordine è stato creato",
-		"order_updated": "Ordine è stato modificato",
-		"order_creditadvice_created": "Credito creato e ordine annullato!",
-		"order_cancelled": "Ordine annullato!",
-		"order_deleted": "Ordine cancellato!",
-		"order_sent": "Ordine spedito!",
 		"order_position_add": "Posizione aggiunta!",
 		"order_position_changed": "Posizione aggiornata!",
 		"order_position_deleted": "posizione eliminata",
 		"order_billing_as_delivery": "Adresse de facturation enregistrée comme adresse de livraison!",
 		"order_billingaddress_create": "Indirizzo creato!",
-		"order_invoice_created": "Fatturazione creata!",
 		"order_noupdate": "Nessun aggiornamento necessario!",
 		"order_deliveryaddress_create": "Indirizzo di consegna creato e ordine aggiornato!",
-		"order_delivery_created": "Nota di consegna creata!",
 		"order_payment_changed": "Tipo di pagamento aggiornato!",
 		"order_cashlink_send": "Cashlink inviato!",
 		"order_note_saved": "Nota aggiornata!",

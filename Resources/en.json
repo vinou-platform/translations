@@ -136,9 +136,6 @@
 	"token_modal_error": "There is already a token for this domain/IP",
 	"address_modal_delete": "Do you really want to delete this address?",
 	"orders_modal_cancel": "Do you really want to cancel this order?",
-	"orders_modal_create": "You're creating an order, what do you want to do?",
-	"orders_modal_create_withinvoice": "Create order with invoice and delivery note",
-	"orders_modal_create_only": "Create only",
 	"orders_modal_sent": "Do you really want to set this order as dispatched?",
 	"orders_position_delete": "Do you really want to delete this item?",
 	"orders_position_update": "Do you really want to update this item?",
@@ -1707,6 +1704,21 @@
 			}
 		}
 	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Credit advice created and order cancelled!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Delivery note generated!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Invoice generated!"
+		}
+	},
 	"order": {
 		"documenttypes": {
 			"invoice": "Invoice",
@@ -1856,9 +1868,22 @@
 				"sub": "Order"
 			}
 		},
+		"dialogs": {
+			"create": {
+				"msg": "You're creating an order, what do you want to do?",
+				"save": "Create only",
+				"withInvoice": "Create order with invoice",
+				"withDocuments": "Create order with invoice and delivery note"
+			}
+		},
 		"toasts": {
-			"priceschanged": "The price of one or more products has changed. Order sum was updated to {price}.",
-			"createerror": "Order could not be created. Please check your details and try again."
+			"cancelled": "Order cancelled!",
+			"created": "Order saved!",
+			"createerror": "Order could not be created. Please check your details and try again.",
+			"deleted": "Order deleted!",
+			"pricesChanged": "The price of one or more products has changed. Order sum was updated to {price}.",
+			"sent": "Order versendet!",
+			"updated": "Order saved!"
 		}
 	},
 	"packaging": {
@@ -2228,21 +2253,13 @@
 		"merchant_image_uploaded": "Image uploaded!",
 		"merchant_image_deleted": "Image deleted!",
 		"merchant_save_error": "Error saving winery!",
-		"order_created": "Order saved!",
-		"order_updated": "Order saved!",
-		"order_creditadvice_created": "Credit advice created and order cancelled!",
-		"order_cancelled": "Order cancelled!",
-		"order_deleted": "Order deleted!",
-		"order_sent": "Order versendet!",
 		"order_position_add": "Item added!",
 		"order_position_changed": "Item updated!",
 		"order_position_deleted": "Item deleted!",
 		"order_billing_as_delivery": "Billingaddress used as deliveryadress!",
 		"order_billingaddress_create": "Address saved!",
-		"order_invoice_created": "Invoice generated!",
 		"order_noupdate": "No Update needed!",
 		"order_deliveryaddress_create": "Delivery note generated and order updated!",
-		"order_delivery_created": "Delivery note generated!",
 		"order_payment_changed": "Payment type updated!",
 		"order_cashlink_send": "Cashlink sent!",
 		"order_note_saved": "Note saved!",

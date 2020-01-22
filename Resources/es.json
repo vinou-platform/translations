@@ -136,9 +136,6 @@
 	"token_modal_error": "Ya existe un Token para ese dominio/IP",
 	"address_modal_delete": "Quieres borrar esa direción seguramente?",
 	"orders_modal_cancel": "Quieres anular esa orden seguramente?",
-	"orders_modal_create": "Estás digitando una orden, qué quieres hacer?",
-	"orders_modal_create_withinvoice": "Digitar y generar cuenta y boletín de entrega",
-	"orders_modal_create_only": "solo digitar",
 	"orders_modal_sent": "Quieres marcar ese orden como Enviado?",
 	"orders_position_delete": "Quieres borrar esa posición seguramente?",
 	"orders_position_update": "Quieres adaptar esa posición seguramente?",
@@ -1708,6 +1705,21 @@
 			}
 		}
 	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Abono ha sido creado y la orden ha sido anulada!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Boletín de entrega ha sido creado!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Cuenta ha sido creada!"
+		}
+	},
 	"order": {
 		"documenttypes": {
 			"invoice": "cuenta",
@@ -1858,9 +1870,22 @@
 				"sub": "poner en el envío"
 			}
 		},
+		"dialogs": {
+			"create": {
+				"msg": "Estás digitando una orden, qué quieres hacer?",
+				"save": "solo digitar",
+				"withInvoice": "Digitar y generar cuenta",
+				"withDocuments": "Digitar y generar cuenta y boletín de entrega"
+			}
+		},
 		"toasts": {
-			"priceschanged": "Los precios de uno o de más productos han sido cambiados. El nuevo precio total asciende {precio}.",
-			"createerror": "La orden no ha podido ser digitada. Por favor verifica tus daots y inténtalo de nuevo."
+			"cancelled": "Orden ha sido anulada!",
+			"created": "Orden ha sido creada!",
+			"createerror": "La orden no ha podido ser digitada. Por favor verifica tus daots y inténtalo de nuevo.",
+			"deleted": "Orden ha sido borrada!",
+			"pricesChanged": "Los precios de uno o de más productos han sido cambiados. El nuevo precio total asciende {precio}.",
+			"sent": "Orden ha sido enviada!",
+			"updated": "Orden ha sido editada!"
 		}
 	},
 	"packaging": {
@@ -2178,21 +2203,13 @@
 		"merchant_image_uploaded": "Imágen ha sido cargada!",
 		"merchant_save_error": "Grabación ha sido fallada !",
 		"merchant_image_deleted": "Imágen ha sido borrada!",
-		"order_created": "Orden ha sido creada!",
-		"order_updated": "Orden ha sido editada!",
-		"order_creditadvice_created": "Abono ha sido creado y la orden ha sido anulada!",
-		"order_cancelled": "Orden ha sido anulada!",
-		"order_deleted": "Orden ha sido borrada!",
-		"order_sent": "Orden ha sido enviada!",
 		"order_position_add": "Posición ha sido agregada!",
 		"order_position_changed": "Posición ha sido actualizada!",
 		"order_position_deleted": "Posición ha sido borrada!",
 		"order_billing_as_delivery": "Dirección de cuenta ha sido grabada como dirección de entrega!",
 		"order_billingaddress_create": "Dirección ha sida creada!",
-		"order_invoice_created": "Cuenta ha sido creada!",
 		"order_noupdate": "Actualización no es necesario!",
 		"order_deliveryaddress_create": "Dirección de entrega ha sido creada y la orden ha sido actualizada!",
-		"order_delivery_created": "Boletín de entrega ha sido creado!",
 		"order_payment_changed": "Modo de pago ha sido actualizado!",
 		"order_cashlink_send": "Cashlink ha sido enviado!",
 		"order_note_saved": "Nota ha sido actualizada!",
