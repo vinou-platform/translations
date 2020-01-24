@@ -1846,6 +1846,8 @@
 			"shipping_different_location": "Adresse de livraison différente",
 			"state": "Statut",
 			"taxfree": "Exempté de TVA",
+			"taxrateNetTax": "{value} - {taxrate}%",
+			"taxrateGrossTax": "{value} - {taxrate}%",
 			"vatincluded": "incluse {tax} TVA.",
 			"vatexcluded": "plus {tax} TVA.",
 			"yardsale": "Vente à la ferme",

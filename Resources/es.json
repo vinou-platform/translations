@@ -1846,6 +1846,8 @@
 			"shipping_different_location": "dirección de entrega diferente",
 			"state": "estado",
 			"taxfree": "liberado de impuestos sobre la cifra de negocios",
+			"taxrateNetTax": "{value} - {taxrate}%",
+			"taxrateGrossTax": "{value} - {taxrate}%",
 			"vatincluded": "incluso impuesto valor añadido {tax} ",
 			"vatexcluded": "más {tax} impuesto valor añadido.",
 			"yardsale": "venta de patio",

@@ -1846,6 +1846,8 @@
 			"shipping_different_location": "Indirizzo di consegna diverso",
 			"state": "Stato",
 			"taxfree": "IVA esente",
+			"taxrateNetTax": "{value} - {taxrate}%",
+			"taxrateGrossTax": "{value} - {taxrate}%",
 			"vatincluded": "IVA inclusa {tax} ",
 			"vatexcluded": "Più {tax} IVA.",
 			"yardsale": "Vendita dell'azienda agricola",

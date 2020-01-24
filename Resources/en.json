@@ -1844,6 +1844,8 @@
 			"shipping_different_location": "Different delivery location",
 			"state": "State",
 			"taxfree": "Tax free",
+			"taxrateNetTax": "{taxrate}% of {value}",
+			"taxrateGrossTax": "{value} by {taxrate}%",
 			"vatincluded": "incl. VAT {tax}",
 			"vatexcluded": "excl. VAT {tax}",
 			"yardsale": "Yard sale",

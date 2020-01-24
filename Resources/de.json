@@ -1846,6 +1846,8 @@
 			"shipping_different_location": "Abweichende Lieferadresse",
 			"state": "Status",
 			"taxfree": "Umsatzsteuerbefreit",
+			"taxrateNetTax": "{taxrate}% von {value}",
+			"taxrateGrossTax": "{value} zu {taxrate}%",
 			"vatincluded": "inkl. {tax} MwSt.",
 			"vatexcluded": "zzgl. {tax} MwSt.",
 			"yardsale": "Hofverkauf",
