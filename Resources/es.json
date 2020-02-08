@@ -2044,6 +2044,16 @@
 				"one_day_early": "DPD 12:00",
 				"returns": "DPD retorno"
 			},
+			"gls": {
+				"standard": "GLS Standard",
+				"one_day": "GLS One Day",
+				"gls_express_0800": "GLS Express 0800",
+				"gls_express_0900": "GLS Express 0900",
+				"gls_express_1000": "GLS Express 1000",
+				"gls_express_1200": "GLS Express 1200",
+				"gls_pick_and_ship": "GLS Pick and Ship",
+				"one_day_early": "GLS One Day Early"
+			},
 			"ups": {
 				"standard": "estándar de UPS",
 				"one_day": "UPS Express",
