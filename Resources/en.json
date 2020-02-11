@@ -123,7 +123,6 @@
 	},
 	"delete_image":"Delete Image",
 	"delete_image_secure":"Do you really want to delete the image?",
-	"delete_template_secure":"Do you really want to delete the template?",
 	"changepw":"Change password",
 	"wines_modal_delete":"Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete the selected winery?",
@@ -590,6 +589,46 @@
 			"changedWithdrawal": "Changed substance dispatch."
 		}
 	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "Template for contract",
+				"placeholder": "Vinou contract (Default)"
+			},
+			"creditadvice": {
+				"label": "Template for credit advices",
+				"placeholder": "Vinou credit advice (Default)"
+			},
+			"delivery": {
+				"label": "Template for delivery note",
+				"placeholder": "Vinou delivery note (Default)"
+			},
+			"expertise": {
+				"label": "Template for Wine-Factsheet",
+				"placeholder": "Vinou expertise (Default)"
+			},
+			"invoice": {
+				"label": "Template for invoice",
+				"placeholder": "Vinou invoice (Default)"
+			},
+			"offer": {
+				"label": "Template for enquiry",
+				"placeholder": "Vinou offer (Default)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Edit Templates"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete the template?"
+		},
+		"toasts": {
+			"uploaded": "Template uploaded!",
+			"deleted": "Template deleted!"
+		}
+	},
 	"fieldset_general_title": "General",
 	"fieldset_region_title": "Regional",
 	"fieldset_grapetype_title": "Grapetype",
@@ -805,23 +844,6 @@
 	"mailsetup_smtpencrypt": "Encryption",
 	"mailsetup_senderemail": "email for outbound",
 	"mailsetup_sendername": "sendername for outbound",
-	"templates_creditadvice": "Template for credit advices",
-	"templates_edittitle": "Edit Templates",
-	"templates_expertise": "Template for Wine-Factsheet",
-	"templates_enquiry": "Template for enquiry",
-	"templates_contract": "Template for contract",
-	"templates_invoice": "Template for invoice",
-	"templates_delivery": "Template for delivery note",
-	"templates": {
-		"placeholders": {
-			"vinou_contract": "Vinou contract (Default)",
-			"vinou_creditadvice": "Vinou credit advice (Default)",
-			"vinou_delivery_note": "Vinou delivery note (Default)",
-			"vinou_expertise": "Vinou expertise (Default)",
-			"vinou_invoice": "Vinou invoice (Default)",
-			"vinou_offer": "Vinou offer (Default)"
-		}
-	},
 	"paypal_edittitle": "Edit paypal-settings",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
@@ -2287,8 +2309,6 @@
 		"settings_cashlink_registererror": "Registration failed, did you use the false mail address!",
 		"settings_smtp_changed": "SMTP-Settings updated!",
 		"settings_paypal_changed": "Paypal-Settings updated!",
-		"settings_template_uploaded": "Template uploaded!",
-		"settings_template_deleted": "Template deleted!",
 		"token_saved": "Connection saved!",
 		"user_created": "User saved!",
 		"user_changed": "User updated!",

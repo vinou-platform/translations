@@ -123,7 +123,6 @@
 	},
 	"delete_image": "borrar imágen",
 	"delete_image_secure": "Quieres borrar esa imágen seguramente?",
-	"delete_template_secure": "Quieres borrar su modelo de peritaje seguramente?",
 	"changepw": "cambiar contraseña",
 	"wines_modal_delete": "Quieres borrar ese vino seguramente?",
 	"wineries_modal_delete": "Quieres borrar esa propiedad vinícola seguramente?",
@@ -590,6 +589,46 @@
 			"changedWithdrawal": "salida de sustancias ha sido editada."
 		}
 	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "modelo para orden",
+				"placeholder": "Vinou-orden (estándar)"
+			},
+			"creditadvice": {
+				"label": "modelos para abonos",
+				"placeholder": "Vinou-abono (estándar)"
+			},
+			"delivery": {
+				"label": "modelo para boletín de entrega",
+				"placeholder": "Vinou-boletín de entrega (estándar)"
+			},
+			"expertise": {
+				"label": "modelo para PDF-peritaje",
+				"placeholder": "Vinou-peritaje (estándar)"
+			},
+			"invoice": {
+				"label": "modelo para cuenta",
+				"placeholder": "Vinou-cuenta (estándar)"
+			},
+			"offer": {
+				"label": "modelo para oferta",
+				"placeholder": "Vinou-oferta (estándar)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "editar modelos"
+			}
+		},
+		"dialogs": {
+			"delete": "¿Realmente quieres eliminar la plantilla?"
+		},
+		"toasts": {
+			"uploaded": "Plantilla ha sido cargada!",
+			"deleted": "Plantilla ha sido borrada!"
+		}
+	},
 	"fieldset_general_title": "generalidades",
 	"fieldset_region_title": "regionales",
 	"fieldset_grapetype_title": "variedad de uva",
@@ -806,23 +845,6 @@
 	"mailsetup_smtpencrypt": "codificación",
 	"mailsetup_senderemail": "correo electrónico para correo electrónicos saliendo",
 	"mailsetup_sendername": "remitente de corres electrónico saliendo",
-	"templates_creditadvice": "modelos para abonos",
-	"templates_edittitle": "editar modelos",
-	"templates_expertise": "modelo para PDF-peritaje",
-	"templates_enquiry": "modelo para oferta",
-	"templates_contract": "modelo para orden",
-	"templates_invoice": "modelo para cuenta",
-	"templates_delivery": "modelo para boletín de entrega",
-	"templates": {
-		"placeholders": {
-			"vinou_contract": "Vinou-orden (estándar)",
-			"vinou_creditadvice": "Vinou-abono (estándar)",
-			"vinou_delivery_note": "Vinou-boletín de entrega (estándar)",
-			"vinou_expertise": "Vinou-peritaje (estándar)",
-			"vinou_invoice": "Vinou-cuenta (estándar)",
-			"vinou_offer": "Vinou-oferta (estándar)"
-		}
-	},
 	"paypal_edittitle": "editar ajustes de Paypal",
 	"paypal_paypalclientid": "ID del cliente",
 	"paypal_paypalsecret": "secreto",
@@ -2237,8 +2259,6 @@
 		"settings_cashlink_registererror": "Registración ha sido fallada, talvez el correo electrónico ya no está disponible más!",
 		"settings_smtp_changed": "Ajustes de SMTP han sido actualizados!",
 		"settings_paypal_changed": "Ajustes de Paypal han sido actualizados!",
-		"settings_template_uploaded": "Plantilla ha sido cargada!",
-		"settings_template_deleted": "Plantilla ha sido borrada!",
 		"token_saved": "Intersección ha sido grabada!",
 		"user_created": "Usuario ha sido creado!",
 		"user_changed": "Usuario ha sido actualizado!",

@@ -123,7 +123,6 @@
 	},
 	"delete_image": "Supprimer l'image",
 	"delete_image_secure": "Voulez-vous vraiment supprimer cette image?",
-	"delete_template_secure": "Voulez-vous vraiment supprimer ce modèle d'expertise?",
 	"changepw": "Changer ce mot de pass",
 	"wines_modal_delete": "Voulez-vous vraiment supprimer ce vin?",
 	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
@@ -590,6 +589,46 @@
 			"changedWithdrawal": "Retrait de la substance édité.."
 		}
 	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "Modèle d'ordre",
+				"placeholder": "Vinou - Ordre (Standard)"
+			},
+			"creditadvice": {
+				"label": "Modèle de crédit",
+				"placeholder": "Vinou - Crédit (Standard)"
+			},
+			"delivery": {
+				"label": "Modèle du bon de livraison",
+				"placeholder": "Vinou - Bon de Livraison (Standard)"
+			},
+			"expertise": {
+				"label": "Modèle d'expertise PDF",
+				"placeholder": "Vinou - Expertise (Standard)"
+			},
+			"invoice": {
+				"label": "Modèle de facture",
+				"placeholder": "Vinou - Facture (Standard)"
+			},
+			"offer": {
+				"label": "Modèle d'offre",
+				"placeholder": "Vinou - Offre (Standard)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Éditer modèles"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer le modèle?"
+		},
+		"toasts": {
+			"uploaded": "Modèle téléchargé!",
+			"deleted": "Modèle supprimé!"
+		}
+	},
 	"fieldset_general_title": "Général",
 	"fieldset_region_title": "Régional",
 	"fieldset_grapetype_title": "Cépage",
@@ -806,23 +845,6 @@
 	"mailsetup_smtpencrypt": "Cryptage",
 	"mailsetup_senderemail": "Courriel pour courriel sortant",
 	"mailsetup_sendername": "Expéditeur pour courriel sortant",
-	"templates_creditadvice": "Modèle de crédit",
-	"templates_edittitle": "Éditer modèles",
-	"templates_expertise": "Modèle d'expertise PDF",
-	"templates_enquiry": "Modèle d'offre",
-	"templates_contract": "Modèle d'ordre",
-	"templates_invoice": "Modèle de facture",
-	"templates_delivery": "Modèle du bon de livraison",
-	"templates": {
-		"placeholders": {
-			"vinou_contract": "Vinou - Ordre (Standard)",
-			"vinou_creditadvice": "Vinou - Crédit (Standard)",
-			"vinou_delivery_note": "Vinou - Bon de Livraison (Standard)",
-			"vinou_expertise": "Vinou - Expertise (Standard)",
-			"vinou_invoice": "Vinou - Facture (Standard)",
-			"vinou_offer": "Vinou - Offre (Standard)"
-		}
-	},
 	"paypal_edittitle": "Éditer paramètres PayPal",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
@@ -2237,8 +2259,6 @@
 		"settings_cashlink_registererror": "Enregistrement échoué, courrier éventuellement déjà pris!",
 		"settings_smtp_changed": "Configuration SMTP mise à jour!",
 		"settings_paypal_changed": "Configuration PayPay mise à jour!",
-		"settings_template_uploaded": "Modèle téléchargé!",
-		"settings_template_deleted": "Modèle supprimé",
 		"token_saved": "Interface enregistrée!",
 		"user_created": "Utilisateur créé!",
 		"user_changed": "Utilisateur mis à jour!",

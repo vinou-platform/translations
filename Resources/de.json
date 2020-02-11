@@ -125,7 +125,6 @@
 	},
 	"delete_image": "Bild löschen",
 	"delete_image_secure": "Möchtest du dieses Bild wirklich löschen?",
-	"delete_template_secure": "Möchtest du ihre Vorlage für Expertisen wirklich löschen?",
 	"changepw": "Passwort ändern",
 	"wines_modal_delete": "Möchtest du diesen Wein wirklich löschen?",
 	"wineries_modal_delete": "Möchtest du dieses Weingut wirklich löschen?",
@@ -592,6 +591,46 @@
 			"changedWithdrawal": "Stoffabgang bearbeitet."
 		}
 	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "Vorlage für Auftrag",
+				"placeholder": "Vinou-Auftrag (Standard)"
+			},
+			"creditadvice": {
+				"label": "Vorlage für Gutschrift",
+				"placeholder": "Vinou-Gutschrift (Standard)"
+			},
+			"delivery": {
+				"label": "Vorlage für Lieferschein",
+				"placeholder": "Vinou-Lieferschein (Standard)"
+			},
+			"expertise": {
+				"label": "Vorlage für PDF-Expertise",
+				"placeholder": "Vinou-Expertise (Standard)"
+			},
+			"invoice": {
+				"label": "Vorlage für Rechnung",
+				"placeholder": "Vinou-Rechnung (Standard)"
+			},
+			"offer": {
+				"label": "Vorlage für Angebot",
+				"placeholder": "Vinou-Angebot (Standard)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Vorlagen bearbeiten"
+			}
+		},
+		"dialogs": {
+			"delete": "Möchtest du diese Vorlage wirklich löschen?"
+		},
+		"toasts": {
+			"uploaded": "Vorlage hochgeladen!",
+			"deleted": "Vorlage gelöscht!"
+		}
+	},
 	"fieldset_general_title": "Allgemeines",
 	"fieldset_region_title": "Regionales",
 	"fieldset_grapetype_title": "Rebsorte",
@@ -807,23 +846,6 @@
 	"mailsetup_smtpencrypt": "Verschlüsselung",
 	"mailsetup_senderemail": "E-Mail für ausgehende E-Mails",
 	"mailsetup_sendername": "Absender für ausgehende E-Mails",
-	"templates_creditadvice": "Vorlage für Gutschrift",
-	"templates_edittitle": "Vorlagen bearbeiten",
-	"templates_expertise": "Vorlage für PDF-Expertise",
-	"templates_enquiry": "Vorlage für Angebot",
-	"templates_contract": "Vorlage für Auftrag",
-	"templates_invoice": "Vorlage für Rechnung",
-	"templates_delivery": "Vorlage für Lieferschein",
-	"templates": {
-		"placeholders": {
-			"vinou_contract": "Vinou-Auftrag (Standard)",
-			"vinou_creditadvice": "Vinou-Gutschrift (Standard)",
-			"vinou_delivery_note": "Vinou-Lieferschein (Standard)",
-			"vinou_expertise": "Vinou-Expertise (Standard)",
-			"vinou_invoice": "Vinou-Rechnung (Standard)",
-			"vinou_offer": "Vinou-Angebot (Standard)"
-		}
-	},
 	"paypal_edittitle": "Paypal-Einstellungen bearbeiten",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
@@ -2289,8 +2311,6 @@
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
 		"settings_smtp_changed": "SMTP-Einstellungen aktualisiert!",
 		"settings_paypal_changed": "Paypal-Einstellungen aktualisiert!",
-		"settings_template_uploaded": "Template hochgeladen!",
-		"settings_template_deleted": "Template gelöscht!",
 		"token_saved": "Schnittstelle gespeichert!",
 		"user_created": "Benutzer angelegt!",
 		"user_changed": "Benutzer aktualisiert!",

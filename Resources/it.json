@@ -123,7 +123,6 @@
 	},
 	"delete_image": "Cancellare le foto",
 	"delete_image_secure": "Vuoi veramente cancellare la foto",
-	"delete_template_secure": "Vuoi veramente cancellare questo esperienza",
 	"changepw": "Cambiare password",
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
@@ -590,6 +589,46 @@
 			"changedWithdrawal": "Calo di sostanze è stato modificato."
 		}
 	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "Modello di ordine",
+				"placeholder": "Vinou-Ordine (Standard)"
+			},
+			"creditadvice": {
+				"label": "Modello di accredito",
+				"placeholder": "Vinou-Accredito (Standard)"
+			},
+			"delivery": {
+				"label": "Modello dei bolla di consegna",
+				"placeholder": "Vinou-Bolla di consegna (Standard)"
+			},
+			"expertise": {
+				"label": "Modello di esperienza",
+				"placeholder": "Vinou-Esperienza(Standard)"
+			},
+			"invoice": {
+				"label": "Modello di fattura",
+				"placeholder": "Vinou-Fattura (Standard)"
+			},
+			"offer": {
+				"label": "Modello di offerta",
+				"placeholder": "Vinou-Offerta (Standard)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Modificare modello"
+			}
+		},
+		"dialogs": {
+			"delete": "Vuoi veramente cancellare il modello?"
+		},
+		"toasts": {
+			"uploaded": "Modello scaricato!",
+			"deleted": "Modello rimosso!"
+		}
+	},
 	"fieldset_general_title": "Generale",
 	"fieldset_region_title": "Regionale",
 	"fieldset_grapetype_title": "Tipo del vite",
@@ -806,23 +845,6 @@
 	"mailsetup_smtpencrypt": "Codifica.",
 	"mailsetup_senderemail": "E-Mail dell' E-Mails uscire",
 	"mailsetup_sendername": "Mittente per e-mail in uscita",
-	"templates_creditadvice": "Modello di accredito",
-	"templates_edittitle": "Modificare modello",
-	"templates_expertise": "Modello di esperienza",
-	"templates_enquiry": "Modello di offerta",
-	"templates_contract": "Modello di ordine",
-	"templates_invoice": "Modello di fattura",
-	"templates_delivery": "Modello dei bolla di consegna",
-	"templates": {
-		"placeholders": {
-			"vinou_contract": "Vinou-Ordine (Standard)",
-			"vinou_creditadvice": "Vinou-Accredito (Standard)",
-			"vinou_delivery_note": "Vinou-Bolla di consegna (Standard)",
-			"vinou_expertise": "Vinou-Esperienza(Standard)",
-			"vinou_invoice": "Vinou-Fattura (Standard)",
-			"vinou_offer": "Vinou-Offerta (Standard)"
-		}
-	},
 	"paypal_edittitle": "Modificare Impostationi di Paypal",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
@@ -2237,8 +2259,6 @@
 		"settings_cashlink_registererror": "Registrazione non riuscita, posta probabilmente già presa!",
 		"settings_smtp_changed": "Configurazione SMTP aggiornata!",
 		"settings_paypal_changed": "Configurazione PayPay aggiornata!",
-		"settings_template_uploaded": "Modello scaricato!",
-		"settings_template_deleted": "Modello rimosso!",
 		"token_saved": "Interfaccia registrata!",
 		"user_created": "Interfaccia registrata!",
 		"user_changed": "Utente aggiornato!",
