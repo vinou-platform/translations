@@ -1270,6 +1270,7 @@
 			"qrlink": "Adresse de destination pour le code QR",
 			"qrlinkempty": "Adresse de destination pour le code QR (Passe du vin si vide)",
 			"quality": "Niveau de qualité",
+			"quality_note": "Informations de classification supplémentaires",
 			"quantity": "Stock",
 			"region": "Région de culture",
 			"shoplink": "Lien vers la boutique",
@@ -1295,49 +1296,6 @@
 			"crownCap": "Capsule",
 			"plastic": "Liège plastique",
 			"glas":	"Obturateur pour gaz"
-		},
-		"quality_types": {
-			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
-			"table": "Wein mit Rebsorten- order Jahrgangsangabe",
-			"superior": "Landwein",
-			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
-			"cabinet": "Kabinett",
-			"spaetlese": "Spätlese",
-			"selection": "Auslese",
-			"beerenauslese": "Beerenauslese",
-			"trockenbeerenauslese": "Trockenbeerenauslese",
-			"sparklingWine": "Schaumwein",
-			"champagne": "Sekt",
-			"winzersekt": "Winzersekt",
-			"cremant": "Crémant",
-			"icewine": "Eiswein",
-			"champagneSpecificRegion": "Sekt b.A.",
-			"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
-			"strawwine": "Strohwein",
-			"estate": "Estate wine",
-			"local": "Vin local",
-			"singlesite": "Vin de terroir",
-			"de_vdpGutswein": "|DE| VDP.Gutswein",
-			"de_vdpOrtswein": "|DE| VDP.Ortswein",
-			"de_vdpErsteLage": "|DE| VDP.Erste Lage",
-			"de_vdpGrosseLage": "|DE| VDP.Große Lage",
-			"de_vdpGrossesGewaechs": "|DE| VDP.Großes Gewächs",
-			"de_vdpGutssekt": "|DE| VDP.Gutssekt",
-			"de_vdpOrtssekt": "|DE| VDP.Ortssekt",
-			"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-			"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-			"es_table": "|ES| Vino de mesa",
-			"fr_cabinet": "Appellation contrôlée (AC)",
-			"fr_origin": "Appellation d'origine contrôlée (AOC)",
-			"fr_spaetlese": "Vin doux naturel",
-			"fr_specialquality": "Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-			"fr_superior": "Vin de pays",
-			"fr_table": "Vin de table",
-			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-			"it_specialquality": "|IT| Vino dolce naturale",
-			"it_superior": "|IT| Vino tipico",
-			"it_table": "|IT| Vino da tavola"
 		},
 		"gallery": {
 			"new": {
@@ -4546,6 +4504,103 @@
 		"ice": "Glace",
 		"chocolate": "Chocolat",
 		"coffee": "Café"
+	},
+	"qualitytypes": {
+		"at": {
+			"country": "Wein aus Österreich",
+			"origin": "Landwein",
+			"dac": "Districtus Austriae Controllatus (DAC)",
+			"quality": "Qualitätswein",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"auslese": "Auslese",
+			"icewine": "Eiswein",
+			"strawwine": "Strohwein",
+			"beerenauslese": "Beerenauslese",
+			"ausbruch": "Ausbruch"
+		},
+		"de": {
+			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
+			"superior": "Landwein",
+			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"selection": "Auslese",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Schaumwein",
+			"champagne": "Sekt",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Eiswein",
+			"champagneSpecificRegion": "Sekt b.A.",
+			"specialquality": "QW besonderer Reife und Leseart, Prädikatswein",
+			"estate": "Gutswein",
+			"local": "Ortswein",
+			"singlesite": "Lagenwein",
+			"vdpGutswein": "VDP.Gutswein",
+			"vdpOrtswein": "VDP.Ortswein",
+			"vdpErsteLage": "VDP.Erste Lage",
+			"vdpGrosseLage": "VDP.Große Lage",
+			"vdpGrossesGewaechs": "VDP.Großes Gewächs",
+			"vdpGutssekt": "VDP.Gutssekt",
+			"vdpOrtssekt": "VDP.Ortssekt"
+		},
+		"es": {
+			"country": "Viñedos de España",
+			"do": "Denominación de origen (DO)",
+			"doc": "Denominación de Origen Calificada (DOC)",
+			"dop": "Denominación de Origen Protegida (DOP)",
+			"igp": "Indicación Geográfica Protegida (IGP)",
+			"origin": "Vino da la Tierra",
+			"table": "Vino de mesa"
+		},
+		"fr": {
+			"country": "Vin de France (VdF)",
+			"aop": "Appellation d’Origine Protégée (AOP)",
+			"igp": "Indication Géographique Protégée (IGP)",
+			"ac": "Appellation contrôlée (AC)",
+			"aoc": "Appellation d'origine contrôlée (AOC)",
+			"vdn": "Vin doux naturel (VDN)",
+			"vdqs": "Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"superior": "Vin de pays",
+			"table": "Vin de table"
+		},
+		"it": {
+			"country": "Vino d'Italia",
+			"dop": "Denominazione di origine protetta (DOP)",
+			"doc": "Denominazione di origine controllata (DOC)",
+			"doca": "Denominazione di origine controllata (DOCa)",
+			"docg": "Denominazione di origine controllata e garantita (DOCG)",
+			"specialquality": "Vino dolce naturale",
+			"superior": "Vino tipico",
+			"table": "Vino da tavola"
+		},
+		"pt": {
+			"doc": "Denominação de Origem Controlada (DOC)",
+			"dop": "Denominação de Origem Protegida (DOP)",
+			"ig": "Vinho Regional (IG)",
+			"igp": "Vinho Regional (IGP)",
+			"vr": "Vinho Regional (VR)"
+		},
+		"ar": {
+			"country": "Wine of Argentina"
+		},
+		"au": {
+			"country": "Wine of Australia"
+		},
+		"cl": {
+			"country": "Wine of Chile",
+			"reserva": "Gran Reserva"
+		},
+		"za": {
+			"country": "Wine of Southafrica",
+			"origin": "Wine of Origin"
+		},
+		"us": {
+			"california": "Wine of California"
+		}
 	},
 	"apps": {
 		"vinou-gusto": {
