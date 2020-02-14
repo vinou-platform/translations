@@ -7,7 +7,7 @@
 		"wines.statistics": "Statistiken",
 		"winelists": "Weinlisten",
 		"qrcodes": "QR-Codes",
-		"news": "Aktuelles",
+		"news": "Neuigkeiten",
 		"users": "Benutzer",
 		"customers": "Mitglieder",
 		"categories": "Kategorien",
@@ -2141,6 +2141,75 @@
 			"importnextpackage": "Nächstes Import-Packet gestartet",
 			"importexecutedsuccess": "Import Ausführung erfolgreich!",
 			"importexecutedfailed": "Import Ausführung fehlgeschlagen!"
+		}
+	},
+	"news": {
+		"gallery": {
+			"sortby": {
+				"label": "Ansicht sortieren nach:"
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung:",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"filter": {
+				"visibility": "Sichtbarkeit filtern"
+			}
+		},
+		"action": {
+			"create": {
+				"modaltitle": "Newsbeitrag verfassen",
+				"main": "Neuen Newsbeitrag",
+				"sub": "verfassen"
+			},
+			"search": {
+				"placeholder": "z.B. Titel, Teaser, Inhalt"
+			}
+		},
+		"views": {
+			"files": {
+				"title": "Dateien",
+				"empty": "Es liegen keine {label} zu diesem Newsbeitrag vor."
+			}
+		},
+		"tabs": {
+			"files": "Dateien"
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"settings": "Einstellungen",
+			"seo": "Suchmaschinen spezifische Angaben"
+		},
+		"fields": {
+			"title": "Titel",
+			"teaser": "Teaser (Vorschau-Text)",
+			"content": "Inhalt",
+			"visibility": "Sichtbarkeit",
+			"startdate": "Start-Datum",
+			"enddate": "End-Datum",
+			"meta_title": "Title-Tag",
+			"meta_description": "Meta-Description",
+			"path_segment": "Pfadsegment"
+		},
+		"toasts": {
+			"created": "Newsbeitrag angelegt!",
+			"changed": "Newsbeitrag geändert!",
+			"deleted": "Newsbeitrag gelöscht!",
+			"image_uploaded": "Newsbild hochgeladen!",
+			"image_deleted": "Newsbild gelöscht",
+			"copied": "Newsbeitrag dupliziert"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Newsbeitrag"
+		},
+		"visibilities": {
+			"private": "Privat",
+			"internal": "Internal",
+			"public": "Öffentlich"
 		}
 	},
 	"settings": {
