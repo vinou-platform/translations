@@ -1772,7 +1772,8 @@
 			},
 			"export": {
 				"invoices": "Télécharger les factures pour la période sélectionnée"
-			}
+			},
+			"touch": "Marquer la commande comme lue"
 		},
 		"fieldSets": {
 			"edit_view": "Éditer vue",
@@ -1869,7 +1870,8 @@
 			"deleted": "Ordre supprimé!",
 			"pricesChanged": "Les prix d'un ou plusieurs produits ont changé. Le nouveau prix total est {price}.",
 			"sent": "Ordre expédié!",
-			"updated": "Ordre changé!"
+			"updated": "Ordre changé!",
+			"touched": "Ordre marqué comme lu!"
 		}
 	},
 	"packaging": {

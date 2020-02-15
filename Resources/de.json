@@ -1772,7 +1772,8 @@
 			},
 			"export": {
 				"invoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
-			}
+			},
+			"touch": "Bestellung als gelesen markieren"
 		},
 		"fieldSets": {
 			"edit_view": "Ansicht bearbeiten",
@@ -1869,7 +1870,8 @@
 			"deleted": "Bestellung gelöscht!",
 			"pricesChanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
 			"sent": "Bestellung versendet!",
-			"updated": "Bestellung geändert!"
+			"updated": "Bestellung geändert!",
+			"touched": "Bestellung als gelesen markiert!"
 		}
 	},
 	"packaging": {
