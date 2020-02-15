@@ -4492,11 +4492,13 @@
 		"rotling": "Rotling",
 		"secco": "Secco",
 		"sparkling": "cava",
-		"destilate": "destilado",
+		"destilate": "espíritu",
 		"grapeJuice": "zumo de uva",
 		"wineBasedDrink": "bebida con vino",
 		"spritzer": "vino mezclado con agua con gas",
 		"vingris": "vino rosado",
+		"nonalcoholic": "sin alcohol",
+		"mulledwine": "vino caliente",
 		"general": "otros"
 	},
 	"savours":{

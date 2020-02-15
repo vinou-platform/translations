@@ -4499,11 +4499,13 @@
 		"rotling": "Rotling",
 		"secco": "Secco",
 		"sparkling": "Champagne",
-		"destilate": "Destillate",
+		"destilate": "Spirits",
 		"grapeJuice": "Grape juice",
 		"wineBasedDrink": "Wine-based drink",
 		"spritzer": "Spritzer (mixture of wine and sparkling water chiefly)",
 		"vingris": "Vin gris",
+		"nonalcoholic": "Nonalcoholic",
+		"mulledwine": "Mulled wine",
 		"general": "Others"
 	},
 	"savours":{

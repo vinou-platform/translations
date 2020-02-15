@@ -4501,11 +4501,13 @@
 		"rotling": "Rotling",
 		"secco": "Secco",
 		"sparkling": "Sekt",
-		"destilate": "Destillat",
+		"destilate": "Spirituosen",
 		"grapeJuice": "Traubensaft",
 		"wineBasedDrink": "Weinhaltiges Getränk",
 		"spritzer": "Weinschorle",
 		"vingris": "Weißherbst",
+		"nonalcoholic": "Alkoholfrei",
+		"mulledwine": "Glühwein",
 		"general": "Sonstiges"
 	},
 	"savours":{

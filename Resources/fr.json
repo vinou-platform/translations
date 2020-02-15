@@ -4449,11 +4449,13 @@
 		"rotling":"Rotling",
 		"secco": "Secco",
 		"sparkling":"Champagne",
-		"destilate":"Distillats",
+		"destilate":"Spiritueux",
 		"grapeJuice": "Jus de raisin",
 		"wineBasedDrink": "Boisson à base de vin",
 		"spritzer": "Vin coupé d'eau gazeuse",
 		"vingris": "Variété de vin rosé allemand",
+		"nonalcoholic": "Sans alcool",
+		"mulledwine": "Vin chaud",
 		"general":"Autre"
 	},
 	"savours":{
