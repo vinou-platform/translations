@@ -67,7 +67,12 @@ class Translation {
 	 * @return array
 	 */
 	public function localizeWine($wine = null) {
-		$this->loadCountryCode($this->countryCode);
+
+		if ($wine['language'] != $this->countryCode)
+			$this->loadCountryCode($wine['language'], true);
+		else
+			$this->loadCountryCode($this->countryCode);
+
 		foreach ($wine as $property => $value) {
 			switch ($property) {
 				case 'grapetypeIds':

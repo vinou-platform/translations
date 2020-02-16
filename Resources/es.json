@@ -1815,7 +1815,8 @@
 			},
 			"export": {
 				"invoices": "Descargar facturas para el período seleccionado"
-			}
+			},
+			"touch": "marcar el pedido como leído"
 		},
 		"fieldSets": {
 			"edit_view": "editar muestra",
@@ -1912,7 +1913,8 @@
 			"deleted": "Orden ha sido borrada!",
 			"pricesChanged": "Los precios de uno o de más productos han sido cambiados. El nuevo precio total asciende {precio}.",
 			"sent": "Orden ha sido enviada!",
-			"updated": "Orden ha sido editada!"
+			"updated": "Orden ha sido editada!",
+			"touched": "Orden marcado como leído!"
 		}
 	},
 	"packaging": {
@@ -4490,11 +4492,13 @@
 		"rotling": "Rotling",
 		"secco": "Secco",
 		"sparkling": "cava",
-		"destilate": "destilado",
+		"destilate": "espíritu",
 		"grapeJuice": "zumo de uva",
 		"wineBasedDrink": "bebida con vino",
 		"spritzer": "vino mezclado con agua con gas",
 		"vingris": "vino rosado",
+		"nonalcoholic": "sin alcohol",
+		"mulledwine": "vino caliente",
 		"general": "otros"
 	},
 	"savours":{

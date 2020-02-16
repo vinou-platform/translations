@@ -1770,7 +1770,8 @@
 			},
 			"export": {
 				"invoices": "Download invoices for selected period"
-			}
+			},
+			"touch": "Mark order as read"
 		},
 		"fieldSets": {
 			"edit_view": "Edit view",
@@ -1867,7 +1868,8 @@
 			"deleted": "Order deleted!",
 			"pricesChanged": "The price of one or more products has changed. Order sum was updated to {price}.",
 			"sent": "Order versendet!",
-			"updated": "Order saved!"
+			"updated": "Order saved!",
+			"touched": "Order marked as read!"
 		}
 	},
 	"packaging": {
@@ -4497,11 +4499,13 @@
 		"rotling": "Rotling",
 		"secco": "Secco",
 		"sparkling": "Champagne",
-		"destilate": "Destillate",
+		"destilate": "Spirits",
 		"grapeJuice": "Grape juice",
 		"wineBasedDrink": "Wine-based drink",
 		"spritzer": "Spritzer (mixture of wine and sparkling water chiefly)",
 		"vingris": "Vin gris",
+		"nonalcoholic": "Nonalcoholic",
+		"mulledwine": "Mulled wine",
 		"general": "Others"
 	},
 	"savours":{

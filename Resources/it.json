@@ -1772,7 +1772,8 @@
 			},
 			"export": {
 				"invoices": "Scarica fatture per il periodo selezionato"
-			}
+			},
+			"touch": "Contrassegna l'ordine come letto"
 		},
 		"fieldSets": {
 			"edit_view": "Modificare vista",
@@ -1864,12 +1865,13 @@
 		},
 		"toasts": {
 			"cancelled": "Ordine annullato!",
-			"created": "Ordine è stato creato",
+			"created": "Ordine è stato creato!",
 			"createerror": "Non è stato possibile rilevare l'ordine. Controlla i tuoi dati e riprova.",
 			"deleted": "Ordine cancellato!",
 			"pricesChanged": "I prezzi di uno o più prodotti sono cambiati. Il nuovo prezzo totale è {prezzo}.",
 			"sent": "Ordine spedito!",
-			"updated": "Ordine è stato modificato"
+			"updated": "Ordine è stato modificato!",
+			"touched": "Ordine contrassegnato come letto!"
 		}
 	},
 	"packaging": {
@@ -4447,11 +4449,13 @@
 		"rotling": "Rotling",
 		"secco": "Secco",
 		"sparkling": "Champagne",
-		"destilate": "Destillati",
+		"destilate": "Spiriti",
 		"grapeJuice": "Succo d'uva",
 		"wineBasedDrink": "Bevanda a base di vino",
 		"spritzer": "Vino tagliato con acqua frizzante",
 		"vingris": "Varietà di vino rosato tedesco",
+		"nonalcoholic": "Analcolico",
+		"mulledwine": "Vin brulè",
 		"general": "Altro"
 	},
 	"savours":{
