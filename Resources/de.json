@@ -2185,6 +2185,7 @@
 		},
 		"fields": {
 			"title": "Titel",
+			"image": "Bild",
 			"teaser": "Teaser (Vorschau-Text)",
 			"content": "Inhalt",
 			"visibility": "Sichtbarkeit",
