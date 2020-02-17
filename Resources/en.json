@@ -2143,6 +2143,127 @@
 			"importexecutedfailed": "Import execution failed!"
 		}
 	},
+	"news": {
+		"gallery": {
+			"sortby": {
+				"label": "Sort view by:"
+			},
+			"sortdirection": {
+				"label": "Sort direction:",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"filter": {
+				"visibility": "Filter by visibility"
+			}
+		},
+		"action": {
+			"create": {
+				"modaltitle": "Create news entry",
+				"main": "Create new",
+				"sub": "News entry"
+			},
+			"search": {
+				"placeholder": "e.q. title, teaser, content"
+			}
+		},
+		"views": {
+			"files": {
+				"title": "Files",
+				"empty": "There are no {label} for this news entry."
+			}
+		},
+		"tabs": {
+			"files": "Files"
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings",
+			"seo": "Search engine specific information"
+		},
+		"fields": {
+			"title": "Title",
+			"image": "Image",
+			"teaser": "Teaser (Preview-Text)",
+			"content": "Content",
+			"link": "external link",
+			"visibility": "visibility",
+			"startdate": "start date",
+			"enddate": "end date",
+			"meta_title": "title-tag",
+			"meta_description": "meta description",
+			"path_segment": "path segment"
+		},
+		"toasts": {
+			"created": "News entry created!",
+			"changed": "News entry updated!",
+			"deleted": "News entry deleted!",
+			"image_uploaded": "Newsimage uploaded!",
+			"image_deleted": "Newsimage deleted",
+			"copied": "News entry copied"
+		},
+		"dialogs": {
+			"delete": "Are you sure you want to delete this news entry?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommendation for optimal display </b> <br> Dimensions: 1920x1280px <br/> File format: .png (cropped)"
+		},
+		"files": {
+			"title": "Files and documents related to this news entry"
+		},
+		"visibilities": {
+			"private": "Private",
+			"internal": "Internal",
+			"public": "Public"
+		}
+	},
+	"text": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Text"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "No texts have been created so far."
+			}
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings"
+		},
+		"fields": {
+			"title": "title",
+			"content": "content",
+			"visibility": "Visibility",
+			"identifier": "Identifier (for external access)",
+			"manualidentifier": "Manual Identifier",
+			"path_segment": "Path segment",
+			"chstamp": "Last change"
+		},
+		"toasts": {
+			"created": "Text created!",
+			"changed": "Text changed!",
+			"deleted": "Text deleted!"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this text?"
+		},
+		"visibilities": {
+			"private": "Private",
+			"internal": "Internal",
+			"public": "Public"
+		},
+		"identifier": {
+			"legalnotice": "Legal notice",
+			"privacypolicy": "Privacy policy",
+			"conditionsofservice": "Conditions of Service",
+			"revocation": "Revocation",
+			"shippingpolicy": "Shipping policy",
+			"individual": "Individual"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account settings",
@@ -2207,6 +2328,10 @@
 		"mail": {
 			"title": "E-Mail setup",
 			"description": "The Vinou-Network and also your webshop are sending automated mail notifications. To use this you need to configure an SMTP-Mailbox."
+		},
+		"texts": {
+			"title": "Texts",
+			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
 		},
 		"messages": {
 			"hints": {
