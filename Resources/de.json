@@ -2215,7 +2215,7 @@
 		},
 		"visibilities": {
 			"private": "Privat",
-			"internal": "Internal",
+			"internal": "Intern",
 			"public": "Öffentlich"
 		}
 	},
