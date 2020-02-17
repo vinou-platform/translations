@@ -2188,6 +2188,7 @@
 			"image": "Bild",
 			"teaser": "Teaser (Vorschau-Text)",
 			"content": "Inhalt",
+			"link": "Externer Link",
 			"visibility": "Sichtbarkeit",
 			"startdate": "Start-Datum",
 			"enddate": "End-Datum",
@@ -2203,6 +2204,9 @@
 			"image_deleted": "Newsbild gelöscht",
 			"copied": "Newsbeitrag dupliziert"
 		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Newsbeitrag wirklich löschen?"
+		},
 		"hints": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br/>Datei-Format: .png (freigestellt)"
 		},
@@ -2213,6 +2217,53 @@
 			"private": "Privat",
 			"internal": "Internal",
 			"public": "Öffentlich"
+		}
+	},
+	"text": {
+		"actions": {
+			"create": {
+				"main": "Neuen Text",
+				"sub": "anlegen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "Es wurden bisher keine Texte angelegt."
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"settings": "Einstellungen"
+		},
+		"fields": {
+			"title": "Titel",
+			"content": "Inhalt",
+			"visibility": "Sichtbarkeit",
+			"identifier": "Identifier (für externen Zugriff)",
+			"manualidentifier": "Manueller Identifier",
+			"path_segment": "Pfadsegment",
+			"chstamp": "Letzte Änderung"
+		},
+		"toasts": {
+			"created": "Text angelegt!",
+			"changed": "Text geändert!",
+			"deleted": "Text gelöscht!"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Text wirklich löschen?"
+		},
+		"visibilities": {
+			"private": "Privat",
+			"internal": "Internal",
+			"public": "Öffentlich"
+		},
+		"identifier": {
+			"legalnotice": "Impressum",
+			"privacypolicy": "Datenschutzvereinbarung",
+			"conditionsofservice": "Allgemeine Geschäftsbedingungen",
+			"revocation": "Widerruf",
+			"shippingpolicy": "Versandbedingungen",
+			"individual": "Selbstvergeben"
 		}
 	},
 	"settings": {
@@ -2279,6 +2330,10 @@
 		"mail": {
 			"title": "E-Mail Setup",
 			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen."
+		},
+		"texts": {
+			"title": "Texte",
+			"description": "Lege Texte an um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in deinem eigenenen Online-Shop verwendet werden."
 		},
 		"messages": {
 			"hints": {
