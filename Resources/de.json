@@ -80,6 +80,20 @@
 			"fam": "Familie",
 			"inc": "Firma"
 		},
+		"visibilities": {
+			"network": {
+				"label": "Vinou-Netzwerk",
+				"description": ""
+			},
+			"internal": {
+				"label": "Internal",
+				"description": ""
+			},
+			"public": {
+				"label": "Öffentlich",
+				"description": ""
+			}
+		},
 		"filters": {
 			"sortBy": {
 				"label": "Ansicht sortieren nach:"
@@ -2212,11 +2226,6 @@
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Newsbeitrag"
-		},
-		"visibilities": {
-			"private": "Privat",
-			"internal": "Intern",
-			"public": "Öffentlich"
 		}
 	},
 	"text": {
@@ -2251,11 +2260,6 @@
 		},
 		"dialogs": {
 			"delete": "Möchtest Du diesen Text wirklich löschen?"
-		},
-		"visibilities": {
-			"private": "Privat",
-			"internal": "Internal",
-			"public": "Öffentlich"
 		},
 		"identifier": {
 			"legalnotice": "Impressum",
