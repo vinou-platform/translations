@@ -83,15 +83,15 @@
 		"visibilities": {
 			"network": {
 				"label": "Vinou-Netzwerk",
-				"description": ""
+				"description": "Sichtbar für alle Vinou-Mitglieder z.B. über die Netzwerkfunktion"
 			},
 			"internal": {
 				"label": "Internal",
-				"description": ""
+				"description": "Sichtbar für deine Kunden z.B. im Login-Bereich deines Online-Shops"
 			},
 			"public": {
 				"label": "Öffentlich",
-				"description": ""
+				"description": "Sichtbar auf allen öffentlichen Bereichen wie z.B. Webseite (ohne Login)"
 			}
 		},
 		"filters": {
@@ -110,7 +110,15 @@
 			"select": {
 				"all": "Alle auswählen",
 				"none": "Auswahl aufheben"
+			},
+			"general": {
+				"empty": "Alle"
 			}
+		},
+		"toasts": {
+			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
+			"internalchanged": "Sichtbarkeit für deine Kunden geändert",
+			"publicchanged": "öffentliche Sichtbarkeit geändert"
 		}
 	},
 	"loader": {

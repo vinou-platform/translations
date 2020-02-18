@@ -78,6 +78,20 @@
 			"f": "Mrs.",
 			"d": "Divers"
 		},
+		"visibilities": {
+			"network": {
+				"label": "Vinou-Network",
+				"description": "Visible for all Vinou-Members (used in Vinou-Network view for Merchants)"
+			},
+			"internal": {
+				"label": "Internal",
+				"description": "Only visible for your clients for example within the member area on your personal webshop"
+			},
+			"public": {
+				"label": "Public",
+				"description": "Public visible without any login"
+			}
+		},
 		"filters": {
 			"sortBy": {
 				"label": "Sort view by:"
@@ -94,7 +108,15 @@
 			"select": {
 				"all": "Choose all",
 				"none": "Clear selection"
+			},
+			"general": {
+				"empty": "Show all"
 			}
+		},
+		"toasts": {
+			"networkchanged": "Network visibility changed",
+			"internalchanged": "Internal visibility changed",
+			"publicchanged": "Public visibility changed"
 		}
 	},
 	"loader": {
@@ -2210,11 +2232,6 @@
 		},
 		"files": {
 			"title": "Files and documents related to this news entry"
-		},
-		"visibilities": {
-			"private": "Private",
-			"internal": "Internal",
-			"public": "Public"
 		}
 	},
 	"text": {
@@ -2249,11 +2266,6 @@
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this text?"
-		},
-		"visibilities": {
-			"private": "Private",
-			"internal": "Internal",
-			"public": "Public"
 		},
 		"identifier": {
 			"legalnotice": "Legal notice",
