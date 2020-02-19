@@ -4458,7 +4458,7 @@
 		"mulledwine": "Vin chaud",
 		"general":"Autre"
 	},
-	"savours":{
+	"savours": {
 		"categories": {
 			"meat": "Viande",
 			"preparation": "Préparation",
@@ -4466,7 +4466,8 @@
 			"vegetables": "Légume",
 			"styles": "Styles",
 			"bread": "Pain",
-			"sweets": "Confiseries"
+			"sweets": "Confiseries",
+			"occasions": "Occasions"
 		},
 		"beef": "Bœuf",
 		"pork": "Porc",
@@ -4507,7 +4508,17 @@
 		"creme": "Creme",
 		"ice": "Glace",
 		"chocolate": "Chocolat",
-		"coffee": "Café"
+		"coffee": "Café",
+		"barbecue": "Barbecue",
+		"present": "Cadeau",
+		"boysNight": "Soirée entre gentlemen",
+		"girlsNight": "Soirée entre filles",
+		"date": "Rendez-vous",
+		"summerEvening": "Soir d’été",
+		"firesideChat": "Soirée tranquille à la maison",
+		"afterWork": "Temps de fermeture",
+		"easyDrinking": "Boire facilement",
+		"specialOccasions": "Occasions spéciales"
 	},
 	"qualitytypes": {
 		"at": {

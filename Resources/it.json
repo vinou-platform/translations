@@ -4458,7 +4458,7 @@
 		"mulledwine": "Vin brulè",
 		"general": "Altro"
 	},
-	"savours":{
+	"savours": {
 		"categories": {
 			"meat": "Carne",
 			"preparation": "Preparazione",
@@ -4466,7 +4466,8 @@
 			"vegetables": "Verdura",
 			"styles": "Styles",
 			"bread": "Pane",
-			"sweets": "Pasticceria"
+			"sweets": "Pasticceria",
+			"occasions": "Occasioni"
 		},
 		"beef": "Manzo",
 		"pork": "Carne di maiale",
@@ -4507,7 +4508,17 @@
 		"creme": "Creme",
 		"ice": "Ghiaccio",
 		"chocolate": "Cioccolato",
-		"coffee": "Caffè"
+		"coffee": "Caffè",
+		"barbecue": "Barbecue",
+		"present": "Regalo",
+		"boysNight": "Serata tra ragazzi",
+		"girlsNight": "Serata tra ragazze",
+		"date": "Appuntamento",
+		"summerEvening": "Serata estiva",
+		"firesideChat": "Sera camino",
+		"afterWork": "Orario di chiusura",
+		"easyDrinking": "Facile da bere",
+		"specialOccasions": "Occasioni speciali"
 	},
 	"qualitytypes": {
 		"at": {

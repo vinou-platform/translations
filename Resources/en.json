@@ -4645,7 +4645,7 @@
 		"mulledwine": "Mulled wine",
 		"general": "Others"
 	},
-	"savours":{
+	"savours": {
 		"categories": {
 			"meat": "Meat",
 			"preparation": "Preparation",
@@ -4653,7 +4653,8 @@
 			"vegetables": "Vegetables",
 			"styles": "Styles",
 			"bread": "Breads",
-			"sweets": "Sweets"
+			"sweets": "Sweets",
+			"occasions": "Occasions"
 		},
 		"beef": "Beef",
 		"pork": "Pork",
@@ -4694,7 +4695,17 @@
 		"creme": "Creme",
 		"ice": "Ice",
 		"chocolate": "Chocolate",
-		"coffee": "Coffee"
+		"coffee": "Coffee",
+		"barbecue": "Barbecue",
+		"present": "Present",
+		"boysNight": "Boys' night",
+		"girlsNight": "Girls' night",
+		"date": "Date",
+		"summerEvening": "Summer evening",
+		"firesideChat": "Fireside chat",
+		"afterWork": "After work",
+		"easyDrinking": "Easy drinking",
+		"specialOccasions": "Special occasions"
 	},
 	"qualitytypes": {
 		"at": {

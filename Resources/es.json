@@ -4501,7 +4501,7 @@
 		"mulledwine": "vino caliente",
 		"general": "otros"
 	},
-	"savours":{
+	"savours": {
 		"categories": {
 			"meat": "carne",
 			"preparation": "preparación",
@@ -4509,7 +4509,8 @@
 			"vegetables": "verduras",
 			"styles": "estilos",
 			"bread": "pan",
-			"sweets": "dulces"
+			"sweets": "dulces",
+			"occasions": "ocasiones"
 		},
 		"beef": "res",
 		"pork": "cerdo",
@@ -4550,7 +4551,17 @@
 		"creme": "crema",
 		"ice": "hielo",
 		"chocolate": "chocolate",
-		"coffee": "café"
+		"coffee": "café",
+		"barbecue": "barbacoa",
+		"present": "regalo",
+		"boysNight": "noche de chicos",
+		"girlsNight": "noche de chicas",
+		"date": "sita",
+		"summerEvening": "noche de verano",
+		"firesideChat": "noche cómoda en casa",
+		"afterWork": "tiempo de cierre",
+		"easyDrinking": "fácil de beber",
+		"specialOccasions": "ocasiones especiales"
 	},
 	"qualitytypes": {
 		"at": {

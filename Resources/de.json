@@ -4647,7 +4647,7 @@
 		"mulledwine": "Glühwein",
 		"general": "Sonstiges"
 	},
-	"savours":{
+	"savours": {
 		"categories": {
 			"meat": "Fleisch",
 			"preparation": "Zubereitung",
@@ -4655,7 +4655,8 @@
 			"vegetables": "Gemüse",
 			"styles": "Styles",
 			"bread": "Brot",
-			"sweets": "Süßigkeiten"
+			"sweets": "Süßigkeiten",
+			"occasions": "Anlässe"
 		},
 		"beef": "Rind",
 		"pork": "Schwein",
@@ -4696,7 +4697,17 @@
 		"creme": "Creme",
 		"ice": "Eis",
 		"chocolate": "Schokolade",
-		"coffee": "Kaffee"
+		"coffee": "Kaffee",
+		"barbecue": "Grillabend",
+		"present": "Geschenk",
+		"boysNight": "Männerabend",
+		"girlsNight": "Mädelsabend",
+		"date": "Date",
+		"summerEvening": "Sommerabend",
+		"firesideChat": "Kaminabend",
+		"afterWork": "Feierabend",
+		"easyDrinking": "Easy drinking",
+		"specialOccasions": "Besondere Anlässe"
 	},
 	"qualitytypes": {
 		"at": {
