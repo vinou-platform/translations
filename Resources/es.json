@@ -80,15 +80,15 @@
 		},
 		"filters": {
 			"sortBy": {
-				"label": "ordenar muestra por:"
+				"label": "ordenar muestra por: "
 			},
 			"sortDirection": {
-				"label": "direción de clasificación:",
+				"label": "direción de clasificación: ",
 				"asc": "ascendente",
 				"desc": "descendente"
 			},
 			"groupBy": {
-				"label": "agrupar muestra por:",
+				"label": "agrupar muestra por: ",
 				"none": "no clasificación"
 			},
 			"select": {
@@ -127,7 +127,7 @@
 	"wines_modal_delete": "Quieres borrar ese vino seguramente?",
 	"wineries_modal_delete": "Quieres borrar esa propiedad vinícola seguramente?",
 	"category_modal_delete": "Quieres borrar esa categoría seguramente?",
-	"contacts_modal_delete":"Quieres borrar ese contacto seguramente?",
+	"contacts_modal_delete": "Quieres borrar ese contacto seguramente?",
 	"customers_modal_delete": "Quieres borrar ese cliente seguramente?",
 	"users_modules": "modules",
 	"users_modal_delete": "Quieres borrar ese usuario seguramente?",
@@ -184,7 +184,7 @@
 			"clarifyingOnly": "Solo muestra recipientes para la clarificación",
 			"filtrationPurpose": {
 				"label": "uso de combustibles sólidos",
-				"placeholder":"e.j. esparcir como fertilizante en la viña"
+				"placeholder": "e.j. esparcir como fertilizante en la viña"
 			},
 			"lossRelocation": "trasvase del residuo",
 			"lossVolume": "perdida",
@@ -399,10 +399,10 @@
 		"filters": {
 			"label": "restringir muestra",
 			"groupby": {
-				"label": "agrupar muestra por:"
+				"label": "agrupar muestra por: "
 			},
 			"sortby": {
-				"label": "dirección de clasificación:"
+				"label": "dirección de clasificación: "
 			},
 			"showeditor": {
 				"label": "Autor señalar"
@@ -888,7 +888,7 @@
 				"company": "datos de empresa",
 				"contact": "contacto",
 				"field": {
-					"type": "Soy un:"
+					"type": "Soy un: "
 				}
 			},
 			"verify": {
@@ -1346,10 +1346,10 @@
 				"subline": "crear"
 			},
 			"sortby": {
-				"label": "clasificar muestras por:"
+				"label": "clasificar muestras por: "
 			},
 			"sortdirection": {
-				"label": "dirección de clasificación:",
+				"label": "dirección de clasificación: ",
 				"asc": "ascendente",
 				"desc": "descendente"
 			},
@@ -1459,10 +1459,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "clasificar muestra por:"
+				"label": "clasificar muestra por: "
 			},
 			"sortdirection": {
-				"label": "dirección de clasificación:",
+				"label": "dirección de clasificación: ",
 				"asc": "ascendente",
 				"desc": "descendente"
 			}
@@ -1585,10 +1585,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "seleccionar muestra por:"
+				"label": "seleccionar muestra por: "
 			},
 			"sortdirection": {
-				"label": "dirección de clasificación:",
+				"label": "dirección de clasificación: ",
 				"asc": "ascendente",
 				"desc": "descendente"
 			},
@@ -4485,12 +4485,12 @@
 			"18002": "Lodi"
 		}
 	},
-	"winetypes":{
+	"winetypes": {
 		"red": "vino tinto",
 		"white": "vino blanco",
 		"rose": "vino rosado",
 		"rotling": "Rotling",
-		"secco": "Secco",
+		"secco": "vino frizzante",
 		"sparkling": "cava",
 		"destilate": "espíritu",
 		"grapeJuice": "zumo de uva",

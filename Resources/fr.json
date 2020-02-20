@@ -88,7 +88,7 @@
 				"desc": "descendant"
 			},
 			"groupBy": {
-				"label": "Regroupement des vues après:",
+				"label": "Regroupement des vues après: ",
 				"none": "Pas de regroupement"
 			},
 			"select": {
@@ -127,7 +127,7 @@
 	"wines_modal_delete": "Voulez-vous vraiment supprimer ce vin?",
 	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
 	"category_modal_delete": "Voulez-vous vraiment supprimer cette catégorie?",
-	"contacts_modal_delete":"Voulez-vous vraiment supprimer cette personne de contact?",
+	"contacts_modal_delete": "Voulez-vous vraiment supprimer cette personne de contact?",
 	"customers_modal_delete": "Voulez-vous vraiment supprimer ce membre?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Voulez-vous vraiment supprimer cet utilisateurs?",
@@ -399,10 +399,10 @@
 		"filters": {
 			"label": "Restreindre vue",
 			"groupby": {
-				"label": "Grouper vue par:"
+				"label": "Grouper vue par: "
 			},
 			"sortby": {
-				"label": "Direction du tri:"
+				"label": "Direction du tri: "
 			},
 			"showeditor": {
 				"label": "Afficher détecteur"
@@ -888,7 +888,7 @@
 				"company": "Données de l'entreprise",
 				"contact": "Personne de contact",
 				"field": {
-					"type": "Je suis:"
+					"type": "Je suis: "
 				}
 			},
 			"verify": {
@@ -1306,7 +1306,7 @@
 				"label": "Trier vue par"
 			},
 			"sortdirection": {
-				"label": "Direction de tri:",
+				"label": "Direction de tri: ",
 				"asc": "Ascendant",
 				"desc": "Descendant"
 			},
@@ -1416,10 +1416,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Trier la vue par:"
+				"label": "Trier la vue par: "
 			},
 			"sortdirection": {
-				"label": "Direction de tri:",
+				"label": "Direction de tri: ",
 				"asc": "Ascendant",
 				"desc": "Descendant"
 			}
@@ -1542,10 +1542,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Trier la vue par:"
+				"label": "Trier la vue par: "
 			},
 			"sortdirection": {
-				"label": "Direction de tri:",
+				"label": "Direction de tri: ",
 				"asc": "Ascendant",
 				"desc": "Descendant"
 			},
@@ -4214,77 +4214,77 @@
 	},
 	"wineregions": {
 		"at": {
-			"8000":"Wachau",
-			"8001":"Kremstal",
-			"8002":"Kamptal",
-			"8003":"Traisental",
-			"8004":"Wagram",
-			"8005":"Weinviertel",
-			"8006":"Carnuntum",
-			"8007":"Thermenregion",
-			"8008":"Neusiedlersee",
-			"8009":"Leithaberg",
-			"8010":"Rosalia",
-			"8011":"Mittelburgenland",
-			"8012":"Eisenberg",
-			"8013":"Vienne",
-			"8014":"Volcan pays Styrie",
-			"8015":"Südsteiermark",
-			"8016":"Styrie Ouest",
-			"8017":"Bergland"
+			"8000": "Wachau",
+			"8001": "Kremstal",
+			"8002": "Kamptal",
+			"8003": "Traisental",
+			"8004": "Wagram",
+			"8005": "Weinviertel",
+			"8006": "Carnuntum",
+			"8007": "Thermenregion",
+			"8008": "Neusiedlersee",
+			"8009": "Leithaberg",
+			"8010": "Rosalia",
+			"8011": "Mittelburgenland",
+			"8012": "Eisenberg",
+			"8013": "Vienne",
+			"8014": "Volcan pays Styrie",
+			"8015": "Südsteiermark",
+			"8016": "Styrie Ouest",
+			"8017": "Bergland"
 		},
 		"be": {
-			"3000":"Hageland (VL)",
-			"3001":"Hesbaye (VL)",
-			"3002":"Heuvelland (VL)",
-			"3003":"Côtes de Sambre et Meuse (WA)"
+			"3000": "Hageland (VL)",
+			"3001": "Hesbaye (VL)",
+			"3002": "Heuvelland (VL)",
+			"3003": "Côtes de Sambre et Meuse (WA)"
 		},
 		"bg": {
-			"4000":"plaine du Danube",
-			"4001":"Région de la Mer Noire",
-			"4002":"Rosental",
-			"4003":"Oberthrakische bas niveau",
-			"4004":"Struma Valley"
+			"4000": "plaine du Danube",
+			"4001": "Région de la Mer Noire",
+			"4002": "Rosental",
+			"4003": "Oberthrakische bas niveau",
+			"4004": "Struma Valley"
 		},
 		"de": {
-			"1000":"Ahr",
-			"1001":"Baden",
-			"1002":"Franken",
-			"1003":"Hessische Bergstraße",
-			"1004":"Mittelrhein",
-			"1005":"Mosel",
-			"1006":"Nahe",
-			"1007":"Pfalz",
-			"1008":"Rheingau",
-			"1009":"Rheinhessen",
-			"1010":"Saale-Unstrut-Region",
-			"1011":"Sachsen",
-			"1012":"Württemberg"
+			"1000": "Ahr",
+			"1001": "Baden",
+			"1002": "Franken",
+			"1003": "Hessische Bergstraße",
+			"1004": "Mittelrhein",
+			"1005": "Mosel",
+			"1006": "Nahe",
+			"1007": "Pfalz",
+			"1008": "Rheingau",
+			"1009": "Rheinhessen",
+			"1010": "Saale-Unstrut-Region",
+			"1011": "Sachsen",
+			"1012": "Württemberg"
 		},
 		"en": {
 		},
 		"es": {
-			"12000":"Denominación de Origen",
-			"12001":"Vinos de Calidad V.C.P.R.D.",
-			"12002":"Vinos de la Tierra",
-			"12003":"Vino de Mesa",
-			"12004":"Andalousie",
-			"12005":"Asturias",
-			"12006":"Aragon",
-			"12007":"Îles Baléares",
-			"12008":"pays Basque",
-			"12009":"Iles Canaries",
-			"12010":"Cantabria",
-			"12011":"Castille-La Manche",
-			"12012":"Castille et León",
-			"12013":"Catalogne",
-			"12014":"Estrémadure",
-			"12015":"Galice",
-			"12016":"La Rioja",
-			"12017":"Communauté de Madrid",
-			"12018":"Murcia",
-			"12019":"Navarra",
-			"12020":"Valencia",
+			"12000": "Denominación de Origen",
+			"12001": "Vinos de Calidad V.C.P.R.D.",
+			"12002": "Vinos de la Tierra",
+			"12003": "Vino de Mesa",
+			"12004": "Andalousie",
+			"12005": "Asturias",
+			"12006": "Aragon",
+			"12007": "Îles Baléares",
+			"12008": "pays Basque",
+			"12009": "Iles Canaries",
+			"12010": "Cantabria",
+			"12011": "Castille-La Manche",
+			"12012": "Castille et León",
+			"12013": "Catalogne",
+			"12014": "Estrémadure",
+			"12015": "Galice",
+			"12016": "La Rioja",
+			"12017": "Communauté de Madrid",
+			"12018": "Murcia",
+			"12019": "Navarra",
+			"12020": "Valencia",
 			"12021": "Penedès",
 			"12022": "Prieuré",
 			"12023": "Terra Alta",
@@ -4297,20 +4297,20 @@
 			"12030": "Carinena"
 		},
 		"fr": {
-			"2000":"Alsace",
-			"2001":"Armagnac",
-			"2002":"Bordeaux",
-			"2003":"Bourgogne",
-			"2004":"Champagne",
-			"2005":"Cognac",
-			"2006":"Corse",
-			"2007":"Jura",
-			"2009":"Languedoc-Roussillon",
-			"2010":"Provence",
-			"2011":"Savoie",
-			"2012":"Sud-Ouest",
-			"2013":"Vallée de la Loire",
-			"2014":"Vallée du Rhône",
+			"2000": "Alsace",
+			"2001": "Armagnac",
+			"2002": "Bordeaux",
+			"2003": "Bourgogne",
+			"2004": "Champagne",
+			"2005": "Cognac",
+			"2006": "Corse",
+			"2007": "Jura",
+			"2009": "Languedoc-Roussillon",
+			"2010": "Provence",
+			"2011": "Savoie",
+			"2012": "Sud-Ouest",
+			"2013": "Vallée de la Loire",
+			"2014": "Vallée du Rhône",
 			"2015": "Roussillon",
 			"2016": "Côtes de Provence",
 			"2017": "Chablis",
@@ -4318,80 +4318,80 @@
 			"2019": "Loire"
 		},
 		"gr": {
-			"5000":"Thrace",
-			"5001":"Macédoine",
-			"5002":"Épire",
-			"5003":"Thessalie",
-			"5004":"Grèce centrale",
-			"5005":"Grèce centrale",
-			"5006":"Attique",
-			"5007":"Îles ioniennes",
-			"5009":"Péloponnèse",
-			"5010":"Égée méridionale",
-			"5011":"Cyclades",
-			"5012":"Dodécanèse",
-			"5013":"Égée septentrionale",
-			"5014":"Crète"
+			"5000": "Thrace",
+			"5001": "Macédoine",
+			"5002": "Épire",
+			"5003": "Thessalie",
+			"5004": "Grèce centrale",
+			"5005": "Grèce centrale",
+			"5006": "Attique",
+			"5007": "Îles ioniennes",
+			"5009": "Péloponnèse",
+			"5010": "Égée méridionale",
+			"5011": "Cyclades",
+			"5012": "Dodécanèse",
+			"5013": "Égée septentrionale",
+			"5014": "Crète"
 		},
 		"hu": {
 		},
 		"it": {
-			"6000":"Abruzzes",
-			"6001":"Vallée d'Aoste",
-			"6002":"Pouilles",
-			"6003":"Basilicate",
-			"6004":"Emilie-Romagne",
-			"6005":"Frioul Vénétie Julienne",
-			"6006":"Calabre",
-			"6007":"Campanie",
-			"6008":"Lazio",
-			"6009":"Ligurie",
-			"6010":"Lombardie",
-			"6011":"marques",
-			"6012":"Molise",
-			"6013":"Piémont",
-			"6014":"Sardaigne",
-			"6015":"Sicile",
-			"6016":"toscane",
-			"6017":"Trentin-Haut-Adige",
-			"6018":"Ombrie",
-			"6019":"Vénétie"
+			"6000": "Abruzzes",
+			"6001": "Vallée d'Aoste",
+			"6002": "Pouilles",
+			"6003": "Basilicate",
+			"6004": "Emilie-Romagne",
+			"6005": "Frioul Vénétie Julienne",
+			"6006": "Calabre",
+			"6007": "Campanie",
+			"6008": "Lazio",
+			"6009": "Ligurie",
+			"6010": "Lombardie",
+			"6011": "marques",
+			"6012": "Molise",
+			"6013": "Piémont",
+			"6014": "Sardaigne",
+			"6015": "Sicile",
+			"6016": "toscane",
+			"6017": "Trentin-Haut-Adige",
+			"6018": "Ombrie",
+			"6019": "Vénétie"
 		},
 		"mt": {
 		},
 		"nl": {
-			"7000":"Limburg",
-			"7001":"achterhoek",
-			"7002":"Village viticole Groesbeek",
-			"7003":"Betuwe",
-			"7004":"Veluwe",
-			"7005":"Zélande"
+			"7000": "Limburg",
+			"7001": "achterhoek",
+			"7002": "Village viticole Groesbeek",
+			"7003": "Betuwe",
+			"7004": "Veluwe",
+			"7005": "Zélande"
 		},
 		"pt": {
-			"9000":"Vinho Verde",
-			"9001":"Douro",
-			"9002":"Dão",
-			"9003":"Estremadura",
-			"9004":"Terras do Sado",
-			"9005":"Alentejo",
-			"9006":"Madère",
-			"9007":"Açores",
-			"9008":"Tage (Ribatejo)"
+			"9000": "Vinho Verde",
+			"9001": "Douro",
+			"9002": "Dão",
+			"9003": "Estremadura",
+			"9004": "Terras do Sado",
+			"9005": "Alentejo",
+			"9006": "Madère",
+			"9007": "Açores",
+			"9008": "Tage (Ribatejo)"
 		},
 		"ro": {
-			"10000":"Moldavie",
-			"10001":"Valachie",
-			"10002":"Munténie (Grande Valachie)",
-			"10003":"Olténie (Petite Valachie)",
-			"10004":"Transylvanie (Transylvanie)",
-			"10005":"Dobrogée (Dobroudja)",
-			"10006":"Banat",
-			"10007":"Crişana (zone hurlante)"
+			"10000": "Moldavie",
+			"10001": "Valachie",
+			"10002": "Munténie (Grande Valachie)",
+			"10003": "Olténie (Petite Valachie)",
+			"10004": "Transylvanie (Transylvanie)",
+			"10005": "Dobrogée (Dobroudja)",
+			"10006": "Banat",
+			"10007": "Crişana (zone hurlante)"
 		},
 		"si": {
-			"11000":"Drautal (Podravje)",
-			"11001":"Côte adriatique (Primorska)",
-			"11002":"Sauver la vallée (Posavje)"
+			"11000": "Drautal (Podravje)",
+			"11001": "Côte adriatique (Primorska)",
+			"11002": "Sauver la vallée (Posavje)"
 		},
 		"sx": {
 		},
@@ -4442,21 +4442,21 @@
 			"18002": "Lodi"
 		}
 	},
-	"winetypes":{
-		"red":"Rouge",
-		"white":"Blanc",
-		"rose":"Rosé",
-		"rotling":"Rotling",
+	"winetypes": {
+		"red": "Rouge",
+		"white": "Blanc",
+		"rose": "Rosé",
+		"rotling": "Rotling",
 		"secco": "Secco",
-		"sparkling":"Champagne",
-		"destilate":"Spiritueux",
+		"sparkling": "Champagne",
+		"destilate": "Spiritueux",
 		"grapeJuice": "Jus de raisin",
 		"wineBasedDrink": "Boisson à base de vin",
 		"spritzer": "Vin coupé d'eau gazeuse",
 		"vingris": "Variété de vin rosé allemand",
 		"nonalcoholic": "Sans alcool",
 		"mulledwine": "Vin chaud",
-		"general":"Autre"
+		"general": "Autre"
 	},
 	"savours": {
 		"categories": {

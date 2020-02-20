@@ -94,15 +94,15 @@
 		},
 		"filters": {
 			"sortBy": {
-				"label": "Sort view by:"
+				"label": "Sort view by: "
 			},
 			"sortDirection": {
-				"label": "Sort direction:",
+				"label": "Sort direction: ",
 				"asc": "Ascending",
 				"desc": "Descending"
 			},
 			"groupBy": {
-				"label": "Group view by:",
+				"label": "Group view by: ",
 				"none": "No grouping"
 			},
 			"select": {
@@ -143,13 +143,13 @@
 			"quickActions": "Quick actions"
 		}
 	},
-	"delete_image":"Delete Image",
-	"delete_image_secure":"Do you really want to delete the image?",
-	"changepw":"Change password",
-	"wines_modal_delete":"Do you really want to delete this wine?",
+	"delete_image": "Delete Image",
+	"delete_image_secure": "Do you really want to delete the image?",
+	"changepw": "Change password",
+	"wines_modal_delete": "Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete the selected winery?",
 	"category_modal_delete": "Do you really want to delete the selected category?",
-	"contacts_modal_delete":"Do you really want to delete the selected contact?",
+	"contacts_modal_delete": "Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Do you really want to delete this user?",
@@ -421,10 +421,10 @@
 		"filters": {
 			"label": "Filter view",
 			"groupby": {
-				"label": "Group view by:"
+				"label": "Group view by: "
 			},
 			"sortby": {
-				"label": "Sort view by:"
+				"label": "Sort view by: "
 			},
 			"showeditor": {
 				"label": "Show editor"
@@ -909,7 +909,7 @@
 				"company": "Company",
 				"contact": "Contact",
 				"field": {
-					"type": "I'm a:"
+					"type": "I'm a: "
 				}
 			},
 			"verify": {
@@ -1324,10 +1324,10 @@
 				"subline": " "
 			},
 			"sortby": {
-				"label": "Sort view by:"
+				"label": "Sort view by: "
 			},
 			"sortdirection": {
-				"label": "Sort direction:",
+				"label": "Sort direction: ",
 				"asc": "Ascending",
 				"desc": "Descending"
 			},
@@ -1437,10 +1437,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Sort view by:"
+				"label": "Sort view by: "
 			},
 			"sortdirection": {
-				"label": "Sort direction:",
+				"label": "Sort direction: ",
 				"asc": "Ascending",
 				"desc": "Descending"
 			}
@@ -1563,10 +1563,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Sort list by:"
+				"label": "Sort list by: "
 			},
 			"sortdirection": {
-				"label": "Direction:",
+				"label": "Direction: ",
 				"asc": "Ascending",
 				"desc": "Descending"
 			},
@@ -1598,7 +1598,7 @@
 			"phone": "Phone",
 			"fax": "Fax",
 			"active": "active",
-			"department":"Department",
+			"department": "Department",
 			"image": "Logo",
 			"type": "Type",
 			"pricerange": "Price range",
@@ -2168,10 +2168,10 @@
 	"news": {
 		"gallery": {
 			"sortby": {
-				"label": "Sort view by:"
+				"label": "Sort view by: "
 			},
 			"sortdirection": {
-				"label": "Sort direction:",
+				"label": "Sort direction: ",
 				"asc": "Ascending",
 				"desc": "Descending"
 			},
@@ -4629,12 +4629,12 @@
 			"18002": "Lodi"
 		}
 	},
-	"winetypes":{
+	"winetypes": {
 		"red": "Redwine",
 		"white": "Whitewine",
 		"rose": "Rosé",
 		"rotling": "Rotling",
-		"secco": "Secco",
+		"secco": "Semi-sparkling wine",
 		"sparkling": "Champagne",
 		"destilate": "Spirits",
 		"grapeJuice": "Grape juice",

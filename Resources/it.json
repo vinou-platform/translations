@@ -80,15 +80,15 @@
 		},
 		"filters": {
 			"sortBy": {
-				"label": "Ordina la vista per:"
+				"label": "Ordina la vista per: "
 			},
 			"sortDirection": {
-				"label": "Direzione di ordinamento:",
+				"label": "Direzione di ordinamento: ",
 				"asc": "Ascendente",
 				"desc": "Discendente"
 			},
 			"groupBy": {
-				"label": "Raggruppamento dopo:",
+				"label": "Raggruppamento dopo: ",
 				"none": "Nessun raggruppamento"
 			},
 			"select": {
@@ -127,7 +127,7 @@
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
 	"category_modal_delete": "Vuoi veramente cancellare questa categoria",
-	"contacts_modal_delete":"Vuoi veramente cancellare questo contatto",
+	"contacts_modal_delete": "Vuoi veramente cancellare questo contatto",
 	"customers_modal_delete": "Vuoi veramente cancellare questo cliente?",
 	"users_modules": "Moduli",
 	"users_modal_delete": "Vuoi veramente cancellare questo utente",
@@ -399,10 +399,10 @@
 		"filters": {
 			"label": "Limitare vista",
 			"groupby": {
-				"label": "Ordina la vista per:"
+				"label": "Ordina la vista per: "
 			},
 			"sortby": {
-				"label": "Direzione di ordinamento:"
+				"label": "Direzione di ordinamento: "
 			},
 			"showeditor": {
 				"label": "Mostra editor"
@@ -888,7 +888,7 @@
 				"company": "Dati di azienda",
 				"contact": "interlocutore",
 				"field": {
-					"type": "sono un:"
+					"type": "sono un: "
 				}
 			},
 			"verify": {
@@ -1303,10 +1303,10 @@
 				"subline": "creare"
 			},
 			"sortby": {
-				"label": "Ordina vista per:"
+				"label": "Ordina vista per: "
 			},
 			"sortdirection": {
-				"label": "Direzione di ordinamento:",
+				"label": "Direzione di ordinamento: ",
 				"asc": "Ascendente",
 				"desc": "Discendente"
 			},
@@ -1416,7 +1416,7 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Ordina la vista per:"
+				"label": "Ordina la vista per: "
 			},
 			"sortdirection": {
 				"label": "Direzione di ordinamento",
@@ -1542,10 +1542,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Ordina la vista per:"
+				"label": "Ordina la vista per: "
 			},
 			"sortdirection": {
-				"label": "Direzione di ordinamento:",
+				"label": "Direzione di ordinamento: ",
 				"asc": "Ascendente",
 				"desc": "Discendente"
 			},
@@ -1784,7 +1784,7 @@
 			"processing_data": "I dati vengono elaborati ...",
 			"brutto_sum": "Totale lordo",
 			"cashback": "Sconto (in %)",
-			"cashbacksum": "Uno sconto dell {cashback}% Skonto ({cashbackPeriod} giorni) è concesso su questo ordine.Importo del pagamento:{grossCashback}.",
+			"cashbacksum": "Uno sconto dell {cashback}% Skonto ({cashbackPeriod} giorni) è concesso su questo ordine.Importo del pagamento: {grossCashback}.",
 			"cashback_period": "Periodo di remissione (tra giorni)",
 			"delivery_note_created": "La bolla di consegna è stato creata.",
 			"delivery_note_not_yet_created": "La bolla di consegna non è stata ancora creata",
@@ -4442,7 +4442,7 @@
 			"18002": "Lodi"
 		}
 	},
-	"winetypes":{
+	"winetypes": {
 		"red": "Rosso",
 		"white": "Bianco",
 		"rose": "Rosato",

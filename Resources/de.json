@@ -96,15 +96,15 @@
 		},
 		"filters": {
 			"sortBy": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortDirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
 			"groupBy": {
-				"label": "Ansicht gruppieren nach:",
+				"label": "Ansicht gruppieren nach: ",
 				"none": "Keine Gruppierung"
 			},
 			"select": {
@@ -151,7 +151,7 @@
 	"wines_modal_delete": "Möchtest du diesen Wein wirklich löschen?",
 	"wineries_modal_delete": "Möchtest du dieses Weingut wirklich löschen?",
 	"category_modal_delete": "Möchtest du diese Kategorie wirklich löschen?",
-	"contacts_modal_delete":"Möchtest du diesen Kontakt wirklich löschen?",
+	"contacts_modal_delete": "Möchtest du diesen Kontakt wirklich löschen?",
 	"customers_modal_delete": "Möchtest du diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
 	"users_modal_delete": "Möchtest du diesen Benutzer wirklich löschen?",
@@ -423,10 +423,10 @@
 		"filters": {
 			"label": "Ansicht einschränken",
 			"groupby": {
-				"label": "Ansicht gruppieren nach:"
+				"label": "Ansicht gruppieren nach: "
 			},
 			"sortby": {
-				"label": "Sortierrichtung:"
+				"label": "Sortierrichtung: "
 			},
 			"showeditor": {
 				"label": "Erfasser anzeigen"
@@ -911,7 +911,7 @@
 				"company": "Firmendaten",
 				"contact": "Kontaktperson",
 				"field": {
-					"type": "Ich bin ein:"
+					"type": "Ich bin ein: "
 				}
 			},
 			"verify": {
@@ -1326,10 +1326,10 @@
 				"subline": "anlegen"
 			},
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
@@ -1439,10 +1439,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			}
@@ -1565,10 +1565,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
@@ -2170,10 +2170,10 @@
 	"news": {
 		"gallery": {
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
@@ -4631,12 +4631,12 @@
 			"18002": "Lodi"
 		}
 	},
-	"winetypes":{
+	"winetypes": {
 		"red": "Rotwein",
 		"white": "Weißwein",
 		"rose": "Rosé",
 		"rotling": "Rotling",
-		"secco": "Secco",
+		"secco": "Perlwein",
 		"sparkling": "Sekt",
 		"destilate": "Spirituosen",
 		"grapeJuice": "Traubensaft",
