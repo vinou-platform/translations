@@ -15,6 +15,9 @@ class TwigExtension extends \Twig_Extension {
 	public function getFilters() {
 		return array(
 			new \Twig_Filter('translate', array(&$this, 'translate')),
+			new \Twig_Filter('getLLArray', array(&$this, 'getLLArray')),
+			new \Twig_Filter('sortKeysByArray', array(&$this, 'sortKeysByArray')),
+			new \Twig_Filter('sortByArray', array(&$this, 'sortByArray')),
 		);
 	}
 
@@ -37,5 +40,27 @@ class TwigExtension extends \Twig_Extension {
 				$v = $this->forceArray($v);
 		}
 		return $a;
+	}
+
+	public function getLLArray($key, $countryCode = null, $args = null) {
+		return $this->translator->get($countryCode, $key, $args);
+	}
+
+	public function sortKeysByArray($array, $sortArray) {
+		$result = [];
+		foreach ($sortArray as $key) {
+			if (array_key_exists($key, $array))
+				$result[$key] = $array[$key];
+		}
+		return $result;
+	}
+
+	public function sortByArray($array, $sortArray) {
+		$result = [];
+		foreach ($sortArray as $value) {
+			if (in_array($value, $array))
+				$result[] = $value;
+		}
+		return $result;
 	}
 }
