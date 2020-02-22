@@ -62,7 +62,11 @@
 			"phoneAction": "{name} anrufen",
 			"faxAction": "Fax an {name} senden",
 			"mailAction": "E-Mail an {name} schreiben",
-			"wwwAction": "Internetseite von {name} besuchen"
+			"wwwAction": "Internetseite von {name} besuchen",
+			"copyOf": {
+				"1": "Kopie von {name}",
+				"n": "Kopie {n} von {name}"
+			}
 		},
 		"tabs": {
 			"general": "Allgemein",

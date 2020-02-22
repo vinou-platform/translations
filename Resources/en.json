@@ -62,7 +62,13 @@
 			"phoneAction": "Call {name}",
 			"faxAction": "Send fax to {name}",
 			"mailAction": "Send email to {name}",
-			"wwwAction": "Visit website of {name}"
+			"wwwAction": "Visit website of {name}",
+			"copyOf": {
+				"1": "Copy of {name}",
+				"2": "2nd copy of {name}",
+				"3": "3rd copy of {name}",
+				"n": "{n}th copy of {name}"
+			}
 		},
 		"tabs": {
 			"general": "General",
