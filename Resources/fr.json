@@ -95,6 +95,14 @@
 			"public": {
 				"label": "Public",
 				"description": "Public visible sans aucune connexion"
+			},
+			"shop": {
+				"label": "Shop",
+				"description": "Visible dans votre boutique"
+			},
+			"winesearch": {
+				"label": "WINESEARCH.io",
+				"description": "Visible par le moteur de recherche de vins <a href=\"https://WINESEARCH.io\">WINESEARCH.io</a>"
 			}
 		},
 		"filters": {
@@ -1593,7 +1601,9 @@
 			"mail": "Courriel",
 			"www": "Site Web",
 			"phone": "Téléphone",
+			"mobile": "Portable",
 			"fax": "Fax",
+			"newsletter": "Bulletin approuvé",
 			"active": "aktif",
 			"image": "Logo",
 			"department": "Département",

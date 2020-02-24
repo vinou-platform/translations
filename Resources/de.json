@@ -95,6 +95,14 @@
 			"public": {
 				"label": "Öffentlich",
 				"description": "Sichtbar auf allen öffentlichen Bereichen wie z.B. Webseite (ohne Login)"
+			},
+			"shop": {
+				"label": "Shop",
+				"description": "Sichtbar in deinem Shop"
+			},
+			"winesearch": {
+				"label": "WINESEARCH.io",
+				"description": "Sichtbar in der Weinsuchmaschine <a href=\"https://WINESEARCH.io\">WINESEARCH.io</a>"
 			}
 		},
 		"filters": {
@@ -1279,10 +1287,6 @@
 			"inwinelist": "In Weinliste anzeigen",
 			"maturation": "Ausbau",
 			"name": "Name",
-			"networkvisibility": {
-				"label": "Zeige diesen Wein im Netzwerk",
-				"description": "Wenn dein Wein nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
-			},
 			"nostock": "ausgetrunken",
 			"nostocktext": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
 			"public_wines": "Öffentliche Weine",
@@ -1411,10 +1415,6 @@
 			"crstamp": "Erstellungsdatum",
 			"inshop": "Im Shop anzeigen",
 			"inwinelist": "In Weinliste anzeigen",
-			"networkvisibility": {
-				"label": "Zeige diese Kategorie im Netzwerk",
-				"description": "Wenn die Kategorie nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
-			},
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)"
 		},
 		"actions": {
@@ -1600,7 +1600,9 @@
 			"mail": "E-Mail",
 			"www": "Internetseite",
 			"phone": "Telefon",
+			"mobile": "Mobil",
 			"fax": "Fax",
+			"newsletter": "Newsletter approved",
 			"active": "aktiv",
 			"image": "Logo",
 			"department": "Abteilung",

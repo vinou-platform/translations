@@ -95,6 +95,14 @@
 			"public": {
 				"label": "Public",
 				"description": "Visibile al pubblico senza alcun accesso"
+			},
+			"shop": {
+				"label": "Shop",
+				"description": "Visibile nel tuo negozio"
+			},
+			"winesearch": {
+				"label": "WINESEARCH.io",
+				"description": "Visibile al motore di ricerca del vino <a href=\"https://WINESEARCH.io\">WINESEARCH.io</a>"
 			}
 		},
 		"filters": {
@@ -1593,7 +1601,9 @@
 			"mail": "E-Mail",
 			"www": "Sito web",
 			"phone": "Telefono",
+			"mobile": "Cellulare",
 			"fax": "Fax",
+			"newsletter": "Newsletter approvata",
 			"active": "Attivamente",
 			"image": "Logo",
 			"department": "Reparto",
