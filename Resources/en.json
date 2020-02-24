@@ -88,7 +88,7 @@
 		"visibilities": {
 			"network": {
 				"label": "Vinou-Network",
-				"description": "Visible for all Vinou-Members (used in Vinou-Network view for Merchants)"
+				"description": "Visible to all Vinou members e.g. via the network function"
 			},
 			"internal": {
 				"label": "Internal",

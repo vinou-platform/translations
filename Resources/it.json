@@ -83,6 +83,20 @@
 			"d": "Divers",
 			"fam": "Famiglia"
 		},
+		"visibilities": {
+			"network": {
+				"label": "Vinou-Network",
+				"description": "Visibile a tutti i membri di Vinou, ad es. tramite la funzione di rete"
+			},
+			"internal": {
+				"label": "Internal",
+				"description": "Visibile solo per i tuoi clienti, ad esempio all'interno dell'area riservata al tuo negozio online personale"
+			},
+			"public": {
+				"label": "Public",
+				"description": "Visibile al pubblico senza alcun accesso"
+			}
+		},
 		"filters": {
 			"sortBy": {
 				"label": "Ordina la vista per: "
