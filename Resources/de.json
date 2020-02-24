@@ -81,8 +81,7 @@
 			"m": "Herr",
 			"f": "Frau",
 			"d": "Divers",
-			"fam": "Familie",
-			"inc": "Firma"
+			"fam": "Familie"
 		},
 		"visibilities": {
 			"network": {
@@ -166,7 +165,6 @@
 	"orders_modal_sent": "Möchtest du die Bestellung als Versendet markieren?",
 	"orders_position_delete": "Möchtest du diese Position wirklich löschen?",
 	"orders_position_update": "Möchtest du diese Position wirklich anpassen?",
-	"orders_position_add": "Möchtest du diese Position wirklich hinzufügen?",
 	"orders_modal_invoice_create": "Möchtest du Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",

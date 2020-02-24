@@ -80,7 +80,8 @@
 		"gender": {
 			"m": "Signor",
 			"f": "Signora",
-			"d": "Divers"
+			"d": "Divers",
+			"fam": "Famiglia"
 		},
 		"filters": {
 			"sortBy": {
@@ -142,7 +143,6 @@
 	"orders_modal_sent": "Vuoi contrassegnare l'ordine come inviato?",
 	"orders_position_delete": "Vuoi veramente cancellare questo posto?",
 	"orders_position_update": "Vuoi veramente adattare questo posto?",
-	"orders_position_add": "Vuoi veramente aggiungere questo posto?",
 	"orders_modal_invoice_create": "Vuoi generare bolletta e bolla di consegna per l'ordine",
 	"orders_modal_onlyinvoice_create": "Crea boletta ora",
 	"orders_modal_onlydelivery_create": "Crea bolla di consegna ora",

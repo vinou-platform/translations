@@ -80,7 +80,8 @@
 		"gender": {
 			"m": "Monsieur",
 			"f": "Madame",
-			"d": "Divers"
+			"d": "Divers",
+			"fam": "Famille"
 		},
 		"filters": {
 			"sortBy": {
@@ -142,7 +143,6 @@
 	"orders_modal_sent": "Voulez-vous vraiment marquer cet ordre comme expédiée",
 	"orders_position_delete": "Voulez-vous vraiment supprimer cette position?",
 	"orders_position_update": "Voulez-vous vraiment ajuster cette position?",
-	"orders_position_add": "Voulez-vous vraiment ajouter cette position?",
 	"orders_modal_invoice_create": "Voulez-vous créer cette ordre avec facture et bon de livraison",
 	"orders_modal_onlyinvoice_create": "Créer facture maintenant?",
 	"orders_modal_onlydelivery_create": "Créer bon de livraison maintenant?",

@@ -36,7 +36,7 @@
 		"fields": {
 			"default": "Default",
 			"empty": "Please select",
-			"please_select": "Please select",
+			"none": "No information",
 			"required": "Required",
 			"upload_image": "Select image to upload",
 			"search_placeholder": "Name or description",
@@ -82,7 +82,8 @@
 		"gender": {
 			"m": "Mr.",
 			"f": "Mrs.",
-			"d": "Divers"
+			"d": "Divers",
+			"fam": "Family"
 		},
 		"visibilities": {
 			"network": {
@@ -166,7 +167,6 @@
 	"orders_modal_sent": "Do you really want to set this order as dispatched?",
 	"orders_position_delete": "Do you really want to delete this item?",
 	"orders_position_update": "Do you really want to update this item?",
-	"orders_position_add": "Do you really want to add this item",
 	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
 	"orders_modal_onlyinvoice_create": "Create invoice now?",
 	"orders_modal_onlydelivery_create": "Create delivery note now?",
@@ -222,11 +222,11 @@
 				"label": "Purpose",
 				"placeholder": " "
 			},
-			"sludgeLiquidation": "Sludge liquidation?",
 			"sludgePurpose": {
 				"label": "Purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
 			},
+			"sludgeRelocation": "Sludge relocation?",
 			"sludgeVolume": "Sludge",
 			"sourceBarrel": {
 				"label": "Source barrel",

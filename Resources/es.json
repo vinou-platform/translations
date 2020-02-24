@@ -80,7 +80,8 @@
 		"gender": {
 			"m": "Señor",
 			"f": "Señora",
-			"d": "diverso"
+			"d": "diverso",
+			"fam": "familia"
 		},
 		"filters": {
 			"sortBy": {
@@ -142,7 +143,6 @@
 	"orders_modal_sent": "Quieres marcar ese orden como Enviado?",
 	"orders_position_delete": "Quieres borrar esa posición seguramente?",
 	"orders_position_update": "Quieres adaptar esa posición seguramente?",
-	"orders_position_add": "Quieres añadir esa posición seguramente?!",
 	"orders_modal_invoice_create": "Quieres generar la cuenta y el boletín de entrega para el envío?",
 	"orders_modal_onlyinvoice_create": "Generar la cuenta ahora?",
 	"orders_modal_onlydelivery_create": "Generar el boletín de entrega ahora?",
