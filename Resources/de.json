@@ -102,7 +102,7 @@
 			},
 			"winesearch": {
 				"label": "WINESEARCH.io",
-				"description": "Sichtbar in der Weinsuchmaschine <a href=\"https://WINESEARCH.io\">WINESEARCH.io</a>"
+				"description": "Sichtbar in der Weinsuchmaschine <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
 			}
 		},
 		"filters": {
