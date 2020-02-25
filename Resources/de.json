@@ -31,7 +31,8 @@
 	"general": {
 		"fieldSets": {
 			"general": "Allgemein",
-			"settings": "Einstellungen"
+			"settings": "Einstellungen",
+			"visibility": "Sichtbarkeit"
 		},
 		"fields": {
 			"default": "Standard",
@@ -89,7 +90,7 @@
 				"description": "Sichtbar für alle Vinou-Mitglieder z.B. über die Netzwerkfunktion"
 			},
 			"internal": {
-				"label": "Internal",
+				"label": "Intern",
 				"description": "Sichtbar für deine Kunden z.B. im Login-Bereich deines Online-Shops"
 			},
 			"public": {

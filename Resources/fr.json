@@ -31,7 +31,8 @@
 	"general": {
 		"fieldSets": {
 			"general": "Général",
-			"settings": "Configuration"
+			"settings": "Configuration",
+			"visibility": "Visibilité"
 		},
 		"fields": {
 			"default": "Standard",
