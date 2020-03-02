@@ -4486,8 +4486,8 @@
 		"wineBasedDrink": "Bevanda a base di vino",
 		"spritzer": "Vino tagliato con acqua frizzante",
 		"vingris": "Varietà di vino rosato tedesco",
-		"nonalcoholic": "Analcolico",
-		"mulledwine": "Vin brulè",
+		"nonAlcoholic": "Analcolico",
+		"mulledWine": "Vin brulè",
 		"general": "Altro"
 	},
 	"savours": {

@@ -4486,8 +4486,8 @@
 		"wineBasedDrink": "Boisson à base de vin",
 		"spritzer": "Vin coupé d'eau gazeuse",
 		"vingris": "Variété de vin rosé allemand",
-		"nonalcoholic": "Sans alcool",
-		"mulledwine": "Vin chaud",
+		"nonAlcoholic": "Sans alcool",
+		"mulledWine": "Vin chaud",
 		"general": "Autre"
 	},
 	"savours": {

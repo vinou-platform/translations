@@ -4529,8 +4529,8 @@
 		"wineBasedDrink": "bebida con vino",
 		"spritzer": "vino mezclado con agua con gas",
 		"vingris": "vino rosado",
-		"nonalcoholic": "sin alcohol",
-		"mulledwine": "vino caliente",
+		"nonAlcoholic": "sin alcohol",
+		"mulledWine": "vino caliente",
 		"general": "otros"
 	},
 	"savours": {

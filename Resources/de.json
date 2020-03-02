@@ -4651,8 +4651,8 @@
 		"wineBasedDrink": "Weinhaltiges Getränk",
 		"spritzer": "Weinschorle",
 		"vingris": "Weißherbst",
-		"nonalcoholic": "Alkoholfrei",
-		"mulledwine": "Glühwein",
+		"nonAlcoholic": "Alkoholfrei",
+		"mulledWine": "Glühwein",
 		"general": "Sonstiges"
 	},
 	"savours": {
