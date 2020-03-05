@@ -1346,7 +1346,8 @@
 		"vinougusto": {
 			"title": "Votre recommandation alimentaire pour ce vin",
 			"expertisetitle": "Recommandation alimentaire",
-			"winepasstitle": "Ça va bien avec"
+			"foodAdvice": "Recommandation alimentaire",
+			"occasionAdvice": "Ça va bien avec"
 		},
 		"files": {
 			"title": "Fichiers et documents sur ce vin"

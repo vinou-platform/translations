@@ -1355,7 +1355,8 @@
 		"vinougusto": {
 			"title": "Your food recommendation to this wine",
 			"expertisetitle": "Food recommendation",
-			"winepasstitle": "Good with"
+			"foodAdvice": "Food recommendation",
+			"occasionAdvice": "Good with"
 		},
 		"files": {
 			"title": "Files regarding this wine"

@@ -1349,7 +1349,8 @@
 		"vinougusto": {
 			"title": "Deine Speiseempfehlung für diesen Wein",
 			"expertisetitle": "Speiseempfehlung",
-			"winepasstitle": "Passt gut zu"
+			"foodAdvice": "Speiseempfehlung",
+			"occasionAdvice": "Passt gut zu"
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Wein"

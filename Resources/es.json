@@ -1389,7 +1389,8 @@
 		"vinougusto": {
 			"title": "Tu recomendación de comida para ese vino",
 			"expertisetitle": "recomendación de comida",
-			"winepasstitle": "corresponden bien con"
+			"foodAdvice": "recomendación de comida",
+			"occasionAdvice": "corresponden bien con"
 		},
 		"files": {
 			"title": "datos y documentos de ese vino"
