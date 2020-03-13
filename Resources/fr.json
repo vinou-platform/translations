@@ -488,7 +488,7 @@
 				"createTitle": "Creér recipient",
 				"editTitle": "Éditer recipient"
 			},
-			"gallery": {			
+			"gallery": {
 				"empty": "vide",
 				"barrelnumber": "Numéro du recipient",
 				"label": "Désignation",
@@ -552,34 +552,34 @@
 			}
 		},
 		"types": {
-			"saccharose": "Saccharose",
-			"rectifiedConcentratedGrapeMust": "Moût de raisins concentrés rectifiés",
-			"concentratedGrapeMust": "Moûts de raisins concentrés",
-			"alcohol": "Alcool",
-			"tarticAcid": "Acide tartrique",
-			"malicAcid": "Acide malique",
-			"lacticAcid": "Acide lactique",
-			"potassiumHydrogenCarbonate": "Hydrogénocarbonate de potassium",
-			"carbonateLime": "Chaux carbonatée",
-			"doubleSalt": "Sel double",
-			"dl-tarticAcid": "Acide tartrique DL",
-			"potassiumSorbate": "Sorbate de potassium",
-			"sorbicAcid": "Acide sorbique",
-			"oakChips": "Copeaux de bois de chêne",
-			"dimethylDicarbonate": "Bicarbonate de diméthyle",
 			"activatedCarbon": "Charbon actif",
-			"sulfurDioxide": "Dioxydes de soufre",
-			"potassiumFerrocyanide": "Hexacyanoferrate de potassium",
-			"casein": "Caséine",
-			"lysozyme": "Lysozyme",
 			"albumin": "Albumine",
-			"fishProduct": "Produits de la pêche",
-			"glutenContainingCerealProduct": "Produit contenant du gluten",
-			"bentonite": "Bentonite",
-			"gelatin": "Gélatine",
-			"tannin": "Tanins",
-			"carboneDioxide": "Dioxyde de carbone",
+			"alcohol": "Alcool",
 			"ascorbicAcid": "Acide ascorbique",
+			"bentonite": "Bentonite",
+			"carbonateLime": "Chaux carbonatée",
+			"carboneDioxide": "Dioxyde de carbone",
+			"casein": "Caséine",
+			"concentratedGrapeMust": "Moûts de raisins concentrés",
+			"dimethylDicarbonate": "Bicarbonate de diméthyle",
+			"dl-tarticAcid": "Acide tartrique DL",
+			"doubleSalt": "Sel double",
+			"fishProduct": "Produits de la pêche",
+			"gelatin": "Gélatine",
+			"glutenContainingCerealProduct": "Produit contenant du gluten",
+			"lacticAcid": "Acide lactique",
+			"lysozyme": "Lysozyme",
+			"malicAcid": "Acide malique",
+			"oakChips": "Copeaux de bois de chêne",
+			"potassiumFerrocyanide": "Hexacyanoferrate de potassium",
+			"potassiumHydrogenCarbonate": "Hydrogénocarbonate de potassium",
+			"potassiumSorbate": "Sorbate de potassium",
+			"rectifiedConcentratedGrapeMust": "Moût de raisins concentrés rectifiés",
+			"saccharose": "Saccharose",
+			"sorbicAcid": "Acide sorbique",
+			"sulfurDioxide": "Dioxydes de soufre",
+			"tannin": "Tanins",
+			"tarticAcid": "Acide tartrique",
 			"vitaminB1": "Vitamine B1",
 			"yeast": "Levure"
 		},
@@ -1469,7 +1469,7 @@
 			}
 		},
 		"fieldSets": {
-			"title": "Prix" 
+			"title": "Prix"
 		}
 	},
 	"product": {
