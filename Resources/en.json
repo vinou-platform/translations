@@ -4338,6 +4338,30 @@
 		},
 		"599": {
 			"name": "Green Valtellina"
+		},
+		"600": {
+			"name": "Gemischter Satz"
+		},
+		"601": {
+			"name": "Goldburger"
+		},
+		"602": {
+			"name": "Rotgipfler"
+		},
+		"603": {
+			"name": "Zierfandler"
+		},
+		"604": {
+			"name": "Jubiläumdrebe"
+		},
+		"605": {
+			"name": "Blauburgunder"
+		},
+		"606": {
+			"name": "Roesler"
+		},
+		"607": {
+			"name": "Ráthay"
 		}
 	},
 	"tastes": {
