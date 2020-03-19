@@ -261,6 +261,10 @@
 				"main": "cosecha",
 				"sub": " "
 			},
+			"createAdditionalPurchase": {
+				"main": "compra",
+				"sub": "de vino"
+			},
 			"createMarcLiquidation": {
 				"main": "orujo",
 				"sub": "utilización"
@@ -357,6 +361,7 @@
 		},
 		"types": {
 			"harvest": "cosecha",
+			"additionalPurchase": "compra de vino",
 			"marcLiquidation": "utilización de orujo",
 
 			"relocation": "transposición",

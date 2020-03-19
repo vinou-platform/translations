@@ -269,6 +269,10 @@
 				"main": "Ernte",
 				"sub": " "
 			},
+			"createAdditionalPurchase": {
+				"main": "Weinzukauf",
+				"sub": " "
+			},
 			"createMarcLiquidation": {
 				"main": "Trester",
 				"sub": "Verwertung"
@@ -365,6 +369,7 @@
 		},
 		"types": {
 			"harvest": "Ernte",
+			"additionalPurchase": "Weinzukauf",
 			"marcLiquidation": "Tresterverwertung",
 
 			"relocation": "Umlagerung",
