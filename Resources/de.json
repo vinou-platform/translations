@@ -2539,6 +2539,23 @@
 			"name": "Weichtiere"
 		}
 	},
+	"bottleSizes": {
+		"0.100": "0,1 l",
+		"0.187": "0,187 l (Split)",
+		"0.200": "0,2 l (Piccolo)",
+		"0.250": "0,25 l (Chopine)",
+		"0.33": "0,33 l",
+		"0.375": "0,375 l (Halbe Flasche)",
+		"0.500": "0,5 l",
+		"0.620": "0,62 l (Clavelin)",
+		"0.700": "0,7 l",
+		"0.750": "0,75 l (Normalflasche)",
+		"1.000": "1 l",
+		"1.500": "1,5 l (Magnum)",
+		"2.000": "2 l (Doppler)",
+		"2.250": "2,25 l (Marie-Jeanne)",
+		"3.000": "3 l (Doppelmagnum)"
+	},
 	"grapetypes": {
 		"1": {
 			"name": "Accent"
