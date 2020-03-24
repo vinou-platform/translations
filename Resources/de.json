@@ -216,6 +216,11 @@
 				"label": "Buchungstag",
 				"placeholder": "dd.MM.YYYY"
 			},
+			"bottles": "Anzahl Flaschen",
+			"cellarWine": {
+				"label": "Weinkonto",
+				"placeholder": "Weinkonto suchen"
+			},
 			"clarifyingOnly": "Zeige nur Behälter zur Klärung",
 			"filtrationPurpose": {
 				"label": "Feststoffverwendung",
@@ -229,6 +234,7 @@
 				"label": "Verwendung",
 				"placeholder": " "
 			},
+			"referenceNumber": "Beleg-Nr. (z.B. Begleitpapiere)",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
@@ -244,8 +250,9 @@
 				"placeholder": "Behälter suchen"
 			},
 			"wine": {
-				"label": "Weinkonto",
-				"placeholder": "Weinkonto suchen"
+				"autoCreate": "Automatisch aus Weinkonto generieren",
+				"label": "Wein",
+				"placeholder": "Wein suchen"
 			},
 			"withdrawalVolume": "Entnahme",
 
@@ -357,11 +364,19 @@
 				"main": "Abfüllung",
 				"sub": " "
 			},
-			"createAccountClosure": {
-				"main": "Kontoabschluss",
+			"createFinancialStatement": {
+				"main": "Jahresabschluss",
 				"sub": " "
 			},
+			"createAccountClosure": {
+				"main": "Konto",
+				"sub": "schließen"
+			},
 
+			"addSourceBarrel": {
+				"main": "Quellbehälter",
+				"sub": "hinzufügen"
+			},
 			"addTargetBarrel": {
 				"main": "Zielbehälter",
 				"sub": "hinzufügen"
@@ -394,7 +409,8 @@
 			"waterAddition": "Wasser Hinzugabe",
 
 			"bottling": "Abfüllung",
-			"accountClosure": "Kontoabschluss"
+			"financialStatement": "Jahresabschluss",
+			"accountClosure": "Kontoschließung"
 		},
 		"views": {
 			"edit": {

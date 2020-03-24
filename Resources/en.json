@@ -218,6 +218,11 @@
 				"label": "Buchungstag",
 				"placeholder": "MM/dd/YYYY"
 			},
+			"bottles": "Number of bottles",
+			"cellarWine": {
+				"label": "Raw wine",
+				"placeholder": "Search raw wine"
+			},
 			"clarifyingOnly": "Show only clarifying barrels",
 			"filtrationPurpose": {
 				"label": "Filtration residues purpose",
@@ -231,6 +236,7 @@
 				"label": "Purpose",
 				"placeholder": " "
 			},
+			"referenceNumber": "Receipt no. (e.g. accompanying documents)",
 			"sludgePurpose": {
 				"label": "Purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
@@ -246,6 +252,7 @@
 				"placeholder": "Search barrel"
 			},
 			"wine": {
+				"autoCreate": "Generate automatically from wine account",
 				"label": "Wine",
 				"placeholder": "Search wine"
 			},
@@ -359,11 +366,19 @@
 				"main": "Bottling",
 				"sub": " "
 			},
+			"createFinancialStatement": {
+				"main": "Financial",
+				"sub": "statement"
+			},
 			"createAccountClosure": {
 				"main": "Close account",
 				"sub": " "
 			},
 
+			"addSourceBarrel": {
+				"main": "Add source",
+				"sub": "barrel"
+			},
 			"addTargetBarrel": {
 				"main": "Add target",
 				"sub": "barrel"
@@ -396,6 +411,7 @@
 			"waterAddition": "Water addition",
 
 			"bottling": "Bottling",
+			"financialStatement": "Financial statement",
 			"accountClosure": "Account closure"
 		},
 		"views": {

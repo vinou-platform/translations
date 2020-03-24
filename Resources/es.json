@@ -208,6 +208,11 @@
 				"label": "fecha de reserva",
 				"placeholder": "dd.MM.YYYY"
 			},
+			"bottles": "Numero de botellas",
+			"cellarWine": {
+				"label": "cuenta de vino",
+				"placeholder": "buscar cuenta de vino"
+			},
 			"clarifyingOnly": "Solo muestra recipientes para la clarificación",
 			"filtrationPurpose": {
 				"label": "uso de combustibles sólidos",
@@ -221,6 +226,7 @@
 				"label": "uso",
 				"placeholder": " "
 			},
+			"referenceNumber": "Recibo no. (p. documentos adjuntos)",
 			"sludgePurpose": {
 				"label": "uso de lías",
 				"placeholder": "e.j. esparcir como fertilizante en la viña."
@@ -236,8 +242,9 @@
 				"placeholder": "buscar recipiente"
 			},
 			"wine": {
-				"label": "cuenta de vino",
-				"placeholder": "buscar cuenta de vino"
+				"autoCreate": "Generar automáticamente desde la cuenta de vino",
+				"label": "vino",
+				"placeholder": "buscar vino"
 			},
 			"withdrawalVolume": "la toma",
 
@@ -346,14 +353,22 @@
 			},
 
 			"createBottling": {
-				"main": "el embotellado",
+				"main": "embotellado",
 				"sub": " "
+			},
+			"createFinancialStatement": {
+				"main": "estados",
+				"sub": "financieros"
 			},
 			"createAccountClosure": {
-				"main": "cierre de cuenta",
-				"sub": " "
+				"main": "cerrar",
+				"sub": "cuenta"
 			},
 
+			"addSourceBarrel": {
+				"main": "agregue el recipiente",
+				"sub": "para remojar"
+			},
 			"addTargetBarrel": {
 				"main": "recipiente de destino",
 				"sub": "añadir"
@@ -366,7 +381,7 @@
 
 			"relocation": "transposición",
 			"decanting": "colada",
-			"staticSettling": "Entschleimung",
+			"staticSettling": "desgomado",
 			"filtration": "filtración",
 			"privateConsumption": "consumo propio",
 			"shrinkage": "reducción",
@@ -386,6 +401,7 @@
 			"waterAddition": "añadidura de agua",
 
 			"bottling": "embotellado",
+			"financialStatement": "estados financieros",
 			"accountClosure": "cierre de cuenta"
 		},
 		"views": {

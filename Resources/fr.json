@@ -208,6 +208,11 @@
 				"label": "Jour de réservation",
 				"placeholder": "DD.MM.YYYY"
 			},
+			"bottles": "Nombre de bouteilles",
+			"cellarWine": {
+				"label": "Compte du vin",
+				"placeholder": "Cherche compte du vin"
+			},
 			"clarifyingOnly": "Afficher seulement les récipients pour clarification",
 			"filtrationPurpose": {
 				"label": "L'utilisation comme matière solide",
@@ -221,6 +226,7 @@
 				"label": "Utilisation",
 				"placeholder": " "
 			},
+			"referenceNumber": "Reçu no. (par ex. documents d'accompagnement)",
 			"sludgePurpose": {
 				"label": "Utilisation de la lie",
 				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
@@ -236,8 +242,9 @@
 				"placeholder": "Cherchez récipient"
 			},
 			"wine": {
-				"label": "Compte du vin",
-				"placeholder": "Cherche compte du vin"
+				"autoCreate": "Générer automatiquement à partir du compte Wine",
+				"label": "Vin",
+				"placeholder": "Cherche vin"
 			},
 			"withdrawalVolume": "Prélèvement",
 
@@ -349,11 +356,19 @@
 				"main": "Embouteillage",
 				"sub": " "
 			},
+			"createFinancialStatement": {
+				"main": "États",
+				"sub": "financiers"
+			},
 			"createAccountClosure": {
-				"main": "Conclusion du compte",
-				"sub": " "
+				"main": "Fermer",
+				"sub": "le compte"
 			},
 
+			"addSourceBarrel": {
+				"main": "Conteneur source",
+				"sub": "ajouter"
+			},
 			"addTargetBarrel": {
 				"main": "Récipient de cible",
 				"sub": "ajouter"
@@ -386,7 +401,8 @@
 			"waterAddition": "Ajout d'eau",
 
 			"bottling": "Embouteillage",
-			"accountClosure": "Conclusion du compte"
+			"financialStatement": "États financiers",
+			"accountClosure": "Fermeture de compte"
 		},
 		"views": {
 			"edit": {
