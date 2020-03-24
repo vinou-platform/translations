@@ -4252,6 +4252,9 @@
 		},
 		"607": {
 			"name": "Ráthay"
+		},
+		"608": {
+			"name": "Moscatel de oro"
 		}
 	},
 	"tastes": {
@@ -4291,6 +4294,7 @@
 		"nl": "Países bajos",
 		"pt": "Portugal",
 		"ro": "Rumania",
+		"ru": "Federación Rusa",
 		"se": "Suecia",
 		"si": "Eslovenia",
 		"sx": "Sint Maarten",

@@ -4384,6 +4384,9 @@
 		},
 		"607": {
 			"name": "Ráthay"
+		},
+		"608": {
+			"name": "Gold muscatel"
 		}
 	},
 	"tastes": {
@@ -4423,6 +4426,7 @@
 		"nl": "Netherlands",
 		"pt": "Portugal",
 		"ro": "Romania",
+		"ru": "Russian Federation",
 		"se": "Sweden",
 		"si": "Slovenia",
 		"sx": "Sint Maarten",

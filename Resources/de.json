@@ -4374,7 +4374,11 @@
 		},
 		"607": {
 			"name": "Ráthay"
+		},
+		"608": {
+			"name": "Goldmuskateller"
 		}
+
 	},
 	"tastes": {
 		"1": "trocken",
@@ -4413,6 +4417,7 @@
 		"nl": "Niederlande",
 		"pt": "Portugal",
 		"ro": "Rumänien",
+		"ru": "Russische Föderation",
 		"se": "Schweden",
 		"si": "Slowenien",
 		"sx": "Sint Maarten",
