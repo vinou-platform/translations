@@ -1642,6 +1642,7 @@
 		},
 		"field": {
 			"contactname": "persona de contacto",
+			"username": "Nombre de usuario (para acceso externo)",
 			"number": "número del cliente",
 			"company": "empresa",
 			"taxid": "ID de impuestos",
@@ -1698,9 +1699,12 @@
 		"types": {
 			"private": "persona privada",
 			"gastronomy": "gastronomía",
+			"wholesale": "mayorista",
 			"specializedtrade": "comercio especializado",
 			"foodretailing": "comercio minorista de comestibles",
+			"reseller": "revendedor",
 			"export": "exportación",
+			"online": "minorista en línea",
 			"other": "otros"
 		},
 		"messages": {
@@ -4311,7 +4315,7 @@
 		"ar": "Argentina",
 		"au": "Australia",
 		"nz": "Nuewa Zelandia",
-		"us": "Estados Unidos de America(USA)"
+		"us": "USA"
 	},
 	"languages": {
 		"de": {
@@ -4422,7 +4426,9 @@
 			"12027": "Catalayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
-			"12030": "Cariñena"
+			"12030": "Cariñena",
+			"12031": "Yecla",
+			"12032": "Rioja Alavesa"
 		},
 		"fr": {
 			"2000": "Alsace",
@@ -4443,7 +4449,8 @@
 			"2016": "Cotes de Provence",
 			"2017": "Chablis",
 			"2018": "Ródano",
-			"2019": "Loire"
+			"2019": "Loire",
+			"2020": "Languedoc"
 		},
 		"gr": {
 			"5000": "Thrakien",
@@ -4525,7 +4532,7 @@
 		},
 		"za": {
 			"13000": "Bot River",
-			"13001": "Breddekloof",
+			"13001": "Breedekloof",
 			"13002": "Cape Agulhas",
 			"13003": "Cape Town",
 			"13004": "Cederberg",

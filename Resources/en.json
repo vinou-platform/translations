@@ -1608,6 +1608,7 @@
 		},
 		"field": {
 			"contactname": "Contact name",
+			"username": "Username (for external access)",
 			"number": "Client number",
 			"company": "Company",
 			"taxid": "Tax ID",
@@ -1664,9 +1665,12 @@
 		"types": {
 			"private": "Private",
 			"gastronomy": "Gastronomy",
+			"wholesale": "Wholesale",
 			"specializedtrade": "Specialized trade",
 			"foodretailing": "Food retailing",
+			"reseller": "Reseller",
 			"export": "Export",
+			"online": "Online-Shop",
 			"other": "Other"
 		},
 		"messages": {
@@ -4443,7 +4447,7 @@
 		"ar": "Argentina",
 		"au": "Australia",
 		"nz": "New Zealand",
-		"us": "United states of amerika (USA)"
+		"us": "USA"
 	},
 	"languages": {
 		"de": {
@@ -4554,7 +4558,9 @@
 			"12027": "Catalayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
-			"12030": "Carinena"
+			"12030": "Cariñena",
+			"12031": "Yecla",
+			"12032": "Rioja Alavesa"
 		},
 		"fr": {
 			"2000": "Alsace",
@@ -4575,7 +4581,8 @@
 			"2016": "Cotes de Provence",
 			"2017": "Chablis",
 			"2018": "Rhone",
-			"2019": "Loire"
+			"2019": "Loire",
+			"2020": "Languedoc"
 		},
 		"gr": {
 			"5000": "Thrace",
@@ -4657,7 +4664,7 @@
 		},
 		"za": {
 			"13000": "Bot River",
-			"13001": "Breddekloof",
+			"13001": "Breedekloof",
 			"13002": "Cape Agulhas",
 			"13003": "Cape Town",
 			"13004": "Cederberg",

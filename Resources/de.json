@@ -1598,6 +1598,7 @@
 		},
 		"field": {
 			"contactname": "Ansprechpartner",
+			"username": "Benutzername (für externen Zugriff)",
 			"number": "Kundennummer",
 			"company": "Firma",
 			"taxid": "SteuerID",
@@ -1654,9 +1655,12 @@
 		"types": {
 			"private": "Privatperson",
 			"gastronomy": "Gastronomie",
+			"wholesale": "Großhandel",
 			"specializedtrade": "Fachhandel",
 			"foodretailing": "Lebensmitteleinzelhandel",
+			"reseller": "Wiederverkäufer/Distributor",
 			"export": "Export",
+			"online": "Online-Händler",
 			"other": "Andere"
 		},
 		"messages": {
@@ -4434,7 +4438,7 @@
 		"ar": "Argentinien",
 		"au": "Australien",
 		"nz": "Neuseeland",
-		"us": "Vereinigte Staaten von Amerika (USA)"
+		"us": "USA"
 	},
 	"languages": {
 		"de": {
@@ -4531,7 +4535,7 @@
 			"12013": "Katalonien",
 			"12014": "Extremadura",
 			"12015": "Galicien",
-			"12016": "La Rioja",
+			"12016": "Rioja",
 			"12017": "Autonome Gemeinschaft Madrid",
 			"12018": "Murcia",
 			"12019": "Navarra",
@@ -4545,13 +4549,15 @@
 			"12027": "Catalayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
-			"12030": "Carinena"
+			"12030": "Cariñena",
+			"12031": "Yecla",
+			"12032": "Rioja Alavesa"
 		},
 		"fr": {
 			"2000": "Alsace",
 			"2001": "Armagnac",
 			"2002": "Bordeaux",
-			"2003": "Bourgogne",
+			"2003": "Burgund",
 			"2004": "Champagne",
 			"2005": "Cognac",
 			"2006": "Corse",
@@ -4566,7 +4572,8 @@
 			"2016": "Côtes de Provence",
 			"2017": "Chablis",
 			"2018": "Rhône",
-			"2019": "Loire"
+			"2019": "Loire",
+			"2020": "Languedoc"
 		},
 		"gr": {
 			"5000": "Thrakien",
@@ -4648,7 +4655,7 @@
 		},
 		"za": {
 			"13000": "Bot River",
-			"13001": "Breddekloof",
+			"13001": "Breedekloof",
 			"13002": "Cape Agulhas",
 			"13003": "Cape Town",
 			"13004": "Cederberg",
@@ -4689,7 +4696,7 @@
 			"17001": "Marlborough"
 		},
 		"us": {
-			"18001": "California",
+			"18001": "Kalifornien",
 			"18002": "Lodi"
 		}
 	},
