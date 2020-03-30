@@ -859,7 +859,8 @@
 			"create": {
 				"main": "entrada/salida de mercancías",
 				"sub": "contabilizar"
-			}
+			},
+			"save": "Guardar entrada/salida de mercancías"
 		},
 		"fields": {
 			"acidity": "acidez",

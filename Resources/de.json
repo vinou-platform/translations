@@ -859,7 +859,8 @@
 			"create": {
 				"main": "Warenein-/ausgang",
 				"sub": "buchen"
-			}
+			},
+			"save": "Warenein-/ausgang speichern"
 		},
 		"fields": {
 			"acidity": "Säuregehalt",

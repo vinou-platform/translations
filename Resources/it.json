@@ -858,8 +858,9 @@
 		"actions": {
 			"create": {
 				"main": "Entrata/uscita merci",
-				"sub": "Registrare"
-			}
+				"sub": "registrare"
+			},
+			"save": "Salva entrata/uscita merci registrare"
 		},
 		"fields": {
 			"acidity": "Acidità",

@@ -859,7 +859,8 @@
 			"create": {
 				"main": "D'entrée et sortie de marchandises",
 				"sub": "enregistrer"
-			}
+			},
+			"save": "Enregistrer les marchandises entrantes / sortantes"
 		},
 		"fields": {
 			"acidity": "Teneur en acide",

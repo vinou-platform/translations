@@ -859,7 +859,8 @@
 			"create": {
 				"main": "Book stock",
 				"sub": "incoming / outgoing"
-			}
+			},
+			"save": "Save stock booking"
 		},
 		"fields": {
 			"acidity": "Acidity",
