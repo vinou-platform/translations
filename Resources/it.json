@@ -1610,6 +1610,7 @@
 		},
 		"field": {
 			"contactname": "Persona di contatto",
+			"username": "Nome utente (per accesso esterno)",
 			"number": "Numero cliente",
 			"company": "Azienda",
 			"taxid": "Numero di identificazione fiscale",
@@ -1666,9 +1667,12 @@
 		"types": {
 			"private": "Persona privata",
 			"gastronomy": "Gastronomia",
+			"wholesale": "All'ingrosso",
 			"specializedtrade": "Commercio specializzato",
 			"foodretailing": "Vendita al dettaglio",
+			"reseller": "Rivenditore",
 			"export": "Esportatione",
+			"online": "Rivenditore online",
 			"other": "Altro"
 		},
 		"messages": {
@@ -4442,7 +4446,7 @@
 		"ar": "Argentina",
 		"au": "Australia",
 		"nz": "Neozelandese",
-		"us": "Stati Uniti d'America (USA)"
+		"us": "USA"
 	},
 	"languages": {
 		"de": {
@@ -4553,7 +4557,9 @@
 			"12027": "Catalayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
-			"12030": "Carinena"
+			"12030": "Cariñena",
+			"12031": "Yecla",
+			"12032": "Rioja Alavesa"
 		},
 		"fr": {
 			"2000": "Alsace",
@@ -4574,7 +4580,8 @@
 			"2016": "Cotes de Provence",
 			"2017": "Chablis",
 			"2018": "Rhone",
-			"2019": "Loire"
+			"2019": "Loire",
+			"2020": "Languedoc"
 		},
 		"gr": {
 			"5000": "Thrakien",
@@ -4614,7 +4621,8 @@
 			"6016": "Toskana",
 			"6017": "Trentino-Südtirol",
 			"6018": "Umbrien",
-			"6019": "Venetien"
+			"6019": "Veneto",
+			"6020": "Valpolicella"
 		},
 		"mt": {
 		},
@@ -4656,7 +4664,7 @@
 		},
 		"za": {
 			"13000": "Bot River",
-			"13001": "Breddekloof",
+			"13001": "Breedekloof",
 			"13002": "Cape Agulhas",
 			"13003": "Cape Town",
 			"13004": "Cederberg",
