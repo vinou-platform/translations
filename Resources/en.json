@@ -1019,14 +1019,7 @@
 			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
 			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
 			"payment": "I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
-			"pricing": {
-				"label": "Account model",
-				"acquisition": "in aquisition",
-				"trial": "Trial",
-				"publish": "Publishing",
-				"regular": "Commerce",
-				"invitation": "Invited"
-			},
+			"pricing": "Account model",
 			"smallBusiness": {
 				"label": "Small business company",
 				"description": "Tax free invoice notes"
@@ -1042,6 +1035,13 @@
 				"winery": "Winery",
 				"merchant": "Merchant"
 			}
+		},
+		"pricingTypes": {
+			"acquisition": "in aquisition",
+			"trial": "Trial",
+			"publish": "Publishing",
+			"regular": "Commerce",
+			"invitation": "Invited"
 		},
 		"messages": {
 			"dialog": {

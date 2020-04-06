@@ -1010,14 +1010,7 @@
 			"cop": "J'ai lu les <a href='http://www.vinou.de/agb' target='blank'>termes et conditions</a> et les accepte.",
 			"trust": "Je conviens que mon compte sera supprimé s'il ne respecte pas les conditions d'utilisation ou les conditions d'enregistrement.",
 			"payment": "J'accepte que Vinou déduire les frais de base mensuel plus la TVA. et les frais d'ordre médiateé de mon compte.",
-			"pricing": {
-				"label": "Adhésion",
-				"acquisition": "En acquisition",
-				"trial": "Période d'essai",
-				"publish": "Publishing",
-				"regular": "Commerce",
-				"invitation": "Invité"
-			},
+			"pricing": "Adhésion",
 			"smallBusiness": {
 				"label": "Petite entreprise",
 				"description": "Factures hors taxes"
@@ -1033,6 +1026,13 @@
 				"winery": "Établissement vinicole",
 				"merchant": "Distributeur"
 			}
+		},
+		"pricingTypes": {
+			"acquisition": "En acquisition",
+			"trial": "Période d'essai",
+			"publish": "Publishing",
+			"regular": "Commerce",
+			"invitation": "Invité"
 		},
 		"messages": {
 			"dialog": {
