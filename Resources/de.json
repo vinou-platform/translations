@@ -4381,8 +4381,16 @@
 		},
 		"608": {
 			"name": "Goldmuskateller"
+		},
+		"609": {
+			"name": "Godello"
+		},
+		"610": {
+			"name": "Garnacha Peluda"
+		},
+		"611": {
+			"name": "Trebbianello"
 		}
-
 	},
 	"tastes": {
 		"1": "trocken",
@@ -4554,12 +4562,16 @@
 			"12024": "Toro",
 			"12025": "Ribera del Duero",
 			"12026": "Campo de Borja",
-			"12027": "Catalayud",
+			"12027": "Calatayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
 			"12030": "Cariñena",
 			"12031": "Yecla",
-			"12032": "Rioja Alavesa"
+			"12032": "Rioja Alavesa",
+			"12033": "Rias Baixas",
+			"12034": "Valdeorras",
+			"12035": "Bierzo",
+			"12036": "Rueda"
 		},
 		"fr": {
 			"2000": "Alsace",

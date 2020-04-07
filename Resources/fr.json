@@ -4222,6 +4222,9 @@
 		},
 		"610": {
 			"name": "Garnacha Peluda"
+		},
+		"611": {
+			"name": "Trebbianello"
 		}
 	},
 	"tastes": {
@@ -4402,7 +4405,8 @@
 			"12032": "Rioja Alavesa",
 			"12033": "Rias Baixas",
 			"12034": "Valdeorras",
-			"12035": "Bierzo"
+			"12035": "Bierzo",
+			"12036": "Rueda"
 		},
 		"fr": {
 			"2000": "Alsace",
