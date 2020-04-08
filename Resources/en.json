@@ -1054,14 +1054,7 @@
 			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
 			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
 			"payment": "I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
-			"pricing": {
-				"label": "Account model",
-				"acquisition": "in aquisition",
-				"trial": "Trial",
-				"publish": "Publishing",
-				"regular": "Commerce",
-				"invitation": "Invited"
-			},
+			"pricing": "Account model",
 			"smallBusiness": {
 				"label": "Small business company",
 				"description": "Tax free invoice notes"
@@ -1077,6 +1070,13 @@
 				"winery": "Winery",
 				"merchant": "Merchant"
 			}
+		},
+		"pricingTypes": {
+			"acquisition": "in aquisition",
+			"trial": "Trial",
+			"publish": "Publishing",
+			"regular": "Commerce",
+			"invitation": "Invited"
 		},
 		"messages": {
 			"dialog": {
@@ -4390,6 +4390,15 @@
 		},
 		"608": {
 			"name": "Gold muscatel"
+		},
+		"609": {
+			"name": "Godello"
+		},
+		"610": {
+			"name": "Garnacha Peluda"
+		},
+		"611": {
+			"name": "Trebbianello"
 		}
 	},
 	"tastes": {
@@ -4478,23 +4487,31 @@
 	"wineregions": {
 		"at": {
 			"8000": "Wachau",
-			"8001": "Kremstal",
-			"8002": "Kamptal",
-			"8003": "Traisental",
+			"8001": "Kremstal DAC",
+			"8002": "Kamptal DAC",
+			"8003": "Traisental DAC",
 			"8004": "Wagram",
-			"8005": "Weinviertel",
-			"8006": "Carnuntum",
+			"8005": "Weinviertel DAC",
+			"8006": "Carnuntum DAC",
 			"8007": "Thermenregion",
-			"8008": "Lake Neusiedl",
-			"8009": "Leithaberg",
-			"8010": "Rosalia",
-			"8011": "Mittelburgenland",
-			"8012": "Eisenberg",
+			"8008": "Lake Neusiedl DAC",
+			"8009": "Leithaberg DAC",
+			"8010": "Rosalia DAC",
+			"8011": "Mittelburgenland DAC",
+			"8012": "Eisenberg DAC",
 			"8013": "Vienna",
-			"8014": "Volcano land Styria",
-			"8015": "South Styria",
-			"8016": "West Styria",
-			"8017": "Bergland"
+			"8014": "Volcano land Styria DAC",
+			"8015": "South Styria DAC",
+			"8016": "West Styria DAC",
+			"8017": "Bergland",
+			"8018": "Burgenland",
+			"8019": "Lower Austria",
+			"8020": "Styria",
+			"8021": "Carinthia",
+			"8022": "Upper Austria",
+			"8023": "Salzburg",
+			"8024": "Tyrol",
+			"8025": "Vorarlberg"
 		},
 		"be": {
 			"3000": "Hageland (VL)",
@@ -4554,12 +4571,16 @@
 			"12024": "Toro",
 			"12025": "Ribera del Duero",
 			"12026": "Campo de Borja",
-			"12027": "Catalayud",
+			"12027": "Calatayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
 			"12030": "Cariñena",
 			"12031": "Yecla",
-			"12032": "Rioja Alavesa"
+			"12032": "Rioja Alavesa",
+			"12033": "Rias Baixas",
+			"12034": "Valdeorras",
+			"12035": "Bierzo",
+			"12036": "Rueda"
 		},
 		"fr": {
 			"2000": "Alsace",
@@ -4729,10 +4750,10 @@
 		"categories": {
 			"meat": "Meat",
 			"preparation": "Preparation",
-			"milkproducts": "Milkproducts",
+			"milkproducts": "Milk products",
 			"vegetables": "Vegetables",
 			"styles": "Styles",
-			"bread": "Breads",
+			"bread": "Bread",
 			"sweets": "Sweets",
 			"occasions": "Occasions"
 		},

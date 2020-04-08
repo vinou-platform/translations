@@ -1054,14 +1054,7 @@
 			"cop": "He leido las <a href='http://www.vinou.de/agb' target='blank'>Condiciones Genereales de Contratación</a> y las acepto.",
 			"trust": "Estoy de acuerdo que se borrará mi cuenta si no cumple las condiciones de utilización o las condiciones de la registración.",
 			"payment": "Consiento que Vinou cobra mensualmente de mi cuenta la tarifa fija más el impuesto valor añadido y las tasas para las ordenes medidas.",
-			"pricing": {
-				"label": "membresía",
-				"acquisition": "en adquisición",
-				"trial": "período de prueba",
-				"publish": "Publishing",
-				"regular": "Commerce",
-				"invitation": "invitado"
-			},
+			"pricing": "membresía",
 			"smallBusiness": {
 				"label": "pequeña empresa",
 				"description": "cuentas libre de impuestos"
@@ -1077,6 +1070,13 @@
 				"winery": "propiedad vinícola",
 				"merchant": "comerciante"
 			}
+		},
+		"pricingTypes": {
+			"acquisition": "en adquisición",
+			"trial": "período de prueba",
+			"publish": "Publishing",
+			"regular": "Commerce",
+			"invitation": "invitado"
 		},
 		"messages": {
 			"dialog": {
@@ -4390,6 +4390,15 @@
 		},
 		"608": {
 			"name": "Moscatel de oro"
+		},
+		"609": {
+			"name": "Godello"
+		},
+		"610": {
+			"name": "Garnacha Peluda"
+		},
+		"611": {
+			"name": "Trebbianello"
 		}
 	},
 	"tastes": {
@@ -4478,23 +4487,31 @@
 	"wineregions": {
 		"at": {
 			"8000": "Wachau",
-			"8001": "Kremstal",
-			"8002": "Kamptal",
-			"8003": "Traisental",
+			"8001": "Kremstal DAC",
+			"8002": "Kamptal DAC",
+			"8003": "Traisental DAC",
 			"8004": "Wagram",
-			"8005": "barrio de vino",
-			"8006": "Carnuntum",
-			"8007": "región de termas",
-			"8008": "Neusiedlersee",
-			"8009": "Leithaberg",
-			"8010": "Rosalia",
-			"8011": "Mittelburgenland",
-			"8012": "Eisenberg",
+			"8005": "barrio de vino DAC",
+			"8006": "Carnuntum DAC",
+			"8007": "región de termas DAC",
+			"8008": "Neusiedlersee DAC",
+			"8009": "Leithaberg DAC",
+			"8010": "Rosalia DAC",
+			"8011": "Mittelburgenland DAC",
+			"8012": "Eisenberg DAC",
 			"8013": "Viena",
-			"8014": "Vulkanland Steiermark",
-			"8015": "Südsteiermark",
-			"8016": "Weststeiermark",
-			"8017": "Bergland"
+			"8014": "Vulkanland Steiermark DAC",
+			"8015": "Südsteiermark DAC",
+			"8016": "Weststeiermark DAC",
+			"8017": "Bergland",
+			"8018": "Burgenland",
+			"8019": "Baja Austria",
+			"8020": "Estiria",
+			"8021": "Carintia",
+			"8022": "Alta Austria",
+			"8023": "Salzburgo",
+			"8024": "Tirol",
+			"8025": "Vorarlberg"
 		},
 		"be": {
 			"3000": "Hageland (VL)",
@@ -4554,12 +4571,16 @@
 			"12024": "Toro",
 			"12025": "Ribera del Duero",
 			"12026": "Campo de Borja",
-			"12027": "Catalayud",
+			"12027": "Calatayud",
 			"12028": "Jumilla",
 			"12029": "Almansa",
 			"12030": "Cariñena",
 			"12031": "Yecla",
-			"12032": "Rioja Alavesa"
+			"12032": "Rioja Alavesa",
+			"12033": "Rias Baixas",
+			"12034": "Valdeorras",
+			"12035": "Bierzo",
+			"12036": "Rueda"
 		},
 		"fr": {
 			"2000": "Alsace",
