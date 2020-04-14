@@ -4811,7 +4811,7 @@
 	},
 	"qualitytypes": {
 		"at": {
-			"country": "Wein aus Österreich",
+			"country": "Österreichischer Wein",
 			"origin": "Landwein",
 			"dac": "Districtus Austriae Controllatus (DAC)",
 			"quality": "Qualitätswein",
@@ -4819,8 +4819,13 @@
 			"spaetlese": "Spätlese",
 			"auslese": "Auslese",
 			"icewine": "Eiswein",
-			"strawwine": "Strohwein",
+			"strawwine": "Strohwein, Schilfwein",
 			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"champagne": "Österreichischer Sekt",
+			"champagneClassic": "Sekt g.U. Klassik",
+			"champagneReserve": "Sekt g.U. Reserve",
+			"champagneGrandReserve": "Sekt g.U. Große Reserve",
 			"ausbruch": "Ausbruch"
 		},
 		"de": {
@@ -4834,7 +4839,8 @@
 			"beerenauslese": "Beerenauslese",
 			"trockenbeerenauslese": "Trockenbeerenauslese",
 			"sparklingWine": "Schaumwein",
-			"champagne": "Sekt",
+			"aeratedSparklingWine": "Schaumwein mit zuges. CO2",
+			"champagne": "Deutscher Sekt",
 			"winzersekt": "Winzersekt",
 			"cremant": "Crémant",
 			"icewine": "Eiswein",
