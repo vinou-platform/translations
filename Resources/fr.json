@@ -209,7 +209,7 @@
 	"cancel": "Annuler",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "Capacité",
+			"additionVolume": "Addition",
 			"barrel": {
 				"label": "Récipient",
 				"placeholder": "Cherchez récipient"
@@ -256,12 +256,11 @@
 				"label": "Vin",
 				"placeholder": "Cherche vin"
 			},
-			"withdrawalVolume": "Prélèvement",
+			"withdrawalVolume": "Retrait",
 
 			"barrels": "Récipients",
 			"addition": "Addition",
 			"withdrawal": "Retrait",
-			"filllevel": "Hauteur de remplissage",
 			"substance": "Substance"
 		},
 		"actions": {
@@ -439,6 +438,7 @@
 			"name": "Nom",
 			"number": "Numéro du vin",
 			"referenceNumber": "Numéro AP",
+			"stock": "Stock",
 			"volume": "Stock"
 		},
 		"actions": {
@@ -490,14 +490,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Numéro du recipient",
-			"label": "Étiquetage",
-			"type": "Type/Matiére",
 			"capacity": "Capacité en litres",
+			"chstamp": "Modification dernière",
+			"clarifying": "Recipient à Collage?",
+			"fillLevel": "Hauteur de remplissage",
+			"label": "Étiquetage",
 			"location": "Location",
 			"manufacturer": "Frabricant",
-			"clarifying": "Recipient à Collage?",
-			"note": "Notes"
+			"note": "Notes",
+			"number": "Numéro du recipient",
+			"type": "Type/Matiére"
 		},
 		"actions": {
 			"create": {
@@ -520,11 +522,6 @@
 				"editTitle": "Éditer recipient"
 			},
 			"gallery": {
-				"empty": "vide",
-				"barrelnumber": "Numéro du recipient",
-				"label": "Désignation",
-				"chstamp": "Modification dernière",
-				"filllevel": "Hauteur de remplissage",
 				"currentState": "État actuellement",
 				"filters": {
 					"search": {

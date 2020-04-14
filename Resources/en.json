@@ -261,7 +261,6 @@
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
-			"filllevel": "Fill level",
 			"substance": "Substance"
 		},
 		"actions": {
@@ -439,6 +438,7 @@
 			"name": "Title",
 			"number": "Wine no.",
 			"referenceNumber": "Ref.-no.",
+			"stock": "Stock",
 			"volume": "Stock"
 		},
 		"actions": {
@@ -490,14 +490,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Barrel-no.",
-			"label": "Label",
-			"type": "Type/Material",
 			"capacity": "Capacity in liter",
+			"chstamp": "Last changes",
+			"clarifying": "Barrel for clarification?",
+			"fillLevel": "Fill level",
+			"label": "Label",
 			"location": "Location",
 			"manufacturer": "Manufacturer",
-			"clarifying": "Barrel for clarification?",
-			"note": "Notices"
+			"note": "Notices",
+			"number": "Barrel-no.",
+			"type": "Type/Material"
 		},
 		"actions": {
 			"create": {
@@ -520,11 +522,6 @@
 				"editTitle": "Edit barrel"
 			},
 			"gallery": {
-				"empty": "empty",
-				"barrelnumber": "Barrel-no.",
-				"label": "Label",
-				"chstamp": "Last changes",
-				"filllevel": "Fill level",
 				"currentState": "Current state",
 				"filters": {
 					"search": {

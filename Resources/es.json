@@ -209,7 +209,7 @@
 	"cancel": "cancelar",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "cantidad de llenado",
+			"additionVolume": "acceso",
 			"barrel": {
 				"label": "recipiente",
 				"placeholder": "buscar recipiente"
@@ -256,12 +256,11 @@
 				"label": "vino",
 				"placeholder": "buscar vino"
 			},
-			"withdrawalVolume": "la toma",
+			"withdrawalVolume": "salida",
 
 			"barrels": "recipiente",
 			"addition": "acceso",
 			"withdrawal": "salida",
-			"filllevel": "nivel",
 			"substance": "sustancia"
 		},
 		"actions": {
@@ -439,6 +438,7 @@
 			"name": "calsificación",
 			"number": "número de vino",
 			"referenceNumber": "AP-Número",
+			"stock": "inventario",
 			"volume": "inventario"
 		},
 		"actions": {
@@ -490,14 +490,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "número del recipiente",
-			"label": "identificativo",
-			"type": "tipo/material",
 			"capacity": "capacidad volumétrica en litros",
+			"chstamp": "cambiado por último",
+			"clarifying": "recipiente para clarificación?",
+			"fillLevel": "nivel",
+			"label": "identificativo",
 			"location": "ubicación de disponer",
 			"manufacturer": "confeccionador",
-			"clarifying": "recipiente para clarificación?",
-			"note": "notas"
+			"note": "notas",
+			"number": "número del recipiente",
+			"type": "tipo/material"
 		},
 		"actions": {
 			"create": {
@@ -520,11 +522,6 @@
 				"editTitle": "editar recipiente"
 			},
 			"gallery": {
-				"empty": "leer",
-				"barrelnumber": "número del recipiente",
-				"label": "calificación",
-				"chstamp": "cambiado por último",
-				"filllevel": "nivel",
 				"currentState": "estado acutal",
 				"filters": {
 					"search": {

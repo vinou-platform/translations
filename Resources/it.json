@@ -209,7 +209,7 @@
 	"cancel": "Abortire",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "Capacità",
+			"additionVolume": "Accesso",
 			"barrel": {
 				"label": "Recipiente",
 				"placeholder": "Ricerca recipiente"
@@ -256,12 +256,11 @@
 				"label": "Vino",
 				"placeholder": "Cerca vino"
 			},
-			"withdrawalVolume": "Prelievo",
+			"withdrawalVolume": "Partenza",
 
 			"barrels": "Recipiente",
 			"addition": "Accesso",
 			"withdrawal": "Partenza",
-			"filllevel": "Serbatoio",
 			"substance": "Sostanza"
 		},
 		"actions": {
@@ -439,6 +438,7 @@
 			"name": "Denominazione",
 			"number": "Vino-Nr.",
 			"referenceNumber": "Numero di omologazione ufficiale",
+			"stock": "Stock",
 			"volume": "Stock"
 		},
 		"actions": {
@@ -490,14 +490,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Recipiente-Nr.",
-			"label": "Cotrassegno",
-			"type": "Tipo/materiale",
 			"capacity": "Capacità espressa in litri",
+			"chstamp": "Modificata da ultimo ",
+			"clarifying": "Recipiente per chiarificazione?",
+			"fillLevel": "Serbatoio",
+			"label": "Cotrassegno",
 			"location": "Posto dell'elaborazione",
 			"manufacturer": "Produttore",
-			"clarifying": "Recipiente per chiarificazione?",
-			"note": "Note"
+			"note": "Note",
+			"number": "Recipiente-Nr.",
+			"type": "Tipo/materiale"
 		},
 		"actions": {
 			"create": {
@@ -520,11 +522,6 @@
 				"editTitle": "Modificare recipiente"
 			},
 			"gallery": {
-				"empty": "Vuoto",
-				"barrelnumber": "Recipiente-Nr.",
-				"label": "Denominazione",
-				"chstamp": "Modificata da ultimo ",
-				"filllevel": "Serbatoio",
 				"currentState": "Condizione attuale",
 				"filters": {
 					"search": {

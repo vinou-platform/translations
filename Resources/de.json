@@ -209,7 +209,7 @@
 	"cancel": "Abbrechen",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "Füllmenge",
+			"additionVolume": "Zugang",
 			"barrel": {
 				"label": "Behälter",
 				"placeholder": "Behälter suchen"
@@ -256,12 +256,11 @@
 				"label": "Wein",
 				"placeholder": "Wein suchen"
 			},
-			"withdrawalVolume": "Entnahme",
+			"withdrawalVolume": "Abgang",
 
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
-			"filllevel": "Füllhöhe",
 			"substance": "Stoff"
 		},
 		"actions": {
@@ -439,6 +438,7 @@
 			"name": "Bezeichnung",
 			"number": "Weinnr.",
 			"referenceNumber": "AP-Nr./Losnr.",
+			"stock": "Bestand",
 			"volume": "Bestand"
 		},
 		"actions": {
@@ -490,14 +490,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Behälter-Nr.",
-			"label": "Kennzeichnung",
-			"type": "Typ/Material",
 			"capacity": "Fassungsvermögen in Liter",
+			"chstamp": "Zuletzt geändert",
+			"clarifying": "Behälter zur Klärung?",
+			"fillLevel": "Füllstand",
+			"label": "Kennzeichnung",
 			"location": "Aufstellort",
 			"manufacturer": "Hersteller",
-			"clarifying": "Behälter zur Klärung?",
-			"note": "Notizen"
+			"note": "Notizen",
+			"number": "Behälter-Nr.",
+			"type": "Typ/Material"
 		},
 		"actions": {
 			"create": {
@@ -520,11 +522,6 @@
 				"editTitle": "Behälter bearbeiten"
 			},
 			"gallery": {
-				"empty": "leer",
-				"barrelnumber": "Behälter-Nr.",
-				"label": "Bezeichnung",
-				"chstamp": "Zuletzt geändert",
-				"filllevel": "Füllstand",
 				"currentState": "Aktueller Zustand",
 				"filters": {
 					"search": {
