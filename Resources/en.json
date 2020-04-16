@@ -862,14 +862,14 @@
 		"fields": {
 			"acidity": "Acidity",
 			"alcohol": "Alcohol",
-			"apNumber": "AP-Number",
+			"apNumber": "A.P.Nr.",
 			"bookingStamp": "Booking day",
 			"client": "Client",
 			"note": "Description, supplier, ...",
 			"orderNumber": "Order no.",
 			"purpose": "Purpose",
 			"quantity": "Quantity",
-			"referenceNumber": "Invoice no., receipt no. (e.g. accompanying documents)",
+			"referenceNumber": "Invoice no., receipt no. (e.g. accompanying documents, wine no.)",
 			"residualSugar": "Residual sugar",
 			"type": "Type",
 			"wineNumber": "Wine no."

@@ -869,7 +869,7 @@
 			"orderNumber": "Nº de pedido",
 			"purpose": "tipo",
 			"quantity": "cantidad",
-			"referenceNumber": "factura no., recibo no. (p. documentos adjuntos)",
+			"referenceNumber": "factura no., recibo no. (p. documentos adjuntos, número de vino)",
 			"residualSugar": "azucar residual",
 			"type": "tipo",
 			"wineNumber": "número de vino"
