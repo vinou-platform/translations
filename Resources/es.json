@@ -1342,6 +1342,7 @@
 			"qrlinkempty": "direción de destino para QR-Code ( si pasaporte de vino está vacío)",
 			"quality": "grada de calidad",
 			"quality_note": "Nota de clasificación adicional",
+			"bottlingType": "Tipo de relleno",
 			"quantity": "inventario acutal",
 			"region": "región de terreno cultivado",
 			"shoplink": "enlace al shop",
@@ -4908,6 +4909,13 @@
 		"us": {
 			"california": "Wine of California"
 		}
+	},
+	"bottlingTypes": {
+		"producer": "Productor embotellado",
+		"bottler": "Embotellador",
+		"estate": "Relleno de finca",
+		"castle": "Bloqueo de llenado",
+		"purchase": "Compra"
 	},
 	"apps": {
 		"vinou-gusto": {
