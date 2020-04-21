@@ -437,7 +437,7 @@
 			"inputVolume": "cantidad durante la entrada ",
 			"mustAcidity": "ácido del mosto de uva",
 			"mustWeight": "peso del mosto de uva",
-			"name": "calsificación",
+			"name": "nombre",
 			"number": "número de vino",
 			"referenceNumber": "AP-Número",
 			"stock": "inventario",
@@ -456,28 +456,18 @@
 				"substanceLogs": "lista de sustancia"
 			}
 		},
-		"filters": {
-			"label": "restringir muestra",
-			"groupby": {
-				"label": "agrupar muestra por: "
-			},
-			"sortby": {
-				"label": "dirección de clasificación: "
-			},
-			"showeditor": {
-				"label": "Autor señalar"
-			}
-		},
-		"types": {
-			"readyforfilling": "Listo para embotellar"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "crear cuenta de vino",
 				"editTitle": "editar cuenta de vino"
 			},
 			"gallery": {
-				"currentState": "estado acutal"
+				"currentState": "estado acutal",
+				"vintage": "Cosecha {vintage}",
+				"filters": {
+					"hideClosed": "Ocultar cuentas de vino archivadas",
+					"readyForBottling": "Listo para embotellar"
+				}
 			}
 		},
 		"dialogs": {

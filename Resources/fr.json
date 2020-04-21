@@ -456,20 +456,8 @@
 				"substanceLogs": "List des substances"
 			}
 		},
-		"filters": {
-			"label": "Restreindre vue",
-			"groupby": {
-				"label": "Grouper vue par: "
-			},
-			"sortby": {
-				"label": "Direction du tri: "
-			},
-			"showeditor": {
-				"label": "Afficher détecteur"
-			}
-		},
 		"types": {
-			"readyforfilling": "Prêt à l'embouteillage"
+			"readyforfilling": ""
 		},
 		"views": {
 			"edit": {
@@ -477,7 +465,12 @@
 				"editTitle": "Éditer compte du vin"
 			},
 			"gallery": {
-				"currentState": "État actuellement"
+				"currentState": "État actuellement",
+				"vintage": "Millésime {vintage}",
+				"filters": {
+					"hideClosed": "Masquer les comptes de vin archivés",
+					"readyForBottling": "Prêt à l'embouteillage"
+				}
 			}
 		},
 		"dialogs": {

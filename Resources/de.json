@@ -456,28 +456,18 @@
 				"substanceLogs": "Stoffliste"
 			}
 		},
-		"filters": {
-			"label": "Ansicht einschränken",
-			"groupby": {
-				"label": "Ansicht gruppieren nach: "
-			},
-			"sortby": {
-				"label": "Sortierrichtung: "
-			},
-			"showeditor": {
-				"label": "Erfasser anzeigen"
-			}
-		},
-		"types": {
-			"readyforfilling": "Bereit zur Abfüllung"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "Weinkonto anlegen",
 				"editTitle": "Weinkonto bearbeiten"
 			},
 			"gallery": {
-				"currentState": "Aktueller Zustand"
+				"currentState": "Aktueller Zustand",
+				"vintage": "Jahrgang {vintage}",
+				"filters": {
+					"hideClosed": "Archivierte Weinkonten ausblenden",
+					"readyForBottling": "Bereit zur Abfüllung"
+				}
 			}
 		},
 		"dialogs": {

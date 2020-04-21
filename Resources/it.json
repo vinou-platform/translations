@@ -456,28 +456,18 @@
 				"substanceLogs": "Elenco di sostanze"
 			}
 		},
-		"filters": {
-			"label": "Limitare vista",
-			"groupby": {
-				"label": "Ordina la vista per: "
-			},
-			"sortby": {
-				"label": "Direzione di ordinamento: "
-			},
-			"showeditor": {
-				"label": "Mostra editor"
-			}
-		},
-		"types": {
-			"readyforfilling": "Pronto per l'imbottigliamento"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "Creare conto del vino",
 				"editTitle": "Modifica conto del vino"
 			},
 			"gallery": {
-				"currentState": "Stato attuale"
+				"currentState": "Stato attuale",
+				"vintage": "Annata {vintage}",
+				"filters": {
+					"hideClosed": "Nascondi account di vino archiviati",
+					"readyForBottling": "Pronto per l'imbottigliamento"
+				}
 			}
 		},
 		"dialogs": {

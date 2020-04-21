@@ -456,28 +456,18 @@
 				"substanceLogs": "Substance log"
 			}
 		},
-		"filters": {
-			"label": "Filter view",
-			"groupby": {
-				"label": "Group view by: "
-			},
-			"sortby": {
-				"label": "Sort view by: "
-			},
-			"showeditor": {
-				"label": "Show editor"
-			}
-		},
-		"types": {
-			"readyforfilling": "Ready for Filling"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "Create new wine",
 				"editTitle": "Edit wine"
 			},
 			"gallery": {
-				"currentState": "Current state"
+				"currentState": "Current state",
+				"vintage": "Vintage {vintage}",
+				"filters": {
+					"hideClosed": "Hide archived wine accounts",
+					"readyForBottling": "Ready for bottling"
+				}
 			}
 		},
 		"dialogs": {
