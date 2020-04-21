@@ -40,7 +40,9 @@
 			"none": "Keine Angabe",
 			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
-			"search_placeholder": "Name oder Beschreibung",
+			"search": {
+				"placeholder": "z.B. Name oder Beschreibung"
+			},
 			"imprint": "Impressum",
 			"dataprotection": "Datenschutz",
 			"termsandconditions": "AGB",

@@ -40,7 +40,9 @@
 			"none": "No information",
 			"required": "Required",
 			"upload_image": "Select image to upload",
-			"search_placeholder": "Name or description",
+			"search": {
+				"placeholder": "e.g. name or description"
+			},
 			"imprint": "Imprint",
 			"dataprotection": "Dataprotection",
 			"termsandconditions": "Terms and conditions",

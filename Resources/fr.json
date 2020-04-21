@@ -40,7 +40,9 @@
 			"none": "Pas d'information",
 			"required": "Champ obligatoire",
 			"upload_image": "Sélectionnez l'image à télécharger",
-			"search_placeholder": "Nom ou description",
+			"search": {
+				"placeholder": "p.ex. nom ou description"
+			},
 			"imprint": "Empreinte",
 			"dataprotection": "Protection des données",
 			"termsandconditions": "Termes et conditions",

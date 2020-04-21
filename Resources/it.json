@@ -40,7 +40,9 @@
 			"none": "Non disponible",
 			"required": "Obbligatorio",
 			"upload_image": "Seleziona una foto e caricala",
-			"search_placeholder": "Nome o descritto",
+			"search": {
+				"placeholder": "ad es. nome o descritto"
+			},
 			"imprint": "Impressum",
 			"dataprotection": "Protezione dei dati",
 			"termsandconditions": "Termini e condizioni",

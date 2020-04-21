@@ -40,7 +40,9 @@
 			"none": "no hay datos",
 			"required": "casilla obligatoria",
 			"upload_image": "Seleccione y cargue imágen",
-			"search_placeholder": "nombre o descripción",
+			"search": {
+				"placeholder": "e.j. nombre o descripción"
+			},
 			"imprint": "pie de imprenta",
 			"dataprotection": "protección de datos",
 			"termsandconditions": "términos y condiciones generales",
