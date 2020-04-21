@@ -1308,6 +1308,7 @@
 			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
 			"quality": "Qualitätsstufe",
 			"quality_note": "Zusatzangabe Qualitätsstufe",
+			"bottlingType": "Art der Abfüllung",
 			"quantity": "Aktueller Bestand",
 			"region": "Anbauregion",
 			"shoplink": "Link zum Shop",
@@ -4902,6 +4903,13 @@
 		"us": {
 			"california": "Wine of California"
 		}
+	},
+	"bottlingTypes": {
+		"producer": "Erzeugerabfüllung",
+		"bottler": "Abfüller",
+		"estate": "Gutsabfüllung",
+		"castle": "Schlossabfüllung",
+		"purchase": "Zukauf"
 	},
 	"apps": {
 		"vinou-gusto": {

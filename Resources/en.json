@@ -1314,6 +1314,7 @@
 			"qrlinkempty": "Target address for QR code (Winepass if empty)",
 			"quality": "Classification",
 			"quality_note": "Additional classification note",
+			"bottlingType": "Type of bottling",
 			"quantity": "Current Stock",
 			"region": "Region",
 			"shoplink": "Shoplink",
@@ -4912,6 +4913,13 @@
 		"us": {
 			"california": "Wine of California"
 		}
+	},
+	"bottlingTypes": {
+		"producer": "Producer bottling",
+		"bottler": "Bottler",
+		"estate": "Estate bottling",
+		"castle": "Castle bottling",
+		"purchase": "Purchase"
 	},
 	"apps": {
 		"vinou-gusto": {

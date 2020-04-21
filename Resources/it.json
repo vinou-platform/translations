@@ -1305,6 +1305,7 @@
 			"qrlinkempty": "Indirizzo di destinazione per qr-code (Vino passa quando vuoto)",
 			"quality": "Livello di qualità",
 			"quality_note": "Ulteriori informazioni sulla classificazione",
+			"bottlingType": "Tipo di riempimento",
 			"quantity": "Stock",
 			"region": "Regione di cultura",
 			"shoplink": "Link al negozio",
@@ -4737,6 +4738,13 @@
 		"us": {
 			"california": "Wine of California"
 		}
+	},
+	"bottlingTypes": {
+		"producer": "Imbottigliamento del produttore",
+		"bottler": "imbottigliatore",
+		"estate": "Riempimento immobiliare",
+		"castle": "Blocca riempimento",
+		"purchase": "acquisto"
 	},
 	"apps": {
 		"vinou-gusto": {
