@@ -234,6 +234,8 @@
 			"lossVolume": "Perte",
 			"marc": "Marc",
 			"note": "Note / utilisation",
+			"price": "Prix",
+			"purchaseNote": "Note / fournisseur",
 			"purpose": {
 				"label": "Utilisation",
 				"placeholder": " "

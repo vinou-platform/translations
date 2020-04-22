@@ -234,6 +234,8 @@
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
+			"price": "Preis",
+			"purchaseNote": "Anmerkung / Lieferant",
 			"purpose": {
 				"label": "Verwendung",
 				"placeholder": " "
@@ -373,7 +375,7 @@
 			},
 			"createAccountClosure": {
 				"main": "Konto",
-				"sub": "schließen"
+				"sub": "archivieren"
 			},
 
 			"addSourceBarrel": {
@@ -413,7 +415,7 @@
 
 			"bottling": "Abfüllung",
 			"financialStatement": "Jahresabschluss",
-			"accountClosure": "Kontoschließung"
+			"accountClosure": "Kontoarchivierung"
 		},
 		"views": {
 			"edit": {

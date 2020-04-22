@@ -233,7 +233,9 @@
 			"lossRelocation": "Travasare dei residui",
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",
-			"note": "Nota/utilizzo",
+			"note": "Nota / utilizzo",
+			"price": "Prezzo",
+			"purchaseNote": "Nota / fornitore",
 			"purpose": {
 				"label": "Utilizzo",
 				"placeholder": " "

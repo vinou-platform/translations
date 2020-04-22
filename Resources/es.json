@@ -233,7 +233,9 @@
 			"lossRelocation": "trasvase del residuo",
 			"lossVolume": "perdida",
 			"marc": "orujo",
-			"note": "anotación/uso",
+			"note": "anotación / uso",
+			"price": "precio",
+			"purchaseNote": "anotación / proveedor",
 			"purpose": {
 				"label": "uso",
 				"placeholder": " "
