@@ -277,6 +277,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Reprise",
+				"sub": "d'inventaire"
+			},
 			"createHarvest": {
 				"main": "Récolte",
 				"sub": " "
@@ -388,6 +392,7 @@
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Reprise d'inventaire",
 			"harvest": "Récolte",
 			"additionalPurchase": "Achat de vin",
 			"marcLiquidation": "Utilisation du marc",

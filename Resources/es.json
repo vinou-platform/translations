@@ -277,6 +277,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "toma",
+				"sub": "de inventario"
+			},
 			"createHarvest": {
 				"main": "cosecha",
 				"sub": " "
@@ -388,6 +392,7 @@
 			}
 		},
 		"types": {
+			"inventoryTakeover": "toma de inventario",
 			"harvest": "cosecha",
 			"additionalPurchase": "compra de vino",
 			"marcLiquidation": "utilización de orujo",

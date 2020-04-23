@@ -277,6 +277,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Inventory",
+				"sub": "takeover"
+			},
 			"createHarvest": {
 				"main": "Grape harvest",
 				"sub": " "
@@ -388,6 +392,7 @@
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Inventory takeover",
 			"harvest": "Grape harvest",
 			"additionalPurchase": "Wine purchase",
 			"marcLiquidation": "Marc liquidation",

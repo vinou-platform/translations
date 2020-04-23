@@ -277,6 +277,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Acquisizione",
+				"sub": "di inventario"
+			},
 			"createHarvest": {
 				"main": "Raccolto",
 				"sub": " "
@@ -388,6 +392,7 @@
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Acquisizione di inventario",
 			"harvest": "Raccolto",
 			"additionalPurchase": "Acquisto del vino",
 			"marcLiquidation": "Valorizzazione dei vinaccia",
