@@ -38,7 +38,6 @@
 			"default": "Default",
 			"empty": "Seleziona",
 			"none": "Non disponible",
-			"required": "Obbligatorio",
 			"upload_image": "Seleziona una foto e caricala",
 			"search": {
 				"placeholder": "ad es. nome o descritto"
@@ -130,6 +129,30 @@
 			"general": {
 				"empty": "Tutto"
 			}
+		},
+		"hints": {
+			"multiselectable": "Scelta multipla è possibile (Ctrl + click)",
+			"required": "Campo obbligatore"
+		},
+		"errors": {
+			"confirmationRequired": "Questo campo deve essere confermato",
+			"date": "Inserire una data valida",
+			"email": "Inserisci un indirizzo email valido",
+			"max": "Inserisci un valore più piccolo",
+			"maxDate": "Inserisci una data precedente",
+			"maxDateValue": "Inserisci una data fino a {value}",
+			"maxLength": "Inserisci un numero inferiore di caratteri",
+			"maxLengthValue": "Inserisci un massimo di {value} caratteri",
+			"maxValue": "Inserisci un valore inferiore o uguale a {value}",
+			"min": "Inserisci un valore più grande",
+			"minDate": "Inserisci una data successiva",
+			"minDateValue": "Inserisci una data da {value}",
+			"minLength": "Inserisci più caratteri",
+			"minLengthValue": "Inserisci almeno {value} caratteri",
+			"minValue": "Inserisci un valore maggiore o uguale a {value}",
+			"pattern": "Formato non valido",
+			"patternValue": "I tuoi input devono essere conformi al formato {value}",
+			"required": "Compilare questo campo per favore"
 		},
 		"toasts": {
 			"networkchanged": "La visibilità della rete è cambiata",
@@ -907,10 +930,6 @@
 			"creditadvice": "Accredito"
 		}
 	},
-	"form_error_required": "Compilare questo campo per favore",
-	"form_error_checkrequired": "Questo campo deve essere confermato",
-	"formhint_required": "Campo obbligatore",
-	"formhint_multiple": " Scelta multipla è possibile (Ctrl + click)",
 	"mailsetup_edittitle": "Modificare impostazion SMTP",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port an SMTP-Server",

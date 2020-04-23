@@ -38,7 +38,6 @@
 			"default": "Standard",
 			"empty": "Bitte wählen",
 			"none": "Keine Angabe",
-			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
 			"search": {
 				"placeholder": "z.B. Name oder Beschreibung"
@@ -130,6 +129,30 @@
 			"general": {
 				"empty": "Alle"
 			}
+		},
+		"hints": {
+			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
+			"required": "Pflichtfeld"
+		},
+		"errors": {
+			"confirmationRequired": "Dieses Feld muss bestätigt werden",
+			"date": "Bitte gib ein gültiges Datum ein",
+			"email": "Bitte gib eine gültige Emailadresse ein",
+			"max": "Bitte gib einen kleineren Wert ein",
+			"maxDate": "Bitte gib ein früheres Datum ein",
+			"maxDateValue": "Bitte gib ein Datum bis {value} ein",
+			"maxLength": "Bitte gib weniger Zeichen ein",
+			"maxLengthValue": "Bitte gib maximal {value} Zeichen ein",
+			"maxValue": "Bitte gib einen Wert kleiner-gleich {value} ein",
+			"min": "Bitte gib einen größeren Wert ein",
+			"minDate": "Bitte gib ein späteres Datum ein",
+			"minDateValue": "Bitte gib ein Datum ab {value} ein",
+			"minLength": "Bitte gib mehr Zeichen ein",
+			"minLengthValue": "Bitte gib mindestens {value} Zeichen ein",
+			"minValue": "Bitte gib einen Wert größer-gleich {value} ein",
+			"pattern": "Ungültiges Format",
+			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
+			"required": "Bitte fülle dieses Feld aus"
 		},
 		"toasts": {
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
@@ -907,10 +930,6 @@
 			"sponsoring": "Sponsoring"
 		}
 	},
-	"form_error_required": "Bitte fülle dieses Feld aus",
-	"form_error_checkrequired": "Dieses Feld muss bestätigt werden",
-	"formhint_required": "Pflichtfeld",
-	"formhint_multiple": "Mehrfachauswahl möglich (STRG + Klick)",
 	"mailsetup_edittitle": "SMTP-Einstellungen bearbeiten",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port an SMTP-Server",

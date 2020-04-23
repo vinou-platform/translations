@@ -38,7 +38,6 @@
 			"default": "Standard",
 			"empty": "Veuillez choisir",
 			"none": "Pas d'information",
-			"required": "Champ obligatoire",
 			"upload_image": "Sélectionnez l'image à télécharger",
 			"search": {
 				"placeholder": "p.ex. nom ou description"
@@ -130,6 +129,30 @@
 			"general": {
 				"empty": "Tous"
 			}
+		},
+		"hints": {
+			"multiselectable": "Sélection multiple possible (CTRL + clic)",
+			"required": "Champ obligatoire"
+		},
+		"errors": {
+			"confirmationRequired": "Ce champ doit être confirmé",
+			"date": "Veuillez saisir une date valide",
+			"email": "Veuillez saisir une adresse e-mail valide",
+			"max": "Veuillez saisir une valeur plus petite",
+			"maxDate": "Veuillez saisir une date antérieure",
+			"maxDateValue": "Veuillez entrer une date jusqu'à {value}",
+			"maxLength": "Veuillez saisir moins de caractères",
+			"maxLengthValue": "Veuillez saisir un maximum de {valeur} caractères",
+			"maxValue": "Veuillez saisir une valeur inférieure ou égale à {value}",
+			"min": "Veuillez saisir une valeur supérieure",
+			"minDate": "Veuillez saisir une date ultérieure",
+			"minDateValue": "Veuillez saisir une date à partir de {value}",
+			"minLength": "Veuillez saisir plus de caractères",
+			"minLengthValue": "Veuillez saisir au moins {value} caractères",
+			"minValue": "Veuillez saisir une valeur supérieure ou égale à {value}",
+			"pattern": "Format non valide",
+			"patternValue": "Votre entrée doit être conforme au format {value}",
+			"required": "Veuillez remplir ce champ"
 		},
 		"toasts": {
 			"networkchanged": "La visibilité du réseau a changé",
@@ -910,10 +933,6 @@
 			"sponsoring": "Parrainage"
 		}
 	},
-	"form_error_required": "Veuillez remplir ce champ",
-	"form_error_checkrequired": "Ce champ doit être confirmé",
-	"formhint_required": "Champ obligatoire",
-	"formhint_multiple": "Sélection multiple possible (CTRL + clic)",
 	"mailsetup_edittitle": "Éditer modification de SMTP",
 	"mailsetup_smtpserver": "Serveur SMTP",
 	"mailsetup_smtpport": "Port sur Serveur SMTP",

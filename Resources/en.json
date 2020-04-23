@@ -38,7 +38,6 @@
 			"default": "Default",
 			"empty": "Please select",
 			"none": "No information",
-			"required": "Required",
 			"upload_image": "Select image to upload",
 			"search": {
 				"placeholder": "e.g. name or description"
@@ -130,6 +129,30 @@
 			"general": {
 				"empty": "Show all"
 			}
+		},
+		"hints": {
+			"multiselectable": "Multiple select possible (CTRL + click)",
+			"required": "Required"
+		},
+		"errors": {
+			"confirmationRequired": "This field needs to be confirmed",
+			"date": "Please enter a valid date",
+			"email": "Please enter a valid email address",
+			"max": "Please enter a smaller value",
+			"maxDate": "Please enter an earlier date",
+			"maxDateValue": "Please enter a date until {value}",
+			"maxLength": "Please enter fewer characters",
+			"maxLengthValue": "Please enter a maximum of {value} characters",
+			"maxValue": "Please enter a value less than or equal to {value}",
+			"min": "Please enter a larger value",
+			"minDate": "Please enter a later date",
+			"minDateValue": "Please enter a date from {value}",
+			"minLength": "Please enter more characters",
+			"minLengthValue": "Please enter at least {value} characters",
+			"minValue": "Please enter a value greater than or equal to {value}",
+			"pattern": "Invalid format",
+			"patternValue": "Your input should conform to the format {value}",
+			"required": "Please fill in this field"
 		},
 		"toasts": {
 			"networkchanged": "Network visibility changed",
@@ -907,10 +930,6 @@
 			"sponsoring": "Sponsoring"
 		}
 	},
-	"form_error_required": "Please fill in this field",
-	"form_error_checkrequired": "This field is required",
-	"formhint_required": "required",
-	"formhint_multiple": "multiple select possible (CTRL + click)",
 	"mailsetup_edittitle": "Edit SMTP-Server properties",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port on SMTP-Server",

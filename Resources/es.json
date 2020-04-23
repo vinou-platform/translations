@@ -38,7 +38,6 @@
 			"default": "estándar",
 			"empty": "Por favor seleccione",
 			"none": "no hay datos",
-			"required": "casilla obligatoria",
 			"upload_image": "Seleccione y cargue imágen",
 			"search": {
 				"placeholder": "e.j. nombre o descripción"
@@ -130,6 +129,31 @@
 			"general": {
 				"empty": "todos"
 			}
+		},
+	"formhint_multiple": "",
+		"hints": {
+			"multiselectable": "selección múltiple posible (Ctrl + clic)",
+			"required": "campo obligatorio"
+		},
+		"errors": {
+			"confirmationRequired": "Hay que confirmar esa casilla",
+			"date": "Ingrese una fecha válida",
+			"email": "Ingrese una dirección de correo electrónico válida",
+			"max": "Ingrese un valor menor",
+			"maxDate": "Ingrese una fecha anterior",
+			"maxDateValue": "Ingrese una fecha hasta {value}",
+			"maxLength": "Ingrese menos caracteres",
+			"maxLengthValue": "Ingrese un máximo de {value} caracteres",
+			"maxValue": "Ingrese un valor menor o igual que {value}",
+			"min": "Ingrese un valor mayor",
+			"minDate": "Ingrese una fecha posterior",
+			"minDateValue": "Ingrese una fecha de {value}",
+			"minLength": "Ingrese más caracteres",
+			"minLengthValue": "Ingrese al menos {value} caracteres",
+			"minValue": "Ingrese un valor mayor o igual a {value}",
+			"pattern": "Formato no válido",
+			"patternValue": "Su entrada debe cumplir con el formato {value}",
+			"required": "Por favor llene esa casilla"
 		},
 		"toasts": {
 			"networkchanged": "visibilidad de red modificada",
@@ -907,10 +931,6 @@
 			"sponsoring": "patrocinio"
 		}
 	},
-	"form_error_required": "Por favor llene esa casilla",
-	"form_error_checkrequired": "Hay que confirmar esa casilla.",
-	"formhint_required": "campo obligatorio",
-	"formhint_multiple": "selección multiple posible(Ctrl + click)",
 	"mailsetup_edittitle": "editar ajustes de SMTP",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port á SMTP-Server",
