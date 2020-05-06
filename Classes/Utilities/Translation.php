@@ -68,7 +68,7 @@ class Translation {
 	 */
 	public function localizeWine($wine = null) {
 
-		if ($wine['language'] != $this->countryCode)
+		if (isset($wine['language']) && $wine['language'] != $this->countryCode)
 			$this->loadCountryCode($wine['language'], true);
 		else
 			$this->loadCountryCode($this->countryCode);
@@ -114,7 +114,7 @@ class Translation {
 			$dictionary = json_decode(file_get_contents($this->llPath . $code . '.json'), true);
 			if (!$dictionary)
 				return false;
-			
+
 			$this->dictionary[$code] = $dictionary;
 
 			// Initialize lookups.

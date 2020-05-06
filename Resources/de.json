@@ -38,9 +38,10 @@
 			"default": "Standard",
 			"empty": "Bitte wählen",
 			"none": "Keine Angabe",
-			"required": "Pflichtfeld",
 			"upload_image": "Bild auswählen und hochladen",
-			"search_placeholder": "Name oder Beschreibung",
+			"search": {
+				"placeholder": "z.B. Name oder Beschreibung"
+			},
 			"imprint": "Impressum",
 			"dataprotection": "Datenschutz",
 			"termsandconditions": "AGB",
@@ -67,6 +68,8 @@
 			"copyOf": {
 				"1": "Kopie von {name}",
 				"n": "Kopie {n} von {name}"
+
+
 			}
 		},
 		"tabs": {
@@ -126,6 +129,30 @@
 			"general": {
 				"empty": "Alle"
 			}
+		},
+		"hints": {
+			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
+			"required": "Pflichtfeld"
+		},
+		"errors": {
+			"confirmationRequired": "Dieses Feld muss bestätigt werden",
+			"date": "Bitte gib ein gültiges Datum ein",
+			"email": "Bitte gib eine gültige Emailadresse ein",
+			"max": "Bitte gib einen kleineren Wert ein",
+			"maxDate": "Bitte gib ein früheres Datum ein",
+			"maxDateValue": "Bitte gib ein Datum bis {value} ein",
+			"maxLength": "Bitte gib weniger Zeichen ein",
+			"maxLengthValue": "Bitte gib maximal {value} Zeichen ein",
+			"maxValue": "Bitte gib einen Wert kleiner-gleich {value} ein",
+			"min": "Bitte gib einen größeren Wert ein",
+			"minDate": "Bitte gib ein späteres Datum ein",
+			"minDateValue": "Bitte gib ein Datum ab {value} ein",
+			"minLength": "Bitte gib mehr Zeichen ein",
+			"minLengthValue": "Bitte gib mindestens {value} Zeichen ein",
+			"minValue": "Bitte gib einen Wert größer-gleich {value} ein",
+			"pattern": "Ungültiges Format",
+			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
+			"required": "Bitte fülle dieses Feld aus"
 		},
 		"toasts": {
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
@@ -207,7 +234,7 @@
 	"cancel": "Abbrechen",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "Füllmenge",
+			"additionVolume": "Zugang",
 			"barrel": {
 				"label": "Behälter",
 				"placeholder": "Behälter suchen"
@@ -215,6 +242,11 @@
 			"bookingStamp": {
 				"label": "Buchungstag",
 				"placeholder": "dd.MM.YYYY"
+			},
+			"bottles": "Anzahl Flaschen",
+			"cellarWine": {
+				"label": "Weinkonto",
+				"placeholder": "Weinkonto suchen"
 			},
 			"clarifyingOnly": "Zeige nur Behälter zur Klärung",
 			"filtrationPurpose": {
@@ -225,10 +257,13 @@
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
+			"price": "Preis",
+			"purchaseNote": "Anmerkung / Lieferant",
 			"purpose": {
 				"label": "Verwendung",
 				"placeholder": " "
 			},
+			"referenceNumber": "Beleg-Nr. (z.B. Begleitpapiere)",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
@@ -244,15 +279,15 @@
 				"placeholder": "Behälter suchen"
 			},
 			"wine": {
-				"label": "Weinkonto",
-				"placeholder": "Weinkonto suchen"
+				"autoCreate": "Automatisch aus Weinkonto generieren",
+				"label": "Wein",
+				"placeholder": "Wein suchen"
 			},
-			"withdrawalVolume": "Entnahme",
+			"withdrawalVolume": "Abgang",
 
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
-			"filllevel": "Füllhöhe",
 			"substance": "Stoff"
 		},
 		"actions": {
@@ -265,6 +300,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Bestandsübernahme",
+				"sub": " "
+			},
 			"createHarvest": {
 				"main": "Ernte",
 				"sub": " "
@@ -357,17 +396,26 @@
 				"main": "Abfüllung",
 				"sub": " "
 			},
-			"createAccountClosure": {
-				"main": "Kontoabschluss",
+			"createFinancialStatement": {
+				"main": "Jahresabschluss",
 				"sub": " "
 			},
+			"createAccountClosure": {
+				"main": "Konto",
+				"sub": "archivieren"
+			},
 
+			"addSourceBarrel": {
+				"main": "Quellbehälter",
+				"sub": "hinzufügen"
+			},
 			"addTargetBarrel": {
 				"main": "Zielbehälter",
 				"sub": "hinzufügen"
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Bestandsübernahme",
 			"harvest": "Ernte",
 			"additionalPurchase": "Weinzukauf",
 			"marcLiquidation": "Tresterverwertung",
@@ -394,7 +442,8 @@
 			"waterAddition": "Wasser Hinzugabe",
 
 			"bottling": "Abfüllung",
-			"accountClosure": "Kontoabschluss"
+			"financialStatement": "Jahresabschluss",
+			"accountClosure": "Kontoarchivierung"
 		},
 		"views": {
 			"edit": {
@@ -419,8 +468,9 @@
 			"mustAcidity": "Mostsäure",
 			"mustWeight": "Mostgewicht",
 			"name": "Bezeichnung",
-			"number": "Wein-Nr.",
-			"referenceNumber": "AP-Nummer",
+			"number": "Weinnr.",
+			"referenceNumber": "A.P.Nr./Losnr.",
+			"stock": "Bestand",
 			"volume": "Bestand"
 		},
 		"actions": {
@@ -436,28 +486,18 @@
 				"substanceLogs": "Stoffliste"
 			}
 		},
-		"filters": {
-			"label": "Ansicht einschränken",
-			"groupby": {
-				"label": "Ansicht gruppieren nach: "
-			},
-			"sortby": {
-				"label": "Sortierrichtung: "
-			},
-			"showeditor": {
-				"label": "Erfasser anzeigen"
-			}
-		},
-		"types": {
-			"readyforfilling": "Bereit zur Abfüllung"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "Weinkonto anlegen",
 				"editTitle": "Weinkonto bearbeiten"
 			},
 			"gallery": {
-				"currentState": "Aktueller Zustand"
+				"currentState": "Aktueller Zustand",
+				"vintage": "Jahrgang {vintage}",
+				"filters": {
+					"hideClosed": "Archivierte Weinkonten ausblenden",
+					"readyForBottling": "Bereit zur Abfüllung"
+				}
 			}
 		},
 		"dialogs": {
@@ -472,14 +512,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Behälter-Nr.",
-			"label": "Kennzeichnung",
-			"type": "Typ/Material",
 			"capacity": "Fassungsvermögen in Liter",
+			"chstamp": "Zuletzt geändert",
+			"clarifying": "Behälter zur Klärung?",
+			"fillLevel": "Füllstand",
+			"label": "Kennzeichnung",
 			"location": "Aufstellort",
 			"manufacturer": "Hersteller",
-			"clarifying": "Behälter zur Klärung?",
-			"note": "Notizen"
+			"note": "Notizen",
+			"number": "Behälter-Nr.",
+			"type": "Typ/Material"
 		},
 		"actions": {
 			"create": {
@@ -502,11 +544,6 @@
 				"editTitle": "Behälter bearbeiten"
 			},
 			"gallery": {
-				"empty": "leer",
-				"barrelnumber": "Behälter-Nr.",
-				"label": "Bezeichnung",
-				"chstamp": "Zuletzt geändert",
-				"filllevel": "Füllstand",
 				"currentState": "Aktueller Zustand",
 				"filters": {
 					"search": {
@@ -592,7 +629,7 @@
 			"rectifiedConcentratedGrapeMust": "Rektifiziertes Traubenmostkonzentrat",
 			"saccharose": "Saccharose",
 			"sorbicAcid": "Sorbinsäure",
-			"sulfurDioxide": "Schwefeldioxide",
+			"sulfurDioxide": "Schwefeldioxid",
 			"tannin": "Tannine",
 			"tarticAcid": "Weinsäure",
 			"vitaminB1": "Vitamin B1",
@@ -674,7 +711,6 @@
 	"fieldset_general_title": "Allgemeines",
 	"fieldset_region_title": "Regionales",
 	"fieldset_grapetype_title": "Rebsorte",
-	"fieldset_stock_title": "Bestände",
 	"fieldset_facts_title": "Daten & Fakten",
 	"fieldset_analyse_title": "Analyse",
 	"fieldset_additional_title": "Beschreibung & Bild",
@@ -837,47 +873,63 @@
 	"order_create_delivery": "Lieferschein erzeugen",
 	"account_myWinery": "Mein Weingut",
 	"account_myUser": "Mein Benutzer",
-	"db_stock_createtitle": "Warenein-/ausgang buchen",
-	"db_stock_parentid": "Wein",
-	"db_stock": {
-		"field": {
-			"analysis_data": "Analysedaten",
-			"type": "Typ",
-			"quantity": "Menge",
-			"description": "Beschreibung, Lieferant, Rechnungsnr., ...",
-			"winenumber": "Weinnummer",
-			"apnumber": "AP-Nummer",
-			"alcohol": "Alkohol",
-			"sweetness": "Restsüße",
-			"acid": "Säuregehalt",
-			"client": "Kunde",
-			"orderNumber": "Bestellnr.",
-			"purpose": {
-				"label": "Art",
-				"empty": "Bitte wählen",
-				"retour": "Retoure",
-				"bottling": "Abfüllung",
-				"correction": "Korrektur",
-				"delivery": "Anlieferung",
-				"sponsoring": "Sponsoring",
-				"promotion": "Werbung",
-				"invoice": "Rechnung",
-				"creditadvice": "Gutschrift"
-			},
-			"book": {
+	"stock": {
+		"actions": {
+			"create": {
 				"main": "Warenein-/ausgang",
 				"sub": "buchen"
+			},
+			"save": "Warenein-/ausgang speichern"
+		},
+		"fields": {
+			"acidity": "Säuregehalt",
+			"alcohol": "Alkohol",
+			"apNumber": "A.P.Nr./Losnr.",
+			"bookingStamp": "Buchungstag",
+			"client": "Kunde",
+			"note": "Anmerkung, Lieferant, ...",
+			"orderNumber": "Bestellnr.",
+			"purpose": "Art",
+			"quantity": "Menge",
+			"referenceNumber": "Rechnungsnr., Belegnr. (z.B. Begleitpapiere, Weinnr.)",
+			"residualSugar": "Restsüße",
+			"type": "Typ",
+			"wineNumber": "Weinnr."
+		},
+		"fieldsets": {
+			"analysisData": "Analysedaten"
+		},
+		"views": {
+			"edit": {
+				"title": "Warenein-/ausgang buchen"
+			},
+			"gallery": {
+				"empty": "Keine Lagerbewegungen vorhanden"
 			}
 		},
-		"type": {
-			"ingoing": "Eingang",
-			"outgoing": "Ausgang"
+		"toasts": {
+			"created": {
+				"addition": "Wareneingang gebucht",
+				"withdrawal": "Warenausgang gebucht"
+			},
+			"changed": "Buchung geändert",
+			"editError": "Buchung fehlgeschlagen"
+		},
+		"types": {
+			"addition": "Eingang",
+			"withdrawal": "Ausgang"
+		},
+		"purposes": {
+			"bottling": "Abfüllung",
+			"correction": "Korrektur",
+			"creditAdvice": "Gutschrift",
+			"invoice": "Rechnung",
+			"promotion": "Werbung",
+			"purchase": "Anlieferung/Zukauf",
+			"retour": "Retoure",
+			"sponsoring": "Sponsoring"
 		}
 	},
-	"form_error_required": "Bitte fülle dieses Feld aus",
-	"form_error_checkrequired": "Dieses Feld muss bestätigt werden",
-	"formhint_required": "Pflichtfeld",
-	"formhint_multiple": "Mehrfachauswahl möglich (STRG + Klick)",
 	"mailsetup_edittitle": "SMTP-Einstellungen bearbeiten",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port an SMTP-Server",
@@ -1363,31 +1415,6 @@
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Wein"
 		},
-		"stockrotation": {
-			"errors": {
-				"noitems": "Keine Lagerbewegungen vorhanden"
-			},
-			"date": {
-				"label": "Datum"
-			},
-			"source": {
-				"label": "Art",
-				"items": {
-					"stock": "Lager",
-					"position": "Lieferung an Kunde"
-				}
-			},
-			"type": {
-				"label": "Ein-/Ausgang",
-				"items": {
-					"ingoing": "Eingang",
-					"outgoing": "Ausgang"
-				}
-			},
-			"quantity": {
-				"label": "Menge"
-			}
-		},
 		"language": {
 			"original": "{language} (Original)",
 			"translated": "Sprache: {language}"
@@ -1400,7 +1427,7 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "Dateien",
-			"stockrotation": "Lagerbewegungen"
+			"stockRotation": "Lagerbewegungen"
 		},
 		"messages": {
 			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest Du die Änderungen speichern?",
@@ -1746,7 +1773,8 @@
 			"invoice": "Rechnung",
 			"delivery": "Lieferschein",
 			"shipment": "Packetaufkleber",
-			"creditadvice": "Gutschrift"
+			"creditadvice": "Gutschrift",
+			"offer": "Angebot"
 		},
 		"paymenttypes": {
 			"cash": "Barzahlung",
@@ -2452,10 +2480,6 @@
 		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
 		"wine_savours_updated": "Vinou-Gusto aktualisiert!",
-		"stock_booking_ingoing_success": "Wareneingang gebucht",
-		"stock_booking_outgoing_success": "Warenausgang gebucht",
-		"stock_booking_ingoing_failed": "Wareneingang - Buchung fehlgeschlagen",
-		"stock_booking_outgoing_failed": "Warenausgang - Buchung fehlgeschlagen",
 		"view_slider_created": "Slider wurde angelegt!",
 		"view_facebook_created": "Facebook-Iframe wurde angelegt!",
 		"notes": {

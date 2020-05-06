@@ -38,9 +38,10 @@
 			"default": "Standard",
 			"empty": "Veuillez choisir",
 			"none": "Pas d'information",
-			"required": "Champ obligatoire",
 			"upload_image": "Sélectionnez l'image à télécharger",
-			"search_placeholder": "Nom ou description",
+			"search": {
+				"placeholder": "p.ex. nom ou description"
+			},
 			"imprint": "Empreinte",
 			"dataprotection": "Protection des données",
 			"termsandconditions": "Termes et conditions",
@@ -67,6 +68,8 @@
 			"copyOf": {
 				"1": "copie de {name}",
 				"n": "copie {n} de {name}"
+
+
 			}
 		},
 		"tabs": {
@@ -122,7 +125,39 @@
 			"select": {
 				"all": "Tout sélectionner",
 				"none": "Annuler la sélection"
+			},
+			"general": {
+				"empty": "Tous"
 			}
+		},
+		"hints": {
+			"multiselectable": "Sélection multiple possible (CTRL + clic)",
+			"required": "Champ obligatoire"
+		},
+		"errors": {
+			"confirmationRequired": "Ce champ doit être confirmé",
+			"date": "Veuillez saisir une date valide",
+			"email": "Veuillez saisir une adresse e-mail valide",
+			"max": "Veuillez saisir une valeur plus petite",
+			"maxDate": "Veuillez saisir une date antérieure",
+			"maxDateValue": "Veuillez entrer une date jusqu'à {value}",
+			"maxLength": "Veuillez saisir moins de caractères",
+			"maxLengthValue": "Veuillez saisir un maximum de {valeur} caractères",
+			"maxValue": "Veuillez saisir une valeur inférieure ou égale à {value}",
+			"min": "Veuillez saisir une valeur supérieure",
+			"minDate": "Veuillez saisir une date ultérieure",
+			"minDateValue": "Veuillez saisir une date à partir de {value}",
+			"minLength": "Veuillez saisir plus de caractères",
+			"minLengthValue": "Veuillez saisir au moins {value} caractères",
+			"minValue": "Veuillez saisir une valeur supérieure ou égale à {value}",
+			"pattern": "Format non valide",
+			"patternValue": "Votre entrée doit être conforme au format {value}",
+			"required": "Veuillez remplir ce champ"
+		},
+		"toasts": {
+			"networkchanged": "La visibilité du réseau a changé",
+			"internalchanged": "Visibilité interne modifiée",
+			"publicchanged": "La visibilité publique a changé"
 		}
 	},
 	"loader": {
@@ -199,7 +234,7 @@
 	"cancel": "Annuler",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "Capacité",
+			"additionVolume": "Addition",
 			"barrel": {
 				"label": "Récipient",
 				"placeholder": "Cherchez récipient"
@@ -207,6 +242,11 @@
 			"bookingStamp": {
 				"label": "Jour de réservation",
 				"placeholder": "DD.MM.YYYY"
+			},
+			"bottles": "Nombre de bouteilles",
+			"cellarWine": {
+				"label": "Compte du vin",
+				"placeholder": "Cherche compte du vin"
 			},
 			"clarifyingOnly": "Afficher seulement les récipients pour clarification",
 			"filtrationPurpose": {
@@ -217,10 +257,13 @@
 			"lossVolume": "Perte",
 			"marc": "Marc",
 			"note": "Note / utilisation",
+			"price": "Prix",
+			"purchaseNote": "Note / fournisseur",
 			"purpose": {
 				"label": "Utilisation",
 				"placeholder": " "
 			},
+			"referenceNumber": "Reçu no. (par ex. documents d'accompagnement)",
 			"sludgePurpose": {
 				"label": "Utilisation de la lie",
 				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
@@ -236,15 +279,15 @@
 				"placeholder": "Cherchez récipient"
 			},
 			"wine": {
-				"label": "Compte du vin",
-				"placeholder": "Cherche compte du vin"
+				"autoCreate": "Générer automatiquement à partir du compte Wine",
+				"label": "Vin",
+				"placeholder": "Cherche vin"
 			},
-			"withdrawalVolume": "Prélèvement",
+			"withdrawalVolume": "Retrait",
 
 			"barrels": "Récipients",
 			"addition": "Addition",
 			"withdrawal": "Retrait",
-			"filllevel": "Hauteur de remplissage",
 			"substance": "Substance"
 		},
 		"actions": {
@@ -257,6 +300,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Reprise",
+				"sub": "d'inventaire"
+			},
 			"createHarvest": {
 				"main": "Récolte",
 				"sub": " "
@@ -349,17 +396,26 @@
 				"main": "Embouteillage",
 				"sub": " "
 			},
+			"createFinancialStatement": {
+				"main": "États",
+				"sub": "financiers"
+			},
 			"createAccountClosure": {
-				"main": "Conclusion du compte",
-				"sub": " "
+				"main": "Fermer",
+				"sub": "le compte"
 			},
 
+			"addSourceBarrel": {
+				"main": "Conteneur source",
+				"sub": "ajouter"
+			},
 			"addTargetBarrel": {
 				"main": "Récipient de cible",
 				"sub": "ajouter"
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Reprise d'inventaire",
 			"harvest": "Récolte",
 			"additionalPurchase": "Achat de vin",
 			"marcLiquidation": "Utilisation du marc",
@@ -386,7 +442,8 @@
 			"waterAddition": "Ajout d'eau",
 
 			"bottling": "Embouteillage",
-			"accountClosure": "Conclusion du compte"
+			"financialStatement": "États financiers",
+			"accountClosure": "Fermeture de compte"
 		},
 		"views": {
 			"edit": {
@@ -413,6 +470,7 @@
 			"name": "Nom",
 			"number": "Numéro du vin",
 			"referenceNumber": "Numéro AP",
+			"stock": "Stock",
 			"volume": "Stock"
 		},
 		"actions": {
@@ -428,20 +486,8 @@
 				"substanceLogs": "List des substances"
 			}
 		},
-		"filters": {
-			"label": "Restreindre vue",
-			"groupby": {
-				"label": "Grouper vue par: "
-			},
-			"sortby": {
-				"label": "Direction du tri: "
-			},
-			"showeditor": {
-				"label": "Afficher détecteur"
-			}
-		},
 		"types": {
-			"readyforfilling": "Prêt à l'embouteillage"
+			"readyforfilling": ""
 		},
 		"views": {
 			"edit": {
@@ -449,7 +495,12 @@
 				"editTitle": "Éditer compte du vin"
 			},
 			"gallery": {
-				"currentState": "État actuellement"
+				"currentState": "État actuellement",
+				"vintage": "Millésime {vintage}",
+				"filters": {
+					"hideClosed": "Masquer les comptes de vin archivés",
+					"readyForBottling": "Prêt à l'embouteillage"
+				}
 			}
 		},
 		"dialogs": {
@@ -464,14 +515,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Numéro du recipient",
-			"label": "Étiquetage",
-			"type": "Type/Matiére",
 			"capacity": "Capacité en litres",
+			"chstamp": "Modification dernière",
+			"clarifying": "Recipient à Collage?",
+			"fillLevel": "Hauteur de remplissage",
+			"label": "Étiquetage",
 			"location": "Location",
 			"manufacturer": "Frabricant",
-			"clarifying": "Recipient à Collage?",
-			"note": "Notes"
+			"note": "Notes",
+			"number": "Numéro du recipient",
+			"type": "Type/Matiére"
 		},
 		"actions": {
 			"create": {
@@ -494,11 +547,6 @@
 				"editTitle": "Éditer recipient"
 			},
 			"gallery": {
-				"empty": "vide",
-				"barrelnumber": "Numéro du recipient",
-				"label": "Désignation",
-				"chstamp": "Modification dernière",
-				"filllevel": "Hauteur de remplissage",
 				"currentState": "État actuellement",
 				"filters": {
 					"search": {
@@ -666,7 +714,6 @@
 	"fieldset_general_title": "Général",
 	"fieldset_region_title": "Régional",
 	"fieldset_grapetype_title": "Cépage",
-	"fieldset_stock_title": "Stock",
 	"fieldset_facts_title": "Données & Faits",
 	"fieldset_analyse_title": "Analyse",
 	"fieldset_additional_title": "Description & Photo",
@@ -790,7 +837,6 @@
 	"db_orders_createtitle": "Créer ordre",
 	"db_orders_edittitle": "Éditer ordre",
 	"db_orders_viewtitle": "Regarder ordre",
-	"db_orders_status_offer": "Offres",
 	"db_orders_status_new": "Reçu",
 	"db_orders_status_need_payment": "Paiement anticipé attendu",
 	"db_orders_status_payed": "Paiement anticipé reçu",
@@ -830,47 +876,63 @@
 	"order_create_delivery": "Créer bon de livraison",
 	"account_myWinery": "Mon établissement vinicole",
 	"account_myUser": "Mon utilisateur",
-	"db_stock_createtitle": "Enregistrement de l'entrée et de la sortie de marchandises",
-	"db_stock_parentid": "Vin",
-	"db_stock": {
-		"field": {
-			"analysis_data": "Données analytiques",
-			"type": "Type",
-			"quantity": "Quantité",
-			"description": "Description, fournisseur, facture no., ...",
-			"winenumber": "Numéro du vin",
-			"apnumber": "Numéro AP",
-			"alcohol": "Alcool",
-			"sweetness": "Sucre résiduel",
-			"acid": "Teneur en acide",
-			"client": "Client",
-			"orderNumber": "N° de commande",
-			"purpose": {
-				"label": "Type",
-				"empty": "Veuillez choisir",
-				"retour": "Retoue",
-				"bottling": "Embouteillage",
-				"correction": "Correction",
-				"delivery": "Livraison",
-				"sponsoring": "Parrainage",
-				"promotion": "Promotion",
-				"invoice": "Facture",
-				"creditadvice": "Crédit"
-			},
-			"book": {
+	"stock": {
+		"actions": {
+			"create": {
 				"main": "D'entrée et sortie de marchandises",
 				"sub": "enregistrer"
+			},
+			"save": "Enregistrer les marchandises entrantes / sortantes"
+		},
+		"fields": {
+			"acidity": "Teneur en acide",
+			"alcohol": "Alcool",
+			"apNumber": "Numéro AP",
+			"bookingStamp": "Jour de réservation",
+			"client": "Client",
+			"note": "Description, fournisseur, ...",
+			"orderNumber": "N° de commande",
+			"purpose": "Type",
+			"quantity": "Quantité",
+			"referenceNumber": "Facture no., reçu no. (par ex. documents d'accompagnement, numéro du vin)",
+			"residualSugar": "Sucre résiduel",
+			"type": "Type",
+			"wineNumber": "Numéro du vin"
+		},
+		"fieldsets": {
+			"analysisData": "Données analytiques"
+		},
+		"views": {
+			"edit": {
+				"title": "Enregistrement de l'entrée et de la sortie de marchandises"
+			},
+			"gallery": {
+				"empty": "Aucun mouvement de stock disponible"
 			}
 		},
-		"type": {
-			"ingoing": "D'entrée",
-			"outgoing": "Retrait"
+		"toasts": {
+			"created": {
+				"addition": "Entrée de marchandises enregistrée!",
+				"withdrawal": "Sortie de marchandises enregistrée!"
+			},
+			"changed": "Réservation modifiée!",
+			"editError": "La réservation a échoué!"
+		},
+		"types": {
+			"addition": "D'entrée",
+			"withdrawal": "Retrait"
+		},
+		"purposes": {
+			"bottling": "Embouteillage",
+			"correction": "Correction",
+			"creditAdvice": "Crédit",
+			"invoice": "Facture",
+			"promotion": "Promotion",
+			"purchase": "Livraison",
+			"retour": "Retoue",
+			"sponsoring": "Parrainage"
 		}
 	},
-	"form_error_required": "Veuillez remplir ce champ",
-	"form_error_checkrequired": "Ce champ doit être confirmé",
-	"formhint_required": "Champ obligatoire",
-	"formhint_multiple": "Sélection multiple possible (CTRL + clic)",
 	"mailsetup_edittitle": "Éditer modification de SMTP",
 	"mailsetup_smtpserver": "Serveur SMTP",
 	"mailsetup_smtpport": "Port sur Serveur SMTP",
@@ -1288,10 +1350,6 @@
 			"inwinelist": "Afficher dans la liste des vins",
 			"maturation": "Maturation",
 			"name": "Nom",
-			"networkvisibility": {
-				"label": "Afficher ce vin dans le réseau",
-				"description": "Si votre vin n'apparaît pas sur le réseau Vinou ©, vous pouvez désactiver ici toutes les fonctionnalités du réseau."
-			},
 			"nostock": "Pas de stock",
 			"nostocktext": "Texte affiché s'il n'y a pas de stock (p.ex. disponible de...)",
 			"public_wines": "Vins publics",
@@ -1360,31 +1418,6 @@
 		"files": {
 			"title": "Fichiers et documents sur ce vin"
 		},
-		"stockrotation": {
-			"errors": {
-				"noitems": "Aucun mouvement de stock disponible"
-			},
-			"date": {
-				"label": "Date"
-			},
-			"source": {
-				"label": "Type",
-				"items": {
-					"stock": "Stock",
-					"position": "Livraison au client"
-				}
-			},
-			"type": {
-				"label": "D'entrée/sortie",
-				"items": {
-					"ingoing": "D'entrée",
-					"outgoing": "Sortie"
-				}
-			},
-			"quantity": {
-				"label": "Quantité"
-			}
-		},
 		"language": {
 			"original": "{language} (Original)",
 			"translated": "Langue: {language}"
@@ -1397,7 +1430,7 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "Fichiers",
-			"stockrotation": "Mouvements de stock"
+			"stockRotation": "Mouvements de stock"
 		},
 		"messages": {
 			"formdirty": "Le vin actuel a été édité. Voulez-vous enregistrer les modifications?",
@@ -1422,10 +1455,6 @@
 			"crstamp": "Date de création",
 			"inshop": "Afficher dans la boutique",
 			"inwinelist": "Afficher dans la list du vin",
-			"networkvisibility": {
-				"label": "Afficher cette categorie dans le réseau",
-				"description": "Si la catégorie n'apparaît pas sur le réseau Vinou©, vous pouvez désactiver ici toutes les fonctionnalités du réseau."
-			},
 			"sorting": "Index de tri manuel (p.ex. pour le boutique)"
 		},
 		"actions": {
@@ -2135,6 +2164,169 @@
 			"deleted": "Fichier supprimé!"
 		}
 	},
+	"fileImport": {
+		"actions": {
+			"analyse": "Start analyse",
+			"execute": "Execute import"
+		},
+		"views": {
+			"create": {
+				"title": "Data import"
+			},
+			"upload": {
+				"title": "Step 1 - Upload data",
+				"description": "Only Excel files allowed (xls, xlsx). Filesize should be smaller than 5 MB. <strong>Please make sure that file contains a valid headline that contains only allowed fields. </strong> An example file could be downloaded <a href='http://www.vinou.de/vorlagen'>here</a>."
+			},
+			"analyse": {
+				"title": "Step 2 - Analyse data",
+				"description": "Don't close the modal during analyse process.",
+				"result": "Step 2 - Analyse result",
+				"headrow": "Headline",
+				"headrowdetected": "The headline <strong>is detected as valid</strong>",
+				"headrowfailed": "The headline <strong>is invalid or not existing</strong>",
+				"total": "Whole file",
+				"totalcount": "<strong>{count} rows</strong> detected",
+				"totaldatacount": "<strong>{count} entries</strong> prepared for import",
+				"unreadable": "<strong>{count}</strong> wrong fieldnames",
+				"noproperty": "<strong>{count}</strong> fields that couldn't be imported"
+			},
+			"execute": {
+				"title": "Step 3 - Import data",
+				"importstatus": "{imported} of {total} imported"
+			},
+			"importresult": {
+				"title": "Import finished",
+				"description": "Data successfulls imported",
+				"errors": {
+					"headline": "IMPORTANT! The file contains faulty data",
+					"text": "<strong>{aborted} entries</strong> were not imported. The Lines <strong>{errors}</strong> are faulty. These lines can be duplicates."
+				}
+			}
+		},
+		"fields": {
+			"file": "Fileupload"
+		},
+		"toasts": {
+			"fileuploadedsuccess": "File uploaded!",
+			"fileuploadedfailed": "File upload failed!",
+			"importanalysesuccess": "File analyse successful",
+			"importanalysefailed": "File analyse failed!",
+			"importnextpackage": "Next import package started",
+			"importexecutedsuccess": "Import execution successful!",
+			"importexecutedfailed": "Import execution failed!"
+		}
+	},
+	"news": {
+		"gallery": {
+			"sortby": {
+				"label": "Sort view by: "
+			},
+			"sortdirection": {
+				"label": "Sort direction: ",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"filter": {
+				"visibility": "Filter by visibility"
+			}
+		},
+		"action": {
+			"create": {
+				"modaltitle": "Create news entry",
+				"main": "Create new",
+				"sub": "News entry"
+			},
+			"search": {
+				"placeholder": "e.q. title, teaser, content"
+			}
+		},
+		"views": {
+			"files": {
+				"title": "Files",
+				"empty": "There are no {label} for this news entry."
+			}
+		},
+		"tabs": {
+			"files": "Files"
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings",
+			"seo": "Search engine specific information"
+		},
+		"fields": {
+			"title": "Title",
+			"image": "Image",
+			"teaser": "Teaser (Preview-Text)",
+			"content": "Content",
+			"link": "external link",
+			"visibility": "visibility",
+			"startdate": "start date",
+			"enddate": "end date",
+			"meta_title": "title-tag",
+			"meta_description": "meta description",
+			"path_segment": "path segment"
+		},
+		"toasts": {
+			"created": "News entry created!",
+			"changed": "News entry updated!",
+			"deleted": "News entry deleted!",
+			"image_uploaded": "Newsimage uploaded!",
+			"image_deleted": "Newsimage deleted",
+			"copied": "News entry copied"
+		},
+		"dialogs": {
+			"delete": "Are you sure you want to delete this news entry?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommendation for optimal display </b> <br> Dimensions: 1920x1280px <br/> File format: .png (cropped)"
+		},
+		"files": {
+			"title": "Files and documents related to this news entry"
+		}
+	},
+	"text": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Text"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "No texts have been created so far."
+			}
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings"
+		},
+		"fields": {
+			"title": "title",
+			"content": "content",
+			"visibility": "Visibility",
+			"identifier": "Identifier (for external access)",
+			"manualidentifier": "Manual Identifier",
+			"path_segment": "Path segment",
+			"chstamp": "Last change"
+		},
+		"toasts": {
+			"created": "Text created!",
+			"changed": "Text changed!",
+			"deleted": "Text deleted!"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this text?"
+		},
+		"identifier": {
+			"legalnotice": "Legal notice",
+			"privacypolicy": "Privacy policy",
+			"conditionsofservice": "Conditions of Service",
+			"revocation": "Revocation",
+			"shippingpolicy": "Shipping policy",
+			"individual": "Individual"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Cofiguration du compte",
@@ -2199,6 +2391,10 @@
 		"mail": {
 			"title": "Configuration du courriel",
 			"description": "Vinou et votre boutique en ligne envoient des e-mails régulièrement ou automatiquement via certains processus. Pour l'expédition, vous pouvez déposer ici les paramètres d'une boîte aux lettres."
+		},
+		"texts": {
+			"title": "Texts",
+			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
 		},
 		"messages": {
 			"hints": {
@@ -2287,10 +2483,6 @@
 		"wine_image_deleted": "Image supprimée!",
 		"wine_expertise_generated": "Expertise générée!",
 		"wine_savours_updated": "Vinou-Gusto mis à jour!",
-		"stock_booking_ingoing_success": "Entrée de marchandises enregistrée!",
-		"stock_booking_outgoing_success": "Sortie de marchandises enregistrée!",
-		"stock_booking_ingoing_failed": "Entrée de marchandises - enregistrement a échoué",
-		"stock_booking_outgoing_failed": "Sortie de marchandises - enregistrement a échoué",
 		"view_slider_created": "Slider a été créé!",
 		"view_facebook_created": "Facebook-Iframe a été créé!",
 		"notes": {

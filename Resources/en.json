@@ -38,9 +38,10 @@
 			"default": "Default",
 			"empty": "Please select",
 			"none": "No information",
-			"required": "Required",
 			"upload_image": "Select image to upload",
-			"search_placeholder": "Name or description",
+			"search": {
+				"placeholder": "e.g. name or description"
+			},
 			"imprint": "Imprint",
 			"dataprotection": "Dataprotection",
 			"termsandconditions": "Terms and conditions",
@@ -129,6 +130,30 @@
 				"empty": "Show all"
 			}
 		},
+		"hints": {
+			"multiselectable": "Multiple select possible (CTRL + click)",
+			"required": "Required"
+		},
+		"errors": {
+			"confirmationRequired": "This field needs to be confirmed",
+			"date": "Please enter a valid date",
+			"email": "Please enter a valid email address",
+			"max": "Please enter a smaller value",
+			"maxDate": "Please enter an earlier date",
+			"maxDateValue": "Please enter a date until {value}",
+			"maxLength": "Please enter fewer characters",
+			"maxLengthValue": "Please enter a maximum of {value} characters",
+			"maxValue": "Please enter a value less than or equal to {value}",
+			"min": "Please enter a larger value",
+			"minDate": "Please enter a later date",
+			"minDateValue": "Please enter a date from {value}",
+			"minLength": "Please enter more characters",
+			"minLengthValue": "Please enter at least {value} characters",
+			"minValue": "Please enter a value greater than or equal to {value}",
+			"pattern": "Invalid format",
+			"patternValue": "Your input should conform to the format {value}",
+			"required": "Please fill in this field"
+		},
 		"toasts": {
 			"networkchanged": "Network visibility changed",
 			"internalchanged": "Internal visibility changed",
@@ -215,8 +240,13 @@
 				"placeholder": "Search barrel"
 			},
 			"bookingStamp": {
-				"label": "Buchungstag",
+				"label": "Booking day",
 				"placeholder": "MM/dd/YYYY"
+			},
+			"bottles": "Number of bottles",
+			"cellarWine": {
+				"label": "Raw wine",
+				"placeholder": "Search raw wine"
 			},
 			"clarifyingOnly": "Show only clarifying barrels",
 			"filtrationPurpose": {
@@ -227,10 +257,13 @@
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",
 			"note": "Note / Purpose",
+			"price": "Price",
+			"purchaseNote": "Note / supplier",
 			"purpose": {
 				"label": "Purpose",
 				"placeholder": " "
 			},
+			"referenceNumber": "Receipt no. (e.g. accompanying documents)",
 			"sludgePurpose": {
 				"label": "Purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
@@ -246,6 +279,7 @@
 				"placeholder": "Search barrel"
 			},
 			"wine": {
+				"autoCreate": "Generate automatically from wine account",
 				"label": "Wine",
 				"placeholder": "Search wine"
 			},
@@ -254,7 +288,6 @@
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
-			"filllevel": "Fill level",
 			"substance": "Substance"
 		},
 		"actions": {
@@ -267,6 +300,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Inventory",
+				"sub": "takeover"
+			},
 			"createHarvest": {
 				"main": "Grape harvest",
 				"sub": " "
@@ -359,17 +396,26 @@
 				"main": "Bottling",
 				"sub": " "
 			},
+			"createFinancialStatement": {
+				"main": "Financial",
+				"sub": "statement"
+			},
 			"createAccountClosure": {
 				"main": "Close account",
 				"sub": " "
 			},
 
+			"addSourceBarrel": {
+				"main": "Add source",
+				"sub": "barrel"
+			},
 			"addTargetBarrel": {
 				"main": "Add target",
 				"sub": "barrel"
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Inventory takeover",
 			"harvest": "Grape harvest",
 			"additionalPurchase": "Wine purchase",
 			"marcLiquidation": "Marc liquidation",
@@ -396,6 +442,7 @@
 			"waterAddition": "Water addition",
 
 			"bottling": "Bottling",
+			"financialStatement": "Financial statement",
 			"accountClosure": "Account closure"
 		},
 		"views": {
@@ -423,6 +470,7 @@
 			"name": "Title",
 			"number": "Wine no.",
 			"referenceNumber": "Ref.-no.",
+			"stock": "Stock",
 			"volume": "Stock"
 		},
 		"actions": {
@@ -438,28 +486,18 @@
 				"substanceLogs": "Substance log"
 			}
 		},
-		"filters": {
-			"label": "Filter view",
-			"groupby": {
-				"label": "Group view by: "
-			},
-			"sortby": {
-				"label": "Sort view by: "
-			},
-			"showeditor": {
-				"label": "Show editor"
-			}
-		},
-		"types": {
-			"readyforfilling": "Ready for Filling"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "Create new wine",
 				"editTitle": "Edit wine"
 			},
 			"gallery": {
-				"currentState": "Current state"
+				"currentState": "Current state",
+				"vintage": "Vintage {vintage}",
+				"filters": {
+					"hideClosed": "Hide archived wine accounts",
+					"readyForBottling": "Ready for bottling"
+				}
 			}
 		},
 		"dialogs": {
@@ -474,14 +512,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Barrel-no.",
-			"label": "Label",
-			"type": "Type/Material",
 			"capacity": "Capacity in liter",
+			"chstamp": "Last changes",
+			"clarifying": "Barrel for clarification?",
+			"fillLevel": "Fill level",
+			"label": "Label",
 			"location": "Location",
 			"manufacturer": "Manufacturer",
-			"clarifying": "Barrel for clarification?",
-			"note": "Notices"
+			"note": "Notices",
+			"number": "Barrel-no.",
+			"type": "Type/Material"
 		},
 		"actions": {
 			"create": {
@@ -504,11 +544,6 @@
 				"editTitle": "Edit barrel"
 			},
 			"gallery": {
-				"empty": "empty",
-				"barrelnumber": "Barrel-no.",
-				"label": "Label",
-				"chstamp": "Last changes",
-				"filllevel": "Fill level",
 				"currentState": "Current state",
 				"filters": {
 					"search": {
@@ -676,7 +711,6 @@
 	"fieldset_general_title": "General",
 	"fieldset_region_title": "Regional",
 	"fieldset_grapetype_title": "Grapetype",
-	"fieldset_stock_title": "Stocks",
 	"fieldset_facts_title": "Facts",
 	"fieldset_analyse_title": "Analyse",
 	"fieldset_additional_title": "Description & Image",
@@ -839,47 +873,63 @@
 	"order_create_delivery": "Create Delivery Note",
 	"account_myWinery": "My Winery",
 	"account_myUser": "My User",
-	"db_stock_createtitle": "Booking stock income/outgoing",
-	"db_stock_parentid": "Wine",
-	"db_stock": {
-		"field": {
-			"analysis_data": "Analysis data",
-			"type": "Type",
-			"quantity": "Quantity",
-			"description": "Description, supplier, invoice-no., ...",
-			"winenumber": "Winenumber",
-			"apnumber": "AP-Number",
-			"alcohol": "Alcohol",
-			"sweetness": "Sweetness",
-			"acid": "Acid",
-			"client": "Customer",
-			"orderNumber": "Order-no.",
-			"purpose": {
-				"label": "Purpose",
-				"empty": "Please Choose",
-				"retour": "Retour",
-				"bottling": "Bottling",
-				"correction": "Correction",
-				"delivery": "Delivery",
-				"sponsoring": "Sponsoring",
-				"promotion": "Promotion",
-				"invoice": "Invoice",
-				"creditadvice": "Credit advice"
+	"stock": {
+		"actions": {
+			"create": {
+				"main": "Book stock",
+				"sub": "incoming / outgoing"
 			},
-			"book": {
-				"main": "Booking Stock",
-				"sub": "income/outgoing"
+			"save": "Save stock booking"
+		},
+		"fields": {
+			"acidity": "Acidity",
+			"alcohol": "Alcohol",
+			"apNumber": "A.P.Nr.",
+			"bookingStamp": "Booking day",
+			"client": "Client",
+			"note": "Description, supplier, ...",
+			"orderNumber": "Order no.",
+			"purpose": "Purpose",
+			"quantity": "Quantity",
+			"referenceNumber": "Invoice no., receipt no. (e.g. accompanying documents, wine no.)",
+			"residualSugar": "Residual sugar",
+			"type": "Type",
+			"wineNumber": "Wine no."
+		},
+		"fieldsets": {
+			"analysisData": "Analysis data"
+		},
+		"views": {
+			"edit": {
+				"title": "Book stock incoming / outgoing"
+			},
+			"gallery": {
+				"empty": "No stock rotation exists"
 			}
 		},
-		"type": {
-			"ingoing": "Ingoing",
-			"outgoing": "Outgoing"
+		"toasts": {
+			"created": {
+				"addition": "Incoming stock booked",
+				"withdrawal": "Outgoing stock booked"
+			},
+			"changed": "Stock booking changed",
+			"editError": "Stock could not be booked"
+		},
+		"types": {
+			"addition": "Incoming",
+			"withdrawal": "Outgoing"
+		},
+		"purposes": {
+			"bottling": "Bottling",
+			"correction": "Correction",
+			"creditAdvice": "Credit advice",
+			"invoice": "Invoice",
+			"promotion": "Promotion",
+			"purchase": "Purchase/Delivery",
+			"retour": "Retour",
+			"sponsoring": "Sponsoring"
 		}
 	},
-	"form_error_required": "Please fill in this field",
-	"form_error_checkrequired": "This field is required",
-	"formhint_required": "required",
-	"formhint_multiple": "multiple select possible (CTRL + click)",
 	"mailsetup_edittitle": "Edit SMTP-Server properties",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port on SMTP-Server",
@@ -1297,10 +1347,6 @@
 			"inwinelist": "Show in winelist",
 			"maturation": "Maturation",
 			"name": "Name",
-			"networkvisibility": {
-				"label": "Show this wine on network",
-				"description": "If you don't want your wine to be visible on the Vinou© Network, you can disable all network features here."
-			},
 			"nostock": "sold out",
 			"nostocktext": "alternativ text for sold out",
 			"public_wines": "Public wines",
@@ -1369,31 +1415,6 @@
 		"files": {
 			"title": "Files regarding this wine"
 		},
-		"stockrotation": {
-			"errors": {
-				"noitems": "No stock rotation exists"
-			},
-			"date": {
-				"label": "Date"
-			},
-			"source": {
-				"label": "Type",
-				"items": {
-					"stock": "Stock",
-					"position": "Delivery to client"
-				}
-			},
-			"type": {
-				"label": "In-/Outbound",
-				"items": {
-					"ingoing": "Inbound",
-					"outgoing": "Outbound"
-				}
-			},
-			"quantity": {
-				"label": "Quantity"
-			}
-		},
 		"language": {
 			"original": "{language} (Original)",
 			"translated": "Language: {language}"
@@ -1406,7 +1427,7 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "Files",
-			"stockrotation": "Stock rotation"
+			"stockRotation": "Stock rotation"
 		},
 		"messages": {
 			"formdirty": "Current wine was modified. Do you like to save the changes?",
@@ -1431,10 +1452,6 @@
 			"crstamp": "Creation date",
 			"inshop": "Show in shop",
 			"inwinelist": "Show in wine list",
-			"networkvisibility": {
-				"label": "Show this category on network",
-				"description": "If you don't want this category to be visible on the Vinou© Network, you can disable all network features here."
-			},
 			"sorting": "Manual index (e.g. for shop use)"
 		},
 		"actions": {
@@ -1756,7 +1773,8 @@
 			"invoice": "Invoice",
 			"delivery": "Delivery note",
 			"shipment": "Shipment label",
-			"creditadvice": "Credit advice"
+			"creditadvice": "Credit advice",
+			"offer": "Offer"
 		},
 		"paymenttypes": {
 			"cash": "Cash",
@@ -2462,10 +2480,6 @@
 		"wine_image_deleted": "Image deleted!",
 		"wine_expertise_generated": "Expertise generated!",
 		"wine_savours_updated": "Vinou-Gusto updated!",
-		"stock_booking_ingoing_success": "Ingoing stock booked",
-		"stock_booking_outgoing_success": "Outgoing stock booked",
-		"stock_booking_ingoing_failed": "Ingoing stock could not be booked",
-		"stock_booking_outgoing_failed": "Outgoing stock could not be booked",
 		"view_slider_created": "Slider created!",
 		"view_facebook_created": "Facebook-Iframe created!",
 		"notes": {

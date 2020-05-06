@@ -38,9 +38,10 @@
 			"default": "estándar",
 			"empty": "Por favor seleccione",
 			"none": "no hay datos",
-			"required": "casilla obligatoria",
 			"upload_image": "Seleccione y cargue imágen",
-			"search_placeholder": "nombre o descripción",
+			"search": {
+				"placeholder": "e.j. nombre o descripción"
+			},
 			"imprint": "pie de imprenta",
 			"dataprotection": "protección de datos",
 			"termsandconditions": "términos y condiciones generales",
@@ -67,6 +68,8 @@
 			"copyOf": {
 				"1": "copia de {name}",
 				"n": "copia {n} de {name}"
+
+
 			}
 		},
 		"tabs": {
@@ -122,7 +125,40 @@
 			"select": {
 				"all": "seleccionar todos",
 				"none": "anular selección"
+			},
+			"general": {
+				"empty": "todos"
 			}
+		},
+	"formhint_multiple": "",
+		"hints": {
+			"multiselectable": "selección múltiple posible (Ctrl + clic)",
+			"required": "campo obligatorio"
+		},
+		"errors": {
+			"confirmationRequired": "Hay que confirmar esa casilla",
+			"date": "Ingrese una fecha válida",
+			"email": "Ingrese una dirección de correo electrónico válida",
+			"max": "Ingrese un valor menor",
+			"maxDate": "Ingrese una fecha anterior",
+			"maxDateValue": "Ingrese una fecha hasta {value}",
+			"maxLength": "Ingrese menos caracteres",
+			"maxLengthValue": "Ingrese un máximo de {value} caracteres",
+			"maxValue": "Ingrese un valor menor o igual que {value}",
+			"min": "Ingrese un valor mayor",
+			"minDate": "Ingrese una fecha posterior",
+			"minDateValue": "Ingrese una fecha de {value}",
+			"minLength": "Ingrese más caracteres",
+			"minLengthValue": "Ingrese al menos {value} caracteres",
+			"minValue": "Ingrese un valor mayor o igual a {value}",
+			"pattern": "Formato no válido",
+			"patternValue": "Su entrada debe cumplir con el formato {value}",
+			"required": "Por favor llene esa casilla"
+		},
+		"toasts": {
+			"networkchanged": "visibilidad de red modificada",
+			"internalchanged": "visibilidad interna modificada",
+			"publicchanged": "visibilidad pública ha cambiado."
 		}
 	},
 	"loader": {
@@ -199,7 +235,7 @@
 	"cancel": "cancelar",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "cantidad de llenado",
+			"additionVolume": "acceso",
 			"barrel": {
 				"label": "recipiente",
 				"placeholder": "buscar recipiente"
@@ -207,6 +243,11 @@
 			"bookingStamp": {
 				"label": "fecha de reserva",
 				"placeholder": "dd.MM.YYYY"
+			},
+			"bottles": "Numero de botellas",
+			"cellarWine": {
+				"label": "cuenta de vino",
+				"placeholder": "buscar cuenta de vino"
 			},
 			"clarifyingOnly": "Solo muestra recipientes para la clarificación",
 			"filtrationPurpose": {
@@ -216,11 +257,14 @@
 			"lossRelocation": "trasvase del residuo",
 			"lossVolume": "perdida",
 			"marc": "orujo",
-			"note": "anotación/uso",
+			"note": "anotación / uso",
+			"price": "precio",
+			"purchaseNote": "anotación / proveedor",
 			"purpose": {
 				"label": "uso",
 				"placeholder": " "
 			},
+			"referenceNumber": "Recibo no. (p. documentos adjuntos)",
 			"sludgePurpose": {
 				"label": "uso de lías",
 				"placeholder": "e.j. esparcir como fertilizante en la viña."
@@ -236,15 +280,15 @@
 				"placeholder": "buscar recipiente"
 			},
 			"wine": {
-				"label": "cuenta de vino",
-				"placeholder": "buscar cuenta de vino"
+				"autoCreate": "Generar automáticamente desde la cuenta de vino",
+				"label": "vino",
+				"placeholder": "buscar vino"
 			},
-			"withdrawalVolume": "la toma",
+			"withdrawalVolume": "salida",
 
 			"barrels": "recipiente",
 			"addition": "acceso",
 			"withdrawal": "salida",
-			"filllevel": "nivel",
 			"substance": "sustancia"
 		},
 		"actions": {
@@ -257,6 +301,10 @@
 				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "toma",
+				"sub": "de inventario"
+			},
 			"createHarvest": {
 				"main": "cosecha",
 				"sub": " "
@@ -346,27 +394,36 @@
 			},
 
 			"createBottling": {
-				"main": "el embotellado",
+				"main": "embotellado",
 				"sub": " "
+			},
+			"createFinancialStatement": {
+				"main": "estados",
+				"sub": "financieros"
 			},
 			"createAccountClosure": {
-				"main": "cierre de cuenta",
-				"sub": " "
+				"main": "cerrar",
+				"sub": "cuenta"
 			},
 
+			"addSourceBarrel": {
+				"main": "agregue el recipiente",
+				"sub": "para remojar"
+			},
 			"addTargetBarrel": {
 				"main": "recipiente de destino",
 				"sub": "añadir"
 			}
 		},
 		"types": {
+			"inventoryTakeover": "toma de inventario",
 			"harvest": "cosecha",
 			"additionalPurchase": "compra de vino",
 			"marcLiquidation": "utilización de orujo",
 
 			"relocation": "transposición",
 			"decanting": "colada",
-			"staticSettling": "Entschleimung",
+			"staticSettling": "desgomado",
 			"filtration": "filtración",
 			"privateConsumption": "consumo propio",
 			"shrinkage": "reducción",
@@ -386,6 +443,7 @@
 			"waterAddition": "añadidura de agua",
 
 			"bottling": "embotellado",
+			"financialStatement": "estados financieros",
 			"accountClosure": "cierre de cuenta"
 		},
 		"views": {
@@ -410,9 +468,10 @@
 			"inputVolume": "cantidad durante la entrada ",
 			"mustAcidity": "ácido del mosto de uva",
 			"mustWeight": "peso del mosto de uva",
-			"name": "calsificación",
+			"name": "nombre",
 			"number": "número de vino",
 			"referenceNumber": "AP-Número",
+			"stock": "inventario",
 			"volume": "inventario"
 		},
 		"actions": {
@@ -428,28 +487,18 @@
 				"substanceLogs": "lista de sustancia"
 			}
 		},
-		"filters": {
-			"label": "restringir muestra",
-			"groupby": {
-				"label": "agrupar muestra por: "
-			},
-			"sortby": {
-				"label": "dirección de clasificación: "
-			},
-			"showeditor": {
-				"label": "Autor señalar"
-			}
-		},
-		"types": {
-			"readyforfilling": "Listo para embotellar"
-		},
 		"views": {
 			"edit": {
 				"createTitle": "crear cuenta de vino",
 				"editTitle": "editar cuenta de vino"
 			},
 			"gallery": {
-				"currentState": "estado acutal"
+				"currentState": "estado acutal",
+				"vintage": "Cosecha {vintage}",
+				"filters": {
+					"hideClosed": "Ocultar cuentas de vino archivadas",
+					"readyForBottling": "Listo para embotellar"
+				}
 			}
 		},
 		"dialogs": {
@@ -464,14 +513,16 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "número del recipiente",
-			"label": "identificativo",
-			"type": "tipo/material",
 			"capacity": "capacidad volumétrica en litros",
+			"chstamp": "cambiado por último",
+			"clarifying": "recipiente para clarificación?",
+			"fillLevel": "nivel",
+			"label": "identificativo",
 			"location": "ubicación de disponer",
 			"manufacturer": "confeccionador",
-			"clarifying": "recipiente para clarificación?",
-			"note": "notas"
+			"note": "notas",
+			"number": "número del recipiente",
+			"type": "tipo/material"
 		},
 		"actions": {
 			"create": {
@@ -494,11 +545,6 @@
 				"editTitle": "editar recipiente"
 			},
 			"gallery": {
-				"empty": "leer",
-				"barrelnumber": "número del recipiente",
-				"label": "calificación",
-				"chstamp": "cambiado por último",
-				"filllevel": "nivel",
 				"currentState": "estado acutal",
 				"filters": {
 					"search": {
@@ -666,7 +712,6 @@
 	"fieldset_general_title": "generalidades",
 	"fieldset_region_title": "regionales",
 	"fieldset_grapetype_title": "variedad de uva",
-	"fieldset_stock_title": "existencias",
 	"fieldset_facts_title": "datos y hechos",
 	"fieldset_analyse_title": "análisis",
 	"fieldset_additional_title": "descripción e imágen",
@@ -790,7 +835,6 @@
 	"db_orders_createtitle": "crear orden",
 	"db_orders_edittitle": "editar orden",
 	"db_orders_viewtitle": "ver orden",
-	"db_orders_status_offer": "descuentos",
 	"db_orders_status_new": "llegado a destino",
 	"db_orders_status_need_payment": "pago anticipado se espera pago",
 	"db_orders_status_payed": "pago anticipado llegado a destino",
@@ -830,47 +874,63 @@
 	"order_create_delivery": "crear boletín de entrega",
 	"account_myWinery": "Mi propiedad vinícola",
 	"account_myUser": "Mi usuario",
-	"db_stock_createtitle": "contabilizar entrada/salida de mercancías",
-	"db_stock_parentid": "vino",
-	"db_stock": {
-		"field": {
-			"analysis_data": "datos de análisis",
-			"type": "tipo",
-			"quantity": "cantidad",
-			"description": "descripción, proveedor, factura no., ...",
-			"winenumber": "número de vino",
-			"apnumber": "número de prueba oficial",
-			"alcohol": "alcohol",
-			"sweetness": "azucar residual",
-			"acid": "acidez",
-			"client": "cliente",
-			"orderNumber": "Nº de pedido",
-			"purpose": {
-				"label": "tipo",
-				"empty": "Por favor seleccione",
-				"retour": "retorno",
-				"bottling": "embotellado",
-				"correction": "corrección",
-				"delivery": "entrega",
-				"sponsoring": "patrocinio",
-				"promotion": "reclamo",
-				"invoice": "cuenta",
-				"creditadvice": "abono"
-			},
-			"book": {
+	"stock": {
+		"actions": {
+			"create": {
 				"main": "entrada/salida de mercancías",
 				"sub": "contabilizar"
+			},
+			"save": "Guardar entrada/salida de mercancías"
+		},
+		"fields": {
+			"acidity": "acidez",
+			"alcohol": "alcohol",
+			"apNumber": "número de prueba oficial",
+			"bookingStamp": "fecha",
+			"client": "cliente",
+			"note": "descripción, proveedor, ...",
+			"orderNumber": "Nº de pedido",
+			"purpose": "tipo",
+			"quantity": "cantidad",
+			"referenceNumber": "factura no., recibo no. (p. documentos adjuntos, número de vino)",
+			"residualSugar": "azucar residual",
+			"type": "tipo",
+			"wineNumber": "número de vino"
+		},
+		"fieldsets": {
+			"analysisData": "datos de análisis"
+		},
+		"views": {
+			"edit": {
+				"title": "contabilizar entrada/salida de mercancías"
+			},
+			"gallery": {
+				"empty": "no hay movimientos de almacén"
 			}
 		},
-		"type": {
-			"ingoing": "entrada",
-			"outgoing": "salida"
+		"toasts": {
+			"created": {
+				"addition": "stock entrante reservado",
+				"withdrawal": "stock saliente reservado"
+			},
+			"changed": "reserva de stock modificada",
+			"editError": "no se pudo reservar stock"
+		},
+		"types": {
+			"addition": "entrada",
+			"withdrawal": "salida"
+		},
+		"purposes": {
+			"bottling": "embotellado",
+			"correction": "corrección",
+			"creditAdvice": "abono",
+			"invoice": "cuenta",
+			"promotion": "reclamo",
+			"purchase": "compra",
+			"retour": "retorno",
+			"sponsoring": "patrocinio"
 		}
 	},
-	"form_error_required": "Por favor llene esa casilla",
-	"form_error_checkrequired": "Hay que confirmar esa casilla.",
-	"formhint_required": "campo obligatorio",
-	"formhint_multiple": "selección multiple posible(Ctrl + click)",
 	"mailsetup_edittitle": "editar ajustes de SMTP",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port á SMTP-Server",
@@ -1288,10 +1348,6 @@
 			"inwinelist": "señalar en lista de vino",
 			"maturation": "extensión",
 			"name": "nombre",
-			"networkvisibility": {
-				"label": "Señala ese vino en la red",
-				"description": "Si no quieres que tu vino se encuentre en la red de Vinou puedes desactivar todas las funciones de la red aqui."
-			},
 			"nostock": "vaciado",
 			"nostocktext": "Si vaciado señala texto (e.j. disponible a partir de...)",
 			"public_wines": "vinos publicos",
@@ -1332,49 +1388,6 @@
 			"plastic": "corcho plástico",
 			"glas":	"cierre de vidrio"
 		},
-		"quality_types": {
-			"notspecified": "vino sin indicación de la variedad de uva o del año",
-			"table": "vino con indicación de la variedad de uva o del año",
-			"superior": "vino del país",
-			"origin": "vino de calidad de ciertos terrenos cultivados",
-			"cabinet": "garbinete",
-			"spaetlese": "rebusca",
-			"selection": "selección",
-			"beerenauslese": "selección de bayas",
-			"trockenbeerenauslese": "selección de bayas secas",
-			"sparklingWine": "vino espumoso",
-			"champagne": "cava",
-			"winzersekt": "cava del viticultor",
-			"cremant": "Crémant",
-			"icewine": "vino hecho con uvas congeladas",
-			"champagneSpecificRegion": "cava b.A.",
-			"specialquality": "vino de calidad de madurez y manera de vendimia especial, Prädikatswein",
-			"strawwine": "vino de paja",
-			"estate": "Estate wine",
-			"local": "Vino local",
-			"singlesite": "Vino de pago",
-			"de_vdpGutswein": "|DE| VDP.Gutswein",
-			"de_vdpOrtswein": "|DE| VDP.Ortswein",
-			"de_vdpErsteLage": "|DE| VDP.Erste Lage",
-			"de_vdpGrosseLage": "|DE| VDP.Große Lage",
-			"de_vdpGrossesGewaechs": "|DE| VDP.Großes Gewächs",
-			"de_vdpGutssekt": "|DE| VDP.Gutssekt",
-			"de_vdpOrtssekt": "|DE| VDP.Ortssekt",
-			"es_origin": "Denominación de Origen Protegida (DOP)",
-			"es_superior": "Indicación Geográfica Protegida (IGP)",
-			"es_table": "Vino de mesa",
-			"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-			"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-			"fr_spaetlese": "|FR| Vin doux naturel",
-			"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-			"fr_superior": "|FR| Vin de pays",
-			"fr_table": "|FR| Vin de table",
-			"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-			"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-			"it_specialquality": "|IT| Vino dolce naturale",
-			"it_superior": "|IT| Vino tipico",
-			"it_table": "|IT| Vino da tavola"
-		},
 		"gallery": {
 			"new": {
 				"main": "nuevo vino",
@@ -1403,31 +1416,6 @@
 		"files": {
 			"title": "datos y documentos de ese vino"
 		},
-		"stockrotation": {
-			"errors": {
-				"noitems": "no hay movimientos de almacén"
-			},
-			"date": {
-				"label": "fecha"
-			},
-			"source": {
-				"label": "tipo",
-				"items": {
-					"stock": "almacén",
-					"position": "entrega al cliente"
-				}
-			},
-			"type": {
-				"label": "entrada/salida",
-				"items": {
-					"ingoing": "entrada",
-					"outgoing": "salida"
-				}
-			},
-			"quantity": {
-				"label": "cantidad"
-			}
-		},
 		"language": {
 			"original": "{language} (original)",
 			"translated": "idioma: {language}"
@@ -1440,7 +1428,7 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "datos",
-			"stockrotation": "movimientos de almacén"
+			"stockRotation": "movimientos de almacén"
 		},
 		"messages": {
 			"formdirty": "El vino actual ha sido editado.Quieres grabar esos cambios?",
@@ -1465,10 +1453,6 @@
 			"crstamp": "fecha de creación",
 			"inshop": "señalar en el shop",
 			"inwinelist": "señalar en lista de vinos",
-			"networkvisibility": {
-				"label": "Señala esa categoría en la red",
-				"description": "Si no quieres que la categoría no se encuentre en la red de Vinou© Netzwerk puedes desactivar todas las funciones de la red aqui."
-			},
 			"sorting": "índice de clasificación manual(e.j. para el shop)"
 		},
 		"actions": {
@@ -2178,6 +2162,169 @@
 			"deleted": "Archivo ha sido borrado!"
 		}
 	},
+	"fileImport": {
+		"actions": {
+			"analyse": "Start analyse",
+			"execute": "Execute import"
+		},
+		"views": {
+			"create": {
+				"title": "Data import"
+			},
+			"upload": {
+				"title": "Step 1 - Upload data",
+				"description": "Only Excel files allowed (xls, xlsx). Filesize should be smaller than 5 MB. <strong>Please make sure that file contains a valid headline that contains only allowed fields. </strong> An example file could be downloaded <a href='http://www.vinou.de/vorlagen'>here</a>."
+			},
+			"analyse": {
+				"title": "Step 2 - Analyse data",
+				"description": "Don't close the modal during analyse process.",
+				"result": "Step 2 - Analyse result",
+				"headrow": "Headline",
+				"headrowdetected": "The headline <strong>is detected as valid</strong>",
+				"headrowfailed": "The headline <strong>is invalid or not existing</strong>",
+				"total": "Whole file",
+				"totalcount": "<strong>{count} rows</strong> detected",
+				"totaldatacount": "<strong>{count} entries</strong> prepared for import",
+				"unreadable": "<strong>{count}</strong> wrong fieldnames",
+				"noproperty": "<strong>{count}</strong> fields that couldn't be imported"
+			},
+			"execute": {
+				"title": "Step 3 - Import data",
+				"importstatus": "{imported} of {total} imported"
+			},
+			"importresult": {
+				"title": "Import finished",
+				"description": "Data successfulls imported",
+				"errors": {
+					"headline": "IMPORTANT! The file contains faulty data",
+					"text": "<strong>{aborted} entries</strong> were not imported. The Lines <strong>{errors}</strong> are faulty. These lines can be duplicates."
+				}
+			}
+		},
+		"fields": {
+			"file": "Fileupload"
+		},
+		"toasts": {
+			"fileuploadedsuccess": "File uploaded!",
+			"fileuploadedfailed": "File upload failed!",
+			"importanalysesuccess": "File analyse successful",
+			"importanalysefailed": "File analyse failed!",
+			"importnextpackage": "Next import package started",
+			"importexecutedsuccess": "Import execution successful!",
+			"importexecutedfailed": "Import execution failed!"
+		}
+	},
+	"news": {
+		"gallery": {
+			"sortby": {
+				"label": "Sort view by: "
+			},
+			"sortdirection": {
+				"label": "Sort direction: ",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"filter": {
+				"visibility": "Filter by visibility"
+			}
+		},
+		"action": {
+			"create": {
+				"modaltitle": "Create news entry",
+				"main": "Create new",
+				"sub": "News entry"
+			},
+			"search": {
+				"placeholder": "e.q. title, teaser, content"
+			}
+		},
+		"views": {
+			"files": {
+				"title": "Files",
+				"empty": "There are no {label} for this news entry."
+			}
+		},
+		"tabs": {
+			"files": "Files"
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings",
+			"seo": "Search engine specific information"
+		},
+		"fields": {
+			"title": "Title",
+			"image": "Image",
+			"teaser": "Teaser (Preview-Text)",
+			"content": "Content",
+			"link": "external link",
+			"visibility": "visibility",
+			"startdate": "start date",
+			"enddate": "end date",
+			"meta_title": "title-tag",
+			"meta_description": "meta description",
+			"path_segment": "path segment"
+		},
+		"toasts": {
+			"created": "News entry created!",
+			"changed": "News entry updated!",
+			"deleted": "News entry deleted!",
+			"image_uploaded": "Newsimage uploaded!",
+			"image_deleted": "Newsimage deleted",
+			"copied": "News entry copied"
+		},
+		"dialogs": {
+			"delete": "Are you sure you want to delete this news entry?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommendation for optimal display </b> <br> Dimensions: 1920x1280px <br/> File format: .png (cropped)"
+		},
+		"files": {
+			"title": "Files and documents related to this news entry"
+		}
+	},
+	"text": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Text"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "No texts have been created so far."
+			}
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings"
+		},
+		"fields": {
+			"title": "title",
+			"content": "content",
+			"visibility": "Visibility",
+			"identifier": "Identifier (for external access)",
+			"manualidentifier": "Manual Identifier",
+			"path_segment": "Path segment",
+			"chstamp": "Last change"
+		},
+		"toasts": {
+			"created": "Text created!",
+			"changed": "Text changed!",
+			"deleted": "Text deleted!"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this text?"
+		},
+		"identifier": {
+			"legalnotice": "Legal notice",
+			"privacypolicy": "Privacy policy",
+			"conditionsofservice": "Conditions of Service",
+			"revocation": "Revocation",
+			"shippingpolicy": "Shipping policy",
+			"individual": "Individual"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "ajustes de cuenta",
@@ -2242,6 +2389,10 @@
 		"mail": {
 			"title": "ajustes de E-Mail",
 			"description": "Vinou y también tu shop online envian correos electrónicos automaticamente o a causa de ciertos procesos. Para el envío puedes depositar auqi ajustes para una casilla postal."
+		},
+		"texts": {
+			"title": "Texts",
+			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
 		},
 		"messages": {
 			"hints": {
@@ -2330,10 +2481,6 @@
 		"wine_image_deleted": "Imágen ha sido borrada!",
 		"wine_expertise_generated": "Peritaje ha sido generado!",
 		"wine_savours_updated": "Vinou-Gusto ha sido actualizado!",
-		"stock_booking_ingoing_success": "Entrada de mercancias ha sido contabilizada",
-		"stock_booking_outgoing_success": "Entrada de mercancias ha sido contabilizada",
-		"stock_booking_ingoing_failed": "Entrada de mercancias- Inscripción ha sido fallada",
-		"stock_booking_outgoing_failed": "Entrada de mercancias- Inscripción ha sido fallada",
 		"view_slider_created": "Slider ha sido creado!",
 		"view_facebook_created": "Facebook-Iframe ha sido creado!",
 		"notes": {
