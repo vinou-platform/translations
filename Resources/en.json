@@ -1042,8 +1042,8 @@
 			"settings": "Settings",
 			"invoice": "Invoice data"
 		},
-		"field": {
-			"email": "E-Mail",
+		"fields": {
+			"mail": "E-Mail",
 			"password": "Passwort",
 			"phone": "Phone",
 			"voucher": "I've got a voucher",
@@ -1104,6 +1104,9 @@
 				"activation_error": "An error occured. Account could not be activated!",
 				"activation_success": "Welcome at Vinou!"
 			}
+		},
+		"errors": {
+			"registrationFailed": "Something went wrong during the registration process. Please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
 		}
 	},
 	"network": {
@@ -2495,9 +2498,6 @@
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"
-	},
-	"errors": {
-		"customer_wrongregister": "Something went wrong during the registration process please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
 	},
 	"hints": {
 		"wineries": {
