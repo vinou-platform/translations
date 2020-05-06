@@ -1042,8 +1042,8 @@
 			"settings": "Einstellungen",
 			"invoice": "Rechnungsangaben"
 		},
-		"field": {
-			"email": "E-Mail",
+		"fields": {
+			"mail": "E-Mail",
 			"password": "Passwort",
 			"phone": "Telefon",
 			"voucher": "Ich habe einen Gutschein-Code",
@@ -1104,6 +1104,9 @@
 				"activation_error": "Ein Fehler ist aufgetreten, Deine Mitgliedschaft konnte nicht aktiviert werden!",
 				"activation_success": "Willkommen bei Vinou!"
 			}
+		},
+		"errors": {
+			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat."
 		}
 	},
 	"network": {
@@ -2495,9 +2498,6 @@
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
-	},
-	"errors": {
-		"customer_wrongregister": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat"
 	},
 	"hints": {
 		"wineries": {

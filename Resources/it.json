@@ -1042,8 +1042,8 @@
 			"settings": "Configurazione",
 			"invoice": "Informazioni di fatturazione"
 		},
-		"field": {
-			"email": "E-Mail",
+		"fields": {
+			"mail": "E-Mail",
 			"password": "Password",
 			"phone": "Telefono",
 			"voucher": "Ho un codice promozionale",
@@ -1104,6 +1104,9 @@
 				"activation_error": "Si è verificato un errore, non è stato possibile attivare l'abbonamento!",
 				"activation_success": "Benvenuti in Vinou!"
 			}
+		},
+		"errors": {
+			"registrationFailed": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto."
 		}
 	},
 	"network": {
@@ -2495,9 +2498,6 @@
 	},
 	"alerts": {
 		"token_copy": "Per copiare il token: Ctrl + C, Invio"
-	},
-	"errors": {
-		"customer_wrongregister": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto."
 	},
 	"hints": {
 		"wineries": {

@@ -486,9 +486,6 @@
 				"substanceLogs": "List des substances"
 			}
 		},
-		"types": {
-			"readyforfilling": ""
-		},
 		"views": {
 			"edit": {
 				"createTitle": "Créer compte du vin",
@@ -1045,8 +1042,8 @@
 			"settings": "Configuration",
 			"invoice": "Informations de facturation"
 		},
-		"field": {
-			"email": "Courriel",
+		"fields": {
+			"mail": "Courriel",
 			"password": "Mot de passe",
 			"phone": "Téléphone",
 			"voucher": "J'ai un code promo",
@@ -1107,6 +1104,9 @@
 				"activation_error": "Une erreur est survenue, votre abonnement n'a pas pu être activé.!",
 				"activation_success": "Bienvenue à Vinou!"
 			}
+		},
+		"errors": {
+			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
 		}
 	},
 	"network": {
@@ -2498,9 +2498,6 @@
 	},
 	"alerts": {
 		"token_copy": "Pour copier le jeton: Ctrl + C, Enter"
-	},
-	"errors": {
-		"customer_wrongregister": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
 	},
 	"hints": {
 		"wineries": {
