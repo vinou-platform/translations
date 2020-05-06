@@ -91,7 +91,7 @@
 			},
 			"internal": {
 				"label": "Intern",
-				"description": "Sichtbar für deine Kunden z.B. im Login-Bereich deines Online-Shops"
+				"description": "Sichtbar für Deine Kunden z.B. im Login-Bereich Deines Online-Shops"
 			},
 			"public": {
 				"label": "Öffentlich",
@@ -99,7 +99,7 @@
 			},
 			"shop": {
 				"label": "Shop",
-				"description": "Sichtbar in deinem Shop"
+				"description": "Sichtbar in Deinem Shop"
 			},
 			"winesearch": {
 				"label": "WINESEARCH.io",
@@ -129,7 +129,7 @@
 		},
 		"toasts": {
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
-			"internalchanged": "Sichtbarkeit für deine Kunden geändert",
+			"internalchanged": "Sichtbarkeit für Deine Kunden geändert",
 			"publicchanged": "öffentliche Sichtbarkeit geändert"
 		}
 	},
@@ -158,23 +158,23 @@
 		}
 	},
 	"delete_image": "Bild löschen",
-	"delete_image_secure": "Möchtest du dieses Bild wirklich löschen?",
+	"delete_image_secure": "Möchtest Du dieses Bild wirklich löschen?",
 	"changepw": "Passwort ändern",
-	"wines_modal_delete": "Möchtest du diesen Wein wirklich löschen?",
-	"wineries_modal_delete": "Möchtest du dieses Weingut wirklich löschen?",
-	"category_modal_delete": "Möchtest du diese Kategorie wirklich löschen?",
-	"contacts_modal_delete": "Möchtest du diesen Kontakt wirklich löschen?",
-	"customers_modal_delete": "Möchtest du diesen Kunden wirklich löschen?",
+	"wines_modal_delete": "Möchtest Du diesen Wein wirklich löschen?",
+	"wineries_modal_delete": "Möchtest Du dieses Weingut wirklich löschen?",
+	"category_modal_delete": "Möchtest Du diese Kategorie wirklich löschen?",
+	"contacts_modal_delete": "Möchtest Du diesen Kontakt wirklich löschen?",
+	"customers_modal_delete": "Möchtest Du diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
-	"users_modal_delete": "Möchtest du diesen Benutzer wirklich löschen?",
-	"token_modal_delete": "Möchtest du diesen Token wirklich löschen?",
+	"users_modal_delete": "Möchtest Du diesen Benutzer wirklich löschen?",
+	"token_modal_delete": "Möchtest Du diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
-	"address_modal_delete": "Möchtest du diese Adresse wirklich löschen?",
-	"orders_modal_cancel": "Möchtest du diese Bestellung wirklich stornieren?",
-	"orders_modal_sent": "Möchtest du die Bestellung als Versendet markieren?",
-	"orders_position_delete": "Möchtest du diese Position wirklich löschen?",
-	"orders_position_update": "Möchtest du diese Position wirklich anpassen?",
-	"orders_modal_invoice_create": "Möchtest du Rechnung und Lieferschein für den Versand generieren?",
+	"address_modal_delete": "Möchtest Du diese Adresse wirklich löschen?",
+	"orders_modal_cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
+	"orders_modal_sent": "Möchtest Du die Bestellung als Versendet markieren?",
+	"orders_position_delete": "Möchtest Du diese Position wirklich löschen?",
+	"orders_position_update": "Möchtest Du diese Position wirklich anpassen?",
+	"orders_modal_invoice_create": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
 	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?",
@@ -664,7 +664,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Möchtest du diese Vorlage wirklich löschen?"
+			"delete": "Möchtest Du diese Vorlage wirklich löschen?"
 		},
 		"toasts": {
 			"uploaded": "Vorlage hochgeladen!",
@@ -708,7 +708,7 @@
 	"save": "Speichern",
 	"repeatpw": "Passwort wiederholen",
 	"language": "Sprache",
-	"modal_delete_wine": "Möchtest du diesen Wein wirklich löschen?",
+	"modal_delete_wine": "Möchtest Du diesen Wein wirklich löschen?",
 	"test": "deutsch",
 	"login_emailempty": "E-Mail Adresse nicht angegeben",
 	"login_emailnotvalid": "E-Mail Adresse nicht gültig",
@@ -754,7 +754,7 @@
 	"db_users_gotoregister": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
 	"db_users_lostpassword_title": "Link anfordern",
 	"db_users_lostpassword_submit": "E-Mail anfordern",
-	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link um dein Passwort zurück zu setzen",
+	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link, um Dein Passwort zurückzusetzen",
 	"db_users_resetpassword_title": "Passwort zurücksetzen",
 	"db_users_resetpassword_submit": "Passwort neu setzen",
 	"db_users_resetpassword_send": "Ihr Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
@@ -925,7 +925,7 @@
 				"title": "Probeaccount registrieren",
 				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Commerce entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Publishing Mitgliedschaft nutzen. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
 				"submit": "Account erstellen",
-				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
+				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail, um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
 				"contact": "Kontaktperson",
 				"field": {
@@ -949,7 +949,7 @@
 			},
 			"activate": {
 				"title": "Verifizierung abschließen",
-				"description": "Du bist nur noch einen Schritt von Deiner Mitgliedschaft entfernt. Bitte trage noch Name und Passwort ein um den Administrator-Benutzer anzulegen",
+				"description": "Du bist nur noch einen Schritt von Deiner Mitgliedschaft entfernt. Bitte trage noch Name und Passwort ein, um den Administrator-Benutzer anzulegen",
 				"user": "Administrator anlegen",
 				"submit": "Verifizierung abschließen",
 				"success": "Verifizierung abgeschlossen",
@@ -957,7 +957,7 @@
 			},
 			"upgrade": {
 				"title": "Mitgliedschaft upgraden",
-				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
+				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst Du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
 				"teaser": {
 					"publish": "<b>Du nutzt zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce",
 					"trial": "<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce"
@@ -1044,7 +1044,7 @@
 		"messages": {
 			"dialog": {
 				"activate": "Account vollständig aktivieren?",
-				"smallBusiness": "Möchtest du die Kleinunternehmereinstellung wirklich ändern?<br/>Alle Preise Deiner Weine, Produkte, Versandoptionen, etc. werden hierdurch angepasst und müssen überprüft werden."
+				"smallBusiness": "Möchtest Du die Kleinunternehmereinstellung wirklich ändern?<br/>Alle Preise Deiner Weine, Produkte, Versandoptionen, etc. werden hierdurch angepasst und müssen überprüft werden."
 			},
 			"toasts": {
 				"upgrade": "Vinou-Commerce wurde aktiviert!",
@@ -1070,7 +1070,7 @@
 		},
 		"errors": {
 			"connect": {
-				"nowinesselected": "Es wurden keine Weine ausgewählt! Willst du das Weingut importieren?"
+				"nowinesselected": "Es wurden keine Weine ausgewählt! Willst Du das Weingut importieren?"
 			}
 		},
 		"actions": {
@@ -1145,7 +1145,7 @@
 		"messages": {
 			"hints": {
 				"loadingwines": "Weine werden geladen",
-				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in dein Sortiment zu übernehmen aktiviere die Weinselektion.",
+				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in Dein Sortiment zu übernehmen aktiviere die Weinselektion.",
 				"connectwinery": "Mit Weingut verbinden und alle (selektierten) Weine importieren"
 			},
 			"toasts": {
@@ -1403,8 +1403,8 @@
 			"stockrotation": "Lagerbewegungen"
 		},
 		"messages": {
-			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest du die Änderungen speichern?",
-			"createcopy": "Möchtest du die Angaben aus {wine.name} übernehmen?",
+			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest Du die Änderungen speichern?",
+			"createcopy": "Möchtest Du die Angaben aus {wine.name} übernehmen?",
 			"hints": {
 				"connectwine": "Mit Wein verbinden"
 			},
@@ -1472,7 +1472,7 @@
 				"sub": "erstellen"
 			},
 			"delete": {
-				"confirm": "Möchtest du diesen Preis wirklich löschen?"
+				"confirm": "Möchtest Du diesen Preis wirklich löschen?"
 			}
 		},
 		"fieldSets": {
@@ -1523,7 +1523,7 @@
 				"noentries": "Noch keine Einträge vorhanden"
 			},
 			"dialog": {
-				"delete": "Willst du das Produkt wirklich löschen?"
+				"delete": "Willst Du das Produkt wirklich löschen?"
 			},
 			"toasts": {
 				"created": "Produkt angelegt!",
@@ -1670,7 +1670,7 @@
 				"noentries": "Noch keine Einträge vorhanden"
 			},
 			"dialog": {
-				"delete": "Willst du den Kunden wirklich löschen?"
+				"delete": "Willst Du den Kunden wirklich löschen?"
 			},
 			"toasts": {
 				"created": "Kunde angelegt!",
@@ -1897,7 +1897,7 @@
 		},
 		"dialogs": {
 			"create": {
-				"msg": "Du erfasst eine Bestellung, was möchtest du tun?",
+				"msg": "Du erfasst eine Bestellung, was möchtest Du tun?",
 				"save": "Nur erfassen",
 				"withInvoice": "Erfassen und Rechnung generieren",
 				"withDocuments": "Erfassen und Rechnung und Lieferschein generieren"
@@ -1933,7 +1933,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst du diese Versandoption wirklich löschen?"
+			"delete": "Willst Du diese Versandoption wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Versandoption erstellt",
@@ -1983,7 +1983,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst du die Versandeinheit wirklich löschen?"
+			"delete": "Willst Du die Versandeinheit wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Versandeinheit angelegt",
@@ -2010,7 +2010,7 @@
 			"service": "Sendungsart",
 			"shipcloudapikey": {
 				"label": "ShipCloud API-Schlüssel",
-				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst du ihn hier verbinden.",
+				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst Du ihn hier verbinden.",
 				"error": "Ungültiger Schlüssel"
 			}
 		},
@@ -2144,7 +2144,7 @@
 			},
 			"upload": {
 				"title": "1. Schritt - Daten bereitstellen",
-				"description": "Erlaubt sind Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest du <a href='http://www.vinou.de/vorlagen'>hier</a>."
+				"description": "Erlaubt sind Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest Du <a href='http://www.vinou.de/vorlagen'>hier</a>."
 			},
 			"analyse": {
 				"title": "2. Schritt - Daten analysieren",
@@ -2299,15 +2299,15 @@
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
-			"description": "Verwalte hier deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
+			"description": "Verwalte hier Deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
 		},
 		"membership": {
 			"title": "Mitgliedschaft",
-			"description": "Das ist der Status deiner aktuellen Mitgliedschaft"
+			"description": "Das ist der Status Deiner aktuellen Mitgliedschaft."
 		},
 		"customer": {
 			"title": "Rechnungsinformationen",
-			"description": "Hier verwaltest Deine Daten für deine Vinou-Mitgliedschaft. Diese Informationen werden nicht öffentlich angezeigt."
+			"description": "Hier verwaltest Du die Daten für Deine Vinou-Mitgliedschaft."
 		},
 		"mycompanies": {
 			"merchants": {
@@ -2316,7 +2316,7 @@
 			},
 			"wineries": {
 				"title": "Mein Weingut",
-				"description": "Lege hier zusätzliche Weingüter an um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
+				"description": "Lege hier zusätzliche Weingüter an, um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
 			}
 		},
 		"payments": {
@@ -2326,36 +2326,36 @@
 		},
 		"packagings": {
 			"title": "Versandoptionen",
-			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig um den Deinen Vinou-Shop zu betreiben."
+			"description": "Konfiguriere Deine Versandoptionen, um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig, um Deinen Vinou-Shop zu betreiben."
 		},
 		"packagingunits": {
 			"title": "Versandeinheiten",
-			"description": "Konfiguriere die Kartons die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
+			"description": "Konfiguriere die Kartonagen, die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
 		},
 		"priceranges": {
 			"title": "Preisklassen",
-			"description": "Konfiguriere Deine Preisklassen um individuelle Kundenpreise festlegen zu können."
+			"description": "Konfiguriere Deine Preisklassen, um individuelle Kundenpreise festlegen zu können."
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",
-			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou Versandmanagement benutzen möchtest.",
+			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou-Versandmanagement benutzen möchtest.",
 			"freightfreelimit": {
 				"title": "Frachtfreigrenze",
 				"description": "Konfiguriere ab welchem Bestellwert der Versand kostenfrei ist."
 			},
 			"management": {
 				"title": "Versandmanagement",
-				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
-				"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud, um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
+				"description": "Konfiguriere Deinen Versand, um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
 			}
 		},
 		"technical": {
 			"title": "Technik",
-			"description": "Für einige Dinge kannst Du auch einige technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
+			"description": "Für einige Dinge kannst Du auch technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
 		},
 		"templates": {
 			"title": "Vorlagen",
-			"description": "In Vinou können alle PDF-Dokumente mit einer individuellen Vorlage versehen werden."
+			"description": "Im Vinou-Office können alle PDF-Dokumente mit einer individuellen Vorlage versehen werden."
 		},
 		"mail": {
 			"title": "E-Mail Setup",
@@ -2363,7 +2363,7 @@
 		},
 		"texts": {
 			"title": "Texte",
-			"description": "Lege Texte an um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in deinem eigenenen Online-Shop verwendet werden."
+			"description": "Lege Texte an, um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst Du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in Deinem eigenen Online-Shop verwendet werden."
 		},
 		"messages": {
 			"hints": {
@@ -2399,7 +2399,7 @@
 		"customer_deleted": "Mandant gelöscht!",
 		"customer_created": "Mandant angelegt!",
 		"customer_updated": "Mandant aktualisiert!",
-		"customer_image_createerror": "Um ein Bild hochzuladen musst du den Mandanten vorher speichern!",
+		"customer_image_createerror": "Um ein Bild hochzuladen musst Du den Mandanten vorher speichern!",
 		"merchant_created": "Händler angelegt!",
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
@@ -2431,7 +2431,7 @@
 		"user_changed": "Benutzer aktualisiert!",
 		"user_deleted": "Benutzer gelöscht",
 		"user_deleteerror": "Du kannst den aktuell angemeldeten Benutzer nicht löschen!",
-		"user_image_needed": "Um ein Bild hochzuladen musst du den Benutzer vorher speichern!",
+		"user_image_needed": "Um ein Bild hochzuladen musst Du den Benutzer vorher speichern!",
 		"user_image_uploaded": "Bild hochgeladen!",
 		"user_image_deleted": "Bild gelöscht!",
 		"user_image_uploaderror": "Fehler beim Bildupload!",
@@ -2447,7 +2447,7 @@
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
 		"wine_deleted": "Wein gelöscht!",
-		"wine_image_needed": "Um ein Bild hochzuladen musst du den Wein vorher speichern!",
+		"wine_image_needed": "Um ein Bild hochzuladen musst Du den Wein vorher speichern!",
 		"wine_image_uploaded": "Bild hochgeladen!",
 		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
@@ -4922,7 +4922,7 @@
 				},
 				"nointernet": {
 					"title": "Kein Internet verfügbar",
-					"msg": "Um alle Funktionen nutzen zu können, benötigst du eine Internetverbindung."
+					"msg": "Um alle Funktionen nutzen zu können, benötigst Du eine Internetverbindung."
 				},
 				"updateavailable": {
 					"title": "Update verfügbar",
@@ -4933,11 +4933,11 @@
 				},
 				"createwine": {
 					"title": "Wein anlegen",
-					"msg": "Willst du ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
+					"msg": "Willst Du ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
 				},
 				"winenotfound": {
 					"title": "Kein Wein gefunden",
-					"msg": "Willst du einen neuen Wein anlegen?"
+					"msg": "Willst Du einen neuen Wein anlegen?"
 				}
 			},
 			"views": {
