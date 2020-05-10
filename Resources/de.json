@@ -3,14 +3,12 @@
 		"dashboard": "Dashboard",
 		"winery": "Weingut",
 		"wineries": "Weingüter",
-		"wines": "Weine",
 		"wines.statistics": "Statistiken",
 		"winelists": "Weinlisten",
 		"qrcodes": "QR-Codes",
 		"news": "Neuigkeiten",
 		"users": "Benutzer",
 		"customers": "Mitglieder",
-		"categories": "Kategorien",
 		"clients": "Kunden",
 		"clients.statistics": "Statistiken",
 		"orders": "Bestellungen",
@@ -21,12 +19,17 @@
 		"cronjobs": "Cronjobs",
 		"network": "Mein Netzwerk",
 		"merchants": "Händler",
-		"products": "Produkte",
 		"products.statistics": "Statistiken",
 		"cellar": "Mein Keller",
 		"cellar.book": "Weine",
 		"cellar.barrels": "Behälter",
-		"cellar.substances": "Stoffe"
+		"cellar.substances": "Stoffe",
+		"articles": "Artikel",
+		"articles.wines": "Weine",
+		"articles.products": "Produkte",
+		"articles.bundles": "Weinpakete",
+		"articles.categories": "Kategorien",
+		"articles.statistics": "Statistiken"
 	},
 	"general": {
 		"fieldSets": {
@@ -169,6 +172,14 @@
 		"actions": {
 			"createWine": {
 				"main": "Neuen Wein",
+				"sub": "anlegen"
+			},
+			"createProduct": {
+				"main": "Neues Produkt",
+				"sub": "anlegen"
+			},
+			"createBundle": {
+				"main": "Neues Weinpaket",
 				"sub": "anlegen"
 			},
 			"createClient": {
