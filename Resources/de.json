@@ -2338,6 +2338,76 @@
 			"individual": "Selbstvergeben"
 		}
 	},
+	"bundle": {
+		"gallery": {
+			"sortby": {
+				"label": "Ansicht sortieren nach: "
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung: ",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"filter": {
+				"category": "Kategorie auswählen",
+				"noCategory": "Pakete ohne Kategorie anzeigen"
+			}
+		},
+		"actions": {
+			"create": {
+				"modaltitle": "Weinpaket anlegen",
+				"main": "Neues Weinpaket",
+				"sub": "anlegen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"addItem": "+ Produkt/Wein hinzufügen"
+		},
+		"views": {
+			"files": {
+				"title": "Dateien",
+				"empty": "Es liegen keine {label} zu diesem Weinpaket vor."
+			}
+		},
+		"tabs": {
+			"files": "Dateien"
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"items": "Weine",
+			"prices": "Preise"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"category": "Kategorie",
+			"quantity": "Anzahl",
+			"singleItemPrice": "Stück",
+			"metaTitle": "Title-Tag",
+			"metaDescription": "Meta-Description",
+			"pathSegment": "Pfadsegment",
+			"searchArtikel": "Artikel suchen"
+		},
+		"toasts": {
+			"created": "Weinpaket angelegt!",
+			"changed": "Weinpaket geändert!",
+			"deleted": "Weinpaket gelöscht!",
+			"imageUploaded": "Bild zum Weinpaket hochgeladen!",
+			"imageDeleted": "Bild zum Weinpaket gelöscht",
+			"copied": "Weinpaket dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Weinpaket wirklich löschen?",
+			"deleteItem": "Möchtest Du diesen Artikel wirklich entfernen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
