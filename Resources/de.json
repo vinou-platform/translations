@@ -2381,13 +2381,15 @@
 		"fields": {
 			"name": "Name",
 			"description": "Beschreibung",
+			"articlenumber": "Artikelnummer",
+			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
 			"category": "Kategorie",
 			"quantity": "Anzahl",
 			"singleItemPrice": "Stück",
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
 			"pathSegment": "Pfadsegment",
-			"searchArtikel": "Artikel suchen"
+			"searchArticle": "Artikel suchen"
 		},
 		"toasts": {
 			"created": "Weinpaket angelegt!",
