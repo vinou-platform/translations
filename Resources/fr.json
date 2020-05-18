@@ -3,14 +3,12 @@
 		"dashboard": "Tableau de bord",
 		"winery": "Établissement vinicole",
 		"wineries": "Établissements vinicole",
-		"wines": "Vins",
 		"wines.statistics": "Statistiques",
 		"winelists": "Listes du vin",
 		"qrcodes": "Codes QR",
 		"news": "Nouvelles",
 		"users": "Utilisateurs",
 		"customers": "Membres",
-		"categories": "Catégories",
 		"clients": "Clients",
 		"clients.statistics": "Statistiques",
 		"orders": "Ordres",
@@ -21,12 +19,17 @@
 		"cronjobs": "Cronjobs",
 		"network": "Réseau",
 		"merchants": "Marchand",
-		"products": "Produits",
 		"products.statistics": "Statistiques",
 		"cellar": "Ma cave",
 		"cellar.book": "Livre de la cave",
 		"cellar.barrels": "Récipient",
-		"cellar.substances": "Substances"
+		"cellar.substances": "Substances",
+		"articles": "Articles",
+		"articles.wines": "Vins",
+		"articles.products": "Produits",
+		"articles.bundles": "Pack de produits",
+		"articles.categories": "Catégories",
+		"articles.statistics": "Statistiques"
 	},
 	"general": {
 		"fieldSets": {
@@ -2325,6 +2328,87 @@
 			"revocation": "Revocation",
 			"shippingpolicy": "Shipping policy",
 			"individual": "Individual"
+		}
+	},
+	"bundle": {
+		"actions": {
+			"create": {
+				"modaltitle": "Créer un bundle",
+				"main": "Créer un nouveau",
+				"sub": "Paquet"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
+			},
+			"export": {
+				"qrCodeVector": "télécharger qrcode comme fichier vectoriel",
+				"barcodeVector": "télécharger gtin en fichier vectoriel"
+			},
+			"addItem": "+ Ajouter un article"
+		},
+		"views": {
+			"files": {
+				"title": "Des dossiers",
+				"empty": "Aucune {label} n'est disponible pour un ensemble donné."
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Choisissez une catégorie",
+				"none": "Afficher les bundles sans catégorie"
+			}
+		},
+		"tabs": {
+			"files": "Des dossiers"
+		},
+		"fieldSets": {
+			"general": "Général",
+			"facts": "Faits et données",
+			"prices": "Des prix",
+			"barcode": "GTIN",
+			"shopSettings": "Paramètres du site Web et de la boutique",
+			"qrcode": "QR-Code",
+			"items": "Des articles"
+		},
+		"fields": {
+			"name": "Nom",
+			"description": "La description",
+			"articlenumber": "Numéro de l'article",
+			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
+			"category": "Catégorie",
+			"quantity": "Quantité",
+			"singleItemPrice": "per Piece",
+			"metaTitle": "Balise de titre",
+			"metaDescription": "Meta-Description",
+			"pathSegment": "Segment de chemin",
+			"topseller": "Meilleur vendeur",
+			"sorting": "Index de tri manuel (par exemple pour une utilisation externe en magasin)",
+			"qrcodeLink": "Adresse cible",
+			"searchArticle": "Rechercher un article",
+			"itemSum": {
+				"label": "La valeur des biens",
+				"net": "Net",
+				"gross": "Brut"
+			}
+		},
+		"toasts": {
+			"created": "Bundle créé!",
+			"changed": "Bundle changé!",
+			"deleted": "Bundle supprimé!",
+			"imageUploaded": "Téléchargement pour l'image terminé!",
+			"imageDeleted": "Image supprimée pour l'ensemble",
+			"copied": "Bundle dupliqué"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce bundle?",
+			"deleteItem": "Voulez-vous vraiment supprimer cet article du bundle?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal </b> <br> Dimensions: 1500x1500px <br/> Format de fichier: .png (rogné)",
+			"packageQuantity": "Placer dans un emballage égal aux bouteilles de vin standard"
+		},
+		"files": {
+			"title": "Fichiers et documents liés à ce bundle."
 		}
 	},
 	"settings": {

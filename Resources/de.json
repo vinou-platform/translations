@@ -3,14 +3,12 @@
 		"dashboard": "Dashboard",
 		"winery": "Weingut",
 		"wineries": "Weingüter",
-		"wines": "Weine",
 		"wines.statistics": "Statistiken",
 		"winelists": "Weinlisten",
 		"qrcodes": "QR-Codes",
 		"news": "Neuigkeiten",
 		"users": "Benutzer",
 		"customers": "Mitglieder",
-		"categories": "Kategorien",
 		"clients": "Kunden",
 		"clients.statistics": "Statistiken",
 		"orders": "Bestellungen",
@@ -21,12 +19,17 @@
 		"cronjobs": "Cronjobs",
 		"network": "Mein Netzwerk",
 		"merchants": "Händler",
-		"products": "Produkte",
 		"products.statistics": "Statistiken",
 		"cellar": "Mein Keller",
 		"cellar.book": "Weine",
 		"cellar.barrels": "Behälter",
-		"cellar.substances": "Stoffe"
+		"cellar.substances": "Stoffe",
+		"articles": "Artikel",
+		"articles.wines": "Weine",
+		"articles.products": "Produkte",
+		"articles.bundles": "Weinpakete",
+		"articles.categories": "Kategorien",
+		"articles.statistics": "Statistiken"
 	},
 	"general": {
 		"fieldSets": {
@@ -169,6 +172,14 @@
 		"actions": {
 			"createWine": {
 				"main": "Neuen Wein",
+				"sub": "anlegen"
+			},
+			"createProduct": {
+				"main": "Neues Produkt",
+				"sub": "anlegen"
+			},
+			"createBundle": {
+				"main": "Neues Weinpaket",
 				"sub": "anlegen"
 			},
 			"createClient": {
@@ -2325,6 +2336,87 @@
 			"revocation": "Widerruf",
 			"shippingpolicy": "Versandbedingungen",
 			"individual": "Selbstvergeben"
+		}
+	},
+	"bundle": {
+		"actions": {
+			"create": {
+				"modaltitle": "Weinpaket anlegen",
+				"main": "Neues Weinpaket",
+				"sub": "anlegen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen",
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen"
+			},
+			"addItem": "+ Artikel hinzufügen"
+		},
+		"views": {
+			"files": {
+				"title": "Dateien",
+				"empty": "Es liegen keine {label} zu diesem Weinpaket vor."
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Pakete ohne Kategorie anzeigen"
+			}
+		},
+		"tabs": {
+			"files": "Dateien"
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"facts": "Daten & Fakten",
+			"prices": "Preise",
+			"barcode": "EAN-Code",
+			"shopSettings": "Website & Shop-Einstellungen",
+			"qrcode": "QR-Code",
+			"items": "Artikel"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"articlenumber": "Artikelnummer",
+			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
+			"category": "Kategorie",
+			"quantity": "Anzahl",
+			"singleItemPrice": "Stück",
+			"metaTitle": "Title-Tag",
+			"metaDescription": "Meta-Description",
+			"pathSegment": "Pfadsegment",
+			"topseller": "Topseller",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"qrcodeLink": "Zieladresse für QR-Code",
+			"searchArticle": "Artikel suchen",
+			"itemSum": {
+				"label": "Warenwert",
+				"net": "Netto",
+				"gross": "Brutto"
+			}
+		},
+		"toasts": {
+			"created": "Weinpaket angelegt!",
+			"changed": "Weinpaket geändert!",
+			"deleted": "Weinpaket gelöscht!",
+			"imageUploaded": "Bild zum Weinpaket hochgeladen!",
+			"imageDeleted": "Bild zum Weinpaket gelöscht",
+			"copied": "Weinpaket dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Weinpaket wirklich löschen?",
+			"deleteItem": "Möchtest Du diesen Artikel wirklich entfernen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1500x1500px<br/>Datei-Format: .png (freigestellt)",
+			"packageQuantity": "Platz im Versandkarton in Standard-Weinflaschen"
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Weinpaket"
 		}
 	},
 	"settings": {
