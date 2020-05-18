@@ -2339,20 +2339,6 @@
 		}
 	},
 	"bundle": {
-		"gallery": {
-			"sortby": {
-				"label": "Ansicht sortieren nach: "
-			},
-			"sortdirection": {
-				"label": "Sortierrichtung: ",
-				"asc": "Aufsteigend",
-				"desc": "Absteigend"
-			},
-			"filter": {
-				"category": "Kategorie auswählen",
-				"noCategory": "Pakete ohne Kategorie anzeigen"
-			}
-		},
 		"actions": {
 			"create": {
 				"modaltitle": "Weinpaket anlegen",
@@ -2362,7 +2348,11 @@
 			"search": {
 				"placeholder": "z.B. Name, Beschreibung"
 			},
-			"addItem": "+ Produkt/Wein hinzufügen"
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen",
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen"
+			},
+			"addItem": "+ Artikel hinzufügen"
 		},
 		"views": {
 			"files": {
@@ -2370,13 +2360,23 @@
 				"empty": "Es liegen keine {label} zu diesem Weinpaket vor."
 			}
 		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Pakete ohne Kategorie anzeigen"
+			}
+		},
 		"tabs": {
 			"files": "Dateien"
 		},
 		"fieldSets": {
 			"general": "Allgemeines",
-			"items": "Weine",
-			"prices": "Preise"
+			"facts": "Daten & Fakten",
+			"prices": "Preise",
+			"barcode": "EAN-Code",
+			"shopSettings": "Website & Shop-Einstellungen",
+			"qrcode": "QR-Code",
+			"items": "Artikel"
 		},
 		"fields": {
 			"name": "Name",
@@ -2389,7 +2389,15 @@
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
 			"pathSegment": "Pfadsegment",
-			"searchArticle": "Artikel suchen"
+			"topseller": "Topseller",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"qrcodeLink": "Zieladresse für QR-Code",
+			"searchArticle": "Artikel suchen",
+			"itemSum": {
+				"label": "Warenwert",
+				"net": "Netto",
+				"gross": "Brutto"
+			}
 		},
 		"toasts": {
 			"created": "Weinpaket angelegt!",
@@ -2404,7 +2412,8 @@
 			"deleteItem": "Möchtest Du diesen Artikel wirklich entfernen?"
 		},
 		"hints": {
-			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br/>Datei-Format: .png (freigestellt)"
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1500x1500px<br/>Datei-Format: .png (freigestellt)",
+			"packageQuantity": "Platz im Versandkarton in Standard-Weinflaschen"
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weinpaket"

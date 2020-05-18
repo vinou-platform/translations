@@ -3,14 +3,12 @@
 		"dashboard": "tablero",
 		"winery": "propiedad vinícola",
 		"wineries": "propiedades vinícolas",
-		"wines": "vinos",
 		"wines.statistics": "estadísticas",
 		"winelists": "listas de vinos",
 		"qrcodes": "QR-Codes",
 		"news": "noticias",
 		"users": "usuario",
 		"customers": "miembros",
-		"categories": "categorias",
 		"clients": "clientes",
 		"clients.statistics": "estadísticas",
 		"orders": "ordenes",
@@ -21,12 +19,17 @@
 		"cronjobs": "Cronjobs",
 		"network": "Mi red",
 		"merchants": "comerciantes",
-		"products": "productos",
 		"products.statistics": "estadísticas",
 		"cellar": "Mi bodega",
 		"cellar.book": "Mi libro de bodega",
 		"cellar.barrels": "recipientes",
-		"cellar.substances": "sustancias"
+		"cellar.substances": "sustancias",
+		"articles": "Artículos",
+		"articles.wines": "vinos",
+		"articles.products": "productos",
+		"articles.bundles": "Paquete de productos",
+		"articles.categories": "categorias",
+		"articles.statistics": "estadísticas"
 	},
 	"general": {
 		"fieldSets": {
@@ -2326,6 +2329,87 @@
 			"revocation": "Revocation",
 			"shippingpolicy": "Shipping policy",
 			"individual": "Individual"
+		}
+	},
+	"bundle": {
+		"actions": {
+			"create": {
+				"modaltitle": "Crear paquete",
+				"main": "Crear nuevo",
+				"sub": "Haz"
+			},
+			"search": {
+				"placeholder": "p.ej. nombre, descripción"
+			},
+			"export": {
+				"qrCodeVector": "descargar qrcode como archivo vectorial",
+				"barcodeVector": "descargar gtin como archivo vectorial"
+			},
+			"addItem": "+ Agregar artículo"
+		},
+		"views": {
+			"files": {
+				"title": "Archivos",
+				"empty": "No hay {label} disponible para el paquete dado."
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Elegir la categoría",
+				"none": "Mostrar paquetes sin categoría"
+			}
+		},
+		"tabs": {
+			"files": "Archivos"
+		},
+		"fieldSets": {
+			"general": "General",
+			"facts": "Hechos y datos",
+			"prices": "Precios",
+			"barcode": "GTIN",
+			"shopSettings": "Configuración del sitio web y la tienda",
+			"qrcode": "Código QR",
+			"items": "Artículos"
+		},
+		"fields": {
+			"name": "Nombre",
+			"description": "Descripción",
+			"articlenumber": "Número de artículo",
+			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
+			"category": "Categoría",
+			"quantity": "Cantidad",
+			"singleItemPrice": "por pieza",
+			"metaTitle": "Etiqueta de título",
+			"metaDescription": "Metadescripción",
+			"pathSegment": "Segmento de ruta",
+			"topseller": "Mejor vendedor",
+			"sorting": "Índice de clasificación manual (por ejemplo, para uso externo en la tienda)",
+			"qrcodeLink": "Dirección de destino",
+			"searchArticle": "Buscar articulo",
+			"itemSum": {
+				"label": "Valor de los bienes",
+				"net": "Red",
+				"gross": "Bruto"
+			}
+		},
+		"toasts": {
+			"created": "Paquete creado!",
+			"changed": "El paquete ha cambiado!",
+			"deleted": "Paquete eliminado!",
+			"imageUploaded": "Subir para la imagen terminada!",
+			"imageDeleted": "Imagen eliminada para paquete",
+			"copied": "Paquete duplicado"
+		},
+		"dialogs": {
+			"delete": "Realmente quieres eliminar este paquete?",
+			"deleteItem": "Realmente quieres eliminar este artículo del paquete?"
+		},
+		"hints": {
+			"imagesize": "<b>Recomendación para una visualización óptima </b> <br> Dimensiones: 1500x1500px <br/> Formato de archivo: .png (recortado)",
+			"packageQuantity": "Coloque dentro del paquete igual a las botellas de vino estándar"
+		},
+		"files": {
+			"title": "Archivos y documentos relacionados con este paquete."
 		}
 	},
 	"settings": {
