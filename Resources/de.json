@@ -1340,6 +1340,7 @@
 			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
 			"category": "Kategorie",
+			"tag": "Tags",
 			"countrycode": "Herkunft",
 			"cuvee": "Cuvée",
 			"description": "Beschreibung",
@@ -2384,6 +2385,7 @@
 			"articlenumber": "Artikelnummer",
 			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
 			"category": "Kategorie",
+			"tag": "Tags",
 			"quantity": "Anzahl",
 			"singleItemPrice": "Stück",
 			"metaTitle": "Title-Tag",
@@ -2417,6 +2419,31 @@
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Neuen Tag",
+				"sub": "anlegen"
+			},
+			"save": {
+				"main": "Neuen Tag",
+				"sub": "speichern"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Neuen Tag anlegen"
+			}
+		},
+		"fields": {
+			"name": "Name"
+		},
+		"toasts": {
+			"created": "Tag angelegt!",
+			"changed": "Tag geändert!",
+			"deleted": "Tag gelöscht!"
 		}
 	},
 	"settings": {

@@ -1332,6 +1332,7 @@
 			"bottlesize": "Taille de la bouteille",
 			"cap": "Obturateur",
 			"category": "Categorie",
+			"tag": "Mots clés",
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Description",
@@ -2376,6 +2377,7 @@
 			"articlenumber": "Numéro de l'article",
 			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
 			"category": "Catégorie",
+			"tag": "Mots clés",
 			"quantity": "Quantité",
 			"singleItemPrice": "per Piece",
 			"metaTitle": "Balise de titre",
@@ -2409,6 +2411,31 @@
 		},
 		"files": {
 			"title": "Fichiers et documents liés à ce bundle."
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Créer une",
+				"sub": "nouvelle balise"
+			},
+			"save": {
+				"main": "Enregistrer une",
+				"sub": "nouvelle balise"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Créer une nouvelle balise"
+			}
+		},
+		"fields": {
+			"name": "Nom"
+		},
+		"toasts": {
+			"created": "Balise créé!",
+			"changed": "Balise modifié!",
+			"deleted": "Balise supprimée!"
 		}
 	},
 	"settings": {

@@ -1332,6 +1332,7 @@
 			"bottlesize": "Bottlesize",
 			"cap": "Cap",
 			"category": "Category",
+			"tag": "Tags",
 			"countrycode": "Country",
 			"cuvee": "Cuvée",
 			"description": "Description",
@@ -2376,6 +2377,7 @@
 			"articlenumber": "Articlenumber",
 			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"category": "Category",
+			"tag": "Tags",
 			"quantity": "Quantity",
 			"singleItemPrice": "per Piece",
 			"metaTitle": "Title-Tag",
@@ -2409,6 +2411,31 @@
 		},
 		"files": {
 			"title": "Files and documents related to this bundle."
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Tag"
+			},
+			"save": {
+				"main": "Save new",
+				"sub": "Tag"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Create new tag"
+			}
+		},
+		"fields": {
+			"name": "Name"
+		},
+		"toasts": {
+			"created": "Tag created!",
+			"changed": "Tag changed!",
+			"deleted": "Tag deleted!"
 		}
 	},
 	"settings": {

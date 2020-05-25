@@ -1332,6 +1332,7 @@
 			"bottlesize": "Dimensione della bottiglia",
 			"cap": "Otturatore",
 			"category": "Categoria",
+			"tag": "Tag",
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Descrizione",
@@ -2376,6 +2377,7 @@
 			"articlenumber": "Numero dell'articolo",
 			"packageQuantity": "Imballaggio equivalente (bottiglie da 0,75l)",
 			"category": "Categoria",
+			"tag": "Tag",
 			"quantity": "Quantità",
 			"singleItemPrice": "per pezzo",
 			"metaTitle": "Titolo-Tag",
@@ -2409,6 +2411,31 @@
 		},
 		"files": {
 			"title": "File e documenti relativi a questo pacchetto."
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Crea un",
+				"sub": "nuovo tag"
+			},
+			"save": {
+				"main": "Salva un",
+				"sub": "nuovo tag"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Crea un nuovo tag"
+			}
+		},
+		"fields": {
+			"name": "Nome"
+		},
+		"toasts": {
+			"created": "Tag creato!",
+			"changed": "Tag modificato!",
+			"deleted": "Tag eliminato!"
 		}
 	},
 	"settings": {

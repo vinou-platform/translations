@@ -1333,6 +1333,7 @@
 			"bottlesize": "tamaño de botella",
 			"cap": "cierre",
 			"category": "categoría",
+			"tag": "Etiquetas",
 			"countrycode": "origen",
 			"cuvee": "cubierto",
 			"description": "descripción",
@@ -2377,6 +2378,7 @@
 			"articlenumber": "Número de artículo",
 			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
 			"category": "Categoría",
+			"tag": "Etiquetas",
 			"quantity": "Cantidad",
 			"singleItemPrice": "por pieza",
 			"metaTitle": "Etiqueta de título",
@@ -2410,6 +2412,31 @@
 		},
 		"files": {
 			"title": "Archivos y documentos relacionados con este paquete."
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Crea una",
+				"sub": "nueva etiqueta"
+			},
+			"save": {
+				"main": "Guardar una",
+				"sub": "nueva etiqueta"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Crea una nueva etiqueta"
+			}
+		},
+		"fields": {
+			"name": "Nombre"
+		},
+		"toasts": {
+			"created": "Etiqueta creada!",
+			"changed": "Etiqueta modificada!",
+			"deleted": "Etiqueta eliminada!"
 		}
 	},
 	"settings": {
