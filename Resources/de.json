@@ -1538,6 +1538,7 @@
 			"taxrate": "Steuersatz",
 			"gross": "Brutto-Preis",
 			"description": "Beschreibung",
+			"tag": "Tags",
 			"image": {
 				"error": {
 					"notfound": "Bild konnte nicht gefunden werden"
@@ -2380,6 +2381,7 @@
 			"items": "Artikel"
 		},
 		"fields": {
+			"active": "aktiv",
 			"name": "Name",
 			"description": "Beschreibung",
 			"articlenumber": "Artikelnummer",

@@ -1530,6 +1530,7 @@
 			"taxrate": "Taux d'imposition",
 			"gross": "Prix brut",
 			"description": "Description",
+			"tag": "Mots clés",
 			"image": {
 				"error": {
 					"notfound": "L'image n'a pas pu être trouvée"
@@ -2372,6 +2373,7 @@
 			"items": "Des articles"
 		},
 		"fields": {
+			"active": "aktif",
 			"name": "Nom",
 			"description": "La description",
 			"articlenumber": "Numéro de l'article",

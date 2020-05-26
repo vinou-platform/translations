@@ -1530,6 +1530,7 @@
 			"taxrate": "Taxrate",
 			"gross": "Price gross",
 			"description": "Description",
+			"tag": "Tags",
 			"image": {
 				"error": {
 					"notfound": "Image could not be found"
@@ -2372,6 +2373,7 @@
 			"items": "Articles"
 		},
 		"fields": {
+			"active": "active",
 			"name": "Name",
 			"description": "Description",
 			"articlenumber": "Articlenumber",

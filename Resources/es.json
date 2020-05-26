@@ -1531,6 +1531,7 @@
 			"taxrate": "tasa de impuesto",
 			"gross": "precio bruto",
 			"description": "descripción",
+			"tag": "Etiquetas",
 			"image": {
 				"error": {
 					"notfound": "No ha podido encontrar imágen"
@@ -2373,6 +2374,7 @@
 			"items": "Artículos"
 		},
 		"fields": {
+			"active": "activo",
 			"name": "Nombre",
 			"description": "Descripción",
 			"articlenumber": "Número de artículo",

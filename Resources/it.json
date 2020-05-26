@@ -1530,6 +1530,7 @@
 			"taxrate": "Aliquota fiscale",
 			"gross": "Prezzo lordo",
 			"description": "Descrizione",
+			"tag": "Tag",
 			"image": {
 				"error": {
 					"notfound": "L'immagine non è stata trovata"
@@ -2372,6 +2373,7 @@
 			"items": "articoli"
 		},
 		"fields": {
+			"active": "Attivamente",
 			"name": "Nome",
 			"description": "Descrizione",
 			"articlenumber": "Numero dell'articolo",
