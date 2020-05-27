@@ -837,15 +837,6 @@
 	"db_orders_createtitle": "Creare ordine",
 	"db_orders_edittitle": "Modificare ordine",
 	"db_orders_viewtitle": "Guardare ordine",
-	"db_orders_status_new": "Ricevute",
-	"db_orders_status_need_payment": "Attendere Pagamento anticipato",
-	"db_orders_status_payed": "Pagamento m anticipato ricevute",
-	"db_orders_status_in_payment": "Aspettare pagamento",
-	"db_orders_status_need_package": "Preparazione del pagamento",
-	"db_orders_status_in_delivery": "In consegna",
-	"db_orders_status_delivered": "È stata consegnata (ancora pagato)",
-	"db_orders_status_closed": "È stato completato",
-	"db_orders_status_cancelled": "È stato annullato",
 	"db_orders_payment_cash": "Pagamenti in contanti",
 	"db_orders_payment_prepaid": "Pagamento anticipato",
 	"db_orders_payment_invoice": "Con fattura",
@@ -1798,6 +1789,15 @@
 			"delivery": "Bolle di consegna",
 			"shipment": "Etichette per imballaggio",
 			"creditadvice": "Credito"
+		},
+		"states": {
+			"new": "Nuovo",
+			"need_payment": "Pagamento in sospeso",
+			"payed": "Pagamento ricevuto",
+			"need_package": "Preparazione del pagamento",
+			"in_delivery": "In consegna",
+			"closed": "È stato completato",
+			"cancelled": "È stato annullato"
 		},
 		"views": {
 			"view": {

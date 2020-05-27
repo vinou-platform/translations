@@ -837,15 +837,6 @@
 	"db_orders_createtitle": "Create Order",
 	"db_orders_edittitle": "Edit Order",
 	"db_orders_viewtitle": "View Orderdetails",
-	"db_orders_status_new": "New",
-	"db_orders_status_need_payment": "Prepayment expected",
-	"db_orders_status_payed": "Prepaid completed, delivery preparation",
-	"db_orders_status_in_payment": "Wait for payment",
-	"db_orders_status_need_package": "Delivery preparation",
-	"db_orders_status_in_delivery": "In Delivery",
-	"db_orders_status_delivered": "Delivered (Payment needed)",
-	"db_orders_status_closed": "Completed",
-	"db_orders_status_cancelled": "Cancelled",
 	"db_orders_payment_cash": "Cash",
 	"db_orders_payment_prepaid": "Prepaid",
 	"db_orders_payment_invoice": "Invoice",
@@ -1798,6 +1789,15 @@
 			"delivery": "Delivery notes",
 			"shipment": "Shipment labels",
 			"creditadvice": "Credit advices"
+		},
+		"states": {
+			"new": "New",
+			"need_payment": "Payment pending",
+			"payed": "Payment received",
+			"need_package": "Delivery preparation",
+			"in_delivery": "In delivery",
+			"closed": "Completed",
+			"cancelled": "Cancelled"
 		},
 		"views": {
 			"view": {

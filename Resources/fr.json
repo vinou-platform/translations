@@ -837,15 +837,6 @@
 	"db_orders_createtitle": "Créer ordre",
 	"db_orders_edittitle": "Éditer ordre",
 	"db_orders_viewtitle": "Regarder ordre",
-	"db_orders_status_new": "Reçu",
-	"db_orders_status_need_payment": "Paiement anticipé attendu",
-	"db_orders_status_payed": "Paiement anticipé reçu",
-	"db_orders_status_in_payment": "En attente de paiement",
-	"db_orders_status_need_package": "En préparation d'expédition",
-	"db_orders_status_in_delivery": "En livraison",
-	"db_orders_status_delivered": "Livré (paiement ouvert)",
-	"db_orders_status_closed": "Terminé",
-	"db_orders_status_cancelled": "Annulé",
 	"db_orders_payment_cash": "Paiement en espèces",
 	"db_orders_payment_prepaid": "Paiement anticipé",
 	"db_orders_payment_invoice": "Par facture",
@@ -1798,6 +1789,15 @@
 			"delivery": "Bons de livraison",
 			"shipment": "Étiquettes de l'emballage",
 			"creditadvice": "Crédit"
+		},
+		"states": {
+			"new": "Nouvelle",
+			"need_payment": "Paiement en attente",
+			"payed": "Paiement reçu",
+			"need_package": "En préparation d'expédition",
+			"in_delivery": "En livraison",
+			"closed": "Terminé",
+			"cancelled": "Annulé"
 		},
 		"views": {
 			"view": {
