@@ -723,11 +723,6 @@
 	"fieldset_settings_title": "Configuration",
 	"fieldset_packages_title": "Options de livraison",
 	"fieldset_addresses_title": "Autres adresses",
-	"fieldset_billing_title": "Adresse de facturation",
-	"fieldset_delivery_title": "Expédition ",
-	"fieldset_payment_title": "Modalités de paiement",
-	"fieldset_positions_title": "Positions",
-	"fieldset_summary_title": "Résumé de la ordre",
 	"fieldset_customer_title": "Données des clients",
 	"fieldset_quickactions": "Actions rapides",
 	"settings_addresses": "Adresses",
@@ -1849,10 +1844,12 @@
 			},
 			"touch": "Marquer la commande comme lue"
 		},
-		"fieldSets": {
-			"edit_view": "Éditer vue",
-			"search_product": "Rechercher produit",
-			"packaging_shipping": "Emballage et expédition"
+		"fieldsets": {
+			"billing": "Adresse de facturation",
+			"delivery": "Expédition ",
+			"payment": "Modalités de paiement",
+			"positions": "Positions",
+			"summary": "Résumé de la ordre"
 		},
 		"fields": {
 			"processing_data": "Les données sont traitées ...",

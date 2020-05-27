@@ -723,11 +723,6 @@
 	"fieldset_settings_title": "Impostationi",
 	"fieldset_packages_title": "Opzioni di spedizione",
 	"fieldset_addresses_title": "Indirizzi supplementare",
-	"fieldset_billing_title": "Indirizzo di fattura",
-	"fieldset_delivery_title": "Spedizione",
-	"fieldset_payment_title": "Modalità di pagamento",
-	"fieldset_positions_title": "Posto",
-	"fieldset_summary_title": "Visione generale del ordine",
 	"fieldset_customer_title": "Dati dei clienti",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Indirizzi",
@@ -1849,10 +1844,12 @@
 			},
 			"touch": "Contrassegna l'ordine come letto"
 		},
-		"fieldSets": {
-			"edit_view": "Modificare vista",
-			"search_product": "Cerca prodotto",
-			"packaging_shipping": "Imballaggio e spedizione"
+		"fieldsets": {
+			"billing": "Indirizzo di fattura",
+			"delivery": "Spedizione",
+			"payment": "Modalità di pagamento",
+			"positions": "Posto",
+			"summary": "Visione generale del ordine"
 		},
 		"fields": {
 			"processing_data": "I dati vengono elaborati ...",

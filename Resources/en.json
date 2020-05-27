@@ -723,11 +723,6 @@
 	"fieldset_settings_title": "Settings",
 	"fieldset_packages_title": "Package options",
 	"fieldset_addresses_title": "Additional Addresses",
-	"fieldset_billing_title": "Billing address",
-	"fieldset_delivery_title": "Delivery",
-	"fieldset_payment_title": "Payment settings",
-	"fieldset_positions_title": "Items",
-	"fieldset_summary_title": "Order summary",
 	"fieldset_customer_title": "Account",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Addresses",
@@ -1849,10 +1844,12 @@
 			},
 			"touch": "Mark order as read"
 		},
-		"fieldSets": {
-			"edit_view": "Edit view",
-			"search_product": "Search product",
-			"packaging_shipping": "Packaging and shipping"
+		"fieldsets": {
+			"billing": "Billing address",
+			"delivery": "Delivery",
+			"payment": "Payment settings",
+			"positions": "Items",
+			"summary": "Order summary"
 		},
 		"fields": {
 			"processing_data": "Processing data ...",
