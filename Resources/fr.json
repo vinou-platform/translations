@@ -1317,6 +1317,7 @@
 			"bottlesize": "Taille de la bouteille",
 			"cap": "Obturateur",
 			"category": "Categorie",
+			"tag": "Mots clés",
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Description",
@@ -1514,6 +1515,7 @@
 			"taxrate": "Taux d'imposition",
 			"gross": "Prix brut",
 			"description": "Description",
+			"tag": "Mots clés",
 			"image": {
 				"error": {
 					"notfound": "L'image n'a pas pu être trouvée"
@@ -2380,11 +2382,13 @@
 			"items": "Des articles"
 		},
 		"fields": {
+			"active": "aktif",
 			"name": "Nom",
 			"description": "La description",
 			"articlenumber": "Numéro de l'article",
 			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
 			"category": "Catégorie",
+			"tag": "Mots clés",
 			"quantity": "Quantité",
 			"singleItemPrice": "per Piece",
 			"metaTitle": "Balise de titre",
@@ -2418,6 +2422,31 @@
 		},
 		"files": {
 			"title": "Fichiers et documents liés à ce bundle."
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Créer une",
+				"sub": "nouvelle balise"
+			},
+			"save": {
+				"main": "Enregistrer une",
+				"sub": "nouvelle balise"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Créer une nouvelle balise"
+			}
+		},
+		"fields": {
+			"name": "Nom"
+		},
+		"toasts": {
+			"created": "Balise créé!",
+			"changed": "Balise modifié!",
+			"deleted": "Balise supprimée!"
 		}
 	},
 	"settings": {
