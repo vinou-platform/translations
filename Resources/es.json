@@ -1519,28 +1519,29 @@
 			}
 		},
 		"field": {
-			"name": "nombre",
-			"articlenumber": "número de artículo",
-			"size": "Cantidad de llenado",
-			"unit": "Unidad",
-			"baseprice": "Precio base",
-			"net": "precio neto",
-			"tax": "impuesto valor añadido",
-			"taxrate": "tasa de impuesto",
-			"gross": "precio bruto",
-			"description": "descripción",
-			"tag": "Etiquetas",
-			"image": {
-				"error": {
-					"notfound": "No ha podido encontrar imágen"
-				}
-			},
 			"active": "activo",
+			"articlenumber": "número de artículo",
+			"baseprice": "Precio base",
+			"description": "descripción",
+			"gross": "precio bruto",
+			"name": "nombre",
+			"net": "precio neto",
 			"nostock": "no hay en almacén",
 			"nostocktext": "texto de muestra no hay en almacén",
 			"prices": "precios",
 			"quantity": "inventario",
-			"quantityabbr": "pieza"
+			"quantityabbr": "pieza",
+			"size": "Cantidad de llenado",
+			"tag": "Etiquetas",
+			"tax": "impuesto valor añadido",
+			"taxrate": "tasa de impuesto",
+			"unit": "Unidad",
+
+			"image": {
+				"error": {
+					"notfound": "No ha podido encontrar imágen"
+				}
+			}
 		},
 		"gallery": {
 			"new": {
@@ -2397,23 +2398,24 @@
 		},
 		"fields": {
 			"active": "activo",
-			"name": "Nombre",
-			"description": "Descripción",
 			"articlenumber": "Número de artículo",
-			"size": "Cantidad de llenado",
 			"baseprice": "Precio por litro",
-			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
 			"category": "Categoría",
-			"tag": "Etiquetas",
-			"quantity": "Cantidad",
-			"singleItemPrice": "por pieza",
+			"description": "Descripción",
 			"metaTitle": "Etiqueta de título",
 			"metaDescription": "Metadescripción",
+			"name": "Nombre",
+			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
 			"pathSegment": "Segmento de ruta",
-			"topseller": "Mejor vendedor",
-			"sorting": "Índice de clasificación manual (por ejemplo, para uso externo en la tienda)",
 			"qrcodeLink": "Dirección de destino",
+			"quantity": "Cantidad",
 			"searchArticle": "Buscar articulo",
+			"singleItemPrice": "por pieza",
+			"size": "Cantidad de llenado",
+			"sorting": "Índice de clasificación manual (por ejemplo, para uso externo en la tienda)",
+			"tag": "Etiquetas",
+			"topseller": "Mejor vendedor",
+
 			"itemSum": {
 				"label": "Valor de los bienes",
 				"net": "Red",
@@ -5077,7 +5079,7 @@
 		"g": "g",
 		"kg": "kg",
 		"ml": "ml",
-		"l": "L"
+		"l": "l"
 	},
 	"apps": {
 		"vinou-gusto": {

@@ -1518,28 +1518,29 @@
 			}
 		},
 		"field": {
-			"name": "Name",
-			"articlenumber": "Articlenumber",
-			"size": "Filling quantity",
-			"unit": "Unit",
-			"baseprice": "Base price",
-			"net": "Price netto",
-			"tax": "VAT",
-			"taxrate": "Taxrate",
-			"gross": "Price gross",
-			"description": "Description",
-			"tag": "Tags",
-			"image": {
-				"error": {
-					"notfound": "Image could not be found"
-				}
-			},
 			"active": "visible",
+			"articlenumber": "Articlenumber",
+			"baseprice": "Base price",
+			"description": "Description",
+			"gross": "Price gross",
+			"name": "Name",
+			"net": "Price netto",
 			"nostock": "not in stock",
 			"nostocktext": "text if not in stock",
 			"prices": "Prices",
 			"quantity": "Stock",
-			"quantityabbr": "pc."
+			"quantityabbr": "pc.",
+			"size": "Filling quantity",
+			"tag": "Tags",
+			"tax": "VAT",
+			"taxrate": "Taxrate",
+			"unit": "Unit",
+
+			"image": {
+				"error": {
+					"notfound": "Image could not be found"
+				}
+			}
 		},
 		"gallery": {
 			"new": {
@@ -2396,23 +2397,24 @@
 		},
 		"fields": {
 			"active": "active",
-			"name": "Name",
-			"description": "Description",
 			"articlenumber": "Articlenumber",
-			"size": "Filling quantity",
 			"baseprice": "Price per liter",
-			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"category": "Category",
-			"tag": "Tags",
-			"quantity": "Quantity",
-			"singleItemPrice": "per Piece",
+			"description": "Description",
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
+			"name": "Name",
+			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"pathSegment": "Path segment",
-			"topseller": "Topseller",
-			"sorting": "Manual sort index (e.g. for external use in shop)",
 			"qrcodeLink": "Target address",
+			"quantity": "Quantity",
+			"singleItemPrice": "per Piece",
+			"size": "Filling quantity",
 			"searchArticle": "Search article",
+			"sorting": "Manual sort index (e.g. for external use in shop)",
+			"tag": "Tags",
+			"topseller": "Topseller",
+
 			"itemSum": {
 				"label": "Value of goods",
 				"net": "Net",
@@ -5076,7 +5078,7 @@
 		"g": "g",
 		"kg": "kg",
 		"ml": "ml",
-		"l": "L"
+		"l": "l"
 	},
 	"apps": {
 		"vinou-gusto": {

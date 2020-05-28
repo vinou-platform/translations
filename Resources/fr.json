@@ -1518,28 +1518,29 @@
 			}
 		},
 		"field": {
-			"name": "Nom",
-			"articlenumber": "Numéro de référence",
-			"size": "Quantité de remplissage",
-			"unit": "Unité",
-			"baseprice": "Prix de base",
-			"net": "Prix net",
-			"tax": "TVA.",
-			"taxrate": "Taux d'imposition",
-			"gross": "Prix brut",
-			"description": "Description",
-			"tag": "Mots clés",
-			"image": {
-				"error": {
-					"notfound": "L'image n'a pas pu être trouvée"
-				}
-			},
 			"active": "aktif",
+			"articlenumber": "Numéro de référence",
+			"baseprice": "Prix de base",
+			"description": "Description",
+			"gross": "Prix brut",
+			"name": "Nom",
+			"net": "Prix net",
 			"nostock": "pas en stock",
 			"nostocktext": "Texte si pas en stock",
 			"prices": "Prix",
 			"quantity": "Stock",
-			"quantityabbr": "Pcs."
+			"quantityabbr": "Pcs.",
+			"size": "Quantité de remplissage",
+			"tag": "Mots clés",
+			"tax": "TVA.",
+			"taxrate": "Taux d'imposition",
+			"unit": "Unité",
+
+			"image": {
+				"error": {
+					"notfound": "L'image n'a pas pu être trouvée"
+				}
+			}
 		},
 		"gallery": {
 			"new": {
@@ -2396,23 +2397,24 @@
 		},
 		"fields": {
 			"active": "aktif",
-			"name": "Nom",
-			"description": "La description",
 			"articlenumber": "Numéro de l'article",
-			"size": "Quantité de remplissage",
 			"baseprice": "Prix au litre",
-			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
 			"category": "Catégorie",
-			"tag": "Mots clés",
-			"quantity": "Quantité",
-			"singleItemPrice": "per Piece",
+			"description": "La description",
 			"metaTitle": "Balise de titre",
 			"metaDescription": "Meta-Description",
+			"name": "Nom",
+			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
 			"pathSegment": "Segment de chemin",
-			"topseller": "Meilleur vendeur",
-			"sorting": "Index de tri manuel (par exemple pour une utilisation externe en magasin)",
 			"qrcodeLink": "Adresse cible",
+			"quantity": "Quantité",
 			"searchArticle": "Rechercher un article",
+			"singleItemPrice": "per Piece",
+			"size": "Quantité de remplissage",
+			"sorting": "Index de tri manuel (par exemple pour une utilisation externe en magasin)",
+			"tag": "Mots clés",
+			"topseller": "Meilleur vendeur",
+
 			"itemSum": {
 				"label": "La valeur des biens",
 				"net": "Net",
@@ -5076,7 +5078,7 @@
 		"g": "g",
 		"kg": "kg",
 		"ml": "ml",
-		"l": "L"
+		"l": "l"
 	},
 	"apps": {
 		"vinou-gusto": {

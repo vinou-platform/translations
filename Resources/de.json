@@ -1326,8 +1326,8 @@
 				"placeholder": "Allergene suchen"
 			},
 			"articlenumber": "Art.-Nr.",
-			"baseprice": "Preis pro Liter",
 			"barcode": "EAN-Code",
+			"baseprice": "Preis pro Liter",
 			"bio": "Bio zertifiziert",
 			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
@@ -1526,28 +1526,29 @@
 			}
 		},
 		"field": {
-			"name": "Name",
-			"articlenumber": "Artikelnummer",
-			"size": "Füllmenge",
-			"unit": "Einheit",
-			"baseprice": "Grundpreis",
-			"net": "Netto-Preis",
-			"tax": "MwSt.",
-			"taxrate": "Steuersatz",
-			"gross": "Brutto-Preis",
-			"description": "Beschreibung",
-			"tag": "Tags",
-			"image": {
-				"error": {
-					"notfound": "Bild konnte nicht gefunden werden"
-				}
-			},
 			"active": "aktiv",
+			"articlenumber": "Artikelnummer",
+			"baseprice": "Grundpreis",
+			"description": "Beschreibung",
+			"gross": "Brutto-Preis",
+			"name": "Name",
+			"net": "Netto-Preis",
 			"nostock": "nicht auf Lager",
 			"nostocktext": "Anzeigetext wenn nicht auf Lager",
 			"prices": "Preise",
 			"quantity": "Bestand",
-			"quantityabbr": "Stk."
+			"quantityabbr": "Stk.",
+			"size": "Füllmenge",
+			"tag": "Tags",
+			"tax": "MwSt.",
+			"taxrate": "Steuersatz",
+			"unit": "Einheit",
+
+			"image": {
+				"error": {
+					"notfound": "Bild konnte nicht gefunden werden"
+				}
+			}
 		},
 		"gallery": {
 			"new": {
@@ -2404,23 +2405,24 @@
 		},
 		"fields": {
 			"active": "aktiv",
-			"name": "Name",
-			"description": "Beschreibung",
 			"articlenumber": "Artikelnummer",
-			"size": "Füllmenge",
-			"baseprice": "Preis pro Liter",
-			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
 			"category": "Kategorie",
-			"tag": "Tags",
-			"quantity": "Anzahl",
-			"singleItemPrice": "Stück",
-			"metaTitle": "Title-Tag",
+			"baseprice": "Preis pro Liter",
+			"description": "Beschreibung",
 			"metaDescription": "Meta-Description",
+			"metaTitle": "Title-Tag",
+			"name": "Name",
+			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
 			"pathSegment": "Pfadsegment",
-			"topseller": "Topseller",
-			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"qrcodeLink": "Zieladresse für QR-Code",
+			"quantity": "Anzahl",
 			"searchArticle": "Artikel suchen",
+			"singleItemPrice": "Stück",
+			"size": "Füllmenge",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"tag": "Tags",
+			"topseller": "Topseller",
+
 			"itemSum": {
 				"label": "Warenwert",
 				"net": "Netto",
@@ -5084,7 +5086,7 @@
 		"g": "g",
 		"kg": "kg",
 		"ml": "ml",
-		"l": "L"
+		"l": "l"
 	},
 	"apps": {
 		"vinou-gusto": {

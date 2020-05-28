@@ -1518,28 +1518,29 @@
 			}
 		},
 		"field": {
-			"name": "Nom",
-			"articlenumber": "Numero di riferimento",
-			"size": "Quantità di riempimento",
-			"unit": "Unità",
-			"baseprice": "Prezzo base",
-			"net": "Prezzo neetto",
-			"tax": "IVA.",
-			"taxrate": "Aliquota fiscale",
-			"gross": "Prezzo lordo",
-			"description": "Descrizione",
-			"tag": "Tag",
-			"image": {
-				"error": {
-					"notfound": "L'immagine non è stata trovata"
-				}
-			},
 			"active": "Attivamente",
+			"articlenumber": "Numero di riferimento",
+			"baseprice": "Prezzo base",
+			"description": "Descrizione",
+			"gross": "Prezzo lordo",
+			"name": "Nom",
+			"net": "Prezzo neetto",
 			"nostock": "Non disponibile",
 			"nostocktext": "Testo se non disponibile",
 			"prices": "Prezzi",
 			"quantity": "Stock",
-			"quantityabbr": "Pcs."
+			"quantityabbr": "Pcs.",
+			"size": "Quantità di riempimento",
+			"tag": "Tag",
+			"tax": "IVA.",
+			"taxrate": "Aliquota fiscale",
+			"unit": "Unità",
+
+			"image": {
+				"error": {
+					"notfound": "L'immagine non è stata trovata"
+				}
+			}
 		},
 		"gallery": {
 			"new": {
@@ -2396,23 +2397,24 @@
 		},
 		"fields": {
 			"active": "Attivamente",
-			"name": "Nome",
-			"description": "Descrizione",
 			"articlenumber": "Numero dell'articolo",
-			"size": "Quantità di riempimento",
 			"baseprice": "Prezzo al litro",
-			"packageQuantity": "Imballaggio equivalente (bottiglie da 0,75l)",
 			"category": "Categoria",
-			"tag": "Tag",
-			"quantity": "Quantità",
-			"singleItemPrice": "per pezzo",
+			"description": "Descrizione",
 			"metaTitle": "Titolo-Tag",
 			"metaDescription": "Meta-Description",
+			"name": "Nome",
+			"packageQuantity": "Imballaggio equivalente (bottiglie da 0,75l)",
 			"pathSegment": "Segmento del percorso",
-			"topseller": "Miglior venditore",
-			"sorting": "Indice di ordinamento manuale (ad es. Per uso esterno in negozio)",
 			"qrcodeLink": "Indirizzo di destinazione",
+			"quantity": "Quantità",
 			"searchArticle": "Cerca l'articolo",
+			"singleItemPrice": "per pezzo",
+			"size": "Quantità di riempimento",
+			"sorting": "Indice di ordinamento manuale (ad es. Per uso esterno in negozio)",
+			"tag": "Tag",
+			"topseller": "Miglior venditore",
+
 			"itemSum": {
 				"label": "Valore dei beni",
 				"net": "Netto",
@@ -5076,7 +5078,7 @@
 		"g": "g",
 		"kg": "kg",
 		"ml": "ml",
-		"l": "L"
+		"l": "l"
 	},
 	"apps": {
 		"vinou-gusto": {
