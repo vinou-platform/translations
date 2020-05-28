@@ -32,6 +32,12 @@
 		"articles.statistics": "Statistiques"
 	},
 	"general": {
+		"actions": {
+			"export": "Exporter",
+			"exportRaw": "Exporter (données brutes)",
+			"import": "Importer",
+			"importRaw": "Importer (données brutes)"
+		},
 		"fieldSets": {
 			"general": "Général",
 			"settings": "Configuration",
@@ -723,11 +729,6 @@
 	"fieldset_settings_title": "Configuration",
 	"fieldset_packages_title": "Options de livraison",
 	"fieldset_addresses_title": "Autres adresses",
-	"fieldset_billing_title": "Adresse de facturation",
-	"fieldset_delivery_title": "Expédition ",
-	"fieldset_payment_title": "Modalités de paiement",
-	"fieldset_positions_title": "Positions",
-	"fieldset_summary_title": "Résumé de la ordre",
 	"fieldset_customer_title": "Données des clients",
 	"fieldset_quickactions": "Actions rapides",
 	"settings_addresses": "Adresses",
@@ -837,20 +838,10 @@
 	"db_orders_createtitle": "Créer ordre",
 	"db_orders_edittitle": "Éditer ordre",
 	"db_orders_viewtitle": "Regarder ordre",
-	"db_orders_status_new": "Reçu",
-	"db_orders_status_need_payment": "Paiement anticipé attendu",
-	"db_orders_status_payed": "Paiement anticipé reçu",
-	"db_orders_status_in_payment": "En attente de paiement",
-	"db_orders_status_need_package": "En préparation d'expédition",
-	"db_orders_status_in_delivery": "En livraison",
-	"db_orders_status_delivered": "Livré (paiement ouvert)",
-	"db_orders_status_closed": "Terminé",
-	"db_orders_status_cancelled": "Annulé",
 	"db_orders_payment_cash": "Paiement en espèces",
 	"db_orders_payment_prepaid": "Paiement anticipé",
 	"db_orders_payment_invoice": "Par facture",
 	"db_orders_payment_paypal": "PayPal",
-	"db_orders_createdby": "Détectée par",
 	"db_orders_showEditor": "Voir détecteur",
 	"db_cronjobs_createtitle": "Créer Cronjob",
 	"db_cronjobs_edittitle": "Éditer Cronjob",
@@ -1808,6 +1799,15 @@
 			"shipment": "Étiquettes de l'emballage",
 			"creditadvice": "Crédit"
 		},
+		"states": {
+			"new": "Nouvelle",
+			"need_payment": "Paiement en attente",
+			"payed": "Paiement reçu",
+			"need_package": "En préparation d'expédition",
+			"in_delivery": "En livraison",
+			"closed": "Terminé",
+			"cancelled": "Annulé"
+		},
 		"views": {
 			"view": {
 				"tabs": {
@@ -1858,10 +1858,12 @@
 			},
 			"touch": "Marquer la commande comme lue"
 		},
-		"fieldSets": {
-			"edit_view": "Éditer vue",
-			"search_product": "Rechercher produit",
-			"packaging_shipping": "Emballage et expédition"
+		"fieldsets": {
+			"billing": "Adresse de facturation",
+			"delivery": "Expédition ",
+			"payment": "Modalités de paiement",
+			"positions": "Positions",
+			"summary": "Résumé de la ordre"
 		},
 		"fields": {
 			"processing_data": "Les données sont traitées ...",
@@ -1869,16 +1871,22 @@
 			"cashback": "Remise (en%)",
 			"cashbacksum": "Une remise de {cashback}% ({cashbackPeriod} jours) est accordée sur cet ordre. Montant du paiement: {grossCashback}.",
 			"cashback_period": "Période de rémise (en jours)",
+			"clientName": "Nom de client",
+			"clientType": "Type de client",
+			"createdBy": "Détectée par",
 			"delivery_note_created": "Bon de livraison créé",
 			"delivery_note_not_yet_created": "Bon de livraison n'a pas encore été créé",
 			"deliveryaddress": "Adresse de livraison",
+			"deliveryNoteNumber": "Numéro de bordereau de livraison",
 			"deliveryNoteRemark": "Remarque sur le bon de livraison",
 			"documents": "Documents",
 			"excl_vat": "plus TVA",
 			"filter_orders": "Filtrer ordre",
+			"grossCashback": "Montant du paiement moins remise",
 			"inclvat": "Contient TVA",
 			"invoice_created": "Créer Facture",
 			"invoice_not_yet_created": "Facture n'a pas encore été créé",
+			"invoiceNumber": "Numéro de facture",
 			"invoiceRemark": "Remarque sur la facture",
 			"itemsum": "Somme de toutes les positions",
 			"loading_positions": "Positions sont en train de charger",
@@ -1891,14 +1899,18 @@
 			"no_payment_income_yet": "Paiement pas encore reçu",
 			"nocustomerselected": "Pour créer la facture, une adresse client est requise. Veuillez d'abord sélectionner un client.",
 			"note": "Remarques",
+			"number": "Numéro de commande",
 			"order_dispatched": "Ordre expédiée",
 			"order_not_yet_dispatched": "Ordre pas encore expédiée",
-			"order_date": "Réception des ordres",
+			"order_date": "Réception de la commande",
 			"order_cancelled_date": "Ordre annulé",
+			"package": "Emballage et expédition",
 			"parcel": "Livraison par paquet",
+			"paid": "Payé",
 			"payment_income_date": "Réception du paiement",
 			"payment_type": "Type de paiement",
 			"payment_period": "Cible de paiement (en jours)",
+			"paymentDate": "Date de règlement",
 			"pricingtype": "Type de facture",
 			"pricingnet": "Facture nette",
 			"pricinggross": "Facture brute",
@@ -1912,7 +1924,7 @@
 			"shipping_different_location": "Adresse de livraison différente",
 			"state": "Statut",
 			"taxfree": "Exempté de TVA",
-			"taxrateNetTax": "{value} - {taxrate}%",
+			"taxrateNetTax": "{taxrate}% de {value}",
 			"taxrateGrossTax": "{value} - {taxrate}%",
 			"vatincluded": "incluse {tax} TVA.",
 			"vatexcluded": "plus {tax} TVA.",
@@ -2043,6 +2055,9 @@
 		}
 	},
 	"shipment": {
+		"fields": {
+			"carrierTrackingNumber": "Numéro de suivi du transporteur"
+		},
 		"field": {
 			"carrier": "Service d'expédition",
 			"packagingUnit": {

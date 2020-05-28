@@ -32,6 +32,12 @@
 		"articles.statistics": "Statistics"
 	},
 	"general": {
+		"actions": {
+			"export": "Export",
+			"exportRaw": "Export (raw data)",
+			"import": "Import",
+			"importRaw": "Import (raw data)"
+		},
 		"fieldSets": {
 			"general": "General",
 			"settings": "Settings",
@@ -723,11 +729,6 @@
 	"fieldset_settings_title": "Settings",
 	"fieldset_packages_title": "Package options",
 	"fieldset_addresses_title": "Additional Addresses",
-	"fieldset_billing_title": "Billing address",
-	"fieldset_delivery_title": "Delivery",
-	"fieldset_payment_title": "Payment settings",
-	"fieldset_positions_title": "Items",
-	"fieldset_summary_title": "Order summary",
 	"fieldset_customer_title": "Account",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Addresses",
@@ -837,20 +838,10 @@
 	"db_orders_createtitle": "Create Order",
 	"db_orders_edittitle": "Edit Order",
 	"db_orders_viewtitle": "View Orderdetails",
-	"db_orders_status_new": "New",
-	"db_orders_status_need_payment": "Prepayment expected",
-	"db_orders_status_payed": "Prepaid completed, delivery preparation",
-	"db_orders_status_in_payment": "Wait for payment",
-	"db_orders_status_need_package": "Delivery preparation",
-	"db_orders_status_in_delivery": "In Delivery",
-	"db_orders_status_delivered": "Delivered (Payment needed)",
-	"db_orders_status_closed": "Completed",
-	"db_orders_status_cancelled": "Cancelled",
 	"db_orders_payment_cash": "Cash",
 	"db_orders_payment_prepaid": "Prepaid",
 	"db_orders_payment_invoice": "Invoice",
 	"db_orders_payment_paypal": "Paypal",
-	"db_orders_createdby": "Created by",
 	"db_orders_showEditor": "Show creator",
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
@@ -1808,6 +1799,15 @@
 			"shipment": "Shipment labels",
 			"creditadvice": "Credit advices"
 		},
+		"states": {
+			"new": "New",
+			"need_payment": "Payment pending",
+			"payed": "Payment received",
+			"need_package": "Delivery preparation",
+			"in_delivery": "In delivery",
+			"closed": "Completed",
+			"cancelled": "Cancelled"
+		},
 		"views": {
 			"view": {
 				"tabs": {
@@ -1858,27 +1858,35 @@
 			},
 			"touch": "Mark order as read"
 		},
-		"fieldSets": {
-			"edit_view": "Edit view",
-			"search_product": "Search product",
-			"packaging_shipping": "Packaging and shipping"
+		"fieldsets": {
+			"billing": "Billing address",
+			"delivery": "Delivery",
+			"payment": "Payment settings",
+			"positions": "Items",
+			"summary": "Order summary"
 		},
 		"fields": {
 			"processing_data": "Processing data ...",
 			"brutto_sum": "Brutto summary",
 			"cashback": "Cashback (in %)",
-			"cashbacksum": "For this order you receive {cashback}% cashback discount. The cashback is valid within the next {cashbackPeriod} days. Payment amount: {grossCashback}.",
+			"cashbacksum": "For this order you receive {cashback}% cash discount. The cashback is valid within the next {cashbackPeriod} days. Payment amount: {grossCashback}.",
 			"cashback_period": "Cashback period (days)",
+			"clientName": "Client name",
+			"clientType": "Client type",
+			"createdBy": "Created by",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
 			"deliveryaddress": "Delivery address",
+			"deliveryNoteNumber": "Delivery note number",
 			"deliveryNoteRemark": "Delivery note remark",
 			"documents": "Documents",
 			"excl_vat": "excl. VAT",
 			"filter_orders": "Filter orders",
+			"grossCashback": "Final sum less cash discount",
 			"inclvat": "Enthält MwSt.",
 			"invoice_created": "Invoice created",
 			"invoice_not_yet_created": "Invoice not yet created",
+			"invoiceNumber": "Invoice number",
 			"invoiceRemark": "Invoice remark",
 			"itemsum": "Sum positions",
 			"loading_positions": "Loading positions ...",
@@ -1891,14 +1899,18 @@
 			"no_payment_income_yet": "Payment not yet income",
 			"nocustomerselected": "To create an invoice for an order a client must be selected before. Please select a client first.",
 			"note": "Order note",
+			"number": "Order number",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
 			"order_date": "Order date",
 			"order_cancelled_date": "Order cancelled",
+			"package": "Packaging and shipping",
+			"parcel": "Postal package",
+			"paid": "Paid",
 			"payment_income_date": "Payment income date",
 			"payment_type": "Payment type",
 			"payment_period": "Payment period (days)",
-			"parcel": "Postal package",
+			"paymentDate": "Date of payment",
 			"pricingtype": "Invoice type",
 			"pricingnet": "Netto invoice",
 			"pricinggross": "Gross invoice",
@@ -2043,6 +2055,9 @@
 		}
 	},
 	"shipment": {
+		"fields": {
+			"carrierTrackingNumber": "Tracking number"
+		},
 		"field": {
 			"carrier": "Carrier",
 			"packagingUnit": {

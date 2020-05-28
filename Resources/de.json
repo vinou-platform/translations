@@ -32,6 +32,12 @@
 		"articles.statistics": "Statistiken"
 	},
 	"general": {
+		"actions": {
+			"export": "Export",
+			"exportRaw": "Export (EDV)",
+			"import": "Import",
+			"importRaw": "Import (EDV)"
+		},
 		"fieldSets": {
 			"general": "Allgemein",
 			"settings": "Einstellungen",
@@ -731,11 +737,6 @@
 	"fieldset_settings_title": "Einstellungen",
 	"fieldset_packages_title": "Versandoptionen",
 	"fieldset_addresses_title": "Weitere Adressen",
-	"fieldset_billing_title": "Rechnungsadresse",
-	"fieldset_delivery_title": "Versand",
-	"fieldset_payment_title": "Zahlungsmodalitäten",
-	"fieldset_positions_title": "Positionen",
-	"fieldset_summary_title": "Bestellübersicht",
 	"fieldset_customer_title": "Kundendaten",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Adressen",
@@ -845,20 +846,10 @@
 	"db_orders_createtitle": "Bestellung anlegen",
 	"db_orders_edittitle": "Bestellung bearbeiten",
 	"db_orders_viewtitle": "Bestellung ansehen",
-	"db_orders_status_new": "Eingegangen",
-	"db_orders_status_need_payment": "Vorkasse Zahlung erwartet",
-	"db_orders_status_payed": "Vorauszahlung eingegangen",
-	"db_orders_status_in_payment": "wartet auf Bezahlung",
-	"db_orders_status_need_package": "In Versandvorbereitung",
-	"db_orders_status_in_delivery": "In Auslieferung",
-	"db_orders_status_delivered": "Ausgeliefert (Zahlung offen)",
-	"db_orders_status_closed": "Abgeschlossen",
-	"db_orders_status_cancelled": "Storniert",
 	"db_orders_payment_cash": "Barzahlung",
 	"db_orders_payment_prepaid": "Vorkasse",
 	"db_orders_payment_invoice": "Per Rechnung",
 	"db_orders_payment_paypal": "Paypal",
-	"db_orders_createdby": "Erfasst von",
 	"db_orders_showEditor": "Erfasser anzeigen",
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
@@ -1816,6 +1807,15 @@
 			"shipment": "Packetaufkleber",
 			"creditadvice": "Gutschriften"
 		},
+		"states": {
+			"new": "Eingegangen",
+			"need_payment": "Zahlung erwartet",
+			"payed": "Zahlung eingegangen",
+			"need_package": "In Versandvorbereitung",
+			"in_delivery": "In Auslieferung",
+			"closed": "Abgeschlossen",
+			"cancelled": "Storniert"
+		},
 		"views": {
 			"view": {
 				"tabs": {
@@ -1866,10 +1866,12 @@
 			},
 			"touch": "Bestellung als gelesen markieren"
 		},
-		"fieldSets": {
-			"edit_view": "Ansicht bearbeiten",
-			"search_product": "Produkt suchen",
-			"packaging_shipping": "Verpackung und Versand"
+		"fieldsets": {
+			"billing": "Rechnungsadresse",
+			"delivery": "Versand",
+			"payment": "Zahlungsmodalitäten",
+			"positions": "Positionen",
+			"summary": "Bestellübersicht"
 		},
 		"fields": {
 			"processing_data": "Daten werden verarbeitet ...",
@@ -1877,16 +1879,22 @@
 			"cashback": "Skonto (in %)",
 			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto ({cashbackPeriod} Tage) gewährt. Zahlbetrag: {grossCashback}.",
 			"cashback_period": "Skonto-Zeitraum (in Tagen)",
+			"clientName": "Kundenname",
+			"clientType": "Kundentyp",
+			"createdBy": "Erfasst von",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
 			"deliveryaddress": "Lieferadresse",
+			"deliveryNoteNumber": "Lieferscheinnr.",
 			"deliveryNoteRemark": "Liefernotiz",
 			"documents": "Dokumente",
 			"excl_vat": "zzgl. MwSt.",
 			"filter_orders": "Bestellung filtern",
+			"grossCashback": "Endbetrag abzgl. Skonto",
 			"inclvat": "Enthält MwSt.",
 			"invoice_created": "Rechnung erstellt",
 			"invoice_not_yet_created": "Rechnung wurde noch nicht erstellt",
+			"invoiceNumber": "Rechnungsnr.",
 			"invoiceRemark": "Rechnungsnotiz",
 			"itemsum": "Summe aller Positionen",
 			"loading_positions": "Positionen werden geladen ...",
@@ -1899,14 +1907,18 @@
 			"no_payment_income_yet": "Zahlung noch nicht eingegangen",
 			"nocustomerselected": "Für die Erstellung der Rechnung wird eine Kundenadresse benötigt. Bitte wähle zuerst einen Kunden aus.",
 			"note": "Anmerkungen",
+			"number": "Bestellnummer",
 			"order_dispatched": "Bestellung versendet",
 			"order_not_yet_dispatched": "Bestellung noch nicht versendet",
 			"order_date": "Bestelleingang",
 			"order_cancelled_date": "Bestellung storniert",
+			"package": "Verpackung und Versand",
 			"parcel": "Paketsendung",
+			"paid": "Bezahlt",
 			"payment_income_date": "Zahlungseingang",
 			"payment_type": "Zahlungsart",
 			"payment_period": "Zahlungsziel (in Tagen)",
+			"paymentDate": "Zahlungsdatum",
 			"pricingtype": "Rechnungstyp",
 			"pricingnet": "Netto Rechnung",
 			"pricinggross": "Brutto Rechnung",
@@ -2051,6 +2063,9 @@
 		}
 	},
 	"shipment": {
+		"fields": {
+			"carrierTrackingNumber": "Sendungsverfolgungsnr."
+		},
 		"field": {
 			"carrier": "Versanddienstleister",
 			"packagingUnit": {

@@ -32,6 +32,12 @@
 		"articles.statistics": "Statistiche"
 	},
 	"general": {
+		"actions": {
+			"export": "Esportazione",
+			"exportRaw": "Esportazione (dati non elaborati)",
+			"import": "Import",
+			"importRaw": "Import (dati non elaborati)"
+		},
 		"fieldSets": {
 			"general": "Generale",
 			"settings": "Opzioni",
@@ -723,11 +729,6 @@
 	"fieldset_settings_title": "Impostationi",
 	"fieldset_packages_title": "Opzioni di spedizione",
 	"fieldset_addresses_title": "Indirizzi supplementare",
-	"fieldset_billing_title": "Indirizzo di fattura",
-	"fieldset_delivery_title": "Spedizione",
-	"fieldset_payment_title": "Modalità di pagamento",
-	"fieldset_positions_title": "Posto",
-	"fieldset_summary_title": "Visione generale del ordine",
 	"fieldset_customer_title": "Dati dei clienti",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Indirizzi",
@@ -837,20 +838,10 @@
 	"db_orders_createtitle": "Creare ordine",
 	"db_orders_edittitle": "Modificare ordine",
 	"db_orders_viewtitle": "Guardare ordine",
-	"db_orders_status_new": "Ricevute",
-	"db_orders_status_need_payment": "Attendere Pagamento anticipato",
-	"db_orders_status_payed": "Pagamento m anticipato ricevute",
-	"db_orders_status_in_payment": "Aspettare pagamento",
-	"db_orders_status_need_package": "Preparazione del pagamento",
-	"db_orders_status_in_delivery": "In consegna",
-	"db_orders_status_delivered": "È stata consegnata (ancora pagato)",
-	"db_orders_status_closed": "È stato completato",
-	"db_orders_status_cancelled": "È stato annullato",
 	"db_orders_payment_cash": "Pagamenti in contanti",
 	"db_orders_payment_prepaid": "Pagamento anticipato",
 	"db_orders_payment_invoice": "Con fattura",
 	"db_orders_payment_paypal": "Paypal",
-	"db_orders_createdby": "Raccolti di",
 	"db_orders_showEditor": "Visualizzare raccoglitore",
 	"db_cronjobs_createtitle": "Creare cronjob",
 	"db_cronjobs_edittitle": "Modificare Cronjob",
@@ -1808,6 +1799,15 @@
 			"shipment": "Etichette per imballaggio",
 			"creditadvice": "Credito"
 		},
+		"states": {
+			"new": "Nuovo",
+			"need_payment": "Pagamento in sospeso",
+			"payed": "Pagamento ricevuto",
+			"need_package": "Preparazione del pagamento",
+			"in_delivery": "In consegna",
+			"closed": "È stato completato",
+			"cancelled": "È stato annullato"
+		},
 		"views": {
 			"view": {
 				"tabs": {
@@ -1858,27 +1858,35 @@
 			},
 			"touch": "Contrassegna l'ordine come letto"
 		},
-		"fieldSets": {
-			"edit_view": "Modificare vista",
-			"search_product": "Cerca prodotto",
-			"packaging_shipping": "Imballaggio e spedizione"
+		"fieldsets": {
+			"billing": "Indirizzo di fattura",
+			"delivery": "Spedizione",
+			"payment": "Modalità di pagamento",
+			"positions": "Posto",
+			"summary": "Visione generale del ordine"
 		},
 		"fields": {
 			"processing_data": "I dati vengono elaborati ...",
 			"brutto_sum": "Totale lordo",
 			"cashback": "Sconto (in %)",
-			"cashbacksum": "Uno sconto dell {cashback}% Skonto ({cashbackPeriod} giorni) è concesso su questo ordine.Importo del pagamento: {grossCashback}.",
+			"cashbacksum": "Uno sconto dell {cashback}% Skonto ({cashbackPeriod} giorni) è concesso su questo ordine. Importo del pagamento: {grossCashback}.",
 			"cashback_period": "Periodo di remissione (tra giorni)",
+			"clientName": "Nome del cliente",
+			"clientType": "Tipo di cliente",
+			"createdBy": "Raccolti di",
 			"delivery_note_created": "La bolla di consegna è stato creata.",
 			"delivery_note_not_yet_created": "La bolla di consegna non è stata ancora creata",
 			"deliveryaddress": "Indirizzo di consegna",
+			"deliveryNoteNumber": "Numero della bolla di consegna",
 			"deliveryNoteRemark": "Nota sulla bolla di consegna",
 			"documents": "Dokumenti",
 			"excl_vat": "più IVA.",
 			"filter_orders": "Filtro l'ordine",
+			"grossCashback": "Somma finale meno sconto",
 			"inclvat": "Contiene l'IVA.",
 			"invoice_created": "Fattura è stato creato.",
 			"invoice_not_yet_created": "La fattura non è stata ancora creata",
+			"invoiceNumber": "Numero di fattura",
 			"invoiceRemark": "Osservazione della fattura",
 			"itemsum": "Somma di tutte le posizioni",
 			"loading_positions": "Le posizioni si stanno caricando ...",
@@ -1891,14 +1899,18 @@
 			"no_payment_income_yet": "Pagamento non ancora ricevuto",
 			"nocustomerselected": "Per creare la fattura, è richiesto un indirizzo cliente. Seleziona prima un cliente.",
 			"note": "Osservazioni",
+			"number": "Numero d'ordine",
 			"order_dispatched": "Ordine è stato spedito",
 			"order_not_yet_dispatched": "Ordine non ancora spedito",
 			"order_date": "Ricezione degli ordini",
 			"order_cancelled_date": "Ordine è stato annullato",
+			"package": "Imballaggio e spedizione",
 			"parcel": "Consegna per pacco",
+			"paid": "Pagato",
 			"payment_income_date": "Ricevuta del pagamento",
 			"payment_type": "Tipo di pagamento",
 			"payment_period": "Target di pagamento (tra giorni)",
+			"paymentDate": "Data di pagamento",
 			"pricingtype": "Tipo di fattura",
 			"pricingnet": "Fattura netta",
 			"pricinggross": "Fattura lordo",
@@ -1912,7 +1924,7 @@
 			"shipping_different_location": "Indirizzo di consegna diverso",
 			"state": "Stato",
 			"taxfree": "IVA esente",
-			"taxrateNetTax": "{value} - {taxrate}%",
+			"taxrateNetTax": "{taxrate}% di {value}",
 			"taxrateGrossTax": "{value} - {taxrate}%",
 			"vatincluded": "IVA inclusa {tax} ",
 			"vatexcluded": "Più {tax} IVA.",
@@ -2043,6 +2055,9 @@
 		}
 	},
 	"shipment": {
+		"fields": {
+			"carrierTrackingNumber": "Numero di tracciamento del corriere"
+		},
 		"field": {
 			"carrier": "Servizio di spedizione",
 			"packagingUnit": {
