@@ -32,6 +32,12 @@
 		"articles.statistics": "Statistiken"
 	},
 	"general": {
+		"actions": {
+			"export": "Export",
+			"exportRaw": "Export (EDV)",
+			"import": "Import",
+			"importRaw": "Import (EDV)"
+		},
 		"fieldSets": {
 			"general": "Allgemein",
 			"settings": "Einstellungen",

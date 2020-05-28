@@ -32,6 +32,12 @@
 		"articles.statistics": "estadísticas"
 	},
 	"general": {
+		"actions": {
+			"export": "exportar",
+			"exportRaw": "exportar (datos sin procesar)",
+			"import": "importar",
+			"importRaw": "importar (datos sin procesar)"
+		},
 		"fieldSets": {
 			"general": "generalidades",
 			"settings": "ajustes",
