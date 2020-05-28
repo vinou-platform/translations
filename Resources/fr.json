@@ -767,6 +767,11 @@
 	"users_create_modaltitle": "Creér utilisateur",
 	"users_edit_modaltitle": "Éditer utilisateur",
 	"users_settings_modaltitle": "Éditer configuration",
+	"user": {
+		"fields": {
+			"lastLogin": "Dernière connexion"
+		}
+	},
 	"users": {
 		"action": {
 			"main": "Creér",

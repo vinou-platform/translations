@@ -775,6 +775,11 @@
 	"users_create_modaltitle": "Benutzer anlegen",
 	"users_edit_modaltitle": "Benutzer bearbeiten",
 	"users_settings_modaltitle": "Einstellungen bearbeiten",
+	"user": {
+		"fields": {
+			"lastLogin": "Letzter Login"
+		}
+	},
 	"users": {
 		"action": {
 			"main": "Neuen",

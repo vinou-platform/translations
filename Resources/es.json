@@ -768,6 +768,11 @@
 	"users_create_modaltitle": "crear usuario",
 	"users_edit_modaltitle": "editar usuario",
 	"users_settings_modaltitle": "editar ajustes",
+	"user": {
+		"fields": {
+			"lastLogin": "Último acceso"
+		}
+	},
 	"users": {
 		"action": {
 			"main": "nuevo",

@@ -767,6 +767,11 @@
 	"users_create_modaltitle": "Create new user",
 	"users_edit_modaltitle": "Edit user",
 	"users_settings_modaltitle": "Edit user settings",
+	"user": {
+		"fields": {
+			"lastLogin": "Last login"
+		}
+	},
 	"users": {
 		"action": {
 			"main": "Add",
