@@ -175,20 +175,6 @@
 		}
 	},
 	"dashboard": {
-		"actions": {
-			"createWine": {
-				"main": "Ajouter",
-				"sub": "vin"
-			},
-			"createClient": {
-				"main": "Créer",
-				"sub": "client"
-			},
-			"createOrder": {
-				"main": "Créer",
-				"sub": "ordre"
-			}
-		},
 		"fieldSets": {
 			"quickActions": "Actions rapides"
 		}
@@ -1392,10 +1378,6 @@
 			"glas":	"Obturateur pour gaz"
 		},
 		"gallery": {
-			"new": {
-				"main": "Créer",
-				"subline": "vin"
-			},
 			"sortby": {
 				"label": "Trier vue par"
 			},
@@ -1511,6 +1493,12 @@
 		}
 	},
 	"product": {
+		"actions": {
+			"create": {
+				"main": "Créer",
+				"sub": "produit"
+			}
+		},
 		"fieldSets": {
 			"facts": "Faits et chiffres"
 		},
@@ -1548,10 +1536,6 @@
 			}
 		},
 		"gallery": {
-			"new": {
-				"main": "Créer",
-				"subline": "produit"
-			},
 			"filter": {
 				"searchhint": "p.ex. nom, numéro de réference"
 			}

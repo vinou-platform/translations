@@ -175,28 +175,6 @@
 		}
 	},
 	"dashboard": {
-		"actions": {
-			"createWine": {
-				"main": "Neuen Wein",
-				"sub": "anlegen"
-			},
-			"createProduct": {
-				"main": "Neues Produkt",
-				"sub": "anlegen"
-			},
-			"createBundle": {
-				"main": "Neues Weinpaket",
-				"sub": "anlegen"
-			},
-			"createClient": {
-				"main": "Neuen Kunden",
-				"sub": "anlegen"
-			},
-			"createOrder": {
-				"main": "Neue Bestellung",
-				"sub": "anlegen"
-			}
-		},
 		"fieldSets": {
 			"quickActions": "Schnellaktionen"
 		}
@@ -1400,10 +1378,6 @@
 			"glas":	"Glasverschluss"
 		},
 		"gallery": {
-			"new": {
-				"main": "Neuen Wein",
-				"subline": "anlegen"
-			},
 			"sortby": {
 				"label": "Ansicht sortieren nach: "
 			},
@@ -1519,6 +1493,12 @@
 		}
 	},
 	"product": {
+		"actions": {
+			"create": {
+				"main": "Neues Produkt",
+				"sub": "anlegen"
+			}
+		},
 		"fieldSets": {
 			"facts": "Daten & Fakten"
 		},
@@ -1556,10 +1536,6 @@
 			}
 		},
 		"gallery": {
-			"new": {
-				"main": "Neues Produkt",
-				"subline": "anlegen"
-			},
 			"filter": {
 				"searchhint": "z.B. Name, Artikelnummer"
 			}

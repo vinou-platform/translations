@@ -175,20 +175,6 @@
 		}
 	},
 	"dashboard": {
-		"actions": {
-			"createWine": {
-				"main": "Nuovo",
-				"sub": "elaborare vino"
-			},
-			"createClient": {
-				"main": "Nuovo cliente",
-				"sub": "creare"
-			},
-			"createOrder": {
-				"main": "Nuovo ordine",
-				"sub": "creare"
-			}
-		},
 		"fieldSets": {
 			"quickActions": "Quickactions"
 		}
@@ -1392,10 +1378,6 @@
 			"glas":	"Chiusura in vetro"
 		},
 		"gallery": {
-			"new": {
-				"main": "Nuovo vino",
-				"subline": "creare"
-			},
 			"sortby": {
 				"label": "Ordina vista per: "
 			},
@@ -1511,6 +1493,12 @@
 		}
 	},
 	"product": {
+		"actions": {
+			"create": {
+				"main": "Nuovo prodotto",
+				"sub": "creare"
+			}
+		},
 		"fieldSets": {
 			"facts": "Fatti e cifre"
 		},
@@ -1548,10 +1536,6 @@
 			}
 		},
 		"gallery": {
-			"new": {
-				"main": "Nuovo prodotto",
-				"subline": "creare"
-			},
 			"filter": {
 				"searchhint": "Ad es. Nome, numero articolo"
 			}

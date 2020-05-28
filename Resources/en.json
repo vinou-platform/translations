@@ -175,20 +175,6 @@
 		}
 	},
 	"dashboard": {
-		"actions": {
-			"createWine": {
-				"main": "Add wine",
-				"sub": " "
-			},
-			"createClient": {
-				"main": "Add client",
-				"sub": " "
-			},
-			"createOrder": {
-				"main": "Add order",
-				"sub": " "
-			}
-		},
 		"fieldSets": {
 			"quickActions": "Quick actions"
 		}
@@ -1392,10 +1378,6 @@
 			"glas":	"Glas"
 		},
 		"gallery": {
-			"new": {
-				"main": "Create Wine",
-				"subline": " "
-			},
 			"sortby": {
 				"label": "Sort view by: "
 			},
@@ -1511,6 +1493,12 @@
 		}
 	},
 	"product": {
+		"actions": {
+			"create": {
+				"main": "Add Product",
+				"sub": " "
+			}
+		},
 		"fieldSets": {
 			"facts": "Facts & Figures"
 		},
@@ -1548,10 +1536,6 @@
 			}
 		},
 		"gallery": {
-			"new": {
-				"main": "Add Product",
-				"subline": " "
-			},
 			"filter": {
 				"searchhint": "for example name or articlenumber"
 			}

@@ -176,20 +176,6 @@
 		}
 	},
 	"dashboard": {
-		"actions": {
-			"createWine": {
-				"main": "nuevo",
-				"sub": "crear vino"
-			},
-			"createClient": {
-				"main": "nuevo cliente",
-				"sub": "crear"
-			},
-			"createOrder": {
-				"main": "como orden",
-				"sub": "digitar"
-			}
-		},
 		"fieldSets": {
 			"quickActions": "Quickactions"
 		}
@@ -1393,10 +1379,6 @@
 			"glas":	"cierre de vidrio"
 		},
 		"gallery": {
-			"new": {
-				"main": "nuevo vino",
-				"subline": "crear"
-			},
 			"sortby": {
 				"label": "clasificar muestras por: "
 			},
@@ -1512,6 +1494,12 @@
 		}
 	},
 	"product": {
+		"actions": {
+			"create": {
+				"main": "nuevo producto",
+				"sub": "crear"
+			}
+		},
 		"fieldSets": {
 			"facts": "Datos y cifras"
 		},
@@ -1549,10 +1537,6 @@
 			}
 		},
 		"gallery": {
-			"new": {
-				"main": "nuevo producto",
-				"subline": "crear"
-			},
 			"filter": {
 				"searchhint": "e.j. nombre, número de artículo"
 			}
