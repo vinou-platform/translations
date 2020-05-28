@@ -1327,6 +1327,7 @@
 				"placeholder": "Search for allergens"
 			},
 			"articlenumber": "Art.-No.",
+			"baseprice": "Price per liter",
 			"barcode": "GTIN",
 			"bio": "Bio certified",
 			"bottlesize": "Bottlesize",
@@ -1514,6 +1515,9 @@
 		}
 	},
 	"product": {
+		"fieldSets": {
+			"facts": "Facts & Figures"
+		},
 		"form": {
 			"edit": {
 				"title": "Edit product"
@@ -1525,6 +1529,9 @@
 		"field": {
 			"name": "Name",
 			"articlenumber": "Articlenumber",
+			"size": "Filling quantity",
+			"unit": "Unit",
+			"baseprice": "Base price",
 			"net": "Price netto",
 			"tax": "VAT",
 			"taxrate": "Taxrate",
@@ -2377,6 +2384,8 @@
 			"name": "Name",
 			"description": "Description",
 			"articlenumber": "Articlenumber",
+			"size": "Filling quantity",
+			"baseprice": "Price per liter",
 			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"category": "Category",
 			"tag": "Tags",
@@ -5047,6 +5056,12 @@
 		"estate": "Estate bottling",
 		"castle": "Castle bottling",
 		"purchase": "Purchase"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "L"
 	},
 	"apps": {
 		"vinou-gusto": {

@@ -1327,6 +1327,7 @@
 				"placeholder": "Ricerca Allergeni"
 			},
 			"articlenumber": "Numero di riferimento",
+			"baseprice": "Prezzo al litro",
 			"barcode": "Codice EAN",
 			"bio": "Organico certificato",
 			"bottlesize": "Dimensione della bottiglia",
@@ -1514,6 +1515,9 @@
 		}
 	},
 	"product": {
+		"fieldSets": {
+			"facts": "Fatti e cifre"
+		},
 		"form": {
 			"edit": {
 				"title": "Modificare prodotto"
@@ -1525,6 +1529,9 @@
 		"field": {
 			"name": "Nom",
 			"articlenumber": "Numero di riferimento",
+			"size": "Quantità di riempimento",
+			"unit": "Unità",
+			"baseprice": "Prezzo base",
 			"net": "Prezzo neetto",
 			"tax": "IVA.",
 			"taxrate": "Aliquota fiscale",
@@ -2377,6 +2384,8 @@
 			"name": "Nome",
 			"description": "Descrizione",
 			"articlenumber": "Numero dell'articolo",
+			"size": "Quantità di riempimento",
+			"baseprice": "Prezzo al litro",
 			"packageQuantity": "Imballaggio equivalente (bottiglie da 0,75l)",
 			"category": "Categoria",
 			"tag": "Tag",
@@ -5047,6 +5056,12 @@
 		"estate": "Riempimento immobiliare",
 		"castle": "Blocca riempimento",
 		"purchase": "acquisto"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "L"
 	},
 	"apps": {
 		"vinou-gusto": {
