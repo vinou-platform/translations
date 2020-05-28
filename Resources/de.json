@@ -1326,6 +1326,7 @@
 				"placeholder": "Allergene suchen"
 			},
 			"articlenumber": "Art.-Nr.",
+			"baseprice": "Preis pro Liter",
 			"barcode": "EAN-Code",
 			"bio": "Bio zertifiziert",
 			"bottlesize": "Flaschengröße",
@@ -1513,6 +1514,9 @@
 		}
 	},
 	"product": {
+		"fieldSets": {
+			"facts": "Daten & Fakten"
+		},
 		"form": {
 			"edit": {
 				"title": "Produkt bearbeiten"
@@ -1524,6 +1528,9 @@
 		"field": {
 			"name": "Name",
 			"articlenumber": "Artikelnummer",
+			"size": "Füllmenge",
+			"unit": "Einheit",
+			"baseprice": "Grundpreis",
 			"net": "Netto-Preis",
 			"tax": "MwSt.",
 			"taxrate": "Steuersatz",
@@ -2400,6 +2407,8 @@
 			"name": "Name",
 			"description": "Beschreibung",
 			"articlenumber": "Artikelnummer",
+			"size": "Füllmenge",
+			"baseprice": "Preis pro Liter",
 			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
 			"category": "Kategorie",
 			"tag": "Tags",
@@ -5070,6 +5079,12 @@
 		"estate": "Gutsabfüllung",
 		"castle": "Schlossabfüllung",
 		"purchase": "Zukauf"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "L"
 	},
 	"apps": {
 		"vinou-gusto": {

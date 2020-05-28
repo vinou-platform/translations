@@ -1319,6 +1319,7 @@
 				"placeholder": "buscar alergenos"
 			},
 			"articlenumber": "número de artículo",
+			"baseprice": "Precio por litro",
 			"barcode": "EAN-Code",
 			"bio": "certificado como biológico",
 			"bottlesize": "tamaño de botella",
@@ -1506,6 +1507,9 @@
 		}
 	},
 	"product": {
+		"fieldSets": {
+			"facts": "Datos y cifras"
+		},
 		"form": {
 			"edit": {
 				"title": "editar producto"
@@ -1517,6 +1521,9 @@
 		"field": {
 			"name": "nombre",
 			"articlenumber": "número de artículo",
+			"size": "Cantidad de llenado",
+			"unit": "Unidad",
+			"baseprice": "Precio base",
 			"net": "precio neto",
 			"tax": "impuesto valor añadido",
 			"taxrate": "tasa de impuesto",
@@ -2393,6 +2400,8 @@
 			"name": "Nombre",
 			"description": "Descripción",
 			"articlenumber": "Número de artículo",
+			"size": "Cantidad de llenado",
+			"baseprice": "Precio por litro",
 			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
 			"category": "Categoría",
 			"tag": "Etiquetas",
@@ -5063,6 +5072,12 @@
 		"estate": "Relleno de finca",
 		"castle": "Bloqueo de llenado",
 		"purchase": "Compra"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "L"
 	},
 	"apps": {
 		"vinou-gusto": {

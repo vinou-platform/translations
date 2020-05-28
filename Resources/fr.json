@@ -1318,6 +1318,7 @@
 				"placeholder": "Rechercher allergènes"
 			},
 			"articlenumber": "Numéro de référence",
+			"baseprice": "Prix au litre",
 			"barcode": "Code EAN",
 			"bio": "Certifié biologique",
 			"bottlesize": "Taille de la bouteille",
@@ -1505,6 +1506,9 @@
 		}
 	},
 	"product": {
+		"fieldSets": {
+			"facts": "Faits et chiffres"
+		},
 		"form": {
 			"edit": {
 				"title": "Éditer produit"
@@ -1516,6 +1520,9 @@
 		"field": {
 			"name": "Nom",
 			"articlenumber": "Numéro de référence",
+			"size": "Quantité de remplissage",
+			"unit": "Unité",
+			"baseprice": "Prix de base",
 			"net": "Prix net",
 			"tax": "TVA.",
 			"taxrate": "Taux d'imposition",
@@ -2392,6 +2399,8 @@
 			"name": "Nom",
 			"description": "La description",
 			"articlenumber": "Numéro de l'article",
+			"size": "Quantité de remplissage",
+			"baseprice": "Prix au litre",
 			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
 			"category": "Catégorie",
 			"tag": "Mots clés",
@@ -5062,6 +5071,12 @@
 		"estate": "Remplissage du domaine",
 		"castle": "Verrouillage du remplissage",
 		"purchase": "Acheter"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "L"
 	},
 	"apps": {
 		"vinou-gusto": {
