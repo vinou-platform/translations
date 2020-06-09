@@ -1078,6 +1078,14 @@
 			"regular": "Commerce",
 			"invitation": "Invité"
 		},
+		"views": {
+			"covid19Notification": {
+				"title": "Ab dem 1. Juli gilt die MwSt.-Senkung!",
+				"text": "Hast Du bis dahin keine Auswahl zur MwSt.-Anpassung vorgenommen, stellen wir Deine Preise automatisch zu diesem Datum um. Als Grundlage verwenden wir hierfür Deine Bruttopreise.",
+				"footerText": "<a href=\"https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Schlaglichter/Konjunkturpaket/2020-06-03-konjunkturpaket-beschlossen.html\" title=\"Bundesfinanzministerium - Koalitionsausschuss beschließt Konjunkturpaket\" target=\"_blank\">Weitere Informationen zum Konjunkturpaket</a>",
+				"action": "Einstellung konfigurieren"
+			}
+		},
 		"messages": {
 			"dialog": {
 				"activate": "Activer le compte complètement?",
@@ -1089,6 +1097,18 @@
 				"activation_error": "Une erreur est survenue, votre abonnement n'a pas pu être activé.!",
 				"activation_success": "Bienvenue à Vinou!"
 			}
+		},
+		"dialogs": {
+			"covid19TaxrateChange": {
+				"title": "Mehrwertsteuersenkung",
+				"text": "Bitte nimm Dir kurz Zeit und gib an, wie Du Deine Preise aufgrund der MwSt.-Senkung anpassen möchtest. Welchen Preis möchtest Du beibehalten und für die Neuberechnung als Basis benutzen?",
+				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Senkung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
+				"net": "Netto-Preis",
+				"gross": "Brutto-Preis"
+			}
+		},
+		"toasts": {
+			"settingsSaved": "Vos réglages ont été sauvegardés!"
 		},
 		"errors": {
 			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
