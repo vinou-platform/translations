@@ -185,7 +185,6 @@
 	"wines_modal_delete": "Voulez-vous vraiment supprimer ce vin?",
 	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
 	"category_modal_delete": "Voulez-vous vraiment supprimer cette catégorie?",
-	"contacts_modal_delete": "Voulez-vous vraiment supprimer cette personne de contact?",
 	"customers_modal_delete": "Voulez-vous vraiment supprimer ce membre?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Voulez-vous vraiment supprimer cet utilisateurs?",
@@ -1707,22 +1706,28 @@
 			"online": "Détaillant en ligne",
 			"other": "Autre entreprise"
 		},
-		"messages": {
-			"hints": {
-				"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)",
-				"noentries": "Pas encore d'entrées disponibles"
-			},
-			"dialog": {
-				"delete": "Voulez-vous vraiment supprimer ce client?"
-			},
-			"toasts": {
-				"created": "Client créé!",
-				"changed": "Client édité!",
-				"deleted": "Client supprimé!",
-				"image_uploaded": "Image du client téléchargée!",
-				"image_deleted": "Image du client supprimé",
-				"copied": "Image du client dupliqué"
-			}
+		"hints": {
+			"imageSize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce client?"
+		},
+		"toasts": {
+			"created": "Client créé!",
+			"changed": "Client édité!",
+			"copied": "Image du client dupliqué",
+			"deleted": "Client supprimé!",
+			"imageUploaded": "Image du client téléchargée!",
+			"imageDeleted": "Image du client supprimé"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette personne de contact?"
+		},
+		"toasts": {
+			"saved": "Personne de contact enregistrée!",
+			"deleted": "Personne de contact supprimée!"
 		}
 	},
 	"address": {
@@ -2562,12 +2567,6 @@
 		"category_changed": "Categorie mise à jour!",
 		"category_deleted": "Categorie supprimée!",
 		"category_duplicated": "Categorie dupliquée!",
-		"client_image_uploaded": "Image téléchargée!",
-		"client_image_deleted": "Image supprimée!",
-		"client_saved": "Client enregistré!",
-		"client_changed": "Client mis à jour!",
-		"client_deleted": "Client supprimé!",
-		"contact_deleted": "Personne de contact supprimée!",
 		"cronjob_saved": "Cronjob créé!",
 		"cronjob_changed": "Cronjob mis à jour!",
 		"cronjob_deleted": "Cronjob supprimé!",
@@ -2638,11 +2637,7 @@
 			"saveerror": "Note n'a pas pu être enregistrée!",
 			"delete": "Note supprimée!",
 			"deleteerror": "Note n'a pas pu être supprimée!"
-		},
-		"contacts_saved": "Personne de contact enregistrée!",
-		"contacts_saveerror": "Le contact n'a pas pu être enregistré!",
-		"contacts_deleted": "Contact supprimé!",
-		"contacts_deleteerror": "La personne de contact n'a pas pu être supprimée!"
+		}
 	},
 	"alerts": {
 		"token_copy": "Pour copier le jeton: Ctrl + C, Enter"

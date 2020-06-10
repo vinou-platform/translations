@@ -185,7 +185,6 @@
 	"wines_modal_delete": "Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete the selected winery?",
 	"category_modal_delete": "Do you really want to delete the selected category?",
-	"contacts_modal_delete": "Do you really want to delete the selected contact?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
 	"users_modules": "Modules",
 	"users_modal_delete": "Do you really want to delete this user?",
@@ -1707,22 +1706,28 @@
 			"online": "Online-Shop",
 			"other": "Other company"
 		},
-		"messages": {
-			"hints": {
-				"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
-				"noentries": "No entries found"
-			},
-			"dialog": {
-				"delete": "Would you really delete this client?"
-			},
-			"toasts": {
-				"created": "Client created!",
-				"changed": "Client changed!",
-				"deleted": "Client deleted!",
-				"image_uploaded": "Uploaded image for client!",
-				"image_deleted": "Delete image for client!",
-				"copied": "Client duplicated"
-			}
+		"hints": {
+			"imageSize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
+		},
+		"dialogs": {
+			"delete": "Would you really delete this client?"
+		},
+		"toasts": {
+			"created": "Client created!",
+			"changed": "Client changed!",
+			"copied": "Client duplicated",
+			"deleted": "Client deleted!",
+			"imageUploaded": "Client image uploaded!",
+			"imageDeleted": "Client image deleted!"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Do you really want to delete the selected contact?"
+		},
+		"toasts": {
+			"saved": "Contact saved.",
+			"deleted": "Contact deleted."
 		}
 	},
 	"address": {
@@ -2562,12 +2567,6 @@
 		"category_changed": "Category updated!",
 		"category_deleted": "Category deleted!",
 		"category_duplicated": "Category duplicated!",
-		"client_image_uploaded": "Image uploaded!",
-		"client_image_deleted": "Image deleted!",
-		"client_saved": "Client saved!",
-		"client_changed": "Client updated!",
-		"client_deleted": "Client deleted!",
-		"contact_deleted": "Contact deleted",
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
@@ -2638,11 +2637,7 @@
 			"saveerror": "Note could not saved!",
 			"delete": "Note deleted!",
 			"deleteerror": "Note could not deleted!"
-		},
-		"contacts_saved": "Contact added.",
-		"contacts_saveerror": "Error adding contact!",
-		"contacts_deleted": "Contact deleted.",
-		"contacts_deleteerror": "Error deleting contact!"
+		}
 	},
 	"alerts": {
 		"token_copy": "To copy then token press Ctrl+C and Enter"

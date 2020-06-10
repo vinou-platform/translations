@@ -185,7 +185,6 @@
 	"wines_modal_delete": "Möchtest Du diesen Wein wirklich löschen?",
 	"wineries_modal_delete": "Möchtest Du dieses Weingut wirklich löschen?",
 	"category_modal_delete": "Möchtest Du diese Kategorie wirklich löschen?",
-	"contacts_modal_delete": "Möchtest Du diesen Kontakt wirklich löschen?",
 	"customers_modal_delete": "Möchtest Du diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
 	"users_modal_delete": "Möchtest Du diesen Benutzer wirklich löschen?",
@@ -1707,22 +1706,28 @@
 			"online": "Online-Händler",
 			"other": "Sonstige Firma"
 		},
-		"messages": {
-			"hints": {
-				"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
-				"noentries": "Noch keine Einträge vorhanden"
-			},
-			"dialog": {
-				"delete": "Willst Du den Kunden wirklich löschen?"
-			},
-			"toasts": {
-				"created": "Kunde angelegt!",
-				"changed": "Kunde geändert!",
-				"deleted": "Kunde gelöscht!",
-				"image_uploaded": "Kundenbild hochgeladen!",
-				"image_deleted": "Kundenbild gelöscht",
-				"copied": "Kunde dupliziert"
-			}
+		"hints": {
+			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"dialogs": {
+			"delete": "Willst Du den Kunden wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Kunde angelegt!",
+			"changed": "Kunde geändert!",
+			"copied": "Kunde dupliziert",
+			"deleted": "Kunde gelöscht!",
+			"imageUploaded": "Kundenbild hochgeladen!",
+			"imageDeleted": "Kundenbild gelöscht"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Möchtest Du diesen Kontakt wirklich löschen?"
+		},
+		"toasts": {
+			"saved": "Kontaktperson gespeichert!",
+			"deleted": "Kontaktperson gelöscht!"
 		}
 	},
 	"address": {
@@ -2562,12 +2567,6 @@
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
 		"category_duplicated": "Kategorie kopiert!",
-		"client_image_uploaded": "Bild hochgeladen!",
-		"client_image_deleted": "Bild gelöscht!",
-		"client_saved": "Kunde gespeichert!",
-		"client_changed": "Kunde aktualisiert!",
-		"client_deleted": "Kunde gelöscht!",
-		"contact_deleted": "Kontaktperson gelöscht!",
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
@@ -2638,11 +2637,7 @@
 			"saveerror": "Notiz konnte nicht gespeichert werden!",
 			"delete": "Notiz gelöscht!",
 			"deleteerror": "Notiz konnte nicht gelöscht werden!"
-		},
-		"contacts_saved": "Kontaktperson gespeichert!",
-		"contacts_saveerror": "Kontakt konnte nicht gespeichert werden!",
-		"contacts_deleted": "Kontaktperson gelöscht!",
-		"contacts_deleteerror": "Kontaktperson konnte nicht gelöscht werden!"
+		}
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"

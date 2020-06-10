@@ -185,7 +185,6 @@
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
 	"category_modal_delete": "Vuoi veramente cancellare questa categoria",
-	"contacts_modal_delete": "Vuoi veramente cancellare questo contatto",
 	"customers_modal_delete": "Vuoi veramente cancellare questo cliente?",
 	"users_modules": "Moduli",
 	"users_modal_delete": "Vuoi veramente cancellare questo utente",
@@ -1707,22 +1706,28 @@
 			"online": "Rivenditore online",
 			"other": "Altra compagnia"
 		},
-		"messages": {
-			"hints": {
-				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Formato File: .png (liberato)",
-				"noentries": "Nessuna voce ancora"
-			},
-			"dialog": {
-				"delete": "Sei sicuro di voler eliminare questo client?"
-			},
-			"toasts": {
-				"created": "Cliente è stato creato!",
-				"changed": "Cliente è stato Modificato!",
-				"deleted": "Cliente è stato eliminato!",
-				"image_uploaded": "Immagine del client scaricato!",
-				"image_deleted": "Immagine client eliminata",
-				"copied": "L'immagine del cliente è duplicata"
-			}
+		"hints": {
+			"imageSize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Formato File: .png (liberato)"
+		},
+		"dialogs": {
+			"delete": "Sei sicuro di voler eliminare questo client?"
+		},
+		"toasts": {
+			"created": "Cliente è stato creato!",
+			"changed": "Cliente è stato Modificato!",
+			"copied": "L'immagine del cliente è duplicata",
+			"deleted": "Cliente è stato eliminato!",
+			"imageUploaded": "Immagine del client scaricato!",
+			"imageDeleted": "Immagine client eliminata"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Vuoi veramente cancellare questo contatto?"
+		},
+		"toasts": {
+			"saved": "Persona di contatto registrata!",
+			"deleted": "Persona di contatto è stato eliminata!"
 		}
 	},
 	"address": {
@@ -2562,12 +2567,6 @@
 		"category_changed": "Categoria è stato aggiornata!",
 		"category_deleted": "Categoria è stato cancellata!",
 		"category_duplicated": "Categoria è stato duplicata!",
-		"client_image_uploaded": "Immagine è stato caricata",
-		"client_image_deleted": "Immagine è stato cancellata!",
-		"client_saved": "Cliente è stato registrato!",
-		"client_changed": "Cliente è stato aggiornato!",
-		"client_deleted": "Cliente è stato eliminato!",
-		"contact_deleted": "Persona di contatto è stato eliminata!",
 		"cronjob_saved": "Cronjob è stato creato!",
 		"cronjob_changed": "Cronjob è stato aggiornato!",
 		"cronjob_deleted": "Cronjob è stato eliminato !",
@@ -2638,11 +2637,7 @@
 			"saveerror": "Nota non salvabile!",
 			"delete": "Nota rimossa!",
 			"deleteerror": "La nota non può essere cancellata!"
-		},
-		"contacts_saved": "Persona di contatto registrata!",
-		"contacts_saveerror": "Impossibile salvare il contatto!",
-		"contacts_deleted": "Persona di Contatto cancellato!",
-		"contacts_deleteerror": "La persona di contatto non può essere cancellata!"
+		}
 	},
 	"alerts": {
 		"token_copy": "Per copiare il token: Ctrl + C, Invio"

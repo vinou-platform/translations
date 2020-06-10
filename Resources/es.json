@@ -186,7 +186,6 @@
 	"wines_modal_delete": "Quieres borrar ese vino seguramente?",
 	"wineries_modal_delete": "Quieres borrar esa propiedad vinícola seguramente?",
 	"category_modal_delete": "Quieres borrar esa categoría seguramente?",
-	"contacts_modal_delete": "Quieres borrar ese contacto seguramente?",
 	"customers_modal_delete": "Quieres borrar ese cliente seguramente?",
 	"users_modules": "modules",
 	"users_modal_delete": "Quieres borrar ese usuario seguramente?",
@@ -1708,22 +1707,28 @@
 			"online": "minorista en línea",
 			"other": "otra empresa"
 		},
-		"messages": {
-			"hints": {
-				"imagesize": "<b>recomendación de representación óptima</b><br>medidas: 1000x1000px<br/>formato de archivo: .png (potestativo)",
-				"noentries": "No hay inscripciones"
-			},
-			"dialog": {
-				"delete": "Quieres borrar ese cliente seguramente?"
-			},
-			"toasts": {
-				"created": "cliente ha sido creado!",
-				"changed": "cliente ha sido editado!",
-				"deleted": "cliente ha sido borrado!",
-				"image_uploaded": "imágen del cliente ha sido cargada!",
-				"image_deleted": "imágen del cliente ha sido borrada",
-				"copied": "cliente ha sido duplicado"
-			}
+		"hints": {
+			"imageSize": "<b>recomendación de representación óptima</b><br>medidas: 1000x1000px<br/>formato de archivo: .png (potestativo)"
+		},
+		"dialogs": {
+			"delete": "Quieres borrar ese cliente seguramente?"
+		},
+		"toasts": {
+			"created": "cliente ha sido creado!",
+			"changed": "cliente ha sido editado!",
+			"copied": "cliente ha sido duplicado",
+			"deleted": "cliente ha sido borrado!",
+			"imageUploaded": "imágen del cliente ha sido cargada!",
+			"imageDeleted": "imágen del cliente ha sido borrada"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Quieres borrar ese contacto seguramente?"
+		},
+		"toasts": {
+			"saved": "Persona de contacto ha sido grabada!",
+			"deleted": "Persona de contacto ha sido borrada!"
 		}
 	},
 	"address": {
@@ -2563,12 +2568,6 @@
 		"category_changed": "Categoría ha sido actualizada!",
 		"category_deleted": "Categoría ha sido borrada!",
 		"category_duplicated": "Categoría ha sido copiado!",
-		"client_image_uploaded": "Imágen ha sido cargada!",
-		"client_image_deleted": "Imágen ha sido borrada!",
-		"client_saved": "Cliente ha sido grabado!",
-		"client_changed": "Cliente ha sido actualizado!",
-		"client_deleted": "Cliente ha sido borrado!",
-		"contact_deleted": "Persona de contacto ha sido borrada!",
 		"cronjob_saved": "Cronjob ha sido creado!",
 		"cronjob_changed": "Cronjob ha sido actualizado!",
 		"cronjob_deleted": "Cronjob ha sido borrado!",
@@ -2639,11 +2638,7 @@
 			"saveerror": "Nota no ha sido grabada!",
 			"delete": "Nota ha sido borrada!",
 			"deleteerror": "Nota no ha sido borrada!"
-		},
-		"contacts_saved": "Persona de contacto ha sido grabada!",
-		"contacts_saveerror": "Contacto no ha sido grabado!",
-		"contacts_deleted": "Persona de contacto ha sido borrada!",
-		"contacts_deleteerror": "Persona de contacto no ha sido borrada!"
+		}
 	},
 	"alerts": {
 		"token_copy": "Para copiar el Token: Ctrl+C, Enter"
