@@ -4578,7 +4578,9 @@
 		"5": "mild (doux)"
 	},
 	"countries": {
+		"ar": "Argentina",
 		"at": "Austria",
+		"au": "Australia",
 		"be": "Belgium",
 		"bg": "Bulgaria",
 		"ca": "Canada",
@@ -4586,35 +4588,33 @@
 		"cl": "Chile",
 		"cz": "Czech Republic",
 		"de": "Germany",
-		"en": "Great Britain",
+		"dk": "Denmark",
+		"ee": "Estonia",
 		"es": "Spain",
+		"fi": "Finland",
 		"fr": "France",
 		"gr": "Greece",
 		"hr": "Croatia",
 		"hu": "Hungary",
 		"it": "Italy",
+		"lt": "Lithuania",
+		"lu": "Luxembourg",
+		"lv": "Latvia",
 		"mt": "Malta",
 		"nl": "Netherlands",
+		"no": "Norway",
+		"nz": "New Zealand",
+		"pl": "Poland",
 		"pt": "Portugal",
 		"ro": "Romania",
 		"ru": "Russian Federation",
 		"se": "Sweden",
 		"si": "Slovenia",
+		"sk": "Slovakia",
 		"sx": "Sint Maarten",
 		"uk": "United Kingdom",
-		"za": "South Africa",
-		"dk": "Denmark",
-		"no": "Norway",
-		"fi": "Finland",
-		"pl": "Poland",
-		"ee": "Estonia",
-		"lt": "Lithuania",
-		"lv": "Latvia",
-		"lu": "Luxembourg",
-		"ar": "Argentina",
-		"au": "Australia",
-		"nz": "New Zealand",
-		"us": "USA"
+		"us": "USA",
+		"za": "South Africa"
 	},
 	"languages": {
 		"de": {
@@ -4644,6 +4644,9 @@
 		}
 	},
 	"wineregions": {
+		"ar": {
+			"14001": "Mendoza"
+		},
 		"at": {
 			"8000": "Wachau",
 			"8001": "Kremstal DAC",
@@ -4672,6 +4675,9 @@
 			"8024": "Tyrol",
 			"8025": "Vorarlberg"
 		},
+		"au": {
+			"15001": "South-Eastern Australia"
+		},
 		"be": {
 			"3000": "Hageland (VL)",
 			"3001": "Haspengouw (VL)",
@@ -4684,6 +4690,12 @@
 			"4002": "Rosental",
 			"4003": "Oberthrakische low level",
 			"4004": "Struma Valley"
+		},
+		"cl": {
+			"16001": "Colchagua Valley",
+			"16002": "Casablanca",
+			"16003": "Central Valley",
+			"16004": "Maule Valley"
 		},
 		"de": {
 			"1000": "Ahr",
@@ -4699,8 +4711,6 @@
 			"1010": "Saale-Unstrut-Region",
 			"1011": "Sachsen",
 			"1012": "Württemberg"
-		},
-		"en": {
 		},
 		"es": {
 			"12000": "Denominación de Origen",
@@ -4779,8 +4789,6 @@
 			"5013": "North Aegean",
 			"5014": "Crete"
 		},
-		"hu": {
-		},
 		"it": {
 			"6000": "Abruzzo",
 			"6001": "Aosta Valley",
@@ -4804,8 +4812,6 @@
 			"6019": "Veneto",
 			"6020": "Valpolicella"
 		},
-		"mt": {
-		},
 		"nl": {
 			"7000": "Limburg",
 			"7001": "Achterhoek",
@@ -4813,6 +4819,9 @@
 			"7003": "Betuwe",
 			"7004": "Veluwe",
 			"7005": "Zeeland"
+		},
+		"nz": {
+			"17001": "Marlborough"
 		},
 		"pt": {
 			"9000": "Vinho Verde",
@@ -4840,7 +4849,9 @@
 			"11001": "Adriatic coast (Primorska)",
 			"11002": "Save Valley (Posavje)"
 		},
-		"sx": {
+		"us": {
+			"18001": "California",
+			"18002": "Lodi"
 		},
 		"za": {
 			"13000": "Bot River",
@@ -4868,25 +4879,6 @@
 			"13022": "Wellington",
 			"13023": "Worcester",
 			"13024": "Constantia"
-		},
-		"ar": {
-			"14001": "Mendoza"
-		},
-		"au": {
-			"15001": "South-Eastern Australia"
-		},
-		"cl": {
-			"16001": "Colchagua Valley",
-			"16002": "Casablanca",
-			"16003": "Central Valley",
-			"16004": "Maule Valley"
-		},
-		"nz": {
-			"17001": "Marlborough"
-		},
-		"us": {
-			"18001": "California",
-			"18002": "Lodi"
 		}
 	},
 	"winetypes": {
@@ -4968,6 +4960,9 @@
 		"specialOccasions": "Special occasions"
 	},
 	"qualitytypes": {
+		"ar": {
+			"country": "Wine of Argentina"
+		},
 		"at": {
 			"country": "Österreichischer Wein",
 			"origin": "Landwein",
@@ -4985,6 +4980,13 @@
 			"champagneReserve": "Sekt g.U. Reserve",
 			"champagneGrandReserve": "Sekt g.U. Große Reserve",
 			"ausbruch": "Ausbruch"
+		},
+		"au": {
+			"country": "Wine of Australia"
+		},
+		"cl": {
+			"country": "Wine of Chile",
+			"reserva": "Gran Reserva"
 		},
 		"de": {
 			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
@@ -5053,22 +5055,12 @@
 			"igp": "Vinho Regional (IGP)",
 			"vr": "Vinho Regional (VR)"
 		},
-		"ar": {
-			"country": "Wine of Argentina"
-		},
-		"au": {
-			"country": "Wine of Australia"
-		},
-		"cl": {
-			"country": "Wine of Chile",
-			"reserva": "Gran Reserva"
+		"us": {
+			"california": "Wine of California"
 		},
 		"za": {
 			"country": "Wine of Southafrica",
 			"origin": "Wine of Origin"
-		},
-		"us": {
-			"california": "Wine of California"
 		}
 	},
 	"bottlingTypes": {
