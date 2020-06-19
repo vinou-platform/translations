@@ -153,6 +153,7 @@
 			}
 		},
 		"hints": {
+			"empty": "No entries found",
 			"multiselectable": "Multiple select possible (CTRL + click)",
 			"required": "Required",
 			"weight": "Weight including packaging (for shipping)"

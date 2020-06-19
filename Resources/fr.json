@@ -153,6 +153,7 @@
 			}
 		},
 		"hints": {
+			"empty": "Pas encore d'entrées disponibles",
 			"multiselectable": "Sélection multiple possible (CTRL + clic)",
 			"required": "Champ obligatoire",
 			"weight": "Poids, emballage compris (pour l'expédition)"

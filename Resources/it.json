@@ -153,6 +153,7 @@
 			}
 		},
 		"hints": {
+			"empty": "Nessuna voce ancora",
 			"multiselectable": "Scelta multipla è possibile (Ctrl + click)",
 			"required": "Campo obbligatore",
 			"weight": "Peso incluso imballo (per spedizione)"

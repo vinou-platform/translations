@@ -153,6 +153,7 @@
 			}
 		},
 		"hints": {
+			"empty": "Noch keine Einträge vorhanden",
 			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
 			"required": "Pflichtfeld",
 			"weight": "Gewicht inklusive Verpackung (für Versand)"

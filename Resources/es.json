@@ -153,6 +153,7 @@
 			}
 		},
 		"hints": {
+			"empty": "todavía no hay inscripciones",
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
 			"required": "campo obligatorio",
 			"weight": "Peso incluido el embalaje (para envío)"
