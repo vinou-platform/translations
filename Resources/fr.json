@@ -141,7 +141,8 @@
 		},
 		"hints": {
 			"multiselectable": "Sélection multiple possible (CTRL + clic)",
-			"required": "Champ obligatoire"
+			"required": "Champ obligatoire",
+			"empty": "Pas encore d'entrées disponibles"
 		},
 		"errors": {
 			"confirmationRequired": "Ce champ doit être confirmé",

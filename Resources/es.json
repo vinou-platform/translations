@@ -141,7 +141,8 @@
 		},
 		"hints": {
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
-			"required": "campo obligatorio"
+			"required": "campo obligatorio",
+			"empty": "todavía no hay inscripciones"
 		},
 		"errors": {
 			"confirmationRequired": "Hay que confirmar esa casilla",

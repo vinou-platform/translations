@@ -141,7 +141,8 @@
 		},
 		"hints": {
 			"multiselectable": "Scelta multipla è possibile (Ctrl + click)",
-			"required": "Campo obbligatore"
+			"required": "Campo obbligatore",
+			"empty": "Nessuna voce ancora"
 		},
 		"errors": {
 			"confirmationRequired": "Questo campo deve essere confermato",
