@@ -29,7 +29,10 @@
 		"articles.products": "Prodotti",
 		"articles.bundles": "Pacchetto di prodotti",
 		"articles.categories": "Categoria",
-		"articles.statistics": "Statistiche"
+		"articles.statistics": "Statistiche",
+		"marketing": "Marketing",
+		"marketing.campaigns": "Campagne",
+		"marketing.catalogs": "Cataloghi"
 	},
 	"general": {
 		"actions": {
@@ -687,6 +690,10 @@
 			"offer": {
 				"label": "Modello di offerta",
 				"placeholder": "Vinou-Offerta (Standard)"
+			},
+			"catalog": {
+				"label": "Modello per catalogo",
+				"placeholder": "Listino Vinou (impostazione predefinita)"
 			}
 		},
 		"views": {
@@ -2453,6 +2460,78 @@
 		},
 		"files": {
 			"title": "File e documenti relativi a questo pacchetto."
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Crea un catalogo",
+				"main": "Creare nuovo",
+				"sub": "Catalogare"
+			},
+			"search": {
+				"placeholder": "per esempio. nome, descrizione"
+			},
+			"generatePDF": {
+				"title": "Genera PDF per catalogo"
+			},
+			"showPDF": {
+				"title": "Mostra PDF"
+			},
+			"export": {
+				"qrCodeVector": "Scarica QR-Code come file vettoriale"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nome",
+				"chstamp": "Ultima modifica",
+				"priceType": "Tipo di prezzo",
+				"priceRange": "Fascia di prezzo"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Scegli la categoria",
+				"none": "Mostra i cataloghi senza categorie"
+			}
+		},
+		"fieldSets": {
+			"general": "Generale",
+			"tags": "Tags",
+			"qrcode": "QR Code"
+		},
+		"fields": {
+			"name": "Nome",
+			"description": "Descrizione",
+			"active": "Attivo",
+			"qrcodeLink": "Indirizzo target per QR-Code (PDF predefinito generato)",
+			"priceType": "Tipo di prezzo da mostrare",
+			"priceRangeId": "Fascia di prezzo"
+		},
+		"toasts": {
+			"created": "Catalogo creato!",
+			"changed": "Catalogo modificato!",
+			"deleted": "Catalogo cancellato!",
+			"imageUploaded": "Immagine caricata per il catalogo!",
+			"imageDeleted": "Immagine per catalogo eliminata",
+			"copied": "Catalogo copiato",
+			"pdfGenerated": "PDF per catalogo generato!"
+		},
+		"dialogs": {
+			"delete": "Vuoi veramente cancellare questo catalogo?"
+		},
+		"hints": {
+			"imagesize": "<b>Raccomandazione per una visualizzazione ottimale</b><br>Dimensioni: 2000x400px<br/>Formato file: .png (ritagliato)",
+			"tags": "Scegli i tag che verranno utilizzati nel catalogo. I tag saranno ordini come un determinato indice di ordinamento. L'ordinamento visualizzato è lo stesso del PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"main": "Creare nuovo",
+				"sub": "campagna"
+			}
 		}
 	},
 	"tag": {
