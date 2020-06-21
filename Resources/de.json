@@ -690,6 +690,10 @@
 			"offer": {
 				"label": "Vorlage für Angebot",
 				"placeholder": "Vinou-Angebot (Standard)"
+			},
+			"catalog": {
+				"label": "Vorlage für PDF-Listen",
+				"placeholder": "Vinou-Preisliste (Standard)"
 			}
 		},
 		"views": {
@@ -2456,6 +2460,78 @@
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Liste erzeugen",
+				"main": "Neue Liste",
+				"sub": "erzeugen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"generatePDF": {
+				"title": "PDF zu Liste neugenerieren"
+			},
+			"showPDF": {
+				"title": "PDF anzeigen"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"chstamp": "Zuletzt geändert am",
+				"priceType": "angezeigter Preis",
+				"priceRange": "Preisklasse"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Listen ohne Kategorie anzeigen"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"tags": "Tags",
+			"qrcode": "QR-Code"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"active": "Aktiv",
+			"qrcodeLink": "Zieladresse für QR-Code (als Standard zeigt der QR-Code auf das PDF)",
+			"priceType": "Angezeigter Preis",
+			"priceRangeId": "Preisklasse"
+		},
+		"toasts": {
+			"created": "Liste angelegt!",
+			"changed": "Liste geändert!",
+			"deleted": "Liste gelöscht!",
+			"imageUploaded": "Bild zum Liste hochgeladen!",
+			"imageDeleted": "Bild zum Liste gelöscht",
+			"copied": "Liste dupliziert",
+			"pdfGenerated": "PDF zur Liste neu generiert!"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 2000x400px<br/>Datei-Format: .png (freigestellt)",
+			"tags": "Wähle die Tags aus, die Du für die Liste verwenden möchtest. Die Tags werden innerhalb der Liste anhand des hinterlegten Sortierindexes angeordnet. Die aktuell sichtbare Reihenfolge entspricht der Ausgabe im PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"main": "Neue Kampagne",
+				"sub": "erstellen"
+			}
 		}
 	},
 	"tag": {
