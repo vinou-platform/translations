@@ -29,7 +29,10 @@
 		"articles.products": "Produkte",
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
-		"articles.statistics": "Statistiken"
+		"articles.statistics": "Statistiken",
+		"marketing": "Vermarktung",
+		"marketing.campaigns": "Kampagnen",
+		"marketing.catalogs": "Listen"
 	},
 	"general": {
 		"actions": {
