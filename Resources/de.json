@@ -99,6 +99,12 @@
 			"d": "Divers",
 			"fam": "Familie"
 		},
+		"itemTypes": {
+			"wine": "Weine",
+			"product": "Produkte",
+			"bundle": "Weinpakete",
+			"package": "Versandkosten"
+		},
 		"visibilities": {
 			"network": {
 				"label": "Vinou-Netzwerk",
@@ -2507,7 +2513,8 @@
 			"active": "Aktiv",
 			"qrcodeLink": "Zieladresse für QR-Code (als Standard zeigt der QR-Code auf das PDF)",
 			"priceType": "Angezeigter Preis",
-			"priceRangeId": "Preisklasse"
+			"priceRangeId": "Preisklasse",
+			"itemTypes": "Folgende Artikelgruppen einschließen"
 		},
 		"toasts": {
 			"created": "Liste angelegt!",
@@ -2529,9 +2536,68 @@
 	"campaign": {
 		"actions": {
 			"create": {
+				"modaltitle": "Kampagne einrichten",
 				"main": "Neue Kampagne",
-				"sub": "erstellen"
+				"sub": "einrichten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
 			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"hash": "Rabatt-Code",
+				"startdate": "Startet am",
+				"enddate": "Endet am"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"rebate": "Kampagnen-Rabatt"
+		},
+		"fields": {
+			"active": {
+				"label": "Kampagnen-Status",
+				"checklabel": "Aktiviert"
+			},
+			"name": "Name",
+			"description": "Beschreibung",
+			"startdate": "Startet am",
+			"enddate": "Endet am",
+			"hash": "Rabatt-Code",
+			"rebateType": "Rabattart",
+			"rebateValue": {
+				"label": "Rabattbetrag",
+				"percent": "(in %)",
+				"absolute": "(in EUR)"
+			},
+			"itemTypes": "Gültig für folgende Artikelgruppen"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Artikelgruppe",
+				"none": "Kampagnen ohne Artikelgruppe anzeigen"
+			}
+		},
+		"toasts": {
+			"created": "Kampagne angelegt!",
+			"changed": "Kampagne geändert!",
+			"deleted": "Kampagne gelöscht!",
+			"imageUploaded": "Bild zum Kampagne hochgeladen!",
+			"imageDeleted": "Bild zum Kampagne gelöscht",
+			"copied": "Kampagne dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"hash": "Falls leer wird ein Zufallscode angelegt"
+		},
+		"rebateTypes": {
+			"percent": "prozentual",
+			"absolute": "pauschal"
 		}
 	},
 	"tag": {
