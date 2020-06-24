@@ -99,6 +99,12 @@
 			"d": "Divers",
 			"fam": "Famille"
 		},
+		"itemTypes": {
+			"wine": "Vins",
+			"product": "Des produits",
+			"bundle": "Pack de produits",
+			"package": "Livraison"
+		},
 		"visibilities": {
 			"network": {
 				"label": "Vinou-Network",
@@ -2507,7 +2513,8 @@
 			"active": "actif",
 			"qrcodeLink": "Adresses cibles pour QR-Code (le PDF par défaut est généré)",
 			"priceType": "Type de prix à afficher",
-			"priceRangeId": "Échelle des prix"
+			"priceRangeId": "Échelle des prix",
+			"itemTypes": "Inclure les groupes d'articles suivants"
 		},
 		"toasts": {
 			"created": "Catalogue créé!",
@@ -2529,9 +2536,68 @@
 	"campaign": {
 		"actions": {
 			"create": {
+				"modaltitle": "Configurer la campagne",
 				"main": "Créer un nouveau",
 				"sub": "campagne"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
 			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nom",
+				"hash": "Code de réduction",
+				"startdate": "Date de début",
+				"enddate": "Date de fin"
+			}
+		},
+		"fieldSets": {
+			"general": "Général",
+			"rebate": "Remise de campagne"
+		},
+		"fields": {
+			"active": {
+				"label": "Statut de la campagne",
+				"checklabel": "activé"
+			},
+			"name": "Nom",
+			"description": "La description",
+			"startdate": "Date de début",
+			"enddate": "Date de fin",
+			"hash": "Code de réduction",
+			"rebateType": "Type de remise",
+			"rebateValue": {
+				"label": "Valeur de remise",
+				"percent": "(dans %)",
+				"absolute": "(en EUR)"
+			},
+			"itemTypes": "Valable pour les groupes d'articles suivants"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Groupe d'articles",
+				"none": "Afficher les campagnes sans groupes d'articles"
+			}
+		},
+		"toasts": {
+			"created": "Campagne créée!",
+			"changed": "Campagne mise à jour!",
+			"deleted": "Campagne supprimée!",
+			"imageUploaded": "Image téléchargée pour la campagne!",
+			"imageDeleted": "Image supprimée pour le campaing!",
+			"copied": "Campagne copiée!"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette campagne?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (rogné)",
+			"hash": "Si un aléatoire vide sera créé."
+		},
+		"rebateTypes": {
+			"percent": "pourcentage",
+			"absolute": "forfait"
 		}
 	},
 	"tag": {
