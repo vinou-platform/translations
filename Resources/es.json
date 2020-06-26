@@ -1327,7 +1327,7 @@
 				"label": "alergenos",
 				"placeholder": "buscar alergenos"
 			},
-			"articlenumber": "número de artículo",
+			"articlenumber": "artículo no.",
 			"baseprice": "Precio por litro",
 			"barcode": "EAN-Code",
 			"bio": "certificado como biológico",
@@ -1531,7 +1531,7 @@
 		},
 		"field": {
 			"active": "activo",
-			"articlenumber": "número de artículo",
+			"articlenumber": "artículo no.",
 			"baseprice": "Precio base",
 			"description": "descripción",
 			"gross": "precio bruto",
@@ -2411,7 +2411,7 @@
 		},
 		"fields": {
 			"active": "activo",
-			"articlenumber": "Número de artículo",
+			"articlenumber": "artículo no.",
 			"baseprice": "Precio por litro",
 			"category": "Categoría",
 			"description": "Descripción",
