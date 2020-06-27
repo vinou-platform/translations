@@ -2567,10 +2567,9 @@
 			"enddate": "Fecha final",
 			"hash": "Código de descuento",
 			"rebateType": "Tipo de descuento",
-			"rebateValue": {
-				"label": "Valor de descuento",
-				"percent": "(en %)",
-				"absolute": "(en EUR)"
+			"rebates": {
+				"percent": "Porcentaje de descuento",
+				"absolute": "Descuento a tanto alzado en EUR (bruto)"
 			},
 			"itemTypes": "Válido para los siguientes grupos de artículos"
 		},

@@ -2567,10 +2567,9 @@
 			"enddate": "Endet am",
 			"hash": "Rabatt-Code",
 			"rebateType": "Rabattart",
-			"rebateValue": {
-				"label": "Rabattbetrag",
-				"percent": "(in %)",
-				"absolute": "(in EUR)"
+			"rebates": {
+				"percent": "Prozentualer Rabatt",
+				"absolute": "Pauschal-Rabatt in EUR (Brutto)"
 			},
 			"itemTypes": "Gültig für folgende Artikelgruppen"
 		},
