@@ -29,7 +29,10 @@
 		"articles.products": "Produits",
 		"articles.bundles": "Pack de produits",
 		"articles.categories": "Catégories",
-		"articles.statistics": "Statistiques"
+		"articles.statistics": "Statistiques",
+		"marketing": "Commercialisation",
+		"marketing.campaigns": "Campagnes",
+		"marketing.catalogs": "Catalogues"
 	},
 	"general": {
 		"actions": {
@@ -95,6 +98,12 @@
 			"f": "Madame",
 			"d": "Divers",
 			"fam": "Famille"
+		},
+		"itemTypes": {
+			"wine": "Vins",
+			"product": "Des produits",
+			"bundle": "Pack de produits",
+			"package": "Livraison"
 		},
 		"visibilities": {
 			"network": {
@@ -687,6 +696,10 @@
 			"offer": {
 				"label": "Modèle d'offre",
 				"placeholder": "Vinou - Offre (Standard)"
+			},
+			"catalog": {
+				"label": "Modèle de catalogue",
+				"placeholder": "Liste de prix Vinou (par défaut)"
 			}
 		},
 		"views": {
@@ -1963,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "Donner l'ordre",
 				"sub": "à l'expédition"
+			},
+			"campaign": {
+				"label": "Campagne",
+				"hash": "Bon",
+				"startdate": "Valide à partir de",
+				"enddate": "Jusqu'à"
 			}
 		},
 		"dialogs": {
@@ -2453,6 +2472,137 @@
 		},
 		"files": {
 			"title": "Fichiers et documents liés à ce bundle."
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Créer un catalogue",
+				"main": "Créer un nouveau",
+				"sub": "catalogue"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
+			},
+			"generatePDF": {
+				"title": "Générer un PDF pour le catalogue"
+			},
+			"showPDF": {
+				"title": "Afficher le PDF"
+			},
+			"export": {
+				"qrCodeVector": "Téléchargez le QR-Code en fichier vectoriel"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nom",
+				"chstamp": "Dernière modification",
+				"priceType": "Type de prix",
+				"priceRange": "Échelle des prix"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Choisissez une catégorie",
+				"none": "Afficher les catalogues sans catégories"
+			}
+		},
+		"fieldSets": {
+			"general": "Général",
+			"tags": "Mots clés",
+			"qrcode": "QR Code"
+		},
+		"fields": {
+			"name": "Nom",
+			"description": "La description",
+			"active": "actif",
+			"qrcodeLink": "Adresses cibles pour QR-Code (le PDF par défaut est généré)",
+			"priceType": "Type de prix à afficher",
+			"priceRangeId": "Échelle des prix",
+			"itemTypes": "Inclure les groupes d'articles suivants"
+		},
+		"toasts": {
+			"created": "Catalogue créé!",
+			"changed": "Catalogue changé!",
+			"deleted": "Catalogue supprimé!",
+			"imageUploaded": "Image téléchargée pour le catalogue!",
+			"imageDeleted": "Image du catalogue supprimée",
+			"copied": "Catalogue copié",
+			"pdfGenerated": "PDF pour le catalogue généré!"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce catalogue?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 2000x400px<br/>Format de fichier: .png (rogné)",
+			"tags": "Choisissez les balises qui seront utilisées dans le catalogue. Les balises seront des commandes comme un indice de tri donné. La commande affichée est la même que dans le PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Configurer la campagne",
+				"main": "Créer un nouveau",
+				"sub": "campagne"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nom",
+				"hash": "Code de réduction",
+				"startdate": "Date de début",
+				"enddate": "Date de fin"
+			}
+		},
+		"fieldSets": {
+			"general": "Général",
+			"rebate": "Remise de campagne"
+		},
+		"fields": {
+			"active": {
+				"label": "Statut de la campagne",
+				"checklabel": "activé"
+			},
+			"name": "Nom",
+			"description": "La description",
+			"startdate": "Date de début",
+			"enddate": "Date de fin",
+			"hash": "Code de réduction",
+			"rebateType": "Type de remise",
+			"rebates": {
+				"percent": "Remise en pourcentage",
+				"absolute": "Remise forfaitaire en EUR (brut)"
+			},
+			"itemTypes": "Valable pour les groupes d'articles suivants"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Groupe d'articles",
+				"none": "Afficher les campagnes sans groupes d'articles"
+			}
+		},
+		"toasts": {
+			"created": "Campagne créée!",
+			"changed": "Campagne mise à jour!",
+			"deleted": "Campagne supprimée!",
+			"imageUploaded": "Image téléchargée pour la campagne!",
+			"imageDeleted": "Image supprimée pour le campaing!",
+			"copied": "Campagne copiée!"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette campagne?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (rogné)",
+			"hash": "Si un aléatoire vide sera créé."
+		},
+		"rebateTypes": {
+			"percent": "pourcentage",
+			"absolute": "forfait"
 		}
 	},
 	"tag": {

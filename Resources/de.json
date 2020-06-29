@@ -29,7 +29,10 @@
 		"articles.products": "Produkte",
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
-		"articles.statistics": "Statistiken"
+		"articles.statistics": "Statistiken",
+		"marketing": "Vermarktung",
+		"marketing.campaigns": "Kampagnen",
+		"marketing.catalogs": "Listen"
 	},
 	"general": {
 		"actions": {
@@ -95,6 +98,12 @@
 			"f": "Frau",
 			"d": "Divers",
 			"fam": "Familie"
+		},
+		"itemTypes": {
+			"wine": "Weine",
+			"product": "Produkte",
+			"bundle": "Weinpakete",
+			"package": "Versandkosten"
 		},
 		"visibilities": {
 			"network": {
@@ -687,6 +696,10 @@
 			"offer": {
 				"label": "Vorlage für Angebot",
 				"placeholder": "Vinou-Angebot (Standard)"
+			},
+			"catalog": {
+				"label": "Vorlage für PDF-Listen",
+				"placeholder": "Vinou-Preisliste (Standard)"
 			}
 		},
 		"views": {
@@ -1963,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
+			},
+			"campaign": {
+				"label": "Kampagne",
+				"hash": "Rabatt-Code",
+				"startdate": "Gültig von",
+				"enddate": "bis"
 			}
 		},
 		"dialogs": {
@@ -2453,6 +2472,137 @@
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Liste erzeugen",
+				"main": "Neue Liste",
+				"sub": "erzeugen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"generatePDF": {
+				"title": "PDF zu Liste neugenerieren"
+			},
+			"showPDF": {
+				"title": "PDF anzeigen"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"chstamp": "Zuletzt geändert am",
+				"priceType": "angezeigter Preis",
+				"priceRange": "Preisklasse"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Listen ohne Kategorie anzeigen"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"tags": "Tags",
+			"qrcode": "QR-Code"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"active": "Aktiv",
+			"qrcodeLink": "Zieladresse für QR-Code (als Standard zeigt der QR-Code auf das PDF)",
+			"priceType": "Angezeigter Preis",
+			"priceRangeId": "Preisklasse",
+			"itemTypes": "Folgende Artikelgruppen einschließen"
+		},
+		"toasts": {
+			"created": "Liste angelegt!",
+			"changed": "Liste geändert!",
+			"deleted": "Liste gelöscht!",
+			"imageUploaded": "Bild zum Liste hochgeladen!",
+			"imageDeleted": "Bild zum Liste gelöscht",
+			"copied": "Liste dupliziert",
+			"pdfGenerated": "PDF zur Liste neu generiert!"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 2000x400px<br/>Datei-Format: .png (freigestellt)",
+			"tags": "Wähle die Tags aus, die Du für die Liste verwenden möchtest. Die Tags werden innerhalb der Liste anhand des hinterlegten Sortierindexes angeordnet. Die aktuell sichtbare Reihenfolge entspricht der Ausgabe im PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Kampagne einrichten",
+				"main": "Neue Kampagne",
+				"sub": "einrichten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"hash": "Rabatt-Code",
+				"startdate": "Startet am",
+				"enddate": "Endet am"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"rebate": "Kampagnen-Rabatt"
+		},
+		"fields": {
+			"active": {
+				"label": "Kampagnen-Status",
+				"checklabel": "Aktiviert"
+			},
+			"name": "Name",
+			"description": "Beschreibung",
+			"startdate": "Startet am",
+			"enddate": "Endet am",
+			"hash": "Rabatt-Code",
+			"rebateType": "Rabattart",
+			"rebates": {
+				"percent": "Prozentualer Rabatt",
+				"absolute": "Pauschal-Rabatt in EUR (Brutto)"
+			},
+			"itemTypes": "Gültig für folgende Artikelgruppen"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Artikelgruppe",
+				"none": "Kampagnen ohne Artikelgruppe anzeigen"
+			}
+		},
+		"toasts": {
+			"created": "Kampagne angelegt!",
+			"changed": "Kampagne geändert!",
+			"deleted": "Kampagne gelöscht!",
+			"imageUploaded": "Bild zum Kampagne hochgeladen!",
+			"imageDeleted": "Bild zum Kampagne gelöscht",
+			"copied": "Kampagne dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"hash": "Falls leer wird ein Zufallscode angelegt"
+		},
+		"rebateTypes": {
+			"percent": "prozentual",
+			"absolute": "pauschal"
 		}
 	},
 	"tag": {

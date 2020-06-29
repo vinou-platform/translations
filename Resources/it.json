@@ -29,7 +29,10 @@
 		"articles.products": "Prodotti",
 		"articles.bundles": "Pacchetto di prodotti",
 		"articles.categories": "Categoria",
-		"articles.statistics": "Statistiche"
+		"articles.statistics": "Statistiche",
+		"marketing": "Marketing",
+		"marketing.campaigns": "Campagne",
+		"marketing.catalogs": "Cataloghi"
 	},
 	"general": {
 		"actions": {
@@ -95,6 +98,12 @@
 			"f": "Signora",
 			"d": "Divers",
 			"fam": "Famiglia"
+		},
+		"itemTypes": {
+			"wine": "vini",
+			"product": "Prodotti",
+			"bundle": "gruppi",
+			"package": "spedizione"
 		},
 		"visibilities": {
 			"network": {
@@ -687,6 +696,10 @@
 			"offer": {
 				"label": "Modello di offerta",
 				"placeholder": "Vinou-Offerta (Standard)"
+			},
+			"catalog": {
+				"label": "Modello per catalogo",
+				"placeholder": "Listino Vinou (impostazione predefinita)"
 			}
 		},
 		"views": {
@@ -1963,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "Ordine",
 				"sub": "dare nella spedizione"
+			},
+			"campaign": {
+				"label": "Campagna",
+				"hash": "Tagliando",
+				"startdate": "Valido dal",
+				"enddate": "Fino a"
 			}
 		},
 		"dialogs": {
@@ -2453,6 +2472,137 @@
 		},
 		"files": {
 			"title": "File e documenti relativi a questo pacchetto."
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Crea un catalogo",
+				"main": "Creare nuovo",
+				"sub": "Catalogare"
+			},
+			"search": {
+				"placeholder": "per esempio. nome, descrizione"
+			},
+			"generatePDF": {
+				"title": "Genera PDF per catalogo"
+			},
+			"showPDF": {
+				"title": "Mostra PDF"
+			},
+			"export": {
+				"qrCodeVector": "Scarica QR-Code come file vettoriale"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nome",
+				"chstamp": "Ultima modifica",
+				"priceType": "Tipo di prezzo",
+				"priceRange": "Fascia di prezzo"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Scegli la categoria",
+				"none": "Mostra i cataloghi senza categorie"
+			}
+		},
+		"fieldSets": {
+			"general": "Generale",
+			"tags": "Tags",
+			"qrcode": "QR Code"
+		},
+		"fields": {
+			"name": "Nome",
+			"description": "Descrizione",
+			"active": "Attivo",
+			"qrcodeLink": "Indirizzo target per QR-Code (PDF predefinito generato)",
+			"priceType": "Tipo di prezzo da mostrare",
+			"priceRangeId": "Fascia di prezzo",
+			"itemTypes": "Includi i seguenti gruppi di articoli"
+		},
+		"toasts": {
+			"created": "Catalogo creato!",
+			"changed": "Catalogo modificato!",
+			"deleted": "Catalogo cancellato!",
+			"imageUploaded": "Immagine caricata per il catalogo!",
+			"imageDeleted": "Immagine per catalogo eliminata",
+			"copied": "Catalogo copiato",
+			"pdfGenerated": "PDF per catalogo generato!"
+		},
+		"dialogs": {
+			"delete": "Vuoi veramente cancellare questo catalogo?"
+		},
+		"hints": {
+			"imagesize": "<b>Raccomandazione per una visualizzazione ottimale</b><br>Dimensioni: 2000x400px<br/>Formato file: .png (ritagliato)",
+			"tags": "Scegli i tag che verranno utilizzati nel catalogo. I tag saranno ordini come un determinato indice di ordinamento. L'ordinamento visualizzato è lo stesso del PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Configura campagna",
+				"main": "Creare nuovo",
+				"sub": "campagna"
+			},
+			"search": {
+				"placeholder": "per esempio. nome, descrizione"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nome",
+				"hash": "Codice di sconto",
+				"startdate": "Data d'inizio",
+				"enddate": "Data di fine"
+			}
+		},
+		"fieldSets": {
+			"general": "Generale",
+			"rebate": "Sconto campagna"
+		},
+		"fields": {
+			"active": {
+				"label": "Stato della campagna",
+				"checklabel": "attivato"
+			},
+			"name": "Nome",
+			"description": "Descrizione",
+			"startdate": "Data d'inizio",
+			"enddate": "Data di fine",
+			"hash": "Codice di sconto",
+			"rebateType": "Tipo di sconto",
+			"rebates": {
+				"percent": "Sconto percentuale",
+				"absolute": "Sconto forfettario in EUR (lordo)"
+			},
+			"itemTypes": "Valido per i seguenti gruppi di articoli"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Gruppo di articoli",
+				"none": "Mostra campagne senza gruppi di articoli"
+			}
+		},
+		"toasts": {
+			"created": "Campagna creata!",
+			"changed": "Campagna aggiornata!",
+			"deleted": "Campagna cancellata!",
+			"imageUploaded": "Immagine caricata per la campagna!",
+			"imageDeleted": "Immagine cancellata per la campagna!",
+			"copied": "Campagna copiata!"
+		},
+		"dialogs": {
+			"delete": "Vuoi veramente cancellare questa campagna?"
+		},
+		"hints": {
+			"imagesize": "<b>Raccomandazione per una visualizzazione ottimale</b><br>Dimensioni: 1000x1000px<br/>Formato file: .png (ritagliato)",
+			"hash": "Se ne verrà creato uno vuoto casuale."
+		},
+		"rebateTypes": {
+			"percent": "percentuale",
+			"absolute": "tasso fisso"
 		}
 	},
 	"tag": {
