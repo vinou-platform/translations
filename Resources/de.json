@@ -1544,7 +1544,7 @@
 		},
 		"field": {
 			"active": "aktiv",
-			"articlenumber": "Artikelnummer",
+			"articlenumber": "Art.-Nr.",
 			"baseprice": "Grundpreis",
 			"description": "Beschreibung",
 			"gross": "Brutto-Preis",
@@ -2424,7 +2424,7 @@
 		},
 		"fields": {
 			"active": "aktiv",
-			"articlenumber": "Artikelnummer",
+			"articlenumber": "Art.-Nr.",
 			"category": "Kategorie",
 			"baseprice": "Preis pro Liter",
 			"description": "Beschreibung",
@@ -4417,9 +4417,6 @@
 		},
 		"516": {
 			"name": "Silvanac Zeleni"
-		},
-		"517": {
-			"name": "Silvaner"
 		},
 		"518": {
 			"name": "Síria"

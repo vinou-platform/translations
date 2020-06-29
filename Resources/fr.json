@@ -1340,7 +1340,7 @@
 				"label": "Allergènes",
 				"placeholder": "Rechercher allergènes"
 			},
-			"articlenumber": "Numéro de référence",
+			"articlenumber": "No. d'article",
 			"baseprice": "Prix au litre",
 			"barcode": "Code EAN",
 			"bio": "Certifié biologique",
@@ -1544,7 +1544,7 @@
 		},
 		"field": {
 			"active": "aktif",
-			"articlenumber": "Numéro de référence",
+			"articlenumber": "No. d'article",
 			"baseprice": "Prix de base",
 			"description": "Description",
 			"gross": "Prix brut",
@@ -2424,7 +2424,7 @@
 		},
 		"fields": {
 			"active": "aktif",
-			"articlenumber": "Numéro de l'article",
+			"articlenumber": "No. d'article",
 			"baseprice": "Prix au litre",
 			"category": "Catégorie",
 			"description": "La description",
@@ -4417,9 +4417,6 @@
 		},
 		"516": {
 			"name": "Silvanac Zeleni"
-		},
-		"517": {
-			"name": "Silvaner"
 		},
 		"518": {
 			"name": "Síria"

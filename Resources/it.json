@@ -1340,7 +1340,7 @@
 				"label": "Allergeni",
 				"placeholder": "Ricerca Allergeni"
 			},
-			"articlenumber": "Numero di riferimento",
+			"articlenumber": "No. articolo",
 			"baseprice": "Prezzo al litro",
 			"barcode": "Codice EAN",
 			"bio": "Organico certificato",
@@ -1544,7 +1544,7 @@
 		},
 		"field": {
 			"active": "Attivamente",
-			"articlenumber": "Numero di riferimento",
+			"articlenumber": "No. articolo",
 			"baseprice": "Prezzo base",
 			"description": "Descrizione",
 			"gross": "Prezzo lordo",
@@ -2424,7 +2424,7 @@
 		},
 		"fields": {
 			"active": "Attivamente",
-			"articlenumber": "Numero dell'articolo",
+			"articlenumber": "No. articolo",
 			"baseprice": "Prezzo al litro",
 			"category": "Categoria",
 			"description": "Descrizione",
@@ -4417,9 +4417,6 @@
 		},
 		"516": {
 			"name": "Silvanac Zeleni"
-		},
-		"517": {
-			"name": "Silvaner"
 		},
 		"518": {
 			"name": "Síria"
