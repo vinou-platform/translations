@@ -1976,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "Ordine",
 				"sub": "dare nella spedizione"
+			},
+			"campaign": {
+				"label": "Campagna",
+				"hash": "Tagliando",
+				"startdate": "Valido dal",
+				"enddate": "Fino a"
 			}
 		},
 		"dialogs": {

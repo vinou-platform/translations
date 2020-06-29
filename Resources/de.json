@@ -1976,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
+			},
+			"campaign": {
+				"label": "Kampagne",
+				"hash": "Rabatt-Code",
+				"startdate": "Gültig von",
+				"enddate": "bis"
 			}
 		},
 		"dialogs": {

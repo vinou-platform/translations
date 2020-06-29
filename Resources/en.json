@@ -1976,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "Dispatch",
 				"sub": "Order"
+			},
+			"campaign": {
+				"label": "Campaign",
+				"hash": "Voucher",
+				"startdate": "Valid from",
+				"enddate": "up to"
 			}
 		},
 		"dialogs": {

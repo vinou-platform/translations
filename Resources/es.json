@@ -1976,6 +1976,12 @@
 			"order_to_dispatch": {
 				"main": "orden",
 				"sub": "poner en el envío"
+			},
+			"campaign": {
+				"label": "Campaña",
+				"hash": "Vale",
+				"startdate": "Válida desde",
+				"enddate": "hasta"
 			}
 		},
 		"dialogs": {
