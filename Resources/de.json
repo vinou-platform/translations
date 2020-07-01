@@ -32,7 +32,7 @@
 		"articles.statistics": "Statistiken",
 		"marketing": "Vermarktung",
 		"marketing.campaigns": "Kampagnen",
-		"marketing.catalogs": "Listen"
+		"marketing.catalogs": "Preislisten"
 	},
 	"general": {
 		"actions": {
@@ -698,7 +698,7 @@
 				"placeholder": "Vinou-Angebot (Standard)"
 			},
 			"catalog": {
-				"label": "Vorlage für PDF-Listen",
+				"label": "Vorlage für PDF-Preislisten",
 				"placeholder": "Vinou-Preisliste (Standard)"
 			}
 		},
@@ -2477,15 +2477,15 @@
 	"catalog": {
 		"actions": {
 			"create": {
-				"modaltitle": "Liste erzeugen",
-				"main": "Neue Liste",
+				"modaltitle": "Preisliste erzeugen",
+				"main": "Neue Preisliste",
 				"sub": "erzeugen"
 			},
 			"search": {
 				"placeholder": "z.B. Name, Beschreibung"
 			},
 			"generatePDF": {
-				"title": "PDF zu Liste neugenerieren"
+				"title": "PDF zu Preisliste neugenerieren"
 			},
 			"showPDF": {
 				"title": "PDF anzeigen"
@@ -2505,7 +2505,7 @@
 		"filters": {
 			"category": {
 				"label": "Kategorie auswählen",
-				"none": "Listen ohne Kategorie anzeigen"
+				"none": "Preislisten ohne Kategorie anzeigen"
 			}
 		},
 		"fieldSets": {
@@ -2523,20 +2523,20 @@
 			"itemTypes": "Folgende Artikelgruppen einschließen"
 		},
 		"toasts": {
-			"created": "Liste angelegt!",
-			"changed": "Liste geändert!",
-			"deleted": "Liste gelöscht!",
-			"imageUploaded": "Bild zum Liste hochgeladen!",
-			"imageDeleted": "Bild zum Liste gelöscht",
-			"copied": "Liste dupliziert",
-			"pdfGenerated": "PDF zur Liste neu generiert!"
+			"created": "Preisliste angelegt!",
+			"changed": "Preisliste geändert!",
+			"deleted": "Preisliste gelöscht!",
+			"imageUploaded": "Bild zum Preisliste hochgeladen!",
+			"imageDeleted": "Bild zum Preisliste gelöscht",
+			"copied": "Preisliste dupliziert",
+			"pdfGenerated": "PDF zur Preisliste neu generiert!"
 		},
 		"dialogs": {
-			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+			"delete": "Möchtest Du dieses Preisliste wirklich löschen?"
 		},
 		"hints": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 2000x400px<br/>Datei-Format: .png (freigestellt)",
-			"tags": "Wähle die Tags aus, die Du für die Liste verwenden möchtest. Die Tags werden innerhalb der Liste anhand des hinterlegten Sortierindexes angeordnet. Die aktuell sichtbare Reihenfolge entspricht der Ausgabe im PDF."
+			"tags": "Wähle die Tags aus, die Du für die Preisliste verwenden möchtest. Die Tags werden innerhalb der Preisliste anhand des hinterlegten Sortierindexes angeordnet. Die aktuell sichtbare Reihenfolge entspricht der Ausgabe im PDF."
 		}
 	},
 	"campaign": {
