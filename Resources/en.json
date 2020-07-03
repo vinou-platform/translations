@@ -29,7 +29,10 @@
 		"articles.products": "Products",
 		"articles.bundles": "Bundles",
 		"articles.categories": "Categories",
-		"articles.statistics": "Statistics"
+		"articles.statistics": "Statistics",
+		"marketing": "Marketing",
+		"marketing.campaigns": "Campaigns",
+		"marketing.catalogs": "Catalogs"
 	},
 	"general": {
 		"actions": {
@@ -95,6 +98,12 @@
 			"f": "Mrs.",
 			"d": "Divers",
 			"fam": "Family"
+		},
+		"itemTypes": {
+			"wine": "Wines",
+			"product": "Products",
+			"bundle": "Bundles",
+			"package": "Shipping"
 		},
 		"visibilities": {
 			"network": {
@@ -688,6 +697,10 @@
 			"offer": {
 				"label": "Template for enquiry",
 				"placeholder": "Vinou offer (Default)"
+			},
+			"catalog": {
+				"label": "Template for catalog",
+				"placeholder": "Vinou price list (Default)"
 			}
 		},
 		"views": {
@@ -1532,7 +1545,7 @@
 		},
 		"field": {
 			"active": "visible",
-			"articlenumber": "Articlenumber",
+			"articlenumber": "Art.-No.",
 			"baseprice": "Base price",
 			"description": "Description",
 			"gross": "Price gross",
@@ -1964,6 +1977,12 @@
 			"order_to_dispatch": {
 				"main": "Dispatch",
 				"sub": "Order"
+			},
+			"campaign": {
+				"label": "Campaign",
+				"hash": "Voucher",
+				"startdate": "Valid from",
+				"enddate": "up to"
 			}
 		},
 		"dialogs": {
@@ -2412,7 +2431,7 @@
 		},
 		"fields": {
 			"active": "active",
-			"articlenumber": "Articlenumber",
+			"articlenumber": "Art.-No.",
 			"baseprice": "Price per liter",
 			"category": "Category",
 			"description": "Description",
@@ -2454,6 +2473,137 @@
 		},
 		"files": {
 			"title": "Files and documents related to this bundle."
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Create catalog",
+				"main": "Create new",
+				"sub": "catalog"
+			},
+			"search": {
+				"placeholder": "e.g. name, description"
+			},
+			"generatePDF": {
+				"title": "Generate PDF for catalog"
+			},
+			"showPDF": {
+				"title": "Show PDF"
+			},
+			"export": {
+				"qrCodeVector": "Download QR-Code as vector file"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Name",
+				"chstamp": "Last changed",
+				"priceType": "Price type",
+				"priceRange": "Price range"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Choose category",
+				"none": "Show catalogs without categories"
+			}
+		},
+		"fieldSets": {
+			"general": "General",
+			"tags": "Tags",
+			"qrcode": "QR-Code"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Description",
+			"active": "Active",
+			"qrcodeLink": "Target addres for QR-Code (default is generated PDF)",
+			"priceType": "Price type to show",
+			"priceRangeId": "Price range",
+			"itemTypes": "Include the following article groups"
+		},
+		"toasts": {
+			"created": "Catalog created!",
+			"changed": "Catalog changed!",
+			"deleted": "Catalog deleted!",
+			"imageUploaded": "Image uploaded for catalog!",
+			"imageDeleted": "Image for catalog deleted",
+			"copied": "Catalog copied",
+			"pdfGenerated": "PDF for catalog generated!"
+		},
+		"dialogs": {
+			"delete": "Do your really want to delete this catalog?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommendation for optimal display</b><br>Dimensions: 2000x400px<br/>File format: .png (cropped)",
+			"tags": "Choose tags that will be used in catalog. The tags will be orders like given sort index. The displayed ordering is the same like in the PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Configure Campaign",
+				"main": "Create new",
+				"sub": "campaign"
+			},
+			"search": {
+				"placeholder": "e.g. name, description"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Name",
+				"hash": "Discount code",
+				"startdate": "Start date",
+				"enddate": "End date"
+			}
+		},
+		"fieldSets": {
+			"general": "General",
+			"rebate": "Campaign rebate"
+		},
+		"fields": {
+			"active": {
+				"label": "Campaign status",
+				"checklabel": "activated"
+			},
+			"name": "Name",
+			"description": "Description",
+			"startdate": "Start date",
+			"enddate": "End date",
+			"hash": "Discount code",
+			"rebateType": "Discount type",
+			"rebates": {
+				"percent": "Percentage discount",
+				"absolute": "Flat-rate discount in EUR (gross)"
+			},
+			"itemTypes": "Valid for the following article groups"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Article group",
+				"none": "Show campaigns without article groups"
+			}
+		},
+		"toasts": {
+			"created": "Campaign created!",
+			"changed": "Campaign updated!",
+			"deleted": "Campaign deleted!",
+			"imageUploaded": "Image uploaded for campaign!",
+			"imageDeleted": "Image deleted for campaing",
+			"copied": "Campaign copied!"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this campaign?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommendation for optimal display</b><br>Dimensions: 1000x1000px<br/>File format: .png (cropped)",
+			"hash": "If empty random one will be created."
+		},
+		"rebateTypes": {
+			"percent": "percentage",
+			"absolute": "flat rate"
 		}
 	},
 	"tag": {
@@ -4275,9 +4425,6 @@
 		"516": {
 			"name": "Silvanac Zeleni"
 		},
-		"517": {
-			"name": "Silvaner"
-		},
 		"518": {
 			"name": "Síria"
 		},
@@ -4594,6 +4741,7 @@
 		"es": "Spain",
 		"fi": "Finland",
 		"fr": "France",
+		"gb": "United Kingdom",
 		"gr": "Greece",
 		"hr": "Croatia",
 		"hu": "Hungary",
@@ -4613,7 +4761,6 @@
 		"si": "Slovenia",
 		"sk": "Slovakia",
 		"sx": "Sint Maarten",
-		"uk": "United Kingdom",
 		"us": "USA",
 		"za": "South Africa"
 	},

@@ -29,7 +29,10 @@
 		"articles.products": "Produkte",
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
-		"articles.statistics": "Statistiken"
+		"articles.statistics": "Statistiken",
+		"marketing": "Vermarktung",
+		"marketing.campaigns": "Kampagnen",
+		"marketing.catalogs": "Preislisten"
 	},
 	"general": {
 		"actions": {
@@ -95,6 +98,12 @@
 			"f": "Frau",
 			"d": "Divers",
 			"fam": "Familie"
+		},
+		"itemTypes": {
+			"wine": "Weine",
+			"product": "Produkte",
+			"bundle": "Weinpakete",
+			"package": "Versandkosten"
 		},
 		"visibilities": {
 			"network": {
@@ -688,6 +697,10 @@
 			"offer": {
 				"label": "Vorlage für Angebot",
 				"placeholder": "Vinou-Angebot (Standard)"
+			},
+			"catalog": {
+				"label": "Vorlage für PDF-Preislisten",
+				"placeholder": "Vinou-Preisliste (Standard)"
 			}
 		},
 		"views": {
@@ -1532,7 +1545,7 @@
 		},
 		"field": {
 			"active": "aktiv",
-			"articlenumber": "Artikelnummer",
+			"articlenumber": "Art.-Nr.",
 			"baseprice": "Grundpreis",
 			"description": "Beschreibung",
 			"gross": "Brutto-Preis",
@@ -1964,6 +1977,12 @@
 			"order_to_dispatch": {
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
+			},
+			"campaign": {
+				"label": "Kampagne",
+				"hash": "Rabatt-Code",
+				"startdate": "Gültig von",
+				"enddate": "bis"
 			}
 		},
 		"dialogs": {
@@ -2412,7 +2431,7 @@
 		},
 		"fields": {
 			"active": "aktiv",
-			"articlenumber": "Artikelnummer",
+			"articlenumber": "Art.-Nr.",
 			"category": "Kategorie",
 			"baseprice": "Preis pro Liter",
 			"description": "Beschreibung",
@@ -2454,6 +2473,137 @@
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Preisliste erzeugen",
+				"main": "Neue Preisliste",
+				"sub": "erzeugen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"generatePDF": {
+				"title": "PDF zu Preisliste neugenerieren"
+			},
+			"showPDF": {
+				"title": "PDF anzeigen"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"chstamp": "Zuletzt geändert am",
+				"priceType": "angezeigter Preis",
+				"priceRange": "Preisklasse"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Preislisten ohne Kategorie anzeigen"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"tags": "Tags",
+			"qrcode": "QR-Code"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"active": "Aktiv",
+			"qrcodeLink": "Zieladresse für QR-Code (als Standard zeigt der QR-Code auf das PDF)",
+			"priceType": "Angezeigter Preis",
+			"priceRangeId": "Preisklasse",
+			"itemTypes": "Folgende Artikelgruppen einschließen"
+		},
+		"toasts": {
+			"created": "Preisliste angelegt!",
+			"changed": "Preisliste geändert!",
+			"deleted": "Preisliste gelöscht!",
+			"imageUploaded": "Bild zur Preisliste hochgeladen!",
+			"imageDeleted": "Bild zur Preisliste gelöscht",
+			"copied": "Preisliste dupliziert",
+			"pdfGenerated": "PDF zur Preisliste neu generiert!"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Preisliste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 2000x400px<br/>Datei-Format: .png (freigestellt)",
+			"tags": "Wähle die Tags aus, die Du für die Preisliste verwenden möchtest. Die Tags werden innerhalb der Preisliste anhand des hinterlegten Sortierindexes angeordnet. Die aktuell sichtbare Reihenfolge entspricht der Ausgabe im PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Kampagne einrichten",
+				"main": "Neue Kampagne",
+				"sub": "einrichten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"hash": "Rabatt-Code",
+				"startdate": "Startet am",
+				"enddate": "Endet am"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"rebate": "Kampagnen-Rabatt"
+		},
+		"fields": {
+			"active": {
+				"label": "Kampagnen-Status",
+				"checklabel": "Aktiviert"
+			},
+			"name": "Name",
+			"description": "Beschreibung",
+			"startdate": "Startet am",
+			"enddate": "Endet am",
+			"hash": "Rabatt-Code",
+			"rebateType": "Rabattart",
+			"rebates": {
+				"percent": "Prozentualer Rabatt",
+				"absolute": "Pauschal-Rabatt in EUR (Brutto)"
+			},
+			"itemTypes": "Gültig für folgende Artikelgruppen"
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Artikelgruppe",
+				"none": "Kampagnen ohne Artikelgruppe anzeigen"
+			}
+		},
+		"toasts": {
+			"created": "Kampagne angelegt!",
+			"changed": "Kampagne geändert!",
+			"deleted": "Kampagne gelöscht!",
+			"imageUploaded": "Bild zum Kampagne hochgeladen!",
+			"imageDeleted": "Bild zum Kampagne gelöscht",
+			"copied": "Kampagne dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"hash": "Falls leer wird ein Zufallscode angelegt"
+		},
+		"rebateTypes": {
+			"percent": "prozentual",
+			"absolute": "pauschal"
 		}
 	},
 	"tag": {
@@ -4275,9 +4425,6 @@
 		"516": {
 			"name": "Silvanac Zeleni"
 		},
-		"517": {
-			"name": "Silvaner"
-		},
 		"518": {
 			"name": "Síria"
 		},
@@ -4594,6 +4741,7 @@
 		"es": "Spanien",
 		"fi": "Finnland",
 		"fr": "Frankreich",
+		"gb": "Vereinigtes Königreich",
 		"gr": "Griechenland",
 		"hr": "Kroatien",
 		"hu": "Ungarn",
@@ -4613,7 +4761,6 @@
 		"si": "Slowenien",
 		"sk": "Slowakei",
 		"sx": "Sint Maarten",
-		"uk": "Vereinigtes Königreich",
 		"us": "USA",
 		"za": "Südafrika"
 	},
