@@ -151,7 +151,7 @@
 		"hints": {
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
 			"required": "campo obligatorio",
-			"empty": "todavía no hay inscripciones"
+			"empty": "Todavía no hay inscripciones"
 		},
 		"errors": {
 			"confirmationRequired": "Hay que confirmar esa casilla",
@@ -1575,8 +1575,7 @@
 		},
 		"messages": {
 			"hints": {
-				"imagesize": "<b>recomendación para representación óptima</b><br>medidas: 1000x1000px<br/>Datei-Format: .png (potestativo)",
-				"noentries": "todavía no hay inscripciones"
+				"imagesize": "<b>recomendación para representación óptima</b><br>medidas: 1000x1000px<br/>Datei-Format: .png (potestativo)"
 			},
 			"dialog": {
 				"delete": "Quieres borrar ese producto seguramente?"

@@ -1575,8 +1575,7 @@
 		},
 		"messages": {
 			"hints": {
-				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Dimensioni: 1000x1000px<br/> Formato file: .png (liberato)",
-				"noentries": "Nessuna voce ancora"
+				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Dimensioni: 1000x1000px<br/> Formato file: .png (liberato)"
 			},
 			"dialog": {
 				"delete": "Sei sicuro di voler eliminare questo prodotto??"
