@@ -1949,6 +1949,11 @@
 			"rebatesum": "Remise",
 			"same_invoice_addr": "Comme l'adresse de facturation",
 			"search_product": "Rechercher produit",
+			"servicePeriod": {
+				"label": "Période de service",
+				"placeholder": "DD.MM.YYYY",
+				"default": "Le jour de service correspond au jour de livraison"
+			},
 			"shipping_different_location": "Adresse de livraison différente",
 			"state": "Statut",
 			"taxfree": "Exempté de TVA",
