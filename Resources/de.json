@@ -1949,6 +1949,11 @@
 			"rebatesum": "Rabatt",
 			"same_invoice_addr": "Wie Rechnungsadresse",
 			"search_product": "Produkt suchen",
+			"servicePeriod": {
+				"label": "Leistungszeitraum",
+				"placeholder": "dd.MM.YYYY",
+				"default": "Leistungsdatum entspricht Lieferdatum"
+			},
 			"shipping_different_location": "Abweichende Lieferadresse",
 			"state": "Status",
 			"taxfree": "Umsatzsteuerbefreit",
@@ -2526,13 +2531,13 @@
 			"created": "Preisliste angelegt!",
 			"changed": "Preisliste geändert!",
 			"deleted": "Preisliste gelöscht!",
-			"imageUploaded": "Bild zum Preisliste hochgeladen!",
-			"imageDeleted": "Bild zum Preisliste gelöscht",
+			"imageUploaded": "Bild zur Preisliste hochgeladen!",
+			"imageDeleted": "Bild zur Preisliste gelöscht",
 			"copied": "Preisliste dupliziert",
 			"pdfGenerated": "PDF zur Preisliste neu generiert!"
 		},
 		"dialogs": {
-			"delete": "Möchtest Du dieses Preisliste wirklich löschen?"
+			"delete": "Möchtest Du diese Preisliste wirklich löschen?"
 		},
 		"hints": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 2000x400px<br/>Datei-Format: .png (freigestellt)",

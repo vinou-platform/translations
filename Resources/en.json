@@ -1949,6 +1949,11 @@
 			"rebatesum": "Rebate",
 			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",
+			"servicePeriod": {
+				"label": "Service period",
+				"placeholder": "MM/dd/YYYY",
+				"default": "Service day corresponds to delivery day"
+			},
 			"shipping_different_location": "Different delivery location",
 			"state": "State",
 			"taxfree": "Tax free",

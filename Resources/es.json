@@ -1949,6 +1949,11 @@
 			"rebatesum": "descuento",
 			"same_invoice_addr": "como dirección de cuenta",
 			"search_product": "buscar producto",
+			"servicePeriod": {
+				"label": "Período de servicio",
+				"placeholder": "dd.MM.YYYY",
+				"default": "El día de servicio corresponde al día de entrega"
+			},
 			"shipping_different_location": "dirección de entrega diferente",
 			"state": "estado",
 			"taxfree": "liberado de impuestos sobre la cifra de negocios",

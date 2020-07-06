@@ -1949,6 +1949,11 @@
 			"rebatesum": "Sconto",
 			"same_invoice_addr": "Come l'indirizzo di fatturazione",
 			"search_product": "Cerca prodotto",
+			"servicePeriod": {
+				"label": "Periodo di servizio",
+				"placeholder": "dd.MM.YYYY",
+				"default": "Il giorno di servizio corrisponde al giorno di consegna"
+			},
 			"shipping_different_location": "Indirizzo di consegna diverso",
 			"state": "Stato",
 			"taxfree": "IVA esente",
