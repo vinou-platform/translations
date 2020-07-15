@@ -65,6 +65,7 @@
 			"freeOfCharge": "free of charge",
 			"crstamp": "Date of creation",
 			"chstamp": "Last update",
+			"weight": "Weight (in g)",
 			"title": "Title",
 			"gender": "Gender",
 			"first_name": "Firstname",
@@ -150,7 +151,8 @@
 		},
 		"hints": {
 			"multiselectable": "Multiple select possible (CTRL + click)",
-			"required": "Required"
+			"required": "Required",
+			"weight": "Weight including packaging (for shipping)"
 		},
 		"errors": {
 			"confirmationRequired": "This field needs to be confirmed",

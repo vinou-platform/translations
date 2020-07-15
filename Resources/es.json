@@ -65,6 +65,7 @@
 			"freeOfCharge": "gratuito",
 			"crstamp": "fecha de creación",
 			"chstamp": "fecha de cambio",
+			"weight": "peso (en gramos)",
 			"title": "titúlo",
 			"gender": "encabezamiento",
 			"first_name": "nombre",
@@ -150,7 +151,8 @@
 		},
 		"hints": {
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
-			"required": "campo obligatorio"
+			"required": "campo obligatorio",
+			"weight": "Peso incluido el embalaje (para envío)"
 		},
 		"errors": {
 			"confirmationRequired": "Hay que confirmar esa casilla",

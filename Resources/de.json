@@ -65,6 +65,7 @@
 			"freeOfCharge": "kostenfrei",
 			"crstamp": "Erstellungsdatum",
 			"chstamp": "Änderungsdatum",
+			"weight": "Gewicht (in g)",
 			"title": "Titel",
 			"gender": "Anrede",
 			"first_name": "Vorname",
@@ -150,7 +151,8 @@
 		},
 		"hints": {
 			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
-			"required": "Pflichtfeld"
+			"required": "Pflichtfeld",
+			"weight": "Gewicht inklusive Verpackung (für Versand)"
 		},
 		"errors": {
 			"confirmationRequired": "Dieses Feld muss bestätigt werden",

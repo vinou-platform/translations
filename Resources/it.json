@@ -65,6 +65,7 @@
 			"freeOfCharge": "Gratuite",
 			"crstamp": "Data di creazione",
 			"chstamp": "Date di modifica",
+			"weight": "Peso(in g)",
 			"title": "Titolo accademico",
 			"gender": "Titolo",
 			"first_name": "Cognome",
@@ -150,7 +151,8 @@
 		},
 		"hints": {
 			"multiselectable": "Scelta multipla è possibile (Ctrl + click)",
-			"required": "Campo obbligatore"
+			"required": "Campo obbligatore",
+			"weight": "Peso incluso imballo (per spedizione)"
 		},
 		"errors": {
 			"confirmationRequired": "Questo campo deve essere confermato",

@@ -65,6 +65,7 @@
 			"freeOfCharge": "gratuit",
 			"crstamp": "Date de création",
 			"chstamp": "Date de modification",
+			"weight": "Poids (en g)",
 			"title": "Titre",
 			"gender": "Sexe",
 			"first_name": "Prénom",
@@ -150,7 +151,8 @@
 		},
 		"hints": {
 			"multiselectable": "Sélection multiple possible (CTRL + clic)",
-			"required": "Champ obligatoire"
+			"required": "Champ obligatoire",
+			"weight": "Poids, emballage compris (pour l'expédition)"
 		},
 		"errors": {
 			"confirmationRequired": "Ce champ doit être confirmé",
