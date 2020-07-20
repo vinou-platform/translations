@@ -39,12 +39,14 @@
 			"export": "Export",
 			"exportRaw": "Export (EDV)",
 			"import": "Import",
-			"importRaw": "Import (EDV)"
+			"importRaw": "Import (EDV)",
+			"exportQrCode": "QR-Code als Vektor-Datei herunterladen"
 		},
 		"fieldSets": {
 			"general": "Allgemein",
 			"settings": "Einstellungen",
-			"visibility": "Sichtbarkeit"
+			"visibility": "Sichtbarkeit",
+			"qrcode": "QR-Code"
 		},
 		"fields": {
 			"default": "Standard",
@@ -74,6 +76,7 @@
 				"title": "Briefanrede",
 				"placeholder": "z.B.: Sehr geehrter Herr Max Mustermann"
 			},
+			"qrcodeLink": "Zieladresse für QR-Code",
 			"phoneAction": "{name} anrufen",
 			"faxAction": "Fax an {name} senden",
 			"mailAction": "E-Mail an {name} schreiben",
@@ -702,6 +705,10 @@
 			"catalog": {
 				"label": "Vorlage für PDF-Preislisten",
 				"placeholder": "Vinou-Preisliste (Standard)"
+			},
+			"text": {
+				"label": "Vorlage für Text-PDFs",
+				"placeholder": "Vinou-Textdokument (Standard)"
 			}
 		},
 		"views": {
@@ -2367,7 +2374,8 @@
 		},
 		"fieldSets": {
 			"general": "Allgemeines",
-			"settings": "Einstellungen"
+			"settings": "Einstellungen",
+			"documents": "Generierte Dokumente"
 		},
 		"fields": {
 			"title": "Titel",
@@ -2393,6 +2401,12 @@
 			"revocation": "Widerruf",
 			"shippingpolicy": "Versandbedingungen",
 			"individual": "Selbstvergeben"
+		},
+		"documents": {
+			"pdf": {
+				"title": "PDF-Version",
+				"description": "automatisch generiertes PDF im Standard-Format"
+			}
 		}
 	},
 	"bundle": {

@@ -39,12 +39,14 @@
 			"export": "Esportazione",
 			"exportRaw": "Esportazione (dati non elaborati)",
 			"import": "Import",
-			"importRaw": "Import (dati non elaborati)"
+			"importRaw": "Import (dati non elaborati)",
+			"exportQrCode": "Scarica il codice QR come file vettoriale"
 		},
 		"fieldSets": {
 			"general": "Generale",
 			"settings": "Opzioni",
-			"visibility": "Visibilità"
+			"visibility": "Visibilità",
+			"qrcode": "QR-Code"
 		},
 		"fields": {
 			"default": "Default",
@@ -74,6 +76,7 @@
 				"title": "Saluto",
 				"placeholder": "Ad es.: Cara signore Mario Rossi"
 			},
+			"qrcodeLink": "Indirizzo di destinazione",
 			"phoneAction": "Chiamata {name}",
 			"faxAction": "Invia fax a {name}",
 			"mailAction": "Scrivi una mail a {name}",
@@ -702,6 +705,10 @@
 			"catalog": {
 				"label": "Modello per catalogo",
 				"placeholder": "Listino Vinou (impostazione predefinita)"
+			},
+			"text": {
+				"label": "Modello per PDF di testo",
+				"placeholder": "Documento di testo Vinou (standard)"
 			}
 		},
 		"views": {
@@ -2367,7 +2374,8 @@
 		},
 		"fieldSets": {
 			"general": "General",
-			"settings": "Settings"
+			"settings": "Settings",
+			"documents": "Documenti generati"
 		},
 		"fields": {
 			"title": "title",
@@ -2393,6 +2401,12 @@
 			"revocation": "Revocation",
 			"shippingpolicy": "Shipping policy",
 			"individual": "Individual"
+		},
+		"documents": {
+			"pdf": {
+				"title": "Versione PDF",
+				"description": "PDF generato automaticamente in formato standard"
+			}
 		}
 	},
 	"bundle": {
