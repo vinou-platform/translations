@@ -39,12 +39,14 @@
 			"export": "Exporter",
 			"exportRaw": "Exporter (données brutes)",
 			"import": "Importer",
-			"importRaw": "Importer (données brutes)"
+			"importRaw": "Importer (données brutes)",
+			"exportQrCode": "Téléchargez le code QR sous forme de fichier vectoriel"
 		},
 		"fieldSets": {
 			"general": "Général",
 			"settings": "Configuration",
-			"visibility": "Visibilité"
+			"visibility": "Visibilité",
+			"qrcode": "QR-Code"
 		},
 		"fields": {
 			"default": "Standard",
@@ -74,6 +76,7 @@
 				"title": "Salutation",
 				"placeholder": "p.ex.: Cher monsieur Jean Dupont"
 			},
+			"qrcodeLink": "Adresse cible",
 			"phoneAction": "Appeler à {name}",
 			"faxAction": "Envoyer fax à {name}",
 			"mailAction": "Écrire un courriel à {name}",
@@ -702,6 +705,10 @@
 			"catalog": {
 				"label": "Modèle de catalogue",
 				"placeholder": "Liste de prix Vinou (par défaut)"
+			},
+			"text": {
+				"label": "Modèle pour les PDF texte",
+				"placeholder": "Document texte Vinou (standard)"
 			}
 		},
 		"views": {
@@ -2367,7 +2374,8 @@
 		},
 		"fieldSets": {
 			"general": "General",
-			"settings": "Settings"
+			"settings": "Settings",
+			"documents": "Documents générés"
 		},
 		"fields": {
 			"title": "title",
@@ -2393,6 +2401,12 @@
 			"revocation": "Revocation",
 			"shippingpolicy": "Shipping policy",
 			"individual": "Individual"
+		},
+		"documents": {
+			"pdf": {
+				"title": "Version PDF",
+				"description": "PDF généré automatiquement au format standard"
+			}
 		}
 	},
 	"bundle": {
