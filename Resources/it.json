@@ -2222,16 +2222,34 @@
 		},
 		"fields": {
 			"title": "Titolo",
+			"source": "fonte",
 			"description": "Descrizione",
 			"identifier": "Identificazione (per accesso esterno)",
 			"file": "Download del file",
+			"url": "indirizzo / URL esterno",
+			"preview": "Anteprima",
 			"public": {
 				"true": "Pubblicamente visibile",
 				"false": "visibile solo all'interno"
 			}
 		},
-		"list": {
-			"empty": "Nessun file disponibile"
+		"sources": {
+			"internal": "file interno",
+			"external": "link esterno"
+		},
+		"views": {
+			"edit": {
+				"title": "Modifica file"
+			},
+			"create": {
+				"title": "Crea un nuovo file"
+			},
+			"list": {
+				"empty": "Nessun file disponibile"
+			}
+		},
+		"hints": {
+			"previewSize": "<b>Raccomandazione per una visualizzazione ottimale</b><br> Dimensioni: 1000x1000px<br/> Formato file: .png (ritagliato)"
 		},
 		"toasts": {
 			"created": "File è stato creato",

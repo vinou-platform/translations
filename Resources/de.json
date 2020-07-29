@@ -2222,16 +2222,34 @@
 		},
 		"fields": {
 			"title": "Titel",
+			"source": "Typ",
 			"description": "Beschreibung",
 			"identifier": "Identifier (für externen Zugriff)",
 			"file": "Dateiupload",
+			"url": "Adresse/URL",
+			"preview": "Vorschau",
 			"public": {
 				"true": "öffentlich sichtbar",
 				"false": "nur intern sichtbar"
 			}
 		},
-		"list": {
-			"empty": "Keine Dateien vorhanden"
+		"sources": {
+			"internal": "Interne Datei",
+			"external": "Externer Link"
+		},
+		"views": {
+			"edit": {
+				"title": "Datei bearbeiten"
+			},
+			"create": {
+				"title": "Datei hinzufügen"
+			},
+			"list": {
+				"empty": "Keine Dateien vorhanden"
+			}
+		},
+		"hints": {
+			"previewSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
 		},
 		"toasts": {
 			"created": "Datei angelegt!",
