@@ -248,7 +248,7 @@
 				"placeholder": "Behälter suchen"
 			},
 			"bookingStamp": {
-				"label": "Buchungstag",
+				"label": "Vorgangsdatum",
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Anzahl Flaschen",
@@ -271,6 +271,7 @@
 				"label": "Verwendung",
 				"placeholder": " "
 			},
+			"harvestNumber": "Erntemeldung (Beleg-Nr.)",
 			"referenceNumber": "Beleg-Nr. (z.B. Begleitpapiere)",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
@@ -489,6 +490,7 @@
 			},
 			"export": {
 				"cellarBook": "Kellerbuch",
+				"wineBook": "Weinbuch",
 				"barrelList": "Behälterliste",
 				"grapeMarcLogs": "Tresterbuch",
 				"substanceLogs": "Stoffliste"
