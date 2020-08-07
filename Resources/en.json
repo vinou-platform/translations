@@ -261,6 +261,7 @@
 				"label": "Filtration residues purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
 			},
+			"harvestDeclarationNumber": "Harvest declaration (receipt no.)",
 			"lossRelocation": "Loss relocation?",
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",

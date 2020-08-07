@@ -261,6 +261,7 @@
 				"label": "uso de combustibles sólidos",
 				"placeholder": "e.j. esparcir como fertilizante en la viña"
 			},
+			"harvestDeclarationNumber": "declaración de cosecha (receibo no.)",
 			"lossRelocation": "trasvase del residuo",
 			"lossVolume": "perdida",
 			"marc": "orujo",

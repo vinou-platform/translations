@@ -261,6 +261,7 @@
 				"label": "Solidi usando",
 				"placeholder": "Ad es., In vigna come org. Fertilizzante applicato."
 			},
+			"harvestDeclarationNumber": "Dichiarazione di vendemmia (ricevuta n.)",
 			"lossRelocation": "Travasare dei residui",
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",

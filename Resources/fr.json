@@ -261,6 +261,7 @@
 				"label": "L'utilisation comme matière solide",
 				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
 			},
+			"harvestDeclarationNumber": "Déclaration de récolte (reçu no.)",
 			"lossRelocation": "Transfert des résidus?",
 			"lossVolume": "Perte",
 			"marc": "Marc",
