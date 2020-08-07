@@ -2251,6 +2251,9 @@
 		"hints": {
 			"previewSize": "<b>Recomendación para una visualización óptima</b><br> Dimensiones: 1000x1000px<br/>Formato de archivo: .png (recortado)"
 		},
+		"dialogs": {
+			"delete": "Estás seguro de que deseas eliminar este archivo?"
+		},
 		"toasts": {
 			"created": "Archivo ha sido creado!",
 			"changed": "Archivo ha sido editado!",

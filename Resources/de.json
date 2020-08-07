@@ -2251,6 +2251,9 @@
 		"hints": {
 			"previewSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
 		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Datei wirklich löschen?"
+		},
 		"toasts": {
 			"created": "Datei angelegt!",
 			"changed": "Datei geändert!",

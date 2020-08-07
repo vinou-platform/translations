@@ -2204,7 +2204,7 @@
 			"clients": "Clienti"
 		},
 		"dialogs": {
-			"delete": "Sei sicuro di voler eliminare questa classe di prezzo??"
+			"delete": "Sei sicuro di voler eliminare questa classe di prezzo?"
 		},
 		"toasts": {
 			"created": "Classe di prezzo è stato creata!",
@@ -2250,6 +2250,9 @@
 		},
 		"hints": {
 			"previewSize": "<b>Raccomandazione per una visualizzazione ottimale</b><br> Dimensioni: 1000x1000px<br/> Formato file: .png (ritagliato)"
+		},
+		"dialogs": {
+			"delete": "Vuoi davvero eliminare questo file?"
 		},
 		"toasts": {
 			"created": "File è stato creato",

@@ -2251,6 +2251,9 @@
 		"hints": {
 			"previewSize": "<b>Recommendation for optimal display</b><br>Dimensions: 1000x1000px<br/>File format: .png (cropped)"
 		},
+		"dialogs": {
+			"delete": "Do you really want to delete this file?"
+		},
 		"toasts": {
 			"created": "File created!",
 			"changed": "File changed!",
