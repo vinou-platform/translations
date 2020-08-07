@@ -261,7 +261,7 @@
 				"label": "Feststoffverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
 			},
-			"harvestDeclarationNumber": "Erntemeldung (Beleg-Nr.)",
+			"harvestDeclarationNumber": "Erntemeldung (Belegnr.)",
 			"lossRelocation": "Umfüllung der Reststoffe?",
 			"lossVolume": "Verlust",
 			"marc": "Trester",
@@ -272,7 +272,7 @@
 				"label": "Verwendung",
 				"placeholder": " "
 			},
-			"referenceNumber": "Beleg-Nr. (z.B. Begleitpapiere)",
+			"referenceNumber": "Belegnr. (z.B. Begleitpapiere)",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
@@ -530,7 +530,7 @@
 			"location": "Aufstellort",
 			"manufacturer": "Hersteller",
 			"note": "Notizen",
-			"number": "Behälter-Nr.",
+			"number": "Behälternr.",
 			"type": "Typ/Material"
 		},
 		"actions": {
@@ -557,7 +557,7 @@
 				"currentState": "Aktueller Zustand",
 				"filters": {
 					"search": {
-						"placeholder": "Z.B.: Behälter-Nr., Aufstellort, Hersteller"
+						"placeholder": "Z.B.: Behälternr., Aufstellort, Hersteller"
 					},
 					"hideEmptyBarrels": "Leere Behälter ausblenden"
 				}
