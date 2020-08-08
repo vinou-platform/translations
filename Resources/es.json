@@ -153,6 +153,7 @@
 			}
 		},
 		"hints": {
+			"empty": "todavía no hay inscripciones",
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
 			"required": "campo obligatorio",
 			"weight": "Peso incluido el embalaje (para envío)"
@@ -2252,6 +2253,9 @@
 		},
 		"hints": {
 			"previewSize": "<b>Recomendación para una visualización óptima</b><br> Dimensiones: 1000x1000px<br/>Formato de archivo: .png (recortado)"
+		},
+		"dialogs": {
+			"delete": "Estás seguro de que deseas eliminar este archivo?"
 		},
 		"toasts": {
 			"created": "Archivo ha sido creado!",
