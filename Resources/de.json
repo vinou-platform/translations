@@ -489,11 +489,11 @@
 				"sub": "anlegen"
 			},
 			"export": {
-				"cellarBook": "Kellerbuch",
-				"wineBook": "Weinbuch",
 				"barrelList": "Behälterliste",
+				"cellarBook": "Kellerbuch",
 				"grapeMarcLogs": "Tresterbuch",
-				"substanceLogs": "Stoffliste"
+				"substanceLogs": "Stoffliste",
+				"wineBook": "Weinbuch"
 			}
 		},
 		"views": {

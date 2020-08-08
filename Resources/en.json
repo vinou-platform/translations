@@ -489,10 +489,11 @@
 				"sub": "new wine"
 			},
 			"export": {
-				"cellarBook": "Cellar book",
 				"barrelList": "Barrel list",
+				"cellarBook": "Cellar book",
 				"grapeMarcLogs": "Grape marc log",
-				"substanceLogs": "Substance log"
+				"substanceLogs": "Substance log",
+				"wineBook": "Wine book"
 			}
 		},
 		"views": {

@@ -489,10 +489,11 @@
 				"sub": "crear"
 			},
 			"export": {
-				"cellarBook": "libro de bodega",
 				"barrelList": "lista de recipientes",
+				"cellarBook": "libro de bodega",
 				"grapeMarcLogs": "libro de orujo",
-				"substanceLogs": "lista de sustancia"
+				"substanceLogs": "lista de sustancia",
+				"wineBook": "libro de vinos"
 			}
 		},
 		"views": {

@@ -489,10 +489,11 @@
 				"sub": "nouveau"
 			},
 			"export": {
-				"cellarBook": "Livre de la cave",
 				"barrelList": "List des récipients",
+				"cellarBook": "Livre de la cave",
 				"grapeMarcLogs": "Livre du marc",
-				"substanceLogs": "List des substances"
+				"substanceLogs": "List des substances",
+				"wineBook": "Livre de vin"
 			}
 		},
 		"views": {
