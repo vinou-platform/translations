@@ -393,8 +393,8 @@
 				"sub": " "
 			},
 			"createAlcoholization": {
-				"main": "Alcoholization",
-				"sub": " "
+				"main": "Alcohol",
+				"sub": "addition"
 			},
 			"createWaterAddition": {
 				"main": "Water",
@@ -447,7 +447,7 @@
 			"sweetening": "Sweetening",
 			"acidification": "Acidification",
 			"deacidification": "Deacidification",
-			"alcoholization": "Alcoholization",
+			"alcoholization": "Alcohol addition",
 			"waterAddition": "Water addition",
 
 			"bottling": "Bottling",

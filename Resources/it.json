@@ -373,8 +373,8 @@
 			},
 
 			"createSubstanceAdd": {
-				"main": "Aggiunta di sostanze",
-				"sub": " "
+				"main": "Aggiunta di",
+				"sub": "sostanze"
 			},
 			"createEnrichment": {
 				"main": "Arricchimento",
@@ -393,8 +393,8 @@
 				"sub": " "
 			},
 			"createAlcoholization": {
-				"main": "Aggiungendo alcohol",
-				"sub": " "
+				"main": "Aggiunta di",
+				"sub": "alcol"
 			},
 			"createWaterAddition": {
 				"main": "Acqua",
@@ -447,7 +447,7 @@
 			"sweetening": "Dolcificazione",
 			"acidification": "Acidificazione",
 			"deacidification": "Disacidificazione",
-			"alcoholization": "Aggiungendo alcohol",
+			"alcoholization": "Aggiunta di alcol",
 			"waterAddition": "Aggiungendo acqua",
 
 			"bottling": "Imbottigliamento",
