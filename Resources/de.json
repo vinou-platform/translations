@@ -267,7 +267,7 @@
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
-			"price": "Preis",
+			"price": "Einkaufspreis",
 			"purchaseNote": "Anmerkung / Lieferant",
 			"purpose": {
 				"label": "Verwendung",

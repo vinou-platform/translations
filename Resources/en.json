@@ -267,7 +267,7 @@
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",
 			"note": "Note / Purpose",
-			"price": "Price",
+			"price": "Purchasing price",
 			"purchaseNote": "Note / supplier",
 			"purpose": {
 				"label": "Purpose",

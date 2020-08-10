@@ -267,7 +267,7 @@
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",
 			"note": "Nota / utilizzo",
-			"price": "Prezzo",
+			"price": "Prezzo di acquisto",
 			"purchaseNote": "Nota / fornitore",
 			"purpose": {
 				"label": "Utilizzo",

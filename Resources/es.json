@@ -267,7 +267,7 @@
 			"lossVolume": "perdida",
 			"marc": "orujo",
 			"note": "anotación / uso",
-			"price": "precio",
+			"price": "precio de compra",
 			"purchaseNote": "anotación / proveedor",
 			"purpose": {
 				"label": "uso",
