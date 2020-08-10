@@ -343,6 +343,10 @@
 				"main": "Travaso",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Assemblaggio",
+				"sub": " "
+			},
 			"createPrivateConsumption": {
 				"main": "Autoconsumo",
 				"sub": "raccogliere"
@@ -366,10 +370,6 @@
 
 			"createWineAddition": {
 				"main": "Riempimento",
-				"sub": " "
-			},
-			"createBlending": {
-				"main": "Assemblaggio",
 				"sub": " "
 			},
 
@@ -434,6 +434,7 @@
 			"decanting": "Travaso",
 			"staticSettling": "Demucillaginazione ",
 			"filtration": "Filtrazione.",
+			"blending": "Assemblaggio",
 			"privateConsumption": "Autoconsumo",
 			"shrinkage": "Riduzione",
 			"loss": "Perdita",
@@ -441,7 +442,6 @@
 			"dealcoholization": "Disalcoolazione",
 
 			"wineAddition": "Riempimento",
-			"blending": "Assemblaggio",
 
 			"substanceAdd": "Aggiunta di sostanze",
 			"enrichment": "Arricchimento",

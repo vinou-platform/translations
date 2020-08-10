@@ -343,6 +343,10 @@
 				"main": "coladura",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "recorte",
+				"sub": " "
+			},
 			"createPrivateConsumption": {
 				"main": "consumo propio",
 				"sub": "digitar"
@@ -366,10 +370,6 @@
 
 			"createWineAddition": {
 				"main": "llenado",
-				"sub": " "
-			},
-			"createBlending": {
-				"main": "recorte",
 				"sub": " "
 			},
 
@@ -434,6 +434,7 @@
 			"decanting": "colada",
 			"staticSettling": "desgomado",
 			"filtration": "filtración",
+			"blending": "recorte",
 			"privateConsumption": "consumo propio",
 			"shrinkage": "reducción",
 			"loss": "perdida",
@@ -441,7 +442,6 @@
 			"dealcoholization": "desalcoholización",
 
 			"wineAddition": "llenado",
-			"blending": "recorte",
 
 			"substanceAdd": "añadidura de sustancia",
 			"enrichment": "enriquecimiento",

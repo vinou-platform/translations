@@ -343,6 +343,11 @@
 				"main": "Abstich",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Verschnitt",
+				"sub": " "
+			},
+
 			"createPrivateConsumption": {
 				"main": "Eigenverbrauch",
 				"sub": "erfassen"
@@ -366,10 +371,6 @@
 
 			"createWineAddition": {
 				"main": "Beifüllung",
-				"sub": " "
-			},
-			"createBlending": {
-				"main": "Verschnitt",
 				"sub": " "
 			},
 
@@ -434,6 +435,7 @@
 			"decanting": "Abstich",
 			"staticSettling": "Entschleimung",
 			"filtration": "Filtrierung",
+			"blending": "Verschnitt",
 			"privateConsumption": "Eigenverbrauch",
 			"shrinkage": "Schwund",
 			"loss": "Verlust",
@@ -441,7 +443,6 @@
 			"dealcoholization": "Entalkoholisierung",
 
 			"wineAddition": "Beifüllung",
-			"blending": "Verschnitt",
 
 			"substanceAdd": "Stoffzugabe",
 			"enrichment": "Anreicherung",

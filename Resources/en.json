@@ -343,6 +343,10 @@
 				"main": "Decanting",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Blending",
+				"sub": " "
+			},
 			"createPrivateConsumption": {
 				"main": "Private",
 				"sub": "consumption"
@@ -367,10 +371,6 @@
 			"createWineAddition": {
 				"main": "Wine",
 				"sub": "addition"
-			},
-			"createBlending": {
-				"main": "Blending",
-				"sub": " "
 			},
 
 			"createSubstanceAdd": {
@@ -434,6 +434,7 @@
 			"decanting": "Decanting",
 			"staticSettling": "Static settling",
 			"filtration": "Filtration",
+			"blending": "Blending",
 			"privateConsumption": "Private consumption",
 			"shrinkage": "Shrinkage",
 			"loss": "Loss",
@@ -441,7 +442,6 @@
 			"dealcoholization": "Dealcoholization",
 
 			"wineAddition": "Wine addition",
-			"blending": "Blending",
 
 			"substanceAdd": "Substance added",
 			"enrichment": "Enrichment",

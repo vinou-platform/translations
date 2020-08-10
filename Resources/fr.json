@@ -343,6 +343,10 @@
 				"main": "Soutirage",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Cuvée",
+				"sub": " "
+			},
 			"createPrivateConsumption": {
 				"main": "Consommation personnelle",
 				"sub": "répertorier"
@@ -366,10 +370,6 @@
 
 			"createWineAddition": {
 				"main": "Ouillage",
-				"sub": " "
-			},
-			"createBlending": {
-				"main": "Cuvée",
 				"sub": " "
 			},
 
@@ -434,6 +434,7 @@
 			"decanting": "Soutirage",
 			"staticSettling": "Débourbage par le repos",
 			"filtration": "Filtration",
+			"blending": "Cuvée",
 			"privateConsumption": "Consommation personnelle",
 			"shrinkage": "Rétrécissement",
 			"loss": "Perte",
@@ -441,7 +442,6 @@
 			"dealcoholization": "Désalcoolisation",
 
 			"wineAddition": "Ouillage",
-			"blending": "Cuvée",
 
 			"substanceAdd": "Ajout des substances",
 			"enrichment": "Enrichissement",
