@@ -249,7 +249,7 @@
 				"placeholder": "Cherchez récipient"
 			},
 			"bookingStamp": {
-				"label": "Jour de réservation",
+				"label": "Date de traitement",
 				"placeholder": "DD.MM.YYYY"
 			},
 			"bottles": "Nombre de bouteilles",

@@ -249,7 +249,7 @@
 				"placeholder": "buscar recipiente"
 			},
 			"bookingStamp": {
-				"label": "fecha de reserva",
+				"label": "Fecha de procesamiento",
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Numero de botellas",

@@ -249,7 +249,7 @@
 				"placeholder": "Ricerca recipiente"
 			},
 			"bookingStamp": {
-				"label": "Giorno di transazione",
+				"label": "Data di elaborazione",
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Numero di bottiglie",
