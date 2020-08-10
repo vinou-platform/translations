@@ -249,7 +249,7 @@
 				"placeholder": "Search barrel"
 			},
 			"bookingStamp": {
-				"label": "Process date",
+				"label": "Processing date",
 				"placeholder": "MM/dd/YYYY"
 			},
 			"bottles": "Number of bottles",
