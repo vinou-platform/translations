@@ -52,6 +52,7 @@
 			"default": "Default",
 			"empty": "Please select",
 			"none": "No information",
+			"unknown": "Unknown",
 			"upload_image": "Select image to upload",
 			"search": {
 				"placeholder": "e.g. name or description"

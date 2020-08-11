@@ -52,6 +52,7 @@
 			"default": "Default",
 			"empty": "Seleziona",
 			"none": "Non disponible",
+			"unknown": "Sconosciuto",
 			"upload_image": "Seleziona una foto e caricala",
 			"search": {
 				"placeholder": "ad es. nome o descritto"

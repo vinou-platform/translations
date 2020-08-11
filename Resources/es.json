@@ -52,6 +52,7 @@
 			"default": "estándar",
 			"empty": "Por favor seleccione",
 			"none": "no hay datos",
+			"unknown": "desconocido",
 			"upload_image": "Seleccione y cargue imágen",
 			"search": {
 				"placeholder": "e.j. nombre o descripción"

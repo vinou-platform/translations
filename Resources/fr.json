@@ -52,6 +52,7 @@
 			"default": "Standard",
 			"empty": "Veuillez choisir",
 			"none": "Pas d'information",
+			"unknown": "Inconnue",
 			"upload_image": "Sélectionnez l'image à télécharger",
 			"search": {
 				"placeholder": "p.ex. nom ou description"
