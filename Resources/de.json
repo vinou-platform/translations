@@ -299,7 +299,13 @@
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
-			"substance": "Stoff"
+			"substance": "Stoff",
+
+			"substanceAdd": "Stoffzugabe {substance}",
+			"enrichment": "Anreicherung mit {substance}",
+			"sweetening": "Süßung mit {substance}",
+			"acidification": "Säuerung mit {substance}",
+			"deacidification": "Entsäuerung mit {substance}"
 		},
 		"actions": {
 			"create": {
@@ -579,7 +585,8 @@
 	"measurement": {
 		"fields": {
 			"currentValue": "Aktueller Wert",
-			"targetValue": "Zielwert"
+			"targetValue": "Zielwert",
+			"range": "Von {from} {unit} um {by} {unit} auf {to} {unit}"
 		},
 		"types": {
 			"temperature": "Temperatur",
@@ -896,7 +903,10 @@
 			"acidity": "Säuregehalt",
 			"alcohol": "Alkohol",
 			"apNumber": "A.P.Nr./Losnr.",
-			"bookingStamp": "Buchungstag",
+			"bookingStamp": {
+				"label": "Vorgangsdatum",
+				"placeholder": "dd.MM.YYYY"
+			},
 			"client": "Kunde",
 			"note": "Anmerkung, Lieferant, ...",
 			"orderNumber": "Bestellnr.",

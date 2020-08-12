@@ -299,7 +299,13 @@
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
-			"substance": "Substance"
+			"substance": "Substance",
+
+			"substanceAdd": "Add substance {substance}",
+			"enrichment": "Enrichment using {substance}",
+			"sweetening": "Sweetening using {substance}",
+			"acidification": "Acidification using {substance}",
+			"deacidification": "Deacidification using {substance}"
 		},
 		"actions": {
 			"create": {
@@ -348,6 +354,7 @@
 				"main": "Blending",
 				"sub": " "
 			},
+
 			"createPrivateConsumption": {
 				"main": "Private",
 				"sub": "consumption"
@@ -444,7 +451,7 @@
 
 			"wineAddition": "Wine addition",
 
-			"substanceAdd": "Substance added",
+			"substanceAdd": "Add substance",
 			"enrichment": "Enrichment",
 			"sweetening": "Sweetening",
 			"acidification": "Acidification",
@@ -578,7 +585,8 @@
 	"measurement": {
 		"fields": {
 			"currentValue": "Current value",
-			"targetValue": "Target value"
+			"targetValue": "Target value",
+			"range": "From {from} {unit} by {by} {unit} to {to} {unit}"
 		},
 		"types": {
 			"temperature": "Temperature",
@@ -895,7 +903,10 @@
 			"acidity": "Acidity",
 			"alcohol": "Alcohol",
 			"apNumber": "A.P.Nr.",
-			"bookingStamp": "Booking day",
+			"bookingStamp": {
+				"label": "Processing date",
+				"placeholder": "MM/dd/YYYY"
+			},
 			"client": "Client",
 			"note": "Description, supplier, ...",
 			"orderNumber": "Order no.",

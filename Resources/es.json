@@ -299,7 +299,13 @@
 			"barrels": "recipiente",
 			"addition": "acceso",
 			"withdrawal": "salida",
-			"substance": "sustancia"
+			"substance": "sustancia",
+
+			"substanceAdd": "añadidura de sustancia {substance}",
+			"enrichment": "enriquecimiento con {substance}",
+			"sweetening": "edulcoración con {substance}",
+			"acidification": "acidificación con {substance}",
+			"deacidification": "desacidificación con {substance}"
 		},
 		"actions": {
 			"create": {
@@ -348,6 +354,7 @@
 				"main": "recorte",
 				"sub": " "
 			},
+
 			"createPrivateConsumption": {
 				"main": "consumo propio",
 				"sub": "digitar"
@@ -578,7 +585,8 @@
 	"measurement": {
 		"fields": {
 			"currentValue": "valor acutal",
-			"targetValue": "valor de destino"
+			"targetValue": "valor de destino",
+			"range": "de {from} {unit} por {by} {unit} a {to} {unit}"
 		},
 		"types": {
 			"temperature": "temperatura",
@@ -895,7 +903,10 @@
 			"acidity": "acidez",
 			"alcohol": "alcohol",
 			"apNumber": "número de prueba oficial",
-			"bookingStamp": "fecha",
+			"bookingStamp": {
+				"label": "Fecha de procesamiento",
+				"placeholder": "dd.MM.YYYY"
+			},
 			"client": "cliente",
 			"note": "descripción, proveedor, ...",
 			"orderNumber": "Nº de pedido",

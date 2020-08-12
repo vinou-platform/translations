@@ -299,7 +299,13 @@
 			"barrels": "Récipients",
 			"addition": "Addition",
 			"withdrawal": "Retrait",
-			"substance": "Substance"
+			"substance": "Substance",
+
+			"substanceAdd": "Ajout de substance {substance}",
+			"enrichment": "Enrichissement avec {substance}",
+			"sweetening": "Édulcoration avec {substance}",
+			"acidification": "Acidification avec {substance}",
+			"deacidification": "Désacidification avec {substance}"
 		},
 		"actions": {
 			"create": {
@@ -348,6 +354,7 @@
 				"main": "Cuvée",
 				"sub": " "
 			},
+
 			"createPrivateConsumption": {
 				"main": "Consommation personnelle",
 				"sub": "répertorier"
@@ -578,7 +585,8 @@
 	"measurement": {
 		"fields": {
 			"currentValue": "Valeur actuellement",
-			"targetValue": "Objectif"
+			"targetValue": "Objectif",
+			"range": "De {from} {unit} par {by} {unit} à {to} {unit}"
 		},
 		"types": {
 			"temperature": "Température",
@@ -895,7 +903,10 @@
 			"acidity": "Teneur en acide",
 			"alcohol": "Alcool",
 			"apNumber": "Numéro AP",
-			"bookingStamp": "Jour de réservation",
+			"bookingStamp": {
+				"label": "Date de traitement",
+				"placeholder": "DD.MM.YYYY"
+			},
 			"client": "Client",
 			"note": "Description, fournisseur, ...",
 			"orderNumber": "N° de commande",
