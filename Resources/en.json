@@ -931,12 +931,15 @@
 		},
 		"purposes": {
 			"bottling": "Bottling",
+			"breakage": "Breakage",
 			"correction": "Correction",
 			"creditAdvice": "Credit advice",
 			"invoice": "Invoice",
+			"privateConsumption": "Private consumption",
 			"promotion": "Promotion",
 			"purchase": "Purchase/Delivery",
 			"retour": "Retour",
+			"sample": "Sample",
 			"sponsoring": "Sponsoring"
 		}
 	},

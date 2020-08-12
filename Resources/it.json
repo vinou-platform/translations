@@ -930,14 +930,17 @@
 			"withdrawal": "Uscita"
 		},
 		"purposes": {
-			"retour": "Merci restituite",
 			"bottling": "Imbottigliamento",
+			"breakage": "Rottura",
 			"correction": "Correzione",
-			"delivery": "Consegna ",
-			"sponsoring": "Sponsoring",
-			"promotion": "Pubblicità",
+			"creditadvice": "Accredito",
 			"invoice": "Fattura",
-			"creditadvice": "Accredito"
+			"privateConsumption": "Autoconsumo",
+			"promotion": "Pubblicità",
+			"purchase": "Acquista",
+			"retour": "Merci restituite",
+			"sample": "Campione",
+			"sponsoring": "Sponsoring"
 		}
 	},
 	"mailsetup_edittitle": "Modificare impostazion SMTP",

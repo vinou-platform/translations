@@ -932,12 +932,15 @@
 		},
 		"purposes": {
 			"bottling": "Abfüllung",
+			"breakage": "Bruch",
 			"correction": "Korrektur",
 			"creditAdvice": "Gutschrift",
 			"invoice": "Rechnung",
+			"privateConsumption": "Eigenverbrauch",
 			"promotion": "Werbung",
 			"purchase": "Anlieferung/Zukauf",
 			"retour": "Retoure",
+			"sample": "Probe",
 			"sponsoring": "Sponsoring"
 		}
 	},

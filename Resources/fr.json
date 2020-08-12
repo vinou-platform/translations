@@ -931,12 +931,15 @@
 		},
 		"purposes": {
 			"bottling": "Embouteillage",
+			"breakage": "Rupture",
 			"correction": "Correction",
 			"creditAdvice": "Crédit",
 			"invoice": "Facture",
+			"privateConsumption": "Consommation personnelle",
 			"promotion": "Promotion",
 			"purchase": "Livraison",
 			"retour": "Retoue",
+			"sample": "Échantillon",
 			"sponsoring": "Parrainage"
 		}
 	},
