@@ -177,7 +177,8 @@
 			"minValue": "Inserisci un valore maggiore o uguale a {value}",
 			"pattern": "Formato non valido",
 			"patternValue": "I tuoi input devono essere conformi al formato {value}",
-			"required": "Compilare questo campo per favore"
+			"required": "Compilare questo campo per favore",
+			"submit": "Si è verificato un errore durante il salvataggio dei dati."
 		},
 		"toasts": {
 			"networkchanged": "La visibilità della rete è cambiata",
@@ -472,9 +473,13 @@
 				"backToWineSelect": "Torna alla selezione"
 			}
 		},
+		"dialogs": {
+			"delete": "Vuoi davvero eliminare questo processo?"
+		},
 		"toasts": {
 			"created": "Processo è stato creato",
-			"changed": "Processo è stato modificato"
+			"changed": "Processo è stato modificato",
+			"deleted": "Processo è stato eliminato"
 		}
 	},
 	"cellarWine": {
@@ -499,6 +504,7 @@
 			},
 			"export": {
 				"barrelList": "Elenco di recipiente",
+				"bottleLogs": "Libro delle bottiglie",
 				"cellarBook": "Cantina",
 				"grapeMarcLogs": "Libro del vinaccia",
 				"substanceLogs": "Elenco di sostanze",
@@ -573,7 +579,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Vuoi veramente cancellare questo recipiente?"
+			"delete": "Vuoi veramente cancellare questo recipiente?",
+			"invalid": "Informazioni sul contenitore incoerenti. Controlla le tue transazioni sui seguenti conti del vino: {wines}"
 		},
 		"toasts": {
 			"created": "Recipiente è stato creato",

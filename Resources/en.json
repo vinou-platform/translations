@@ -177,7 +177,8 @@
 			"minValue": "Please enter a value greater than or equal to {value}",
 			"pattern": "Invalid format",
 			"patternValue": "Your input should conform to the format {value}",
-			"required": "Please fill in this field"
+			"required": "Please fill in this field",
+			"submit": "An error occurred while saving the data."
 		},
 		"toasts": {
 			"networkchanged": "Network visibility changed",
@@ -472,9 +473,13 @@
 				"backToWineSelect": "Select wine"
 			}
 		},
+		"dialogs": {
+			"delete": "Do you really want to delete this action?"
+		},
 		"toasts": {
 			"created": "Action created.",
-			"changed": "Action changed."
+			"changed": "Action changed.",
+			"deleted": "Action deleted."
 		}
 	},
 	"cellarWine": {
@@ -499,6 +504,7 @@
 			},
 			"export": {
 				"barrelList": "Barrel list",
+				"bottleLogs": "Bottle log",
 				"cellarBook": "Cellar book",
 				"grapeMarcLogs": "Grape marc log",
 				"substanceLogs": "Substance log",
@@ -573,7 +579,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Do you really want to delete this barrel?"
+			"delete": "Do you really want to delete this barrel?",
+			"invalid": "Inconsistent container information. Please check your transactions on the following wine accounts: {wines}"
 		},
 		"toasts": {
 			"created": "Barrel created.",

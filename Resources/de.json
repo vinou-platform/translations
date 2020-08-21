@@ -177,7 +177,8 @@
 			"minValue": "Bitte gib einen Wert größer-gleich {value} ein",
 			"pattern": "Ungültiges Format",
 			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
-			"required": "Bitte fülle dieses Feld aus"
+			"required": "Bitte fülle dieses Feld aus",
+			"submit": "Beim Speichern der Daten ist ein Fehler aufgetreten."
 		},
 		"toasts": {
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
@@ -472,9 +473,13 @@
 				"backToWineSelect": "Zurück zur Auswahl"
 			}
 		},
+		"dialogs": {
+			"delete": "Willst Du diesen Vorgang wirklich löschen?"
+		},
 		"toasts": {
 			"created": "Vorgang erstellt.",
-			"changed": "Vorgang bearbeitet."
+			"changed": "Vorgang bearbeitet.",
+			"deleted": "Vorgang gelöscht."
 		}
 	},
 	"cellarWine": {
@@ -499,6 +504,7 @@
 			},
 			"export": {
 				"barrelList": "Behälterliste",
+				"bottleLogs": "Flaschenbuch",
 				"cellarBook": "Kellerbuch",
 				"grapeMarcLogs": "Tresterbuch",
 				"substanceLogs": "Stoffliste",
@@ -573,7 +579,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst Du den Behälter wirklich löschen?"
+			"delete": "Willst Du den Behälter wirklich löschen?",
+			"invalid": "Unstimmige Behälterinformationen. Bitte überprüfe Deine Vorgänge auf den nachfolgenden Weinkonten: {wines}"
 		},
 		"toasts": {
 			"created": "Behälter erstellt.",
