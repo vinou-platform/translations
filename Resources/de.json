@@ -537,6 +537,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "Aufstellungszeitpunkt",
 			"capacity": "Fassungsvermögen in Liter",
 			"chstamp": "Zuletzt geändert",
 			"clarifying": "Behälter zur Klärung?",

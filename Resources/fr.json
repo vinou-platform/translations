@@ -537,6 +537,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "Heure d'installation",
 			"capacity": "Capacité en litres",
 			"chstamp": "Modification dernière",
 			"clarifying": "Recipient à Collage?",

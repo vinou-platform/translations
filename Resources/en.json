@@ -537,6 +537,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "Time of installation",
 			"capacity": "Capacity in liter",
 			"chstamp": "Last changes",
 			"clarifying": "Barrel for clarification?",

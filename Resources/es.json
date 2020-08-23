@@ -537,6 +537,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "tiempo de instalación",
 			"capacity": "capacidad volumétrica en litros",
 			"chstamp": "cambiado por último",
 			"clarifying": "recipiente para clarificación?",
