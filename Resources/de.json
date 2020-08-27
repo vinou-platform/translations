@@ -599,7 +599,7 @@
 		"types": {
 			"temperature": "Temperatur",
 			"acidity": "Säuregehalt",
-			"residualSugar": "Restsüße",
+			"sugarContent": "Zuckergehalt",
 			"alcohol": "Alkoholgehalt",
 			"density": "Dichte"
 		}
