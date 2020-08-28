@@ -592,8 +592,8 @@
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "Valeur actuellement",
-			"targetValue": "Objectif",
+			"currentValue": "De",
+			"targetValue": "À",
 			"range": "De {from} {unit} par {by} {unit} à {to} {unit}"
 		},
 		"types": {

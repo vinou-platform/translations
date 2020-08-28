@@ -592,8 +592,8 @@
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "valor acutal",
-			"targetValue": "valor de destino",
+			"currentValue": "de",
+			"targetValue": "a",
 			"range": "de {from} {unit} por {by} {unit} a {to} {unit}"
 		},
 		"types": {

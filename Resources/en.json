@@ -592,8 +592,8 @@
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "Current value",
-			"targetValue": "Target value",
+			"currentValue": "From",
+			"targetValue": "To",
 			"range": "From {from} {unit} by {by} {unit} to {to} {unit}"
 		},
 		"types": {
