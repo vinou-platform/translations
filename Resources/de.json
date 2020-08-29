@@ -229,12 +229,31 @@
 	},
 	"currenttoken_old": "Bisherige Token",
 	"currenttoken": "Aktuelle Verbindung",
-	"tokens": {
+	"token": {
 		"actions": {
 			"create": {
 				"main": "Neue Verbindung",
 				"sub": "anlegen"
 			}
+		},
+		"views": {
+			"gallery": {
+				"referer": "Domain/IP",
+				"token": "Schnittstelle (Token)",
+				"mode": {
+					"label": "Modus",
+					"dev": "Entwicklung",
+					"live": "Live"
+				}
+			}
+		},
+		"groups": {
+			"manual": "Manuelle Verbindungen",
+			"automatic": "Automatisierte Verbindungen"
+		},
+		"toasts": {
+			"changed": "Verbindung geändert!",
+			"deleted": "Verbindung gelöscht!"
 		}
 	},
 	"yes": "Ja",
@@ -2673,6 +2692,53 @@
 			"deleted": "Tag gelöscht!"
 		}
 	},
+	"automation": {
+		"actions": {
+			"create": {
+				"modaltitle": "Automatisierung anlegen",
+				"main": "Neue Automatisierung",
+				"sub": "erstellen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "Du hast bisher noch keine Automatisierung erstellt",
+				"image": "Marke",
+				"content": "Beschreibung"
+			}
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"startdate": "Start-Datum",
+			"enddate": "Ablauf-Datum",
+			"active": {
+				"label": "Automatisierungs-Status",
+				"checklabel": "aktiviert"
+			},
+			"itemTypes": "Folgende Artikelgruppen für diese Automatisierung zulassen"
+		},
+		"toasts": {
+			"created": "Automatisierung angelegt!",
+			"changed": "Automatisierung geändert!",
+			"deleted": "Automatisierung gelöscht!",
+			"imageUploaded": "Bild hochgeladen!",
+			"imageDeleted": "Bild gelöscht",
+			"copied": "Automatisierung dupliziert",
+			"activate": "Verbindung aktiviert",
+			"activateerror": "Verbindung konnte nicht aktiviert werden",
+			"deactivate": "Verbindung deaktiviert",
+			"deactivateerror": "Verbindung konnte nicht deaktiviert werden"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Automatisierung wirklich löschen?",
+			"activate": "Willst du diese Verbindung aktivieren?",
+			"deactivate": "Willst du diese Verbindung wirklich deaktivieren?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
@@ -2741,6 +2807,10 @@
 		"texts": {
 			"title": "Texte",
 			"description": "Lege Texte an, um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst Du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in Deinem eigenen Online-Shop verwendet werden."
+		},
+		"automations": {
+			"title": "Automatisierungen",
+			"description": "Mit Hilfe von Automatisierungen kannst Du anderen Vinou-Mitgliedern ermöglichen bestimmte Dinge vollautomatisch mit dir auszuführen. z.B. Weine von Weingütern auf deine Webseite freischalten."
 		},
 		"messages": {
 			"hints": {
