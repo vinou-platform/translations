@@ -480,6 +480,10 @@
 			"created": "Action created.",
 			"changed": "Action changed.",
 			"deleted": "Action deleted."
+		},
+		"hints": {
+			"accountClosure": "<strong>Attention!</strong> This action will permanently close this wine account. Subsequent changes are no longer possible.",
+			"financialStatement": "The annual financial statement will permanently save all previous actions in this wine account. Subsequent changes are no longer possible. Please check all transactions of the financial year for correctness again before you continue."
 		}
 	},
 	"cellarWine": {

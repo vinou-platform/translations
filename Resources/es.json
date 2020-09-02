@@ -480,6 +480,10 @@
 			"created": "proceso ha sido creado.",
 			"changed": "proceso ha sido editado.",
 			"deleted": "proceso ha sido eliminado."
+		},
+		"hints": {
+			"accountClosure": "<strong>Atención!</strong> Esta acción cerrará permanentemente esta cuenta de vino. Ya no es posible realizar cambios posteriores.",
+			"financialStatement": "El estado financiero anual guardará permanentemente todas las acciones anteriores en esta cuenta de vino. Los cambios posteriores ya no son posibles. Verifique todas las transacciones del año financiero para verificar que estén correctas nuevamente antes de continuar"
 		}
 	},
 	"cellarWine": {

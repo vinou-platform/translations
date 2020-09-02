@@ -480,6 +480,10 @@
 			"created": "Vorgang erstellt.",
 			"changed": "Vorgang bearbeitet.",
 			"deleted": "Vorgang gelöscht."
+		},
+		"hints": {
+			"accountClosure": "<strong>Achtung!</strong> Durch diese Aktion wird das Weinkonto dauerhaft geschlossen. Nachträglich sind keine Änderungen mehr möglich.",
+			"financialStatement": "Durch den Jahresabschluss werden alle bisherigen Vorgänge in diesem Weinkonto festgeschrieben. Nachträglich sind keine Änderungen mehr möglich. Bitte überprüfe noch einmal alle Vorgänge des Wirtschaftsjahres auf korrektheit bevor du fortfährst."
 		}
 	},
 	"cellarWine": {

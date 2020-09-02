@@ -480,6 +480,10 @@
 			"created": "Processus créé.",
 			"changed": "Processus édité.",
 			"deleted": "Processus supprimé."
+		},
+		"hints": {
+			"accountClosure": "<strong>Attention!</strong> Cette action entraînera la fermeture définitive de ce compte Wine. Les modifications ultérieures ne sont plus possibles.",
+			"financialStatement": "L'état financier annuel sauvegardera définitivement toutes les actions précédentes dans ce compte Wine. Les modifications ultérieures ne sont plus possibles. Veuillez vérifier à nouveau l'exactitude de toutes les transactions de l'exercice avant de continuer."
 		}
 	},
 	"cellarWine": {
