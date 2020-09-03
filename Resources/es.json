@@ -265,7 +265,6 @@
 				"placeholder": "e.j. esparcir como fertilizante en la viña"
 			},
 			"harvestDeclarationNumber": "declaración de cosecha (receibo no.)",
-			"lossRelocation": "trasvase del residuo",
 			"lossVolume": "perdida",
 			"marc": "orujo",
 			"note": "anotación / uso",
@@ -276,6 +275,8 @@
 				"placeholder": " "
 			},
 			"referenceNumber": "Recibo no. (p. documentos adjuntos)",
+			"residueRelocation": "trasvase del residuo",
+			"residueVolume": "residuo",
 			"sludgePurpose": {
 				"label": "uso de lías",
 				"placeholder": "e.j. esparcir como fertilizante en la viña."

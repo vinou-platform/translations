@@ -265,7 +265,6 @@
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
 			},
 			"harvestDeclarationNumber": "Harvest declaration (receipt no.)",
-			"lossRelocation": "Loss relocation?",
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",
 			"note": "Note / Purpose",
@@ -276,6 +275,8 @@
 				"placeholder": " "
 			},
 			"referenceNumber": "Receipt no. (e.g. accompanying documents)",
+			"residueRelocation": "Loss relocation?",
+			"residueVolume": "Residues",
 			"sludgePurpose": {
 				"label": "Purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."

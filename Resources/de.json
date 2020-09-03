@@ -284,7 +284,6 @@
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
 			},
 			"harvestDeclarationNumber": "Erntemeldung (Belegnr.)",
-			"lossRelocation": "Umfüllung der Reststoffe?",
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
@@ -295,6 +294,8 @@
 				"placeholder": " "
 			},
 			"referenceNumber": "Belegnr. (z.B. Begleitpapiere)",
+			"residueRelocation": "Umfüllung der Reststoffe?",
+			"residueVolume": "Reststoffe",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."

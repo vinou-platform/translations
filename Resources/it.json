@@ -265,7 +265,6 @@
 				"placeholder": "Ad es., In vigna come org. Fertilizzante applicato."
 			},
 			"harvestDeclarationNumber": "Dichiarazione di vendemmia (ricevuta n.)",
-			"lossRelocation": "Travasare dei residui",
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",
 			"note": "Nota / utilizzo",
@@ -276,6 +275,8 @@
 				"placeholder": " "
 			},
 			"referenceNumber": "Ricevuta n. (es documenti di accompagnamento)",
+			"residueRelocation": "Travasare dei residui",
+			"residueVolume": "Residui",
 			"sludgePurpose": {
 				"label": "Utilizzo di fecce",
 				"placeholder": "Ad es., In vigna come org. Fertilizzante applicato."

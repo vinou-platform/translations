@@ -265,7 +265,6 @@
 				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
 			},
 			"harvestDeclarationNumber": "Déclaration de récolte (reçu no.)",
-			"lossRelocation": "Transfert des résidus?",
 			"lossVolume": "Perte",
 			"marc": "Marc",
 			"note": "Note / utilisation",
@@ -276,6 +275,8 @@
 				"placeholder": " "
 			},
 			"referenceNumber": "Reçu no. (par ex. documents d'accompagnement)",
+			"residueRelocation": "Transfert des résidus?",
+			"residueVolume": "Résidus",
 			"sludgePurpose": {
 				"label": "Utilisation de la lie",
 				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
