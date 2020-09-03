@@ -52,6 +52,7 @@
 			"default": "estándar",
 			"empty": "Por favor seleccione",
 			"none": "no hay datos",
+			"unknown": "desconocido",
 			"upload_image": "Seleccione y cargue imágen",
 			"search": {
 				"placeholder": "e.j. nombre o descripción"
@@ -176,7 +177,8 @@
 			"minValue": "Ingrese un valor mayor o igual a {value}",
 			"pattern": "Formato no válido",
 			"patternValue": "Su entrada debe cumplir con el formato {value}",
-			"required": "Por favor llene esa casilla"
+			"required": "Por favor llene esa casilla",
+			"submit": "Se produjo un error al guardar los datos."
 		},
 		"toasts": {
 			"networkchanged": "visibilidad de red modificada",
@@ -249,7 +251,7 @@
 				"placeholder": "buscar recipiente"
 			},
 			"bookingStamp": {
-				"label": "fecha de reserva",
+				"label": "Fecha de procesamiento",
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Numero de botellas",
@@ -262,17 +264,19 @@
 				"label": "uso de combustibles sólidos",
 				"placeholder": "e.j. esparcir como fertilizante en la viña"
 			},
-			"lossRelocation": "trasvase del residuo",
+			"harvestDeclarationNumber": "declaración de cosecha (receibo no.)",
 			"lossVolume": "perdida",
 			"marc": "orujo",
 			"note": "anotación / uso",
-			"price": "precio",
+			"price": "precio de compra",
 			"purchaseNote": "anotación / proveedor",
 			"purpose": {
 				"label": "uso",
 				"placeholder": " "
 			},
 			"referenceNumber": "Recibo no. (p. documentos adjuntos)",
+			"residueRelocation": "trasvase del residuo",
+			"residueVolume": "residuo",
 			"sludgePurpose": {
 				"label": "uso de lías",
 				"placeholder": "e.j. esparcir como fertilizante en la viña."
@@ -297,7 +301,13 @@
 			"barrels": "recipiente",
 			"addition": "acceso",
 			"withdrawal": "salida",
-			"substance": "sustancia"
+			"substance": "sustancia",
+
+			"substanceAdd": "añadidura de sustancia {substance}",
+			"enrichment": "enriquecimiento con {substance}",
+			"sweetening": "edulcoración con {substance}",
+			"acidification": "acidificación con {substance}",
+			"deacidification": "desacidificación con {substance}"
 		},
 		"actions": {
 			"create": {
@@ -342,6 +352,11 @@
 				"main": "coladura",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "recorte",
+				"sub": " "
+			},
+
 			"createPrivateConsumption": {
 				"main": "consumo propio",
 				"sub": "digitar"
@@ -367,14 +382,10 @@
 				"main": "llenado",
 				"sub": " "
 			},
-			"createBlending": {
-				"main": "recorte",
-				"sub": " "
-			},
 
 			"createSubstanceAdd": {
-				"main": "añadidura de sustancia",
-				"sub": " "
+				"main": "añadidura de",
+				"sub": "sustancia"
 			},
 			"createEnrichment": {
 				"main": "enriquecimiento",
@@ -393,12 +404,12 @@
 				"sub": " "
 			},
 			"createAlcoholization": {
-				"main": "alcoholizacíon",
-				"sub": " "
+				"main": "añadidura de",
+				"sub": "alcohol"
 			},
 			"createWaterAddition": {
-				"main": "agua",
-				"sub": "añadidura"
+				"main": "añadidura de",
+				"sub": "agua"
 			},
 
 			"createBottling": {
@@ -433,6 +444,7 @@
 			"decanting": "colada",
 			"staticSettling": "desgomado",
 			"filtration": "filtración",
+			"blending": "recorte",
 			"privateConsumption": "consumo propio",
 			"shrinkage": "reducción",
 			"loss": "perdida",
@@ -440,14 +452,13 @@
 			"dealcoholization": "desalcoholización",
 
 			"wineAddition": "llenado",
-			"blending": "recorte",
 
 			"substanceAdd": "añadidura de sustancia",
 			"enrichment": "enriquecimiento",
 			"sweetening": "edulcoración",
 			"acidification": "acidificación",
 			"deacidification": "desacidificacíon",
-			"alcoholization": "alcoholizacíon",
+			"alcoholization": "añadidura de alcohol",
 			"waterAddition": "añadidura de agua",
 
 			"bottling": "embotellado",
@@ -463,9 +474,17 @@
 				"backToWineSelect": "regresar á la selección"
 			}
 		},
+		"dialogs": {
+			"delete": "Realmente desea eliminar este proceso?"
+		},
 		"toasts": {
 			"created": "proceso ha sido creado.",
-			"changed": "proceso ha sido editado."
+			"changed": "proceso ha sido editado.",
+			"deleted": "proceso ha sido eliminado."
+		},
+		"hints": {
+			"accountClosure": "<strong>Atención!</strong> Esta acción cerrará permanentemente esta cuenta de vino. Ya no es posible realizar cambios posteriores.",
+			"financialStatement": "El estado financiero anual guardará permanentemente todas las acciones anteriores en esta cuenta de vino. Los cambios posteriores ya no son posibles. Verifique todas las transacciones del año financiero para verificar que estén correctas nuevamente antes de continuar"
 		}
 	},
 	"cellarWine": {
@@ -489,10 +508,12 @@
 				"sub": "crear"
 			},
 			"export": {
-				"cellarBook": "libro de bodega",
 				"barrelList": "lista de recipientes",
+				"bottleLogs": "libro de botella",
+				"cellarBook": "libro de bodega",
 				"grapeMarcLogs": "libro de orujo",
-				"substanceLogs": "lista de sustancia"
+				"substanceLogs": "lista de sustancia",
+				"wineBook": "libro de vinos"
 			}
 		},
 		"views": {
@@ -521,6 +542,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "tiempo de instalación",
 			"capacity": "capacidad volumétrica en litros",
 			"chstamp": "cambiado por último",
 			"clarifying": "recipiente para clarificación?",
@@ -563,7 +585,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Quieres borrar el recipiente seguramente?"
+			"delete": "Quieres borrar el recipiente seguramente?",
+			"invalid": "Información de contenedor inconsistente. Verifique sus transacciones en las siguientes cuentas de vino: {wines}"
 		},
 		"toasts": {
 			"created": "depósito ha sido creado.",
@@ -574,13 +597,14 @@
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "valor acutal",
-			"targetValue": "valor de destino"
+			"currentValue": "de",
+			"targetValue": "a",
+			"range": "de {from} {unit} por {by} {unit} a {to} {unit}"
 		},
 		"types": {
 			"temperature": "temperatura",
 			"acidity": "acidez",
-			"residualSugar": "azucar residual",
+			"sugarContent": "contenido de azúcar",
 			"alcohol": "graduación alcoholica",
 			"density": "densidad"
 		}
@@ -892,7 +916,10 @@
 			"acidity": "acidez",
 			"alcohol": "alcohol",
 			"apNumber": "número de prueba oficial",
-			"bookingStamp": "fecha",
+			"bookingStamp": {
+				"label": "Fecha de procesamiento",
+				"placeholder": "dd.MM.YYYY"
+			},
 			"client": "cliente",
 			"note": "descripción, proveedor, ...",
 			"orderNumber": "Nº de pedido",
@@ -928,12 +955,15 @@
 		},
 		"purposes": {
 			"bottling": "embotellado",
+			"breakage": "rotura",
 			"correction": "corrección",
 			"creditAdvice": "abono",
 			"invoice": "cuenta",
+			"privateConsumption": "consumo propio",
 			"promotion": "reclamo",
 			"purchase": "compra",
 			"retour": "retorno",
+			"sample": "muestra",
 			"sponsoring": "patrocinio"
 		}
 	},

@@ -52,6 +52,7 @@
 			"default": "Default",
 			"empty": "Please select",
 			"none": "No information",
+			"unknown": "Unknown",
 			"upload_image": "Select image to upload",
 			"search": {
 				"placeholder": "e.g. name or description"
@@ -176,7 +177,8 @@
 			"minValue": "Please enter a value greater than or equal to {value}",
 			"pattern": "Invalid format",
 			"patternValue": "Your input should conform to the format {value}",
-			"required": "Please fill in this field"
+			"required": "Please fill in this field",
+			"submit": "An error occurred while saving the data."
 		},
 		"toasts": {
 			"networkchanged": "Network visibility changed",
@@ -249,7 +251,7 @@
 				"placeholder": "Search barrel"
 			},
 			"bookingStamp": {
-				"label": "Booking day",
+				"label": "Processing date",
 				"placeholder": "MM/dd/YYYY"
 			},
 			"bottles": "Number of bottles",
@@ -262,17 +264,19 @@
 				"label": "Filtration residues purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
 			},
-			"lossRelocation": "Loss relocation?",
+			"harvestDeclarationNumber": "Harvest declaration (receipt no.)",
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",
 			"note": "Note / Purpose",
-			"price": "Price",
+			"price": "Purchasing price",
 			"purchaseNote": "Note / supplier",
 			"purpose": {
 				"label": "Purpose",
 				"placeholder": " "
 			},
 			"referenceNumber": "Receipt no. (e.g. accompanying documents)",
+			"residueRelocation": "Loss relocation?",
+			"residueVolume": "Residues",
 			"sludgePurpose": {
 				"label": "Purpose",
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
@@ -297,7 +301,13 @@
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
-			"substance": "Substance"
+			"substance": "Substance",
+
+			"substanceAdd": "Add substance {substance}",
+			"enrichment": "Enrichment using {substance}",
+			"sweetening": "Sweetening using {substance}",
+			"acidification": "Acidification using {substance}",
+			"deacidification": "Deacidification using {substance}"
 		},
 		"actions": {
 			"create": {
@@ -342,6 +352,11 @@
 				"main": "Decanting",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Blending",
+				"sub": " "
+			},
+
 			"createPrivateConsumption": {
 				"main": "Private",
 				"sub": "consumption"
@@ -367,10 +382,6 @@
 				"main": "Wine",
 				"sub": "addition"
 			},
-			"createBlending": {
-				"main": "Blending",
-				"sub": " "
-			},
 
 			"createSubstanceAdd": {
 				"main": "Add",
@@ -393,8 +404,8 @@
 				"sub": " "
 			},
 			"createAlcoholization": {
-				"main": "Alcoholization",
-				"sub": " "
+				"main": "Alcohol",
+				"sub": "addition"
 			},
 			"createWaterAddition": {
 				"main": "Water",
@@ -433,6 +444,7 @@
 			"decanting": "Decanting",
 			"staticSettling": "Static settling",
 			"filtration": "Filtration",
+			"blending": "Blending",
 			"privateConsumption": "Private consumption",
 			"shrinkage": "Shrinkage",
 			"loss": "Loss",
@@ -440,14 +452,13 @@
 			"dealcoholization": "Dealcoholization",
 
 			"wineAddition": "Wine addition",
-			"blending": "Blending",
 
-			"substanceAdd": "Substance added",
+			"substanceAdd": "Add substance",
 			"enrichment": "Enrichment",
 			"sweetening": "Sweetening",
 			"acidification": "Acidification",
 			"deacidification": "Deacidification",
-			"alcoholization": "Alcoholization",
+			"alcoholization": "Alcohol addition",
 			"waterAddition": "Water addition",
 
 			"bottling": "Bottling",
@@ -463,9 +474,17 @@
 				"backToWineSelect": "Select wine"
 			}
 		},
+		"dialogs": {
+			"delete": "Do you really want to delete this action?"
+		},
 		"toasts": {
 			"created": "Action created.",
-			"changed": "Action changed."
+			"changed": "Action changed.",
+			"deleted": "Action deleted."
+		},
+		"hints": {
+			"accountClosure": "<strong>Attention!</strong> This action will permanently close this wine account. Subsequent changes are no longer possible.",
+			"financialStatement": "The annual financial statement will permanently save all previous actions in this wine account. Subsequent changes are no longer possible. Please check all transactions of the financial year for correctness again before you continue."
 		}
 	},
 	"cellarWine": {
@@ -489,10 +508,12 @@
 				"sub": "new wine"
 			},
 			"export": {
-				"cellarBook": "Cellar book",
 				"barrelList": "Barrel list",
+				"bottleLogs": "Bottle log",
+				"cellarBook": "Cellar book",
 				"grapeMarcLogs": "Grape marc log",
-				"substanceLogs": "Substance log"
+				"substanceLogs": "Substance log",
+				"wineBook": "Wine book"
 			}
 		},
 		"views": {
@@ -521,6 +542,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "Time of installation",
 			"capacity": "Capacity in liter",
 			"chstamp": "Last changes",
 			"clarifying": "Barrel for clarification?",
@@ -563,7 +585,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Do you really want to delete this barrel?"
+			"delete": "Do you really want to delete this barrel?",
+			"invalid": "Inconsistent container information. Please check your transactions on the following wine accounts: {wines}"
 		},
 		"toasts": {
 			"created": "Barrel created.",
@@ -574,13 +597,14 @@
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "Current value",
-			"targetValue": "Target value"
+			"currentValue": "From",
+			"targetValue": "To",
+			"range": "From {from} {unit} by {by} {unit} to {to} {unit}"
 		},
 		"types": {
 			"temperature": "Temperature",
 			"acidity": "Acid",
-			"residualSugar": "Residual sugar",
+			"sugarContent": "Sugar content",
 			"alcohol": "Contained alcohol",
 			"density": "Density"
 		}
@@ -892,7 +916,10 @@
 			"acidity": "Acidity",
 			"alcohol": "Alcohol",
 			"apNumber": "A.P.Nr.",
-			"bookingStamp": "Booking day",
+			"bookingStamp": {
+				"label": "Processing date",
+				"placeholder": "MM/dd/YYYY"
+			},
 			"client": "Client",
 			"note": "Description, supplier, ...",
 			"orderNumber": "Order no.",
@@ -928,12 +955,15 @@
 		},
 		"purposes": {
 			"bottling": "Bottling",
+			"breakage": "Breakage",
 			"correction": "Correction",
 			"creditAdvice": "Credit advice",
 			"invoice": "Invoice",
+			"privateConsumption": "Private consumption",
 			"promotion": "Promotion",
 			"purchase": "Purchase/Delivery",
 			"retour": "Retour",
+			"sample": "Sample",
 			"sponsoring": "Sponsoring"
 		}
 	},

@@ -52,6 +52,7 @@
 			"default": "Standard",
 			"empty": "Bitte wählen",
 			"none": "Keine Angabe",
+			"unknown": "Unbekannt",
 			"upload_image": "Bild auswählen und hochladen",
 			"search": {
 				"placeholder": "z.B. Name oder Beschreibung"
@@ -176,7 +177,8 @@
 			"minValue": "Bitte gib einen Wert größer-gleich {value} ein",
 			"pattern": "Ungültiges Format",
 			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
-			"required": "Bitte fülle dieses Feld aus"
+			"required": "Bitte fülle dieses Feld aus",
+			"submit": "Beim Speichern der Daten ist ein Fehler aufgetreten."
 		},
 		"toasts": {
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
@@ -268,7 +270,7 @@
 				"placeholder": "Behälter suchen"
 			},
 			"bookingStamp": {
-				"label": "Buchungstag",
+				"label": "Vorgangsdatum",
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Anzahl Flaschen",
@@ -281,17 +283,19 @@
 				"label": "Feststoffverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
 			},
-			"lossRelocation": "Umfüllung der Reststoffe?",
+			"harvestDeclarationNumber": "Erntemeldung (Belegnr.)",
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
-			"price": "Preis",
+			"price": "Einkaufspreis",
 			"purchaseNote": "Anmerkung / Lieferant",
 			"purpose": {
 				"label": "Verwendung",
 				"placeholder": " "
 			},
-			"referenceNumber": "Beleg-Nr. (z.B. Begleitpapiere)",
+			"referenceNumber": "Belegnr. (z.B. Begleitpapiere)",
+			"residueRelocation": "Umfüllung der Reststoffe?",
+			"residueVolume": "Reststoffe",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
@@ -316,7 +320,13 @@
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
-			"substance": "Stoff"
+			"substance": "Stoff",
+
+			"substanceAdd": "Stoffzugabe {substance}",
+			"enrichment": "Anreicherung mit {substance}",
+			"sweetening": "Süßung mit {substance}",
+			"acidification": "Säuerung mit {substance}",
+			"deacidification": "Entsäuerung mit {substance}"
 		},
 		"actions": {
 			"create": {
@@ -361,6 +371,11 @@
 				"main": "Abstich",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Verschnitt",
+				"sub": " "
+			},
+
 			"createPrivateConsumption": {
 				"main": "Eigenverbrauch",
 				"sub": "erfassen"
@@ -386,10 +401,6 @@
 				"main": "Beifüllung",
 				"sub": " "
 			},
-			"createBlending": {
-				"main": "Verschnitt",
-				"sub": " "
-			},
 
 			"createSubstanceAdd": {
 				"main": "Stoffzugabe",
@@ -412,7 +423,7 @@
 				"sub": " "
 			},
 			"createAlcoholization": {
-				"main": "Alkoholisierung",
+				"main": "Alkoholzusatz",
 				"sub": " "
 			},
 			"createWaterAddition": {
@@ -452,6 +463,7 @@
 			"decanting": "Abstich",
 			"staticSettling": "Entschleimung",
 			"filtration": "Filtrierung",
+			"blending": "Verschnitt",
 			"privateConsumption": "Eigenverbrauch",
 			"shrinkage": "Schwund",
 			"loss": "Verlust",
@@ -459,14 +471,13 @@
 			"dealcoholization": "Entalkoholisierung",
 
 			"wineAddition": "Beifüllung",
-			"blending": "Verschnitt",
 
 			"substanceAdd": "Stoffzugabe",
 			"enrichment": "Anreicherung",
 			"sweetening": "Süßung",
 			"acidification": "Säuerung",
 			"deacidification": "Entsäuerung",
-			"alcoholization": "Alkoholisierung",
+			"alcoholization": "Alkoholzusatz",
 			"waterAddition": "Wasser Hinzugabe",
 
 			"bottling": "Abfüllung",
@@ -482,9 +493,17 @@
 				"backToWineSelect": "Zurück zur Auswahl"
 			}
 		},
+		"dialogs": {
+			"delete": "Willst Du diesen Vorgang wirklich löschen?"
+		},
 		"toasts": {
 			"created": "Vorgang erstellt.",
-			"changed": "Vorgang bearbeitet."
+			"changed": "Vorgang bearbeitet.",
+			"deleted": "Vorgang gelöscht."
+		},
+		"hints": {
+			"accountClosure": "<strong>Achtung!</strong> Durch diese Aktion wird das Weinkonto dauerhaft geschlossen. Nachträglich sind keine Änderungen mehr möglich.",
+			"financialStatement": "Durch den Jahresabschluss werden alle bisherigen Vorgänge in diesem Weinkonto festgeschrieben. Nachträglich sind keine Änderungen mehr möglich. Bitte überprüfe noch einmal alle Vorgänge des Wirtschaftsjahres auf korrektheit bevor du fortfährst."
 		}
 	},
 	"cellarWine": {
@@ -508,10 +527,12 @@
 				"sub": "anlegen"
 			},
 			"export": {
-				"cellarBook": "Kellerbuch",
 				"barrelList": "Behälterliste",
+				"bottleLogs": "Flaschenbuch",
+				"cellarBook": "Kellerbuch",
 				"grapeMarcLogs": "Tresterbuch",
-				"substanceLogs": "Stoffliste"
+				"substanceLogs": "Stoffliste",
+				"wineBook": "Weinbuch"
 			}
 		},
 		"views": {
@@ -540,6 +561,7 @@
 	},
 	"barrel": {
 		"fields": {
+			"bookingStamp": "Aufstellungszeitpunkt",
 			"capacity": "Fassungsvermögen in Liter",
 			"chstamp": "Zuletzt geändert",
 			"clarifying": "Behälter zur Klärung?",
@@ -548,7 +570,7 @@
 			"location": "Aufstellort",
 			"manufacturer": "Hersteller",
 			"note": "Notizen",
-			"number": "Behälter-Nr.",
+			"number": "Behälternr.",
 			"type": "Typ/Material"
 		},
 		"actions": {
@@ -575,14 +597,15 @@
 				"currentState": "Aktueller Zustand",
 				"filters": {
 					"search": {
-						"placeholder": "Z.B.: Behälter-Nr., Aufstellort, Hersteller"
+						"placeholder": "Z.B.: Behälternr., Aufstellort, Hersteller"
 					},
 					"hideEmptyBarrels": "Leere Behälter ausblenden"
 				}
 			}
 		},
 		"dialogs": {
-			"delete": "Willst Du den Behälter wirklich löschen?"
+			"delete": "Willst Du den Behälter wirklich löschen?",
+			"invalid": "Unstimmige Behälterinformationen. Bitte überprüfe Deine Vorgänge auf den nachfolgenden Weinkonten: {wines}"
 		},
 		"toasts": {
 			"created": "Behälter erstellt.",
@@ -593,13 +616,14 @@
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "Aktueller Wert",
-			"targetValue": "Zielwert"
+			"currentValue": "Von",
+			"targetValue": "Auf",
+			"range": "Von {from} {unit} um {by} {unit} auf {to} {unit}"
 		},
 		"types": {
 			"temperature": "Temperatur",
 			"acidity": "Säuregehalt",
-			"residualSugar": "Restsüße",
+			"sugarContent": "Zuckergehalt",
 			"alcohol": "Alkoholgehalt",
 			"density": "Dichte"
 		}
@@ -911,7 +935,10 @@
 			"acidity": "Säuregehalt",
 			"alcohol": "Alkohol",
 			"apNumber": "A.P.Nr./Losnr.",
-			"bookingStamp": "Buchungstag",
+			"bookingStamp": {
+				"label": "Vorgangsdatum",
+				"placeholder": "dd.MM.YYYY"
+			},
 			"client": "Kunde",
 			"note": "Anmerkung, Lieferant, ...",
 			"orderNumber": "Bestellnr.",
@@ -947,12 +974,15 @@
 		},
 		"purposes": {
 			"bottling": "Abfüllung",
+			"breakage": "Bruch",
 			"correction": "Korrektur",
 			"creditAdvice": "Gutschrift",
 			"invoice": "Rechnung",
+			"privateConsumption": "Eigenverbrauch",
 			"promotion": "Werbung",
 			"purchase": "Anlieferung/Zukauf",
 			"retour": "Retoure",
+			"sample": "Probe",
 			"sponsoring": "Sponsoring"
 		}
 	},
