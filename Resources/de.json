@@ -1504,7 +1504,19 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "Dateien",
-			"stockRotation": "Lagerbewegungen"
+			"stockRotation": "Lagerbewegungen",
+			"marketing": "Vermarktung"
+		},
+		"dialogs": {
+			"connectAutomation": "Willst Du den Wein automatisiert in das Sortiment des Handelspartners übertragen?",
+			"deleteConnection": "Willst Du diese Verbindung zum Handelspartner wirklich löschen?"
+		},
+		"toasts": {
+			"automationConnected": "Der Wein wurde übertragen und wird künftig synchronisiert",
+			"connectionUpdated": "Verbindungsdaten wurden angepasst",
+			"connectionUpdatedError": "Verbindungsdaten konntent nicht angepasst werden",
+			"connectionDeleted": "Verbindung wurden gelöscht",
+			"connectionDeletedError": "Verbindung konnte nicht gelöscht werden"
 		},
 		"messages": {
 			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest Du die Änderungen speichern?",
