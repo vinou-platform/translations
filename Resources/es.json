@@ -237,6 +237,25 @@
 				"main": "conexión nueva",
 				"sub": "crear"
 			}
+		},
+		"views": {
+			"gallery": {
+				"referer": "Dominio/IP",
+				"token": "Interfaz (Token)",
+				"mode": {
+					"label": "Modo",
+					"dev": "Desarrollo",
+					"live": "Live"
+				}
+			}
+		},
+		"groups": {
+			"manual": "Conexiones manuales",
+			"automatic": "Conexiones automáticas"
+		},
+		"toasts": {
+			"changed": "Conexión cambiada!",
+			"deleted": "Conexión eliminada!"
 		}
 	},
 	"yes": "Sí",
@@ -1485,7 +1504,19 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "datos",
-			"stockRotation": "movimientos de almacén"
+			"stockRotation": "movimientos de almacén",
+			"marketing": "márketing"
+		},
+		"dialogs": {
+			"connectAutomation": "Desea transferir automáticamente el vino a la gama de su socio minorista?",
+			"deleteConnection": "Realmente desea eliminar esta conexión con el socio comercial?"
+		},
+		"toasts": {
+			"automationConnected": "El vino se ha transmitido y se sincronizará en el futuro",
+			"connectionUpdated": "Se han ajustado los datos de conexión",
+			"connectionUpdatedError": "No se pudieron ajustar los datos de conexión",
+			"connectionDeleted": "Se eliminó la conexión",
+			"connectionDeletedError": "No se pudo eliminar la conexión"
 		},
 		"messages": {
 			"formdirty": "El vino actual ha sido editado.Quieres grabar esos cambios?",
@@ -2703,6 +2734,53 @@
 			"deleted": "Etiqueta eliminada!"
 		}
 	},
+	"automation": {
+		"actions": {
+			"create": {
+				"modaltitle": "Crear automatización",
+				"main": "Crear nueva",
+				"sub": "automatización"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "Aún no hay automatizaciones",
+				"image": "Marca",
+				"content": "Descripción del contenido"
+			}
+		},
+		"fields": {
+			"name": "Nombre",
+			"description": "Descripción",
+			"startdate": "Fecha de inicio",
+			"enddate": "Fecha de finalización",
+			"active": {
+				"label": "Estado de automatización",
+				"checklabel": "activo"
+			},
+			"itemTypes": "Grupos de artículos permitidos para esta automatización"
+		},
+		"toasts": {
+			"created": "Automatización creada!",
+			"changed": "Automatización cambiada!",
+			"deleted": "Automatización eliminada!",
+			"imageUploaded": "Imagen cargada!",
+			"imageDeleted": "Imagen eliminada",
+			"copied": "Automatización duplicada",
+			"activate": "Conexión activada",
+			"activateerror": "No se pudo activar la conexión",
+			"deactivate": "Conexión desactivada",
+			"deactivateerror": "No se pudo desactivar la conexión"
+		},
+		"dialogs": {
+			"delete": "Realmente desea eliminar esta automatización?",
+			"activate": "De verdad quieres activar esta conexión?",
+			"deactivate": "Realmente desea desactivar esta conexión?"
+		},
+		"hints": {
+			"imagesize": "<b>Recomendación para una visualización óptima</b><br>Dimensiones: 1000x1000px<br/>Formato de archivo: .png (recortado)"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "ajustes de cuenta",
@@ -2771,6 +2849,10 @@
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
+		},
+		"automations": {
+			"title": "Automatizaciones",
+			"description": "Con la ayuda de la automatización, puede permitir que otros miembros de Vinou hagan ciertas cosas de forma totalmente automática con usted, por ejemplo, activar vinos de bodegas en su sitio web."
 		},
 		"messages": {
 			"hints": {
