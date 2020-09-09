@@ -10,6 +10,7 @@ The following README documents the current status quo of translation definition 
 - [2. Coding Guidelines](#2-coding-guidelines)
 - [3. Standard object keys](#3-standard-object-keys)
 - [4. Object example](#4-object-example)
+- [5. Twig extension](#5-twig-extension)
 - [Provider](#provider)
 
 ## 1. Contribution
@@ -144,6 +145,25 @@ If you want to contribute, feel free to join and create pull request. We want to
     "title": "Dateien und Dokumente zu diesem Weinpaket"
   }
 }
+```
+
+## 5. Twig Extension
+
+This library also contains a Twig extension. To implement this extension you can use this code.
+```php
+  $languageKey = 'de';
+  $twig = new \Twig_Environment();
+  $twig->addExtension(new \Vinou\Translations\TwigExtension($languageKey));
+```
+
+Afterwards you can use the translate filter in your template like this:
+```twig
+  <p id="wine">
+    <a class="action-button">
+      <span class="main">{{ 'wine.actions.create.main' | translate }}</span>
+      <span class="sub">{{ 'wine.actions.create.sub' | translate }}</span>
+    </a>
+  </p>
 ```
 
 ## Provider
