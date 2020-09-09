@@ -4,6 +4,14 @@
 
 The following README documents the current status quo of translation definition rules. Regarding the huge amount of language keys and other webprojects that are depending on older coding guidelines the translation files looks sometimes really confusing.
 
+### Table of contents
+
+- [1. Contribution](#1-contribution)
+- [2. Coding Guidelines](#2-coding-guidelines)
+- [3. Standard object keys](#3-standard-object-keys)
+- [4. Object example](#4-object-example)
+- [Provider](#provider)
+
 ## 1. Contribution
 
 If you want to contribute, feel free to join and create pull request. We want to be sure that most of depending web projects could easily be updated, therefore it could take some time that your work is added. Feel free to contact us via PN, mail to kontakt@vinou.de or phone call to +49 61316245390.
