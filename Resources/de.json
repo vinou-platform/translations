@@ -2657,14 +2657,6 @@
 				"placeholder": "z.B. Name, Beschreibung"
 			}
 		},
-		"views": {
-			"gallery": {
-				"name": "Bezeichnung",
-				"hash": "Rabatt-Code",
-				"startdate": "Startet am",
-				"enddate": "Endet am"
-			}
-		},
 		"fieldSets": {
 			"general": "Allgemeines",
 			"rebate": "Kampagnen-Rabatt"
@@ -2674,17 +2666,17 @@
 				"label": "Kampagnen-Status",
 				"checklabel": "Aktiviert"
 			},
-			"name": "Name",
 			"description": "Beschreibung",
-			"startdate": "Startet am",
 			"enddate": "Endet am",
 			"hash": "Rabatt-Code",
-			"rebateType": "Rabattart",
+			"itemTypes": "Gültig für folgende Artikelgruppen",
+			"name": "Bezeichnung",
 			"rebates": {
 				"percent": "Prozentualer Rabatt",
 				"absolute": "Pauschal-Rabatt in EUR (Brutto)"
 			},
-			"itemTypes": "Gültig für folgende Artikelgruppen"
+			"rebateType": "Rabattart",
+			"startdate": "Startet am"
 		},
 		"filters": {
 			"itemTypes": {

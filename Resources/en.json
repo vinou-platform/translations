@@ -2657,14 +2657,6 @@
 				"placeholder": "e.g. name, description"
 			}
 		},
-		"views": {
-			"gallery": {
-				"name": "Name",
-				"hash": "Discount code",
-				"startdate": "Start date",
-				"enddate": "End date"
-			}
-		},
 		"fieldSets": {
 			"general": "General",
 			"rebate": "Campaign rebate"
@@ -2674,17 +2666,17 @@
 				"label": "Campaign status",
 				"checklabel": "activated"
 			},
-			"name": "Name",
 			"description": "Description",
-			"startdate": "Start date",
 			"enddate": "End date",
 			"hash": "Discount code",
-			"rebateType": "Discount type",
+			"itemTypes": "Valid for the following article groups",
+			"name": "Name",
 			"rebates": {
 				"percent": "Percentage discount",
 				"absolute": "Flat-rate discount in EUR (gross)"
 			},
-			"itemTypes": "Valid for the following article groups"
+			"rebateType": "Discount type",
+			"startdate": "Start date"
 		},
 		"filters": {
 			"itemTypes": {

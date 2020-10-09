@@ -2657,14 +2657,6 @@
 				"placeholder": "p.ej. nombre, descripción"
 			}
 		},
-		"views": {
-			"gallery": {
-				"name": "Nombre",
-				"hash": "Código de descuento",
-				"startdate": "Fecha de inicio",
-				"enddate": "Fecha final"
-			}
-		},
 		"fieldSets": {
 			"general": "General",
 			"rebate": "Descuento de campaña"
@@ -2674,17 +2666,17 @@
 				"label": "Estado de la campaña",
 				"checklabel": "activado"
 			},
-			"name": "Nombre",
 			"description": "Descripción",
-			"startdate": "Fecha de inicio",
 			"enddate": "Fecha final",
 			"hash": "Código de descuento",
-			"rebateType": "Tipo de descuento",
+			"itemTypes": "Válido para los siguientes grupos de artículos",
+			"name": "Nombre",
 			"rebates": {
 				"percent": "Porcentaje de descuento",
 				"absolute": "Descuento a tanto alzado en EUR (bruto)"
 			},
-			"itemTypes": "Válido para los siguientes grupos de artículos"
+			"rebateType": "Tipo de descuento",
+			"startdate": "Fecha de inicio"
 		},
 		"filters": {
 			"itemTypes": {
