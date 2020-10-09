@@ -2666,6 +2666,7 @@
 				"label": "Kampagnen-Status",
 				"checklabel": "Aktiviert"
 			},
+			"combinable": "Kampagne ist mit anderen kombinierbar?",
 			"description": "Beschreibung",
 			"enddate": "Endet am",
 			"hash": "Rabatt-Code",
