@@ -612,6 +612,10 @@
 			"changed": "Recipient édité.",
 			"duplicated": "Recipient dupliqué.",
 			"deleted": "Recipient supprimé."
+		},
+		"hints": {
+			"overFilling": "Niveau de remplissage dépasse la capacité maximale de {capacity} l.",
+			"underFilling": "Niveau de remplissage négatif."
 		}
 	},
 	"measurement": {

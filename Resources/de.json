@@ -612,6 +612,10 @@
 			"changed": "Behälter bearbeitet.",
 			"duplicated": "Behälter dupliziert.",
 			"deleted": "Behälter gelöscht."
+		},
+		"hints": {
+			"overFilling": "Füllstand übersteigt maximale Kapazität von {capacity} l.",
+			"underFilling": "Negativer Füllstand."
 		}
 	},
 	"measurement": {

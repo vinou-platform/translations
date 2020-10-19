@@ -612,6 +612,10 @@
 			"changed": "depósito ha sido creado.",
 			"duplicated": "depósito ha sido duplicado.",
 			"deleted": "depósito ha sido borrado."
+		},
+		"hints": {
+			"overFilling": "Nivel de llenado excede la capacidad máxima de {capacity} l.",
+			"underFilling": "Nivel de llenado negativo."
 		}
 	},
 	"measurement": {

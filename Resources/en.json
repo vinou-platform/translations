@@ -612,6 +612,10 @@
 			"changed": "Barrel changed.",
 			"duplicated": "Barrel duplicated.",
 			"deleted": "Barrel deleted."
+		},
+		"hints": {
+			"overFilling": "Filling level exceeds maximum capacity of {capacity} l.",
+			"underFilling": "Negative fill level."
 		}
 	},
 	"measurement": {
