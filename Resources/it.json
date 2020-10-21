@@ -612,6 +612,10 @@
 			"changed": "Recipiente è stato modificato",
 			"duplicated": "Recipiente è stato duplicato",
 			"deleted": "Recipiente è stato cancellato"
+		},
+		"hints": {
+			"overFilling": "Livello di riempimento supera la capacità massima di {capacity} l.",
+			"underFilling": "Livello di riempimento negativo."
 		}
 	},
 	"measurement": {
