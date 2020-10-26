@@ -2742,18 +2742,12 @@
 				"sub": "automazione"
 			}
 		},
-		"views": {
-			"gallery": {
-				"empty": "Non ci sono ancora automazioni",
-				"image": "Brand",
-				"content": "Descrizione"
-			}
-		},
 		"fields": {
 			"name": "Nome",
 			"description": "Descrizione",
-			"startdate": "Data inizio",
-			"enddate": "End date",
+			"image": "Brand",
+			"startDate": "Data inizio",
+			"endDate": "End date",
 			"active": {
 				"label": "Stato automazione",
 				"checklabel": "attivo"
@@ -2778,6 +2772,7 @@
 			"deactivate": "Vuoi davvero disattivare questa connessione?"
 		},
 		"hints": {
+			"empty": "Non ci sono ancora automazioni",
 			"imagesize": "<b>Consiglio per una visualizzazione ottimale</b><br>Dimensioni: 1000x1000px <br/>Formato file: .png (ritagliato)"
 		}
 	},

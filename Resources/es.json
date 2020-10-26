@@ -2742,18 +2742,12 @@
 				"sub": "automatización"
 			}
 		},
-		"views": {
-			"gallery": {
-				"empty": "Aún no hay automatizaciones",
-				"image": "Marca",
-				"content": "Descripción del contenido"
-			}
-		},
 		"fields": {
 			"name": "Nombre",
 			"description": "Descripción",
-			"startdate": "Fecha de inicio",
-			"enddate": "Fecha de finalización",
+			"image": "Marca",
+			"startDate": "Fecha de inicio",
+			"endDate": "Fecha de finalización",
 			"active": {
 				"label": "Estado de automatización",
 				"checklabel": "activo"
@@ -2778,6 +2772,7 @@
 			"deactivate": "Realmente desea desactivar esta conexión?"
 		},
 		"hints": {
+			"empty": "Aún no hay automatizaciones",
 			"imagesize": "<b>Recomendación para una visualización óptima</b><br>Dimensiones: 1000x1000px<br/>Formato de archivo: .png (recortado)"
 		}
 	},
