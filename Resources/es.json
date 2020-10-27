@@ -1974,6 +1974,7 @@
 		"fields": {
 			"processing_data": "datos están utilizados...",
 			"brutto_sum": "suma total bruto",
+			"campaign": "Campaña",
 			"cashback": "descuento (en %)",
 			"cashbacksum": "Para esa orden se permite und descuento {cashback}% ({cashbackPeriod} dias). suma: {grossCashback}.",
 			"cashback_period": "período de descuento (en dias)",
@@ -2059,12 +2060,6 @@
 			"order_to_dispatch": {
 				"main": "orden",
 				"sub": "poner en el envío"
-			},
-			"campaign": {
-				"label": "Campaña",
-				"hash": "Vale",
-				"startdate": "Válida desde",
-				"enddate": "hasta"
 			}
 		},
 		"dialogs": {
@@ -2661,8 +2656,7 @@
 				"placeholder": "p.ej. nombre, descripción"
 			}
 		},
-		"fieldSets": {
-			"general": "General",
+		"fieldsets": {
 			"rebate": "Descuento de campaña"
 		},
 		"fields": {
@@ -2671,17 +2665,25 @@
 				"checklabel": "activado"
 			},
 			"combinable": "¿La campaña puede combinarse con otras?",
+			"dateRange": "Periodo de campaña",
 			"description": "Descripción",
-			"enddate": "Fecha final",
+			"endDate": "Fecha final",
+			"gross": "Descuento a tanto alzado en EUR (bruto)",
 			"hash": "Código de descuento",
 			"itemTypes": "Válido para los siguientes grupos de artículos",
 			"name": "Nombre",
-			"rebates": {
-				"percent": "Porcentaje de descuento",
-				"absolute": "Descuento a tanto alzado en EUR (bruto)"
-			},
+			"percent": "Porcentaje de descuento",
 			"rebateType": "Tipo de descuento",
-			"startdate": "Fecha de inicio"
+			"startDate": "Fecha de inicio",
+			"usage": "Uso",
+			"usageClientLimit": {
+				"label": "Límite de uso por cliente",
+				"placeholder": "Uso ilimitado"
+			},
+			"usageLimit": {
+				"label": "Límite de uso por campaña",
+				"placeholder": "Uso ilimitado"
+			}
 		},
 		"filters": {
 			"itemTypes": {

@@ -1974,6 +1974,7 @@
 		"fields": {
 			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Gesamtsumme Brutto",
+			"campaign": "Kampagne",
 			"cashback": "Skonto (in %)",
 			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto ({cashbackPeriod} Tage) gewährt. Zahlbetrag: {grossCashback}.",
 			"cashback_period": "Skonto-Zeitraum (in Tagen)",
@@ -2059,12 +2060,6 @@
 			"order_to_dispatch": {
 				"main": "Bestellung",
 				"sub": "in den Versand geben"
-			},
-			"campaign": {
-				"label": "Kampagne",
-				"hash": "Rabatt-Code",
-				"startdate": "Gültig von",
-				"enddate": "bis"
 			}
 		},
 		"dialogs": {
@@ -2661,8 +2656,7 @@
 				"placeholder": "z.B. Name, Beschreibung"
 			}
 		},
-		"fieldSets": {
-			"general": "Allgemeines",
+		"fieldsets": {
 			"rebate": "Kampagnen-Rabatt"
 		},
 		"fields": {
@@ -2671,17 +2665,25 @@
 				"checklabel": "Aktiviert"
 			},
 			"combinable": "Kampagne ist mit anderen kombinierbar?",
+			"dateRange": "Kampagnenzeitraum",
 			"description": "Beschreibung",
-			"enddate": "Endet am",
+			"endDate": "Endet am",
+			"gross": "Pauschal-Rabatt in EUR (Brutto)",
 			"hash": "Rabatt-Code",
 			"itemTypes": "Gültig für folgende Artikelgruppen",
 			"name": "Bezeichnung",
-			"rebates": {
-				"percent": "Prozentualer Rabatt",
-				"absolute": "Pauschal-Rabatt in EUR (Brutto)"
-			},
+			"percent": "Prozentualer Rabatt",
 			"rebateType": "Rabattart",
-			"startdate": "Startet am"
+			"startDate": "Startet am",
+			"usage": "Verwendung",
+			"usageClientLimit": {
+				"label": "Nutzungslimit pro Kunde",
+				"placeholder": "Unbegrenzte Nutzung"
+			},
+			"usageLimit": {
+				"label": "Nutzungslimit pro Kampagne",
+				"placeholder": "Unbegrenzte Nutzung"
+			}
 		},
 		"filters": {
 			"itemTypes": {

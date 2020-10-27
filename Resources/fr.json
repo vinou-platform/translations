@@ -1974,6 +1974,7 @@
 		"fields": {
 			"processing_data": "Les données sont traitées ...",
 			"brutto_sum": "Total brut",
+			"campaign": "Campagne",
 			"cashback": "Remise (en%)",
 			"cashbacksum": "Une remise de {cashback}% ({cashbackPeriod} jours) est accordée sur cet ordre. Montant du paiement: {grossCashback}.",
 			"cashback_period": "Période de rémise (en jours)",
@@ -2059,12 +2060,6 @@
 			"order_to_dispatch": {
 				"main": "Donner l'ordre",
 				"sub": "à l'expédition"
-			},
-			"campaign": {
-				"label": "Campagne",
-				"hash": "Bon",
-				"startdate": "Valide à partir de",
-				"enddate": "Jusqu'à"
 			}
 		},
 		"dialogs": {
@@ -2661,8 +2656,7 @@
 				"placeholder": "par exemple. nom, description"
 			}
 		},
-		"fieldSets": {
-			"general": "Général",
+		"fieldsets": {
 			"rebate": "Remise de campagne"
 		},
 		"fields": {
@@ -2671,17 +2665,25 @@
 				"checklabel": "activé"
 			},
 			"combinable": "La campagne peut être combinée avec d'autres?",
+			"dateRange": "Période de campagne",
 			"description": "La description",
-			"enddate": "Date de fin",
+			"endDate": "Date de fin",
+			"gross": "Remise forfaitaire en EUR (brut)",
 			"hash": "Code de réduction",
 			"itemTypes": "Valable pour les groupes d'articles suivants",
 			"name": "Nom",
-			"rebates": {
-				"percent": "Remise en pourcentage",
-				"absolute": "Remise forfaitaire en EUR (brut)"
-			},
+			"percent": "Remise en pourcentage",
 			"rebateType": "Type de remise",
-			"startdate": "Date de début"
+			"startDate": "Date de début",
+			"usage": "L'utilisation",
+			"usageClientLimit": {
+				"label": "Limite d'utilisation par client",
+				"placeholder": "Utilisation illimitée"
+			},
+			"usageLimit": {
+				"label": "Limite d'utilisation par campagne",
+				"placeholder": "Utilisation illimitée"
+			}
 		},
 		"filters": {
 			"itemTypes": {

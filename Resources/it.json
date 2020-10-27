@@ -1974,6 +1974,7 @@
 		"fields": {
 			"processing_data": "I dati vengono elaborati ...",
 			"brutto_sum": "Totale lordo",
+			"campaign": "Campagna",
 			"cashback": "Sconto (in %)",
 			"cashbacksum": "Uno sconto dell {cashback}% Skonto ({cashbackPeriod} giorni) è concesso su questo ordine. Importo del pagamento: {grossCashback}.",
 			"cashback_period": "Periodo di remissione (tra giorni)",
@@ -2059,12 +2060,6 @@
 			"order_to_dispatch": {
 				"main": "Ordine",
 				"sub": "dare nella spedizione"
-			},
-			"campaign": {
-				"label": "Campagna",
-				"hash": "Tagliando",
-				"startdate": "Valido dal",
-				"enddate": "Fino a"
 			}
 		},
 		"dialogs": {
@@ -2661,8 +2656,7 @@
 				"placeholder": "per esempio. nome, descrizione"
 			}
 		},
-		"fieldSets": {
-			"general": "Generale",
+		"fieldsets": {
 			"rebate": "Sconto campagna"
 		},
 		"fields": {
@@ -2671,17 +2665,25 @@
 				"checklabel": "attivato"
 			},
 			"combinable": "La campagna può essere combinata con altre?",
+			"dateRange": "Periodo della campagna",
 			"description": "Descrizione",
-			"enddate": "Data di fine",
+			"endDate": "Data di fine",
+			"gross": "Sconto forfettario in EUR (lordo)",
 			"hash": "Codice di sconto",
 			"itemTypes": "Valido per i seguenti gruppi di articoli",
 			"name": "Nome",
-			"rebates": {
-				"percent": "Sconto percentuale",
-				"absolute": "Sconto forfettario in EUR (lordo)"
-			},
+			"percent": "Sconto percentuale",
 			"rebateType": "Tipo di sconto",
-			"startdate": "Data d'inizio"
+			"startDate": "Data d'inizio",
+			"usage": "Utilizzo",
+			"usageClientLimit": {
+				"label": "Limite di utilizzo per cliente",
+				"placeholder": "Utilizzo illimitato"
+			},
+			"usageLimit": {
+				"label": "Limite di utilizzo per campagna",
+				"placeholder": "Utilizzo illimitato"
+			}
 		},
 		"filters": {
 			"itemTypes": {

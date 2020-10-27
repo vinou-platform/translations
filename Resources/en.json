@@ -1974,6 +1974,7 @@
 		"fields": {
 			"processing_data": "Processing data ...",
 			"brutto_sum": "Brutto summary",
+			"campaign": "Campaign",
 			"cashback": "Cashback (in %)",
 			"cashbacksum": "For this order you receive {cashback}% cash discount. The cashback is valid within the next {cashbackPeriod} days. Payment amount: {grossCashback}.",
 			"cashback_period": "Cashback period (days)",
@@ -2059,12 +2060,6 @@
 			"order_to_dispatch": {
 				"main": "Dispatch",
 				"sub": "Order"
-			},
-			"campaign": {
-				"label": "Campaign",
-				"hash": "Voucher",
-				"startdate": "Valid from",
-				"enddate": "up to"
 			}
 		},
 		"dialogs": {
@@ -2661,8 +2656,7 @@
 				"placeholder": "e.g. name, description"
 			}
 		},
-		"fieldSets": {
-			"general": "General",
+		"fieldsets": {
 			"rebate": "Campaign rebate"
 		},
 		"fields": {
@@ -2671,17 +2665,25 @@
 				"checklabel": "activated"
 			},
 			"combinable": "Campaign may be combined with others?",
+			"dateRange": "Campaign period",
 			"description": "Description",
-			"enddate": "End date",
+			"endDate": "End date",
+			"gross": "Flat-rate discount in EUR (gross)",
 			"hash": "Discount code",
 			"itemTypes": "Valid for the following article groups",
 			"name": "Name",
-			"rebates": {
-				"percent": "Percentage discount",
-				"absolute": "Flat-rate discount in EUR (gross)"
-			},
+			"percent": "Percentage discount",
 			"rebateType": "Discount type",
-			"startdate": "Start date"
+			"startDate": "Start date",
+			"usage": "Usage",
+			"usageClientLimit": {
+				"label": "Usage limit per customer",
+				"placeholder": "Unlimited usage"
+			},
+			"usageLimit": {
+				"label": "Usage limit per campaign",
+				"placeholder": "Unlimited usage"
+			}
 		},
 		"filters": {
 			"itemTypes": {
