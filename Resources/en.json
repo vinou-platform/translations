@@ -2031,7 +2031,7 @@
 			"servicePeriod": {
 				"label": "Service period",
 				"placeholder": "MM/dd/YYYY",
-				"default": "Service day corresponds to delivery day"
+				"default": "Service day corresponds to invoice day"
 			},
 			"shipping_different_location": "Different delivery location",
 			"state": "State",

@@ -2031,7 +2031,7 @@
 			"servicePeriod": {
 				"label": "Leistungszeitraum",
 				"placeholder": "dd.MM.YYYY",
-				"default": "Leistungsdatum entspricht Lieferdatum"
+				"default": "Leistungsdatum entspricht Rechnungsdatum"
 			},
 			"shipping_different_location": "Abweichende Lieferadresse",
 			"state": "Status",

@@ -2031,7 +2031,7 @@
 			"servicePeriod": {
 				"label": "Periodo di servizio",
 				"placeholder": "dd.MM.YYYY",
-				"default": "Il giorno di servizio corrisponde al giorno di consegna"
+				"default": "Il giorno del servizio corrisponde al giorno della fattura"
 			},
 			"shipping_different_location": "Indirizzo di consegna diverso",
 			"state": "Stato",
