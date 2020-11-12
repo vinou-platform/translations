@@ -1721,6 +1721,13 @@
 				"type": "Filtra il tipo di cliente"
 			}
 		},
+		"statistics": {
+			"favourites": "Prodotti preferiti",
+			"sales": "Statistiche di vendita",
+			"month": "Ultimi 30 giorni",
+			"quarter": "Ultimi 3 mesi",
+			"year": "L'anno scorso"
+		},
 		"fieldSets": {
 			"general": "Generale",
 			"contactperson": "Persona di contatto",
@@ -1781,6 +1788,7 @@
 			"support": "Support"
 		},
 		"tabs": {
+			"history": "Storia",
 			"addresses": "Indirizzi",
 			"contacts": "Persona di contatto",
 			"general": "Generale",
