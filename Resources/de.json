@@ -1721,6 +1721,13 @@
 				"type": "Kundentyp filtern"
 			}
 		},
+		"statistics": {
+			"favourites": "Meist gekaufte Produkte",
+			"sales": "Umsatzstatistik",
+			"month": "Die letzten 30 Tage",
+			"quarter": "Das letzte Quartal",
+			"year": "Die letzten 12 Monate"
+		},
 		"fieldSets": {
 			"general": "Allgemeines",
 			"contactperson": "Ansprechpartner",
@@ -1781,6 +1788,7 @@
 			"support": "Support"
 		},
 		"tabs": {
+			"history": "Historie",
 			"addresses": "Adressen",
 			"contacts": "Kontaktpersonen",
 			"general": "Allgemein",
