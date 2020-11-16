@@ -1038,7 +1038,7 @@
 		"page": {
 			"register": {
 				"title": "Probeaccount registrieren",
-				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Commerce entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Publishing Mitgliedschaft nutzen. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
+				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Complete entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Promo Mitgliedschaft nutzen. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
 				"submit": "Account erstellen",
 				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail, um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
@@ -1072,10 +1072,10 @@
 			},
 			"upgrade": {
 				"title": "Mitgliedschaft upgraden",
-				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst Du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
+				"description": "Mit der Vinou-Complete Mitgliedschaft kannst Du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
 				"teaser": {
-					"publish": "<b>Du nutzt zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce",
-					"trial": "<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce"
+					"publish": "<b>Du nutzt zur Zeit Vinou-Promo.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Complete",
+					"trial": "<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Complete"
 				},
 				"linktext": "Jetzt upgraden!",
 				"bank": "Bankdaten für SEPA-Lastschrift"
@@ -1150,10 +1150,11 @@
 			}
 		},
 		"pricingTypes": {
-			"acquisition": "in Akquise",
+			"acquisition": "In Akquise",
 			"trial": "Testzeitraum",
-			"publish": "Publishing",
-			"regular": "Commerce",
+			"publish": "Vinou-Promo",
+			"regular": "Vinou-Complete",
+			"cellar": "Vinou-Cellar",
 			"invitation": "Eingeladen"
 		},
 		"views": {
@@ -1170,8 +1171,8 @@
 				"smallBusiness": "Möchtest Du die Kleinunternehmereinstellung wirklich ändern?<br/>Alle Preise Deiner Weine, Produkte, Versandoptionen, etc. werden hierdurch angepasst und müssen überprüft werden."
 			},
 			"toasts": {
-				"upgrade": "Vinou-Commerce wurde aktiviert!",
-				"upgrade_error": "Ein Fehler ist aufgetreten, Vinou-Commerce konnte nicht aktiviert werden!",
+				"upgrade": "Vinou-Complete wurde aktiviert!",
+				"upgrade_error": "Ein Fehler ist aufgetreten, Vinou-Complete konnte nicht aktiviert werden!",
 				"activation_error": "Ein Fehler ist aufgetreten, Deine Mitgliedschaft konnte nicht aktiviert werden!",
 				"activation_success": "Willkommen bei Vinou!"
 			}

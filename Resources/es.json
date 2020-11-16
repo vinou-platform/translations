@@ -1038,7 +1038,7 @@
 		"page": {
 			"register": {
 				"title": "registar cuenta a prueba",
-				"description": "<p>Con tu Vinou<sup>®</sup> <b>cuenta a prueba puedes usar todas funciones de Vinou gratuito por 30 dias</b>. Después del mes puedes comprar la membresía Vinou-Commerce sujetada a gastos. Igual que vas a hacer. Puedes usar Vinou aun después de los 30 dias con la membresía gratuita de Vinou-Publishing. In ambos casos vas a estar informado por correo electrónico y puedes decidir a continuación.</p>",
+				"description": "<p>Con tu Vinou<sup>®</sup> <b>cuenta a prueba puedes usar todas funciones de Vinou gratuito por 30 dias</b>. Después del mes puedes comprar la membresía Vinou-Complete sujetada a gastos. Igual que vas a hacer. Puedes usar Vinou aun después de los 30 dias con la membresía gratuita de Vinou-Promo. In ambos casos vas a estar informado por correo electrónico y puedes decidir a continuación.</p>",
 				"submit": "crear cuenta",
 				"send": "Felicidades, tu cuenta ha sido creada. En los próximos minutos vas a recibir un correo electrónico para poner tu contraseña y para activar tu membresía",
 				"company": "datos de empresa",
@@ -1072,10 +1072,10 @@
 			},
 			"upgrade": {
 				"title": "actualizar membresía",
-				"description": "Con la membresía de Vinou-Commerce puedes usar todo el tiempo todas la funciones de Vinou por 40 euros al mes más el impuesto valor añadido. Cada orden cúal fue mediada a por nosotros tiene una comisión única de un euro. El cálculo se realiza al principio del mes. La comisión se cobra al primero del mes siguiente.",
+				"description": "Con la membresía de Vinou-Complete puedes usar todo el tiempo todas la funciones de Vinou por 40 euros al mes más el impuesto valor añadido. Cada orden cúal fue mediada a por nosotros tiene una comisión única de un euro. El cálculo se realiza al principio del mes. La comisión se cobra al primero del mes siguiente.",
 				"teaser": {
-					"publish": "<b>Estás usando Vinou-Publishing en ese momento.</b> Para que puedas usar todas las funciones de Vinou tienes que elevar tu membresía a Vinou-Commerce",
-					"trial": "<b>En ese momento estás usando Vinou gratis por un mes.</b> Para que puedas seguir usando Vinou con todas las funciones tienes que elevar tu membresía a Vinou-Commerce"
+					"publish": "<b>Estás usando Vinou-Promo en ese momento.</b> Para que puedas usar todas las funciones de Vinou tienes que elevar tu membresía a Vinou-Complete",
+					"trial": "<b>En ese momento estás usando Vinou gratis por un mes.</b> Para que puedas seguir usando Vinou con todas las funciones tienes que elevar tu membresía a Vinou-Complete"
 				},
 				"linktext": "Elevar ahora!",
 				"bank": "datos bancarios para cargo de SEPA"
@@ -1150,11 +1150,12 @@
 			}
 		},
 		"pricingTypes": {
-			"acquisition": "en adquisición",
-			"trial": "período de prueba",
-			"publish": "Publishing",
-			"regular": "Commerce",
-			"invitation": "invitado"
+			"acquisition": "En adquisición",
+			"trial": "Período de prueba",
+			"publish": "Vinou-Promo",
+			"regular": "Vinou-Complete",
+			"cellar": "Vinou-Cellar",
+			"invitation": "Invitado"
 		},
 		"views": {
 			"covid19Notification": {
@@ -1170,8 +1171,8 @@
 				"smallBusiness": "Realmente quieres cambiar la configuración de la pequeña empresa?<br/>Todos los precios de sus vinos, productos y opciones de envío se ajustarán y deberán verificarse."
 			},
 			"toasts": {
-				"upgrade": "Vinou-Commerce ha sido activado!",
-				"upgrade_error": "Ha ocurrido un error, Vinou-Commerce no ha podido ser activado!",
+				"upgrade": "Vinou-Complete ha sido activado!",
+				"upgrade_error": "Ha ocurrido un error, Vinou-Complete no ha podido ser activado!",
 				"activation_error": "Ha occurido un error, tu membresía no ha podido ser activado!",
 				"activation_success": "Bienvenido a Vinou!"
 			}

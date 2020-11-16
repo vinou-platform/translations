@@ -1072,10 +1072,10 @@
 			},
 			"upgrade": {
 				"title": "Upgrade Membership",
-				"description": "Being a Vinou-Commerce member you can use all features by paying a monthly fee of 40 EUR excluding VAT. Each negotiated order generates a promotion fee of 1 EUR excluding VAT. The monthly fee will be invoiced every month in advance. The promotion fee will be invoiced at 1st of following month",
+				"description": "Being a Vinou-Complete member you can use all features by paying a monthly fee of 40 EUR excluding VAT. Each negotiated order generates a promotion fee of 1 EUR excluding VAT. The monthly fee will be invoiced every month in advance. The promotion fee will be invoiced at 1st of following month",
 				"teaser": {
-					"publish": "<b>You are using Vinou-Publishing.</b> To activate the full featured Version please upgrade to Vinou-Commerce.",
-					"trial": "<b>You are using Vinou within the trial phase.</b> To continously using all features please upgrade to Vinou-Commerce."
+					"publish": "<b>You are using Vinou-Promo.</b> To activate the full featured Version please upgrade to Vinou-Complete.",
+					"trial": "<b>You are using Vinou within the trial phase.</b> To continously using all features please upgrade to Vinou-Complete."
 				},
 				"linktext": "Upgrade now!",
 				"bank": "Bancaccount for SEPA direct debit mandate"
@@ -1150,10 +1150,11 @@
 			}
 		},
 		"pricingTypes": {
-			"acquisition": "in aquisition",
+			"acquisition": "In aquisition",
 			"trial": "Trial",
-			"publish": "Publishing",
-			"regular": "Commerce",
+			"publish": "Vinou-Promo",
+			"regular": "Vinou-Complete",
+			"cellar": "Vinou-Cellar",
 			"invitation": "Invited"
 		},
 		"views": {
@@ -1170,8 +1171,8 @@
 				"smallBusiness": "Do you really want to change the small business setting?<br/>All prices of your wines, products and shipment options will get adjusted and must be verified."
 			},
 			"toasts": {
-				"upgrade": "Vinou-Commerce activated!",
-				"upgrade_error": "An error occured. Vinou-Commerce wasn't activated!",
+				"upgrade": "Vinou-Complete activated!",
+				"upgrade_error": "An error occured. Vinou-Complete wasn't activated!",
 				"activation_error": "An error occured. Account could not be activated!",
 				"activation_success": "Welcome at Vinou!"
 			}
