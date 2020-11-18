@@ -2047,6 +2047,7 @@
 			"taxfree": "Tax free",
 			"taxrateNetTax": "{taxrate}% of {value}",
 			"taxrateGrossTax": "{value} by {taxrate}%",
+			"orderValue": "Order value",
 			"vatincluded": "incl. VAT {tax}",
 			"vatexcluded": "excl. VAT {tax}",
 			"yardsale": "Yard sale",

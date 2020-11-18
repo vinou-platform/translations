@@ -2047,6 +2047,7 @@
 			"taxfree": "IVA esente",
 			"taxrateNetTax": "{taxrate}% di {value}",
 			"taxrateGrossTax": "{value} - {taxrate}%",
+			"orderValue": "Valore dell'ordine",
 			"vatincluded": "IVA inclusa {tax} ",
 			"vatexcluded": "Più {tax} IVA.",
 			"yardsale": "Vendita dell'azienda agricola",

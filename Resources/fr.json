@@ -2047,6 +2047,7 @@
 			"taxfree": "Exempté de TVA",
 			"taxrateNetTax": "{taxrate}% de {value}",
 			"taxrateGrossTax": "{value} - {taxrate}%",
+			"orderValue": "Valeur de la commande",
 			"vatincluded": "incluse {tax} TVA.",
 			"vatexcluded": "plus {tax} TVA.",
 			"yardsale": "Vente à la ferme",

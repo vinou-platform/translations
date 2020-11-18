@@ -2047,6 +2047,7 @@
 			"taxfree": "liberado de impuestos sobre la cifra de negocios",
 			"taxrateNetTax": "{taxrate}% de {value}",
 			"taxrateGrossTax": "{value} - {taxrate}%",
+			"orderValue": "Valor del pedido",
 			"vatincluded": "incluso impuesto valor añadido {tax} ",
 			"vatexcluded": "más {tax} impuesto valor añadido.",
 			"yardsale": "venta de patio",

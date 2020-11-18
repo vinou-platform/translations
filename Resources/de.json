@@ -2047,6 +2047,7 @@
 			"taxfree": "Umsatzsteuerbefreit",
 			"taxrateNetTax": "{taxrate}% von {value}",
 			"taxrateGrossTax": "{value} zu {taxrate}%",
+			"orderValue": "Bestellwert",
 			"vatincluded": "inkl. {tax} MwSt.",
 			"vatexcluded": "zzgl. {tax} MwSt.",
 			"yardsale": "Hofverkauf",
