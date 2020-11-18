@@ -203,10 +203,6 @@
 	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
 	"category_modal_delete": "Voulez-vous vraiment supprimer cette catégorie?",
 	"customers_modal_delete": "Voulez-vous vraiment supprimer ce membre?",
-	"users_modules": "Modules",
-	"users_modal_delete": "Voulez-vous vraiment supprimer cet utilisateurs?",
-	"token_modal_delete": "Voulez-vous vraiment supprimer ce jeton?",
-	"token_modal_error": "Il y a déjà un jeton pour ce domaine/IP",
 	"address_modal_delete": "Voulez-vous vraiment supprimer cet adresse?",
 	"orders_modal_cancel": "Voulez-vous vraiment annuler cet ordre?",
 	"orders_modal_sent": "Voulez-vous vraiment marquer cet ordre comme expédiée",
@@ -229,9 +225,16 @@
 			"percent": "Remise en pourcentage"
 		}
 	},
-	"currenttoken_old": "Jeton actuel",
-	"currenttoken": "Connexion actuel",
-	"tokens": {
+	"token": {
+		"fields": {
+			"token": "Jeton",
+			"referer": "Référent (domaine / IP)",
+			"user_id": {
+				"label": "Utilisateur simulé",
+				"placeholder": "Nom ou adresse e-mail"
+			},
+			"mode": "Mode"
+		},
 		"actions": {
 			"create": {
 				"main": "Créer Connexion",
@@ -239,13 +242,17 @@
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Créer une connexion",
+				"editTitle": "Modifier la connexion"
+			},
 			"gallery": {
 				"referer": "Domaine/IP",
-				"token": "Interface (Token)",
+				"token": "Interface (jeton)",
 				"mode": {
 					"label": "Mode",
 					"dev": "Développement",
-					"live": "Live"
+					"live": "Vivre"
 				}
 			}
 		},
@@ -253,9 +260,26 @@
 			"manual": "Connexions manuelles",
 			"automatic": "Connexions automatiques"
 		},
+		"modes": {
+			"dev": "Développement (détection d'hôte désactivée)",
+			"live": "En direct (détection d'hôte activée)"
+		},
+		"alerts": {
+			"copy": "Copier le jeton en appuyant sur: Ctrl + C, Entrée"
+		},
+		"hints": {
+			"devmode": "<b> IMPORTANT: </b> Si le mode est défini sur <b> Développement </b>, wine et les données de la boutique sont accessibles via un jeton et une authentification partout dans le monde."
+		},
 		"toasts": {
-			"changed": "Connexion modifiée!",
+			"created": "Connexion créée!",
+			"changed": "La connexion a changé!",
 			"deleted": "Connexion supprimée!"
+		},
+		"errors": {
+			"refererExists": "Une connexion existe déjà pour ce référent"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce jeton?"
 		}
 	},
 	"yes": "Oui",
@@ -798,45 +822,110 @@
 	"settings_connections": "Composés",
 	"sysTool_account": "Configuration",
 	"options": "Options",
-	"addtoken": "Ajouter jeton",
 	"referer": "Valable pour",
 	"login": "Se connecter",
 	"logout": "Se déconnecter",
 	"edit": "´Éditer",
 	"save": "Enregistrer",
-	"repeatpw": "Répéter le mot de passe",
-	"language": "Langue",
 	"modal_delete_wine": "Voulez-vous vraiment supprimer ce vin?",
 	"test": "français",
-	"login_emailempty": "Adresse courriel non spécifiée",
-	"login_emailnotvalid": "Adresse courriel invalide",
-	"login_passwordempty": "Mot de passe non spécifiée",
-	"login_wronglogin": "Adresse courriel ou mot de passe invalide.",
-	"login_wrongreset": "Adresse courriel ou utilisateur approprié non trouvé.",
 	"db_categories_image": "Image",
 	"db_category_createtitle": "Creér categorie",
 	"db_category_edittitle": "Éditer catgorie",
-	"users_create_main": "Creér",
-	"users_create_sub": "Utilisateur",
-	"users_modification": "Modification demiére",
-	"users_default_person_placeholder": "Jean Dupont",
-	"users_default_person_mail_placeholder": "dupont@mail.com",
-	"users_galleryFilterHint": "p.ex. Jean Dupont, dupont@mail.com",
-	"users_create_modaltitle": "Creér utilisateur",
-	"users_edit_modaltitle": "Éditer utilisateur",
-	"users_settings_modaltitle": "Éditer configuration",
 	"user": {
-		"fields": {
-			"lastLogin": "Dernière connexion"
-		}
-	},
-	"users": {
-		"action": {
-			"main": "Creér",
-			"sub": "utilisateur"
+		"actions": {
+			"login": "S'identifier",
+			"lostpassword": "Demander un e-mail de réinitialisation",
+			"resetpassword": "Definir un nouveau mot de passe",
+			"sendpasswordresetmail": "Envoyer un e-mail de mot de passe",
+			"register": "S'inscrire",
+			"create": {
+				"main": "Créer un nouveau",
+				"sub": "utilisateur"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, mail"
+			},
+			"deleteImage": "Supprimer l'image"
+		},
+		"fieldSets": {
+			"appsettings": "Modifier les paramètres de l'application",
+			"modules": "Modules"
 		},
 		"fields": {
-			"active_users": "Utilisateurs actifs"
+			"name": {
+				"label": "Nom",
+				"placeholder": "Jean Dupont"
+			},
+			"mail": {
+				"label": "Email",
+				"placeholder": "jean.dupont@mail.com"
+			},
+			"password": "Mot de passe",
+			"password_repeat": "Répéter le mot de passe",
+			"role": "Rôle",
+			"active": "actif",
+			"beta": "Est un utilisateur bêta",
+			"image": "Image",
+			"customers_id": "Appartient au membre",
+			"lastLogin": "Dernière connexion",
+			"settings": {
+				"language": "Langue"
+			}
+		},
+		"views": {
+			"login": {
+				"title": "S'identifier",
+				"goto": "Aller à la connexion"
+			},
+			"lostpassword": {
+				"title": "Demander un lien de réinitialisation"
+			},
+			"resetpassword": {
+				"title": "Réinitialiser le mot de passe"
+			},
+			"edit": {
+				"createTitle": "Créer un utilisateur",
+				"editTitle": "Modifier l'utilisateur",
+				"settingsTitle": "Modifier les paramètres",
+				"adminTitle": "Modifier la date de l'utilisateur"
+			},
+			"dashboardStats": {
+				"active": "Utilisateur actif"
+			},
+			"gallery": {
+				"lastModification": "Dernière modification"
+			}
+		},
+		"toasts": {
+			"imageUploaded": "Image téléchargée!",
+			"imageDeleted": "Image supprimée!",
+			"changed": "L'utilisateur a changé!",
+			"created": "Utilisateur créé!",
+			"deleted": "Utilisateur supprimé!",
+			"lostpasswordSend": "Mail envoyer!"
+		},
+		"dialogs": {
+			"deleteImage": "Voulez-vous vraiment supprimer l'image de l'utilisateur?",
+			"delete": "Voulez-vous vraiment supprimer cet utilisateur?"
+		},
+		"hints": {
+			"lostpassword": "Mot de passe perdu?",
+			"passwordmailsend": "Un e-mail avec un lien de réinitialisation a été envoyé. Ce lien expire dans 24 heures. Utilisez ceci pour réinitialiser votre mot de passe.",
+			"passwordreset": "Le nouveau mot de passe est défini. Le lien utilisé n'est plus valide.",
+			"register": "Pas de compte? <a href='/register'> Inscrivez-vous maintenant! </a>",
+			"passwordmatch": "La nouvelle saisie du mot de passe ne correspond pas.",
+			"imagesize": "<b> Recommandé pour un meilleur rendu </b> <br> Dimension: 1000x1000px <br/> Format de fichier: .png (exempté)"
+		},
+		"errors": {
+			"emailempty": "Champ de courriel vide",
+			"emailnotvalid": "Champ de courriel invalide",
+			"passwordempty": "Mot de passe non saisi",
+			"wronglogin": "Email ou mot de passe incorrect.",
+			"wrongreset": "Adresse e-mail ou utilisateur correspondant introuvable.",
+			"delete": "Vous ne pouvez pas supprimer un utilisateur connecté!",
+			"imageUpload": "Erreur lors du traitement de l'image!",
+			"lostpasswordSend": "Erreur lors de l'envoi de l'e-mail!"
 		}
 	},
 	"statistics": {
@@ -851,42 +940,9 @@
 			"total": "Complètement"
 		}
 	},
-	"db_users_login_title": "Se connecter",
-	"db_users_login_submit": "Se connecter",
-	"db_users_lostpassword": "Mot de passe oublié?",
-	"db_users_gotoregister": "Pas encore de compte? <a href='/register'>Enregistrez-vous ici!</a>",
-	"db_users_lostpassword_title": "Demander lien",
-	"db_users_lostpassword_submit": "Demander adresse courriel",
-	"db_users_lostpassword_send": "Un e-mail avec un lien de réinitialisation a été envoyé. Ceci est valable 24h. Utilisez ce lien pour réinitialiser votre mot de passe.",
-	"db_users_resetpassword_title": "Réinitialiser mot de passe",
-	"db_users_resetpassword_submit": "Définir nouveau mot de passe",
-	"db_users_resetpassword_send": "Votre mot de passe a été réinitialisé. Le lien utilisé n'est plus valide.",
-	"db_users_sendpasswordresetmail": "Envoyer un courriel de réinitialisation de mot de passe",
-	"db_users_gotologin": "Se connecter",
-	"db_users_createtitle": "Créer utilisateur",
-	"db_users_edittitle": "Éditer utilisateur",
-	"db_users_userdatatitle": "Éditer les données utilisateur",
-	"db_users_settingstitle": "Éditer les paramètres de l'application",
-	"db_users_passwordmatch": "Les deux mots de passe ne correspondent pas.",
-	"db_users_name": "Nom",
-	"db_users_mail": "Adresse courriel",
-	"db_users_password": "Mot de passe",
-	"db_users_role": "Rôle",
-	"db_users_active": "Actif",
-	"db_users_beta": "Est utilisateur bêta",
-	"db_users_image": "Image",
-	"db_users_customers_id": "Appartient á membre",
 	"db_winecategories_name": "Nom",
 	"db_winecategories_description": "Description",
 	"db_winecategories_image": "Image",
-	"db_tokens_createtitle": "Créer interface",
-	"db_tokens_edittitle": "Éditer interface",
-	"db_tokens_token": "Interface (jéton)",
-	"db_tokens_referer": "Domaine",
-	"db_tokens_mode": "Mode",
-	"db_tokens_mode_dev": "Développement (Host-Check off))",
-	"db_tokens_mode_live": "En direct (Host-Check on)",
-	"db_tokens_mode_hint": "<b>ATTENTION:</b> Tant que l'interface est en <b>mode de développement</b> vous pouvez l'interroger à l'aide de jeton et des données d'authentification, quel que soit le serveur de destination..",
 	"db_payments_createtitle": "Créer réception du paiement",
 	"db_payments_edittitle": "Éditer réception du paiement",
 	"db_payments_type": "Type",
@@ -2915,17 +2971,6 @@
 		"settings_cashlink_registererror": "Enregistrement échoué, courrier éventuellement déjà pris!",
 		"settings_smtp_changed": "Configuration SMTP mise à jour!",
 		"settings_paypal_changed": "Configuration PayPay mise à jour!",
-		"token_saved": "Interface enregistrée!",
-		"user_created": "Utilisateur créé!",
-		"user_changed": "Utilisateur mis à jour!",
-		"user_deleted": "Utilisateur supprimé",
-		"user_deleteerror": "Vous ne pouvez pas supprimer l'utilisateur actuellement connecté!",
-		"user_image_needed": "Pour télécharger une image, vous devez enregistrer l'utilisateur à l'avance!",
-		"user_image_uploaded": "Image téléchargé",
-		"user_image_deleted": "Image supprimé!",
-		"user_image_uploaderror": "Erreur lors du téléchargement de l'image!",
-		"user_lostpassword_send": "Courrier envoyé!",
-		"user_lostpassword_senderror": "Envoi de courrier a échoué!",
 		"winery_created": "Établissement vinicole créé!",
 		"winery_changed": "Établissement vinicole mis à jour!",
 		"winery_deleted": "Établissement vinicole supprimé!",
@@ -2950,9 +2995,6 @@
 			"deleteerror": "Note n'a pas pu être supprimée!"
 		}
 	},
-	"alerts": {
-		"token_copy": "Pour copier le jeton: Ctrl + C, Enter"
-	},
 	"hints": {
 		"wineries": {
 			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)"
@@ -2962,9 +3004,6 @@
 		},
 		"categories": {
 			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1500px largeur aux moins<br/>Format de fichier: .png (exempté)"
-		},
-		"users": {
-			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)"
 		},
 		"customer": {
 			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000px largeur 1500px largeur aux moins<br/>Format de fichier: .png (exempté)"
