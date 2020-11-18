@@ -729,6 +729,10 @@
 	},
 	"template": {
 		"fields": {
+			"catalog": {
+				"label": "Template for catalog",
+				"placeholder": "Vinou price list (Default)"
+			},
 			"contract": {
 				"label": "Template for contract",
 				"placeholder": "Vinou contract (Default)"
@@ -752,10 +756,6 @@
 			"offer": {
 				"label": "Template for enquiry",
 				"placeholder": "Vinou offer (Default)"
-			},
-			"catalog": {
-				"label": "Template for catalog",
-				"placeholder": "Vinou price list (Default)"
 			},
 			"text": {
 				"label": "Template for text documents",
@@ -1891,11 +1891,11 @@
 	},
 	"order": {
 		"documenttypes": {
+			"offer": "Offer",
 			"invoice": "Invoice",
 			"deliveryNote": "Delivery note",
 			"shipment": "Shipment label",
-			"creditAdvice": "Credit advice",
-			"offer": "Offer"
+			"creditAdvice": "Credit advice"
 		},
 		"paymenttypes": {
 			"cash": "Cash",

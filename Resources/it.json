@@ -729,6 +729,10 @@
 	},
 	"template": {
 		"fields": {
+			"catalog": {
+				"label": "Modello per catalogo",
+				"placeholder": "Listino Vinou (impostazione predefinita)"
+			},
 			"contract": {
 				"label": "Modello di ordine",
 				"placeholder": "Vinou-Ordine (Standard)"
@@ -752,10 +756,6 @@
 			"offer": {
 				"label": "Modello di offerta",
 				"placeholder": "Vinou-Offerta (Standard)"
-			},
-			"catalog": {
-				"label": "Modello per catalogo",
-				"placeholder": "Listino Vinou (impostazione predefinita)"
 			},
 			"text": {
 				"label": "Modello per PDF di testo",
@@ -1891,10 +1891,10 @@
 	},
 	"order": {
 		"documenttypes": {
+			"offer": "Offerte",
 			"invoice": "Fattura",
 			"deliveryNote": "Bolla di consegna",
 			"shipment": "Etichetta del pacco",
-			"offer": "Offerte",
 			"creditAdvice": "Credito"
 		},
 		"paymenttypes": {

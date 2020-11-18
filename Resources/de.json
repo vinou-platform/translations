@@ -729,6 +729,10 @@
 	},
 	"template": {
 		"fields": {
+			"catalog": {
+				"label": "Vorlage für PDF-Preislisten",
+				"placeholder": "Vinou-Preisliste (Standard)"
+			},
 			"contract": {
 				"label": "Vorlage für Auftrag",
 				"placeholder": "Vinou-Auftrag (Standard)"
@@ -752,10 +756,6 @@
 			"offer": {
 				"label": "Vorlage für Angebot",
 				"placeholder": "Vinou-Angebot (Standard)"
-			},
-			"catalog": {
-				"label": "Vorlage für PDF-Preislisten",
-				"placeholder": "Vinou-Preisliste (Standard)"
 			},
 			"text": {
 				"label": "Vorlage für Text-PDFs",
@@ -1891,11 +1891,11 @@
 	},
 	"order": {
 		"documenttypes": {
+			"offer": "Angebot",
 			"invoice": "Rechnung",
 			"deliveryNote": "Lieferschein",
 			"shipment": "Packetaufkleber",
-			"creditAdvice": "Gutschrift",
-			"offer": "Angebot"
+			"creditAdvice": "Gutschrift"
 		},
 		"paymenttypes": {
 			"cash": "Barzahlung",
