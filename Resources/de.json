@@ -224,12 +224,10 @@
 			"percent": "Prozentualer Rabatt"
 		}
 	},
-	"currenttoken_old": "Bisherige Token",
-	"currenttoken": "Aktuelle Verbindung",
 	"token": {
 		"fields": {
 			"token": "Schnittstelle (Token)",
-			"referer": "Domain",
+			"referer": "Referer (Domain/IP)",
 			"user_id": {
 				"label": "Simulierter Benutzer",
 				"placeholder": "Name oder Mailadresse"
