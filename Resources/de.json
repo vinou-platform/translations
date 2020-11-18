@@ -733,11 +733,11 @@
 				"label": "Vorlage für Auftrag",
 				"placeholder": "Vinou-Auftrag (Standard)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "Vorlage für Gutschrift",
 				"placeholder": "Vinou-Gutschrift (Standard)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "Vorlage für Lieferschein",
 				"placeholder": "Vinou-Lieferschein (Standard)"
 			},
@@ -1892,9 +1892,9 @@
 	"order": {
 		"documenttypes": {
 			"invoice": "Rechnung",
-			"delivery": "Lieferschein",
+			"deliveryNote": "Lieferschein",
 			"shipment": "Packetaufkleber",
-			"creditadvice": "Gutschrift",
+			"creditAdvice": "Gutschrift",
 			"offer": "Angebot"
 		},
 		"paymenttypes": {
@@ -1910,9 +1910,9 @@
 		},
 		"documents": {
 			"invoice": "Rechnungen",
-			"delivery": "Lieferscheine",
+			"deliveryNote": "Lieferscheine",
 			"shipment": "Packetaufkleber",
-			"creditadvice": "Gutschriften"
+			"creditAdvice": "Gutschriften"
 		},
 		"states": {
 			"new": "Eingegangen",

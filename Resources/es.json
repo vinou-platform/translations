@@ -733,11 +733,11 @@
 				"label": "modelo para orden",
 				"placeholder": "Vinou-orden (estándar)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "modelos para abonos",
 				"placeholder": "Vinou-abono (estándar)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "modelo para boletín de entrega",
 				"placeholder": "Vinou-boletín de entrega (estándar)"
 			},
@@ -1892,9 +1892,9 @@
 	"order": {
 		"documenttypes": {
 			"invoice": "cuenta",
-			"delivery": "boletín de entrega",
+			"deliveryNote": "boletín de entrega",
 			"shipment": "etiquetas de paquetes",
-			"creditadvice": "abono",
+			"creditAdvice": "abono",
 			"offer": "oferta"
 		},
 		"paymenttypes": {
@@ -1910,9 +1910,9 @@
 		},
 		"documents": {
 			"invoice": "cuentas",
-			"delivery": "boletín de entrega",
+			"deliveryNote": "boletín de entrega",
 			"shipment": "etiqueta de paquetes",
-			"creditadvice": "abonos"
+			"creditAdvice": "abonos"
 		},
 		"states": {
 			"new": "nuevo",

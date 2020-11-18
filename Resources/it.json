@@ -733,11 +733,11 @@
 				"label": "Modello di ordine",
 				"placeholder": "Vinou-Ordine (Standard)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "Modello di accredito",
 				"placeholder": "Vinou-Accredito (Standard)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "Modello dei bolla di consegna",
 				"placeholder": "Vinou-Bolla di consegna (Standard)"
 			},
@@ -983,7 +983,7 @@
 			"bottling": "Imbottigliamento",
 			"breakage": "Rottura",
 			"correction": "Correzione",
-			"creditadvice": "Accredito",
+			"creditAdvice": "Accredito",
 			"invoice": "Fattura",
 			"privateConsumption": "Autoconsumo",
 			"promotion": "Pubblicità",
@@ -1892,10 +1892,10 @@
 	"order": {
 		"documenttypes": {
 			"invoice": "Fattura",
-			"delivery": "Bolla di consegna",
+			"deliveryNote": "Bolla di consegna",
 			"shipment": "Etichetta del pacco",
 			"offer": "Offerte",
-			"creditadvice": "Credito"
+			"creditAdvice": "Credito"
 		},
 		"paymenttypes": {
 			"cash": "Paiement en espèces",
@@ -1910,9 +1910,9 @@
 		},
 		"documents": {
 			"invoice": "Fatture",
-			"delivery": "Bolle di consegna",
+			"deliveryNote": "Bolle di consegna",
 			"shipment": "Etichette per imballaggio",
-			"creditadvice": "Credito"
+			"creditAdvice": "Credito"
 		},
 		"states": {
 			"new": "Nuovo",

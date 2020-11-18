@@ -733,11 +733,11 @@
 				"label": "Template for contract",
 				"placeholder": "Vinou contract (Default)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "Template for credit advices",
 				"placeholder": "Vinou credit advice (Default)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "Template for delivery note",
 				"placeholder": "Vinou delivery note (Default)"
 			},
@@ -1892,9 +1892,9 @@
 	"order": {
 		"documenttypes": {
 			"invoice": "Invoice",
-			"delivery": "Delivery note",
+			"deliveryNote": "Delivery note",
 			"shipment": "Shipment label",
-			"creditadvice": "Credit advice",
+			"creditAdvice": "Credit advice",
 			"offer": "Offer"
 		},
 		"paymenttypes": {
@@ -1910,9 +1910,9 @@
 		},
 		"documents": {
 			"invoice": "Invoices",
-			"delivery": "Delivery notes",
+			"deliveryNote": "Delivery notes",
 			"shipment": "Shipment labels",
-			"creditadvice": "Credit advices"
+			"creditAdvice": "Credit advices"
 		},
 		"states": {
 			"new": "New",

@@ -733,11 +733,11 @@
 				"label": "Modèle d'ordre",
 				"placeholder": "Vinou - Ordre (Standard)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "Modèle de crédit",
 				"placeholder": "Vinou - Crédit (Standard)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "Modèle du bon de livraison",
 				"placeholder": "Vinou - Bon de Livraison (Standard)"
 			},
@@ -1892,10 +1892,10 @@
 	"order": {
 		"documenttypes": {
 			"invoice": "Facture",
-			"delivery": "Bon de livraison",
+			"deliveryNote": "Bon de livraison",
 			"shipment": "Étiquette de l'emballage",
 			"offer": "Offres",
-			"creditadvice": "Crédit"
+			"creditAdvice": "Crédit"
 		},
 		"paymenttypes": {
 			"cash": "Paiement en espèces",
@@ -1910,9 +1910,9 @@
 		},
 		"documents": {
 			"invoice": "Factures",
-			"delivery": "Bons de livraison",
+			"deliveryNote": "Bons de livraison",
 			"shipment": "Étiquettes de l'emballage",
-			"creditadvice": "Crédit"
+			"creditAdvice": "Crédit"
 		},
 		"states": {
 			"new": "Nouvelle",
