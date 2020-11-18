@@ -1038,7 +1038,7 @@
 		"page": {
 			"register": {
 				"title": "Enregistrer un compte d'essai",
-				"description": "<p>Avec votre compte d'essai de Vinou<sup>®</sup>, <b>vous pouvez utiliser toutes les fonctionnalités de Vinou<sup>®</sup> pendant 30 jours gratuitement.</b>. Après expiration de période d'essai, vous pourrez opter pour l'adhésion payante Vinou-Commerce. Peu importe ce que tu fais. Vous pouvez continuer à utiliser Vinou après 30 jours avec l’adhésion gratuite à Vinou Publishing. Dans tous les cas, vous serez facilement averti par e-mail et pourrez ensuite faire votre choix.</p>",
+				"description": "<p>Avec votre compte d'essai de Vinou<sup>®</sup>, <b>vous pouvez utiliser toutes les fonctionnalités de Vinou<sup>®</sup> pendant 30 jours gratuitement.</b>. Après expiration de période d'essai, vous pourrez opter pour l'adhésion payante Vinou-Complete. Peu importe ce que tu fais. Vous pouvez continuer à utiliser Vinou après 30 jours avec l’adhésion gratuite à Vinou-Promo. Dans tous les cas, vous serez facilement averti par e-mail et pourrez ensuite faire votre choix.</p>",
 				"submit": "Créer compte",
 				"send": "Félicitations, votre compte a été créé. Vous recevrez un email dans les prochaines minutes pour définir votre mot de passe et activer votre abonnement.",
 				"company": "Données de l'entreprise",
@@ -1072,10 +1072,10 @@
 			},
 			"upgrade": {
 				"title": "Mise à niveau de l'abonnement",
-				"description": "Avec l'adhésion Vinou-Commerce, vous pouvez utiliser en permanence toutes les fonctionnalités de Vinou au prix de 40 EUR par mois, TVA en sus. Pour chaque ordre médiateé par nos soins, une commission unique de 1 EUR plus la TVA sera facturée. La taxe de base sera facturée au début du mois en cours. Les frais sont calculés le 1er du mois suivant.",
+				"description": "Avec l'adhésion Vinou-Complete, vous pouvez utiliser en permanence toutes les fonctionnalités de Vinou au prix de 40 EUR par mois, TVA en sus. Pour chaque ordre médiateé par nos soins, une commission unique de 1 EUR plus la TVA sera facturée. La taxe de base sera facturée au début du mois en cours. Les frais sont calculés le 1er du mois suivant.",
 				"teaser": {
-					"publish": "<b>Vous utilisez actuellement Vinou Publishing.</b> Pour utiliser toutes les fonctionnalités de Vinou, mettez à niveau votre abonnement en Vinou-Commerce.",
-					"trial": "<b>Vous utilisez actuellement Vinou dans le mois d'essai gratuit.</b> Pour continuer à utiliser toutes les fonctionnalités de Vinou, mettez à niveau votre abonnement vers Vinou-Commerce."
+					"publish": "<b>Vous utilisez actuellement Vinou-Promo.</b> Pour utiliser toutes les fonctionnalités de Vinou, mettez à niveau votre abonnement en Vinou-Complete.",
+					"trial": "<b>Vous utilisez actuellement Vinou dans le mois d'essai gratuit.</b> Pour continuer à utiliser toutes les fonctionnalités de Vinou, mettez à niveau votre abonnement vers Vinou-Complete."
 				},
 				"linktext": "Mettre à niveau maintenant!",
 				"bank": "Données bancaires pour le prélèvement SEPA"
@@ -1152,8 +1152,9 @@
 		"pricingTypes": {
 			"acquisition": "En acquisition",
 			"trial": "Période d'essai",
-			"publish": "Publishing",
-			"regular": "Commerce",
+			"publish": "Vinou-Promo",
+			"regular": "Vinou-Complete",
+			"cellar": "Vinou-Cellar",
 			"invitation": "Invité"
 		},
 		"views": {
@@ -1170,8 +1171,8 @@
 				"smallBusiness": "Voulez-vous vraiment changer le cadre des petites entreprises?<br/>Tous les prix de vos vins, produits et options d'expédition seront ajustés et devront être vérifiés."
 			},
 			"toasts": {
-				"upgrade": "Vinou Commerce a été activé!",
-				"upgrade_error": "Une erreur est survenue, Vinou-Commerce n'a pas pu être activé!",
+				"upgrade": "Vinou Complete a été activé!",
+				"upgrade_error": "Une erreur est survenue, Vinou-Complete n'a pas pu être activé!",
 				"activation_error": "Une erreur est survenue, votre abonnement n'a pas pu être activé.!",
 				"activation_success": "Bienvenue à Vinou!"
 			}
@@ -3027,6 +3028,7 @@
 		"0.200": "0,2 l (Piccolo)",
 		"0.250": "0,25 l (Chopine)",
 		"0.33": "0,33 l",
+		"0.35": "0,35 l",
 		"0.375": "0,375 l (Fillette)",
 		"0.500": "0,5 l (Désirée)",
 		"0.620": "0,62 l (Clavelin)",
