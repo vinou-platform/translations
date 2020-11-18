@@ -1,23 +1,4933 @@
 {
-	"formhint_required": "champ obligatoire",
+	"modules": {
+		"dashboard": "Tableau de bord",
+		"winery": "Établissement vinicole",
+		"wineries": "Établissements vinicole",
+		"wines.statistics": "Statistiques",
+		"winelists": "Listes du vin",
+		"qrcodes": "Codes QR",
+		"news": "Nouvelles",
+		"users": "Utilisateurs",
+		"customers": "Membres",
+		"clients": "Clients",
+		"clients.statistics": "Statistiques",
+		"orders": "Ordres",
+		"orders.statistics": "Statistiques",
+		"clientletters": "Lettres des clients",
+		"tokens": "Liens",
+		"settings": "Configuration",
+		"cronjobs": "Cronjobs",
+		"network": "Réseau",
+		"merchants": "Marchand",
+		"products.statistics": "Statistiques",
+		"cellar": "Ma cave",
+		"cellar.book": "Livre de la cave",
+		"cellar.barrels": "Récipient",
+		"cellar.substances": "Substances",
+		"articles": "Articles",
+		"articles.wines": "Vins",
+		"articles.products": "Produits",
+		"articles.bundles": "Pack de produits",
+		"articles.categories": "Catégories",
+		"articles.statistics": "Statistiques",
+		"marketing": "Commercialisation",
+		"marketing.campaigns": "Campagnes",
+		"marketing.catalogs": "Catalogues"
+	},
+	"general": {
+		"actions": {
+			"export": "Exporter",
+			"exportRaw": "Exporter (données brutes)",
+			"import": "Importer",
+			"importRaw": "Importer (données brutes)",
+			"exportQrCode": "Téléchargez le code QR sous forme de fichier vectoriel"
+		},
+		"fieldSets": {
+			"general": "Général",
+			"settings": "Configuration",
+			"visibility": "Visibilité",
+			"qrcode": "QR-Code"
+		},
+		"fields": {
+			"default": "Standard",
+			"empty": "Veuillez choisir",
+			"none": "Pas d'information",
+			"unknown": "Inconnue",
+			"upload_image": "Sélectionnez l'image à télécharger",
+			"search": {
+				"placeholder": "p.ex. nom ou description"
+			},
+			"imprint": "Empreinte",
+			"dataprotection": "Protection des données",
+			"termsandconditions": "Termes et conditions",
+			"range": {
+				"from": "de",
+				"of": "de",
+				"to": "à"
+			},
+			"freeOfCharge": "gratuit",
+			"crstamp": "Date de création",
+			"chstamp": "Date de modification",
+			"weight": "Poids (en g)",
+			"title": "Titre",
+			"gender": "Sexe",
+			"first_name": "Prénom",
+			"last_name": "Nom de famille",
+			"salutation": {
+				"title": "Salutation",
+				"placeholder": "p.ex.: Cher monsieur Jean Dupont"
+			},
+			"qrcodeLink": "Adresse cible",
+			"phoneAction": "Appeler à {name}",
+			"faxAction": "Envoyer fax à {name}",
+			"mailAction": "Écrire un courriel à {name}",
+			"wwwAction": "Visitez site web de {name}",
+			"copyOf": {
+				"1": "copie de {name}",
+				"n": "copie {n} de {name}"
+
+
+			}
+		},
+		"tabs": {
+			"general": "Général",
+			"notes": "notes"
+		},
+		"titles": {
+			"dr": "Dr.",
+			"prof": "Prof.",
+			"profdr": "Prof. Dr."
+		},
+		"gender": {
+			"m": "Monsieur",
+			"f": "Madame",
+			"d": "Divers",
+			"fam": "Famille"
+		},
+		"itemTypes": {
+			"wine": "Vins",
+			"product": "Des produits",
+			"bundle": "Pack de produits",
+			"package": "Livraison"
+		},
+		"visibilities": {
+			"network": {
+				"label": "Vinou-Network",
+				"description": "Visible par tous les membres Vinou, par ex. via la fonction réseau"
+			},
+			"internal": {
+				"label": "Internal",
+				"description": "Visible uniquement par vos clients par exemple dans l'espace membre de votre boutique en ligne"
+			},
+			"public": {
+				"label": "Public",
+				"description": "Public visible sans aucune connexion"
+			},
+			"shop": {
+				"label": "Shop",
+				"description": "Visible dans votre boutique"
+			},
+			"winesearch": {
+				"label": "WINESEARCH.io",
+				"description": "Visible par le moteur de recherche de vins <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
+			}
+		},
+		"filters": {
+			"sortBy": {
+				"label": "Trier la vue par"
+			},
+			"sortDirection": {
+				"label": "Direction de tri",
+				"asc": "ascendant",
+				"desc": "descendant"
+			},
+			"groupBy": {
+				"label": "Regroupement des vues après: ",
+				"none": "Pas de regroupement"
+			},
+			"select": {
+				"all": "Tout sélectionner",
+				"none": "Annuler la sélection"
+			},
+			"general": {
+				"empty": "Tous"
+			}
+		},
+		"hints": {
+			"empty": "Pas encore d'entrées disponibles",
+			"multiselectable": "Sélection multiple possible (CTRL + clic)",
+			"required": "Champ obligatoire",
+			"weight": "Poids, emballage compris (pour l'expédition)"
+		},
+		"errors": {
+			"confirmationRequired": "Ce champ doit être confirmé",
+			"date": "Veuillez saisir une date valide",
+			"email": "Veuillez saisir une adresse e-mail valide",
+			"max": "Veuillez saisir une valeur plus petite",
+			"maxDate": "Veuillez saisir une date antérieure",
+			"maxDateValue": "Veuillez entrer une date jusqu'à {value}",
+			"maxLength": "Veuillez saisir moins de caractères",
+			"maxLengthValue": "Veuillez saisir un maximum de {valeur} caractères",
+			"maxValue": "Veuillez saisir une valeur inférieure ou égale à {value}",
+			"min": "Veuillez saisir une valeur supérieure",
+			"minDate": "Veuillez saisir une date ultérieure",
+			"minDateValue": "Veuillez saisir une date à partir de {value}",
+			"minLength": "Veuillez saisir plus de caractères",
+			"minLengthValue": "Veuillez saisir au moins {value} caractères",
+			"minValue": "Veuillez saisir une valeur supérieure ou égale à {value}",
+			"pattern": "Format non valide",
+			"patternValue": "Votre entrée doit être conforme au format {value}",
+			"required": "Veuillez remplir ce champ",
+			"submit": "Une erreur s'est produite lors de l'enregistrement des données."
+		},
+		"toasts": {
+			"networkchanged": "La visibilité du réseau a changé",
+			"internalchanged": "Visibilité interne modifiée",
+			"publicchanged": "La visibilité publique a changé"
+		}
+	},
+	"loader": {
+		"inline": {
+			"label": "Chargement des données"
+		}
+	},
+	"dashboard": {
+		"fieldSets": {
+			"quickActions": "Actions rapides"
+		}
+	},
+	"delete_image": "Supprimer l'image",
+	"delete_image_secure": "Voulez-vous vraiment supprimer cette image?",
+	"changepw": "Changer ce mot de pass",
+	"wines_modal_delete": "Voulez-vous vraiment supprimer ce vin?",
+	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
+	"category_modal_delete": "Voulez-vous vraiment supprimer cette catégorie?",
+	"customers_modal_delete": "Voulez-vous vraiment supprimer ce membre?",
+	"users_modules": "Modules",
+	"users_modal_delete": "Voulez-vous vraiment supprimer cet utilisateurs?",
+	"token_modal_delete": "Voulez-vous vraiment supprimer ce jeton?",
+	"token_modal_error": "Il y a déjà un jeton pour ce domaine/IP",
+	"address_modal_delete": "Voulez-vous vraiment supprimer cet adresse?",
+	"orders_modal_cancel": "Voulez-vous vraiment annuler cet ordre?",
+	"orders_modal_sent": "Voulez-vous vraiment marquer cet ordre comme expédiée",
+	"orders_position_delete": "Voulez-vous vraiment supprimer cette position?",
+	"orders_position_update": "Voulez-vous vraiment ajuster cette position?",
+	"orders_modal_invoice_create": "Voulez-vous créer cette ordre avec facture et bon de livraison",
+	"orders_modal_onlyinvoice_create": "Créer facture maintenant?",
+	"orders_modal_onlydelivery_create": "Créer bon de livraison maintenant?",
+	"orders_modal_creditadvice_create": "ATTENTION: Créer crédit maintenant et annuler ordre?",
+	"order_wrong_quantity": "Veuillez entrer un montant supérieur à 0",
+	"orders_rebate_general": "Remise forfaitaire (brute)",
+	"rebates": {
+		"actions": {
+			"add_rebate": "+ Ajouter remise",
+			"add_position": "Ajouter position"
+		},
+		"title": "Remises",
+		"methods": {
+			"general": "Remise forfaitaire (brute)",
+			"percent": "Remise en pourcentage"
+		}
+	},
+	"currenttoken_old": "Jeton actuel",
+	"currenttoken": "Connexion actuel",
+	"tokens": {
+		"actions": {
+			"create": {
+				"main": "Créer Connexion",
+				"sub": "nouvelle"
+			}
+		},
+		"views": {
+			"gallery": {
+				"referer": "Domaine/IP",
+				"token": "Interface (Token)",
+				"mode": {
+					"label": "Mode",
+					"dev": "Développement",
+					"live": "Live"
+				}
+			}
+		},
+		"groups": {
+			"manual": "Connexions manuelles",
+			"automatic": "Connexions automatiques"
+		},
+		"toasts": {
+			"changed": "Connexion modifiée!",
+			"deleted": "Connexion supprimée!"
+		}
+	},
+	"yes": "Oui",
+	"no": "Non",
+	"ok": "OK",
+	"cancel": "Annuler",
+	"cellarAction": {
+		"fields": {
+			"additionVolume": "Addition",
+			"barrel": {
+				"label": "Récipient",
+				"placeholder": "Cherchez récipient"
+			},
+			"bookingStamp": {
+				"label": "Date de traitement",
+				"placeholder": "DD.MM.YYYY"
+			},
+			"bottles": "Nombre de bouteilles",
+			"cellarWine": {
+				"label": "Compte du vin",
+				"placeholder": "Cherche compte du vin"
+			},
+			"clarifyingOnly": "Afficher seulement les récipients pour clarification",
+			"filtrationPurpose": {
+				"label": "L'utilisation comme matière solide",
+				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
+			},
+			"harvestDeclarationNumber": "Déclaration de récolte (reçu no.)",
+			"lossVolume": "Perte",
+			"marc": "Marc",
+			"note": "Note / utilisation",
+			"price": "Prix d'achat",
+			"purchaseNote": "Note / fournisseur",
+			"purpose": {
+				"label": "Utilisation",
+				"placeholder": " "
+			},
+			"referenceNumber": "Reçu no. (par ex. documents d'accompagnement)",
+			"residueRelocation": "Transfert des résidus?",
+			"residueVolume": "Résidus",
+			"sludgePurpose": {
+				"label": "Utilisation de la lie",
+				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
+			},
+			"sludgeRelocation": "Transfert de la lie?",
+			"sludgeVolume": "Lie",
+			"sourceBarrel": {
+				"label": "Récipient de source",
+				"placeholder": "Cherchez récipient"
+			},
+			"targetBarrel": {
+				"label": "Récipient de cible",
+				"placeholder": "Cherchez récipient"
+			},
+			"wine": {
+				"autoCreate": "Générer automatiquement à partir du compte Wine",
+				"label": "Vin",
+				"placeholder": "Cherche vin"
+			},
+			"withdrawalVolume": "Retrait",
+
+			"barrels": "Récipients",
+			"addition": "Addition",
+			"withdrawal": "Retrait",
+			"substance": "Substance",
+
+			"substanceAdd": "Ajout de substance {substance}",
+			"enrichment": "Enrichissement avec {substance}",
+			"sweetening": "Édulcoration avec {substance}",
+			"acidification": "Acidification avec {substance}",
+			"deacidification": "Désacidification avec {substance}"
+		},
+		"actions": {
+			"create": {
+				"main": "Processus couvrir",
+				"sub": " "
+			},
+			"edit": {
+				"main": "Entrée correcter",
+				"sub": " "
+			},
+
+			"createInventoryTakeover": {
+				"main": "Reprise",
+				"sub": "d'inventaire"
+			},
+			"createHarvest": {
+				"main": "Récolte",
+				"sub": " "
+			},
+			"createAdditionalPurchase": {
+				"main": "Achat",
+				"sub": "de vin"
+			},
+			"createMarcLiquidation": {
+				"main": "Marc",
+				"sub": "utilisation"
+			},
+
+			"createStaticSettling": {
+				"main": "Débourbage par le repos",
+				"sub": " "
+			},
+			"createFiltration": {
+				"main": "Filtration",
+				"sub": " "
+			},
+			"createRelocation": {
+				"main": "Transfert",
+				"sub": " "
+			},
+			"createDecanting": {
+				"main": "Soutirage",
+				"sub": " "
+			},
+			"createBlending": {
+				"main": "Cuvée",
+				"sub": " "
+			},
+
+			"createPrivateConsumption": {
+				"main": "Consommation personnelle",
+				"sub": "répertorier"
+			},
+			"createShrinkage": {
+				"main": "Rétrécissement",
+				"sub": "répertorier"
+			},
+			"createLoss": {
+				"main": "Perte",
+				"sub": "répertorier"
+			},
+			"createConcentration": {
+				"main": "Concentration",
+				"sub": " "
+			},
+			"createDealcoholization": {
+				"main": "Désalcoolisation",
+				"sub": " "
+			},
+
+			"createWineAddition": {
+				"main": "Ouillage",
+				"sub": " "
+			},
+
+			"createSubstanceAdd": {
+				"main": "Ajout des",
+				"sub": "substances"
+			},
+			"createEnrichment": {
+				"main": "Enrichissement",
+				"sub": " "
+			},
+			"createSweetening": {
+				"main": "Édulcoration",
+				"sub": " "
+			},
+			"createAcidifikation": {
+				"main": "Acidification",
+				"sub": " "
+			},
+			"createDeacidifikation": {
+				"main": "Désacidification",
+				"sub": " "
+			},
+			"createAlcoholization": {
+				"main": "Ajout d'alcool",
+				"sub": " "
+			},
+			"createWaterAddition": {
+				"main": "Ajout d'eau",
+				"sub": " "
+			},
+
+			"createBottling": {
+				"main": "Embouteillage",
+				"sub": " "
+			},
+			"createFinancialStatement": {
+				"main": "États",
+				"sub": "financiers"
+			},
+			"createAccountClosure": {
+				"main": "Fermer",
+				"sub": "le compte"
+			},
+
+			"addSourceBarrel": {
+				"main": "Conteneur source",
+				"sub": "ajouter"
+			},
+			"addTargetBarrel": {
+				"main": "Récipient de cible",
+				"sub": "ajouter"
+			}
+		},
+		"types": {
+			"inventoryTakeover": "Reprise d'inventaire",
+			"harvest": "Récolte",
+			"additionalPurchase": "Achat de vin",
+			"marcLiquidation": "Utilisation du marc",
+
+			"relocation": "Transfert",
+			"decanting": "Soutirage",
+			"staticSettling": "Débourbage par le repos",
+			"filtration": "Filtration",
+			"blending": "Cuvée",
+			"privateConsumption": "Consommation personnelle",
+			"shrinkage": "Rétrécissement",
+			"loss": "Perte",
+			"concentration": "Concentration",
+			"dealcoholization": "Désalcoolisation",
+
+			"wineAddition": "Ouillage",
+
+			"substanceAdd": "Ajout des substances",
+			"enrichment": "Enrichissement",
+			"sweetening": "Édulcoration",
+			"acidification": "Acidification",
+			"deacidification": "Désacidification",
+			"alcoholization": "Ajout d'alcool",
+			"waterAddition": "Ajout d'eau",
+
+			"bottling": "Embouteillage",
+			"financialStatement": "États financiers",
+			"accountClosure": "Fermeture de compte"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Couvrir processus",
+				"editTitle": "Traiter processus"
+			},
+			"harvestEdit": {
+				"backToWineSelect": "retour à la sélection"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce processus?"
+		},
+		"toasts": {
+			"created": "Processus créé.",
+			"changed": "Processus édité.",
+			"deleted": "Processus supprimé."
+		},
+		"hints": {
+			"accountClosure": "<strong>Attention!</strong> Cette action entraînera la fermeture définitive de ce compte Wine. Les modifications ultérieures ne sont plus possibles.",
+			"financialStatement": "L'état financier annuel sauvegardera définitivement toutes les actions précédentes dans ce compte Wine. Les modifications ultérieures ne sont plus possibles. Veuillez vérifier à nouveau l'exactitude de toutes les transactions de l'exercice avant de continuer."
+		}
+	},
+	"cellarWine": {
+		"fields": {
+			"barrelNumbers": "Récipient",
+			"chstamp": "Modification dernière",
+			"inputWeight": "Poids d'entrée",
+			"inputVolume": "Volume d'entrée",
+			"mustAcidity": "Acidité du moût",
+			"mustWeight": "Poids du moût",
+			"name": "Nom",
+			"number": "Numéro du vin",
+			"referenceNumber": "Numéro AP",
+			"stock": "Stock",
+			"volume": "Stock"
+		},
+		"actions": {
+			"create": {
+				"title": "Créer compte du vin",
+				"main": "Créer compte du vin",
+				"sub": "nouveau"
+			},
+			"export": {
+				"barrelList": "List des récipients",
+				"bottleLogs": "Livre de bouteille",
+				"cellarBook": "Livre de la cave",
+				"grapeMarcLogs": "Livre du marc",
+				"substanceLogs": "List des substances",
+				"wineBook": "Livre de vin"
+			}
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Créer compte du vin",
+				"editTitle": "Éditer compte du vin"
+			},
+			"gallery": {
+				"currentState": "État actuellement",
+				"vintage": "Millésime {vintage}",
+				"filters": {
+					"hideClosed": "Masquer les comptes de vin archivés",
+					"readyForBottling": "Prêt à l'embouteillage"
+				}
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer le compte?"
+		},
+		"toasts": {
+			"created": "Compte du vin créé.",
+			"changed": "Compte du vin édité.",
+			"duplicated": "Compte du vin dupliqué.",
+			"deleted": "Compte du vin supprimé."
+		}
+	},
+	"barrel": {
+		"fields": {
+			"bookingStamp": "Heure d'installation",
+			"capacity": "Capacité en litres",
+			"chstamp": "Modification dernière",
+			"clarifying": "Recipient à Collage?",
+			"fillLevel": "Hauteur de remplissage",
+			"label": "Étiquetage",
+			"location": "Location",
+			"manufacturer": "Frabricant",
+			"note": "Notes",
+			"number": "Numéro du recipient",
+			"type": "Type/Matiére"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer un",
+				"sub": "conteneur"
+			}
+		},
+		"types": {
+			"metal": "Métal",
+			"wood": "Bois",
+			"plastic": "Plastique/Matiére du composite",
+			"barrique": "Barrique",
+			"clay": "Argile",
+			"beton": "Béton",
+			"glas": "Berre"
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Creér recipient",
+				"editTitle": "Éditer recipient"
+			},
+			"gallery": {
+				"currentState": "État actuellement",
+				"filters": {
+					"search": {
+						"placeholder": "p.ex.: Numéro du recipient, Location, Frabricant"
+					},
+					"hideEmptyBarrels": "Cacher les recipients vides"
+				}
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer le recipient?",
+			"invalid": "Informations sur le conteneur incohérentes. Veuillez vérifier vos transactions sur les comptes de vins suivants: {wines}"
+		},
+		"toasts": {
+			"created": "Recipient creé.",
+			"changed": "Recipient édité.",
+			"duplicated": "Recipient dupliqué.",
+			"deleted": "Recipient supprimé."
+		},
+		"hints": {
+			"overFilling": "Niveau de remplissage dépasse la capacité maximale de {capacity} l.",
+			"underFilling": "Niveau de remplissage négatif."
+		}
+	},
+	"measurement": {
+		"fields": {
+			"currentValue": "De",
+			"targetValue": "À",
+			"range": "De {from} {unit} par {by} {unit} à {to} {unit}"
+		},
+		"types": {
+			"temperature": "Température",
+			"acidity": "Teneur en acide",
+			"sugarContent": "Teneur en sucre",
+			"alcohol": "Teneur en alcool",
+			"density": "Densité"
+		}
+	},
+	"substance": {
+		"fields": {
+			"type": "Type de matière",
+			"unit": "Unité",
+			"note": "Notes",
+			"productName": "Nom du produit",
+			"productVendor": "Vendeur"
+		},
+		"actions": {
+			"create": {
+				"main": "Matiére",
+				"sub": "creér"
+			}
+		},
+		"views": {
+			"edit": {
+				"createTitle": "Ceér matière",
+				"editTitle": "Éditer matière"
+			},
+			"gallery": {
+				"substance": "Matière/Nom du produit",
+				"chstamp": "Modification dernière",
+				"stock": "Stock"
+			}
+		},
+		"types": {
+			"activatedCarbon": "Charbon actif",
+			"albumin": "Albumine",
+			"alcohol": "Alcool",
+			"ascorbicAcid": "Acide ascorbique",
+			"bentonite": "Bentonite",
+			"carbonateLime": "Chaux carbonatée",
+			"carboneDioxide": "Dioxyde de carbone",
+			"carboxymethylCellulose": "Carboxyméthylcellulose",
+			"casein": "Caséine",
+			"cupricCitrate": "Citrate cuivrique",
+			"concentratedGrapeMust": "Moûts de raisins concentrés",
+			"dimethylDicarbonate": "Bicarbonate de diméthyle",
+			"dl-tarticAcid": "Acide tartrique DL",
+			"doubleSalt": "Sel double",
+			"enzyme": "Enzyme",
+			"fishProduct": "Produits de la pêche",
+			"gelatin": "Gélatine",
+			"glutenContainingCerealProduct": "Produit contenant du gluten",
+			"lacticAcid": "Acide lactique",
+			"lysozyme": "Lysozyme",
+			"malicAcid": "Acide malique",
+			"oakChips": "Copeaux de bois de chêne",
+			"plantProtein": "Protéine végétale",
+			"potassiumFerrocyanide": "Hexacyanoferrate de potassium",
+			"potassiumHydrogenCarbonate": "Hydrogénocarbonate de potassium",
+			"potassiumHydrogenSulfite": "Hydrogénosulfite de potassium",
+			"potassiumSorbate": "Sorbate de potassium",
+			"rectifiedConcentratedGrapeMust": "Moût de raisins concentrés rectifiés",
+			"saccharose": "Saccharose",
+			"sorbicAcid": "Acide sorbique",
+			"sulfurDioxide": "Dioxydes de soufre",
+			"tannin": "Tanins",
+			"tarticAcid": "Acide tartrique",
+			"vitaminB1": "Vitamine B1",
+			"yeast": "Levure"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette substance"
+		},
+		"toasts": {
+			"created": "Substance créé.",
+			"changed": "Substance édité.",
+			"deleted": "Substance supprimé."
+		}
+	},
+	"substanceLog": {
+		"fields": {
+			"substance": "Substance",
+			"quantity": "Quantité",
+			"note": "Notes",
+			"stock": "Stock"
+		},
+		"views": {
+			"editAddition": {
+				"createTitle": "Créer l'addition de la substance",
+				"editTitle": "Éditer l'addition de la substance"
+			},
+			"editWithdrawal": {
+				"createTitle": "Creér le retrait de la substance",
+				"editTitle": "Éditer le retrait de la substance"
+			}
+		},
+		"toasts": {
+			"createdAddition": "Addition de la substance créé.",
+			"changedAddition": "Addition de la substance édité.",
+			"createdWithdrawal": "Retrait de la substance créé.",
+			"changedWithdrawal": "Retrait de la substance édité.."
+		}
+	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "Modèle d'ordre",
+				"placeholder": "Vinou - Ordre (Standard)"
+			},
+			"creditadvice": {
+				"label": "Modèle de crédit",
+				"placeholder": "Vinou - Crédit (Standard)"
+			},
+			"delivery": {
+				"label": "Modèle du bon de livraison",
+				"placeholder": "Vinou - Bon de Livraison (Standard)"
+			},
+			"expertise": {
+				"label": "Modèle d'expertise PDF",
+				"placeholder": "Vinou - Expertise (Standard)"
+			},
+			"invoice": {
+				"label": "Modèle de facture",
+				"placeholder": "Vinou - Facture (Standard)"
+			},
+			"offer": {
+				"label": "Modèle d'offre",
+				"placeholder": "Vinou - Offre (Standard)"
+			},
+			"catalog": {
+				"label": "Modèle de catalogue",
+				"placeholder": "Liste de prix Vinou (par défaut)"
+			},
+			"text": {
+				"label": "Modèle pour les PDF texte",
+				"placeholder": "Document texte Vinou (standard)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Éditer modèles"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer le modèle?"
+		},
+		"toasts": {
+			"uploaded": "Modèle téléchargé!",
+			"deleted": "Modèle supprimé!"
+		}
+	},
+	"fieldset_general_title": "Général",
+	"fieldset_region_title": "Régional",
+	"fieldset_grapetype_title": "Cépage",
+	"fieldset_facts_title": "Données & Faits",
+	"fieldset_analyse_title": "Analyse",
+	"fieldset_additional_title": "Description & Photo",
+	"fieldset_qrcode_title": "Code QR",
+	"fieldset_contact_title": "Possibilités de contact",
+	"fieldset_description_title": "Description",
+	"fieldset_settings_title": "Configuration",
+	"fieldset_packages_title": "Options de livraison",
+	"fieldset_addresses_title": "Autres adresses",
+	"fieldset_customer_title": "Données des clients",
+	"fieldset_quickactions": "Actions rapides",
+	"settings_addresses": "Adresses",
+	"settings_packaging": "Options d'expédition",
+	"settings_advanced": "Configuration avancée",
+	"settings_templates": "Gérer les modèles",
+	"settings_mailsetup": "SMTP Boîte postale pour courriel",
+	"settings_payments": "Méthodes de paiement",
+	"settings_connections": "Composés",
+	"sysTool_account": "Configuration",
+	"options": "Options",
+	"addtoken": "Ajouter jeton",
+	"referer": "Valable pour",
+	"login": "Se connecter",
+	"logout": "Se déconnecter",
+	"edit": "´Éditer",
+	"save": "Enregistrer",
+	"repeatpw": "Répéter le mot de passe",
+	"language": "Langue",
+	"modal_delete_wine": "Voulez-vous vraiment supprimer ce vin?",
+	"test": "français",
+	"login_emailempty": "Adresse courriel non spécifiée",
+	"login_emailnotvalid": "Adresse courriel invalide",
+	"login_passwordempty": "Mot de passe non spécifiée",
+	"login_wronglogin": "Adresse courriel ou mot de passe invalide.",
+	"login_wrongreset": "Adresse courriel ou utilisateur approprié non trouvé.",
+	"db_categories_image": "Image",
+	"db_category_createtitle": "Creér categorie",
+	"db_category_edittitle": "Éditer catgorie",
+	"users_create_main": "Creér",
+	"users_create_sub": "Utilisateur",
+	"users_modification": "Modification demiére",
+	"users_default_person_placeholder": "Jean Dupont",
+	"users_default_person_mail_placeholder": "dupont@mail.com",
+	"users_galleryFilterHint": "p.ex. Jean Dupont, dupont@mail.com",
+	"users_create_modaltitle": "Creér utilisateur",
+	"users_edit_modaltitle": "Éditer utilisateur",
+	"users_settings_modaltitle": "Éditer configuration",
+	"user": {
+		"fields": {
+			"lastLogin": "Dernière connexion"
+		}
+	},
+	"users": {
+		"action": {
+			"main": "Creér",
+			"sub": "utilisateur"
+		},
+		"fields": {
+			"active_users": "Utilisateurs actifs"
+		}
+	},
+	"statistics": {
+		"types": {
+			"active": "Actif",
+			"admin": "Admin",
+			"default": "Défaut",
+			"interfrog": "Interfrog",
+			"has_image": "Avec Photo",
+			"has_price": "Avec prix",
+			"public": "Publiquement",
+			"total": "Complètement"
+		}
+	},
+	"db_users_login_title": "Se connecter",
+	"db_users_login_submit": "Se connecter",
+	"db_users_lostpassword": "Mot de passe oublié?",
+	"db_users_gotoregister": "Pas encore de compte? <a href='/register'>Enregistrez-vous ici!</a>",
+	"db_users_lostpassword_title": "Demander lien",
+	"db_users_lostpassword_submit": "Demander adresse courriel",
+	"db_users_lostpassword_send": "Un e-mail avec un lien de réinitialisation a été envoyé. Ceci est valable 24h. Utilisez ce lien pour réinitialiser votre mot de passe.",
+	"db_users_resetpassword_title": "Réinitialiser mot de passe",
+	"db_users_resetpassword_submit": "Définir nouveau mot de passe",
+	"db_users_resetpassword_send": "Votre mot de passe a été réinitialisé. Le lien utilisé n'est plus valide.",
+	"db_users_sendpasswordresetmail": "Envoyer un courriel de réinitialisation de mot de passe",
+	"db_users_gotologin": "Se connecter",
+	"db_users_createtitle": "Créer utilisateur",
+	"db_users_edittitle": "Éditer utilisateur",
+	"db_users_userdatatitle": "Éditer les données utilisateur",
+	"db_users_settingstitle": "Éditer les paramètres de l'application",
+	"db_users_passwordmatch": "Les deux mots de passe ne correspondent pas.",
+	"db_users_name": "Nom",
+	"db_users_mail": "Adresse courriel",
+	"db_users_password": "Mot de passe",
+	"db_users_role": "Rôle",
+	"db_users_active": "Actif",
+	"db_users_beta": "Est utilisateur bêta",
+	"db_users_image": "Image",
+	"db_users_customers_id": "Appartient á membre",
+	"db_winecategories_name": "Nom",
+	"db_winecategories_description": "Description",
+	"db_winecategories_image": "Image",
+	"db_tokens_createtitle": "Créer interface",
+	"db_tokens_edittitle": "Éditer interface",
+	"db_tokens_token": "Interface (jéton)",
+	"db_tokens_referer": "Domaine",
+	"db_tokens_mode": "Mode",
+	"db_tokens_mode_dev": "Développement (Host-Check off))",
+	"db_tokens_mode_live": "En direct (Host-Check on)",
+	"db_tokens_mode_hint": "<b>ATTENTION:</b> Tant que l'interface est en <b>mode de développement</b> vous pouvez l'interroger à l'aide de jeton et des données d'authentification, quel que soit le serveur de destination..",
+	"db_payments_createtitle": "Créer réception du paiement",
+	"db_payments_edittitle": "Éditer réception du paiement",
+	"db_payments_type": "Type",
+	"db_payments_type_cash": "Paiement en espèces",
+	"db_payments_type_bank": "Dépot á compte",
+	"db_payments_type_paypal": "PayPal",
+	"db_payments_bookingstamp": "Date de comptabilisation",
+	"db_payments_details": "Détails",
+	"db_payments_gross": "Montant",
+	"db_payments_invoice": "Facture",
+	"db_payments_order": "Ordre",
+	"db_orders_createtitle": "Créer ordre",
+	"db_orders_edittitle": "Éditer ordre",
+	"db_orders_viewtitle": "Regarder ordre",
+	"db_orders_payment_cash": "Paiement en espèces",
+	"db_orders_payment_prepaid": "Paiement anticipé",
+	"db_orders_payment_invoice": "Par facture",
+	"db_orders_payment_paypal": "PayPal",
+	"db_orders_showEditor": "Voir détecteur",
+	"db_cronjobs_createtitle": "Créer Cronjob",
+	"db_cronjobs_edittitle": "Éditer Cronjob",
+	"db_cronjobs_description": "Description",
+	"db_cronjobs_description_placeholder": "Description pour un nouvel Cronjob",
+	"db_cronjobs_galleryFilterHint": "p.ex. nom, description",
+	"db_cronjobs_command": "Commande exécutée",
+	"db_cronjobs_command_placeholder": "/usr/bin/php /path/to/script.php",
+	"db_cronjobs_cron": "Temps d'exécution (Crontab)",
+	"db_cronjobs_cron_placeholder": "* * * * *",
+	"db_cronjobs_active": "activer",
+	"cronjobs": {
+		"actions": {
+			"create": {
+				"main": "Créer Cronjob",
+				"sub": "nouveau"
+			}
+		}
+	},
+	"order_view_invoice": "Facture",
+	"order_create_invoice": "Créer facture",
+	"order_view_delivery": "Bon de livraison",
+	"order_create_delivery": "Créer bon de livraison",
+	"account_myWinery": "Mon établissement vinicole",
+	"account_myUser": "Mon utilisateur",
+	"stock": {
+		"actions": {
+			"create": {
+				"main": "D'entrée et sortie de marchandises",
+				"sub": "enregistrer"
+			},
+			"save": "Enregistrer les marchandises entrantes / sortantes"
+		},
+		"fields": {
+			"acidity": "Teneur en acide",
+			"alcohol": "Alcool",
+			"apNumber": "Numéro AP",
+			"bookingStamp": {
+				"label": "Date de traitement",
+				"placeholder": "DD.MM.YYYY"
+			},
+			"client": "Client",
+			"note": "Description, fournisseur, ...",
+			"orderNumber": "N° de commande",
+			"purpose": "Type",
+			"quantity": "Quantité",
+			"referenceNumber": "Facture no., reçu no. (par ex. documents d'accompagnement, numéro du vin)",
+			"residualSugar": "Sucre résiduel",
+			"type": "Type",
+			"wineNumber": "Numéro du vin"
+		},
+		"fieldsets": {
+			"analysisData": "Données analytiques"
+		},
+		"views": {
+			"edit": {
+				"title": "Enregistrement de l'entrée et de la sortie de marchandises"
+			},
+			"gallery": {
+				"empty": "Aucun mouvement de stock disponible"
+			}
+		},
+		"toasts": {
+			"created": {
+				"addition": "Entrée de marchandises enregistrée!",
+				"withdrawal": "Sortie de marchandises enregistrée!"
+			},
+			"changed": "Réservation modifiée!",
+			"editError": "La réservation a échoué!"
+		},
+		"types": {
+			"addition": "D'entrée",
+			"withdrawal": "Retrait"
+		},
+		"purposes": {
+			"bottling": "Embouteillage",
+			"breakage": "Rupture",
+			"correction": "Correction",
+			"creditAdvice": "Crédit",
+			"invoice": "Facture",
+			"privateConsumption": "Consommation personnelle",
+			"promotion": "Promotion",
+			"purchase": "Livraison",
+			"retour": "Retoue",
+			"sample": "Échantillon",
+			"sponsoring": "Parrainage"
+		}
+	},
+	"mailsetup_edittitle": "Éditer modification de SMTP",
+	"mailsetup_smtpserver": "Serveur SMTP",
+	"mailsetup_smtpport": "Port sur Serveur SMTP",
+	"mailsetup_smtpuser": "Nom d'utilisateur",
+	"mailsetup_smtppassword": "Mot de passe",
+	"mailsetup_smtpencrypt": "Cryptage",
+	"mailsetup_senderemail": "Courriel pour courriel sortant",
+	"mailsetup_sendername": "Expéditeur pour courriel sortant",
+	"paypal_edittitle": "Éditer paramètres PayPal",
+	"paypal_paypalclientid": "Client-ID",
+	"paypal_paypalsecret": "Secret",
+	"paypal_paypalappmode": "Mode",
+	"paypal_appmode_sandbox": "Bac à sable",
+	"paypal_appmode_live": "En direct",
+	"bank_edittitle": "Éditer coordonnées bancaire",
+	"bank_iban": "IBAN",
+	"bank_bic": "BIC",
+	"bank_bankname": "Nom d'établissement de crédit",
+	"bank_owner": "Titulaire du compte",
+	"cashlink_createtitle": "Registre Cashlink",
+	"cashlink_viewtitle": "Vos données Cashlink",
+	"cashlink_business_title": "Données de l'entreprise",
+	"cashlink_business_name": "Nom de l'entreprise",
+	"cashlink_business_email": "Courriel",
+	"cashlink_business_taxid": "Numéro fiscal",
+	"cashlink_business_street": "Rue",
+	"cashlink_business_street_number": "Numéro",
+	"cashlink_business_zipcode": "Code postal",
+	"cashlink_business_city": "Ville",
+	"cashlink_bank_title": "Compte bancaire",
+	"cashlink_owner_title": "Coordonnées",
+	"cashlink_owner_firstname": "Prénom",
+	"cashlink_owner_lastname": "Nom de famille",
+	"cashlink_owner_street": "Rue",
+	"cashlink_owner_street_number": "Numéro",
+	"cashlink_owner_zipcode": "Code postal",
+	"cashlink_owner_city": "Ville",
+	"cashlink_owner_birthday": "Date de naissance",
+	"filter_date_start": "À partir de",
+	"filter_date_end": "Jusqu'à",
+	"view_beta_create": "ATTENTION! Cette fonctionnalité est en Alpha Stage, certaines vues peuvent ne pas être encore disponibles. Créer une vue quand même?",
+	"customer": {
+		"page": {
+			"register": {
+				"title": "Enregistrer un compte d'essai",
+				"description": "<p>Avec votre compte d'essai de Vinou<sup>®</sup>, <b>vous pouvez utiliser toutes les fonctionnalités de Vinou<sup>®</sup> pendant 30 jours gratuitement.</b>. Après expiration de période d'essai, vous pourrez opter pour l'adhésion payante Vinou-Commerce. Peu importe ce que tu fais. Vous pouvez continuer à utiliser Vinou après 30 jours avec l’adhésion gratuite à Vinou Publishing. Dans tous les cas, vous serez facilement averti par e-mail et pourrez ensuite faire votre choix.</p>",
+				"submit": "Créer compte",
+				"send": "Félicitations, votre compte a été créé. Vous recevrez un email dans les prochaines minutes pour définir votre mot de passe et activer votre abonnement.",
+				"company": "Données de l'entreprise",
+				"contact": "Personne de contact",
+				"field": {
+					"type": "Je suis: "
+				}
+			},
+			"verify": {
+				"title": "Envoyer vérification",
+				"send": "Vérification est envoyée",
+				"reinvitelink": "Demander nouvelle invitation",
+				"contact": "Vous pouvez nous joindre au:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"success": {
+					"common": "Une vérification avec le lien d'activation a été envoyée <b>par courrier</b> à l'adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. Après une activation réussie, vous pouvez tester toutes les fonctionnalités de notre réseau gratuitement pendant 30 jours.",
+					"reinvite": "Une nouvelle invitation a été envoyée à <b>{customer.mail}</b>. Veuillez suivre le lien dans l'email pour vous vérifier."
+				},
+				"error": {
+					"common": "La vérification n'a pas pu être envoyée.<br><br>Veuillez nous contacter afin que vous puissiez commencer immédiatement.",
+					"completed": "Vous avez déjà vérifié et un lien d'activation a été envoyé <b>par la poste</b> à l'adresse <b>{customer.name}, {customer.company}, {customer.address}, {customer.zip} {customer.city}</b>. Après une activation réussie, vous pouvez tester toutes les fonctionnalités de notre réseau gratuitement pendant 30 jours.<br><br>Si vous n'avez pas reçu de carte postale, veuillez nous contacter afin que vous puissiez commencer immédiatement.",
+					"expired": "La vérification n'a pas pu être envoyée car la période d'invitation a déjà expiré.<br><br>Veuillez cliquer sur le lien suivant pour recevoir une nouvelle invitation ou pour nous contacter."
+				}
+			},
+			"activate": {
+				"title": "Terminer vérification",
+				"description": "Vous n'êtes plus qu'à une étape de votre adhésion. Veuillez entrer votre nom et mot de passe pour créer l'utilisateur administrateur.",
+				"user": "Créer utilisateur administrateur",
+				"submit": "Terminer vérification",
+				"success": "Verification terminée",
+				"error": "Malheureusement, la vérification n'a pas pu être terminée. Veuillez réessayer ou contactez-nous pour pouvoir commencer immédiatement.<br><br>Vous pouvez nous joindre à:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>"
+			},
+			"upgrade": {
+				"title": "Mise à niveau de l'abonnement",
+				"description": "Avec l'adhésion Vinou-Commerce, vous pouvez utiliser en permanence toutes les fonctionnalités de Vinou au prix de 40 EUR par mois, TVA en sus. Pour chaque ordre médiateé par nos soins, une commission unique de 1 EUR plus la TVA sera facturée. La taxe de base sera facturée au début du mois en cours. Les frais sont calculés le 1er du mois suivant.",
+				"teaser": {
+					"publish": "<b>Vous utilisez actuellement Vinou Publishing.</b> Pour utiliser toutes les fonctionnalités de Vinou, mettez à niveau votre abonnement en Vinou-Commerce.",
+					"trial": "<b>Vous utilisez actuellement Vinou dans le mois d'essai gratuit.</b> Pour continuer à utiliser toutes les fonctionnalités de Vinou, mettez à niveau votre abonnement vers Vinou-Commerce."
+				},
+				"linktext": "Mettre à niveau maintenant!",
+				"bank": "Données bancaires pour le prélèvement SEPA"
+			}
+		},
+		"action": {
+			"create": {
+				"main": "Créer",
+				"sub": "utilisateur",
+				"title": "Créer Membre",
+				"modaltitle": "Créer Membre"
+			},
+			"login": {
+				"login": "Se connecter"
+			},
+			"renewauth": {
+				"button": "Renouveler l'ID d'authentification!"
+			},
+			"search": {
+				"placeholder": "p.ex. nom, entreprise, adresse"
+			}
+		},
+		"fieldSets": {
+			"membership": "Adhésion",
+			"contact": "Coordonnées",
+			"description": "Description",
+			"settings": "Configuration",
+			"invoice": "Informations de facturation"
+		},
+		"fields": {
+			"mail": "Courriel",
+			"password": "Mot de passe",
+			"phone": "Téléphone",
+			"voucher": "J'ai un code promo",
+			"copyright": "© Copyright {company} 2018",
+			"name": "Personne de contact",
+			"company": "Entreprise",
+			"winery": "Établissement vinicole",
+			"taxid": "Numéro fiscal",
+			"vatid": "NIF",
+			"creditorid": "ID de créanciers",
+			"address": "Rue et numéro",
+			"zip": "Code postal",
+			"city": "Ville",
+			"zipcity": "Code postal - Ville",
+			"country": "Pays",
+			"www": "Site web",
+			"fax": "Fax",
+			"active": "Aktif",
+			"image": "Logo",
+			"freetext": "Texte libre",
+			"authid": "ID d'authentification du développeur",
+			"template": "Modèle Expertisen",
+			"cop": "J'ai lu les <a href='http://www.vinou.de/agb' target='blank'>termes et conditions</a> et les accepte.",
+			"trust": "Je conviens que mon compte sera supprimé s'il ne respecte pas les conditions d'utilisation ou les conditions d'enregistrement.",
+			"payment": "J'accepte que Vinou déduire les frais de base mensuel plus la TVA. et les frais d'ordre médiateé de mon compte.",
+			"pricing": "Adhésion",
+			"smallBusiness": {
+				"label": "Petite entreprise",
+				"description": "Factures hors taxes"
+			},
+			"crstamp": "Date d'enregistrement",
+			"expire": "Date d'expiration de la phase de test",
+			"voucher_old": "Code promo",
+			"source": "Acquis par",
+			"notice": "Envoyer des courriels système",
+			"state": "Statut",
+			"type": {
+				"label": "Type",
+				"winery": "Établissement vinicole",
+				"merchant": "Distributeur"
+			}
+		},
+		"pricingTypes": {
+			"acquisition": "En acquisition",
+			"trial": "Période d'essai",
+			"publish": "Publishing",
+			"regular": "Commerce",
+			"invitation": "Invité"
+		},
+		"views": {
+			"covid19Notification": {
+				"title": "Ab dem 1. Juli gilt die MwSt.-Senkung!",
+				"text": "Hast Du bis dahin keine Auswahl zur MwSt.-Anpassung vorgenommen, stellen wir Deine Preise automatisch zu diesem Datum um. Als Grundlage verwenden wir hierfür Deine Bruttopreise.",
+				"footerText": "<a href=\"https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Schlaglichter/Konjunkturpaket/2020-06-03-konjunkturpaket-beschlossen.html\" title=\"Bundesfinanzministerium - Koalitionsausschuss beschließt Konjunkturpaket\" target=\"_blank\">Weitere Informationen zum Konjunkturpaket</a>",
+				"action": "Einstellung konfigurieren"
+			}
+		},
+		"messages": {
+			"dialog": {
+				"activate": "Activer le compte complètement?",
+				"smallBusiness": "Voulez-vous vraiment changer le cadre des petites entreprises?<br/>Tous les prix de vos vins, produits et options d'expédition seront ajustés et devront être vérifiés."
+			},
+			"toasts": {
+				"upgrade": "Vinou Commerce a été activé!",
+				"upgrade_error": "Une erreur est survenue, Vinou-Commerce n'a pas pu être activé!",
+				"activation_error": "Une erreur est survenue, votre abonnement n'a pas pu être activé.!",
+				"activation_success": "Bienvenue à Vinou!"
+			}
+		},
+		"dialogs": {
+			"covid19TaxrateChange": {
+				"title": "Mehrwertsteuersenkung",
+				"text": "Bitte nimm Dir kurz Zeit und gib an, wie Du Deine Preise aufgrund der MwSt.-Senkung anpassen möchtest. Welchen Preis möchtest Du beibehalten und für die Neuberechnung als Basis benutzen?",
+				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Senkung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
+				"net": "Netto-Preis",
+				"gross": "Brutto-Preis"
+			}
+		},
+		"toasts": {
+			"settingsSaved": "Vos réglages ont été sauvegardés!"
+		},
+		"errors": {
+			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
+		}
+	},
+	"network": {
+		"field": {
+			"search": {
+				"placeholder": " ",
+				"wineries": "Entrer établissement vinicole",
+				"wines": "Entrer vin",
+				"wineriesandwines": "Entrer établissement vinicole ou vin",
+				"results": "Résultats de recherche pour",
+				"merchants": "Entrer distributeur"
+			}
+		},
+		"search": {
+			"title": "Rechercher dans le réseau Vinou"
+		},
+		"errors": {
+			"connect": {
+				"nowinesselected": "Aucun vin n'a été sélectionné! Voulez-vous importer l'établissement vinicole?"
+			}
+		},
+		"actions": {
+			"load-more": "Charger plus ..."
+		}
+	},
+	"winery": {
+		"action": {
+			"add": {
+				"main": "Créer établissement",
+				"sub": "vinicole"
+			},
+			"create": {
+				"main": "Créer établissement",
+				"sub": "vinicole",
+				"title": "Créer établissement vinicole",
+				"modaltitle": "Créer établissement vinicole"
+			},
+			"edit": {
+				"modaltitle": "Éditer établissement vinicole"
+			},
+			"search": {
+				"placeholder": "p.ex. nom, pays, région",
+				"title": "Rechercher un établissement vinicole",
+				"modaltitle": "Rechercher établissement vinicole"
+			},
+			"wineselection": {
+				"enable": "Activer sélection de vin",
+				"disable": "Deactiver sélection de vin"
+			}
+		},
+		"tabs": {
+			"files": "Fichiers"
+		},
+		"fieldSets": {
+			"general": "Général",
+			"contact": "Contact",
+			"description": "Description",
+			"wines": "Vins",
+			"shopsettings": "paramètres du site et de la boutique en ligne"
+		},
+		"field": {
+			"company": "Désignation",
+			"name": "Personne de contact",
+			"address": "Rue et numéro",
+			"zip": "Code postal",
+			"city": "Ville",
+			"country": "Pays",
+			"region": "Région du vin",
+			"taxid": "Numéro d'identification à la taxe sur la valeur ajourtée",
+			"phone": "Téléphone",
+			"fax": "Fax",
+			"mail": "Courriel",
+			"www": "Site web",
+			"freetext": "Description",
+			"vineyard": "Superficie viticole",
+			"harvest": "Rendement",
+			"bestplaces": "Meilleurs emplacements",
+			"memberof": "Membre de",
+			"sorting": "Index de tri manuel (par ex. boutique en ligne)",
+			"charindex": "Index alphabétique"
+		},
+		"list": {
+			"filter": {
+				"country": "Sélectionnez un pays",
+				"no_country": "Afficher les établissements vinicoles sans pays"
+			}
+		},
+		"files": {
+			"title": "Fichiers et documents sur cette établissement vinicole"
+		},
+		"messages": {
+			"hints": {
+				"loadingwines": "Les vins sont en train de charger",
+				"winesselectinfo": "Les vins énumérés sont tous des vins que l'établissement vinicole a publiés. Pour ajouter les vins à votre assortiment, activez la sélection de vin.",
+				"connectwinery": "Connectez-vous avec l'établissement vinicole et importez tous les vins (sélectionnés)"
+			},
+			"toasts": {
+				"created": "Établissement vinicole créé.",
+				"connected": "Vous êtes maintenant connecté à l'établissement vinicole."
+			}
+		}
+	},
+	"merchant": {
+		"action": {
+			"add": {
+				"main": "Créer",
+				"sub": "marchand"
+			},
+			"create": {
+				"title" : "Créer marchand",
+				"modaltitle": "Ajouter marchand"
+			},
+			"edit": {
+				"modaltitle": "Éditer marchand"
+			},
+			"search": {
+				"title": "Rechercher marchand",
+				"placeholder" : "p.ex. nom de l'entreprise, personne de contact ou adresse"
+			}
+		},
+		"fieldSets": {
+			"general": "Général",
+			"description": "Description"
+		},
+		"field": {
+			"company": "Nom de l'entreprise",
+			"name": "Personne de contact",
+			"address": "Rue, numéro",
+			"zip": "Code postal",
+			"city": "Ville",
+			"country": "Pays",
+			"taxid": "Numéro d'identification à la taxe sur la valeur ajourtée",
+			"phone": "Téléphone",
+ 			"fax": "Fax",
+			"mail": "Courriel",
+			"www": "Site web"
+		},
+		"list": {
+			"filter": {
+				"country": "Sélectionnez pays",
+				"no_country": "Afficher marchand sans pays"
+			}
+		},
+		"messages": {
+			"dialog": {
+				"delete": "Voulez-vous vraiment supprimer ce marchand?"
+			},
+			"toasts": {
+				"deleted": "Le marchand a été supprimé!",
+				"connected": "Le marchand a été ajouté en tant que fournisseur",
+				"created": "Le marchand a été créé"
+			},
+			"hints": {
+				"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)",
+				"noentries": "Pas encore d'entrées",
+				"connectmerchant": "Connectez-vous avec marchand"
+			}
+		}
+	},
+	"wine": {
+		"actions": {
+			"create": {
+				"main": "Créer Vin",
+				"sub": " ",
+				"title": "Créer vin",
+				"modaltitle": "Ajouter vin"
+			},
+			"edit": {
+				"modaltitle": "Éditer vin"
+			},
+			"export": {
+				"inventory": "Télécharger la liste d'inventaire",
+				"barcodeVector": "Téléchargez le code EAN sous forme de fichier vectoriel",
+				"qrCodeVector": "Téléchargez le code QR sous forme de fichier vectoriel"
+			},
+			"search": {
+				"placeholder": "p.ex. nom, pays, région, millésime, numéro de référence",
+				"title": "Rechercher vin",
+				"modaltitle": "Rechercher vin"
+			},
+			"showExpertise": {
+				"main": "Expertise",
+				"sub": "afficher",
+				"title": "Expertise ouverte dans une nouvelle fenêtre"
+			},
+			"showWinepass": {
+				"main": "Passe du vin",
+				"sub": "afficher",
+				"title": "Ouvrir passe du vin dans une nouvelle fenêtre"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergènes",
+			"general": "Général",
+			"stock": "Stock",
+			"grapetype": "Cépage",
+			"region": "Régional",
+			"facts": "Données et faits",
+			"prices": "Prix",
+			"analyse": "Analyse",
+			"additional": "Description",
+			"composition": "Composition",
+			"qrcode": "Code QR",
+			"bottle": "Bouteille",
+			"profile": "Profil de vin",
+			"network": "Mon réseau",
+			"shopsettings": "Configuration du site Web & de la boutique"
+		},
+		"field": {
+			"acid": "Teneur en acide",
+			"active": "Aktif",
+			"alcohol": "Teneur en alcool",
+			"allergens": {
+				"label": "Allergènes",
+				"placeholder": "Rechercher allergènes"
+			},
+			"articlenumber": "No. d'article",
+			"baseprice": "Prix au litre",
+			"barcode": "Code EAN",
+			"bio": "Certifié biologique",
+			"bottlesize": "Taille de la bouteille",
+			"cap": "Obturateur",
+			"category": "Categorie",
+			"tag": "Mots clés",
+			"countrycode": "Origine",
+			"cuvee": "Cuvée",
+			"description": "Description",
+			"drinktemperature": "Température de consommation",
+			"grapetypes": {
+				"label": "Cépag",
+				"placeholder": "Rechercher cépag"
+			},
+			"gross": "Prix brut",
+			"image": {
+				"label": "Image de la bouteille",
+				"error": {
+					"notfound": "L'image n'a pas pu être trouvée"
+				}
+			},
+			"inclVat": "TVA.",
+			"inshop": "Afficher dans la boutique",
+			"instock": "En stock",
+			"inwinelist": "Afficher dans la liste des vins",
+			"maturation": "Maturation",
+			"name": "Nom",
+			"nostock": "Pas de stock",
+			"nostocktext": "Texte affiché s'il n'y a pas de stock (p.ex. disponible de...)",
+			"public_wines": "Vins publics",
+			"place": "Emplacement",
+			"price": "Prix",
+			"prices": "Prix",
+			"qrcode": "Code QR",
+			"qrcode_redirect": "Code QR Redirect",
+			"qrcode_create": "Le code QR est généré après la première sauvegarde.",
+			"qrlink": "Adresse de destination pour le code QR",
+			"qrlinkempty": "Adresse de destination pour le code QR (Passe du vin si vide)",
+			"quality": "Niveau de qualité",
+			"quality_note": "Informations de classification supplémentaires",
+			"bottlingType": "Type de remplissage",
+			"quantity": "Stock",
+			"region": "Région de culture",
+			"shoplink": "Lien vers la boutique",
+			"shoplink_active": "Lien vers la boutique aktife",
+			"sorting": "Index de tri manuel (p.ex. pour le magasin)",
+			"stockunknown": "Aucune information",
+			"sweetness": "Sucre résiduel",
+			"taste": "Saveur",
+			"terroir": "Terroir",
+			"topseller": "Topseller",
+			"type": "Type",
+			"vegan": "Végétalien",
+			"vintage": "Millésime",
+			"weight": "Poids (en g)",
+			"winery": {
+				"label": "Établissement vinicole",
+				"placeholder": "Rechercher établissement vinicole"
+			}
+		},
+		"cap_types": {
+			"screw": "Bouchon à vis",
+			"cork":	"Liège naturel",
+			"crownCap": "Capsule",
+			"plastic": "Liège plastique",
+			"glas":	"Obturateur pour gaz"
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Trier vue par"
+			},
+			"sortdirection": {
+				"label": "Direction de tri: ",
+				"asc": "Ascendant",
+				"desc": "Descendant"
+			},
+			"filter": {
+				"category": "Sélectionnez categorie",
+				"noCategory": "Afficher vins sans catégorie",
+				"winetype": "Filtrer type du vin"
+			}
+		},
+		"vinougusto": {
+			"title": "Votre recommandation alimentaire pour ce vin",
+			"expertisetitle": "Recommandation alimentaire",
+			"foodAdvice": "Recommandation alimentaire",
+			"occasionAdvice": "Ça va bien avec"
+		},
+		"files": {
+			"title": "Fichiers et documents sur ce vin"
+		},
+		"language": {
+			"original": "{language} (Original)",
+			"translated": "Langue: {language}"
+		},
+		"translation": {
+			"other": "Traductions",
+			"original": "{title} (Original)",
+			"new": "{title} (Nouveau)"
+		},
+		"tabs": {
+			"vinougusto": "Vinou-Gusto",
+			"files": "Fichiers",
+			"stockRotation": "Mouvements de stock",
+			"marketing": "Commercialisation"
+		},
+		"dialogs": {
+			"connectAutomation": "Voulez-vous transférer automatiquement le vin dans la gamme de votre revendeur?",
+			"deleteConnection": "Voulez-vous vraiment supprimer cette connexion avec le partenaire commercial?"
+		},
+		"toasts": {
+			"automationConnected": "Le vin a été transmis et sera synchronisé dans le futur",
+			"connectionUpdated": "Les données de connexion ont été ajustées",
+			"connectionUpdatedError": "Les données de connexion n'ont pas pu être ajustées",
+			"connectionDeleted": "La connexion a été supprimée",
+			"connectionDeletedError": "La connexion n'a pas pu être supprimée"
+		},
+		"messages": {
+			"formdirty": "Le vin actuel a été édité. Voulez-vous enregistrer les modifications?",
+			"createcopy": "Voulez-vous prendre les informations de {wine.name}?",
+			"hints": {
+				"connectwine": "Connectez-vous avec du vin"
+			},
+			"toasts": {
+				"connected": "Le vin a été transféré à l'assortiment."
+			}
+		}
+	},
+	"winecategory": {
+		"fieldSets": {
+			"general": "Général",
+			"network": "Mon réseau",
+			"shopsettings": "Configuration du site Web & de la boutique"
+		},
+		"field": {
+			"name": "Nom",
+			"description": "Description",
+			"crstamp": "Date de création",
+			"inshop": "Afficher dans la boutique",
+			"inwinelist": "Afficher dans la list du vin",
+			"sorting": "Index de tri manuel (p.ex. pour le boutique)"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer",
+				"sub": "catégorie"
+			},
+			"createfacebookiframe": {
+				"main": "Creér",
+				"sub": "Facebook-Iframe"
+			},
+			"viewfacebookiframe": {
+				"main": "Regarder",
+				"sub": "Facebook-Iframe"
+			},
+			"createslider": {
+				"main": "Créer curseur",
+				"sub": "pour l'affichage de Vinouthek"
+			},
+			"viewslider": {
+				"main": "Regarder curseur",
+				"sub": "pour l'affichage de Vinouthek"
+			}
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Trier la vue par: "
+			},
+			"sortdirection": {
+				"label": "Direction de tri: ",
+				"asc": "Ascendant",
+				"desc": "Descendant"
+			}
+		}
+	},
+	"prices": {
+		"gross": "Brut",
+		"net": "Net",
+		"price": "Prix",
+		"taxrate": "Taux d'imposition",
+		"standard": "Prix standard",
+		"action": {
+			"create": {
+				"main": "Créer",
+				"sub": "prix"
+			},
+			"delete": {
+				"confirm": "Voulez-vous vraiment supprimer ce prix?"
+			}
+		},
+		"fieldSets": {
+			"title": "Prix"
+		}
+	},
+	"product": {
+		"actions": {
+			"create": {
+				"main": "Créer",
+				"sub": "produit"
+			}
+		},
+		"fieldSets": {
+			"facts": "Faits et chiffres"
+		},
+		"form": {
+			"edit": {
+				"title": "Éditer produit"
+			},
+			"create": {
+				"title": "Créer produit"
+			}
+		},
+		"field": {
+			"active": "aktif",
+			"articlenumber": "No. d'article",
+			"baseprice": "Prix de base",
+			"description": "Description",
+			"gross": "Prix brut",
+			"name": "Nom",
+			"net": "Prix net",
+			"nostock": "pas en stock",
+			"nostocktext": "Texte si pas en stock",
+			"prices": "Prix",
+			"quantity": "Stock",
+			"quantityabbr": "Pcs.",
+			"size": "Quantité de remplissage",
+			"tag": "Mots clés",
+			"tax": "TVA.",
+			"taxrate": "Taux d'imposition",
+			"unit": "Unité",
+
+			"image": {
+				"error": {
+					"notfound": "L'image n'a pas pu être trouvée"
+				}
+			}
+		},
+		"gallery": {
+			"filter": {
+				"searchhint": "p.ex. nom, numéro de réference"
+			}
+		},
+		"messages": {
+			"hints": {
+				"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)",
+				"noentries": "Pas encore d'entrées disponibles"
+			},
+			"dialog": {
+				"delete": "Voulez-vous vraiment supprimer ce produit?"
+			},
+			"toasts": {
+				"created": "Produit créé!",
+				"changed": "Produit édité!",
+				"deleted": "Produit supprimé!",
+				"image_uploaded": "Image du produit téléchargée!",
+				"image_deleted": "Image du produit supprimé",
+				"copied": "Produit dupliqué"
+			}
+		}
+	},
+	"note": {
+		"field": {
+			"content": "Content",
+			"edited": "Édité sur",
+			"wrote": "Écrit sur"
+		},
+		"action": {
+			"create": {
+				"main": "Créer",
+				"sub": "note"
+			}
+		},
+		"messages": {
+			"toasts": {
+				"saved": "Note enregistré!",
+				"saveerror": "Note n'a pas pu être enregistré!",
+				"delete": "Note supprimé!",
+				"deleteerror": "Note n'a pas pu être supprimé!"
+			}
+		}
+	},
+	"client": {
+		"action": {
+			"create": {
+				"main": "Créer",
+				"sub": "client",
+				"title": "Créer client",
+				"modaltitle": "Créer client"
+			},
+			"edit": {
+				"modaltitle": "Éditer client"
+			},
+			"search": {
+				"placeholder": "p.ex. nom, entreprise, adresse"
+			},
+			"contactperson": {
+				"main": "Créer",
+				"sub": "personne de contact"
+			}
+		},
+		"gallery": {
+			"sortby": {
+				"label": "Trier la vue par: "
+			},
+			"sortdirection": {
+				"label": "Direction de tri: ",
+				"asc": "Ascendant",
+				"desc": "Descendant"
+			},
+			"filter": {
+				"type": "Filtrer type de client"
+			}
+		},
+		"statistics": {
+			"favourites": "Produits préférés",
+			"sales": "Statistiques de ventes",
+			"month": "Les 30 derniers jours",
+			"quarter": "3 derniers mois",
+			"year": "L'année dernière"
+		},
+		"fieldSets": {
+			"general": "Général",
+			"contactperson": "Personne de contact",
+			"contact": "Coordonnées",
+			"settings": "Configuration",
+			"addresses": "Autres adresses",
+			"bankingdetails": "Coordonnées bancaire",
+			"paymentsettings": "Facturation"
+		},
+		"field": {
+			"contactname": "Personne de contact",
+			"username": "Nom d'utilisateur (pour accès externe)",
+			"number": "Numéro de client",
+			"company": "Entreprise",
+			"taxid": "Numéro d'identification fiscale",
+			"address": "Rue et numéro",
+			"address_supplement": "Adresse supplémentaire",
+			"zip": "Code postal",
+			"city": "Ville",
+			"country": "Pays",
+			"mail": "Courriel",
+			"www": "Site Web",
+			"phone": "Téléphone",
+			"mobile": "Portable",
+			"fax": "Fax",
+			"newsletter": "Bulletin approuvé",
+			"active": "aktif",
+			"image": "Logo",
+			"department": "Département",
+			"type": "Type",
+			"bank": "Établissement de crédit",
+			"iban": "IBAN",
+			"bic": "BIC",
+			"rebate": "Remise (en%)",
+			"pricerange": "Gamme de prix",
+			"invoice_type": "Type de facture",
+			"payment_type": "Type de paiement",
+			"payment_period": "Cible de paiement (en jours)",
+			"cashback": "Remise (en%)",
+			"cashback_period": "Période de rémise (en jours)",
+			"unique_mandate_reference": "Mandat de prélèvement SEPA",
+			"tax_free": "Exempté de TVA",
+			"search_client": "Rechercher client"
+		},
+		"department_types": {
+			"branch_administration": "Directeur de succursale",
+			"branch_administration_assistant": "Directeur de succursale adjoint",
+			"distribution": "Ventes",
+			"event_management": "Gestion d'événements",
+			"finance": "Comptabilité",
+			"logistics": "Logistique",
+			"management": "Direction",
+			"marketing": "Marketing",
+			"product_management": "Gestion des produits",
+			"purchase": "Achat",
+			"restaurant_administration": "Directeur de restaurant",
+			"sommelier": "Sommelier",
+			"support": "Support"
+		},
+		"tabs": {
+			"history": "Histoire",
+			"addresses": "Adresses",
+			"contacts": "Personne de contact",
+			"general": "Général",
+			"notes": "Notes"
+		},
+		"types": {
+			"private": "Personne privée",
+			"gastronomy": "Gastronomie",
+			"wholesale": "Vente en gros",
+			"specializedtrade": "Commerce spécialisé",
+			"foodretailing": "Commerce de détail alimentaire",
+			"reseller": "Revendeur",
+			"export": "Exportation",
+			"online": "Détaillant en ligne",
+			"other": "Autre entreprise"
+		},
+		"hints": {
+			"imageSize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce client?"
+		},
+		"toasts": {
+			"created": "Client créé!",
+			"changed": "Client édité!",
+			"copied": "Image du client dupliqué",
+			"deleted": "Client supprimé!",
+			"imageUploaded": "Image du client téléchargée!",
+			"imageDeleted": "Image du client supprimé"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette personne de contact?"
+		},
+		"toasts": {
+			"saved": "Personne de contact enregistrée!",
+			"deleted": "Personne de contact supprimée!"
+		}
+	},
+	"address": {
+		"action": {
+			"create": {
+				"title": "Créer adresse",
+				"main": "Créer",
+				"sub": "adresse"
+			},
+			"save": "Enregistrer adresse"
+		},
+		"field": {
+			"type": "Type d'adresse",
+			"fullname": "Nom",
+			"name": "Nom/personne de contact",
+			"company": "Entreprise",
+			"address": "Rue et numéro",
+			"address_supplement": "Adresse supplémentaire",
+			"zip": "Code postal",
+			"city": "Ville",
+			"country": "Pays",
+			"defaultdeliveryaddress": "Adresse de livraison standard",
+			"defaultinvoiceaddress": "Adresse de facturation standard",
+			"defaultinvoicemsg": "L'adresse spécifiée ici est définie dans l'onglet 'Général'.",
+			"searchaddress": "Rechercher adresse de livraison"
+		},
+		"types": {
+			"invoice": "Adresse de facturation",
+			"shipping": "Adresse de livraison"
+		}
+	},
+	"contacts": {
+		"fields": {
+			"defaultcontact": "Personne de contact standard",
+			"defaultcontactmsg": "La personne de contact spécifiée ici est définie dans l'onglet 'Général'."
+		},
+		"actions": {
+			"create": {
+				"main": "Créer personne",
+				"sub": "de contact"
+			},
+			"save": {
+				"title": "Enregistrer contact"
+			}
+		}
+	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Crédit créé et ordre annulé!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Bon de livraison créé!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Facturation créée!"
+		}
+	},
+	"order": {
+		"documenttypes": {
+			"invoice": "Facture",
+			"delivery": "Bon de livraison",
+			"shipment": "Étiquette de l'emballage",
+			"offer": "Offres",
+			"creditadvice": "Crédit"
+		},
+		"paymenttypes": {
+			"cash": "Paiement en espèces",
+			"invoice": "Par facture",
+			"prepaid": "Paiement anticipé",
+			"debit": "Prélèvement SEPA",
+			"paypal": "PayPal"
+		},
+		"invoicetypes": {
+			"net": "Facture nette",
+			"gross": "Facture brute"
+		},
+		"documents": {
+			"invoice": "Factures",
+			"delivery": "Bons de livraison",
+			"shipment": "Étiquettes de l'emballage",
+			"creditadvice": "Crédit"
+		},
+		"states": {
+			"new": "Nouvelle",
+			"need_payment": "Paiement en attente",
+			"payed": "Paiement reçu",
+			"need_package": "En préparation d'expédition",
+			"in_delivery": "En livraison",
+			"closed": "Terminé",
+			"cancelled": "Annulé"
+		},
+		"views": {
+			"view": {
+				"tabs": {
+					"documents": "Documents",
+					"shipments": "Livraisons"
+				}
+			},
+			"documents": {
+				"title": "Documents",
+				"empty": "Il n'y a pas de {label} dans cet ordre."
+			}
+		},
+		"action": {
+			"add_position": "+ Ajouter position",
+			"create": {
+				"main": "Détecter",
+				"sub": "ordre"
+			},
+			"search": {
+				"placeholder": "p.ex. nom, numéro de client, adresse"
+			},
+			"invoice_create": {
+				"main": "Facture",
+				"create": "créer",
+				"print": "imprimer",
+				"show": "afficher"
+			},
+			"delivery_note_create": {
+				"main": "Bon de livraison",
+				"create": "créer",
+				"print": "imprimer",
+				"show": "afficher"
+			},
+			"cancel_order": {
+				"main": "Annuler",
+				"create": "ordre"
+			},
+			"voucher_create": {
+				"main": "Créer",
+				"create": "crédit"
+			},
+			"shippingotheraddress": {
+				"main": "Adresse de livraison",
+				"sub": "différente"
+			},
+			"export": {
+				"invoices": "Télécharger les factures pour la période sélectionnée"
+			},
+			"touch": "Marquer la commande comme lue"
+		},
+		"fieldsets": {
+			"billing": "Adresse de facturation",
+			"delivery": "Expédition ",
+			"payment": "Modalités de paiement",
+			"positions": "Positions",
+			"summary": "Résumé de la ordre"
+		},
+		"fields": {
+			"processing_data": "Les données sont traitées ...",
+			"brutto_sum": "Total brut",
+			"campaign": "Campagne",
+			"cashback": "Remise (en%)",
+			"cashbacksum": "Une remise de {cashback}% ({cashbackPeriod} jours) est accordée sur cet ordre. Montant du paiement: {grossCashback}.",
+			"cashback_period": "Période de rémise (en jours)",
+			"clientName": "Nom de client",
+			"clientType": "Type de client",
+			"createdBy": "Détectée par",
+			"delivery_note_created": "Bon de livraison créé",
+			"delivery_note_not_yet_created": "Bon de livraison n'a pas encore été créé",
+			"deliveryaddress": "Adresse de livraison",
+			"deliveryNoteNumber": "Numéro de bordereau de livraison",
+			"deliveryNoteRemark": "Remarque sur le bon de livraison",
+			"documents": "Documents",
+			"excl_vat": "plus TVA",
+			"filter_orders": "Filtrer ordre",
+			"grossCashback": "Montant du paiement moins remise",
+			"inclvat": "Contient TVA",
+			"invoice_created": "Créer Facture",
+			"invoice_not_yet_created": "Facture n'a pas encore été créé",
+			"invoiceNumber": "Numéro de facture",
+			"invoiceRemark": "Remarque sur la facture",
+			"itemsum": "Somme de toutes les positions",
+			"loading_positions": "Positions sont en train de charger",
+			"netto_sum": "Total net",
+			"next_delivery": "Continuer à l'expédition",
+			"next_delivering_addr": "Continuer à l'adresse de livraison",
+			"next_payment": "Continuer vers les options de paiement",
+			"next_positions": "Continuer aux positions",
+			"next_summary": "Continuer vers l'aperçu de l'ordre",
+			"no_payment_income_yet": "Paiement pas encore reçu",
+			"nocustomerselected": "Pour créer la facture, une adresse client est requise. Veuillez d'abord sélectionner un client.",
+			"note": "Remarques",
+			"number": "Numéro de commande",
+			"order_dispatched": "Ordre expédiée",
+			"order_not_yet_dispatched": "Ordre pas encore expédiée",
+			"order_date": "Réception de la commande",
+			"order_cancelled_date": "Ordre annulé",
+			"package": "Emballage et expédition",
+			"parcel": "Livraison par paquet",
+			"paid": "Payé",
+			"payment_income_date": "Réception du paiement",
+			"payment_type": "Type de paiement",
+			"payment_period": "Cible de paiement (en jours)",
+			"paymentDate": "Date de règlement",
+			"pricingtype": "Type de facture",
+			"pricingnet": "Facture nette",
+			"pricinggross": "Facture brute",
+			"quantity": "Pièce",
+			"rebate": "Remise (en %)",
+			"rebateGross": "Remise brute (en {currency})",
+			"rebateNet": "Remise nette (en {currency})",
+			"rebatesum": "Remise",
+			"same_invoice_addr": "Comme l'adresse de facturation",
+			"search_product": "Rechercher produit",
+			"servicePeriod": {
+				"label": "Période de service",
+				"placeholder": "DD.MM.YYYY",
+				"default": "Le jour du service correspond au jour de la facture"
+			},
+			"shipping_different_location": "Adresse de livraison différente",
+			"state": "Statut",
+			"taxfree": "Exempté de TVA",
+			"taxrateNetTax": "{taxrate}% de {value}",
+			"taxrateGrossTax": "{value} - {taxrate}%",
+			"vatincluded": "incluse {tax} TVA.",
+			"vatexcluded": "plus {tax} TVA.",
+			"yardsale": "Vente à la ferme",
+			"payment_income": {
+				"main": "Paiement",
+				"sub": "reçu"
+			},
+			"booking_payment_income": {
+				"main": "Réserver réception",
+				"sub": "du paiement"
+			},
+			"generate_invoice_and_delivering_note": {
+				"main": "Créer facture et bon de livraison",
+				"sub": "Réserver paiement en espèces"
+			},
+			"invoice_and_delivering_note": {
+				"main": "Créer",
+				"sub": "Facture et bon de livraison"
+			},
+			"order_to_dispatch": {
+				"main": "Donner l'ordre",
+				"sub": "à l'expédition"
+			}
+		},
+		"dialogs": {
+			"create": {
+				"msg": "Vous créez un ordre, que voulez-vous faire?",
+				"save": "Créer seulement",
+				"withInvoice": "Créer un ordre avec facture",
+				"withDocuments": "Créer un ordre avec facture et bon de livraison"
+			}
+		},
+		"toasts": {
+			"cancelled": "Ordre annulé!",
+			"created": "Ordre créé!",
+			"createerror": "L'ordre n'a pas pu être détecté. Veuillez vérifier vos coordonnées et réessayer.",
+			"deleted": "Ordre supprimé!",
+			"pricesChanged": "Les prix d'un ou plusieurs produits ont changé. Le nouveau prix total est {price}.",
+			"sent": "Ordre expédié!",
+			"updated": "Ordre changé!",
+			"touched": "Ordre marqué comme lu!"
+		}
+	},
+	"packaging": {
+		"actions": {
+			"create": {
+				"main": "Créer option",
+				"sub": "d'expédition'"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Créer option d'expédition"
+			},
+			"edit": {
+				"title": "Éditer option d'expédition"
+			},
+			"gallery": {
+				"empty": "Aucune option d'expédition disponible"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette option d'expédition?"
+		},
+		"toasts": {
+			"created": "Option d'expédition créé",
+			"changed": "Option d'expédition édité",
+			"deleted": "Option d'expédition supprimé",
+			"rangeerror": "Ce paramètre entre en conflit avec une autre option d'expédition!",
+			"inputerror": "Les valeurs entrées ne sont pas autorisées!"
+		},
+		"field": {
+			"type": "Type",
+			"min": "Min",
+			"max": "Max",
+			"price": "Prix"
+		},
+		"types": {
+			"bottles": "Bouteilles",
+			"weight": "Gramme"
+		}
+	},
+	"packagingunit": {
+		"actions": {
+			"create": {
+				"main": "Créer Unité",
+				"sub": "d'expédition"
+			}
+		},
+		"field": {
+			"capacity": {
+				"label": "Capacité (bouteilles)",
+				"unit": "Bouteilles"
+			},
+			"width": {
+				"label": "Largeur",
+				"unit": "(en cm)"
+			},
+			"height": {
+				"label": "Hauteur",
+				"unit": "(en cm)"
+			},
+			"length": {
+				"label": "Profondeur",
+				"unit": "(En cm)"
+			},
+			"weight": {
+				"label": "Tare",
+				"unit": "(en g)"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette unité d'expédition?"
+		},
+		"toasts": {
+			"created": "Unité d'expédition créé",
+			"changed": "Unité d'expédition édité",
+			"deleted": "Unité d'expédition supprimé"
+		},
+		"views": {
+			"edit": {
+				"title": "Éditer Unité d'expédition"
+			},
+			"gallery": {
+				"empty": "Aucune unité d'expédition créée"
+			}
+		}
+	},
+	"shipment": {
+		"fields": {
+			"carrierTrackingNumber": "Numéro de suivi du transporteur"
+		},
+		"field": {
+			"carrier": "Service d'expédition",
+			"packagingUnit": {
+				"namewithcapacity": "{capacity} carton"
+			},
+			"defaultcarrier": "Service d'expédition standard",
+			"onlyonecarrier": "Utilisez uniquement le service d'expédition standard?",
+			"service": "Type de expédition",
+			"shipcloudapikey": {
+				"label": "ShipCloud Clé API",
+				"description": "Si vous avez votre propre compte ShipCloud, vous pouvez le connecter ici.",
+				"error": "Clé invalide"
+			}
+		},
+		"actions": {
+			"activate": "Activer la gestion des expéditions",
+			"deactivate": "Deactiver la gestion des expéditionsn"
+		},
+		"dialogs": {
+			"activate": {
+				"title": "Activer la gestion des expéditions",
+				"content": "La gestion des expéditions Vinou est réalisée par le service d'expédition <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a><strong>, des frais supplémentaires s’appliquent à vos envois.</strong> En cliquant sur Oui, vous confirmez <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>les conditions actuelles de gestion des expéditions.</strong></a>L’utilisation de la gestion des expéditions Vinou peut être désactivée à tout moment via les paramètres d’expédition."
+			}
+		},
+		"messages": {
+			"errors": {
+				"common": "Une erreur s'est produite lors de la création des étiquettes d'expédition.",
+				"contact": "Si le problème persiste, veuillez nous contacter à l'adresse suivante:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+				"internal": "Veuillez réessayer plus tard",
+				"invalidaddress": "Veuillez vérifier l'adresse de l'expéditeur (adresse de l'entreprise propre sous Configuration) et vérifier si l'adresse du destinataire et les détails de l'ordre sont entrés correctement dans les détails de l'ordre'.",
+				"invalidapikey": "La clé de l'API ShipCloud est introuvable ou non valide. <br/><br/>Veuillez vérifier les informations sous Configuration > Gestion des expéditions.",
+				"toomanyrequests": "Le nombre maximal d'envois pour l'offre d'expédition sélectionnée via ShipCloud a été atteint. Veuillez réserver un abonnement d'expédition approprié à:<a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+			}
+		},
+		"toasts": {
+			"activated": "Expédition activée",
+			"deactivated": "Expédition deactivée",
+			"send": "Envois enregistrés au service d'expédition",
+			"changed": "Service d'expédition standard changé"
+		},
+		"views": {
+			"edit": {
+				"title": "Modifier configuration d'expédition"
+			},
+			"create": {
+				"title": "Envoyer l'ordre'"
+			},
+			"shipments": {
+				"title": "Envois"
+			},
+			"gallery": {
+				"empty": "Aucune donnée d'envoi disponible"
+			}
+		},
+		"servicetypes": {
+			"dhl": {
+				"standard": "DHL Standard",
+				"dhl_europaket": "DHL Europaket",
+				"returns": "DHL Retoure"
+			},
+			"dpd": {
+				"standard": "DPD Standard",
+				"one_day": "DPD Express",
+				"one_day_early": "DPD 12:00",
+				"returns": "DPD Retoure"
+			},
+			"gls": {
+				"standard": "GLS Standard",
+				"one_day": "GLS One Day",
+				"gls_express_0800": "GLS Express 0800",
+				"gls_express_0900": "GLS Express 0900",
+				"gls_express_1000": "GLS Express 1000",
+				"gls_express_1200": "GLS Express 1200",
+				"gls_pick_and_ship": "GLS Pick and Ship",
+				"one_day_early": "GLS One Day Early"
+			},
+			"ups": {
+				"standard": "UPS Standard",
+				"one_day": "UPS Express",
+				"one_day_early": "UPS Express Plus",
+				"ups_express_1200": "UPS Express 12:00",
+				"ups_expedited": "UPS Expedited",
+				"returns": "UPS Retoure"
+			}
+		}
+	},
+	"pricerange": {
+		"empty": "Actuellement, aucune classe de prix n'a été créée.",
+		"actions": {
+			"create": {
+				"main": "Créer classe",
+				"sub": "de prix"
+			}
+		},
+		"fields": {
+			"clients": "Clients"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette classe de prix?"
+		},
+		"toasts": {
+			"created": "Classe de prix créée!",
+			"changed": "Classe de prix éditée!",
+			"deleted": "Classe de prix supprimée!"
+		}
+	},
+	"file": {
+		"actions": {
+			"create": {
+				"main": "Creér",
+				"sub": "fichier"
+			},
+			"save": "Enregistrer fichier"
+		},
+		"fields": {
+			"title": "Titre",
+			"source": "La source",
+			"description": "Description",
+			"identifier": "Identifiant (pour accès externe)",
+			"file": "Téléchargement de fichier",
+			"url": "adresse externe / URL",
+			"preview": "Aperçu",
+			"public": {
+				"true": "visible publiquement",
+				"false": "visible uniquement à l'intérieur"
+			}
+		},
+		"sources": {
+			"internal": "dossier interne",
+			"external": "lien externe"
+		},
+		"views": {
+			"edit": {
+				"title": "Modifier le fichier"
+			},
+			"create": {
+				"title": "Créer un nouveau fichier"
+			},
+			"list": {
+				"empty": "Aucun fichier disponible"
+			}
+		},
+		"hints": {
+			"previewSize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 1000x1000px<br/> Format de fichier: .png (rogné)"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce fichier?"
+		},
+		"toasts": {
+			"created": "Fichier créé!",
+			"changed": "Fichier édité!",
+			"deleted": "Fichier supprimé!"
+		}
+	},
+	"fileImport": {
+		"actions": {
+			"analyse": "Start analyse",
+			"execute": "Execute import"
+		},
+		"views": {
+			"create": {
+				"title": "Data import"
+			},
+			"upload": {
+				"title": "Step 1 - Upload data",
+				"description": "Only Excel files allowed (xls, xlsx). Filesize should be smaller than 5 MB. <strong>Please make sure that file contains a valid headline that contains only allowed fields. </strong> An example file could be downloaded <a href='http://www.vinou.de/vorlagen'>here</a>."
+			},
+			"analyse": {
+				"title": "Step 2 - Analyse data",
+				"description": "Don't close the modal during analyse process.",
+				"result": "Step 2 - Analyse result",
+				"headrow": "Headline",
+				"headrowdetected": "The headline <strong>is detected as valid</strong>",
+				"headrowfailed": "The headline <strong>is invalid or not existing</strong>",
+				"total": "Whole file",
+				"totalcount": "<strong>{count} rows</strong> detected",
+				"totaldatacount": "<strong>{count} entries</strong> prepared for import",
+				"unreadable": "<strong>{count}</strong> wrong fieldnames",
+				"noproperty": "<strong>{count}</strong> fields that couldn't be imported"
+			},
+			"execute": {
+				"title": "Step 3 - Import data",
+				"importstatus": "{imported} of {total} imported"
+			},
+			"importresult": {
+				"title": "Import finished",
+				"description": "Data successfulls imported",
+				"errors": {
+					"headline": "IMPORTANT! The file contains faulty data",
+					"text": "<strong>{aborted} entries</strong> were not imported. The Lines <strong>{errors}</strong> are faulty. These lines can be duplicates."
+				}
+			}
+		},
+		"fields": {
+			"file": "Fileupload"
+		},
+		"toasts": {
+			"fileuploadedsuccess": "File uploaded!",
+			"fileuploadedfailed": "File upload failed!",
+			"importanalysesuccess": "File analyse successful",
+			"importanalysefailed": "File analyse failed!",
+			"importnextpackage": "Next import package started",
+			"importexecutedsuccess": "Import execution successful!",
+			"importexecutedfailed": "Import execution failed!"
+		}
+	},
+	"news": {
+		"gallery": {
+			"sortby": {
+				"label": "Sort view by: "
+			},
+			"sortdirection": {
+				"label": "Sort direction: ",
+				"asc": "Ascending",
+				"desc": "Descending"
+			},
+			"filter": {
+				"visibility": "Filter by visibility"
+			}
+		},
+		"action": {
+			"create": {
+				"modaltitle": "Create news entry",
+				"main": "Create new",
+				"sub": "News entry"
+			},
+			"search": {
+				"placeholder": "e.q. title, teaser, content"
+			}
+		},
+		"views": {
+			"files": {
+				"title": "Files",
+				"empty": "There are no {label} for this news entry."
+			}
+		},
+		"tabs": {
+			"files": "Files"
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings",
+			"seo": "Search engine specific information"
+		},
+		"fields": {
+			"title": "Title",
+			"image": "Image",
+			"teaser": "Teaser (Preview-Text)",
+			"content": "Content",
+			"link": "external link",
+			"visibility": "visibility",
+			"startdate": "start date",
+			"enddate": "end date",
+			"meta_title": "title-tag",
+			"meta_description": "meta description",
+			"path_segment": "path segment"
+		},
+		"toasts": {
+			"created": "News entry created!",
+			"changed": "News entry updated!",
+			"deleted": "News entry deleted!",
+			"image_uploaded": "Newsimage uploaded!",
+			"image_deleted": "Newsimage deleted",
+			"copied": "News entry copied"
+		},
+		"dialogs": {
+			"delete": "Are you sure you want to delete this news entry?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommendation for optimal display </b> <br> Dimensions: 1920x1280px <br/> File format: .png (cropped)"
+		},
+		"files": {
+			"title": "Files and documents related to this news entry"
+		}
+	},
+	"text": {
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Text"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "No texts have been created so far."
+			}
+		},
+		"fieldSets": {
+			"general": "General",
+			"settings": "Settings",
+			"documents": "Documents générés"
+		},
+		"fields": {
+			"title": "title",
+			"content": "content",
+			"visibility": "Visibility",
+			"identifier": "Identifier (for external access)",
+			"manualidentifier": "Manual Identifier",
+			"path_segment": "Path segment",
+			"chstamp": "Last change"
+		},
+		"toasts": {
+			"created": "Text created!",
+			"changed": "Text changed!",
+			"deleted": "Text deleted!"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this text?"
+		},
+		"identifier": {
+			"legalnotice": "Legal notice",
+			"privacypolicy": "Privacy policy",
+			"conditionsofservice": "Conditions of Service",
+			"revocation": "Revocation",
+			"shippingpolicy": "Shipping policy",
+			"individual": "Individual"
+		},
+		"documents": {
+			"pdf": {
+				"title": "Version PDF",
+				"description": "PDF généré automatiquement au format standard"
+			}
+		}
+	},
+	"bundle": {
+		"actions": {
+			"create": {
+				"modaltitle": "Créer un bundle",
+				"main": "Créer un nouveau",
+				"sub": "Paquet"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
+			},
+			"export": {
+				"qrCodeVector": "télécharger qrcode comme fichier vectoriel",
+				"barcodeVector": "télécharger gtin en fichier vectoriel"
+			},
+			"addItem": "+ Ajouter un article"
+		},
+		"views": {
+			"files": {
+				"title": "Des dossiers",
+				"empty": "Aucune {label} n'est disponible pour un ensemble donné."
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Choisissez une catégorie",
+				"none": "Afficher les bundles sans catégorie"
+			}
+		},
+		"tabs": {
+			"files": "Des dossiers"
+		},
+		"fieldSets": {
+			"general": "Général",
+			"facts": "Faits et données",
+			"prices": "Des prix",
+			"barcode": "GTIN",
+			"shopSettings": "Paramètres du site Web et de la boutique",
+			"qrcode": "QR-Code",
+			"items": "Des articles"
+		},
+		"fields": {
+			"active": "aktif",
+			"articlenumber": "No. d'article",
+			"baseprice": "Prix au litre",
+			"category": "Catégorie",
+			"description": "La description",
+			"metaTitle": "Balise de titre",
+			"metaDescription": "Meta-Description",
+			"name": "Nom",
+			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
+			"pathSegment": "Segment de chemin",
+			"qrcodeLink": "Adresse cible",
+			"quantity": "Quantité",
+			"searchArticle": "Rechercher un article",
+			"singleItemPrice": "per Piece",
+			"size": "Quantité de remplissage",
+			"sorting": "Index de tri manuel (par exemple pour une utilisation externe en magasin)",
+			"tag": "Mots clés",
+			"topseller": "Meilleur vendeur",
+
+			"itemSum": {
+				"label": "La valeur des biens",
+				"net": "Net",
+				"gross": "Brut"
+			}
+		},
+		"toasts": {
+			"created": "Bundle créé!",
+			"changed": "Bundle changé!",
+			"deleted": "Bundle supprimé!",
+			"imageUploaded": "Téléchargement pour l'image terminé!",
+			"imageDeleted": "Image supprimée pour l'ensemble",
+			"copied": "Bundle dupliqué"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce bundle?",
+			"deleteItem": "Voulez-vous vraiment supprimer cet article du bundle?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal </b> <br> Dimensions: 1500x1500px <br/> Format de fichier: .png (rogné)",
+			"packageQuantity": "Placer dans un emballage égal aux bouteilles de vin standard"
+		},
+		"files": {
+			"title": "Fichiers et documents liés à ce bundle."
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Créer un catalogue",
+				"main": "Créer un nouveau",
+				"sub": "catalogue"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
+			},
+			"generatePDF": {
+				"title": "Générer un PDF pour le catalogue"
+			},
+			"showPDF": {
+				"title": "Afficher le PDF"
+			},
+			"export": {
+				"qrCodeVector": "Téléchargez le QR-Code en fichier vectoriel"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Nom",
+				"chstamp": "Dernière modification",
+				"priceType": "Type de prix",
+				"priceRange": "Échelle des prix"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Choisissez une catégorie",
+				"none": "Afficher les catalogues sans catégories"
+			}
+		},
+		"fieldSets": {
+			"general": "Général",
+			"tags": "Mots clés",
+			"qrcode": "QR Code"
+		},
+		"fields": {
+			"name": "Nom",
+			"description": "La description",
+			"active": "actif",
+			"qrcodeLink": "Adresses cibles pour QR-Code (le PDF par défaut est généré)",
+			"priceType": "Type de prix à afficher",
+			"priceRangeId": "Échelle des prix",
+			"itemTypes": "Inclure les groupes d'articles suivants"
+		},
+		"toasts": {
+			"created": "Catalogue créé!",
+			"changed": "Catalogue changé!",
+			"deleted": "Catalogue supprimé!",
+			"imageUploaded": "Image téléchargée pour le catalogue!",
+			"imageDeleted": "Image du catalogue supprimée",
+			"copied": "Catalogue copié",
+			"pdfGenerated": "PDF pour le catalogue généré!"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce catalogue?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 2000x400px<br/>Format de fichier: .png (rogné)",
+			"tags": "Choisissez les balises qui seront utilisées dans le catalogue. Les balises seront des commandes comme un indice de tri donné. La commande affichée est la même que dans le PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Configurer la campagne",
+				"main": "Créer un nouveau",
+				"sub": "campagne"
+			},
+			"search": {
+				"placeholder": "par exemple. nom, description"
+			}
+		},
+		"fieldsets": {
+			"rebate": "Remise de campagne"
+		},
+		"fields": {
+			"active": {
+				"label": "Statut de la campagne",
+				"checklabel": "activé"
+			},
+			"combinable": "La campagne peut être combinée avec d'autres?",
+			"dateRange": "Période de campagne",
+			"description": "La description",
+			"endDate": "Date de fin",
+			"gross": "Remise forfaitaire en EUR (brut)",
+			"hash": "Code de réduction",
+			"itemTypes": "Valable pour les groupes d'articles suivants",
+			"name": "Nom",
+			"percent": "Remise en pourcentage",
+			"rebateType": "Type de remise",
+			"startDate": "Date de début",
+			"usage": "L'utilisation",
+			"usageClientLimit": {
+				"label": "Limite d'utilisation par client",
+				"placeholder": "Utilisation illimitée"
+			},
+			"usageLimit": {
+				"label": "Limite d'utilisation par campagne",
+				"placeholder": "Utilisation illimitée"
+			}
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Groupe d'articles",
+				"none": "Afficher les campagnes sans groupes d'articles"
+			}
+		},
+		"toasts": {
+			"created": "Campagne créée!",
+			"changed": "Campagne mise à jour!",
+			"deleted": "Campagne supprimée!",
+			"imageUploaded": "Image téléchargée pour la campagne!",
+			"imageDeleted": "Image supprimée pour le campaing!",
+			"copied": "Campagne copiée!"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette campagne?"
+		},
+		"hints": {
+			"imagesize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (rogné)",
+			"hash": "Si un aléatoire vide sera créé."
+		},
+		"rebateTypes": {
+			"percent": "pourcentage",
+			"absolute": "forfait"
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Créer une",
+				"sub": "nouvelle balise"
+			},
+			"save": {
+				"main": "Enregistrer une",
+				"sub": "nouvelle balise"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Créer une nouvelle balise"
+			}
+		},
+		"fields": {
+			"name": "Nom"
+		},
+		"toasts": {
+			"created": "Balise créé!",
+			"changed": "Balise modifié!",
+			"deleted": "Balise supprimée!"
+		}
+	},
+	"automation": {
+		"actions": {
+			"create": {
+				"modaltitle": "Créer une automatisation",
+				"main": "Créer une",
+				"sub": "nouvelle automatisation"
+			}
+		},
+		"fields": {
+			"name": "Nom",
+			"description": "Description",
+			"image": "Marque",
+			"startDate": "Date de début",
+			"endDate": "Date de fin",
+			"active": {
+				"label": "Etat de l'automatisation",
+				"checklabel": "actif"
+			},
+			"itemTypes": "Groupes d'articles autorisés pour cette automatisation"
+		},
+		"toasts": {
+			"created": "Automatisation créée!",
+			"changed": "L'automatisation a changé!",
+			"deleted": "Automatisation supprimée!",
+			"imageUploaded": "Image téléversée!",
+			"imageDeleted": "Image supprimée",
+			"copied": "Automatisation dupliquée",
+			"activate": "Connexion activée",
+			"activateerror": "La connexion n'a pas pu être activée",
+			"deactivate": "Connexion désactivée",
+			"deactivateerror": "La connexion n'a pas pu être désactivée"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cette automatisation?",
+			"activate": "Voulez-vous vraiment activer cette connexion?",
+			"deactivate": "Voulez-vous vraiment désactiver cette connexion?"
+		},
+		"hints": {
+			"empty": "Il n'y a pas encore d'automatisations",
+			"imagesize": "<b>Recommandation pour un affichage optimal</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (rogné)"
+		}
+	},
+	"settings": {
+		"account": {
+			"title": "Cofiguration du compte",
+			"description": "Gérez ici votre adresse de facturation, votre abonnement, vos coordonnées bancaires, etc."
+		},
+		"membership": {
+			"title": "Abonnement",
+			"description": "C'est le statut de votre abonnement actuel"
+		},
+		"customer": {
+			"title": "Informations de facturation",
+			"description": "Ici, vous gérez vos données pour votre abonnement à Vinou. Ces informations ne seront pas affichées publiquement."
+		},
+		"mycompanies": {
+			"merchants": {
+				"title": "Mon magasin de vin",
+				"description": "Mettez ici les noms d'entreprise supplémentaires pour votre magasin de vin. Cette information est visible publiquement sur le réseau Vinou."
+			},
+			"wineries": {
+				"title": "Mon Établissement vinicole",
+				"description": "Créez des établissements vinicoles supplémentaires ici, par exemple pour vendre vos vins en tant que vinerie ou embouteilleur. Cette information est visible publiquement sur le réseau Vinou."
+			}
+		},
+		"payments": {
+			"title": "Méthodes de paiement",
+			"description": "À l'aide des différentes méthodes de paiement, vous pouvez offrir à vos clients finaux davantage d'options dans la boutique en ligne.",
+			"bankaccount": "Coordonnées bancaire"
+		},
+		"packagings": {
+			"title": "Option d'expédition",
+			"description": "Configurez vos options d'expédition pour calculer les coûts d'expédition individuels. Ceci est nécessaire pour faire fonctionner votre Vinou-Shop."
+		},
+		"packagingunits": {
+			"title": "Unités d'expédition",
+			"description": "Configurez les boîtes utilisées pour votre envoi. Les unités d'expédition sont nécessaires pour calculer les étiquettes d'expédition."
+		},
+		"priceranges": {
+			"title": "Classe de prix",
+			"description": "Configurez vos classe de prix pour définir les prix des clients individuels."
+		},
+		"shipment": {
+			"title": "Configuration d'expédition",
+			"description": "Définissez votre limite de fret ici et si vous souhaitez utiliser la gestion des expéditions Vinou.",
+			"freightfreelimit": {
+				"title": "Limite de fret",
+				"description": "Configurez à partir de quelle valeur d'ordre, l'expédition est gratuite."
+			},
+			"management": {
+				"title": "Gestion des expéditions",
+				"inactive": "Activez la gestion des expéditions de Vinou avec ShipCloud pour utiliser rapidement et économique les étiquettes d'expédition de Vinou.",
+				"description": "Configurez vos expédition pour p.ex. définir un fournisseur de services logistiques standard."
+			}
+		},
+		"technical": {
+			"title": "Technologie",
+			"description": "Pour certaines choses, vous pouvez également faire des configurations techniques. Vous pouvez trouver ces paramètres ici."
+		},
+		"templates": {
+			"title": "Modèles",
+			"description": "Dans Vinou, tous les documents PDF peuvent être fournis avec un modèle individuel."
+		},
+		"mail": {
+			"title": "Configuration du courriel",
+			"description": "Vinou et votre boutique en ligne envoient des e-mails régulièrement ou automatiquement via certains processus. Pour l'expédition, vous pouvez déposer ici les paramètres d'une boîte aux lettres."
+		},
+		"texts": {
+			"title": "Texts",
+			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
+		},
+		"automations": {
+			"title": "Automations",
+			"description": "Avec l'aide de l'automatisation, vous pouvez permettre à d'autres membres de Vinou de faire certaines choses de manière entièrement automatique avec vous, par exemple activer les vins de vignobles sur votre site Web."
+		},
+		"messages": {
+			"hints": {
+				"nomerchants": "Aucune information de marchand disponible",
+				"nowineries": "Aucune information d'établissement vinicole disponible"
+			}
+		}
+	},
+	"toasts": {
+		"address_saved": "Adresse enregistrée!",
+		"address_changed": "Adresse mise à jour!",
+		"address_deleted": "Adresse supprimée!",
+		"bank_settings_error": "Une erreur s'est produite lors de l'enregistrement des coordonnées bancaires!",
+		"category_image_uploaded": "Image téléchargée!",
+		"category_image_deleted": "Image supprimée!",
+		"category_saved": "Categorie enregistrée!",
+		"category_changed": "Categorie mise à jour!",
+		"category_deleted": "Categorie supprimée!",
+		"category_duplicated": "Categorie dupliquée!",
+		"cronjob_saved": "Cronjob créé!",
+		"cronjob_changed": "Cronjob mis à jour!",
+		"cronjob_deleted": "Cronjob supprimé!",
+		"customer_image_uploaded": "Image téléchargée!",
+		"customer_image_deleted": "Image supprimée!",
+		"customer_changed": "Données de client mis à jour!",
+		"customer_authid_changed": "ID d'authentificatio a été changée!",
+		"customer_deleted": "Client supprimé!",
+		"customer_created": "Client créé!",
+		"customer_updated": "Client mis à jour!",
+		"customer_image_createerror": "Pour télécharger une image, vous devez au préalable enregistrer le client!",
+		"merchant_created": "Marchand créé!",
+		"merchant_changed": "Marchand mis à jour!",
+		"merchant_deleted": "Marchand supprimé!",
+		"merchant_image_uploaded": "Image téléchargée!",
+		"merchant_save_error": "Échec de la enregistrement!",
+		"merchant_image_deleted": "Image supprimée!",
+		"order_position_add": "Position ajoutée!",
+		"order_position_changed": "Position mise à jour!",
+		"order_position_deleted": "Position supprimée!",
+		"order_billing_as_delivery": "Adresse de facturation enregistrée comme adresse de livraison!",
+		"order_billingaddress_create": "Adresse créé!",
+		"order_noupdate": "Aucune mise à jour nécessaire!",
+		"order_deliveryaddress_create": "Adresse de livraison créée et ordre mise à jour!",
+		"order_payment_changed": "Type de paiement mis à jour!",
+		"order_cashlink_send": "Cashlink envoyé!",
+		"order_note_saved": "Remarque mise à jour!",
+		"package_created": "Option d'expédition créée!",
+		"package_changed": "Option d'expédition mise à jour!",
+		"package_deleted": "Option d'expédition supprimée!",
+		"payment_created": "Réception du paiement créée!",
+		"payment_process_error": "Tentative échoué!",
+		"settings_bank_changed": "Coordonnées bancaires mises à jour!",
+		"settings_cashlink_registered": "Cashlink enregistré!",
+		"settings_cashlink_registererror": "Enregistrement échoué, courrier éventuellement déjà pris!",
+		"settings_smtp_changed": "Configuration SMTP mise à jour!",
+		"settings_paypal_changed": "Configuration PayPay mise à jour!",
+		"token_saved": "Interface enregistrée!",
+		"user_created": "Utilisateur créé!",
+		"user_changed": "Utilisateur mis à jour!",
+		"user_deleted": "Utilisateur supprimé",
+		"user_deleteerror": "Vous ne pouvez pas supprimer l'utilisateur actuellement connecté!",
+		"user_image_needed": "Pour télécharger une image, vous devez enregistrer l'utilisateur à l'avance!",
+		"user_image_uploaded": "Image téléchargé",
+		"user_image_deleted": "Image supprimé!",
+		"user_image_uploaderror": "Erreur lors du téléchargement de l'image!",
+		"user_lostpassword_send": "Courrier envoyé!",
+		"user_lostpassword_senderror": "Envoi de courrier a échoué!",
+		"winery_created": "Établissement vinicole créé!",
+		"winery_changed": "Établissement vinicole mis à jour!",
+		"winery_deleted": "Établissement vinicole supprimé!",
+		"winery_image_uploaded": "Image téléchargée!",
+		"winery_image_deleted": "Image supprimée!",
+		"winery_save_error": "Échec de la enregistrement!",
+		"wine_created": "Vin créé!",
+		"wine_changed": "Vin mis à jour!",
+		"wine_duplicated": "Vin dupliqué!",
+		"wine_deleted": "Vin supprimé!",
+		"wine_image_needed": "Pour télécharger une image, vous devez au préalable enregistrer le vin!",
+		"wine_image_uploaded": "Image téléchargée!",
+		"wine_image_deleted": "Image supprimée!",
+		"wine_expertise_generated": "Expertise générée!",
+		"wine_savours_updated": "Vinou-Gusto mis à jour!",
+		"view_slider_created": "Slider a été créé!",
+		"view_facebook_created": "Facebook-Iframe a été créé!",
+		"notes": {
+			"saved": "Note enregistrée!",
+			"saveerror": "Note n'a pas pu être enregistrée!",
+			"delete": "Note supprimée!",
+			"deleteerror": "Note n'a pas pu être supprimée!"
+		}
+	},
+	"alerts": {
+		"token_copy": "Pour copier le jeton: Ctrl + C, Enter"
+	},
+	"hints": {
+		"wineries": {
+			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)"
+		},
+		"wines": {
+			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 500x2000px<br/>Format de fichier: .png (exempté)"
+		},
+		"categories": {
+			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1500px largeur aux moins<br/>Format de fichier: .png (exempté)"
+		},
+		"users": {
+			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000x1000px<br/>Format de fichier: .png (exempté)"
+		},
+		"customer": {
+			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000px largeur 1500px largeur aux moins<br/>Format de fichier: .png (exempté)"
+		},
+		"clients": {
+			"imagesize": "<b>Recommandation pour une présentation optimale</b><br>Dimensions: 1000px largeur 1500px largeur du moins<br/>Format de fichier: .png (exempté)"
+		}
+	},
+	"buttons": {
+		"customer": {
+			"activate": "Activer maintenant"
+		}
+	},
+	"allergens": {
+		"1": {
+			"name": "Céréales contenant du gluten"
+		},
+		"2": {
+			"name": "Crustacés"
+		},
+		"3": {
+			"name": "œuf"
+		},
+		"4": {
+			"name": "Poisson"
+		},
+		"5": {
+			"name": "Cacahuètes"
+		},
+		"6": {
+			"name": "Soja"
+		},
+		"7": {
+			"name": "Lait"
+		},
+		"8": {
+			"name": "Fruits à coque"
+		},
+		"9": {
+			"name": "Céleri"
+		},
+		"10": {
+			"name": "Moutarde"
+		},
+		"11": {
+			"name": "Graines de sésame"
+		},
+		"12": {
+			"name": "Oxyde de soufre et sulfites"
+		},
+		"13": {
+			"name": "Lupins"
+		},
+		"14": {
+			"name": "Mollusques"
+		}
+	},
+	"bottleSizes": {
+		"0.100": "0,1 l",
+		"0.187": "0,187 l (Quart)",
+		"0.200": "0,2 l (Piccolo)",
+		"0.250": "0,25 l (Chopine)",
+		"0.33": "0,33 l",
+		"0.375": "0,375 l (Fillette)",
+		"0.500": "0,5 l (Désirée)",
+		"0.620": "0,62 l (Clavelin)",
+		"0.700": "0,7 l",
+		"0.750": "0,75 l (Bouteille)",
+		"1.000": "1 l",
+		"1.500": "1,5 l (Fiasque)",
+		"2.000": "2 l (Doppler)",
+		"2.250": "2,25 l (Marie-Jeanne)",
+		"3.000": "3 l (Double Magnum)"
+	},
+	"grapetypes": {
+		"1": {
+			"name": "Accent"
+		},
+		"2": {
+			"name": "Acolon"
+		},
+		"3": {
+			"name": "Albalonga "
+		},
+		"4": {
+			"name": "Allegro"
+		},
+		"5": {
+			"name": "Angela"
+		},
+		"6": {
+			"name": "Arnsburger"
+		},
+		"7": {
+			"name": "Auxerrois"
+		},
+		"8": {
+			"name": "Bacchus"
+		},
+		"9": {
+			"name": "Baron"
+		},
+		"10": {
+			"name": "Big Bleu"
+		},
+		"11": {
+			"name": "Birstaler Muskat"
+		},
+		"12": {
+			"name": "Blauburger"
+		},
+		"13": {
+			"name": "Blauer Frühburgunder"
+		},
+		"14": {
+			"name": "Blauer Limberger "
+		},
+		"15": {
+			"name": "Portugieser "
+		},
+		"16": {
+			"name": "Blauer Silvaner "
+		},
+		"17": {
+			"name": "Spätburgunder"
+		},
+		"18": {
+			"name": "Blauer Trollinger "
+		},
+		"19": {
+			"name": "Blauer Zweigelt"
+		},
+		"20": {
+			"name": "Bolero"
+		},
+		"21": {
+			"name": "Bronner"
+		},
+		"22": {
+			"name": "Cabernet Cantor"
+		},
+		"23": {
+			"name": "Cabernet Carbon"
+		},
+		"24": {
+			"name": "Cabernet Carol"
+		},
+		"25": {
+			"name": "Cabernet Cortis"
+		},
+		"26": {
+			"name": "Cabernet Cubin"
+		},
+		"27": {
+			"name": "Cabernet Dorio"
+		},
+		"28": {
+			"name": "Cabernet Dorsa"
+		},
+		"29": {
+			"name": "Cabernet Mitos"
+		},
+		"30": {
+			"name": "Cabernet Sauvignon"
+		},
+		"31": {
+			"name": "Calandro"
+		},
+		"32": {
+			"name": "Chardonnay "
+		},
+		"33": {
+			"name": "Constanze"
+		},
+		"34": {
+			"name": "Dakapo"
+		},
+		"35": {
+			"name": "Deckrot "
+		},
+		"36": {
+			"name": "Domina "
+		},
+		"37": {
+			"name": "Dornfelder "
+		},
+		"38": {
+			"name": "Dunkelfelder "
+		},
+		"39": {
+			"name": "Ehrenbreitsteiner "
+		},
+		"40": {
+			"name": "Ehrenfelser "
+		},
+		"41": {
+			"name": "Esther"
+		},
+		"42": {
+			"name": "Evita"
+		},
+		"43": {
+			"name": "Faberrebe "
+		},
+		"44": {
+			"name": "Fanny"
+		},
+		"45": {
+			"name": "Felicia"
+		},
+		"46": {
+			"name": "Findling "
+		},
+		"47": {
+			"name": "Franziska"
+		},
+		"48": {
+			"name": "Freisamer "
+		},
+		"49": {
+			"name": "Früher roter Malvasier"
+		},
+		"50": {
+			"name": "Gelber Muskateller "
+		},
+		"51": {
+			"name": "Goldriesling "
+		},
+		"52": {
+			"name": "Grauburgunder"
+		},
+		"53": {
+			"name": "Grüner Silvaner"
+		},
+		"54": {
+			"name": "Hecker"
+		},
+		"55": {
+			"name": "Hegel "
+		},
+		"56": {
+			"name": "Helfensteiner "
+		},
+		"57": {
+			"name": "Helios"
+		},
+		"58": {
+			"name": "Heroldrebe "
+		},
+		"59": {
+			"name": "Hibernal"
+		},
+		"60": {
+			"name": "Hölder"
+		},
+		"61": {
+			"name": "Huxelrebe "
+		},
+		"62": {
+			"name": "Jakobsberger"
+		},
+		"63": {
+			"name": "Johanniter"
+		},
+		"64": {
+			"name": "Juwel "
+		},
+		"65": {
+			"name": "Kanzler "
+		},
+		"66": {
+			"name": "Kerner "
+		},
+		"67": {
+			"name": "Kernling"
+		},
+		"68": {
+			"name": "Lilla"
+		},
+		"69": {
+			"name": "Lemberger (Blaufränkisch)"
+		},
+		"70": {
+			"name": "Mariensteiner "
+		},
+		"71": {
+			"name": "Merlot"
+		},
+		"72": {
+			"name": "Merzling "
+		},
+		"73": {
+			"name": "Monarch"
+		},
+		"74": {
+			"name": "Morio Muskat "
+		},
+		"75": {
+			"name": "Müller-Thurgau"
+		},
+		"76": {
+			"name": "Muskat Ottonel "
+		},
+		"77": {
+			"name": "Muskat Trollinger"
+		},
+		"78": {
+			"name": "Neronet"
+		},
+		"79": {
+			"name": "Nobling "
+		},
+		"80": {
+			"name": "Optima 113"
+		},
+		"81": {
+			"name": "Orion "
+		},
+		"82": {
+			"name": "Ortega "
+		},
+		"83": {
+			"name": "Osteiner "
+		},
+		"84": {
+			"name": "Palas"
+		},
+		"85": {
+			"name": "Palatina"
+		},
+		"86": {
+			"name": "Perle "
+		},
+		"87": {
+			"name": "Phoenix "
+		},
+		"88": {
+			"name": "Picurka"
+		},
+		"89": {
+			"name": "Piroso"
+		},
+		"90": {
+			"name": "Primera"
+		},
+		"91": {
+			"name": "Prinzipal"
+		},
+		"92": {
+			"name": "Prior"
+		},
+		"93": {
+			"name": "Reberger"
+		},
+		"94": {
+			"name": "Regent "
+		},
+		"95": {
+			"name": "Regner "
+		},
+		"96": {
+			"name": "Reichensteiner "
+		},
+		"97": {
+			"name": "Rhea"
+		},
+		"98": {
+			"name": "Rheinfelder"
+		},
+		"99": {
+			"name": "Rieslaner "
+		},
+		"129": {
+			"name": "Riesling"
+		},
+		"100": {
+			"name": "Rondo"
+		},
+		"101": {
+			"name": "Rotberger "
+		},
+		"102": {
+			"name": "Roter Elbling "
+		},
+		"103": {
+			"name": "Roter Gutedel "
+		},
+		"104": {
+			"name": "Roter Muskateller "
+		},
+		"105": {
+			"name": "Gewürztraminer (Roter Traminer)"
+		},
+		"106": {
+			"name": "Rubinet"
+		},
+		"107": {
+			"name": "Ruling "
+		},
+		"108": {
+			"name": "Saphira"
+		},
+		"109": {
+			"name": "Scheurebe "
+		},
+		"110": {
+			"name": "Schönburger"
+		},
+		"111": {
+			"name": "Schwarzriesling (Müllerrebe)"
+		},
+		"112": {
+			"name": "Serena"
+		},
+		"113": {
+			"name": "Sibera"
+		},
+		"114": {
+			"name": "Siegerrebe "
+		},
+		"115": {
+			"name": "Silcher "
+		},
+		"116": {
+			"name": "Sirius "
+		},
+		"117": {
+			"name": "Solaris"
+		},
+		"118": {
+			"name": "Sophie"
+		},
+		"119": {
+			"name": "St. Laurent"
+		},
+		"120": {
+			"name": "Staufer "
+		},
+		"121": {
+			"name": "Sulmer "
+		},
+		"122": {
+			"name": "Syrah"
+		},
+		"123": {
+			"name": "Tauberschwarz "
+		},
+		"124": {
+			"name": "Teréz"
+		},
+		"125": {
+			"name": "Villaris"
+		},
+		"126": {
+			"name": "Weißer Burgunder"
+		},
+		"127": {
+			"name": "Weißer Elbling"
+		},
+		"128": {
+			"name": "Weißer Gutedel"
+		},
+		"130": {
+			"name": "Wildmuskat"
+		},
+		"131": {
+			"name": "Würzer"
+		},
+		"132": {
+			"name": "Sauvignon Blanc"
+		},
+		"133": {
+			"name": "Tempranillo"
+		},
+		"134": {
+			"name": "Pinot Blanc"
+		},
+		"135": {
+			"name": "Pinot Noir"
+		},
+		"136": {
+			"name": "Pinot Grigio"
+		},
+		"137": {
+			"name": "Shiraz"
+		},
+		"138": {
+			"name": "Silvaner"
+		},
+		"139": {
+			"name": "Cabernet Blanc"
+		},
+		"140": {
+			"name": "Cabertin"
+		},
+		"142": {
+			"name": "Cabernet Franc"
+		},
+		"143": {
+			"name": "Lagrein"
+		},
+		"144": {
+			"name": "Rivaner"
+		},
+		"145": {
+			"name": "Afus Ali"
+		},
+		"146": {
+			"name": "Agiorgitiko"
+		},
+		"147": {
+			"name": "Aglianico"
+		},
+		"148": {
+			"name": "Airen"
+		},
+		"149": {
+			"name": "Alarije"
+		},
+		"150": {
+			"name": "Alb Aromat"
+		},
+		"151": {
+			"name": "Albana"
+		},
+		"152": {
+			"name": "Albariño"
+		},
+		"153": {
+			"name": "Aletta"
+		},
+		"154": {
+			"name": "Alfrocheiro"
+		},
+		"155": {
+			"name": "Alibernet"
+		},
+		"156": {
+			"name": "Alicante Branco"
+		},
+		"157": {
+			"name": "Alicante H. Bouschet"
+		},
+		"158": {
+			"name": "Aligoté"
+		},
+		"159": {
+			"name": "Alphonse Lavallée"
+		},
+		"160": {
+			"name": "Amigne"
+		},
+		"161": {
+			"name": "Ancellotta"
+		},
+		"162": {
+			"name": "André"
+		},
+		"163": {
+			"name": "Ansonica"
+		},
+		"164": {
+			"name": "Antão Vaz"
+		},
+		"165": {
+			"name": "Arany Sáfehér"
+		},
+		"166": {
+			"name": "Argaman"
+		},
+		"167": {
+			"name": "Arinto"
+		},
+		"168": {
+			"name": "Arizul "
+		},
+		"169": {
+			"name": "Arneis"
+		},
+		"170": {
+			"name": "Aspro"
+		},
+		"171": {
+			"name": "Asproudes"
+		},
+		"172": {
+			"name": "Assyrtiko"
+		},
+		"173": {
+			"name": "Athiri"
+		},
+		"174": {
+			"name": "Aurelius"
+		},
+		"175": {
+			"name": "Autumn King"
+		},
+		"176": {
+			"name": "Autumn Royal"
+		},
+		"177": {
+			"name": "Azal"
+		},
+		"178": {
+			"name": "Băbească Gri"
+		},
+		"179": {
+			"name": "Babeasca Neagra"
+		},
+		"180": {
+			"name": "Babić"
+		},
+		"181": {
+			"name": "Baco noir"
+		},
+		"182": {
+			"name": "Baga"
+		},
+		"183": {
+			"name": "Banatski Rizling"
+		},
+		"184": {
+			"name": "Barbera"
+		},
+		"185": {
+			"name": "Beba"
+		},
+		"186": {
+			"name": "Bellone"
+		},
+		"187": {
+			"name": "Belo zimsko"
+		},
+		"188": {
+			"name": "Bianca"
+		},
+		"189": {
+			"name": "Biancame"
+		},
+		"190": {
+			"name": "Black Corinth"
+		},
+		"191": {
+			"name": "Black Magic"
+		},
+		"192": {
+			"name": "Black Seedless"
+		},
+		"193": {
+			"name": "Blauer Portugieser"
+		},
+		"194": {
+			"name": "Blauer Trollinger"
+		},
+		"195": {
+			"name": "Blauer Wildbacher"
+		},
+		"196": {
+			"name": "Blaufränkisch"
+		},
+		"197": {
+			"name": "Bobal"
+		},
+		"198": {
+			"name": "Bogdanuša"
+		},
+		"199": {
+			"name": "Bombino Bianco"
+		},
+		"200": {
+			"name": "Bonarda"
+		},
+		"201": {
+			"name": "Bordo"
+		},
+		"202": {
+			"name": "Bouvier"
+		},
+		"203": {
+			"name": "Brachetto"
+		},
+		"204": {
+			"name": "Buket"
+		},
+		"205": {
+			"name": "Bukettraube"
+		},
+		"206": {
+			"name": "Burger"
+		},
+		"207": {
+			"name": "Cabernet Jura"
+		},
+		"208": {
+			"name": "Cabernet Moravia"
+		},
+		"209": {
+			"name": "Cadarcă"
+		},
+		"210": {
+			"name": "Calabrese"
+		},
+		"211": {
+			"name": "Caladoc"
+		},
+		"212": {
+			"name": "California"
+		},
+		"213": {
+			"name": "Canaiolo Nero"
+		},
+		"214": {
+			"name": "Cardinal"
+		},
+		"215": {
+			"name": "Carignan Noir"
+		},
+		"216": {
+			"name": "Carmenere"
+		},
+		"217": {
+			"name": "Castelão /"
+		},
+		"218": {
+			"name": "Catarratto Bianco Comune"
+		},
+		"219": {
+			"name": "Catarratto Bianco Lucido"
+		},
+		"220": {
+			"name": "Cayetana Blanca"
+		},
+		"221": {
+			"name": "Centurian"
+		},
+		"222": {
+			"name": "Cereza"
+		},
+		"223": {
+			"name": "Cesanese Comune"
+		},
+		"224": {
+			"name": "Cesanese D'affile"
+		},
+		"225": {
+			"name": "Cetinka"
+		},
+		"226": {
+			"name": "Cham-Bourcin"
+		},
+		"227": {
+			"name": "Chasselas"
+		},
+		"228": {
+			"name": "Chelva"
+		},
+		"229": {
+			"name": "Chenel"
+		},
+		"230": {
+			"name": "Chenin Blanc"
+		},
+		"231": {
+			"name": "Ciliegiolo"
+		},
+		"232": {
+			"name": "Cinsaut"
+		},
+		"233": {
+			"name": "Clairette"
+		},
+		"234": {
+			"name": "Coarna Neagra"
+		},
+		"235": {
+			"name": "Coda Di Volpe"
+		},
+		"236": {
+			"name": "Codană"
+		},
+		"237": {
+			"name": "Colombard"
+		},
+		"238": {
+			"name": "Concord"
+		},
+		"239": {
+			"name": "Cortese"
+		},
+		"240": {
+			"name": "Corvina Veronese"
+		},
+		"241": {
+			"name": "Corvinone"
+		},
+		"242": {
+			"name": "Cot"
+		},
+		"243": {
+			"name": "Couderc Noir"
+		},
+		"244": {
+			"name": "Counoise"
+		},
+		"245": {
+			"name": "Cramposie"
+		},
+		"246": {
+			"name": "Crâmpoșie selecțion-ată"
+		},
+		"247": {
+			"name": "Crimson Seedless"
+		},
+		"248": {
+			"name": "Criolla grande"
+		},
+		"249": {
+			"name": "Croatina"
+		},
+		"250": {
+			"name": "Crouchen"
+		},
+		"251": {
+			"name": "Cserszegi Fuszeres"
+		},
+		"252": {
+			"name": "De Chaunac"
+		},
+		"253": {
+			"name": "Debit"
+		},
+		"254": {
+			"name": "Devin"
+		},
+		"255": {
+			"name": "Diagalves"
+		},
+		"256": {
+			"name": "Diamant"
+		},
+		"257": {
+			"name": "Dimyat"
+		},
+		"258": {
+			"name": "Diolinoir"
+		},
+		"259": {
+			"name": "Dolcetto"
+		},
+		"260": {
+			"name": "Doral"
+		},
+		"261": {
+			"name": "Dunaj"
+		},
+		"262": {
+			"name": "Durif"
+		},
+		"263": {
+			"name": "Elbling"
+		},
+		"264": {
+			"name": "Emerald Riesling"
+		},
+		"265": {
+			"name": "Erbaluce"
+		},
+		"266": {
+			"name": "Evmolpia"
+		},
+		"267": {
+			"name": "Ezerfürtű"
+		},
+		"268": {
+			"name": "Ezerjó"
+		},
+		"269": {
+			"name": "Falanghina"
+		},
+		"270": {
+			"name": "Favorita"
+		},
+		"271": {
+			"name": "Fer"
+		},
+		"272": {
+			"name": "Fernao Pires"
+		},
+		"273": {
+			"name": "Feteasca Alba"
+		},
+		"274": {
+			"name": "Feteasca Neagra"
+		},
+		"275": {
+			"name": "Feteasca Regala"
+		},
+		"276": {
+			"name": "Fiano"
+		},
+		"277": {
+			"name": "Fiesta"
+		},
+		"278": {
+			"name": "Fileri"
+		},
+		"279": {
+			"name": "Flame Seedless"
+		},
+		"280": {
+			"name": "Fokiano"
+		},
+		"281": {
+			"name": "Folle Blanche"
+		},
+		"282": {
+			"name": "Fortana Nera"
+		},
+		"283": {
+			"name": "Frâncușă"
+		},
+		"284": {
+			"name": "Frappato"
+		},
+		"285": {
+			"name": "Freisa"
+		},
+		"286": {
+			"name": "Frühburgunder"
+		},
+		"287": {
+			"name": "Frühroter Veltliner"
+		},
+		"288": {
+			"name": "Furmint"
+		},
+		"289": {
+			"name": "Galbena de Odobesti"
+		},
+		"290": {
+			"name": "Galotta"
+		},
+		"291": {
+			"name": "Gamaret"
+		},
+		"292": {
+			"name": "Gamay Noir"
+		},
+		"293": {
+			"name": "Gamay Teinturier"
+		},
+		"294": {
+			"name": "Game Bojadiser"
+		},
+		"295": {
+			"name": "Gamza"
+		},
+		"296": {
+			"name": "Garanoir"
+		},
+		"297": {
+			"name": "Garganega"
+		},
+		"298": {
+			"name": "Garnacha blanca"
+		},
+		"299": {
+			"name": "Garnacha Tinta"
+		},
+		"300": {
+			"name": "Geisenheim Hybrids"
+		},
+		"301": {
+			"name": "Generosa"
+		},
+		"302": {
+			"name": "Gewürztraminer"
+		},
+		"303": {
+			"name": "Glera"
+		},
+		"304": {
+			"name": "Graciano"
+		},
+		"305": {
+			"name": "Grasa de Cotnari"
+		},
+		"306": {
+			"name": "Grasevina"
+		},
+		"307": {
+			"name": "Grauer Burgunder"
+		},
+		"308": {
+			"name": "Grecanico Dorato"
+		},
+		"309": {
+			"name": "Grechetto"
+		},
+		"310": {
+			"name": "Greco"
+		},
+		"311": {
+			"name": "Grenache Gris"
+		},
+		"312": {
+			"name": "Grenache Noir"
+		},
+		"313": {
+			"name": "Grignolino"
+		},
+		"314": {
+			"name": "Grillo"
+		},
+		"315": {
+			"name": "Grolleau"
+		},
+		"316": {
+			"name": "Groppello Gentile"
+		},
+		"317": {
+			"name": "Gros Manseng"
+		},
+		"318": {
+			"name": "Gros vert"
+		},
+		"319": {
+			"name": "Harslevelue"
+		},
+		"320": {
+			"name": "Humagne Blanc"
+		},
+		"321": {
+			"name": "Humagne Rouge"
+		},
+		"322": {
+			"name": "Iordană"
+		},
+		"323": {
+			"name": "Irsai Oliver"
+		},
+		"324": {
+			"name": "Isabella"
+		},
+		"325": {
+			"name": "Italia"
+		},
+		"326": {
+			"name": "Jacquez"
+		},
+		"327": {
+			"name": "João de Santarem"
+		},
+		"328": {
+			"name": "Juhfark"
+		},
+		"329": {
+			"name": "Julski Biser"
+		},
+		"330": {
+			"name": "Kadarka"
+		},
+		"331": {
+			"name": "Kardinal Crveni"
+		},
+		"332": {
+			"name": "Kotsifali"
+		},
+		"333": {
+			"name": "Kövidinka"
+		},
+		"334": {
+			"name": "Kraljevina"
+		},
+		"335": {
+			"name": "Kratošija"
+		},
+		"336": {
+			"name": "Kreaca"
+		},
+		"337": {
+			"name": "Kujundžuša"
+		},
+		"338": {
+			"name": "Kunleány"
+		},
+		"339": {
+			"name": "Kyoho"
+		},
+		"340": {
+			"name": "Lacrima"
+		},
+		"341": {
+			"name": "Lakhegyi Mézes"
+		},
+		"342": {
+			"name": "Lambrusco Di Sorbara"
+		},
+		"343": {
+			"name": "Lambrusco Grasparossa"
+		},
+		"344": {
+			"name": "Lambrusco Maestri"
+		},
+		"345": {
+			"name": "Lambrusco Marani"
+		},
+		"346": {
+			"name": "Lambrusco Salamino"
+		},
+		"347": {
+			"name": "Lambrusco Viadanese"
+		},
+		"348": {
+			"name": "Landroter"
+		},
+		"349": {
+			"name": "Lefkada"
+		},
+		"350": {
+			"name": "Len de l'El"
+		},
+		"351": {
+			"name": "Liatiko"
+		},
+		"352": {
+			"name": "Listan Blanco"
+		},
+		"353": {
+			"name": "Listan Blanco de Canarias"
+		},
+		"354": {
+			"name": "Listan negro"
+		},
+		"355": {
+			"name": "Loureiro"
+		},
+		"356": {
+			"name": "Madeleine Angevine"
+		},
+		"357": {
+			"name": "Majarcă Albă"
+		},
+		"358": {
+			"name": "Malagouzia"
+		},
+		"359": {
+			"name": "Malbec"
+		},
+		"360": {
+			"name": "Malvasía Aromática"
+		},
+		"361": {
+			"name": "Malvasia Bianca"
+		},
+		"362": {
+			"name": "Malvasia Bianca di Candia"
+		},
+		"363": {
+			"name": "Malvasia Bianca Lunga"
+		},
+		"364": {
+			"name": "Malvasia Del Lazio"
+		},
+		"365": {
+			"name": "Malvasia Di Candia Aromatica"
+		},
+		"366": {
+			"name": "Malvasia Dubrovačka"
+		},
+		"367": {
+			"name": "Malvasia Fina"
+		},
+		"368": {
+			"name": "Malvasia Preta"
+		},
+		"369": {
+			"name": "Malvazija Aromatična"
+		},
+		"370": {
+			"name": "Malvazija Istarska"
+		},
+		"371": {
+			"name": "Malverina"
+		},
+		"372": {
+			"name": "Mandilaria"
+		},
+		"373": {
+			"name": "Mantua "
+		},
+		"374": {
+			"name": "Maraština"
+		},
+		"375": {
+			"name": "Maratheftiko"
+		},
+		"376": {
+			"name": "Marechal Foch"
+		},
+		"377": {
+			"name": "Marsanne Blanche"
+		},
+		"378": {
+			"name": "Marselan"
+		},
+		"379": {
+			"name": "Marufo"
+		},
+		"380": {
+			"name": "Marzemino"
+		},
+		"381": {
+			"name": "Mauzac"
+		},
+		"382": {
+			"name": "Mavro"
+		},
+		"383": {
+			"name": "Mavrodafni"
+		},
+		"384": {
+			"name": "Mavroudia"
+		},
+		"385": {
+			"name": "Mavrud"
+		},
+		"386": {
+			"name": "Mazuela"
+		},
+		"387": {
+			"name": "Medina"
+		},
+		"388": {
+			"name": "Melnik"
+		},
+		"389": {
+			"name": "Melnik 82"
+		},
+		"390": {
+			"name": "Melnik 1300"
+		},
+		"391": {
+			"name": "Melnishki Rubin"
+		},
+		"392": {
+			"name": "Melon de Bourgogne"
+		},
+		"393": {
+			"name": "Mencia"
+		},
+		"394": {
+			"name": "Merseguera"
+		},
+		"395": {
+			"name": "Meunier"
+		},
+		"396": {
+			"name": "Michele Palieri"
+		},
+		"397": {
+			"name": "Misket cherven"
+		},
+		"398": {
+			"name": "Misket Varnenski"
+		},
+		"399": {
+			"name": "Misket Vrachanski"
+		},
+		"400": {
+			"name": "Mission"
+		},
+		"401": {
+			"name": "Moldavija"
+		},
+		"402": {
+			"name": "Moldova"
+		},
+		"403": {
+			"name": "Monastrell"
+		},
+		"404": {
+			"name": "Monica"
+		},
+		"405": {
+			"name": "Montepulciano"
+		},
+		"406": {
+			"name": "Montu"
+		},
+		"407": {
+			"name": "Morava"
+		},
+		"408": {
+			"name": "Moscatel de Austria"
+		},
+		"409": {
+			"name": "Moscatel Rosado"
+		},
+		"410": {
+			"name": "Moscato Embrapa"
+		},
+		"411": {
+			"name": "Moscato Giallo"
+		},
+		"412": {
+			"name": "Moschofilero"
+		},
+		"413": {
+			"name": "Moslavac"
+		},
+		"414": {
+			"name": "Mourvèdre"
+		},
+		"415": {
+			"name": "Muscadel (Red)"
+		},
+		"416": {
+			"name": "Muscadelle"
+		},
+		"417": {
+			"name": "Muscat Blanc à Petits Grains"
+		},
+		"418": {
+			"name": "Muscat de Hambourg"
+		},
+		"419": {
+			"name": "Muscat Hongrie"
+		},
+		"420": {
+			"name": "Muscat of Alexandria"
+		},
+		"421": {
+			"name": "Muscat Ottonel"
+		},
+		"422": {
+			"name": "Muskat Krokan"
+		},
+		"423": {
+			"name": "Muskat Moravsky"
+		},
+		"424": {
+			"name": "Muškat žuti"
+		},
+		"425": {
+			"name": "Muskateller"
+		},
+		"426": {
+			"name": "Mustoasa de Măderat"
+		},
+		"427": {
+			"name": "Nebbiolo"
+		},
+		"428": {
+			"name": "Négrette"
+		},
+		"429": {
+			"name": "Negroamaro"
+		},
+		"430": {
+			"name": "Negru de Drăgășani"
+		},
+		"431": {
+			"name": "Nerello Cappuccio"
+		},
+		"432": {
+			"name": "Nerello Mascalese"
+		},
+		"433": {
+			"name": "Neuburger"
+		},
+		"434": {
+			"name": "Niagara Branca"
+		},
+		"435": {
+			"name": "Niagara Rosada"
+		},
+		"436": {
+			"name": "Nielluccio"
+		},
+		"437": {
+			"name": "Nouvelle"
+		},
+		"438": {
+			"name": "Novac"
+		},
+		"439": {
+			"name": "Nuragus"
+		},
+		"440": {
+			"name": "Odessky Chernyi"
+		},
+		"441": {
+			"name": "Ofthalmo"
+		},
+		"442": {
+			"name": "Oporto"
+		},
+		"443": {
+			"name": "Ortrugo"
+		},
+		"444": {
+			"name": "Pálava"
+		},
+		"445": {
+			"name": "Palomino"
+		},
+		"446": {
+			"name": "Palomino Fino"
+		},
+		"447": {
+			"name": "Pamid"
+		},
+		"448": {
+			"name": "Panonia Kincse"
+		},
+		"449": {
+			"name": "Pardina"
+		},
+		"450": {
+			"name": "Parellada"
+		},
+		"451": {
+			"name": "Passerina"
+		},
+		"452": {
+			"name": "Pecorino"
+		},
+		"453": {
+			"name": "Pedro Gimenez"
+		},
+		"454": {
+			"name": "Perlette"
+		},
+		"455": {
+			"name": "Perricone"
+		},
+		"456": {
+			"name": "Petit Manseng"
+		},
+		"457": {
+			"name": "Petit Verdot"
+		},
+		"458": {
+			"name": "Petite Arvine"
+		},
+		"459": {
+			"name": "Piedirosso"
+		},
+		"460": {
+			"name": "Pignoletto"
+		},
+		"461": {
+			"name": "Pinot Gris"
+		},
+		"462": {
+			"name": "Pinot sivi"
+		},
+		"463": {
+			"name": "Pinotage"
+		},
+		"464": {
+			"name": "Plavac Mali Crni"
+		},
+		"465": {
+			"name": "Plăvaie"
+		},
+		"466": {
+			"name": "Plavec mal"
+		},
+		"467": {
+			"name": "Plavina crna"
+		},
+		"468": {
+			"name": "Plovdina"
+		},
+		"469": {
+			"name": "Pölöskei Muskotály"
+		},
+		"470": {
+			"name": "Portugizac"
+		},
+		"471": {
+			"name": "Pošip Bijeli"
+		},
+		"472": {
+			"name": "Prieto Picudo"
+		},
+		"473": {
+			"name": "Prime"
+		},
+		"474": {
+			"name": "Primitivo"
+		},
+		"475": {
+			"name": "Princess"
+		},
+		"476": {
+			"name": "Prokupec"
+		},
+		"477": {
+			"name": "Rabigato"
+		},
+		"478": {
+			"name": "Ranfol"
+		},
+		"479": {
+			"name": "Ranna Melnishka Loza"
+		},
+		"480": {
+			"name": "Räuschling"
+		},
+		"481": {
+			"name": "Red Globe"
+		},
+		"482": {
+			"name": "Refosco Dal Peduncolo Rosso"
+		},
+		"483": {
+			"name": "Refošk"
+		},
+		"484": {
+			"name": "Regal Seedless"
+		},
+		"485": {
+			"name": "Rkatsiteli"
+		},
+		"486": {
+			"name": "Roditis"
+		},
+		"487": {
+			"name": "Romeiko"
+		},
+		"488": {
+			"name": "Rondinella"
+		},
+		"489": {
+			"name": "Roobernet"
+		},
+		"490": {
+			"name": "Rosioara"
+		},
+		"491": {
+			"name": "Roter Veltliner"
+		},
+		"492": {
+			"name": "Roussanne"
+		},
+		"493": {
+			"name": "Rozaki"
+		},
+		"494": {
+			"name": "Rubin"
+		},
+		"495": {
+			"name": "Rubired"
+		},
+		"496": {
+			"name": "Ruby Cabernet"
+		},
+		"497": {
+			"name": "Ruby Seedless"
+		},
+		"498": {
+			"name": "Rufete"
+		},
+		"499": {
+			"name": "Ružica crvena"
+		},
+		"500": {
+			"name": "Sagrantino"
+		},
+		"501": {
+			"name": "Saint Laurent"
+		},
+		"502": {
+			"name": "Sangiovese"
+		},
+		"503": {
+			"name": "Șarbă"
+		},
+		"504": {
+			"name": "Sauvignon Gris"
+		},
+		"505": {
+			"name": "Sauvignon Musque"
+		},
+		"506": {
+			"name": "Savagnin Blanc"
+		},
+		"507": {
+			"name": "Savvatiano"
+		},
+		"508": {
+			"name": "Scarlet Royal"
+		},
+		"509": {
+			"name": "Schiava"
+		},
+		"510": {
+			"name": "Sciaccarello"
+		},
+		"511": {
+			"name": "Selma Pete"
+		},
+		"512": {
+			"name": "Sémillon"
+		},
+		"513": {
+			"name": "Seyval Blanc"
+		},
+		"514": {
+			"name": "Shevka"
+		},
+		"515": {
+			"name": "Shiroka Melnishka Loza"
+		},
+		"516": {
+			"name": "Silvanac Zeleni"
+		},
+		"518": {
+			"name": "Síria"
+		},
+		"519": {
+			"name": "Skiadopoulo"
+		},
+		"520": {
+			"name": "Škrlet"
+		},
+		"521": {
+			"name": "Slankamenka"
+		},
+		"522": {
+			"name": "Smederevka"
+		},
+		"523": {
+			"name": "Stanušina"
+		},
+		"524": {
+			"name": "Storgozia"
+		},
+		"525": {
+			"name": "Sugranineteen"
+		},
+		"526": {
+			"name": "Sugraone"
+		},
+		"527": {
+			"name": "Sugrasixteen"
+		},
+		"528": {
+			"name": "Sugrathirteen"
+		},
+		"529": {
+			"name": "Sultanina"
+		},
+		"530": {
+			"name": "Summer Royal"
+		},
+		"531": {
+			"name": "Sylvaner"
+		},
+		"532": {
+			"name": "Symphony"
+		},
+		"533": {
+			"name": "Tamaioasa Romaneasca"
+		},
+		"534": {
+			"name": "Tannat"
+		},
+		"535": {
+			"name": "Temjanika"
+		},
+		"536": {
+			"name": "Teran"
+		},
+		"537": {
+			"name": "Teroldego"
+		},
+		"538": {
+			"name": "Therona"
+		},
+		"539": {
+			"name": "Tinta Barocca"
+		},
+		"540": {
+			"name": "Tinta Carvalha"
+		},
+		"541": {
+			"name": "Tinto de la Pampana Blanca"
+		},
+		"542": {
+			"name": "Tintorera"
+		},
+		"543": {
+			"name": "Tocai Friulano"
+		},
+		"544": {
+			"name": "Torontel"
+		},
+		"545": {
+			"name": "Torrontes Riojano"
+		},
+		"546": {
+			"name": "Torrontés Sanjuanino"
+		},
+		"547": {
+			"name": "Touriga Franca"
+		},
+		"548": {
+			"name": "Touriga Nacional"
+		},
+		"549": {
+			"name": "Trajadura"
+		},
+		"550": {
+			"name": "Traminec Bel"
+		},
+		"551": {
+			"name": "Traminer"
+		},
+		"552": {
+			"name": "Trbljan Bijeli"
+		},
+		"553": {
+			"name": "Trebbiano Abruzzese"
+		},
+		"554": {
+			"name": "Trebbiano Di Soave"
+		},
+		"555": {
+			"name": "Trebbiano Modenese"
+		},
+		"556": {
+			"name": "Trebbiano Romagnolo"
+		},
+		"557": {
+			"name": "Trebbiano Toscano"
+		},
+		"558": {
+			"name": "Trincadeira"
+		},
+		"559": {
+			"name": "Triplett Blanc"
+		},
+		"560": {
+			"name": "Trollinger"
+		},
+		"561": {
+			"name": "Turán"
+		},
+		"562": {
+			"name": "Ugni blanc"
+		},
+		"563": {
+			"name": "Uva Longanesi"
+		},
+		"564": {
+			"name": "Valandovski Drenok"
+		},
+		"565": {
+			"name": "Verdejo"
+		},
+		"566": {
+			"name": "Verdelho"
+		},
+		"567": {
+			"name": "Verdello"
+		},
+		"568": {
+			"name": "Verdicchio Bianco"
+		},
+		"569": {
+			"name": "Vermentino"
+		},
+		"570": {
+			"name": "Vernaccia Di San Giminiano"
+		},
+		"571": {
+			"name": "Victoria"
+		},
+		"572": {
+			"name": "Vidal 256"
+		},
+		"573": {
+			"name": "Viktória Gyöngye"
+		},
+		"574": {
+			"name": "Viktorija"
+		},
+		"575": {
+			"name": "Villard Blanc"
+		},
+		"576": {
+			"name": "Vinhão"
+		},
+		"577": {
+			"name": "Vintage Red"
+		},
+		"578": {
+			"name": "Viognier"
+		},
+		"579": {
+			"name": "Viosinho"
+		},
+		"580": {
+			"name": "Viura"
+		},
+		"581": {
+			"name": "Vranac"
+		},
+		"582": {
+			"name": "Vranec"
+		},
+		"583": {
+			"name": "Vugava"
+		},
+		"584": {
+			"name": "Welschriesling"
+		},
+		"585": {
+			"name": "Xarello"
+		},
+		"586": {
+			"name": "Xinomavro"
+		},
+		"587": {
+			"name": "Xynisteri"
+		},
+		"588": {
+			"name": "Zalagyöngye"
+		},
+		"589": {
+			"name": "Zalema"
+		},
+		"590": {
+			"name": "Zengő"
+		},
+		"591": {
+			"name": "Zenit"
+		},
+		"592": {
+			"name": "Žilavka"
+		},
+		"593": {
+			"name": "Zinfandel"
+		},
+		"594": {
+			"name": "Žlahtina"
+		},
+		"595": {
+			"name": "Župljanka"
+		},
+		"596": {
+			"name": "Zweigelt"
+		},
+		"597": {
+			"name": "Lugana"
+		},
+		"598": {
+			"name": "Gascogne"
+		},
+		"599": {
+			"name": "Grüner Veltliner"
+		},
+		"600": {
+			"name": "Gemischter Satz"
+		},
+		"601": {
+			"name": "Goldburger"
+		},
+		"602": {
+			"name": "Rotgipfler"
+		},
+		"603": {
+			"name": "Zierfandler"
+		},
+		"604": {
+			"name": "Jubiläumdrebe"
+		},
+		"605": {
+			"name": "Blauburgunder"
+		},
+		"606": {
+			"name": "Roesler"
+		},
+		"607": {
+			"name": "Ráthay"
+		},
+		"608": {
+			"name": "Muscat d'or"
+		},
+		"609": {
+			"name": "Godello"
+		},
+		"610": {
+			"name": "Garnacha Peluda"
+		},
+		"611": {
+			"name": "Trebbianello"
+		},
+		"612": {
+			"name": "Samtrot"
+		},
+		"613": {
+			"name": "Trousseau"
+		}
+	},
+	"tastes": {
+		"1": "sec",
+		"2": "demi-sec",
+		"3": "feinherb",
+		"4": "moelleux",
+		"6": "doux",
+		"7": "doux",
+		"11": "finement fruité",
+		"13": "brut zeró",
+		"8": "brut nature",
+		"10": "extra brut",
+		"9": "brut",
+		"12": "trés sec",
+		"14": "sec",
+		"15": "demi-sec",
+		"5": "doux"
+	},
 	"countries": {
-		"de":"Allemagne",
-		"en":"grande-Bretagne",
-		"fr":"France",
-		"be":"Belgique",
-		"bg":"Bulgarie",
-		"gr":"Grèce",
-		"it":"Italie",
-		"mt":"Malte",
-		"nl":"Pays-Bas",
-		"at":"Autriche",
-		"pt":"Portugal",
-		"ro":"Roumanie",
-		"si":"Slovénie",
-		"es":"Espagne",
-		"hu":"Hongrie",
-		"cl":"Chili",
-		"sx":"Saint-Martin"
+		"ar": "Argentine",
+		"at": "Autriche",
+		"au": "Australie",
+		"be": "Belgique",
+		"bg": "Bulgarie",
+		"ca": "Canada",
+		"ch": "Suisse",
+		"cl": "Chili",
+		"cz": "Czechia",
+		"de": "Allemagne",
+		"dk": "Danemark",
+		"ee": "Estonie",
+		"es": "Espagne",
+		"fi": "Finlande",
+		"fr": "France",
+		"gb": "Royaume-Uni",
+		"gr": "Grèce",
+		"hr": "Croatie",
+		"hu": "Hongrie",
+		"it": "Italie",
+		"lt": "Lituanie",
+		"lu": "Luxembourg",
+		"lv": "Lettonie",
+		"mt": "Malte",
+		"nl": "Pays-Bas",
+		"no": "Norvège",
+		"nz": "Nouvelle Zélande",
+		"pl": "Pologne",
+		"pt": "Portugal",
+		"ro": "Roumanie",
+		"ru": "Fédération Russe",
+		"se": "Suède",
+		"si": "Slovénie",
+		"sk": "Slovaquie",
+		"sx": "Saint-Martin",
+		"us": "USA",
+		"za": "Afrique du Sud"
 	},
 	"languages": {
 		"de": {
@@ -30,191 +4940,535 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Espagnol",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "Français",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italien",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
+		"ar": {
+			"14001": "Mendoza"
+		},
 		"at": {
-			"8000":"Wachau",
-			"8001":"Kremstal",
-			"8002":"Kamptal",
-			"8003":"Traisental",
-			"8004":"Wagram",
-			"8005":"Weinviertel",
-			"8006":"Carnuntum",
-			"8007":"Thermenregion",
-			"8008":"Neusiedlersee",
-			"8009":"Leithaberg",
-			"8010":"Rosalia",
-			"8011":"Mittelburgenland",
-			"8012":"Eisenberg",
-			"8013":"Vienne",
-			"8014":"Volcan pays Styrie",
-			"8015":"Südsteiermark",
-			"8016":"Styrie Ouest",
-			"8017":"Bergland"
+			"8000": "Wachau",
+			"8001": "Kremstal DAC",
+			"8002": "Kamptal DAC",
+			"8003": "Traisental DAC",
+			"8004": "Wagram",
+			"8005": "Weinviertel DAC",
+			"8006": "Carnuntum DAC",
+			"8007": "Thermenregion",
+			"8008": "Neusiedlersee DAC",
+			"8009": "Leithaberg DAC",
+			"8010": "Rosalia DAC",
+			"8011": "Mittelburgenland DAC",
+			"8012": "Eisenberg DAC",
+			"8013": "Vienne",
+			"8014": "Volcan pays Styrie DAC",
+			"8015": "Südsteiermark DAC",
+			"8016": "Styrie Ouest DAC",
+			"8017": "Bergland",
+			"8018": "Burgenland",
+			"8019": "Basse-Autriche",
+			"8020": "Styrie",
+			"8021": "Carinthie",
+			"8022": "Haute-Autriche",
+			"8023": "Salzburg",
+			"8024": "Tyrol",
+			"8025": "Vorarlberg"
+		},
+		"au": {
+			"15001": "Australié du Sud-Est"
 		},
 		"be": {
-			"3000":"Hageland (VL)",
-			"3001":"Hesbaye (VL)",
-			"3002":"Heuvelland (VL)",
-			"3003":"Côtes de Sambre et Meuse (WA)"
+			"3000": "Hageland (VL)",
+			"3001": "Hesbaye (VL)",
+			"3002": "Heuvelland (VL)",
+			"3003": "Côtes de Sambre et Meuse (WA)"
 		},
 		"bg": {
-			"4000":"plaine du Danube",
-			"4001":"Région de la Mer Noire",
-			"4002":"Rosental",
-			"4003":"Oberthrakische bas niveau",
-			"4004":"Struma Valley"
+			"4000": "plaine du Danube",
+			"4001": "Région de la Mer Noire",
+			"4002": "Rosental",
+			"4003": "Oberthrakische bas niveau",
+			"4004": "Struma Valley"
 		},
 		"cl": {
+			"16001": "Vallée de Colchagua",
+			"16002": "Casablanca",
+			"16003": "Vallée centrale",
+			"16004": "Vallée de la Maule"
 		},
 		"de": {
-			"1000":"Ahr",
-			"1001":"Baden",
-			"1002":"Franken",
-			"1003":"Hessische Bergstraße",
-			"1004":"Mittelrhein",
-			"1005":"Mosel",
-			"1006":"Nahe",
-			"1007":"Pfalz",
-			"1008":"Rheingau",
-			"1009":"Rheinhessen",
-			"1010":"Saale-Unstrut-Region",
-			"1011":"Sachsen",
-			"1012":"Württemberg"
-		},
-		"en": {
+			"1000": "Ahr",
+			"1001": "Baden",
+			"1002": "Franken",
+			"1003": "Hessische Bergstraße",
+			"1004": "Mittelrhein",
+			"1005": "Mosel",
+			"1006": "Nahe",
+			"1007": "Pfalz",
+			"1008": "Rheingau",
+			"1009": "Rheinhessen",
+			"1010": "Saale-Unstrut-Region",
+			"1011": "Sachsen",
+			"1012": "Württemberg"
 		},
 		"es": {
-			"12000":"Denominación de Origen",
-			"12001":"Vinos de Calidad V.C.P.R.D.",
-			"12002":"Vinos de la Tierra",
-			"12003":"Vino de Mesa",
-			"12004":"Andalousie",
-			"12005":"Asturias",
-			"12006":"Aragon",
-			"12007":"Îles Baléares",
-			"12008":"pays Basque",
-			"12009":"Iles Canaries",
-			"12010":"Cantabria",
-			"12011":"Castille-La Manche",
-			"12012":"Castille et León",
-			"12013":"Catalogne",
-			"12014":"Estrémadure",
-			"12015":"Galice",
-			"12016":"La Rioja",
-			"12017":"Communauté de Madrid",
-			"12018":"Murcia",
-			"12019":"Navarra",
-			"12020":"Valencia"
+			"12000": "Denominación de Origen",
+			"12001": "Vinos de Calidad V.C.P.R.D.",
+			"12002": "Vinos de la Tierra",
+			"12003": "Vino de Mesa",
+			"12004": "Andalousie",
+			"12005": "Asturias",
+			"12006": "Aragon",
+			"12007": "Îles Baléares",
+			"12008": "pays Basque",
+			"12009": "Iles Canaries",
+			"12010": "Cantabria",
+			"12011": "Castille-La Manche",
+			"12012": "Castille et León",
+			"12013": "Catalogne",
+			"12014": "Estrémadure",
+			"12015": "Galice",
+			"12016": "La Rioja",
+			"12017": "Communauté de Madrid",
+			"12018": "Murcia",
+			"12019": "Navarra",
+			"12020": "Valencia",
+			"12021": "Penedès",
+			"12022": "Prieuré",
+			"12023": "Terra Alta",
+			"12024": "Toro",
+			"12025": "Ribera del Duero",
+			"12026": "Campo de Borja",
+			"12027": "Calatayud",
+			"12028": "Jumilla",
+			"12029": "Almansa",
+			"12030": "Cariñena",
+			"12031": "Yecla",
+			"12032": "Rioja Alavesa",
+			"12033": "Rias Baixas",
+			"12034": "Valdeorras",
+			"12035": "Bierzo",
+			"12036": "Rueda",
+			"12037": "Sierra de Gredos"
 		},
 		"fr": {
-			"2000":"Alsace",
-			"2001":"Armagnac",
-			"2002":"Bordeaux",
-			"2003":"Bourgogne",
-			"2004":"Champagne",
-			"2005":"Cognac",
-			"2006":"Corse",
-			"2007":"Jura",
-			"2009":"Languedoc-Roussillon",
-			"2010":"Provence",
-			"2011":"Savoie",
-			"2012":"Sud-Ouest",
-			"2013":"Vallée de la Loire",
-			"2014":"Vallée du Rhône"
+			"2000": "Alsace",
+			"2001": "Armagnac",
+			"2002": "Bordeaux",
+			"2003": "Bourgogne",
+			"2004": "Champagne",
+			"2005": "Cognac",
+			"2006": "Corse",
+			"2007": "Jura",
+			"2009": "Languedoc-Roussillon",
+			"2010": "Provence",
+			"2011": "Savoie",
+			"2012": "Sud-Ouest",
+			"2013": "Vallée de la Loire",
+			"2014": "Vallée du Rhône",
+			"2015": "Roussillon",
+			"2016": "Côtes de Provence",
+			"2017": "Chablis",
+			"2018": "Rhône",
+			"2019": "Loire",
+			"2020": "Languedoc"
 		},
 		"gr": {
-			"5000":"Thrace",
-			"5001":"Macédoine",
-			"5002":"Épire",
-			"5003":"Thessalie",
-			"5004":"Grèce centrale",
-			"5005":"Grèce centrale",
-			"5006":"Attique",
-			"5007":"Îles ioniennes",
-			"5009":"Péloponnèse",
-			"5010":"Égée méridionale",
-			"5011":"Cyclades",
-			"5012":"Dodécanèse",
-			"5013":"Égée septentrionale",
-			"5014":"Crète"
-		},
-		"hu": {
+			"5000": "Thrace",
+			"5001": "Macédoine",
+			"5002": "Épire",
+			"5003": "Thessalie",
+			"5004": "Grèce centrale",
+			"5005": "Grèce centrale",
+			"5006": "Attique",
+			"5007": "Îles ioniennes",
+			"5009": "Péloponnèse",
+			"5010": "Égée méridionale",
+			"5011": "Cyclades",
+			"5012": "Dodécanèse",
+			"5013": "Égée septentrionale",
+			"5014": "Crète"
 		},
 		"it": {
-			"6000":"Abruzzes",
-			"6001":"Vallée d'Aoste",
-			"6002":"Pouilles",
-			"6003":"Basilicate",
-			"6004":"Emilie-Romagne",
-			"6005":"Frioul Vénétie Julienne",
-			"6006":"Calabre",
-			"6007":"Campanie",
-			"6008":"Lazio",
-			"6009":"Ligurie",
-			"6010":"Lombardie",
-			"6011":"marques",
-			"6012":"Molise",
-			"6013":"Piémont",
-			"6014":"Sardaigne",
-			"6015":"Sicile",
-			"6016":"toscane",
-			"6017":"Trentin-Haut-Adige",
-			"6018":"Ombrie",
-			"6019":"Vénétie"
-		},
-		"mt": {
+			"6000": "Abruzzes",
+			"6001": "Vallée d'Aoste",
+			"6002": "Pouilles",
+			"6003": "Basilicate",
+			"6004": "Emilie-Romagne",
+			"6005": "Frioul Vénétie Julienne",
+			"6006": "Calabre",
+			"6007": "Campanie",
+			"6008": "Lazio",
+			"6009": "Ligurie",
+			"6010": "Lombardie",
+			"6011": "marques",
+			"6012": "Molise",
+			"6013": "Piémont",
+			"6014": "Sardaigne",
+			"6015": "Sicile",
+			"6016": "toscane",
+			"6017": "Trentin-Haut-Adige",
+			"6018": "Ombrie",
+			"6019": "Vénétie",
+			"6020": "Valpolicella"
 		},
 		"nl": {
-			"7000":"Limburg",
-			"7001":"achterhoek",
-			"7002":"Village viticole Groesbeek",
-			"7003":"Betuwe",
-			"7004":"Veluwe",
-			"7005":"Zélande"
+			"7000": "Limburg",
+			"7001": "achterhoek",
+			"7002": "Village viticole Groesbeek",
+			"7003": "Betuwe",
+			"7004": "Veluwe",
+			"7005": "Zélande"
+		},
+		"nz": {
+			"17001": "Marlborough"
 		},
 		"pt": {
-			"9000":"Vinho Verde",
-			"9001":"Douro",
-			"9002":"Dão",
-			"9003":"Estremadura",
-			"9004":"Terras do Sado",
-			"9005":"Alentejo",
-			"9006":"Madère",
-			"9007":"Açores",
-			"9008":"Tage (Ribatejo)"
+			"9000": "Vinho Verde",
+			"9001": "Douro",
+			"9002": "Dão",
+			"9003": "Estremadura",
+			"9004": "Terras do Sado",
+			"9005": "Alentejo",
+			"9006": "Madère",
+			"9007": "Açores",
+			"9008": "Tage (Ribatejo)"
 		},
 		"ro": {
-			"10000":"Moldavie",
-			"10001":"Valachie",
-			"10002":"Munténie (Grande Valachie)",
-			"10003":"Olténie (Petite Valachie)",
-			"10004":"Transylvanie (Transylvanie)",
-			"10005":"Dobrogée (Dobroudja)",
-			"10006":"Banat",
-			"10007":"Crişana (zone hurlante)"
+			"10000": "Moldavie",
+			"10001": "Valachie",
+			"10002": "Munténie (Grande Valachie)",
+			"10003": "Olténie (Petite Valachie)",
+			"10004": "Transylvanie (Transylvanie)",
+			"10005": "Dobrogée (Dobroudja)",
+			"10006": "Banat",
+			"10007": "Crişana (zone hurlante)"
 		},
 		"si": {
-			"11000":"Drautal (Podravje)",
-			"11001":"Côte adriatique (Primorska)",
-			"11002":"Sauver la vallée (Posavje)"
+			"11000": "Drautal (Podravje)",
+			"11001": "Côte adriatique (Primorska)",
+			"11002": "Sauver la vallée (Posavje)"
 		},
-		"sx": {
+		"us": {
+			"18001": "Californie",
+			"18002": "Lodi"
+		},
+		"za": {
+			"13000": "Bot River",
+			"13001": "Breedekloof",
+			"13002": "Cape Agulhas",
+			"13003": "Cape Town",
+			"13004": "Cederberg",
+			"13005": "Central Orange River",
+			"13006": "Darling",
+			"13007": "Elgin",
+			"13008": "Franschhoek",
+			"13009": "Klein Karoo",
+			"13010": "Kwazulu-Natal",
+			"13011": "Malgas",
+			"13012": "Olifants River",
+			"13013": "Overberg",
+			"13014": "Paarl",
+			"13015": "Plettenberg Bay",
+			"13016": "Robertson",
+			"13017": "Stellenbosch",
+			"13018": "Sutherland Karoo",
+			"13019": "Swartland",
+			"13020": "Tulbagh",
+			"13021": "Walker Bay",
+			"13022": "Wellington",
+			"13023": "Worcester",
+			"13024": "Constantia"
 		}
 	},
-	"winetypes":{
-		"red":"Rouge",
-		"white":"Blanc",
-		"rose":"Rosé",
-		"rotling":"Rotling",
+	"winetypes": {
+		"red": "Rouge",
+		"white": "Blanc",
+		"rose": "Rosé",
+		"rotling": "Rotling",
 		"secco": "Secco",
-		"sparkling":"Champagne",
-		"destilate":"Distillats",
-		"general":"Autre"
+		"sparkling": "Champagne",
+		"destilate": "Spiritueux",
+		"grapeJuice": "Jus de raisin",
+		"wineBasedDrink": "Boisson à base de vin",
+		"spritzer": "Vin coupé d'eau gazeuse",
+		"vingris": "Variété de vin rosé allemand",
+		"nonAlcoholic": "Sans alcool",
+		"mulledWine": "Vin chaud",
+		"general": "Autre"
+	},
+	"savours": {
+		"categories": {
+			"meat": "Viande",
+			"preparation": "Préparation",
+			"milkproducts": "Produits laitiers",
+			"vegetables": "Légume",
+			"styles": "Styles",
+			"bread": "Pain",
+			"sweets": "Confiseries",
+			"occasions": "Occasions"
+		},
+		"beef": "Bœuf",
+		"pork": "Porc",
+		"poultry": "Volaille",
+		"venison": "Sauvage",
+		"fish": "Poisson",
+		"shellfish": "Crustacés",
+		"shell": "Coquillages",
+		"sausage": "Saucisse",
+		"grilled": "Grillé",
+		"fried": "Frit",
+		"smoked": "Fumé",
+		"baked": "Cuit au four",
+		"steamed": "Cuit à la vapeur",
+		"dairyproduct": "Produits laitiers",
+		"softcheese": "Fromage à pâte molle",
+		"bluecheese": "Fromage Bleu",
+		"hardcheese": "fromage à pâte dure",
+		"bulb": "Plantes à bulbe",
+		"salad": "Salade",
+		"tubers": "Tubercules ou navets",
+		"nightshades": "Tomates / Solanacées",
+		"mushrooms": "Champignons",
+		"nuts": "Noix",
+		"treenuts": "Fruits à coque",
+		"pepper": "Poivre",
+		"chili": "Chili",
+		"spicy": "Piquant et épicé",
+		"herbs": "Herbes",
+		"cinnamon": "Cannelle",
+		"exotic": "Épices exotiques",
+		"toast": "Pain blanc",
+		"bread": "Pain",
+		"wholebread": "Pain de blé entier",
+		"pumpernickel": "Pumpernickel",
+		"fruits": "Fruits",
+		"cake": "Gâteau",
+		"creme": "Creme",
+		"ice": "Glace",
+		"chocolate": "Chocolat",
+		"coffee": "Café",
+		"barbecue": "Barbecue",
+		"present": "Cadeau",
+		"boysNight": "Soirée entre gentlemen",
+		"girlsNight": "Soirée entre filles",
+		"date": "Rendez-vous",
+		"summerEvening": "Soir d’été",
+		"firesideChat": "Soirée tranquille à la maison",
+		"afterWork": "Temps de fermeture",
+		"easyDrinking": "Boire facilement",
+		"specialOccasions": "Occasions spéciales"
+	},
+	"qualitytypes": {
+		"ar": {
+			"country": "Wine of Argentina"
+		},
+		"au": {
+			"country": "Wine of Australia"
+		},
+		"at": {
+			"country": "Österreichischer Wein",
+			"origin": "Landwein",
+			"dac": "Districtus Austriae Controllatus (DAC)",
+			"quality": "Qualitätswein",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"auslese": "Auslese",
+			"icewine": "Eiswein",
+			"strawwine": "Strohwein, Schilfwein",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"champagne": "Österreichischer Sekt",
+			"champagneClassic": "Sekt g.U. Klassik",
+			"champagneReserve": "Sekt g.U. Reserve",
+			"champagneGrandReserve": "Sekt g.U. Große Reserve",
+			"ausbruch": "Ausbruch"
+		},
+		"cl": {
+			"country": "Wine of Chile",
+			"reserva": "Gran Reserva"
+		},
+		"de": {
+			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
+			"superior": "Landwein",
+			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"selection": "Auslese",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Schaumwein",
+			"aeratedSparklingWine": "Schaumwein mit zuges. CO2",
+			"champagne": "Deutscher Sekt",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Eiswein",
+			"champagneSpecificRegion": "Sekt b.A.",
+			"specialquality": "QW besonderer Reife und Leseart, Prädikatswein",
+			"estate": "Gutswein",
+			"local": "Ortswein",
+			"singlesite": "Lagenwein",
+			"vdpGutswein": "VDP.Gutswein",
+			"vdpOrtswein": "VDP.Ortswein",
+			"vdpErsteLage": "VDP.Erste Lage",
+			"vdpGrosseLage": "VDP.Große Lage",
+			"vdpGrossesGewaechs": "VDP.Großes Gewächs",
+			"vdpGutssekt": "VDP.Gutssekt",
+			"vdpOrtssekt": "VDP.Ortssekt"
+		},
+		"es": {
+			"country": "Viñedos de España",
+			"do": "Denominación de origen (DO)",
+			"doc": "Denominación de Origen Calificada (DOC)",
+			"doca": "Denominación de Origen Calificada (DOCa)",
+			"dop": "Denominación de Origen Protegida (DOP)",
+			"igp": "Indicación Geográfica Protegida (IGP)",
+			"origin": "Vino da la Tierra",
+			"table": "Vino de mesa"
+		},
+		"fr": {
+			"country": "Vin de France (VdF)",
+			"aop": "Appellation d’Origine Protégée (AOP)",
+			"igp": "Indication Géographique Protégée (IGP)",
+			"ac": "Appellation contrôlée (AC)",
+			"aoc": "Appellation d'origine contrôlée (AOC)",
+			"vdn": "Vin doux naturel (VDN)",
+			"vdqs": "Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"superior": "Vin de pays",
+			"table": "Vin de table"
+		},
+		"it": {
+			"country": "Vino d'Italia",
+			"dop": "Denominazione di origine protetta (DOP)",
+			"doc": "Denominazione di origine controllata (DOC)",
+			"doca": "Denominazione di origine controllata (DOCa)",
+			"docg": "Denominazione di origine controllata e garantita (DOCG)",
+			"specialquality": "Vino dolce naturale",
+			"superior": "Vino tipico",
+			"table": "Vino da tavola"
+		},
+		"pt": {
+			"doc": "Denominação de Origem Controlada (DOC)",
+			"dop": "Denominação de Origem Protegida (DOP)",
+			"ig": "Vinho Regional (IG)",
+			"igp": "Vinho Regional (IGP)",
+			"vr": "Vinho Regional (VR)"
+		},
+		"us": {
+			"california": "Wine of California"
+		},
+		"za": {
+			"country": "Wine of Southafrica",
+			"origin": "Wine of Origin"
+		}
+	},
+	"bottlingTypes": {
+		"producer": "Embouteillage des producteurs",
+		"bottler": "Embouteilleur",
+		"estate": "Remplissage du domaine",
+		"castle": "Verrouillage du remplissage",
+		"purchase": "Acheter"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "l"
+	},
+	"apps": {
+		"vinou-gusto": {
+			"dialogs": {
+				"access": {
+					"title": "Veuillez autoriser l'accès",
+					"toasts": {
+						"accessdenied": "Accès refusé"
+					}
+				},
+				"nointernet": {
+					"title": "Pas d'Internet disponible",
+					"msg": "Pour utiliser toutes les fonctions, vous avez besoin d'une connexion Internet."
+				},
+				"updateavailable": {
+					"title": "Mise à jour disponible",
+					"msg": "Une nouvelle version est disponible. Veuillez installer maintenant pour continuer à utiliser l'application."
+				},
+				"openexpertise": {
+					"title": "Ouvrir avec"
+				},
+				"createwine": {
+					"title": "Créer vin",
+					"msg": "Voulez-vous quitter sans enregistrer? Tous les changements sont perdus."
+				},
+				"winenotfound": {
+					"title": "Aucun vin trouvé",
+					"msg": "Voulez-vous créer un nouveau vin?"
+				}
+			},
+			"views": {
+				"main": {
+					"myfavs": "Mes favoris",
+					"findwines": "Trouver des vins",
+					"scanwine": "Scannez le vin",
+					"imprint": "Empreinte",
+					"dataprotection": "Protection des données"
+				},
+				"winery": {
+					"title": "Détecter vin",
+					"subtitle": "Rechercher établissement vinicole ou détecter nouveau",
+					"nextstep": "Créer vin"
+				},
+				"wine": {
+					"title": "Détecter vin",
+					"subtitle": "Rechercher vin ou détecter nouveau",
+					"prevstep": "Créer établissement vinicole",
+					"nextstep": "Image de la bouteille"
+				},
+				"bottle": {
+					"title": "Détecter vin",
+					"subtitle": "Prenez une photo de la bouteille de vin et ajoutez-la",
+					"prevstep": "Créer vin",
+					"actions": {
+						"makepicture": "Prenez une photo de la bouteille",
+						"save": "Enregistrer"
+					}
+				},
+				"favourites": {
+					"title": "Mes vins"
+				},
+				"scan": {
+					"actions": {
+						"apply": "Appliquer"
+					},
+					"toasts": {
+						"nfcstart": "Veuillez maintenir l'appareil sur l'étiquette NFC.",
+						"nfcdisabled": "Veuillez activer NFC et réessayer.",
+						"unsupportedtag": "NFC tag non pris en charge"
+					}
+				},
+				"search": {
+					"title": "Rechercher",
+					"toasts": {
+						"winenotfound": "Aucun vin trouvé",
+						"winesaved": "Vin enregistré localement",
+						"winerynotfound": "Aucun établissement vinicole trouvé"
+					}
+				}
+			}
+		}
 	}
 }

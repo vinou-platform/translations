@@ -67,7 +67,12 @@ class Translation {
 	 * @return array
 	 */
 	public function localizeWine($wine = null) {
-		$this->loadCountryCode($this->countryCode);
+
+		if (isset($wine['language']) && $wine['language'] != $this->countryCode)
+			$this->loadCountryCode($wine['language'], true);
+		else
+			$this->loadCountryCode($this->countryCode);
+
 		foreach ($wine as $property => $value) {
 			switch ($property) {
 				case 'grapetypeIds':
@@ -109,7 +114,7 @@ class Translation {
 			$dictionary = json_decode(file_get_contents($this->llPath . $code . '.json'), true);
 			if (!$dictionary)
 				return false;
-			
+
 			$this->dictionary[$code] = $dictionary;
 
 			// Initialize lookups.
@@ -131,14 +136,21 @@ class Translation {
 		return true;
 	}
 
-	protected static function findKeyInArray($keyArray, $searchArray) {
-		if (!is_array($keyArray))
-			$keyArray = explode('.', $keyArray);
-		foreach ($keyArray as $key) {
-			if (isset($searchArray[$key]))
-				$searchArray = $searchArray[$key];
+	/**
+	 * @see \Tools\HelperUtility::findKeyInArray()
+	 */
+	protected static function findKeyInArray($keys, /*array*/ $array) {
+		if (!is_array($keys))
+			$keys = explode('.', $keys);
+		foreach ($keys as $key) {
+			if (is_array($array) && array_key_exists($key, $array))
+				$array = $array[$key];
+			else {
+				$array = null;
+				break;
+			}
 		}
-		return $searchArray;
+		return $array;
 	}
 
 }

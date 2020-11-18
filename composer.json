@@ -1,6 +1,6 @@
 {
     "name": "vinou/translations",
-    "version": "2.5.1",
+    "version": "3.0.5",
     "type": "library",
     "description": "Vinou Translation files",
     "keywords": [
@@ -20,5 +20,8 @@
         "psr-4": {
             "Vinou\\Translations\\": "Classes/"
         }
+    },
+    "scripts": {
+        "lint": "php -r \"\\$errors = false; foreach(glob('Resources/*.json') as \\$file) { \\$data = file_get_contents(\\$file); @json_decode(\\$data); if (json_last_error() !== JSON_ERROR_NONE) { \\$errors = true; echo PHP_EOL . 'Invalid localization file: ' . \\$file . PHP_EOL . json_last_error_msg() . PHP_EOL . PHP_EOL; } } if (!\\$errors) echo PHP_EOL . 'All localization files are valid.' . PHP_EOL . PHP_EOL; \""
     }
 }

@@ -3,14 +3,12 @@
 		"dashboard": "Dashboard",
 		"winery": "Weingut",
 		"wineries": "Weingüter",
-		"wines": "Weine",
 		"wines.statistics": "Statistiken",
 		"winelists": "Weinlisten",
 		"qrcodes": "QR-Codes",
-		"news": "Aktuelles",
+		"news": "Neuigkeiten",
 		"users": "Benutzer",
 		"customers": "Mitglieder",
-		"categories": "Kategorien",
 		"clients": "Kunden",
 		"clients.statistics": "Statistiken",
 		"orders": "Bestellungen",
@@ -21,25 +19,44 @@
 		"cronjobs": "Cronjobs",
 		"network": "Mein Netzwerk",
 		"merchants": "Händler",
-		"products": "Produkte",
 		"products.statistics": "Statistiken",
 		"cellar": "Mein Keller",
-		"cellar.book": "Kellerbuch",
+		"cellar.book": "Weine",
 		"cellar.barrels": "Behälter",
-		"cellar.substances": "Stoffe"
+		"cellar.substances": "Stoffe",
+		"articles": "Artikel",
+		"articles.wines": "Weine",
+		"articles.products": "Produkte",
+		"articles.bundles": "Weinpakete",
+		"articles.categories": "Kategorien",
+		"articles.statistics": "Statistiken",
+		"marketing": "Vermarktung",
+		"marketing.campaigns": "Kampagnen",
+		"marketing.catalogs": "Preislisten"
 	},
 	"general": {
-		"fieldsets": {
+		"actions": {
+			"export": "Export",
+			"exportRaw": "Export (EDV)",
+			"import": "Import",
+			"importRaw": "Import (EDV)",
+			"exportQrCode": "QR-Code als Vektor-Datei herunterladen"
+		},
+		"fieldSets": {
 			"general": "Allgemein",
-			"settings": "Einstellungen"
+			"settings": "Einstellungen",
+			"visibility": "Sichtbarkeit",
+			"qrcode": "QR-Code"
 		},
 		"fields": {
 			"default": "Standard",
 			"empty": "Bitte wählen",
 			"none": "Keine Angabe",
-			"required": "Pflichtfeld",
+			"unknown": "Unbekannt",
 			"upload_image": "Bild auswählen und hochladen",
-			"search_placeholder": "Name oder Beschreibung",
+			"search": {
+				"placeholder": "z.B. Name oder Beschreibung"
+			},
 			"imprint": "Impressum",
 			"dataprotection": "Datenschutz",
 			"termsandconditions": "AGB",
@@ -48,12 +65,10 @@
 				"of": "ab",
 				"to": "bis"
 			},
-			"taxid": "UStID",
-			"price": {
-				"none": "kostenfrei"
-			},
+			"freeOfCharge": "kostenfrei",
 			"crstamp": "Erstellungsdatum",
 			"chstamp": "Änderungsdatum",
+			"weight": "Gewicht (in g)",
 			"title": "Titel",
 			"gender": "Anrede",
 			"first_name": "Vorname",
@@ -61,6 +76,17 @@
 			"salutation": {
 				"title": "Briefanrede",
 				"placeholder": "z.B.: Sehr geehrter Herr Max Mustermann"
+			},
+			"qrcodeLink": "Zieladresse für QR-Code",
+			"phoneAction": "{name} anrufen",
+			"faxAction": "Fax an {name} senden",
+			"mailAction": "E-Mail an {name} schreiben",
+			"wwwAction": "Internetseite von {name} besuchen",
+			"copyOf": {
+				"1": "Kopie von {name}",
+				"n": "Kopie {n} von {name}"
+
+
 			}
 		},
 		"tabs": {
@@ -75,25 +101,89 @@
 		"gender": {
 			"m": "Herr",
 			"f": "Frau",
-			"d": "Divers"
+			"d": "Divers",
+			"fam": "Familie"
+		},
+		"itemTypes": {
+			"wine": "Weine",
+			"product": "Produkte",
+			"bundle": "Weinpakete",
+			"package": "Versandkosten"
+		},
+		"visibilities": {
+			"network": {
+				"label": "Vinou-Netzwerk",
+				"description": "Sichtbar für alle Vinou-Mitglieder z.B. über die Netzwerkfunktion"
+			},
+			"internal": {
+				"label": "Intern",
+				"description": "Sichtbar für Deine Kunden z.B. im Login-Bereich Deines Online-Shops"
+			},
+			"public": {
+				"label": "Öffentlich",
+				"description": "Sichtbar auf allen öffentlichen Bereichen wie z.B. Webseite (ohne Login)"
+			},
+			"shop": {
+				"label": "Shop",
+				"description": "Sichtbar in Deinem Shop"
+			},
+			"winesearch": {
+				"label": "WINESEARCH.io",
+				"description": "Sichtbar in der Weinsuchmaschine <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
+			}
 		},
 		"filters": {
 			"sortBy": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortDirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
 			"groupBy": {
-				"label": "Ansicht gruppieren nach:",
+				"label": "Ansicht gruppieren nach: ",
 				"none": "Keine Gruppierung"
 			},
 			"select": {
 				"all": "Alle auswählen",
 				"none": "Auswahl aufheben"
+			},
+			"general": {
+				"empty": "Alle"
 			}
+		},
+		"hints": {
+			"empty": "Noch keine Einträge vorhanden",
+			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
+			"required": "Pflichtfeld",
+			"weight": "Gewicht inklusive Verpackung (für Versand)"
+		},
+		"errors": {
+			"confirmationRequired": "Dieses Feld muss bestätigt werden",
+			"date": "Bitte gib ein gültiges Datum ein",
+			"email": "Bitte gib eine gültige Emailadresse ein",
+			"max": "Bitte gib einen kleineren Wert ein",
+			"maxDate": "Bitte gib ein früheres Datum ein",
+			"maxDateValue": "Bitte gib ein Datum bis {value} ein",
+			"maxLength": "Bitte gib weniger Zeichen ein",
+			"maxLengthValue": "Bitte gib maximal {value} Zeichen ein",
+			"maxValue": "Bitte gib einen Wert kleiner-gleich {value} ein",
+			"min": "Bitte gib einen größeren Wert ein",
+			"minDate": "Bitte gib ein späteres Datum ein",
+			"minDateValue": "Bitte gib ein Datum ab {value} ein",
+			"minLength": "Bitte gib mehr Zeichen ein",
+			"minLengthValue": "Bitte gib mindestens {value} Zeichen ein",
+			"minValue": "Bitte gib einen Wert größer-gleich {value} ein",
+			"pattern": "Ungültiges Format",
+			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
+			"required": "Bitte fülle dieses Feld aus",
+			"submit": "Beim Speichern der Daten ist ein Fehler aufgetreten."
+		},
+		"toasts": {
+			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
+			"internalchanged": "Sichtbarkeit für Deine Kunden geändert",
+			"publicchanged": "öffentliche Sichtbarkeit geändert"
 		}
 	},
 	"loader": {
@@ -102,66 +192,27 @@
 		}
 	},
 	"dashboard": {
-		"actions": {
-			"create": {
-				"category_main": "Neue",
-				"category_sub": "Kategorie erstellen",
-				"user_main": "Neuen",
-				"user_sub": "Benutzer erstellen",
-				"wine_main": "Neuen",
-				"wine_sub": "Wein erstellen"
-			}
-		},
-		"fieldset": {
-			"quickactions": "Quickactions"
+		"fieldSets": {
+			"quickActions": "Schnellaktionen"
 		}
 	},
-	"price": "Preis",
-	"quantity": "Bestand",
-	"articlenumber": "Artikelnummer",
-	"de": "Deutschland",
-	"en": "England",
-	"fr": "Frankreich",
-	"fileupload": "Datei auswählen",
 	"delete_image": "Bild löschen",
-	"delete_image_secure": "Möchtest du dieses Bild wirklich löschen?",
-	"delete_template_secure": "Möchtest du ihre Vorlage für Expertisen wirklich löschen?",
+	"delete_image_secure": "Möchtest Du dieses Bild wirklich löschen?",
 	"changepw": "Passwort ändern",
-	"wineregions_none": "keine Angabe",
-	"wines_modal_delete": "Möchtest du diesen Wein wirklich löschen?",
-	"wineries_modal_delete": "Möchtest du dieses Weingut wirklich löschen?",
-	"category_modal_delete": "Möchtest du diese Kategorie wirklich löschen?",
-	"contacts_modal_delete":"Möchtest du diesen Kontakt wirklich löschen?",
-	"customers_modal_delete": "Möchtest du diesen Kunden wirklich löschen?",
+	"wines_modal_delete": "Möchtest Du diesen Wein wirklich löschen?",
+	"wineries_modal_delete": "Möchtest Du dieses Weingut wirklich löschen?",
+	"category_modal_delete": "Möchtest Du diese Kategorie wirklich löschen?",
+	"customers_modal_delete": "Möchtest Du diesen Kunden wirklich löschen?",
 	"users_modules": "Module",
-	"users_modal_delete": "Möchtest du diesen Benutzer wirklich löschen?",
-	"token_modal_delete": "Möchtest du diesen Token wirklich löschen?",
+	"users_modal_delete": "Möchtest Du diesen Benutzer wirklich löschen?",
+	"token_modal_delete": "Möchtest Du diesen Token wirklich löschen?",
 	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
-	"address_modal_delete": "Möchtest du diese Adresse wirklich löschen?",
-	"dashboard": {
-		"actions": {
-			"create": {
-				"wine_main": "Neuen",
-				"wine_sub": "Wein anlegen",
-				"category_main": "Neue",
-				"category_sub": "Kategorie anlegen",
-				"user_main": "Neuen",
-				"user_sub": "Benutzer anlegen"
-			}
-		},
-		"fieldset": {
-			"quickactions": "Quickactions"
-		}
-	},
-	"orders_modal_cancel": "Möchtest du diese Bestellung wirklich stornieren?",
-	"orders_modal_create": "Du erfasst eine Bestellung, was möchtest du tun?",
-	"orders_modal_create_withinvoice": "Erfassen und Rechnung und Lieferschein generieren",
-	"orders_modal_create_only": "Nur erfassen",
-	"orders_modal_sent": "Möchtest du die Bestellung als Versendet markieren?",
-	"orders_position_delete": "Möchtest du diese Position wirklich löschen?",
-	"orders_position_update": "Möchtest du diese Position wirklich anpassen?",
-	"orders_position_add": "Möchtest du diese Position wirklich hinzufügen?",
-	"orders_modal_invoice_create": "Möchtest du Rechnung und Lieferschein für den Versand generieren?",
+	"address_modal_delete": "Möchtest Du diese Adresse wirklich löschen?",
+	"orders_modal_cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
+	"orders_modal_sent": "Möchtest Du die Bestellung als Versendet markieren?",
+	"orders_position_delete": "Möchtest Du diese Position wirklich löschen?",
+	"orders_position_update": "Möchtest Du diese Position wirklich anpassen?",
+	"orders_modal_invoice_create": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?",
 	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
 	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
 	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?",
@@ -178,60 +229,33 @@
 			"percent": "Prozentualer Rabatt"
 		}
 	},
-	"offer": {
-		"action": {
-			"cancelOffer": {
-				"main": "Angebot",
-				"sub": "stornieren",
-				"cancelled": "storniert"
-			},
-			"create": {
-				"main": "Angebot",
-				"sub": "erstellen"
-			},
-			"createOrder": {
-				"main": "Als Bestellung",
-				"sub": "erfassen",
-				"cancel": "Angebot stornieren"
-			},
-			"print": {
-				"main": "Angebot",
-				"sub": "drucken"
-			}
-		},
-		"fields": {
-			"createTitle": "Angebot erstellen",
-			"createDate": "Angebot erstellt",
-			"cancelDate": "Angebot storniert",
-			"next_summary": "Weiter zur Angebotsübersicht",
-			"title": "Angebot",
-			"status": {
-				"cancelled": "Angebot storniert",
-				"new": "Angebot erstellt"
-			}
-		},
-		"fieldset": {
-			"summary_title": "Angebotsübersicht"
-		},
-		"modal": {
-			"cancelOffer": "Soll das Angebot wirklich storniert werden?",
-			"createFromOffer": "Aus Angebot eine Bestellung erfassen. Was möchten sie tun?"
-		},
-		"toasts": {
-			"created": "Angebot erstellt",
-			"offerCancelled": "Das Angebot wurde storniert.",
-			"documentCreated": "Angebot erstellt",
-			"updated": "Angebot aktualisiert"
-		}
-	},
 	"currenttoken_old": "Bisherige Token",
 	"currenttoken": "Aktuelle Verbindung",
-	"tokens": {
+	"token": {
 		"actions": {
 			"create": {
 				"main": "Neue Verbindung",
 				"sub": "anlegen"
 			}
+		},
+		"views": {
+			"gallery": {
+				"referer": "Domain/IP",
+				"token": "Schnittstelle (Token)",
+				"mode": {
+					"label": "Modus",
+					"dev": "Entwicklung",
+					"live": "Live"
+				}
+			}
+		},
+		"groups": {
+			"manual": "Manuelle Verbindungen",
+			"automatic": "Automatisierte Verbindungen"
+		},
+		"toasts": {
+			"changed": "Verbindung geändert!",
+			"deleted": "Verbindung gelöscht!"
 		}
 	},
 	"yes": "Ja",
@@ -240,28 +264,38 @@
 	"cancel": "Abbrechen",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "Füllmenge",
+			"additionVolume": "Zugang",
 			"barrel": {
 				"label": "Behälter",
 				"placeholder": "Behälter suchen"
 			},
 			"bookingStamp": {
-				"label": "Buchungstag",
+				"label": "Vorgangsdatum",
 				"placeholder": "dd.MM.YYYY"
+			},
+			"bottles": "Anzahl Flaschen",
+			"cellarWine": {
+				"label": "Weinkonto",
+				"placeholder": "Weinkonto suchen"
 			},
 			"clarifyingOnly": "Zeige nur Behälter zur Klärung",
 			"filtrationPurpose": {
 				"label": "Feststoffverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
 			},
-			"lossRelocation": "Umfüllung der Reststoffe?",
+			"harvestDeclarationNumber": "Erntemeldung (Belegnr.)",
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
+			"price": "Einkaufspreis",
+			"purchaseNote": "Anmerkung / Lieferant",
 			"purpose": {
 				"label": "Verwendung",
 				"placeholder": " "
 			},
+			"referenceNumber": "Belegnr. (z.B. Begleitpapiere)",
+			"residueRelocation": "Umfüllung der Reststoffe?",
+			"residueVolume": "Reststoffe",
 			"sludgePurpose": {
 				"label": "Trubverwendung",
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
@@ -277,29 +311,43 @@
 				"placeholder": "Behälter suchen"
 			},
 			"wine": {
-				"label": "Weinkonto",
-				"placeholder": "Weinkonto suchen"
+				"autoCreate": "Automatisch aus Weinkonto generieren",
+				"label": "Wein",
+				"placeholder": "Wein suchen"
 			},
-			"withdrawalVolume": "Entnahme",
+			"withdrawalVolume": "Abgang",
 
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
-			"filllevel": "Füllhöhe",
-			"substance": "Stoff"
+			"substance": "Stoff",
+
+			"substanceAdd": "Stoffzugabe {substance}",
+			"enrichment": "Anreicherung mit {substance}",
+			"sweetening": "Süßung mit {substance}",
+			"acidification": "Säuerung mit {substance}",
+			"deacidification": "Entsäuerung mit {substance}"
 		},
 		"actions": {
 			"create": {
-				"main": "Neuen Vorgang",
-				"sub": "erfassen"
+				"main": "Vorgang erfassen",
+				"sub": " "
 			},
 			"edit": {
-				"main": "Eintrag",
-				"sub": "korrigieren"
+				"main": "Eintrag korrigieren",
+				"sub": " "
 			},
 
+			"createInventoryTakeover": {
+				"main": "Bestandsübernahme",
+				"sub": " "
+			},
 			"createHarvest": {
 				"main": "Ernte",
+				"sub": " "
+			},
+			"createAdditionalPurchase": {
+				"main": "Weinzukauf",
 				"sub": " "
 			},
 			"createMarcLiquidation": {
@@ -323,12 +371,21 @@
 				"main": "Abstich",
 				"sub": " "
 			},
+			"createBlending": {
+				"main": "Verschnitt",
+				"sub": " "
+			},
+
 			"createPrivateConsumption": {
 				"main": "Eigenverbrauch",
 				"sub": "erfassen"
 			},
 			"createShrinkage": {
 				"main": "Schwund",
+				"sub": "erfassen"
+			},
+			"createLoss": {
+				"main": "Verlust",
 				"sub": "erfassen"
 			},
 			"createConcentration": {
@@ -342,10 +399,6 @@
 
 			"createWineAddition": {
 				"main": "Beifüllung",
-				"sub": " "
-			},
-			"createBlending": {
-				"main": "Verschnitt",
 				"sub": " "
 			},
 
@@ -370,7 +423,7 @@
 				"sub": " "
 			},
 			"createAlcoholization": {
-				"main": "Alkoholisierung",
+				"main": "Alkoholzusatz",
 				"sub": " "
 			},
 			"createWaterAddition": {
@@ -382,42 +435,54 @@
 				"main": "Abfüllung",
 				"sub": " "
 			},
-			"createAccountClosure": {
-				"main": "Kontoabschluss",
+			"createFinancialStatement": {
+				"main": "Jahresabschluss",
 				"sub": " "
 			},
+			"createAccountClosure": {
+				"main": "Konto",
+				"sub": "archivieren"
+			},
 
+			"addSourceBarrel": {
+				"main": "Quellbehälter",
+				"sub": "hinzufügen"
+			},
 			"addTargetBarrel": {
 				"main": "Zielbehälter",
 				"sub": "hinzufügen"
 			}
 		},
 		"types": {
+			"inventoryTakeover": "Bestandsübernahme",
 			"harvest": "Ernte",
+			"additionalPurchase": "Weinzukauf",
 			"marcLiquidation": "Tresterverwertung",
 
 			"relocation": "Umlagerung",
 			"decanting": "Abstich",
 			"staticSettling": "Entschleimung",
 			"filtration": "Filtrierung",
+			"blending": "Verschnitt",
 			"privateConsumption": "Eigenverbrauch",
 			"shrinkage": "Schwund",
+			"loss": "Verlust",
 			"concentration": "Konzentrierung",
 			"dealcoholization": "Entalkoholisierung",
 
 			"wineAddition": "Beifüllung",
-			"blending": "Verschnitt",
 
 			"substanceAdd": "Stoffzugabe",
 			"enrichment": "Anreicherung",
 			"sweetening": "Süßung",
 			"acidification": "Säuerung",
 			"deacidification": "Entsäuerung",
-			"alcoholization": "Alkoholisierung",
+			"alcoholization": "Alkoholzusatz",
 			"waterAddition": "Wasser Hinzugabe",
 
 			"bottling": "Abfüllung",
-			"accountClosure": "Kontoabschluss"
+			"financialStatement": "Jahresabschluss",
+			"accountClosure": "Kontoarchivierung"
 		},
 		"views": {
 			"edit": {
@@ -428,9 +493,17 @@
 				"backToWineSelect": "Zurück zur Auswahl"
 			}
 		},
+		"dialogs": {
+			"delete": "Willst Du diesen Vorgang wirklich löschen?"
+		},
 		"toasts": {
 			"created": "Vorgang erstellt.",
-			"changed": "Vorgang bearbeitet."
+			"changed": "Vorgang bearbeitet.",
+			"deleted": "Vorgang gelöscht."
+		},
+		"hints": {
+			"accountClosure": "<strong>Achtung!</strong> Durch diese Aktion wird das Weinkonto dauerhaft geschlossen. Nachträglich sind keine Änderungen mehr möglich.",
+			"financialStatement": "Durch den Jahresabschluss werden alle bisherigen Vorgänge in diesem Weinkonto festgeschrieben. Nachträglich sind keine Änderungen mehr möglich. Bitte überprüfe noch einmal alle Vorgänge des Wirtschaftsjahres auf korrektheit bevor du fortfährst."
 		}
 	},
 	"cellarWine": {
@@ -442,8 +515,9 @@
 			"mustAcidity": "Mostsäure",
 			"mustWeight": "Mostgewicht",
 			"name": "Bezeichnung",
-			"number": "Wein-Nr.",
-			"referenceNumber": "AP-Nummer",
+			"number": "Weinnr.",
+			"referenceNumber": "A.P.Nr./Losnr.",
+			"stock": "Bestand",
 			"volume": "Bestand"
 		},
 		"actions": {
@@ -453,26 +527,13 @@
 				"sub": "anlegen"
 			},
 			"export": {
-				"cellarBook": "Kellerbuch",
 				"barrelList": "Behälterliste",
+				"bottleLogs": "Flaschenbuch",
+				"cellarBook": "Kellerbuch",
 				"grapeMarcLogs": "Tresterbuch",
-				"substanceLogs": "Stoffliste"
+				"substanceLogs": "Stoffliste",
+				"wineBook": "Weinbuch"
 			}
-		},
-		"filters": {
-			"label": "Ansicht einschränken",
-			"groupby": {
-				"label": "Ansicht gruppieren nach:"
-			},
-			"sortby": {
-				"label": "Sortierrichtung:"
-			},
-			"showeditor": {
-				"label": "Erfasser anzeigen"
-			}
-		},
-		"types": {
-			"readyforfilling": "Bereit zur Abfüllung"
 		},
 		"views": {
 			"edit": {
@@ -480,7 +541,12 @@
 				"editTitle": "Weinkonto bearbeiten"
 			},
 			"gallery": {
-				"currentState": "Aktueller Zustand"
+				"currentState": "Aktueller Zustand",
+				"vintage": "Jahrgang {vintage}",
+				"filters": {
+					"hideClosed": "Archivierte Weinkonten ausblenden",
+					"readyForBottling": "Bereit zur Abfüllung"
+				}
 			}
 		},
 		"dialogs": {
@@ -495,14 +561,17 @@
 	},
 	"barrel": {
 		"fields": {
-			"number": "Behälter-Nr.",
-			"label": "Kennzeichnung",
-			"type": "Typ/Material",
+			"bookingStamp": "Aufstellungszeitpunkt",
 			"capacity": "Fassungsvermögen in Liter",
+			"chstamp": "Zuletzt geändert",
+			"clarifying": "Behälter zur Klärung?",
+			"fillLevel": "Füllstand",
+			"label": "Kennzeichnung",
 			"location": "Aufstellort",
 			"manufacturer": "Hersteller",
-			"clarifying": "Behälter zur Klärung?",
-			"note": "Notizen"
+			"note": "Notizen",
+			"number": "Behälternr.",
+			"type": "Typ/Material"
 		},
 		"actions": {
 			"create": {
@@ -525,39 +594,40 @@
 				"editTitle": "Behälter bearbeiten"
 			},
 			"gallery": {
-				"empty": "leer",
-				"barrelnumber": "Behälter-Nr.",
-				"label": "Bezeichnung",
-				"chstamp": "Zuletzt geändert",
-				"filllevel": "Füllstand",
 				"currentState": "Aktueller Zustand",
 				"filters": {
 					"search": {
-						"placeholder": "Z.B.: Behälter-Nr., Aufstellort, Hersteller"
+						"placeholder": "Z.B.: Behälternr., Aufstellort, Hersteller"
 					},
 					"hideEmptyBarrels": "Leere Behälter ausblenden"
 				}
 			}
 		},
 		"dialogs": {
-			"delete": "Willst Du den Behälter wirklich löschen?"
+			"delete": "Willst Du den Behälter wirklich löschen?",
+			"invalid": "Unstimmige Behälterinformationen. Bitte überprüfe Deine Vorgänge auf den nachfolgenden Weinkonten: {wines}"
 		},
 		"toasts": {
 			"created": "Behälter erstellt.",
 			"changed": "Behälter bearbeitet.",
 			"duplicated": "Behälter dupliziert.",
 			"deleted": "Behälter gelöscht."
+		},
+		"hints": {
+			"overFilling": "Füllstand übersteigt maximale Kapazität von {capacity} l.",
+			"underFilling": "Negativer Füllstand."
 		}
 	},
 	"measurement": {
 		"fields": {
-			"currentValue": "Aktueller Wert",
-			"targetValue": "Zielwert"
+			"currentValue": "Von",
+			"targetValue": "Auf",
+			"range": "Von {from} {unit} um {by} {unit} auf {to} {unit}"
 		},
 		"types": {
 			"temperature": "Temperatur",
 			"acidity": "Säuregehalt",
-			"residualSugar": "Restsüße",
+			"sugarContent": "Zuckergehalt",
 			"alcohol": "Alkoholgehalt",
 			"density": "Dichte"
 		}
@@ -566,7 +636,9 @@
 		"fields": {
 			"type": "Stoff-Typ",
 			"unit": "Einheit",
-			"note": "Notizen"
+			"note": "Notizen",
+			"productName": "Produktbez.",
+			"productVendor": "Hersteller"
 		},
 		"actions": {
 			"create": {
@@ -580,41 +652,47 @@
 				"editTitle": "Stoff bearbeiten"
 			},
 			"gallery": {
-				"substance": "Stofftyp",
+				"substance": "Stofftyp/Produktbez.",
 				"chstamp": "Zuletzt geändert",
 				"stock": "Vorhandene Menge"
 			}
 		},
 		"types": {
-			"saccharose": "Saccharose",
-			"rectifiedConcentratedGrapeMust": "Rektifiziertes Traubenmostkonzentrat",
-			"concentratedGrapeMust": "Konzentrierter Traubenmost",
-			"alcohol": "Alkohol",
-			"tarticAcid": "Weinsäure",
-			"malicAcid": "Apfelsäure",
-			"lacticAcid": "Milchsäure",
-			"potassiumHydrogenCarbonate": "Kaliumhydrogencarbonat",
-			"carbonateLime": "Kohlensaurer Kalk",
-			"doubleSalt": "Doppelsalz",
-			"dl-tarticAcid": "DL-Weinsäure",
-			"potassiumSorbate": "Kaliumsorbat",
-			"sorbicAcid": "Sorbinsäure",
-			"oakChips": "Eichenholz Chips",
-			"dimethylDicarbonate": "DMDC DimethylDikarbonat",
 			"activatedCarbon": "Aktivkohle",
-			"sulfurDioxide": "Schwefeldioxide",
-			"potassiumFerrocyanide": "Kaliumhexayanoferrat",
-			"casein": "Kasein",
-			"lysozyme": "Lysozym",
 			"albumin": "Albumin",
-			"fishProduct": "Fischerzeugnis",
-			"glutenContainingCerealProduct": "Glutenhaltiges Erzeugnis",
-			"bentonite": "Bentonit",
-			"gelatin": "Gelatine",
-			"tannin": "Tannine",
-			"carboneDioxide": "Kohlendioxid",
+			"alcohol": "Alkohol",
 			"ascorbicAcid": "Ascorbinsäure",
-			"vitaminB1": "Vitamin B1"
+			"bentonite": "Bentonit",
+			"carbonateLime": "Kohlensaurer Kalk",
+			"carboneDioxide": "Kohlendioxid",
+			"carboxymethylCellulose": "Kaliumhydrogensulfit",
+			"casein": "Kasein",
+			"concentratedGrapeMust": "Konzentrierter Traubenmost",
+			"cupricCitrate": "Kupfercitrat",
+			"dimethylDicarbonate": "DMDC DimethylDikarbonat",
+			"dl-tarticAcid": "DL-Weinsäure",
+			"doubleSalt": "Doppelsalz",
+			"enzyme": "Enzym",
+			"fishProduct": "Fischerzeugnis",
+			"gelatin": "Gelatine",
+			"glutenContainingCerealProduct": "Glutenhaltiges Erzeugnis",
+			"lacticAcid": "Milchsäure",
+			"lysozyme": "Lysozym",
+			"malicAcid": "Apfelsäure",
+			"oakChips": "Eichenholz Chips",
+			"plantProtein": "Pflanzliches Protein",
+			"potassiumFerrocyanide": "Kaliumhexayanoferrat",
+			"potassiumHydrogenCarbonate": "Kaliumhydrogencarbonat",
+			"potassiumHydrogenSulfite": "Carboxymethylcellulose",
+			"potassiumSorbate": "Kaliumsorbat",
+			"rectifiedConcentratedGrapeMust": "Rektifiziertes Traubenmostkonzentrat",
+			"saccharose": "Saccharose",
+			"sorbicAcid": "Sorbinsäure",
+			"sulfurDioxide": "Schwefeldioxid",
+			"tannin": "Tannine",
+			"tarticAcid": "Weinsäure",
+			"vitaminB1": "Vitamin B1",
+			"yeast": "Hefe"
 		},
 		"dialogs": {
 			"delete": "Willst Du die Substanz wirklich löschen?"
@@ -629,7 +707,8 @@
 		"fields": {
 			"substance": "Stoff",
 			"quantity": "Menge",
-			"note": "Notizen"
+			"note": "Notizen",
+			"stock": "Bestand"
 		},
 		"views": {
 			"editAddition": {
@@ -648,10 +727,57 @@
 			"changedWithdrawal": "Stoffabgang bearbeitet."
 		}
 	},
+	"template": {
+		"fields": {
+			"contract": {
+				"label": "Vorlage für Auftrag",
+				"placeholder": "Vinou-Auftrag (Standard)"
+			},
+			"creditadvice": {
+				"label": "Vorlage für Gutschrift",
+				"placeholder": "Vinou-Gutschrift (Standard)"
+			},
+			"delivery": {
+				"label": "Vorlage für Lieferschein",
+				"placeholder": "Vinou-Lieferschein (Standard)"
+			},
+			"expertise": {
+				"label": "Vorlage für PDF-Expertise",
+				"placeholder": "Vinou-Expertise (Standard)"
+			},
+			"invoice": {
+				"label": "Vorlage für Rechnung",
+				"placeholder": "Vinou-Rechnung (Standard)"
+			},
+			"offer": {
+				"label": "Vorlage für Angebot",
+				"placeholder": "Vinou-Angebot (Standard)"
+			},
+			"catalog": {
+				"label": "Vorlage für PDF-Preislisten",
+				"placeholder": "Vinou-Preisliste (Standard)"
+			},
+			"text": {
+				"label": "Vorlage für Text-PDFs",
+				"placeholder": "Vinou-Textdokument (Standard)"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Vorlagen bearbeiten"
+			}
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Vorlage wirklich löschen?"
+		},
+		"toasts": {
+			"uploaded": "Vorlage hochgeladen!",
+			"deleted": "Vorlage gelöscht!"
+		}
+	},
 	"fieldset_general_title": "Allgemeines",
 	"fieldset_region_title": "Regionales",
 	"fieldset_grapetype_title": "Rebsorte",
-	"fieldset_stock_title": "Bestände",
 	"fieldset_facts_title": "Daten & Fakten",
 	"fieldset_analyse_title": "Analyse",
 	"fieldset_additional_title": "Beschreibung & Bild",
@@ -661,11 +787,6 @@
 	"fieldset_settings_title": "Einstellungen",
 	"fieldset_packages_title": "Versandoptionen",
 	"fieldset_addresses_title": "Weitere Adressen",
-	"fieldset_billing_title": "Rechnungsadresse",
-	"fieldset_delivery_title": "Versand",
-	"fieldset_payment_title": "Zahlungsmodalitäten",
-	"fieldset_positions_title": "Positionen",
-	"fieldset_summary_title": "Bestellübersicht",
 	"fieldset_customer_title": "Kundendaten",
 	"fieldset_quickactions": "Quickactions",
 	"settings_addresses": "Adressen",
@@ -683,10 +804,9 @@
 	"logout": "Abmelden",
 	"edit": "Bearbeiten",
 	"save": "Speichern",
-	"cancel": "Abbrechen",
 	"repeatpw": "Passwort wiederholen",
 	"language": "Sprache",
-	"modal_delete_wine": "Möchtest du diesen Wein wirklich löschen?",
+	"modal_delete_wine": "Möchtest Du diesen Wein wirklich löschen?",
 	"test": "deutsch",
 	"login_emailempty": "E-Mail Adresse nicht angegeben",
 	"login_emailnotvalid": "E-Mail Adresse nicht gültig",
@@ -705,6 +825,11 @@
 	"users_create_modaltitle": "Benutzer anlegen",
 	"users_edit_modaltitle": "Benutzer bearbeiten",
 	"users_settings_modaltitle": "Einstellungen bearbeiten",
+	"user": {
+		"fields": {
+			"lastLogin": "Letzter Login"
+		}
+	},
 	"users": {
 		"action": {
 			"main": "Neuen",
@@ -732,7 +857,7 @@
 	"db_users_gotoregister": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
 	"db_users_lostpassword_title": "Link anfordern",
 	"db_users_lostpassword_submit": "E-Mail anfordern",
-	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link um dein Passwort zurück zu setzen",
+	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link, um Dein Passwort zurückzusetzen",
 	"db_users_resetpassword_title": "Passwort zurücksetzen",
 	"db_users_resetpassword_submit": "Passwort neu setzen",
 	"db_users_resetpassword_send": "Ihr Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
@@ -776,21 +901,10 @@
 	"db_orders_createtitle": "Bestellung anlegen",
 	"db_orders_edittitle": "Bestellung bearbeiten",
 	"db_orders_viewtitle": "Bestellung ansehen",
-	"db_orders_status_offer": "Angebote",
-	"db_orders_status_new": "Eingegangen",
-	"db_orders_status_need_payment": "Vorkasse Zahlung erwartet",
-	"db_orders_status_payed": "Vorauszahlung eingegangen",
-	"db_orders_status_in_payment": "Wartet auf Bezahlung",
-	"db_orders_status_need_package": "In Versandvorbereitung",
-	"db_orders_status_in_delivery": "In Auslieferung",
-	"db_orders_status_delivered": "Ausgeliefert (Zahlung offen)",
-	"db_orders_status_closed": "Abgeschlossen",
-	"db_orders_status_cancelled": "Storniert",
 	"db_orders_payment_cash": "Barzahlung",
 	"db_orders_payment_prepaid": "Vorkasse",
 	"db_orders_payment_invoice": "Per Rechnung",
 	"db_orders_payment_paypal": "Paypal",
-	"db_orders_createdby": "Erfasst von",
 	"db_orders_showEditor": "Erfasser anzeigen",
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
@@ -816,45 +930,69 @@
 	"order_create_delivery": "Lieferschein erzeugen",
 	"account_myWinery": "Mein Weingut",
 	"account_myUser": "Mein Benutzer",
-	"db_stock_createtitle": "Warenein-/ausgang buchen",
-	"db_stock_parentid": "Wein",
-	"db_stock": {
-		"field": {
-			"analysis_data": "Analysedaten",
-			"type": "Typ",
-			"quantity": "Menge",
-			"description": "Beschreibung",
-			"winenumber": "Weinnummer",
-			"apnumber": "AP-Nummer",
-			"alcohol": "Alkohol",
-			"sweetness": "Restsüße",
-			"acid": "Säuregehalt",
-			"purpose": {
-				"label": "Art",
-				"empty": "Bitte wählen",
-				"retour": "Retoure",
-				"bottling": "Abfüllung",
-				"correction": "Korrektur",
-				"delivery": "Anlieferung",
-				"sponsoring": "Sponsoring",
-				"promotion": "Werbung",
-				"invoice": "Rechnung",
-				"creditadvice": "Gutschrift"
-			},
-			"book": {
+	"stock": {
+		"actions": {
+			"create": {
 				"main": "Warenein-/ausgang",
 				"sub": "buchen"
+			},
+			"save": "Warenein-/ausgang speichern"
+		},
+		"fields": {
+			"acidity": "Säuregehalt",
+			"alcohol": "Alkohol",
+			"apNumber": "A.P.Nr./Losnr.",
+			"bookingStamp": {
+				"label": "Vorgangsdatum",
+				"placeholder": "dd.MM.YYYY"
+			},
+			"client": "Kunde",
+			"note": "Anmerkung, Lieferant, ...",
+			"orderNumber": "Bestellnr.",
+			"purpose": "Art",
+			"quantity": "Menge",
+			"referenceNumber": "Rechnungsnr., Belegnr. (z.B. Begleitpapiere, Weinnr.)",
+			"residualSugar": "Restsüße",
+			"type": "Typ",
+			"wineNumber": "Weinnr."
+		},
+		"fieldsets": {
+			"analysisData": "Analysedaten"
+		},
+		"views": {
+			"edit": {
+				"title": "Warenein-/ausgang buchen"
+			},
+			"gallery": {
+				"empty": "Keine Lagerbewegungen vorhanden"
 			}
 		},
-		"type": {
-			"ingoing": "Eingang",
-			"outgoing": "Ausgang"
+		"toasts": {
+			"created": {
+				"addition": "Wareneingang gebucht",
+				"withdrawal": "Warenausgang gebucht"
+			},
+			"changed": "Buchung geändert",
+			"editError": "Buchung fehlgeschlagen"
+		},
+		"types": {
+			"addition": "Eingang",
+			"withdrawal": "Ausgang"
+		},
+		"purposes": {
+			"bottling": "Abfüllung",
+			"breakage": "Bruch",
+			"correction": "Korrektur",
+			"creditAdvice": "Gutschrift",
+			"invoice": "Rechnung",
+			"privateConsumption": "Eigenverbrauch",
+			"promotion": "Werbung",
+			"purchase": "Anlieferung/Zukauf",
+			"retour": "Retoure",
+			"sample": "Probe",
+			"sponsoring": "Sponsoring"
 		}
 	},
-	"form_error_required": "Bitte fülle dieses Feld aus",
-	"form_error_checkrequired": "Dieses Feld muss bestätigt werden",
-	"formhint_required": "Pflichtfeld",
-	"formhint_multiple": "Mehrfachauswahl möglich (STRG + Klick)",
 	"mailsetup_edittitle": "SMTP-Einstellungen bearbeiten",
 	"mailsetup_smtpserver": "SMTP-Server",
 	"mailsetup_smtpport": "Port an SMTP-Server",
@@ -863,23 +1001,6 @@
 	"mailsetup_smtpencrypt": "Verschlüsselung",
 	"mailsetup_senderemail": "E-Mail für ausgehende E-Mails",
 	"mailsetup_sendername": "Absender für ausgehende E-Mails",
-	"templates_creditadvice": "Vorlage für Gutschrift",
-	"templates_edittitle": "Vorlagen bearbeiten",
-	"templates_expertise": "Vorlage für PDF-Expertise",
-	"templates_enquiry": "Vorlage für Angebot",
-	"templates_contract": "Vorlage für Auftrag",
-	"templates_invoice": "Vorlage für Rechnung",
-	"templates_delivery": "Vorlage für Lieferschein",
-	"templates": {
-		"placeholders": {
-			"vinou_contract": "Vinou-Auftrag (Standard)",
-			"vinou_creditadvice": "Vinou-Gutschrift (Standard)",
-			"vinou_delivery_note": "Vinou-Lieferschein (Standard)",
-			"vinou_expertise": "Vinou-Expertise (Standard)",
-			"vinou_invoice": "Vinou-Rechnung (Standard)",
-			"vinou_offer": "Vinou-Angebot (Standard)"
-		}
-	},
 	"paypal_edittitle": "Paypal-Einstellungen bearbeiten",
 	"paypal_paypalclientid": "Client-ID",
 	"paypal_paypalsecret": "Secret",
@@ -919,11 +1040,11 @@
 				"title": "Probeaccount registrieren",
 				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Commerce entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Publishing Mitgliedschaft nutzen. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
 				"submit": "Account erstellen",
-				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
+				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail, um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
 				"contact": "Kontaktperson",
 				"field": {
-					"type": "Ich bin ein:"
+					"type": "Ich bin ein: "
 				}
 			},
 			"verify": {
@@ -943,7 +1064,7 @@
 			},
 			"activate": {
 				"title": "Verifizierung abschließen",
-				"description": "Du bist nur noch einen Schritt von Deiner Mitgliedschaft entfernt. Bitte trage noch Name und Passwort ein um den Administrator-Benutzer anzulegen",
+				"description": "Du bist nur noch einen Schritt von Deiner Mitgliedschaft entfernt. Bitte trage noch Name und Passwort ein, um den Administrator-Benutzer anzulegen",
 				"user": "Administrator anlegen",
 				"submit": "Verifizierung abschließen",
 				"success": "Verifizierung abgeschlossen",
@@ -951,7 +1072,7 @@
 			},
 			"upgrade": {
 				"title": "Mitgliedschaft upgraden",
-				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
+				"description": "Mit der Vinou-Commerce Mitgliedschaft kannst Du dauerhaft alle Funktionen von Vinou zum Preis von 40 EUR monatlich zzgl. MwSt. nutzen. Für jede durch uns vermittelte Bestellung fällt eine einmalige Vermittlungsgebühr von 1 EUR zzgl. MwSt.. Die Abrechnung der Grundgebühr erfolgt zu Beginn des laufenden Monats. Die Vermittlungsgebühr wird zum 1. des Folgemonats berechnet.",
 				"teaser": {
 					"publish": "<b>Du nutzt zur Zeit Vinou-Publishing.</b> Um alle Funktionen von Vinou nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce",
 					"trial": "<b>Du nutzt zur Zeit Vinou im kostenlosen Testmonat.</b> Um alle Funktionen von Vinou auch weiterhin vollständig nutzen zu können upgrade Deine Mitgliedschaft auf Vinou-Commerce"
@@ -977,15 +1098,15 @@
 				"placeholder": "z.B. Name, Firma, Addresse"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"membership": "Mitgliedschaft",
 			"contact": "Kontaktdaten",
 			"description": "Beschreibung",
 			"settings": "Einstellungen",
 			"invoice": "Rechnungsangaben"
 		},
-		"field": {
-			"email": "E-Mail",
+		"fields": {
+			"mail": "E-Mail",
 			"password": "Passwort",
 			"phone": "Telefon",
 			"voucher": "Ich habe einen Gutschein-Code",
@@ -1011,16 +1132,11 @@
 			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
 			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
-			"pricing": {
-				"label": "Mitgliedschaft",
-				"acquisition": "in Akquise",
-				"trial": "Testzeitraum",
-				"publish": "Publishing",
-				"regular": "Commerce",
-				"invitation": "Eingeladen"
+			"pricing": "Mitgliedschaft",
+			"smallBusiness": {
+				"label": "Kleinunternehmer",
+				"description": "Kein Ausweis von Umsatzsteuer gemäß § 19 UStG"
 			},
-			"smallbusiness": "Kleinunternehmen",
-			"taxfreeInvoiceNotes": "Steuerfreie Rechnungen",
 			"crstamp": "Datum der Registrierung",
 			"expire": "Ablaufzeitpunkt der Testphase",
 			"voucher_old": "Gutschein-Code",
@@ -1033,9 +1149,25 @@
 				"merchant": "Händler"
 			}
 		},
+		"pricingTypes": {
+			"acquisition": "in Akquise",
+			"trial": "Testzeitraum",
+			"publish": "Publishing",
+			"regular": "Commerce",
+			"invitation": "Eingeladen"
+		},
+		"views": {
+			"covid19Notification": {
+				"title": "Ab dem 1. Juli gilt die MwSt.-Senkung!",
+				"text": "Hast Du bis dahin keine Auswahl zur MwSt.-Anpassung vorgenommen, stellen wir Deine Preise automatisch zu diesem Datum um. Als Grundlage verwenden wir hierfür Deine Bruttopreise.",
+				"footerText": "<a href=\"https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Schlaglichter/Konjunkturpaket/2020-06-03-konjunkturpaket-beschlossen.html\" title=\"Bundesfinanzministerium - Koalitionsausschuss beschließt Konjunkturpaket\" target=\"_blank\">Weitere Informationen zum Konjunkturpaket</a>",
+				"action": "Einstellung konfigurieren"
+			}
+		},
 		"messages": {
 			"dialog": {
-				"activate": "Account vollständig aktivieren?"
+				"activate": "Account vollständig aktivieren?",
+				"smallBusiness": "Möchtest Du die Kleinunternehmereinstellung wirklich ändern?<br/>Alle Preise Deiner Weine, Produkte, Versandoptionen, etc. werden hierdurch angepasst und müssen überprüft werden."
 			},
 			"toasts": {
 				"upgrade": "Vinou-Commerce wurde aktiviert!",
@@ -1043,6 +1175,21 @@
 				"activation_error": "Ein Fehler ist aufgetreten, Deine Mitgliedschaft konnte nicht aktiviert werden!",
 				"activation_success": "Willkommen bei Vinou!"
 			}
+		},
+		"dialogs": {
+			"covid19TaxrateChange": {
+				"title": "Mehrwertsteuersenkung",
+				"text": "Bitte nimm Dir kurz Zeit und gib an, wie Du Deine Preise aufgrund der MwSt.-Senkung anpassen möchtest. Welchen Preis möchtest Du beibehalten und für die Neuberechnung als Basis benutzen?",
+				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Senkung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
+				"net": "Netto-Preis",
+				"gross": "Brutto-Preis"
+			}
+		},
+		"toasts": {
+			"settingsSaved": "Deine Einstellungen wurden gespeichert!"
+		},
+		"errors": {
+			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat."
 		}
 	},
 	"network": {
@@ -1061,7 +1208,7 @@
 		},
 		"errors": {
 			"connect": {
-				"nowinesselected": "Es wurden keine Weine ausgewählt! Willst du das Weingut importieren?"
+				"nowinesselected": "Es wurden keine Weine ausgewählt! Willst Du das Weingut importieren?"
 			}
 		},
 		"actions": {
@@ -1096,11 +1243,12 @@
 		"tabs": {
 			"files": "Dateien"
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"contact": "Kontakt",
 			"description": "Beschreibung",
-			"wines": "Weine"
+			"wines": "Weine",
+			"shopsettings": "Website & Shop-Einstellungen"
 		},
 		"field": {
 			"company": "Bezeichnung",
@@ -1119,7 +1267,9 @@
 			"vineyard": "Rebfläche",
 			"harvest": "Ertrag",
 			"bestplaces": "Beste Lagen",
-			"memberof": "Mitglied bei"
+			"memberof": "Mitglied bei",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"charindex": "Alphabetischer Index"
 		},
 		"list": {
 			"filter": {
@@ -1133,7 +1283,7 @@
 		"messages": {
 			"hints": {
 				"loadingwines": "Weine werden geladen",
-				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in dein Sortiment zu übernehmen aktiviere die Weinselektion.",
+				"winesselectinfo": "Die aufgeführten Weine sind alle Weine die das Weingut öffentlich freigegeben hat. Um die Weine in Dein Sortiment zu übernehmen aktiviere die Weinselektion.",
 				"connectwinery": "Mit Weingut verbinden und alle (selektierten) Weine importieren"
 			},
 			"toasts": {
@@ -1160,7 +1310,7 @@
 				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemein",
 			"description": "Beschreibung"
 		},
@@ -1173,13 +1323,9 @@
 			"country": "Land",
 			"taxid": "USt-ID",
 			"phone": "Telefon",
-			"phone_callto": "Anrufen",
  			"fax": "Fax",
-			"fax_sendto": "Fax senden an",
 			"mail": "E-Mail",
-			"email_sendto": "E-Mail schreiben an",
-			"www": "Internetseite",
-			"wwwvisitsite": "Internetseite besuchen"
+			"www": "Internetseite"
 		},
 		"list": {
 			"filter": {
@@ -1204,34 +1350,38 @@
 		}
 	},
 	"wine": {
-		"action": {
-			"add": {
-				"main": "Neuen",
-				"sub": "Wein hinzufügen"
-			},
+		"actions": {
 			"create": {
 				"main": "Neuen Wein",
 				"sub": "anlegen",
-				"dashboard_main": "Neuen",
-				"dashboard_sub": "Wein anlegen",
 				"title": "Wein anlegen",
 				"modaltitle": "Wein hinzufügen"
 			},
 			"edit": {
 				"modaltitle": "Wein bearbeiten"
 			},
+			"export": {
+				"inventory": "Inventurliste herunterladen",
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen",
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			},
 			"search": {
 				"placeholder": "z.B. Name, Land, Region, Jahrgang, Artikelnummer",
 				"title": "Nach Wein Suchen",
 				"modaltitle": "Wein suchen"
 			},
-			"export": {
-				"inventory": "Inventurliste herunterladen"
+			"showExpertise": {
+				"main": "Expertise",
+				"sub": "anzeigen",
+				"title": "Expertise in neuem Fenster öffnen"
 			},
-			"barcodedownloadvector": "EAN-Code als Vektor-Datei herunterladen",
-			"qrcodedownloadvector": "QR-Code als Vektor-Datei herunterladen"
+			"showWinepass": {
+				"main": "Weinpass",
+				"sub": "anzeigen",
+				"title": "Weinpass in neuem Fenster öffnen"
+			}
 		},
-		"fieldset": {
+		"fieldSets": {
 			"allergens": "Allergene",
 			"general": "Allgemeines",
 			"stock": "Bestände",
@@ -1252,123 +1402,59 @@
 			"acid": "Säuregehalt",
 			"active": "aktiv",
 			"alcohol": "Alkoholgehalt",
-			"allergens": "Allergene",
-			"allergen_types": {
-				"sulphide": "Sulfit",
-				"eggwhite": "Ei",
-				"fish": "Fisch",
-				"milk": "Milch"
-			},
-			"articlenumber": "Art.-Nr.",
-			"barcode": "EAN-Code",
-			"bio": "Bio zertifiziert",
-			"bottlesize": "Flaschengröße",
-			"cap": "Verschluss",
-			"cap_types": {
-				"screw": "Schraubverschluss",
-				"cork":	"Naturkorken",
-				"crownCap": "Kronkorken",
-				"plastic": "Kunststoffkorken",
-				"glas":	"Glasverschluss"
-			},
-			"category": "Kategorie",
-			"countrycode": "Herkunft",
-			"cuvee": "Cuvée",
-			"description": "Beschreibung",
-			"drinktemperature": "Trinktemperatur",
-			"expertise_show": {
-				"main": "Expertise",
-				"sub": "anzeigen",
-				"title": "Expertise in neuem Fenster öffnen"
-			},
 			"allergens": {
 				"label": "Allergene",
 				"placeholder": "Allergene suchen"
 			},
+			"articlenumber": "Art.-Nr.",
+			"barcode": "EAN-Code",
+			"baseprice": "Preis pro Liter",
+			"bio": "Bio zertifiziert",
+			"bottlesize": "Flaschengröße",
+			"cap": "Verschluss",
+			"category": "Kategorie",
+			"tag": "Tags",
+			"countrycode": "Herkunft",
+			"cuvee": "Cuvée",
+			"description": "Beschreibung",
+			"drinktemperature": "Trinktemperatur",
 			"grapetypes": {
 				"label": "Rebsorten",
 				"placeholder": "Rebsorte suchen"
 			},
+			"gross": "Brutto-Preis",
 			"image": {
 				"label": "Flaschenbild",
 				"error": {
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"inclVat": "MwSt.",
 			"inshop": "Im Shop anzeigen",
 			"instock": "auf Lager",
 			"inwinelist": "In Weinliste anzeigen",
 			"maturation": "Ausbau",
 			"name": "Name",
-			"networkvisibility": {
-				"label": "Zeige diesen Wein im Netzwerk",
-				"description": "Wenn dein Wein nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
-			},
 			"nostock": "ausgetrunken",
 			"nostocktext": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
 			"public_wines": "Öffentliche Weine",
-			"stockunknown": "keine Bestandsinformation verfügbar",
 			"place": "Lage",
-			"price": {
-				"label": "Preis",
-				"none": "keine Angabe"
-			},
-			"prices": {
-				"standard": "Standard Nettopreis",
-				"action": {
-					"create": {
-						"main": "Neuen Preis",
-						"sub": "erstellen"
-					},
-					"delete": {
-						"confirm": "Möchtest du diesen Preis wirklich löschen?"
-					}
-				}
-			},
+			"price": "Preis",
+			"prices": "Preise",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
 			"qrlink": "Zieladresse für QR-Code",
 			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
 			"quality": "Qualitätsstufe",
-			"quality_types": {
-				"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
-				"table": "Wein mit Rebsorten- order Jahrgangsangabe",
-				"superior": "Landwein",
-				"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
-				"cabinet": "Kabinett",
-				"spaetlese": "Spätlese",
-				"selection": "Auslese",
-				"beerenauslese": "Beerenauslese",
-				"trockenbeerenauslese": "Trockenbeerenauslese",
-				"sparklingWine": "Schaumwein",
-				"champagne": "Sekt",
-				"winzersekt": "Winzersekt",
-				"cremant": "Crémant",
-				"icewine": "Eiswein",
-				"champagneSpecificRegion": "Sekt b.A.",
-				"specialquality": "QW besonderer Reife und Lesart, Prädikatswein",
-				"strawwine": "Strohwein",
-				"es_origin": "|ES| Denominación de Origen Protegida (DOP)",
-				"es_superior": "|ES| Indicación Geográfica Protegida (IGP)",
-				"es_table": "|ES| Vino de mesa",
-				"fr_cabinet": "|FR| Appellation contrôlée (AC)",
-				"fr_origin": "|FR| Appellation d'origine contrôlée (AOC)",
-				"fr_spaetlese": "|FR| Vin doux naturel",
-				"fr_specialquality": "|FR| Appellation d'origine vin délimité de qualité supérieure (VDQS)",
-				"fr_superior": "|FR| Vin de pays",
-				"fr_table": "|FR| Vin de table",
-				"it_cabinet": "|IT| Denominazione di origine controllata e garantita (DOCG)",
-				"it_origin": "|IT| Denominazione di origine controllata (DOC)",
-				"it_specialquality": "|IT| Vino dolce naturale",
-				"it_superior": "|IT| Vino tipico",
-				"it_table": "|IT| Vino da tavola"
-			},
+			"quality_note": "Zusatzangabe Qualitätsstufe",
+			"bottlingType": "Art der Abfüllung",
 			"quantity": "Aktueller Bestand",
 			"region": "Anbauregion",
 			"shoplink": "Link zum Shop",
 			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"stockunknown": "n/a",
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
 			"terroir": "Boden",
@@ -1377,67 +1463,41 @@
 			"vegan": "Vegan",
 			"vintage": "Jahrgang",
 			"weight": "Gewicht (in g)",
-			"wine_without_category": "Weine ohne Kategorie anzeigen",
-			"winepass_show": {
-				"main": "Weinpass",
-				"sub": "anzeigen",
-				"title": "Weinpass in neuem Fenster öffnen"
-			},
 			"winery": {
 				"label": "Weingut",
 				"placeholder": "Weingut suchen"
 			}
 		},
+		"cap_types": {
+			"screw": "Schraubverschluss",
+			"cork":	"Naturkorken",
+			"crownCap": "Kronkorken",
+			"plastic": "Kunststoffkorken",
+			"glas":	"Glasverschluss"
+		},
 		"gallery": {
-			"new": {
-				"main": "Neuen Wein",
-				"subline": "anlegen"
-			},
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
 			"filter": {
 				"category": "Kategorie auswählen",
+				"noCategory": "Weine ohne Kategorie anzeigen",
 				"winetype": "Weintyp filtern"
 			}
 		},
 		"vinougusto": {
 			"title": "Deine Speiseempfehlung für diesen Wein",
 			"expertisetitle": "Speiseempfehlung",
-			"winepasstitle": "Passt gut zu"
+			"foodAdvice": "Speiseempfehlung",
+			"occasionAdvice": "Passt gut zu"
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Wein"
-		},
-		"stockrotation": {
-			"errors": {
-				"noitems": "Keine Lagerbewegungen vorhanden"
-			},
-			"date": {
-				"label": "Datum"
-			},
-			"source": {
-				"label": "Art",
-				"items": {
-					"stock": "Lager",
-					"position": "Lieferung an Kunde"
-				}
-			},
-			"type": {
-				"label": "Ein-/Ausgang",
-				"items": {
-					"ingoing": "Eingang",
-					"outgoing": "Ausgang"
-				}
-			},
-			"quantity": {
-				"label": "Menge"
-			}
 		},
 		"language": {
 			"original": "{language} (Original)",
@@ -1451,12 +1511,23 @@
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
 			"files": "Dateien",
-			"stockrotation": "Lagerbewegungen"
+			"stockRotation": "Lagerbewegungen",
+			"marketing": "Vermarktung"
+		},
+		"dialogs": {
+			"connectAutomation": "Willst Du den Wein automatisiert in das Sortiment des Handelspartners übertragen?",
+			"deleteConnection": "Willst Du diese Verbindung zum Handelspartner wirklich löschen?"
+		},
+		"toasts": {
+			"automationConnected": "Der Wein wurde übertragen und wird künftig synchronisiert",
+			"connectionUpdated": "Verbindungsdaten wurden angepasst",
+			"connectionUpdatedError": "Verbindungsdaten konntent nicht angepasst werden",
+			"connectionDeleted": "Verbindung wurden gelöscht",
+			"connectionDeletedError": "Verbindung konnte nicht gelöscht werden"
 		},
 		"messages": {
-			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest du die Änderungen speichern?",
-			"createcopy": "Möchtest du die Angaben aus {wine.name} übernehmen?",
-			"fieldempty": "keine Angabe",
+			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest Du die Änderungen speichern?",
+			"createcopy": "Möchtest Du die Angaben aus {wine.name} übernehmen?",
 			"hints": {
 				"connectwine": "Mit Wein verbinden"
 			},
@@ -1466,7 +1537,7 @@
 		}
 	},
 	"winecategory": {
-		"fieldset": {
+		"fieldSets": {
 			"general": "Allgemeines",
 			"network": "Mein Netzwerk",
 			"shopsettings": "Website & Shop-Einstellungen"
@@ -1477,10 +1548,6 @@
 			"crstamp": "Erstellungsdatum",
 			"inshop": "Im Shop anzeigen",
 			"inwinelist": "In Weinliste anzeigen",
-			"networkvisibility": {
-				"label": "Zeige diese Kategorie im Netzwerk",
-				"description": "Wenn die Kategorie nicht im Vinou© Netzwerk erscheinen soll, dann kannst du hier alle Netzwerkfunktionen deaktivieren."
-			},
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)"
 		},
 		"actions": {
@@ -1507,16 +1574,44 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			}
 		}
 	},
+	"prices": {
+		"gross": "Brutto",
+		"net": "Netto",
+		"price": "Preis",
+		"taxrate": "Steuersatz",
+		"standard": "Standardpreis",
+		"action": {
+			"create": {
+				"main": "Neuen Preis",
+				"sub": "erstellen"
+			},
+			"delete": {
+				"confirm": "Möchtest Du diesen Preis wirklich löschen?"
+			}
+		},
+		"fieldSets": {
+			"title": "Preise"
+		}
+	},
 	"product": {
+		"actions": {
+			"create": {
+				"main": "Neues Produkt",
+				"sub": "anlegen"
+			}
+		},
+		"fieldSets": {
+			"facts": "Daten & Fakten"
+		},
 		"form": {
 			"edit": {
 				"title": "Produkt bearbeiten"
@@ -1526,30 +1621,31 @@
 			}
 		},
 		"field": {
-			"name": "Name",
-			"articlenumber": "Artikelnummer",
-			"net": "Netto-Preis",
-			"tax": "MwSt.",
-			"taxrate": "Steuersatz",
-			"gross": "Brutto-Preis",
-			"description": "Beschreibung",
-			"image": {
-				"error": {
-					"notfound": "Bild konnte nicht gefunden werden"
-				}
-			},
 			"active": "aktiv",
+			"articlenumber": "Art.-Nr.",
+			"baseprice": "Grundpreis",
+			"description": "Beschreibung",
+			"gross": "Brutto-Preis",
+			"name": "Name",
+			"net": "Netto-Preis",
 			"nostock": "nicht auf Lager",
 			"nostocktext": "Anzeigetext wenn nicht auf Lager",
 			"prices": "Preise",
 			"quantity": "Bestand",
-			"quantityabbr": "Stk."
+			"quantityabbr": "Stk.",
+			"size": "Füllmenge",
+			"tag": "Tags",
+			"tax": "MwSt.",
+			"taxrate": "Steuersatz",
+			"unit": "Einheit",
+
+			"image": {
+				"error": {
+					"notfound": "Bild konnte nicht gefunden werden"
+				}
+			}
 		},
 		"gallery": {
-			"new": {
-				"main": "Neues Produkt",
-				"subline": "anlegen"
-			},
 			"filter": {
 				"searchhint": "z.B. Name, Artikelnummer"
 			}
@@ -1560,7 +1656,7 @@
 				"noentries": "Noch keine Einträge vorhanden"
 			},
 			"dialog": {
-				"delete": "Willst du das Produkt wirklich löschen?"
+				"delete": "Willst Du das Produkt wirklich löschen?"
 			},
 			"toasts": {
 				"created": "Produkt angelegt!",
@@ -1573,12 +1669,6 @@
 		}
 	},
 	"note": {
-		"action": {
-			"create": {
-				"main": "Neue Notiz",
-				"sub": "anlegen"
-			}
-		},
 		"field": {
 			"content": "Inhalt",
 			"edited": "Bearbeitete am",
@@ -1620,10 +1710,10 @@
 		},
 		"gallery": {
 			"sortby": {
-				"label": "Ansicht sortieren nach:"
+				"label": "Ansicht sortieren nach: "
 			},
 			"sortdirection": {
-				"label": "Sortierrichtung:",
+				"label": "Sortierrichtung: ",
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			},
@@ -1631,7 +1721,14 @@
 				"type": "Kundentyp filtern"
 			}
 		},
-		"fieldset": {
+		"statistics": {
+			"favourites": "Meist gekaufte Produkte",
+			"sales": "Umsatzstatistik",
+			"month": "Die letzten 30 Tage",
+			"quarter": "Das letzte Quartal",
+			"year": "Die letzten 12 Monate"
+		},
+		"fieldSets": {
 			"general": "Allgemeines",
 			"contactperson": "Ansprechpartner",
 			"contact": "Kontaktdaten",
@@ -1642,6 +1739,7 @@
 		},
 		"field": {
 			"contactname": "Ansprechpartner",
+			"username": "Benutzername (für externen Zugriff)",
 			"number": "Kundennummer",
 			"company": "Firma",
 			"taxid": "SteuerID",
@@ -1653,7 +1751,9 @@
 			"mail": "E-Mail",
 			"www": "Internetseite",
 			"phone": "Telefon",
+			"mobile": "Mobil",
 			"fax": "Fax",
+			"newsletter": "Newsletter zugestimmt",
 			"active": "aktiv",
 			"image": "Logo",
 			"department": "Abteilung",
@@ -1688,6 +1788,7 @@
 			"support": "Support"
 		},
 		"tabs": {
+			"history": "Historie",
 			"addresses": "Adressen",
 			"contacts": "Kontaktpersonen",
 			"general": "Allgemein",
@@ -1696,27 +1797,36 @@
 		"types": {
 			"private": "Privatperson",
 			"gastronomy": "Gastronomie",
+			"wholesale": "Großhandel",
 			"specializedtrade": "Fachhandel",
 			"foodretailing": "Lebensmitteleinzelhandel",
+			"reseller": "Wiederverkäufer/Distributor",
 			"export": "Export",
-			"other": "Andere"
+			"online": "Online-Händler",
+			"other": "Sonstige Firma"
 		},
-		"messages": {
-			"hints": {
-				"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
-				"noentries": "Noch keine Einträge vorhanden"
-			},
-			"dialog": {
-				"delete": "Willst du den Kunden wirklich löschen?"
-			},
-			"toasts": {
-				"created": "Kunde angelegt!",
-				"changed": "Kunde geändert!",
-				"deleted": "Kunde gelöscht!",
-				"image_uploaded": "Kundenbild hochgeladen!",
-				"image_deleted": "Kundenbild gelöscht",
-				"copied": "Kunde dupliziert"
-			}
+		"hints": {
+			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"dialogs": {
+			"delete": "Willst Du den Kunden wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Kunde angelegt!",
+			"changed": "Kunde geändert!",
+			"copied": "Kunde dupliziert",
+			"deleted": "Kunde gelöscht!",
+			"imageUploaded": "Kundenbild hochgeladen!",
+			"imageDeleted": "Kundenbild gelöscht"
+		}
+	},
+	"contact": {
+		"dialogs": {
+			"delete": "Möchtest Du diesen Kontakt wirklich löschen?"
+		},
+		"toasts": {
+			"saved": "Kontaktperson gespeichert!",
+			"deleted": "Kontaktperson gelöscht!"
 		}
 	},
 	"address": {
@@ -1763,6 +1873,21 @@
 			}
 		}
 	},
+	"creditAdvice": {
+		"toasts": {
+			"created": "Gutschrift erstellt und Bestellung storniert!"
+		}
+	},
+	"deliveryNote": {
+		"toasts": {
+			"created": "Lieferschein erstellt!"
+		}
+	},
+	"invoice": {
+		"toasts": {
+			"created": "Rechnung erstellt!"
+		}
+	},
 	"order": {
 		"documenttypes": {
 			"invoice": "Rechnung",
@@ -1787,6 +1912,15 @@
 			"delivery": "Lieferscheine",
 			"shipment": "Packetaufkleber",
 			"creditadvice": "Gutschriften"
+		},
+		"states": {
+			"new": "Eingegangen",
+			"need_payment": "Zahlung erwartet",
+			"payed": "Zahlung eingegangen",
+			"need_package": "In Versandvorbereitung",
+			"in_delivery": "In Auslieferung",
+			"closed": "Abgeschlossen",
+			"cancelled": "Storniert"
 		},
 		"views": {
 			"view": {
@@ -1832,28 +1966,43 @@
 			"shippingotheraddress": {
 				"main": "Abweichende",
 				"sub": "Lieferadresse"
-			}
+			},
+			"export": {
+				"invoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
+			},
+			"touch": "Bestellung als gelesen markieren"
 		},
 		"fieldsets": {
-			"edit_view": "Ansicht bearbeiten",
-			"search_product": "Produkt suchen",
-			"packaging_shipping": "Verpackung und Versand"
+			"billing": "Rechnungsadresse",
+			"delivery": "Versand",
+			"payment": "Zahlungsmodalitäten",
+			"positions": "Positionen",
+			"summary": "Bestellübersicht"
 		},
 		"fields": {
 			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Gesamtsumme Brutto",
+			"campaign": "Kampagne",
 			"cashback": "Skonto (in %)",
 			"cashbacksum": "Auf diese Bestellung wird {cashback}% Skonto ({cashbackPeriod} Tage) gewährt. Zahlbetrag: {grossCashback}.",
 			"cashback_period": "Skonto-Zeitraum (in Tagen)",
+			"clientName": "Kundenname",
+			"clientType": "Kundentyp",
+			"createdBy": "Erfasst von",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
 			"deliveryaddress": "Lieferadresse",
+			"deliveryNoteNumber": "Lieferscheinnr.",
+			"deliveryNoteRemark": "Liefernotiz",
 			"documents": "Dokumente",
 			"excl_vat": "zzgl. MwSt.",
 			"filter_orders": "Bestellung filtern",
+			"grossCashback": "Endbetrag abzgl. Skonto",
 			"inclvat": "Enthält MwSt.",
 			"invoice_created": "Rechnung erstellt",
 			"invoice_not_yet_created": "Rechnung wurde noch nicht erstellt",
+			"invoiceNumber": "Rechnungsnr.",
+			"invoiceRemark": "Rechnungsnotiz",
 			"itemsum": "Summe aller Positionen",
 			"loading_positions": "Positionen werden geladen ...",
 			"netto_sum": "Gesamtsumme Netto",
@@ -1865,25 +2014,38 @@
 			"no_payment_income_yet": "Zahlung noch nicht eingegangen",
 			"nocustomerselected": "Für die Erstellung der Rechnung wird eine Kundenadresse benötigt. Bitte wähle zuerst einen Kunden aus.",
 			"note": "Anmerkungen",
+			"number": "Bestellnummer",
 			"order_dispatched": "Bestellung versendet",
 			"order_not_yet_dispatched": "Bestellung noch nicht versendet",
 			"order_date": "Bestelleingang",
 			"order_cancelled_date": "Bestellung storniert",
+			"package": "Verpackung und Versand",
 			"parcel": "Paketsendung",
+			"paid": "Bezahlt",
 			"payment_income_date": "Zahlungseingang",
 			"payment_type": "Zahlungsart",
 			"payment_period": "Zahlungsziel (in Tagen)",
+			"paymentDate": "Zahlungsdatum",
 			"pricingtype": "Rechnungstyp",
 			"pricingnet": "Netto Rechnung",
 			"pricinggross": "Brutto Rechnung",
 			"quantity": "Stück",
 			"rebate": "Rabatt (in %)",
+			"rebateGross": "Bruttorabatt (in {currency})",
+			"rebateNet": "Nettorabatt (in {currency})",
 			"rebatesum": "Rabatt",
 			"same_invoice_addr": "Wie Rechnungsadresse",
 			"search_product": "Produkt suchen",
+			"servicePeriod": {
+				"label": "Leistungszeitraum",
+				"placeholder": "dd.MM.YYYY",
+				"default": "Leistungsdatum entspricht Rechnungsdatum"
+			},
 			"shipping_different_location": "Abweichende Lieferadresse",
 			"state": "Status",
 			"taxfree": "Umsatzsteuerbefreit",
+			"taxrateNetTax": "{taxrate}% von {value}",
+			"taxrateGrossTax": "{value} zu {taxrate}%",
 			"vatincluded": "inkl. {tax} MwSt.",
 			"vatexcluded": "zzgl. {tax} MwSt.",
 			"yardsale": "Hofverkauf",
@@ -1908,9 +2070,23 @@
 				"sub": "in den Versand geben"
 			}
 		},
+		"dialogs": {
+			"create": {
+				"msg": "Du erfasst eine Bestellung, was möchtest Du tun?",
+				"save": "Nur erfassen",
+				"withInvoice": "Erfassen und Rechnung generieren",
+				"withDocuments": "Erfassen und Rechnung und Lieferschein generieren"
+			}
+		},
 		"toasts": {
-			"priceschanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
-			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut."
+			"cancelled": "Bestellung storniert!",
+			"created": "Bestellung angelegt!",
+			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut.",
+			"deleted": "Bestellung gelöscht!",
+			"pricesChanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
+			"sent": "Bestellung versendet!",
+			"updated": "Bestellung geändert!",
+			"touched": "Bestellung als gelesen markiert!"
 		}
 	},
 	"packaging": {
@@ -1932,7 +2108,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst du diese Versandoption wirklich löschen?"
+			"delete": "Willst Du diese Versandoption wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Versandoption erstellt",
@@ -1982,7 +2158,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst du die Versandeinheit wirklich löschen?"
+			"delete": "Willst Du die Versandeinheit wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Versandeinheit angelegt",
@@ -1999,6 +2175,9 @@
 		}
 	},
 	"shipment": {
+		"fields": {
+			"carrierTrackingNumber": "Sendungsverfolgungsnr."
+		},
 		"field": {
 			"carrier": "Versanddienstleister",
 			"packagingUnit": {
@@ -2009,7 +2188,7 @@
 			"service": "Sendungsart",
 			"shipcloudapikey": {
 				"label": "ShipCloud API-Schlüssel",
-				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst du ihn hier verbinden.",
+				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst Du ihn hier verbinden.",
 				"error": "Ungültiger Schlüssel"
 			}
 		},
@@ -2065,6 +2244,16 @@
 				"one_day_early": "DPD 12:00",
 				"returns": "DPD Retoure"
 			},
+			"gls": {
+				"standard": "GLS Standard",
+				"one_day": "GLS One Day",
+				"gls_express_0800": "GLS Express 0800",
+				"gls_express_0900": "GLS Express 0900",
+				"gls_express_1000": "GLS Express 1000",
+				"gls_express_1200": "GLS Express 1200",
+				"gls_pick_and_ship": "GLS Pick and Ship",
+				"one_day_early": "GLS One Day Early"
+			},
 			"ups": {
 				"standard": "UPS Standard",
 				"one_day": "UPS Express",
@@ -2105,16 +2294,37 @@
 		},
 		"fields": {
 			"title": "Titel",
+			"source": "Typ",
 			"description": "Beschreibung",
 			"identifier": "Identifier (für externen Zugriff)",
 			"file": "Dateiupload",
+			"url": "Adresse/URL",
+			"preview": "Vorschau",
 			"public": {
 				"true": "öffentlich sichtbar",
 				"false": "nur intern sichtbar"
 			}
 		},
-		"list": {
-			"empty": "Keine Dateien vorhanden"
+		"sources": {
+			"internal": "Interne Datei",
+			"external": "Externer Link"
+		},
+		"views": {
+			"edit": {
+				"title": "Datei bearbeiten"
+			},
+			"create": {
+				"title": "Datei hinzufügen"
+			},
+			"list": {
+				"empty": "Keine Dateien vorhanden"
+			}
+		},
+		"hints": {
+			"previewSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Datei wirklich löschen?"
 		},
 		"toasts": {
 			"created": "Datei angelegt!",
@@ -2122,18 +2332,472 @@
 			"deleted": "Datei gelöscht!"
 		}
 	},
+	"fileImport": {
+		"actions": {
+			"analyse": "Analyse starten",
+			"execute": "Import ausführen"
+		},
+		"views": {
+			"create": {
+				"title": "Datenimport"
+			},
+			"upload": {
+				"title": "1. Schritt - Daten bereitstellen",
+				"description": "Erlaubt sind Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest Du <a href='http://www.vinou.de/vorlagen'>hier</a>."
+			},
+			"analyse": {
+				"title": "2. Schritt - Daten analysieren",
+				"description": "Bitte schließe während der Analyse, nicht das Fenster nur so kann später ein optimaler Import erfolgen.",
+				"result": "2. Schritt - Analyseergebnis",
+				"headrow": "Kopfzeile",
+				"headrowdetected": "Die Kopfzeile <strong>wurde richtig erkannt</strong>",
+				"headrowfailed": "Die Kopfzeile <strong>ist fehlerhaft oder nicht vorhanden</strong>",
+				"total": "Gesamte Datei",
+				"totalcount": "<strong>{count} Zeilen</strong> in der Datei erkannt",
+				"totaldatacount": "<strong>{count} Datensätze</strong> für Import vorbereitet",
+				"unreadable": "<strong>{count}</strong> nicht identifizierbare Felder",
+				"noproperty": "<strong>{count}</strong> Felder die nicht importiert werden"
+			},
+			"execute": {
+				"title": "3. Schritt - Daten importieren",
+				"importstatus": "{imported} von {total} importiert"
+			},
+			"importresult": {
+				"title": "Import abgeschlossen",
+				"description": "Die Daten wurden erfolgreich importiert.",
+				"errors": {
+					"headline": "ACHTUNG! Es sind fehlerhafte Daten vorhanden",
+					"text": "Es konnten <strong>{aborted} Einträge</strong> nicht importiert werden. Folgende Einträge <strong>{errors}</strong> sind fehlerhaft. Eventuell handelt es sich um Duplikate."
+				}
+			}
+		},
+		"fields": {
+			"file": "Dateiupload"
+		},
+		"toasts": {
+			"fileuploadedsuccess": "Datei hochgeladen!",
+			"fileuploadedfailed": "Datei-Upload fehlgeschlagen!",
+			"importanalysesuccess": "Datei-Analyse erfolgreich",
+			"importanalysefailed": "Datei-Analyse fehlgeschlagen!",
+			"importnextpackage": "Nächstes Import-Packet gestartet",
+			"importexecutedsuccess": "Import Ausführung erfolgreich!",
+			"importexecutedfailed": "Import Ausführung fehlgeschlagen!"
+		}
+	},
+	"news": {
+		"gallery": {
+			"sortby": {
+				"label": "Ansicht sortieren nach: "
+			},
+			"sortdirection": {
+				"label": "Sortierrichtung: ",
+				"asc": "Aufsteigend",
+				"desc": "Absteigend"
+			},
+			"filter": {
+				"visibility": "Sichtbarkeit filtern"
+			}
+		},
+		"action": {
+			"create": {
+				"modaltitle": "Newsbeitrag verfassen",
+				"main": "Neuen Newsbeitrag",
+				"sub": "verfassen"
+			},
+			"search": {
+				"placeholder": "z.B. Titel, Teaser, Inhalt"
+			}
+		},
+		"views": {
+			"files": {
+				"title": "Dateien",
+				"empty": "Es liegen keine {label} zu diesem Newsbeitrag vor."
+			}
+		},
+		"tabs": {
+			"files": "Dateien"
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"settings": "Einstellungen",
+			"seo": "Suchmaschinen spezifische Angaben"
+		},
+		"fields": {
+			"title": "Titel",
+			"image": "Bild",
+			"teaser": "Teaser (Vorschau-Text)",
+			"content": "Inhalt",
+			"link": "Externer Link",
+			"visibility": "Sichtbarkeit",
+			"startdate": "Start-Datum",
+			"enddate": "End-Datum",
+			"meta_title": "Title-Tag",
+			"meta_description": "Meta-Description",
+			"path_segment": "Pfadsegment"
+		},
+		"toasts": {
+			"created": "Newsbeitrag angelegt!",
+			"changed": "Newsbeitrag geändert!",
+			"deleted": "Newsbeitrag gelöscht!",
+			"image_uploaded": "Newsbild hochgeladen!",
+			"image_deleted": "Newsbild gelöscht",
+			"copied": "Newsbeitrag dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Newsbeitrag wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Newsbeitrag"
+		}
+	},
+	"text": {
+		"actions": {
+			"create": {
+				"main": "Neuen Text",
+				"sub": "anlegen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"empty": "Es wurden bisher keine Texte angelegt."
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"settings": "Einstellungen",
+			"documents": "Generierte Dokumente"
+		},
+		"fields": {
+			"title": "Titel",
+			"content": "Inhalt",
+			"visibility": "Sichtbarkeit",
+			"identifier": "Identifier (für externen Zugriff)",
+			"manualidentifier": "Manueller Identifier",
+			"path_segment": "Pfadsegment",
+			"chstamp": "Letzte Änderung"
+		},
+		"toasts": {
+			"created": "Text angelegt!",
+			"changed": "Text geändert!",
+			"deleted": "Text gelöscht!"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Text wirklich löschen?"
+		},
+		"identifier": {
+			"legalnotice": "Impressum",
+			"privacypolicy": "Datenschutzvereinbarung",
+			"conditionsofservice": "Allgemeine Geschäftsbedingungen",
+			"revocation": "Widerruf",
+			"shippingpolicy": "Versandbedingungen",
+			"individual": "Selbstvergeben"
+		},
+		"documents": {
+			"pdf": {
+				"title": "PDF-Version",
+				"description": "automatisch generiertes PDF im Standard-Format"
+			}
+		}
+	},
+	"bundle": {
+		"actions": {
+			"create": {
+				"modaltitle": "Weinpaket anlegen",
+				"main": "Neues Weinpaket",
+				"sub": "anlegen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen",
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen"
+			},
+			"addItem": "+ Artikel hinzufügen"
+		},
+		"views": {
+			"files": {
+				"title": "Dateien",
+				"empty": "Es liegen keine {label} zu diesem Weinpaket vor."
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Pakete ohne Kategorie anzeigen"
+			}
+		},
+		"tabs": {
+			"files": "Dateien"
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"facts": "Daten & Fakten",
+			"prices": "Preise",
+			"barcode": "EAN-Code",
+			"shopSettings": "Website & Shop-Einstellungen",
+			"qrcode": "QR-Code",
+			"items": "Artikel"
+		},
+		"fields": {
+			"active": "aktiv",
+			"articlenumber": "Art.-Nr.",
+			"category": "Kategorie",
+			"baseprice": "Preis pro Liter",
+			"description": "Beschreibung",
+			"metaDescription": "Meta-Description",
+			"metaTitle": "Title-Tag",
+			"name": "Name",
+			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
+			"pathSegment": "Pfadsegment",
+			"qrcodeLink": "Zieladresse für QR-Code",
+			"quantity": "Anzahl",
+			"searchArticle": "Artikel suchen",
+			"singleItemPrice": "Stück",
+			"size": "Füllmenge",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"tag": "Tags",
+			"topseller": "Topseller",
+
+			"itemSum": {
+				"label": "Warenwert",
+				"net": "Netto",
+				"gross": "Brutto"
+			}
+		},
+		"toasts": {
+			"created": "Weinpaket angelegt!",
+			"changed": "Weinpaket geändert!",
+			"deleted": "Weinpaket gelöscht!",
+			"imageUploaded": "Bild zum Weinpaket hochgeladen!",
+			"imageDeleted": "Bild zum Weinpaket gelöscht",
+			"copied": "Weinpaket dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Weinpaket wirklich löschen?",
+			"deleteItem": "Möchtest Du diesen Artikel wirklich entfernen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1500x1500px<br/>Datei-Format: .png (freigestellt)",
+			"packageQuantity": "Platz im Versandkarton in Standard-Weinflaschen"
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
+	"catalog": {
+		"actions": {
+			"create": {
+				"modaltitle": "Preisliste erzeugen",
+				"main": "Neue Preisliste",
+				"sub": "erzeugen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			},
+			"generatePDF": {
+				"title": "PDF zu Preisliste neugenerieren"
+			},
+			"showPDF": {
+				"title": "PDF anzeigen"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			}
+		},
+		"views": {
+			"gallery": {
+				"name": "Bezeichnung",
+				"chstamp": "Zuletzt geändert am",
+				"priceType": "angezeigter Preis",
+				"priceRange": "Preisklasse"
+			}
+		},
+		"filters": {
+			"category": {
+				"label": "Kategorie auswählen",
+				"none": "Preislisten ohne Kategorie anzeigen"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines",
+			"tags": "Tags",
+			"qrcode": "QR-Code"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"active": "Aktiv",
+			"qrcodeLink": "Zieladresse für QR-Code (als Standard zeigt der QR-Code auf das PDF)",
+			"priceType": "Angezeigter Preis",
+			"priceRangeId": "Preisklasse",
+			"itemTypes": "Folgende Artikelgruppen einschließen"
+		},
+		"toasts": {
+			"created": "Preisliste angelegt!",
+			"changed": "Preisliste geändert!",
+			"deleted": "Preisliste gelöscht!",
+			"imageUploaded": "Bild zur Preisliste hochgeladen!",
+			"imageDeleted": "Bild zur Preisliste gelöscht",
+			"copied": "Preisliste dupliziert",
+			"pdfGenerated": "PDF zur Preisliste neu generiert!"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Preisliste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 2000x400px<br/>Datei-Format: .png (freigestellt)",
+			"tags": "Wähle die Tags aus, die Du für die Preisliste verwenden möchtest. Die Tags werden innerhalb der Preisliste anhand des hinterlegten Sortierindexes angeordnet. Die aktuell sichtbare Reihenfolge entspricht der Ausgabe im PDF."
+		}
+	},
+	"campaign": {
+		"actions": {
+			"create": {
+				"modaltitle": "Kampagne einrichten",
+				"main": "Neue Kampagne",
+				"sub": "einrichten"
+			},
+			"search": {
+				"placeholder": "z.B. Name, Beschreibung"
+			}
+		},
+		"fieldsets": {
+			"rebate": "Kampagnen-Rabatt"
+		},
+		"fields": {
+			"active": {
+				"label": "Kampagnen-Status",
+				"checklabel": "Aktiviert"
+			},
+			"combinable": "Kampagne ist mit anderen kombinierbar?",
+			"dateRange": "Kampagnenzeitraum",
+			"description": "Beschreibung",
+			"endDate": "Endet am",
+			"gross": "Pauschal-Rabatt in EUR (Brutto)",
+			"hash": "Rabatt-Code",
+			"itemTypes": "Gültig für folgende Artikelgruppen",
+			"name": "Bezeichnung",
+			"percent": "Prozentualer Rabatt",
+			"rebateType": "Rabattart",
+			"startDate": "Startet am",
+			"usage": "Verwendung",
+			"usageClientLimit": {
+				"label": "Nutzungslimit pro Kunde",
+				"placeholder": "Unbegrenzte Nutzung"
+			},
+			"usageLimit": {
+				"label": "Nutzungslimit pro Kampagne",
+				"placeholder": "Unbegrenzte Nutzung"
+			}
+		},
+		"filters": {
+			"itemTypes": {
+				"label": "Artikelgruppe",
+				"none": "Kampagnen ohne Artikelgruppe anzeigen"
+			}
+		},
+		"toasts": {
+			"created": "Kampagne angelegt!",
+			"changed": "Kampagne geändert!",
+			"deleted": "Kampagne gelöscht!",
+			"imageUploaded": "Bild zum Kampagne hochgeladen!",
+			"imageDeleted": "Bild zum Kampagne gelöscht",
+			"copied": "Kampagne dupliziert"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Liste wirklich löschen?"
+		},
+		"hints": {
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"hash": "Falls leer wird ein Zufallscode angelegt"
+		},
+		"rebateTypes": {
+			"percent": "prozentual",
+			"absolute": "pauschal"
+		}
+	},
+	"tag": {
+		"actions": {
+			"create": {
+				"main": "Neuen Tag",
+				"sub": "anlegen"
+			},
+			"save": {
+				"main": "Neuen Tag",
+				"sub": "speichern"
+			}
+		},
+		"views": {
+			"createInline": {
+				"title": "Neuen Tag anlegen"
+			}
+		},
+		"fields": {
+			"name": "Name"
+		},
+		"toasts": {
+			"created": "Tag angelegt!",
+			"changed": "Tag geändert!",
+			"deleted": "Tag gelöscht!"
+		}
+	},
+	"automation": {
+		"actions": {
+			"create": {
+				"modaltitle": "Automatisierung anlegen",
+				"main": "Neue Automatisierung",
+				"sub": "erstellen"
+			}
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"image": "Marke",
+			"startDate": "Start-Datum",
+			"endDate": "Ablauf-Datum",
+			"active": {
+				"label": "Automatisierungs-Status",
+				"checklabel": "aktiviert"
+			},
+			"itemTypes": "Folgende Artikelgruppen für diese Automatisierung zulassen"
+		},
+		"toasts": {
+			"created": "Automatisierung angelegt!",
+			"changed": "Automatisierung geändert!",
+			"deleted": "Automatisierung gelöscht!",
+			"imageUploaded": "Bild hochgeladen!",
+			"imageDeleted": "Bild gelöscht",
+			"copied": "Automatisierung dupliziert",
+			"activate": "Verbindung aktiviert",
+			"activateerror": "Verbindung konnte nicht aktiviert werden",
+			"deactivate": "Verbindung deaktiviert",
+			"deactivateerror": "Verbindung konnte nicht deaktiviert werden"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Automatisierung wirklich löschen?",
+			"activate": "Willst du diese Verbindung aktivieren?",
+			"deactivate": "Willst du diese Verbindung wirklich deaktivieren?"
+		},
+		"hints": {
+			"empty": "Du hast bisher noch keine Automatisierung erstellt",
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		}
+	},
 	"settings": {
 		"account": {
 			"title": "Account-Einstellungen",
-			"description": "Verwalte hier deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
+			"description": "Verwalte hier Deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
 		},
 		"membership": {
 			"title": "Mitgliedschaft",
-			"description": "Das ist der Status deiner aktuellen Mitgliedschaft"
+			"description": "Das ist der Status Deiner aktuellen Mitgliedschaft."
 		},
 		"customer": {
 			"title": "Rechnungsinformationen",
-			"description": "Hier verwaltest Deine Daten für deine Vinou-Mitgliedschaft. Diese Informationen werden nicht öffentlich angezeigt."
+			"description": "Hier verwaltest Du die Daten für Deine Vinou-Mitgliedschaft."
 		},
 		"mycompanies": {
 			"merchants": {
@@ -2142,7 +2806,7 @@
 			},
 			"wineries": {
 				"title": "Mein Weingut",
-				"description": "Lege hier zusätzliche Weingüter an um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
+				"description": "Lege hier zusätzliche Weingüter an, um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
 			}
 		},
 		"payments": {
@@ -2152,40 +2816,48 @@
 		},
 		"packagings": {
 			"title": "Versandoptionen",
-			"description": "Konfiguriere Deine Versandoptionen um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig um den Deinen Vinou-Shop zu betreiben."
+			"description": "Konfiguriere Deine Versandoptionen, um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig, um Deinen Vinou-Shop zu betreiben."
 		},
 		"packagingunits": {
 			"title": "Versandeinheiten",
-			"description": "Konfiguriere die Kartons die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
+			"description": "Konfiguriere die Kartonagen, die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
 		},
 		"priceranges": {
 			"title": "Preisklassen",
-			"description": "Konfiguriere Deine Preisklassen um individuelle Kundenpreise festlegen zu können."
+			"description": "Konfiguriere Deine Preisklassen, um individuelle Kundenpreise festlegen zu können."
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",
-			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou Versandmanagement benutzen möchtest.",
+			"description": "Lege hier Deine Frachtfreigrenze fest und ob Du das Vinou-Versandmanagement benutzen möchtest.",
 			"freightfreelimit": {
 				"title": "Frachtfreigrenze",
 				"description": "Konfiguriere ab welchem Bestellwert der Versand kostenfrei ist."
 			},
 			"management": {
 				"title": "Versandmanagement",
-				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
-				"description": "Konfiguriere deinen Versand um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
+				"inactive": "Aktiviere das Versandmanagement von Vinou mit ShipCloud, um schnell und kostengünstig Versandaufkleber direkt aus Vinou zu nutzen.",
+				"description": "Konfiguriere Deinen Versand, um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
 			}
 		},
 		"technical": {
 			"title": "Technik",
-			"description": "Für einige Dinge kannst Du auch einige technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
+			"description": "Für einige Dinge kannst Du auch technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
 		},
 		"templates": {
 			"title": "Vorlagen",
-			"description": "In Vinou können alle PDF-Dokumente mit einer individuellen Vorlage versehen werden."
+			"description": "Im Vinou-Office können alle PDF-Dokumente mit einer individuellen Vorlage versehen werden."
 		},
 		"mail": {
 			"title": "E-Mail Setup",
 			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen."
+		},
+		"texts": {
+			"title": "Texte",
+			"description": "Lege Texte an, um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst Du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in Deinem eigenen Online-Shop verwendet werden."
+		},
+		"automations": {
+			"title": "Automatisierungen",
+			"description": "Mit Hilfe von Automatisierungen kannst Du anderen Vinou-Mitgliedern ermöglichen bestimmte Dinge vollautomatisch mit dir auszuführen. z.B. Weine von Weingütern auf deine Webseite freischalten."
 		},
 		"messages": {
 			"hints": {
@@ -2205,12 +2877,6 @@
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
 		"category_duplicated": "Kategorie kopiert!",
-		"client_image_uploaded": "Bild hochgeladen!",
-		"client_image_deleted": "Bild gelöscht!",
-		"client_saved": "Kunde gespeichert!",
-		"client_changed": "Kunde aktualisiert!",
-		"client_deleted": "Kunde gelöscht!",
-		"contact_deleted": "Kontaktperson gelöscht!",
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
@@ -2221,28 +2887,20 @@
 		"customer_deleted": "Mandant gelöscht!",
 		"customer_created": "Mandant angelegt!",
 		"customer_updated": "Mandant aktualisiert!",
-		"customer_image_createerror": "Um ein Bild hochzuladen musst du den Mandanten vorher speichern!",
+		"customer_image_createerror": "Um ein Bild hochzuladen musst Du den Mandanten vorher speichern!",
 		"merchant_created": "Händler angelegt!",
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
 		"merchant_image_uploaded": "Bild hochgeladen!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
 		"merchant_image_deleted": "Bild gelöscht!",
-		"order_created": "Bestellung angelegt!",
-		"order_updated": "Bestellung geändert!",
-		"order_creditadvice_created": "Gutschrift erstellt und Bestellung storniert!",
-		"order_cancelled": "Bestellung storniert!",
-		"order_deleted": "Bestellung gelöscht!",
-		"order_sent": "Bestellung versendet!",
 		"order_position_add": "Position hinzugefügt!",
 		"order_position_changed": "Position aktualisiert!",
 		"order_position_deleted": "Position gelöscht!",
 		"order_billing_as_delivery": "Rechnungsadresse als Lieferadresse gespeichert!",
 		"order_billingaddress_create": "Adresse angelegt!",
-		"order_invoice_created": "Rechnung erstellt!",
 		"order_noupdate": "Kein Update notwendig!",
 		"order_deliveryaddress_create": "Lieferadresse angelegt und Bestellung aktualisiert!",
-		"order_delivery_created": "Lieferschein erstellt!",
 		"order_payment_changed": "Zahlungsart aktualisiert!",
 		"order_cashlink_send": "Cashlink versendet!",
 		"order_note_saved": "Anmerkung aktualisiert!",
@@ -2256,14 +2914,12 @@
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
 		"settings_smtp_changed": "SMTP-Einstellungen aktualisiert!",
 		"settings_paypal_changed": "Paypal-Einstellungen aktualisiert!",
-		"settings_template_uploaded": "Template hochgeladen!",
-		"settings_template_deleted": "Template gelöscht!",
 		"token_saved": "Schnittstelle gespeichert!",
 		"user_created": "Benutzer angelegt!",
 		"user_changed": "Benutzer aktualisiert!",
 		"user_deleted": "Benutzer gelöscht",
 		"user_deleteerror": "Du kannst den aktuell angemeldeten Benutzer nicht löschen!",
-		"user_image_needed": "Um ein Bild hochzuladen musst du den Benutzer vorher speichern!",
+		"user_image_needed": "Um ein Bild hochzuladen musst Du den Benutzer vorher speichern!",
 		"user_image_uploaded": "Bild hochgeladen!",
 		"user_image_deleted": "Bild gelöscht!",
 		"user_image_uploaderror": "Fehler beim Bildupload!",
@@ -2279,15 +2935,11 @@
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
 		"wine_deleted": "Wein gelöscht!",
-		"wine_image_needed": "Um ein Bild hochzuladen musst du den Wein vorher speichern!",
+		"wine_image_needed": "Um ein Bild hochzuladen musst Du den Wein vorher speichern!",
 		"wine_image_uploaded": "Bild hochgeladen!",
 		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
 		"wine_savours_updated": "Vinou-Gusto aktualisiert!",
-		"stock_booking_ingoing_success": "Wareneingang gebucht",
-		"stock_booking_outgoing_success": "Warenausgang gebucht",
-		"stock_booking_ingoing_failed": "Wareneingang - Buchung fehlgeschlagen",
-		"stock_booking_outgoing_failed": "Warenausgang - Buchung fehlgeschlagen",
 		"view_slider_created": "Slider wurde angelegt!",
 		"view_facebook_created": "Facebook-Iframe wurde angelegt!",
 		"notes": {
@@ -2295,17 +2947,10 @@
 			"saveerror": "Notiz konnte nicht gespeichert werden!",
 			"delete": "Notiz gelöscht!",
 			"deleteerror": "Notiz konnte nicht gelöscht werden!"
-		},
-		"contacts_saved": "Kontaktperson gespeichert!",
-		"contacts_saveerror": "Kontakt konnte nicht gespeichert werden!",
-		"contacts_deleted": "Kontaktperson gelöscht!",
-		"contacts_deleteerror": "Kontaktperson konnte nicht gelöscht werden!"
+		}
 	},
 	"alerts": {
 		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
-	},
-	"errors": {
-		"customer_wrongregister": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat"
 	},
 	"hints": {
 		"wineries": {
@@ -2358,7 +3003,7 @@
 			"name": "Schalenfrüchte"
 		},
 		"9": {
-			"name": "Selerie"
+			"name": "Sellerie"
 		},
 		"10": {
 			"name": "Senf"
@@ -2367,7 +3012,7 @@
 			"name": "Sesamsamen"
 		},
 		"12": {
-			"name": "Schwefeloxid und Sulphite"
+			"name": "Sulfite"
 		},
 		"13": {
 			"name": "Lupinen"
@@ -2375,6 +3020,23 @@
 		"14": {
 			"name": "Weichtiere"
 		}
+	},
+	"bottleSizes": {
+		"0.100": "0,1 l",
+		"0.187": "0,187 l (Split)",
+		"0.200": "0,2 l (Piccolo)",
+		"0.250": "0,25 l (Chopine)",
+		"0.33": "0,33 l",
+		"0.375": "0,375 l (Halbe Flasche)",
+		"0.500": "0,5 l",
+		"0.620": "0,62 l (Clavelin)",
+		"0.700": "0,7 l",
+		"0.750": "0,75 l (Normalflasche)",
+		"1.000": "1 l",
+		"1.500": "1,5 l (Magnum)",
+		"2.000": "2 l (Doppler)",
+		"2.250": "2,25 l (Marie-Jeanne)",
+		"3.000": "3 l (Doppelmagnum)"
 	},
 	"grapetypes": {
 		"1": {
@@ -3922,9 +4584,6 @@
 		"516": {
 			"name": "Silvanac Zeleni"
 		},
-		"517": {
-			"name": "Silvaner"
-		},
 		"518": {
 			"name": "Síria"
 		},
@@ -4161,6 +4820,57 @@
 		},
 		"596": {
 			"name": "Zweigelt"
+		},
+		"597": {
+			"name": "Lugana"
+		},
+		"598": {
+			"name": "Gascogne"
+		},
+		"599": {
+			"name": "Grüner Veltliner"
+		},
+		"600": {
+			"name": "Gemischter Satz"
+		},
+		"601": {
+			"name": "Goldburger"
+		},
+		"602": {
+			"name": "Rotgipfler"
+		},
+		"603": {
+			"name": "Zierfandler"
+		},
+		"604": {
+			"name": "Jubiläumdrebe"
+		},
+		"605": {
+			"name": "Blauburgunder"
+		},
+		"606": {
+			"name": "Roesler"
+		},
+		"607": {
+			"name": "Ráthay"
+		},
+		"608": {
+			"name": "Goldmuskateller"
+		},
+		"609": {
+			"name": "Godello"
+		},
+		"610": {
+			"name": "Garnacha Peluda"
+		},
+		"611": {
+			"name": "Trebbianello"
+		},
+		"612": {
+			"name": "Samtrot"
+		},
+		"613": {
+			"name": "Trousseau"
 		}
 	},
 	"tastes": {
@@ -4181,29 +4891,43 @@
 		"5": "doux (mild)"
 	},
 	"countries": {
+		"ar": "Argentinien",
 		"at": "Österreich",
+		"au": "Australien",
 		"be": "Belgien",
 		"bg": "Bulgarien",
-		"ca": "Canada",
+		"ca": "Kanada",
 		"ch": "Schweiz",
 		"cl": "Chile",
 		"cz": "Tschechien",
 		"de": "Deutschland",
-		"en": "Großbritanien",
+		"dk": "Dänemark",
+		"ee": "Estland",
 		"es": "Spanien",
+		"fi": "Finnland",
 		"fr": "Frankreich",
+		"gb": "Vereinigtes Königreich",
 		"gr": "Griechenland",
 		"hr": "Kroatien",
 		"hu": "Ungarn",
 		"it": "Italien",
+		"lt": "Litauen",
+		"lu": "Luxemburg",
+		"lv": "Lettland",
 		"mt": "Malta",
 		"nl": "Niederlande",
+		"no": "Norwegen",
+		"nz": "Neuseeland",
+		"pl": "Polen",
 		"pt": "Portugal",
 		"ro": "Rumänien",
+		"ru": "Russische Föderation",
 		"se": "Schweden",
 		"si": "Slowenien",
+		"sk": "Slowakei",
 		"sx": "Sint Maarten",
-		"uk": "Vereinigtes Königreich"
+		"us": "USA",
+		"za": "Südafrika"
 	},
 	"languages": {
 		"de": {
@@ -4216,32 +4940,56 @@
 			"code": "en",
 			"iso": "en_GB"
 		},
+		"es": {
+			"title": "Spanisch",
+			"code": "es",
+			"iso": "es_ES"
+		},
 		"fr": {
 			"title": "Französisch",
 			"code": "fr",
 			"iso": "fr_FR"
+		},
+		"it": {
+			"title": "Italienisch",
+			"code": "it",
+			"iso": "it_IT"
 		}
 	},
 	"wineregions": {
+		"ar": {
+			"14001": "Mendoza"
+		},
 		"at": {
 			"8000": "Wachau",
-			"8001": "Kremstal",
-			"8002": "Kamptal",
-			"8003": "Traisental",
+			"8001": "Kremstal DAC",
+			"8002": "Kamptal DAC",
+			"8003": "Traisental DAC",
 			"8004": "Wagram",
-			"8005": "Weinviertel",
-			"8006": "Carnuntum",
+			"8005": "Weinviertel DAC",
+			"8006": "Carnuntum DAC",
 			"8007": "Thermenregion",
-			"8008": "Neusiedlersee",
-			"8009": "Leithaberg",
-			"8010": "Rosalia",
-			"8011": "Mittelburgenland",
-			"8012": "Eisenberg",
+			"8008": "Neusiedlersee DAC",
+			"8009": "Leithaberg DAC",
+			"8010": "Rosalia DAC",
+			"8011": "Mittelburgenland DAC",
+			"8012": "Eisenberg DAC",
 			"8013": "Wien",
-			"8014": "Vulkanland Steiermark",
-			"8015": "Südsteiermark",
-			"8016": "Weststeiermark",
-			"8017": "Bergland"
+			"8014": "Vulkanland Steiermark DAC",
+			"8015": "Südsteiermark DAC",
+			"8016": "Weststeiermark DAC",
+			"8017": "Bergland",
+			"8018": "Burgenland",
+			"8019": "Niederösterreich",
+			"8020": "Steiermark",
+			"8021": "Kärnten",
+			"8022": "Oberösterreich",
+			"8023": "Salzburg",
+			"8024": "Tirol",
+			"8025": "Vorarlberg"
+		},
+		"au": {
+			"15001": "South-Eastern Australia"
 		},
 		"be": {
 			"3000": "Hageland (VL)",
@@ -4257,6 +5005,10 @@
 			"4004": "Struma-Tal"
 		},
 		"cl": {
+			"16001": "Colchagua Valley",
+			"16002": "Casablanca",
+			"16003": "Central Valley",
+			"16004": "Maule Valley"
 		},
 		"de": {
 			"1000": "Ahr",
@@ -4272,8 +5024,6 @@
 			"1010": "Saale-Unstrut-Region",
 			"1011": "Sachsen",
 			"1012": "Württemberg"
-		},
-		"en": {
 		},
 		"es": {
 			"12000": "Denominación de Origen",
@@ -4292,17 +5042,34 @@
 			"12013": "Katalonien",
 			"12014": "Extremadura",
 			"12015": "Galicien",
-			"12016": "La Rioja",
+			"12016": "Rioja",
 			"12017": "Autonome Gemeinschaft Madrid",
 			"12018": "Murcia",
 			"12019": "Navarra",
-			"12020": "Valencia"
+			"12020": "Valencia",
+			"12021": "Penedès",
+			"12022": "Priorat",
+			"12023": "Terra Alta",
+			"12024": "Toro",
+			"12025": "Ribera del Duero",
+			"12026": "Campo de Borja",
+			"12027": "Calatayud",
+			"12028": "Jumilla",
+			"12029": "Almansa",
+			"12030": "Cariñena",
+			"12031": "Yecla",
+			"12032": "Rioja Alavesa",
+			"12033": "Rias Baixas",
+			"12034": "Valdeorras",
+			"12035": "Bierzo",
+			"12036": "Rueda",
+			"12037": "Sierra de Gredos"
 		},
 		"fr": {
 			"2000": "Alsace",
 			"2001": "Armagnac",
 			"2002": "Bordeaux",
-			"2003": "Bourgogne",
+			"2003": "Burgund",
 			"2004": "Champagne",
 			"2005": "Cognac",
 			"2006": "Corse",
@@ -4312,7 +5079,13 @@
 			"2011": "Savoie",
 			"2012": "Sud-Ouest",
 			"2013": "Vallée de la Loire",
-			"2014": "Vallée du Rhône"
+			"2014": "Vallée du Rhône",
+			"2015": "Roussillon",
+			"2016": "Côtes de Provence",
+			"2017": "Chablis",
+			"2018": "Rhône",
+			"2019": "Loire",
+			"2020": "Languedoc"
 		},
 		"gr": {
 			"5000": "Thrakien",
@@ -4329,8 +5102,6 @@
 			"5012": "Dodekanes",
 			"5013": "Nördliche Ägäis",
 			"5014": "Kreta"
-		},
-		"hu": {
 		},
 		"it": {
 			"6000": "Abruzzen",
@@ -4352,9 +5123,8 @@
 			"6016": "Toskana",
 			"6017": "Trentino-Südtirol",
 			"6018": "Umbrien",
-			"6019": "Venetien"
-		},
-		"mt": {
+			"6019": "Veneto",
+			"6020": "Valpolicella"
 		},
 		"nl": {
 			"7000": "Limburg",
@@ -4363,6 +5133,9 @@
 			"7003": "Betuwe",
 			"7004": "Veluwe",
 			"7005": "Zeeland"
+		},
+		"nz": {
+			"17001": "Marlborough"
 		},
 		"pt": {
 			"9000": "Vinho Verde",
@@ -4390,24 +5163,55 @@
 			"11001": "Adria-Küstenland (Primorska)",
 			"11002": "Save-Tal (Posavje)"
 		},
-		"sx": {
+		"us": {
+			"18001": "Kalifornien",
+			"18002": "Lodi"
+		},
+		"za": {
+			"13000": "Bot River",
+			"13001": "Breedekloof",
+			"13002": "Cape Agulhas",
+			"13003": "Cape Town",
+			"13004": "Cederberg",
+			"13005": "Central Orange River",
+			"13006": "Darling",
+			"13007": "Elgin",
+			"13008": "Franschhoek",
+			"13009": "Klein Karoo",
+			"13010": "Kwazulu-Natal",
+			"13011": "Malgas",
+			"13012": "Olifants River",
+			"13013": "Overberg",
+			"13014": "Paarl",
+			"13015": "Plettenberg Bay",
+			"13016": "Robertson",
+			"13017": "Stellenbosch",
+			"13018": "Sutherland Karoo",
+			"13019": "Swartland",
+			"13020": "Tulbagh",
+			"13021": "Walker Bay",
+			"13022": "Wellington",
+			"13023": "Worcester",
+			"13024": "Constantia"
 		}
 	},
-	"winetypes":{
+	"winetypes": {
 		"red": "Rotwein",
 		"white": "Weißwein",
 		"rose": "Rosé",
 		"rotling": "Rotling",
-		"secco": "Secco",
+		"secco": "Perlwein",
 		"sparkling": "Sekt",
-		"destilate": "Destillat",
+		"destilate": "Spirituosen",
 		"grapeJuice": "Traubensaft",
 		"wineBasedDrink": "Weinhaltiges Getränk",
 		"spritzer": "Weinschorle",
 		"vingris": "Weißherbst",
+		"nonAlcoholic": "Alkoholfrei",
+		"mulledWine": "Glühwein",
 		"general": "Sonstiges"
 	},
-	"savours":{
+	"savours": {
 		"categories": {
 			"meat": "Fleisch",
 			"preparation": "Zubereitung",
@@ -4415,7 +5219,8 @@
 			"vegetables": "Gemüse",
 			"styles": "Styles",
 			"bread": "Brot",
-			"sweets": "Süßigkeiten"
+			"sweets": "Süßigkeiten",
+			"occasions": "Anlässe"
 		},
 		"beef": "Rind",
 		"pork": "Schwein",
@@ -4429,10 +5234,10 @@
 		"fried": "Gebraten",
 		"smoked": "Geräuchert",
 		"baked": "Gebacken",
-		"steamed": "Gedünsted",
+		"steamed": "Gedünstet",
 		"dairyproduct": "Molkereiprodukte",
 		"softcheese": "Weichkäse",
-		"bluecheese": "Edel-Schimmel",
+		"bluecheese": "Edelschimmel",
 		"hardcheese": "Hartkäse",
 		"bulb": "Zwiebelgewächse",
 		"salad": "Salat",
@@ -4445,7 +5250,7 @@
 		"chili": "Chili",
 		"spicy": "Hot & Spicy",
 		"herbs": "Kräuter",
-		"cinnamon": "Backgewürz",
+		"cinnamon": "Zimt",
 		"exotic": "Exotische Gewürze",
 		"toast": "Weißbrot",
 		"bread": "Brot",
@@ -4456,7 +5261,134 @@
 		"creme": "Creme",
 		"ice": "Eis",
 		"chocolate": "Schokolade",
-		"coffee": "Kaffee"
+		"coffee": "Kaffee",
+		"barbecue": "Grillabend",
+		"present": "Geschenk",
+		"boysNight": "Männerabend",
+		"girlsNight": "Mädelsabend",
+		"date": "Date",
+		"summerEvening": "Sommerabend",
+		"firesideChat": "Kaminabend",
+		"afterWork": "Feierabend",
+		"easyDrinking": "Easy drinking",
+		"specialOccasions": "Besondere Anlässe"
+	},
+	"qualitytypes": {
+		"ar": {
+			"country": "Wine of Argentina"
+		},
+		"at": {
+			"country": "Österreichischer Wein",
+			"origin": "Landwein",
+			"dac": "Districtus Austriae Controllatus (DAC)",
+			"quality": "Qualitätswein",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"auslese": "Auslese",
+			"icewine": "Eiswein",
+			"strawwine": "Strohwein, Schilfwein",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"champagne": "Österreichischer Sekt",
+			"champagneClassic": "Sekt g.U. Klassik",
+			"champagneReserve": "Sekt g.U. Reserve",
+			"champagneGrandReserve": "Sekt g.U. Große Reserve",
+			"ausbruch": "Ausbruch"
+		},
+		"au": {
+			"country": "Wine of Australia"
+		},
+		"cl": {
+			"country": "Wine of Chile",
+			"reserva": "Gran Reserva"
+		},
+		"de": {
+			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
+			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
+			"superior": "Landwein",
+			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
+			"cabinet": "Kabinett",
+			"spaetlese": "Spätlese",
+			"selection": "Auslese",
+			"beerenauslese": "Beerenauslese",
+			"trockenbeerenauslese": "Trockenbeerenauslese",
+			"sparklingWine": "Schaumwein",
+			"aeratedSparklingWine": "Schaumwein mit zuges. CO2",
+			"champagne": "Deutscher Sekt",
+			"winzersekt": "Winzersekt",
+			"cremant": "Crémant",
+			"icewine": "Eiswein",
+			"champagneSpecificRegion": "Sekt b.A.",
+			"specialquality": "QW besonderer Reife und Leseart, Prädikatswein",
+			"estate": "Gutswein",
+			"local": "Ortswein",
+			"singlesite": "Lagenwein",
+			"vdpGutswein": "VDP.Gutswein",
+			"vdpOrtswein": "VDP.Ortswein",
+			"vdpErsteLage": "VDP.Erste Lage",
+			"vdpGrosseLage": "VDP.Große Lage",
+			"vdpGrossesGewaechs": "VDP.Großes Gewächs",
+			"vdpGutssekt": "VDP.Gutssekt",
+			"vdpOrtssekt": "VDP.Ortssekt"
+		},
+		"es": {
+			"country": "Viñedos de España",
+			"do": "Denominación de origen (DO)",
+			"doc": "Denominación de Origen Calificada (DOC)",
+			"doca": "Denominación de Origen Calificada (DOCa)",
+			"dop": "Denominación de Origen Protegida (DOP)",
+			"igp": "Indicación Geográfica Protegida (IGP)",
+			"origin": "Vino da la Tierra",
+			"table": "Vino de mesa"
+		},
+		"fr": {
+			"country": "Vin de France (VdF)",
+			"aop": "Appellation d’Origine Protégée (AOP)",
+			"igp": "Indication Géographique Protégée (IGP)",
+			"ac": "Appellation contrôlée (AC)",
+			"aoc": "Appellation d'origine contrôlée (AOC)",
+			"vdn": "Vin doux naturel (VDN)",
+			"vdqs": "Appellation d'origine vin délimité de qualité supérieure (VDQS)",
+			"superior": "Vin de pays",
+			"table": "Vin de table"
+		},
+		"it": {
+			"country": "Vino d'Italia",
+			"dop": "Denominazione di origine protetta (DOP)",
+			"doc": "Denominazione di origine controllata (DOC)",
+			"doca": "Denominazione di origine controllata (DOCa)",
+			"docg": "Denominazione di origine controllata e garantita (DOCG)",
+			"specialquality": "Vino dolce naturale",
+			"superior": "Vino tipico",
+			"table": "Vino da tavola"
+		},
+		"pt": {
+			"doc": "Denominação de Origem Controlada (DOC)",
+			"dop": "Denominação de Origem Protegida (DOP)",
+			"ig": "Vinho Regional (IG)",
+			"igp": "Vinho Regional (IGP)",
+			"vr": "Vinho Regional (VR)"
+		},
+		"us": {
+			"california": "Wine of California"
+		},
+		"za": {
+			"country": "Wine of Southafrica",
+			"origin": "Wine of Origin"
+		}
+	},
+	"bottlingTypes": {
+		"producer": "Erzeugerabfüllung",
+		"bottler": "Abfüller",
+		"estate": "Gutsabfüllung",
+		"castle": "Schlossabfüllung",
+		"purchase": "Zukauf"
+	},
+	"units": {
+		"g": "g",
+		"kg": "kg",
+		"ml": "ml",
+		"l": "l"
 	},
 	"apps": {
 		"vinou-gusto": {
@@ -4469,7 +5401,7 @@
 				},
 				"nointernet": {
 					"title": "Kein Internet verfügbar",
-					"msg": "Um alle Funktionen nutzen zu können, benötigst du eine Internetverbindung."
+					"msg": "Um alle Funktionen nutzen zu können, benötigst Du eine Internetverbindung."
 				},
 				"updateavailable": {
 					"title": "Update verfügbar",
@@ -4480,11 +5412,11 @@
 				},
 				"createwine": {
 					"title": "Wein anlegen",
-					"msg": "Willst du ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
+					"msg": "Willst Du ohne zu speichern den Vorgang beenden? Alle Änderungen gehen verloren."
 				},
 				"winenotfound": {
 					"title": "Kein Wein gefunden",
-					"msg": "Willst du einen neuen Wein anlegen?"
+					"msg": "Willst Du einen neuen Wein anlegen?"
 				}
 			},
 			"views": {
