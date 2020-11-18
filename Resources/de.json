@@ -197,16 +197,11 @@
 		}
 	},
 	"delete_image": "Bild löschen",
-	"delete_image_secure": "Möchtest Du dieses Bild wirklich löschen?",
 	"changepw": "Passwort ändern",
 	"wines_modal_delete": "Möchtest Du diesen Wein wirklich löschen?",
 	"wineries_modal_delete": "Möchtest Du dieses Weingut wirklich löschen?",
 	"category_modal_delete": "Möchtest Du diese Kategorie wirklich löschen?",
 	"customers_modal_delete": "Möchtest Du diesen Kunden wirklich löschen?",
-	"users_modules": "Module",
-	"users_modal_delete": "Möchtest Du diesen Benutzer wirklich löschen?",
-	"token_modal_delete": "Möchtest Du diesen Token wirklich löschen?",
-	"token_modal_error": "Es gibt bereits ein Token für diese Domain/IP",
 	"address_modal_delete": "Möchtest Du diese Adresse wirklich löschen?",
 	"orders_modal_cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
 	"orders_modal_sent": "Möchtest Du die Bestellung als Versendet markieren?",
@@ -232,6 +227,15 @@
 	"currenttoken_old": "Bisherige Token",
 	"currenttoken": "Aktuelle Verbindung",
 	"token": {
+		"fields": {
+			"token": "Schnittstelle (Token)",
+			"referer": "Domain",
+			"user_id": {
+				"label": "Simulierter Benutzer",
+				"placeholder": "Name oder Mailadresse"
+			},
+			"mode": "Modus"
+		},
 		"actions": {
 			"create": {
 				"main": "Neue Verbindung",
@@ -239,6 +243,10 @@
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Verbindung anlegen",
+				"editTitle": "Verbindung bearbeiten"
+			},
 			"gallery": {
 				"referer": "Domain/IP",
 				"token": "Schnittstelle (Token)",
@@ -253,9 +261,26 @@
 			"manual": "Manuelle Verbindungen",
 			"automatic": "Automatisierte Verbindungen"
 		},
+		"modes": {
+			"dev": "Entwicklung (Hostüberprüfung aus)",
+			"live": "Live (Hostüberprüfung an)"
+		},
+		"alerts": {
+			"copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
+		},
+		"hints": {
+			"devmode": "<b>ACHTUNG:</b> Solange die Schnittstelle sich im <b>Entwicklungsmodus</b> befindet können mit Hilfe des Tokens und der Authid Daten unabhängig vom Zielserver abgefragt werden."
+		},
 		"toasts": {
+			"created": "Verbindung gespeichert!",
 			"changed": "Verbindung geändert!",
 			"deleted": "Verbindung gelöscht!"
+		},
+		"errors": {
+			"refererExists": "Es gibt bereits ein Token für diese Domain/IP"
+		},
+		"dialogs": {
+			"delete": "Willst Du diese Verbindung wirklich löschen?"
 		}
 	},
 	"yes": "Ja",
@@ -804,39 +829,106 @@
 	"logout": "Abmelden",
 	"edit": "Bearbeiten",
 	"save": "Speichern",
-	"repeatpw": "Passwort wiederholen",
 	"language": "Sprache",
 	"modal_delete_wine": "Möchtest Du diesen Wein wirklich löschen?",
 	"test": "deutsch",
-	"login_emailempty": "E-Mail Adresse nicht angegeben",
-	"login_emailnotvalid": "E-Mail Adresse nicht gültig",
-	"login_passwordempty": "Passwort nicht angegeben",
-	"login_wronglogin": "E-Mail Addresse oder Passwort nicht korrekt.",
-	"login_wrongreset": "E-Mail Addresse oder passender Benutzer nicht gefunden.",
 	"db_categories_image": "Bild",
 	"db_category_createtitle": "Kategorie anlegen",
 	"db_category_edittitle": "Kategorie bearbeiten",
-	"users_create_main": "Neuen Benutzer",
-	"users_create_sub": "anlegen",
-	"users_modification": "Letzte Änderung",
-	"users_default_person_placeholder": "Max Mustermann",
-	"users_default_person_mail_placeholder": "muster@mail.com",
-	"users_galleryFilterHint": "z.B. Name, E-Mail",
-	"users_create_modaltitle": "Benutzer anlegen",
-	"users_edit_modaltitle": "Benutzer bearbeiten",
-	"users_settings_modaltitle": "Einstellungen bearbeiten",
 	"user": {
-		"fields": {
-			"lastLogin": "Letzter Login"
-		}
-	},
-	"users": {
-		"action": {
-			"main": "Neuen",
-			"sub": "Benutzer anlegen"
+		"actions": {
+			"login": "Login",
+			"lostpassword": "E-Mail anfordern",
+			"resetpassword": "Passwort neu setzen",
+			"sendpasswordresetmail": "Passwort-Mail verschicken",
+			"register": "Registrieren",
+			"create": {
+				"main": "Neuen Benutzer",
+				"sub": "anlegen"
+			},
+			"search": {
+				"placeholder": "z.B. Name, E-Mail"
+			},
+			"deleteImage": "Bild löschen"
+		},
+		"fieldSets": {
+			"appsettings": "App-Einstellungen bearbeiten",
+			"modules": "Module"
 		},
 		"fields": {
-			"active_users": "Aktive Benutzer"
+			"name": {
+				"label": "Name",
+				"placeholder": "Max Mustermann"
+			},
+			"mail": {
+				"label": "E-Mail",
+				"placeholder": "muster@mail.com"
+			},
+			"password": "Passwort",
+			"password_repeat": "Passwort wiederholen",
+			"role": "Rolle",
+			"active": "aktiv",
+			"beta": "Ist Beta-User",
+			"image": "Bild",
+			"customers_id": "gehört zu Mitglied",
+			"lastLogin": "Letzter Login",
+			"settings": {
+				"language": "Sprache"
+			}
+		},
+		"views": {
+			"login": {
+				"title": "Anmelden",
+				"goto": "Zum Login"
+			},
+			"lostpassword": {
+				"title": "Link anfordern"
+			},
+			"resetpassword": {
+				"title": "Passwort zurücksetzen"
+			},
+			"edit": {
+				"createTitle": "Benutzer anlegen",
+				"editTitle": "Benutzer bearbeiten",
+				"settingsTitle": "Einstellungen bearbeiten",
+				"adminTitle": "Benutzerdaten bearbeiten"
+			},
+			"dashboardStats": {
+				"active": "Aktive Benutzer"
+			},
+			"gallery": {
+				"lastModification": "Letzte Änderung"
+			}
+		},
+		"toasts": {
+			"imageUploaded": "Bild hochgeladen!",
+			"imageDeleted": "Bild gelöscht!",
+			"changed": "Benutzer aktualisiert!",
+			"created": "Benutzer angelegt!",
+			"deleted": "Benutzer gelöscht!",
+			"lostpasswordSend": "Mail versendet!"
+		},
+		"dialogs": {
+			"deleteImage": "Möchtest Du dieses Bild wirklich löschen?",
+			"delete": "Möchtest Du diesen Benutzer wirklich löschen?"
+		},
+		"hints": {
+			"lostpassword": "Passwort vergessen?",
+			"passwordmailsend": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link, um Dein Passwort zurückzusetzen",
+			"passwordreset": "Dein Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
+			"register": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
+			"passwordmatch": "Die beiden Passwörter stimmen nicht überein.",
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		},
+		"errors": {
+			"emailempty": "E-Mail Adresse nicht angegeben",
+			"emailnotvalid": "E-Mail Adresse nicht gültig",
+			"passwordempty": "Passwort nicht angegeben",
+			"wronglogin": "E-Mail Addresse oder Passwort nicht korrekt.",
+			"wrongreset": "E-Mail Addresse oder passender Benutzer nicht gefunden.",
+			"delete": "Du kannst den aktuell angemeldeten Benutzer nicht löschen!",
+			"imageUpload": "Fehler beim Bildupload!",
+			"lostpasswordSend": "Mail senden fehlgeschlagen!"
 		}
 	},
 	"statistics": {
@@ -851,42 +943,9 @@
 			"total": "Total"
 		}
 	},
-	"db_users_login_title": "Anmelden",
-	"db_users_login_submit": "Anmelden",
-	"db_users_lostpassword": "Passwort vergessen?",
-	"db_users_gotoregister": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
-	"db_users_lostpassword_title": "Link anfordern",
-	"db_users_lostpassword_submit": "E-Mail anfordern",
-	"db_users_lostpassword_send": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link, um Dein Passwort zurückzusetzen",
-	"db_users_resetpassword_title": "Passwort zurücksetzen",
-	"db_users_resetpassword_submit": "Passwort neu setzen",
-	"db_users_resetpassword_send": "Ihr Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
-	"db_users_sendpasswordresetmail": "Passwort-Mail verschicken",
-	"db_users_gotologin": "Zum Login",
-	"db_users_createtitle": "Benutzer anlegen",
-	"db_users_edittitle": "Benutzer bearbeiten",
-	"db_users_userdatatitle": "Benutzerdaten bearbeiten",
-	"db_users_settingstitle": "App-Einstellungen bearbeiten",
-	"db_users_passwordmatch": "Die beiden Passwörter stimmen nicht überein.",
-	"db_users_name": "Name",
-	"db_users_mail": "E-Mail",
-	"db_users_password": "Passwort",
-	"db_users_role": "Rolle",
-	"db_users_active": "aktiv",
-	"db_users_beta": "Ist Beta-User",
-	"db_users_image": "Bild",
-	"db_users_customers_id": "gehört zu Mitglied",
 	"db_winecategories_name": "Name",
 	"db_winecategories_description": "Beschreibung",
 	"db_winecategories_image": "Bild",
-	"db_tokens_createtitle": "Schnittstelle anlegen",
-	"db_tokens_edittitle": "Schnittstelle bearbeiten",
-	"db_tokens_token": "Schnittstelle (Token)",
-	"db_tokens_referer": "Domain",
-	"db_tokens_mode": "Modus",
-	"db_tokens_mode_dev": "Entwicklung (Hostüberprüfung aus)",
-	"db_tokens_mode_live": "Live (Hostüberprüfung an)",
-	"db_tokens_mode_hint": "<b>ACHTUNG:</b> Solange die Schnittstelle sich im <b>Entwicklungsmodus</b> befindet können mit Hilfe des Tokens und der Authid Daten unabhängig vom Zielserver abgefragt werden.",
 	"db_payments_createtitle": "Zahlungseingang anlegen",
 	"db_payments_edittitle": "Zahlungseingang bearbeiten",
 	"db_payments_type": "Typ",
@@ -2915,17 +2974,6 @@
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
 		"settings_smtp_changed": "SMTP-Einstellungen aktualisiert!",
 		"settings_paypal_changed": "Paypal-Einstellungen aktualisiert!",
-		"token_saved": "Schnittstelle gespeichert!",
-		"user_created": "Benutzer angelegt!",
-		"user_changed": "Benutzer aktualisiert!",
-		"user_deleted": "Benutzer gelöscht",
-		"user_deleteerror": "Du kannst den aktuell angemeldeten Benutzer nicht löschen!",
-		"user_image_needed": "Um ein Bild hochzuladen musst Du den Benutzer vorher speichern!",
-		"user_image_uploaded": "Bild hochgeladen!",
-		"user_image_deleted": "Bild gelöscht!",
-		"user_image_uploaderror": "Fehler beim Bildupload!",
-		"user_lostpassword_send": "Mail versendet!",
-		"user_lostpassword_senderror": "Mail senden fehlgeschlagen!",
 		"winery_created": "Weingut angelegt!",
 		"winery_changed": "Weingut aktualisiert!",
 		"winery_deleted": "Weingut gelöscht!",
@@ -2950,9 +2998,6 @@
 			"deleteerror": "Notiz konnte nicht gelöscht werden!"
 		}
 	},
-	"alerts": {
-		"token_copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
-	},
 	"hints": {
 		"wineries": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
@@ -2962,9 +3007,6 @@
 		},
 		"categories": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1500px Breite<br/>Datei-Format: .png (freigestellt)"
-		},
-		"users": {
-			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
 		},
 		"customer": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1000px Breite<br/>Datei-Format: .png (freigestellt)"
