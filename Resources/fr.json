@@ -197,8 +197,6 @@
 		}
 	},
 	"delete_image": "Supprimer l'image",
-	"delete_image_secure": "Voulez-vous vraiment supprimer cette image?",
-	"changepw": "Changer ce mot de pass",
 	"wines_modal_delete": "Voulez-vous vraiment supprimer ce vin?",
 	"wineries_modal_delete": "Voulez-vous vraiment supprimer cet établissement vinicole?",
 	"category_modal_delete": "Voulez-vous vraiment supprimer cette catégorie?",
