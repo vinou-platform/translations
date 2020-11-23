@@ -197,16 +197,10 @@
 		}
 	},
 	"delete_image": "Cancellare le foto",
-	"delete_image_secure": "Vuoi veramente cancellare la foto",
-	"changepw": "Cambiare password",
 	"wines_modal_delete": "Vuoi veramente cancellare questo vino",
 	"wineries_modal_delete": "Vuoi veramente cancellare questo vigneto",
 	"category_modal_delete": "Vuoi veramente cancellare questa categoria",
 	"customers_modal_delete": "Vuoi veramente cancellare questo cliente?",
-	"users_modules": "Moduli",
-	"users_modal_delete": "Vuoi veramente cancellare questo utente",
-	"token_modal_delete": "Vuoi veramente cancellare questo token",
-	"token_modal_error": "Esistono già un token per questo dominio/IP",
 	"address_modal_delete": "Vuoi veramente cancellare questo indirizzo",
 	"orders_modal_cancel": "Vuoi veramente cancellare questo ordine",
 	"orders_modal_sent": "Vuoi contrassegnare l'ordine come inviato?",
@@ -229,9 +223,16 @@
 			"percent": "Sconto percentuale"
 		}
 	},
-	"currenttoken_old": "Token finora",
-	"currenttoken": "Connessione corrente",
-	"tokens": {
+	"token": {
+		"fields": {
+			"token": "Token",
+			"referer": "Referer (dominio / IP)",
+			"user_id": {
+				"label": "Utente simulato",
+				"placeholder": "Nome o indirizzo di posta"
+			},
+			"mode": "Modalità"
+		},
 		"actions": {
 			"create": {
 				"main": "Connessione nuova",
@@ -239,23 +240,44 @@
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Crea connessione",
+				"editTitle": "Modifica connessione"
+			},
 			"gallery": {
 				"referer": "Dominio/IP",
-				"token": "Interface (Token)",
+				"token": "Interfaccia (token)",
 				"mode": {
 					"label": "Modalità",
 					"dev": "Sviluppo",
-					"live": "Live"
+					"live": "Vivere"
 				}
 			}
 		},
 		"groups": {
-			"manual": "Connessioni manuali",
+			"manual": "Collegamenti manuali",
 			"automatic": "Connessioni automatiche"
 		},
+		"modes": {
+			"dev": "Sviluppo (rilevamento host disattivato)",
+			"live": "Dal vivo (rilevamento host attivato)"
+		},
+		"alerts": {
+			"copy": "Copia il token premendo: Ctrl + C, Invio"
+		},
+		"hints": {
+			"devmode": "<b> IMPORTANTE: </b> se la modalità è impostata su <b> Sviluppo </b>, è possibile accedere ai dati del vino e del negozio tramite token e autenticazione in tutto il mondo."
+		},
 		"toasts": {
-			"changed": "Connessione modificata!",
+			"created": "Connessione creata!",
+			"changed": "Connessione cambiata!",
 			"deleted": "Connessione eliminata!"
+		},
+		"errors": {
+			"refererExists": "Esiste già una connessione per questo referer"
+		},
+		"dialogs": {
+			"delete": "Vuoi davvero eliminare questo token?"
 		}
 	},
 	"yes": "Sì",
@@ -798,95 +820,115 @@
 	"settings_connections": "Collegamenti.",
 	"sysTool_account": "Impostazioni",
 	"options": "Opzioni",
-	"addtoken": "Aggiungi Token",
 	"referer": "Valido per",
 	"login": "Accessi",
 	"logout": "Esci",
 	"edit": "Modificare",
 	"save": "Salvare",
-	"repeatpw": "Ripetere password",
-	"language": "Lingua",
 	"modal_delete_wine": "Vuoi veramente cancellare questo vino?",
 	"test": "Tedesco",
-	"login_emailempty": "Non indicato indirizzo e-mail",
-	"login_emailnotvalid": "Indirizzo e-mail non sono valida",
-	"login_passwordempty": "Non indicato Password",
-	"login_wronglogin": "Indirizzo l'email o password non sono corretti.",
-	"login_wrongreset": "Non trovato indirizzo E-Mail o utente.",
 	"db_categories_image": "Immagine.",
 	"db_category_createtitle": "Creare categoria",
 	"db_category_edittitle": "Modificare categoria",
-	"users_create_main": "Nuovo utente",
-	"users_create_sub": "Creare",
-	"users_modification": "Ultima modifica",
-	"users_default_person_placeholder": "Pino Pompi",
-	"users_default_person_mail_placeholder": "esempio@mail.com",
-	"users_galleryFilterHint": "Ad es. Nome, E-Mail",
-	"users_create_modaltitle": "Creare utente",
-	"users_edit_modaltitle": "Modificare utente",
-	"users_settings_modaltitle": "Modificare impostazioni",
 	"user": {
-		"fields": {
-			"lastLogin": "Ultimo accesso"
-		}
-	},
-	"users": {
-		"action": {
-			"main": "Nuovo",
-			"sub": "Creare utente"
+		"actions": {
+			"login": "Accesso",
+			"lostpassword": "Richiedi email di ripristino",
+			"resetpassword": "Imposta nuova password",
+			"sendpasswordresetmail": "Invia email con password",
+			"register": "Registrati",
+			"create": {
+				"main": "Creare nuovo",
+				"sub": "utente"
+			},
+			"search": {
+				"placeholder": "per esempio. nome, posta"
+			},
+			"deleteImage": "Elimina immagine"
+		},
+		"fieldSets": {
+			"appsettings": "Modifica le impostazioni dell'app",
+			"modules": "Moduli"
 		},
 		"fields": {
-			"active_users": "Utente attivamente"
+			"name": {
+				"label": "Nome",
+				"placeholder": "Pinco Pallino"
+			},
+			"mail": {
+				"label": "E-mail",
+				"placeholder": "pinco.pallino@mail.com"
+			},
+			"password": "Parola d'ordine",
+			"password_repeat": "ripeti la password",
+			"role": "Ruolo",
+			"active": "attivo",
+			"beta": "È un utente beta",
+			"image": "Immagine",
+			"customers_id": "Appartiene al membro",
+			"lastLogin": "Ultimo accesso",
+			"settings": {
+				"language": "linguaggio"
+			}
+		},
+		"views": {
+			"login": {
+				"title": "Accesso",
+				"goto": "Vai al login"
+			},
+			"lostpassword": {
+				"title": "Richiedi link di ripristino"
+			},
+			"resetpassword": {
+				"title": "Resetta la password"
+			},
+			"edit": {
+				"createTitle": "Creare un utente",
+				"editTitle": "Modifica utente",
+				"settingsTitle": "Modificare le impostazioni",
+				"adminTitle": "Modifica data utente"
+			},
+			"dashboardStats": {
+				"active": "Utente attivo"
+			},
+			"gallery": {
+				"lastModification": "Ultima modifica"
+			}
+		},
+		"toasts": {
+			"imageUploaded": "Immagine caricata!",
+			"imageDeleted": "Immagine eliminata!",
+			"changed": "L'utente è cambiato!",
+			"created": "Utente creato!",
+			"deleted": "Utente eliminato!",
+			"lostpasswordSend": "Invia posta!"
+		},
+		"dialogs": {
+			"deleteImage": "Vuoi davvero eliminare l'immagine dell'utente?",
+			"delete": "Vuoi davvero eliminare questo utente?"
+		},
+		"hints": {
+			"lostpassword": "Password dimenticata?",
+			"passwordmailsend": "È stata inviata un'e-mail con il link di ripristino. Questo collegamento scade tra 24 ore. Usalo per reimpostare la tua password.",
+			"passwordreset": "La nuova password è impostata. Il link utilizzato non è più valido.",
+			"register": "Nessun account? <a href='/register'>Registrati ora!</a>",
+			"passwordmatch": "La nuova digitazione della password non corrisponde.",
+			"imagesize": "<b>Consigliato per il miglior rendering</b> <br> Dimensioni: 1000x1000px <br/> Formato file: .png (escluso)"
+		},
+		"errors": {
+			"emailempty": "Campo email vuoto",
+			"emailnotvalid": "Campo email non valido",
+			"passwordempty": "Password non inserita",
+			"wronglogin": "Email o password non corrette.",
+			"wrongreset": "Email o utente corrispondente non trovato.",
+			"delete": "Non puoi eliminare un utente connesso!",
+			"imageUpload": "Errore durante l'elaborazione dell'immagine!",
+			"lostpasswordSend": "Errore durante l'invio dell'e-mail!"
 		}
 	},
-	"statistics": {
-		"types": {
-			"active": "Attivamente",
-			"admin": "Admin",
-			"default": "Regolarmente",
-			"interfrog": "Interfrog",
-			"has_image": "Con immagine",
-			"has_price": "Con prezzo",
-			"public": "Publico",
-			"total": "Total"
-		}
-	},
-	"db_users_login_title": "Accesso",
-	"db_users_login_submit": "Accesso",
-	"db_users_lostpassword": "Dimenticare password?",
-	"db_users_gotoregister": "Ancora nessun account? <a href='/register'>Registrare qui</a>",
-	"db_users_lostpassword_title": "Chiedere Link",
-	"db_users_lostpassword_submit": "Chiedere E-Mail",
-	"db_users_lostpassword_send": "Email con un Link di reimpostazione  è stata inviata. Questo è valida per 24 ore. Usare Link per resettare password.",
-	"db_users_resetpassword_title": "Resettare password",
-	"db_users_resetpassword_submit": "Rinnovare password",
-	"db_users_resetpassword_send": "Password è stato rinnovata.  Il link usato non è più valido",
-	"db_users_sendpasswordresetmail": "Spedire E-Mail per Password",
-	"db_users_gotologin": "Al login",
-	"db_users_createtitle": "Creare utente",
-	"db_users_edittitle": "Modificare utente",
-	"db_users_userdatatitle": "Modificare dati dei utente",
-	"db_users_settingstitle": "Modificare impostazioni dei app",
-	"db_users_passwordmatch": "Le Password non combaciano.",
-	"db_users_name": "Nome",
-	"db_users_mail": "E-Mail",
-	"db_users_password": "Password",
-	"db_users_role": "Parte",
-	"db_users_active": "Attivamente",
-	"db_users_beta": "È Beta-User",
-	"db_users_image": "Immagine",
-	"db_users_customers_id": "È membro",
 	"db_winecategories_name": "Nome",
 	"db_winecategories_description": "Descrizione",
 	"db_winecategories_image": "Immagine",
-	"db_tokens_createtitle": "Creare interfaccia",
-	"db_tokens_edittitle": "Modificare interfaccia",
-	"db_tokens_token": "Interfaccia (Token)",
-	"db_tokens_referer": "Domain",
-	"db_tokens_mode": "Modalità ",
-	"db_tokens_mode_dev": "Realizzazione (controllare dell'host essere finito)",
-	"db_tokens_mode_live": "Live (controllare dell'host essere acceso)",
-	"db_tokens_mode_hint": "<b>ATTENZIONE!:</b> Finché l'interfaccia è <b> modalità Realizzazione </b> è possibile rilevamento dati con l'aiuto di token e Authid. Indipendentemente da Server all'obiettivo.",
 	"db_payments_createtitle": "Creare ricevimento del pagamento",
 	"db_payments_edittitle": "Modificare ricevimento del pagamento",
 	"db_payments_type": "Tipo",
@@ -2916,17 +2958,6 @@
 		"settings_cashlink_registererror": "Registrazione non riuscita, posta probabilmente già presa!",
 		"settings_smtp_changed": "Configurazione SMTP aggiornata!",
 		"settings_paypal_changed": "Configurazione PayPay aggiornata!",
-		"token_saved": "Interfaccia registrata!",
-		"user_created": "Interfaccia registrata!",
-		"user_changed": "Utente aggiornato!",
-		"user_deleted": "Utente eliminato",
-		"user_deleteerror": "Nonè possible eliminare l'utente attualemente connesso!",
-		"user_image_needed": "Per scaricare un'immagine, è necessario registrare l'utente in anticipo!",
-		"user_image_uploaded": "Immagine scaricata",
-		"user_image_deleted": "Immagine cancellata!",
-		"user_image_uploaderror": "Errore durante il caricamento dell'immagine!",
-		"user_lostpassword_send": "Posta inviata!",
-		"user_lostpassword_senderror": "Invio della posta non riuscito!",
 		"winery_created": "Vigna è stato creata",
 		"winery_changed": "Vigna è stato aggiornato",
 		"winery_deleted": "Vigna è stato cancellata!",
@@ -2951,9 +2982,6 @@
 			"deleteerror": "La nota non può essere cancellata!"
 		}
 	},
-	"alerts": {
-		"token_copy": "Per copiare il token: Ctrl + C, Invio"
-	},
 	"hints": {
 		"wineries": {
 			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: 1000x1000px<br/>Formato file: .png (liberato)"
@@ -2963,9 +2991,6 @@
 		},
 		"categories": {
 			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: min. 1500px larghezza<br/>Formato file: .png (liberato)"
-		},
-		"users": {
-			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: 1000x1000px<br/>Formato file: .png (liberato)"
 		},
 		"customer": {
 			"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Size: mind. 1000px larghezza<br/>Formato file: .png (liberato)"

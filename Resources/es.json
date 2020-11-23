@@ -197,16 +197,10 @@
 		}
 	},
 	"delete_image": "borrar imágen",
-	"delete_image_secure": "Quieres borrar esa imágen seguramente?",
-	"changepw": "cambiar contraseña",
 	"wines_modal_delete": "Quieres borrar ese vino seguramente?",
 	"wineries_modal_delete": "Quieres borrar esa propiedad vinícola seguramente?",
 	"category_modal_delete": "Quieres borrar esa categoría seguramente?",
 	"customers_modal_delete": "Quieres borrar ese cliente seguramente?",
-	"users_modules": "modules",
-	"users_modal_delete": "Quieres borrar ese usuario seguramente?",
-	"token_modal_delete": "Quieres borrar ese Token seguramente?",
-	"token_modal_error": "Ya existe un Token para ese dominio/IP",
 	"address_modal_delete": "Quieres borrar esa direción seguramente?",
 	"orders_modal_cancel": "Quieres anular esa orden seguramente?",
 	"orders_modal_sent": "Quieres marcar ese orden como Enviado?",
@@ -229,23 +223,34 @@
 			"percent": "descuento porcentual"
 		}
 	},
-	"currenttoken_old": "previos Token",
-	"currenttoken": "conexión acutal",
-	"tokens": {
+	"token": {
+		"fields": {
+			"token": "Simbólico",
+			"referer": "Referer (dominio / IP)",
+			"user_id": {
+				"label": "Usuario simulado",
+				"placeholder": "Nombre o dirección postal"
+			},
+			"mode": "Modo"
+		},
 		"actions": {
 			"create": {
-				"main": "conexión nueva",
-				"sub": "crear"
+				"main": "Conexión nueva",
+				"sub": "Crear"
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Crear conexión",
+				"editTitle": "Editar conexión"
+			},
 			"gallery": {
 				"referer": "Dominio/IP",
 				"token": "Interfaz (Token)",
 				"mode": {
 					"label": "Modo",
 					"dev": "Desarrollo",
-					"live": "Live"
+					"live": "En Vivo"
 				}
 			}
 		},
@@ -253,9 +258,26 @@
 			"manual": "Conexiones manuales",
 			"automatic": "Conexiones automáticas"
 		},
+		"modes": {
+			"dev": "Desarrollo (detección de host desactivada)",
+			"live": "En vivo (detección de host activada)"
+		},
+		"alerts": {
+			"copy": "Copie el token mientras presiona: Ctrl + C, Enter"
+		},
+		"hints": {
+			"devmode": "<b> IMPORTANTE: </b> Si el modo está configurado en <b> Desarrollo </b>, se puede acceder a los datos de la tienda y el vino mediante token y autorización en todo el mundo."
+		},
 		"toasts": {
+			"created": "Conexión creada!",
 			"changed": "Conexión cambiada!",
 			"deleted": "Conexión eliminada!"
+		},
+		"errors": {
+			"refererExists": "Ya existe una conexión para este referente"
+		},
+		"dialogs": {
+			"delete": "Realmente quieres eliminar este token?"
 		}
 	},
 	"yes": "Sí",
@@ -798,45 +820,110 @@
 	"settings_connections": "conexiones",
 	"sysTool_account": "ajustes",
 	"options": "opciones",
-	"addtoken": "añadir Token",
 	"referer": "valido por",
 	"login": "abrir sesión",
 	"logout": "cerrar sesión",
 	"edit": "editar",
 	"save": "guardar",
-	"repeatpw": "repetir contraseña",
-	"language": "idioma",
 	"modal_delete_wine": "Qieres borrar ese vino seguramente?",
 	"test": "alemán",
-	"login_emailempty": "Correo electrónico no es señalado",
-	"login_emailnotvalid": "Correo electrónico no es valido",
-	"login_passwordempty": "Contraseña no es señalado",
-	"login_wronglogin": "Corre electrónico o contraseña no es correcto.",
-	"login_wrongreset": "No se encuentra el correo electrónico o el usuario adecuado.",
 	"db_categories_image": "imágen",
 	"db_category_createtitle": "crear categoría",
 	"db_category_edittitle": "editar categoría",
-	"users_create_main": "usuario nuevo",
-	"users_create_sub": "crear",
-	"users_modification": "cambio pasado",
-	"users_default_person_placeholder": "Max Mustermann",
-	"users_default_person_mail_placeholder": "muster@mail.com",
-	"users_galleryFilterHint": "e.j. nombre, correo electrónico",
-	"users_create_modaltitle": "crear usuario",
-	"users_edit_modaltitle": "editar usuario",
-	"users_settings_modaltitle": "editar ajustes",
 	"user": {
-		"fields": {
-			"lastLogin": "Último acceso"
-		}
-	},
-	"users": {
-		"action": {
-			"main": "nuevo",
-			"sub": " crear usuario"
+		"actions": {
+			"login": "Iniciar sesión",
+			"lostpassword": "Solicitar restablecimiento de correo electrónico",
+			"resetpassword": "Establecer nueva contraseña",
+			"sendpasswordresetmail": "Enviar correo de contraseña",
+			"register": "Registrarse",
+			"create": {
+				"main": "Crear nuevo",
+				"sub": "usario"
+			},
+			"search": {
+				"placeholder": "p.ej. nombre, correo"
+			},
+			"deleteImage": "Eliminar Imagen"
+		},
+		"fieldSets": {
+			"appsettings": "Editar la configuración de la aplicación",
+			"modules": "Módulos"
 		},
 		"fields": {
-			"active_users": "usuarios activos"
+			"name": {
+				"label": "Nombre",
+				"placeholder": "Pepe Pérez"
+			},
+			"mail": {
+				"label": "Correo electrónico",
+				"placeholder": "pepe.perez@mail.com"
+			},
+			"password": "Contraseña",
+			"password_repeat": "Repite la contraseña",
+			"role": "Papel",
+			"active": "activo",
+			"beta": "Es usuario beta",
+			"image": "Imagen",
+			"customers_id": "Pertenece al miembro",
+			"lastLogin": "Último acceso",
+			"settings": {
+				"language": "Idioma"
+			}
+		},
+		"views": {
+			"login": {
+				"title": "Iniciar sesión",
+				"goto": "Ir a iniciar sesión"
+			},
+			"lostpassword": {
+				"title": "Solicitar Restablecer Enlace"
+			},
+			"resetpassword": {
+				"title": "Restablecer la contraseña"
+			},
+			"edit": {
+				"createTitle": "Crear usuario",
+				"editTitle": "Editar usuario",
+				"settingsTitle": "Editar la configuracións",
+				"adminTitle": "Editar fecha de usuario"
+			},
+			"dashboardStats": {
+				"active": "Usuario activo"
+			},
+			"gallery": {
+				"lastModification": "Última modificación"
+			}
+		},
+		"toasts": {
+			"imageUploaded": "Imagen cargada!",
+			"imageDeleted": "Imagen eliminada!",
+			"changed": "Usuario cambiado!",
+			"created": "Usuario creado!",
+			"deleted": "Usuario eliminado!",
+			"lostpasswordSend": "Enviar correo!"
+		},
+		"dialogs": {
+			"deleteImage": "Realmente desea eliminar la imagen de usuario?",
+			"delete": "Realmente desea eliminar este usuario?"
+		},
+		"hints": {
+			"lostpassword": "Contraseña perdida?",
+			"passwordmailsend": "Se envió un correo electrónico con el enlace de restablecimiento. Este enlace caduca en 24 horas. Use esto para restablecer su contraseña.",
+			"passwordreset": "Se establece una nueva contraseña. El enlace usado ya no es válido.",
+			"register": "No tienes cuenta? <a href='/register'>Regístrese ahora!</a>",
+			"passwordmatch": "El reingreso de la contraseña no coincidió.",
+			"imagesize": "<b>Recomendado para una mejor representación</b> <br> Dimensión: 1000x1000px <br/> Formato de archivo: .png (exento)"
+		},
+		"errors": {
+			"emailempty": "Campo de correo electrónico vacío",
+			"emailnotvalid": "El campo de correo electrónico no es válido",
+			"passwordempty": "Contraseña no ingresada",
+			"wronglogin": "El correo electrónico o la contraseña no son correctos.",
+			"wrongreset": "No se encontró el correo electrónico o el usuario coincidente.",
+			"delete": "No puede eliminar un usuario que haya iniciado sesión!",
+			"imageUpload": "Error durante el procesamiento de imágenes!",
+			"lostpasswordSend": "Error al enviar el correo electrónico!"
 		}
 	},
 	"statistics": {
@@ -851,42 +938,9 @@
 			"total": "total"
 		}
 	},
-	"db_users_login_title": "inscribir",
-	"db_users_login_submit": "inscribir",
-	"db_users_lostpassword": "Has olvidado la contraseña?",
-	"db_users_gotoregister": "Aún no tienes una cuenta? <a href='/register'>Regístrate aqui!</a>",
-	"db_users_lostpassword_title": "solicitar enlace",
-	"db_users_lostpassword_submit": "solicitar correo electrónico",
-	"db_users_lostpassword_send": "Un correo electrónico con un enlace de reset ha sido enviado. Está valido por 24 horas. Utiliza ese enlace para restablecer tu contraseña.",
-	"db_users_resetpassword_title": "restablecer contraseña",
-	"db_users_resetpassword_submit": "crear contraseña de nuevo",
-	"db_users_resetpassword_send": "Su contraseña ha sido creado de nuevo. El enlace utilizado ya no es valido más.",
-	"db_users_sendpasswordresetmail": "enviar correo electrónico con la contraseña",
-	"db_users_gotologin": "Ir al Login",
-	"db_users_createtitle": "crear usuario",
-	"db_users_edittitle": "editar usuario",
-	"db_users_userdatatitle": "editar datos del usuario",
-	"db_users_settingstitle": "editar ajustes de la aplicación",
-	"db_users_passwordmatch": "Las dos contraseñas no corresponden.",
-	"db_users_name": "nombre",
-	"db_users_mail": "correo electrónico",
-	"db_users_password": "contraseña",
-	"db_users_role": "rol",
-	"db_users_active": "activo",
-	"db_users_beta": "es usuario beta",
-	"db_users_image": "imágen",
-	"db_users_customers_id": "pertenece al miembro",
 	"db_winecategories_name": "nombre",
 	"db_winecategories_description": "descripción",
 	"db_winecategories_image": "imágen",
-	"db_tokens_createtitle": "crear intersección",
-	"db_tokens_edittitle": "editar intersección",
-	"db_tokens_token": "intersección (Token)",
-	"db_tokens_referer": "dominio",
-	"db_tokens_mode": "modo",
-	"db_tokens_mode_dev": "desarollo (control del host apagado)",
-	"db_tokens_mode_live": "en vivo (control del host encendido)",
-	"db_tokens_mode_hint": "<b>CUIDADO:</b> Hasta que la intersección está en el modo de desarollo se puede consultar datos independientemente del servidor de destino con ayuda de la intersección y del Authid.",
 	"db_payments_createtitle": "crear recepción de pago",
 	"db_payments_edittitle": "editar recepción de pago",
 	"db_payments_type": "tipo",
@@ -2916,17 +2970,6 @@
 		"settings_cashlink_registererror": "Registración ha sido fallada, talvez el correo electrónico ya no está disponible más!",
 		"settings_smtp_changed": "Ajustes de SMTP han sido actualizados!",
 		"settings_paypal_changed": "Ajustes de Paypal han sido actualizados!",
-		"token_saved": "Intersección ha sido grabada!",
-		"user_created": "Usuario ha sido creado!",
-		"user_changed": "Usuario ha sido actualizado!",
-		"user_deleted": "Usuario ha sido borrado",
-		"user_deleteerror": "No puedes borrar el usuario lo cual está registrado actualmente!",
-		"user_image_needed": "Para cargar un imágen tienes que grabar el usuario antes!",
-		"user_image_uploaded": "Imágen ha sido cargada!",
-		"user_image_deleted": "Imágen ha sido borrada!",
-		"user_image_uploaderror": "Ha ocurrido un error durante la carga de la imágen!",
-		"user_lostpassword_send": "Correo electrónico ha sido enviado!",
-		"user_lostpassword_senderror": "Envío del correo electrónico ha sido fallado!",
 		"winery_created": "Propiedad vinícola ha sido creada!",
 		"winery_changed": "Propiedad vinícola ha sido actualizada!",
 		"winery_deleted": "Propiedad vinícola ha sido borrada!",
@@ -2951,9 +2994,6 @@
 			"deleteerror": "Nota no ha sido borrada!"
 		}
 	},
-	"alerts": {
-		"token_copy": "Para copiar el Token: Ctrl+C, Enter"
-	},
 	"hints": {
 		"wineries": {
 			"imagesize": "<b>Recomendación para representación óptima</b><br>Medidas: 1000x1000px<br/>formato del archivo: .png (potestativo)"
@@ -2963,9 +3003,6 @@
 		},
 		"categories": {
 			"imagesize": "<b>Recomendación para representación óptima</b><br>Medidas: min. 1500px ancho<br/>formato del archivo: .png (potestativo)"
-		},
-		"users": {
-			"imagesize": "<b>Recomendación para representación óptima</b><br>Medidas: 1000x1000px<br/>formato del archivo: .png (potestativo)"
 		},
 		"customer": {
 			"imagesize": "<b>Recomendación para representación óptima</b><br>Meidas: min. 1000px ancho<br/>formato del archivo: .png (potestativo)"

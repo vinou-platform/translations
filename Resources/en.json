@@ -197,16 +197,10 @@
 		}
 	},
 	"delete_image": "Delete Image",
-	"delete_image_secure": "Do you really want to delete the image?",
-	"changepw": "Change password",
 	"wines_modal_delete": "Do you really want to delete this wine?",
 	"wineries_modal_delete": "Do you really want to delete the selected winery?",
 	"category_modal_delete": "Do you really want to delete the selected category?",
 	"customers_modal_delete": "Do you really want to delete this customer?",
-	"users_modules": "Modules",
-	"users_modal_delete": "Do you really want to delete this user?",
-	"token_modal_delete": "Do you really want to delete this token?",
-	"token_modal_error": "There is already a token for this domain/IP",
 	"address_modal_delete": "Do you really want to delete this address?",
 	"orders_modal_cancel": "Do you really want to cancel this order?",
 	"orders_modal_sent": "Do you really want to set this order as dispatched?",
@@ -229,9 +223,16 @@
 			"percent": "Percental rebate"
 		}
 	},
-	"currenttoken_old": "Current token",
-	"currenttoken": "Current token",
-	"tokens": {
+	"token": {
+		"fields": {
+			"token": "Token",
+			"referer": "Referer (Domain/IP)",
+			"user_id": {
+				"label": "Simulated user",
+				"placeholder": "Name or mailadress"
+			},
+			"mode": "Mode"
+		},
 		"actions": {
 			"create": {
 				"main": "New Connection",
@@ -239,6 +240,10 @@
 			}
 		},
 		"views": {
+			"edit": {
+				"createTitle": "Create connection",
+				"editTitle": "Edit connection"
+			},
 			"gallery": {
 				"referer": "Domain/IP",
 				"token": "Interface (Token)",
@@ -253,9 +258,26 @@
 			"manual": "Manual connections",
 			"automatic": "Automatic connections"
 		},
+		"modes": {
+			"dev": "Development (Host detection off)",
+			"live": "Live (Host detection on)"
+		},
+		"alerts": {
+			"copy": "Um den Token zu Kopieren: Ctrl+C, Enter"
+		},
+		"hints": {
+			"devmode": "<b>IMPORTANT:</b> If mode is set to <b>Development</b> wine and shop data can be accessed via token and authid all over the world."
+		},
 		"toasts": {
+			"created": "Connection created!",
 			"changed": "Connection changed!",
 			"deleted": "Connection deleted!"
+		},
+		"errors": {
+			"refererExists": "A connection already exists for this referer"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this token?"
 		}
 	},
 	"yes": "Yes",
@@ -798,45 +820,110 @@
 	"settings_connections": "Connections",
 	"sysTool_account": "Settings",
 	"options": "Options",
-	"addtoken": "Add token",
 	"referer": "Valid until",
 	"login": "Login",
 	"logout": "Logout",
 	"edit": "Edit",
 	"save": "Save",
-	"repeatpw": "Retype password",
-	"language": "Language",
 	"modal_delete_wine": "Do you really want to delete this wine?",
 	"test": "english",
-	"login_emailempty": "Email field empty",
-	"login_emailnotvalid": "The email addresse not valid",
-	"login_passwordempty": "Password not entered",
-	"login_wronglogin": "Email or password not correct.",
-	"login_wrongreset": "Email or matching user not found.",
 	"db_categories_image": "Image",
 	"db_category_createtitle": "Create category",
 	"db_category_edittitle": "Edit category",
-	"users_create_main": "Add User",
-	"users_create_sub": " ",
-	"users_modification": "Last modification",
-	"users_default_person_placeholder": "John Doe",
-	"users_default_person_mail_placeholder": "john.doe@mail.com",
-	"users_galleryFilterHint": "e.g. name, address",
-	"users_create_modaltitle": "Create new user",
-	"users_edit_modaltitle": "Edit user",
-	"users_settings_modaltitle": "Edit user settings",
 	"user": {
-		"fields": {
-			"lastLogin": "Last login"
-		}
-	},
-	"users": {
-		"action": {
-			"main": "Add",
-			"sub": "new user"
+		"actions": {
+			"login": "Login",
+			"lostpassword": "Request reset email",
+			"resetpassword": "Set new password",
+			"sendpasswordresetmail": "Send password mail",
+			"register": "Register",
+			"create": {
+				"main": "Create new",
+				"sub": "user"
+			},
+			"search": {
+				"placeholder": "e.g. name, mail"
+			},
+			"deleteImage": "Delete image"
+		},
+		"fieldSets": {
+			"appsettings": "Edit App-Settings",
+			"modules": "Modules"
 		},
 		"fields": {
-			"active_users": "Active users"
+			"name": {
+				"label": "Name",
+				"placeholder": "John Doe"
+			},
+			"mail": {
+				"label": "E-Mail",
+				"placeholder": "john.doe@mail.com"
+			},
+			"password": "Password",
+			"password_repeat": "Repeat password",
+			"role": "Role",
+			"active": "active",
+			"beta": "Is beta user",
+			"image": "Image",
+			"customers_id": "Belongs to member",
+			"lastLogin": "Last Login",
+			"settings": {
+				"language": "Language"
+			}
+		},
+		"views": {
+			"login": {
+				"title": "Login",
+				"goto": "Go to login"
+			},
+			"lostpassword": {
+				"title": "Request reset link"
+			},
+			"resetpassword": {
+				"title": "Reset password"
+			},
+			"edit": {
+				"createTitle": "Create user",
+				"editTitle": "Edit user",
+				"settingsTitle": "Edit settings",
+				"adminTitle": "Edit userdate"
+			},
+			"dashboardStats": {
+				"active": "Active user"
+			},
+			"gallery": {
+				"lastModification": "Last modified"
+			}
+		},
+		"toasts": {
+			"imageUploaded": "Image uploaded!",
+			"imageDeleted": "Image deleted!",
+			"changed": "User changed!",
+			"created": "User created!",
+			"deleted": "User deleted!",
+			"lostpasswordSend": "Mail send!"
+		},
+		"dialogs": {
+			"deleteImage": "Do you really want to delete the user image?",
+			"delete": "Do you really want to delete this user?"
+		},
+		"hints": {
+			"lostpassword": "Lost password?",
+			"passwordmailsend": "An email with reset link was send. This link expires in 24 hours. Use this to reset your password.",
+			"passwordreset": "New password is set. The used link is not valid anymore.",
+			"register": "No account? <a href='/register'>Register now!</a>",
+			"passwordmatch": "Password retype didn't match.",
+			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
+		},
+		"errors": {
+			"emailempty": "Email field empty",
+			"emailnotvalid": "Email field invalid",
+			"passwordempty": "Password not entered",
+			"wronglogin": "Email or password not correct.",
+			"wrongreset": "Email or matching user not found.",
+			"delete": "You cant delete a loggedin user!",
+			"imageUpload": "Error during imageprocessing!",
+			"lostpasswordSend": "Error sending email!"
 		}
 	},
 	"statistics": {
@@ -851,42 +938,9 @@
 			"total": "Total"
 		}
 	},
-	"db_users_login_title": "Login",
-	"db_users_login_submit": "Log in",
-	"db_users_lostpassword": "Lost Password?",
-	"db_users_gotoregister": "No account? <a href='/register'>Register now!</a>",
-	"db_users_lostpassword_title": "Request activation link",
-	"db_users_lostpassword_submit": "Request reset email",
-	"db_users_lostpassword_send": "An email with reset link was send. This link expires in 24 hours. Use this to reset your password.",
-	"db_users_resetpassword_title": "Password reset",
-	"db_users_resetpassword_submit": "Set new password",
-	"db_users_resetpassword_send": "New password is set. The used link is not valid anymore.",
-	"db_users_sendpasswordresetmail": "Send password mail",
-	"db_users_gotologin": "Go to login",
-	"db_users_createtitle": "Create User",
-	"db_users_edittitle": "Edit User",
-	"db_users_userdatatitle": "Edit user data",
-	"db_users_settingstitle": "Edit app settings",
-	"db_users_passwordmatch": "Password retype didn't match",
-	"db_users_name": "Name",
-	"db_users_mail": "Email",
-	"db_users_password": "Password",
-	"db_users_role": "Role",
-	"db_users_active": "active",
-	"db_users_beta": "Beta user",
-	"db_users_image": "Image",
-	"db_users_customers_id": "belongs to member",
 	"db_winecategories_name": "Name",
 	"db_winecategories_description": "Description",
 	"db_winecategories_image": "Image",
-	"db_tokens_createtitle": "Create Connection",
-	"db_tokens_edittitle": "Edit Connection",
-	"db_tokens_token": "Token",
-	"db_tokens_referer": "Domain",
-	"db_tokens_mode": "Mode",
-	"db_tokens_mode_dev": "Development (Host validation disabled)",
-	"db_tokens_mode_live": "Live (validate host)",
-	"db_tokens_mode_hint": "<b>Warning:</b> If connection is set to <b>Development</b>-Mode each server that has token and authid can access your winedata.",
 	"db_payments_createtitle": "Create payment receipe",
 	"db_payments_edittitle": "Create payment receipe",
 	"db_payments_type": "Type",
@@ -2916,17 +2970,6 @@
 		"settings_cashlink_registererror": "Registration failed, did you use the false mail address!",
 		"settings_smtp_changed": "SMTP-Settings updated!",
 		"settings_paypal_changed": "Paypal-Settings updated!",
-		"token_saved": "Connection saved!",
-		"user_created": "User saved!",
-		"user_changed": "User updated!",
-		"user_deleted": "User deleted!",
-		"user_deleteerror": "You cant delete a loggedin user!",
-		"user_image_needed": "You need to save the user before uploading an image!",
-		"user_image_uploaded": "Image uploaded!",
-		"user_image_deleted": "Image deleted!",
-		"user_image_uploaderror": "Error during imageprocessing!",
-		"user_lostpassword_send": "Email sent!",
-		"user_lostpassword_senderror": "Error sending email!",
 		"winery_created": "Winery created!",
 		"winery_changed": "Winery updated!",
 		"winery_deleted": "Winery deleted!",
@@ -2951,9 +2994,6 @@
 			"deleteerror": "Note could not deleted!"
 		}
 	},
-	"alerts": {
-		"token_copy": "To copy then token press Ctrl+C and Enter"
-	},
 	"hints": {
 		"wineries": {
 			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
@@ -2963,9 +3003,6 @@
 		},
 		"categories": {
 			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: min. 1500px width<br/>Fileformat: .png (exempted)"
-		},
-		"users": {
-			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
 		},
 		"customer": {
 			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: min. 1000px width<br/>Fileformat: .png (exempted)"
