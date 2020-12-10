@@ -197,32 +197,6 @@
 		}
 	},
 	"delete_image": "borrar imágen",
-	"wines_modal_delete": "Quieres borrar ese vino seguramente?",
-	"wineries_modal_delete": "Quieres borrar esa propiedad vinícola seguramente?",
-	"category_modal_delete": "Quieres borrar esa categoría seguramente?",
-	"customers_modal_delete": "Quieres borrar ese cliente seguramente?",
-	"address_modal_delete": "Quieres borrar esa direción seguramente?",
-	"orders_modal_cancel": "Quieres anular esa orden seguramente?",
-	"orders_modal_sent": "Quieres marcar ese orden como Enviado?",
-	"orders_position_delete": "Quieres borrar esa posición seguramente?",
-	"orders_position_update": "Quieres adaptar esa posición seguramente?",
-	"orders_modal_invoice_create": "Quieres generar la cuenta y el boletín de entrega para el envío?",
-	"orders_modal_onlyinvoice_create": "Generar la cuenta ahora?",
-	"orders_modal_onlydelivery_create": "Generar el boletín de entrega ahora?",
-	"orders_modal_creditadvice_create": "CUIDADO: Generar el abono ahora y cancelar orden?",
-	"order_wrong_quantity": "Por favor inserta un número más grande que 0 para definir la cantidad",
-	"orders_rebate_general": "descuento bruto",
-	"rebates": {
-		"actions": {
-			"add_rebate": "+ Añadir posición de descuento",
-			"add_position": "Añadir posición"
-		},
-		"title": "descuentos",
-		"methods": {
-			"general": "descuento bruto",
-			"percent": "descuento porcentual"
-		}
-	},
 	"token": {
 		"fields": {
 			"token": "Simbólico",
@@ -926,7 +900,7 @@
 			"lostpasswordSend": "Error al enviar el correo electrónico!"
 		}
 	},
-	"statistics": {
+	"statistic": {
 		"types": {
 			"active": "activo",
 			"admin": "administración",
@@ -1238,7 +1212,8 @@
 				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Senkung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
-			}
+			},
+			"delete": "Quieres borrar ese cliente seguramente?"
 		},
 		"toasts": {
 			"settingsSaved": "Su configuración ha sido guardada!"
@@ -1334,6 +1309,9 @@
 		},
 		"files": {
 			"title": "archivos y documentos de esa propiedad vinícola"
+		},
+		"dialogs": {
+			"delete": "Quieres borrar esa propiedad vinícola seguramente?"
 		},
 		"messages": {
 			"hints": {
@@ -1571,6 +1549,7 @@
 		},
 		"dialogs": {
 			"connectAutomation": "Desea transferir automáticamente el vino a la gama de su socio minorista?",
+			"delete": "Quieres borrar ese vino seguramente?",
 			"deleteConnection": "Realmente desea eliminar esta conexión con el socio comercial?"
 		},
 		"toasts": {
@@ -1636,6 +1615,9 @@
 				"asc": "ascendente",
 				"desc": "descendente"
 			}
+		},
+		"dialogs": {
+			"delete": "Quieres borrar esa categoría seguramente?"
 		}
 	},
 	"prices": {
@@ -1911,6 +1893,9 @@
 		"types": {
 			"invoice": "dirección de cuenta",
 			"shipping": "dirección de entrega"
+		},
+		"dialogs": {
+			"delete": "Quieres borrar esa direción seguramente?"
 		}
 	},
 	"contacts": {
@@ -1929,103 +1914,99 @@
 		}
 	},
 	"creditAdvice": {
+		"actions": {
+			"create": {
+				"main": "Cancelar",
+				"sub": "orden"
+			},
+			"print": {
+				"main": "Imprimir",
+				"sub": "aviso de crédito"
+			},
+			"show": {
+				"main": "Mostrar",
+				"sub": "aviso de crédito"
+			}
+		},
+		"dialogs": {
+			"create": "CUIDADO: Generar el abono ahora y cancelar orden?"
+		},
 		"toasts": {
 			"created": "Abono ha sido creado y la orden ha sido anulada!"
 		}
 	},
 	"deliveryNote": {
+		"actions": {
+			"create": {
+				"main": "Crear",
+				"sub": "nota de entrega"
+			},
+			"print": {
+				"main": "Imprimir",
+				"sub": "nota de entrega"
+			},
+			"show": {
+				"main": "Mostrar",
+				"sub": "nota de entrega"
+			}
+		},
+		"dialogs": {
+			"create": "Generar el boletín de entrega ahora?"
+		},
 		"toasts": {
 			"created": "Boletín de entrega ha sido creado!"
 		}
 	},
 	"invoice": {
+		"actions": {
+			"create": {
+				"main": "Crear",
+				"sub": "factura"
+			},
+			"print": {
+				"main": "Imprimir",
+				"sub": "factura"
+			},
+			"show": {
+				"main": "Mostrar",
+				"sub": "factura"
+			},
+			"createWithDeliveryNote": {
+				"main": "Crear factura",
+				"sub": "y albarán"
+			},
+			"createWithDeliveryNoteAndPayment": {
+				"main": "Crear factura y albarán,",
+				"sub": "contabilizar el pago en efectivo"
+			}
+		},
+		"dialogs": {
+			"create": "Generar la cuenta ahora?",
+			"createWithDeliveryNote": "Quieres generar la cuenta y el boletín de entrega para el envío?"
+		},
 		"toasts": {
 			"created": "Cuenta ha sido creada!"
 		}
 	},
 	"order": {
-		"documenttypes": {
-			"offer": "oferta",
-			"invoice": "cuenta",
-			"deliveryNote": "boletín de entrega",
-			"shipment": "etiquetas de paquetes",
-			"creditAdvice": "abono"
-		},
-		"paymenttypes": {
-			"cash": "pago en efectivo",
-			"invoice": "por cuenta",
-			"prepaid": "pago anticipado",
-			"debit": "cargo de SEPA",
-			"paypal": "Paypal"
-		},
-		"invoicetypes": {
-			"net": "cuenta neto",
-			"gross": "cuenta bruto"
-		},
-		"documents": {
-			"invoice": "cuentas",
-			"deliveryNote": "boletín de entrega",
-			"shipment": "etiqueta de paquetes",
-			"creditAdvice": "abonos"
-		},
-		"states": {
-			"new": "nuevo",
-			"need_payment": "pago pendiente",
-			"payed": "pago recibido",
-			"need_package": "en proceso de envío",
-			"in_delivery": "en entrega",
-			"closed": "terminado",
-			"cancelled": "anulado"
-		},
-		"views": {
-			"view": {
-				"tabs": {
-					"documents": "documentos",
-					"shipments": "envios"
-				}
-			},
-			"documents": {
-				"title": "documentos",
-				"empty": "No hay ningúna {referencia} para esa orden."
-			}
-		},
-		"action": {
-			"add_position": "+ agregar posición",
+		"actions": {
 			"create": {
-				"main": "nueva orden",
+				"main": "Nueva orden",
 				"sub": "digitar"
-			},
-			"search": {
-				"placeholder": "e.j. nombre, número de cliente, dirección"
-			},
-			"invoice_create": {
-				"main": "cuenta",
-				"create": "crear",
-				"print": "imprimir",
-				"show": "señalar"
-			},
-			"delivery_note_create": {
-				"main": "boletín de entrega",
-				"create": "crear",
-				"print": "imprimir",
-				"show": "señalar"
-			},
-			"cancel_order": {
-				"main": "orden",
-				"create": "cancelar"
-			},
-			"voucher_create": {
-				"main": "abono",
-				"create": "crear"
-			},
-			"shippingotheraddress": {
-				"main": "divergentes",
-				"sub": "boletín de entrega"
 			},
 			"export": {
 				"invoices": "Descargar facturas para el período seleccionado"
 			},
-			"touch": "marcar el pedido como leído"
+			"search": {
+				"placeholder": "e.j. nombre, número de cliente, dirección"
+			},
+			"touch": "Marcar el pedido como leído",
+
+			"addPosition": "+ Agregar posición",
+			"setDifferingShippingAddress": {
+				"main": "Divergentes",
+				"sub": "boletín de entrega"
+			}
 		},
 		"fieldsets": {
 			"billing": "direción de facturación",
@@ -2104,26 +2085,48 @@
 			"orderValue": "Valor del pedido",
 			"vatincluded": "incluso impuesto valor añadido {tax} ",
 			"vatexcluded": "más {tax} impuesto valor añadido.",
-			"yardsale": "venta de patio",
-			"payment_income": {
-				"main": "pago",
-				"sub": "llegado al destino"
+			"yardsale": "venta de patio"
+		},
+		"documenttypes": {
+			"offer": "oferta",
+			"invoice": "cuenta",
+			"deliveryNote": "boletín de entrega",
+			"shipment": "etiquetas de paquetes",
+			"creditAdvice": "abono"
+		},
+		"paymenttypes": {
+			"cash": "pago en efectivo",
+			"invoice": "por cuenta",
+			"prepaid": "pago anticipado",
+			"debit": "cargo de SEPA",
+			"paypal": "Paypal"
+		},
+		"invoicetypes": {
+			"net": "cuenta neto",
+			"gross": "cuenta bruto"
+		},
+		"documents": {
+			"invoice": "cuentas",
+			"deliveryNote": "boletín de entrega",
+			"shipment": "etiqueta de paquetes",
+			"creditAdvice": "abonos"
+		},
+		"states": {
+			"new": "nuevo",
+			"need_payment": "pago pendiente",
+			"payed": "pago recibido",
+			"need_package": "en proceso de envío",
+			"in_delivery": "en entrega",
+			"closed": "terminado",
+			"cancelled": "anulado"
+		},
+		"views": {
+			"documents": {
+				"title": "Documentos",
+				"empty": "No hay ningúna {referencia} para esa orden."
 			},
-			"booking_payment_income": {
-				"main": "entrada de pago",
-				"sub": "contabilizar"
-			},
-			"generate_invoice_and_delivering_note": {
-				"main": "generar cuenta y boletín de entrega",
-				"sub": "contabilizar pago en efectivo"
-			},
-			"invoice_and_delivering_note": {
-				"main": "cuenta y boletín de entrega",
-				"sub": "generar"
-			},
-			"order_to_dispatch": {
-				"main": "orden",
-				"sub": "poner en el envío"
+			"shipments": {
+				"title": "Envios"
 			}
 		},
 		"dialogs": {
@@ -2132,17 +2135,23 @@
 				"save": "solo digitar",
 				"withInvoice": "Digitar y generar cuenta",
 				"withDocuments": "Digitar y generar cuenta y boletín de entrega"
-			}
+			},
+			"cancel": "Quieres anular esa orden seguramente?",
+			"markSent": "Quieres marcar ese orden como Enviado?",
+			"deletePosition": "Quieres borrar esa posición seguramente?"
 		},
 		"toasts": {
 			"cancelled": "Orden ha sido anulada!",
 			"created": "Orden ha sido creada!",
-			"createerror": "La orden no ha podido ser digitada. Por favor verifica tus daots y inténtalo de nuevo.",
 			"deleted": "Orden ha sido borrada!",
 			"pricesChanged": "Los precios de uno o de más productos han sido cambiados. El nuevo precio total asciende {precio}.",
 			"sent": "Orden ha sido enviada!",
 			"updated": "Orden ha sido editada!",
 			"touched": "Orden marcado como leído!"
+		},
+		"errors": {
+			"create": "La orden no ha podido ser digitada. Por favor verifica tus daots y inténtalo de nuevo.",
+			"minItemQuantity": "Por favor inserta un número más grande que 0 para definir la cantidad"
 		}
 	},
 	"packaging": {
@@ -2230,6 +2239,20 @@
 			}
 		}
 	},
+	"payment": {
+		"actions": {
+			"create": {
+				"main": "Entrada de pago",
+				"sub": "contabilizar"
+			}
+		},
+		"toasts": {
+			"created": "Entrada de pago ha sido creada!"
+		},
+		"errors": {
+			"create": "Intento ha sido fallado!"
+		}
+	},
 	"shipment": {
 		"fields": {
 			"carrierTrackingNumber": "número de rastreo"
@@ -2249,6 +2272,10 @@
 			}
 		},
 		"actions": {
+			"create": {
+				"main": "Orden",
+				"sub": "poner en el envío"
+			},
 			"activate": "activar management de envío",
 			"deactivate": "desactivar management de envío"
 		},
@@ -2963,8 +2990,6 @@
 		"package_created": "Opciones de envío han sido creadas!",
 		"package_changed": "Las opciones de envío han sido actualizadas!",
 		"package_deleted": "Opciones de envío han sido borradas!",
-		"payment_created": "Entrada de pago ha sido creada!",
-		"payment_process_error": "Intento ha sido fallado!",
 		"settings_bank_changed": "Cuenta bancaria ha sido actualizada!",
 		"settings_cashlink_registered": "Cashlink ha sido registrado!",
 		"settings_cashlink_registererror": "Registración ha sido fallada, talvez el correo electrónico ya no está disponible más!",
