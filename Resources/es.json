@@ -12,6 +12,7 @@
 		"clients": "clientes",
 		"clients.statistics": "estadísticas",
 		"orders": "ordenes",
+		"orders.offers": "Ofertas",
 		"orders.statistics": "estadísticas",
 		"clientletters": "cartas de clientes",
 		"tokens": "conexiones",

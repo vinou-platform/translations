@@ -12,6 +12,7 @@
 		"clients": "Member",
 		"clients.statistics": "Statistics",
 		"orders": "Orders",
+		"orders.offers": "Offers",
 		"orders.statistics": "Statistics",
 		"clientletters": "Client letters",
 		"tokens": "Connections",
