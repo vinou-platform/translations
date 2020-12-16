@@ -1201,9 +1201,9 @@
 		},
 		"views": {
 			"covid19Notification": {
-				"title": "Ab dem 1. Juli gilt die MwSt.-Senkung!",
-				"text": "Hast Du bis dahin keine Auswahl zur MwSt.-Anpassung vorgenommen, stellen wir Deine Preise automatisch zu diesem Datum um. Als Grundlage verwenden wir hierfür Deine Bruttopreise.",
-				"footerText": "<a href=\"https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Schlaglichter/Konjunkturpaket/2020-06-03-konjunkturpaket-beschlossen.html\" title=\"Bundesfinanzministerium - Koalitionsausschuss beschließt Konjunkturpaket\" target=\"_blank\">Weitere Informationen zum Konjunkturpaket</a>",
+				"title": "Am 31. Dezember endet die MwSt.-Senkung!",
+				"text": "Hast Du bis dahin keine Auswahl zur MwSt.-Rückstellung vorgenommen, stellen wir Deine Preise automatisch zu diesem Datum um. Als Grundlage verwenden wir hierfür Deine Bruttopreise bzw. Deine bestehende Einstellung zur MwSt.-Senkung.",
+				"footerText": "<a href=\"https://www.bundesregierung.de/breg-de/aktuelles/faq-mehrwertsteuersenkung-1764364\" title=\"Die Mehrwertsteuer sinkt - wichtige Fragen und Antworten\" target=\"_blank\">Weitere Informationen zur Mehrwertsteuersenkung</a>",
 				"action": "Einstellung konfigurieren"
 			}
 		},
@@ -1220,10 +1220,10 @@
 			}
 		},
 		"dialogs": {
-			"covid19TaxrateChange": {
-				"title": "Mehrwertsteuersenkung",
-				"text": "Bitte nimm Dir kurz Zeit und gib an, wie Du Deine Preise aufgrund der MwSt.-Senkung anpassen möchtest. Welchen Preis möchtest Du beibehalten und für die Neuberechnung als Basis benutzen?",
-				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Senkung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
+			"covid19TaxrateReset": {
+				"title": "Ablauf der befristeten Mehrwertsteuersenkung",
+				"text": "Bitte nimm Dir kurz Zeit und gib an, wie Du Deine Preise aufgrund der MwSt.-Rückstellung anpassen möchtest. Welchen Preis möchtest Du beibehalten und für die Neuberechnung als Basis benutzen?",
+				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Rückstellung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
 			}
