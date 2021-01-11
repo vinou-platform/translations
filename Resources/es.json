@@ -2482,6 +2482,7 @@
 			"image": "Image",
 			"teaser": "Teaser (Preview-Text)",
 			"content": "Content",
+			"tags": "Etiquetas",
 			"link": "external link",
 			"visibility": "visibility",
 			"startdate": "start date",
