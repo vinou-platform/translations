@@ -2511,6 +2511,7 @@
 			"image": "Bild",
 			"teaser": "Teaser (Vorschau-Text)",
 			"content": "Inhalt",
+			"tags": "Tags",
 			"link": "Externer Link",
 			"visibility": "Sichtbarkeit",
 			"startdate": "Start-Datum",
