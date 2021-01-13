@@ -1333,7 +1333,7 @@
 				"sub": "anlegen"
 			},
 			"create": {
-				"title" : "Händler anlegen",
+				"title": "Händler anlegen",
 				"modaltitle": "Händler hinzufügen"
 			},
 			"edit": {
@@ -1341,7 +1341,7 @@
 			},
 			"search": {
 				"title": "Nach Händler suchen",
-				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
+				"placeholder": "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
 		"fieldSets": {
