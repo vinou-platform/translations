@@ -726,12 +726,8 @@
 	"template": {
 		"fields": {
 			"catalog": {
-				"label": "Modello per catalogo",
-				"placeholder": "Listino Vinou (impostazione predefinita)"
-			},
-			"contract": {
-				"label": "Modello di ordine",
-				"placeholder": "Vinou-Ordine (Standard)"
+				"label": "Modello di listino prezzi",
+				"placeholder": "Vinou-Listino prezzi (Standard)"
 			},
 			"creditAdvice": {
 				"label": "Modello di accredito",
@@ -753,9 +749,13 @@
 				"label": "Modello di offerta",
 				"placeholder": "Vinou-Offerta (Standard)"
 			},
+			"order": {
+				"label": "Modello di conferma dell'ordine",
+				"placeholder": "Vinou-Conferma dell'ordine (Standard)"
+			},
 			"text": {
-				"label": "Modello per PDF di testo",
-				"placeholder": "Documento di testo Vinou (standard)"
+				"label": "Modello di testo PDF",
+				"placeholder": "Vinou-Documento di testo (Standard)"
 			}
 		},
 		"views": {

@@ -729,10 +729,6 @@
 				"label": "Template for catalog",
 				"placeholder": "Vinou price list (Default)"
 			},
-			"contract": {
-				"label": "Template for contract",
-				"placeholder": "Vinou contract (Default)"
-			},
 			"creditAdvice": {
 				"label": "Template for credit advices",
 				"placeholder": "Vinou credit advice (Default)"
@@ -750,8 +746,12 @@
 				"placeholder": "Vinou invoice (Default)"
 			},
 			"offer": {
-				"label": "Template for enquiry",
+				"label": "Template for offer",
 				"placeholder": "Vinou offer (Default)"
+			},
+			"order": {
+				"label": "Template for order confirmation",
+				"placeholder": "Vinou order confirmation (Default)"
 			},
 			"text": {
 				"label": "Template for text documents",

@@ -729,10 +729,6 @@
 				"label": "Vorlage für PDF-Preislisten",
 				"placeholder": "Vinou-Preisliste (Standard)"
 			},
-			"contract": {
-				"label": "Vorlage für Auftrag",
-				"placeholder": "Vinou-Auftrag (Standard)"
-			},
 			"creditAdvice": {
 				"label": "Vorlage für Gutschrift",
 				"placeholder": "Vinou-Gutschrift (Standard)"
@@ -752,6 +748,10 @@
 			"offer": {
 				"label": "Vorlage für Angebot",
 				"placeholder": "Vinou-Angebot (Standard)"
+			},
+			"order": {
+				"label": "Vorlage für Auftragsbestätigung",
+				"placeholder": "Vinou-Auftragsbestätigung (Standard)"
 			},
 			"text": {
 				"label": "Vorlage für Text-PDFs",

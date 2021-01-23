@@ -726,36 +726,36 @@
 	"template": {
 		"fields": {
 			"catalog": {
-				"label": "Modelo para catalogo",
-				"placeholder": "Lista de precios de Vinou (estándar)"
-			},
-			"contract": {
-				"label": "Modelo para orden",
-				"placeholder": "Vinou-orden (estándar)"
+				"label": "Modelo para lista de precios",
+				"placeholder": "Vinou-Lista de precios (estándar)"
 			},
 			"creditAdvice": {
 				"label": "Modelos para abonos",
-				"placeholder": "Vinou-abono (estándar)"
+				"placeholder": "Vinou-Abono (estándar)"
 			},
 			"deliveryNote": {
 				"label": "Modelo para boletín de entrega",
-				"placeholder": "Vinou-boletín de entrega (estándar)"
+				"placeholder": "Vinou-Boletín de entrega (estándar)"
 			},
 			"expertise": {
 				"label": "Modelo para PDF-peritaje",
-				"placeholder": "Vinou-peritaje (estándar)"
+				"placeholder": "Vinou-Peritaje (estándar)"
 			},
 			"invoice": {
-				"label": "Modelo para cuenta",
-				"placeholder": "Vinou-cuenta (estándar)"
+				"label": "Modelo para factura",
+				"placeholder": "Vinou-Factura (estándar)"
 			},
 			"offer": {
 				"label": "Modelo para oferta",
-				"placeholder": "Vinou-oferta (estándar)"
+				"placeholder": "Vinou-Offerta (estándar)"
+			},
+			"order": {
+				"label": "Modelo para confirmación del pedido",
+				"placeholder": "Vinou-Confirmación del pedido (estándar)"
 			},
 			"text": {
 				"label": "Modelo para PDF de texto",
-				"placeholder": "Vinou-texto (estándar)"
+				"placeholder": "Vinou-Texto (estándar)"
 			}
 		},
 		"views": {
