@@ -271,6 +271,7 @@
 			},
 			"bottles": "Number of bottles",
 			"cellarWine": {
+				"assign": "Assign to other raw wine?",
 				"label": "Raw wine",
 				"placeholder": "Search raw wine"
 			},

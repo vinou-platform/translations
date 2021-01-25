@@ -271,6 +271,7 @@
 			},
 			"bottles": "Numero de botellas",
 			"cellarWine": {
+				"assign": "Asignar a otra cuenta de vino?",
 				"label": "cuenta de vino",
 				"placeholder": "buscar cuenta de vino"
 			},

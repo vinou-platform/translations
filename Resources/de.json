@@ -271,6 +271,7 @@
 			},
 			"bottles": "Anzahl Flaschen",
 			"cellarWine": {
+				"assign": "Umlagerung auf anderes Weinkonto?",
 				"label": "Weinkonto",
 				"placeholder": "Weinkonto suchen"
 			},
