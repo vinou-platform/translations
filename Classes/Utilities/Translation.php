@@ -148,7 +148,7 @@ class Translation {
 			$dict = $dict[$keys[$i++]] ?? null;
 
 		// Fallback for keys containing dots.
-		if (!$dict) {
+		if (!$dict && !is_array($key)) {
 			$dict = $o;
 			while ($dict) {
 				// Break on full match.
