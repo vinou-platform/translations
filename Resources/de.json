@@ -12,6 +12,7 @@
 		"clients": "Kunden",
 		"clients.statistics": "Statistiken",
 		"orders": "Bestellungen",
+		"orders.offers": "Angebote",
 		"orders.statistics": "Statistiken",
 		"clientletters": "Kundenbriefe",
 		"tokens": "Verknüpfungen",
@@ -104,12 +105,6 @@
 			"d": "Divers",
 			"fam": "Familie"
 		},
-		"itemTypes": {
-			"wine": "Weine",
-			"product": "Produkte",
-			"bundle": "Weinpakete",
-			"package": "Versandkosten"
-		},
 		"visibilities": {
 			"network": {
 				"label": "Vinou-Netzwerk",
@@ -133,6 +128,11 @@
 			}
 		},
 		"filters": {
+			"date": {
+				"from": "Von",
+				"to": "Bis",
+				"placeholder": "dd.MM.YYYY"
+			},
 			"sortBy": {
 				"label": "Ansicht sortieren nach: "
 			},
@@ -197,32 +197,6 @@
 		}
 	},
 	"delete_image": "Bild löschen",
-	"wines_modal_delete": "Möchtest Du diesen Wein wirklich löschen?",
-	"wineries_modal_delete": "Möchtest Du dieses Weingut wirklich löschen?",
-	"category_modal_delete": "Möchtest Du diese Kategorie wirklich löschen?",
-	"customers_modal_delete": "Möchtest Du diesen Kunden wirklich löschen?",
-	"address_modal_delete": "Möchtest Du diese Adresse wirklich löschen?",
-	"orders_modal_cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
-	"orders_modal_sent": "Möchtest Du die Bestellung als Versendet markieren?",
-	"orders_position_delete": "Möchtest Du diese Position wirklich löschen?",
-	"orders_position_update": "Möchtest Du diese Position wirklich anpassen?",
-	"orders_modal_invoice_create": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?",
-	"orders_modal_onlyinvoice_create": "Rechung jetzt erstellen?",
-	"orders_modal_onlydelivery_create": "Lieferschein jetzt erstellen?",
-	"orders_modal_creditadvice_create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?",
-	"order_wrong_quantity": "Bitte gib für die Anzahl eine Zahl größer als 0 ein",
-	"orders_rebate_general": "Pauschal-Rabatt (Brutto)",
-	"rebates": {
-		"actions": {
-			"add_rebate": "+ Rabattposition hinzufügen",
-			"add_position": "Position hinzufügen"
-		},
-		"title": "Rabatte",
-		"methods": {
-			"general": "Pauschal-Rabatt (Brutto)",
-			"percent": "Prozentualer Rabatt"
-		}
-	},
 	"token": {
 		"fields": {
 			"token": "Schnittstelle (Token)",
@@ -297,6 +271,7 @@
 			},
 			"bottles": "Anzahl Flaschen",
 			"cellarWine": {
+				"assign": "Umlagerung auf anderes Weinkonto?",
 				"label": "Weinkonto",
 				"placeholder": "Weinkonto suchen"
 			},
@@ -751,15 +726,15 @@
 	},
 	"template": {
 		"fields": {
-			"contract": {
-				"label": "Vorlage für Auftrag",
-				"placeholder": "Vinou-Auftrag (Standard)"
+			"catalog": {
+				"label": "Vorlage für PDF-Preislisten",
+				"placeholder": "Vinou-Preisliste (Standard)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "Vorlage für Gutschrift",
 				"placeholder": "Vinou-Gutschrift (Standard)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "Vorlage für Lieferschein",
 				"placeholder": "Vinou-Lieferschein (Standard)"
 			},
@@ -775,9 +750,9 @@
 				"label": "Vorlage für Angebot",
 				"placeholder": "Vinou-Angebot (Standard)"
 			},
-			"catalog": {
-				"label": "Vorlage für PDF-Preislisten",
-				"placeholder": "Vinou-Preisliste (Standard)"
+			"order": {
+				"label": "Vorlage für Auftragsbestätigung",
+				"placeholder": "Vinou-Auftragsbestätigung (Standard)"
 			},
 			"text": {
 				"label": "Vorlage für Text-PDFs",
@@ -926,7 +901,7 @@
 			"lostpasswordSend": "Mail senden fehlgeschlagen!"
 		}
 	},
-	"statistics": {
+	"statistic": {
 		"types": {
 			"active": "Aktiv",
 			"admin": "Admin",
@@ -952,14 +927,6 @@
 	"db_payments_gross": "Betrag",
 	"db_payments_invoice": "Rechnung",
 	"db_payments_order": "Bestellung",
-	"db_orders_createtitle": "Bestellung anlegen",
-	"db_orders_edittitle": "Bestellung bearbeiten",
-	"db_orders_viewtitle": "Bestellung ansehen",
-	"db_orders_payment_cash": "Barzahlung",
-	"db_orders_payment_prepaid": "Vorkasse",
-	"db_orders_payment_invoice": "Per Rechnung",
-	"db_orders_payment_paypal": "Paypal",
-	"db_orders_showEditor": "Erfasser anzeigen",
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
 	"db_cronjobs_description": "Beschreibung",
@@ -1085,8 +1052,6 @@
 	"cashlink_owner_zipcode": "PLZ",
 	"cashlink_owner_city": "Stadt",
 	"cashlink_owner_birthday": "Geburtsdatum",
-	"filter_date_start": "Von",
-	"filter_date_end": "Bis",
 	"view_beta_create": "ACHTUNG! Dieses Features befindet sich im Alpha Stadium, eventuell sind bestimmte Ansichten noch nicht verfügbar. Ansicht dennoch anlegen?",
 	"customer": {
 		"page": {
@@ -1238,7 +1203,8 @@
 				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Rückstellung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
-			}
+			},
+			"delete": "Möchtest Du diesen Kunden wirklich löschen?"
 		},
 		"toasts": {
 			"settingsSaved": "Deine Einstellungen wurden gespeichert!"
@@ -1335,6 +1301,9 @@
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weingut"
 		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Weingut wirklich löschen?"
+		},
 		"messages": {
 			"hints": {
 				"loadingwines": "Weine werden geladen",
@@ -1354,7 +1323,7 @@
 				"sub": "anlegen"
 			},
 			"create": {
-				"title" : "Händler anlegen",
+				"title": "Händler anlegen",
 				"modaltitle": "Händler hinzufügen"
 			},
 			"edit": {
@@ -1362,7 +1331,7 @@
 			},
 			"search": {
 				"title": "Nach Händler suchen",
-				"placeholder" : "z.B. Firmenname, Ansprechpartner oder Anschrift"
+				"placeholder": "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
 		"fieldSets": {
@@ -1378,7 +1347,7 @@
 			"country": "Land",
 			"taxid": "USt-ID",
 			"phone": "Telefon",
- 			"fax": "Fax",
+			"fax": "Fax",
 			"mail": "E-Mail",
 			"www": "Internetseite"
 		},
@@ -1405,6 +1374,10 @@
 		}
 	},
 	"wine": {
+		"name": {
+			"singular": "Wein",
+			"plural": "Weine"
+		},
 		"actions": {
 			"create": {
 				"main": "Neuen Wein",
@@ -1525,10 +1498,10 @@
 		},
 		"cap_types": {
 			"screw": "Schraubverschluss",
-			"cork":	"Naturkorken",
+			"cork": "Naturkorken",
 			"crownCap": "Kronkorken",
 			"plastic": "Kunststoffkorken",
-			"glas":	"Glasverschluss"
+			"glas": "Glasverschluss"
 		},
 		"gallery": {
 			"sortby": {
@@ -1571,6 +1544,7 @@
 		},
 		"dialogs": {
 			"connectAutomation": "Willst Du den Wein automatisiert in das Sortiment des Handelspartners übertragen?",
+			"delete": "Möchtest Du diesen Wein wirklich löschen?",
 			"deleteConnection": "Willst Du diese Verbindung zum Handelspartner wirklich löschen?"
 		},
 		"toasts": {
@@ -1636,6 +1610,9 @@
 				"asc": "Aufsteigend",
 				"desc": "Absteigend"
 			}
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Kategorie wirklich löschen?"
 		}
 	},
 	"prices": {
@@ -1658,6 +1635,10 @@
 		}
 	},
 	"product": {
+		"name": {
+			"singular": "Produkt",
+			"plural": "Produkte"
+		},
 		"actions": {
 			"create": {
 				"main": "Neues Produkt",
@@ -1861,7 +1842,8 @@
 			"other": "Sonstige Firma"
 		},
 		"hints": {
-			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"numberAutoGenerate": "Leer lassen für automatische Generierung"
 		},
 		"dialogs": {
 			"delete": "Willst Du den Kunden wirklich löschen?"
@@ -1911,6 +1893,9 @@
 		"types": {
 			"invoice": "Rechnungsadresse",
 			"shipping": "Lieferadresse"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Adresse wirklich löschen?"
 		}
 	},
 	"contacts": {
@@ -1929,103 +1914,277 @@
 		}
 	},
 	"creditAdvice": {
+		"name": {
+			"singular": "Stornorechnung",
+			"plural": "Stornorechnungen"
+		},
+		"actions": {
+			"create": {
+				"main": "Gutschrift erstellen,",
+				"sub": "Bestellung stornieren"
+			},
+			"download": {
+				"main": "Stornorechnung",
+				"sub": "herunterladen"
+			},
+			"print": {
+				"main": "Stornorechnung",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Stornorechnung",
+				"sub": "anzeigen"
+			}
+		},
+		"fields": {
+			"number": "Stornonr."
+		},
+		"dialogs": {
+			"create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?"
+		},
 		"toasts": {
 			"created": "Gutschrift erstellt und Bestellung storniert!"
 		}
 	},
 	"deliveryNote": {
+		"name": {
+			"singular": "Lieferschein",
+			"plural": "Lieferscheine"
+		},
+		"actions": {
+			"create": {
+				"main": "Lieferschein",
+				"sub": "erzeugen"
+			},
+			"download": {
+				"main": "Lieferschein",
+				"sub": "herunterladen"
+			},
+			"print": {
+				"main": "Lieferschein",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Lieferschein",
+				"sub": "anzeigen"
+			}
+		},
+		"fields": {
+			"number": "Lieferscheinnr.",
+			"remark": "Liefernotiz"
+		},
+		"dialogs": {
+			"create": "Lieferschein jetzt erstellen?"
+		},
 		"toasts": {
 			"created": "Lieferschein erstellt!"
 		}
 	},
 	"invoice": {
+		"name": {
+			"singular": "Rechnung",
+			"plural": "Rechnungen"
+		},
+		"actions": {
+			"create": {
+				"main": "Rechnung",
+				"sub": "erzeugen"
+			},
+			"createWithDeliveryNote": {
+				"main": "Rechnung und Lieferschein",
+				"sub": "generieren"
+			},
+			"createWithDeliveryNoteAndPayment": {
+				"main": "Rechnung und Lieferschein generieren,",
+				"sub": "Barzahlung buchen"
+			},
+			"download": {
+				"main": "Rechnung",
+				"sub": "herunterladen"
+			},
+			"print": {
+				"main": "Rechnung",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Rechnung",
+				"sub": "anzeigen"
+			}
+		},
+		"fields": {
+			"number": "Rechnungsnr.",
+			"remark": "Rechnungsnotiz"
+		},
+		"dialogs": {
+			"create": "Rechung jetzt erstellen?",
+			"createWithDeliveryNote": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?"
+		},
 		"toasts": {
 			"created": "Rechnung erstellt!"
 		}
 	},
-	"order": {
-		"documenttypes": {
-			"invoice": "Rechnung",
-			"delivery": "Lieferschein",
-			"shipment": "Packetaufkleber",
-			"creditadvice": "Gutschrift",
-			"offer": "Angebot"
+	"offer": {
+		"name": {
+			"singular": "Angebot",
+			"plural": "Angebote"
 		},
-		"paymenttypes": {
-			"cash": "Barzahlung",
-			"invoice": "Per Rechnung",
-			"prepaid": "Vorkasse",
-			"debit": "SEPA-Lastschrift",
-			"paypal": "Paypal"
-		},
-		"invoicetypes": {
-			"net": "Netto-Rechnung",
-			"gross": "Brutto-Rechnung"
-		},
-		"documents": {
-			"invoice": "Rechnungen",
-			"delivery": "Lieferscheine",
-			"shipment": "Packetaufkleber",
-			"creditadvice": "Gutschriften"
-		},
-		"states": {
-			"new": "Eingegangen",
-			"need_payment": "Zahlung erwartet",
-			"payed": "Zahlung eingegangen",
-			"need_package": "In Versandvorbereitung",
-			"in_delivery": "In Auslieferung",
-			"closed": "Abgeschlossen",
-			"cancelled": "Storniert"
-		},
-		"views": {
-			"view": {
-				"tabs": {
-					"documents": "Dokumente",
-					"shipments": "Sendungen"
-				}
+		"actions": {
+			"accept": {
+				"main": "Angebot annehmen,",
+				"sub": "Bestellung erfassen"
 			},
-			"documents": {
-				"title": "Dokumente",
-				"empty": "Es liegen keine {label} zu dieser Bestellung vor."
+			"acceptAgain": {
+				"main": "Angebot erneut annehmen,",
+				"sub": "weitere Bestellung erfassen"
+			},
+			"cancel": {
+				"main": "Angebot",
+				"sub": "stornieren"
+			},
+			"create": {
+				"main": "Neues Angebot",
+				"sub": "erstellen"
+			},
+			"decline": {
+				"main": "Angebot",
+				"sub": "ablehnen"
+			},
+			"download": {
+				"main": "Angebot",
+				"sub": "herunterladen"
+			},
+			"duplicate": {
+				"main": "Angebot",
+				"sub": "duplizieren"
+			},
+			"edit": {
+				"main": "Angebot",
+				"sub": "bearbeiten"
+			},
+			"export": "Angebote für ausgewählten Zeitraum herunterladen",
+			"print": {
+				"main": "Angebot",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Angebot",
+				"sub": "anzeigen"
+			},
+
+			"goto": {
+				"summary": "Weiter zur Angebotsübersicht"
 			}
 		},
-		"action": {
-			"add_position": "+ Position hinzufügen",
+		"fieldsets": {
+			"billing": "Rechnungsadresse",
+			"delivery": "Versand",
+			"payment": "Zahlungsmodalitäten",
+			"positions": "Positionen",
+			"summary": "Angebotsübersicht"
+		},
+		"fields": {
+			"client": "Kunde",
+			"crstamp": "Erstellungsdatum",
+			"number": "Angebotsnr.",
+			"offerPeriod": {
+				"label": "Gültigkeitszeitraum",
+				"placeholder": "dd.MM.YYYY"
+			},
+			"offerValue": "Angebotswert"
+		},
+		"states": {
+			"new": "Neu",
+			"accepted": "Angenommen",
+			"cancelled": "Storniert",
+			"declined": "Abgelehnt"
+		},
+		"views": {
+			"create": {
+				"title": "Angebot erstellen"
+			},
+			"timeline": {
+				"activated": "Angebot ist offen und kann bis zum Ablauf der Angebotsfrist angenommen werden",
+				"created": "Angebot erstellt",
+				"notActivatedYet": "Angebotszeitraum hat noch nicht begonnen",
+				"orderCreated": "Angebot angenommen, Bestellung erfasst",
+				"orderNotCreatedYet": "Angebot wurde noch nicht angenommen",
+				"declined": "Angebot abgelehnt",
+				"cancelled": "Angebot storniert"
+			},
+			"documents": {
+				"title": "Dokumente"
+			}
+		},
+		"filters": {
+			"search": {
+				"placeholder": "z.B.: Name, Kundennummer, Adresse"
+			},
+			"showEditor": "Erfasser anzeigen"
+		},
+		"dialogs": {
+			"cancel": "Möchtest Du dieses Angebot wirklich zurückziehen?",
+			"decline": "Möchtest Du dieses Angebot wirklich ablehnen?"
+		},
+		"toasts": {
+			"cancelled": "Angebot zurückgezogen!",
+			"created": "Angebot erstellt!",
+			"declined": "Angebot abgelehnt!",
+			"updated": "Angebot geändert!"
+		},
+		"errors": {
+			"create": "Angebot konnte nicht erstellt werden. Bitte prüfe Deine Angaben und versuche es erneut."
+		}
+	},
+	"order": {
+		"name": {
+			"singular": "Auftragsbestätigung",
+			"plural": "Auftragsbestätigungen"
+		},
+		"actions": {
+			"cancel": {
+				"main": "Bestellung",
+				"sub": "stornieren"
+			},
 			"create": {
 				"main": "Neue Bestellung",
 				"sub": "erfassen"
 			},
-			"search": {
-				"placeholder": "z.B. Name, Kundennummer, Adresse"
+			"download": {
+				"main": "Auftragsbestätigung",
+				"sub": "herunterladen"
 			},
-			"invoice_create": {
-				"main": "Rechnung",
-				"create": "erzeugen",
-				"print": "drucken",
-				"show": "anzeigen"
-			},
-			"delivery_note_create": {
-				"main": "Lieferschein",
-				"create": "erzeugen",
-				"print": "drucken",
-				"show": "anzeigen"
-			},
-			"cancel_order": {
+			"duplicate": {
 				"main": "Bestellung",
-				"create": "abbrechen"
+				"sub": "duplizieren"
 			},
-			"voucher_create": {
-				"main": "Gutschrift",
-				"create": "erzeugen"
-			},
-			"shippingotheraddress": {
-				"main": "Abweichende",
-				"sub": "Lieferadresse"
+			"edit": {
+				"main": "Bestellung",
+				"sub": "bearbeiten"
 			},
 			"export": {
 				"invoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
 			},
-			"touch": "Bestellung als gelesen markieren"
+			"print": {
+				"main": "Auftragsbestätigung",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Bestellung",
+				"sub": "anzeigen"
+			},
+			"touch": "Bestellung als gelesen markieren",
+			
+			"addPosition": "+ Position hinzufügen",
+			"goto": {
+				"delivery": "Weiter zum Versand",
+				"payment": "Weiter zu den Zahlungsmodalitäten",
+				"positions": "Weiter zu den Positionen",
+				"summary": "Weiter zur Bestellübersicht"
+			},
+			"setDifferingShippingAddress": {
+				"main": "Abweichende",
+				"sub": "Lieferadresse"
+			}
 		},
 		"fieldsets": {
 			"billing": "Rechnungsadresse",
@@ -2044,11 +2203,10 @@
 			"clientName": "Kundenname",
 			"clientType": "Kundentyp",
 			"createdBy": "Erfasst von",
+			"crstamp": "Bestelleingang",
 			"delivery_note_created": "Lieferschein erstellt",
 			"delivery_note_not_yet_created": "Lieferschein wurde noch nicht erstellt",
 			"deliveryaddress": "Lieferadresse",
-			"deliveryNoteNumber": "Lieferscheinnr.",
-			"deliveryNoteRemark": "Liefernotiz",
 			"documents": "Dokumente",
 			"excl_vat": "zzgl. MwSt.",
 			"filter_orders": "Bestellung filtern",
@@ -2056,23 +2214,15 @@
 			"inclvat": "Enthält MwSt.",
 			"invoice_created": "Rechnung erstellt",
 			"invoice_not_yet_created": "Rechnung wurde noch nicht erstellt",
-			"invoiceNumber": "Rechnungsnr.",
-			"invoiceRemark": "Rechnungsnotiz",
 			"itemsum": "Summe aller Positionen",
 			"loading_positions": "Positionen werden geladen ...",
 			"netto_sum": "Gesamtsumme Netto",
-			"next_delivery": "Weiter zum Versand",
-			"next_delivering_addr": "Weiter zur Lieferadresse",
-			"next_payment": "Weiter zu den Zahlungsmodalitäten",
-			"next_positions": "Weiter zu den Positionen",
-			"next_summary": "Weiter zur Bestellübersicht",
 			"no_payment_income_yet": "Zahlung noch nicht eingegangen",
 			"nocustomerselected": "Für die Erstellung der Rechnung wird eine Kundenadresse benötigt. Bitte wähle zuerst einen Kunden aus.",
 			"note": "Anmerkungen",
-			"number": "Bestellnummer",
+			"number": "Bestellnr.",
 			"order_dispatched": "Bestellung versendet",
 			"order_not_yet_dispatched": "Bestellung noch nicht versendet",
-			"order_date": "Bestelleingang",
 			"order_cancelled_date": "Bestellung storniert",
 			"package": "Verpackung und Versand",
 			"parcel": "Paketsendung",
@@ -2101,29 +2251,48 @@
 			"taxfree": "Umsatzsteuerbefreit",
 			"taxrateNetTax": "{taxrate}% von {value}",
 			"taxrateGrossTax": "{value} zu {taxrate}%",
+			"orderValue": "Bestellwert",
 			"vatincluded": "inkl. {tax} MwSt.",
 			"vatexcluded": "zzgl. {tax} MwSt.",
-			"yardsale": "Hofverkauf",
-			"payment_income": {
-				"main": "Zahlung",
-				"sub": "eingegangen"
+			"yardsale": "Hofverkauf"
+		},
+		"paymenttypes": {
+			"cash": "Barzahlung",
+			"invoice": "Per Rechnung",
+			"prepaid": "Vorkasse",
+			"debit": "SEPA-Lastschrift",
+			"paypal": "Paypal"
+		},
+		"invoicetypes": {
+			"net": "Netto-Rechnung",
+			"gross": "Brutto-Rechnung"
+		},
+		"states": {
+			"new": "Eingegangen",
+			"need_payment": "Zahlung erwartet",
+			"payed": "Zahlung eingegangen",
+			"need_package": "In Versandvorbereitung",
+			"in_delivery": "In Auslieferung",
+			"closed": "Abgeschlossen",
+			"cancelled": "Storniert"
+		},
+		"views": {
+			"create": {
+				"title": "Bestellung anlegen"
 			},
-			"booking_payment_income": {
-				"main": "Zahlungseingang",
-				"sub": "buchen"
+			"documents": {
+				"title": "Dokumente",
+				"empty": "Es liegen keine {label} zu dieser Bestellung vor."
 			},
-			"generate_invoice_and_delivering_note": {
-				"main": "Rechnung und Lieferschein generieren",
-				"sub": "Barzahlung buchen"
-			},
-			"invoice_and_delivering_note": {
-				"main": "Rechnung und Lieferschein",
-				"sub": "generieren"
-			},
-			"order_to_dispatch": {
-				"main": "Bestellung",
-				"sub": "in den Versand geben"
+			"shipments": {
+				"title": "Sendungen"
 			}
+		},
+		"filters": {
+			"search": {
+				"placeholder": "z.B. Name, Kundennummer, Adresse"
+			},
+			"showEditor": "Erfasser anzeigen"
 		},
 		"dialogs": {
 			"create": {
@@ -2131,17 +2300,30 @@
 				"save": "Nur erfassen",
 				"withInvoice": "Erfassen und Rechnung generieren",
 				"withDocuments": "Erfassen und Rechnung und Lieferschein generieren"
-			}
+			},
+			"cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
+			"markSent": "Möchtest Du die Bestellung als Versendet markieren?",
+			"deletePosition": "Möchtest Du diese Position wirklich löschen?"
 		},
 		"toasts": {
 			"cancelled": "Bestellung storniert!",
 			"created": "Bestellung angelegt!",
-			"createerror": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut.",
 			"deleted": "Bestellung gelöscht!",
 			"pricesChanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
 			"sent": "Bestellung versendet!",
 			"updated": "Bestellung geändert!",
-			"touched": "Bestellung als gelesen markiert!"
+			"touched": "Bestellung als gelesen markiert!",
+			"changeError": "Beim Speichern der Daten ist ein Fehler aufgetreten!"
+		},
+		"errors": {
+			"create": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut.",
+			"minItemQuantity": "Bitte gib für die Anzahl eine Zahl größer als 0 ein"
+		}
+	},
+	"package": {
+		"name": {
+			"singular": "Verpackung und Versand",
+			"plural": "Verpackung und Versand"
 		}
 	},
 	"packaging": {
@@ -2229,7 +2411,25 @@
 			}
 		}
 	},
+	"payment": {
+		"actions": {
+			"create": {
+				"main": "Zahlungseingang",
+				"sub": "buchen"
+			}
+		},
+		"toasts": {
+			"created": "Zahlungseingang angelegt!"
+		},
+		"errors": {
+			"create": "Versuch fehlgeschlagen!"
+		}
+	},
 	"shipment": {
+		"name": {
+			"singular": "Versandaufkleber",
+			"plural": "Versandaufkleber"
+		},
 		"fields": {
 			"carrierTrackingNumber": "Sendungsverfolgungsnr."
 		},
@@ -2249,7 +2449,27 @@
 		},
 		"actions": {
 			"activate": "Versandmanagement aktivieren",
-			"deactivate": "Versandmanagement deaktivieren"
+			"create": {
+				"main": "Bestellung",
+				"sub": "in den Versand geben"
+			},
+			"deactivate": "Versandmanagement deaktivieren",
+			"download": {
+				"main": "Paketaufkleber",
+				"sub": "herunterladen"
+			},
+			"print": {
+				"main": "Paketaufkleber",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Paketaufkleber",
+				"sub": "anzeigen"
+			},
+			"track": {
+				"main": "Sendungsverfolgung",
+				"sub": "öffnen"
+			}
 		},
 		"dialogs": {
 			"activate": {
@@ -2434,7 +2654,7 @@
 			"fileuploadedfailed": "Datei-Upload fehlgeschlagen!",
 			"importanalysesuccess": "Datei-Analyse erfolgreich",
 			"importanalysefailed": "Datei-Analyse fehlgeschlagen!",
-			"importnextpackage": "Nächstes Import-Packet gestartet",
+			"importnextpackage": "Nächstes Import-Paket gestartet",
 			"importexecutedsuccess": "Import Ausführung erfolgreich!",
 			"importexecutedfailed": "Import Ausführung fehlgeschlagen!"
 		}
@@ -2559,6 +2779,10 @@
 		}
 	},
 	"bundle": {
+		"name": {
+			"singular": "Weinpaket",
+			"plural": "Weinpakete"
+		},
 		"actions": {
 			"create": {
 				"modaltitle": "Weinpaket anlegen",
@@ -2950,21 +3174,6 @@
 		"merchant_image_uploaded": "Bild hochgeladen!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
 		"merchant_image_deleted": "Bild gelöscht!",
-		"order_position_add": "Position hinzugefügt!",
-		"order_position_changed": "Position aktualisiert!",
-		"order_position_deleted": "Position gelöscht!",
-		"order_billing_as_delivery": "Rechnungsadresse als Lieferadresse gespeichert!",
-		"order_billingaddress_create": "Adresse angelegt!",
-		"order_noupdate": "Kein Update notwendig!",
-		"order_deliveryaddress_create": "Lieferadresse angelegt und Bestellung aktualisiert!",
-		"order_payment_changed": "Zahlungsart aktualisiert!",
-		"order_cashlink_send": "Cashlink versendet!",
-		"order_note_saved": "Anmerkung aktualisiert!",
-		"package_created": "Versandoption angelegt!",
-		"package_changed": "Versandoption aktualisiert!",
-		"package_deleted": "Versandoption gelöscht!",
-		"payment_created": "Zahlungseingang angelegt!",
-		"payment_process_error": "Versuch fehlgeschlagen!",
 		"settings_bank_changed": "Bankverbindung aktualisiert!",
 		"settings_cashlink_registered": "Cashlink registriert!",
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
@@ -3009,11 +3218,6 @@
 		},
 		"clients": {
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1000px Breite<br/>Datei-Format: .png (freigestellt)"
-		}
-	},
-	"buttons": {
-		"customer": {
-			"activate": "Jetzt aktivieren"
 		}
 	},
 	"allergens": {
@@ -3413,7 +3617,7 @@
 			"name": "Schönburger"
 		},
 		"111": {
-			"name": "Schwarzriesling (Müllerrebe)"
+			"name": "Schwarzriesling"
 		},
 		"112": {
 			"name": "Serena"
@@ -4911,6 +5115,9 @@
 		},
 		"613": {
 			"name": "Trousseau"
+		},
+		"614": {
+			"name": "Rosa Chardonnay"
 		}
 	},
 	"tastes": {
@@ -5399,6 +5606,7 @@
 			"doc": "Denominazione di origine controllata (DOC)",
 			"doca": "Denominazione di origine controllata (DOCa)",
 			"docg": "Denominazione di origine controllata e garantita (DOCG)",
+			"igp": "Indicazione geografica protetta (IGP)",
 			"specialquality": "Vino dolce naturale",
 			"superior": "Vino tipico",
 			"table": "Vino da tavola"

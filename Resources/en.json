@@ -12,6 +12,7 @@
 		"clients": "Member",
 		"clients.statistics": "Statistics",
 		"orders": "Orders",
+		"orders.offers": "Offers",
 		"orders.statistics": "Statistics",
 		"clientletters": "Client letters",
 		"tokens": "Connections",
@@ -104,12 +105,6 @@
 			"d": "Divers",
 			"fam": "Family"
 		},
-		"itemTypes": {
-			"wine": "Wines",
-			"product": "Products",
-			"bundle": "Bundles",
-			"package": "Shipping"
-		},
 		"visibilities": {
 			"network": {
 				"label": "Vinou-Network",
@@ -133,6 +128,11 @@
 			}
 		},
 		"filters": {
+			"date": {
+				"from": "Start",
+				"to": "End",
+				"placeholder": "dd.MM.YYYY"
+			},
 			"sortBy": {
 				"label": "Sort view by: "
 			},
@@ -197,32 +197,6 @@
 		}
 	},
 	"delete_image": "Delete Image",
-	"wines_modal_delete": "Do you really want to delete this wine?",
-	"wineries_modal_delete": "Do you really want to delete the selected winery?",
-	"category_modal_delete": "Do you really want to delete the selected category?",
-	"customers_modal_delete": "Do you really want to delete this customer?",
-	"address_modal_delete": "Do you really want to delete this address?",
-	"orders_modal_cancel": "Do you really want to cancel this order?",
-	"orders_modal_sent": "Do you really want to set this order as dispatched?",
-	"orders_position_delete": "Do you really want to delete this item?",
-	"orders_position_update": "Do you really want to update this item?",
-	"orders_modal_invoice_create": "Do you really want to create invoice and a delivery note to sent this order?",
-	"orders_modal_onlyinvoice_create": "Create invoice now?",
-	"orders_modal_onlydelivery_create": "Create delivery note now?",
-	"orders_modal_creditadvice_create": "Warning: Do you really want to cancel the selected order and create a credit voucher?",
-	"order_wrong_quantity": "Please enter an amount greater than 0",
-	"orders_rebate_general": "Default rebate (gross)",
-	"rebates": {
-		"actions": {
-			"add_rebate": "+ Add rebate",
-			"add_position": "Add position"
-		},
-		"title": "Rebates",
-		"methods": {
-			"general": "General rebate (gross)",
-			"percent": "Percental rebate"
-		}
-	},
 	"token": {
 		"fields": {
 			"token": "Token",
@@ -297,6 +271,7 @@
 			},
 			"bottles": "Number of bottles",
 			"cellarWine": {
+				"assign": "Assign to other raw wine?",
 				"label": "Raw wine",
 				"placeholder": "Search raw wine"
 			},
@@ -751,20 +726,20 @@
 	},
 	"template": {
 		"fields": {
-			"contract": {
-				"label": "Template for contract",
-				"placeholder": "Vinou contract (Default)"
+			"catalog": {
+				"label": "Template for catalog",
+				"placeholder": "Vinou price list (Default)"
 			},
-			"creditadvice": {
+			"creditAdvice": {
 				"label": "Template for credit advices",
 				"placeholder": "Vinou credit advice (Default)"
 			},
-			"delivery": {
+			"deliveryNote": {
 				"label": "Template for delivery note",
 				"placeholder": "Vinou delivery note (Default)"
 			},
 			"expertise": {
-				"label": "Template for Wine-Factsheet",
+				"label": "Template for wine-factsheet",
 				"placeholder": "Vinou expertise (Default)"
 			},
 			"invoice": {
@@ -772,12 +747,12 @@
 				"placeholder": "Vinou invoice (Default)"
 			},
 			"offer": {
-				"label": "Template for enquiry",
+				"label": "Template for offer",
 				"placeholder": "Vinou offer (Default)"
 			},
-			"catalog": {
-				"label": "Template for catalog",
-				"placeholder": "Vinou price list (Default)"
+			"order": {
+				"label": "Template for order confirmation",
+				"placeholder": "Vinou order confirmation (Default)"
 			},
 			"text": {
 				"label": "Template for text documents",
@@ -926,7 +901,7 @@
 			"lostpasswordSend": "Error sending email!"
 		}
 	},
-	"statistics": {
+	"statistic": {
 		"types": {
 			"active": "Active",
 			"admin": "Admin",
@@ -952,14 +927,6 @@
 	"db_payments_gross": "Amount",
 	"db_payments_invoice": "Invoice",
 	"db_payments_order": "Order",
-	"db_orders_createtitle": "Create Order",
-	"db_orders_edittitle": "Edit Order",
-	"db_orders_viewtitle": "View Orderdetails",
-	"db_orders_payment_cash": "Cash",
-	"db_orders_payment_prepaid": "Prepaid",
-	"db_orders_payment_invoice": "Invoice",
-	"db_orders_payment_paypal": "Paypal",
-	"db_orders_showEditor": "Show creator",
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
 	"db_cronjobs_description": "Description",
@@ -1085,8 +1052,6 @@
 	"cashlink_owner_zipcode": "Zip",
 	"cashlink_owner_city": "City",
 	"cashlink_owner_birthday": "Birthday",
-	"filter_date_start": "Start",
-	"filter_date_end": "End",
 	"view_beta_create": "Caution! This feature is currently alpha some views might not be available. Still create view?",
 	"customer": {
 		"page": {
@@ -1238,7 +1203,8 @@
 				"footerText": "Solltest Du Fragen dazu haben, wende dich direkt an uns:<br/> E-Mail: <a href=\"mailto:kontakt@vinou.de?subject=MwSt.-Rückstellung\">kontakt@vinou.de</a>, Tel: <a href=\"tel:+4961316245390\">+49 6131 6245390</a>",
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
-			}
+			},
+			"delete": "Do you really want to delete this customer?"
 		},
 		"toasts": {
 			"settingsSaved": "Your settings have been saved!"
@@ -1335,6 +1301,9 @@
 		"files": {
 			"title": "Files regarding this winery"
 		},
+		"dialogs": {
+			"delete": "Do you really want to delete the selected winery?"
+		},
 		"messages": {
 			"hints": {
 				"loadingwines": "loading wines",
@@ -1405,6 +1374,10 @@
 		}
 	},
 	"wine": {
+		"name": {
+			"singular": "Wine",
+			"plural": "Wines"
+		},
 		"actions": {
 			"create": {
 				"main": "Add wine",
@@ -1571,6 +1544,7 @@
 		},
 		"dialogs": {
 			"connectAutomation": "Do you want to automatically transfer the wine to the range of your retail partner?",
+			"delete": "Do you really want to delete this wine?",
 			"deleteConnection": "Do you really want to delete this connection to the trading partner?"
 		},
 		"toasts": {
@@ -1636,6 +1610,9 @@
 				"asc": "Ascending",
 				"desc": "Descending"
 			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete the selected category?"
 		}
 	},
 	"prices": {
@@ -1658,6 +1635,10 @@
 		}
 	},
 	"product": {
+		"name": {
+			"singular": "Product",
+			"plural": "Products"
+		},
 		"actions": {
 			"create": {
 				"main": "Add Product",
@@ -1861,7 +1842,8 @@
 			"other": "Other company"
 		},
 		"hints": {
-			"imageSize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
+			"imageSize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
+			"numberAutoGenerate": "Leave blank for automatic generation"
 		},
 		"dialogs": {
 			"delete": "Would you really delete this client?"
@@ -1911,6 +1893,9 @@
 		"types": {
 			"invoice": "Invoice address",
 			"shipping": "Shipping address"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this address?"
 		}
 	},
 	"contacts": {
@@ -1929,103 +1914,277 @@
 		}
 	},
 	"creditAdvice": {
+		"name": {
+			"singular": "Credit advice",
+			"plural": "Credit advices"
+		},
+		"actions": {
+			"create": {
+				"main": "Cancel order",
+				"sub": " "
+			},
+			"download": {
+				"main": "Download",
+				"sub": "credit advice"
+			},
+			"print": {
+				"main": "Print",
+				"sub": "credit advice"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "credit advice"
+			}
+		},
+		"fields": {
+			"number": "Cancellation no."
+		},
+		"dialogs": {
+			"create": "Warning: Do you really want to cancel the selected order and create a credit voucher?"
+		},
 		"toasts": {
 			"created": "Credit advice created and order cancelled!"
 		}
 	},
 	"deliveryNote": {
+		"name": {
+			"singular": "Delivery note",
+			"plural": "Delivery notes"
+		},
+		"actions": {
+			"create": {
+				"main": "Create",
+				"sub": "delivery note"
+			},
+			"download": {
+				"main": "Download",
+				"sub": "delivery note"
+			},
+			"print": {
+				"main": "Print",
+				"sub": "delivery note"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "delivery note"
+			}
+		},
+		"fields": {
+			"number": "Delivery note no.",
+			"remark": "Delivery note remark"
+		},
+		"dialogs": {
+			"create": "Create delivery note now?"
+		},
 		"toasts": {
 			"created": "Delivery note generated!"
 		}
 	},
 	"invoice": {
+		"name": {
+			"singular": "Invoice",
+			"plural": "Invoices"
+		},
+		"actions": {
+			"create": {
+				"main": "Create invoice",
+				"sub": " "
+			},
+			"createWithDeliveryNote": {
+				"main": "Generate invoice",
+				"sub": "and delivery note"
+			},
+			"createWithDeliveryNoteAndPayment": {
+				"main": "Generate invoice and delivery note,",
+				"sub": "book cash payment"
+			},
+			"download": {
+				"main": "Download",
+				"sub": "invoice"
+			},
+			"print": {
+				"main": "Print",
+				"sub": "invoice"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "invoice"
+			}
+		},
+		"fields": {
+			"number": "Invoice no.",
+			"remark": "Invoice remark"
+		},
+		"dialogs": {
+			"create": "Create invoice now?",
+			"createWithDeliveryNote": "Do you really want to create invoice and a delivery note to sent this order?"
+		},
 		"toasts": {
 			"created": "Invoice generated!"
 		}
 	},
-	"order": {
-		"documenttypes": {
-			"invoice": "Invoice",
-			"delivery": "Delivery note",
-			"shipment": "Shipment label",
-			"creditadvice": "Credit advice",
-			"offer": "Offer"
+	"offer": {
+		"name": {
+			"singular": "Offer",
+			"plural": "Offers"
 		},
-		"paymenttypes": {
-			"cash": "Cash",
-			"invoice": "Invoice",
-			"prepaid": "Prepaid",
-			"debit": "Debit",
-			"paypal": "Paypal"
+		"actions": {
+			"accept": {
+				"main": "Accept offer,",
+				"sub": "create order"
+			},
+			"acceptAgain": {
+				"main": "Accept offer again,",
+				"sub": "create further order"
+			},
+			"cancel": {
+				"main": "Cancel offer",
+				"sub": " "
+			},
+			"create": {
+				"main": "Create offer",
+				"sub": " "
+			},
+			"decline": {
+				"main": "Decline offer",
+				"sub": " "
+			},
+			"download": {
+				"main": "Download",
+				"sub": "offer"
+			},
+			"duplicate": {
+				"main": "Duplicate",
+				"sub": "offer"
+			},
+			"edit": {
+				"main": "Edit offer",
+				"sub": " "
+			},
+			"export": "Download offers for selected period",
+			"print": {
+				"main": "Print",
+				"sub": "offer"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "offer"
+			},
+
+			"goto": {
+				"summary": "Next - offer summary"
+			}
 		},
-		"invoicetypes": {
-			"net": "Net invoice",
-			"gross": "Gross invoice"
+		"fieldsets": {
+			"billing": "Billing address",
+			"delivery": "Delivery",
+			"payment": "Payment settings",
+			"positions": "Items",
+			"summary": "Offer summary"
 		},
-		"documents": {
-			"invoice": "Invoices",
-			"delivery": "Delivery notes",
-			"shipment": "Shipment labels",
-			"creditadvice": "Credit advices"
+		"fields": {
+			"client": "Client",
+			"crstamp": "Creation date",
+			"number": "Offer no.",
+			"offerPeriod": {
+				"label": "Offer period",
+				"placeholder": "dd.MM.YYYY"
+			},
+			"offerValue": "Offer value"
 		},
 		"states": {
 			"new": "New",
-			"need_payment": "Payment pending",
-			"payed": "Payment received",
-			"need_package": "Delivery preparation",
-			"in_delivery": "In delivery",
-			"closed": "Completed",
-			"cancelled": "Cancelled"
+			"accepted": "Accepted",
+			"cancelled": "Cancelled",
+			"declined": "Declined"
 		},
 		"views": {
-			"view": {
-				"tabs": {
-					"documents": "Documents",
-					"shipments": "Shipments"
-				}
+			"create": {
+				"title": "Create offer"
+			},
+			"timeline": {
+				"activated": "Offer is open and can be accepted until the offer period has expired",
+				"created": "Offer created",
+				"notActivatedYet": "Offer period has not started yet",
+				"orderCreated": "Offer accepted, order created",
+				"orderNotCreatedYet": "Offer has not been accepted yet",
+				"declined": "Offer declined",
+				"cancelled": "Offer cancelled"
 			},
 			"documents": {
-				"title": "Document",
-				"empty": "There are no {label} regarding this order."
+				"title": "Documents"
 			}
 		},
-		"action": {
-			"add_position": "+ Add position",
+		"filters": {
+			"search": {
+				"placeholder": "e.g. name, customer number, address"
+			},
+			"showEditor": "Show creator"
+		},
+		"dialogs": {
+			"cancel": "Do you really want to cancel this offer?",
+			"decline": "Do you really want to decline this offer?"
+		},
+		"toasts": {
+			"cancelled": "Offer cancelled!",
+			"created": "Offer saved!",
+			"declined": "Offer declined!",
+			"updated": "Offer updated!"
+		},
+		"errors": {
+			"create": "Offer could not be created. Please check your details and try again."
+		}
+	},
+	"order": {
+		"name": {
+			"singular": "Order confirmation",
+			"plural": "Order confirmations"
+		},
+		"actions": {
+			"cancel": {
+				"main": "Cancel",
+				"sub": "order"
+			},
 			"create": {
 				"main": "Create order",
 				"sub": " "
 			},
-			"search": {
-				"placeholder": "e.g. name, customer number, address"
+			"download": {
+				"main": "Download",
+				"sub": "order confirmation"
 			},
-			"invoice_create": {
-				"main": "Invoice",
-				"create": "create",
-				"print": "print",
-				"show": "show"
+			"duplicate": {
+				"main": "Duplicate",
+				"sub": "order"
 			},
-			"delivery_note_create": {
-				"main": "Delivery note",
-				"create": "create",
-				"print": "print",
-				"show": "show"
-			},
-			"cancel_order": {
-				"main": "Cancel order",
-				"create": " "
-			},
-			"voucher_create": {
-				"main": "Create",
-				"create": "credit voucher"
-			},
-			"shippingotheraddress": {
-				"main": "Different",
-				"sub": "delivery address"
+			"edit": {
+				"main": "Edit",
+				"sub": "order"
 			},
 			"export": {
 				"invoices": "Download invoices for selected period"
 			},
-			"touch": "Mark order as read"
+			"print": {
+				"main": "Print",
+				"sub": "order confirmation"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "order"
+			},
+			"touch": "Mark order as read",
+
+			"addPosition": "+ Add position",
+			"goto": {
+				"delivery": "Next - delivery",
+				"payment": "Next - payment settings",
+				"positions": "Next - positions",
+				"summary": "Next - summary"
+			},
+			"setDifferingShippingAddress": {
+				"main": "Differing",
+				"sub": "delivery address"
+			}
 		},
 		"fieldsets": {
 			"billing": "Billing address",
@@ -2044,11 +2203,10 @@
 			"clientName": "Client name",
 			"clientType": "Client type",
 			"createdBy": "Created by",
+			"crstamp": "Order date",
 			"delivery_note_created": "Delivery note created",
 			"delivery_note_not_yet_created": "Delivery note not yet created",
 			"deliveryaddress": "Delivery address",
-			"deliveryNoteNumber": "Delivery note number",
-			"deliveryNoteRemark": "Delivery note remark",
 			"documents": "Documents",
 			"excl_vat": "excl. VAT",
 			"filter_orders": "Filter orders",
@@ -2056,23 +2214,15 @@
 			"inclvat": "Enthält MwSt.",
 			"invoice_created": "Invoice created",
 			"invoice_not_yet_created": "Invoice not yet created",
-			"invoiceNumber": "Invoice number",
-			"invoiceRemark": "Invoice remark",
 			"itemsum": "Sum positions",
 			"loading_positions": "Loading positions ...",
 			"netto_sum": "Netto sum total",
-			"next_delivery": "Next - delivery",
-			"next_delivering_addr": "Next - delivery adress",
-			"next_payment": "Next - payment settings",
-			"next_positions": "Next - positions",
-			"next_summary": "Next - summary",
 			"no_payment_income_yet": "Payment not yet income",
 			"nocustomerselected": "To create an invoice for an order a client must be selected before. Please select a client first.",
 			"note": "Order note",
 			"number": "Order number",
 			"order_dispatched": "Order dispatched",
 			"order_not_yet_dispatched": "Order not yet dispatched",
-			"order_date": "Order date",
 			"order_cancelled_date": "Order cancelled",
 			"package": "Packaging and shipping",
 			"parcel": "Postal package",
@@ -2101,29 +2251,48 @@
 			"taxfree": "Tax free",
 			"taxrateNetTax": "{taxrate}% of {value}",
 			"taxrateGrossTax": "{value} by {taxrate}%",
+			"orderValue": "Order value",
 			"vatincluded": "incl. VAT {tax}",
 			"vatexcluded": "excl. VAT {tax}",
-			"yardsale": "Yard sale",
-			"payment_income": {
-				"main": "Payment",
-				"sub": "income"
+			"yardsale": "Yard sale"
+		},
+		"paymenttypes": {
+			"cash": "Cash",
+			"invoice": "Invoice",
+			"prepaid": "Prepaid",
+			"debit": "Debit",
+			"paypal": "Paypal"
+		},
+		"invoicetypes": {
+			"net": "Net invoice",
+			"gross": "Gross invoice"
+		},
+		"states": {
+			"new": "New",
+			"need_payment": "Payment pending",
+			"payed": "Payment received",
+			"need_package": "Delivery preparation",
+			"in_delivery": "In delivery",
+			"closed": "Completed",
+			"cancelled": "Cancelled"
+		},
+		"views": {
+			"create": {
+				"title": "Create Order"
 			},
-			"booking_payment_income": {
-				"main": "Book",
-				"sub": "Payment income"
+			"documents": {
+				"title": "Document",
+				"empty": "There are no {label} regarding this order."
 			},
-			"generate_invoice_and_delivering_note": {
-				"main": "Generate invoice and delivery note",
-				"sub": "Booking cash payment"
-			},
-			"invoice_and_delivering_note": {
-				"main": "Generate",
-				"sub": "Invoice and delivery note"
-			},
-			"order_to_dispatch": {
-				"main": "Dispatch",
-				"sub": "Order"
+			"shipments": {
+				"title": "Shipments"
 			}
+		},
+		"filters": {
+			"search": {
+				"placeholder": "e.g. name, customer no., address"
+			},
+			"showEditor": "Show creator"
 		},
 		"dialogs": {
 			"create": {
@@ -2131,17 +2300,30 @@
 				"save": "Create only",
 				"withInvoice": "Create order with invoice",
 				"withDocuments": "Create order with invoice and delivery note"
-			}
+			},
+			"cancel": "Do you really want to cancel this order?",
+			"markSent": "Do you really want to set this order as dispatched?",
+			"deletePosition": "Do you really want to delete this item?"
 		},
 		"toasts": {
 			"cancelled": "Order cancelled!",
 			"created": "Order saved!",
-			"createerror": "Order could not be created. Please check your details and try again.",
 			"deleted": "Order deleted!",
 			"pricesChanged": "The price of one or more products has changed. Order sum was updated to {price}.",
 			"sent": "Order versendet!",
-			"updated": "Order saved!",
-			"touched": "Order marked as read!"
+			"updated": "Order updated!",
+			"touched": "Order marked as read!",
+			"changeError": "An error occurred while saving the data!"
+		},
+		"errors": {
+			"create": "Order could not be created. Please check your details and try again.",
+			"minItemQuantity": "Please enter an amount greater than 0"
+		}
+	},
+	"package": {
+		"name": {
+			"singular": "Packaging and shipping",
+			"plural": "Packaging and shipping"
 		}
 	},
 	"packaging": {
@@ -2229,7 +2411,25 @@
 			}
 		}
 	},
+	"payment": {
+		"actions": {
+			"create": {
+				"main": "Book",
+				"sub": "incoming payment"
+			}
+		},
+		"toasts": {
+			"created": "Payment saved!"
+		},
+		"errors": {
+			"create": "Payment creation failed!"
+		}
+	},
 	"shipment": {
+		"name": {
+			"singular": "Shipping label",
+			"plural": "Shipping labels"
+		},
 		"fields": {
 			"carrierTrackingNumber": "Tracking number"
 		},
@@ -2249,7 +2449,27 @@
 		},
 		"actions": {
 			"activate": "Activate shipment management",
-			"deactivate": "Deactivate shipment management"
+			"create": {
+				"main": "Dispatch",
+				"sub": "order"
+			},
+			"deactivate": "Deactivate shipment management",
+			"download": {
+				"main": "Download",
+				"sub": "shipping label"
+			},
+			"print": {
+				"main": "Print",
+				"sub": "shipping label"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "shipping label"
+			},
+			"track": {
+				"main": "Track order",
+				"sub": " "
+			}
 		},
 		"dialogs": {
 			"activate": {
@@ -2559,6 +2779,10 @@
 		}
 	},
 	"bundle": {
+		"name": {
+			"singular": "Bundle",
+			"plural": "Bundles"
+		},
 		"actions": {
 			"create": {
 				"modaltitle": "Create Bundle",
@@ -2950,21 +3174,6 @@
 		"merchant_image_uploaded": "Image uploaded!",
 		"merchant_image_deleted": "Image deleted!",
 		"merchant_save_error": "Error saving winery!",
-		"order_position_add": "Item added!",
-		"order_position_changed": "Item updated!",
-		"order_position_deleted": "Item deleted!",
-		"order_billing_as_delivery": "Billingaddress used as deliveryadress!",
-		"order_billingaddress_create": "Address saved!",
-		"order_noupdate": "No Update needed!",
-		"order_deliveryaddress_create": "Delivery note generated and order updated!",
-		"order_payment_changed": "Payment type updated!",
-		"order_cashlink_send": "Cashlink sent!",
-		"order_note_saved": "Note saved!",
-		"package_created": "Package saved!",
-		"package_changed": "Package updated!",
-		"package_deleted": "Package deleted!",
-		"payment_created": "Payment saved!",
-		"payment_process_error": "Payment creation failed!",
 		"settings_bank_changed": "Bank account updated!",
 		"settings_cashlink_registered": "Cashlink registered!",
 		"settings_cashlink_registererror": "Registration failed, did you use the false mail address!",
@@ -3009,11 +3218,6 @@
 		},
 		"clients": {
 			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: min. 1000px width<br/>Fileformat: .png (exempted)"
-		}
-	},
-	"buttons": {
-		"customer": {
-			"activate": "Activate now"
 		}
 	},
 	"allergens": {
@@ -3413,7 +3617,7 @@
 			"name": "Schönburger"
 		},
 		"111": {
-			"name": "Schwarzriesling (Müllerrebe)"
+			"name": "Schwarzriesling"
 		},
 		"112": {
 			"name": "Serena"
@@ -4911,6 +5115,9 @@
 		},
 		"613": {
 			"name": "Trousseau"
+		},
+		"614": {
+			"name": "Rosa Chardonnay"
 		}
 	},
 	"tastes": {
@@ -5242,7 +5449,7 @@
 		"rose": "Rosé",
 		"rotling": "Rotling",
 		"secco": "Semi-sparkling wine",
-		"sparkling": "Champagne",
+		"sparkling": "Sparkling wine",
 		"destilate": "Spirits",
 		"grapeJuice": "Grape juice",
 		"wineBasedDrink": "Wine-based drink",
@@ -5399,6 +5606,7 @@
 			"doc": "Denominazione di origine controllata (DOC)",
 			"doca": "Denominazione di origine controllata (DOCa)",
 			"docg": "Denominazione di origine controllata e garantita (DOCG)",
+			"igp": "Indicazione geografica protetta (IGP)",
 			"specialquality": "Vino dolce naturale",
 			"superior": "Vino tipico",
 			"table": "Vino da tavola"

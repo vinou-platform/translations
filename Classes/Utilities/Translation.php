@@ -48,11 +48,11 @@ class Translation {
 		$this->loadCountryCode($countryCode);
 		$result = $this->dictionary[$countryCode];
 		if (!is_null($selector)) {
-			$result = self::findKeyInArray($selector, $result);
+			$result = self::getHierarchical($result, $selector);
 			// Handle parameterized translations.
 			if ($result && $args && is_string($result) && is_array($args)) {
 				$result = preg_replace_callback('/\{([a-z][a-z0-9]*(?:\.[a-z][a-z0-9]*)*)\}/i', function($m) use ($args) {
-					return self::findKeyInArray($m[1], $args);
+					return self::getHierarchical($args, $m[1]);
 				}, $result);
 			}
 		}
@@ -137,20 +137,38 @@ class Translation {
 	}
 
 	/**
-	 * @see \Tools\HelperUtility::findKeyInArray()
+	 * @see Vinou Office services.helper.Localization::getHierarchical().
 	 */
-	protected static function findKeyInArray($keys, /*array*/ $array) {
-		if (!is_array($keys))
-			$keys = explode('.', $keys);
-		foreach ($keys as $key) {
-			if (is_array($array) && array_key_exists($key, $array))
-				$array = $array[$key];
-			else {
-				$array = null;
-				break;
+	protected static function getHierarchical(/*array*/ $o, $key) {
+		$dict = $o;
+		$keys = is_array($key) ? $key : explode('.', $key);
+		$i = 0;
+		$l = count($keys);
+		while ($dict && $i < $l)
+			$dict = $dict[$keys[$i++]] ?? null;
+
+		// Fallback for keys containing dots.
+		if (!$dict && !is_array($key)) {
+			$dict = $o;
+			while ($dict) {
+				// Break on full match.
+				$s = $dict[$key] ?? null;
+				if ($s != null) {
+					$dict = $s;
+					break;
+				}
+				// Break if no further dots can be found.
+				$pos = strpos($key, '.');
+				if ($pos === false)
+					$dict = null;
+				else {
+					$pre = substr($key, 0, $pos);
+					$key = substr($key, $pos + 1);
+					$dict = $dict[$pre] ?? null;
+				}
 			}
 		}
-		return $array;
+		return $dict;
 	}
 
 }
