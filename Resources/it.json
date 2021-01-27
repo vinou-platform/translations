@@ -1842,7 +1842,8 @@
 			"other": "Altra compagnia"
 		},
 		"hints": {
-			"imageSize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Formato File: .png (liberato)"
+			"imageSize": "<b>Raccomandazione per una presentazione ottimale</b><br>Abmessungen: 1000x1000px<br/>Formato File: .png (liberato)",
+			"numberAutoGenerate": "Lascia vuoto per la generazione automatica"
 		},
 		"dialogs": {
 			"delete": "Sei sicuro di voler eliminare questo client?"

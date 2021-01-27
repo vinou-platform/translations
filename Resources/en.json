@@ -1842,7 +1842,8 @@
 			"other": "Other company"
 		},
 		"hints": {
-			"imageSize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
+			"imageSize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
+			"numberAutoGenerate": "Leave blank for automatic generation"
 		},
 		"dialogs": {
 			"delete": "Would you really delete this client?"

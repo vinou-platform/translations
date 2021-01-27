@@ -1842,7 +1842,8 @@
 			"other": "Sonstige Firma"
 		},
 		"hints": {
-			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"numberAutoGenerate": "Leer lassen für automatische Generierung"
 		},
 		"dialogs": {
 			"delete": "Willst Du den Kunden wirklich löschen?"
