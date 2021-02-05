@@ -92,7 +92,8 @@
 		},
 		"tabs": {
 			"general": "General",
-			"notes": "Notes"
+			"notes": "Notes",
+			"statistics": "Statistics"
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -2537,6 +2538,26 @@
 				"ups_expedited": "UPS Expedited",
 				"returns": "UPS Retoure"
 			}
+		}
+	},
+	"sale": {
+		"name": {
+			"singular": "Sale",
+			"plural": "Sales"
+		},
+		"fields": {
+			"period": "Sales period",
+			"priceAverage": "Average price"
+		},
+		"views": {
+			"chart": {
+				"title": "Sales statistic",
+				"range": "Sales from {start} to {end}",
+				"legend": "Sales count"
+			}
+		},
+		"hints": {
+			"sold": "{quantity} sold"
 		}
 	},
 	"pricerange": {

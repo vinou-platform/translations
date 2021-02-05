@@ -92,7 +92,8 @@
 		},
 		"tabs": {
 			"general": "Generale",
-			"notes": "Annotazioni"
+			"notes": "Annotazioni",
+			"statistics": "Statistiche"
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -2537,6 +2538,26 @@
 				"ups_expedited": "UPS Expedited",
 				"returns": "UPS Retoure"
 			}
+		}
+	},
+	"sale": {
+		"name": {
+			"singular": "Vendita",
+			"plural": "Vendite"
+		},
+		"fields": {
+			"period": "Periodo di vendita",
+			"priceAverage": "Prezzo medio"
+		},
+		"views": {
+			"chart": {
+				"title": "Statistica delle vendite",
+				"range": "Vendite da {start} a {end}",
+				"legend": "Conteggio delle vendite"
+			}
+		},
+		"hints": {
+			"sold": "{quantity} venduta"
 		}
 	},
 	"pricerange": {
