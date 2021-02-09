@@ -2331,6 +2331,10 @@
 				"sub": "d'expédition'"
 			}
 		},
+		"fields": {
+			"type": "Type",
+			"price": "Prix"
+		},
 		"views": {
 			"create": {
 				"title": "Créer option d'expédition"
@@ -2351,12 +2355,6 @@
 			"deleted": "Option d'expédition supprimé",
 			"rangeerror": "Ce paramètre entre en conflit avec une autre option d'expédition!",
 			"inputerror": "Les valeurs entrées ne sont pas autorisées!"
-		},
-		"field": {
-			"type": "Type",
-			"min": "Min",
-			"max": "Max",
-			"price": "Prix"
 		},
 		"types": {
 			"bottles": "Bouteilles",
@@ -2428,23 +2426,6 @@
 			"singular": "Étiquette d'expédition",
 			"plural": "Étiquettes d'expédition"
 		},
-		"fields": {
-			"carrierTrackingNumber": "Numéro de suivi du transporteur"
-		},
-		"field": {
-			"carrier": "Service d'expédition",
-			"packagingUnit": {
-				"namewithcapacity": "{capacity} carton"
-			},
-			"defaultcarrier": "Service d'expédition standard",
-			"onlyonecarrier": "Utilisez uniquement le service d'expédition standard?",
-			"service": "Type de expédition",
-			"shipcloudapikey": {
-				"label": "ShipCloud Clé API",
-				"description": "Si vous avez votre propre compte ShipCloud, vous pouvez le connecter ici.",
-				"error": "Clé invalide"
-			}
-		},
 		"actions": {
 			"activate": "Activer la gestion des expéditions",
 			"create": {
@@ -2469,72 +2450,88 @@
 				"sub": "d'expédition"
 			}
 		},
-		"dialogs": {
-			"activate": {
-				"title": "Activer la gestion des expéditions",
-				"content": "La gestion des expéditions Vinou est réalisée par le service d'expédition <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a><strong>, des frais supplémentaires s’appliquent à vos envois.</strong> En cliquant sur Oui, vous confirmez <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>les conditions actuelles de gestion des expéditions.</strong></a>L’utilisation de la gestion des expéditions Vinou peut être désactivée à tout moment via les paramètres d’expédition."
+		"fields": {
+			"carrier": "Service d'expédition",
+			"carrierTrackingNumber": "Numéro de suivi du transporteur",
+			"defaultCarrier": "Service d'expédition standard",
+			"onlyOneCarrier": "Utilisez uniquement le service d'expédition standard?",
+			"packagingUnit": {
+				"nameWithCapacity": "{capacity} carton"
+			},
+			"service": "Type de expédition",
+			"shipcloudApiKey": {
+				"label": "ShipCloud Clé API",
+				"description": "Si vous avez votre propre compte ShipCloud, vous pouvez le connecter ici.",
+				"error": "Clé invalide"
 			}
-		},
-		"messages": {
-			"errors": {
-				"common": "Une erreur s'est produite lors de la création des étiquettes d'expédition.",
-				"contact": "Si le problème persiste, veuillez nous contacter à l'adresse suivante:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
-				"internal": "Veuillez réessayer plus tard",
-				"invalidaddress": "Veuillez vérifier l'adresse de l'expéditeur (adresse de l'entreprise propre sous Configuration) et vérifier si l'adresse du destinataire et les détails de l'ordre sont entrés correctement dans les détails de l'ordre'.",
-				"invalidapikey": "La clé de l'API ShipCloud est introuvable ou non valide. <br/><br/>Veuillez vérifier les informations sous Configuration > Gestion des expéditions.",
-				"toomanyrequests": "Le nombre maximal d'envois pour l'offre d'expédition sélectionnée via ShipCloud a été atteint. Veuillez réserver un abonnement d'expédition approprié à:<a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
-			}
-		},
-		"toasts": {
-			"activated": "Expédition activée",
-			"deactivated": "Expédition deactivée",
-			"send": "Envois enregistrés au service d'expédition",
-			"changed": "Service d'expédition standard changé"
 		},
 		"views": {
 			"edit": {
 				"title": "Modifier configuration d'expédition"
 			},
 			"create": {
-				"title": "Envoyer l'ordre'"
-			},
-			"shipments": {
-				"title": "Envois"
+				"title": "Envoyer l'ordre",
+				"shipments": "Envois"
 			},
 			"gallery": {
 				"empty": "Aucune donnée d'envoi disponible"
 			}
 		},
-		"servicetypes": {
-			"dhl": {
-				"standard": "DHL Standard",
-				"dhl_europaket": "DHL Europaket",
-				"returns": "DHL Retoure"
-			},
-			"dpd": {
-				"standard": "DPD Standard",
-				"one_day": "DPD Express",
-				"one_day_early": "DPD 12:00",
-				"returns": "DPD Retoure"
-			},
-			"gls": {
-				"standard": "GLS Standard",
-				"one_day": "GLS One Day",
-				"gls_express_0800": "GLS Express 0800",
-				"gls_express_0900": "GLS Express 0900",
-				"gls_express_1000": "GLS Express 1000",
-				"gls_express_1200": "GLS Express 1200",
-				"gls_pick_and_ship": "GLS Pick and Ship",
-				"one_day_early": "GLS One Day Early"
-			},
-			"ups": {
-				"standard": "UPS Standard",
-				"one_day": "UPS Express",
-				"one_day_early": "UPS Express Plus",
-				"ups_express_1200": "UPS Express 12:00",
-				"ups_expedited": "UPS Expedited",
-				"returns": "UPS Retoure"
+		"dialogs": {
+			"activate": {
+				"title": "Activer la gestion des expéditions",
+				"content": "La gestion des expéditions Vinou est réalisée par le service d'expédition <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a><strong>, des frais supplémentaires s’appliquent à vos envois.</strong> En cliquant sur Oui, vous confirmez <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>les conditions actuelles de gestion des expéditions.</strong></a>L’utilisation de la gestion des expéditions Vinou peut être désactivée à tout moment via les paramètres d’expédition."
 			}
+		},
+		"toasts": {
+			"activated": "Expédition activée",
+			"changed": "Service d'expédition standard changé",
+			"created": "Envois enregistrés au service d'expédition",
+			"deactivated": "Expédition deactivée"
+		},
+		"errors": {
+			"common": "Une erreur s'est produite lors de la création des étiquettes d'expédition.",
+			"invalidAddress": "Veuillez vérifier l'adresse de l'expéditeur (adresse de l'entreprise propre sous Configuration) et vérifier si l'adresse du destinataire et les détails de l'ordre sont entrés correctement dans les détails de l'ordre'."
+		}
+	},
+	"shipcloud": {
+		"errors": {
+			"contact": "Si le problème persiste, veuillez nous contacter à l'adresse suivante:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+			"internal": "Veuillez réessayer plus tard",
+			"invalidApiKey": "La clé de l'API ShipCloud est introuvable ou non valide. <br/><br/>Veuillez vérifier les informations sous Configuration > Gestion des expéditions.",
+			"invalidConfig": "Votre compte ShipCloud n'a pas été configuré pour cette action. Veuillez vérifier vos paramètres dans ShipCloud ou contacter support@shipcloud.io.",
+			"tooManyRequests": "Le nombre maximal d'envois pour l'offre d'expédition sélectionnée via ShipCloud a été atteint. Veuillez réserver un abonnement d'expédition approprié à:<a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+		}
+	},
+	"pickup": {
+		"name": {
+			"singular": "Ramassage",
+			"plural": "Ramassages"
+		},
+		"actions": {
+			"create": {
+				"main": "Demander",
+				"sub": "le ramassage"
+			}
+		},
+		"fields": {
+			"carrierPickupNumber": "Ramassage no.",
+			"endDate": "Dernière heure de ramassage",
+			"startDate": "Heure de ramassage la plus tôt"
+		},
+		"views": {
+			"create": {
+				"title": "Ramassage par {carrier}",
+				"description": "Entrez ici quand les envois doivent être récupérés chez vous.<br/>Veuillez noter que tous les transporteurs ont leurs propres conditions de ramassage. Par exemple. UPS exige que les heures de ramassage au plus tôt et au plus tard tombent le même jour."
+			}
+		},
+		"toasts": {
+			"created": "Commande de ramassage enregistrée auprès du transporteur"
+		},
+		"errors": {
+			"carrierNotSupported": "Ramassage impossible",
+			"common": "Une erreur s'est produite lors de la création de la commande de ramassage.",
+			"invalidAddress": "Veuillez vérifier l'adresse de l'expéditeur (propre adresse de l'entreprise dans les paramètres)."
 		}
 	},
 	"sale": {
@@ -2551,6 +2548,12 @@
 				"title": "Statistiques des ventes",
 				"range": "Ventes du {start} au {end}",
 				"legend": "Comptage des ventes"
+			},
+			"pendingShipments": {
+				"title": "Envois en attente",
+				"empty": "Il n'y a pas d'envois en attente",
+				"nextPickup": "Prochain ramassage",
+				"closePickup": "Masquer le ramassage"
 			}
 		},
 		"hints": {
