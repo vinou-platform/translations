@@ -1,39 +1,36 @@
 {
 	"modules": {
-		"dashboard": "Pannello",
-		"winery": "Cantina",
-		"wineries": "Vigneti",
-		"wines.statistics": "Statistiche",
-		"winelists": "Lista dei vini",
-		"qrcodes": "Codice QR",
-		"news": "Attuale",
-		"users": "Utente",
-		"customers": "Membri",
-		"clients": "Cliente",
-		"clients.statistics": "Statistiche",
-		"orders": "Ordini",
-		"orders.offers": "Accordi",
-		"orders.statistics": "Statistiche",
-		"clientletters": "Lettera da cliente",
-		"tokens": "Token",
-		"settings": "Impostazioni",
-		"cronjobs": "Cronjobs",
-		"network": "Network",
-		"merchants": "Distributori",
-		"products.statistics": "Statistiche",
-		"cellar": "Cantina",
-		"cellar.book": "Libro della cantina",
-		"cellar.barrels": "Recipiente",
-		"cellar.substances": "Sostanza",
 		"articles": "Articolo",
-		"articles.wines": "Vini",
-		"articles.products": "Prodotti",
 		"articles.bundles": "Pacchetto di prodotti",
 		"articles.categories": "Categoria",
+		"articles.products": "Prodotti",
 		"articles.statistics": "Statistiche",
+		"articles.wines": "Vini",
+		"cellar": "Cantina",
+		"cellar.barrels": "Recipiente",
+		"cellar.book": "Libro della cantina",
+		"cellar.substances": "Sostanza",
+		"clients": "Cliente",
+		"clients.statistics": "Statistiche",
+		"cronjobs": "Cronjobs",
+		"customers": "Membri",
+		"dashboard": "Pannello",
 		"marketing": "Marketing",
 		"marketing.campaigns": "Campagne",
-		"marketing.catalogs": "Cataloghi"
+		"marketing.catalogs": "Cataloghi",
+		"merchants": "Distributori",
+		"network": "Network",
+		"news": "Attuale",
+		"qrcodes": "Codice QR",
+		"sales": "Vendite",
+		"sales.offers": "Accordi",
+		"sales.orders": "Ordini",
+		"sales.statistics": "Statistiche",
+		"tokens": "Token",
+		"users": "Utente",
+		"wineries": "Vigneti",
+
+		"settings": "Impostazioni"
 	},
 	"general": {
 		"actions": {
@@ -2334,6 +2331,10 @@
 				"sub": "creare"
 			}
 		},
+		"fields": {
+			"type": "Tipo",
+			"price": "Prezzo"
+		},
 		"views": {
 			"create": {
 				"title": "Crea un'opzione di spedizione"
@@ -2354,12 +2355,6 @@
 			"deleted": "Opzione di spedizione è stato cancellato",
 			"rangeerror": "Questo parametro è in conflitto con un'altra opzione di spedizione!",
 			"inputerror": "I valori inseriti non sono ammessi!"
-		},
-		"field": {
-			"type": "Tipo",
-			"min": "Min",
-			"max": "Max",
-			"price": "Prezzo"
 		},
 		"types": {
 			"bottles": "Bottiglia",
@@ -2431,23 +2426,6 @@
 			"singular": "Etichetta di spedizione",
 			"plural": "Etichette di spedizione"
 		},
-		"fields": {
-			"carrierTrackingNumber": "Numero di tracciamento del corriere"
-		},
-		"field": {
-			"carrier": "Servizio di spedizione",
-			"packagingUnit": {
-				"namewithcapacity": "{capacity} scatola di cartone"
-			},
-			"defaultcarrier": "Service d'expédition standard",
-			"onlyonecarrier": "Utilizzare solo il servizio di spedizione standard?",
-			"service": "Tipo di spedizione",
-			"shipcloudapikey": {
-				"label": "Chiave API ShipCloud",
-				"description": "Se hai il tuo account ShipCloud, puoi collegarlo qui.",
-				"error": "Chiave non valida"
-			}
-		},
 		"actions": {
 			"activate": "Abilita gestione spedizioni",
 			"create": {
@@ -2472,72 +2450,88 @@
 				"sub": "della spedizione"
 			}
 		},
-		"dialogs": {
-			"activate": {
-				"title": "Abilita gestione spedizioni",
-				"content": "La gestione delle spedizioni Vinou è effettuata dal servizio di spedizione <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> costi aggiuntivi applicati alle vostre spedizioni </strong>. Se si fa clic su Sì, si confermano <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong> le attuali condizioni di gestione della spedizione. </strong></a> L'uso della gestione della spedizione di Vinou può essere disattivato in qualsiasi momento tramite i parametri di spedizione."
+		"fields": {
+			"carrier": "Servizio di spedizione",
+			"carrierTrackingNumber": "Numero di tracciamento del corriere",
+			"defaultCarrier": "Service d'expédition standard",
+			"onlyOneCarrier": "Utilizzare solo il servizio di spedizione standard?",
+			"packagingUnit": {
+				"nameWithCapacity": "{capacity} scatola di cartone"
+			},
+			"service": "Tipo di spedizione",
+			"shipcloudApiKey": {
+				"label": "Chiave API ShipCloud",
+				"description": "Se hai il tuo account ShipCloud, puoi collegarlo qui.",
+				"error": "Chiave non valida"
 			}
-		},
-		"messages": {
-			"errors": {
-				"common": "Si è verificato un errore durante la creazione delle etichette di spedizione.",
-				"contact": "Se il problema persiste, ti preghiamo di contattarci al seguente indirizzo:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
-				"internal": "Ti preghiamo di riprovare più tardi",
-				"invalidaddress": "Controllare l'indirizzo del mittente (indirizzo della propria azienda in Configurazione) e verificare che l'indirizzo del destinatario e i dettagli dell'ordine siano inseriti correttamente nei dettagli dell'ordine.",
-				"invalidapikey": "La chiave API ShipCloud non è stata trovata o non è valida. <br/> <br/> Controlla le informazioni in Configurazione> Gestione spedizioni.",
-				"toomanyrequests": "È stato raggiunto il numero massimo di spedizioni per l'offerta di spedizione selezionata tramite ShipCloud. Si prega di prenotare un abbonamento di spedizione corrispondente sotto: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
-			}
-		},
-		"toasts": {
-			"activated": "Spedizione attivata",
-			"deactivated": "Spedizione disattivata",
-			"send": "Il servizio di spedizione standard è cambiato",
-			"changed": "Il servizio di spedizione standard è stato cambiato"
 		},
 		"views": {
 			"edit": {
 				"title": "Modifica la configurazione di spedizione"
 			},
 			"create": {
-				"title": "Invia l'ordine"
-			},
-			"shipments": {
-				"title": "Spedizioni"
+				"title": "Invia l'ordine",
+				"shipments": "Spedizioni"
 			},
 			"gallery": {
 				"empty": "Nessun dato di spedizione disponibile"
 			}
 		},
-		"servicetypes": {
-			"dhl": {
-				"standard": "DHL Standard",
-				"dhl_europaket": "DHL Europaket",
-				"returns": "DHL Retoure"
-			},
-			"dpd": {
-				"standard": "DPD Standard",
-				"one_day": "DPD Express",
-				"one_day_early": "DPD 12:00",
-				"returns": "DPD Retoure"
-			},
-			"gls": {
-				"standard": "GLS Standard",
-				"one_day": "GLS One Day",
-				"gls_express_0800": "GLS Express 0800",
-				"gls_express_0900": "GLS Express 0900",
-				"gls_express_1000": "GLS Express 1000",
-				"gls_express_1200": "GLS Express 1200",
-				"gls_pick_and_ship": "GLS Pick and Ship",
-				"one_day_early": "GLS One Day Early"
-			},
-			"ups": {
-				"standard": "UPS Standard",
-				"one_day": "UPS Express",
-				"one_day_early": "UPS Express Plus",
-				"ups_express_1200": "UPS Express 12:00",
-				"ups_expedited": "UPS Expedited",
-				"returns": "UPS Retoure"
+		"dialogs": {
+			"activate": {
+				"title": "Abilita gestione spedizioni",
+				"content": "La gestione delle spedizioni Vinou è effettuata dal servizio di spedizione <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> costi aggiuntivi applicati alle vostre spedizioni </strong>. Se si fa clic su Sì, si confermano <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong> le attuali condizioni di gestione della spedizione. </strong></a> L'uso della gestione della spedizione di Vinou può essere disattivato in qualsiasi momento tramite i parametri di spedizione."
 			}
+		},
+		"toasts": {
+			"activated": "Spedizione attivata",
+			"changed": "Il servizio di spedizione standard è stato cambiato",
+			"created": "Il servizio di spedizione standard è cambiato",
+			"deactivated": "Spedizione disattivata"
+		},
+		"errors": {
+			"common": "Si è verificato un errore durante la creazione delle etichette di spedizione.",
+			"invalidAddress": "Controllare l'indirizzo del mittente (indirizzo della propria azienda in Configurazione) e verificare che l'indirizzo del destinatario e i dettagli dell'ordine siano inseriti correttamente nei dettagli dell'ordine."
+		}
+	},
+	"shipcloud": {
+		"errors": {
+			"contact": "Se il problema persiste, ti preghiamo di contattarci al seguente indirizzo:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+			"internal": "Ti preghiamo di riprovare più tardi",
+			"invalidApiKey": "La chiave API ShipCloud non è stata trovata o non è valida. <br/> <br/> Controlla le informazioni in Configurazione> Gestione spedizioni.",
+			"invalidConfig": "Il tuo account ShipCloud non è stato configurato per questa azione. Controlla le tue impostazioni in ShipCloud o contatta support@shipcloud.io.",
+			"tooManyRequests": "È stato raggiunto il numero massimo di spedizioni per l'offerta di spedizione selezionata tramite ShipCloud. Si prega di prenotare un abbonamento di spedizione corrispondente sotto: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+		}
+	},
+	"pickup": {
+		"name": {
+			"singular": "Raccolta",
+			"plural": "Raccolte"
+		},
+		"actions": {
+			"create": {
+				"main": "Raccogliere",
+				"sub": "istruire"
+			}
+		},
+		"fields": {
+			"carrierPickupNumber": "Raccolta n.",
+			"endDate": "Ultimo orario di ritiro",
+			"startDate": "Primo orario di ritiro"
+		},
+		"views": {
+			"create": {
+				"title": "Raccolta con {carrier}",
+				"description": "Inserisci qui quando le spedizioni devono essere ritirate da te.<br/>Tieni presente che tutti i servizi di consegna hanno le proprie condizioni per il ritiro. Ad esempio, con UPS, il primo e l'ultimo orario di ritiro devono essere lo stesso giorno."
+			}
+		},
+		"toasts": {
+			"created": "Ordine di ritiro registrato presso il fornitore del servizio di spedizione"
+		},
+		"errors": {
+			"carrierNotSupported": "Ritiro non possibile",
+			"common": "Si è verificato un errore durante la creazione dell'ordine di raccolta.",
+			"invalidAddress": "Si prega di controllare l'indirizzo del mittente (indirizzo della propria azienda nelle impostazioni)."
 		}
 	},
 	"sale": {
@@ -2554,6 +2548,12 @@
 				"title": "Statistica delle vendite",
 				"range": "Vendite da {start} a {end}",
 				"legend": "Conteggio delle vendite"
+			},
+			"pendingShipments": {
+				"title": "In attesa di spedizioni",
+				"empty": "Non ci sono spedizioni in sospeso",
+				"nextPickup": "Prossima raccolta",
+				"closePickup": "Nascondi raccolta"
 			}
 		},
 		"hints": {

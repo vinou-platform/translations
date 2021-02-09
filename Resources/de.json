@@ -1,39 +1,36 @@
 {
 	"modules": {
-		"dashboard": "Dashboard",
-		"winery": "Weingut",
-		"wineries": "Weingüter",
-		"wines.statistics": "Statistiken",
-		"winelists": "Weinlisten",
-		"qrcodes": "QR-Codes",
-		"news": "Neuigkeiten",
-		"users": "Benutzer",
-		"customers": "Mitglieder",
-		"clients": "Kunden",
-		"clients.statistics": "Statistiken",
-		"orders": "Bestellungen",
-		"orders.offers": "Angebote",
-		"orders.statistics": "Statistiken",
-		"clientletters": "Kundenbriefe",
-		"tokens": "Verknüpfungen",
-		"settings": "Einstellungen",
-		"cronjobs": "Cronjobs",
-		"network": "Mein Netzwerk",
-		"merchants": "Händler",
-		"products.statistics": "Statistiken",
-		"cellar": "Mein Keller",
-		"cellar.book": "Weine",
-		"cellar.barrels": "Behälter",
-		"cellar.substances": "Stoffe",
 		"articles": "Artikel",
-		"articles.wines": "Weine",
-		"articles.products": "Produkte",
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
+		"articles.products": "Produkte",
 		"articles.statistics": "Statistiken",
+		"articles.wines": "Weine",
+		"cellar": "Mein Keller",
+		"cellar.barrels": "Behälter",
+		"cellar.book": "Weine",
+		"cellar.substances": "Stoffe",
+		"clients": "Kunden",
+		"clients.statistics": "Statistiken",
+		"cronjobs": "Cronjobs",
+		"customers": "Mitglieder",
+		"dashboard": "Dashboard",
 		"marketing": "Vermarktung",
 		"marketing.campaigns": "Kampagnen",
-		"marketing.catalogs": "Preislisten"
+		"marketing.catalogs": "Preislisten",
+		"merchants": "Händler",
+		"network": "Mein Netzwerk",
+		"news": "Neuigkeiten",
+		"qrcodes": "QR-Codes",
+		"sales": "Verkauf",
+		"sales.offers": "Angebote",
+		"sales.orders": "Bestellungen",
+		"sales.statistics": "Statistiken",
+		"tokens": "Verknüpfungen",
+		"users": "Benutzer",
+		"wineries": "Weingüter",
+
+		"settings": "Einstellungen"
 	},
 	"general": {
 		"actions": {
@@ -2334,6 +2331,10 @@
 				"sub": "erstellen"
 			}
 		},
+		"fields": {
+			"type": "Typ",
+			"price": "Preis"
+		},
 		"views": {
 			"create": {
 				"title": "Versandoption erstellen"
@@ -2354,12 +2355,6 @@
 			"deleted": "Versandoption gelöscht",
 			"rangeerror": "Diese Einstellung kollidiert mit einer anderen Versandoption!",
 			"inputerror": "Die eingegebenen Werte sind nicht zulässig!"
-		},
-		"field": {
-			"type": "Typ",
-			"min": "Min",
-			"max": "Max",
-			"price": "Preis"
 		},
 		"types": {
 			"bottles": "Flaschen",
@@ -2431,23 +2426,6 @@
 			"singular": "Versandaufkleber",
 			"plural": "Versandaufkleber"
 		},
-		"fields": {
-			"carrierTrackingNumber": "Sendungsverfolgungsnr."
-		},
-		"field": {
-			"carrier": "Versanddienstleister",
-			"packagingUnit": {
-				"namewithcapacity": "{capacity}er Karton"
-			},
-			"defaultcarrier": "Standard-Versanddienstleister",
-			"onlyonecarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
-			"service": "Sendungsart",
-			"shipcloudapikey": {
-				"label": "ShipCloud API-Schlüssel",
-				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst Du ihn hier verbinden.",
-				"error": "Ungültiger Schlüssel"
-			}
-		},
 		"actions": {
 			"activate": "Versandmanagement aktivieren",
 			"create": {
@@ -2472,72 +2450,88 @@
 				"sub": "öffnen"
 			}
 		},
-		"dialogs": {
-			"activate": {
-				"title": "Versandmanagement aktivieren",
-				"content": "Das Vinou-Versandmanagement wird über den Anbieter <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> realisiert, dafür fallen <strong>zusätzliche Gebühren für Deine Sendungen</strong> an. Mit Klick auf Ja bestätigst Du die aktuellen <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>Konditionen des Versandmanagements</strong></a>. Die Nutzung des Vinou-Versandmanagements kann jederzeit über die Versandeinstellungen deaktiviert werden."
+		"fields": {
+			"carrier": "Versanddienstleister",
+			"carrierTrackingNumber": "Sendungsverfolgungsnr.",
+			"defaultCarrier": "Standard-Versanddienstleister",
+			"onlyOneCarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
+			"packagingUnit": {
+				"namewithCapacity": "{capacity}er Karton"
+			},
+			"service": "Sendungsart",
+			"shipcloudApiKey": {
+				"label": "ShipCloud API-Schlüssel",
+				"description": "Wenn Du über einen eigenen ShipCloud Account verfügst, dann kannst Du ihn hier verbinden.",
+				"error": "Ungültiger Schlüssel"
 			}
-		},
-		"messages": {
-			"errors": {
-				"common": "Bei Erstellung der Versandetiketten ist ein Fehler aufgetreten.",
-				"contact": "Sollte das Problem weiterhin auftreten kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
-				"internal": "Bitte versuche es später noch einmal",
-				"invalidaddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen) und prüfe ob in den Bestelldaten die Empfängeradresse und die Bestellungsdetails korrekt eingetragen sind.",
-				"invalidapikey": "Der ShipCloud-API-Key wurde nicht gefunden oder ist ungültig. <br/><br/>Bitte prüfe die Angaben unter Einstellungen > Versandmanagement.",
-				"toomanyrequests": "Die maximale Anzahl Sendungen für das ausgewählte Versandangebot über ShipCloud wurde erreicht. Bitte buche ein geeignetes Versandabonnement unter: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
-			}
-		},
-		"toasts": {
-			"activated": "Versand aktiviert",
-			"deactivated": "Versand deaktiviert",
-			"send": "Sendungen bei Versanddienstleister erfasst",
-			"changed": "Standard-Versanddienstleister geändert"
 		},
 		"views": {
 			"edit": {
 				"title": "Versandeinstellungen editieren"
 			},
 			"create": {
-				"title": "Bestellung versenden"
-			},
-			"shipments": {
-				"title": "Sendungen"
+				"title": "Bestellung versenden",
+				"shipments": "Sendungen"
 			},
 			"gallery": {
 				"empty": "Keine Sendungsdaten vorhanden"
 			}
 		},
-		"servicetypes": {
-			"dhl": {
-				"standard": "DHL Standard",
-				"dhl_europaket": "DHL Europaket",
-				"returns": "DHL Retoure"
-			},
-			"dpd": {
-				"standard": "DPD Standard",
-				"one_day": "DPD Express",
-				"one_day_early": "DPD 12:00",
-				"returns": "DPD Retoure"
-			},
-			"gls": {
-				"standard": "GLS Standard",
-				"one_day": "GLS One Day",
-				"gls_express_0800": "GLS Express 0800",
-				"gls_express_0900": "GLS Express 0900",
-				"gls_express_1000": "GLS Express 1000",
-				"gls_express_1200": "GLS Express 1200",
-				"gls_pick_and_ship": "GLS Pick and Ship",
-				"one_day_early": "GLS One Day Early"
-			},
-			"ups": {
-				"standard": "UPS Standard",
-				"one_day": "UPS Express",
-				"one_day_early": "UPS Express Plus",
-				"ups_express_1200": "UPS Express 12:00",
-				"ups_expedited": "UPS Expedited",
-				"returns": "UPS Retoure"
+		"dialogs": {
+			"activate": {
+				"title": "Versandmanagement aktivieren",
+				"content": "Das Vinou-Versandmanagement wird über den Anbieter <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a> realisiert, dafür fallen <strong>zusätzliche Gebühren für Deine Sendungen</strong> an. Mit Klick auf Ja bestätigst Du die aktuellen <a href=\"https://www.vinou.de/versandmanagement.html\" target=\"_blank\"><strong>Konditionen des Versandmanagements</strong></a>. Die Nutzung des Vinou-Versandmanagements kann jederzeit über die Versandeinstellungen deaktiviert werden."
 			}
+		},
+		"toasts": {
+			"activated": "Versand aktiviert",
+			"changed": "Standard-Versanddienstleister geändert",
+			"created": "Sendungen bei Versanddienstleister erfasst",
+			"deactivated": "Versand deaktiviert"
+		},
+		"errors": {
+			"common": "Bei der Erstellung der Versandetiketten ist ein Fehler aufgetreten.",
+			"invalidAddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen) und prüfe ob in den Bestelldaten die Empfängeradresse und die Bestellungsdetails korrekt eingetragen sind."
+		}
+	},
+	"shipcloud": {
+		"errors": {
+			"contact": "Sollte das Problem weiterhin auftreten kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+			"internal": "Bitte versuche es später noch einmal",
+			"invalidApiKey": "Der ShipCloud-API-Key wurde nicht gefunden oder ist ungültig. <br/><br/>Bitte prüfe die Angaben unter Einstellungen > Versandmanagement.",
+			"invalidConfig": "Dein ShipCloud Account wurde nicht für diese Aktion konfiguriert. Bitte prüfe deine Einstellungen bei ShipCloud oder kontaktiere support@shipcloud.io.",
+			"tooManyRequests": "Die maximale Anzahl Aufträge über ShipCloud wurde erreicht. Bitte buche ein geeignetes Versandabonnement unter: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+		}
+	},
+	"pickup": {
+		"name": {
+			"singular": "Abholung",
+			"plural": "Abholungen"
+		},
+		"actions": {
+			"create": {
+				"main": "Abholung",
+				"sub": "beauftragen"
+			}
+		},
+		"fields": {
+			"carrierPickupNumber": "Auftragsnr.",
+			"endDate": "Späteste Abholzeit",
+			"startDate": "Früheste Abholzeit"
+		},
+		"views": {
+			"create": {
+				"title": "Abholung mit {carrier}",
+				"description": "Gib hier ein, wann die Sendungen bei Dir abgeholt werden sollen.<br/>Bitte beachte, dass alle Versanddienstleister eigene Bedinungen für Abholungen haben. So müssen z.B. bei UPS die früheste und späteste Abholzeit auf den selben Tag fallen."
+			}
+		},
+		"toasts": {
+			"created": "Abholungsauftrag bei Versanddienstleister registriert"
+		},
+		"errors": {
+			"carrierNotSupported": "Keine Abholung möglich",
+			"common": "Bei der Erstellung des Abholungsauftrags ist ein Fehler aufgetreten.",
+			"invalidAddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen)."
 		}
 	},
 	"sale": {
@@ -2554,6 +2548,12 @@
 				"title": "Abverkaufsstatistik",
 				"range": "Abverkäufe im Zeitraum {start} bis {end}",
 				"legend": "Anzahl verkauft"
+			},
+			"pendingShipments": {
+				"title": "Ausstehende Sendungen",
+				"empty": "Keine ausstehenden Sendungen vorhanden",
+				"nextPickup": "Nächste Abholung",
+				"closePickup": "Abholung ausblenden"
 			}
 		},
 		"hints": {

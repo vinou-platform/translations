@@ -1,39 +1,36 @@
 {
 	"modules": {
-		"dashboard": "Dashboard",
-		"winery": "Winery",
-		"wineries": "Wineries",
-		"wines.statistics": "Statistics",
-		"winelists": "Winelists",
-		"qrcodes": "QR codes",
-		"news": "News",
-		"users": "Users",
-		"customers": "Clients",
-		"clients": "Member",
-		"clients.statistics": "Statistics",
-		"orders": "Orders",
-		"orders.offers": "Offers",
-		"orders.statistics": "Statistics",
-		"clientletters": "Client letters",
-		"tokens": "Connections",
-		"settings": "Settings",
-		"cronjobs": "Cronjobs",
-		"network": "My network",
-		"merchants": "Merchants",
-		"products.statistics": "Statistics",
-		"cellar": "Cellar",
-		"cellar.book": "Wines",
-		"cellar.barrels": "Barrels",
-		"cellar.substances": "Substances",
 		"articles": "Articles",
-		"articles.wines": "Wines",
-		"articles.products": "Products",
 		"articles.bundles": "Bundles",
 		"articles.categories": "Categories",
+		"articles.products": "Products",
 		"articles.statistics": "Statistics",
+		"articles.wines": "Wines",
+		"cellar": "Cellar",
+		"cellar.barrels": "Barrels",
+		"cellar.book": "Wines",
+		"cellar.substances": "Substances",
+		"clients": "Member",
+		"clients.statistics": "Statistics",
+		"cronjobs": "Cronjobs",
+		"customers": "Clients",
+		"dashboard": "Dashboard",
 		"marketing": "Marketing",
 		"marketing.campaigns": "Campaigns",
-		"marketing.catalogs": "Catalogs"
+		"marketing.catalogs": "Catalogs",
+		"merchants": "Merchants",
+		"network": "My network",
+		"news": "News",
+		"qrcodes": "QR codes",
+		"sales": "Sales",
+		"sales.offers": "Offers",
+		"sales.orders": "Orders",
+		"sales.statistics": "Statistics",
+		"tokens": "Connections",
+		"users": "Users",
+		"wineries": "Wineries",
+
+		"settings": "Settings"
 	},
 	"general": {
 		"actions": {
@@ -2334,6 +2331,10 @@
 				"sub": "packaging"
 			}
 		},
+		"fields": {
+			"type": "Type",
+			"price": "Price"
+		},
 		"views": {
 			"create": {
 				"title": "Create packaging"
@@ -2354,12 +2355,6 @@
 			"deleted": "Packaging deleted",
 			"rangeerror": "Packaging collides with another packaging!",
 			"inputerror": "Values you entered are not vaild for these fields!"
-		},
-		"field": {
-			"type": "Type",
-			"min": "Min",
-			"max": "Max",
-			"price": "Price"
 		},
 		"types": {
 			"bottles": "Bottles",
@@ -2431,23 +2426,6 @@
 			"singular": "Shipping label",
 			"plural": "Shipping labels"
 		},
-		"fields": {
-			"carrierTrackingNumber": "Tracking number"
-		},
-		"field": {
-			"carrier": "Carrier",
-			"packagingUnit": {
-				"namewithcapacity": "Box of {capacity}"
-			},
-			"defaultcarrier": "Default carrier",
-			"onlyonecarrier": "Use carrier exclusively?",
-			"service": "Type of shipment",
-			"shipcloudapikey": {
-				"label": "ShipCloud API-Key",
-				"description": "Connect your own ShipCloud account.",
-				"error": "API-Key invalid"
-			}
-		},
 		"actions": {
 			"activate": "Activate shipment management",
 			"create": {
@@ -2472,72 +2450,88 @@
 				"sub": " "
 			}
 		},
-		"dialogs": {
-			"activate": {
-				"title": "Activate shipment management",
-				"content": "Hereby you accept our <a href=\"/legals\" target=\"_blank\">legals</a> and..."
+		"fields": {
+			"carrier": "Carrier",
+			"carrierTrackingNumber": "Tracking number",
+			"defaultCarrier": "Default carrier",
+			"onlyOneCarrier": "Use carrier exclusively?",
+			"packagingUnit": {
+				"nameWithCapacity": "Box of {capacity}"
+			},
+			"service": "Type of shipment",
+			"shipcloudApiKey": {
+				"label": "ShipCloud API-Key",
+				"description": "Connect your own ShipCloud account.",
+				"error": "API-Key invalid"
 			}
-		},
-		"messages": {
-			"errors": {
-				"common": "An error occured while processing shipment labels.",
-				"contact": "If you still have troubles, please feel free to get in contact with us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
-				"internal": "Please try again later.",
-				"invalidaddress": "Please check your sender address (Address data for your company within the settings) and check all order data and shipment address for possible typos.",
-				"invalidapikey": "Your ShipCloud-API-Key could not be found or is invalid. <br/><br/>Please check your data within the settings > delivery management options.",
-				"toomanyrequests": "Maximum amount of deliveries in your current delivery plan via ShipCloud is reached. Please upgrade your plan under: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
-			}
-		},
-		"toasts": {
-			"activated": "Shipment activated",
-			"deactivated": "Shipment deactivated",
-			"send": "Shipment registered by carrier",
-			"changed": "Changed default carrier"
 		},
 		"views": {
 			"edit": {
 				"title": "Edit shipment settings"
 			},
 			"create": {
-				"title": "Send order"
-			},
-			"shipments": {
-				"title": "Shipments"
+				"title": "Send order",
+				"shipments": "Shipments"
 			},
 			"gallery": {
 				"empty": "No shipments exists"
 			}
 		},
-		"servicetypes": {
-			"dhl": {
-				"standard": "DHL Standard",
-				"dhl_europaket": "DHL Euro Package",
-				"returns": "DHL Retoure"
-			},
-			"dpd": {
-				"standard": "DPD Standard",
-				"one_day": "DPD Express",
-				"one_day_early": "DPD 12:00",
-				"returns": "DPD Retoure"
-			},
-			"gls": {
-				"standard": "GLS Standard",
-				"one_day": "GLS One Day",
-				"gls_express_0800": "GLS Express 0800",
-				"gls_express_0900": "GLS Express 0900",
-				"gls_express_1000": "GLS Express 1000",
-				"gls_express_1200": "GLS Express 1200",
-				"gls_pick_and_ship": "GLS Pick and Ship",
-				"one_day_early": "GLS One Day Early"
-			},
-			"ups": {
-				"standard": "UPS Standard",
-				"one_day": "UPS Express",
-				"one_day_early": "UPS Express Plus",
-				"ups_express_1200": "UPS Express 12:00",
-				"ups_expedited": "UPS Expedited",
-				"returns": "UPS Retoure"
+		"dialogs": {
+			"activate": {
+				"title": "Activate shipment management",
+				"content": "Hereby you accept our <a href=\"/legals\" target=\"_blank\">legals</a> and..."
 			}
+		},
+		"toasts": {
+			"activated": "Shipment activated",
+			"changed": "Changed default carrier",
+			"created": "Shipment registered by carrier",
+			"deactivated": "Shipment deactivated"
+		},
+		"errors": {
+			"common": "An error occured while processing shipment labels.",
+			"invalidAddress": "Please check your sender address (Address data for your company within the settings) and check all order data and shipment address for possible typos."
+		}
+	},
+	"shipcloud": {
+		"errors": {
+			"contact": "If you still have troubles, please feel free to get in contact with us:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
+			"internal": "Please try again later.",
+			"invalidApiKey": "Your ShipCloud-API-Key could not be found or is invalid. <br/><br/>Please check your data within the settings > delivery management options.",
+			"invalidConfig": "Dein ShipCloud Account wurde nicht für diese Aktion konfiguriert. Bitte prüfe deine Einstellungen bei ShipCloud oder kontaktiere support@shipcloud.io.",
+			"tooManyRequests": "Maximum amount of deliveries in your current delivery plan via ShipCloud is reached. Please upgrade your plan under: <a href=\"https://shipcloud.io\" target=\"_blank\">shipcloud.io</a>."
+		}
+	},
+	"pickup": {
+		"name": {
+			"singular": "Pickup",
+			"plural": "Pickups"
+		},
+		"actions": {
+			"create": {
+				"main": "Request",
+				"sub": "pickup"
+			}
+		},
+		"fields": {
+			"carrierPickupNumber": "Pickup no.",
+			"endDate": "Latest pick-up time",
+			"startDate": "Earliest pick-up time"
+		},
+		"views": {
+			"create": {
+				"title": "Pickup by {carrier}",
+				"description": "Enter here when the shipments should be picked up from you.<br/>Please note that all carriers have their own terms for pickups. E.g. UPS requires the earliest and latest pick-up times must fall on the same day."
+			}
+		},
+		"toasts": {
+			"created": "Pickup order registered with shipping carrier"
+		},
+		"errors": {
+			"carrierNotSupported": "Pickup not possible",
+			"common": "An error occurred while creating the pickup order.",
+			"invalidAddress": "Please check the sender address (own company address under settings)."
 		}
 	},
 	"sale": {
@@ -2554,6 +2548,12 @@
 				"title": "Sales statistic",
 				"range": "Sales from {start} to {end}",
 				"legend": "Sales count"
+			},
+			"pendingShipments": {
+				"title": "Pending shipments",
+				"empty": "There are no pending shipments",
+				"nextPickup": "Next pickup",
+				"closePickup": "Hide pickup"
 			}
 		},
 		"hints": {
