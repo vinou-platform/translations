@@ -368,7 +368,8 @@
 			},
 			"createBlending": {
 				"main": "Verschnitt",
-				"sub": " "
+				"sub": " ",
+				"description": "Gebe diesen Wein einem anderen als Verschnitt hinzu, um eine Cuvée zu erstellen."
 			},
 
 			"createPrivateConsumption": {

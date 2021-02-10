@@ -368,7 +368,8 @@
 			},
 			"createBlending": {
 				"main": "Assemblaggio",
-				"sub": " "
+				"sub": " ",
+				"description": "Aggiungere questo vino a un altro come miscela per creare una cuvée."
 			},
 
 			"createPrivateConsumption": {

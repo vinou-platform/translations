@@ -368,7 +368,8 @@
 			},
 			"createBlending": {
 				"main": "Blending",
-				"sub": " "
+				"sub": " ",
+				"description": "Add this wine to another as a blend to create a cuvée."
 			},
 
 			"createPrivateConsumption": {

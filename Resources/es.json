@@ -368,7 +368,8 @@
 			},
 			"createBlending": {
 				"main": "recorte",
-				"sub": " "
+				"sub": " ",
+				"description": "Agregue este vino a otro como una mezcla para crear una cuvée."
 			},
 
 			"createPrivateConsumption": {
