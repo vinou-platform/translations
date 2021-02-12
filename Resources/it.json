@@ -2967,7 +2967,8 @@
 			}
 		},
 		"fieldsets": {
-			"rebate": "Sconto campagna"
+			"rebate": "Sconto campagna",
+			"constraints": "Vincoli della campagna"
 		},
 		"fields": {
 			"active": {
@@ -2981,6 +2982,8 @@
 			"gross": "Sconto forfettario in EUR (lordo)",
 			"hash": "Codice di sconto",
 			"itemTypes": "Valido per i seguenti gruppi di articoli",
+			"minGross": "Valore minimo delle merci in EUR (lordo)",
+			"minQuantity": "Numero minimo di articoli",
 			"name": "Nome",
 			"percent": "Sconto percentuale",
 			"rebateType": "Tipo di sconto",
@@ -3018,7 +3021,8 @@
 		},
 		"rebateTypes": {
 			"percent": "percentuale",
-			"absolute": "tasso fisso"
+			"absolute": "forfettario",
+			"article": "forfettario per articolo"
 		}
 	},
 	"tag": {

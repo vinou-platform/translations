@@ -2967,7 +2967,8 @@
 			}
 		},
 		"fieldsets": {
-			"rebate": "Descuento de campaña"
+			"rebate": "Descuento de campaña",
+			"constraints": "Restricciones de campaña"
 		},
 		"fields": {
 			"active": {
@@ -2981,6 +2982,8 @@
 			"gross": "Descuento a tanto alzado en EUR (bruto)",
 			"hash": "Código de descuento",
 			"itemTypes": "Válido para los siguientes grupos de artículos",
+			"minGross": "Valor mínimo de las mercancías en EUR (bruto)",
+			"minQuantity": "Número mínimo de artículos",
 			"name": "Nombre",
 			"percent": "Porcentaje de descuento",
 			"rebateType": "Tipo de descuento",
@@ -3018,7 +3021,8 @@
 		},
 		"rebateTypes": {
 			"percent": "porcentaje",
-			"absolute": "tarifa plana"
+			"absolute": "tarifa plana",
+			"article": "tarifa plana por artículo"
 		}
 	},
 	"tag": {

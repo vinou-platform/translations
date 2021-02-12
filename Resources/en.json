@@ -2967,7 +2967,8 @@
 			}
 		},
 		"fieldsets": {
-			"rebate": "Campaign rebate"
+			"rebate": "Campaign rebate",
+			"constraints": "Campaign constraints"
 		},
 		"fields": {
 			"active": {
@@ -2981,6 +2982,8 @@
 			"gross": "Flat-rate discount in EUR (gross)",
 			"hash": "Discount code",
 			"itemTypes": "Valid for the following article groups",
+			"minGross": "Minimum goods value in EUR (gross)",
+			"minQuantity": "Minimum number of items",
 			"name": "Name",
 			"percent": "Percentage discount",
 			"rebateType": "Discount type",
@@ -3018,7 +3021,8 @@
 		},
 		"rebateTypes": {
 			"percent": "percentage",
-			"absolute": "flat rate"
+			"absolute": "flat rate",
+			"article": "flat rate per item"
 		}
 	},
 	"tag": {

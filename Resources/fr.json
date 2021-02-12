@@ -2967,7 +2967,8 @@
 			}
 		},
 		"fieldsets": {
-			"rebate": "Remise de campagne"
+			"rebate": "Remise de campagne",
+			"constraints": "Contraintes de campagne"
 		},
 		"fields": {
 			"active": {
@@ -2981,6 +2982,8 @@
 			"gross": "Remise forfaitaire en EUR (brut)",
 			"hash": "Code de réduction",
 			"itemTypes": "Valable pour les groupes d'articles suivants",
+			"minGross": "Valeur minimale des marchandises en EUR (brut)",
+			"minQuantity": "Nombre minimum d'articles",
 			"name": "Nom",
 			"percent": "Remise en pourcentage",
 			"rebateType": "Type de remise",
@@ -3018,7 +3021,8 @@
 		},
 		"rebateTypes": {
 			"percent": "pourcentage",
-			"absolute": "forfait"
+			"absolute": "forfaitaire",
+			"article": "forfaitaire par article"
 		}
 	},
 	"tag": {

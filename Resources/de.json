@@ -2967,7 +2967,8 @@
 			}
 		},
 		"fieldsets": {
-			"rebate": "Kampagnen-Rabatt"
+			"rebate": "Kampagnen-Rabatt",
+			"constraints": "Kampagnen-Limits"
 		},
 		"fields": {
 			"active": {
@@ -2981,6 +2982,8 @@
 			"gross": "Pauschal-Rabatt in EUR (Brutto)",
 			"hash": "Rabatt-Code",
 			"itemTypes": "Gültig für folgende Artikelgruppen",
+			"minGross": "Mindestwarenwert in EUR (Brutto)",
+			"minQuantity": "Mindestwarenstückzahl",
 			"name": "Bezeichnung",
 			"percent": "Prozentualer Rabatt",
 			"rebateType": "Rabattart",
@@ -3018,7 +3021,8 @@
 		},
 		"rebateTypes": {
 			"percent": "prozentual",
-			"absolute": "pauschal"
+			"absolute": "pauschal",
+			"article": "pauschal pro Artikel"
 		}
 	},
 	"tag": {
