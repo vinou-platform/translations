@@ -2984,6 +2984,7 @@
 			"dateRange": "Période de campagne",
 			"description": "La description",
 			"endDate": "Date de fin",
+			"freeShipping": "En plus livraison gratuite",
 			"gross": "Remise forfaitaire en EUR (brut)",
 			"hash": "Code de réduction",
 			"itemTypes": "Valable pour les groupes d'articles suivants",

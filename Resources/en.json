@@ -2984,6 +2984,7 @@
 			"dateRange": "Campaign period",
 			"description": "Description",
 			"endDate": "End date",
+			"freeShipping": "Additionally free shipping",
 			"gross": "Flat-rate discount in EUR (gross)",
 			"hash": "Discount code",
 			"itemTypes": "Valid for the following article groups",

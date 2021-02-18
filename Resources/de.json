@@ -2984,6 +2984,7 @@
 			"dateRange": "Kampagnenzeitraum",
 			"description": "Beschreibung",
 			"endDate": "Endet am",
+			"freeShipping": "Zusätzlich kostenloser Versand",
 			"gross": "Pauschal-Rabatt in EUR (Brutto)",
 			"hash": "Rabatt-Code",
 			"itemTypes": "Gültig für folgende Artikelgruppen",

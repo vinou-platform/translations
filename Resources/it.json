@@ -2984,6 +2984,7 @@
 			"dateRange": "Periodo della campagna",
 			"description": "Descrizione",
 			"endDate": "Data di fine",
+			"freeShipping": "Inoltre spedizione gratuita",
 			"gross": "Sconto forfettario in EUR (lordo)",
 			"hash": "Codice di sconto",
 			"itemTypes": "Valido per i seguenti gruppi di articoli",
