@@ -842,7 +842,8 @@
 			"customers_id": "Appartiene al membro",
 			"lastLogin": "Ultimo accesso",
 			"settings": {
-				"language": "linguaggio"
+				"language": "linguaggio",
+				"startModule": "Modulo di avvio"
 			}
 		},
 		"views": {
@@ -887,7 +888,8 @@
 			"passwordreset": "La nuova password è impostata. Il link utilizzato non è più valido.",
 			"register": "Nessun account? <a href='/register'>Registrati ora!</a>",
 			"passwordmatch": "La nuova digitazione della password non corrisponde.",
-			"imagesize": "<b>Consigliato per il miglior rendering</b> <br> Dimensioni: 1000x1000px <br/> Formato file: .png (escluso)"
+			"imagesize": "<b>Consigliato per il miglior rendering</b> <br> Dimensioni: 1000x1000px <br/> Formato file: .png (escluso)",
+			"startModule": "Dopo aver effettuato l'accesso, verrai reindirizzato automaticamente a questo modulo."
 		},
 		"errors": {
 			"emailempty": "Campo email vuoto",

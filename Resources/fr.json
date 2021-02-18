@@ -842,7 +842,8 @@
 			"customers_id": "Appartient au membre",
 			"lastLogin": "Dernière connexion",
 			"settings": {
-				"language": "Langue"
+				"language": "Langue",
+				"startModule": "Module de démarrage"
 			}
 		},
 		"views": {
@@ -887,7 +888,8 @@
 			"passwordreset": "Le nouveau mot de passe est défini. Le lien utilisé n'est plus valide.",
 			"register": "Pas de compte? <a href='/register'> Inscrivez-vous maintenant! </a>",
 			"passwordmatch": "La nouvelle saisie du mot de passe ne correspond pas.",
-			"imagesize": "<b> Recommandé pour un meilleur rendu </b> <br> Dimension: 1000x1000px <br/> Format de fichier: .png (exempté)"
+			"imagesize": "<b>Recommandé pour un meilleur rendu</b><br/>Dimension: 1000x1000px<br/>Format de fichier: .png (exempté)",
+			"startModule": "Une fois connecté, vous serez automatiquement redirigé vers ce module."
 		},
 		"errors": {
 			"emailempty": "Champ de courriel vide",

@@ -842,7 +842,8 @@
 			"customers_id": "Belongs to member",
 			"lastLogin": "Last Login",
 			"settings": {
-				"language": "Language"
+				"language": "Language",
+				"startModule": "Start module"
 			}
 		},
 		"views": {
@@ -887,7 +888,8 @@
 			"passwordreset": "New password is set. The used link is not valid anymore.",
 			"register": "No account? <a href='/register'>Register now!</a>",
 			"passwordmatch": "Password retype didn't match.",
-			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)"
+			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
+			"startModule": "After logging in, you will be automatically redirected to this module."
 		},
 		"errors": {
 			"emailempty": "Email field empty",

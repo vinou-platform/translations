@@ -842,7 +842,8 @@
 			"customers_id": "gehört zu Mitglied",
 			"lastLogin": "Letzter Login",
 			"settings": {
-				"language": "Sprache"
+				"language": "Sprache",
+				"startModule": "Startmodul"
 			}
 		},
 		"views": {
@@ -887,7 +888,8 @@
 			"passwordreset": "Dein Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
 			"register": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
 			"passwordmatch": "Die beiden Passwörter stimmen nicht überein.",
-			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
+			"startModule": "Nach dem Login wirst Du automatisch zu diesem Modul weitergeleitet."
 		},
 		"errors": {
 			"emailempty": "E-Mail Adresse nicht angegeben",
