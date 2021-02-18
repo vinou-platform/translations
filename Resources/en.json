@@ -1562,6 +1562,9 @@
 			"toasts": {
 				"connected": "Wine connected"
 			}
+		},
+		"hints": {
+			"stockDistribution": "Available stock {stock}, in order {ordered}"
 		}
 	},
 	"winecategory": {

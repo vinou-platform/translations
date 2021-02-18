@@ -1562,6 +1562,9 @@
 			"toasts": {
 				"connected": "Vino ha sido transmitido al surtido."
 			}
+		},
+		"hints": {
+			"stockDistribution": "Stock disponible {stock}, en orden {ordered}"
 		}
 	},
 	"winecategory": {

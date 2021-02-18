@@ -1562,6 +1562,9 @@
 			"toasts": {
 				"connected": "Le vin a été transféré à l'assortiment."
 			}
+		},
+		"hints": {
+			"stockDistribution": "Stock disponible {stock}, en ordre {ordered}"
 		}
 	},
 	"winecategory": {
