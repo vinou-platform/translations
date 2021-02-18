@@ -1550,7 +1550,7 @@
 			"automationConnected": "Der Wein wurde übertragen und wird künftig synchronisiert",
 			"connectionUpdated": "Verbindungsdaten wurden angepasst",
 			"connectionUpdatedError": "Verbindungsdaten konntent nicht angepasst werden",
-			"connectionDeleted": "Verbindung wurden gelöscht",
+			"connectionDeleted": "Verbindung wurde gelöscht",
 			"connectionDeletedError": "Verbindung konnte nicht gelöscht werden"
 		},
 		"messages": {
