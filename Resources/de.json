@@ -1439,6 +1439,7 @@
 			"barcode": "EAN-Code",
 			"baseprice": "Preis pro Liter",
 			"bio": "Bio zertifiziert",
+			"bottles": "Flaschen",
 			"bottlesize": "Flaschengröße",
 			"cap": "Verschluss",
 			"category": "Kategorie",
@@ -1477,12 +1478,15 @@
 			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
 			"quality": "Qualitätsstufe",
 			"quality_note": "Zusatzangabe Qualitätsstufe",
-			"bottlingType": "Art der Abfüllung",
 			"quantity": "Aktueller Bestand",
+			"bottlingType": "Art der Abfüllung",
 			"region": "Anbauregion",
 			"shoplink": "Link zum Shop",
 			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"stock": "Verfügbarer Bestand",
+			"stockOrdered": "Bestand in Bestellung",
+			"stockReserved": "Reservierter Bestand",
 			"stockunknown": "n/a",
 			"sweetness": "Restsüße",
 			"taste": "Geschmacksrichtung",
@@ -1566,7 +1570,7 @@
 			}
 		},
 		"hints": {
-			"stockDistribution": "Verfügbarer Bestand {stock}, in Bestellung {ordered}"
+			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}"
 		}
 	},
 	"winecategory": {
@@ -1671,9 +1675,10 @@
 			"nostock": "nicht auf Lager",
 			"nostocktext": "Anzeigetext wenn nicht auf Lager",
 			"prices": "Preise",
-			"quantity": "Bestand",
+			"quantity": "Aktueller Bestand",
 			"quantityabbr": "Stk.",
 			"size": "Füllmenge",
+			"stock": "Verfügbarer Bestand",
 			"tag": "Tags",
 			"tax": "MwSt.",
 			"taxrate": "Steuersatz",
@@ -2070,6 +2075,14 @@
 				"main": "Angebot",
 				"sub": "drucken"
 			},
+			"reserve": {
+				"main": "Beinhaltete Artikel",
+				"sub": "reservieren"
+			},
+			"unreserve": {
+				"main": "Reservierung",
+				"sub": "zurückziehen"
+			},
 			"show": {
 				"main": "Angebot",
 				"sub": "anzeigen"
@@ -2107,13 +2120,11 @@
 				"title": "Angebot erstellen"
 			},
 			"timeline": {
-				"activated": "Angebot ist offen und kann bis zum Ablauf der Angebotsfrist angenommen werden",
+				"cancelled": "Angebot storniert",
 				"created": "Angebot erstellt",
-				"notActivatedYet": "Angebotszeitraum hat noch nicht begonnen",
-				"orderCreated": "Angebot angenommen, Bestellung erfasst",
-				"orderNotCreatedYet": "Angebot wurde noch nicht angenommen",
 				"declined": "Angebot abgelehnt",
-				"cancelled": "Angebot storniert"
+				"orderCreated": "Angebot angenommen, Bestellung erfasst",
+				"reserved": "Angebot reserviert"
 			},
 			"documents": {
 				"title": "Dokumente"
@@ -2127,16 +2138,27 @@
 		},
 		"dialogs": {
 			"cancel": "Möchtest Du dieses Angebot wirklich zurückziehen?",
-			"decline": "Möchtest Du dieses Angebot wirklich ablehnen?"
+			"decline": "Möchtest Du dieses Angebot wirklich ablehnen?",
+			"reserve": "Möchtest Du die im Angebot enthaltenen Artikel wirklich reservieren?",
+			"unreserve": "Möchtest Du die Reservierung der im Angebot enthaltenen Artikel wirklich zurückziehen?"
 		},
 		"toasts": {
 			"cancelled": "Angebot zurückgezogen!",
 			"created": "Angebot erstellt!",
 			"declined": "Angebot abgelehnt!",
+			"reserved": "Im Angebot beinhaltete Artikel reserviert!",
+			"unreserved": "Reservierung zurückgezogen!",
 			"updated": "Angebot geändert!"
 		},
 		"errors": {
 			"create": "Angebot konnte nicht erstellt werden. Bitte prüfe Deine Angaben und versuche es erneut."
+		},
+		"hints": {
+			"activated": "Das Angebot ist offen und kann bis zum Ablauf der Angebotsfrist angenommen werden.",
+			"expired": "Der Angebotszeitraum ist ohne Auftrag verstrichen.",
+			"notActivatedYet": "Der Angebotszeitraum hat noch nicht begonnen.",
+			"orderNotCreatedYet": "Das Angebot wurde noch nicht angenommen.",
+			"reserved": "Im Angebot beinhaltete Artikel sind reserviert."
 		}
 	},
 	"order": {
