@@ -1436,13 +1436,14 @@
 				"placeholder": "Rechercher allergènes"
 			},
 			"articlenumber": "No. d'article",
-			"baseprice": "Prix au litre",
 			"barcode": "Code EAN",
+			"baseprice": "Prix au litre",
 			"bio": "Certifié biologique",
+			"bottles": "Bouteilles",
 			"bottlesize": "Taille de la bouteille",
+			"bottlingType": "Type de remplissage",
 			"cap": "Obturateur",
 			"category": "Categorie",
-			"tag": "Mots clés",
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Description",
@@ -1458,7 +1459,6 @@
 					"notfound": "L'image n'a pas pu être trouvée"
 				}
 			},
-			"inclVat": "TVA.",
 			"inshop": "Afficher dans la boutique",
 			"instock": "En stock",
 			"inwinelist": "Afficher dans la liste des vins",
@@ -1477,14 +1477,15 @@
 			"qrlinkempty": "Adresse de destination pour le code QR (Passe du vin si vide)",
 			"quality": "Niveau de qualité",
 			"quality_note": "Informations de classification supplémentaires",
-			"bottlingType": "Type de remplissage",
 			"quantity": "Stock",
 			"region": "Région de culture",
 			"shoplink": "Lien vers la boutique",
 			"shoplink_active": "Lien vers la boutique aktife",
 			"sorting": "Index de tri manuel (p.ex. pour le magasin)",
+			"stock": "Inventaire disponible",
 			"stockunknown": "Aucune information",
 			"sweetness": "Sucre résiduel",
+			"tags": "Mots clés",
 			"taste": "Saveur",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
@@ -1674,7 +1675,7 @@
 			"quantity": "Stock",
 			"quantityabbr": "Pcs.",
 			"size": "Quantité de remplissage",
-			"tag": "Mots clés",
+			"tags": "Mots clés",
 			"tax": "TVA.",
 			"taxrate": "Taux d'imposition",
 			"unit": "Unité",
@@ -2070,6 +2071,14 @@
 				"main": "Imprimer",
 				"sub": "l'offre"
 			},
+			"reserve": {
+				"main": "Réserver",
+				"sub": "les articles inclus"
+			},
+			"unreserve": {
+				"main": "Retirer",
+				"sub": "la réservation"
+			},
 			"show": {
 				"main": "Afficher",
 				"sub": "l'offre"
@@ -2107,13 +2116,11 @@
 				"title": "Créer l'offre"
 			},
 			"timeline": {
-				"activated": "L'offre est ouverte et peut être acceptée jusqu'à l'expiration de la période de l'offre",
+				"cancelled": "Offre annulée",
 				"created": "Offre créée",
-				"notActivatedYet": "La période de l'offre n'a pas encore commencé",
-				"orderCreated": "Offre acceptée, commande créée",
-				"orderNotCreatedYet": "L'offre n'a pas encore été acceptée",
 				"declined": "Offre refusée",
-				"cancelled": "Offre annulée"
+				"orderCreated": "Offre acceptée, commande créée",
+				"reserved": "Offre réservée"
 			},
 			"documents": {
 				"title": "Documents"
@@ -2127,16 +2134,27 @@
 		},
 		"dialogs": {
 			"cancel": "Voulez-vous vraiment annuler cet ordre?",
-			"decline": "Voulez-vous vraiment refuser cet ordre?"
+			"decline": "Voulez-vous vraiment refuser cet ordre?",
+			"reserve": "Voulez-vous vraiment réserver les articles inclus dans l'offre?",
+			"unreserve": "Voulez-vous vraiment retirer la réservation des articles inclus dans l'offre?"
 		},
 		"toasts": {
 			"cancelled": "Offre annulé!",
 			"created": "Offre créé!",
 			"declined": "Offre refusée!",
+			"reserved": "Les articles inclus dans l'offre ont été réservés!",
+			"unreserved": "Réservation retirée!",
 			"updated": "Offre changé!"
 		},
 		"errors": {
 			"create": "L'offre n'a pas pu être créée. Veuillez vérifier vos coordonnées et réessayer."
+		},
+		"hints": {
+			"activated": "L'offre est ouverte et peut être acceptée jusqu'à l'expiration de la période de l'offre.",
+			"expired": "La période de l'offre s'est écoulée sans commande.",
+			"notActivatedYet": "La période de l'offre n'a pas encore commencé.",
+			"orderNotCreatedYet": "L'offre n'a pas encore été acceptée.",
+			"reserved": "Les articles inclus dans l'offre sont réservés."
 		}
 	},
 	"order": {

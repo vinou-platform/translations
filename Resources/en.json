@@ -1436,13 +1436,14 @@
 				"placeholder": "Search for allergens"
 			},
 			"articlenumber": "Art.-No.",
-			"baseprice": "Price per liter",
 			"barcode": "GTIN",
+			"baseprice": "Price per liter",
 			"bio": "Bio certified",
+			"bottles": "Bottles",
 			"bottlesize": "Bottlesize",
+			"bottlingType": "Type of bottling",
 			"cap": "Cap",
 			"category": "Category",
-			"tag": "Tags",
 			"countrycode": "Country",
 			"cuvee": "Cuvée",
 			"description": "Description",
@@ -1458,7 +1459,6 @@
 					"notfound": "Image could not be resolved"
 				}
 			},
-			"inclVat": "VAT",
 			"inshop": "Show shop",
 			"instock": "in stock",
 			"inwinelist": "Show in winelist",
@@ -1477,17 +1477,18 @@
 			"qrlinkempty": "Target address for QR code (Winepass if empty)",
 			"quality": "Classification",
 			"quality_note": "Additional classification note",
-			"bottlingType": "Type of bottling",
 			"quantity": "Current Stock",
 			"region": "Region",
 			"shoplink": "Shoplink",
 			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
+			"stock": "Available stock",
 			"stockunknown": "n/a",
 			"sweetness": "Sweetness",
 			"taste": "Taste",
 			"terroir": "Terroir",
 			"topseller": "Topseller",
+			"tags": "Tags",
 			"type": "Type",
 			"vegan": "Vegan",
 			"vintage": "Vintage",
@@ -1674,7 +1675,7 @@
 			"quantity": "Stock",
 			"quantityabbr": "pc.",
 			"size": "Filling quantity",
-			"tag": "Tags",
+			"tags": "Tags",
 			"tax": "VAT",
 			"taxrate": "Taxrate",
 			"unit": "Unit",
@@ -2070,6 +2071,14 @@
 				"main": "Print",
 				"sub": "offer"
 			},
+			"reserve": {
+				"main": "Reserve",
+				"sub": "included items"
+			},
+			"unreserve": {
+				"main": "Withdraw",
+				"sub": "reservation"
+			},
 			"show": {
 				"main": "Show",
 				"sub": "offer"
@@ -2107,13 +2116,11 @@
 				"title": "Create offer"
 			},
 			"timeline": {
-				"activated": "Offer is open and can be accepted until the offer period has expired",
+				"cancelled": "Offer cancelled",
 				"created": "Offer created",
-				"notActivatedYet": "Offer period has not started yet",
-				"orderCreated": "Offer accepted, order created",
-				"orderNotCreatedYet": "Offer has not been accepted yet",
 				"declined": "Offer declined",
-				"cancelled": "Offer cancelled"
+				"orderCreated": "Offer accepted, order created",
+				"reserved": "Reserved offer"
 			},
 			"documents": {
 				"title": "Documents"
@@ -2127,16 +2134,27 @@
 		},
 		"dialogs": {
 			"cancel": "Do you really want to cancel this offer?",
-			"decline": "Do you really want to decline this offer?"
+			"decline": "Do you really want to decline this offer?",
+			"reserve": "Do you really want to reserve the items included in the offer?",
+			"unreserve": "Do you really want to withdraw the reservation of the items included in the offer?"
 		},
 		"toasts": {
 			"cancelled": "Offer cancelled!",
 			"created": "Offer saved!",
 			"declined": "Offer declined!",
+			"reserved": "Items included in the offer have been reserved!",
+			"unreserved": "Reservation withdrawn!",
 			"updated": "Offer updated!"
 		},
 		"errors": {
 			"create": "Offer could not be created. Please check your details and try again."
+		},
+		"hints": {
+			"activated": "Offer is open and can be accepted until the offer period has expired.",
+			"expired": "Offer period has passed without an order.",
+			"notActivatedYet": "Offer period has not started yet.",
+			"orderNotCreatedYet": "Offer has not been accepted yet.",
+			"reserved": "Items included in the offer are reserved."
 		}
 	},
 	"order": {
