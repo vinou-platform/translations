@@ -2133,8 +2133,13 @@
 			"showEditor": "Afficher le créateur"
 		},
 		"dialogs": {
-			"cancel": "Voulez-vous vraiment annuler cet ordre?",
-			"decline": "Voulez-vous vraiment refuser cet ordre?",
+			"cancel": "Voulez-vous vraiment annuler cet offre?",
+			"create": {
+				"msg": "Vous créez un ordre, que voulez-vous faire?",
+				"save": "Créer seulement",
+				"withReservation": "Créer l'offre et réserver les articles"
+			},
+			"decline": "Voulez-vous vraiment refuser cet offre?",
 			"reserve": "Voulez-vous vraiment réserver les articles inclus dans l'offre?",
 			"unreserve": "Voulez-vous vraiment retirer la réservation des articles inclus dans l'offre?"
 		},

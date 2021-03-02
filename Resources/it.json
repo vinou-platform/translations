@@ -2134,6 +2134,11 @@
 		},
 		"dialogs": {
 			"cancel": "Vuoi davvero annullare questa offerta?",
+			"create": {
+				"msg": "Tu registri un'offerta, cosa vuoi fare?",
+				"save": "Registra solo",
+				"withReservation": "Registrare e prenotare gli articoli"
+			},
 			"decline": "Vuoi davvero rifiutare questa offerta?",
 			"reserve": "Vuoi davvero prenotare gli articoli inclusi nell'offerta?",
 			"unreserve": "Vuoi davvero ritirare la prenotazione degli articoli inclusi nell'offerta?"
@@ -2318,7 +2323,7 @@
 		},
 		"dialogs": {
 			"create": {
-				"msg": "Tu registri un ordine cosa vuoi fare",
+				"msg": "Tu registri un ordine, cosa vuoi fare?",
 				"save": "Registra solo",
 				"withInvoice": "Registrare e generare fattura",
 				"withDocuments": "Registrare e generare fattura e bolla di consegna"

@@ -2134,6 +2134,11 @@
 		},
 		"dialogs": {
 			"cancel": "Quieres anular esa oferta seguramente?",
+			"create": {
+				"msg": "Estás digitando una oferta, qué quieres hacer?",
+				"save": "Solo digitar",
+				"withReservation": "Digitar y reservar artículos"
+			},
 			"decline": "Quieres rechazar esa oferta seguramente?",
 			"reserve": "Quieres reservar los artículos incluidos en la oferta?",
 			"unreserve": "Quieres retirar la reserva de los artículos incluidos en la oferta?"

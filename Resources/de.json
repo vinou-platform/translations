@@ -2134,6 +2134,11 @@
 		},
 		"dialogs": {
 			"cancel": "Möchtest Du dieses Angebot wirklich zurückziehen?",
+			"create": {
+				"msg": "Du erfasst ein Angebot, was möchtest Du tun?",
+				"save": "Nur erfassen",
+				"withReservation": "Erfassen und Artikel reservieren"
+			},
 			"decline": "Möchtest Du dieses Angebot wirklich ablehnen?",
 			"reserve": "Möchtest Du die im Angebot enthaltenen Artikel wirklich reservieren?",
 			"unreserve": "Möchtest Du die Reservierung der im Angebot enthaltenen Artikel wirklich zurückziehen?"

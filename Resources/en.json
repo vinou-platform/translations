@@ -2134,6 +2134,11 @@
 		},
 		"dialogs": {
 			"cancel": "Do you really want to cancel this offer?",
+			"create": {
+				"msg": "You're creating an offer, what do you want to do?",
+				"save": "Create only",
+				"withReservation": "Create and reserve items"
+			},
 			"decline": "Do you really want to decline this offer?",
 			"reserve": "Do you really want to reserve the items included in the offer?",
 			"unreserve": "Do you really want to withdraw the reservation of the items included in the offer?"
