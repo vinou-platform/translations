@@ -5173,6 +5173,15 @@
 		},
 		"614": {
 			"name": "Rosa Chardonnay"
+		},
+		"615": {
+			"name": "Riesling Rouge"
+		},
+		"616": {
+			"name": "Manzoni Bianco"
+		},
+		"617": {
+			"name": "Cariñena"
 		}
 	},
 	"tastes": {
@@ -5366,7 +5375,8 @@
 			"12034": "Valdeorras",
 			"12035": "Bierzo",
 			"12036": "Rueda",
-			"12037": "Sierra de Gredos"
+			"12037": "Sierra de Gredos",
+			"12038": "Montsant"
 		},
 		"fr": {
 			"2000": "Alsace",
