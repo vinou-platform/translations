@@ -1620,23 +1620,25 @@
 			"delete": "Quieres borrar esa categoría seguramente?"
 		}
 	},
-	"prices": {
-		"gross": "bruto",
-		"net": "neto",
-		"price": "Precio",
-		"taxrate": "tipo impositivo",
-		"standard": "precio estándar",
-		"action": {
+	"price": {
+		"actions": {
 			"create": {
 				"main": "nuevo precio",
 				"sub": "crear"
-			},
-			"delete": {
-				"confirm": "¿Realmente quieres eliminar este precio?"
 			}
 		},
+		"fields": {
+			"gross": "Bruto",
+			"net": "Neto",
+			"price": "Precio",
+			"standard": "Precio estándar",
+			"taxrate": "Tipo impositivo"
+		},
 		"fieldSets": {
-			"title": "precios"
+			"title": "Precios"
+		},
+		"dialogs": {
+			"delete": "Realmente quieres eliminar este precio?"
 		}
 	},
 	"product": {

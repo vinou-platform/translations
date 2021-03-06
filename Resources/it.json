@@ -1620,23 +1620,25 @@
 			"delete": "Vuoi veramente cancellare questa categoria?"
 		}
 	},
-	"prices": {
-		"gross": "Lordo",
-		"net": "Rete",
-		"price": "Prezzo",
-		"taxrate": "Un'aliquota di tassazione",
-		"standard": "Prezzo standard",
-		"action": {
+	"price": {
+		"actions": {
 			"create": {
 				"main": "Nuovo prezzo",
 				"sub": "creato"
-			},
-			"delete": {
-				"confirm": "Sei sicuro di voler eliminare questo prezzo?"
 			}
+		},
+		"fields": {
+			"gross": "Lordo",
+			"net": "Rete",
+			"price": "Prezzo",
+			"standard": "Prezzo standard",
+			"taxrate": "Un'aliquota di tassazione"
 		},
 		"fieldSets": {
 			"title": "Prezzi"
+		},
+		"dialogs": {
+			"delete": "Sei sicuro di voler eliminare questo prezzo?"
 		}
 	},
 	"product": {

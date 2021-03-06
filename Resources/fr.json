@@ -1620,23 +1620,25 @@
 			"delete": "Voulez-vous vraiment supprimer cette catégorie?"
 		}
 	},
-	"prices": {
-		"gross": "Brut",
-		"net": "Net",
-		"price": "Prix",
-		"taxrate": "Taux d'imposition",
-		"standard": "Prix standard",
-		"action": {
+	"price": {
+		"actions": {
 			"create": {
 				"main": "Créer",
 				"sub": "prix"
-			},
-			"delete": {
-				"confirm": "Voulez-vous vraiment supprimer ce prix?"
 			}
+		},
+		"fields": {
+			"gross": "Brut",
+			"net": "Net",
+			"price": "Prix",
+			"standard": "Prix standard",
+			"taxrate": "Taux d'imposition"
 		},
 		"fieldSets": {
 			"title": "Prix"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce prix?"
 		}
 	},
 	"product": {

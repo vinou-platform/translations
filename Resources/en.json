@@ -1620,23 +1620,25 @@
 			"delete": "Do you really want to delete the selected category?"
 		}
 	},
-	"prices": {
-		"gross": "Gross",
-		"net": "Net",
-		"price": "Price",
-		"taxrate": "Taxrate",
-		"standard": "Default price",
-		"action": {
+	"price": {
+		"actions": {
 			"create": {
 				"main": "New price",
 				"sub": " "
-			},
-			"delete": {
-				"confirm": "Do you really want to delete the selected price?"
 			}
+		},
+		"fields": {
+			"gross": "Gross",
+			"net": "Net",
+			"price": "Price",
+			"standard": "Default price",
+			"taxrate": "Taxrate"
 		},
 		"fieldSets": {
 			"title": "Prices"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete the selected price?"
 		}
 	},
 	"product": {
