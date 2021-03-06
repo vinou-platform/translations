@@ -2752,6 +2752,7 @@
 			"seo": "Search engine specific information"
 		},
 		"fields": {
+			"publishing_date": "Date of news entry",
 			"title": "Title",
 			"image": "Image",
 			"teaser": "Teaser (Preview-Text)",
