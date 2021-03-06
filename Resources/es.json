@@ -1623,7 +1623,7 @@
 	"price": {
 		"actions": {
 			"create": {
-				"main": "nuevo precio",
+				"main": "Nuevo precio",
 				"sub": "crear"
 			}
 		},
@@ -1631,6 +1631,8 @@
 			"gross": "Bruto",
 			"net": "Neto",
 			"price": "Precio",
+			"purchase": "Precio de compra",
+			"retail": "Precio de venta sugerido",
 			"standard": "Precio estándar",
 			"taxrate": "Tipo impositivo"
 		},

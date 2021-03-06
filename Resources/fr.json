@@ -1631,6 +1631,8 @@
 			"gross": "Brut",
 			"net": "Net",
 			"price": "Prix",
+			"purchase": "Prix d'achat",
+			"retail": "Prix de détail suggéré",
 			"standard": "Prix standard",
 			"taxrate": "Taux d'imposition"
 		},

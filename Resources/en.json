@@ -1631,6 +1631,8 @@
 			"gross": "Gross",
 			"net": "Net",
 			"price": "Price",
+			"purchase": "Purchasing price",
+			"retail": "Suggested retail price",
 			"standard": "Default price",
 			"taxrate": "Taxrate"
 		},

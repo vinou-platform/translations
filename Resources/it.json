@@ -1631,6 +1631,8 @@
 			"gross": "Lordo",
 			"net": "Rete",
 			"price": "Prezzo",
+			"purchase": "Prezzo di acquisto",
+			"retail": "Prezzo di vendita suggerito",
 			"standard": "Prezzo standard",
 			"taxrate": "Un'aliquota di tassazione"
 		},

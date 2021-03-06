@@ -1631,6 +1631,8 @@
 			"gross": "Brutto",
 			"net": "Netto",
 			"price": "Preis",
+			"purchase": "Einkaufspreis",
+			"retail": "Unverbindliche Preisempfehlung",
 			"standard": "Standardpreis",
 			"taxrate": "Steuersatz"
 		},
