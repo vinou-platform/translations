@@ -5539,23 +5539,29 @@
 			"sweets": "Pasticceria",
 			"occasions": "Occasioni"
 		},
+
 		"beef": "Manzo",
+		"veal": "Vitello",
 		"pork": "Carne di maiale",
 		"poultry": "Pollame",
 		"venison": "Selvaggio",
+		"lamb": "Agnello",
 		"fish": "Pesce",
 		"shellfish": "Crostacei",
 		"shell": "Mollusco",
 		"sausage": "Salsiccia",
+
 		"grilled": "Grigliato",
 		"fried": "Fritto",
 		"smoked": "Affumicato",
 		"baked": "Al forno",
 		"steamed": "Cuit à la vapeur",
+
 		"dairyproduct": "Prodotti lattiero-caseari",
 		"softcheese": "Formaggio a pasta molle",
 		"bluecheese": "Gorgonzola",
 		"hardcheese": "Formaggio a pasta dura",
+
 		"bulb": "Piante di bulbo",
 		"salad": "Insalata",
 		"tubers": "Tuberi o rape",
@@ -5563,22 +5569,28 @@
 		"mushrooms": "Funghi",
 		"nuts": "Noccioline",
 		"treenuts": "Frutta buccia",
+		"asparagus": "asparago",
+
 		"pepper": "Pepe",
 		"chili": "Chile",
 		"spicy": "Caldo e piccante",
 		"herbs": "Odori",
 		"cinnamon": "Cannella",
 		"exotic": "Spezie esotiche",
+		"vegetarian": "Vegetariano",
+
 		"toast": "Pane bianco",
 		"bread": "Pane",
 		"wholebread": "Pane integrale",
 		"pumpernickel": "Pumpernickel",
+
 		"fruits": "Frutta",
 		"cake": "Torta",
 		"creme": "Creme",
 		"ice": "Ghiaccio",
 		"chocolate": "Cioccolato",
 		"coffee": "Caffè",
+
 		"barbecue": "Barbecue",
 		"present": "Regalo",
 		"boysNight": "Serata tra ragazzi",
@@ -5588,7 +5600,8 @@
 		"firesideChat": "Sera camino",
 		"afterWork": "Orario di chiusura",
 		"easyDrinking": "Facile da bere",
-		"specialOccasions": "Occasioni speciali"
+		"specialOccasions": "Occasioni speciali",
+		"aperitif": "Aperitivo"
 	},
 	"qualitytypes": {
 		"ar": {

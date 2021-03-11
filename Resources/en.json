@@ -5539,23 +5539,29 @@
 			"sweets": "Sweets",
 			"occasions": "Occasions"
 		},
+
 		"beef": "Beef",
+		"veal": "Veal",
 		"pork": "Pork",
 		"poultry": "Poultry",
 		"venison": "Venison",
+		"lamb": "Lamb",
 		"fish": "Fish",
 		"shellfish": "Shellfish",
 		"shell": "Seeshells",
 		"sausage": "Sausage",
+
 		"grilled": "Grilled",
 		"fried": "Fried",
 		"smoked": "Smoked",
 		"baked": "Baked",
 		"steamed": "Steamed",
+
 		"dairyproduct": "Dairyproduct",
 		"softcheese": "Soft cheese",
 		"bluecheese": "Blue cheese",
 		"hardcheese": "Hard cheese",
+
 		"bulb": "Blub",
 		"salad": "Salad",
 		"tubers": "Tubes",
@@ -5563,22 +5569,28 @@
 		"mushrooms": "Mushrooms",
 		"nuts": "Nuts",
 		"treenuts": "Treenuts",
+		"asparagus": "Asparagus",
+
 		"pepper": "Pepper",
 		"chili": "Chili",
 		"spicy": "Hot & Spicy",
 		"herbs": "Herbs",
 		"cinnamon": "Cinnamon",
 		"exotic": "Exotic (Anis)",
+		"vegetarian": "Vegetarian",
+
 		"toast": "Toast",
 		"bread": "Bread",
 		"wholebread": "Wholebread",
 		"pumpernickel": "Pumpernickel",
+
 		"fruits": "Fruits",
 		"cake": "Cake",
 		"creme": "Creme",
 		"ice": "Ice",
 		"chocolate": "Chocolate",
 		"coffee": "Coffee",
+
 		"barbecue": "Barbecue",
 		"present": "Present",
 		"boysNight": "Boys' night",
@@ -5588,7 +5600,8 @@
 		"firesideChat": "Fireside chat",
 		"afterWork": "After work",
 		"easyDrinking": "Easy drinking",
-		"specialOccasions": "Special occasions"
+		"specialOccasions": "Special occasions",
+		"aperitif": "Aperitif"
 	},
 	"qualitytypes": {
 		"ar": {

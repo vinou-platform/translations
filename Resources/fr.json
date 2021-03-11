@@ -5539,23 +5539,29 @@
 			"sweets": "Confiseries",
 			"occasions": "Occasions"
 		},
+
 		"beef": "Bœuf",
+		"veal": "Veau",
 		"pork": "Porc",
 		"poultry": "Volaille",
 		"venison": "Sauvage",
+		"lamb": "Agneau",
 		"fish": "Poisson",
 		"shellfish": "Crustacés",
 		"shell": "Coquillages",
 		"sausage": "Saucisse",
+
 		"grilled": "Grillé",
 		"fried": "Frit",
 		"smoked": "Fumé",
 		"baked": "Cuit au four",
 		"steamed": "Cuit à la vapeur",
+
 		"dairyproduct": "Produits laitiers",
 		"softcheese": "Fromage à pâte molle",
 		"bluecheese": "Fromage Bleu",
 		"hardcheese": "fromage à pâte dure",
+
 		"bulb": "Plantes à bulbe",
 		"salad": "Salade",
 		"tubers": "Tubercules ou navets",
@@ -5563,22 +5569,28 @@
 		"mushrooms": "Champignons",
 		"nuts": "Noix",
 		"treenuts": "Fruits à coque",
+		"asparagus": "Asperges",
+
 		"pepper": "Poivre",
 		"chili": "Chili",
 		"spicy": "Piquant et épicé",
 		"herbs": "Herbes",
 		"cinnamon": "Cannelle",
 		"exotic": "Épices exotiques",
+		"vegetarian": "Végétarien",
+
 		"toast": "Pain blanc",
 		"bread": "Pain",
 		"wholebread": "Pain de blé entier",
 		"pumpernickel": "Pumpernickel",
+
 		"fruits": "Fruits",
 		"cake": "Gâteau",
 		"creme": "Creme",
 		"ice": "Glace",
 		"chocolate": "Chocolat",
 		"coffee": "Café",
+
 		"barbecue": "Barbecue",
 		"present": "Cadeau",
 		"boysNight": "Soirée entre gentlemen",
@@ -5588,14 +5600,12 @@
 		"firesideChat": "Soirée tranquille à la maison",
 		"afterWork": "Temps de fermeture",
 		"easyDrinking": "Boire facilement",
-		"specialOccasions": "Occasions spéciales"
+		"specialOccasions": "Occasions spéciales",
+		"aperitif": "Apéritif"
 	},
 	"qualitytypes": {
 		"ar": {
 			"country": "Wine of Argentina"
-		},
-		"au": {
-			"country": "Wine of Australia"
 		},
 		"at": {
 			"country": "Österreichischer Wein",
@@ -5614,6 +5624,9 @@
 			"champagneReserve": "Sekt g.U. Reserve",
 			"champagneGrandReserve": "Sekt g.U. Große Reserve",
 			"ausbruch": "Ausbruch"
+		},
+		"au": {
+			"country": "Wine of Australia"
 		},
 		"cl": {
 			"country": "Wine of Chile",

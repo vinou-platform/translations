@@ -5539,23 +5539,29 @@
 			"sweets": "Süßigkeiten",
 			"occasions": "Anlässe"
 		},
+
 		"beef": "Rind",
+		"veal": "Kalb",
 		"pork": "Schwein",
 		"poultry": "Geflügel",
 		"venison": "Wild",
+		"lamb": "Lamm",
 		"fish": "Fisch",
 		"shellfish": "Krebstiere",
 		"shell": "Muscheln",
 		"sausage": "Wurst",
+
 		"grilled": "Gegrillt",
 		"fried": "Gebraten",
 		"smoked": "Geräuchert",
 		"baked": "Gebacken",
 		"steamed": "Gedünstet",
+
 		"dairyproduct": "Molkereiprodukte",
 		"softcheese": "Weichkäse",
 		"bluecheese": "Edelschimmel",
 		"hardcheese": "Hartkäse",
+
 		"bulb": "Zwiebelgewächse",
 		"salad": "Salat",
 		"tubers": "Knollen o. Rüben",
@@ -5563,22 +5569,28 @@
 		"mushrooms": "Pilze",
 		"nuts": "Nüsse",
 		"treenuts": "Schalenfrüchte",
+		"asparagus": "Spargel",
+
 		"pepper": "Pfeffer",
 		"chili": "Chili",
 		"spicy": "Hot & Spicy",
 		"herbs": "Kräuter",
 		"cinnamon": "Zimt",
 		"exotic": "Exotische Gewürze",
+		"vegetarian": "Vegetarisch",
+		
 		"toast": "Weißbrot",
 		"bread": "Brot",
 		"wholebread": "Vollkorn",
 		"pumpernickel": "Pumpernickel",
+
 		"fruits": "Früchte",
 		"cake": "Kuchen",
 		"creme": "Creme",
 		"ice": "Eis",
 		"chocolate": "Schokolade",
 		"coffee": "Kaffee",
+
 		"barbecue": "Grillabend",
 		"present": "Geschenk",
 		"boysNight": "Männerabend",
@@ -5588,7 +5600,8 @@
 		"firesideChat": "Kaminabend",
 		"afterWork": "Feierabend",
 		"easyDrinking": "Easy drinking",
-		"specialOccasions": "Besondere Anlässe"
+		"specialOccasions": "Besondere Anlässe",
+		"aperitif": "Aperitif"
 	},
 	"qualitytypes": {
 		"ar": {
