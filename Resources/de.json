@@ -2752,7 +2752,6 @@
 			"seo": "Suchmaschinen spezifische Angaben"
 		},
 		"fields": {
-			"publishing_date": "Datum der Neuigkeit",
 			"title": "Titel",
 			"image": "Bild",
 			"teaser": "Teaser (Vorschau-Text)",
@@ -2762,6 +2761,7 @@
 			"visibility": "Sichtbarkeit",
 			"startdate": "Start-Datum",
 			"enddate": "End-Datum",
+			"publishing_date": "Datum der Neuigkeit",
 			"meta_title": "Title-Tag",
 			"meta_description": "Meta-Description",
 			"path_segment": "Pfadsegment"
@@ -2778,7 +2778,7 @@
 			"delete": "Möchtest Du diesen Newsbeitrag wirklich löschen?"
 		},
 		"hints": {
-			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br/>Datei-Format: .png (freigestellt)"
+			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1920x1280px<br>Datei-Format: .png (freigestellt)"
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Newsbeitrag"
