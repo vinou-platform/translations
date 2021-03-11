@@ -2752,6 +2752,7 @@
 			"seo": "Suchmaschinen spezifische Angaben"
 		},
 		"fields": {
+			"publishing_date": "Datum der Neuigkeit",
 			"title": "Titel",
 			"image": "Bild",
 			"teaser": "Teaser (Vorschau-Text)",
