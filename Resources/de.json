@@ -2759,12 +2759,12 @@
 			"tags": "Tags",
 			"link": "Externer Link",
 			"visibility": "Sichtbarkeit",
-			"startdate": "Start-Datum",
-			"enddate": "End-Datum",
-			"publishing_date": "Datum der Neuigkeit",
-			"meta_title": "Title-Tag",
-			"meta_description": "Meta-Description",
-			"path_segment": "Pfadsegment"
+			"startDate": "Start-Datum",
+			"endDate": "End-Datum",
+			"publishingDate": "Datum der Neuigkeit",
+			"metaTitle": "Title-Tag",
+			"metaDescription": "Meta-Description",
+			"pathSegment": "Pfadsegment"
 		},
 		"toasts": {
 			"created": "Newsbeitrag angelegt!",
