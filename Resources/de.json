@@ -927,7 +927,6 @@
 	"db_payments_details": "Details",
 	"db_payments_gross": "Betrag",
 	"db_payments_invoice": "Rechnung",
-	"db_payments_order": "Bestellung",
 	"db_cronjobs_createtitle": "Cronjob anlegen",
 	"db_cronjobs_edittitle": "Cronjob bearbeiten",
 	"db_cronjobs_description": "Beschreibung",
@@ -2349,6 +2348,14 @@
 		"errors": {
 			"create": "Bestellung konnte nicht erfasst werden. Bitte prüfe Deine Angaben und versuche es erneut.",
 			"minItemQuantity": "Bitte gib für die Anzahl eine Zahl größer als 0 ein"
+		},
+		"hints": {
+			"newPayment": "Du erfasst einen Zahlungseingang für die Bestellung {number} vom {date} mit einem Bestellwert von {gross} Brutto.",
+			"downPayments": "Bisher wurde ein Betrag von {gross} als Anzahlung geleistet.",
+			"openPayment": "Offener Zahlungsbetrag: {gross}",
+			"openPaymentCashback": "Bei Zahlungseingang bis {cashbackExpireDate} beträgt der offene Zahlungsbetrag {grossCashback}, danach {gross}.",
+			"openPaymentToday": "Offener Zahlungsbetrag bei heutigem Zahlungseingang: {gross}",
+			"paid": "Bestellung wurde vollständig bezahlt."
 		}
 	},
 	"package": {

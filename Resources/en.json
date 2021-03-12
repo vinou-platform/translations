@@ -927,7 +927,6 @@
 	"db_payments_details": "Details",
 	"db_payments_gross": "Amount",
 	"db_payments_invoice": "Invoice",
-	"db_payments_order": "Order",
 	"db_cronjobs_createtitle": "Create cronjob",
 	"db_cronjobs_edittitle": "Edit cronjob",
 	"db_cronjobs_description": "Description",
@@ -2349,6 +2348,14 @@
 		"errors": {
 			"create": "Order could not be created. Please check your details and try again.",
 			"minItemQuantity": "Please enter an amount greater than 0"
+		},
+		"hints": {
+			"newPayment": "You record an incoming payment for the order {number} from {date} with an order value of {gross} gross.",
+			"downPayments": "So far, an amount of {gross} has been paid as a down payment.",
+			"openPayment": "Open payment amount: {gross}",
+			"openPaymentCashback": "If payment is received by {cashbackExpireDate}, the open payment amount is {grossCashback}, then {gross}.",
+			"openPaymentToday": "Open payment amount with today's incoming payment: {gross}",
+			"paid": "The order has been paid for in full."
 		}
 	},
 	"package": {

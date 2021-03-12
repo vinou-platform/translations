@@ -927,7 +927,6 @@
 	"db_payments_details": "Dettagli",
 	"db_payments_gross": "Importo ",
 	"db_payments_invoice": "Fattura ",
-	"db_payments_order": "Ordine",
 	"db_cronjobs_createtitle": "Creare cronjob",
 	"db_cronjobs_edittitle": "Modificare Cronjob",
 	"db_cronjobs_description": "Descrizione ",
@@ -2302,7 +2301,7 @@
 			"new": "Nuovo",
 			"need_payment": "Pagamento in sospeso",
 			"payed": "Pagamento ricevuto",
-			"need_package": "Preparazione del pagamento",
+			"need_package": "Prep. del pagamento",
 			"in_delivery": "In consegna",
 			"closed": "È stato completato",
 			"cancelled": "È stato annullato"
@@ -2349,6 +2348,14 @@
 		"errors": {
 			"create": "Non è stato possibile rilevare l'ordine. Controlla i tuoi dati e riprova.",
 			"minItemQuantity": "Inserisci un numero maggiore di 0"
+		},
+		"hints": {
+			"newPayment": "Registri un pagamento in entrata per l'ordine {number} da {date} con un valore dell'ordine di {gross} lordo.",
+			"downPayments": "Finora, un importo pari a {gross} grande è stato pagato a titolo di caparra.",
+			"openPayment": "Importo pagamento aperto: {gross}",
+			"openPaymentCashback": "Se il pagamento viene ricevuto entro il {cashbackExpireDate}, l'importo del pagamento aperto è di {grossCashback}, quindi {gross}",
+			"openPaymentToday": "Importo pagamento aperto con pagamento in entrata di oggi: {gross}",
+			"paid": "Questo ordine è stato pagato per intero."
 		}
 	},
 	"package": {

@@ -927,7 +927,6 @@
 	"db_payments_details": "detalles",
 	"db_payments_gross": "suma",
 	"db_payments_invoice": "cuenta",
-	"db_payments_order": "orden",
 	"db_cronjobs_createtitle": "crear Cronjob",
 	"db_cronjobs_edittitle": "editar Cronjob",
 	"db_cronjobs_description": "descripción",
@@ -2349,6 +2348,14 @@
 		"errors": {
 			"create": "Orden no ha podido ser digitada. Por favor verifica tus datos y inténtalo de nuevo.",
 			"minItemQuantity": "Por favor inserta un número más grande que 0 para definir la cantidad"
+		},
+		"hints": {
+			"newPayment": "Registra un pago entrante para el pedido {number} de {date} con un valor de pedido de {gross} bruto.",
+			"downPayments": "Hasta ahora, se ha pagado una cantidad de {gross} como depósito.",
+			"openPayment": "Importe del pago abierto: {gross}",
+			"openPaymentCashback": "Si el pago se recibe antes del {cashbackExpireDate}, el monto del pago abierto es de {grossCashback}, luego de {gross}.",
+			"openPaymentToday": "Importe del pago abierto con el pago entrante de hoy: {gross}",
+			"paid": "Este pedido se ha pagado en su totalidad."
 		}
 	},
 	"package": {
