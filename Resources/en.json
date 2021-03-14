@@ -44,7 +44,8 @@
 			"general": "General",
 			"settings": "Settings",
 			"visibility": "Visibility",
-			"qrcode": "QR-Code"
+			"qrcode": "QR-Code",
+			"seo": "Search engine specific information"
 		},
 		"fields": {
 			"default": "Default",
@@ -85,7 +86,10 @@
 				"2": "2nd copy of {name}",
 				"3": "3rd copy of {name}",
 				"n": "{n}th copy of {name}"
-			}
+			},
+			"metaTitle": "Title-tag",
+			"metaDescription": "Meta description",
+			"pathSegment": "Path segment"
 		},
 		"tabs": {
 			"general": "General",
@@ -2755,8 +2759,7 @@
 		},
 		"fieldSets": {
 			"general": "General",
-			"settings": "Settings",
-			"seo": "Search engine specific information"
+			"settings": "Settings"
 		},
 		"fields": {
 			"title": "Title",
@@ -2768,10 +2771,7 @@
 			"visibility": "Visibility",
 			"startDate": "Start date",
 			"endDate": "End date",
-			"publishingDate": "Date of news entry",
-			"metaTitle": "Title-tag",
-			"metaDescription": "Meta description",
-			"pathSegment": "Path segment"
+			"publishingDate": "Date of news entry"
 		},
 		"toasts": {
 			"created": "News entry created!",
@@ -2890,11 +2890,8 @@
 			"baseprice": "Price per liter",
 			"category": "Category",
 			"description": "Description",
-			"metaTitle": "Title-Tag",
-			"metaDescription": "Meta-Description",
 			"name": "Name",
 			"packageQuantity": "Packaging equivalent (0,75l bottles)",
-			"pathSegment": "Path segment",
 			"qrcodeLink": "Target address",
 			"quantity": "Quantity",
 			"singleItemPrice": "per Piece",

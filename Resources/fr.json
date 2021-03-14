@@ -44,7 +44,8 @@
 			"general": "Général",
 			"settings": "Configuration",
 			"visibility": "Visibilité",
-			"qrcode": "QR-Code"
+			"qrcode": "QR-Code",
+			"seo": "Informations spécifiques aux moteurs de recherche"
 		},
 		"fields": {
 			"default": "Standard",
@@ -85,7 +86,10 @@
 				"n": "copie {n} de {name}"
 
 
-			}
+			},
+			"metaTitle": "Étiquette de titre",
+			"metaDescription": "Meta Description",
+			"pathSegment": "Segment de chemin"
 		},
 		"tabs": {
 			"general": "Général",
@@ -2755,8 +2759,7 @@
 		},
 		"fieldSets": {
 			"general": "General",
-			"settings": "Settings",
-			"seo": "Search engine specific information"
+			"settings": "Settings"
 		},
 		"fields": {
 			"title": "Title",
@@ -2768,10 +2771,7 @@
 			"visibility": "Visibility",
 			"startDate": "Start date",
 			"endDate": "End date",
-			"publishingDate": "Date d'entrée dans l'actualité",
-			"metaTitle": "Title-tag",
-			"metaDescription": "Meta description",
-			"pathSegment": "Path segment"
+			"publishingDate": "Date d'entrée dans l'actualité"
 		},
 		"toasts": {
 			"created": "News entry created!",
@@ -2890,11 +2890,8 @@
 			"baseprice": "Prix au litre",
 			"category": "Catégorie",
 			"description": "La description",
-			"metaTitle": "Balise de titre",
-			"metaDescription": "Meta-Description",
 			"name": "Nom",
 			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
-			"pathSegment": "Segment de chemin",
 			"qrcodeLink": "Adresse cible",
 			"quantity": "Quantité",
 			"searchArticle": "Rechercher un article",
