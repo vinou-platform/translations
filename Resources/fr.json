@@ -1338,6 +1338,9 @@
 				"placeholder" : "p.ex. nom de l'entreprise, personne de contact ou adresse"
 			}
 		},
+		"tabs": {
+			"files": "Fichiers"
+		},
 		"fieldSets": {
 			"general": "Général",
 			"description": "Description"
@@ -1360,6 +1363,9 @@
 				"country": "Sélectionnez pays",
 				"no_country": "Afficher marchand sans pays"
 			}
+		},
+		"files": {
+			"title": "Fichiers et documents sur cette établissement vinicole"
 		},
 		"messages": {
 			"dialog": {

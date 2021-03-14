@@ -1338,6 +1338,9 @@
 				"placeholder" : "Per es.: Nom de l'entreprise, personne de contact ou adresse"
 			}
 		},
+		"tabs": {
+			"files": "File"
+		},
 		"fieldSets": {
 			"general": "Generale",
 			"description": "Descrizione"
@@ -1360,6 +1363,9 @@
 				"country": "Seleziona la nazione",
 				"no_country": "Mostra commerciante senza paes"
 			}
+		},
+		"files": {
+			"title": "File e documenti su questa vigna"
 		},
 		"messages": {
 			"dialog": {
