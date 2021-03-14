@@ -44,7 +44,8 @@
 			"general": "Allgemein",
 			"settings": "Einstellungen",
 			"visibility": "Sichtbarkeit",
-			"qrcode": "QR-Code"
+			"qrcode": "QR-Code",
+			"seo": "Suchmaschinen spezifische Angaben"
 		},
 		"fields": {
 			"default": "Standard",
@@ -85,7 +86,10 @@
 				"n": "Kopie {n} von {name}"
 
 
-			}
+			},
+			"metaTitle": "Title-Tag",
+			"metaDescription": "Meta-Description",
+			"pathSegment": "Pfadsegment"
 		},
 		"tabs": {
 			"general": "Allgemein",
@@ -2755,8 +2759,7 @@
 		},
 		"fieldSets": {
 			"general": "Allgemeines",
-			"settings": "Einstellungen",
-			"seo": "Suchmaschinen spezifische Angaben"
+			"settings": "Einstellungen"
 		},
 		"fields": {
 			"title": "Titel",
@@ -2768,10 +2771,7 @@
 			"visibility": "Sichtbarkeit",
 			"startDate": "Start-Datum",
 			"endDate": "End-Datum",
-			"publishingDate": "Datum der Neuigkeit",
-			"metaTitle": "Title-Tag",
-			"metaDescription": "Meta-Description",
-			"pathSegment": "Pfadsegment"
+			"publishingDate": "Datum der Neuigkeit"
 		},
 		"toasts": {
 			"created": "Newsbeitrag angelegt!",
@@ -2890,11 +2890,8 @@
 			"category": "Kategorie",
 			"baseprice": "Preis pro Liter",
 			"description": "Beschreibung",
-			"metaDescription": "Meta-Description",
-			"metaTitle": "Title-Tag",
 			"name": "Name",
 			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
-			"pathSegment": "Pfadsegment",
 			"qrcodeLink": "Zieladresse für QR-Code",
 			"quantity": "Anzahl",
 			"searchArticle": "Artikel suchen",
