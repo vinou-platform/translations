@@ -1338,6 +1338,9 @@
 				"placeholder" : "e.g. company, contact or address"
 			}
 		},
+		"tabs": {
+			"files": "Files"
+		},
 		"fieldSets": {
 			"general": "General",
 			"description": "Description"
@@ -1360,6 +1363,9 @@
 				"country": "Choose country",
 				"no_country": "Show merchants without country"
 			}
+		},
+		"files": {
+			"title": "Files regarding this winery"
 		},
 		"messages": {
 			"dialog": {

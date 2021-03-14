@@ -1338,6 +1338,9 @@
 				"placeholder" : "e.j. nombre de empresa, persona de contacto o direción"
 			}
 		},
+		"tabs": {
+			"files": "archivos"
+		},
 		"fieldSets": {
 			"general": "generalidades",
 			"description": "descripción"
@@ -1360,6 +1363,9 @@
 				"country": "seleccionar país",
 				"no_country": "señalar comerciante sin país"
 			}
+		},
+		"files": {
+			"title": "archivos y documentos de esa propiedad vinícola"
 		},
 		"messages": {
 			"dialog": {

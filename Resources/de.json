@@ -1338,6 +1338,9 @@
 				"placeholder": "z.B. Firmenname, Ansprechpartner oder Anschrift"
 			}
 		},
+		"tabs": {
+			"files": "Dateien"
+		},
 		"fieldSets": {
 			"general": "Allgemein",
 			"description": "Beschreibung"
@@ -1360,6 +1363,9 @@
 				"country": "Land auswählen",
 				"no_country": "Händler ohne Land anzeigen"
 			}
+		},
+		"files": {
+			"title": "Dateien und Dokumente zu diesem Weingut"
 		},
 		"messages": {
 			"dialog": {
