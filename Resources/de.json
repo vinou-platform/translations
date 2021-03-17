@@ -2301,7 +2301,8 @@
 			"invoice": "Per Rechnung",
 			"prepaid": "Vorkasse",
 			"debit": "SEPA-Lastschrift",
-			"paypal": "Paypal"
+			"paypal": "Paypal",
+			"card": "Kreditkarte"
 		},
 		"invoicetypes": {
 			"net": "Netto-Rechnung",

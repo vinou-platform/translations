@@ -2301,7 +2301,8 @@
 			"invoice": "Invoice",
 			"prepaid": "Prepaid",
 			"debit": "Debit",
-			"paypal": "Paypal"
+			"paypal": "Paypal",
+			"card": "Credit Card"
 		},
 		"invoicetypes": {
 			"net": "Net invoice",
