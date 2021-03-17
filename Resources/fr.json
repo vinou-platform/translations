@@ -2301,7 +2301,8 @@
 			"invoice": "Par facture",
 			"prepaid": "Paiement anticipé",
 			"debit": "Prélèvement SEPA",
-			"paypal": "PayPal"
+			"paypal": "PayPal",
+			"card": "Carte de crédit"
 		},
 		"invoicetypes": {
 			"net": "Facture nette",

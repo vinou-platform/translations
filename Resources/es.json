@@ -2301,7 +2301,8 @@
 			"invoice": "por cuenta",
 			"prepaid": "pago anticipado",
 			"debit": "cargo de SEPA",
-			"paypal": "Paypal"
+			"paypal": "Paypal",
+			"card": "Tarjeta de crédito"
 		},
 		"invoicetypes": {
 			"net": "cuenta neto",
