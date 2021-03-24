@@ -162,7 +162,9 @@
 			"weight": "Peso incluido el embalaje (para envío)"
 		},
 		"errors": {
+			"common": "Ocurrió un error.",
 			"confirmationRequired": "Hay que confirmar esa casilla",
+			"contact": "Si el problema sigue ocurriendo ponte en contacto con nosotros :<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"date": "Ingrese una fecha válida",
 			"email": "Ingrese una dirección de correo electrónico válida",
 			"max": "Ingrese un valor menor",
@@ -2547,7 +2549,6 @@
 	},
 	"shipcloud": {
 		"errors": {
-			"contact": "Si el problema sigue ocurriendo ponte en contacto con nosotros :<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"internal": "Por favor inténtalo otra vez más tarde",
 			"invalidApiKey": "La llave API de ShipCloud no ha sido encontrada o está sin validez. <br/><br/>Por favor verifica los datos en los ajustes > management de envío.",
 			"invalidConfig": "Su cuenta ShipCloud no se ha configurado para esta acción. Verifique su configuración en ShipCloud o póngase en contacto con support@shipcloud.io.",
@@ -3139,15 +3140,15 @@
 	},
 	"settings": {
 		"account": {
-			"title": "ajustes de cuenta",
+			"title": "Ajustes de cuenta",
 			"description": "Administra tu direción de cuenta, membresía, cuenta bancaria etc."
 		},
 		"membership": {
-			"title": "membresía",
+			"title": "Membresía",
 			"description": "Eso es el estado actual de tu membresía"
 		},
 		"customer": {
-			"title": "informaciones de cuenta",
+			"title": "Informaciones de cuenta",
 			"description": "Aqui administras tus datos de tu membresía de Vinou. Esas informaciones no se ve en público."
 		},
 		"mycompanies": {
@@ -3161,45 +3162,70 @@
 			}
 		},
 		"payments": {
-			"title": "metodos de pago",
+			"title": "Metodos de pago",
 			"description": "Con ayuda de varias metodos de pago puedes ofrecer más opciones en el shop online a tus clientes de destino.",
-			"bankaccount": "cuenta bancaria"
+			"bankaccount": "Cuenta bancaria",
+			"stripe": {
+				"name": "Stripe",
+				"title": "Procesamiento de pagos por Stripe",
+				"description": "Se ha registrado correctamente para utilizar <a href=\"https://stripe.com\" target=\"_blank\"> Stripe </a> como proveedor de servicios de pago para pagos con tarjeta de crédito y débito, así como para SEPA. domiciliaciones. Las <strong>tarifas adicionales resultantes del 2,4% del valor del pedido más una tarifa plana de servicio de 0,25 EUR</strong> por pedido se deducen automáticamente de cada pedido.",
+				"actions": {
+					"deactivate": {
+						"title": "Desactivar el procesamiento de pagos por Stripe",
+						"description": "Si ya no desea utilizar <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a> para procesar pagos, haga clic aquí."
+					},
+					"login": "Aquí puede acceder a la configuración de su cuenta de Stripe."
+				},
+				"dialogs": {
+					"activate": {
+						"title": "Activar el procesamiento de pagos a través de Stripe",
+						"text": "Para pagos con tarjeta de crédito y débito, así como para débitos directos SEPA, el sistema de pedidos de Vinou utiliza el proveedor <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a>, por lo que se cobrarán <strong>tarifas adicionales del 2,4% del valor del pedido más una tarifa plana de servicio de 0,25 EUR</strong> por pedido.<br><br>Al hacer clic en Sí, confirma la <a href=\"https://www.vinou.de/zahlungsabwicklung.html\" target=\"_blank\"><strong>Condiciones de procesamiento de pagos</strong></a> y se le remitirá a Stripe para su configuración. El uso del procesamiento de pagos de Vinou a través de Stripe se puede desactivar en cualquier momento a través de los métodos de pago."
+					},
+					"deactivate": "Está seguro de que desea desactivar el procesamiento de pagos a través de Stripe?"
+				},
+				"toasts": {
+					"deactivated": "El procesamiento de pagos a través de Stripe se desactivó correctamente!"
+				},
+				"errors": {
+					"deactivationNotPossible": "Actualmente, el procesamiento de pagos a través de Stripe no se puede desactivar. Verifique si los saldos de su cuenta de Stripe son cero y si hay pagos pendientes."
+				}
+			}
 		},
 		"packagings": {
-			"title": "opciones de envío",
+			"title": "Opciones de envío",
 			"description": "Configura tus opciones de envío para poder calcular los gastos de envío personales. Entre otras cosas es necesario para tener tu shop de Vinou."
 		},
 		"packagingunits": {
-			"title": "unidades de envío",
+			"title": "Unidades de envío",
 			"description": "Configura las cajas las cuales están usadas para tu envío. Las unidades de envío se necesita para el cálculo de las etiquetas de envío."
 		},
 		"priceranges": {
-			"title": "categorias de precio",
+			"title": "Categorias de precio",
 			"description": "Configura tus categorias de precio para que puedas establecer tus precios individuales para tus precios de clientes."
 		},
 		"shipment": {
-			"title": "ajustes de envío",
+			"title": "Ajustes de envío",
 			"description": "Establece aqui tu límite de exención de carga y si quieres usar el management de envío de Vinou.",
 			"freightfreelimit": {
-				"title": "límite de exención de carga",
+				"title": "Límite de exención de carga",
 				"description": "Configura a partir de que valor de la orden el envío va a estar gratis."
 			},
 			"management": {
-				"title": "management de envío",
+				"title": "Management de envío",
 				"inactive": "Activa el management de envío de Vinou con ShipCloud para que puedas usar las etiquetas de envío directamente de Vinou de manera rápida y barata.",
 				"description": "Configura el envío para que e.j. puedas establecer un prestador de servicios estándar de logística."
 			}
 		},
 		"technical": {
-			"title": "técnica",
+			"title": "Técnica",
 			"description": "Para algunas cosas puedes tomar varias configuraciones técnicas también. Esos ajustes se encuentra aqui."
 		},
 		"templates": {
-			"title": "modelos",
+			"title": "Modelos",
 			"description": "En Vinou es posible equipar todos los documentos de PDF con un modelo individual."
 		},
 		"mail": {
-			"title": "ajustes de E-Mail",
+			"title": "Ajustes de E-Mail",
 			"description": "Vinou y también tu shop online envian correos electrónicos automaticamente o a causa de ciertos procesos. Para el envío puedes depositar auqi ajustes para una casilla postal."
 		},
 		"texts": {

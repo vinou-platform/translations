@@ -162,7 +162,9 @@
 			"weight": "Gewicht inklusive Verpackung (für Versand)"
 		},
 		"errors": {
+			"common": "Es ist ein Fehler aufgetreten.",
 			"confirmationRequired": "Dieses Feld muss bestätigt werden",
+			"contact": "Sollte das Problem weiterhin auftreten kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"date": "Bitte gib ein gültiges Datum ein",
 			"email": "Bitte gib eine gültige Emailadresse ein",
 			"max": "Bitte gib einen kleineren Wert ein",
@@ -2547,7 +2549,6 @@
 	},
 	"shipcloud": {
 		"errors": {
-			"contact": "Sollte das Problem weiterhin auftreten kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"internal": "Bitte versuche es später noch einmal",
 			"invalidApiKey": "Der ShipCloud-API-Key wurde nicht gefunden oder ist ungültig. <br/><br/>Bitte prüfe die Angaben unter Einstellungen > Versandmanagement.",
 			"invalidConfig": "Dein ShipCloud Account wurde nicht für diese Aktion konfiguriert. Bitte prüfe deine Einstellungen bei ShipCloud oder kontaktiere support@shipcloud.io.",
@@ -3163,7 +3164,32 @@
 		"payments": {
 			"title": "Zahlungsmethoden",
 			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten.",
-			"bankaccount": "Bankverbindung"
+			"bankaccount": "Bankverbindung",
+			"stripe": {
+				"name": "Stripe",
+				"title": "Zahlungsabwicklung durch Stripe",
+				"description": "Du hast Dich erfolgreich für die Verwendung von <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a> als Zahlungsdienstleister für Kredit- und Debitkartenzahlungen sowie für SEPA-Lastschriften registriert. Die hierdurch entstehenden <strong>zusätzlichen Gebühren in Höhe von 2,4% des Bestellwerts zuzüglich einer Service-Pauschale von 0,25 EUR</strong> je Bestellung werden automatisch bei jeder Bestellung abgezogen.",
+				"actions": {
+					"deactivate": {
+						"title": "Zahlungsabwicklung durch Stripe deaktivieren",
+						"description": "Solltest Du keine Zahlungsabwicklung durch <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a> mehr verwenden wollen, dann klicke bitte hier."
+					},
+					"login": "Hier gelangst Du zur Konfiguration Deines Stripe-Accounts."
+				},
+				"dialogs": {
+					"activate": {
+						"title": "Zahlungsabwicklung durch Stripe aktivieren",
+						"text": "Für Kredit- und Debitkartenzahlungen sowie für SEPA-Lastschriften verwendet das Vinou-Bestellsystem den Anbieter <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a>, dafür fallen <strong>zusätzliche Gebühren in Höhe von 2,4% vom Bestellwert zuzüglich einer Service-Pauschale von 0,25 EUR</strong> je Bestellung an.<br><br>Mit Klick auf Ja bestätigst Du die aktuellen <a href=\"https://www.vinou.de/zahlungsabwicklung.html\" target=\"_blank\"><strong>Konditionen der Zahlungsabwicklung</strong></a> und wirst zur Einrichtung an Stripe weitergeleitet. Die Nutzung der Vinou-Zahlungsabwicklung über Stripe kann jederzeit über die Zahlungsmethoden deaktiviert werden."
+					},
+					"deactivate": "Möchtest du die Zahlungsabwicklung durch Stripe wirklich deaktivieren?"
+				},
+				"toasts": {
+					"deactivated": "Zahlungsabwicklung durch Stripe erfolgreich deaktiviert!"
+				},
+				"errors": {
+					"deactivationNotPossible": "Die Zahlungsabwicklung durch Stripe kann aktuell nicht deaktiviert werden. Bitte prüfe, ob dein Stripe Konto ausgeglichen ist und ob offene Zahlungen vorhanden sind."
+				}
+			}
 		},
 		"packagings": {
 			"title": "Versandoptionen",

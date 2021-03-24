@@ -162,7 +162,9 @@
 			"weight": "Peso incluso imballo (per spedizione)"
 		},
 		"errors": {
+			"common": "Si è verificato un errore.",
 			"confirmationRequired": "Questo campo deve essere confermato",
+			"contact": "Se il problema persiste, ti preghiamo di contattarci al seguente indirizzo:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"date": "Inserire una data valida",
 			"email": "Inserisci un indirizzo email valido",
 			"max": "Inserisci un valore più piccolo",
@@ -2547,7 +2549,6 @@
 	},
 	"shipcloud": {
 		"errors": {
-			"contact": "Se il problema persiste, ti preghiamo di contattarci al seguente indirizzo:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"internal": "Ti preghiamo di riprovare più tardi",
 			"invalidApiKey": "La chiave API ShipCloud non è stata trovata o non è valida. <br/> <br/> Controlla le informazioni in Configurazione> Gestione spedizioni.",
 			"invalidConfig": "Il tuo account ShipCloud non è stato configurato per questa azione. Controlla le tue impostazioni in ShipCloud o contatta support@shipcloud.io.",
@@ -3163,7 +3164,32 @@
 		"payments": {
 			"title": "Metodi di pagamento",
 			"description": "Utilizzando diversi metodi di pagamento, puoi offrire ai tuoi clienti finali più opzioni nel negozio online.",
-			"bankaccount": "Banca"
+			"bankaccount": "Banca",
+			"stripe": {
+				"name": "Stripe",
+				"title": "Elaborazione del pagamento da parte di Stripe",
+				"description": "Ti sei registrato con successo per utilizzare <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a> come fornitore di servizi di pagamento per pagamenti con carta di credito e debito e per SEPA addebiti diretti. Le <strong>commissioni aggiuntive risultanti del 2,4% del valore dell'ordine più una tariffa forfettaria di servizio di 0,25 EUR</strong> per ordine vengono automaticamente detratte da ogni ordine.",
+				"actions": {
+					"deactivate": {
+						"title": "Disattiva l'elaborazione dei pagamenti da parte di Stripe",
+						"description": "Se non desideri più utilizzare <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a> per elaborare i pagamenti, fai clic qui."
+					},
+					"login": "Qui accedi alla configurazione del tuo account Stripe."
+				},
+				"dialogs": {
+					"activate": {
+						"title": "Attiva l'elaborazione dei pagamenti tramite Stripe",
+						"text": "Per i pagamenti con carta di credito e di debito e per gli addebiti diretti SEPA, il sistema di ordinazione Vinou utilizza il provider <a href=\"https://stripe.com\" target=\"_blank\">Stripe</a>, per il quale verranno addebitate <strong>commissioni aggiuntive del 2,4% del valore dell'ordine più una tariffa forfettaria di servizio di 0,25 EUR</strong> per ordine. <br> <br> Facendo clic su Sì confermi l'attuale <a href=\"https://www.vinou.de/zahlungsabwicklung.html\" target=\"_blank\"><strong>Condizioni di elaborazione del pagamento</strong></a> e verrai reindirizzato a Stripe per la configurazione. L'utilizzo dell'elaborazione dei pagamenti Vinou tramite Stripe può essere disattivato in qualsiasi momento tramite i metodi di pagamento."
+					},
+					"deactivate": "Sei sicuro di voler disattivare l'elaborazione dei pagamenti tramite Stripe?"
+				},
+				"toasts": {
+					"deactivated": "L'elaborazione del pagamento tramite Stripe è stata disattivata con successo!"
+				},
+				"errors": {
+					"deactivationNotPossible": "Attualmente l'elaborazione dei pagamenti tramite Stripe non può essere disattivata. Controlla se i saldi del tuo account Stripe sono pari a zero e se ci sono pagamenti in sospeso."
+				}
+			}
 		},
 		"packagings": {
 			"title": "Opzione di spedizione",
