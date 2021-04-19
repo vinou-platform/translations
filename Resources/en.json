@@ -663,6 +663,7 @@
 			"activatedCarbon": "Activated carbon",
 			"albumin": "Albumin",
 			"alcohol": "Alcohol",
+			"ammoniumSulfate": "Ammonium sulfate",
 			"ascorbicAcid": "Ascorbic acid",
 			"bentonite": "Bentonite",
 			"carbonateLime": "Carbonate lime",
@@ -672,6 +673,7 @@
 			"concentratedGrapeMust": "Concentrated grapemust",
 			"cupricCitrate": "Cupric citrate",
 			"dimethylDicarbonate": "DMDC dimethyl dicarbonate",
+			"diammoniumHydrogenPhosphate": "DAP diammonium hydrogen phosphate",
 			"dl-tarticAcid": "DL wine acid",
 			"doubleSalt": "Double salt",
 			"enzyme": "Enzyme",
@@ -5224,6 +5226,12 @@
 		},
 		"617": {
 			"name": "Cariñena"
+		},
+		"618": {
+			"name": "Grenache Blanc"
+		},
+		"619": {
+			"name": "Trebbiano di Lugana"
 		}
 	},
 	"tastes": {
@@ -5440,7 +5448,8 @@
 			"2017": "Chablis",
 			"2018": "Rhone",
 			"2019": "Loire",
-			"2020": "Languedoc"
+			"2020": "Languedoc",
+			"2021": "Madiran"
 		},
 		"gr": {
 			"5000": "Thrace",

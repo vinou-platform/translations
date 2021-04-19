@@ -636,73 +636,75 @@
 	},
 	"substance": {
 		"fields": {
-			"type": "tipo de sustancia",
-			"unit": "escala",
-			"note": "notas",
+			"type": "Tipo de sustancia",
+			"unit": "Escala",
+			"note": "Notas",
 			"productName": "Nombre del producto",
 			"productVendor": "Proveedor"
 		},
 		"actions": {
 			"create": {
-				"main": "sustancia",
+				"main": "Sustancia",
 				"sub": "crear"
 			}
 		},
 		"views": {
 			"edit": {
-				"createTitle": "crear sustancia",
-				"editTitle": "editar sustancia"
+				"createTitle": "Crear sustancia",
+				"editTitle": "Editar sustancia"
 			},
 			"gallery": {
-				"substance": "sustancia/Nombre del producto",
-				"chstamp": "cambiado por último",
-				"stock": "cantidad disponible"
+				"substance": "Sustancia/Nombre del producto",
+				"chstamp": "Cambiado por último",
+				"stock": "Cantidad disponible"
 			}
 		},
 		"types": {
 			"activatedCarbon": "carbón activado",
-			"albumin": "albúmina",
-			"alcohol": "alcohol",
-			"ascorbicAcid": "ácido ascórbico",
-			"bentonite": "bentonita",
-			"carbonateLime": "cal calcáreado",
-			"carboneDioxide": "dióxido de carbono",
-			"carboxymethylCellulose": "carboximetil celulosa sódica",
-			"casein": "caseína",
-			"concentratedGrapeMust": "mosto de uva concentrado",
+			"albumin": "Albúmina",
+			"alcohol": "Alcohol",
+			"ammoniumSulfate": "Sulfato de amonio",
+			"ascorbicAcid": "Ácido ascórbico",
+			"bentonite": "Bentonita",
+			"carbonateLime": "Cal calcáreado",
+			"carboneDioxide": "Dióxido de carbono",
+			"carboxymethylCellulose": "Carboximetil celulosa sódica",
+			"casein": "Caseína",
+			"concentratedGrapeMust": "Mosto de uva concentrado",
 			"cupricCitrate": "Citrato cúprico",
 			"dimethylDicarbonate": "DMDC dicarbonato de dimetilo",
+			"diammoniumHydrogenPhosphate": "DAP hidrogenofosfato de amonio",
 			"dl-tarticAcid": "DL-ácido tartárico",
-			"doubleSalt": "sal doble",
+			"doubleSalt": "Sal doble",
 			"enzyme": "Enzima",
-			"fishProduct": "productos cárnicos",
-			"gelatin": "gelatina",
-			"glutenContainingCerealProduct": "productos con gluten",
-			"lacticAcid": "ácido láctico",
-			"lysozyme": "lisozima",
-			"malicAcid": "ácido málico",
-			"oakChips": "chips de roble ",
+			"fishProduct": "Productos cárnicos",
+			"gelatin": "Gelatina",
+			"glutenContainingCerealProduct": "Productos con gluten",
+			"lacticAcid": "Ácido láctico",
+			"lysozyme": "Lisozima",
+			"malicAcid": "Ácido málico",
+			"oakChips": "Chips de roble ",
 			"plantProtein": "Proteína de origen vegetal",
-			"potassiumFerrocyanide": "hexacianoferrato de potasio",
-			"potassiumHydrogenCarbonate": "hidrogencarbonato de potasio",
-			"potassiumHydrogenSulfite": "sulfito ácido de potasio",
-			"potassiumSorbate": "sorbato de potasio",
-			"rectifiedConcentratedGrapeMust": "concentrado del mosto de uva rectificado",
-			"saccharose": "sacarosa",
-			"sorbicAcid": "ácido sórbico",
-			"sulfurDioxide": "dióxido de sulfuro",
-			"tannin": "taninos",
-			"tarticAcid": "ácido tartárico",
-			"vitaminB1": "vitamina B1",
+			"potassiumFerrocyanide": "Hexacianoferrato de potasio",
+			"potassiumHydrogenCarbonate": "Hidrogencarbonato de potasio",
+			"potassiumHydrogenSulfite": "Sulfito ácido de potasio",
+			"potassiumSorbate": "Sorbato de potasio",
+			"rectifiedConcentratedGrapeMust": "Concentrado del mosto de uva rectificado",
+			"saccharose": "Sacarosa",
+			"sorbicAcid": "Ácido sórbico",
+			"sulfurDioxide": "Dióxido de sulfuro",
+			"tannin": "Taninos",
+			"tarticAcid": "Ácido tartárico",
+			"vitaminB1": "Vitamina B1",
 			"yeast": "Levadura"
 		},
 		"dialogs": {
 			"delete": "Quieres borrar esa sustancia seguramente?"
 		},
 		"toasts": {
-			"created": "sustancia ha sido creada.",
-			"changed": "sustancia ha sido editada.",
-			"deleted": "sustancia ha sido borrada."
+			"created": "Sustancia ha sido creada.",
+			"changed": "Sustancia ha sido editada.",
+			"deleted": "Sustancia ha sido borrada."
 		}
 	},
 	"substanceLog": {
@@ -5224,6 +5226,12 @@
 		},
 		"617": {
 			"name": "Cariñena"
+		},
+		"618": {
+			"name": "Grenache Blanc"
+		},
+		"619": {
+			"name": "Trebbiano di Lugana"
 		}
 	},
 	"tastes": {
@@ -5440,7 +5448,8 @@
 			"2017": "Chablis",
 			"2018": "Ródano",
 			"2019": "Loire",
-			"2020": "Languedoc"
+			"2020": "Languedoc",
+			"2021": "Madiran"
 		},
 		"gr": {
 			"5000": "Thrakien",
