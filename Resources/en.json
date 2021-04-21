@@ -1567,7 +1567,8 @@
 			"connectionUpdated": "Connection data have been adjusted",
 			"connectionUpdatedError": "Connection data could not be adjusted",
 			"connectionDeleted": "Connection was deleted",
-			"connectionDeletedError": "Connection could not be deleted"
+			"connectionDeletedError": "Connection could not be deleted",
+			"deleteErrorInUse": "Deletion not possible - wine is in use"
 		},
 		"messages": {
 			"formdirty": "Current wine was modified. Do you like to save the changes?",

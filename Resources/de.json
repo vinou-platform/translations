@@ -1567,7 +1567,8 @@
 			"connectionUpdated": "Verbindungsdaten wurden angepasst",
 			"connectionUpdatedError": "Verbindungsdaten konntent nicht angepasst werden",
 			"connectionDeleted": "Verbindung wurde gelöscht",
-			"connectionDeletedError": "Verbindung konnte nicht gelöscht werden"
+			"connectionDeletedError": "Verbindung konnte nicht gelöscht werden",
+			"deleteErrorInUse": "Löschen nicht möglich - Wein ist in Verwendung"
 		},
 		"messages": {
 			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest Du die Änderungen speichern?",

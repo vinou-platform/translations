@@ -1553,9 +1553,9 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
-			"files": "datos",
-			"stockRotation": "movimientos de almacén",
-			"marketing": "márketing"
+			"files": "Datos",
+			"stockRotation": "Movimientos de almacén",
+			"marketing": "Márketing"
 		},
 		"dialogs": {
 			"connectAutomation": "Desea transferir automáticamente el vino a la gama de su socio minorista?",
@@ -1567,7 +1567,8 @@
 			"connectionUpdated": "Se han ajustado los datos de conexión",
 			"connectionUpdatedError": "No se pudieron ajustar los datos de conexión",
 			"connectionDeleted": "Se eliminó la conexión",
-			"connectionDeletedError": "No se pudo eliminar la conexión"
+			"connectionDeletedError": "No se pudo eliminar la conexión",
+			"deleteErrorInUse": "No es posible supresión: el vino está en uso"
 		},
 		"messages": {
 			"formdirty": "El vino actual ha sido editado.Quieres grabar esos cambios?",

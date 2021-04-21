@@ -1567,7 +1567,8 @@
 			"connectionUpdated": "Les données de connexion ont été ajustées",
 			"connectionUpdatedError": "Les données de connexion n'ont pas pu être ajustées",
 			"connectionDeleted": "La connexion a été supprimée",
-			"connectionDeletedError": "La connexion n'a pas pu être supprimée"
+			"connectionDeletedError": "La connexion n'a pas pu être supprimée",
+			"deleteErrorInUse": "Suppression impossible - du vin est en cours d'utilisation"
 		},
 		"messages": {
 			"formdirty": "Le vin actuel a été édité. Voulez-vous enregistrer les modifications?",
