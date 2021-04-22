@@ -1568,7 +1568,7 @@
 			"connectionUpdatedError": "Impossibile modificare i dati di connessione",
 			"connectionDeleted": "Connessione eliminata",
 			"connectionDeletedError": "Impossibile eliminare la connessione",
-			"deleteErrorInUse": "Cancellazione non possibile - il vino è in uso"
+			"deleteErrorInUse": "Questo vino non può essere cancellato perché esistono documenti commerciali e/o documenti per la contabilità del vino per questo vino."
 		},
 		"messages": {
 			"formdirty": "Il vino attuale è stato modificato. Vuoi salvare le modifiche?",

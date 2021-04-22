@@ -1568,7 +1568,7 @@
 			"connectionUpdatedError": "Les données de connexion n'ont pas pu être ajustées",
 			"connectionDeleted": "La connexion a été supprimée",
 			"connectionDeletedError": "La connexion n'a pas pu être supprimée",
-			"deleteErrorInUse": "Suppression impossible - du vin est en cours d'utilisation"
+			"deleteErrorInUse": "Ce vin ne peut pas être supprimé car des documents commerciaux et/ou des documents de comptabilité du vin existent pour ce vin."
 		},
 		"messages": {
 			"formdirty": "Le vin actuel a été édité. Voulez-vous enregistrer les modifications?",

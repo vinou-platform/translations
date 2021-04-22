@@ -1568,7 +1568,7 @@
 			"connectionUpdatedError": "No se pudieron ajustar los datos de conexión",
 			"connectionDeleted": "Se eliminó la conexión",
 			"connectionDeletedError": "No se pudo eliminar la conexión",
-			"deleteErrorInUse": "No es posible supresión: el vino está en uso"
+			"deleteErrorInUse": "Este vino no se puede eliminar porque existen documentos comerciales y/o documentos para la contabilidad del vino para este vino."
 		},
 		"messages": {
 			"formdirty": "El vino actual ha sido editado.Quieres grabar esos cambios?",

@@ -1568,7 +1568,7 @@
 			"connectionUpdatedError": "Verbindungsdaten konntent nicht angepasst werden",
 			"connectionDeleted": "Verbindung wurde gelöscht",
 			"connectionDeletedError": "Verbindung konnte nicht gelöscht werden",
-			"deleteErrorInUse": "Löschen nicht möglich - Wein ist in Verwendung"
+			"deleteErrorInUse": "Dieser Wein kann nicht gelöscht werden, da kaufmännische Dokumente und/oder Dokumente für die Weinbuchführung mit diesem Wein existieren."
 		},
 		"messages": {
 			"formdirty": "Der aktuelle Wein wurde bearbeitet. Möchtest Du die Änderungen speichern?",
