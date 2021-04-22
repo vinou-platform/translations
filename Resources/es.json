@@ -167,6 +167,7 @@
 			"contact": "Si el problema sigue ocurriendo ponte en contacto con nosotros :<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"date": "Ingrese una fecha válida",
 			"email": "Ingrese una dirección de correo electrónico válida",
+			"invalid": "Ingrese una cifra válida",
 			"max": "Ingrese un valor menor",
 			"maxDate": "Ingrese una fecha anterior",
 			"maxDateValue": "Ingrese una fecha hasta {value}",
@@ -182,7 +183,8 @@
 			"pattern": "Formato no válido",
 			"patternValue": "Su entrada debe cumplir con el formato {value}",
 			"required": "Por favor llene esa casilla",
-			"submit": "Se produjo un error al guardar los datos."
+			"submit": "Se produjo un error al guardar los datos.",
+			"unique": "El valor ingresado ya existe"
 		},
 		"toasts": {
 			"networkchanged": "visibilidad de red modificada",

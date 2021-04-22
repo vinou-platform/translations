@@ -167,6 +167,7 @@
 			"contact": "Sollte das Problem weiterhin auftreten kontaktiere uns unter:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"date": "Bitte gib ein gültiges Datum ein",
 			"email": "Bitte gib eine gültige Emailadresse ein",
+			"invalid": "Bitte gib einen gültigen Wert ein",
 			"max": "Bitte gib einen kleineren Wert ein",
 			"maxDate": "Bitte gib ein früheres Datum ein",
 			"maxDateValue": "Bitte gib ein Datum bis {value} ein",
@@ -182,7 +183,8 @@
 			"pattern": "Ungültiges Format",
 			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
 			"required": "Bitte fülle dieses Feld aus",
-			"submit": "Beim Speichern der Daten ist ein Fehler aufgetreten."
+			"submit": "Beim Speichern der Daten ist ein Fehler aufgetreten.",
+			"unique": "Der eingegebene Wert existiert bereits"
 		},
 		"toasts": {
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",

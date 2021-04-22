@@ -167,6 +167,7 @@
 			"contact": "Se il problema persiste, ti preghiamo di contattarci al seguente indirizzo:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 			"date": "Inserire una data valida",
 			"email": "Inserisci un indirizzo email valido",
+			"invalid": "Inserisci un valore valido",
 			"max": "Inserisci un valore più piccolo",
 			"maxDate": "Inserisci una data precedente",
 			"maxDateValue": "Inserisci una data fino a {value}",
@@ -182,7 +183,8 @@
 			"pattern": "Formato non valido",
 			"patternValue": "I tuoi input devono essere conformi al formato {value}",
 			"required": "Compilare questo campo per favore",
-			"submit": "Si è verificato un errore durante il salvataggio dei dati."
+			"submit": "Si è verificato un errore durante il salvataggio dei dati.",
+			"unique": "Il valore inserito esiste già"
 		},
 		"toasts": {
 			"networkchanged": "La visibilità della rete è cambiata",
