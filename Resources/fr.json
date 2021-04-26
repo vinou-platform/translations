@@ -546,7 +546,7 @@
 			},
 			"gallery": {
 				"currentState": "État actuellement",
-				"vintage": "Millésime {vintage}",
+				"vintage": "Millésime / année de production {vintage}",
 				"filters": {
 					"hideClosed": "Masquer les comptes de vin archivés",
 					"readyForBottling": "Prêt à l'embouteillage"

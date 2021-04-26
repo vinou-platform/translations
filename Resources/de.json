@@ -546,7 +546,7 @@
 			},
 			"gallery": {
 				"currentState": "Aktueller Zustand",
-				"vintage": "Jahrgang {vintage}",
+				"vintage": "Jahrgang / Produktionsjahr {vintage}",
 				"filters": {
 					"hideClosed": "Archivierte Weinkonten ausblenden",
 					"readyForBottling": "Bereit zur Abfüllung"

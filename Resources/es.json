@@ -546,7 +546,7 @@
 			},
 			"gallery": {
 				"currentState": "estado acutal",
-				"vintage": "Cosecha {vintage}",
+				"vintage": "Cosecha / ano de produccion {vintage}",
 				"filters": {
 					"hideClosed": "Ocultar cuentas de vino archivadas",
 					"readyForBottling": "Listo para embotellar"

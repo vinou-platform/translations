@@ -546,7 +546,7 @@
 			},
 			"gallery": {
 				"currentState": "Current state",
-				"vintage": "Vintage {vintage}",
+				"vintage": "Vintage / year of production {vintage}",
 				"filters": {
 					"hideClosed": "Hide archived wine accounts",
 					"readyForBottling": "Ready for bottling"
