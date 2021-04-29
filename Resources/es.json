@@ -1015,6 +1015,7 @@
 			"breakage": "rotura",
 			"correction": "corrección",
 			"creditAdvice": "abono",
+			"external": "externa (interfaz)",
 			"invoice": "cuenta",
 			"privateConsumption": "consumo propio",
 			"promotion": "reclamo",
