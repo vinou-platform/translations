@@ -343,7 +343,8 @@
 
 			"createInventoryTakeover": {
 				"main": "Bestandsübernahme",
-				"sub": " "
+				"sub": " ",
+				"description": "Die Bestandsübernahme wird verwendet um im Keller bereits vorhandenen Wein in die digitale Kellerbuchführung zu übertragen."
 			},
 			"createHarvest": {
 				"main": "Ernte",
@@ -377,7 +378,7 @@
 			"createBlending": {
 				"main": "Verschnitt",
 				"sub": " ",
-				"description": "Gebe diesen Wein einem anderen als Verschnitt hinzu, um eine Cuvée zu erstellen."
+				"description": "Gib diesen Wein einem Verschnittpartner in Deinem Weinkeller hinzu, um eine Cuvée zu erstellen. Beachte hierbei, dass der Zielbehälter bereits in Verwendung und genügend Kapazität gegeben sein muss."
 			},
 
 			"createPrivateConsumption": {

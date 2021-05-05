@@ -343,7 +343,8 @@
 
 			"createInventoryTakeover": {
 				"main": "Acquisizione",
-				"sub": "di inventario"
+				"sub": "di inventario",
+				"description": "Il acquisizione di inventario viene utilizzato per trasferire il vino che è già in cantina alla contabilità digitale della cantina."
 			},
 			"createHarvest": {
 				"main": "Raccolto",
@@ -377,7 +378,7 @@
 			"createBlending": {
 				"main": "Assemblaggio",
 				"sub": " ",
-				"description": "Aggiungere questo vino a un altro come miscela per creare una cuvée."
+				"description": "Aggiungere questo vino a un altro come miscela per creare una cuvée. Si noti che il contenitore di destinazione deve essere già in uso e avere una capacità sufficiente."
 			},
 
 			"createPrivateConsumption": {

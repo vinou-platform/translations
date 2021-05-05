@@ -343,7 +343,8 @@
 
 			"createInventoryTakeover": {
 				"main": "Inventory",
-				"sub": "takeover"
+				"sub": "takeover",
+				"description": "The inventory takeover is used to transfer wine that is already in the cellar to the digital cellar book."
 			},
 			"createHarvest": {
 				"main": "Grape harvest",
@@ -377,7 +378,7 @@
 			"createBlending": {
 				"main": "Blending",
 				"sub": " ",
-				"description": "Add this wine to another as a blend to create a cuvée."
+				"description": "Add this wine to another as a blend to create a cuvée. Please note that the target container has to already be in use and have sufficient capacity."
 			},
 
 			"createPrivateConsumption": {

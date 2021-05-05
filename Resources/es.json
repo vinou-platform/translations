@@ -343,7 +343,8 @@
 
 			"createInventoryTakeover": {
 				"main": "toma",
-				"sub": "de inventario"
+				"sub": "de inventario",
+				"description": "La toma de inventario se utiliza para transferir el vino que ya está en la bodega a la contabilidad de la bodega digital."
 			},
 			"createHarvest": {
 				"main": "cosecha",
@@ -377,7 +378,7 @@
 			"createBlending": {
 				"main": "recorte",
 				"sub": " ",
-				"description": "Agregue este vino a otro como una mezcla para crear una cuvée."
+				"description": "Agregue este vino a otro como una mezcla para crear una cuvée. Tenga en cuenta que el contenedor de destino ya debe estar en uso y tener suficiente capacidad."
 			},
 
 			"createPrivateConsumption": {

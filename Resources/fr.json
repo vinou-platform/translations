@@ -343,7 +343,8 @@
 
 			"createInventoryTakeover": {
 				"main": "Reprise",
-				"sub": "d'inventaire"
+				"sub": "d'inventaire",
+				"description": "La reprise d'inventaire permet de transférer le vin déjà en cave vers la comptabilité numérique de la cave."
 			},
 			"createHarvest": {
 				"main": "Récolte",
@@ -377,7 +378,7 @@
 			"createBlending": {
 				"main": "Cuvée",
 				"sub": " ",
-				"description": "Ajoutez ce vin à un autre en assemblage pour créer une cuvée."
+				"description": "Ajoutez ce vin à un autre en assemblage pour créer une cuvée. Veuillez noter que le conteneur cible doit déjà être utilisé et avoir une capacité suffisante."
 			},
 
 			"createPrivateConsumption": {
