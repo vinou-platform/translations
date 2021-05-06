@@ -1487,10 +1487,11 @@
 			"name": "nombre",
 			"nostock": "vaciado",
 			"nostocktext": "Si vaciado señala texto (e.j. disponible a partir de...)",
-			"public_wines": "vinos publicos",
+			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
 			"place": "sitio",
 			"price": "precio",
 			"prices": "precios",
+			"public_wines": "vinos publicos",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "El QR-Code va a estar generado después de la primera grabación",
@@ -1582,7 +1583,8 @@
 			"formdirty": "El vino actual ha sido editado.Quieres grabar esos cambios?",
 			"createcopy": "Quieres aceptar esos datos de {nombre de vino}?",
 			"hints": {
-				"connectwine": "conectar con vino"
+				"connectwine": "conectar con vino",
+				"packageQuantity": "Coloque dentro del paquete igual a las botellas de vino estándar"
 			},
 			"toasts": {
 				"connected": "Vino ha sido transmitido al surtido."
@@ -1697,6 +1699,7 @@
 			"net": "precio neto",
 			"nostock": "no hay en almacén",
 			"nostocktext": "texto de muestra no hay en almacén",
+			"packageQuantity": "Empaque equivalente (botellas de 0,75l)",
 			"prices": "precios",
 			"quantity": "inventario",
 			"quantityabbr": "pieza",
@@ -1720,7 +1723,8 @@
 		"messages": {
 			"hints": {
 				"imagesize": "<b>recomendación para representación óptima</b><br>medidas: 1000x1000px<br/>Datei-Format: .png (potestativo)",
-				"noentries": "todavía no hay inscripciones"
+				"noentries": "todavía no hay inscripciones",
+				"packageQuantity": "Coloque dentro del paquete igual a las botellas de vino estándar"
 			},
 			"dialog": {
 				"delete": "Quieres borrar ese producto seguramente?"
