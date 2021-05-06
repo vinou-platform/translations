@@ -1456,6 +1456,10 @@
 			"barcode": "Code EAN",
 			"baseprice": "Prix au litre",
 			"bio": "Certifié biologique",
+			"bioRefNumber": {
+				"label": "Número de control ecológico",
+				"placeholder": "FR-ECO-XXX"
+			},
 			"bottles": "Bouteilles",
 			"bottlesize": "Taille de la bouteille",
 			"bottlingType": "Type de remplissage",

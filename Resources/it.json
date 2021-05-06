@@ -1456,6 +1456,10 @@
 			"barcode": "Codice EAN",
 			"baseprice": "Prezzo al litro",
 			"bio": "Organico certificato",
+			"bioRefNumber": {
+				"label": "Número de control ecológico",
+				"placeholder": "IT-ECO-XXX"
+			},
 			"bottles": "Bottiglie",
 			"bottlesize": "Dimensione della bottiglia",
 			"bottlingType": "Tipo di riempimento",
