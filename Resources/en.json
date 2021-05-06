@@ -1456,6 +1456,10 @@
 			"barcode": "GTIN",
 			"baseprice": "Price per liter",
 			"bio": "Bio certified",
+			"bioRefNumber": {
+				"label": "Eco control number",
+				"placeholder": "GB-ECO-XXX"
+			},
 			"bottles": "Bottles",
 			"bottlesize": "Bottlesize",
 			"bottlingType": "Type of bottling",

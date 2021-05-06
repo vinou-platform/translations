@@ -1456,6 +1456,10 @@
 			"barcode": "EAN-Code",
 			"baseprice": "Preis pro Liter",
 			"bio": "Bio zertifiziert",
+			"bioRefNumber": {
+				"label": "Bio-Kontrollnummer",
+				"placeholder": "DE-ÖKO-XXX"
+			},
 			"bottles": "Flaschen",
 			"bottlesize": "Flaschengröße",
 			"bottlingType": "Art der Abfüllung",

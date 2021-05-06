@@ -1456,6 +1456,10 @@
 			"barcode": "EAN-Code",
 			"baseprice": "Precio por litro",
 			"bio": "certificado como biológico",
+			"bioRefNumber": {
+				"label": "Número de control ecológico",
+				"placeholder": "ES-ECO-XXX"
+			},
 			"bottles": "Botellas",
 			"bottlesize": "tamaño de botella",
 			"bottlingType": "Tipo de relleno",
