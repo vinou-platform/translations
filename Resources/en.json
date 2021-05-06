@@ -1412,7 +1412,7 @@
 				"qrCodeVector": "Download QR code as vector file"
 			},
 			"search": {
-				"placeholder": "e.g. name, country, region, vintage, articlenumber",
+				"placeholder": "e.g. name, country, region, vintage, art. no.",
 				"title": "Search for wine",
 				"modaltitle": "Search wine"
 			},
@@ -1452,7 +1452,7 @@
 				"label": "Allergens",
 				"placeholder": "Search for allergens"
 			},
-			"articlenumber": "Art.-No.",
+			"articlenumber": "Art. no.",
 			"barcode": "GTIN",
 			"baseprice": "Price per liter",
 			"bio": "Bio certified",
@@ -1685,7 +1685,7 @@
 		},
 		"field": {
 			"active": "visible",
-			"articlenumber": "Art.-No.",
+			"articlenumber": "Art. no.",
 			"baseprice": "Base price",
 			"description": "Description",
 			"gross": "Price gross",
@@ -1710,7 +1710,7 @@
 		},
 		"gallery": {
 			"filter": {
-				"searchhint": "for example name or articlenumber"
+				"searchhint": "for example name or art. no."
 			}
 		},
 		"messages": {
@@ -2901,7 +2901,7 @@
 		},
 		"fields": {
 			"active": "active",
-			"articlenumber": "Art.-No.",
+			"articlenumber": "Art. no.",
 			"baseprice": "Price per liter",
 			"category": "Category",
 			"description": "Description",

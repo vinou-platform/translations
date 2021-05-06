@@ -1412,7 +1412,7 @@
 				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
 			},
 			"search": {
-				"placeholder": "z.B. Name, Land, Region, Jahrgang, Artikelnummer",
+				"placeholder": "z.B. Name, Land, Region, Jahrgang, Art.-Nr.",
 				"title": "Nach Wein Suchen",
 				"modaltitle": "Wein suchen"
 			},
@@ -1710,7 +1710,7 @@
 		},
 		"gallery": {
 			"filter": {
-				"searchhint": "z.B. Name, Artikelnummer"
+				"searchhint": "z.B. Name, Art.-Nr."
 			}
 		},
 		"messages": {
@@ -2222,7 +2222,7 @@
 				"sub": "anzeigen"
 			},
 			"touch": "Bestellung als gelesen markieren",
-			
+
 			"addPosition": "+ Position hinzufügen",
 			"goto": {
 				"delivery": "Weiter zum Versand",
@@ -5630,7 +5630,7 @@
 		"cinnamon": "Zimt",
 		"exotic": "Exotische Gewürze",
 		"vegetarian": "Vegetarisch",
-		
+
 		"toast": "Weißbrot",
 		"bread": "Brot",
 		"wholebread": "Vollkorn",

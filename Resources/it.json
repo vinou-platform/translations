@@ -1412,7 +1412,7 @@
 				"qrCodeVector": "Scarica il codice QR come file vettoriale"
 			},
 			"search": {
-				"placeholder": "Ad es. Nom, Paese, regione, annata, numero di riferimento",
+				"placeholder": "Ad es. Nom, Paese, regione, annata, articolo no.",
 				"title": "Cerca vino",
 				"modaltitle": "Cerca vino"
 			},
@@ -1452,7 +1452,7 @@
 				"label": "Allergeni",
 				"placeholder": "Ricerca Allergeni"
 			},
-			"articlenumber": "No. articolo",
+			"articlenumber": "Articolo no.",
 			"barcode": "Codice EAN",
 			"baseprice": "Prezzo al litro",
 			"bio": "Organico certificato",
@@ -1685,7 +1685,7 @@
 		},
 		"field": {
 			"active": "Attivamente",
-			"articlenumber": "No. articolo",
+			"articlenumber": "Articolo no.",
 			"baseprice": "Prezzo base",
 			"description": "Descrizione",
 			"gross": "Prezzo lordo",
@@ -1710,7 +1710,7 @@
 		},
 		"gallery": {
 			"filter": {
-				"searchhint": "Ad es. Nome, numero articolo"
+				"searchhint": "Ad es. Nome, articolo no."
 			}
 		},
 		"messages": {
@@ -2901,7 +2901,7 @@
 		},
 		"fields": {
 			"active": "Attivamente",
-			"articlenumber": "No. articolo",
+			"articlenumber": "Articolo no.",
 			"baseprice": "Prezzo al litro",
 			"category": "Categoria",
 			"description": "Descrizione",

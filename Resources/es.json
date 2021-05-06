@@ -1412,7 +1412,7 @@
 				"qrCodeVector": "descargar QR-Code como archivo vector"
 			},
 			"search": {
-				"placeholder": "e.j. nombre, país, región, cosecha, número de artículo",
+				"placeholder": "e.j. nombre, país, región, cosecha, artículo no.",
 				"title": "buscar a vino",
 				"modaltitle": "buscar vino"
 			},
@@ -1710,7 +1710,7 @@
 		},
 		"gallery": {
 			"filter": {
-				"searchhint": "e.j. nombre, número de artículo"
+				"searchhint": "e.j. nombre, artículo no."
 			}
 		},
 		"messages": {

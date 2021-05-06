@@ -1412,7 +1412,7 @@
 				"qrCodeVector": "Téléchargez le code QR sous forme de fichier vectoriel"
 			},
 			"search": {
-				"placeholder": "p.ex. nom, pays, région, millésime, numéro de référence",
+				"placeholder": "p.ex. nom, pays, région, millésime, no. d'article",
 				"title": "Rechercher vin",
 				"modaltitle": "Rechercher vin"
 			},
@@ -1710,7 +1710,7 @@
 		},
 		"gallery": {
 			"filter": {
-				"searchhint": "p.ex. nom, numéro de réference"
+				"searchhint": "p.ex. nom, no. d'article"
 			}
 		},
 		"messages": {
