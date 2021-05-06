@@ -1487,10 +1487,11 @@
 			"name": "Name",
 			"nostock": "sold out",
 			"nostocktext": "alternativ text for sold out",
-			"public_wines": "Public wines",
+			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"place": "Place",
 			"price": "Price",
 			"prices": "Prices",
+			"public_wines": "Public wines",
 			"qrcode": "QR code",
 			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
@@ -1582,7 +1583,8 @@
 			"formdirty": "Current wine was modified. Do you like to save the changes?",
 			"createcopy": "Would you like to take over the fields of {wine.name}?",
 			"hints": {
-				"connectwine": "Connect to wine"
+				"connectwine": "Connect to wine",
+				"packageQuantity": "Place within package equal to standard wine bottles"
 			},
 			"toasts": {
 				"connected": "Wine connected"
@@ -1697,6 +1699,7 @@
 			"net": "Price netto",
 			"nostock": "not in stock",
 			"nostocktext": "text if not in stock",
+			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"prices": "Prices",
 			"quantity": "Stock",
 			"quantityabbr": "pc.",
@@ -1720,7 +1723,8 @@
 		"messages": {
 			"hints": {
 				"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
-				"noentries": "No entries found"
+				"noentries": "No entries found",
+				"packageQuantity": "Place within package equal to standard wine bottles"
 			},
 			"dialog": {
 				"delete": "Would you really delete this product?"
