@@ -1487,10 +1487,11 @@
 			"name": "Nom",
 			"nostock": "Ubriaco",
 			"nostocktext": "Il testo veniva visualizzato quando il contenuto era ubriaco (per es. disponibile da...)",
-			"public_wines": "Vini pubblici",
+			"packageQuantity": "Imballaggio equivalente (bottiglie da 0,75l)",
 			"place": "Posizione",
 			"price": "Prezzo",
 			"prices": "Prezzi",
+			"public_wines": "Vini pubblici",
 			"qrcode": "QR-Code",
 			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Il codice QR viene generato dopo il salvataggio.",
@@ -1582,7 +1583,8 @@
 			"formdirty": "Il vino attuale è stato modificato. Vuoi salvare le modifiche?",
 			"createcopy": "Vuoi prendere le informazioni dalla {wine.name} ?",
 			"hints": {
-				"connectwine": "Connettiti con il vino"
+				"connectwine": "Connettiti con il vino",
+				"packageQuantity": "Posizionare in un pacchetto pari alle bottiglie di vino standard"
 			},
 			"toasts": {
 				"connected": "Il vino è stato trasferito all'assortimento.."
@@ -1697,6 +1699,7 @@
 			"net": "Prezzo neetto",
 			"nostock": "Non disponibile",
 			"nostocktext": "Testo se non disponibile",
+			"packageQuantity": "Imballaggio equivalente (bottiglie da 0,75l)",
 			"prices": "Prezzi",
 			"quantity": "Stock",
 			"quantityabbr": "Pcs.",
@@ -1720,7 +1723,8 @@
 		"messages": {
 			"hints": {
 				"imagesize": "<b>Raccomandazione per una presentazione ottimale</b><br>Dimensioni: 1000x1000px<br/> Formato file: .png (liberato)",
-				"noentries": "Nessuna voce ancora"
+				"noentries": "Nessuna voce ancora",
+				"packageQuantity": "Posizionare in un pacchetto pari alle bottiglie di vino standard"
 			},
 			"dialog": {
 				"delete": "Sei sicuro di voler eliminare questo prodotto??"
