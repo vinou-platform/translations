@@ -2160,7 +2160,9 @@
 			"search": {
 				"placeholder": "e.g. name, customer number, address"
 			},
-			"showEditor": "Show creator"
+			"listFields": {
+				"label": "Additional information"
+			}
 		},
 		"dialogs": {
 			"cancel": "Do you really want to cancel this offer?",
@@ -2350,7 +2352,9 @@
 			"search": {
 				"placeholder": "e.g. name, customer no., address"
 			},
-			"showEditor": "Show creator"
+			"listFields": {
+				"label": "Additional information"
+			}
 		},
 		"dialogs": {
 			"create": {

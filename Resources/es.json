@@ -2160,7 +2160,9 @@
 			"search": {
 				"placeholder": "e.j. nombre, número de cliente, dirección"
 			},
-			"showEditor": "Señalar autor"
+			"listFields": {
+				"label": "Información Adicional"
+			}
 		},
 		"dialogs": {
 			"cancel": "Quieres anular esa oferta seguramente?",
@@ -2350,7 +2352,9 @@
 			"search": {
 				"placeholder": "e.j. nombre, número de cliente, dirección"
 			},
-			"showEditor": "Señalar autor"
+			"listFields": {
+				"label": "Información Adicional"
+			}
 		},
 		"dialogs": {
 			"create": {

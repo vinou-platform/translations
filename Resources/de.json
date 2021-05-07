@@ -2160,7 +2160,9 @@
 			"search": {
 				"placeholder": "z.B.: Name, Kundennummer, Adresse"
 			},
-			"showEditor": "Erfasser anzeigen"
+			"listFields": {
+				"label": "Zusatzinformationen anzeigen"
+			}
 		},
 		"dialogs": {
 			"cancel": "Möchtest Du dieses Angebot wirklich zurückziehen?",
@@ -2311,7 +2313,7 @@
 			"orderValue": "Bestellwert",
 			"vatincluded": "inkl. {tax} MwSt.",
 			"vatexcluded": "zzgl. {tax} MwSt.",
-			"yardsale": "Hofverkauf"
+			"yardsale": "Abhofverkauf"
 		},
 		"paymenttypes": {
 			"cash": "Barzahlung",
@@ -2350,7 +2352,9 @@
 			"search": {
 				"placeholder": "z.B. Name, Kundennummer, Adresse"
 			},
-			"showEditor": "Erfasser anzeigen"
+			"listFields": {
+				"label": "Zusatzinformationen anzeigen"
+			}
 		},
 		"dialogs": {
 			"create": {
