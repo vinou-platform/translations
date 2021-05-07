@@ -2160,7 +2160,9 @@
 			"search": {
 				"placeholder": "Ad es. Nom, client n., Indirizzo"
 			},
-			"showEditor": "Mostra creatore"
+			"listFields": {
+				"label": "Informazioni aggiuntive"
+			}
 		},
 		"dialogs": {
 			"cancel": "Vuoi davvero annullare questa offerta?",
@@ -2350,7 +2352,9 @@
 			"search": {
 				"placeholder": "Ad es. Nom, client n., Indirizzo"
 			},
-			"showEditor": "Mostra creatore"
+			"listFields": {
+				"label": "Informazioni aggiuntive"
+			}
 		},
 		"dialogs": {
 			"create": {
