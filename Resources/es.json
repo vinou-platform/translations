@@ -2212,6 +2212,7 @@
 				"main": "Descargar",
 				"sub": "confirmación del pedido"
 			},
+			"downloadDocuments": "Descargar documentos",
 			"duplicate": {
 				"main": "Duplicar",
 				"sub": "orden"
@@ -2219,9 +2220,6 @@
 			"edit": {
 				"main": "Editar",
 				"sub": "orden"
-			},
-			"export": {
-				"invoices": "Descargar facturas para el período seleccionado"
 			},
 			"print": {
 				"main": "Imprimir",

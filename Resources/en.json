@@ -2212,6 +2212,7 @@
 				"main": "Download",
 				"sub": "order confirmation"
 			},
+			"downloadDocuments": "Download documents",
 			"duplicate": {
 				"main": "Duplicate",
 				"sub": "order"
@@ -2219,9 +2220,6 @@
 			"edit": {
 				"main": "Edit",
 				"sub": "order"
-			},
-			"export": {
-				"invoices": "Download invoices for selected period"
 			},
 			"print": {
 				"main": "Print",

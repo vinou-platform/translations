@@ -2212,6 +2212,7 @@
 				"main": "Auftragsbestätigung",
 				"sub": "herunterladen"
 			},
+			"downloadDocuments": "Dokumente herunterladen",
 			"duplicate": {
 				"main": "Bestellung",
 				"sub": "duplizieren"
@@ -2219,9 +2220,6 @@
 			"edit": {
 				"main": "Bestellung",
 				"sub": "bearbeiten"
-			},
-			"export": {
-				"invoices": "Rechnungen für ausgewählten Zeitraum herunterladen"
 			},
 			"print": {
 				"main": "Auftragsbestätigung",
