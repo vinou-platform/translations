@@ -52,6 +52,7 @@
 			"empty": "Please select",
 			"none": "No information",
 			"unknown": "Unknown",
+			"notAvailable": "n/a",
 			"upload_image": "Select image to upload",
 			"search": {
 				"placeholder": "e.g. name or description"
@@ -1493,7 +1494,6 @@
 			"prices": "Prices",
 			"public_wines": "Public wines",
 			"qrcode": "QR code",
-			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
 			"qrlink": "Target address for QR code",
 			"qrlinkempty": "Target address for QR code (Winepass if empty)",
@@ -1501,11 +1501,8 @@
 			"quality_note": "Additional classification note",
 			"quantity": "Current Stock",
 			"region": "Region",
-			"shoplink": "Shoplink",
-			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
 			"stock": "Available stock",
-			"stockunknown": "n/a",
 			"sweetness": "Sweetness",
 			"taste": "Taste",
 			"terroir": "Terroir",

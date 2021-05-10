@@ -52,6 +52,7 @@
 			"empty": "Veuillez choisir",
 			"none": "Pas d'information",
 			"unknown": "Inconnue",
+			"notAvailable": "Aucune information",
 			"upload_image": "Sélectionnez l'image à télécharger",
 			"search": {
 				"placeholder": "p.ex. nom ou description"
@@ -1493,7 +1494,6 @@
 			"prices": "Prix",
 			"public_wines": "Vins publics",
 			"qrcode": "Code QR",
-			"qrcode_redirect": "Code QR Redirect",
 			"qrcode_create": "Le code QR est généré après la première sauvegarde.",
 			"qrlink": "Adresse de destination pour le code QR",
 			"qrlinkempty": "Adresse de destination pour le code QR (Passe du vin si vide)",
@@ -1501,11 +1501,8 @@
 			"quality_note": "Informations de classification supplémentaires",
 			"quantity": "Stock",
 			"region": "Région de culture",
-			"shoplink": "Lien vers la boutique",
-			"shoplink_active": "Lien vers la boutique aktife",
 			"sorting": "Index de tri manuel (p.ex. pour le magasin)",
 			"stock": "Inventaire disponible",
-			"stockunknown": "Aucune information",
 			"sweetness": "Sucre résiduel",
 			"tags": "Mots clés",
 			"taste": "Saveur",

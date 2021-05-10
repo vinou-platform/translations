@@ -52,6 +52,7 @@
 			"empty": "Seleziona",
 			"none": "Non disponible",
 			"unknown": "Sconosciuto",
+			"notAvailable": "N/A",
 			"upload_image": "Seleziona una foto e caricala",
 			"search": {
 				"placeholder": "ad es. nome o descritto"
@@ -1493,7 +1494,6 @@
 			"prices": "Prezzi",
 			"public_wines": "Vini pubblici",
 			"qrcode": "QR-Code",
-			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Il codice QR viene generato dopo il salvataggio.",
 			"qrlink": "Destinazione da memorizzare nel codice qr",
 			"qrlinkempty": "Indirizzo di destinazione per qr-code (Vino passa quando vuoto)",
@@ -1501,11 +1501,8 @@
 			"quality_note": "Ulteriori informazioni sulla classificazione",
 			"quantity": "Stock",
 			"region": "Regione di cultura",
-			"shoplink": "Link al negozio",
-			"shoplink_active": "Link al negozio attivo",
 			"sorting": "Indice di ordinamento manuale (per es. per negozio)",
 			"stock": "Inventario disponibile",
-			"stockunknown": "N/A",
 			"sweetness": "Zucchero residuo",
 			"tags": "Tag",
 			"taste": "Sapore",

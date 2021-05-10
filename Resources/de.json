@@ -52,6 +52,7 @@
 			"empty": "Bitte wählen",
 			"none": "Keine Angabe",
 			"unknown": "Unbekannt",
+			"notAvailable": "n/a",
 			"upload_image": "Bild auswählen und hochladen",
 			"search": {
 				"placeholder": "z.B. Name oder Beschreibung"
@@ -1493,7 +1494,6 @@
 			"prices": "Preise",
 			"public_wines": "Öffentliche Weine",
 			"qrcode": "QR-Code",
-			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
 			"qrlink": "Zieladresse für QR-Code",
 			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
@@ -1501,11 +1501,8 @@
 			"quality_note": "Zusatzangabe Qualitätsstufe",
 			"quantity": "Aktueller Bestand",
 			"region": "Anbauregion",
-			"shoplink": "Link zum Shop",
-			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"stock": "Verfügbarer Bestand",
-			"stockunknown": "n/a",
 			"sweetness": "Restsüße",
 			"tags": "Tags",
 			"taste": "Geschmacksrichtung",
