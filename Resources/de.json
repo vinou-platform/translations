@@ -22,6 +22,7 @@
 		"network": "Mein Netzwerk",
 		"news": "Neuigkeiten",
 		"qrcodes": "QR-Codes",
+		"reports": "Reports",
 		"sales": "Verkauf",
 		"sales.offers": "Angebote",
 		"sales.orders": "Bestellungen",
@@ -2491,6 +2492,85 @@
 		},
 		"errors": {
 			"create": "Versuch fehlgeschlagen!"
+		}
+	},
+	"receiver": {
+		"name": {
+			"singular": "Empfänger",
+			"plural": "Empfänger"
+		},
+		"actions": {
+			"create": {
+				"main": "Neuen Empfänger",
+				"sub": "registrieren"
+			},
+			"save": {
+				"main": "Neuen Empfänger",
+				"sub": "hinzufügen"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Empfänger anlegen"
+			}
+		},
+		"fields": {
+			"name": "Name",
+			"mail": "E-Mail-Adresse"
+		}
+	},
+	"report": {
+		"name": {
+			"singular": "Report",
+			"plural": "Reports"
+		},
+		"actions": {
+			"create": {
+				"main": "Report",
+				"sub": "erstellen"
+			}
+		},
+		"fieldSets": {
+			"execution": "Ausführung"
+		},
+		"fields": {
+			"active": {
+				"label": "Report-Status",
+				"checklabel": "Aktiviert"
+			},
+			"crstamp": "Erstellungsdatum",
+			"title": "Titel",
+			"type": "Typ des Reports",
+			"period": "Wiederholung",
+			"receivers": "Empfänger",
+			"startDate": "Erste Ausführung (Datum, Uhrzeit)",
+			"endDate": "Ausführung bis (Datum, Uhrzeit)",
+			"lastRun": {
+				"label": "zuletzt ausgeführt",
+				"empty": "noch nie"
+			},
+			"nextRun": {
+				"label": "Nächste Ausführung",
+				"empty": "nicht geplant"
+			}
+		},
+		"reportTypes": {
+			"business": "Geschäftsübersicht",
+			"stripeReconciliation": "Stripe Auszahlungsaufstellung"
+		},
+		"periods": {
+			"daily": "täglich",
+			"weekly": "wöchentlich",
+			"twoweeks": "14-tägig",
+			"monthly": "monatlich"
+		},
+		"dialogs": {
+			"delete": "Willst Du diesen Report wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Report angelegt",
+			"changed": "Report geändert",
+			"deleted": "Report gelöscht"
 		}
 	},
 	"shipment": {
