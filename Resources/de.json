@@ -2528,6 +2528,10 @@
 			"create": {
 				"main": "Report",
 				"sub": "erstellen"
+			},
+			"execute": {
+				"main": "Report ausführen",
+				"sub": "und versenden"
 			}
 		},
 		"fieldSets": {
@@ -2569,8 +2573,48 @@
 		},
 		"toasts": {
 			"created": "Report angelegt",
+			"executed": "Neuen Report erzeugt und versendet",
 			"changed": "Report geändert",
 			"deleted": "Report gelöscht"
+		}
+	},
+	"reportLog": {
+		"name": {
+			"singular": "Erstellter Report",
+			"plural": "Erstellte Reports"
+		},
+		"actions": {
+			"create": {
+				"main": "Neuen Report",
+				"sub": "erzeugen"
+			},
+			"download": {
+				"main": "Erstellten Report",
+				"sub": "herunterladen"
+			},
+			"delete": {
+				"main": "Erstellten Report",
+				"sub": "löschen"
+			},
+			"send": {
+				"main": "Report an Empfänger",
+				"sub": "senden"
+			}
+		},
+		"views": {
+			"list": {
+				"title": "Historie"
+			}
+		},
+		"fields": {
+			"crstamp": "Erstellungsdatum"
+		},
+		"dialogs": {
+			"delete": "Willst Du diesen erstellten Report wirklich löschen?"
+		},
+		"toasts": {
+			"deleted": "Report gelöscht",
+			"send": "Report wurde per Mail versendet"
 		}
 	},
 	"shipment": {
