@@ -2494,6 +2494,130 @@
 			"create": "Intento ha sido fallado!"
 		}
 	},
+	"receiver": {
+		"name": {
+			"singular": "Informe",
+			"plural": "Informes"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear nuevo",
+				"sub": "Informe"
+			},
+			"save": {
+				"main": "Añadir nuevo",
+				"sub": "Informe"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Crear informe"
+			}
+		},
+		"fields": {
+			"name": "Nombre",
+			"mail": "Dirección de email"
+		}
+	},
+	"report": {
+		"name": {
+			"singular": "Informe",
+			"plural": "informes"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear",
+				"sub": "Informe"
+			},
+			"execute": {
+				"main": "Ejecutar y enviar",
+				"sub": "Informe"
+			}
+		},
+		"fieldSets": {
+			"execution": "Ejecutar"
+		},
+		"fields": {
+			"active": {
+				"label": "Estado del informe",
+				"checklabel": "activo"
+			},
+			"crstamp": "Fecha de creación",
+			"title": "Título",
+			"type": "Tipo",
+			"period": "Periodo de ejecución",
+			"receivers": "Informes",
+			"startDate": "Primera ejecución (fecha y hora)",
+			"endDate": "Ejecución hasta (fecha y hora)",
+			"lastRun": {
+				"label": "Última ejecución",
+				"empty": "ninguna"
+			},
+			"nextRun": {
+				"label": "Próxima ejecución",
+				"empty": "no programada"
+			}
+		},
+		"reportTypes": {
+			"business": "Visión general",
+			"stripeReconciliation": "Conciliación de Stripe",
+			"stockOverview": "Resumen de existencias"
+		},
+		"periods": {
+			"daily": "diario",
+			"weekly": "semanalmente",
+			"twoweeks": "dos semanas",
+			"monthly": "mensualmente"
+		},
+		"dialogs": {
+			"delete": "¿Realmente desea eliminar este informe?"
+		},
+		"toasts": {
+			"created": "Informe creado",
+			"executed": "Informe ejecutado y enviado",
+			"changed": "Informe cambiado",
+			"deleted": "Informe eliminado"
+		}
+	},
+	"reportLog": {
+		"name": {
+			"singular": "Informe creado",
+			"plural": "Informes creados"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear nuevo",
+				"sub": "Informe"
+			},
+			"download": {
+				"main": "Descargar",
+				"sub": "Informe^"
+			},
+			"delete": {
+				"main": "Eliminar",
+				"sub": "Informe"
+			},
+			"send": {
+				"main": "Enviar informe",
+				"sub": "a los destinatarios"
+			}
+		},
+		"views": {
+			"list": {
+				"title": "Historial"
+			}
+		},
+		"fields": {
+			"crstamp": "Fecha de creación"
+		},
+		"dialogs": {
+			"delete": "¿Realmente desea eliminar este informe?"
+		},
+		"toasts": {
+			"deleted": "Informe eliminado",
+			"send": "Informe enviado"
+		}
+	},
 	"shipment": {
 		"name": {
 			"singular": "Etiqueta de envío",
