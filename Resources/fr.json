@@ -22,6 +22,7 @@
 		"network": "Réseau",
 		"news": "Nouvelles",
 		"qrcodes": "Codes QR",
+		"reports": "Rapports",
 		"sales": "Ventes",
 		"sales.offers": "Offres",
 		"sales.orders": "Ordres",
@@ -1017,6 +1018,7 @@
 			"breakage": "Rupture",
 			"correction": "Correction",
 			"creditAdvice": "Crédit",
+			"deputate": "Paiement en nature",
 			"external": "Interface externe",
 			"invoice": "Facture",
 			"privateConsumption": "Consommation personnelle",
@@ -2486,6 +2488,130 @@
 		},
 		"errors": {
 			"create": "Tentative échoué!"
+		}
+	},
+	"receiver": {
+		"name": {
+			"singular": "Signaler",
+			"plural": "Rapports"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer un nouveau",
+				"sub": "Signaler"
+			},
+			"save": {
+				"main": "Ajouter un nouveau",
+				"sub": "Signaler"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Creer un rapport"
+			}
+		},
+		"fields": {
+			"name": "Nom",
+			"mail": "Adresse éléctronique"
+		}
+	},
+	"report": {
+		"name": {
+			"singular": "Signaler",
+			"plural": "Rapports"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer",
+				"sub": "Signaler"
+			},
+			"execute": {
+				"main": "Courir et envoyer",
+				"sub": "Signaler"
+			}
+		},
+		"fieldSets": {
+			"execution": "Cours"
+		},
+		"fields": {
+			"active": {
+				"label": "État du rapport",
+				"checklabel": "actif"
+			},
+			"crstamp": "Date de creation",
+			"title": "Titre",
+			"type": "Type",
+			"period": "Période d'exécution",
+			"receivers": "Rapports",
+			"startDate": "Première exécution (date et heure)",
+			"endDate": "Exécution jusqu'au (date et heure)",
+			"lastRun": {
+				"label": "Dernier tour",
+				"empty": "rien"
+			},
+			"nextRun": {
+				"label": "Prochaine exécution",
+				"empty": "non programmé"
+			}
+		},
+		"reportTypes": {
+			"business": "Vue d'ensemble",
+			"stripeReconciliation": "Réconciliation de Stripe",
+			"stockOverview": "Aperçu des stocks"
+		},
+		"periods": {
+			"daily": "du quotidien",
+            "weekly": "hebdomadaire",
+			"twoweeks": "deux semaines",
+			"monthly": "mensuel"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce rapport?"
+		},
+		"toasts": {
+			"created": "Rapport créé",
+			"executed": "Rapport exécuté et envoyé",
+			"changed": "Rapport modifié",
+			"deleted": "Rapport supprimé"
+		}
+	},
+	"reportLog": {
+		"name": {
+			"singular": "Rapport créé",
+			"plural": "Rapports créés"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear nuevo",
+				"sub": "Signaler"
+			},
+			"download": {
+				"main": "Télécharger",
+				"sub": "Signaler^"
+			},
+			"delete": {
+				"main": "Se débarrasser de",
+				"sub": "Signaler"
+			},
+			"send": {
+				"main": "Envoyer un rapport",
+				"sub": "aux destinataires"
+			}
+		},
+		"views": {
+			"list": {
+				"title": "Enregistrer"
+			}
+		},
+		"fields": {
+			"crstamp": "Date de creation"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce rapport?"
+		},
+		"toasts": {
+			"deleted": "Rapport supprimé",
+			"send": "Rapport envoyé"
 		}
 	},
 	"shipment": {

@@ -22,6 +22,7 @@
 		"network": "Network",
 		"news": "Attuale",
 		"qrcodes": "Codice QR",
+		"reports": "Rapporti",
 		"sales": "Vendite",
 		"sales.offers": "Accordi",
 		"sales.orders": "Ordini",
@@ -1017,6 +1018,7 @@
 			"breakage": "Rottura",
 			"correction": "Correzione",
 			"creditAdvice": "Accredito",
+			"deputate": "Pagamento in natura",
 			"external": "Esterno (interfaccia)",
 			"invoice": "Fattura",
 			"privateConsumption": "Autoconsumo",
@@ -2486,6 +2488,130 @@
 		},
 		"errors": {
 			"create": "Tentativo fallito!"
+		}
+	},
+	"receiver": {
+		"name": {
+			"singular": "Rapporto",
+			"plural": "Rapporti"
+		},
+		"actions": {
+			"create": {
+				"main": "Creare nuovo",
+				"sub": "Rapporto"
+			},
+			"save": {
+				"main": "Aggiungere nuovo",
+				"sub": "Rapporto"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Creare rapporto"
+			}
+		},
+		"fields": {
+			"name": "Nome",
+			"mail": "Indirizzo e-mail"
+		}
+	},
+	"report": {
+		"name": {
+			"singular": "Rapporto",
+			"plural": "Rapporti"
+		},
+		"actions": {
+			"create": {
+				"main": "Creare",
+				"sub": "Rapporto"
+			},
+			"execute": {
+				"main": "Corri e invia",
+				"sub": "Rapporto"
+			}
+		},
+		"fieldSets": {
+			"execution": "Eseguire"
+		},
+		"fields": {
+			"active": {
+				"label": "Stato del rapporto",
+				"checklabel": "attivo"
+			},
+			"crstamp": "Data di creazione",
+			"title": "Titolo",
+			"type": "Tipo",
+			"period": "Periodo di esecuzione",
+			"receivers": "Rapporto",
+			"startDate": "Prima esecuzione (data e ora)",
+			"endDate": "Esecuzione fino a (data e ora)",
+			"lastRun": {
+				"label": "Ultima esecuzione",
+				"empty": "nessuna"
+			},
+			"nextRun": {
+				"label": "Prossima esecuzione",
+				"empty": "non programmato"
+			}
+		},
+		"reportTypes": {
+			"business": "Descrizione della società",
+			"stripeReconciliation": "Conciliazione di Stripe",
+			"stockOverview": "Panoramica delle scorte"
+		},
+		"periods": {
+			"daily": "quotidiano",
+			"weekly": "settimanalmente",
+			"twoweeks": "due settimane",
+			"monthly": "mensile"
+		},
+		"dialogs": {
+			"delete": "Sei sicuro di voler eliminare questo rapporto?"
+		},
+		"toasts": {
+			"created": "Rapporto creato",
+			"executed": "Rapporto eseguito e inviato",
+			"changed": "Rapporto cambiato",
+			"deleted": "Rapporto eliminato"
+		}
+	},
+	"reportLog": {
+		"name": {
+			"singular": "Rapporto creato",
+			"plural": "Rapporti creati"
+		},
+		"actions": {
+			"create": {
+				"main": "Creare nuovo",
+				"sub": "Rapporto"
+			},
+			"download": {
+				"main": "Scaricare",
+				"sub": "Rapporto^"
+			},
+			"delete": {
+				"main": "Rimuovere",
+				"sub": "Rapporto"
+			},
+			"send": {
+				"main": "Spedisci il rapporto",
+				"sub": "ai destinatari"
+			}
+		},
+		"views": {
+			"list": {
+				"title": "Cronologia"
+			}
+		},
+		"fields": {
+			"crstamp": "Data di creazione"
+		},
+		"dialogs": {
+			"delete": "Sei sicuro di voler eliminare questo rapporto?"
+		},
+		"toasts": {
+			"deleted": "Rapporto eliminato",
+			"send": "Rapporto inviato"
 		}
 	},
 	"shipment": {

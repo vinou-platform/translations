@@ -22,6 +22,7 @@
 		"network": "My network",
 		"news": "News",
 		"qrcodes": "QR codes",
+		"reports": "Reports",
 		"sales": "Sales",
 		"sales.offers": "Offers",
 		"sales.orders": "Orders",
@@ -1017,6 +1018,7 @@
 			"breakage": "Breakage",
 			"correction": "Correction",
 			"creditAdvice": "Credit advice",
+			"deputate": "Payment in kind",
 			"external": "External (interface)",
 			"invoice": "Invoice",
 			"privateConsumption": "Private consumption",
@@ -2486,6 +2488,130 @@
 		},
 		"errors": {
 			"create": "Payment creation failed!"
+		}
+	},
+	"receiver": {
+		"name": {
+			"singular": "Receiver",
+			"plural": "Receivers"
+		},
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Receiver"
+			},
+			"save": {
+				"main": "Add new",
+				"sub": "Receiver"
+			}
+		},
+		"views": {
+			"create": {
+				"title": "Create receiver"
+			}
+		},
+		"fields": {
+			"name": "Name",
+			"mail": "E-Mail-Address"
+		}
+	},
+	"report": {
+		"name": {
+			"singular": "Report",
+			"plural": "Reports"
+		},
+		"actions": {
+			"create": {
+				"main": "Create",
+				"sub": "Report"
+			},
+			"execute": {
+				"main": "Execute and send",
+				"sub": "Report"
+			}
+		},
+		"fieldSets": {
+			"execution": "Execution"
+		},
+		"fields": {
+			"active": {
+				"label": "Report status",
+				"checklabel": "activated"
+			},
+			"crstamp": "Date of creation",
+			"title": "Title",
+			"type": "Type",
+			"period": "Period of execution",
+			"receivers": "Receivers",
+			"startDate": "First execution (date and time)",
+			"endDate": "Execution until (date and time)",
+			"lastRun": {
+				"label": "Last execution",
+				"empty": "never"
+			},
+			"nextRun": {
+				"label": "Next execution",
+				"empty": "not scheduled"
+			}
+		},
+		"reportTypes": {
+			"business": "Business overview",
+			"stripeReconciliation": "Stripe reconciliation",
+			"stockOverview": "Stock overview"
+		},
+		"periods": {
+			"daily": "daily",
+			"weekly": "weekly",
+			"twoweeks": "two weeks",
+			"monthly": "monthly"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this report?"
+		},
+		"toasts": {
+			"created": "Report created",
+			"executed": "Report executed and send",
+			"changed": "Report changed",
+			"deleted": "Report deleted"
+		}
+	},
+	"reportLog": {
+		"name": {
+			"singular": "Created report",
+			"plural": "Created reports"
+		},
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "Report"
+			},
+			"download": {
+				"main": "Download",
+				"sub": "Report^"
+			},
+			"delete": {
+				"main": "Delete",
+				"sub": "Report"
+			},
+			"send": {
+				"main": "Send report",
+				"sub": "to receivers"
+			}
+		},
+		"views": {
+			"list": {
+				"title": "History"
+			}
+		},
+		"fields": {
+			"crstamp": "Date of creation"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this executed report?"
+		},
+		"toasts": {
+			"deleted": "Report deleted",
+			"send": "Report send"
 		}
 	},
 	"shipment": {
