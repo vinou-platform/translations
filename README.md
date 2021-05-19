@@ -125,11 +125,11 @@ Each object may define certain standard keys shown below in preferred definition
   "hints": {
     "imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1500x1500px<br/>Datei-Format: .png (freigestellt)"
   },
-	"packageTypes": {
-		"mixed": "Gemischt",
-		"surprise": "Überaschungspaket",
-		"wineOnly": "Nur Wein",
-	}
+  "packageTypes": {
+    "mixed": "Gemischt",
+    "surprise": "Überaschungspaket",
+    "wineOnly": "Nur Wein",
+  }
 }
 ```
 
