@@ -2651,9 +2651,7 @@
 			"carrierTrackingNumber": "Número de rastreo",
 			"defaultCarrier": "Prestador de servicios estándar",
 			"onlyOneCarrier": "Usar solamente el prestador de servicios de envío?",
-			"packagingUnit": {
-				"nameWithCapacity": "{capacity} caja"
-			},
+			"packagingCapacity": "{capacity} caja",
 			"service": "Modo de envío",
 			"shipcloudApiKey": {
 				"label": "Llave de ShipCloud API",

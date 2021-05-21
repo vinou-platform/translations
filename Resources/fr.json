@@ -2651,9 +2651,7 @@
 			"carrierTrackingNumber": "Numéro de suivi du transporteur",
 			"defaultCarrier": "Service d'expédition standard",
 			"onlyOneCarrier": "Utilisez uniquement le service d'expédition standard?",
-			"packagingUnit": {
-				"nameWithCapacity": "{capacity} carton"
-			},
+			"packagingCapacity": "{capacity} carton",
 			"service": "Type de expédition",
 			"shipcloudApiKey": {
 				"label": "ShipCloud Clé API",

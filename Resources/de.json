@@ -2651,9 +2651,7 @@
 			"carrierTrackingNumber": "Sendungsverfolgungsnr.",
 			"defaultCarrier": "Standard-Versanddienstleister",
 			"onlyOneCarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
-			"packagingUnit": {
-				"namewithCapacity": "{capacity}er Karton"
-			},
+			"packagingCapacity": "{capacity}er Karton",
 			"service": "Sendungsart",
 			"shipcloudApiKey": {
 				"label": "ShipCloud API-Schlüssel",

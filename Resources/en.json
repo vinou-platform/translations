@@ -2651,9 +2651,7 @@
 			"carrierTrackingNumber": "Tracking number",
 			"defaultCarrier": "Default carrier",
 			"onlyOneCarrier": "Use carrier exclusively?",
-			"packagingUnit": {
-				"nameWithCapacity": "Box of {capacity}"
-			},
+			"packagingCapacity": "Box of {capacity}",
 			"service": "Type of shipment",
 			"shipcloudApiKey": {
 				"label": "ShipCloud API-Key",

@@ -2651,9 +2651,7 @@
 			"carrierTrackingNumber": "Numero di tracciamento del corriere",
 			"defaultCarrier": "Service d'expédition standard",
 			"onlyOneCarrier": "Utilizzare solo il servizio di spedizione standard?",
-			"packagingUnit": {
-				"nameWithCapacity": "{capacity} scatola di cartone"
-			},
+			"packagingCapacity": "{capacity} scatola di cartone",
 			"service": "Tipo di spedizione",
 			"shipcloudApiKey": {
 				"label": "Chiave API ShipCloud",
