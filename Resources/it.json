@@ -2705,6 +2705,10 @@
 			"create": {
 				"main": "Raccogliere",
 				"sub": "istruire"
+			},
+			"closeShipment": {
+				"main": "Nascondi",
+				"sub": "spedizione ..."
 			}
 		},
 		"fields": {
@@ -2716,6 +2720,13 @@
 			"create": {
 				"title": "Raccolta con {carrier}",
 				"description": "Inserisci qui quando le spedizioni devono essere ritirate da te.<br/>Tieni presente che tutti i servizi di consegna hanno le proprie condizioni per il ritiro. Ad esempio, con UPS, il primo e l'ultimo orario di ritiro devono essere lo stesso giorno."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "Vuoi davvero nascondere questa spedizione?",
+				"delivered": "Sì, contrassegna come consegnato",
+				"notUsed": "Sì, etichetta di spedizione non utilizzata"
 			}
 		},
 		"toasts": {

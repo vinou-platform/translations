@@ -2705,6 +2705,10 @@
 			"create": {
 				"main": "Abholung",
 				"sub": "beauftragen"
+			},
+			"closeShipment": {
+				"main": "Sendung",
+				"sub": "ausblenden ..."
 			}
 		},
 		"fields": {
@@ -2716,6 +2720,13 @@
 			"create": {
 				"title": "Abholung mit {carrier}",
 				"description": "Gib hier ein, wann die Sendungen bei Dir abgeholt werden sollen.<br/>Bitte beachte, dass alle Versanddienstleister eigene Bedinungen für Abholungen haben. So müssen z.B. bei UPS die früheste und späteste Abholzeit auf den selben Tag fallen."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "Möchtest Du diese Sendung wirklich ausblenden?",
+				"delivered": "Ja, als versendet markieren",
+				"notUsed": "Ja, Versandmarke nicht verwendet"
 			}
 		},
 		"toasts": {

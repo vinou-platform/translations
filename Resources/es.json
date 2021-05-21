@@ -2705,6 +2705,10 @@
 			"create": {
 				"main": "Solicitar",
 				"sub": "recogida"
+			},
+			"closeShipment": {
+				"main": "Ocultar",
+				"sub": "envío ..."
 			}
 		},
 		"fields": {
@@ -2716,6 +2720,13 @@
 			"create": {
 				"title": "Recogida por {carrier}",
 				"description": "Ingrese aquí cuándo se deben recoger los envíos.<br/>Tenga en cuenta que todos los transportistas tienen sus propios términos para las recolecciones. P.ej. UPS requiere que la hora de recogida más temprana y más tardía sea el mismo día."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "¿De verdad quieres ocultar este envío?",
+				"delivered": "Sí, marcar como entregado",
+				"notUsed": "Sí, etiqueta de envío no utilizada"
 			}
 		},
 		"toasts": {

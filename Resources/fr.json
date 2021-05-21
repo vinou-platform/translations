@@ -2705,6 +2705,10 @@
 			"create": {
 				"main": "Demander",
 				"sub": "le ramassage"
+			},
+			"closeShipment": {
+				"main": "Masquer",
+				"sub": "l'envoi ..."
 			}
 		},
 		"fields": {
@@ -2716,6 +2720,13 @@
 			"create": {
 				"title": "Ramassage par {carrier}",
 				"description": "Entrez ici quand les envois doivent être récupérés chez vous.<br/>Veuillez noter que tous les transporteurs ont leurs propres conditions de ramassage. Par exemple. UPS exige que les heures de ramassage au plus tôt et au plus tard tombent le même jour."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "Voulez-vous vraiment cacher cet envoi?",
+				"delivered": "Oui, marquer comme livré",
+				"notUsed": "Oui, étiquette non utilisée"
 			}
 		},
 		"toasts": {
