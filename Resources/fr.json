@@ -2206,6 +2206,10 @@
 				"main": "Annuler",
 				"sub": "l'ordre"
 			},
+			"close": {
+				"main": "Marquer comme",
+				"sub": "terminé"
+			},
 			"create": {
 				"main": "Entrer",
 				"sub": "la commande"
@@ -2364,11 +2368,13 @@
 				"withDocuments": "Créer un ordre avec facture et bon de livraison"
 			},
 			"cancel": "Voulez-vous vraiment annuler cet ordre?",
+			"close": "Voulez-vous vraiment marquer cet ordre comme terminée?",
 			"markSent": "Voulez-vous vraiment marquer cet ordre comme expédiée?",
 			"deletePosition": "Voulez-vous vraiment supprimer cette position?"
 		},
 		"toasts": {
 			"cancelled": "Ordre annulé!",
+			"closed": "Ordre marquée comme terminée!",
 			"created": "Ordre créé!",
 			"deleted": "Ordre supprimé!",
 			"pricesChanged": "Les prix d'un ou plusieurs produits ont changé. Le nouveau prix total est {price}.",

@@ -2206,6 +2206,10 @@
 				"main": "Bestellung",
 				"sub": "stornieren"
 			},
+			"close": {
+				"main": "Als abgeschlossen",
+				"sub": "markieren"
+			},
 			"create": {
 				"main": "Neue Bestellung",
 				"sub": "erfassen"
@@ -2364,11 +2368,13 @@
 				"withDocuments": "Erfassen und Rechnung und Lieferschein generieren"
 			},
 			"cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
+			"close": "Möchtest Du diese Bestellung wirklich als abgeschlossen markieren?",
 			"markSent": "Möchtest Du die Bestellung als Versendet markieren?",
 			"deletePosition": "Möchtest Du diese Position wirklich löschen?"
 		},
 		"toasts": {
 			"cancelled": "Bestellung storniert!",
+			"closed": "Bestellung als abgeschlossen markiert!",
 			"created": "Bestellung angelegt!",
 			"deleted": "Bestellung gelöscht!",
 			"pricesChanged": "Die Preise ein oder mehrerer Produkte haben sich geändert. Der neue Gesamtpreis beträgt {price}.",
@@ -2625,8 +2631,8 @@
 		"actions": {
 			"activate": "Versandmanagement aktivieren",
 			"create": {
-				"main": "Bestellung",
-				"sub": "in den Versand geben"
+				"main": "Bestellung in",
+				"sub": "den Versand geben"
 			},
 			"deactivate": "Versandmanagement deaktivieren",
 			"download": {

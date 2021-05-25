@@ -2206,6 +2206,10 @@
 				"main": "Annulla",
 				"sub": "l'ordine"
 			},
+			"close": {
+				"main": "Contrassegna",
+				"sub": "come completato"
+			},
 			"create": {
 				"main": "Nuovo ordine",
 				"sub": "creare"
@@ -2364,11 +2368,13 @@
 				"withDocuments": "Registrare e generare fattura e bolla di consegna"
 			},
 			"cancel": "Vuoi veramente cancellare questo ordine?",
+			"close": "Vuoi contrassegnare l'ordine come completato?",
 			"markSent": "Vuoi contrassegnare l'ordine come inviato?",
 			"deletePosition": "Vuoi veramente cancellare questo posto?"
 		},
 		"toasts": {
 			"cancelled": "Ordine annullato!",
+			"closed": "Ordine contrassegnato come completato!",
 			"created": "Ordine è stato creato!",
 			"deleted": "Ordine cancellato!",
 			"pricesChanged": "I prezzi di uno o più prodotti sono cambiati. Il nuovo prezzo totale è {prezzo}.",
@@ -2625,8 +2631,8 @@
 		"actions": {
 			"activate": "Abilita gestione spedizioni",
 			"create": {
-				"main": "Ordine",
-				"sub": "dare nella spedizione"
+				"main": "Ordine dare",
+				"sub": "nella spedizione"
 			},
 			"deactivate": "Disattiva la gestione delle spedizioni",
 			"download": {

@@ -2206,6 +2206,10 @@
 				"main": "Cancel",
 				"sub": "order"
 			},
+			"close": {
+				"main": "Mark order",
+				"sub": "as completed"
+			},
 			"create": {
 				"main": "Create order",
 				"sub": " "
@@ -2364,11 +2368,13 @@
 				"withDocuments": "Create order with invoice and delivery note"
 			},
 			"cancel": "Do you really want to cancel this order?",
+			"close": "Do you really want to mark this order as completed?",
 			"markSent": "Do you really want to set this order as dispatched?",
 			"deletePosition": "Do you really want to delete this item?"
 		},
 		"toasts": {
 			"cancelled": "Order cancelled!",
+			"closed": "Order marked as completed!",
 			"created": "Order saved!",
 			"deleted": "Order deleted!",
 			"pricesChanged": "The price of one or more products has changed. Order sum was updated to {price}.",
