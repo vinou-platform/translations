@@ -1179,7 +1179,8 @@
 			"type": {
 				"label": "Tipo",
 				"winery": "Vigna",
-				"merchant": "Distributore"
+				"merchant": "Distributore",
+				"reseller": "Rivenditrice"
 			}
 		},
 		"pricingTypes": {

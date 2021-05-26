@@ -1179,7 +1179,8 @@
 			"type": {
 				"label": "Typ",
 				"winery": "Weingut",
-				"merchant": "Händler"
+				"merchant": "Händler",
+				"reseller": "Wiederverkäufer"
 			}
 		},
 		"pricingTypes": {

@@ -1179,7 +1179,8 @@
 			"type": {
 				"label": "Type",
 				"winery": "Établissement vinicole",
-				"merchant": "Distributeur"
+				"merchant": "Distributeur",
+				"reseller": "Revendeuse"
 			}
 		},
 		"pricingTypes": {

@@ -1179,7 +1179,8 @@
 			"type": {
 				"label": "tipo",
 				"winery": "propiedad vinícola",
-				"merchant": "comerciante"
+				"merchant": "comerciante",
+				"reseller": "revendedoras"
 			}
 		},
 		"pricingTypes": {

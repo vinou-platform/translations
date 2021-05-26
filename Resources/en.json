@@ -1179,7 +1179,8 @@
 			"type": {
 				"label": "Member type",
 				"winery": "Winery",
-				"merchant": "Merchant"
+				"merchant": "Merchant",
+				"reseller": "Reseller"
 			}
 		},
 		"pricingTypes": {
