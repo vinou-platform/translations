@@ -35,6 +35,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Supprimer l'image",
 			"export": "Exporter",
 			"exportRaw": "Exporter (données brutes)",
 			"import": "Importer",
@@ -85,9 +86,9 @@
 			"wwwAction": "Visitez site web de {name}",
 			"copyOf": {
 				"1": "copie de {name}",
+
+
 				"n": "copie {n} de {name}"
-
-
 			},
 			"metaTitle": "Étiquette de titre",
 			"metaDescription": "Meta Description",
@@ -157,6 +158,9 @@
 				"empty": "Tous"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Voulez-vous vraiment supprimer cette image?"
+		},
 		"hints": {
 			"empty": "Pas encore d'entrées disponibles",
 			"multiselectable": "Sélection multiple possible (CTRL + clic)",
@@ -189,8 +193,10 @@
 			"unique": "La valeur saisie existe déjà"
 		},
 		"toasts": {
-			"networkchanged": "La visibilité du réseau a changé",
+			"imageDeleted": "Image supprimée!",
+			"imageUploaded": "Image téléchargée!",
 			"internalchanged": "Visibilité interne modifiée",
+			"networkchanged": "La visibilité du réseau a changé",
 			"publicchanged": "La visibilité publique a changé"
 		}
 	},
@@ -204,7 +210,6 @@
 			"quickActions": "Actions rapides"
 		}
 	},
-	"delete_image": "Supprimer l'image",
 	"token": {
 		"fields": {
 			"token": "Jeton",
@@ -830,8 +835,7 @@
 			},
 			"search": {
 				"placeholder": "par exemple. nom, mail"
-			},
-			"deleteImage": "Supprimer l'image"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "Modifier les paramètres de l'application",
@@ -884,15 +888,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Image téléchargée!",
-			"imageDeleted": "Image supprimée!",
 			"changed": "L'utilisateur a changé!",
 			"created": "Utilisateur créé!",
 			"deleted": "Utilisateur supprimé!",
 			"lostpasswordSend": "Mail envoyer!"
 		},
 		"dialogs": {
-			"deleteImage": "Voulez-vous vraiment supprimer l'image de l'utilisateur?",
 			"delete": "Voulez-vous vraiment supprimer cet utilisateur?"
 		},
 		"hints": {
@@ -1732,8 +1733,6 @@
 				"created": "Produit créé!",
 				"changed": "Produit édité!",
 				"deleted": "Produit supprimé!",
-				"image_uploaded": "Image du produit téléchargée!",
-				"image_deleted": "Image du produit supprimé",
 				"copied": "Produit dupliqué"
 			}
 		}
@@ -1886,9 +1885,7 @@
 			"created": "Client créé!",
 			"changed": "Client édité!",
 			"copied": "Image du client dupliqué",
-			"deleted": "Client supprimé!",
-			"imageUploaded": "Image du client téléchargée!",
-			"imageDeleted": "Image du client supprimé"
+			"deleted": "Client supprimé!"
 		}
 	},
 	"contact": {
@@ -2940,8 +2937,6 @@
 			"created": "News entry created!",
 			"changed": "News entry updated!",
 			"deleted": "News entry deleted!",
-			"image_uploaded": "Newsimage uploaded!",
-			"image_deleted": "Newsimage deleted",
 			"copied": "News entry copied"
 		},
 		"dialogs": {
@@ -3074,8 +3069,6 @@
 			"created": "Bundle créé!",
 			"changed": "Bundle changé!",
 			"deleted": "Bundle supprimé!",
-			"imageUploaded": "Téléchargement pour l'image terminé!",
-			"imageDeleted": "Image supprimée pour l'ensemble",
 			"copied": "Bundle dupliqué"
 		},
 		"dialogs": {
@@ -3142,8 +3135,6 @@
 			"created": "Catalogue créé!",
 			"changed": "Catalogue changé!",
 			"deleted": "Catalogue supprimé!",
-			"imageUploaded": "Image téléchargée pour le catalogue!",
-			"imageDeleted": "Image du catalogue supprimée",
 			"copied": "Catalogue copié",
 			"pdfGenerated": "PDF pour le catalogue généré!"
 		},
@@ -3209,8 +3200,6 @@
 			"created": "Campagne créée!",
 			"changed": "Campagne mise à jour!",
 			"deleted": "Campagne supprimée!",
-			"imageUploaded": "Image téléchargée pour la campagne!",
-			"imageDeleted": "Image supprimée pour le campaing!",
 			"copied": "Campagne copiée!"
 		},
 		"dialogs": {
@@ -3275,8 +3264,6 @@
 			"created": "Automatisation créée!",
 			"changed": "L'automatisation a changé!",
 			"deleted": "Automatisation supprimée!",
-			"imageUploaded": "Image téléversée!",
-			"imageDeleted": "Image supprimée",
 			"copied": "Automatisation dupliquée",
 			"activate": "Connexion activée",
 			"activateerror": "La connexion n'a pas pu être activée",
@@ -3403,8 +3390,6 @@
 		"address_changed": "Adresse mise à jour!",
 		"address_deleted": "Adresse supprimée!",
 		"bank_settings_error": "Une erreur s'est produite lors de l'enregistrement des coordonnées bancaires!",
-		"category_image_uploaded": "Image téléchargée!",
-		"category_image_deleted": "Image supprimée!",
 		"category_saved": "Categorie enregistrée!",
 		"category_changed": "Categorie mise à jour!",
 		"category_deleted": "Categorie supprimée!",
@@ -3412,8 +3397,6 @@
 		"cronjob_saved": "Cronjob créé!",
 		"cronjob_changed": "Cronjob mis à jour!",
 		"cronjob_deleted": "Cronjob supprimé!",
-		"customer_image_uploaded": "Image téléchargée!",
-		"customer_image_deleted": "Image supprimée!",
 		"customer_changed": "Données de client mis à jour!",
 		"customer_authid_changed": "ID d'authentificatio a été changée!",
 		"customer_deleted": "Client supprimé!",
@@ -3423,7 +3406,6 @@
 		"merchant_created": "Marchand créé!",
 		"merchant_changed": "Marchand mis à jour!",
 		"merchant_deleted": "Marchand supprimé!",
-		"merchant_image_uploaded": "Image téléchargée!",
 		"merchant_save_error": "Échec de la enregistrement!",
 		"merchant_image_deleted": "Image supprimée!",
 		"settings_bank_changed": "Coordonnées bancaires mises à jour!",
@@ -3434,16 +3416,12 @@
 		"winery_created": "Établissement vinicole créé!",
 		"winery_changed": "Établissement vinicole mis à jour!",
 		"winery_deleted": "Établissement vinicole supprimé!",
-		"winery_image_uploaded": "Image téléchargée!",
-		"winery_image_deleted": "Image supprimée!",
 		"winery_save_error": "Échec de la enregistrement!",
 		"wine_created": "Vin créé!",
 		"wine_changed": "Vin mis à jour!",
 		"wine_duplicated": "Vin dupliqué!",
 		"wine_deleted": "Vin supprimé!",
 		"wine_image_needed": "Pour télécharger une image, vous devez au préalable enregistrer le vin!",
-		"wine_image_uploaded": "Image téléchargée!",
-		"wine_image_deleted": "Image supprimée!",
 		"wine_expertise_generated": "Expertise générée!",
 		"wine_savours_updated": "Vinou-Gusto mis à jour!",
 		"view_slider_created": "Slider a été créé!",

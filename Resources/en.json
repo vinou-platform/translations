@@ -35,6 +35,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Delete image",
 			"export": "Export",
 			"exportRaw": "Export (raw data)",
 			"import": "Import",
@@ -157,6 +158,9 @@
 				"empty": "Show all"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Do you really want to delete this image?"
+		},
 		"hints": {
 			"empty": "No entries found",
 			"multiselectable": "Multiple select possible (CTRL + click)",
@@ -189,8 +193,10 @@
 			"unique": "The entered value already exists"
 		},
 		"toasts": {
-			"networkchanged": "Network visibility changed",
+			"imageDeleted": "Image deleted!",
+			"imageUploaded": "Image uploaded!",
 			"internalchanged": "Internal visibility changed",
+			"networkchanged": "Network visibility changed",
 			"publicchanged": "Public visibility changed"
 		}
 	},
@@ -204,7 +210,6 @@
 			"quickActions": "Quick actions"
 		}
 	},
-	"delete_image": "Delete Image",
 	"token": {
 		"fields": {
 			"token": "Token",
@@ -830,8 +835,7 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, mail"
-			},
-			"deleteImage": "Delete image"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "Edit App-Settings",
@@ -884,15 +888,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Image uploaded!",
-			"imageDeleted": "Image deleted!",
 			"changed": "User changed!",
 			"created": "User created!",
 			"deleted": "User deleted!",
 			"lostpasswordSend": "Mail send!"
 		},
 		"dialogs": {
-			"deleteImage": "Do you really want to delete the user image?",
 			"delete": "Do you really want to delete this user?"
 		},
 		"hints": {
@@ -1732,8 +1733,6 @@
 				"created": "Product created!",
 				"changed": "Product changed!",
 				"deleted": "Product deleted!",
-				"image_uploaded": "Productimage uploaded!",
-				"image_deleted": "Productimage deleted!",
 				"copied": "Product copied!"
 			}
 		}
@@ -1886,9 +1885,7 @@
 			"created": "Client created!",
 			"changed": "Client changed!",
 			"copied": "Client duplicated",
-			"deleted": "Client deleted!",
-			"imageUploaded": "Client image uploaded!",
-			"imageDeleted": "Client image deleted!"
+			"deleted": "Client deleted!"
 		}
 	},
 	"contact": {
@@ -2940,8 +2937,6 @@
 			"created": "News entry created!",
 			"changed": "News entry updated!",
 			"deleted": "News entry deleted!",
-			"image_uploaded": "Newsimage uploaded!",
-			"image_deleted": "Newsimage deleted",
 			"copied": "News entry copied"
 		},
 		"dialogs": {
@@ -3074,8 +3069,6 @@
 			"created": "Bundle created!",
 			"changed": "Bundle changed!",
 			"deleted": "Bundle deleted!",
-			"imageUploaded": "Upload for image finished!",
-			"imageDeleted": "Image deleted for bundle",
 			"copied": "Bundle duplicated"
 		},
 		"dialogs": {
@@ -3142,8 +3135,6 @@
 			"created": "Catalog created!",
 			"changed": "Catalog changed!",
 			"deleted": "Catalog deleted!",
-			"imageUploaded": "Image uploaded for catalog!",
-			"imageDeleted": "Image for catalog deleted",
 			"copied": "Catalog copied",
 			"pdfGenerated": "PDF for catalog generated!"
 		},
@@ -3209,8 +3200,6 @@
 			"created": "Campaign created!",
 			"changed": "Campaign updated!",
 			"deleted": "Campaign deleted!",
-			"imageUploaded": "Image uploaded for campaign!",
-			"imageDeleted": "Image deleted for campaing",
 			"copied": "Campaign copied!"
 		},
 		"dialogs": {
@@ -3275,8 +3264,6 @@
 			"created": "Automation created!",
 			"changed": "Automation changed!",
 			"deleted": "Automation deleted!",
-			"imageUploaded": "Image uploaded!",
-			"imageDeleted": "Image deleted",
 			"copied": "Automation duplicated",
 			"activate": "Connection activated",
 			"activateerror": "Connection could not be activated",
@@ -3403,8 +3390,6 @@
 		"address_changed": "Address update!",
 		"address_deleted": "Address deleted!",
 		"bank_settings_error": "An error occured while saving the bank account!",
-		"category_image_uploaded": "Image uploaded!",
-		"category_image_deleted": "Image deleted!",
 		"category_saved": "Category saved!",
 		"category_changed": "Category updated!",
 		"category_deleted": "Category deleted!",
@@ -3412,8 +3397,6 @@
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
-		"customer_image_uploaded": "Image uploaded!",
-		"customer_image_deleted": "Image deleted!",
 		"customer_changed": "Customer updated!",
 		"customer_authid_changed": "AuthId updated!",
 		"customer_deleted": "Customer deleted!",
@@ -3423,8 +3406,6 @@
 		"merchant_created": "Merchant created!",
 		"merchant_changed": "Merchant updated!",
 		"merchant_deleted": "Merchant deleted!",
-		"merchant_image_uploaded": "Image uploaded!",
-		"merchant_image_deleted": "Image deleted!",
 		"merchant_save_error": "Error saving winery!",
 		"settings_bank_changed": "Bank account updated!",
 		"settings_cashlink_registered": "Cashlink registered!",
@@ -3434,16 +3415,12 @@
 		"winery_created": "Winery created!",
 		"winery_changed": "Winery updated!",
 		"winery_deleted": "Winery deleted!",
-		"winery_image_uploaded": "Image uploaded!",
-		"winery_image_deleted": "Image deleted!",
 		"winery_save_error": "Error saving winery!",
 		"wine_created": "Wine created!",
 		"wine_changed": "Wine updated!",
 		"wine_duplicated": "Wine duplicated!",
 		"wine_deleted": "Wine deleted!",
 		"wine_image_needed": "You need to save the wine before uploading an image!",
-		"wine_image_uploaded": "Image uploaded!",
-		"wine_image_deleted": "Image deleted!",
 		"wine_expertise_generated": "Expertise generated!",
 		"wine_savours_updated": "Vinou-Gusto updated!",
 		"view_slider_created": "Slider created!",

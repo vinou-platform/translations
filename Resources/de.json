@@ -35,6 +35,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Bild löschen",
 			"export": "Export",
 			"exportRaw": "Export (EDV)",
 			"import": "Import",
@@ -85,9 +86,9 @@
 			"wwwAction": "Internetseite von {name} besuchen",
 			"copyOf": {
 				"1": "Kopie von {name}",
+
+
 				"n": "Kopie {n} von {name}"
-
-
 			},
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
@@ -157,6 +158,9 @@
 				"empty": "Alle"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Möchtest Du dieses Bild wirklich löschen?"
+		},
 		"hints": {
 			"empty": "Noch keine Einträge vorhanden",
 			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
@@ -189,8 +193,10 @@
 			"unique": "Der eingegebene Wert existiert bereits"
 		},
 		"toasts": {
-			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
+			"imageDeleted": "Bild gelöscht!",
+			"imageUploaded": "Bild hochgeladen!",
 			"internalchanged": "Sichtbarkeit für Deine Kunden geändert",
+			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
 			"publicchanged": "öffentliche Sichtbarkeit geändert"
 		}
 	},
@@ -204,7 +210,6 @@
 			"quickActions": "Schnellaktionen"
 		}
 	},
-	"delete_image": "Bild löschen",
 	"token": {
 		"fields": {
 			"token": "Schnittstelle (Token)",
@@ -830,8 +835,7 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, E-Mail"
-			},
-			"deleteImage": "Bild löschen"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "App-Einstellungen bearbeiten",
@@ -884,15 +888,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Bild hochgeladen!",
-			"imageDeleted": "Bild gelöscht!",
 			"changed": "Benutzer aktualisiert!",
 			"created": "Benutzer angelegt!",
 			"deleted": "Benutzer gelöscht!",
 			"lostpasswordSend": "Mail versendet!"
 		},
 		"dialogs": {
-			"deleteImage": "Möchtest Du dieses Bild wirklich löschen?",
 			"delete": "Möchtest Du diesen Benutzer wirklich löschen?"
 		},
 		"hints": {
@@ -1732,8 +1733,6 @@
 				"created": "Produkt angelegt!",
 				"changed": "Produkt geändert!",
 				"deleted": "Produkt gelöscht!",
-				"image_uploaded": "Produktbild hochgeladen!",
-				"image_deleted": "Produktbild gelöscht",
 				"copied": "Produkt dupliziert"
 			}
 		}
@@ -1886,9 +1885,7 @@
 			"created": "Kunde angelegt!",
 			"changed": "Kunde geändert!",
 			"copied": "Kunde dupliziert",
-			"deleted": "Kunde gelöscht!",
-			"imageUploaded": "Kundenbild hochgeladen!",
-			"imageDeleted": "Kundenbild gelöscht"
+			"deleted": "Kunde gelöscht!"
 		}
 	},
 	"contact": {
@@ -2940,8 +2937,6 @@
 			"created": "Newsbeitrag angelegt!",
 			"changed": "Newsbeitrag geändert!",
 			"deleted": "Newsbeitrag gelöscht!",
-			"image_uploaded": "Newsbild hochgeladen!",
-			"image_deleted": "Newsbild gelöscht",
 			"copied": "Newsbeitrag dupliziert"
 		},
 		"dialogs": {
@@ -3074,8 +3069,6 @@
 			"created": "Weinpaket angelegt!",
 			"changed": "Weinpaket geändert!",
 			"deleted": "Weinpaket gelöscht!",
-			"imageUploaded": "Bild zum Weinpaket hochgeladen!",
-			"imageDeleted": "Bild zum Weinpaket gelöscht",
 			"copied": "Weinpaket dupliziert"
 		},
 		"dialogs": {
@@ -3142,8 +3135,6 @@
 			"created": "Preisliste angelegt!",
 			"changed": "Preisliste geändert!",
 			"deleted": "Preisliste gelöscht!",
-			"imageUploaded": "Bild zur Preisliste hochgeladen!",
-			"imageDeleted": "Bild zur Preisliste gelöscht",
 			"copied": "Preisliste dupliziert",
 			"pdfGenerated": "PDF zur Preisliste neu generiert!"
 		},
@@ -3209,8 +3200,6 @@
 			"created": "Kampagne angelegt!",
 			"changed": "Kampagne geändert!",
 			"deleted": "Kampagne gelöscht!",
-			"imageUploaded": "Bild zum Kampagne hochgeladen!",
-			"imageDeleted": "Bild zum Kampagne gelöscht",
 			"copied": "Kampagne dupliziert"
 		},
 		"dialogs": {
@@ -3275,8 +3264,6 @@
 			"created": "Automatisierung angelegt!",
 			"changed": "Automatisierung geändert!",
 			"deleted": "Automatisierung gelöscht!",
-			"imageUploaded": "Bild hochgeladen!",
-			"imageDeleted": "Bild gelöscht",
 			"copied": "Automatisierung dupliziert",
 			"activate": "Verbindung aktiviert",
 			"activateerror": "Verbindung konnte nicht aktiviert werden",
@@ -3403,8 +3390,6 @@
 		"address_changed": "Adresse aktualisiert!",
 		"address_deleted": "Adresse gelöscht!",
 		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
-		"category_image_uploaded": "Bild hochgeladen!",
-		"category_image_deleted": "Bild gelöscht!",
 		"category_saved": "Kategorie gespeichert!",
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
@@ -3412,8 +3397,6 @@
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
-		"customer_image_uploaded": "Bild hochgeladen!",
-		"customer_image_deleted": "Bild gelöscht!",
 		"customer_changed": "Kundendaten aktualisiert!",
 		"customer_authid_changed": "AuthId wurde geändert!",
 		"customer_deleted": "Mandant gelöscht!",
@@ -3423,7 +3406,6 @@
 		"merchant_created": "Händler angelegt!",
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
-		"merchant_image_uploaded": "Bild hochgeladen!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
 		"merchant_image_deleted": "Bild gelöscht!",
 		"settings_bank_changed": "Bankverbindung aktualisiert!",
@@ -3434,16 +3416,12 @@
 		"winery_created": "Weingut angelegt!",
 		"winery_changed": "Weingut aktualisiert!",
 		"winery_deleted": "Weingut gelöscht!",
-		"winery_image_uploaded": "Bild hochgeladen!",
-		"winery_image_deleted": "Bild gelöscht!",
 		"winery_save_error": "Speichern fehlgeschlagen!",
 		"wine_created": "Wein angelegt!",
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
 		"wine_deleted": "Wein gelöscht!",
 		"wine_image_needed": "Um ein Bild hochzuladen musst Du den Wein vorher speichern!",
-		"wine_image_uploaded": "Bild hochgeladen!",
-		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
 		"wine_savours_updated": "Vinou-Gusto aktualisiert!",
 		"view_slider_created": "Slider wurde angelegt!",

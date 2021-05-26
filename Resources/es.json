@@ -35,6 +35,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Eliminar Imagen",
 			"export": "Exportar",
 			"exportRaw": "Exportar (datos sin procesar)",
 			"import": "Importar",
@@ -85,9 +86,9 @@
 			"wwwAction": "visitar página web {name}",
 			"copyOf": {
 				"1": "copia de {name}",
+
+
 				"n": "copia {n} de {name}"
-
-
 			},
 			"metaTitle": "Etiqueta de título",
 			"metaDescription": "Metadescripción",
@@ -157,6 +158,9 @@
 				"empty": "todos"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Realmente quieres borrar esta imagen?"
+		},
 		"hints": {
 			"empty": "todavía no hay inscripciones",
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
@@ -189,8 +193,10 @@
 			"unique": "El valor ingresado ya existe"
 		},
 		"toasts": {
-			"networkchanged": "visibilidad de red modificada",
+			"imageDeleted": "Imágen ha sido borrada!",
+			"imageUploaded": "Imágen ha sido cargada!",
 			"internalchanged": "visibilidad interna modificada",
+			"networkchanged": "visibilidad de red modificada",
 			"publicchanged": "visibilidad pública ha cambiado."
 		}
 	},
@@ -204,7 +210,6 @@
 			"quickActions": "Quickactions"
 		}
 	},
-	"delete_image": "borrar imágen",
 	"token": {
 		"fields": {
 			"token": "Simbólico",
@@ -830,8 +835,7 @@
 			},
 			"search": {
 				"placeholder": "p.ej. nombre, correo"
-			},
-			"deleteImage": "Eliminar Imagen"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "Editar la configuración de la aplicación",
@@ -884,15 +888,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Imagen cargada!",
-			"imageDeleted": "Imagen eliminada!",
 			"changed": "Usuario cambiado!",
 			"created": "Usuario creado!",
 			"deleted": "Usuario eliminado!",
 			"lostpasswordSend": "Enviar correo!"
 		},
 		"dialogs": {
-			"deleteImage": "Realmente desea eliminar la imagen de usuario?",
 			"delete": "Realmente desea eliminar este usuario?"
 		},
 		"hints": {
@@ -1732,8 +1733,6 @@
 				"created": "producto ha sido creado!",
 				"changed": "producto ha sido editado!",
 				"deleted": "producto ha sido borrado!",
-				"image_uploaded": "imágen del producto ha sido cargada!",
-				"image_deleted": "imágen del producto ha sido borrada",
 				"copied": "producto ha sido duplicado"
 			}
 		}
@@ -1886,9 +1885,7 @@
 			"created": "cliente ha sido creado!",
 			"changed": "cliente ha sido editado!",
 			"copied": "cliente ha sido duplicado",
-			"deleted": "cliente ha sido borrado!",
-			"imageUploaded": "imágen del cliente ha sido cargada!",
-			"imageDeleted": "imágen del cliente ha sido borrada"
+			"deleted": "cliente ha sido borrado!"
 		}
 	},
 	"contact": {
@@ -2940,8 +2937,6 @@
 			"created": "News entry created!",
 			"changed": "News entry updated!",
 			"deleted": "News entry deleted!",
-			"image_uploaded": "Newsimage uploaded!",
-			"image_deleted": "Newsimage deleted",
 			"copied": "News entry copied"
 		},
 		"dialogs": {
@@ -3074,8 +3069,6 @@
 			"created": "Paquete creado!",
 			"changed": "El paquete ha cambiado!",
 			"deleted": "Paquete eliminado!",
-			"imageUploaded": "Subir para la imagen terminada!",
-			"imageDeleted": "Imagen eliminada para paquete",
 			"copied": "Paquete duplicado"
 		},
 		"dialogs": {
@@ -3142,8 +3135,6 @@
 			"created": "Catálogo creado!",
 			"changed": "Catálogo cambiado!",
 			"deleted": "Catálogo eliminado!",
-			"imageUploaded": "Imagen cargada para el catálogo!",
-			"imageDeleted": "Imagen del catálogo eliminada",
 			"copied": "Catálogo copiado",
 			"pdfGenerated": "PDF para el catálogo generado!"
 		},
@@ -3209,8 +3200,6 @@
 			"created": "Campaña creada!",
 			"changed": "Campaña actualizada!",
 			"deleted": "Campaña eliminada!",
-			"imageUploaded": "Imagen cargada para la campaña!",
-			"imageDeleted": "Imagen eliminada para hacer campaña",
 			"copied": "Campaña copiada!"
 		},
 		"dialogs": {
@@ -3275,8 +3264,6 @@
 			"created": "Automatización creada!",
 			"changed": "Automatización cambiada!",
 			"deleted": "Automatización eliminada!",
-			"imageUploaded": "Imagen cargada!",
-			"imageDeleted": "Imagen eliminada",
 			"copied": "Automatización duplicada",
 			"activate": "Conexión activada",
 			"activateerror": "No se pudo activar la conexión",
@@ -3403,8 +3390,6 @@
 		"address_changed": "dirección ha sido acutalizada!",
 		"address_deleted": "dirección ha sido borrada!",
 		"bank_settings_error": "Ha ocurrido un error durante la grabación de la cuenta bancaria!",
-		"category_image_uploaded": "Imágen ha sido cargada!",
-		"category_image_deleted": "Imágen ha sido borrada!",
 		"category_saved": "Categoría ha sido grabada!",
 		"category_changed": "Categoría ha sido actualizada!",
 		"category_deleted": "Categoría ha sido borrada!",
@@ -3412,8 +3397,6 @@
 		"cronjob_saved": "Cronjob ha sido creado!",
 		"cronjob_changed": "Cronjob ha sido actualizado!",
 		"cronjob_deleted": "Cronjob ha sido borrado!",
-		"customer_image_uploaded": "Imágen ha sido cargada!",
-		"customer_image_deleted": "Imágen ha sido borrada!",
 		"customer_changed": "Datos de clientes han sido actualizados!",
 		"customer_authid_changed": "AuthId ha sido editado!",
 		"customer_deleted": "mandante ha sido borrado!",
@@ -3423,7 +3406,6 @@
 		"merchant_created": "Comerciante ha sido creado!",
 		"merchant_changed": "Comerciante ha sido actualizado!",
 		"merchant_deleted": "Comerciante ha sido borrado!",
-		"merchant_image_uploaded": "Imágen ha sido cargada!",
 		"merchant_save_error": "Grabación ha sido fallada !",
 		"merchant_image_deleted": "Imágen ha sido borrada!",
 		"settings_bank_changed": "Cuenta bancaria ha sido actualizada!",
@@ -3434,16 +3416,12 @@
 		"winery_created": "Propiedad vinícola ha sido creada!",
 		"winery_changed": "Propiedad vinícola ha sido actualizada!",
 		"winery_deleted": "Propiedad vinícola ha sido borrada!",
-		"winery_image_uploaded": "Imágen ha sido cargada!",
-		"winery_image_deleted": "Imágen ha sido borrada!",
 		"winery_save_error": "Grabación ha sido fallada!",
 		"wine_created": "Vino ha sido creado!",
 		"wine_changed": "Vino ha sido actualizado!",
 		"wine_duplicated": "Vino ha sido copiado!",
 		"wine_deleted": "Vino ha sido borrado!",
 		"wine_image_needed": "Para cargar una imágen tienes que grabar el vino antes!",
-		"wine_image_uploaded": "Imágen ha sido cargada!",
-		"wine_image_deleted": "Imágen ha sido borrada!",
 		"wine_expertise_generated": "Peritaje ha sido generado!",
 		"wine_savours_updated": "Vinou-Gusto ha sido actualizado!",
 		"view_slider_created": "Slider ha sido creado!",
