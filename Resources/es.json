@@ -163,6 +163,7 @@
 		},
 		"hints": {
 			"empty": "todavía no hay inscripciones",
+			"imageSize": "<b>Recomendado para un mejor renderizado</b><br/>Dimensión: mín. 1500px de ancho o alto<br/>Formato de archivo: .png (exento)",
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
 			"required": "campo obligatorio",
 			"weight": "Peso incluido el embalaje (para envío)"
@@ -190,7 +191,8 @@
 			"patternValue": "Su entrada debe cumplir con el formato {value}",
 			"required": "Por favor llene esa casilla",
 			"submit": "Se produjo un error al guardar los datos.",
-			"unique": "El valor ingresado ya existe"
+			"unique": "El valor ingresado ya existe",
+			"url": "Ingrese un URL válido"
 		},
 		"toasts": {
 			"imageDeleted": "Imágen ha sido borrada!",
