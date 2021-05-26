@@ -19,64 +19,82 @@ If you want to contribute, feel free to join and create pull request. We want to
 
 ## 2. Coding Guidelines
 
-1. If A key is used for an array of keys it is always plural, for example countries or wineregions
-2. If A key identifies an Object or only a String it is always singular, fo example wine, product, bundle
-3. Identifiers should be camel case
-4. Hyphens are not allowed
-5. If an object is used in more than two other objects you can use the general object
-6. If an object containes multiple static options the values should be defined in the parent object as array, for example: the product object has a field type with 3 static options, the options should be defined as object types in product.
+1. If A key is used for an array of keys it is always plural, for example countries or wineRegions
+2. If A key identifies an Object or only a String it is always singular, for example wine, product, bundle
+3. All identifiers have to be lowerCamelCase. Hyphens, underscores or other separators are not allowed. In special cases ids may be used when translation represents static database objects like grapeTypes.
+4. If an object is used in more than two other objects, it may be defined under the general object
+5. If an object containes multiple static options the values should be defined in the parent object as array, for example: the product object has a field type with 3 static options, the options should be defined as "types" in object "product".
+6. All keys should be in alpha numerical order, except properties of base objects (see below).
+
 ```json
 "product": {
   "fields": {
     "type": "Type of product"
   },
   "types": {
-    "option1": "Option 1",
-    "option2": "Option 2",
-    "option3": "Option 3"
+    "optionOne": "Option 1",
+    "optionTwo": "Option 2",
+    "optionThree": "Option 3"
   }
 }
 ``` 
 
 ## 3. Standard object keys
 
+Each object may define certain standard keys shown below in preferred definition order.
+
 |key                  |description                 |
 |:--------------------|:---------------------------|
-|views|Special defined page views|
-|tabs|Tabs in a view|
-|fieldSets|Form area in tab ore view|
-|fields|Field indentifiers normally a string directly used as label|
-|label|Label for formfield if more than a label is defined for a field|
-|placeholder|Placeholder for formfield|
-|filters|Filter properties used in view, tab oder fieldSet|
-|actions|Special actions available for this object, an action key could directly used as String|
-|actions.[ACTION].modaltitle|Headline of modal that executes this action|
+|name|Singular and plural names of an entity|
+|actions|Special actions available for this object. Actions may be defined as single string or object of the following form:|
 |actions.[ACTION].main|First line of action button in application|
 |actions.[ACTION].sub|Second line of action button in application|
-|toasts|Toasts regarding this object|
+|fields|Field indentifiers normally a string directly used as label|
+|fields.[FIELD].label|Label for form field if more than a label is defined for a field|
+|fields.[FIELD].placeholder|Placeholder for form field|
+|fields.[FIELD].hint|Special hint for a form field|
+|fieldSets|Form areas to devide fields into seperate sections|
+|views|Special defined views like pages, tabs, ...|
+|filters|Filter properties used in view, tab oder fieldSet|
 |dialogs|Dialog texts regarding this object|
+|toasts|Toasts regarding this object. Toast keys shall be defined in past tense for standard toasts or present tense followed by "Error" for error toasts|
 |hints|Hints for this object in views, tabs, fieldsets|
+|[xyzTypes]|Object related types or categories|
 
 ## 4. Object example
 
 ```json
 "bundle": {
+  "name": {
+    "singular": "Weinpaket",
+    "plural": "Weinpakete"
+  },
   "actions": {
+    "addItem": "+ Artikel hinzufügen",
     "create": {
-      "modaltitle": "Weinpaket anlegen",
       "main": "Neues Weinpaket",
       "sub": "anlegen"
+    }
+  },
+  "fields": {
+    "active": "aktiv",
+    "articleNumber": {
+      "label": "Art.-Nr.",
+      "placeholder": "SKU 000 - 0000000"
     },
-    "search": {
-      "placeholder": "z.B. Name, Beschreibung"
-    },
-    "export": {
-      "qrCodeVector": "QR-Code als Vektor-Datei herunterladen",
-      "barcodeVector": "EAN-Code als Vektor-Datei herunterladen"
-    },
-    "addItem": "+ Artikel hinzufügen"
+    "category": "Kategorie",
+    "description": "Beschreibung",
+    "sorting": "Manueller Sortierindex (z.B. für den Shop)"
+  },
+  "fieldSets": {
+    "facts": "Daten & Fakten",
+    "general": "Allgemeines",
+    "items": "Artikel"
   },
   "views": {
+    "create": {
+      "title": "Neues Weinpaket erstellen"
+    },
     "files": {
       "title": "Dateien",
       "empty": "Es liegen keine {label} zu diesem Weinpaket vor."
@@ -86,63 +104,31 @@ If you want to contribute, feel free to join and create pull request. We want to
     "category": {
       "label": "Kategorie auswählen",
       "none": "Pakete ohne Kategorie anzeigen"
-    }
-  },
-  "tabs": {
-    "files": "Dateien"
-  },
-  "fieldSets": {
-    "general": "Allgemeines",
-    "facts": "Daten & Fakten",
-    "prices": "Preise",
-    "barcode": "EAN-Code",
-    "shopSettings": "Website & Shop-Einstellungen",
-    "qrcode": "QR-Code",
-    "items": "Artikel"
-  },
-  "fields": {
-    "active": "aktiv",
-    "articlenumber": "Art.-Nr.",
-    "category": "Kategorie",
-    "baseprice": "Preis pro Liter",
-    "description": "Beschreibung",
-    "metaDescription": "Meta-Description",
-    "metaTitle": "Title-Tag",
-    "name": "Name",
-    "packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
-    "pathSegment": "Pfadsegment",
-    "qrcodeLink": "Zieladresse für QR-Code",
-    "quantity": "Anzahl",
-    "searchArticle": "Artikel suchen",
-    "singleItemPrice": "Stück",
-    "size": "Füllmenge",
-    "sorting": "Manueller Sortierindex (z.B. für den Shop)",
-    "tag": "Tags",
-    "topseller": "Topseller",
-    "itemSum": {
-      "label": "Warenwert",
-      "net": "Netto",
-      "gross": "Brutto"
-    }
-  },
-  "toasts": {
-    "created": "Weinpaket angelegt!",
-    "changed": "Weinpaket geändert!",
-    "deleted": "Weinpaket gelöscht!",
-    "imageUploaded": "Bild zum Weinpaket hochgeladen!",
-    "imageDeleted": "Bild zum Weinpaket gelöscht",
-    "copied": "Weinpaket dupliziert"
+    },
+    "search": {
+      "placeholder": "z.B. Name, Beschreibung"
+    },
   },
   "dialogs": {
-    "delete": "Möchtest Du dieses Weinpaket wirklich löschen?",
-    "deleteItem": "Möchtest Du diesen Artikel wirklich entfernen?"
+    "delete": "Möchtest Du dieses Weinpaket wirklich löschen?"
+  },
+  "toasts": {
+    "changed": "Weinpaket geändert!",
+    "changeError": "Weinpaket konnte nicht geändert werden!",
+    "created": "Weinpaket angelegt!",
+    "createError": "Weinpaket konnte nicht angelegt werden!",
+    "deleted": "Weinpaket gelöscht!",
+    "deleteError": "Weinpaket konnte nicht gelöscht werden!",
+    "imageDeleted": "Bild zum Weinpaket gelöscht",
+    "imageUploaded": "Bild zum Weinpaket hochgeladen!"
   },
   "hints": {
-    "imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1500x1500px<br/>Datei-Format: .png (freigestellt)",
-    "packageQuantity": "Platz im Versandkarton in Standard-Weinflaschen"
+    "imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1500x1500px<br/>Datei-Format: .png (freigestellt)"
   },
-  "files": {
-    "title": "Dateien und Dokumente zu diesem Weinpaket"
+  "packageTypes": {
+    "mixed": "Gemischt",
+    "surprise": "Überaschungspaket",
+    "wineOnly": "Nur Wein",
   }
 }
 ```
@@ -152,7 +138,7 @@ If you want to contribute, feel free to join and create pull request. We want to
 This library also contains a Twig extension. To implement this extension you can use this code.
 ```php
   $languageKey = 'de';
-  $twig = new \Twig_Environment();
+  $twig = new \Twig\Environment();
   $twig->addExtension(new \Vinou\Translations\TwigExtension($languageKey));
 ```
 

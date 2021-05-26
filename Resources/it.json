@@ -2203,6 +2203,10 @@
 				"main": "Annulla",
 				"sub": "l'ordine"
 			},
+			"close": {
+				"main": "Contrassegna",
+				"sub": "come completato"
+			},
 			"create": {
 				"main": "Nuovo ordine",
 				"sub": "creare"
@@ -2361,11 +2365,13 @@
 				"withDocuments": "Registrare e generare fattura e bolla di consegna"
 			},
 			"cancel": "Vuoi veramente cancellare questo ordine?",
+			"close": "Vuoi contrassegnare l'ordine come completato?",
 			"markSent": "Vuoi contrassegnare l'ordine come inviato?",
 			"deletePosition": "Vuoi veramente cancellare questo posto?"
 		},
 		"toasts": {
 			"cancelled": "Ordine annullato!",
+			"closed": "Ordine contrassegnato come completato!",
 			"created": "Ordine è stato creato!",
 			"deleted": "Ordine cancellato!",
 			"pricesChanged": "I prezzi di uno o più prodotti sono cambiati. Il nuovo prezzo totale è {prezzo}.",
@@ -2622,8 +2628,8 @@
 		"actions": {
 			"activate": "Abilita gestione spedizioni",
 			"create": {
-				"main": "Ordine",
-				"sub": "dare nella spedizione"
+				"main": "Ordine dare",
+				"sub": "nella spedizione"
 			},
 			"deactivate": "Disattiva la gestione delle spedizioni",
 			"download": {
@@ -2648,9 +2654,7 @@
 			"carrierTrackingNumber": "Numero di tracciamento del corriere",
 			"defaultCarrier": "Service d'expédition standard",
 			"onlyOneCarrier": "Utilizzare solo il servizio di spedizione standard?",
-			"packagingUnit": {
-				"nameWithCapacity": "{capacity} scatola di cartone"
-			},
+			"packagingCapacity": "{capacity} scatola di cartone",
 			"service": "Tipo di spedizione",
 			"shipcloudApiKey": {
 				"label": "Chiave API ShipCloud",
@@ -2704,6 +2708,10 @@
 			"create": {
 				"main": "Raccogliere",
 				"sub": "istruire"
+			},
+			"closeShipment": {
+				"main": "Nascondi",
+				"sub": "spedizione ..."
 			}
 		},
 		"fields": {
@@ -2715,6 +2723,13 @@
 			"create": {
 				"title": "Raccolta con {carrier}",
 				"description": "Inserisci qui quando le spedizioni devono essere ritirate da te.<br/>Tieni presente che tutti i servizi di consegna hanno le proprie condizioni per il ritiro. Ad esempio, con UPS, il primo e l'ultimo orario di ritiro devono essere lo stesso giorno."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "Vuoi davvero nascondere questa spedizione?",
+				"delivered": "Sì, contrassegna come consegnato",
+				"notUsed": "Sì, etichetta di spedizione non utilizzata"
 			}
 		},
 		"toasts": {

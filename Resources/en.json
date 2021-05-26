@@ -2203,6 +2203,10 @@
 				"main": "Cancel",
 				"sub": "order"
 			},
+			"close": {
+				"main": "Mark order",
+				"sub": "as completed"
+			},
 			"create": {
 				"main": "Create order",
 				"sub": " "
@@ -2361,11 +2365,13 @@
 				"withDocuments": "Create order with invoice and delivery note"
 			},
 			"cancel": "Do you really want to cancel this order?",
+			"close": "Do you really want to mark this order as completed?",
 			"markSent": "Do you really want to set this order as dispatched?",
 			"deletePosition": "Do you really want to delete this item?"
 		},
 		"toasts": {
 			"cancelled": "Order cancelled!",
+			"closed": "Order marked as completed!",
 			"created": "Order saved!",
 			"deleted": "Order deleted!",
 			"pricesChanged": "The price of one or more products has changed. Order sum was updated to {price}.",
@@ -2648,9 +2654,7 @@
 			"carrierTrackingNumber": "Tracking number",
 			"defaultCarrier": "Default carrier",
 			"onlyOneCarrier": "Use carrier exclusively?",
-			"packagingUnit": {
-				"nameWithCapacity": "Box of {capacity}"
-			},
+			"packagingCapacity": "Box of {capacity}",
 			"service": "Type of shipment",
 			"shipcloudApiKey": {
 				"label": "ShipCloud API-Key",
@@ -2704,6 +2708,10 @@
 			"create": {
 				"main": "Request",
 				"sub": "pickup"
+			},
+			"closeShipment": {
+				"main": "Sendung",
+				"sub": "ausblenden ..."
 			}
 		},
 		"fields": {
@@ -2715,6 +2723,13 @@
 			"create": {
 				"title": "Pickup by {carrier}",
 				"description": "Enter here when the shipments should be picked up from you.<br/>Please note that all carriers have their own terms for pickups. E.g. UPS requires the earliest and latest pick-up times must fall on the same day."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "Do you really want to hide this shipment?",
+				"delivered": "Yes, mark as delivered",
+				"notUsed": "Yes, shipping label not used"
 			}
 		},
 		"toasts": {

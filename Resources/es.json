@@ -2203,6 +2203,10 @@
 				"main": "Cancelar",
 				"sub": "orden"
 			},
+			"close": {
+				"main": "Marcar como",
+				"sub": "completado"
+			},
 			"create": {
 				"main": "Nueva orden",
 				"sub": "digitar"
@@ -2360,19 +2364,21 @@
 				"withInvoice": "Digitar y generar cuenta",
 				"withDocuments": "Digitar y generar cuenta y boletín de entrega"
 			},
-			"cancel": "Quieres anular esa orden seguramente?",
-			"markSent": "Quieres marcar ese orden como Enviado?",
-			"deletePosition": "Quieres borrar esa posición seguramente?"
+			"cancel": "¿Quieres anular esa orden seguramente?",
+			"close": "¿Quieres marcar ese orden como completado?",
+			"markSent": "¿Quieres marcar ese orden como Enviado?",
+			"deletePosition": "¿Quieres borrar esa posición seguramente?"
 		},
 		"toasts": {
-			"cancelled": "Orden ha sido anulada!",
-			"created": "Orden ha sido creada!",
-			"deleted": "Orden ha sido borrada!",
+			"cancelled": "¡Orden ha sido anulada!",
+			"closed": "¡Orden na sido completada!",
+			"created": "¡Orden ha sido creada!",
+			"deleted": "¡Orden ha sido borrada!",
 			"pricesChanged": "Los precios de uno o de más productos han sido cambiados. El nuevo precio total asciende {precio}.",
-			"sent": "Orden ha sido enviada!",
-			"updated": "Orden ha sido editada!",
-			"touched": "Orden marcado como leído!",
-			"changeError": "Se produjo un error al guardar los datos!"
+			"sent": "¡Orden ha sido enviada!",
+			"updated": "¡Orden ha sido editada!",
+			"touched": "¡Orden marcado como leído!",
+			"changeError": "¡Se produjo un error al guardar los datos!"
 		},
 		"errors": {
 			"create": "Orden no ha podido ser digitada. Por favor verifica tus datos y inténtalo de nuevo.",
@@ -2622,8 +2628,8 @@
 		"actions": {
 			"activate": "Activar management de envío",
 			"create": {
-				"main": "Orden",
-				"sub": "poner en el envío"
+				"main": "Orden poner",
+				"sub": "en el envío"
 			},
 			"deactivate": "Desactivar management de envío",
 			"download": {
@@ -2648,9 +2654,7 @@
 			"carrierTrackingNumber": "Número de rastreo",
 			"defaultCarrier": "Prestador de servicios estándar",
 			"onlyOneCarrier": "Usar solamente el prestador de servicios de envío?",
-			"packagingUnit": {
-				"nameWithCapacity": "{capacity} caja"
-			},
+			"packagingCapacity": "{capacity} caja",
 			"service": "Modo de envío",
 			"shipcloudApiKey": {
 				"label": "Llave de ShipCloud API",
@@ -2704,6 +2708,10 @@
 			"create": {
 				"main": "Solicitar",
 				"sub": "recogida"
+			},
+			"closeShipment": {
+				"main": "Ocultar",
+				"sub": "envío ..."
 			}
 		},
 		"fields": {
@@ -2715,6 +2723,13 @@
 			"create": {
 				"title": "Recogida por {carrier}",
 				"description": "Ingrese aquí cuándo se deben recoger los envíos.<br/>Tenga en cuenta que todos los transportistas tienen sus propios términos para las recolecciones. P.ej. UPS requiere que la hora de recogida más temprana y más tardía sea el mismo día."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "¿De verdad quieres ocultar este envío?",
+				"delivered": "Sí, marcar como entregado",
+				"notUsed": "Sí, etiqueta de envío no utilizada"
 			}
 		},
 		"toasts": {

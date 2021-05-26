@@ -2203,6 +2203,10 @@
 				"main": "Annuler",
 				"sub": "l'ordre"
 			},
+			"close": {
+				"main": "Marquer comme",
+				"sub": "terminé"
+			},
 			"create": {
 				"main": "Entrer",
 				"sub": "la commande"
@@ -2361,11 +2365,13 @@
 				"withDocuments": "Créer un ordre avec facture et bon de livraison"
 			},
 			"cancel": "Voulez-vous vraiment annuler cet ordre?",
+			"close": "Voulez-vous vraiment marquer cet ordre comme terminée?",
 			"markSent": "Voulez-vous vraiment marquer cet ordre comme expédiée?",
 			"deletePosition": "Voulez-vous vraiment supprimer cette position?"
 		},
 		"toasts": {
 			"cancelled": "Ordre annulé!",
+			"closed": "Ordre marquée comme terminée!",
 			"created": "Ordre créé!",
 			"deleted": "Ordre supprimé!",
 			"pricesChanged": "Les prix d'un ou plusieurs produits ont changé. Le nouveau prix total est {price}.",
@@ -2648,9 +2654,7 @@
 			"carrierTrackingNumber": "Numéro de suivi du transporteur",
 			"defaultCarrier": "Service d'expédition standard",
 			"onlyOneCarrier": "Utilisez uniquement le service d'expédition standard?",
-			"packagingUnit": {
-				"nameWithCapacity": "{capacity} carton"
-			},
+			"packagingCapacity": "{capacity} carton",
 			"service": "Type de expédition",
 			"shipcloudApiKey": {
 				"label": "ShipCloud Clé API",
@@ -2704,6 +2708,10 @@
 			"create": {
 				"main": "Demander",
 				"sub": "le ramassage"
+			},
+			"closeShipment": {
+				"main": "Masquer",
+				"sub": "l'envoi ..."
 			}
 		},
 		"fields": {
@@ -2715,6 +2723,13 @@
 			"create": {
 				"title": "Ramassage par {carrier}",
 				"description": "Entrez ici quand les envois doivent être récupérés chez vous.<br/>Veuillez noter que tous les transporteurs ont leurs propres conditions de ramassage. Par exemple. UPS exige que les heures de ramassage au plus tôt et au plus tard tombent le même jour."
+			}
+		},
+		"dialogs": {
+			"closeShipment": {
+				"msg": "Voulez-vous vraiment cacher cet envoi?",
+				"delivered": "Oui, marquer comme livré",
+				"notUsed": "Oui, étiquette non utilisée"
 			}
 		},
 		"toasts": {
