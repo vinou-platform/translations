@@ -1277,7 +1277,8 @@
 			}
 		},
 		"tabs": {
-			"files": "Fichiers"
+			"files": "Fichiers",
+			"addresses": "Adresses"
 		},
 		"fieldSets": {
 			"general": "Général",
@@ -1316,6 +1317,9 @@
 		"files": {
 			"title": "Fichiers et documents sur cette établissement vinicole"
 		},
+		"addresses": {
+			"title": "Adresses concernant cette cave"
+		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cet établissement vinicole?"
 		},
@@ -1350,7 +1354,8 @@
 			}
 		},
 		"tabs": {
-			"files": "Fichiers"
+			"files": "Fichiers",
+			"addresses": "Adresses"
 		},
 		"fieldSets": {
 			"general": "Général",
@@ -1377,6 +1382,9 @@
 		},
 		"files": {
 			"title": "Fichiers et documents sur cette établissement vinicole"
+		},
+		"addresses": {
+			"title": "Adresses concernant ce marchand"
 		},
 		"messages": {
 			"dialog": {
@@ -1868,6 +1876,9 @@
 			"general": "Général",
 			"notes": "Notes"
 		},
+		"addresses": {
+			"title": "Adresses concernant ce client"
+		},
 		"types": {
 			"private": "Personne privée",
 			"gastronomy": "Gastronomie",
@@ -1905,7 +1916,7 @@
 		}
 	},
 	"address": {
-		"action": {
+		"actions": {
 			"create": {
 				"title": "Créer adresse",
 				"main": "Créer",
@@ -1913,7 +1924,7 @@
 			},
 			"save": "Enregistrer adresse"
 		},
-		"field": {
+		"fields": {
 			"type": "Type d'adresse",
 			"fullname": "Nom",
 			"name": "Nom/personne de contact",
@@ -1923,6 +1934,10 @@
 			"zip": "Code postal",
 			"city": "Ville",
 			"country": "Pays",
+			"identifier": "Identifiant (à usage externe)",
+			"latitude": "Latitude",
+			"longitude": "Longitude",
+			"geoname": "Nom",
 			"defaultdeliveryaddress": "Adresse de livraison standard",
 			"defaultinvoiceaddress": "Adresse de facturation standard",
 			"defaultinvoicemsg": "L'adresse spécifiée ici est définie dans l'onglet 'Général'.",
@@ -1930,7 +1945,8 @@
 		},
 		"types": {
 			"invoice": "Adresse de facturation",
-			"shipping": "Adresse de livraison"
+			"shipping": "Adresse de livraison",
+			"geolocation": "Géolocalisation"
 		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"
