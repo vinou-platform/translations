@@ -1277,7 +1277,8 @@
 			}
 		},
 		"tabs": {
-			"files": "Files"
+			"files": "Files",
+			"addresses": "Addresses"
 		},
 		"fieldSets": {
 			"general": "General",
@@ -1316,6 +1317,9 @@
 		"files": {
 			"title": "Files regarding this winery"
 		},
+		"addresses": {
+			"title": "Addresses regarding this winery"
+		},
 		"dialogs": {
 			"delete": "Do you really want to delete the selected winery?"
 		},
@@ -1350,7 +1354,8 @@
 			}
 		},
 		"tabs": {
-			"files": "Files"
+			"files": "Files",
+			"addresses": "Addresses"
 		},
 		"fieldSets": {
 			"general": "General",
@@ -1376,7 +1381,10 @@
 			}
 		},
 		"files": {
-			"title": "Files regarding this winery"
+			"title": "Files regarding this merchant"
+		},
+		"addresses": {
+			"title": "Addresses regarding this merchant"
 		},
 		"messages": {
 			"dialog": {
@@ -1868,6 +1876,9 @@
 			"general": "General",
 			"notes": "Notes"
 		},
+		"addresses": {
+			"title": "Addresses regarding this client"
+		},
 		"types": {
 			"private": "Private",
 			"gastronomy": "Gastronomy",
@@ -1905,7 +1916,7 @@
 		}
 	},
 	"address": {
-		"action": {
+		"actions": {
 			"create": {
 				"title": "Create address",
 				"main": "Create address",
@@ -1913,7 +1924,7 @@
 			},
 			"save": "Save address"
 		},
-		"field": {
+		"fields": {
 			"type": "Address type",
 			"fullname": "Name",
 			"name": "Contact person",
@@ -1923,6 +1934,10 @@
 			"zip": "Zip",
 			"city": "City",
 			"country": "Country",
+			"identifier": "Identifier (for external use)",
+			"latitude": "Latitude",
+			"longitude": "Longitude",
+			"geoname": "Name",
 			"defaultdeliveryaddress": "Default shipping address",
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
@@ -1930,7 +1945,8 @@
 		},
 		"types": {
 			"invoice": "Invoice address",
-			"shipping": "Shipping address"
+			"shipping": "Shipping address",
+			"geolocation": "Geolocation"
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this address?"
