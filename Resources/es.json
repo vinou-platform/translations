@@ -1206,7 +1206,8 @@
 			"type": {
 				"label": "tipo",
 				"winery": "propiedad vinícola",
-				"merchant": "comerciante"
+				"merchant": "comerciante",
+				"reseller": "revendedoras"
 			}
 		},
 		"pricingTypes": {
@@ -1303,7 +1304,8 @@
 			}
 		},
 		"tabs": {
-			"files": "archivos"
+			"files": "archivos",
+			"addresses": "Direcciones"
 		},
 		"fieldSets": {
 			"general": "en general",
@@ -1342,6 +1344,9 @@
 		"files": {
 			"title": "archivos y documentos de esa propiedad vinícola"
 		},
+		"addresses": {
+			"title": "Direcciones relativas a esta bodega"
+		},
 		"dialogs": {
 			"delete": "Quieres borrar esa propiedad vinícola seguramente?"
 		},
@@ -1376,7 +1381,8 @@
 			}
 		},
 		"tabs": {
-			"files": "archivos"
+			"files": "archivos",
+			"addresses": "Direcciones"
 		},
 		"fieldSets": {
 			"general": "generalidades",
@@ -1403,6 +1409,9 @@
 		},
 		"files": {
 			"title": "archivos y documentos de esa propiedad vinícola"
+		},
+		"addresses": {
+			"title": "Direcciones relacionadas con este comerciante"
 		},
 		"messages": {
 			"dialog": {
@@ -1888,6 +1897,9 @@
 			"general": "generalidades",
 			"notes": "notas"
 		},
+		"addresses": {
+			"title": "Direcciones relativas a este cliente"
+		},
 		"types": {
 			"private": "persona privada",
 			"gastronomy": "gastronomía",
@@ -1923,7 +1935,7 @@
 		}
 	},
 	"address": {
-		"action": {
+		"actions": {
 			"create": {
 				"title": "crear dirección",
 				"main": "nuevo dirección",
@@ -1931,7 +1943,7 @@
 			},
 			"save": "grabar dirección"
 		},
-		"field": {
+		"fields": {
 			"type": "tipo de dirección",
 			"fullname": "nombre",
 			"name": "nombre/persona de contacto",
@@ -1941,6 +1953,10 @@
 			"zip": "código postal",
 			"city": "ciudad",
 			"country": "país",
+			"identifier": "Identificador (para uso externo)",
+			"latitude": "Latitud",
+			"longitude": "Longitud",
+			"geoname": "Nombre",
 			"defaultdeliveryaddress": "dirección de entraga estándar",
 			"defaultinvoiceaddress": "dirección de cuenta estándar",
 			"defaultinvoicemsg": "La dirección indicada está puesto en la pestaña 'generalidades'.",
@@ -1948,7 +1964,8 @@
 		},
 		"types": {
 			"invoice": "Dirección de cuenta",
-			"shipping": "Dirección de entrega"
+			"shipping": "Dirección de entrega",
+			"geolocation": "Geolocation"
 		},
 		"dialogs": {
 			"delete": "Quieres borrar esa direción seguramente?"
@@ -5388,6 +5405,15 @@
 		},
 		"619": {
 			"name": "Trebbiano di Lugana"
+		},
+		"620": {
+			"name": "Muscaris"
+		},
+		"621": {
+			"name": "Susumaniello"
+		},
+		"622": {
+			"name": "Nero di Troia"
 		}
 	},
 	"tastes": {

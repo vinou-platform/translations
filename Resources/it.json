@@ -1206,7 +1206,8 @@
 			"type": {
 				"label": "Tipo",
 				"winery": "Vigna",
-				"merchant": "Distributore"
+				"merchant": "Distributore",
+				"reseller": "Rivenditrice"
 			}
 		},
 		"pricingTypes": {
@@ -1303,7 +1304,8 @@
 			}
 		},
 		"tabs": {
-			"files": "File"
+			"files": "File",
+			"addresses": "Indirizzi"
 		},
 		"fieldSets": {
 			"general": "Generale",
@@ -1342,6 +1344,9 @@
 		"files": {
 			"title": "File e documenti su questa vigna"
 		},
+		"addresses": {
+			"title": "Indirizzi riguardanti questa cantina"
+		},
 		"dialogs": {
 			"delete": "Vuoi veramente cancellare questo vigneto?"
 		},
@@ -1376,7 +1381,8 @@
 			}
 		},
 		"tabs": {
-			"files": "File"
+			"files": "File",
+			"addresses": "Indirizzi"
 		},
 		"fieldSets": {
 			"general": "Generale",
@@ -1403,6 +1409,9 @@
 		},
 		"files": {
 			"title": "File e documenti su questa vigna"
+		},
+		"addresses": {
+			"title": "Indirizzi riguardanti questo commerciante"
 		},
 		"messages": {
 			"dialog": {
@@ -1888,6 +1897,9 @@
 			"general": "Generale",
 			"notes": "Nota"
 		},
+		"addresses": {
+			"title": "Indirizzi riguardanti questo cliente"
+		},
 		"types": {
 			"private": "Persona privata",
 			"gastronomy": "Gastronomia",
@@ -1923,7 +1935,7 @@
 		}
 	},
 	"address": {
-		"action": {
+		"actions": {
 			"create": {
 				"title": "Creare indirizzo",
 				"main": "Crea nuovo ",
@@ -1931,7 +1943,7 @@
 			},
 			"save": "Salva indirizzo"
 		},
-		"field": {
+		"fields": {
 			"type": "Address-type",
 			"fullname": "Nome",
 			"name": "Nome/Contatto",
@@ -1941,6 +1953,10 @@
 			"zip": "Codice postale",
 			"city": "Città",
 			"country": "Nazione",
+			"identifier": "Identificatore (per uso esterno)",
+			"latitude": "Latitudine",
+			"longitude": "Longitudine",
+			"geoname": "Nome",
 			"defaultdeliveryaddress": "Indirizzo di consegna standard",
 			"defaultinvoiceaddress": "Indirizzo di fatturazione standard",
 			"defaultinvoicemsg": "L'indirizzo specificato qui è impostato nel campo 'Generale'",
@@ -1948,7 +1964,8 @@
 		},
 		"types": {
 			"invoice": "Indirizzo di fatturazione",
-			"shipping": "Indirizzo di consegna"
+			"shipping": "Indirizzo di consegna",
+			"geolocation": "Geolocalizzazione"
 		},
 		"dialogs": {
 			"delete": "Vuoi veramente cancellare questo indirizzo?"
@@ -5388,6 +5405,15 @@
 		},
 		"619": {
 			"name": "Trebbiano di Lugana"
+		},
+		"620": {
+			"name": "Muscaris"
+		},
+		"621": {
+			"name": "Susumaniello"
+		},
+		"622": {
+			"name": "Nero di Troia"
 		}
 	},
 	"tastes": {

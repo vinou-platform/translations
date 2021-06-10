@@ -1206,7 +1206,8 @@
 			"type": {
 				"label": "Typ",
 				"winery": "Weingut",
-				"merchant": "Händler"
+				"merchant": "Händler",
+				"reseller": "Wiederverkäufer"
 			}
 		},
 		"pricingTypes": {
@@ -1303,7 +1304,8 @@
 			}
 		},
 		"tabs": {
-			"files": "Dateien"
+			"files": "Dateien",
+			"addresses": "Adressen"
 		},
 		"fieldSets": {
 			"general": "Allgemein",
@@ -1342,6 +1344,9 @@
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weingut"
 		},
+		"addresses": {
+			"title": "Adressen zu diesem Weingut"
+		},
 		"dialogs": {
 			"delete": "Möchtest Du dieses Weingut wirklich löschen?"
 		},
@@ -1376,7 +1381,8 @@
 			}
 		},
 		"tabs": {
-			"files": "Dateien"
+			"files": "Dateien",
+			"addresses": "Adressen"
 		},
 		"fieldSets": {
 			"general": "Allgemein",
@@ -1402,7 +1408,10 @@
 			}
 		},
 		"files": {
-			"title": "Dateien und Dokumente zu diesem Weingut"
+			"title": "Dateien und Dokumente zu diesem Händler"
+		},
+		"addresses": {
+			"title": "Adressen zu diesem Händler"
 		},
 		"messages": {
 			"dialog": {
@@ -2035,6 +2044,9 @@
 			"general": "Allgemein",
 			"notes": "Notizen"
 		},
+		"addresses": {
+			"title": "Adressen zu diesem Kunden"
+		},
 		"types": {
 			"private": "Privatperson",
 			"gastronomy": "Gastronomie",
@@ -2070,7 +2082,7 @@
 		}
 	},
 	"address": {
-		"action": {
+		"actions": {
 			"create": {
 				"title": "Adresse anlegen",
 				"main": "Neue Adresse",
@@ -2078,7 +2090,7 @@
 			},
 			"save": "Adresse speichern"
 		},
-		"field": {
+		"fields": {
 			"type": "Adresstyp",
 			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
@@ -2088,6 +2100,10 @@
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land",
+			"identifier": "Identifier (für externen Zugriff)",
+			"latitude": "Geografische Breite (Lat)",
+			"longitude": "Geografische Länge (Lng)",
+			"geoname": "Bezeichnung",
 			"defaultdeliveryaddress": "Standardlieferadresse",
 			"defaultinvoiceaddress": "Standardrechnungsadresse",
 			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
@@ -2095,7 +2111,8 @@
 		},
 		"types": {
 			"invoice": "Rechnungsadresse",
-			"shipping": "Lieferadresse"
+			"shipping": "Lieferadresse",
+			"geolocation": "Geografischer Punkt"
 		},
 		"dialogs": {
 			"delete": "Möchtest Du diese Adresse wirklich löschen?"
@@ -5534,6 +5551,15 @@
 		},
 		"619": {
 			"name": "Trebbiano di Lugana"
+		},
+		"620": {
+			"name": "Muscaris"
+		},
+		"621": {
+			"name": "Susumaniello"
+		},
+		"622": {
+			"name": "Nero di Troia"
 		}
 	},
 	"tastes": {
