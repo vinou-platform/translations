@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Articles",
+		"articles.bulkWines": "Bulk wines",
 		"articles.bundles": "Bundles",
 		"articles.categories": "Categories",
 		"articles.products": "Products",
@@ -285,6 +286,15 @@
 				"placeholder": "MM/dd/YYYY"
 			},
 			"bottles": "Number of bottles",
+			"bottling": {
+				"label": "Bottling",
+				"placeholder": "Search bottling"
+			},
+			"bulkWine": {
+				"autoCreate": "Generate automatically from wine account",
+				"label": "Bulk wine",
+				"placeholder": "Search bulk wine"
+			},
 			"cellarWine": {
 				"assign": "Assign to other raw wine?",
 				"label": "Raw wine",
@@ -449,6 +459,14 @@
 				"main": "Bottling",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Wine",
+				"sub": "ERP release"
+			},
+			"createBulkWineErpRelease": {
+				"main": "Bulk wine",
+				"sub": "ERP release"
+			},
 			"createFinancialStatement": {
 				"main": "Financial",
 				"sub": "statement"
@@ -495,6 +513,8 @@
 			"waterAddition": "Water addition",
 
 			"bottling": "Bottling",
+			"wineErpRelease": "Wine ERP release",
+			"bulkWineErpRelease": "Bulk wine ERP release",
 			"financialStatement": "Financial statement",
 			"accountClosure": "Account closure"
 		},
@@ -564,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Do you really want to delete this wine?"
+			"delete": "Do you really want to delete this wine account?",
+			"invalid": "Inconsistent information. Please check your processes on this wine account!"
 		},
 		"toasts": {
 			"created": "Wine created.",
@@ -1020,6 +1041,7 @@
 			"bottling": "Bottling",
 			"breakage": "Breakage",
 			"correction": "Correction",
+			"bulkWineErpRelease": "Bulk wine ERP release",
 			"creditAdvice": "Credit advice",
 			"deputate": "Payment in kind",
 			"external": "External (interface)",
@@ -1029,7 +1051,8 @@
 			"purchase": "Purchase/Delivery",
 			"retour": "Retour",
 			"sample": "Sample",
-			"sponsoring": "Sponsoring"
+			"sponsoring": "Sponsoring",
+			"wineErpRelease": "Wine ERP release"
 		}
 	},
 	"mailsetup_edittitle": "Edit SMTP-Server properties",
@@ -1593,6 +1616,153 @@
 			}
 		},
 		"hints": {
+			"stockDistribution": "Available stock {stock}, in order {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Bulk wine",
+			"plural": "Bulk wines"
+		},
+		"actions": {
+			"activate": {
+				"main": "Activate",
+				"sub": "bulk wine"
+			},
+			"create": {
+				"main": "Add bulk wine",
+				"sub": " "
+			},
+			"deactivate": {
+				"main": "Deactivate",
+				"sub": "bulk wine"
+			},
+			"delete": {
+				"main": "Delete",
+				"sub": "bulk wine"
+			},
+			"edit": {
+				"main": "Edit",
+				"sub": "bulk wine"
+			},
+			"export": {
+				"barcodeVector": "Download GTIN code as vektor file",
+				"qrCodeVector": "Download QR code as vector file"
+			},
+			"showPdf": {
+				"main": "Show exposé",
+				"sub": " "
+			}
+		},
+		"field": {
+			"acidity": "Acidity",
+			"active": "active",
+			"alcohol": "Alcohol",
+			"allergens": {
+				"label": "Allergens",
+				"placeholder": "Search for allergens"
+			},
+			"articleNumber": "Art. no.",
+			"barcode": "GTIN",
+			"bio": "Bio certified",
+			"bioRefNumber": {
+				"label": "Eco control number",
+				"placeholder": "GB-ECO-XXX"
+			},
+			"countrycode": "Country",
+			"cuvee": "Cuvée",
+			"description": "Description",
+			"drinkingTemperature": "Drink temperature",
+			"grapetypes": {
+				"label": "Grapetypes",
+				"placeholder": "Search for grapetypes"
+			},
+			"gross": "Gross price",
+			"image": {
+				"label": "Bottle picture",
+				"error": {
+					"notFound": "Image could not be resolved"
+				}
+			},
+			"maturation": "Maturation",
+			"name": "Name",
+			"noStock": "sold out",
+			"noStockText": "Alternative text to show when sold out",
+			"place": "Place",
+			"price": "Price",
+			"prices": "Prices",
+			"qrCode": {
+				"label": "QR code",
+				"hint": "QR code will be created after first save"
+			},
+			"qrCodeLink": {
+				"label": "Target address for QR code",
+				"placeholder": "Target address for QR code (Winepass if empty)"
+			},
+			"quality": "Classification",
+			"qualityNote": "Additional classification note",
+			"quantity": "Current Stock",
+			"region": "Region",
+			"residualSugar": "Sweetness",
+			"sorting": "Manual index (e.g. for shop use)",
+			"stock": "Available stock",
+			"tags": "Tags",
+			"taste": "Taste",
+			"terroir": "Terroir",
+			"topseller": "Topseller",
+			"type": "Type",
+			"vegan": "Vegan",
+			"vintage": "Vintage",
+			"winery": {
+				"label": "Winery",
+				"placeholder": "Search winery"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergens",
+			"analysis": "Analysis",
+			"composition": "Composition",
+			"description": "Description",
+			"facts": "Facts & Numbers",
+			"grapetype": "Grapetypes",
+			"prices": "Prices",
+			"profile": "Wine-Profile",
+			"qrCode": "QR code",
+			"region": "Regional",
+			"shop": "Website and shop settings",
+			"stock": "Stock"
+		},
+		"viels": {
+			"files": {
+				"lable": "Files",
+				"title": "Files regarding this wine"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Stock rotation"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "e.g. name, country, region, vintage, art. no."
+			},
+			"tags": {
+				"label": "Select tag",
+				"none": "Show bulk wines without tags"
+			},
+			"type": "Filter by wine type"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this bulk wine?"
+		},
+		"toasts": {
+			"created": "Bulk wine created!",
+			"changed": "Bulk wine changed!",
+			"copied": "Bulk wine duplicated!",
+			"deleted": "Bulk wine deleted!",
+			"deleteErrorInUse": "This wine cannot be deleted because commercial documents and/or documents for the wine bookkeeping exist for this wine."
+		},
+		"hints": {
+			"inStock": "in stock",
+			"liter": "Liter",
 			"stockDistribution": "Available stock {stock}, in order {ordered}"
 		}
 	},

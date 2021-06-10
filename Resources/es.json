@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Artículos",
+		"articles.bulkWines": "Vinos a granel",
 		"articles.bundles": "Paquete de productos",
 		"articles.categories": "Categorias",
 		"articles.products": "Productos",
@@ -285,6 +286,15 @@
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Numero de botellas",
+			"bottling": {
+				"label": "Embotellado",
+				"placeholder": "Buscar embotellado"
+			},
+			"bulkWine": {
+				"autoCreate": "Generar automáticamente desde la cuenta de vino",
+				"label": "Vino a granel",
+				"placeholder": "Buscar vino a granel"
+			},
 			"cellarWine": {
 				"assign": "Asignar a otra cuenta de vino?",
 				"label": "cuenta de vino",
@@ -449,6 +459,14 @@
 				"main": "embotellado",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Lanzamiento de",
+				"sub": "vino ERP"
+			},
+			"createBulkWineErpRelease": {
+				"main": "Lanzamiento de",
+				"sub": "vino a granel ERP"
+			},
 			"createFinancialStatement": {
 				"main": "estados",
 				"sub": "financieros"
@@ -468,35 +486,37 @@
 			}
 		},
 		"types": {
-			"inventoryTakeover": "toma de inventario",
-			"harvest": "cosecha",
-			"additionalPurchase": "compra de vino",
-			"marcLiquidation": "utilización de orujo",
+			"inventoryTakeover": "Toma de inventario",
+			"harvest": "Cosecha",
+			"additionalPurchase": "Compra de vino",
+			"marcLiquidation": "Utilización de orujo",
 
-			"relocation": "transposición",
-			"decanting": "colada",
-			"staticSettling": "desgomado",
-			"filtration": "filtración",
-			"blending": "recorte",
-			"privateConsumption": "consumo propio",
-			"shrinkage": "reducción",
-			"loss": "perdida",
-			"concentration": "concentración",
-			"dealcoholization": "desalcoholización",
+			"relocation": "Transposición",
+			"decanting": "Colada",
+			"staticSettling": "Desgomado",
+			"filtration": "Filtración",
+			"blending": "Recorte",
+			"privateConsumption": "Consumo propio",
+			"shrinkage": "Reducción",
+			"loss": "Perdida",
+			"concentration": "Concentración",
+			"dealcoholization": "Desalcoholización",
 
-			"wineAddition": "llenado",
+			"wineAddition": "Llenado",
 
-			"substanceAdd": "añadidura de sustancia",
-			"enrichment": "enriquecimiento",
-			"sweetening": "edulcoración",
-			"acidification": "acidificación",
-			"deacidification": "desacidificacíon",
-			"alcoholization": "añadidura de alcohol",
-			"waterAddition": "añadidura de agua",
+			"substanceAdd": "Añadidura de sustancia",
+			"enrichment": "Enriquecimiento",
+			"sweetening": "Edulcoración",
+			"acidification": "Acidificación",
+			"deacidification": "Desacidificacíon",
+			"alcoholization": "Añadidura de alcohol",
+			"waterAddition": "Añadidura de agua",
 
-			"bottling": "embotellado",
-			"financialStatement": "estados financieros",
-			"accountClosure": "cierre de cuenta"
+			"bottling": "Embotellado",
+			"wineErpRelease": "Lanzamiento de vino ERP",
+			"bulkWineErpRelease": "Lanzamiento de vino a granel ERP",
+			"financialStatement": "Estados financieros",
+			"accountClosure": "Cierre de cuenta"
 		},
 		"views": {
 			"edit": {
@@ -564,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Quieres borrar la cuenta de vino seguramente?"
+			"delete": "Quieres borrar la cuenta de vino seguramente?",
+			"invalid": "Información inconsistente. ¡Compruebe sus procesos en esta cuenta de vino!"
 		},
 		"toasts": {
 			"created": "cuenta de vino ha sido creada.",
@@ -1019,6 +1040,7 @@
 		"purposes": {
 			"bottling": "embotellado",
 			"breakage": "rotura",
+			"bulkWineErpRelease": "Lanzamiento de vino a granel ERP",
 			"correction": "corrección",
 			"creditAdvice": "abono",
 			"deputate": "Pago en especie",
@@ -1029,7 +1051,8 @@
 			"purchase": "compra",
 			"retour": "retorno",
 			"sample": "muestra",
-			"sponsoring": "patrocinio"
+			"sponsoring": "patrocinio",
+			"wineErpRelease": "Lanzamiento de vino ERP"
 		}
 	},
 	"mailsetup_edittitle": "editar ajustes de SMTP",

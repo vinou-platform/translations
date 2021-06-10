@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Articolo",
+		"articles.bulkWines": "Vini sfusi",
 		"articles.bundles": "Pacchetto di prodotti",
 		"articles.categories": "Categoria",
 		"articles.products": "Prodotti",
@@ -285,6 +286,15 @@
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Numero di bottiglie",
+			"bottling": {
+				"label": "Imbottigliamento",
+				"placeholder": "Ricerca imbottigliamento"
+			},
+			"bulkWine": {
+				"autoCreate": "Genera automaticamente dall'account wine",
+				"label": "Vino sfuso",
+				"placeholder": "Cerca vino sfuso"
+			},
 			"cellarWine": {
 				"assign": "Assegnare ad altro conto del vino?",
 				"label": "Conto del vino",
@@ -449,6 +459,14 @@
 				"main": "Imbottigliamento",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Rilascio del",
+				"sub": "vino ERP"
+			},
+			"createBulkWineErpRelease": {
+				"main": "Rilascio",
+				"sub": "vino sfuso ERP"
+			},
 			"createFinancialStatement": {
 				"main": "Bilancio",
 				"sub": " "
@@ -495,6 +513,8 @@
 			"waterAddition": "Aggiungendo acqua",
 
 			"bottling": "Imbottigliamento",
+			"wineErpRelease": "Rilascio del vino ERP",
+			"bulkWineErpRelease": "Rilascio vino sfuso ERP",
 			"financialStatement": "Bilancio",
 			"accountClosure": "Chiusura del conto"
 		},
@@ -564,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Vuoi veramente cancellare questo conto del vino?"
+			"delete": "Vuoi veramente cancellare questo conto del vino?",
+			"invalid": "Informazioni incoerenti. Per favore controlla i tuoi processi su questo wine account!"
 		},
 		"toasts": {
 			"created": "Conto del vino è stato creato",
@@ -1019,6 +1040,7 @@
 		"purposes": {
 			"bottling": "Imbottigliamento",
 			"breakage": "Rottura",
+			"bulkWineErpRelease": "Rilascio vino sfuso ERP",
 			"correction": "Correzione",
 			"creditAdvice": "Accredito",
 			"deputate": "Pagamento in natura",
@@ -1029,7 +1051,8 @@
 			"purchase": "Acquista",
 			"retour": "Merci restituite",
 			"sample": "Campione",
-			"sponsoring": "Sponsoring"
+			"sponsoring": "Sponsoring",
+			"wineErpRelease": "Rilascio del vino ERP"
 		}
 	},
 	"mailsetup_edittitle": "Modificare impostazion SMTP",

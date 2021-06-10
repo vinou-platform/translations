@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Articles",
+		"articles.bulkWines": "Vins en vrac",
 		"articles.bundles": "Produits groupés",
 		"articles.categories": "Catégories",
 		"articles.products": "Produits",
@@ -285,6 +286,15 @@
 				"placeholder": "DD.MM.YYYY"
 			},
 			"bottles": "Nombre de bouteilles",
+			"bottling": {
+				"label": "Embouteillage",
+				"placeholder": "Cherche embouteillage"
+			},
+			"bulkWine": {
+				"autoCreate": "Générer automatiquement à partir du compte Wine",
+				"label": "Vin en vrac",
+				"placeholder": "Cherche vin en vrac"
+			},
 			"cellarWine": {
 				"assign": "Attribuer à un autre compte du vin?",
 				"label": "Compte du vin",
@@ -449,6 +459,14 @@
 				"main": "Embouteillage",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Sortie de",
+				"sub": "vin ERP"
+			},
+			"createBulkWineErpRelease": {
+				"main": "Sortie de",
+				"sub": "vin en vrac ERP"
+			},
 			"createFinancialStatement": {
 				"main": "États",
 				"sub": "financiers"
@@ -495,6 +513,8 @@
 			"waterAddition": "Ajout d'eau",
 
 			"bottling": "Embouteillage",
+			"wineErpRelease": "Sortie de vin ERP",
+			"bulkWineErpRelease": "Sortie de vin en vrac ERP",
 			"financialStatement": "États financiers",
 			"accountClosure": "Fermeture de compte"
 		},
@@ -564,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Voulez-vous vraiment supprimer le compte?"
+			"delete": "Voulez-vous vraiment supprimer le compte?",
+			"invalid": "Informations incohérentes. Veuillez vérifier vos processus sur ce compte de vin!"
 		},
 		"toasts": {
 			"created": "Compte du vin créé.",
@@ -1019,6 +1040,7 @@
 		"purposes": {
 			"bottling": "Embouteillage",
 			"breakage": "Rupture",
+			"bulkWineErpRelease": "Sortie de vin en vrac ERP",
 			"correction": "Correction",
 			"creditAdvice": "Crédit",
 			"deputate": "Paiement en nature",
@@ -1029,7 +1051,8 @@
 			"purchase": "Livraison",
 			"retour": "Retoue",
 			"sample": "Échantillon",
-			"sponsoring": "Parrainage"
+			"sponsoring": "Parrainage",
+			"wineErpRelease": "Sortie de vin ERP"
 		}
 	},
 	"mailsetup_edittitle": "Éditer modification de SMTP",

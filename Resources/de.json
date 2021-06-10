@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Artikel",
+		"articles.bulkWines": "Fassweine",
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
 		"articles.products": "Produkte",
@@ -285,6 +286,15 @@
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Anzahl Flaschen",
+			"bottling": {
+				"label": "Abfüllung",
+				"placeholder": "Abfüllung suchen"
+			},
+			"bulkWine": {
+				"autoCreate": "Automatisch aus Weinkonto generieren",
+				"label": "Fasswein",
+				"placeholder": "Fasswein suchen"
+			},
 			"cellarWine": {
 				"assign": "Umlagerung auf anderes Weinkonto?",
 				"label": "Weinkonto",
@@ -449,6 +459,14 @@
 				"main": "Abfüllung",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Flaschenweinfreigabe",
+				"sub": " "
+			},
+			"createBulkWineErpRelease": {
+				"main": "Fassweinfreigabe",
+				"sub": " "
+			},
 			"createFinancialStatement": {
 				"main": "Jahresabschluss",
 				"sub": " "
@@ -495,6 +513,8 @@
 			"waterAddition": "Wasser Hinzugabe",
 
 			"bottling": "Abfüllung",
+			"wineErpRelease": "Flaschenweinfreigabe",
+			"bulkWineErpRelease": "Fassweinfreigabe",
 			"financialStatement": "Jahresabschluss",
 			"accountClosure": "Kontoarchivierung"
 		},
@@ -564,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst Du das Weinkonto wirklich löschen?"
+			"delete": "Willst Du das Weinkonto wirklich löschen?",
+			"invalid": "Unstimmige Informationen. Bitte überprüfe Deine Vorgänge auf diesem Weinkonto!"
 		},
 		"toasts": {
 			"created": "Weinkonto erstellt.",
@@ -1019,6 +1040,7 @@
 		"purposes": {
 			"bottling": "Abfüllung",
 			"breakage": "Bruch",
+			"bulkWineErpRelease": "Fassweinfreigabe",
 			"correction": "Korrektur",
 			"creditAdvice": "Gutschrift",
 			"deputate": "Naturalleistung",
@@ -1029,7 +1051,8 @@
 			"purchase": "Anlieferung/Zukauf",
 			"retour": "Retoure",
 			"sample": "Probe",
-			"sponsoring": "Sponsoring"
+			"sponsoring": "Sponsoring",
+			"wineErpRelease": "Flaschenweinfreigabe"
 		}
 	},
 	"mailsetup_edittitle": "SMTP-Einstellungen bearbeiten",
@@ -1594,6 +1617,153 @@
 		},
 		"hints": {
 			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Fasswein",
+			"plural": "Fassweine"
+		},
+		"actions": {
+			"activate": {
+				"main": "Fasswein",
+				"sub": "aktivieren"
+			},
+			"create": {
+				"main": "Neuen Fasswein",
+				"sub": "anlegen"
+			},
+			"deactivate": {
+				"main": "Fasswein",
+				"sub": "deaktivieren"
+			},
+			"delete": {
+				"main": "Fasswein",
+				"sub": "löschen"
+			},
+			"edit": {
+				"main": "Fasswein",
+				"sub": "bearbeiten"
+			},
+			"export": {
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen",
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			},
+			"showPdf": {
+				"main": "Exposé",
+				"sub": "in neuem Fenster öffnen"
+			}
+		},
+		"fields": {
+			"acidity": "Säuregehalt",
+			"active": "aktiv",
+			"alcohol": "Alkoholgehalt",
+			"allergens": {
+				"label": "Allergene",
+				"placeholder": "Allergene suchen"
+			},
+			"articleNumber": "Art.-Nr.",
+			"barcode": "EAN-Code",
+			"bio": "Bio zertifiziert",
+			"bioRefNumber": {
+				"label": "Bio-Kontrollnummer",
+				"placeholder": "DE-ÖKO-XXX"
+			},
+			"countrycode": "Herkunft",
+			"cuvee": "Cuvée",
+			"description": "Beschreibung",
+			"drinkingTemperature": "Trinktemperatur",
+			"grapetypes": {
+				"label": "Rebsorten",
+				"placeholder": "Rebsorte suchen"
+			},
+			"gross": "Brutto-Preis",
+			"image": {
+				"label": "Bild",
+				"error": {
+					"notFound": "Bild konnte nicht gefunden werden"
+				}
+			},
+			"maturation": "Ausbau",
+			"name": "Name",
+			"noStock": "ausgetrunken",
+			"noStockText": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
+			"place": "Lage",
+			"price": "Preis",
+			"prices": "Preise",
+			"qrCode": {
+				"label": "QR-Code",
+				"hint": "Der QR-Code wird nach dem ersten Speichern generiert"
+			},
+			"qrCodeLink": {
+				"label": "Zieladresse für QR-Code",
+				"placeholder": "Zieladresse für QR-Code (Fasswein PDF wenn leer)"
+			},
+			"quality": "Qualitätsstufe",
+			"qualityNote": "Zusatzangabe Qualitätsstufe",
+			"quantity": "Aktueller Bestand",
+			"region": "Anbauregion",
+			"residualSugar": "Restsüße",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"stock": "Verfügbarer Bestand",
+			"tags": "Tags",
+			"taste": "Geschmacksrichtung",
+			"terroir": "Boden",
+			"topseller": "Topseller",
+			"type": "Typ",
+			"vegan": "Vegan",
+			"vintage": "Jahrgang",
+			"winery": {
+				"label": "Weingut",
+				"placeholder": "Weingut suchen"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergene",
+			"analysis": "Analyse",
+			"composition": "Zusammensetzung",
+			"description": "Beschreibung",
+			"facts": "Daten & Fakten",
+			"grapetypes": "Rebsorten",
+			"prices": "Preise",
+			"profile": "Wein-Profil",
+			"qrCode": "QR-Code",
+			"region": "Regionales",
+			"shop": "Website & Shop-Einstellungen",
+			"stock": "Bestände"
+		},
+		"views": {
+			"files": {
+				"lable": "Dateien",
+				"title": "Dateien und Dokumente zu diesem Fasswein"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Lagerbewegungen"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "z.B. Name, Land, Region, Jahrgang, Art.-Nr."
+			},
+			"tags": {
+				"label": "Tag auswählen",
+				"none": "Fassweine ohne Tag anzeigen"
+			},
+			"type": "Weintyp filtern"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Fasswein wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Fasswein angelegt!",
+			"changed": "Fasswein geändert!",
+			"copied": "Fasswein dupliziert!",
+			"deleted": "Fasswein gelöscht!",
+			"deleteErrorInUse": "Dieser Fasswein kann nicht gelöscht werden, da kaufmännische Dokumente und/oder Dokumente für die Weinbuchführung mit diesem Wein existieren."
+		},
+		"hints": {
+			"inStock": "auf Lager",
+			"liter": "Liter",
+			"stockDistribution": "Verfügbarer Bestand {stock} l, reserviert {reserved} l, in Bestellung {ordered} l"
 		}
 	},
 	"winecategory": {
@@ -3409,7 +3579,6 @@
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
-		"merchant_image_deleted": "Bild gelöscht!",
 		"settings_bank_changed": "Bankverbindung aktualisiert!",
 		"settings_cashlink_registered": "Cashlink registriert!",
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
