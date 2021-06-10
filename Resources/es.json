@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Artículos",
+		"articles.bulkWines": "Vinos a granel",
 		"articles.bundles": "Paquete de productos",
 		"articles.categories": "Categorias",
 		"articles.products": "Productos",
@@ -35,6 +36,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Eliminar Imagen",
 			"export": "Exportar",
 			"exportRaw": "Exportar (datos sin procesar)",
 			"import": "Importar",
@@ -53,6 +55,7 @@
 			"empty": "Por favor seleccione",
 			"none": "no hay datos",
 			"unknown": "desconocido",
+			"notAvailable": "N/A",
 			"upload_image": "Seleccione y cargue imágen",
 			"search": {
 				"placeholder": "e.j. nombre o descripción"
@@ -84,9 +87,9 @@
 			"wwwAction": "visitar página web {name}",
 			"copyOf": {
 				"1": "copia de {name}",
+
+
 				"n": "copia {n} de {name}"
-
-
 			},
 			"metaTitle": "Etiqueta de título",
 			"metaDescription": "Metadescripción",
@@ -156,8 +159,12 @@
 				"empty": "todos"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Realmente quieres borrar esta imagen?"
+		},
 		"hints": {
 			"empty": "todavía no hay inscripciones",
+			"imageSize": "<b>Recomendado para un mejor renderizado</b><br/>Dimensión: mín. 1500px de ancho o alto<br/>Formato de archivo: .png (exento)",
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
 			"required": "campo obligatorio",
 			"weight": "Peso incluido el embalaje (para envío)"
@@ -185,11 +192,14 @@
 			"patternValue": "Su entrada debe cumplir con el formato {value}",
 			"required": "Por favor llene esa casilla",
 			"submit": "Se produjo un error al guardar los datos.",
-			"unique": "El valor ingresado ya existe"
+			"unique": "El valor ingresado ya existe",
+			"url": "Ingrese un URL válido"
 		},
 		"toasts": {
-			"networkchanged": "visibilidad de red modificada",
+			"imageDeleted": "Imágen ha sido borrada!",
+			"imageUploaded": "Imágen ha sido cargada!",
 			"internalchanged": "visibilidad interna modificada",
+			"networkchanged": "visibilidad de red modificada",
 			"publicchanged": "visibilidad pública ha cambiado."
 		}
 	},
@@ -203,7 +213,6 @@
 			"quickActions": "Quickactions"
 		}
 	},
-	"delete_image": "borrar imágen",
 	"token": {
 		"fields": {
 			"token": "Simbólico",
@@ -277,6 +286,15 @@
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Numero de botellas",
+			"bottling": {
+				"label": "Embotellado",
+				"placeholder": "Buscar embotellado"
+			},
+			"bulkWine": {
+				"autoCreate": "Generar automáticamente desde la cuenta de vino",
+				"label": "Vino a granel",
+				"placeholder": "Buscar vino a granel"
+			},
 			"cellarWine": {
 				"assign": "Asignar a otra cuenta de vino?",
 				"label": "cuenta de vino",
@@ -441,6 +459,14 @@
 				"main": "embotellado",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Lanzamiento de",
+				"sub": "vino ERP"
+			},
+			"createBulkWineErpRelease": {
+				"main": "Lanzamiento de",
+				"sub": "vino a granel ERP"
+			},
 			"createFinancialStatement": {
 				"main": "estados",
 				"sub": "financieros"
@@ -460,35 +486,37 @@
 			}
 		},
 		"types": {
-			"inventoryTakeover": "toma de inventario",
-			"harvest": "cosecha",
-			"additionalPurchase": "compra de vino",
-			"marcLiquidation": "utilización de orujo",
+			"inventoryTakeover": "Toma de inventario",
+			"harvest": "Cosecha",
+			"additionalPurchase": "Compra de vino",
+			"marcLiquidation": "Utilización de orujo",
 
-			"relocation": "transposición",
-			"decanting": "colada",
-			"staticSettling": "desgomado",
-			"filtration": "filtración",
-			"blending": "recorte",
-			"privateConsumption": "consumo propio",
-			"shrinkage": "reducción",
-			"loss": "perdida",
-			"concentration": "concentración",
-			"dealcoholization": "desalcoholización",
+			"relocation": "Transposición",
+			"decanting": "Colada",
+			"staticSettling": "Desgomado",
+			"filtration": "Filtración",
+			"blending": "Recorte",
+			"privateConsumption": "Consumo propio",
+			"shrinkage": "Reducción",
+			"loss": "Perdida",
+			"concentration": "Concentración",
+			"dealcoholization": "Desalcoholización",
 
-			"wineAddition": "llenado",
+			"wineAddition": "Llenado",
 
-			"substanceAdd": "añadidura de sustancia",
-			"enrichment": "enriquecimiento",
-			"sweetening": "edulcoración",
-			"acidification": "acidificación",
-			"deacidification": "desacidificacíon",
-			"alcoholization": "añadidura de alcohol",
-			"waterAddition": "añadidura de agua",
+			"substanceAdd": "Añadidura de sustancia",
+			"enrichment": "Enriquecimiento",
+			"sweetening": "Edulcoración",
+			"acidification": "Acidificación",
+			"deacidification": "Desacidificacíon",
+			"alcoholization": "Añadidura de alcohol",
+			"waterAddition": "Añadidura de agua",
 
-			"bottling": "embotellado",
-			"financialStatement": "estados financieros",
-			"accountClosure": "cierre de cuenta"
+			"bottling": "Embotellado",
+			"wineErpRelease": "Lanzamiento de vino ERP",
+			"bulkWineErpRelease": "Lanzamiento de vino a granel ERP",
+			"financialStatement": "Estados financieros",
+			"accountClosure": "Cierre de cuenta"
 		},
 		"views": {
 			"edit": {
@@ -556,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Quieres borrar la cuenta de vino seguramente?"
+			"delete": "Quieres borrar la cuenta de vino seguramente?",
+			"invalid": "Información inconsistente. ¡Compruebe sus procesos en esta cuenta de vino!"
 		},
 		"toasts": {
 			"created": "cuenta de vino ha sido creada.",
@@ -829,8 +858,7 @@
 			},
 			"search": {
 				"placeholder": "p.ej. nombre, correo"
-			},
-			"deleteImage": "Eliminar Imagen"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "Editar la configuración de la aplicación",
@@ -883,15 +911,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Imagen cargada!",
-			"imageDeleted": "Imagen eliminada!",
 			"changed": "Usuario cambiado!",
 			"created": "Usuario creado!",
 			"deleted": "Usuario eliminado!",
 			"lostpasswordSend": "Enviar correo!"
 		},
 		"dialogs": {
-			"deleteImage": "Realmente desea eliminar la imagen de usuario?",
 			"delete": "Realmente desea eliminar este usuario?"
 		},
 		"hints": {
@@ -1015,6 +1040,7 @@
 		"purposes": {
 			"bottling": "embotellado",
 			"breakage": "rotura",
+			"bulkWineErpRelease": "Lanzamiento de vino a granel ERP",
 			"correction": "corrección",
 			"creditAdvice": "abono",
 			"deputate": "Pago en especie",
@@ -1025,7 +1051,8 @@
 			"purchase": "compra",
 			"retour": "retorno",
 			"sample": "muestra",
-			"sponsoring": "patrocinio"
+			"sponsoring": "patrocinio",
+			"wineErpRelease": "Lanzamiento de vino ERP"
 		}
 	},
 	"mailsetup_edittitle": "editar ajustes de SMTP",
@@ -1504,7 +1531,6 @@
 			"prices": "precios",
 			"public_wines": "vinos publicos",
 			"qrcode": "QR-Code",
-			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "El QR-Code va a estar generado después de la primera grabación",
 			"qrlink": "direción de destino para QR-Code",
 			"qrlinkempty": "direción de destino para QR-Code ( si pasaporte de vino está vacío)",
@@ -1512,11 +1538,8 @@
 			"quality_note": "Nota de clasificación adicional",
 			"quantity": "inventario acutal",
 			"region": "región de terreno cultivado",
-			"shoplink": "enlace al shop",
-			"shoplink_active": "enlace al shop activado",
 			"sorting": "índice de clasificación manual (e.j. para el shop)",
 			"stock": "Inventario disponible",
-			"stockunknown": "N/A",
 			"sweetness": "azucar residual",
 			"tags": "Etiquetas",
 			"taste": "sabor",
@@ -1744,8 +1767,6 @@
 				"created": "producto ha sido creado!",
 				"changed": "producto ha sido editado!",
 				"deleted": "producto ha sido borrado!",
-				"image_uploaded": "imágen del producto ha sido cargada!",
-				"image_deleted": "imágen del producto ha sido borrada",
 				"copied": "producto ha sido duplicado"
 			}
 		}
@@ -1901,9 +1922,7 @@
 			"created": "cliente ha sido creado!",
 			"changed": "cliente ha sido editado!",
 			"copied": "cliente ha sido duplicado",
-			"deleted": "cliente ha sido borrado!",
-			"imageUploaded": "imágen del cliente ha sido cargada!",
-			"imageDeleted": "imágen del cliente ha sido borrada"
+			"deleted": "cliente ha sido borrado!"
 		}
 	},
 	"contact": {
@@ -2960,8 +2979,6 @@
 			"created": "News entry created!",
 			"changed": "News entry updated!",
 			"deleted": "News entry deleted!",
-			"image_uploaded": "Newsimage uploaded!",
-			"image_deleted": "Newsimage deleted",
 			"copied": "News entry copied"
 		},
 		"dialogs": {
@@ -3094,8 +3111,6 @@
 			"created": "Paquete creado!",
 			"changed": "El paquete ha cambiado!",
 			"deleted": "Paquete eliminado!",
-			"imageUploaded": "Subir para la imagen terminada!",
-			"imageDeleted": "Imagen eliminada para paquete",
 			"copied": "Paquete duplicado"
 		},
 		"dialogs": {
@@ -3162,8 +3177,6 @@
 			"created": "Catálogo creado!",
 			"changed": "Catálogo cambiado!",
 			"deleted": "Catálogo eliminado!",
-			"imageUploaded": "Imagen cargada para el catálogo!",
-			"imageDeleted": "Imagen del catálogo eliminada",
 			"copied": "Catálogo copiado",
 			"pdfGenerated": "PDF para el catálogo generado!"
 		},
@@ -3229,8 +3242,6 @@
 			"created": "Campaña creada!",
 			"changed": "Campaña actualizada!",
 			"deleted": "Campaña eliminada!",
-			"imageUploaded": "Imagen cargada para la campaña!",
-			"imageDeleted": "Imagen eliminada para hacer campaña",
 			"copied": "Campaña copiada!"
 		},
 		"dialogs": {
@@ -3295,8 +3306,6 @@
 			"created": "Automatización creada!",
 			"changed": "Automatización cambiada!",
 			"deleted": "Automatización eliminada!",
-			"imageUploaded": "Imagen cargada!",
-			"imageDeleted": "Imagen eliminada",
 			"copied": "Automatización duplicada",
 			"activate": "Conexión activada",
 			"activateerror": "No se pudo activar la conexión",
@@ -3423,8 +3432,6 @@
 		"address_changed": "dirección ha sido acutalizada!",
 		"address_deleted": "dirección ha sido borrada!",
 		"bank_settings_error": "Ha ocurrido un error durante la grabación de la cuenta bancaria!",
-		"category_image_uploaded": "Imágen ha sido cargada!",
-		"category_image_deleted": "Imágen ha sido borrada!",
 		"category_saved": "Categoría ha sido grabada!",
 		"category_changed": "Categoría ha sido actualizada!",
 		"category_deleted": "Categoría ha sido borrada!",
@@ -3432,8 +3439,6 @@
 		"cronjob_saved": "Cronjob ha sido creado!",
 		"cronjob_changed": "Cronjob ha sido actualizado!",
 		"cronjob_deleted": "Cronjob ha sido borrado!",
-		"customer_image_uploaded": "Imágen ha sido cargada!",
-		"customer_image_deleted": "Imágen ha sido borrada!",
 		"customer_changed": "Datos de clientes han sido actualizados!",
 		"customer_authid_changed": "AuthId ha sido editado!",
 		"customer_deleted": "mandante ha sido borrado!",
@@ -3443,7 +3448,6 @@
 		"merchant_created": "Comerciante ha sido creado!",
 		"merchant_changed": "Comerciante ha sido actualizado!",
 		"merchant_deleted": "Comerciante ha sido borrado!",
-		"merchant_image_uploaded": "Imágen ha sido cargada!",
 		"merchant_save_error": "Grabación ha sido fallada !",
 		"merchant_image_deleted": "Imágen ha sido borrada!",
 		"settings_bank_changed": "Cuenta bancaria ha sido actualizada!",
@@ -3454,16 +3458,12 @@
 		"winery_created": "Propiedad vinícola ha sido creada!",
 		"winery_changed": "Propiedad vinícola ha sido actualizada!",
 		"winery_deleted": "Propiedad vinícola ha sido borrada!",
-		"winery_image_uploaded": "Imágen ha sido cargada!",
-		"winery_image_deleted": "Imágen ha sido borrada!",
 		"winery_save_error": "Grabación ha sido fallada!",
 		"wine_created": "Vino ha sido creado!",
 		"wine_changed": "Vino ha sido actualizado!",
 		"wine_duplicated": "Vino ha sido copiado!",
 		"wine_deleted": "Vino ha sido borrado!",
 		"wine_image_needed": "Para cargar una imágen tienes que grabar el vino antes!",
-		"wine_image_uploaded": "Imágen ha sido cargada!",
-		"wine_image_deleted": "Imágen ha sido borrada!",
 		"wine_expertise_generated": "Peritaje ha sido generado!",
 		"wine_savours_updated": "Vinou-Gusto ha sido actualizado!",
 		"view_slider_created": "Slider ha sido creado!",

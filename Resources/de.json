@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Artikel",
+		"articles.bulkWines": "Fassweine",
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
 		"articles.products": "Produkte",
@@ -35,6 +36,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Bild löschen",
 			"export": "Export",
 			"exportRaw": "Export (EDV)",
 			"import": "Import",
@@ -53,6 +55,7 @@
 			"empty": "Bitte wählen",
 			"none": "Keine Angabe",
 			"unknown": "Unbekannt",
+			"notAvailable": "n/a",
 			"upload_image": "Bild auswählen und hochladen",
 			"search": {
 				"placeholder": "z.B. Name oder Beschreibung"
@@ -84,9 +87,9 @@
 			"wwwAction": "Internetseite von {name} besuchen",
 			"copyOf": {
 				"1": "Kopie von {name}",
+
+
 				"n": "Kopie {n} von {name}"
-
-
 			},
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
@@ -156,8 +159,12 @@
 				"empty": "Alle"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Möchtest Du dieses Bild wirklich löschen?"
+		},
 		"hints": {
 			"empty": "Noch keine Einträge vorhanden",
+			"imageSize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: mind. 1500px Breite oder Höhe<br/>Datei-Format: .png (freigestellt)",
 			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
 			"required": "Pflichtfeld",
 			"weight": "Gewicht inklusive Verpackung (für Versand)"
@@ -185,11 +192,14 @@
 			"patternValue": "Deine Eingabe sollte dem Format {value} entsprechen",
 			"required": "Bitte fülle dieses Feld aus",
 			"submit": "Beim Speichern der Daten ist ein Fehler aufgetreten.",
-			"unique": "Der eingegebene Wert existiert bereits"
+			"unique": "Der eingegebene Wert existiert bereits",
+			"url": "Bitte gib eine gültige URL ein"
 		},
 		"toasts": {
-			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
+			"imageDeleted": "Bild gelöscht!",
+			"imageUploaded": "Bild hochgeladen!",
 			"internalchanged": "Sichtbarkeit für Deine Kunden geändert",
+			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
 			"publicchanged": "öffentliche Sichtbarkeit geändert"
 		}
 	},
@@ -203,7 +213,6 @@
 			"quickActions": "Schnellaktionen"
 		}
 	},
-	"delete_image": "Bild löschen",
 	"token": {
 		"fields": {
 			"token": "Schnittstelle (Token)",
@@ -277,6 +286,15 @@
 				"placeholder": "dd.MM.YYYY"
 			},
 			"bottles": "Anzahl Flaschen",
+			"bottling": {
+				"label": "Abfüllung",
+				"placeholder": "Abfüllung suchen"
+			},
+			"bulkWine": {
+				"autoCreate": "Automatisch aus Weinkonto generieren",
+				"label": "Fasswein",
+				"placeholder": "Fasswein suchen"
+			},
 			"cellarWine": {
 				"assign": "Umlagerung auf anderes Weinkonto?",
 				"label": "Weinkonto",
@@ -441,6 +459,14 @@
 				"main": "Abfüllung",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Flaschenweinfreigabe",
+				"sub": " "
+			},
+			"createBulkWineErpRelease": {
+				"main": "Fassweinfreigabe",
+				"sub": " "
+			},
 			"createFinancialStatement": {
 				"main": "Jahresabschluss",
 				"sub": " "
@@ -487,6 +513,8 @@
 			"waterAddition": "Wasser Hinzugabe",
 
 			"bottling": "Abfüllung",
+			"wineErpRelease": "Flaschenweinfreigabe",
+			"bulkWineErpRelease": "Fassweinfreigabe",
 			"financialStatement": "Jahresabschluss",
 			"accountClosure": "Kontoarchivierung"
 		},
@@ -556,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst Du das Weinkonto wirklich löschen?"
+			"delete": "Willst Du das Weinkonto wirklich löschen?",
+			"invalid": "Unstimmige Informationen. Bitte überprüfe Deine Vorgänge auf diesem Weinkonto!"
 		},
 		"toasts": {
 			"created": "Weinkonto erstellt.",
@@ -829,8 +858,7 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, E-Mail"
-			},
-			"deleteImage": "Bild löschen"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "App-Einstellungen bearbeiten",
@@ -883,15 +911,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Bild hochgeladen!",
-			"imageDeleted": "Bild gelöscht!",
 			"changed": "Benutzer aktualisiert!",
 			"created": "Benutzer angelegt!",
 			"deleted": "Benutzer gelöscht!",
 			"lostpasswordSend": "Mail versendet!"
 		},
 		"dialogs": {
-			"deleteImage": "Möchtest Du dieses Bild wirklich löschen?",
 			"delete": "Möchtest Du diesen Benutzer wirklich löschen?"
 		},
 		"hints": {
@@ -1015,6 +1040,7 @@
 		"purposes": {
 			"bottling": "Abfüllung",
 			"breakage": "Bruch",
+			"bulkWineErpRelease": "Fassweinfreigabe",
 			"correction": "Korrektur",
 			"creditAdvice": "Gutschrift",
 			"deputate": "Naturalleistung",
@@ -1025,7 +1051,8 @@
 			"purchase": "Anlieferung/Zukauf",
 			"retour": "Retoure",
 			"sample": "Probe",
-			"sponsoring": "Sponsoring"
+			"sponsoring": "Sponsoring",
+			"wineErpRelease": "Flaschenweinfreigabe"
 		}
 	},
 	"mailsetup_edittitle": "SMTP-Einstellungen bearbeiten",
@@ -1504,7 +1531,6 @@
 			"prices": "Preise",
 			"public_wines": "Öffentliche Weine",
 			"qrcode": "QR-Code",
-			"qrcode_redirect": "QR-Code Redirect",
 			"qrcode_create": "Der QR-Code wird nach dem ersten Speichern generiert",
 			"qrlink": "Zieladresse für QR-Code",
 			"qrlinkempty": "Zieladresse für QR-Code (Weinpass wenn leer)",
@@ -1512,11 +1538,8 @@
 			"quality_note": "Zusatzangabe Qualitätsstufe",
 			"quantity": "Aktueller Bestand",
 			"region": "Anbauregion",
-			"shoplink": "Link zum Shop",
-			"shoplink_active": "Link zum Shop aktiv",
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"stock": "Verfügbarer Bestand",
-			"stockunknown": "n/a",
 			"sweetness": "Restsüße",
 			"tags": "Tags",
 			"taste": "Geschmacksrichtung",
@@ -1603,6 +1626,153 @@
 		},
 		"hints": {
 			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Fasswein",
+			"plural": "Fassweine"
+		},
+		"actions": {
+			"activate": {
+				"main": "Fasswein",
+				"sub": "aktivieren"
+			},
+			"create": {
+				"main": "Neuen Fasswein",
+				"sub": "anlegen"
+			},
+			"deactivate": {
+				"main": "Fasswein",
+				"sub": "deaktivieren"
+			},
+			"delete": {
+				"main": "Fasswein",
+				"sub": "löschen"
+			},
+			"edit": {
+				"main": "Fasswein",
+				"sub": "bearbeiten"
+			},
+			"export": {
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen",
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
+			},
+			"showPdf": {
+				"main": "Exposé",
+				"sub": "in neuem Fenster öffnen"
+			}
+		},
+		"fields": {
+			"acidity": "Säuregehalt",
+			"active": "aktiv",
+			"alcohol": "Alkoholgehalt",
+			"allergens": {
+				"label": "Allergene",
+				"placeholder": "Allergene suchen"
+			},
+			"articleNumber": "Art.-Nr.",
+			"barcode": "EAN-Code",
+			"bio": "Bio zertifiziert",
+			"bioRefNumber": {
+				"label": "Bio-Kontrollnummer",
+				"placeholder": "DE-ÖKO-XXX"
+			},
+			"countrycode": "Herkunft",
+			"cuvee": "Cuvée",
+			"description": "Beschreibung",
+			"drinkingTemperature": "Trinktemperatur",
+			"grapetypes": {
+				"label": "Rebsorten",
+				"placeholder": "Rebsorte suchen"
+			},
+			"gross": "Brutto-Preis",
+			"image": {
+				"label": "Bild",
+				"error": {
+					"notFound": "Bild konnte nicht gefunden werden"
+				}
+			},
+			"maturation": "Ausbau",
+			"name": "Name",
+			"noStock": "ausgetrunken",
+			"noStockText": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
+			"place": "Lage",
+			"price": "Preis",
+			"prices": "Preise",
+			"qrCode": {
+				"label": "QR-Code",
+				"hint": "Der QR-Code wird nach dem ersten Speichern generiert"
+			},
+			"qrCodeLink": {
+				"label": "Zieladresse für QR-Code",
+				"placeholder": "Zieladresse für QR-Code (Fasswein PDF wenn leer)"
+			},
+			"quality": "Qualitätsstufe",
+			"qualityNote": "Zusatzangabe Qualitätsstufe",
+			"quantity": "Aktueller Bestand",
+			"region": "Anbauregion",
+			"residualSugar": "Restsüße",
+			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
+			"stock": "Verfügbarer Bestand",
+			"tags": "Tags",
+			"taste": "Geschmacksrichtung",
+			"terroir": "Boden",
+			"topseller": "Topseller",
+			"type": "Typ",
+			"vegan": "Vegan",
+			"vintage": "Jahrgang",
+			"winery": {
+				"label": "Weingut",
+				"placeholder": "Weingut suchen"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergene",
+			"analysis": "Analyse",
+			"composition": "Zusammensetzung",
+			"description": "Beschreibung",
+			"facts": "Daten & Fakten",
+			"grapetypes": "Rebsorten",
+			"prices": "Preise",
+			"profile": "Wein-Profil",
+			"qrCode": "QR-Code",
+			"region": "Regionales",
+			"shop": "Website & Shop-Einstellungen",
+			"stock": "Bestände"
+		},
+		"views": {
+			"files": {
+				"lable": "Dateien",
+				"title": "Dateien und Dokumente zu diesem Fasswein"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Lagerbewegungen"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "z.B. Name, Land, Region, Jahrgang, Art.-Nr."
+			},
+			"tags": {
+				"label": "Tag auswählen",
+				"none": "Fassweine ohne Tag anzeigen"
+			},
+			"type": "Weintyp filtern"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen Fasswein wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Fasswein angelegt!",
+			"changed": "Fasswein geändert!",
+			"copied": "Fasswein dupliziert!",
+			"deleted": "Fasswein gelöscht!",
+			"deleteErrorInUse": "Dieser Fasswein kann nicht gelöscht werden, da kaufmännische Dokumente und/oder Dokumente für die Weinbuchführung mit diesem Wein existieren."
+		},
+		"hints": {
+			"inStock": "auf Lager",
+			"liter": "Liter",
+			"stockDistribution": "Verfügbarer Bestand {stock} l, reserviert {reserved} l, in Bestellung {ordered} l"
 		}
 	},
 	"winecategory": {
@@ -1744,8 +1914,6 @@
 				"created": "Produkt angelegt!",
 				"changed": "Produkt geändert!",
 				"deleted": "Produkt gelöscht!",
-				"image_uploaded": "Produktbild hochgeladen!",
-				"image_deleted": "Produktbild gelöscht",
 				"copied": "Produkt dupliziert"
 			}
 		}
@@ -1901,9 +2069,7 @@
 			"created": "Kunde angelegt!",
 			"changed": "Kunde geändert!",
 			"copied": "Kunde dupliziert",
-			"deleted": "Kunde gelöscht!",
-			"imageUploaded": "Kundenbild hochgeladen!",
-			"imageDeleted": "Kundenbild gelöscht"
+			"deleted": "Kunde gelöscht!"
 		}
 	},
 	"contact": {
@@ -2960,8 +3126,6 @@
 			"created": "Newsbeitrag angelegt!",
 			"changed": "Newsbeitrag geändert!",
 			"deleted": "Newsbeitrag gelöscht!",
-			"image_uploaded": "Newsbild hochgeladen!",
-			"image_deleted": "Newsbild gelöscht",
 			"copied": "Newsbeitrag dupliziert"
 		},
 		"dialogs": {
@@ -3094,8 +3258,6 @@
 			"created": "Weinpaket angelegt!",
 			"changed": "Weinpaket geändert!",
 			"deleted": "Weinpaket gelöscht!",
-			"imageUploaded": "Bild zum Weinpaket hochgeladen!",
-			"imageDeleted": "Bild zum Weinpaket gelöscht",
 			"copied": "Weinpaket dupliziert"
 		},
 		"dialogs": {
@@ -3162,8 +3324,6 @@
 			"created": "Preisliste angelegt!",
 			"changed": "Preisliste geändert!",
 			"deleted": "Preisliste gelöscht!",
-			"imageUploaded": "Bild zur Preisliste hochgeladen!",
-			"imageDeleted": "Bild zur Preisliste gelöscht",
 			"copied": "Preisliste dupliziert",
 			"pdfGenerated": "PDF zur Preisliste neu generiert!"
 		},
@@ -3229,8 +3389,6 @@
 			"created": "Kampagne angelegt!",
 			"changed": "Kampagne geändert!",
 			"deleted": "Kampagne gelöscht!",
-			"imageUploaded": "Bild zum Kampagne hochgeladen!",
-			"imageDeleted": "Bild zum Kampagne gelöscht",
 			"copied": "Kampagne dupliziert"
 		},
 		"dialogs": {
@@ -3295,8 +3453,6 @@
 			"created": "Automatisierung angelegt!",
 			"changed": "Automatisierung geändert!",
 			"deleted": "Automatisierung gelöscht!",
-			"imageUploaded": "Bild hochgeladen!",
-			"imageDeleted": "Bild gelöscht",
 			"copied": "Automatisierung dupliziert",
 			"activate": "Verbindung aktiviert",
 			"activateerror": "Verbindung konnte nicht aktiviert werden",
@@ -3423,8 +3579,6 @@
 		"address_changed": "Adresse aktualisiert!",
 		"address_deleted": "Adresse gelöscht!",
 		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
-		"category_image_uploaded": "Bild hochgeladen!",
-		"category_image_deleted": "Bild gelöscht!",
 		"category_saved": "Kategorie gespeichert!",
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
@@ -3432,8 +3586,6 @@
 		"cronjob_saved": "Cronjob angelegt!",
 		"cronjob_changed": "Cronjob aktualisiert!",
 		"cronjob_deleted": "Cronjob gelöscht!",
-		"customer_image_uploaded": "Bild hochgeladen!",
-		"customer_image_deleted": "Bild gelöscht!",
 		"customer_changed": "Kundendaten aktualisiert!",
 		"customer_authid_changed": "AuthId wurde geändert!",
 		"customer_deleted": "Mandant gelöscht!",
@@ -3443,9 +3595,7 @@
 		"merchant_created": "Händler angelegt!",
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
-		"merchant_image_uploaded": "Bild hochgeladen!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
-		"merchant_image_deleted": "Bild gelöscht!",
 		"settings_bank_changed": "Bankverbindung aktualisiert!",
 		"settings_cashlink_registered": "Cashlink registriert!",
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
@@ -3454,16 +3604,12 @@
 		"winery_created": "Weingut angelegt!",
 		"winery_changed": "Weingut aktualisiert!",
 		"winery_deleted": "Weingut gelöscht!",
-		"winery_image_uploaded": "Bild hochgeladen!",
-		"winery_image_deleted": "Bild gelöscht!",
 		"winery_save_error": "Speichern fehlgeschlagen!",
 		"wine_created": "Wein angelegt!",
 		"wine_changed": "Wein aktualisiert!",
 		"wine_duplicated": "Wein kopiert!",
 		"wine_deleted": "Wein gelöscht!",
 		"wine_image_needed": "Um ein Bild hochzuladen musst Du den Wein vorher speichern!",
-		"wine_image_uploaded": "Bild hochgeladen!",
-		"wine_image_deleted": "Bild gelöscht!",
 		"wine_expertise_generated": "Expertise generiert!",
 		"wine_savours_updated": "Vinou-Gusto aktualisiert!",
 		"view_slider_created": "Slider wurde angelegt!",

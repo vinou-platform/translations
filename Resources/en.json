@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"articles": "Articles",
+		"articles.bulkWines": "Bulk wines",
 		"articles.bundles": "Bundles",
 		"articles.categories": "Categories",
 		"articles.products": "Products",
@@ -35,6 +36,7 @@
 	},
 	"general": {
 		"actions": {
+			"deleteImage": "Delete image",
 			"export": "Export",
 			"exportRaw": "Export (raw data)",
 			"import": "Import",
@@ -53,6 +55,7 @@
 			"empty": "Please select",
 			"none": "No information",
 			"unknown": "Unknown",
+			"notAvailable": "n/a",
 			"upload_image": "Select image to upload",
 			"search": {
 				"placeholder": "e.g. name or description"
@@ -156,8 +159,12 @@
 				"empty": "Show all"
 			}
 		},
+		"dialogs": {
+			"deleteImage": "Do you really want to delete this image?"
+		},
 		"hints": {
 			"empty": "No entries found",
+			"imageSize": "<b>Recommended for best rendering</b><br>Dimension: min. 1500px width or height<br/>Fileformat: .png (exempted)",
 			"multiselectable": "Multiple select possible (CTRL + click)",
 			"required": "Required",
 			"weight": "Weight including packaging (for shipping)"
@@ -185,11 +192,14 @@
 			"patternValue": "Your input should conform to the format {value}",
 			"required": "Please fill in this field",
 			"submit": "An error occurred while saving the data.",
-			"unique": "The entered value already exists"
+			"unique": "The entered value already exists",
+			"url": "Please enter a valid URL"
 		},
 		"toasts": {
-			"networkchanged": "Network visibility changed",
+			"imageDeleted": "Image deleted!",
+			"imageUploaded": "Image uploaded!",
 			"internalchanged": "Internal visibility changed",
+			"networkchanged": "Network visibility changed",
 			"publicchanged": "Public visibility changed"
 		}
 	},
@@ -203,7 +213,6 @@
 			"quickActions": "Quick actions"
 		}
 	},
-	"delete_image": "Delete Image",
 	"token": {
 		"fields": {
 			"token": "Token",
@@ -277,6 +286,15 @@
 				"placeholder": "MM/dd/YYYY"
 			},
 			"bottles": "Number of bottles",
+			"bottling": {
+				"label": "Bottling",
+				"placeholder": "Search bottling"
+			},
+			"bulkWine": {
+				"autoCreate": "Generate automatically from wine account",
+				"label": "Bulk wine",
+				"placeholder": "Search bulk wine"
+			},
 			"cellarWine": {
 				"assign": "Assign to other raw wine?",
 				"label": "Raw wine",
@@ -441,6 +459,14 @@
 				"main": "Bottling",
 				"sub": " "
 			},
+			"createWineErpRelease": {
+				"main": "Wine",
+				"sub": "ERP release"
+			},
+			"createBulkWineErpRelease": {
+				"main": "Bulk wine",
+				"sub": "ERP release"
+			},
 			"createFinancialStatement": {
 				"main": "Financial",
 				"sub": "statement"
@@ -487,6 +513,8 @@
 			"waterAddition": "Water addition",
 
 			"bottling": "Bottling",
+			"wineErpRelease": "Wine ERP release",
+			"bulkWineErpRelease": "Bulk wine ERP release",
 			"financialStatement": "Financial statement",
 			"accountClosure": "Account closure"
 		},
@@ -556,7 +584,8 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Do you really want to delete this wine?"
+			"delete": "Do you really want to delete this wine account?",
+			"invalid": "Inconsistent information. Please check your processes on this wine account!"
 		},
 		"toasts": {
 			"created": "Wine created.",
@@ -829,8 +858,7 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, mail"
-			},
-			"deleteImage": "Delete image"
+			}
 		},
 		"fieldSets": {
 			"appsettings": "Edit App-Settings",
@@ -883,15 +911,12 @@
 			}
 		},
 		"toasts": {
-			"imageUploaded": "Image uploaded!",
-			"imageDeleted": "Image deleted!",
 			"changed": "User changed!",
 			"created": "User created!",
 			"deleted": "User deleted!",
 			"lostpasswordSend": "Mail send!"
 		},
 		"dialogs": {
-			"deleteImage": "Do you really want to delete the user image?",
 			"delete": "Do you really want to delete this user?"
 		},
 		"hints": {
@@ -1016,6 +1041,7 @@
 			"bottling": "Bottling",
 			"breakage": "Breakage",
 			"correction": "Correction",
+			"bulkWineErpRelease": "Bulk wine ERP release",
 			"creditAdvice": "Credit advice",
 			"deputate": "Payment in kind",
 			"external": "External (interface)",
@@ -1025,7 +1051,8 @@
 			"purchase": "Purchase/Delivery",
 			"retour": "Retour",
 			"sample": "Sample",
-			"sponsoring": "Sponsoring"
+			"sponsoring": "Sponsoring",
+			"wineErpRelease": "Wine ERP release"
 		}
 	},
 	"mailsetup_edittitle": "Edit SMTP-Server properties",
@@ -1504,7 +1531,6 @@
 			"prices": "Prices",
 			"public_wines": "Public wines",
 			"qrcode": "QR code",
-			"qrcode_redirect": "QR code redirect",
 			"qrcode_create": "QR code will be created after first save",
 			"qrlink": "Target address for QR code",
 			"qrlinkempty": "Target address for QR code (Winepass if empty)",
@@ -1512,11 +1538,8 @@
 			"quality_note": "Additional classification note",
 			"quantity": "Current Stock",
 			"region": "Region",
-			"shoplink": "Shoplink",
-			"shoplink_active": "activate Shoplink",
 			"sorting": "Manual index (e.g. for shop use)",
 			"stock": "Available stock",
-			"stockunknown": "n/a",
 			"sweetness": "Sweetness",
 			"taste": "Taste",
 			"terroir": "Terroir",
@@ -1602,6 +1625,153 @@
 			}
 		},
 		"hints": {
+			"stockDistribution": "Available stock {stock}, in order {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Bulk wine",
+			"plural": "Bulk wines"
+		},
+		"actions": {
+			"activate": {
+				"main": "Activate",
+				"sub": "bulk wine"
+			},
+			"create": {
+				"main": "Add bulk wine",
+				"sub": " "
+			},
+			"deactivate": {
+				"main": "Deactivate",
+				"sub": "bulk wine"
+			},
+			"delete": {
+				"main": "Delete",
+				"sub": "bulk wine"
+			},
+			"edit": {
+				"main": "Edit",
+				"sub": "bulk wine"
+			},
+			"export": {
+				"barcodeVector": "Download GTIN code as vektor file",
+				"qrCodeVector": "Download QR code as vector file"
+			},
+			"showPdf": {
+				"main": "Show exposé",
+				"sub": " "
+			}
+		},
+		"field": {
+			"acidity": "Acidity",
+			"active": "active",
+			"alcohol": "Alcohol",
+			"allergens": {
+				"label": "Allergens",
+				"placeholder": "Search for allergens"
+			},
+			"articleNumber": "Art. no.",
+			"barcode": "GTIN",
+			"bio": "Bio certified",
+			"bioRefNumber": {
+				"label": "Eco control number",
+				"placeholder": "GB-ECO-XXX"
+			},
+			"countrycode": "Country",
+			"cuvee": "Cuvée",
+			"description": "Description",
+			"drinkingTemperature": "Drink temperature",
+			"grapetypes": {
+				"label": "Grapetypes",
+				"placeholder": "Search for grapetypes"
+			},
+			"gross": "Gross price",
+			"image": {
+				"label": "Bottle picture",
+				"error": {
+					"notFound": "Image could not be resolved"
+				}
+			},
+			"maturation": "Maturation",
+			"name": "Name",
+			"noStock": "sold out",
+			"noStockText": "Alternative text to show when sold out",
+			"place": "Place",
+			"price": "Price",
+			"prices": "Prices",
+			"qrCode": {
+				"label": "QR code",
+				"hint": "QR code will be created after first save"
+			},
+			"qrCodeLink": {
+				"label": "Target address for QR code",
+				"placeholder": "Target address for QR code (Winepass if empty)"
+			},
+			"quality": "Classification",
+			"qualityNote": "Additional classification note",
+			"quantity": "Current Stock",
+			"region": "Region",
+			"residualSugar": "Sweetness",
+			"sorting": "Manual index (e.g. for shop use)",
+			"stock": "Available stock",
+			"tags": "Tags",
+			"taste": "Taste",
+			"terroir": "Terroir",
+			"topseller": "Topseller",
+			"type": "Type",
+			"vegan": "Vegan",
+			"vintage": "Vintage",
+			"winery": {
+				"label": "Winery",
+				"placeholder": "Search winery"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergens",
+			"analysis": "Analysis",
+			"composition": "Composition",
+			"description": "Description",
+			"facts": "Facts & Numbers",
+			"grapetype": "Grapetypes",
+			"prices": "Prices",
+			"profile": "Wine-Profile",
+			"qrCode": "QR code",
+			"region": "Regional",
+			"shop": "Website and shop settings",
+			"stock": "Stock"
+		},
+		"viels": {
+			"files": {
+				"lable": "Files",
+				"title": "Files regarding this wine"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Stock rotation"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "e.g. name, country, region, vintage, art. no."
+			},
+			"tags": {
+				"label": "Select tag",
+				"none": "Show bulk wines without tags"
+			},
+			"type": "Filter by wine type"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this bulk wine?"
+		},
+		"toasts": {
+			"created": "Bulk wine created!",
+			"changed": "Bulk wine changed!",
+			"copied": "Bulk wine duplicated!",
+			"deleted": "Bulk wine deleted!",
+			"deleteErrorInUse": "This wine cannot be deleted because commercial documents and/or documents for the wine bookkeeping exist for this wine."
+		},
+		"hints": {
+			"inStock": "in stock",
+			"liter": "Liter",
 			"stockDistribution": "Available stock {stock}, in order {ordered}"
 		}
 	},
@@ -1744,8 +1914,6 @@
 				"created": "Product created!",
 				"changed": "Product changed!",
 				"deleted": "Product deleted!",
-				"image_uploaded": "Productimage uploaded!",
-				"image_deleted": "Productimage deleted!",
 				"copied": "Product copied!"
 			}
 		}
@@ -1901,9 +2069,7 @@
 			"created": "Client created!",
 			"changed": "Client changed!",
 			"copied": "Client duplicated",
-			"deleted": "Client deleted!",
-			"imageUploaded": "Client image uploaded!",
-			"imageDeleted": "Client image deleted!"
+			"deleted": "Client deleted!"
 		}
 	},
 	"contact": {
@@ -2960,8 +3126,6 @@
 			"created": "News entry created!",
 			"changed": "News entry updated!",
 			"deleted": "News entry deleted!",
-			"image_uploaded": "Newsimage uploaded!",
-			"image_deleted": "Newsimage deleted",
 			"copied": "News entry copied"
 		},
 		"dialogs": {
@@ -3094,8 +3258,6 @@
 			"created": "Bundle created!",
 			"changed": "Bundle changed!",
 			"deleted": "Bundle deleted!",
-			"imageUploaded": "Upload for image finished!",
-			"imageDeleted": "Image deleted for bundle",
 			"copied": "Bundle duplicated"
 		},
 		"dialogs": {
@@ -3162,8 +3324,6 @@
 			"created": "Catalog created!",
 			"changed": "Catalog changed!",
 			"deleted": "Catalog deleted!",
-			"imageUploaded": "Image uploaded for catalog!",
-			"imageDeleted": "Image for catalog deleted",
 			"copied": "Catalog copied",
 			"pdfGenerated": "PDF for catalog generated!"
 		},
@@ -3229,8 +3389,6 @@
 			"created": "Campaign created!",
 			"changed": "Campaign updated!",
 			"deleted": "Campaign deleted!",
-			"imageUploaded": "Image uploaded for campaign!",
-			"imageDeleted": "Image deleted for campaing",
 			"copied": "Campaign copied!"
 		},
 		"dialogs": {
@@ -3295,8 +3453,6 @@
 			"created": "Automation created!",
 			"changed": "Automation changed!",
 			"deleted": "Automation deleted!",
-			"imageUploaded": "Image uploaded!",
-			"imageDeleted": "Image deleted",
 			"copied": "Automation duplicated",
 			"activate": "Connection activated",
 			"activateerror": "Connection could not be activated",
@@ -3423,8 +3579,6 @@
 		"address_changed": "Address update!",
 		"address_deleted": "Address deleted!",
 		"bank_settings_error": "An error occured while saving the bank account!",
-		"category_image_uploaded": "Image uploaded!",
-		"category_image_deleted": "Image deleted!",
 		"category_saved": "Category saved!",
 		"category_changed": "Category updated!",
 		"category_deleted": "Category deleted!",
@@ -3432,8 +3586,6 @@
 		"cronjob_saved": "Cronjob saved!",
 		"cronjob_changed": "Cronjob updated!",
 		"cronjob_deleted": "Cronjob deleted!",
-		"customer_image_uploaded": "Image uploaded!",
-		"customer_image_deleted": "Image deleted!",
 		"customer_changed": "Customer updated!",
 		"customer_authid_changed": "AuthId updated!",
 		"customer_deleted": "Customer deleted!",
@@ -3443,8 +3595,6 @@
 		"merchant_created": "Merchant created!",
 		"merchant_changed": "Merchant updated!",
 		"merchant_deleted": "Merchant deleted!",
-		"merchant_image_uploaded": "Image uploaded!",
-		"merchant_image_deleted": "Image deleted!",
 		"merchant_save_error": "Error saving winery!",
 		"settings_bank_changed": "Bank account updated!",
 		"settings_cashlink_registered": "Cashlink registered!",
@@ -3454,16 +3604,12 @@
 		"winery_created": "Winery created!",
 		"winery_changed": "Winery updated!",
 		"winery_deleted": "Winery deleted!",
-		"winery_image_uploaded": "Image uploaded!",
-		"winery_image_deleted": "Image deleted!",
 		"winery_save_error": "Error saving winery!",
 		"wine_created": "Wine created!",
 		"wine_changed": "Wine updated!",
 		"wine_duplicated": "Wine duplicated!",
 		"wine_deleted": "Wine deleted!",
 		"wine_image_needed": "You need to save the wine before uploading an image!",
-		"wine_image_uploaded": "Image uploaded!",
-		"wine_image_deleted": "Image deleted!",
 		"wine_expertise_generated": "Expertise generated!",
 		"wine_savours_updated": "Vinou-Gusto updated!",
 		"view_slider_created": "Slider created!",
