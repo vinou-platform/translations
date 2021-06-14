@@ -2572,6 +2572,7 @@
 			"minItemQuantity": "Veuillez entrer un montant supérieur à 0"
 		},
 		"hints": {
+			"bulkWineMixedOrder": "Vos postes incluent à la fois des vins de baril et des produits non vins de baril. Veuillez noter que les vins de baril sont exclus de l'expédition.",
 			"newPayment": "Vous enregistrez un paiement entrant pour la commande {number} du {date} avec une valeur de commande de {gross} brut.",
 			"downPayments": "Jusqu'à présent, un montant de {gross} a été payé en acompte.",
 			"openPayment": "Montant du paiement ouvert: {gross}",

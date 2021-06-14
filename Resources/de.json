@@ -2572,6 +2572,7 @@
 			"minItemQuantity": "Bitte gib für die Anzahl eine Zahl größer als 0 ein"
 		},
 		"hints": {
+			"bulkWineMixedOrder": "Deine Positionen beinhalten sowohl Fassweine als auch nicht-Fassweinprodukte. Bitte beachte, dass Fassweine vom Versand ausgeschlossen sind.",
 			"newPayment": "Du erfasst einen Zahlungseingang für die Bestellung {number} vom {date} mit einem Bestellwert von {gross} Brutto.",
 			"downPayments": "Bisher wurde ein Betrag von {gross} als Anzahlung geleistet.",
 			"openPayment": "Offener Zahlungsbetrag: {gross}",

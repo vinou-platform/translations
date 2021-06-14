@@ -2572,6 +2572,7 @@
 			"minItemQuantity": "Please enter an amount greater than 0"
 		},
 		"hints": {
+			"bulkWineMixedOrder": "Your positions include both bulk wines and non-bulk wine products. Please note that bulk wines are excluded from shipping.",
 			"newPayment": "You record an incoming payment for the order {number} from {date} with an order value of {gross} gross.",
 			"downPayments": "So far, an amount of {gross} has been paid as a down payment.",
 			"openPayment": "Open payment amount: {gross}",

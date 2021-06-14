@@ -2572,6 +2572,7 @@
 			"minItemQuantity": "Inserisci un numero maggiore di 0"
 		},
 		"hints": {
+			"bulkWineMixedOrder": "Le tue posizioni includono sia vini sfusi e anche prodotti vinicoli non sfusi. Si prega di notare che i vini sfusi sono esclusi dalla spedizione.",
 			"newPayment": "Registri un pagamento in entrata per l'ordine {number} da {date} con un valore dell'ordine di {gross} lordo.",
 			"downPayments": "Finora, un importo pari a {gross} grande è stato pagato a titolo di caparra.",
 			"openPayment": "Importo pagamento aperto: {gross}",

@@ -2572,6 +2572,7 @@
 			"minItemQuantity": "Por favor inserta un número más grande que 0 para definir la cantidad"
 		},
 		"hints": {
+			"bulkWineMixedOrder": "Sus posiciones incluyen tanto vinos a granel como productos de vino no a granel. Tenga en cuenta que los vinos a granel están excluidos del envío.",
 			"newPayment": "Registra un pago entrante para el pedido {number} de {date} con un valor de pedido de {gross} bruto.",
 			"downPayments": "Hasta ahora, se ha pagado una cantidad de {gross} como depósito.",
 			"openPayment": "Importe del pago abierto: {gross}",
