@@ -290,6 +290,7 @@
 				"label": "Embotellado",
 				"placeholder": "Buscar embotellado"
 			},
+			"bottlingChargeNumber": "Recibo no. (p. lote no.)",
 			"bulkWine": {
 				"autoCreate": "Generar automáticamente desde la cuenta de vino",
 				"label": "Vino a granel",
@@ -1626,6 +1627,153 @@
 		},
 		"hints": {
 			"stockDistribution": "Stock disponible {stock}, en orden {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Vino de barril",
+			"plural": "Vinos de barrica"
+		},
+		"actions": {
+			"activate": {
+				"main": "Activar vino",
+				"sub": "de barrica"
+			},
+			"create": {
+				"main": "Nuevo vino",
+				"sub": "de barril crear"
+			},
+			"deactivate": {
+				"main": "Desactivar vino",
+				"sub": "de barrica"
+			},
+			"delete": {
+				"main": "Apagar vino",
+				"sub": "de barril"
+			},
+			"edit": {
+				"main": "Editar vino",
+				"sub": "de barrica"
+			},
+			"export": {
+				"barcodeVector": "Descargar EAN-Code como archivo vector",
+				"qrCodeVector": "Descargar QR-Code como archivo vector"
+			},
+			"showPdf": {
+				"main": "Abra la sinopsis",
+				"sub": "en una nueva ventana"
+			}
+		},
+		"fields": {
+			"acidity": "Acidez",
+			"active": "Activo",
+			"alcohol": "Graduación alcoholica",
+			"allergens": {
+				"label": "Alergenos",
+				"placeholder": "Buscar alergenos"
+			},
+			"articleNumber": "Artículo no.",
+			"barcode": "EAN-Code",
+			"bio": "certificado como biológico",
+			"bioRefNumber": {
+				"label": "Número de control ecológico",
+				"placeholder": "ES-ECO-XXX"
+			},
+			"countrycode": "Origen",
+			"cuvee": "Cubierto",
+			"description": "Descripción",
+			"drinkingTemperature": "Temperatura óptima para beber",
+			"grapetypes": {
+				"label": "Variedades de uva",
+				"placeholder": "Buscar variedad de uva"
+			},
+			"gross": "Precio bruto",
+			"image": {
+				"label": "Logotipo de vino de barril",
+				"error": {
+					"notFound": "No ha podido encontrar imágen"
+				}
+			},
+			"maturation": "Extensión",
+			"name": "Nombre",
+			"noStock": "Vaciado",
+			"noStockText": "Si vaciado señala texto (e.j. disponible a partir de...)",
+			"place": "Sitio",
+			"price": "Precio",
+			"prices": "Precios",
+			"qrCode": {
+				"label": "QR-Code",
+				"hint": "El QR-Code va a estar generado después de la primera grabación"
+			},
+			"qrCodeLink": {
+				"label": "Direción de destino para QR-Code",
+				"placeholder": "Direción de destino para QR-Code (si sinopsis de vino está vacío)"
+			},
+			"quality": "Grada de calidad",
+			"qualityNote": "Nota de clasificación adicional",
+			"quantity": "Inventario acutal",
+			"region": "Región de terreno cultivado",
+			"residualSugar": "Azucar residual",
+			"sorting": "Indice de clasificación manual (e.j. para el shop)",
+			"stock": "Inventario disponible",
+			"tags": "Etiquetas",
+			"taste": "Sabor",
+			"terroir": "Suelo",
+			"topseller": "Éxito de ventas",
+			"type": "Tipo",
+			"vegan": "Vegano",
+			"vintage": "Cosecha",
+			"winery": {
+				"label": "Propiedad vinícola",
+				"placeholder": "Buscar propiedad vinícola"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Alergenos",
+			"analysis": "Análisis",
+			"composition": "Composición",
+			"description": "Descripción",
+			"facts": "Datos y hechos",
+			"grapetype": "Variedades de uva",
+			"prices": "Precios",
+			"profile": "Perfil de vino",
+			"qrCode": "QR-Code",
+			"region": "Regionales",
+			"shop": "Página web y ajustes del shop",
+			"stock": "Inventarios"
+		},
+		"views": {
+			"files": {
+				"label": "Documentos",
+				"title": "Datos y documentos de ese vino"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Movimientos de almacén"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "E.j. nombre, país, región, cosecha, artículo no."
+			},
+			"tags": {
+				"label": "Seleccionar tag",
+				"none": "Señalar vinos sin tag"
+			},
+			"type": "Filtrar tipo de vino"
+		},
+		"dialogs": {
+			"delete": "¿Quieres borrar ese vino de barril seguramente?"
+		},
+		"toasts": {
+			"created": "Vino de barril ha sido creado!",
+			"changed": "Vino de barril ha sido editado!",
+			"copied": "Vino de barril ha sido duplicado!",
+			"deleted": "Vino de barril ha sido borrado!",
+			"deleteErrorInUse": "Este Vino de barril no se puede eliminar porque existen documentos comerciales y/o documentos para la contabilidad del vino para este vino de barril."
+		},
+		"hints": {
+			"inStock": "Disponible",
+			"liter": "Litro",
+			"stockDistribution": "Stock disponible {stock} l, reservado (reserved) l, en orden {ordered} l"
 		}
 	},
 	"winecategory": {
@@ -3449,7 +3597,6 @@
 		"merchant_changed": "Comerciante ha sido actualizado!",
 		"merchant_deleted": "Comerciante ha sido borrado!",
 		"merchant_save_error": "Grabación ha sido fallada !",
-		"merchant_image_deleted": "Imágen ha sido borrada!",
 		"settings_bank_changed": "Cuenta bancaria ha sido actualizada!",
 		"settings_cashlink_registered": "Cashlink ha sido registrado!",
 		"settings_cashlink_registererror": "Registración ha sido fallada, talvez el correo electrónico ya no está disponible más!",

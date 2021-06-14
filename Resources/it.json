@@ -290,6 +290,7 @@
 				"label": "Imbottigliamento",
 				"placeholder": "Ricerca imbottigliamento"
 			},
+			"bottlingChargeNumber": "Ricevuta n. (es lotto n.)",
 			"bulkWine": {
 				"autoCreate": "Genera automaticamente dall'account wine",
 				"label": "Vino sfuso",
@@ -1626,6 +1627,153 @@
 		},
 		"hints": {
 			"stockDistribution": "Stock disponibile {stock}, in ordine {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Vino in botte",
+			"plural": "Vini in botte"
+		},
+		"actions": {
+			"activate": {
+				"main": "Attiva il vino",
+				"sub": "in botte"
+			},
+			"create": {
+				"main": "Nuovo vino",
+				"sub": "in botte creato"
+			},
+			"deactivate": {
+				"main": "Disattiva vino",
+				"sub": "in botte"
+			},
+			"delete": {
+				"main": "Spegnere il vino",
+				"sub": "in botte"
+			},
+			"edit": {
+				"main": "Modifica vino",
+				"sub": "in botte"
+			},
+			"export": {
+				"barcodeVector": "Scarica il codice EAN come file vettoriale",
+				"qrCodeVector": "Scarica il codice QR come file vettoriale"
+			},
+			"showPdf": {
+				"main": "Apri sinossi",
+				"sub": "in una nuova finestra"
+			}
+		},
+		"fields": {
+			"acidity": "Contenuto acido",
+			"active": "Attivamente",
+			"alcohol": "Teneur en alcool",
+			"allergens": {
+				"label": "Allergeni",
+				"placeholder": "Ricerca Allergeni"
+			},
+			"articleNumber": "Articolo no.",
+			"barcode": "Codice EAN",
+			"bio": "Organico certificato",
+			"bioRefNumber": {
+				"label": "Número de control ecológico",
+				"placeholder": "IT-ECO-XXX"
+			},
+			"countrycode": "Origine",
+			"cuvee": "Cuvée",
+			"description": "Descrizione",
+			"drinkingTemperature": "Temperatura di consumo",
+			"grapetypes": {
+				"label": "Uva",
+				"placeholder": "Ricerca uva"
+			},
+			"gross": "Prezzo lordo",
+			"image": {
+				"label": "Immagine della bottiglia",
+				"error": {
+					"notFound": "L'immagine non è stata trovata"
+				}
+			},
+			"maturation": "Maturazione",
+			"name": "Nom",
+			"noStock": "Ubriaco",
+			"noStockText": "Il testo veniva visualizzato quando il contenuto era ubriaco (per es. disponibile da...)",
+			"place": "Posizione",
+			"price": "Prezzo",
+			"prices": "Prezzi",
+			"qrCode": {
+				"label": "QR-Code",
+				"hint": "Il codice QR viene generato dopo il salvataggio."
+			},
+			"qrCodeLink": {
+				"label": "Destinazione da memorizzare nel codice qr",
+				"placeholder": "Indirizzo di destinazione per qr-code (Vino passa quando vuoto)"
+			},
+			"quality": "Livello di qualità",
+			"qualityNote": "Ulteriori informazioni sulla classificazione",
+			"quantity": "Stock",
+			"region": "Regione di cultura",
+			"residualSugar": "Zucchero residuo",
+			"sorting": "Indice di ordinamento manuale (per es. per negozio)",
+			"stock": "Inventario disponibile",
+			"tags": "Tag",
+			"taste": "Sapore",
+			"terroir": "Terra",
+			"topseller": "Topseller",
+			"type": "Tipo",
+			"vegan": "Vegan",
+			"vintage": "Annata",
+			"winery": {
+				"label": "Vigna",
+				"placeholder": "Ricerca vigna"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergeni",
+			"analyse": "Analisi",
+			"composition": "Composizione",
+			"description": "Descrizione",
+			"facts": "Dati e fatti",
+			"grapetype": "Uva",
+			"prices": "Prezzo",
+			"profile": "Profilo del vino",
+			"qrCode": "QR-Code",
+			"region": "Regionale",
+			"shop": "Konfigurazione del sito Web e del negoziosite",
+			"stock": "Stock"
+		},
+		"views": {
+			"files": {
+				"label": "Dati",
+				"title": "File e documenti su questo vino in botte"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Movimenti delle stock"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "Ad es. Nom, Paese, regione, annata, articolo no."
+			},
+			"tags": {
+				"label": "Seleziona tag",
+				"none": "Mostra vini senza tag"
+			},
+			"type": "Filtro tipo di vino"
+		},
+		"dialogs": {
+			"delete": "Vuoi veramente cancellare questo vino in botte?"
+		},
+		"toasts": {
+			"created": "Vino in botte è stato creato!",
+			"changed": "Vino in botte è stato modificato!",
+			"copied": "Vino in botte duplicato!",
+			"deleted": "Vino in botte è stato cancellato!",
+			"deleteErrorInUse": "Questo vino non può essere cancellato perché esistono documenti commerciali e/o documenti per la contabilità del vino per questo vino."
+		},
+		"hints": {
+			"inStock": "disponibile",
+			"liter": "Litro",
+			"stockDistribution": "Stock disponibile {stock}, riservato {reserved}, in ordine {ordered}"
 		}
 	},
 	"winecategory": {
@@ -3449,7 +3597,6 @@
 		"merchant_changed": "Commerciante aggiornato!",
 		"merchant_deleted": "Commerciante eliminato!",
 		"merchant_save_error": "Impossibile salvare!",
-		"merchant_image_deleted": "Immagine cancellata!",
 		"settings_bank_changed": "Dati bancari aggiornati!",
 		"settings_cashlink_registered": "Cashlink registrato !",
 		"settings_cashlink_registererror": "Registrazione non riuscita, posta probabilmente già presa!",

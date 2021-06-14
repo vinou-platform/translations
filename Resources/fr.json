@@ -290,6 +290,7 @@
 				"label": "Embouteillage",
 				"placeholder": "Cherche embouteillage"
 			},
+			"bottlingChargeNumber": "Reçu no. (par ex. lot no.)",
 			"bulkWine": {
 				"autoCreate": "Générer automatiquement à partir du compte Wine",
 				"label": "Vin en vrac",
@@ -1626,6 +1627,153 @@
 		},
 		"hints": {
 			"stockDistribution": "Stock disponible {stock}, en ordre {ordered}"
+		}
+	},
+	"bulkWine": {
+		"name": {
+			"singular": "Vin de baril",
+			"plural": "Vins de baril"
+		},
+		"actions": {
+			"activate": {
+				"main": "Activer vin",
+				"sub": "de baril"
+			},
+			"create": {
+				"main": "Créer vin",
+				"sub": "de baril"
+			},
+			"edit": {
+				"main": "Deactiver vin",
+				"sub": "de baril"
+			},
+			"delete": {
+				"main": "Retirer vin",
+				"sub": "de baril"
+			},
+			"edit": {
+				"main": "Modifier vin",
+				"sub": "de baril"
+			},
+			"export": {
+				"barcodeVector": "Téléchargez le code EAN sous forme de fichier vectoriel",
+				"qrCodeVector": "Téléchargez le code QR sous forme de fichier vectoriel"
+			},
+			"showPdf": {
+				"main": "Ouvrir l'exposé",
+				"sub": "dans une nouvelle fenêtre"
+			}
+		},
+		"fields": {
+			"acidity": "Teneur en acide",
+			"active": "Aktif",
+			"alcohol": "Teneur en alcool",
+			"allergens": {
+				"label": "Allergènes",
+				"placeholder": "Rechercher allergènes"
+			},
+			"articleNumber": "No. d'article",
+			"barcode": "Code EAN",
+			"bio": "Certifié biologique",
+			"bioRefNumber": {
+				"label": "Número de control ecológico",
+				"placeholder": "FR-ECO-XXX"
+			},
+			"countrycode": "Origine",
+			"cuvee": "Cuvée",
+			"description": "Description",
+			"drinkingTemperature": "Température de consommation",
+			"grapetypes": {
+				"label": "Cépag",
+				"placeholder": "Rechercher cépag"
+			},
+			"gross": "Prix brut",
+			"image": {
+				"label": "Image de la bouteille",
+				"error": {
+					"notFound": "L'image n'a pas pu être trouvée"
+				}
+			},
+			"inwinelist": "Afficher dans la liste des vins",
+			"maturation": "Maturation",
+			"name": "Nom",
+			"nostock": "Pas de stock",
+			"nostocktext": "Texte affiché s'il n'y a pas de stock (p.ex. disponible de...)",
+			"packageQuantity": "Equivalent emballage (bouteilles 0,75l)",
+			"place": "Emplacement",
+			"price": "Prix",
+			"prices": "Prix",
+			"public_wines": "Vins publics",
+			"qrcode": "Code QR",
+			"qrcode_create": "Le code QR est généré après la première sauvegarde.",
+			"qrlink": "Adresse de destination pour le code QR",
+			"qrlinkempty": "Adresse de destination pour le code QR (Passe du vin si vide)",
+			"quality": "Niveau de qualité",
+			"quality_note": "Informations de classification supplémentaires",
+			"quantity": "Stock",
+			"region": "Région de culture",
+			"sorting": "Index de tri manuel (p.ex. pour le magasin)",
+			"stock": "Inventaire disponible",
+			"sweetness": "Sucre résiduel",
+			"tags": "Mots clés",
+			"taste": "Saveur",
+			"terroir": "Terroir",
+			"topseller": "Topseller",
+			"type": "Type",
+			"vegan": "Végétalien",
+			"vintage": "Millésime",
+			"weight": "Poids (en g)",
+			"winery": {
+				"label": "Établissement vinicole",
+				"placeholder": "Rechercher établissement vinicole"
+			}
+		},
+		"fieldSets": {
+			"allergens": "Allergènes",
+			"analysis": "Analyse",
+			"composition": "Composition",
+			"description": "Description",
+			"facts": "Données et faits",
+			"grapetype": "Cépage",
+			"prices": "Prix",
+			"profile": "Profil de vin",
+			"qrCode": "Code QR",
+			"region": "Régional",
+			"shop": "Configuration du site Web & de la boutique",
+			"stock": "Stock"
+		},
+		"views": {
+			"files": {
+				"label": "Fichiers",
+				"title": "Fichiers et documents sur ce vin"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Mouvements de stock"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "P.ex. nom, pays, région, millésime, no. d'article"
+			},
+			"tags": {
+				"label": "Sélectionnez tag",
+				"none": "Afficher vins sans tag"
+			},
+			"type": "Filtrer type du vin"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ce vin de baril?"
+		},
+		"toasts": {
+			"created": "Vin de baril créé!",
+			"changed": "Vin de baril édité!",
+			"copied": "Vin de baril dupliqué!",
+			"deleted": "Vin de baril supprimé!",
+			"deleteErrorInUse": "Ce vin de baril ne peut pas être supprimé car des documents commerciaux et/ou des documents de comptabilité du vin existent pour ce vin de baril."
+		},
+		"hints": {
+			"instock": "En stock",
+			"liter": "Litre",
+			"stockDistribution": "Stock disponible {stock}, réservé {reserved}, en ordre {ordered}"
 		}
 	},
 	"winecategory": {
@@ -3449,7 +3597,6 @@
 		"merchant_changed": "Marchand mis à jour!",
 		"merchant_deleted": "Marchand supprimé!",
 		"merchant_save_error": "Échec de la enregistrement!",
-		"merchant_image_deleted": "Image supprimée!",
 		"settings_bank_changed": "Coordonnées bancaires mises à jour!",
 		"settings_cashlink_registered": "Cashlink enregistré!",
 		"settings_cashlink_registererror": "Enregistrement échoué, courrier éventuellement déjà pris!",

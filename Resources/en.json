@@ -290,6 +290,7 @@
 				"label": "Bottling",
 				"placeholder": "Search bottling"
 			},
+			"bottlingChargeNumber": "Receipt no. (e.g. batch no.)",
 			"bulkWine": {
 				"autoCreate": "Generate automatically from wine account",
 				"label": "Bulk wine",
@@ -1743,7 +1744,7 @@
 		},
 		"viels": {
 			"files": {
-				"lable": "Files",
+				"label": "Files",
 				"title": "Files regarding this wine"
 			},
 			"savours": "Vinou-Gusto",
