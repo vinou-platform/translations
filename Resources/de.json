@@ -2201,6 +2201,36 @@
 			"created": "Lieferschein erstellt!"
 		}
 	},
+	"bulkWineDeliveryNote": {
+		"name": {
+			"singular": "Fasswein Lieferschein",
+			"plural": "Fasswein Lieferscheine"
+		},
+		"actions": {
+			"create": {
+				"main": "Fasswein Lieferschein",
+				"sub": "erzeugen"
+			},
+			"download": {
+				"main": "Fasswein Lieferschein",
+				"sub": "herunterladen"
+			},
+			"print": {
+				"main": "Fasswein Lieferschein",
+				"sub": "drucken"
+			},
+			"show": {
+				"main": "Fasswein Lieferschein",
+				"sub": "anzeigen"
+			}
+		},
+		"dialogs": {
+			"create": "Fasswein Lieferschein jetzt erstellen?"
+		},
+		"toasts": {
+			"created": "Fasswein Lieferschein erstellt!"
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Rechnung",

@@ -2201,6 +2201,36 @@
 			"created": "Delivery note generated!"
 		}
 	},
+	"bulkWineDeliveryNote": {
+		"name": {
+			"singular": "Bulk wine delivery note",
+			"plural": "Bulk wine delivery notes"
+		},
+		"actions": {
+			"create": {
+				"main": "Create",
+				"sub": "bulk wine delivery note"
+			},
+			"download": {
+				"main": "Download",
+				"sub": "bulk wine delivery note"
+			},
+			"print": {
+				"main": "Print",
+				"sub": "bulk wine delivery note"
+			},
+			"show": {
+				"main": "Show",
+				"sub": "bulk wine delivery note"
+			}
+		},
+		"dialogs": {
+			"create": "Create bulk wine delivery note now?"
+		},
+		"toasts": {
+			"created": "Bulk wine delivery note generated!"
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Invoice",

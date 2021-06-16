@@ -2201,6 +2201,36 @@
 			"created": "Nota di consegna creata!"
 		}
 	},
+	"bulkWineDeliveryNote": {
+		"name": {
+			"singular": "Bolla di consegna di vino in botte",
+			"plural": "Bolle di consegna di vino in botte"
+		},
+		"actions": {
+			"create": {
+				"main": "Crea",
+				"sub": "bolla di consegna di vino in botte"
+			},
+			"download": {
+				"main": "Scarica",
+				"sub": "bolla di consegna di vino in botte"
+			},
+			"print": {
+				"main": "Stampa",
+				"sub": "bolla di consegna di vino in botte"
+			},
+			"show": {
+				"main": "Visualizza",
+				"sub": "bolla di consegna di vino in botte"
+			}
+		},
+		"dialogs": {
+			"create": "Crea bolla di consegna di vino in botte ora?"
+		},
+		"toasts": {
+			"created": "Nota di consegna di vino in botte creata!"
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Fattura",

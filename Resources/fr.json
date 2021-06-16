@@ -2201,6 +2201,36 @@
 			"created": "Bon de livraison créé!"
 		}
 	},
+	"bulkWineDeliveryNote": {
+		"name": {
+			"singular": "Bon de livraison de vin de baril",
+			"plural": "Bons de livraison de vin de baril"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer",
+				"sub": "bon de livraison de vin de baril"
+			},
+			"download": {
+				"main": "Télécharger",
+				"sub": "bon de livraison de vin de baril"
+			},
+			"print": {
+				"main": "Imprimer",
+				"sub": "bon de livraison de vin de baril"
+			},
+			"show": {
+				"main": "Afficher",
+				"sub": "bon de livraison de vin de baril"
+			}
+		},
+		"dialogs": {
+			"create": "Créer bon de livraison de vin de baril maintenant?"
+		},
+		"toasts": {
+			"created": "Bon de livraison de vin de baril créé!"
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Rechnung",

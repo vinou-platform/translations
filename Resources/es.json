@@ -2201,6 +2201,36 @@
 			"created": "Boletín de entrega ha sido creado!"
 		}
 	},
+	"bulkWineDeliveryNote": {
+		"name": {
+			"singular": "Nota de entrega de vino de barril",
+			"plural": "Notas de entrega de vino de barril"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear",
+				"sub": "nota de entrega de vino de barril"
+			},
+			"download": {
+				"main": "Descargar",
+				"sub": "nota de entrega de vino de barril"
+			},
+			"print": {
+				"main": "Imprimir",
+				"sub": "nota de entrega de vino de barril"
+			},
+			"show": {
+				"main": "Mostrar",
+				"sub": "nota de entrega de vino de barril"
+			}
+		},
+		"dialogs": {
+			"create": "Generar el boletín de entrega de vino de barril ahora?"
+		},
+		"toasts": {
+			"created": "Boletín de entrega de vino de barril ha sido creado!"
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Factura",
