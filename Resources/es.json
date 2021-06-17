@@ -625,7 +625,7 @@
 		"types": {
 			"stainlessSteel": {
 				"name": "Acero inoxidable",
-				"description": "p.e.: inox, acero VA"
+				"description": "p.ej.: inox, acero VA"
 			},
 			"metal": {
 				"name": "Metal",
@@ -2203,10 +2203,15 @@
 			}
 		},
 		"fields": {
-			"number": "Cancelación no."
+			"number": "Cancelación no.",
+			"reason": {
+				"label": "Razón de la cancelación",
+				"placeholder": "p.ej.: rotura, pérdida, reclamación de calidad"
+			},
+			"undoStock": "¿Deshacer cambio de stock?"
 		},
 		"dialogs": {
-			"create": "CUIDADO: Generar el abono ahora y cancelar orden?"
+			"create": "CUIDADO: ¿Generar el abono ahora y cancelar orden?"
 		},
 		"toasts": {
 			"created": "Abono ha sido creado y la orden ha sido anulada!"

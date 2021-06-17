@@ -2203,7 +2203,12 @@
 			}
 		},
 		"fields": {
-			"number": "Cancellation no."
+			"number": "Cancellation no.",
+			"reason": {
+				"label": "Reason for cancellation",
+				"placeholder": "e.g.: breakage, loss, quality concerns"
+			},
+			"undoStock": "Undo stock change?"
 		},
 		"dialogs": {
 			"create": "Warning: Do you really want to cancel the selected order and create a credit voucher?"

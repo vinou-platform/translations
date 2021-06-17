@@ -2203,7 +2203,12 @@
 			}
 		},
 		"fields": {
-			"number": "Stornonr."
+			"number": "Stornonr.",
+			"reason": {
+				"label": "Stornogrund",
+				"placeholder": "z.B.: Bruch, Verlust, Qualitätsbeanstandung"
+			},
+			"undoStock": "Bestand zurückbuchen?"
 		},
 		"dialogs": {
 			"create": "ACHTUNG: Gutschrift jetzt erstellen und Bestellung stornieren?"

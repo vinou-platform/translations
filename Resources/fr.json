@@ -2203,7 +2203,12 @@
 			}
 		},
 		"fields": {
-			"number": "Annulation no."
+			"number": "Annulation no.",
+			"reason": {
+				"label": "Raison pour l'annulation",
+				"placeholder": "ex.: casse, perte, réclamation qualité"
+			},
+			"undoStock": "Annuler le changement de stock?"
 		},
 		"dialogs": {
 			"create": "ATTENTION: Créer crédit maintenant et annuler ordre?"

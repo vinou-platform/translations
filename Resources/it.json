@@ -2203,7 +2203,12 @@
 			}
 		},
 		"fields": {
-			"number": "Cancellazione n."
+			"number": "Cancellazione n.",
+			"reason": {
+				"label": "Motivo della cancellazione",
+				"placeholder": "es.: rottura, smarrimento, reclamo di qualità"
+			},
+			"undoStock": "Annulla cambio stock?"
 		},
 		"dialogs": {
 			"create": "Attenzione: Crea credito ora e cancellare ordine?"
