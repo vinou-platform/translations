@@ -615,14 +615,59 @@
 				"sub": "creare"
 			}
 		},
-		"types": {
+		"typeCategories": {
+			"composite": "Materiale composito",
 			"metal": "Metallo",
+			"stone": "Pietra",
 			"wood": "Legna",
-			"plastic": "Plastica/materiali compositi",
-			"barrique": "Barrique",
-			"clay": "Argilla",
-			"beton": "Cemento",
-			"glas": "Vetro"
+			"other": "Miscellaneo"
+		},
+		"types": {
+			"stainlessSteel": {
+				"name": "Acciaio inossidabile",
+				"description": "es.: inox, acciaio VA"
+			},
+			"metal": {
+				"name": "Metallo",
+				"description": "Altri"
+			},
+			"barrique": {
+				"name": "Barrique",
+				"description": "Botte di rovere 225 litri"
+			},
+			"wood": {
+				"name": "Legna",
+				"description": "Altri"
+			},
+			"gfrp": {
+				"name": "VTR",
+				"description": "Vetroresina, GFRP"
+			},
+			"ibc": {
+				"name": "IBC",
+				"description": "Serbatoio reticolare, intermediate bulk container"
+			},
+			"composite": {
+				"name": "Materiale composito",
+				"description": "Altri compositi e plastiche"
+			},
+			"clay": {
+				"name": "Argilla"
+			},
+			"concrete": {
+				"name": "Cemento"
+			},
+			"granite": {
+				"name": "Concreto"
+			},
+			"stone": {
+				"name": "Pietra",
+				"description": "Altri"
+			},
+			"glass": {
+				"name": "Vetro",
+				"description": "Altri"
+			}
 		},
 		"views": {
 			"edit": {

@@ -615,14 +615,59 @@
 				"sub": "conteneur"
 			}
 		},
-		"types": {
+		"typeCategories": {
+			"composite": "Matériau composite",
 			"metal": "Métal",
+			"stone": "Pierre",
 			"wood": "Bois",
-			"plastic": "Plastique/Matiére du composite",
-			"barrique": "Barrique",
-			"clay": "Argile",
-			"beton": "Béton",
-			"glas": "Berre"
+			"other": "Divers"
+		},
+		"types": {
+			"stainlessSteel": {
+				"name": "Acier inoxydable",
+				"description": "ex.: inox, acier VA"
+			},
+			"metal": {
+				"name": "Métal",
+				"description": "Autres"
+			},
+			"barrique": {
+				"name": "Barrique",
+				"description": "Fût de chêne 225 litres"
+			},
+			"wood": {
+				"name": "Bois",
+				"description": "Autres"
+			},
+			"gfrp": {
+				"name": "PRV",
+				"description": "Plastique à renfort de verre, GFRP"
+			},
+			"ibc": {
+				"name": "GRV",
+				"description": "Grand récipient pour vrac, IBC"
+			},
+			"composite": {
+				"name": "Matériau composite",
+				"description": "Autres composites et plastiques"
+			},
+			"clay": {
+				"name": "Argile"
+			},
+			"concrete": {
+				"name": "Béton"
+			},
+			"granite": {
+				"name": "Granit"
+			},
+			"stone": {
+				"name": "Pierre",
+				"description": "Autres"
+			},
+			"glass": {
+				"name": "Verre",
+				"description": "Autres"
+			}
 		},
 		"views": {
 			"edit": {

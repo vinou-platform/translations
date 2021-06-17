@@ -615,14 +615,59 @@
 				"sub": "crear"
 			}
 		},
+		"typeCategories": {
+			"composite": "Material compuesto",
+			"metal": "Metal",
+			"stone": "Roca",
+			"wood": "Madera",
+			"other": "Misceláneo"
+		},
 		"types": {
-			"metal": "metal",
-			"wood": "madera",
-			"plastic": "plástico/envases",
-			"barrique": "barrica",
-			"clay": "barro",
-			"beton": "concreto",
-			"glas": "vidrio"
+			"stainlessSteel": {
+				"name": "Acero inoxidable",
+				"description": "p.e.: inox, acero VA"
+			},
+			"metal": {
+				"name": "Metal",
+				"description": "Otros"
+			},
+			"barrique": {
+				"name": "Barrique",
+				"description": "Barril de roble 225 litros"
+			},
+			"wood": {
+				"name": "Madera",
+				"description": "Otros"
+			},
+			"gfrp": {
+				"name": "PRFV",
+				"description": "Plástico reforzado con fibra de vidrio, GFRP"
+			},
+			"ibc": {
+				"name": "GRG",
+				"description": "Gran recipiente para mercancías a granel, IBC"
+			},
+			"composite": {
+				"name": "Material compuesto",
+				"description": "Otros composites y plásticos"
+			},
+			"clay": {
+				"name": "Barro"
+			},
+			"concrete": {
+				"name": "Concreto"
+			},
+			"granite": {
+				"name": "Granito"
+			},
+			"stone": {
+				"name": "Roca",
+				"description": "Otros"
+			},
+			"glass": {
+				"name": "Vidrio",
+				"description": "Otros"
+			}
 		},
 		"views": {
 			"edit": {

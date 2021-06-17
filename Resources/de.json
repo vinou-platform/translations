@@ -615,14 +615,59 @@
 				"sub": "anlegen"
 			}
 		},
-		"types": {
+		"typeCategories": {
+			"composite": "Verbundmaterial",
 			"metal": "Metall",
+			"stone": "Stein",
 			"wood": "Holz",
-			"plastic": "Plastik/Verbundmaterial",
-			"barrique": "Barrique",
-			"clay": "Ton",
-			"beton": "Beton",
-			"glas": "Glas"
+			"other": "Sonstiges"
+		},
+		"types": {
+			"stainlessSteel": {
+				"name": "Edelstahl",
+				"description": "z.B.: Rostfreier Stahl, Inox, VA-Stahl"
+			},
+			"metal": {
+				"name": "Metall",
+				"description": "Sonstige"
+			},
+			"barrique": {
+				"name": "Barrique",
+				"description": "Eichenfass 225 Liter"
+			},
+			"wood": {
+				"name": "Holz",
+				"description": "Sonstige"
+			},
+			"gfrp": {
+				"name": "GFK",
+				"description": "Glasfaserverstärkter Kunststoff"
+			},
+			"ibc": {
+				"name": "IBC",
+				"description": "Gittertank"
+			},
+			"composite": {
+				"name": "Verbundmaterial",
+				"description": "Sonstige Verbundstoffe und Plastik"
+			},
+			"clay": {
+				"name": "Ton"
+			},
+			"concrete": {
+				"name": "Beton"
+			},
+			"granite": {
+				"name": "Granit"
+			},
+			"stone": {
+				"name": "Stein",
+				"description": "Sonstige"
+			},
+			"glass": {
+				"name": "Glas",
+				"description": "Sonstige"
+			}
 		},
 		"views": {
 			"edit": {

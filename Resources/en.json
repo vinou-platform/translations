@@ -615,14 +615,59 @@
 				"sub": "barrel"
 			}
 		},
-		"types": {
+		"typeCategories": {
+			"composite": "Composite material",
 			"metal": "Metal",
+			"stone": "Stone",
 			"wood": "Wood",
-			"plastic": "Plastic/Composite",
-			"barrique": "Barrique",
-			"clay": "Clay",
-			"beton": "Beton",
-			"glas": "Glas"
+			"other": "Miscellaneous"
+		},
+		"types": {
+			"stainlessSteel": {
+				"name": "Stainless steel",
+				"description": "e.g.: inox, VA steel"
+			},
+			"metal": {
+				"name": "Metal",
+				"description": "Other"
+			},
+			"barrique": {
+				"name": "Barrique",
+				"description": "Oak barrel 225 liters"
+			},
+			"wood": {
+				"name": "Wood",
+				"description": "Other"
+			},
+			"gfrp": {
+				"name": "GFRP",
+				"description": "Glass-fibre reinforced plastic"
+			},
+			"ibc": {
+				"name": "IBC",
+				"description": "Intermediate bulk container"
+			},
+			"composite": {
+				"name": "Composite material",
+				"description": "Other composites and plastics"
+			},
+			"clay": {
+				"name": "Clay"
+			},
+			"concrete": {
+				"name": "Beton"
+			},
+			"granite": {
+				"name": "Granite"
+			},
+			"stone": {
+				"name": "Stein",
+				"description": "Other"
+			},
+			"glass": {
+				"name": "Glass",
+				"description": "Other"
+			}
 		},
 		"views": {
 			"edit": {
