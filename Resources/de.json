@@ -3556,13 +3556,21 @@
 			"title": "Account-Einstellungen",
 			"description": "Verwalte hier Deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
 		},
-		"membership": {
-			"title": "Mitgliedschaft",
-			"description": "Das ist der Status Deiner aktuellen Mitgliedschaft."
+		"automations": {
+			"title": "Automatisierungen",
+			"description": "Mit Hilfe von Automatisierungen kannst Du anderen Vinou-Mitgliedern ermöglichen bestimmte Dinge vollautomatisch mit dir auszuführen. z.B. Weine von Weingütern auf deine Webseite freischalten."
 		},
 		"customer": {
 			"title": "Rechnungsinformationen",
 			"description": "Hier verwaltest Du die Daten für Deine Vinou-Mitgliedschaft."
+		},
+		"mail": {
+			"title": "E-Mail Setup",
+			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen."
+		},
+		"membership": {
+			"title": "Mitgliedschaft",
+			"description": "Das ist der Status Deiner aktuellen Mitgliedschaft."
 		},
 		"mycompanies": {
 			"merchants": {
@@ -3573,6 +3581,14 @@
 				"title": "Mein Weingut",
 				"description": "Lege hier zusätzliche Weingüter an, um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
 			}
+		},
+		"packagings": {
+			"title": "Versandoptionen",
+			"description": "Konfiguriere Deine Versandoptionen, um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig, um Deinen Vinou-Shop zu betreiben."
+		},
+		"packagingunits": {
+			"title": "Versandeinheiten",
+			"description": "Konfiguriere die Kartonagen, die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
 		},
 		"payments": {
 			"title": "Zahlungsmethoden",
@@ -3604,14 +3620,6 @@
 				}
 			}
 		},
-		"packagings": {
-			"title": "Versandoptionen",
-			"description": "Konfiguriere Deine Versandoptionen, um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig, um Deinen Vinou-Shop zu betreiben."
-		},
-		"packagingunits": {
-			"title": "Versandeinheiten",
-			"description": "Konfiguriere die Kartonagen, die für Deinen Versand genutzt werden. Die Versandeinheiten werden zur Berechnung der Versandaufkleber benötigt."
-		},
 		"priceranges": {
 			"title": "Preisklassen",
 			"description": "Konfiguriere Deine Preisklassen, um individuelle Kundenpreise festlegen zu können."
@@ -3637,23 +3645,9 @@
 			"title": "Vorlagen",
 			"description": "Im Vinou-Office können alle PDF-Dokumente mit einer individuellen Vorlage versehen werden."
 		},
-		"mail": {
-			"title": "E-Mail Setup",
-			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen."
-		},
 		"texts": {
 			"title": "Texte",
 			"description": "Lege Texte an, um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst Du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in Deinem eigenen Online-Shop verwendet werden."
-		},
-		"automations": {
-			"title": "Automatisierungen",
-			"description": "Mit Hilfe von Automatisierungen kannst Du anderen Vinou-Mitgliedern ermöglichen bestimmte Dinge vollautomatisch mit dir auszuführen. z.B. Weine von Weingütern auf deine Webseite freischalten."
-		},
-		"messages": {
-			"hints": {
-				"nomerchants": "Keine Händlerinformationen verfügbar",
-				"nowineries": "Keine Weingutsinformationen verfügbar"
-			}
 		}
 	},
 	"toasts": {

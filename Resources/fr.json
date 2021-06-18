@@ -3556,13 +3556,21 @@
 			"title": "Cofiguration du compte",
 			"description": "Gérez ici votre adresse de facturation, votre abonnement, vos coordonnées bancaires, etc."
 		},
-		"membership": {
-			"title": "Abonnement",
-			"description": "C'est le statut de votre abonnement actuel"
+		"automations": {
+			"title": "Automations",
+			"description": "Avec l'aide de l'automatisation, vous pouvez permettre à d'autres membres de Vinou de faire certaines choses de manière entièrement automatique avec vous, par exemple activer les vins de vignobles sur votre site Web."
 		},
 		"customer": {
 			"title": "Informations de facturation",
 			"description": "Ici, vous gérez vos données pour votre abonnement à Vinou. Ces informations ne seront pas affichées publiquement."
+		},
+		"mail": {
+			"title": "Configuration du courriel",
+			"description": "Vinou et votre boutique en ligne envoient des e-mails régulièrement ou automatiquement via certains processus. Pour l'expédition, vous pouvez déposer ici les paramètres d'une boîte aux lettres."
+		},
+		"membership": {
+			"title": "Abonnement",
+			"description": "C'est le statut de votre abonnement actuel"
 		},
 		"mycompanies": {
 			"merchants": {
@@ -3573,6 +3581,14 @@
 				"title": "Mon Établissement vinicole",
 				"description": "Créez des établissements vinicoles supplémentaires ici, par exemple pour vendre vos vins en tant que vinerie ou embouteilleur. Cette information est visible publiquement sur le réseau Vinou."
 			}
+		},
+		"packagings": {
+			"title": "Option d'expédition",
+			"description": "Configurez vos options d'expédition pour calculer les coûts d'expédition individuels. Ceci est nécessaire pour faire fonctionner votre Vinou-Shop."
+		},
+		"packagingunits": {
+			"title": "Unités d'expédition",
+			"description": "Configurez les boîtes utilisées pour votre envoi. Les unités d'expédition sont nécessaires pour calculer les étiquettes d'expédition."
 		},
 		"payments": {
 			"title": "Méthodes de paiement",
@@ -3604,14 +3620,6 @@
 				}
 			}
 		},
-		"packagings": {
-			"title": "Option d'expédition",
-			"description": "Configurez vos options d'expédition pour calculer les coûts d'expédition individuels. Ceci est nécessaire pour faire fonctionner votre Vinou-Shop."
-		},
-		"packagingunits": {
-			"title": "Unités d'expédition",
-			"description": "Configurez les boîtes utilisées pour votre envoi. Les unités d'expédition sont nécessaires pour calculer les étiquettes d'expédition."
-		},
 		"priceranges": {
 			"title": "Classe de prix",
 			"description": "Configurez vos classe de prix pour définir les prix des clients individuels."
@@ -3637,23 +3645,9 @@
 			"title": "Modèles",
 			"description": "Dans Vinou, tous les documents PDF peuvent être fournis avec un modèle individuel."
 		},
-		"mail": {
-			"title": "Configuration du courriel",
-			"description": "Vinou et votre boutique en ligne envoient des e-mails régulièrement ou automatiquement via certains processus. Pour l'expédition, vous pouvez déposer ici les paramètres d'une boîte aux lettres."
-		},
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
-		},
-		"automations": {
-			"title": "Automations",
-			"description": "Avec l'aide de l'automatisation, vous pouvez permettre à d'autres membres de Vinou de faire certaines choses de manière entièrement automatique avec vous, par exemple activer les vins de vignobles sur votre site Web."
-		},
-		"messages": {
-			"hints": {
-				"nomerchants": "Aucune information de marchand disponible",
-				"nowineries": "Aucune information d'établissement vinicole disponible"
-			}
 		}
 	},
 	"toasts": {

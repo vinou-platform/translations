@@ -3556,13 +3556,21 @@
 			"title": "Ajustes de cuenta",
 			"description": "Administra tu direción de cuenta, membresía, cuenta bancaria etc."
 		},
-		"membership": {
-			"title": "Membresía",
-			"description": "Eso es el estado actual de tu membresía"
+		"automations": {
+			"title": "Automatizaciones",
+			"description": "Con la ayuda de la automatización, puede permitir que otros miembros de Vinou hagan ciertas cosas de forma totalmente automática con usted, por ejemplo, activar vinos de bodegas en su sitio web."
 		},
 		"customer": {
 			"title": "Informaciones de cuenta",
 			"description": "Aqui administras tus datos de tu membresía de Vinou. Esas informaciones no se ve en público."
+		},
+		"mail": {
+			"title": "Ajustes de E-Mail",
+			"description": "Vinou y también tu shop online envian correos electrónicos automaticamente o a causa de ciertos procesos. Para el envío puedes depositar auqi ajustes para una casilla postal."
+		},
+		"membership": {
+			"title": "Membresía",
+			"description": "Eso es el estado actual de tu membresía"
 		},
 		"mycompanies": {
 			"merchants": {
@@ -3573,6 +3581,14 @@
 				"title": "Mi vinoteca",
 				"description": "Crea más propiedades vinicolas aqui para e.j. vender tus vinos como propiedad vinícola o como embotellador. Esas informaciones se puede ver publicamente en la red de Vinou."
 			}
+		},
+		"packagings": {
+			"title": "Opciones de envío",
+			"description": "Configura tus opciones de envío para poder calcular los gastos de envío personales. Entre otras cosas es necesario para tener tu shop de Vinou."
+		},
+		"packagingunits": {
+			"title": "Unidades de envío",
+			"description": "Configura las cajas las cuales están usadas para tu envío. Las unidades de envío se necesita para el cálculo de las etiquetas de envío."
 		},
 		"payments": {
 			"title": "Metodos de pago",
@@ -3604,14 +3620,6 @@
 				}
 			}
 		},
-		"packagings": {
-			"title": "Opciones de envío",
-			"description": "Configura tus opciones de envío para poder calcular los gastos de envío personales. Entre otras cosas es necesario para tener tu shop de Vinou."
-		},
-		"packagingunits": {
-			"title": "Unidades de envío",
-			"description": "Configura las cajas las cuales están usadas para tu envío. Las unidades de envío se necesita para el cálculo de las etiquetas de envío."
-		},
 		"priceranges": {
 			"title": "Categorias de precio",
 			"description": "Configura tus categorias de precio para que puedas establecer tus precios individuales para tus precios de clientes."
@@ -3637,23 +3645,9 @@
 			"title": "Modelos",
 			"description": "En Vinou es posible equipar todos los documentos de PDF con un modelo individual."
 		},
-		"mail": {
-			"title": "Ajustes de E-Mail",
-			"description": "Vinou y también tu shop online envian correos electrónicos automaticamente o a causa de ciertos procesos. Para el envío puedes depositar auqi ajustes para una casilla postal."
-		},
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
-		},
-		"automations": {
-			"title": "Automatizaciones",
-			"description": "Con la ayuda de la automatización, puede permitir que otros miembros de Vinou hagan ciertas cosas de forma totalmente automática con usted, por ejemplo, activar vinos de bodegas en su sitio web."
-		},
-		"messages": {
-			"hints": {
-				"nomerchants": "No hay informaciones del comerciante disponibles",
-				"nowineries": "No hay informaciones de la propiedad vinícola disponibles"
-			}
 		}
 	},
 	"toasts": {
