@@ -1322,6 +1322,9 @@
 		},
 		"actions": {
 			"load-more": "Load more ..."
+		},
+		"toasts": {
+			"settingsChanged": "Network settings changed!"
 		}
 	},
 	"winery": {
@@ -3580,6 +3583,15 @@
 			"wineries": {
 				"title": "My winery",
 				"description": "Define additiona wineries to sell your wines for example as winery or as bottler. These are public informations shown within the Vinou network."
+			}
+		},
+		"network": {
+			"title": "My Network",
+			"description": "Define, how you would like to use the Vinou network.",
+			"orderForwarding": {
+				"title": "Order forwarding",
+				"description": "Activate order forwarding for connected articles from Vinou network and automatically create orders at your connected wineries.",
+				"hint": "After activation, order forwarding must also be activated for each wine."
 			}
 		},
 		"packagings": {

@@ -1322,6 +1322,9 @@
 		},
 		"actions": {
 			"load-more": "Carica di più..."
+		},
+		"toasts": {
+			"settingsChanged": "Impostazioni di rete modificate!"
 		}
 	},
 	"winery": {
@@ -3580,6 +3583,15 @@
 			"wineries": {
 				"title": "La mia vigna",
 				"description": "Crea qui altre vigna, ad es. per vendere i tuoi vini come azienda vinicola o imbottigliatrice. Queste informazioni sono pubblicamente visibili sulla rete Vinou."
+			}
+		},
+		"network": {
+			"title": "La mia rete",
+			"description": "Determina qui come desideri utilizzare la rete Vinou.",
+			"orderForwarding": {
+				"title": "Noltro dell’ordine",
+				"description": "Attiva l’inoltro degli ordini per gli articoli in rete e attiva automaticamente gli ordini nei tuoi magazzini collegati in rete.",
+				"hint": "L’inoltro automatico degli ordini deve essere attivato singolarmente per i tuoi vini."
 			}
 		},
 		"packagings": {

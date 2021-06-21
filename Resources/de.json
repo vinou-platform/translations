@@ -1322,6 +1322,9 @@
 		},
 		"actions": {
 			"load-more": "Mehr laden ..."
+		},
+		"toasts": {
+			"settingsChanged": "Netzwerkeinstellungen geändert!"
 		}
 	},
 	"winery": {
@@ -3580,6 +3583,15 @@
 			"wineries": {
 				"title": "Mein Weingut",
 				"description": "Lege hier zusätzliche Weingüter an, um z.B. Deine Weine als Weingut oder Abfüller zu vertreiben. Diese Informationen sind im Vinou-Netzwerk öffentlich sichtbar."
+			}
+		},
+		"network": {
+			"title": "Mein Netzwerk",
+			"description": "Lege hier fest, wie du das Vinou Netzwerk nutzen möchtest.",
+			"orderForwarding": {
+				"title": "Bestellweiterleitung",
+				"description": "Aktiviere die Bestellweiterleitung für Artikel aus dem Netzwerk und löse automatisch Bestellungen bei Deinen, über das Netzwerk verbundenen Weingütern aus.",
+				"hint": "Die automatische Bestellweiterleitung muss anschließend noch einzeln für Deine Weine aktiviert."
 			}
 		},
 		"packagings": {

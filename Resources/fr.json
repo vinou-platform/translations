@@ -1322,6 +1322,9 @@
 		},
 		"actions": {
 			"load-more": "Charger plus ..."
+		},
+		"toasts": {
+			"settingsChanged": "Paramètres réseau modifiés!"
 		}
 	},
 	"winery": {
@@ -3580,6 +3583,15 @@
 			"wineries": {
 				"title": "Mon Établissement vinicole",
 				"description": "Créez des établissements vinicoles supplémentaires ici, par exemple pour vendre vos vins en tant que vinerie ou embouteilleur. Cette information est visible publiquement sur le réseau Vinou."
+			}
+		},
+		"network": {
+			"title": "Mon réseau",
+			"description": "Précisez ici comment vous souhaitez utiliser le réseau Vinou.",
+			"orderForwarding": {
+				"title": "Transfert de commande",
+				"description": "Activez la réexpédition des commandes des articles du réseau et déclenchez automatiquement les commandes dans vos domaines viticoles connectés via le réseau.",
+				"hint": "La réexpédition automatique de commande doit alors être activée individuellement pour vos vins."
 			}
 		},
 		"packagings": {

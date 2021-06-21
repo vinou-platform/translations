@@ -1322,6 +1322,9 @@
 		},
 		"actions": {
 			"load-more": "Cargar más ..."
+		},
+		"toasts": {
+			"settingsChanged": "¡La configuración de red cambió!"
 		}
 	},
 	"winery": {
@@ -3580,6 +3583,15 @@
 			"wineries": {
 				"title": "Mi vinoteca",
 				"description": "Crea más propiedades vinicolas aqui para e.j. vender tus vinos como propiedad vinícola o como embotellador. Esas informaciones se puede ver publicamente en la red de Vinou."
+			}
+		},
+		"network": {
+			"title": "Mi red",
+			"description": "Determine aquí cómo desea utilizar la red Vinou.",
+			"orderForwarding": {
+				"title": "Reenvío de pedidos",
+				"description": "Active el reenvío de pedidos para artículos de la red y active automáticamente pedidos en sus bodegas conectadas a través de la red.",
+				"hint": "El reenvío automático de pedidos debe activarse individualmente para sus vinos."
 			}
 		},
 		"packagings": {
