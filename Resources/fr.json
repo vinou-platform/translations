@@ -310,8 +310,9 @@
 			"lossVolume": "Perte",
 			"marc": "Marc",
 			"note": "Note / utilisation",
-			"price": "Prix d'achat",
+			"price": "Prix ​​de vente",
 			"purchaseNote": "Note / fournisseur",
+			"purchasePrice": "Prix d'achat",
 			"purpose": {
 				"label": "Utilisation",
 				"placeholder": " "
@@ -468,6 +469,10 @@
 				"main": "Sortie de",
 				"sub": "vin en vrac ERP"
 			},
+			"createBulkWineSale": {
+				"main": "Vente de",
+				"sub": "vin en vrac"
+			},
 			"createFinancialStatement": {
 				"main": "États",
 				"sub": "financiers"
@@ -516,6 +521,7 @@
 			"bottling": "Embouteillage",
 			"wineErpRelease": "Sortie de vin ERP",
 			"bulkWineErpRelease": "Sortie de vin en vrac ERP",
+			"bulkWineSale": "Vente de vin en vrac",
 			"financialStatement": "États financiers",
 			"accountClosure": "Fermeture de compte"
 		},

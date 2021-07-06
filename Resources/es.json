@@ -310,8 +310,9 @@
 			"lossVolume": "perdida",
 			"marc": "orujo",
 			"note": "anotación / uso",
-			"price": "precio de compra",
+			"price": "precio de venta",
 			"purchaseNote": "anotación / proveedor",
+			"purchasePrice": "Precio de compra",
 			"purpose": {
 				"label": "uso",
 				"placeholder": " "
@@ -468,6 +469,10 @@
 				"main": "Lanzamiento de",
 				"sub": "vino a granel ERP"
 			},
+			"createBulkWineSale": {
+				"main": "Venta de",
+				"sub": "vino a granel"
+			},
 			"createFinancialStatement": {
 				"main": "estados",
 				"sub": "financieros"
@@ -516,6 +521,7 @@
 			"bottling": "Embotellado",
 			"wineErpRelease": "Lanzamiento de vino ERP",
 			"bulkWineErpRelease": "Lanzamiento de vino a granel ERP",
+			"bulkWineSale": "Venta de vino a granel",
 			"financialStatement": "Estados financieros",
 			"accountClosure": "Cierre de cuenta"
 		},

@@ -310,8 +310,9 @@
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",
 			"note": "Note / Purpose",
-			"price": "Purchasing price",
+			"price": "Selling price",
 			"purchaseNote": "Note / supplier",
+			"purchasePrice": "Purchasing price",
 			"purpose": {
 				"label": "Purpose",
 				"placeholder": " "
@@ -468,6 +469,10 @@
 				"main": "Bulk wine",
 				"sub": "ERP release"
 			},
+			"createBulkWineSale": {
+				"main": "Bulk wine",
+				"sub": "sale"
+			},
 			"createFinancialStatement": {
 				"main": "Financial",
 				"sub": "statement"
@@ -516,6 +521,7 @@
 			"bottling": "Bottling",
 			"wineErpRelease": "Wine ERP release",
 			"bulkWineErpRelease": "Bulk wine ERP release",
+			"bulkWineSale": "Bulk wine sale",
 			"financialStatement": "Financial statement",
 			"accountClosure": "Account closure"
 		},

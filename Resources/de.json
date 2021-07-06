@@ -310,8 +310,9 @@
 			"lossVolume": "Verlust",
 			"marc": "Trester",
 			"note": "Anmerkung / Verwendung",
-			"price": "Einkaufspreis",
+			"price": "Verkaufspreis",
 			"purchaseNote": "Anmerkung / Lieferant",
+			"purchasePrice": "Einkaufspreis",
 			"purpose": {
 				"label": "Verwendung",
 				"placeholder": " "
@@ -468,6 +469,10 @@
 				"main": "Fassweinfreigabe",
 				"sub": " "
 			},
+			"createBulkWineSale": {
+				"main": "Fassweinverkauf",
+				"sub": " "
+			},
 			"createFinancialStatement": {
 				"main": "Jahresabschluss",
 				"sub": " "
@@ -516,6 +521,7 @@
 			"bottling": "Abfüllung",
 			"wineErpRelease": "Flaschenweinfreigabe",
 			"bulkWineErpRelease": "Fassweinfreigabe",
+			"bulkWineSale": "Fassweinverkauf",
 			"financialStatement": "Jahresabschluss",
 			"accountClosure": "Kontoarchivierung"
 		},

@@ -310,8 +310,9 @@
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",
 			"note": "Nota / utilizzo",
-			"price": "Prezzo di acquisto",
+			"price": "Prezzo di vendita",
 			"purchaseNote": "Nota / fornitore",
+			"purchasePrice": "Prezzo di acquisto",
 			"purpose": {
 				"label": "Utilizzo",
 				"placeholder": " "
@@ -468,6 +469,10 @@
 				"main": "Rilascio",
 				"sub": "vino sfuso ERP"
 			},
+			"createBulkWineSale": {
+				"main": "Vendita del",
+				"sub": "vino sfuso"
+			},
 			"createFinancialStatement": {
 				"main": "Bilancio",
 				"sub": " "
@@ -516,6 +521,7 @@
 			"bottling": "Imbottigliamento",
 			"wineErpRelease": "Rilascio del vino ERP",
 			"bulkWineErpRelease": "Rilascio vino sfuso ERP",
+			"bulkWineSale": "Vendita del vino sfuso",
 			"financialStatement": "Bilancio",
 			"accountClosure": "Chiusura del conto"
 		},
