@@ -739,7 +739,7 @@
 				"editTitle": "Stoff bearbeiten"
 			},
 			"gallery": {
-				"substance": "Stofftyp/Produktbez.",
+				"substance": "Stofftyp / Produktbez.",
 				"chstamp": "Zuletzt geändert",
 				"stock": "Vorhandene Menge"
 			}

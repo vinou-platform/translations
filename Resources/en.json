@@ -739,7 +739,7 @@
 				"editTitle": "Edit substance"
 			},
 			"gallery": {
-				"substance": "Substance/product name",
+				"substance": "Substance / product name",
 				"chstamp": "Last change",
 				"stock": "Stock"
 			}

@@ -739,7 +739,7 @@
 				"editTitle": "Editar sustancia"
 			},
 			"gallery": {
-				"substance": "Sustancia/Nombre del producto",
+				"substance": "Sustancia / Nombre del producto",
 				"chstamp": "Cambiado por último",
 				"stock": "Cantidad disponible"
 			}
