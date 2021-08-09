@@ -1276,6 +1276,10 @@
 				"text": "Hast Du bis dahin keine Auswahl zur MwSt.-Rückstellung vorgenommen, stellen wir Deine Preise automatisch zu diesem Datum um. Als Grundlage verwenden wir hierfür Deine Bruttopreise bzw. Deine bestehende Einstellung zur MwSt.-Senkung.",
 				"footerText": "<a href=\"https://www.bundesregierung.de/breg-de/aktuelles/faq-mehrwertsteuersenkung-1764364\" title=\"Die Mehrwertsteuer sinkt - wichtige Fragen und Antworten\" target=\"_blank\">Weitere Informationen zur Mehrwertsteuersenkung</a>",
 				"action": "Einstellung konfigurieren"
+			},
+			"appSlitNotification": {
+				"title": "Achtung!!! Abschaltung app.vinou.de zum 23.08.2021.",
+				"text": "Du nutzt die Internetadresse app.vinou.de um Vinou-Office zu erreichen. <strong>Diese Domain wird zum 23.08.2021 abgeschaltet!</strong> Du erreichst <strong>Vinou-Office</strong> ab sofort unter <strong><a href=\"https://office.vinou.de\" title=\"zu Vinou-Office\" target=\"_blank\">https://office.vinou.de</a></strong> und <strong>Vinou-Cellar</strong> unter <strong><a href=\"https://cellar.vinou.de\" title=\"zu Vinou-Cellar\" target=\"_blank\">https://cellar.vinou.de</a></strong>."
 			}
 		},
 		"messages": {
