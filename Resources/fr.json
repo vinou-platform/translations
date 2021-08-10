@@ -3533,16 +3533,16 @@
 			}
 		},
 		"fields": {
-			"name": "Nom",
-			"description": "Description",
-			"image": "Marque",
-			"startDate": "Date de début",
-			"endDate": "Date de fin",
 			"active": {
 				"label": "Etat de l'automatisation",
 				"checklabel": "actif"
 			},
-			"itemTypes": "Groupes d'articles autorisés pour cette automatisation"
+			"description": "Description",
+			"endDate": "Date de fin",
+			"image": "Marque",
+			"itemTypes": "Groupes d'articles autorisés pour cette automatisation",
+			"name": "Nom",
+			"startDate": "Date de début"
 		},
 		"toasts": {
 			"created": "Automatisation créée!",
