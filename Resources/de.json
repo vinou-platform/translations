@@ -2570,6 +2570,8 @@
 			"payment_type": "Zahlungsart",
 			"payment_period": "Zahlungsziel (in Tagen)",
 			"paymentDate": "Zahlungsdatum",
+			"paymentMethod": "Zahlungsmittel",
+			"paymentGross": "Zahlungsbetrag",
 			"pricingtype": "Rechnungstyp",
 			"pricingnet": "Netto Rechnung",
 			"pricinggross": "Brutto Rechnung",
@@ -2601,7 +2603,8 @@
 			"prepaid": "Vorkasse",
 			"debit": "SEPA-Lastschrift",
 			"paypal": "Paypal",
-			"card": "Kreditkarte"
+			"card": "Kreditkarte",
+			"bank": "Kontoeinzahlung"
 		},
 		"invoicetypes": {
 			"net": "Netto-Rechnung",

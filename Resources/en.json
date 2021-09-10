@@ -2570,6 +2570,8 @@
 			"payment_type": "Payment type",
 			"payment_period": "Payment period (days)",
 			"paymentDate": "Date of payment",
+			"paymentMethod": "Means of payment",
+			"paymentGross": "Payment amount",
 			"pricingtype": "Invoice type",
 			"pricingnet": "Netto invoice",
 			"pricinggross": "Gross invoice",
@@ -2601,7 +2603,8 @@
 			"prepaid": "Prepaid",
 			"debit": "Debit",
 			"paypal": "Paypal",
-			"card": "Credit Card"
+			"card": "Credit Card",
+			"bank": "Account deposit"
 		},
 		"invoicetypes": {
 			"net": "Net invoice",

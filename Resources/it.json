@@ -2570,6 +2570,8 @@
 			"payment_type": "Tipo di pagamento",
 			"payment_period": "Target di pagamento (tra giorni)",
 			"paymentDate": "Data di pagamento",
+			"paymentMethod": "Metodi di pagamento",
+			"paymentGross": "Importo del pagamento",
 			"pricingtype": "Tipo di fattura",
 			"pricingnet": "Fattura netta",
 			"pricinggross": "Fattura lordo",
@@ -2601,7 +2603,8 @@
 			"prepaid": "Pagamento anticipato",
 			"debit": "Addebito diretto SEPA",
 			"paypal": "Paypal",
-			"card": "Carta di credito"
+			"card": "Carta di credito",
+			"bank": "Deposito sul conto"
 		},
 		"invoicetypes": {
 			"net": "Fattura netta",

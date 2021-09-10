@@ -2570,6 +2570,8 @@
 			"payment_type": "Type de paiement",
 			"payment_period": "Cible de paiement (en jours)",
 			"paymentDate": "Date de règlement",
+			"paymentMethod": "Moyens de paiement",
+			"paymentGross": "Montant du paiement",
 			"pricingtype": "Type de facture",
 			"pricingnet": "Facture nette",
 			"pricinggross": "Facture brute",
@@ -2601,7 +2603,8 @@
 			"prepaid": "Paiement anticipé",
 			"debit": "Prélèvement SEPA",
 			"paypal": "PayPal",
-			"card": "Carte de crédit"
+			"card": "Carte de crédit",
+			"bank": "Dépôt de compte"
 		},
 		"invoicetypes": {
 			"net": "Facture nette",
