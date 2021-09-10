@@ -2567,7 +2567,6 @@
 			"package": "Imballaggio e spedizione",
 			"parcel": "Consegna per pacco",
 			"paid": "Pagato",
-			"completelyPaid": "Pagato per intero",
 			"payment_income_date": "Ricevuta del pagamento",
 			"payment_type": "Tipo di pagamento",
 			"payment_period": "Target di pagamento (tra giorni)",

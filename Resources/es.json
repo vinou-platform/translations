@@ -2567,7 +2567,6 @@
 			"package": "embalaja y envío",
 			"parcel": "envío de paquete",
 			"paid": "pagado",
-			"completelyPaid": "Pagado",
 			"payment_income_date": "Entrada de pagos",
 			"payment_type": "modo de pago",
 			"payment_period": "Destino de pago (en dias)",

@@ -2567,7 +2567,6 @@
 			"package": "Emballage et expédition",
 			"parcel": "Livraison par paquet",
 			"paid": "Payé",
-			"completelyPaid": "Entièrement payé",
 			"payment_income_date": "Réception du paiement",
 			"payment_type": "Type de paiement",
 			"payment_period": "Cible de paiement (en jours)",

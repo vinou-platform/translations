@@ -2567,7 +2567,6 @@
 			"package": "Verpackung und Versand",
 			"parcel": "Paketsendung",
 			"paid": "Bezahlt",
-			"completelyPaid": "Vollständig Bezahlt",
 			"payment_income_date": "Zahlungseingang",
 			"payment_type": "Zahlungsart",
 			"payment_period": "Zahlungsziel (in Tagen)",
