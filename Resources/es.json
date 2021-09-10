@@ -2534,7 +2534,6 @@
 			"summary": "Resumen de ordenes"
 		},
 		"fields": {
-			"processing_data": "datos están utilizados...",
 			"brutto_sum": "suma total bruto",
 			"campaign": "Campaña",
 			"cashback": "descuento (en %)",

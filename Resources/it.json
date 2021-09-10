@@ -2534,7 +2534,6 @@
 			"summary": "Riepilogo ordine"
 		},
 		"fields": {
-			"processing_data": "I dati vengono elaborati ...",
 			"brutto_sum": "Totale lordo",
 			"campaign": "Campagna",
 			"cashback": "Sconto (in %)",

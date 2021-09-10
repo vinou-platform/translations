@@ -2534,7 +2534,6 @@
 			"summary": "Bestellübersicht"
 		},
 		"fields": {
-			"processing_data": "Daten werden verarbeitet ...",
 			"brutto_sum": "Gesamtsumme Brutto",
 			"campaign": "Kampagne",
 			"cashback": "Skonto (in %)",

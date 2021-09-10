@@ -2534,7 +2534,6 @@
 			"summary": "Order summary"
 		},
 		"fields": {
-			"processing_data": "Processing data ...",
 			"brutto_sum": "Brutto summary",
 			"campaign": "Campaign",
 			"cashback": "Cashback (in %)",
