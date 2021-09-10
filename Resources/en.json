@@ -3540,7 +3540,15 @@
 			"endDate": "End date",
 			"image": "Brand",
 			"itemTypes": "Article groups allowed for this automation",
+			"marketplace": {
+				"label": "This is a marketplace",
+				"description": "As a marketplace you are acting as a platform, where via network connected wineries can sell their goods on commission."
+			},
 			"name": "Name",
+			"orderForwarding": {
+				"label": "Order forwarding",
+				"description": "Activate order forwarding for connected articles from Vinou network and automatically create orders at your connected wineries."
+			},
 			"startDate": "Start date"
 		},
 		"toasts": {

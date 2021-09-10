@@ -3540,7 +3540,15 @@
 			"endDate": "Ablauf-Datum",
 			"image": "Marke",
 			"itemTypes": "Folgende Artikelgruppen für diese Automatisierung zulassen",
+			"marketplace": {
+				"label": "Dies ist ein Marktplatz",
+				"description": "Als Marktplatz bietest Du eine Plattform, auf der über das Netzwerk verbundene Weingüter Ihre Artikel gegen eine Provision verkaufen können."
+			},
 			"name": "Name",
+			"orderForwarding": {
+				"label": "Bestellweiterleitung",
+				"description": "Aktiviere die Bestellweiterleitung für Artikel aus dem Netzwerk und löse automatisch Bestellungen bei Deinen, über das Netzwerk verbundenen Weingütern aus."
+			},
 			"startDate": "Start-Datum"
 		},
 		"toasts": {

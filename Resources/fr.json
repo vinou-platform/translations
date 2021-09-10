@@ -3540,7 +3540,15 @@
 			"endDate": "Date de fin",
 			"image": "Marque",
 			"itemTypes": "Groupes d'articles autorisés pour cette automatisation",
+			"marketplace": {
+				"label": "This is a marketplace",
+				"description": "As a marketplace you are acting as a platform, where via network connected wineries can sell their goods on commission."
+			},
 			"name": "Nom",
+			"orderForwarding": {
+				"label": "Transfert de commande",
+				"description": "Activez la réexpédition des commandes des articles du réseau et déclenchez automatiquement les commandes dans vos domaines viticoles connectés via le réseau."
+			},
 			"startDate": "Date de début"
 		},
 		"toasts": {
