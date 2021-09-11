@@ -2577,6 +2577,8 @@
 			"payment_type": "modo de pago",
 			"payment_period": "Destino de pago (en dias)",
 			"paymentDate": "fecha del pago",
+			"paymentMethod": "Medios de pago",
+			"paymentGross": "Monto del pago",
 			"pricingtype": "modo de cuenta",
 			"pricingnet": "cuenta neto",
 			"pricinggross": "cuenta bruto",
@@ -2608,7 +2610,8 @@
 			"prepaid": "pago anticipado",
 			"debit": "cargo de SEPA",
 			"paypal": "Paypal",
-			"card": "Tarjeta de crédito"
+			"card": "Tarjeta de crédito",
+			"bank": "Depósito en cuenta"
 		},
 		"invoicetypes": {
 			"net": "cuenta neto",
