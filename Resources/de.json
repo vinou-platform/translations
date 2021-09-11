@@ -344,13 +344,7 @@
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
-			"substance": "Stoff",
-
-			"substanceAdd": "Stoffzugabe {substance}",
-			"enrichment": "Anreicherung mit {substance}",
-			"sweetening": "Süßung mit {substance}",
-			"acidification": "Säuerung mit {substance}",
-			"deacidification": "Entsäuerung mit {substance}"
+			"substance": "Stoff"
 		},
 		"actions": {
 			"create": {
@@ -532,6 +526,13 @@
 			},
 			"harvestEdit": {
 				"backToWineSelect": "Zurück zur Auswahl"
+			},
+			"timeline": {
+				"substanceAdd": "Stoffzugabe {substance}",
+				"enrichment": "Anreicherung mit {substance}",
+				"sweetening": "Süßung mit {substance}",
+				"acidification": "Säuerung mit {substance}",
+				"deacidification": "Entsäuerung mit {substance}"
 			}
 		},
 		"dialogs": {
