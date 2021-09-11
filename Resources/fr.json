@@ -483,6 +483,10 @@
 			"addTargetBarrel": {
 				"main": "Récipient de cible",
 				"sub": "ajouter"
+			},
+			"addMeasurement": {
+				"main": "Mesure",
+				"sub": "ajouter"
 			}
 		},
 		"types": {
@@ -501,6 +505,7 @@
 			"loss": "Perte",
 			"concentration": "Concentration",
 			"dealcoholization": "Désalcoolisation",
+			"measuring": "Mesure",
 
 			"wineAddition": "Ouillage",
 
@@ -710,7 +715,8 @@
 		"fields": {
 			"currentValue": "De",
 			"targetValue": "À",
-			"range": "De {from} {unit} par {by} {unit} à {to} {unit}"
+			"range": "De {from} {unit} par {by} {unit} à {to} {unit}",
+			"type": "Mesurande"
 		},
 		"types": {
 			"temperature": "Température",

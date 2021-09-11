@@ -477,12 +477,16 @@
 			},
 
 			"addSourceBarrel": {
-				"main": "agregue el recipiente",
+				"main": "Agregue el recipiente",
 				"sub": "para remojar"
 			},
 			"addTargetBarrel": {
-				"main": "recipiente de destino",
+				"main": "Recipiente de destino",
 				"sub": "añadir"
+			},
+			"addMeasurement": {
+				"main": "Agregar",
+				"sub": "medida"
 			}
 		},
 		"types": {
@@ -501,6 +505,7 @@
 			"loss": "Perdida",
 			"concentration": "Concentración",
 			"dealcoholization": "Desalcoholización",
+			"measuring": "Medición",
 
 			"wineAddition": "Llenado",
 
@@ -710,7 +715,8 @@
 		"fields": {
 			"currentValue": "de",
 			"targetValue": "a",
-			"range": "de {from} {unit} por {by} {unit} a {to} {unit}"
+			"range": "de {from} {unit} por {by} {unit} a {to} {unit}",
+			"type": "Medida"
 		},
 		"types": {
 			"temperature": "temperatura",
