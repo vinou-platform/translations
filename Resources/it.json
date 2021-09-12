@@ -619,12 +619,28 @@
 			"manufacturer": "Produttore",
 			"note": "Note",
 			"number": "Recipiente-Nr.",
+			"qrCode": {
+				"label": "QR-Code",
+				"hash": "Hash",
+				"url": "URL",
+				"hint": "Il codice QR verrà creato dopo il primo salvataggio"
+			},
+			"qrCodeLink": {
+				"label": "Indirizzo di destinazione per il codice QR",
+				"placeholder": "Indirizzo di destinazione per codice QR (Vino di cantina o nuova vendemmia se vuoto)"
+			},
 			"type": "Tipo/materiale"
+		},
+		"fieldSets": {
+			"qrCode": "QR-Code"
 		},
 		"actions": {
 			"create": {
 				"main": "Recipiente",
 				"sub": "creare"
+			},
+			"export": {
+				"qrCodeVector": "Scarica il codice QR come file vettoriale"
 			}
 		},
 		"typeCategories": {

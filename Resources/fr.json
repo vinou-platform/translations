@@ -619,12 +619,28 @@
 			"manufacturer": "Frabricant",
 			"note": "Notes",
 			"number": "Numéro du recipient",
+			"qrCode": {
+				"label": "QR-Code",
+				"hash": "Hash",
+				"url": "URL",
+				"hint": "Le code QR sera créé après la première sauvegarde"
+			},
+			"qrCodeLink": {
+				"label": "Adresse cible pour le code QR",
+				"placeholder": "Adresse cible pour le QR code (Cave ou nouvelle vendange si vide)"
+			},
 			"type": "Type/Matiére"
+		},
+		"fieldSets": {
+			"qrCode": "QR-Code"
 		},
 		"actions": {
 			"create": {
 				"main": "Créer un",
 				"sub": "conteneur"
+			},
+			"export": {
+				"qrCodeVector": "Télécharger le code QR sous forme de fichier vectoriel"
 			}
 		},
 		"typeCategories": {

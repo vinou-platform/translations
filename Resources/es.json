@@ -619,12 +619,28 @@
 			"manufacturer": "confeccionador",
 			"note": "notas",
 			"number": "número del recipiente",
+			"qrCode": {
+				"label": "QR-Code",
+				"hash": "Hash",
+				"url": "URL",
+				"hint": "El QR-Code va a estar generado después de la primera grabación"
+			},
+			"qrCodeLink": {
+				"label": "Direción de destino para QR-Code",
+				"placeholder": "Direción de destino para QR-Code (Cuenta de vino o cree una nueva si está vacía)"
+			},
 			"type": "tipo/material"
+		},
+		"fieldSets": {
+			"qrCode": "QR-Code"
 		},
 		"actions": {
 			"create": {
 				"main": "recipiente",
 				"sub": "crear"
+			},
+			"export": {
+				"qrCodeVector": "Descargar QR-Code como archivo vector"
 			}
 		},
 		"typeCategories": {

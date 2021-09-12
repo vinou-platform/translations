@@ -619,12 +619,28 @@
 			"manufacturer": "Hersteller",
 			"note": "Notizen",
 			"number": "Behälternr.",
+			"qrCode": {
+				"label": "QR-Code",
+				"hash": "Hash",
+				"url": "URL",
+				"hint": "Der QR-Code wird nach dem ersten Speichern generiert"
+			},
+			"qrCodeLink": {
+				"label": "Zieladresse für QR-Code",
+				"placeholder": "Zieladresse für QR-Code (Weinkonto oder neu anlegen wenn leer)"
+			},
 			"type": "Typ/Material"
+		},
+		"fieldSets": {
+			"qrCode": "QR-Code"
 		},
 		"actions": {
 			"create": {
 				"main": "Behälter",
 				"sub": "anlegen"
+			},
+			"export": {
+				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
 			}
 		},
 		"typeCategories": {

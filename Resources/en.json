@@ -619,12 +619,28 @@
 			"manufacturer": "Manufacturer",
 			"note": "Notices",
 			"number": "Barrel-no.",
+			"qrCode": {
+				"label": "QR-Code",
+				"hash": "Hash",
+				"url": "URL",
+				"hint": "QR code will be created after first save"
+			},
+			"qrCodeLink": {
+				"label": "Target address for QR code",
+				"placeholder": "Target address for QR code (Cellar wine or new harvest if empty)"
+			},
 			"type": "Type/Material"
+		},
+		"fieldSets": {
+			"qrCode": "QR-Code"
 		},
 		"actions": {
 			"create": {
 				"main": "Create new",
 				"sub": "barrel"
+			},
+			"export": {
+				"qrCodeVector": "Download QR code as vector file"
 			}
 		},
 		"typeCategories": {
