@@ -2519,6 +2519,7 @@
 				"sub": "order confirmation"
 			},
 			"downloadDocuments": "Download documents",
+			"downloadPayments": "Download payments",
 			"duplicate": {
 				"main": "Duplicate",
 				"sub": "order"
@@ -2789,11 +2790,24 @@
 		}
 	},
 	"payment": {
+		"name": {
+			"singular": "Incoming payments",
+			"plural": "Incoming payments"
+		},
 		"actions": {
 			"create": {
 				"main": "Book",
 				"sub": "incoming payment"
 			}
+		},
+		"fields": {
+			"bookingStamp": "Buchungsdatum",
+			"details": "Details",
+			"externalId": "Externe ID",
+			"gross": "Betrag",
+			"orderPaid": "Bestellung bezahlt",
+			"orderState": "Bestellstatus",
+			"type": "Typ"
 		},
 		"toasts": {
 			"created": "Payment saved!"
