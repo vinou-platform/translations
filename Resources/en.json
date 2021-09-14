@@ -2801,13 +2801,13 @@
 			}
 		},
 		"fields": {
-			"bookingStamp": "Buchungsdatum",
+			"bookingStamp": "Processing date",
 			"details": "Details",
-			"externalId": "Externe ID",
-			"gross": "Betrag",
-			"orderPaid": "Bestellung bezahlt",
-			"orderState": "Bestellstatus",
-			"type": "Typ"
+			"externalId": "External ID",
+			"gross": "Amount",
+			"orderPaid": "Order paid",
+			"orderState": "Order status",
+			"type": "Source"
 		},
 		"toasts": {
 			"created": "Payment saved!"
