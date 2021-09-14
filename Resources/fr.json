@@ -2519,6 +2519,7 @@
 				"sub": "l'ordre"
 			},
 			"downloadDocuments": "Téléchargez des documents",
+			"downloadPayments": "Télécharger les paiements",
 			"duplicate": {
 				"main": "Dupliquer",
 				"sub": "l'ordre"
@@ -2789,11 +2790,24 @@
 		}
 	},
 	"payment": {
+		"name": {
+			"singular": "Paiements entrants",
+			"plural": "Paiements entrants"
+		},
 		"actions": {
 			"create": {
 				"main": "Réserver réception",
 				"sub": "du paiement"
 			}
+		},
+		"fields": {
+			"bookingStamp": "Date de traitement",
+			"details": "Des détails",
+			"externalId": "Identifiant externe",
+			"gross": "Montant",
+			"orderPaid": "Commande payée",
+			"orderState": "Statut de la commande",
+			"type": "La source"
 		},
 		"toasts": {
 			"created": "Réception du paiement créée!"

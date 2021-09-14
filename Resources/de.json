@@ -2519,6 +2519,7 @@
 				"sub": "herunterladen"
 			},
 			"downloadDocuments": "Dokumente herunterladen",
+			"downloadPayments": "Zahlungseingänge herunterladen",
 			"duplicate": {
 				"main": "Bestellung",
 				"sub": "duplizieren"
@@ -2789,11 +2790,24 @@
 		}
 	},
 	"payment": {
+		"name": {
+			"singular": "Zahlungseingang",
+			"plural": "Zahlungseingänge"
+		},
 		"actions": {
 			"create": {
 				"main": "Zahlungseingang",
 				"sub": "buchen"
 			}
+		},
+		"fields": {
+			"bookingStamp": "Buchungsdatum",
+			"details": "Details",
+			"externalId": "Externe ID",
+			"gross": "Betrag",
+			"orderPaid": "Bestellung bezahlt",
+			"orderState": "Bestellstatus",
+			"type": "Typ"
 		},
 		"toasts": {
 			"created": "Zahlungseingang angelegt!"
