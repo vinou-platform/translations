@@ -2519,6 +2519,7 @@
 				"sub": "confirmación del pedido"
 			},
 			"downloadDocuments": "Descargar documentos",
+			"downloadPayments": "Descargar pagos",
 			"duplicate": {
 				"main": "Duplicar",
 				"sub": "orden"
@@ -2789,11 +2790,24 @@
 		}
 	},
 	"payment": {
+		"name": {
+			"singular": "Pagos entrantes",
+			"plural": "Pagos entrantes"
+		},
 		"actions": {
 			"create": {
 				"main": "Entrada de pago",
 				"sub": "contabilizar"
 			}
+		},
+		"fields": {
+			"bookingStamp": "Fecha de procesamiento",
+			"details": "Detalles",
+			"externalId": "Identificación externa",
+			"gross": "Suma",
+			"orderPaid": "Pedido pagado",
+			"orderState": "Bestellstatus",
+			"type": "Typ"
 		},
 		"toasts": {
 			"created": "Entrada de pago ha sido creada!"
