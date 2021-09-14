@@ -2807,7 +2807,7 @@
 			"gross": "Amount",
 			"orderPaid": "Order paid",
 			"orderState": "Order status",
-			"type": "Source"
+			"type": "Type"
 		},
 		"toasts": {
 			"created": "Payment saved!"

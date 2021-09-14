@@ -2807,7 +2807,7 @@
 			"gross": "Montant",
 			"orderPaid": "Commande payée",
 			"orderState": "Statut de la commande",
-			"type": "La source"
+			"type": "Type"
 		},
 		"toasts": {
 			"created": "Réception du paiement créée!"

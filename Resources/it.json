@@ -2806,8 +2806,8 @@
 			"externalId": "ID esterno",
 			"gross": "Importo",
 			"orderPaid": "Ordine pagato",
-			"orderState": "Lo stato dell'ordine",
-			"type": "Fonte"
+			"orderState": "Stato dell'ordine",
+			"type": "Tipo"
 		},
 		"toasts": {
 			"created": "Ricevuta del pagamento creato!"

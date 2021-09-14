@@ -2806,8 +2806,8 @@
 			"externalId": "Identificación externa",
 			"gross": "Suma",
 			"orderPaid": "Pedido pagado",
-			"orderState": "Bestellstatus",
-			"type": "Typ"
+			"orderState": "Estado de la orden",
+			"type": "Tipo"
 		},
 		"toasts": {
 			"created": "Entrada de pago ha sido creada!"
