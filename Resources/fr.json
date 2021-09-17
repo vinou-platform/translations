@@ -2349,7 +2349,12 @@
 			}
 		},
 		"fields": {
+			"client": "Client",
+			"crstamp": "Date de facture",
+			"grossPaid": "Le montant payé",
+			"grossOpen": "Solde impayé",
 			"number": "N° de facture",
+			"paymentDelay": "Retard de paiement (en jours)",
 			"remark": "Remarque sur la facture"
 		},
 		"dialogs": {
@@ -2520,6 +2525,11 @@
 			},
 			"downloadDocuments": "Téléchargez des documents",
 			"downloadPayments": "Télécharger les paiements",
+			"downloadOpenItems": {
+				"title": "Liste-des-éléments-ouverts",
+				"main": "Télécharger",
+				"sub": "Liste-des-éléments-ouverts"
+			},
 			"duplicate": {
 				"main": "Dupliquer",
 				"sub": "l'ordre"
@@ -2953,7 +2963,7 @@
 			},
 			"deactivate": "Deactiver la gestion des expéditionsn",
 			"download": {
-				"main": "Télécharger ",
+				"main": "Télécharger",
 				"sub": "l'étiquette d'expédition"
 			},
 			"print": {

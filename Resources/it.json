@@ -2349,7 +2349,12 @@
 			}
 		},
 		"fields": {
+			"client": "Cliente",
+			"crstamp": "Data della fattura",
+			"grossPaid": "Importo pagato",
+			"grossOpen": "Equilibrio eccezionale",
 			"number": "Fattura n.",
+			"paymentDelay": "Ritardo di pagamento (tra giorni)",
 			"remark": "Osservazione della fattura"
 		},
 		"dialogs": {
@@ -2520,6 +2525,11 @@
 			},
 			"downloadDocuments": "Scarica documenti",
 			"downloadPayments": "Scarica pagamenti",
+			"downloadOpenItems": {
+				"title": "Elenco-elementi-aperti",
+				"main": "Scarica",
+				"sub": "Elenco-elementi-aperti"
+			},
 			"duplicate": {
 				"main": "Duplicare",
 				"sub": "l'ordine"
