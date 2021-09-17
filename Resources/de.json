@@ -434,11 +434,11 @@
 				"main": "Süßung",
 				"sub": " "
 			},
-			"createAcidifikation": {
+			"createAcidification": {
 				"main": "Säuerung",
 				"sub": " "
 			},
-			"createDeacidifikation": {
+			"createDeacidification": {
 				"main": "Entsäuerung",
 				"sub": " "
 			},
@@ -474,6 +474,16 @@
 			"createAccountClosure": {
 				"main": "Konto",
 				"sub": "archivieren"
+			},
+
+			"vinouNetwork": {
+				"main": "Vinou Netzwerk",
+				"sub": " "
+			},
+			"createCellarWineTransfer": {
+				"main": "Fassweinverkauf",
+				"sub": " ",
+				"description": "Übertrage Deinen Wein zu einem anderen Vinou Mitglied im Netzwerk. Bitte beachte, dass Dein Gegenüber den Transfer über den Vorgang Fassweinzukauf bestätigen muss."
 			},
 
 			"addSourceBarrel": {
@@ -590,6 +600,7 @@
 			"gallery": {
 				"currentState": "Aktueller Zustand",
 				"vintage": "Jahrgang / Produktionsjahr {vintage}",
+				"inTransfer": "Dieser Wein ist im Vinou-Netzwerk für einen Transfer vorgesehen. Während der Freigabe kannst Du aus rechtlichen Gründen auf diesem Wein keine weiteren Aktionen und Korrekturen durchführen.",
 				"filters": {
 					"hideClosed": "Archivierte Weinkonten ausblenden",
 					"readyForBottling": "Bereit zur Abfüllung"
@@ -605,6 +616,48 @@
 			"changed": "Weinkonto bearbeitet.",
 			"duplicated": "Weinkonto dupliziert.",
 			"deleted": "Weinkonto gelöscht."
+		}
+	},
+	"cellarWineTransfer": {
+		"fields": {
+			"customer": "Lieferant",
+			"quantity": "Gesamtmenge",
+			"targetCustomer": "Empfänger"
+		},
+		"actions": {
+			"confirm": {
+				"main": "Fasswein",
+				"sub": "übernehmen"
+			},
+			"create": {
+				"main": "Fassweinverkauf",
+				"sub": " "
+			},
+			"edit": {
+				"main": "Transfer",
+				"sub": "bearbeiten"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Fassweinverkauf über Vinou Netzwerk"
+			},
+			"gallery": {
+				"currentState": "Aktueller Zustand",
+				"vintage": "Jahrgang / Produktionsjahr {vintage}",
+				"filters": {
+					"hideClosed": "Archivierte Weinkonten ausblenden",
+					"readyForBottling": "Bereit zur Abfüllung"
+				}
+			}
+		},
+		"dialogs": {
+			"delete": "Willst Du den Transfer wirklich abbrechen?"
+		},
+		"toasts": {
+			"created": "Fassweinverkauf über Vinou Netzwerk erstellt.",
+			"changed": "Fassweinverkauf über Vinou Netzwerk bearbeitet.",
+			"deleted": "Fassweinverkauf über Vinou Netzwerk abgebrochen."
 		}
 	},
 	"barrel": {

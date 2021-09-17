@@ -434,11 +434,11 @@
 				"main": "Édulcoration",
 				"sub": " "
 			},
-			"createAcidifikation": {
+			"createAcidification": {
 				"main": "Acidification",
 				"sub": " "
 			},
-			"createDeacidifikation": {
+			"createDeacidification": {
 				"main": "Désacidification",
 				"sub": " "
 			},

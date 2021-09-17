@@ -434,12 +434,12 @@
 				"main": "Sweetening",
 				"sub": " "
 			},
-			"createAcidifikation": {
-				"main": "Acidifikation",
+			"createAcidification": {
+				"main": "Acidification",
 				"sub": " "
 			},
-			"createDeacidifikation": {
-				"main": "Deacidifikation",
+			"createDeacidification": {
+				"main": "Deacidification",
 				"sub": " "
 			},
 			"createAlcoholization": {
