@@ -2406,7 +2406,12 @@
 			}
 		},
 		"fields": {
+			"client": "Kunde",
+			"crstamp": "Rechnungsdatum",
+			"grossPaid": "Gezahlter Betrag",
+			"grossOpen": "Offener Betrag",
 			"number": "Rechnungsnr.",
+			"paymentDelay": "Zahlungsverzug (in Tagen)",
 			"remark": "Rechnungsnotiz"
 		},
 		"dialogs": {
@@ -2577,6 +2582,11 @@
 			},
 			"downloadDocuments": "Dokumente herunterladen",
 			"downloadPayments": "Zahlungseingänge herunterladen",
+			"downloadOpenItems": {
+				"title": "Offene-Posten-Liste",
+				"main": "Offene-Posten-Liste",
+				"sub": "herunterladen"
+			},
 			"duplicate": {
 				"main": "Bestellung",
 				"sub": "duplizieren"
