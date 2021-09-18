@@ -301,6 +301,10 @@
 				"label": "Weinkonto",
 				"placeholder": "Weinkonto suchen"
 			},
+			"cellarWineTransfer": {
+				"label": "Lieferant",
+				"placeholder": "Für Dich freigegebene Fassweine suchen"
+			},
 			"clarifyingOnly": "Zeige nur Behälter zur Klärung",
 			"filtrationPurpose": {
 				"label": "Feststoffverwendung",
