@@ -5760,6 +5760,27 @@
 		},
 		"622": {
 			"name": "Nero di Troia"
+		},
+		"623": {
+			"name": "Heunisch Weiss"
+		},
+		"624": {
+			"name": "Orleans Gelb"
+		},
+		"625": {
+			"name": "Pinotin"
+		},
+		"626": {
+			"name": "Satin Noir"
+		},
+		"627": {
+			"name": "Sauvignac"
+		},
+		"628": {
+			"name": "Sauvitage"
+		},
+		"629": {
+			"name": "Souvignier Gris"
 		}
 	},
 	"tastes": {
