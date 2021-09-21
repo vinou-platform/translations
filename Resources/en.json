@@ -301,6 +301,10 @@
 				"label": "Raw wine",
 				"placeholder": "Search raw wine"
 			},
+			"cellarWineTransfer": {
+				"label": "Supplier",
+				"placeholder": "Search for bulk wines released for you"
+			},
 			"clarifyingOnly": "Show only clarifying barrels",
 			"filtrationPurpose": {
 				"label": "Filtration residues purpose",
@@ -476,6 +480,16 @@
 				"sub": " "
 			},
 
+			"vinouNetwork": {
+				"main": "Vinou network",
+				"sub": " "
+			},
+			"createCellarWineTransfer": {
+				"main": "Bulk wine",
+				"sub": "sale",
+				"description": "Transfer your wine to another Vinou member in the network. Please note that your counterpart must confirm the transfer by creating a wine purchase process."
+			},
+
 			"addSourceBarrel": {
 				"main": "Add source",
 				"sub": "barrel"
@@ -590,6 +604,7 @@
 			"gallery": {
 				"currentState": "Current state",
 				"vintage": "Vintage / year of production {vintage}",
+				"inTransfer": "This wine is earmarked for a transfer in the Vinou network. For legal reasons, you cannot carry out any further actions or corrections on this wine during the releasing process.",
 				"filters": {
 					"hideClosed": "Hide archived wine accounts",
 					"readyForBottling": "Ready for bottling"
@@ -605,6 +620,36 @@
 			"changed": "Wine changed.",
 			"duplicated": "Wine duplicated.",
 			"deleted": "Wine deleted."
+		}
+	},
+	"cellarWineTransfer": {
+		"fields": {
+			"customer": "Supplier",
+			"quantity": "Total quantity",
+			"targetCustomer": "Recipient"
+		},
+		"actions": {
+			"confirm": {
+				"main": "Take over",
+				"sub": "bulk wine"
+			},
+			"edit": {
+				"main": "Edit",
+				"sub": "transfer"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Bulk wine sale through Vinou network"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to cancel this transfer?"
+		},
+		"toasts": {
+			"created": "Bulk wine sale through Vinou network created.",
+			"changed": "Bulk wine sale through Vinou network changed.",
+			"deleted": "Bulk wine sale through Vinou network deleted."
 		}
 	},
 	"barrel": {

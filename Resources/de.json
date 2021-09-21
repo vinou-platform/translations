@@ -633,10 +633,6 @@
 				"main": "Fasswein",
 				"sub": "übernehmen"
 			},
-			"create": {
-				"main": "Fassweinverkauf",
-				"sub": " "
-			},
 			"edit": {
 				"main": "Transfer",
 				"sub": "bearbeiten"
@@ -645,14 +641,6 @@
 		"views": {
 			"edit": {
 				"title": "Fassweinverkauf über Vinou Netzwerk"
-			},
-			"gallery": {
-				"currentState": "Aktueller Zustand",
-				"vintage": "Jahrgang / Produktionsjahr {vintage}",
-				"filters": {
-					"hideClosed": "Archivierte Weinkonten ausblenden",
-					"readyForBottling": "Bereit zur Abfüllung"
-				}
 			}
 		},
 		"dialogs": {

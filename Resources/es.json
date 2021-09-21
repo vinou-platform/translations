@@ -301,6 +301,10 @@
 				"label": "cuenta de vino",
 				"placeholder": "buscar cuenta de vino"
 			},
+			"cellarWineTransfer": {
+				"label": "Proveedor",
+				"placeholder": "Busque vinos a granel lanzados para usted"
+			},
 			"clarifyingOnly": "Solo muestra recipientes para la clarificación",
 			"filtrationPurpose": {
 				"label": "uso de combustibles sólidos",
@@ -476,6 +480,16 @@
 				"sub": "cuenta"
 			},
 
+			"vinouNetwork": {
+				"main": "Red Vinou",
+				"sub": " "
+			},
+			"createCellarWineTransfer": {
+				"main": "Venta de",
+				"sub": "vino a granel",
+				"description": "Transfiera su vino a otro miembro de Vinou en la red. Tenga en cuenta que su contraparte debe confirmar la transferencia mediante la creación de un proceso de compra de vino."
+			},
+
 			"addSourceBarrel": {
 				"main": "Agregue el recipiente",
 				"sub": "para remojar"
@@ -590,6 +604,7 @@
 			"gallery": {
 				"currentState": "estado acutal",
 				"vintage": "Cosecha / ano de produccion {vintage}",
+				"inTransfer": "Este vino está destinado a una transferencia en la red Vinou. Por razones legales, no se pueden realizar más acciones o correcciones sobre este vino durante el proceso de liberación.",
 				"filters": {
 					"hideClosed": "Ocultar cuentas de vino archivadas",
 					"readyForBottling": "Listo para embotellar"
@@ -607,18 +622,48 @@
 			"deleted": "cuenta de vino ha sido borrada."
 		}
 	},
+	"cellarWineTransfer": {
+		"fields": {
+			"customer": "Proveedor",
+			"quantity": "Cantidad total",
+			"targetCustomer": "Recipiente"
+		},
+		"actions": {
+			"confirm": {
+				"main": "Acepta",
+				"sub": "vino a granel"
+			},
+			"edit": {
+				"main": "Editar",
+				"sub": "transferencia"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Venta de vino a granel a través de la red Vinou"
+			}
+		},
+		"dialogs": {
+			"delete": "¿Realmente quieres cancelar esta transferencia?"
+		},
+		"toasts": {
+			"created": "Venta de vino a granel a través de la red Vinou ha sido creado.",
+			"changed": "Venta de vino a granel a través de la red Vinou ha sido creado.",
+			"deleted": "Venta de vino a granel a través de la red Vinou ha sido eliminado."
+		}
+	},
 	"barrel": {
 		"fields": {
-			"bookingStamp": "tiempo de instalación",
-			"capacity": "capacidad volumétrica en litros",
-			"chstamp": "cambiado por último",
-			"clarifying": "recipiente para clarificación?",
-			"fillLevel": "nivel",
-			"label": "identificativo",
-			"location": "ubicación de disponer",
-			"manufacturer": "confeccionador",
-			"note": "notas",
-			"number": "número del recipiente",
+			"bookingStamp": "Tiempo de instalación",
+			"capacity": "Capacidad volumétrica en litros",
+			"chstamp": "Cambiado por último",
+			"clarifying": "Recipiente para clarificación?",
+			"fillLevel": "Nivel",
+			"label": "Identificativo",
+			"location": "Ubicación de disponer",
+			"manufacturer": "Confeccionador",
+			"note": "Notas",
+			"number": "Número del recipiente",
 			"qrCode": {
 				"label": "QR-Code",
 				"hash": "Hash",
@@ -629,14 +674,14 @@
 				"label": "Direción de destino para QR-Code",
 				"placeholder": "Direción de destino para QR-Code (Cuenta de vino o cree una nueva si está vacía)"
 			},
-			"type": "tipo/material"
+			"type": "Tipo/material"
 		},
 		"fieldSets": {
 			"qrCode": "QR-Code"
 		},
 		"actions": {
 			"create": {
-				"main": "recipiente",
+				"main": "Recipiente",
 				"sub": "crear"
 			},
 			"export": {
@@ -699,16 +744,16 @@
 		},
 		"views": {
 			"edit": {
-				"createTitle": "crear recipiente",
-				"editTitle": "editar recipiente"
+				"createTitle": "Crear recipiente",
+				"editTitle": "Editar recipiente"
 			},
 			"gallery": {
-				"currentState": "estado acutal",
+				"currentState": "Estado acutal",
 				"filters": {
 					"search": {
-						"placeholder": "e.j.: número de recipiente, ubicación para disponer, fabricante"
+						"placeholder": "E.j.: número de recipiente, ubicación para disponer, fabricante"
 					},
-					"hideEmptyBarrels": "ocultar recipiente vacios"
+					"hideEmptyBarrels": "Ocultar recipiente vacios"
 				}
 			}
 		},
@@ -717,10 +762,10 @@
 			"invalid": "Información de contenedor inconsistente. Verifique sus transacciones en las siguientes cuentas de vino: {wines}"
 		},
 		"toasts": {
-			"created": "depósito ha sido creado.",
-			"changed": "depósito ha sido creado.",
-			"duplicated": "depósito ha sido duplicado.",
-			"deleted": "depósito ha sido borrado."
+			"created": "Depósito ha sido creado.",
+			"changed": "Depósito ha sido creado.",
+			"duplicated": "Depósito ha sido duplicado.",
+			"deleted": "Depósito ha sido borrado."
 		},
 		"hints": {
 			"overFilling": "Nivel de llenado excede la capacidad máxima de {capacity} l.",

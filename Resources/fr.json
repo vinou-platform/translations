@@ -301,6 +301,10 @@
 				"label": "Compte du vin",
 				"placeholder": "Cherche compte du vin"
 			},
+			"cellarWineTransfer": {
+				"label": "Fournisseur",
+				"placeholder": "Chercher des vins en vrac libérés pour vous"
+			},
 			"clarifyingOnly": "Afficher seulement les récipients pour clarification",
 			"filtrationPurpose": {
 				"label": "L'utilisation comme matière solide",
@@ -476,6 +480,16 @@
 				"sub": "le compte"
 			},
 
+			"vinouNetwork": {
+				"main": "Réseau Vinou",
+				"sub": " "
+			},
+			"createCellarWineTransfer": {
+				"main": "Vente de",
+				"sub": "vin en vrac",
+				"description": "Transférez votre vin à un autre membre Vinou du réseau. Veuillez noter que votre homologue doit confirmer le transfert en créant un processus d'achat de vin."
+			},
+
 			"addSourceBarrel": {
 				"main": "Conteneur source",
 				"sub": "ajouter"
@@ -590,6 +604,7 @@
 			"gallery": {
 				"currentState": "État actuellement",
 				"vintage": "Millésime / année de production {vintage}",
+				"inTransfer": "Ce vin est destiné à un transfert dans le réseau Vinou. Pour des raisons légales, vous ne pouvez pas effectuer d'autres actions ou corrections sur ce vin pendant le processus de libération.",
 				"filters": {
 					"hideClosed": "Masquer les comptes de vin archivés",
 					"readyForBottling": "Prêt à l'embouteillage"
@@ -605,6 +620,36 @@
 			"changed": "Compte du vin édité.",
 			"duplicated": "Compte du vin dupliqué.",
 			"deleted": "Compte du vin supprimé."
+		}
+	},
+	"cellarWineTransfer": {
+		"fields": {
+			"customer": "Fournisseur",
+			"quantity": "Quantité totale",
+			"targetCustomer": "Destinataire"
+		},
+		"actions": {
+			"confirm": {
+				"main": "Reprender",
+				"sub": "vin en vrac"
+			},
+			"edit": {
+				"main": "Modifier",
+				"sub": "transfert"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Vente de vins en vrac via le réseau Vinou"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment annuler ce transfert?"
+		},
+		"toasts": {
+			"created": "Vente de vins en vrac via le réseau Vinou créé.",
+			"changed": "Vente de vins en vrac via le réseau Vinou a changé.",
+			"deleted": "Vente de vins en vrac via le réseau Vinou supprimée."
 		}
 	},
 	"barrel": {

@@ -301,6 +301,10 @@
 				"label": "Conto del vino",
 				"placeholder": "Ricerca conto del vino"
 			},
+			"cellarWineTransfer": {
+				"label": "Fornitore",
+				"placeholder": "Cerca i vini sfusi rilasciati per te"
+			},
 			"clarifyingOnly": "Mostra solo i recipiente per chiarimenti",
 			"filtrationPurpose": {
 				"label": "Solidi usando",
@@ -476,6 +480,16 @@
 				"sub": "l'account"
 			},
 
+			"vinouNetwork": {
+				"main": "Rete Vinou",
+				"sub": " "
+			},
+			"createCellarWineTransfer": {
+				"main": "Vendita del",
+				"sub": "vino sfuso",
+				"description": "Trasferisci il tuo vino a un altro membro Vinou nella rete. Si prega di notare che la controparte deve confermare il trasferimento creando un processo di acquisto del vino."
+			},
+
 			"addSourceBarrel": {
 				"main": "Contenitore di origine",
 				"sub": "aggiungere"
@@ -590,6 +604,7 @@
 			"gallery": {
 				"currentState": "Stato attuale",
 				"vintage": "Annata / anno di produzione {vintage}",
+				"inTransfer": "Questo vino è destinato a un trasferimento nella rete Vinou. Per motivi legali, non è possibile effettuare ulteriori azioni o correzioni su questo vino durante il processo di rilascio.",
 				"filters": {
 					"hideClosed": "Nascondi account di vino archiviati",
 					"readyForBottling": "Pronto per l'imbottigliamento"
@@ -605,6 +620,36 @@
 			"changed": "Conto del vino è stato modificato",
 			"duplicated": "Conto del vino è stato duplicato",
 			"deleted": "Conto del vino è stato cancellato"
+		}
+	},
+	"cellarWineTransfer": {
+		"fields": {
+			"customer": "Fornitore",
+			"quantity": "Quantità totale",
+			"targetCustomer": "Destinatario"
+		},
+		"actions": {
+			"confirm": {
+				"main": "Prendi controllo",
+				"sub": " del vino sfuso"
+			},
+			"edit": {
+				"main": "Modifica",
+				"sub": "trasferimento"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Vendita di vino sfuso attraverso la rete Vinou"
+			}
+		},
+		"dialogs": {
+			"delete": "Vuoi davvero annullare questo trasferimento?"
+		},
+		"toasts": {
+			"created": "Vendita di vino sfuso attraverso la rete Vinou creata.",
+			"changed": "Vendita di vino sfuso attraverso la rete Vinou è cambiata.",
+			"deleted": "Vendita di vino sfuso attraverso la rete Vinou cancellata."
 		}
 	},
 	"barrel": {
