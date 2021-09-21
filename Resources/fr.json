@@ -311,8 +311,10 @@
 				"placeholder": "p.ex. Appliqué dans le vignoble comme engrais organique."
 			},
 			"harvestDeclarationNumber": "Déclaration de récolte (reçu no.)",
+			"latestMeasurements": "Dernières mesures",
 			"lossVolume": "Perte",
 			"marc": "Marc",
+			"measurements": "Mesures",
 			"note": "Note / utilisation",
 			"price": "Prix ​​de vente",
 			"purchaseNote": "Note / fournisseur",
@@ -551,7 +553,8 @@
 				"enrichment": "Enrichissement avec {substance}",
 				"sweetening": "Édulcoration avec {substance}",
 				"acidification": "Acidification avec {substance}",
-				"deacidification": "Désacidification avec {substance}"
+				"deacidification": "Désacidification avec {substance}",
+				"measuring": "Mesure {measurement}"
 			}
 		},
 		"dialogs": {

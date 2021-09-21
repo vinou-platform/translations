@@ -311,8 +311,10 @@
 				"placeholder": "Ad es., In vigna come org. Fertilizzante applicato."
 			},
 			"harvestDeclarationNumber": "Dichiarazione di vendemmia (ricevuta n.)",
+			"latestMeasurements": "Ultime misurazioni",
 			"lossVolume": "Perdita",
 			"marc": "Vinaccia",
+			"measurements": "Misure",
 			"note": "Nota / utilizzo",
 			"price": "Prezzo di vendita",
 			"purchaseNote": "Nota / fornitore",
@@ -551,7 +553,8 @@
 				"enrichment": "Arricchimento con {substance}",
 				"sweetening": "Dolcificazione con {substance}",
 				"acidification": "Acidificazione con using {substance}",
-				"deacidification": "Disacidificazione con {substance}"
+				"deacidification": "Disacidificazione con {substance}",
+				"measuring": "Misurazione {measurement}"
 			}
 		},
 		"dialogs": {

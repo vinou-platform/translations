@@ -311,8 +311,10 @@
 				"placeholder": "E.g. Dropped into wine yard as organic fertilizer."
 			},
 			"harvestDeclarationNumber": "Harvest declaration (receipt no.)",
+			"latestMeasurements": "Last measurements",
 			"lossVolume": "Loss amount",
 			"marc": "Grape marc",
+			"measurements": "Measurements",
 			"note": "Note / Purpose",
 			"price": "Selling price",
 			"purchaseNote": "Note / supplier",
@@ -551,7 +553,8 @@
 				"enrichment": "Enrichment using {substance}",
 				"sweetening": "Sweetening using {substance}",
 				"acidification": "Acidification using {substance}",
-				"deacidification": "Deacidification using {substance}"
+				"deacidification": "Deacidification using {substance}",
+				"measuring": "Measuring {measurement}"
 			}
 		},
 		"dialogs": {

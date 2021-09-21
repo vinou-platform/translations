@@ -311,8 +311,10 @@
 				"placeholder": "Z.B. In Weinberg als org. Dünger ausgebracht."
 			},
 			"harvestDeclarationNumber": "Erntemeldung (Belegnr.)",
+			"latestMeasurements": "Letzte Messwerte",
 			"lossVolume": "Verlust",
 			"marc": "Trester",
+			"measurements": "Messwerte",
 			"note": "Anmerkung / Verwendung",
 			"price": "Verkaufspreis",
 			"purchaseNote": "Anmerkung / Lieferant",
@@ -551,7 +553,8 @@
 				"enrichment": "Anreicherung mit {substance}",
 				"sweetening": "Süßung mit {substance}",
 				"acidification": "Säuerung mit {substance}",
-				"deacidification": "Entsäuerung mit {substance}"
+				"deacidification": "Entsäuerung mit {substance}",
+				"measuring": "Messung {measurement}"
 			}
 		},
 		"dialogs": {
