@@ -1326,12 +1326,12 @@
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",
 			"state": "Status",
-			"type": {
-				"label": "Member type",
-				"winery": "Winery",
-				"merchant": "Merchant",
-				"reseller": "Reseller"
-			}
+			"type": "Member type"
+		},
+		"types": {
+			"winery": "Winery",
+			"merchant": "Merchant",
+			"reseller": "Reseller"
 		},
 		"pricingTypes": {
 			"acquisition": "In aquisition",

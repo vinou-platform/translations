@@ -1326,12 +1326,12 @@
 			"source": "Acquisito da",
 			"notice": "Invia e-mail di sistema",
 			"state": "Stato",
-			"type": {
-				"label": "Tipo",
-				"winery": "Vigna",
-				"merchant": "Distributore",
-				"reseller": "Rivenditrice"
-			}
+			"type": "Tipo"
+		},
+		"types": {
+			"winery": "Vigna",
+			"merchant": "Distributore",
+			"reseller": "Rivenditrice"
 		},
 		"pricingTypes": {
 			"acquisition": "In acquisizione",

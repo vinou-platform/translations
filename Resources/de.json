@@ -1326,12 +1326,12 @@
 			"source": "Akquiriert durch",
 			"notice": "Systemmails senden",
 			"state": "Status",
-			"type": {
-				"label": "Typ",
-				"winery": "Weingut",
-				"merchant": "Händler",
-				"reseller": "Wiederverkäufer"
-			}
+			"type": "Typ"
+		},
+		"types": {
+			"winery": "Weingut",
+			"merchant": "Händler",
+			"reseller": "Wiederverkäufer"
 		},
 		"pricingTypes": {
 			"acquisition": "In Akquise",

@@ -1326,12 +1326,12 @@
 			"source": "Acquis par",
 			"notice": "Envoyer des courriels système",
 			"state": "Statut",
-			"type": {
-				"label": "Type",
-				"winery": "Établissement vinicole",
-				"merchant": "Distributeur",
-				"reseller": "Revendeuse"
-			}
+			"type": "Type"
+		},
+		"types": {
+			"winery": "Établissement vinicole",
+			"merchant": "Distributeur",
+			"reseller": "Revendeuse"
 		},
 		"pricingTypes": {
 			"acquisition": "En acquisition",
