@@ -2708,6 +2708,9 @@
 			},
 			"shipments": {
 				"title": "Spedizioni"
+			},
+			"timeline": {
+				"paymentCancelled": "Pagamento in entrata annullato"
 			}
 		},
 		"filters": {
@@ -2752,7 +2755,8 @@
 			"openPayment": "Importo pagamento aperto: {gross}",
 			"openPaymentCashback": "Se il pagamento viene ricevuto entro il {cashbackExpireDate}, l'importo del pagamento aperto è di {grossCashback}, quindi {gross}",
 			"openPaymentToday": "Importo pagamento aperto con pagamento in entrata di oggi: {gross}",
-			"paid": "Questo ordine è stato pagato per intero."
+			"paid": "Questo ordine è stato pagato per intero.",
+			"paymentInProgress": "In attesa di pagamento tramite fornitore di servizi di pagamento."
 		}
 	},
 	"package": {

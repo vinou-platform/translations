@@ -2708,6 +2708,9 @@
 			},
 			"shipments": {
 				"title": "Envios"
+			},
+			"timeline": {
+				"paymentCancelled": "Pago entrante cancelado"
 			}
 		},
 		"filters": {
@@ -2752,7 +2755,8 @@
 			"openPayment": "Importe del pago abierto: {gross}",
 			"openPaymentCashback": "Si el pago se recibe antes del {cashbackExpireDate}, el monto del pago abierto es de {grossCashback}, luego de {gross}.",
 			"openPaymentToday": "Importe del pago abierto con el pago entrante de hoy: {gross}",
-			"paid": "Este pedido se ha pagado en su totalidad."
+			"paid": "Este pedido se ha pagado en su totalidad.",
+			"paymentInProgress": "Esperando pago a través del proveedor de servicios de pago."
 		}
 	},
 	"package": {

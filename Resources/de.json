@@ -2708,6 +2708,9 @@
 			},
 			"shipments": {
 				"title": "Sendungen"
+			},
+			"timeline": {
+				"paymentCancelled": "Zahlungseingang abgebrochen"
 			}
 		},
 		"filters": {
@@ -2752,7 +2755,8 @@
 			"openPayment": "Offener Zahlungsbetrag: {gross}",
 			"openPaymentCashback": "Bei Zahlungseingang bis {cashbackExpireDate} beträgt der offene Zahlungsbetrag {grossCashback}, danach {gross}.",
 			"openPaymentToday": "Offener Zahlungsbetrag bei heutigem Zahlungseingang: {gross}",
-			"paid": "Bestellung wurde vollständig bezahlt."
+			"paid": "Bestellung wurde vollständig bezahlt.",
+			"paymentInProgress": "Warten auf Zahlung über Zahlungsdienstleister."
 		}
 	},
 	"package": {
