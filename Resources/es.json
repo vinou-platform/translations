@@ -276,10 +276,10 @@
 	"cancel": "cancelar",
 	"cellarAction": {
 		"fields": {
-			"additionVolume": "acceso",
+			"additionVolume": "Acceso",
 			"barrel": {
-				"label": "recipiente",
-				"placeholder": "buscar recipiente"
+				"label": "Recipiente",
+				"placeholder": "Buscar recipiente"
 			},
 			"bookingStamp": {
 				"label": "Fecha de procesamiento",
@@ -298,8 +298,8 @@
 			},
 			"cellarWine": {
 				"assign": "Asignar a otra cuenta de vino?",
-				"label": "cuenta de vino",
-				"placeholder": "buscar cuenta de vino"
+				"label": "Cuenta de vino",
+				"placeholder": "Buscar cuenta de vino"
 			},
 			"cellarWineTransfer": {
 				"label": "Proveedor",
@@ -307,48 +307,50 @@
 			},
 			"clarifyingOnly": "Solo muestra recipientes para la clarificación",
 			"filtrationPurpose": {
-				"label": "uso de combustibles sólidos",
-				"placeholder": "e.j. esparcir como fertilizante en la viña"
+				"label": "Uso de combustibles sólidos",
+				"placeholder": "E.j. esparcir como fertilizante en la viña"
 			},
-			"harvestDeclarationNumber": "declaración de cosecha (receibo no.)",
-			"lossVolume": "perdida",
-			"marc": "orujo",
-			"note": "anotación / uso",
-			"price": "precio de venta",
-			"purchaseNote": "anotación / proveedor",
+			"harvestDeclarationNumber": "Declaración de cosecha (receibo no.)",
+			"latestMeasurements": "Ultimas medidas",
+			"lossVolume": "Perdida",
+			"marc": "Orujo",
+			"measurements": "Mediciones",
+			"note": "Anotación / uso",
+			"price": "Precio de venta",
+			"purchaseNote": "Anotación / proveedor",
 			"purchasePrice": "Precio de compra",
 			"purpose": {
-				"label": "uso",
+				"label": "Uso",
 				"placeholder": " "
 			},
 			"referenceNumber": "Recibo no. (p. documentos adjuntos)",
-			"residueRelocation": "trasvase del residuo",
-			"residueVolume": "residuo",
+			"residueRelocation": "Trasvase del residuo",
+			"residueVolume": "Residuo",
 			"sludgePurpose": {
-				"label": "uso de lías",
-				"placeholder": "e.j. esparcir como fertilizante en la viña."
+				"label": "Uso de lías",
+				"placeholder": "E.j. esparcir como fertilizante en la viña."
 			},
-			"sludgeRelocation": "trasvase de lías?",
-			"sludgeVolume": "lías",
+			"sludgeRelocation": "Trasvase de lías?",
+			"sludgeVolume": "Lías",
 			"sourceBarrel": {
-				"label": "recipiente para poner a remojo",
-				"placeholder": "buscar recipiente"
+				"label": "Recipiente para poner a remojo",
+				"placeholder": "Buscar recipiente"
 			},
 			"targetBarrel": {
-				"label": "recipiente de destino",
-				"placeholder": "buscar recipiente"
+				"label": "Recipiente de destino",
+				"placeholder": "Buscar recipiente"
 			},
 			"wine": {
 				"autoCreate": "Generar automáticamente desde la cuenta de vino",
-				"label": "vino",
-				"placeholder": "buscar vino"
+				"label": "Vino",
+				"placeholder": "Buscar vino"
 			},
-			"withdrawalVolume": "salida",
+			"withdrawalVolume": "Salida",
 
-			"barrels": "recipiente",
-			"addition": "acceso",
-			"withdrawal": "salida",
-			"substance": "sustancia"
+			"barrels": "Recipiente",
+			"addition": "Acceso",
+			"withdrawal": "Salida",
+			"substance": "Sustancia"
 		},
 		"actions": {
 			"create": {
@@ -551,7 +553,8 @@
 				"enrichment": "Enriquecimiento con {substance}",
 				"sweetening": "Edulcoración con {substance}",
 				"acidification": "Acidificación con {substance}",
-				"deacidification": "Desacidificación con {substance}"
+				"deacidification": "Desacidificación con {substance}",
+				"measuring": "Medición {measurement}"
 			}
 		},
 		"dialogs": {
