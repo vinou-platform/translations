@@ -1331,7 +1331,8 @@
 		"types": {
 			"winery": "Winery",
 			"merchant": "Merchant",
-			"reseller": "Reseller"
+			"reseller": "Reseller",
+			"laboratory": "Wine laboratory"
 		},
 		"pricingTypes": {
 			"acquisition": "In aquisition",

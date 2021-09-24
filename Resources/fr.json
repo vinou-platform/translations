@@ -1331,7 +1331,8 @@
 		"types": {
 			"winery": "Établissement vinicole",
 			"merchant": "Distributeur",
-			"reseller": "Revendeuse"
+			"reseller": "Revendeuse",
+			"laboratory": "Laboratoire du vin"
 		},
 		"pricingTypes": {
 			"acquisition": "En acquisition",
