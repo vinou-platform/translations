@@ -319,8 +319,8 @@
 			},
 			"harvestDeclarationNumber": "Erntemeldung (Belegnr.)",
 			"laboratory": {
-				"label": "Weinlabor",
-				"placeholder": "Im Vinou Netzwerk verfügbare Weinlabore suchen"
+				"label": "Labor",
+				"placeholder": "Im Vinou Netzwerk verfügbare Labore suchen"
 			},
 			"latestMeasurements": "Letzte Messwerte",
 			"lossVolume": "Verlust",
@@ -584,6 +584,37 @@
 		"hints": {
 			"accountClosure": "<strong>Achtung!</strong> Durch diese Aktion wird das Weinkonto dauerhaft geschlossen. Nachträglich sind keine Änderungen mehr möglich.",
 			"financialStatement": "Durch den Jahresabschluss werden alle bisherigen Vorgänge in diesem Weinkonto festgeschrieben. Nachträglich sind keine Änderungen mehr möglich. Bitte überprüfe noch einmal alle Vorgänge des Wirtschaftsjahres auf korrektheit bevor du fortfährst."
+		}
+	},
+	"analysisOrder": {
+		"actions": {
+			"export": "Export"
+		},
+		"views": {
+			"gallery": {
+				"number": "Auftragsnr.",
+				"wine": "Wein",
+				"barrel": "Behälter",
+				"sortby": {
+					"label": "Ansicht sortieren nach: "
+				}
+			},
+			"export": {
+				"number": "Auftragsnr.",
+				"wineNumber": "Weinnr.",
+				"wineName": "Weinbezeichnung"
+			},
+			"label": {
+				"bookingStamp": "Erfasst am",
+				"wine": "Wein",
+				"winery": "Auftraggeber"
+			}
+		},
+		"dialogs": {
+			"cancel": "Willst Du diesen Analyseauftrag zurückziehen"
+		},
+		"toasts": {
+			"cancelled": "Analyseauftrag vorläufig zurückgezogen"
 		}
 	},
 	"cellarWine": {
@@ -905,6 +936,10 @@
 	},
 	"template": {
 		"fields": {
+			"analysisOrder": {
+				"label": "Vorlage für Analyseaufträge",
+				"placeholder": "Standard P-Touch Etikett 100x62mm"
+			},
 			"catalog": {
 				"label": "Vorlage für PDF-Preislisten",
 				"placeholder": "Vinou-Preisliste (Standard)"
