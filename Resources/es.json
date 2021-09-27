@@ -298,6 +298,7 @@
 			},
 			"cellarWine": {
 				"assign": "Asignar a otra cuenta de vino?",
+				"autoCreate": "Asignar a vino crudo nuevo?",
 				"label": "Cuenta de vino",
 				"placeholder": "Buscar cuenta de vino"
 			},
@@ -1220,19 +1221,19 @@
 	"customer": {
 		"page": {
 			"register": {
-				"title": "registar cuenta a prueba",
+				"title": "Registar cuenta a prueba",
 				"description": "<p>Con tu Vinou<sup>®</sup> <b>cuenta a prueba puedes usar todas funciones de Vinou gratuito por 30 dias</b>. Después del mes puedes comprar la membresía Vinou-Complete sujetada a gastos. Igual que vas a hacer. Puedes usar Vinou aun después de los 30 dias con la membresía gratuita de Vinou-Promo. In ambos casos vas a estar informado por correo electrónico y puedes decidir a continuación.</p>",
-				"submit": "crear cuenta",
+				"submit": "Crear cuenta",
 				"send": "Felicidades, tu cuenta ha sido creada. En los próximos minutos vas a recibir un correo electrónico para poner tu contraseña y para activar tu membresía",
-				"company": "datos de empresa",
-				"contact": "contacto",
+				"company": "Datos de empresa",
+				"contact": "Contacto",
 				"field": {
 					"type": "Soy un: "
 				}
 			},
 			"verify": {
-				"title": "mandar verificación",
-				"send": "verificación va a estar mandada",
+				"title": "Mandar verificación",
+				"send": "Verificación va a estar mandada",
 				"reinvitelink": "pedir nueva invitación",
 				"contact": "Nos puedes contactar por:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>",
 				"success": {
@@ -1246,92 +1247,93 @@
 				}
 			},
 			"activate": {
-				"title": "terminar verificación",
+				"title": "Terminar verificación",
 				"description": "Solo te falta un paso para conseguir tu membresía. Por favor pon el nombre y la contraseña para crear el usuario de administración",
-				"user": "crear administrador",
-				"submit": "terminar verificación",
-				"success": "verificación terminada",
+				"user": "Crear administrador",
+				"submit": "Terminar verificación",
+				"success": "Verificación terminada",
 				"error": "No ha podido terminar la verificación. Por favor inténtalo de nuevo o ponte en contacto con nosotros para que puedas empezar directamente.<br><br> Nos puedes contactar por:<br><a href=\"mailto:kontakt@vinou.de\">kontakt@vinou.de</a> &middot; <a href=\"tel:+4961316245390\">+49(0) 6131 62 45 390</a>"
 			},
 			"upgrade": {
-				"title": "actualizar membresía",
+				"title": "Actualizar membresía",
 				"description": "Con la membresía de Vinou-Complete puedes usar todo el tiempo todas la funciones de Vinou por 40 euros al mes más el impuesto valor añadido. Cada orden cúal fue mediada a por nosotros tiene una comisión única de un euro. El cálculo se realiza al principio del mes. La comisión se cobra al primero del mes siguiente.",
 				"teaser": {
 					"publish": "<b>Estás usando Vinou-Promo en ese momento.</b> Para que puedas usar todas las funciones de Vinou tienes que elevar tu membresía a Vinou-Complete",
 					"trial": "<b>En ese momento estás usando Vinou gratis por un mes.</b> Para que puedas seguir usando Vinou con todas las funciones tienes que elevar tu membresía a Vinou-Complete"
 				},
 				"linktext": "Elevar ahora!",
-				"bank": "datos bancarios para cargo de SEPA"
+				"bank": "Datos bancarios para cargo de SEPA"
 			}
 		},
 		"action": {
 			"create": {
-				"main": "miembro nuevo",
+				"main": "Miembro nuevo",
 				"sub": "crear",
-				"title": "crear miembro nuevo",
-				"modaltitle": "crear miembro nuevo"
+				"title": "Crear miembro nuevo",
+				"modaltitle": "Crear miembro nuevo"
 			},
 			"login": {
 				"login": "Login"
 			},
 			"renewauth": {
-				"button": "renovar AuthID!"
+				"button": "Renovar AuthID!"
 			},
 			"search": {
-				"placeholder": "e.j. nombre, empresa, direción"
+				"placeholder": "E.j. nombre, empresa, direción"
 			}
 		},
 		"fieldSets": {
-			"membership": "membresía",
-			"contact": "datos de contacto",
-			"description": "descripción",
-			"settings": "ajustes",
-			"invoice": "datos de cuenta"
+			"membership": "Membresía",
+			"contact": "Datos de contacto",
+			"description": "Descripción",
+			"settings": "Ajustes",
+			"invoice": "Datos de cuenta"
 		},
 		"fields": {
-			"mail": "correo electrónico",
-			"password": "contraseña",
-			"phone": "teléfono",
+			"mail": "Correo electrónico",
+			"password": "Contraseña",
+			"phone": "Teléfono",
 			"voucher": "Tengo un código de vale",
 			"copyright": "© Copyright {company} 2018",
-			"name": "persona de contacto",
-			"company": "empresa",
-			"winery": "propiedad vinícola",
-			"taxid": "número de indentificación fiscal",
-			"vatid": "número de identificación a efecto del IVA",
+			"name": "Persona de contacto",
+			"company": "Empresa",
+			"winery": "Propiedad vinícola",
+			"taxid": "Número de indentificación fiscal",
+			"vatid": "Número de identificación a efecto del IVA",
 			"creditorid": "ID de acreedor",
-			"address": "calle y número de casa",
-			"zip": "código postal",
-			"city": "ciudad",
-			"zipcity": "código postal - ciudad",
-			"country": "país",
-			"www": "página web",
-			"fax": "fax",
-			"active": "activo",
-			"image": "logotipo",
-			"freetext": "texto libre",
+			"address": "Calle y número de casa",
+			"zip": "Código postal",
+			"city": "Ciudad",
+			"zipcity": "Código postal - ciudad",
+			"country": "País",
+			"www": "Página web",
+			"fax": "Fax",
+			"active": "Activo",
+			"image": "Logotipo",
+			"freetext": "Texto libre",
 			"authid": "ID de desarrollador",
-			"template": "plantilla de peritaje",
+			"template": "Plantilla de peritaje",
 			"cop": "He leido las <a href='http://www.vinou.de/agb' target='blank'>Condiciones Genereales de Contratación</a> y las acepto.",
 			"trust": "Estoy de acuerdo que se borrará mi cuenta si no cumple las condiciones de utilización o las condiciones de la registración.",
 			"payment": "Consiento que Vinou cobra mensualmente de mi cuenta la tarifa fija más el impuesto valor añadido y las tasas para las ordenes medidas.",
-			"pricing": "membresía",
+			"pricing": "Membresía",
 			"smallBusiness": {
-				"label": "pequeña empresa",
-				"description": "cuentas libre de impuestos"
+				"label": "Pequeña empresa",
+				"description": "Cuentas libre de impuestos"
 			},
-			"crstamp": "fecha de registración",
-			"expire": "fecha de vencimiento del período de prueba",
-			"voucher_old": "código de vale",
-			"source": "adquirido por",
-			"notice": "enviar correos del sistema",
-			"state": "estado",
-			"type": {
-				"label": "tipo",
-				"winery": "propiedad vinícola",
-				"merchant": "comerciante",
-				"reseller": "revendedoras"
-			}
+			"crstamp": "Fecha de registración",
+			"expire": "Fecha de vencimiento del período de prueba",
+			"voucher_old": "Código de vale",
+			"source": "Adquirido por",
+			"notice": "Enviar correos del sistema",
+			"state": "Estado",
+			"type": "Tipo"
+		},
+		"types": {
+			"winery": "Propiedad vinícola",
+			"merchant": "Comerciante",
+			"reseller": "Revendedoras",
+			"laboratory": "Laboratorio de vino"
 		},
 		"pricingTypes": {
 			"acquisition": "En adquisición",

@@ -298,6 +298,7 @@
 			},
 			"cellarWine": {
 				"assign": "Assegnare ad altro conto del vino?",
+				"autoCreate": "Assegnare a nuovo vino crudo?",
 				"label": "Conto del vino",
 				"placeholder": "Ricerca conto del vino"
 			},
@@ -1326,12 +1327,13 @@
 			"source": "Acquisito da",
 			"notice": "Invia e-mail di sistema",
 			"state": "Stato",
-			"type": {
-				"label": "Tipo",
-				"winery": "Vigna",
-				"merchant": "Distributore",
-				"reseller": "Rivenditrice"
-			}
+			"type": "Tipo"
+		},
+		"types": {
+			"winery": "Vigna",
+			"merchant": "Distributore",
+			"reseller": "Rivenditrice",
+			"laboratory": "Laboratorio del vino"
 		},
 		"pricingTypes": {
 			"acquisition": "In acquisizione",

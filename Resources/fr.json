@@ -298,6 +298,7 @@
 			},
 			"cellarWine": {
 				"assign": "Attribuer à un autre compte du vin?",
+				"autoCreate": "Attribuer à un nouveau vin brut?",
 				"label": "Compte du vin",
 				"placeholder": "Cherche compte du vin"
 			},
@@ -1326,12 +1327,13 @@
 			"source": "Acquis par",
 			"notice": "Envoyer des courriels système",
 			"state": "Statut",
-			"type": {
-				"label": "Type",
-				"winery": "Établissement vinicole",
-				"merchant": "Distributeur",
-				"reseller": "Revendeuse"
-			}
+			"type": "Type"
+		},
+		"types": {
+			"winery": "Établissement vinicole",
+			"merchant": "Distributeur",
+			"reseller": "Revendeuse",
+			"laboratory": "Laboratoire du vin"
 		},
 		"pricingTypes": {
 			"acquisition": "En acquisition",
