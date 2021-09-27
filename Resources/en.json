@@ -2713,6 +2713,9 @@
 			},
 			"shipments": {
 				"title": "Shipments"
+			},
+			"timeline": {
+				"paymentCancelled": "Incoming payment canceled"
 			}
 		},
 		"filters": {
@@ -2757,7 +2760,8 @@
 			"openPayment": "Open payment amount: {gross}",
 			"openPaymentCashback": "If payment is received by {cashbackExpireDate}, the open payment amount is {grossCashback}, then {gross}.",
 			"openPaymentToday": "Open payment amount with today's incoming payment: {gross}",
-			"paid": "The order has been paid for in full."
+			"paid": "The order has been paid for in full.",
+			"paymentInProgress": "Waiting for payment via payment service provider."
 		}
 	},
 	"package": {

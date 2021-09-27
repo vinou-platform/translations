@@ -2713,6 +2713,9 @@
 			},
 			"shipments": {
 				"title": "Livraisons"
+			},
+			"timeline": {
+				"paymentCancelled": "Paiement entrant annulé"
 			}
 		},
 		"filters": {
@@ -2757,7 +2760,8 @@
 			"openPayment": "Montant du paiement ouvert: {gross}",
 			"openPaymentCashback": "Si le paiement est reçu avant le {cashbackExpireDate}, le montant du paiement ouvert est de {grossCashback}, puis de {gross}.",
 			"openPaymentToday": "Montant du paiement ouvert avec le paiement entrant du jour: {gross}",
-			"paid": "Ordre a été payée en totalité."
+			"paid": "Ordre a été payée en totalité.",
+			"paymentInProgress": "En attente de paiement via le prestataire de services de paiement."
 		}
 	},
 	"package": {
