@@ -298,6 +298,7 @@
 			},
 			"cellarWine": {
 				"assign": "Assegnare ad altro conto del vino?",
+				"autoCreate": "Assegnare a nuovo vino crudo?",
 				"label": "Conto del vino",
 				"placeholder": "Ricerca conto del vino"
 			},

@@ -298,6 +298,7 @@
 			},
 			"cellarWine": {
 				"assign": "Assign to other raw wine?",
+				"autoCreate": "Assign to new raw wine?",
 				"label": "Raw wine",
 				"placeholder": "Search raw wine"
 			},

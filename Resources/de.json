@@ -305,6 +305,7 @@
 			},
 			"cellarWine": {
 				"assign": "Umlagerung auf anderes Weinkonto?",
+				"autoCreate": "Umlagerung auf neues Weinkonto?",
 				"label": "Weinkonto",
 				"placeholder": "Weinkonto suchen"
 			},

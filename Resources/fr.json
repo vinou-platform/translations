@@ -298,6 +298,7 @@
 			},
 			"cellarWine": {
 				"assign": "Attribuer à un autre compte du vin?",
+				"autoCreate": "Attribuer à un nouveau vin brut?",
 				"label": "Compte du vin",
 				"placeholder": "Cherche compte du vin"
 			},
