@@ -283,7 +283,7 @@
 				"label": "Auftragstext",
 				"placeholder": "Z.B. azg (Alkoholgehalt, Zuckergehalt, Säuregehalt)"
 			},
-			"analysisOrderNumber": "Lfd. Nr.",
+			"analysisOrderNumber": "Auftragsnr.",
 			"barrel": {
 				"label": "Behälter",
 				"placeholder": "Behälter suchen"
@@ -592,30 +592,25 @@
 			"export": "Export"
 		},
 		"views": {
-			"gallery": {
-				"number": "Auftragsnr.",
-				"wine": "Wein",
-				"barrel": "Behälter",
-				"sortby": {
-					"label": "Ansicht sortieren nach: "
-				}
-			},
 			"export": {
-				"number": "Auftragsnr.",
-				"wineNumber": "Weinnr.",
-				"wineName": "Weinbezeichnung"
+				"wineName": "Weinbezeichnung",
+				"wineNumber": "Weinnr."
 			},
-			"label": {
+			"gallery": {
+				"barrel": "Behälter",
+				"wine": "Wein"
+			},
+			"template": {
 				"bookingStamp": "Erfasst am",
 				"wine": "Wein",
 				"winery": "Auftraggeber"
 			}
 		},
 		"dialogs": {
-			"cancel": "Willst Du diesen Analyseauftrag zurückziehen"
+			"cancel": "Willst Du diesen Analyseauftrag zurückziehen?"
 		},
 		"toasts": {
-			"cancelled": "Analyseauftrag vorläufig zurückgezogen"
+			"cancelled": "Analyseauftrag vorläufig zurückgezogen."
 		}
 	},
 	"cellarWine": {
