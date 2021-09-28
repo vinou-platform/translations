@@ -1,5 +1,6 @@
 {
 	"modules": {
+		"analysisJobs": "Analyseaufträge",
 		"articles": "Artikel",
 		"articles.bulkWines": "Fassweine",
 		"articles.bundles": "Weinpakete",
@@ -607,7 +608,7 @@
 			}
 		},
 		"dialogs": {
-			"cancel": "Willst Du diesen Analyseauftrag zurückziehen?"
+			"cancel": "Willst Du diesen Analyseauftrag wirklich zurückziehen?"
 		},
 		"toasts": {
 			"cancelled": "Analyseauftrag vorläufig zurückgezogen."
@@ -934,7 +935,7 @@
 		"fields": {
 			"analysisOrder": {
 				"label": "Vorlage für Analyseaufträge",
-				"placeholder": "Standard P-Touch Etikett 100x62mm"
+				"placeholder": "Standard P-Touch Etikett 100x62 mm"
 			},
 			"catalog": {
 				"label": "Vorlage für PDF-Preislisten",
