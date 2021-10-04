@@ -656,6 +656,9 @@
 					"hideClosed": "Nascondi account di vino archiviati",
 					"readyForBottling": "Pronto per l'imbottigliamento"
 				}
+			},
+			"measurements": {
+				"title": "Storia"
 			}
 		},
 		"dialogs": {
@@ -820,6 +823,9 @@
 		}
 	},
 	"measurement": {
+		"actions": {
+			"showHistory": "Visualizza cronologia"
+		},
 		"fields": {
 			"currentValue": "De",
 			"targetValue": "a",

@@ -656,6 +656,9 @@
 					"hideClosed": "Archivierte Weinkonten ausblenden",
 					"readyForBottling": "Bereit zur Abfüllung"
 				}
+			},
+			"measurements": {
+				"title": "Historie"
 			}
 		},
 		"dialogs": {
@@ -820,6 +823,9 @@
 		}
 	},
 	"measurement": {
+		"actions": {
+			"showHistory": "Historie anzeigen"
+		},
 		"fields": {
 			"currentValue": "Von",
 			"targetValue": "Auf",

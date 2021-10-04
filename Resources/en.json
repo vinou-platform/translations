@@ -656,6 +656,9 @@
 					"hideClosed": "Hide archived wine accounts",
 					"readyForBottling": "Ready for bottling"
 				}
+			},
+			"measurements": {
+				"title": "History"
 			}
 		},
 		"dialogs": {
@@ -820,6 +823,9 @@
 		}
 	},
 	"measurement": {
+		"actions": {
+			"showHistory": "View history"
+		},
 		"fields": {
 			"currentValue": "From",
 			"targetValue": "To",
