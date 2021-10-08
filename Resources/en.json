@@ -2176,7 +2176,7 @@
 		"field": {
 			"contactname": "Contact name",
 			"username": "Username (for external access)",
-			"number": "Client number",
+			"number": "Client no.",
 			"company": "Company",
 			"taxid": "Tax ID",
 			"address": "Street",
@@ -2718,6 +2718,7 @@
 			"rebateGross": "Gross rebate (in {currency})",
 			"rebateNet": "Netto rebate (in {currency})",
 			"rebatesum": "Rebate",
+			"referenceNumber": "External reference no.",
 			"same_invoice_addr": "Same as billing address",
 			"search_product": "Search product",
 			"servicePeriod": {

@@ -1183,7 +1183,7 @@
 			},
 			"client": "cliente",
 			"note": "descripción, proveedor, ...",
-			"orderNumber": "Nº de pedido",
+			"orderNumber": "N° de pedido",
 			"purpose": "tipo",
 			"quantity": "cantidad",
 			"referenceNumber": "factura no., recibo no. (p. documentos adjuntos, número de vino)",
@@ -2176,7 +2176,7 @@
 		"field": {
 			"contactname": "persona de contacto",
 			"username": "Nombre de usuario (para acceso externo)",
-			"number": "número del cliente",
+			"number": "N° del cliente",
 			"company": "empresa",
 			"taxid": "ID de impuestos",
 			"address": "calle y número de casa",
@@ -2718,6 +2718,7 @@
 			"rebateGross": "desuento bruto (en {currency})",
 			"rebateNet": "desuento neto (en {currency})",
 			"rebatesum": "descuento",
+			"referenceNumber": "N° de referencia externa",
 			"same_invoice_addr": "como dirección de cuenta",
 			"search_product": "buscar producto",
 			"servicePeriod": {

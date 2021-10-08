@@ -2176,7 +2176,7 @@
 		"field": {
 			"contactname": "Persona di contatto",
 			"username": "Nome utente (per accesso esterno)",
-			"number": "Numero cliente",
+			"number": "N° cliente",
 			"company": "Azienda",
 			"taxid": "Numero di identificazione fiscale",
 			"address": "Via e numero",
@@ -2718,6 +2718,7 @@
 			"rebateGross": "Sconto lordo (in {currency})",
 			"rebateNet": "Sconto netta (in {currency})",
 			"rebatesum": "Sconto",
+			"referenceNumber": "N° di riferimento esterno",
 			"same_invoice_addr": "Come l'indirizzo di fatturazione",
 			"search_product": "Cerca prodotto",
 			"servicePeriod": {
