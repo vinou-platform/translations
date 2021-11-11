@@ -1007,7 +1007,6 @@
 	"settings_packaging": "Opzioni di spedizione",
 	"settings_advanced": "Impostazioni avanzate. ",
 	"settings_templates": "Amministrare modelli",
-	"settings_mailsetup": "Cassetta postale SMTP per recapito e-mail",
 	"settings_payments": "Metodi di pagamento",
 	"settings_connections": "Collegamenti.",
 	"sysTool_account": "Impostazioni",
@@ -1132,11 +1131,6 @@
 	"db_winecategories_description": "Descrizione",
 	"db_winecategories_image": "Immagine",
 	"db_payments_createtitle": "Creare ricevimento del pagamento",
-	"db_payments_edittitle": "Modificare ricevimento del pagamento",
-	"db_payments_type": "Tipo",
-	"db_payments_type_cash": "Pagamenti in contanti",
-	"db_payments_type_bank": "Versamenti sul conto",
-	"db_payments_type_paypal": "Paypal",
 	"db_payments_bookingstamp": "Giorno della prenotazione.",
 	"db_payments_details": "Dettagli",
 	"db_payments_gross": "Importo ",
@@ -1232,20 +1226,6 @@
 			"wineErpRelease": "Rilascio del vino ERP"
 		}
 	},
-	"mailsetup_edittitle": "Modificare impostazion SMTP",
-	"mailsetup_smtpserver": "SMTP-Server",
-	"mailsetup_smtpport": "Port an SMTP-Server",
-	"mailsetup_smtpuser": "Nome utente ",
-	"mailsetup_smtppassword": "Password",
-	"mailsetup_smtpencrypt": "Codifica.",
-	"mailsetup_senderemail": "E-Mail dell' E-Mails uscire",
-	"mailsetup_sendername": "Mittente per e-mail in uscita",
-	"paypal_edittitle": "Modificare Impostationi di Paypal",
-	"paypal_paypalclientid": "Client-ID",
-	"paypal_paypalsecret": "Secret",
-	"paypal_paypalappmode": "Modus",
-	"paypal_appmode_sandbox": "Sandbox",
-	"paypal_appmode_live": "Live",
 	"bank_edittitle": "Modificare coordinate bancarie",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
@@ -3744,8 +3724,8 @@
 			"description": "Qui, gestisci i tuoi dati per l'abbonamento Vinou. Queste informazioni non verranno visualizzate pubblicamente."
 		},
 		"mail": {
-			"title": "Configurazione e-mail",
-			"description": "Vinou e il tuo negozio online inviano e-mail regolarmente o automaticamente attraverso determinati processi. qui puoi specificare le impostazioni per una casella di posta per la spedizione."
+			"title": "Email",
+			"description": "La rete Vinou e anche il tuo negozio online inviano notifiche di posta automatizzate. Qui puoi configurare la tua casella di posta SMTP e decidere quali email vuoi inviare."
 		},
 		"membership": {
 			"title": "Abbonamento",
@@ -3770,6 +3750,34 @@
 				"hint": "L’inoltro automatico degli ordini deve essere attivato singolarmente per i tuoi vini."
 			}
 		},
+		"notification": {
+			"title": "Notifiche",
+			"description": "Definisci quali email devono essere inviate automaticamente. Puoi anche caricare i tuoi modelli di email, per adattare le email all'identità aziendale della tua azienda.",
+			"fields": {
+				"template": "Modello"
+			},
+			"toasts": {
+				"changed": "Le impostazioni di notifica sono state aggiornate!"
+			},
+			"types": {
+				"analysisJobAdd": {
+					"title": "Conferma d'ordine di analisi",
+					"description": "Vinou Cellar offre ai produttori di vino l'opportunità di commissionare direttamente ordini di analisi. Questa e-mail viene inviata automaticamente all'enologo non appena effettua un ordine di analisi."
+				},
+				"analysisJobAddNotification": {
+					"title": "Notifica all'utente quando viene ricevuto un nuovo ordine di analisi",
+					"description": "Se un produttore di vino effettua un nuovo ordine di analisi tramite la Cantina Vinou, puoi essere avvisato con questa e-mail."
+				},
+				"orderAdd": {
+					"title": "Conferma dell'ordine",
+					"description": "Questa email viene inviata automaticamente ai tuoi clienti quando effettuano un ordine tramite il tuo negozio online."
+				},
+				"orderAddNotification": {
+					"title": "Notifica all'utente quando viene ricevuto un nuovo ordine",
+					"description": "Quando viene effettuato un nuovo ordine nel tuo negozio online, puoi essere avvisato tramite questa e-mail."
+				}
+			}
+		},
 		"packagings": {
 			"title": "Opzione di spedizione",
 			"description": "Imposta le opzioni di spedizione per calcolare le singole spese di spedizione. Questo è necessario per gestire il tuo Vinou-Shop."
@@ -3782,6 +3790,24 @@
 			"title": "Metodi di pagamento",
 			"description": "Utilizzando diversi metodi di pagamento, puoi offrire ai tuoi clienti finali più opzioni nel negozio online.",
 			"bankaccount": "Banca",
+			"paypal": {
+				"name": "Paypal",
+				"title": "Modifica configurazione Paypal",
+				"fields": {
+					"accountId": "Account-ID",
+					"clientId": "Identificativo cliente",
+					"clientSecret": "Segreto del cliente",
+					"mail": "E-mail",
+					"environment": "Modalità"
+				},
+				"environments": {
+					"sandbox": "Sandbox",
+					"production": "Abitare"
+				},
+				"toasts": {
+					"changed": "Configurazione PayPay aggiornata!"
+				}
+			},
 			"stripe": {
 				"name": "Stripe",
 				"title": "Elaborazione del pagamento da parte di Stripe",
@@ -3825,6 +3851,28 @@
 				"description": "Configura le tue spedizioni per definire, ad es., un fornitore di servizi logistici standard."
 			}
 		},
+		"smtp": {
+			"title": "Configurazione SMTP",
+			"description": "Per impostazione predefinita, le e-mail ai tuoi clienti vengono inviate tramite il server SMTP di Vinou. Pertanto il mittente è sempre noreply@vinou.de. Per modificare questo comportamento, inserisci qui le tue impostazioni SMTP.",
+			"fields": {
+				"host": "Host / Server",
+				"port": "Porto",
+				"user": "Nome utente",
+				"password": "Parola d'ordine",
+				"fromMail": "E-mail del mittente per le e-mail in uscita",
+				"fromName": "Nome del mittente per le email in uscita"
+			},
+			"toasts": {
+				"changed": "La configurazione SMTP è stata modificata!",
+				"deleted": "La configurazione SMTP è stata eliminata!"
+			},
+			"dialogs": {
+				"delete": "Vuoi davvero scartare la configurazione SMTP?"
+			},
+			"errors": {
+				"failedToConnect": "L'invio della posta di prova non è riuscito. Si prega di verificare la configurazione e la disponibilità del server SMTP."
+			}
+		},
 		"technical": {
 			"title": "Tecnica",
 			"description": "Per alcune cose, puoi anche eseguire impostazioni tecniche. Puoi trovare queste impostazioni qui."
@@ -3863,8 +3911,6 @@
 		"settings_bank_changed": "Dati bancari aggiornati!",
 		"settings_cashlink_registered": "Cashlink registrato !",
 		"settings_cashlink_registererror": "Registrazione non riuscita, posta probabilmente già presa!",
-		"settings_smtp_changed": "Configurazione SMTP aggiornata!",
-		"settings_paypal_changed": "Configurazione PayPay aggiornata!",
 		"winery_created": "Vigna è stato creata",
 		"winery_changed": "Vigna è stato aggiornato",
 		"winery_deleted": "Vigna è stato cancellata!",

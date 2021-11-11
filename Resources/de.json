@@ -1007,7 +1007,6 @@
 	"settings_packaging": "Versandoption",
 	"settings_advanced": "Erweiterte Einstellungen",
 	"settings_templates": "Vorlagen verwalten",
-	"settings_mailsetup": "SMTP Postfach für E-Mail-Versand",
 	"settings_payments": "Zahlungsmethoden",
 	"settings_connections": "Verbindungen",
 	"sysTool_account": "Einstellungen",
@@ -1132,11 +1131,6 @@
 	"db_winecategories_description": "Beschreibung",
 	"db_winecategories_image": "Bild",
 	"db_payments_createtitle": "Zahlungseingang anlegen",
-	"db_payments_edittitle": "Zahlungseingang bearbeiten",
-	"db_payments_type": "Typ",
-	"db_payments_type_cash": "Barzahlung",
-	"db_payments_type_bank": "Kontoeinzahlung",
-	"db_payments_type_paypal": "Paypal",
 	"db_payments_bookingstamp": "Buchungstag",
 	"db_payments_details": "Details",
 	"db_payments_gross": "Betrag",
@@ -1232,20 +1226,6 @@
 			"wineErpRelease": "Flaschenweinfreigabe"
 		}
 	},
-	"mailsetup_edittitle": "SMTP-Einstellungen bearbeiten",
-	"mailsetup_smtpserver": "SMTP-Server",
-	"mailsetup_smtpport": "Port an SMTP-Server",
-	"mailsetup_smtpuser": "Benutzername",
-	"mailsetup_smtppassword": "Passwort",
-	"mailsetup_smtpencrypt": "Verschlüsselung",
-	"mailsetup_senderemail": "E-Mail für ausgehende E-Mails",
-	"mailsetup_sendername": "Absender für ausgehende E-Mails",
-	"paypal_edittitle": "Paypal-Einstellungen bearbeiten",
-	"paypal_paypalclientid": "Client-ID",
-	"paypal_paypalsecret": "Secret",
-	"paypal_paypalappmode": "Modus",
-	"paypal_appmode_sandbox": "Sandbox",
-	"paypal_appmode_live": "Live",
 	"bank_edittitle": "Bankverbindung bearbeiten",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
@@ -3744,8 +3724,8 @@
 			"description": "Hier verwaltest Du die Daten für Deine Vinou-Mitgliedschaft."
 		},
 		"mail": {
-			"title": "E-Mail Setup",
-			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen."
+			"title": "E-Mails",
+			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen und entscheiden, welche E-Mails du senden möchtest."
 		},
 		"membership": {
 			"title": "Mitgliedschaft",
@@ -3770,6 +3750,34 @@
 				"hint": "Die automatische Bestellweiterleitung muss anschließend noch einzeln für Deine Weine aktiviert."
 			}
 		},
+		"notification": {
+			"title": "Benachrichtigungen",
+			"description": "Lege hier fest, welche E-Mails automatisch versendet werden sollen. Zusätzlich kannst du eigene Vorlagen hinterlegen, um die E-Mails deinem Firmendesign anzupassen.",
+			"fields": {
+				"template": "Vorlage"
+			},
+			"toasts": {
+				"changed": "Benachrichtigungseinstellungen aktualisiert!"
+			},
+			"types": {
+				"analysisJobAdd": {
+					"title": "Auftragsbestätigung für Analyseauftrag",
+					"description": "Über Vinou Cellar haben Winzer die Möglichkeit, Analyseaufträge direkt zu beauftragen. Diese E-Mail wird automatisch an den Winzer gesendet, sobald er einen Analyseauftrag einstellt."
+				},
+				"analysisJobAddNotification": {
+					"title": "Benachrichtigung an Dich bei Eingang eines neuen Analyseauftrags",
+					"description": "Wenn ein Winzer über Vinou Cellar einen neuen Analyseauftrag einstellt, kannst Du Dich mit dieser E-Mail darüber benachrichtigen lassen."
+				},
+				"orderAdd": {
+					"title": "Bestellbestätigung",
+					"description": "Diese E-Mail wird automatisch an Deine Kunden gesendet, wenn sie über Deinen Online-Shop eine Bestellung aufgeben."
+				},
+				"orderAddNotification": {
+					"title": "Benachrichtigung an Dich bei Bestelleingang",
+					"description": "Wenn über Deinen Online-Shop eine neue Bestellung eingeht, kannst Du Dich mit dieser E-Mail darüber benachrichtigen lassen."
+				}
+			}
+		},
 		"packagings": {
 			"title": "Versandoptionen",
 			"description": "Konfiguriere Deine Versandoptionen, um die individuellen Versandkosten zu berechnen. Dies ist u.a. notwendig, um Deinen Vinou-Shop zu betreiben."
@@ -3782,6 +3790,24 @@
 			"title": "Zahlungsmethoden",
 			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten.",
 			"bankaccount": "Bankverbindung",
+			"paypal": {
+				"name": "Paypal",
+				"title": "Paypal-Einstellungen bearbeiten",
+				"fields": {
+					"accountId": "Account-ID",
+					"clientId": "Client-ID",
+					"clientSecret": "Client-Secret",
+					"mail": "E-Mail",
+					"environment": "Modus"
+				},
+				"environments": {
+					"sandbox": "Sandbox",
+					"production": "Live"
+				},
+				"toasts": {
+					"changed": "Paypal-Einstellungen aktualisiert!"
+				}
+			},
 			"stripe": {
 				"name": "Stripe",
 				"title": "Zahlungsabwicklung durch Stripe",
@@ -3825,6 +3851,28 @@
 				"description": "Konfiguriere Deinen Versand, um z.B. einen Standard Logistik-Dienstleister festlegen zu können."
 			}
 		},
+		"smtp": {
+			"title": "SMTP-Postfach",
+			"description": "E-Mails an Deine Kunden werden standardmäßig über das Vinou Postfach gesendet. Der Absender ist dadurch immer noreply@vinou.de. Um dies zu ändern kannst Du hier ein eigenes SMTP-Postfach hinterlegen.",
+			"fields": {
+				"host": "Host / Server",
+				"port": "Port",
+				"user": "Benutzername",
+				"password": "Passwort",
+				"fromMail": "E-Mail für ausgehende E-Mails",
+				"fromName": "Absender für ausgehende E-Mails"
+			},
+			"toasts": {
+				"changed": "SMTP-Einstellungen aktualisiert!",
+				"deleted": "SMTP-Einstellungen gelöscht!"
+			},
+			"dialogs": {
+				"delete": "Möchtest du die SMTP-Einstellungen wirklich verwerfen?"
+			},
+			"errors": {
+				"failedToConnect": "Es konnte keine Test-Email gesendet werden. Bitte prüfe deine Einstellungen und die Erreichbarkeit des SMTP-Servers."
+			}
+		},
 		"technical": {
 			"title": "Technik",
 			"description": "Für einige Dinge kannst Du auch technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
@@ -3863,8 +3911,6 @@
 		"settings_bank_changed": "Bankverbindung aktualisiert!",
 		"settings_cashlink_registered": "Cashlink registriert!",
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
-		"settings_smtp_changed": "SMTP-Einstellungen aktualisiert!",
-		"settings_paypal_changed": "Paypal-Einstellungen aktualisiert!",
 		"winery_created": "Weingut angelegt!",
 		"winery_changed": "Weingut aktualisiert!",
 		"winery_deleted": "Weingut gelöscht!",

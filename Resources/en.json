@@ -1007,7 +1007,6 @@
 	"settings_packaging": "Shipment costs",
 	"settings_advanced": "Advanced Settings",
 	"settings_templates": "Template administration",
-	"settings_mailsetup": "SMTP Mailbox for email delivery",
 	"settings_payments": "Paymentmethods",
 	"settings_connections": "Connections",
 	"sysTool_account": "Settings",
@@ -1132,11 +1131,6 @@
 	"db_winecategories_description": "Description",
 	"db_winecategories_image": "Image",
 	"db_payments_createtitle": "Create payment receipe",
-	"db_payments_edittitle": "Create payment receipe",
-	"db_payments_type": "Type",
-	"db_payments_type_cash": "Cash",
-	"db_payments_type_bank": "Bank transaction",
-	"db_payments_type_paypal": "Paypal",
 	"db_payments_bookingstamp": "Booking day",
 	"db_payments_details": "Details",
 	"db_payments_gross": "Amount",
@@ -1232,20 +1226,6 @@
 			"wineErpRelease": "Wine ERP release"
 		}
 	},
-	"mailsetup_edittitle": "Edit SMTP-Server properties",
-	"mailsetup_smtpserver": "SMTP-Server",
-	"mailsetup_smtpport": "Port on SMTP-Server",
-	"mailsetup_smtpuser": "Username",
-	"mailsetup_smtppassword": "Password",
-	"mailsetup_smtpencrypt": "Encryption",
-	"mailsetup_senderemail": "email for outbound",
-	"mailsetup_sendername": "sendername for outbound",
-	"paypal_edittitle": "Edit paypal-settings",
-	"paypal_paypalclientid": "Client-ID",
-	"paypal_paypalsecret": "Secret",
-	"paypal_paypalappmode": "Mode",
-	"paypal_appmode_sandbox": "Sandbox",
-	"paypal_appmode_live": "Live",
 	"bank_edittitle": "Edit bank account",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
@@ -3744,8 +3724,8 @@
 			"description": "Administrate your Vinou membership settings. These information are not public and won’t be shown in the Vinou network."
 		},
 		"mail": {
-			"title": "E-Mail setup",
-			"description": "The Vinou-Network and also your webshop are sending automated mail notifications. To use this you need to configure an SMTP-Mailbox."
+			"title": "Emails",
+			"description": "The Vinou-Network and also your webshop are sending automated mail notifications. Here you may configure your SMTP-Mailbox and decide, which emails you want to send."
 		},
 		"membership": {
 			"title": "Membership",
@@ -3770,6 +3750,34 @@
 				"hint": "After activation, order forwarding must also be activated for each wine."
 			}
 		},
+		"notification": {
+			"title": "Notifications",
+			"description": "Define, which emails should be sent automatically. You may also upload your own email templates, to adapt the emails to the corporate identity of your company.",
+			"fields": {
+				"template": "Template"
+			},
+			"toasts": {
+				"changed": "Notification settings updated!"
+			},
+			"types": {
+				"analysisJobAdd": {
+					"title": "Order confirmation for analysis order",
+					"description": "Vinou Cellar gives winemakers the opportunity to commission analysis orders directly. This email is automatically sent to the winemaker as soon as he places an analysis order."
+				},
+				"analysisJobAddNotification": {
+					"title": "Notification to you when a new analysis order is received",
+					"description": "If a winemaker places a new analysis order via Vinou Cellar, you can be notified of this with this e-mail."
+				},
+				"orderAdd": {
+					"title": "Order confirmation",
+					"description": "This email is automatically sent to your clients when they place an order through your online shop."
+				},
+				"orderAddNotification": {
+					"title": "Notification to you when a new order is received",
+					"description": "When a new order is placed in your online shop, you can be notified of this via this email."
+				}
+			}
+		},
 		"packagings": {
 			"title": "Package options",
 			"description": "Configure your package options regarding count of bottles or weight of an order. This is really important to use your webshop."
@@ -3782,6 +3790,24 @@
 			"title": "Payment methods",
 			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
 			"bankaccount": "Bank account",
+			"paypal": {
+				"name": "Paypal",
+				"title": "Edit Paypal-settings",
+				"fields": {
+					"accountId": "Account-ID",
+					"clientId": "Client-ID",
+					"clientSecret": "Client-Secret",
+					"mail": "Email",
+					"environment": "Modu"
+				},
+				"environments": {
+					"sandbox": "Sandbox",
+					"production": "Live"
+				},
+				"toasts": {
+					"changed": "Paypal-settings updated!"
+				}
+			},
 			"stripe": {
 				"name": "Stripe",
 				"title": "Payment processing by Stripe",
@@ -3825,6 +3851,28 @@
 				"description": "Configure shipment e.g. to select a default shipment carrier."
 			}
 		},
+		"smtp": {
+			"title": "SMTP-Settings",
+			"description": "By default emails to your clients are sent via Vinou SMTP server. Therefore the sender is always noreply@vinou.de. To change this behaviour enter your own SMTP settings here.",
+			"fields": {
+				"host": "Host / Server",
+				"port": "Port",
+				"user": "Username",
+				"password": "Password",
+				"fromMail": "Sender email for outbound emails",
+				"fromName": "Sender name for outbound emails"
+			},
+			"toasts": {
+				"changed": "SMTP-Settings updated!",
+				"deleted": "SMTP-Settings deleted!"
+			},
+			"dialogs": {
+				"delete": "Do you really want to discard all SMTP settings?"
+			},
+			"errors": {
+				"failedToConnect": "Sending of test mail failed. Please check settings and SMTP server availability."
+			}
+		},
 		"technical": {
 			"title": "Technology",
 			"description": "For some aspects you need to configure some technical stuff. This is the place to do that."
@@ -3863,8 +3911,6 @@
 		"settings_bank_changed": "Bank account updated!",
 		"settings_cashlink_registered": "Cashlink registered!",
 		"settings_cashlink_registererror": "Registration failed, did you use the false mail address!",
-		"settings_smtp_changed": "SMTP-Settings updated!",
-		"settings_paypal_changed": "Paypal-Settings updated!",
 		"winery_created": "Winery created!",
 		"winery_changed": "Winery updated!",
 		"winery_deleted": "Winery deleted!",

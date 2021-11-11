@@ -1007,7 +1007,6 @@
 	"settings_packaging": "Options d'expédition",
 	"settings_advanced": "Configuration avancée",
 	"settings_templates": "Gérer les modèles",
-	"settings_mailsetup": "SMTP Boîte postale pour courriel",
 	"settings_payments": "Méthodes de paiement",
 	"settings_connections": "Composés",
 	"sysTool_account": "Configuration",
@@ -1132,11 +1131,6 @@
 	"db_winecategories_description": "Description",
 	"db_winecategories_image": "Image",
 	"db_payments_createtitle": "Créer réception du paiement",
-	"db_payments_edittitle": "Éditer réception du paiement",
-	"db_payments_type": "Type",
-	"db_payments_type_cash": "Paiement en espèces",
-	"db_payments_type_bank": "Dépot á compte",
-	"db_payments_type_paypal": "PayPal",
 	"db_payments_bookingstamp": "Date de comptabilisation",
 	"db_payments_details": "Détails",
 	"db_payments_gross": "Montant",
@@ -1232,20 +1226,6 @@
 			"wineErpRelease": "Sortie de vin ERP"
 		}
 	},
-	"mailsetup_edittitle": "Éditer modification de SMTP",
-	"mailsetup_smtpserver": "Serveur SMTP",
-	"mailsetup_smtpport": "Port sur Serveur SMTP",
-	"mailsetup_smtpuser": "Nom d'utilisateur",
-	"mailsetup_smtppassword": "Mot de passe",
-	"mailsetup_smtpencrypt": "Cryptage",
-	"mailsetup_senderemail": "Courriel pour courriel sortant",
-	"mailsetup_sendername": "Expéditeur pour courriel sortant",
-	"paypal_edittitle": "Éditer paramètres PayPal",
-	"paypal_paypalclientid": "Client-ID",
-	"paypal_paypalsecret": "Secret",
-	"paypal_paypalappmode": "Mode",
-	"paypal_appmode_sandbox": "Bac à sable",
-	"paypal_appmode_live": "En direct",
 	"bank_edittitle": "Éditer coordonnées bancaire",
 	"bank_iban": "IBAN",
 	"bank_bic": "BIC",
@@ -3744,8 +3724,8 @@
 			"description": "Ici, vous gérez vos données pour votre abonnement à Vinou. Ces informations ne seront pas affichées publiquement."
 		},
 		"mail": {
-			"title": "Configuration du courriel",
-			"description": "Vinou et votre boutique en ligne envoient des e-mails régulièrement ou automatiquement via certains processus. Pour l'expédition, vous pouvez déposer ici les paramètres d'une boîte aux lettres."
+			"title": "Courriels",
+			"description": "Le réseau Vinou ainsi que votre boutique en ligne envoient des notifications automatiques par courrier. Ici, vous pouvez configurer votre boîte aux lettres SMTP et décider quels e-mails vous souhaitez envoyer."
 		},
 		"membership": {
 			"title": "Abonnement",
@@ -3770,6 +3750,34 @@
 				"hint": "La réexpédition automatique de commande doit alors être activée individuellement pour vos vins."
 			}
 		},
+		"notification": {
+			"title": "Notifications",
+			"description": "Définissez quels e-mails doivent être envoyés automatiquement. Vous pouvez également télécharger vos propres modèles d'e-mails, pour adapter les e-mails à l'identité visuelle de votre entreprise.",
+			"fields": {
+				"template": "Modèle"
+			},
+			"toasts": {
+				"changed": "Les paramètres de notification ont été mis à jour!"
+			},
+			"types": {
+				"analysisJobAdd": {
+					"title": "Confirmation de commande d'analyse",
+					"description": "Vinou Cellar offre aux vignerons la possibilité de passer directement des commandes d'analyses. Cet email est automatiquement envoyé au vigneron dès qu'il passe une commande d'analyse."
+				},
+				"analysisJobAddNotification": {
+					"title": "Notification à vous lorsqu'une nouvelle commande d'analyse est reçue",
+					"description": "Si un vigneron passe une nouvelle commande d'analyse via Vinou Cellar, vous pouvez en être averti par cet e-mail."
+				},
+				"orderAdd": {
+					"title": "Confirmation de commande",
+					"description": "Cet e-mail est automatiquement envoyé à vos clients lorsqu'ils passent une commande sur votre boutique en ligne."
+				},
+				"orderAddNotification": {
+					"title": "Notification à vous lorsqu'une nouvelle commande est reçue",
+					"description": "Lorsqu'une nouvelle commande est passée dans votre boutique en ligne, vous pouvez en être averti via cet e-mail."
+				}
+			}
+		},
 		"packagings": {
 			"title": "Option d'expédition",
 			"description": "Configurez vos options d'expédition pour calculer les coûts d'expédition individuels. Ceci est nécessaire pour faire fonctionner votre Vinou-Shop."
@@ -3782,6 +3790,24 @@
 			"title": "Méthodes de paiement",
 			"description": "À l'aide des différentes méthodes de paiement, vous pouvez offrir à vos clients finaux davantage d'options dans la boutique en ligne.",
 			"bankaccount": "Coordonnées bancaire",
+			"paypal": {
+				"name": "Paypal",
+				"title": "Modifier la configuration Paypal",
+				"fields": {
+					"accountId": "Identifiant de compte",
+					"clientId": "Identité du client",
+					"clientSecret": "Secret du client",
+					"mail": "E-mail",
+					"environment": "Mode"
+				},
+				"environments": {
+					"sandbox": "Bac à sable",
+					"production": "En direct"
+				},
+				"toasts": {
+					"changed": "Configuration PayPay mise à jour!"
+				}
+			},
 			"stripe": {
 				"name": "Stripe",
 				"title": "Traitement des paiements par Stripe",
@@ -3825,6 +3851,28 @@
 				"description": "Configurez vos expédition pour p.ex. définir un fournisseur de services logistiques standard."
 			}
 		},
+		"smtp": {
+			"title": "Paramètres SMTP",
+			"description": "Par défaut, les e-mails à vos clients sont envoyés via le serveur SMTP de Vinou. Par conséquent, l'expéditeur est toujours noreply@vinou.de. Pour modifier ce comportement, saisissez ici vos propres paramètres SMTP.",
+			"fields": {
+				"host": "Serveur SMTP",
+				"port": "Port",
+				"user": "Nom d'utilisateur",
+				"password": "Mot de passe",
+				"fromMail": "E-mail de l'expéditeur pour les e-mails sortants",
+				"fromName": "Nom de l'expéditeur pour les e-mails sortants"
+			},
+			"toasts": {
+				"changed": "Les paramètres SMTP ont été mis à jour!",
+				"deleted": "Les paramètres SMTP ont été supprimés!"
+			},
+			"dialogs": {
+				"delete": "Voulez-vous vraiment supprimer tous les paramètres SMTP?"
+			},
+			"errors": {
+				"failedToConnect": "L'envoi du courrier de test a échoué. Veuillez vérifier les paramètres et la disponibilité du serveur SMTP."
+			}
+		},
 		"technical": {
 			"title": "Technologie",
 			"description": "Pour certaines choses, vous pouvez également faire des configurations techniques. Vous pouvez trouver ces paramètres ici."
@@ -3863,8 +3911,6 @@
 		"settings_bank_changed": "Coordonnées bancaires mises à jour!",
 		"settings_cashlink_registered": "Cashlink enregistré!",
 		"settings_cashlink_registererror": "Enregistrement échoué, courrier éventuellement déjà pris!",
-		"settings_smtp_changed": "Configuration SMTP mise à jour!",
-		"settings_paypal_changed": "Configuration PayPay mise à jour!",
 		"winery_created": "Établissement vinicole créé!",
 		"winery_changed": "Établissement vinicole mis à jour!",
 		"winery_deleted": "Établissement vinicole supprimé!",
