@@ -3856,7 +3856,7 @@
 			"description": "Per impostazione predefinita, le e-mail ai tuoi clienti vengono inviate tramite il server SMTP di Vinou. Pertanto il mittente è sempre noreply@vinou.de. Per modificare questo comportamento, inserisci qui le tue impostazioni SMTP.",
 			"fields": {
 				"host": "Host / Server",
-				"port": "Porto",
+				"port": "Porto TLS",
 				"user": "Nome utente",
 				"password": "Parola d'ordine",
 				"fromMail": "E-mail del mittente per le e-mail in uscita",

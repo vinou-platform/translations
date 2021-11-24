@@ -3856,7 +3856,7 @@
 			"description": "De forma predeterminada, los correos electrónicos a sus clientes se envían a través del servidor Vinou SMTP. Por lo tanto, el remitente es siempre noreply@vinou.de. Para cambiar este comportamiento, ingrese su propia configuración SMTP aquí.",
 			"fields": {
 				"host": "Servidor huesped",
-				"port": "Port",
+				"port": "Puerto TLS",
 				"user": "Nombre de usuario",
 				"password": "Contraseña",
 				"fromMail": "Correo electrónico para correo electrónicos saliendo",

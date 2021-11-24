@@ -3856,7 +3856,7 @@
 			"description": "Par défaut, les e-mails à vos clients sont envoyés via le serveur SMTP de Vinou. Par conséquent, l'expéditeur est toujours noreply@vinou.de. Pour modifier ce comportement, saisissez ici vos propres paramètres SMTP.",
 			"fields": {
 				"host": "Serveur SMTP",
-				"port": "Port",
+				"port": "Port TLS",
 				"user": "Nom d'utilisateur",
 				"password": "Mot de passe",
 				"fromMail": "E-mail de l'expéditeur pour les e-mails sortants",

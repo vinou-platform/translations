@@ -3856,7 +3856,7 @@
 			"description": "By default emails to your clients are sent via Vinou SMTP server. Therefore the sender is always noreply@vinou.de. To change this behaviour enter your own SMTP settings here.",
 			"fields": {
 				"host": "Host / Server",
-				"port": "Port",
+				"port": "TLS Port",
 				"user": "Username",
 				"password": "Password",
 				"fromMail": "Sender email for outbound emails",

@@ -3856,7 +3856,7 @@
 			"description": "E-Mails an Deine Kunden werden standardmäßig über das Vinou Postfach gesendet. Der Absender ist dadurch immer noreply@vinou.de. Um dies zu ändern kannst Du hier ein eigenes SMTP-Postfach hinterlegen.",
 			"fields": {
 				"host": "Host / Server",
-				"port": "Port",
+				"port": "TLS-Port",
 				"user": "Benutzername",
 				"password": "Passwort",
 				"fromMail": "E-Mail für ausgehende E-Mails",
