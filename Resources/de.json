@@ -2258,11 +2258,14 @@
 		},
 		"fields": {
 			"type": "Adresstyp",
+			"subtype": "Lieferung an",
 			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
 			"company": "Firma",
 			"address": "Straße und Hausnummer",
 			"address_supplement": "Adresszusatz",
+			"postNumber": "Postnummer des Empfänger",
+			"packstation": "Nummer der Packstation",
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land",
@@ -2280,8 +2283,17 @@
 			"shipping": "Lieferadresse",
 			"geolocation": "Geografischer Punkt"
 		},
+		"subtypes": {
+			"address": "Adresse",
+			"packstation": "Packstation"
+		},
 		"dialogs": {
 			"delete": "Möchtest Du diese Adresse wirklich löschen?"
+		},
+		"toasts": {
+			"saved": "Adresse gespeichert!",
+			"changed": "Adresse aktualisiert!",
+			"deleted": "Adresse gelöscht!"
 		}
 	},
 	"contacts": {
@@ -3887,9 +3899,6 @@
 		}
 	},
 	"toasts": {
-		"address_saved": "Adresse gespeichert!",
-		"address_changed": "Adresse aktualisiert!",
-		"address_deleted": "Adresse gelöscht!",
 		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
 		"category_saved": "Kategorie gespeichert!",
 		"category_changed": "Kategorie aktualisiert!",

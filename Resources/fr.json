@@ -2258,11 +2258,14 @@
 		},
 		"fields": {
 			"type": "Type d'adresse",
+			"subtype": "Livraison à",
 			"fullname": "Nom",
 			"name": "Nom/personne de contact",
 			"company": "Entreprise",
 			"address": "Rue et numéro",
 			"address_supplement": "Adresse supplémentaire",
+			"postNumber": "Numéro postal du destinataire",
+			"packstation": "Numéro packstation",
 			"zip": "Code postal",
 			"city": "Ville",
 			"country": "Pays",
@@ -2280,8 +2283,17 @@
 			"shipping": "Adresse de livraison",
 			"geolocation": "Géolocalisation"
 		},
+		"subtypes": {
+			"address": "Adresse",
+			"packstation": "Packstation"
+		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"
+		},
+		"toasts": {
+			"saved": "Adresse enregistrée!",
+			"changed": "Adresse mise à jour!",
+			"deleted": "Adresse supprimée!"
 		}
 	},
 	"contacts": {
@@ -3887,9 +3899,6 @@
 		}
 	},
 	"toasts": {
-		"address_saved": "Adresse enregistrée!",
-		"address_changed": "Adresse mise à jour!",
-		"address_deleted": "Adresse supprimée!",
 		"bank_settings_error": "Une erreur s'est produite lors de l'enregistrement des coordonnées bancaires!",
 		"category_saved": "Categorie enregistrée!",
 		"category_changed": "Categorie mise à jour!",

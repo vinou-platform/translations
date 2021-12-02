@@ -2258,11 +2258,14 @@
 		},
 		"fields": {
 			"type": "tipo de dirección",
+			"subtype": "Entregar a",
 			"fullname": "nombre",
 			"name": "nombre/persona de contacto",
 			"company": "empresa",
 			"address": "calle y número de casa",
 			"address_supplement": "datos complementarios del domicilio",
+			"postNumber": "Número postal del destinatario",
+			"packstation": "número de packstation",
 			"zip": "código postal",
 			"city": "ciudad",
 			"country": "país",
@@ -2280,8 +2283,17 @@
 			"shipping": "Dirección de entrega",
 			"geolocation": "Geolocation"
 		},
+		"subtypes": {
+			"address": "Dirección",
+			"packstation": "Packstation"
+		},
 		"dialogs": {
 			"delete": "Quieres borrar esa direción seguramente?"
+		},
+		"toasts": {
+			"saved": "dirección ha sido grabada!",
+			"changed": "dirección ha sido acutalizada!",
+			"deleted": "dirección ha sido borrada!"
 		}
 	},
 	"contacts": {
@@ -3887,9 +3899,6 @@
 		}
 	},
 	"toasts": {
-		"address_saved": "dirección ha sido grabada!",
-		"address_changed": "dirección ha sido acutalizada!",
-		"address_deleted": "dirección ha sido borrada!",
 		"bank_settings_error": "Ha ocurrido un error durante la grabación de la cuenta bancaria!",
 		"category_saved": "Categoría ha sido grabada!",
 		"category_changed": "Categoría ha sido actualizada!",
