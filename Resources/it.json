@@ -2239,12 +2239,27 @@
 		}
 	},
 	"contact": {
+		"actions": {
+			"create": {
+				"title": "",
+				"main": "Nuova Persona di contatto",
+				"sub": "creare"
+			},
+			"save": "Salva Persona di contatto"
+		},
+		"fields": {
+			"defaultContact": {
+				"label": "Persona di contatto standard",
+				"hint": "La persona di contatto specificata qui è definita nella scheda 'Generale'."
+			}
+		},
 		"dialogs": {
 			"delete": "Vuoi veramente cancellare questo contatto?"
 		},
 		"toasts": {
-			"saved": "Persona di contatto registrata!",
-			"deleted": "Persona di contatto è stato eliminata!"
+			"created": "Persona di contatto registrata.",
+			"changed": "Persona di contatto aggiornato.",
+			"deleted": "Persona di contatto è stato eliminata."
 		}
 	},
 	"address": {
@@ -2291,24 +2306,9 @@
 			"delete": "Vuoi veramente cancellare questo indirizzo?"
 		},
 		"toasts": {
-			"created": "Indirizzo è stato registrato!",
-			"changed": "Indirizzo è stato aggiornato!",
-			"deleted": "Indirizzo è stato cancellato!"
-		}
-	},
-	"contacts": {
-		"fields": {
-			"defaultcontact": "Persona di contatto standard",
-			"defaultcontactmsg": "La persona di contatto specificata qui è definita nella scheda 'Generale'."
-		},
-		"actions": {
-			"create": {
-				"main": "Persona di contatto",
-				"sub": "creare"
-			},
-			"save": {
-				"title": "Salva contatto"
-			}
+			"created": "Indirizzo è stato registrato.",
+			"changed": "Indirizzo è stato aggiornato.",
+			"deleted": "Indirizzo è stato cancellato."
 		}
 	},
 	"creditAdvice": {

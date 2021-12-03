@@ -2239,12 +2239,27 @@
 		}
 	},
 	"contact": {
+		"actions": {
+			"create": {
+				"title": "",
+				"main": "nueva persona de contacto",
+				"sub": "crear"
+			},
+			"save": "grabar persona de contacto"
+		},
+		"fields": {
+			"defaultContact": {
+				"label": "Persona de contacto estándar",
+				"hint": "La persona de contacto indicada está puesto en la pentaña 'generalidades'."
+			}
+		},
 		"dialogs": {
 			"delete": "Quieres borrar ese contacto seguramente?"
 		},
 		"toasts": {
-			"saved": "Persona de contacto ha sido grabada!",
-			"deleted": "Persona de contacto ha sido borrada!"
+			"created": "Persona de contacto ha sido grabada.",
+			"changed": "Persona de contacto ha sido acutalizada.",
+			"deleted": "Persona de contacto ha sido borrada."
 		}
 	},
 	"address": {
@@ -2291,24 +2306,9 @@
 			"delete": "Quieres borrar esa direción seguramente?"
 		},
 		"toasts": {
-			"created": "dirección ha sido grabada!",
-			"changed": "dirección ha sido acutalizada!",
-			"deleted": "dirección ha sido borrada!"
-		}
-	},
-	"contacts": {
-		"fields": {
-			"defaultcontact": "persona de contacto estándar",
-			"defaultcontactmsg": "La persona de contacto indicada está puesto en la pentaña 'generalidades'."
-		},
-		"actions": {
-			"create": {
-				"main": "persona de contacto",
-				"sub": "crear"
-			},
-			"save": {
-				"title": "grabar contacto"
-			}
+			"created": "Dirección ha sido grabada.",
+			"changed": "Dirección ha sido acutalizada.",
+			"deleted": "Dirección ha sido borrada."
 		}
 	},
 	"creditAdvice": {

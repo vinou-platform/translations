@@ -2239,12 +2239,27 @@
 		}
 	},
 	"contact": {
+		"actions": {
+			"create": {
+				"title": "Kontaktperson anlegen (title / wird das automatisch verwendet?)",
+				"main": "Neue Kontaktperson",
+				"sub": "anlegen"
+			},
+			"save": "Kontaktperson speichern"
+		},
+		"fields": {
+			"defaultContact": {
+				"label": "Standardansprechpartner",
+				"hint": "Der hier angegebene Ansprechpartner wird im Reiter 'Allgemein' gesetzt."
+			}
+		},
 		"dialogs": {
 			"delete": "Möchtest Du diesen Kontakt wirklich löschen?"
 		},
 		"toasts": {
-			"saved": "Kontaktperson gespeichert!",
-			"deleted": "Kontaktperson gelöscht!"
+			"created": "Kontaktperson erstellt.",
+			"changed": "Kontaktperson aktualisiert.",
+			"deleted": "Kontaktperson gelöscht."
 		}
 	},
 	"address": {
@@ -2294,21 +2309,6 @@
 			"created": "Adresse erstellt!",
 			"changed": "Adresse aktualisiert!",
 			"deleted": "Adresse gelöscht!"
-		}
-	},
-	"contacts": {
-		"fields": {
-			"defaultcontact": "Standardansprechpartner",
-			"defaultcontactmsg": "Der hier angegebene Ansprechpartner wird im Reiter 'Allgemein' gesetzt."
-		},
-		"actions": {
-			"create": {
-				"main": "Kontaktperson",
-				"sub": "anlegen"
-			},
-			"save": {
-				"title": "Kontakt speichern"
-			}
 		}
 	},
 	"creditAdvice": {

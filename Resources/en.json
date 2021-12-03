@@ -2239,11 +2239,26 @@
 		}
 	},
 	"contact": {
+		"actions": {
+			"create": {
+				"title": "",
+				"main": "Add contact",
+				"sub": " "
+			},
+			"save": "Save address"
+		},
+		"fields": {
+			"defaultContact": {
+				"label": "Default contact",
+				"hint": "This contact is set in the 'General' tab."
+			}
+		},
 		"dialogs": {
 			"delete": "Do you really want to delete the selected contact?"
 		},
 		"toasts": {
-			"saved": "Contact saved.",
+			"created": "Contact created.",
+			"changed": "Contact changed.",
 			"deleted": "Contact deleted."
 		}
 	},
@@ -2291,24 +2306,9 @@
 			"delete": "Do you really want to delete this address?"
 		},
 		"toasts": {
-			"created": "Address saved!",
-			"changed": "Address update!",
-			"deleted": "Address deleted!"
-		}
-	},
-	"contacts": {
-		"fields": {
-			"defaultcontact": "Default contact",
-			"defaultcontactmsg": "This contact is set in the 'General' tab."
-		},
-		"actions": {
-			"create": {
-				"main": "Add contact",
-				"sub": " "
-			},
-			"save": {
-				"title": "Save contact"
-			}
+			"created": "Address created.",
+			"changed": "Address changed.",
+			"deleted": "Address deleted."
 		}
 	},
 	"creditAdvice": {

@@ -2239,12 +2239,27 @@
 		}
 	},
 	"contact": {
+		"actions": {
+			"create": {
+				"title": "",
+				"main": "Créer",
+				"sub": "personne de contact"
+			},
+			"save": "Enregistrer personne de contact"
+		},
+		"fields": {
+			"defaultContact": {
+				"label": "Personne de contact standard",
+				"hint": "La personne de contact spécifiée ici est définie dans l'onglet 'Général'."
+			}
+		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cette personne de contact?"
 		},
 		"toasts": {
-			"saved": "Personne de contact enregistrée!",
-			"deleted": "Personne de contact supprimée!"
+			"created": "Personne de contact enregistrée.",
+			"changed": "Personne de contact mise à jour.",
+			"deleted": "Personne de contact supprimée."
 		}
 	},
 	"address": {
@@ -2291,24 +2306,9 @@
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"
 		},
 		"toasts": {
-			"created": "Adresse enregistrée!",
-			"changed": "Adresse mise à jour!",
-			"deleted": "Adresse supprimée!"
-		}
-	},
-	"contacts": {
-		"fields": {
-			"defaultcontact": "Personne de contact standard",
-			"defaultcontactmsg": "La personne de contact spécifiée ici est définie dans l'onglet 'Général'."
-		},
-		"actions": {
-			"create": {
-				"main": "Créer personne",
-				"sub": "de contact"
-			},
-			"save": {
-				"title": "Enregistrer contact"
-			}
+			"created": "Adresse enregistrée.",
+			"changed": "Adresse mise à jour.",
+			"deleted": "Adresse supprimée."
 		}
 	},
 	"creditAdvice": {
