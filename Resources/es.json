@@ -2291,7 +2291,7 @@
 			"delete": "Quieres borrar esa direción seguramente?"
 		},
 		"toasts": {
-			"saved": "dirección ha sido grabada!",
+			"created": "dirección ha sido grabada!",
 			"changed": "dirección ha sido acutalizada!",
 			"deleted": "dirección ha sido borrada!"
 		}

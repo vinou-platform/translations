@@ -2291,7 +2291,7 @@
 			"delete": "Vuoi veramente cancellare questo indirizzo?"
 		},
 		"toasts": {
-			"saved": "Indirizzo è stato registrato!",
+			"created": "Indirizzo è stato registrato!",
 			"changed": "Indirizzo è stato aggiornato!",
 			"deleted": "Indirizzo è stato cancellato!"
 		}

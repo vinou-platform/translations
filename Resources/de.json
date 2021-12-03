@@ -2291,7 +2291,7 @@
 			"delete": "Möchtest Du diese Adresse wirklich löschen?"
 		},
 		"toasts": {
-			"saved": "Adresse gespeichert!",
+			"created": "Adresse erstellt!",
 			"changed": "Adresse aktualisiert!",
 			"deleted": "Adresse gelöscht!"
 		}

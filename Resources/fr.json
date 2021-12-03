@@ -2291,7 +2291,7 @@
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"
 		},
 		"toasts": {
-			"saved": "Adresse enregistrée!",
+			"created": "Adresse enregistrée!",
 			"changed": "Adresse mise à jour!",
 			"deleted": "Adresse supprimée!"
 		}
