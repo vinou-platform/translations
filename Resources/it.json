@@ -2265,7 +2265,7 @@
 			"address": "Via e numero civico",
 			"address_supplement": "Indirizzo aggiuntivo",
 			"postNumber": "Numero postale del destinatario",
-			"packstation": "Numero Packstation",
+			"parcelStation": "Numero di stazioni pacchi",
 			"zip": "Codice postale",
 			"city": "Città",
 			"country": "Nazione",
@@ -2285,7 +2285,7 @@
 		},
 		"subtypes": {
 			"address": "Indirizzo",
-			"packstation": "Packstation"
+			"parcelStation": "Stazioni pacchi"
 		},
 		"dialogs": {
 			"delete": "Vuoi veramente cancellare questo indirizzo?"

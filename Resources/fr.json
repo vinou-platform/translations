@@ -2265,7 +2265,7 @@
 			"address": "Rue et numéro",
 			"address_supplement": "Adresse supplémentaire",
 			"postNumber": "Numéro postal du destinataire",
-			"packstation": "Numéro packstation",
+			"parcelStation": "Numéro de poste colis",
 			"zip": "Code postal",
 			"city": "Ville",
 			"country": "Pays",
@@ -2285,7 +2285,7 @@
 		},
 		"subtypes": {
 			"address": "Adresse",
-			"packstation": "Packstation"
+			"parcelStation": "Poste colis"
 		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"

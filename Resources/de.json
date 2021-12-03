@@ -2265,7 +2265,7 @@
 			"address": "Straße und Hausnummer",
 			"address_supplement": "Adresszusatz",
 			"postNumber": "Postnummer des Empfänger",
-			"packstation": "Nummer der Packstation",
+			"parcelStation": "Nummer der Packstation",
 			"zip": "PLZ",
 			"city": "Stadt",
 			"country": "Land",
@@ -2285,7 +2285,7 @@
 		},
 		"subtypes": {
 			"address": "Adresse",
-			"packstation": "Packstation"
+			"parcelStation": "Packstation"
 		},
 		"dialogs": {
 			"delete": "Möchtest Du diese Adresse wirklich löschen?"

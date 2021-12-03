@@ -2265,7 +2265,7 @@
 			"address": "calle y número de casa",
 			"address_supplement": "datos complementarios del domicilio",
 			"postNumber": "Número postal del destinatario",
-			"packstation": "número de packstation",
+			"parcelStation": "Número de estación de paquetería",
 			"zip": "código postal",
 			"city": "ciudad",
 			"country": "país",
@@ -2285,7 +2285,7 @@
 		},
 		"subtypes": {
 			"address": "Dirección",
-			"packstation": "Packstation"
+			"parcelStation": "Estación de paquetería"
 		},
 		"dialogs": {
 			"delete": "Quieres borrar esa direción seguramente?"
