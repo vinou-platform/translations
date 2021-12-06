@@ -2118,10 +2118,6 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, Firma, Adresse"
-			},
-			"contactperson": {
-				"main": "Neue Kontaktperson",
-				"sub": "anlegen"
 			}
 		},
 		"gallery": {
@@ -2241,7 +2237,6 @@
 	"contact": {
 		"actions": {
 			"create": {
-				"title": "Kontaktperson anlegen (title / wird das automatisch verwendet?)",
 				"main": "Neue Kontaktperson",
 				"sub": "anlegen"
 			},

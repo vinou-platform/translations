@@ -2118,10 +2118,6 @@
 			},
 			"search": {
 				"placeholder": "Ad es. Nom, Società, Indirizzo"
-			},
-			"contactperson": {
-				"main": "Nuova Persona di contatto",
-				"sub": "creare"
 			}
 		},
 		"gallery": {
@@ -2241,7 +2237,6 @@
 	"contact": {
 		"actions": {
 			"create": {
-				"title": "",
 				"main": "Nuova Persona di contatto",
 				"sub": "creare"
 			},
