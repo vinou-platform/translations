@@ -3805,7 +3805,8 @@
 					"clientId": "Identité du client",
 					"clientSecret": "Secret du client",
 					"mail": "E-mail",
-					"environment": "Mode"
+					"environment": "Mode",
+					"webhookId": "Identifiant de webhook"
 				},
 				"environments": {
 					"sandbox": "Bac à sable",

@@ -3805,7 +3805,8 @@
 					"clientId": "ID del cliente",
 					"clientSecret": "Secreto del cliente",
 					"mail": "Correo electrónico",
-					"environment": "Modo"
+					"environment": "Modo",
+					"webhookId": "ID de webhook"
 				},
 				"environments": {
 					"sandbox": "Sandbox",

@@ -3801,11 +3801,12 @@
 				"name": "Paypal",
 				"title": "Modifica configurazione Paypal",
 				"fields": {
-					"accountId": "Account-ID",
+					"accountId": "Account ID",
 					"clientId": "Identificativo cliente",
 					"clientSecret": "Segreto del cliente",
 					"mail": "E-mail",
-					"environment": "Modalità"
+					"environment": "Modalità",
+					"webhookId": "Webhook ID"
 				},
 				"environments": {
 					"sandbox": "Sandbox",
