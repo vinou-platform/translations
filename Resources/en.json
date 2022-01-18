@@ -3454,8 +3454,10 @@
 				"placeholder": "e.g. name, description"
 			},
 			"export": {
-				"qrCodeVector": "download qrcode as vector file",
-				"barcodeVector": "download gtin as vector file"
+				"qrCodeVector": "Download qrcode as vector file",
+				"barcodeVector": "Download gtin as vector file",
+				"items": "Export bundle items",
+				"itemsRaw": "Export bundle items (raw data)"
 			},
 			"addItem": "+ Add article"
 		},
@@ -3522,6 +3524,16 @@
 		},
 		"files": {
 			"title": "Files and documents related to this bundle."
+		}
+	},
+	"bundleItem": {
+		"name": {
+			"singular": "Bundle item",
+			"plural": "Bundle items"
+		},
+		"fields": {
+			"itemType": "Type",
+			"name": "Title"
 		}
 	},
 	"catalog": {

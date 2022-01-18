@@ -3454,8 +3454,10 @@
 				"placeholder": "p.ej. nombre, descripción"
 			},
 			"export": {
-				"qrCodeVector": "descargar qrcode como archivo vectorial",
-				"barcodeVector": "descargar gtin como archivo vectorial"
+				"qrCodeVector": "Descargar qrcode como archivo vectorial",
+				"barcodeVector": "Descargar gtin como archivo vectorial",
+				"items": "Exportar elementos del paquete",
+				"itemsRaw": "Exportar elementos del paquete (datos sin procesar)"
 			},
 			"addItem": "+ Agregar artículo"
 		},
@@ -3522,6 +3524,16 @@
 		},
 		"files": {
 			"title": "Archivos y documentos relacionados con este paquete."
+		}
+	},
+	"bundleItem": {
+		"name": {
+			"singular": "Paquete de productos elemento",
+			"plural": "Paquete de productos elementos"
+		},
+		"fields": {
+			"itemType": "Tipo",
+			"name": "Designacion"
 		}
 	},
 	"catalog": {

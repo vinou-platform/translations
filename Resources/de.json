@@ -3455,7 +3455,9 @@
 			},
 			"export": {
 				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen",
-				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen"
+				"barcodeVector": "EAN-Code als Vektor-Datei herunterladen",
+				"items": "Export Weinpaketpositionen",
+				"itemsRaw": "Export Weinpaketpositionen (EDV)"
 			},
 			"addItem": "+ Artikel hinzufügen"
 		},
@@ -3522,6 +3524,16 @@
 		},
 		"files": {
 			"title": "Dateien und Dokumente zu diesem Weinpaket"
+		}
+	},
+	"bundleItem": {
+		"name": {
+			"singular": "Weinpaketposition",
+			"plural": "Weinpaketpositionen"
+		},
+		"fields": {
+			"itemType": "Typ",
+			"name": "Bezeichnung"
 		}
 	},
 	"catalog": {
