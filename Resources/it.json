@@ -2629,6 +2629,8 @@
 				"main": "Modificare",
 				"sub": "l'ordine"
 			},
+			"exportItems": "Esportazione ordini articoli",
+			"exportItemsRaw": "Esportazione ordini articoli (dati non elaborati)",
 			"print": {
 				"main": "Stampa",
 				"sub": "conferme d'ordine"
@@ -2804,6 +2806,16 @@
 			"openPaymentToday": "Importo pagamento aperto con pagamento in entrata di oggi: {gross}",
 			"paid": "Questo ordine è stato pagato per intero.",
 			"paymentInProgress": "In attesa di pagamento tramite fornitore di servizi di pagamento."
+		}
+	},
+	"orderItem": {
+		"name": {
+			"singular": "Ordini articolo",
+			"plural": "Ordini articoli"
+		},
+		"fields": {
+			"itemType": "Tipo",
+			"name": "Designazione"
 		}
 	},
 	"package": {
@@ -3576,6 +3588,10 @@
 		}
 	},
 	"campaign": {
+		"name": {
+			"singular": "Campagna",
+			"plural": "Campagne"
+		},
 		"actions": {
 			"create": {
 				"modaltitle": "Configura campagna",

@@ -2629,6 +2629,8 @@
 				"main": "Bestellung",
 				"sub": "bearbeiten"
 			},
+			"exportItems": "Export Bestellpositionen",
+			"exportItemsRaw": "Export Bestellpositionen (EDV)",
 			"print": {
 				"main": "Auftragsbestätigung",
 				"sub": "drucken"
@@ -2804,6 +2806,16 @@
 			"openPaymentToday": "Offener Zahlungsbetrag bei heutigem Zahlungseingang: {gross}",
 			"paid": "Bestellung wurde vollständig bezahlt.",
 			"paymentInProgress": "Warten auf Zahlung über Zahlungsdienstleister."
+		}
+	},
+	"orderItem": {
+		"name": {
+			"singular": "Bestellposition",
+			"plural": "Bestellpositionen"
+		},
+		"fields": {
+			"itemType": "Typ",
+			"name": "Bezeichnung"
 		}
 	},
 	"package": {
@@ -3576,6 +3588,10 @@
 		}
 	},
 	"campaign": {
+		"name": {
+			"singular": "Kampagne",
+			"plural": "Kampagnen"
+		},
 		"actions": {
 			"create": {
 				"modaltitle": "Kampagne einrichten",

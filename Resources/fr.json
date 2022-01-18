@@ -2629,6 +2629,8 @@
 				"main": "Modifier",
 				"sub": "l'ordre"
 			},
+			"exportItems": "Exporter commander des articles",
+			"exportItemsRaw": "Exporter commander des articles (données brutes)",
 			"print": {
 				"main": "Imprimer",
 				"sub": "l'ordre"
@@ -2804,6 +2806,16 @@
 			"openPaymentToday": "Montant du paiement ouvert avec le paiement entrant du jour: {gross}",
 			"paid": "Ordre a été payée en totalité.",
 			"paymentInProgress": "En attente de paiement via le prestataire de services de paiement."
+		}
+	},
+	"orderItem": {
+		"name": {
+			"singular": "Commander des article",
+			"plural": "Commander des articles"
+		},
+		"fields": {
+			"itemType": "Type",
+			"name": "Désignation"
 		}
 	},
 	"package": {
@@ -3576,6 +3588,10 @@
 		}
 	},
 	"campaign": {
+		"name": {
+			"singular": "Campagne",
+			"plural": "Campagnes"
+		},
 		"actions": {
 			"create": {
 				"modaltitle": "Configurer la campagne",

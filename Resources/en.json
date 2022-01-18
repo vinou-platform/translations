@@ -2629,6 +2629,8 @@
 				"main": "Edit",
 				"sub": "order"
 			},
+			"exportItems": "Export order items",
+			"exportItemsRaw": "Export order items (raw data)",
 			"print": {
 				"main": "Print",
 				"sub": "order confirmation"
@@ -2804,6 +2806,16 @@
 			"openPaymentToday": "Open payment amount with today's incoming payment: {gross}",
 			"paid": "The order has been paid for in full.",
 			"paymentInProgress": "Waiting for payment via payment service provider."
+		}
+	},
+	"orderItem": {
+		"name": {
+			"singular": "Order item",
+			"plural": "Order items"
+		},
+		"fields": {
+			"itemType": "Type",
+			"name": "Title"
 		}
 	},
 	"package": {
@@ -3576,6 +3588,10 @@
 		}
 	},
 	"campaign": {
+		"name": {
+			"singular": "Campaigns",
+			"plural": "Campaign"
+		},
 		"actions": {
 			"create": {
 				"modaltitle": "Configure Campaign",
