@@ -14,6 +14,7 @@
 		"cellar.book": "Libro della cantina",
 		"cellar.substances": "Sostanza",
 		"clients": "Cliente",
+		"clients.groups": "Gruppi",
 		"clients.statistics": "Statistiche",
 		"cronjobs": "Cronjobs",
 		"customers": "Membri",
@@ -161,6 +162,11 @@
 				"empty": "Tutto"
 			}
 		},
+		"intervals": {
+			"day": "quotidiano",
+			"week": "settimanalmente",
+			"month": "mensile"
+		},
 		"dialogs": {
 			"deleteImage": "Vuoi davvero eliminare questa immagine?"
 		},
@@ -204,6 +210,11 @@
 			"internalchanged": "Visibilità interna modificata",
 			"networkchanged": "La visibilità della rete è cambiata",
 			"publicchanged": "La visibilità pubblica è cambiata"
+		},
+		"buttons": {
+			"create": "Creare nuovo",
+			"save": "Salva",
+			"download": "Scaricamento"
 		}
 	},
 	"loader": {
@@ -213,7 +224,12 @@
 	},
 	"dashboard": {
 		"fieldSets": {
+			"stats": "Statistiche attuali",
 			"quickActions": "Quickactions"
+		},
+		"fields": {
+			"previousMonth": "Il mese scorso",
+			"currentMonth": "Corrente mese"
 		}
 	},
 	"token": {
@@ -1166,7 +1182,14 @@
 				"main": "Entrata/uscita merci",
 				"sub": "registrare"
 			},
-			"save": "Salva entrata/uscita merci registrare"
+			"save": "Salva entrata/uscita merci registrare",
+			"export": {
+				"date": "Periodo",
+				"interval": "Intervallo",
+				"addition": "In entrata (Totale)",
+				"withdrawal": "In uscita (Totale)"
+			},
+			"report": "In entrata/in uscita (basato sull'articolo)"
 		},
 		"fields": {
 			"acidity": "Acidità",
@@ -1195,6 +1218,9 @@
 			},
 			"gallery": {
 				"empty": "Nessun movimento disponibile"
+			},
+			"report": {
+				"title": "Rotazione delle scorte basata sull'articolo"
 			}
 		},
 		"toasts": {
@@ -2116,9 +2142,6 @@
 			},
 			"edit": {
 				"modaltitle": "Modificare cliente"
-			},
-			"search": {
-				"placeholder": "Ad es. Nom, Società, Indirizzo"
 			}
 		},
 		"gallery": {
@@ -2131,7 +2154,12 @@
 				"desc": "Discendente"
 			},
 			"filter": {
-				"type": "Filtra il tipo di cliente"
+				"type": "Filtra il tipo di cliente",
+				"group": "Filtra gruppo di clienti",
+				"noGroup": "Mostra i clienti senza gruppo",
+				"search": {
+					"placeholder": "Ad es. Nom, Società, Indirizzo"
+				}
 			}
 		},
 		"statistics": {
@@ -2183,7 +2211,8 @@
 			"cashback_period": "Periodo di sconto(tra giorni)",
 			"unique_mandate_reference": "Mandato di addebito diretto SEPA",
 			"tax_free": "IVA esente",
-			"search_client": "Cerca cliente"
+			"search_client": "Cerca cliente",
+			"groups": "Gruppi"
 		},
 		"department_types": {
 			"branch_administration": "Direttore di filiale",
@@ -2233,6 +2262,41 @@
 			"changed": "Cliente è stato Modificato!",
 			"copied": "L'immagine del cliente è duplicata",
 			"deleted": "Cliente è stato eliminato!"
+		}
+	},
+	"clientgroup": {
+		"views": {
+			"createInline": {
+				"title": "Crea un gruppo all'istante"
+			}
+		},
+		"fieldSets": {
+			"general": "Generale"
+		},
+		"field": {
+			"name": "Nome",
+			"description": "Descrizione",
+			"crstamp": "Data di creazione"
+		},
+		"actions": {
+			"create": {
+				"main": "Creare nuovo",
+				"sub": "Gruppo di clienti",
+				"modaltitle": "Crea un nuovo gruppo di clienti"
+			},
+			"edit": {
+				"main": "Modificare",
+				"sub": "Gruppo di clienti",
+				"modaltitle": "Modifica gruppo di clienti"
+			}
+		},
+		"dialogs": {
+			"delete": "Vuoi davvero eliminare questo gruppo di clienti?"
+		},
+		"toasts": {
+			"created": "Gruppo clienti creato!",
+			"changed": "Gruppo clienti cambiato!",
+			"deleted": "Gruppo clienti eliminato!"
 		}
 	},
 	"contact": {
@@ -2652,7 +2716,8 @@
 			"setDifferingShippingAddress": {
 				"main": "Diverso indirizzo",
 				"sub": "di consegna"
-			}
+			},
+			"report": "Valutazioni"
 		},
 		"fieldsets": {
 			"billing": "Indirizzo di fattura",
@@ -2761,7 +2826,24 @@
 			},
 			"timeline": {
 				"paymentCancelled": "Pagamento in entrata annullato"
+			},
+			"report": {
+				"date": "Periodo",
+				"include": "Include valutazioni",
+				"order_net": "Volume dell'ordine (netto)",
+				"order_gross": "Volume dell'ordine (lordo)",
+				"invoice_net": "Vendite (nette)",
+				"invoice_gross": "Vendite (lorde)",
+				"creditAdvice_net": "Cancellazione (netto)",
+				"creditAdvice_gross": "Cancellazione (lorda)",
+				"payment_gross": "Pagamenti in entrata"
 			}
+		},
+		"reportIncludes": {
+			"order": "Volume dell'ordine",
+			"invoice": "Volume delle vendite",
+			"creditAdvice": "Cancellazione",
+			"payment": "Pagamenti in entrata"
 		},
 		"filters": {
 			"search": {
@@ -6378,6 +6460,7 @@
 		"de": {
 			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
 			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
+			"wine": "Deutscher Wein",
 			"superior": "Landwein",
 			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
 			"cabinet": "Kabinett",

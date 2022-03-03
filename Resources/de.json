@@ -14,6 +14,7 @@
 		"cellar.book": "Weine",
 		"cellar.substances": "Stoffe",
 		"clients": "Kunden",
+		"clients.groups": "Gruppen",
 		"clients.statistics": "Statistiken",
 		"cronjobs": "Cronjobs",
 		"customers": "Mitglieder",
@@ -161,6 +162,11 @@
 				"empty": "Alle"
 			}
 		},
+		"intervals": {
+			"day": "täglich",
+			"week": "wöchentlich",
+			"month": "monatlich"
+		},
 		"dialogs": {
 			"deleteImage": "Möchtest Du dieses Bild wirklich löschen?"
 		},
@@ -204,6 +210,11 @@
 			"internalchanged": "Sichtbarkeit für Deine Kunden geändert",
 			"networkchanged": "Sichtbarkeit für das Vinou-Netzwerk geändert",
 			"publicchanged": "öffentliche Sichtbarkeit geändert"
+		},
+		"buttons": {
+			"create": "Neu anlegen",
+			"save": "Speichern",
+			"download": "Download"
 		}
 	},
 	"loader": {
@@ -213,7 +224,12 @@
 	},
 	"dashboard": {
 		"fieldSets": {
+			"stats": "Aktuelle Kennzahlen",
 			"quickActions": "Schnellaktionen"
+		},
+		"fields": {
+			"previousMonth": "Vormonat",
+			"currentMonth": "Aktueller Monat"
 		}
 	},
 	"token": {
@@ -1166,7 +1182,14 @@
 				"main": "Warenein-/ausgang",
 				"sub": "buchen"
 			},
-			"save": "Warenein-/ausgang speichern"
+			"save": "Warenein-/ausgang speichern",
+			"export": {
+				"date": "Zeitraum",
+				"interval": "Interval",
+				"addition": "Eingang (Total)",
+				"withdrawal": "Ausgang (Total)"
+			},
+			"report": "Zu-/Abgänge (artikelbasiert)"
 		},
 		"fields": {
 			"acidity": "Säuregehalt",
@@ -1195,6 +1218,9 @@
 			},
 			"gallery": {
 				"empty": "Keine Lagerbewegungen vorhanden"
+			},
+			"report": {
+				"title": "Artikelbasierte Warenbewegungen"
 			}
 		},
 		"toasts": {
@@ -2116,9 +2142,6 @@
 			},
 			"edit": {
 				"modaltitle": "Kunde bearbeiten"
-			},
-			"search": {
-				"placeholder": "z.B. Name, Firma, Adresse"
 			}
 		},
 		"gallery": {
@@ -2131,7 +2154,12 @@
 				"desc": "Absteigend"
 			},
 			"filter": {
-				"type": "Kundentyp filtern"
+				"type": "Kundentyp filtern",
+				"group": "Kundengruppe filtern",
+				"noGroup": "Kunden ohne Kundengruppe anzeigen",
+				"search": {
+					"placeholder": "z.B. Name, Firma, Adresse"
+				}
 			}
 		},
 		"statistics": {
@@ -2183,7 +2211,8 @@
 			"cashback_period": "Skonto Zeitraum (in Tagen)",
 			"unique_mandate_reference": "SEPA-Lastschrift-Mandat",
 			"tax_free": "Umsatzsteuerbefreit",
-			"search_client": "Kunde suchen"
+			"search_client": "Kunde suchen",
+			"groups": "Kundengruppen"
 		},
 		"department_types": {
 			"branch_administration": "Filialleitung",
@@ -2233,6 +2262,41 @@
 			"changed": "Kunde geändert!",
 			"copied": "Kunde dupliziert",
 			"deleted": "Kunde gelöscht!"
+		}
+	},
+	"clientgroup": {
+		"views": {
+			"createInline": {
+				"title": "Kundengruppe jetzt anlegen"
+			}
+		},
+		"fieldSets": {
+			"general": "Allgemeines"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"crstamp": "Erstellungsdatum"
+		},
+		"actions": {
+			"create": {
+				"main": "Neue Kundengruppe",
+				"sub": "anlegen",
+				"modaltitle": "Kundengruppe anlegen"
+			},
+			"edit": {
+				"main": "Kundengruppe",
+				"sub": "bearbeiten",
+				"modaltitle": "Kundengruppe bearbeiten"
+			}
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diese Kundengruppe wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Kundengruppe angelegt!",
+			"changed": "Kundengruppe geändert!",
+			"deleted": "Kundengruppe gelöscht!"
 		}
 	},
 	"contact": {
@@ -2652,7 +2716,8 @@
 			"setDifferingShippingAddress": {
 				"main": "Abweichende",
 				"sub": "Lieferadresse"
-			}
+			},
+			"report": "Auswertungen"
 		},
 		"fieldsets": {
 			"billing": "Rechnungsadresse",
@@ -2761,7 +2826,24 @@
 			},
 			"timeline": {
 				"paymentCancelled": "Zahlungseingang abgebrochen"
+			},
+			"report": {
+				"date": "Zeitraum",
+				"include": "Auswertungen einschließen",
+				"order_net": "Auftragsvolumen (Netto)",
+				"order_gross": "Auftragsvolumen (Brutto)",
+				"invoice_net": "Umsatz (Netto)",
+				"invoice_gross": "Umsatz (Brutto)",
+				"creditAdvice_net": "Storno (Netto)",
+				"creditAdvice_gross": "Storno (Brutto)",
+				"payment_gross": "Zahlungseingang"
 			}
+		},
+		"reportIncludes": {
+			"order": "Auftragsvolumen",
+			"invoice": "Umsatz",
+			"creditAdvice": "Storno",
+			"payment": "Zahlungseingänge"
 		},
 		"filters": {
 			"search": {
@@ -6378,6 +6460,7 @@
 		"de": {
 			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
 			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
+			"wine": "Deutscher Wein",
 			"superior": "Landwein",
 			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
 			"cabinet": "Kabinett",
