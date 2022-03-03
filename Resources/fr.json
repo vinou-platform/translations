@@ -14,6 +14,7 @@
 		"cellar.book": "Livre de la cave",
 		"cellar.substances": "Substances",
 		"clients": "Clients",
+		"clients.groups": "Groupes",
 		"clients.statistics": "Statistiques",
 		"cronjobs": "Cronjobs",
 		"customers": "Membres",
@@ -161,6 +162,11 @@
 				"empty": "Tous"
 			}
 		},
+		"intervals": {
+			"day": "du quotidien",
+			"week": "hebdomadaire",
+			"month": "mensuel"
+		},
 		"dialogs": {
 			"deleteImage": "Voulez-vous vraiment supprimer cette image?"
 		},
@@ -204,6 +210,11 @@
 			"internalchanged": "Visibilité interne modifiée",
 			"networkchanged": "La visibilité du réseau a changé",
 			"publicchanged": "La visibilité publique a changé"
+		},
+		"buttons": {
+			"create": "Créer un nouveau",
+			"save": "Sauvegarder",
+			"download": "Télécharger"
 		}
 	},
 	"loader": {
@@ -213,7 +224,12 @@
 	},
 	"dashboard": {
 		"fieldSets": {
+			"stats": "Statistiques actuelles",
 			"quickActions": "Actions rapides"
+		},
+		"fields": {
+			"previousMonth": "Le mois précédent",
+			"currentMonth": "Mois en cours"
 		}
 	},
 	"token": {
@@ -1166,7 +1182,14 @@
 				"main": "D'entrée et sortie de marchandises",
 				"sub": "enregistrer"
 			},
-			"save": "Enregistrer les marchandises entrantes / sortantes"
+			"save": "Enregistrer les marchandises entrantes / sortantes",
+			"export": {
+				"date": "Point final",
+				"interval": "Intervalle",
+				"addition": "Entrant (Total)",
+				"withdrawal": "Sortrant (Total)"
+			},
+			"report": "Entrant/Sortrant (basé sur l'article)"
 		},
 		"fields": {
 			"acidity": "Teneur en acide",
@@ -1195,6 +1218,9 @@
 			},
 			"gallery": {
 				"empty": "Aucun mouvement de stock disponible"
+			},
+			"report": {
+				"title": "Rotation des stocks basée sur les articles"
 			}
 		},
 		"toasts": {
@@ -2116,9 +2142,6 @@
 			},
 			"edit": {
 				"modaltitle": "Éditer client"
-			},
-			"search": {
-				"placeholder": "p.ex. nom, entreprise, adresse"
 			}
 		},
 		"gallery": {
@@ -2131,7 +2154,12 @@
 				"desc": "Descendant"
 			},
 			"filter": {
-				"type": "Filtrer type de client"
+				"type": "Filtrer type de client",
+				"group": "Filtrer le groupe de clients",
+				"noGroup": "Afficher les clients sans groupe",
+				"search": {
+					"placeholder": "p.ex. nom, entreprise, adresse"
+				}
 			}
 		},
 		"statistics": {
@@ -2183,7 +2211,8 @@
 			"cashback_period": "Période de rémise (en jours)",
 			"unique_mandate_reference": "Mandat de prélèvement SEPA",
 			"tax_free": "Exempté de TVA",
-			"search_client": "Rechercher client"
+			"search_client": "Rechercher client",
+			"groups": "Groupes"
 		},
 		"department_types": {
 			"branch_administration": "Directeur de succursale",
@@ -2233,6 +2262,41 @@
 			"changed": "Client édité!",
 			"copied": "Image du client dupliqué",
 			"deleted": "Client supprimé!"
+		}
+	},
+	"clientgroup": {
+		"views": {
+			"createInline": {
+				"title": "Créer un groupe instantanément"
+			}
+		},
+		"fieldSets": {
+			"general": "Général"
+		},
+		"field": {
+			"name": "Nom",
+			"description": "La description",
+			"crstamp": "Date de création"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer un nouveau",
+				"sub": "Groupe de clients",
+				"modaltitle": "Créer un nouveau groupe de clients"
+			},
+			"edit": {
+				"main": "Éditer",
+				"sub": "Groupe de clients",
+				"modaltitle": "Modifier le groupe de clients"
+			}
+		},
+		"dialogs": {
+			"delete": "Souhaitez-vous vraiment supprimer ce groupe de clients?"
+		},
+		"toasts": {
+			"created": "Groupe de clients créé!",
+			"changed": "Le groupe de clients a changé!",
+			"deleted": "Groupe de clients supprimé!"
 		}
 	},
 	"contact": {
@@ -2652,7 +2716,8 @@
 			"setDifferingShippingAddress": {
 				"main": "Adresse de livraison",
 				"sub": "différente"
-			}
+			},
+			"report": "Évaluations"
 		},
 		"fieldsets": {
 			"billing": "Adresse de facturation",
@@ -2761,7 +2826,24 @@
 			},
 			"timeline": {
 				"paymentCancelled": "Paiement entrant annulé"
+			},
+			"report": {
+				"date": "Point final",
+				"include": "Inclure les évaluations",
+				"order_net": "Volume de commande (net)",
+				"order_gross": "Volume de commande (brut)",
+				"invoice_net": "Ventes (nettes)",
+				"invoice_gross": "Ventes (brutes)",
+				"creditAdvice_net": "Annulation (nette)",
+				"creditAdvice_gross": "Annulation (brute)",
+				"payment_gross": "Paiements entrants"
 			}
+		},
+		"reportIncludes": {
+			"order": "Volume de commande",
+			"invoice": "Ventes",
+			"creditAdvice": "Annulation",
+			"payment": "Paiements entrants"
 		},
 		"filters": {
 			"search": {
@@ -6378,6 +6460,7 @@
 		"de": {
 			"notspecified": "Wein ohne Rebsorten- oder Jahrgangsangabe",
 			"table": "Wein mit Rebsorten- oder Jahrgangsangabe",
+			"wine": "Deutscher Wein",
 			"superior": "Landwein",
 			"origin": "Qualitätswein bestimmter Anbaugebiete (Q.b.A)",
 			"cabinet": "Kabinett",
