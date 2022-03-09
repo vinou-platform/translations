@@ -6019,6 +6019,15 @@
 		},
 		"633": {
 			"name": "Moscatel Galego"
+		},
+		"634": {
+			"name": "Concejòn"
+		},
+		"635": {
+			"name": "Callet"
+		},
+		"636": {
+			"name": "Manto Negro"
 		}
 	},
 	"tastes": {
@@ -6213,7 +6222,9 @@
 			"12035": "Bierzo",
 			"12036": "Rueda",
 			"12037": "Sierra de Gredos",
-			"12038": "Montsant"
+			"12038": "Montsant",
+			"12039": "Tarragona",
+			"12040": "Jerez"
 		},
 		"fr": {
 			"2000": "Alsace",
