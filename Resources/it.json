@@ -178,6 +178,11 @@
 			"required": "Campo obbligatore",
 			"weight": "Peso incluso imballo (per spedizione)"
 		},
+		"messages": {
+			"danger": {
+				"title": "AVVISO IMPORTANTE!!!"
+			}
+		},
 		"errors": {
 			"common": "Si è verificato un errore.",
 			"confirmationRequired": "Questo campo deve essere confermato",
@@ -1819,6 +1824,9 @@
 		},
 		"hints": {
 			"stockDistribution": "Stock disponibile {stock}, in ordine {ordered}"
+		},
+		"errors": {
+			"missingWinery": "Nessuna cantina selezionata. Alcuni meccanismi di rete come l'inoltro degli ordini non possono essere attivati."
 		}
 	},
 	"bulkWine": {
@@ -3860,12 +3868,20 @@
 			}
 		},
 		"network": {
-			"title": "La mia rete",
+			"title": "Impostazioni di rete",
 			"description": "Determina qui come desideri utilizzare la rete Vinou.",
 			"orderForwarding": {
 				"title": "Noltro dell’ordine",
 				"description": "Attiva l’inoltro degli ordini per gli articoli in rete e attiva automaticamente gli ordini nei tuoi magazzini collegati in rete.",
 				"hint": "L’inoltro automatico degli ordini deve essere attivato singolarmente per i tuoi vini."
+			},
+			"baseDataSync": {
+				"title": "Sincronizzazione dei dati di base",
+				"description": "Attiva questa impostazione per consentire ad altri membri Vinou di creare dati di base degli articoli all'interno del tuo stack personale.",
+				"hint": "Necessario per realizzare l'inoltro automatico degli ordini, ad es. per articoli di nuova generazione se è arrivata una nuova annata."
+			},
+			"toasts": {
+				"changed": "Impostazioni di rete aggiornate!"
 			}
 		},
 		"notification": {
@@ -3956,6 +3972,10 @@
 		"priceranges": {
 			"title": "Classe di prezzo",
 			"description": "Imposta la tua fascia di prezzo per impostare i prezzi per i singoli clienti."
+		},
+		"pricing": {
+			"title": "Fatturazione",
+			"description": "Questa è la tua attuale licenza e modello di fatturazione."
 		},
 		"shipment": {
 			"title": "Configurazione di spedizione",

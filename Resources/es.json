@@ -178,6 +178,11 @@
 			"required": "campo obligatorio",
 			"weight": "Peso incluido el embalaje (para envío)"
 		},
+		"messages": {
+			"danger": {
+				"title": "¡¡¡NOTICIA IMPORTANTE!!!"
+			}
+		},
 		"errors": {
 			"common": "Ocurrió un error.",
 			"confirmationRequired": "Hay que confirmar esa casilla",
@@ -1819,6 +1824,9 @@
 		},
 		"hints": {
 			"stockDistribution": "Stock disponible {stock}, en orden {ordered}"
+		},
+		"errors": {
+			"missingWinery": "Ninguna bodega seleccionada. Ciertos mecanismos de red, como el reenvío de pedidos, no se pueden activar."
 		}
 	},
 	"bulkWine": {
@@ -3860,12 +3868,20 @@
 			}
 		},
 		"network": {
-			"title": "Mi red",
+			"title": "Configuración de la red",
 			"description": "Determine aquí cómo desea utilizar la red Vinou.",
 			"orderForwarding": {
 				"title": "Reenvío de pedidos",
 				"description": "Active el reenvío de pedidos para artículos de la red y active automáticamente pedidos en sus bodegas conectadas a través de la red.",
 				"hint": "El reenvío automático de pedidos debe activarse individualmente para sus vinos."
+			},
+			"baseDataSync": {
+				"title": "Sincronización de datos básicos",
+				"description": "Active esta configuración para permitir que otros miembros de Vinou creen datos de base de artículos dentro de su pila personal.",
+				"hint": "Necesario para realizar el reenvío automático de pedidos, p. para artículos nuevos generados si llegaba una nueva añada."
+			},
+			"toasts": {
+				"changed": "¡Configuración de red actualizada!"
 			}
 		},
 		"notification": {
@@ -3956,6 +3972,10 @@
 		"priceranges": {
 			"title": "Categorias de precio",
 			"description": "Configura tus categorias de precio para que puedas establecer tus precios individuales para tus precios de clientes."
+		},
+		"pricing": {
+			"title": "Facturación",
+			"description": "Esa es su licencia actual y modelo de facturación."
 		},
 		"shipment": {
 			"title": "Ajustes de envío",

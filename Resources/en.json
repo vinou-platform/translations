@@ -178,6 +178,11 @@
 			"required": "Required",
 			"weight": "Weight including packaging (for shipping)"
 		},
+		"messages": {
+			"danger": {
+				"title": "IMPORTANT NOTICE!!!"
+			}
+		},
 		"errors": {
 			"common": "An error occurred..",
 			"confirmationRequired": "This field needs to be confirmed",
@@ -1819,6 +1824,9 @@
 		},
 		"hints": {
 			"stockDistribution": "Available stock {stock}, in order {ordered}"
+		},
+		"errors": {
+			"missingWinery": "No winery selected. Certain network mechanisms such as order forwarding cannot be triggered."
 		}
 	},
 	"bulkWine": {
@@ -3860,12 +3868,20 @@
 			}
 		},
 		"network": {
-			"title": "My Network",
+			"title": "Network-Settings",
 			"description": "Define, how you would like to use the Vinou network.",
 			"orderForwarding": {
 				"title": "Order forwarding",
 				"description": "Activate order forwarding for connected articles from Vinou network and automatically create orders at your connected wineries.",
 				"hint": "After activation, order forwarding must also be activated for each wine."
+			},
+			"baseDataSync": {
+				"title": "Base data synchronisation",
+				"description": "Activate this setting to enable other Vinou members to create article base data within your personal stack.",
+				"hint": "Needed to realize automatic order forwarding, e.g. for new generated articles if a new vintage arrived."
+			},
+			"toasts": {
+				"changed": "Network settings updated!"
 			}
 		},
 		"notification": {
@@ -3956,6 +3972,10 @@
 		"priceranges": {
 			"title": "Price ranges",
 			"description": "Configure your price ranges to setup individual client prices."
+		},
+		"pricing": {
+			"title": "Billing",
+			"description": "Thats your current license and billing model."
 		},
 		"shipment": {
 			"title": "Shipment settings",

@@ -178,6 +178,11 @@
 			"required": "Pflichtfeld",
 			"weight": "Gewicht inklusive Verpackung (für Versand)"
 		},
+		"messages": {
+			"danger": {
+				"title": "WICHTIGER HINWEIS!!!"
+			}
+		},
 		"errors": {
 			"common": "Es ist ein Fehler aufgetreten.",
 			"confirmationRequired": "Dieses Feld muss bestätigt werden",
@@ -1819,6 +1824,9 @@
 		},
 		"hints": {
 			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}"
+		},
+		"errors": {
+			"missingWinery": "Es ist kein Weingut ausgewählt. Dadurch können bestimmte Netzwerk-Mechanismen wie z.B. die Bestellweiterleitung nicht ausgelöst werden."
 		}
 	},
 	"bulkWine": {
@@ -3860,12 +3868,20 @@
 			}
 		},
 		"network": {
-			"title": "Mein Netzwerk",
-			"description": "Lege hier fest, wie du das Vinou Netzwerk nutzen möchtest.",
+			"title": "Netzwerk-Einstellungen",
+			"description": "Lege hier die Einstellungen fest, wie Du unser Netzwerk nutzen möchtest.",
 			"orderForwarding": {
 				"title": "Bestellweiterleitung",
 				"description": "Aktiviere die Bestellweiterleitung für Artikel aus dem Netzwerk und löse automatisch Bestellungen bei Deinen, über das Netzwerk verbundenen Weingütern aus.",
 				"hint": "Die automatische Bestellweiterleitung muss anschließend noch einzeln für Deine Weine aktiviert."
+			},
+			"baseDataSync": {
+				"title": "Stammdaten-Synchronisation",
+				"description": "Aktiviere diese Einstellung um anderen Mitgliedern zu ermöglichen, Stammdaten in Dein Artikel-Sortiment zu übertragen.",
+				"hint": "Wird benötigt um z.B. automatische Bestellweiterleitungen für neu angelegte Artikel zu gewährleisten."
+			},
+			"toasts": {
+				"changed": "Netzwerkeinstellungen aktualisiert!"
 			}
 		},
 		"notification": {
@@ -3956,6 +3972,10 @@
 		"priceranges": {
 			"title": "Preisklassen",
 			"description": "Konfiguriere Deine Preisklassen, um individuelle Kundenpreise festlegen zu können."
+		},
+		"pricing": {
+			"title": "Abrechnungsmodell",
+			"description": "Das ist Dein aktuelles Abrechnungsmodell."
 		},
 		"shipment": {
 			"title": "Versandeinstellungen",

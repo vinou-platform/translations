@@ -178,6 +178,11 @@
 			"required": "Champ obligatoire",
 			"weight": "Poids, emballage compris (pour l'expédition)"
 		},
+		"messages": {
+			"danger": {
+				"title": "AVIS IMPORTANT!!!"
+			}
+		},
 		"errors": {
 			"common": "Une erreur s'est produite.",
 			"confirmationRequired": "Ce champ doit être confirmé",
@@ -1819,6 +1824,9 @@
 		},
 		"hints": {
 			"stockDistribution": "Stock disponible {stock}, en ordre {ordered}"
+		},
+		"errors": {
+			"missingWinery": "Aucune cave sélectionnée. Certains mécanismes de réseau tels que la transmission de commandes ne peuvent pas être déclenchés."
 		}
 	},
 	"bulkWine": {
@@ -3860,12 +3868,20 @@
 			}
 		},
 		"network": {
-			"title": "Mon réseau",
+			"title": "Paramètres réseau",
 			"description": "Précisez ici comment vous souhaitez utiliser le réseau Vinou.",
 			"orderForwarding": {
 				"title": "Transfert de commande",
 				"description": "Activez la réexpédition des commandes des articles du réseau et déclenchez automatiquement les commandes dans vos domaines viticoles connectés via le réseau.",
 				"hint": "La réexpédition automatique de commande doit alors être activée individuellement pour vos vins."
+			},
+			"baseDataSync": {
+				"title": "Synchronisation des données de base",
+				"description": "Activez ce paramètre pour permettre aux autres membres de Vinou de créer des données de base d'articles dans votre pile personnelle.",
+				"hint": "Nécessaire pour réaliser le transfert automatique des commandes, par ex. pour les nouveaux articles générés si un nouveau millésime arrivait."
+			},
+			"toasts": {
+				"changed": "Paramètres réseau mis à jour!"
 			}
 		},
 		"notification": {
@@ -3956,6 +3972,10 @@
 		"priceranges": {
 			"title": "Classe de prix",
 			"description": "Configurez vos classe de prix pour définir les prix des clients individuels."
+		},
+		"pricing": {
+			"title": "Facturation",
+			"description": "C'est votre licence actuelle et votre modèle de facturation."
 		},
 		"shipment": {
 			"title": "Configuration d'expédition",
