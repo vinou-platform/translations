@@ -96,7 +96,8 @@
 			},
 			"metaTitle": "Etichetta del titolo",
 			"metaDescription": "Meta Description",
-			"pathSegment": "Segmento di percorso"
+			"pathSegment": "Segmento di percorso",
+			"exactSearch": "I dati del cliente devono contenere ogni parola di ricerca. Gli spazi bianchi suddividono la frase di ricerca nella parola di ricerca."
 		},
 		"tabs": {
 			"general": "Generale",

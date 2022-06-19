@@ -96,7 +96,8 @@
 			},
 			"metaTitle": "Title-tag",
 			"metaDescription": "Meta description",
-			"pathSegment": "Path segment"
+			"pathSegment": "Path segment",
+			"exactSearch": "Client data must contain every search word. Whitespaces splits search phrase into search word."
 		},
 		"tabs": {
 			"general": "General",

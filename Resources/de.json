@@ -96,7 +96,8 @@
 			},
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
-			"pathSegment": "Pfadsegment"
+			"pathSegment": "Pfadsegment",
+			"exactSearch": "Jedes Suchwort muss im Kunden-Datensatz vorkommen. Leerzeichen trennen Suchwörter."
 		},
 		"tabs": {
 			"general": "Allgemein",
