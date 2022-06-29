@@ -1451,6 +1451,49 @@
 			"registrationFailed": "Ha ocurrido un error durante tu registración, por favor contacta directamente nuestro equipo: kontakt@vinou.de oder +49 6131 6245390 o usa el Support-Chat."
 		}
 	},
+	"message": {
+		"actions": {
+			"send": "Enviar mensaje"
+		},
+		"fields": {
+			"from": "Creado por",
+			"to": "Receptor",
+			"subject": "Tema",
+			"body": "Mensaje",
+			"attachements": "Archivos adjuntos",
+			"sendingStamp": "Enviado a"
+		},
+		"views": {
+			"list": {
+				"title": "Mensajes"
+			},
+			"create": {
+				"title": "Crear un mensaje"
+			}
+		},
+		"templates": {
+			"order": {
+				"subject": "Su confirmación de pedido para su pedido {order.number}",
+				"body": "<p>Hola, {salutation}<br><br>Gracias por su pedido, que recibimos el {order.crstamp}.<br><br>Encontrará la confirmación del pedido correspondiente en el archivo adjunto.<br>< br >Saludos cordiales<br>{cliente.empresa}</p>"
+			},
+			"invoice": {
+				"subject": "Su factura {doc.number} para el pedido {order.number}",
+				"body": "<p>Hola {salutation}<br><br>Por la presente nos permitimos facturar las siguientes entregas y servicios para el pedido <strong>{order.number}</strong> de {order.crstamp}.<br> < br>Encontrará la factura <strong>{doc.number}</strong> adjunta.<br><br>Saludos cordiales<br>{customer.company}</p>"
+			},
+			"deliveryNote": {
+				"subject": "Su nota de entrega {doc.number} para el pedido {order.number}",
+				"body": "<p>Hola {salutation}<br><br>adjunto encontrará el <strong>albarán de entrega {doc.number}</strong> para el pedido <strong>{order.number}</strong> de {order .crstamp }.<br><br>Saludos cordiales<br>{customer.company}</p>"
+			},
+			"bulkWineDeliveryNote": {
+				"subject": "Su nota de entrega {doc.number} para el pedido {order.number}",
+				"body": "<p>Hola {salutation}<br><br>adjunto encontrará el <strong>albarán de entrega {doc.number}</strong> para el pedido <strong>{order.number}</strong> de {order .crstamp }.<br><br>Saludos cordiales<br>{customer.company}</p>"
+			},
+			"creditAdvice": {
+				"subject": "Su crédito {doc.number} para ordenar {order.number}",
+				"body": "<p>Hola {salutation}<br><br>bajo la <strong>nota de crédito {doc.number}</strong> le hemos enviado entregas y servicios para su pedido <strong>{order.number}</strong > de {order.crstamp} acreditado.<br><br>Puede encontrar el documento apropiado para sus documentos en el archivo adjunto.<br><br>Saludos cordiales<br>{customer.company}</p>"
+			}
+		}
+	},
 	"network": {
 		"field": {
 			"search": {

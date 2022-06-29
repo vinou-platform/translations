@@ -1451,6 +1451,49 @@
 			"registrationFailed": "Something went wrong during the registration process. Please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
 		}
 	},
+	"message": {
+		"actions": {
+			"send": "Send message"
+		},
+		"fields": {
+			"from": "Created by",
+			"to": "Receiver",
+			"subject": "Subject",
+			"body": "Message",
+			"attachements": "Attachements",
+			"sendingStamp": "Sent at"
+		},
+		"views": {
+			"list": {
+				"title": "Messages"
+			},
+			"create": {
+				"title": "Create message"
+			}
+		},
+		"templates": {
+			"order": {
+				"subject": "Your order confirmation for your order {order.number}",
+				"body": "<p>Hello {salutation}<br><br>Thank you for your order, which we received on {order.crstamp}.<br><br>You will find the corresponding order confirmation in the attachment.<br><br >Best regards<br>{customer.company}</p>"
+			},
+			"invoice": {
+				"subject": "Your invoice {doc.number} for order {order.number}",
+				"body": "<p>Hello {salutation}<br><br>We hereby allow ourselves to invoice the following deliveries and services for the order <strong>{order.number}</strong> from {order.crstamp}.<br> <br>You will find the invoice <strong>{doc.number}</strong> attached.<br><br>Best regards<br>{customer.company}</p>"
+			},
+			"deliveryNote": {
+				"subject": "Your delivery note {doc.number} for order {order.number}",
+				"body": "<p>Hello {salutation}<br><br>enclosed you will find the <strong>delivery note {doc.number}</strong> for the order <strong>{order.number}</strong> from {order.crstamp }.<br><br>Best regards<br>{customer.company}</p>"
+			},
+			"bulkWineDeliveryNote": {
+				"subject": "Your delivery note {doc.number} for order {order.number}",
+				"body": "<p>Hello {salutation}<br><br>enclosed you will find the <strong>delivery note {doc.number}</strong> for the order <strong>{order.number}</strong> from {order.crstamp }.<br><br>Best regards<br>{customer.company}</p>"
+			},
+			"creditAdvice": {
+				"subject": "Your credit {doc.number} to order {order.number}",
+				"body": "<p>Hello {salutation}<br><br>under the <strong>credit note {doc.number}</strong> we have sent you deliveries and services for your order <strong>{order.number}</strong> from {order.crstamp} credited.<br><br>You can find the appropriate document for your documents in the attachment.<br><br>Best regards<br>{customer.company}</p>"
+			}
+		}
+	},
 	"network": {
 		"field": {
 			"search": {

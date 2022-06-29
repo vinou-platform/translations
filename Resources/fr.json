@@ -1451,6 +1451,49 @@
 			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
 		}
 	},
+	"message": {
+		"actions": {
+			"send": "Envoyer le message"
+		},
+		"fields": {
+			"from": "Créé par",
+			"to": "Destinataire",
+			"subject": "Matière",
+			"body": "Message",
+			"attachements": "Pièces jointes",
+			"sendingStamp": "Envoyé à"
+		},
+		"views": {
+			"list": {
+				"title": "messages"
+			},
+			"create": {
+				"title": "Créer un message"
+			}
+		},
+		"templates": {
+			"order": {
+				"subject": "Votre confirmation de commande pour votre commande {order.number}",
+				"body": "<p>Bonjour {salutation}<br><br>Merci pour votre commande, que nous avons reçue le {order.crstamp}.<br><br>Vous trouverez la confirmation de commande correspondante en pièce jointe.<br>< br >Meilleures salutations<br>{client.entreprise}</p>"
+			},
+			"invoice": {
+				"subject": "Votre facture {doc.number} pour la commande {order.number}",
+				"body": "<p>Bonjour {salutation}<br><br>Nous nous autorisons par la présente à facturer les livraisons et services suivants pour la commande <strong>{order.number}</strong> de {order.crstamp}.<br> < br>Vous trouverez la facture <strong>{doc.number}</strong> en pièce jointe.<br><br>Meilleures salutations<br>{customer.company}</p>"
+			},
+			"deliveryNote": {
+				"subject": "Votre bon de livraison {doc.number} pour la commande {order.number}",
+				"body": "<p>Bonjour {salutation}<br><br>vous trouverez ci-joint le <strong>bon de livraison {doc.number}</strong> pour la commande <strong>{order.number}</strong> de {order .crstamp }.<br><br>Meilleures salutations<br>{client.entreprise}</p>"
+			},
+			"bulkWineDeliveryNote": {
+				"subject": "Votre bon de livraison {doc.number} pour la commande {order.number}",
+				"body": "<p>Bonjour {salutation}<br><br>vous trouverez ci-joint le <strong>bon de livraison {doc.number}</strong> pour la commande <strong>{order.number}</strong> de {order .crstamp }.<br><br>Meilleures salutations<br>{client.entreprise}</p>"
+			},
+			"creditAdvice": {
+				"subject": "Votre crédit {doc.number} pour commander {order.number}",
+				"body": "<p>Bonjour {salutation}<br><br>sous la <strong>note de crédit {doc.number}</strong> nous vous avons envoyé des livraisons et des services pour votre commande <strong>{order.number}</strong > de {order.crstamp} crédité.<br><br>Vous pouvez trouver le document approprié pour vos documents dans la pièce jointe.<br><br>Meilleures salutations<br>{customer.company}</p>"
+			}
+		}
+	},
 	"network": {
 		"field": {
 			"search": {

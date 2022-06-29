@@ -1451,6 +1451,49 @@
 			"registrationFailed": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto."
 		}
 	},
+	"message": {
+		"actions": {
+			"send": "Invia messaggio"
+		},
+		"fields": {
+			"from": "Creato da",
+			"to": "Ricevitore",
+			"subject": "Materia",
+			"body": "Messaggio",
+			"attachements": "Allegati",
+			"sendingStamp": "Inviato a"
+		},
+		"views": {
+			"list": {
+				"title": "Messaggi"
+			},
+			"create": {
+				"title": "Creare un messaggio"
+			}
+		},
+		"templates": {
+			"order": {
+				"subject": "La tua conferma d'ordine per il tuo ordine {order.number}",
+				"body": "<p>Ciao {salutation}<br><br>Grazie per il tuo ordine, che abbiamo ricevuto su {order.crstamp}.<br><br>Troverai la conferma d'ordine corrispondente nell'allegato.<br>< br >Cordiali saluti<br>{customer.company}</p>"
+			},
+			"invoice": {
+				"subject": "La tua fattura {doc.number} per l'ordine {order.number}",
+				"body": "<p>Buongiorno {salutation}<br><br>Con la presente ci permettiamo di fatturare le seguenti consegne e servizi per l'ordine <strong>{order.number}</strong> da {order.crstamp}.<br> < br>Troverai la fattura <strong>{doc.number}</strong> in allegato.<br><br>Cordiali saluti<br>{customer.company}</p>"
+			},
+			"deliveryNote": {
+				"subject": "La tua bolla di consegna {doc.number} per l'ordine {order.number}",
+				"body": "<p>Ciao {salutation}<br><br>in allegato troverai la <strong>bolla di consegna {doc.number}</strong> per l'ordine <strong>{order.number}</strong> da {order .crstamp }.<br><br>Cordiali saluti<br>{customer.company}</p>"
+			},
+			"bulkWineDeliveryNote": {
+				"subject": "La tua bolla di consegna {doc.number} per l'ordine {order.number}",
+				"body": "<p>Ciao {salutation}<br><br>in allegato troverai la <strong>bolla di consegna {doc.number}</strong> per l'ordine <strong>{order.number}</strong> da {order .crstamp }.<br><br>Cordiali saluti<br>{customer.company}</p>"
+			},
+			"creditAdvice": {
+				"subject": "Il tuo credito {doc.number} per ordinare {order.number}",
+				"body": "<p>Buongiorno {salutation}<br><br>con la <strong>nota di credito {doc.number}</strong> ti abbiamo inviato consegne e servizi per il tuo ordine <strong>{order.number}</strong > da {order.crstamp} accreditato.<br><br>Puoi trovare il documento appropriato per i tuoi documenti in allegato.<br><br>Cordiali saluti<br>{customer.company}</p>"
+			}
+		}
+	},
 	"network": {
 		"field": {
 			"search": {

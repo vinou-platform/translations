@@ -72,7 +72,7 @@
 				"to": "bis"
 			},
 			"freeOfCharge": "kostenfrei",
-			"crstamp": "Erstellungsdatum",
+			"crstamp": "Erstellt am",
 			"chstamp": "Änderungsdatum",
 			"weight": "Gewicht (in g)",
 			"title": "Titel",
@@ -1451,6 +1451,49 @@
 			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat."
 		}
 	},
+	"message": {
+		"actions": {
+			"send": "Nachricht senden"
+		},
+		"fields": {
+			"from": "Erstellt von",
+			"to": "Empfänger",
+			"subject": "Betreff",
+			"body": "Nachricht",
+			"attachements": "Anhänge",
+			"sendingStamp": "Versendet am"
+		},
+		"views": {
+			"list": {
+				"title": "Nachrichten"
+			},
+			"create": {
+				"title": "Nachricht verfassen"
+			}
+		},
+		"templates": {
+			"order": {
+				"subject": "Deine Auftragsbestätigung zu Bestellung {order.number}",
+				"body": "<p>Hallo {salutation}<br><br>vielen Dank für Deinen Auftrag, den wir am {order.crstamp} entgegen genommen haben.<br><br>Im Anhang findest Du die dazugehörige Auftragsbestätigung.<br><br>Viele Grüße<br>{customer.company}</p>"
+			},
+			"invoice": {
+				"subject": "Deine Rechnung {doc.number} zu Bestellung {order.number}",
+				"body": "<p>Hallo {salutation}<br><br>hiermit erlauben wir uns zu der Bestellung <strong>{order.number}</strong> vom {order.crstamp} folgende Lieferungen und Leistungen in Rechnung zu stellen.<br><br>Im Anhang findest Du die Rechnung <strong>{doc.number}</strong>.<br><br>Viele Grüße<br>{customer.company}</p>"
+			},
+			"deliveryNote": {
+				"subject": "Dein Lieferschein {doc.number} zu Bestellung {order.number}",
+				"body": "<p>Hallo {salutation}<br><br>anbei findest Du den <strong>Lieferschein {doc.number}</strong> zu der Bestellung <strong>{order.number}</strong> vom {order.crstamp}.<br><br>Viele Grüße<br>{customer.company}</p>"
+			},
+			"bulkWineDeliveryNote": {
+				"subject": "Dein Lieferschein {doc.number} zu Bestellung {order.number}",
+				"body": "<p>Hallo {salutation}<br><br>anbei findest Du den <strong>Lieferschein {doc.number}</strong> zu der Bestellung <strong>{order.number}</strong> vom {order.crstamp}.<br><br>Viele Grüße<br>{customer.company}</p>"
+			},
+			"creditAdvice": {
+				"subject": "Deine Gutschrift {doc.number} zu Bestellung {order.number}",
+				"body": "<p>Hallo {salutation}<br><br>unter der <strong>Gutschrift {doc.number}</strong> haben wir Dir Lieferungen und Leistungen zu Deiner Bestellung <strong>{order.number}</strong> vom {order.crstamp} gutgeschrieben.<br><br>Das passende Dokument für Deine Unterlagen findest Du im Anhang.<br><br>Viele Grüße<br>{customer.company}</p>"
+			}
+		}
+	},
 	"network": {
 		"field": {
 			"search": {
@@ -1794,6 +1837,7 @@
 			"new": "{title} (Neu)"
 		},
 		"tabs": {
+			"basedata": "Netzwerk-Stammdaten",
 			"vinougusto": "Vinou-Gusto",
 			"files": "Dateien",
 			"stockRotation": "Lagerbewegungen",
