@@ -97,7 +97,8 @@
 			"metaTitle": "Etichetta del titolo",
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segmento di percorso",
-			"exactSearch": "I dati del cliente devono contenere ogni parola di ricerca. Gli spazi bianchi suddividono la frase di ricerca nella parola di ricerca."
+			"exactSearch": "I dati del cliente devono contenere ogni parola di ricerca. Gli spazi bianchi suddividono la frase di ricerca nella parola di ricerca.",
+			"salesAmmount": "Importo delle vendite in {currency}"
 		},
 		"tabs": {
 			"general": "Generale",
@@ -3763,10 +3764,10 @@
 			"description": "Descrizione",
 			"endDate": "Data di fine",
 			"freeShipping": "Inoltre spedizione gratuita",
-			"gross": "Sconto forfettario in EUR (lordo)",
+			"gross": "Sconto forfettario in {currency} (lordo)",
 			"hash": "Codice di sconto",
 			"itemTypes": "Valido per i seguenti gruppi di articoli",
-			"minGross": "Valore minimo delle merci in EUR (lordo)",
+			"minGross": "Valore minimo delle merci in {currency} (lordo)",
 			"minQuantity": "Numero minimo di articoli",
 			"name": "Nome",
 			"percent": "Sconto percentuale",
@@ -3926,6 +3927,17 @@
 			},
 			"toasts": {
 				"changed": "Impostazioni di rete aggiornate!"
+			}
+		},
+		"general": {
+			"title": "impostazioni generali",
+			"description": "Specifica qui le impostazioni generali, come la valuta che desideri utilizzare all'interno di Vinou.",
+			"currency": {
+				"title": "Moneta",
+				"description": "Seleziona una valuta da utilizzare per Vinou."
+			},
+			"toasts": {
+				"changed": "Impostazioni generali aggiornate!"
 			}
 		},
 		"notification": {
@@ -6178,6 +6190,93 @@
 			"title": "Italiano",
 			"code": "it",
 			"iso": "it_IT"
+		}
+	},
+	"currencies": {
+		"EUR": {
+			"name": "Euro",
+			"isocode": "EUR",
+			"shortcode": "€"
+		},
+		"USD": {
+			"name": "dollaro Americano",
+			"isocode": "USD",
+			"shortcode": "$"
+		},
+		"BAM": {
+			"name": "Marco bosniaco convertibile",
+			"isocode": "BAM",
+			"shortcode": "KM"
+		},
+		"BGN": {
+			"name": "lev bulgaro",
+			"isocode": "BGN",
+			"shortcode": "B"
+		},
+		"HRK": {
+			"name": "Kuna croata",
+			"isocode": "HRK",
+			"shortcode": "kn"
+		},
+		"CZK": {
+			"name": "Corona ceca",
+			"isocode": "CZK",
+			"shortcode": "kč"
+		},
+		"DKK": {
+			"name": "Corona danese",
+			"isocode": "DKK",
+			"shortcode": "kr"
+		},
+		"GBP": {
+			"name": "sterlina Inglese",
+			"isocode": "GBP",
+			"shortcode": "£"
+		},
+		"HUF": {
+			"name": "fiorino ungherese",
+			"isocode": "HUF",
+			"shortcode": "Ft"
+		},
+		"MKD": {
+			"name": "denaro macedone",
+			"isocode": "MKD",
+			"shortcode": "ден"
+		},
+		"NOK": {
+			"name": "Corona norvegese",
+			"isocode": "NOK",
+			"shortcode": "kr"
+		},
+		"PLN": {
+			"name": "Zloty polacco",
+			"isocode": "PLN",
+			"shortcode": "zł"
+		},
+		"RON": {
+			"name": "Nuovo Leu rumeno",
+			"isocode": "RON",
+			"shortcode": "lei"
+		},
+		"RSD": {
+			"name": "dinaro serbo",
+			"isocode": "RSD",
+			"shortcode": "РСД"
+		},
+		"SEK": {
+			"name": "Corona svedese",
+			"isocode": "SEK",
+			"shortcode": "kr"
+		},
+		"CHF": {
+			"name": "franco svizzero",
+			"isocode": "CHF",
+			"shortcode": "CHF"
+		},
+		"TRL": {
+			"name": "Lira turca",
+			"isocode": "TRL",
+			"shortcode": "TL"
 		}
 	},
 	"wineregions": {

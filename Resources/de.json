@@ -97,7 +97,8 @@
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
 			"pathSegment": "Pfadsegment",
-			"exactSearch": "Jedes Suchwort muss im Kunden-Datensatz vorkommen. Leerzeichen trennen Suchwörter."
+			"exactSearch": "Jedes Suchwort muss im Kunden-Datensatz vorkommen. Leerzeichen trennen Suchwörter.",
+			"salesAmmount": "Umsatz in {currency}"
 		},
 		"tabs": {
 			"general": "Allgemein",
@@ -2836,7 +2837,7 @@
 			},
 			"shipping_different_location": "Abweichende Lieferadresse",
 			"state": "Status",
-			"taxfree": "Umsatzsteuerbefreit",
+			"taxfree": "Ohne MwSt. (z.B. wg. Kleinunternehmerregulung oder Auslandslieferung)",
 			"taxrateNetTax": "{taxrate}% von {value}",
 			"taxrateGrossTax": "{value} zu {taxrate}%",
 			"orderValue": "Bestellwert",
@@ -3764,10 +3765,10 @@
 			"description": "Beschreibung",
 			"endDate": "Endet am",
 			"freeShipping": "Zusätzlich kostenloser Versand",
-			"gross": "Pauschal-Rabatt in EUR (Brutto)",
+			"gross": "Pauschal-Rabatt in {currency} (Brutto)",
 			"hash": "Rabatt-Code",
 			"itemTypes": "Gültig für folgende Artikelgruppen",
-			"minGross": "Mindestwarenwert in EUR (Brutto)",
+			"minGross": "Mindestwarenwert in {currency} (Brutto)",
 			"minQuantity": "Mindestwarenstückzahl",
 			"name": "Bezeichnung",
 			"percent": "Prozentualer Rabatt",
@@ -3927,6 +3928,17 @@
 			},
 			"toasts": {
 				"changed": "Netzwerkeinstellungen aktualisiert!"
+			}
+		},
+		"general": {
+			"title": "Allgemeine Einstellungen",
+			"description": "Lege hier die allgemeine Einstellungen fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest.",
+			"currency": {
+				"title": "Währung",
+				"description": "Wähle eine Währung aus, die Vinou verwenden soll."
+			},
+			"toasts": {
+				"changed": "Allgemeine Einstellungen aktualisiert!"
 			}
 		},
 		"notification": {
@@ -6179,6 +6191,93 @@
 			"title": "Italienisch",
 			"code": "it",
 			"iso": "it_IT"
+		}
+	},
+	"currencies": {
+		"EUR": {
+			"name": "Euro",
+			"isocode": "EUR",
+			"shortcode": "€"
+		},
+		"USD": {
+			"name": "Amerikanischer Doller",
+			"isocode": "USD",
+			"shortcode": "$"
+		},
+		"BAM": {
+			"name": "Bosnische Konvertible Mark",
+			"isocode": "BAM",
+			"shortcode": "KM"
+		},
+		"BGN": {
+			"name": "Bulgarischer Lew",
+			"isocode": "BGN",
+			"shortcode": "B"
+		},
+		"HRK": {
+			"name": "Kroatische Kuna",
+			"isocode": "HRK",
+			"shortcode": "kn"
+		},
+		"CZK": {
+			"name": "Tschechische Krone",
+			"isocode": "CZK",
+			"shortcode": "kč"
+		},
+		"DKK": {
+			"name": "Dänische Krone",
+			"isocode": "DKK",
+			"shortcode": "kr"
+		},
+		"GBP": {
+			"name": "Britisches Pfun",
+			"isocode": "GBP",
+			"shortcode": "£"
+		},
+		"HUF": {
+			"name": "Ungarischer Forint",
+			"isocode": "HUF",
+			"shortcode": "Ft"
+		},
+		"MKD": {
+			"name": "Mazedonischer Denar",
+			"isocode": "MKD",
+			"shortcode": "ден"
+		},
+		"NOK": {
+			"name": "Norwegische Krone",
+			"isocode": "NOK",
+			"shortcode": "kr"
+		},
+		"PLN": {
+			"name": "Polnischer Złoty",
+			"isocode": "PLN",
+			"shortcode": "zł"
+		},
+		"RON": {
+			"name": "Neuer Rumänischer Leu",
+			"isocode": "RON",
+			"shortcode": "lei"
+		},
+		"RSD": {
+			"name": "Serbischer Dinar",
+			"isocode": "RSD",
+			"shortcode": "РСД"
+		},
+		"SEK": {
+			"name": "Schwedische Krone",
+			"isocode": "SEK",
+			"shortcode": "kr"
+		},
+		"CHF": {
+			"name": "Schweizer Franken",
+			"isocode": "CHF",
+			"shortcode": "CHF"
+		},
+		"TRL": {
+			"name": "Türkische Lira",
+			"isocode": "TRL",
+			"shortcode": "TL"
 		}
 	},
 	"wineregions": {
