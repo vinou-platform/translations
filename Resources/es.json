@@ -1717,6 +1717,8 @@
 			"facts": "datos y hechos",
 			"prices": "precios",
 			"analyse": "análisis",
+			"maturation": "extensión",
+			"terroir": "suelo",
 			"additional": "descripción",
 			"composition": "composición",
 			"qrcode": "QR-Code",
@@ -1735,6 +1737,7 @@
 			},
 			"articlenumber": "artículo no.",
 			"barcode": "EAN-Code",
+			"barrique": "Madurado en barricas",
 			"baseprice": "Precio por litro",
 			"bio": "certificado como biológico",
 			"bioRefNumber": {
@@ -1749,6 +1752,10 @@
 			"countrycode": "origen",
 			"cuvee": "cubierto",
 			"description": "descripción",
+			"details": {
+				"short": "breve informacion",
+				"long": "Descripción detallada"
+			},
 			"drinktemperature": "temperatura óptima para beber",
 			"grapetypes": {
 				"label": "variedades de uva",
@@ -1868,7 +1875,9 @@
 			}
 		},
 		"hints": {
-			"stockDistribution": "Stock disponible {stock}, en orden {ordered}"
+			"stockDistribution": "Stock disponible {stock}, en orden {ordered}",
+			"maturationShort": "máx. 200 caracteres",
+			"terroirShort": "máx. 200 caracteres"
 		},
 		"errors": {
 			"missingWinery": "Ninguna bodega seleccionada. Ciertos mecanismos de red, como el reenvío de pedidos, no se pueden activar."

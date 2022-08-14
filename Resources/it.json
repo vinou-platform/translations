@@ -1717,6 +1717,8 @@
 			"facts": "Dati e fatti",
 			"prices": "Prezzo",
 			"analyse": "Analisi",
+			"maturation": "Maturazione",
+			"terroir": "Terra",
 			"additional": "Descrizione",
 			"composition": "Composizione",
 			"qrcode": "QR-Code",
@@ -1735,6 +1737,7 @@
 			},
 			"articlenumber": "Articolo no.",
 			"barcode": "Codice EAN",
+			"barrique": "Maturato in barriques",
 			"baseprice": "Prezzo al litro",
 			"bio": "Organico certificato",
 			"bioRefNumber": {
@@ -1749,6 +1752,10 @@
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Descrizione",
+			"details": {
+				"short": "brevi informazioni",
+				"long": "Descrizione dettagliata"
+			},
 			"drinktemperature": "Temperatura di consumo",
 			"grapetypes": {
 				"label": "Uva",
@@ -1868,7 +1875,9 @@
 			}
 		},
 		"hints": {
-			"stockDistribution": "Stock disponibile {stock}, in ordine {ordered}"
+			"stockDistribution": "Stock disponibile {stock}, in ordine {ordered}",
+			"maturationShort": "max. 200 caratteri",
+			"terroirShort": "max. 200 caratteri"
 		},
 		"errors": {
 			"missingWinery": "Nessuna cantina selezionata. Alcuni meccanismi di rete come l'inoltro degli ordini non possono essere attivati."

@@ -1717,6 +1717,8 @@
 			"facts": "Daten & Fakten",
 			"prices": "Preise",
 			"analyse": "Analyse",
+			"maturation": "Ausbau",
+			"terroir": "Boden",
 			"additional": "Beschreibung",
 			"composition": "Zusammensetzung",
 			"qrcode": "QR-Code",
@@ -1735,6 +1737,7 @@
 			},
 			"articlenumber": "Art.-Nr.",
 			"barcode": "EAN-Code",
+			"barrique": "Im Barrique gereift",
 			"baseprice": "Preis pro Liter",
 			"bio": "Bio zertifiziert",
 			"bioRefNumber": {
@@ -1749,6 +1752,10 @@
 			"countrycode": "Herkunft",
 			"cuvee": "Cuvée",
 			"description": "Beschreibung",
+			"details": {
+				"short": "Kurzinformation",
+				"long": "Ausführliche Beschreibung"
+			},
 			"drinktemperature": "Trinktemperatur",
 			"grapetypes": {
 				"label": "Rebsorten",
@@ -1869,7 +1876,9 @@
 			}
 		},
 		"hints": {
-			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}"
+			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}",
+			"maturationShort": "max. 200 Zeichen",
+			"terroirShort": "max. 200 Zeichen"
 		},
 		"errors": {
 			"missingWinery": "Es ist kein Weingut ausgewählt. Dadurch können bestimmte Netzwerk-Mechanismen wie z.B. die Bestellweiterleitung nicht ausgelöst werden."

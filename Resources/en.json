@@ -1717,6 +1717,8 @@
 			"facts": "Facts & Numbers",
 			"prices": "Prices",
 			"analyse": "Analyse",
+			"maturation": "Maturation",
+			"terroir": "Terroir",
 			"additional": "Description",
 			"composition": "Composition",
 			"qrcode": "QR code",
@@ -1735,6 +1737,7 @@
 			},
 			"articlenumber": "Art. no.",
 			"barcode": "GTIN",
+			"barrique": "Matured in barrique",
 			"baseprice": "Price per liter",
 			"bio": "Bio certified",
 			"bioRefNumber": {
@@ -1749,6 +1752,10 @@
 			"countrycode": "Country",
 			"cuvee": "Cuvée",
 			"description": "Description",
+			"details": {
+				"short": "Brief info",
+				"long": "Detailed description"
+			},
 			"drinktemperature": "Drink temperature",
 			"grapetypes": {
 				"label": "Grapetypes",
@@ -1868,7 +1875,9 @@
 			}
 		},
 		"hints": {
-			"stockDistribution": "Available stock {stock}, in order {ordered}"
+			"stockDistribution": "Available stock {stock}, in order {ordered}",
+			"maturationShort": "max. 200 chars",
+			"terroirShort": "max. 200 chars"
 		},
 		"errors": {
 			"missingWinery": "No winery selected. Certain network mechanisms such as order forwarding cannot be triggered."

@@ -1717,6 +1717,8 @@
 			"facts": "Données et faits",
 			"prices": "Prix",
 			"analyse": "Analyse",
+			"maturation": "Maturation",
+			"terroir": "Terroir",
 			"additional": "Description",
 			"composition": "Composition",
 			"qrcode": "Code QR",
@@ -1735,6 +1737,7 @@
 			},
 			"articlenumber": "No. d'article",
 			"barcode": "Code EAN",
+			"barrique": "Elevage en barriques",
 			"baseprice": "Prix au litre",
 			"bio": "Certifié biologique",
 			"bioRefNumber": {
@@ -1749,6 +1752,10 @@
 			"countrycode": "Origine",
 			"cuvee": "Cuvée",
 			"description": "Description",
+			"details": {
+				"short": "brèves informations",
+				"long": "Description détaillée"
+			},
 			"drinktemperature": "Température de consommation",
 			"grapetypes": {
 				"label": "Cépag",
@@ -1868,7 +1875,9 @@
 			}
 		},
 		"hints": {
-			"stockDistribution": "Stock disponible {stock}, en ordre {ordered}"
+			"stockDistribution": "Stock disponible {stock}, en ordre {ordered}",
+			"maturationShort": "max. 200 caractères",
+			"terroirShort": "max. 200 caractères"
 		},
 		"errors": {
 			"missingWinery": "Aucune cave sélectionnée. Certains mécanismes de réseau tels que la transmission de commandes ne peuvent pas être déclenchés."
