@@ -101,9 +101,16 @@
 			"salesAmmount": "Importo delle vendite in {currency}"
 		},
 		"tabs": {
+			"files": "File",
 			"general": "Generale",
 			"notes": "Annotazioni",
 			"statistics": "Statistiche"
+		},
+		"views": {
+			"files": {
+				"title": "File",
+				"empty": "Nessuna {label} disponibile per la voce specificata."
+			}
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -1583,7 +1590,6 @@
 			}
 		},
 		"tabs": {
-			"files": "File",
 			"addresses": "Indirizzi"
 		},
 		"fieldSets": {
@@ -1660,7 +1666,6 @@
 			}
 		},
 		"tabs": {
-			"files": "File",
 			"addresses": "Indirizzi"
 		},
 		"fieldSets": {
@@ -1882,7 +1887,6 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
-			"files": "Dati",
 			"stockRotation": "Movimenti delle stock",
 			"marketing": "Marketing"
 		},
@@ -2216,18 +2220,22 @@
 			"wrote": "Scritto il"
 		},
 		"action": {
+			"edit": {
+				"title": "Modifica nota"
+			},
 			"create": {
 				"main": "Nuova nota",
-				"sub": "creare"
+				"sub": "creare",
+				"title": "Crea una nuova nota"
 			}
 		},
-		"messages": {
-			"toasts": {
-				"saved": "Nota salvata!",
-				"saveerror": "Nota non salvabile!",
-				"delete": "Nota rimossa!",
-				"deleteerror": "La nota non può essere cancellata!"
-			}
+		"dialogs": {
+			"delete": "Vuoi davvero eliminare questa nota?"
+		},
+		"toasts": {
+			"created": "Nota salvata!",
+			"changed": "Nota aggiornata!",
+			"deleted": "Nota eliminata!"
 		}
 	},
 	"client": {
@@ -3536,9 +3544,6 @@
 				"empty": "There are no {label} for this news entry."
 			}
 		},
-		"tabs": {
-			"files": "Files"
-		},
 		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
@@ -3642,20 +3647,11 @@
 			},
 			"addItem": "+ Aggiungi articolo"
 		},
-		"views": {
-			"files": {
-				"title": "File",
-				"empty": "Nessuna {label} disponibile per un determinato pacchetto."
-			}
-		},
 		"filters": {
 			"category": {
 				"label": "Scegli la categoria",
 				"none": "Mostra fasci senza categoria"
 			}
-		},
-		"tabs": {
-			"files": "File"
 		},
 		"fieldSets": {
 			"general": "Generale",

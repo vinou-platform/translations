@@ -101,9 +101,16 @@
 			"salesAmmount": "Montant des ventes en {currency}"
 		},
 		"tabs": {
+			"files": "Fichiers",
 			"general": "Général",
 			"notes": "Notes",
 			"statistics": "Statistiques"
+		},
+		"views": {
+			"files": {
+				"title": "Des dossiers",
+				"empty": "Aucune {label} disponible pour l'entrée donnée."
+			}
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -1583,7 +1590,6 @@
 			}
 		},
 		"tabs": {
-			"files": "Fichiers",
 			"addresses": "Adresses"
 		},
 		"fieldSets": {
@@ -1660,7 +1666,6 @@
 			}
 		},
 		"tabs": {
-			"files": "Fichiers",
 			"addresses": "Adresses"
 		},
 		"fieldSets": {
@@ -1882,7 +1887,6 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
-			"files": "Fichiers",
 			"stockRotation": "Mouvements de stock",
 			"marketing": "Commercialisation"
 		},
@@ -2216,18 +2220,22 @@
 			"wrote": "Écrit sur"
 		},
 		"action": {
+			"edit": {
+				"title": "Note éditée"
+			},
 			"create": {
 				"main": "Créer",
-				"sub": "note"
+				"sub": "note",
+				"title": "Créer une nouvelle note"
 			}
 		},
-		"messages": {
-			"toasts": {
-				"saved": "Note enregistré!",
-				"saveerror": "Note n'a pas pu être enregistré!",
-				"delete": "Note supprimé!",
-				"deleteerror": "Note n'a pas pu être supprimé!"
-			}
+		"dialogs": {
+			"delete": "Do really want to delete this note?"
+		},
+		"toasts": {
+			"created": "Remarque enregistrée!",
+			"changed": "Remarque mise à jour!",
+			"deleted": "Remarque supprimée!"
 		}
 	},
 	"client": {
@@ -3536,9 +3544,6 @@
 				"empty": "There are no {label} for this news entry."
 			}
 		},
-		"tabs": {
-			"files": "Files"
-		},
 		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
@@ -3642,20 +3647,11 @@
 			},
 			"addItem": "+ Ajouter un article"
 		},
-		"views": {
-			"files": {
-				"title": "Des dossiers",
-				"empty": "Aucune {label} n'est disponible pour un ensemble donné."
-			}
-		},
 		"filters": {
 			"category": {
 				"label": "Choisissez une catégorie",
 				"none": "Afficher les bundles sans catégorie"
 			}
-		},
-		"tabs": {
-			"files": "Des dossiers"
 		},
 		"fieldSets": {
 			"general": "Général",

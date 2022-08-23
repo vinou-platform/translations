@@ -101,9 +101,16 @@
 			"salesAmmount": "Cantidad de ventas en {currency}"
 		},
 		"tabs": {
+			"files": "archivos",
 			"general": "Generalidades",
 			"notes": "Noticias",
 			"statistics": "Estadísticas"
+		},
+		"views": {
+			"files": {
+				"title": "Archivos",
+				"empty": "No hay {label} disponible para la entrada dada."
+			}
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -1583,7 +1590,6 @@
 			}
 		},
 		"tabs": {
-			"files": "archivos",
 			"addresses": "Direcciones"
 		},
 		"fieldSets": {
@@ -1660,7 +1666,6 @@
 			}
 		},
 		"tabs": {
-			"files": "archivos",
 			"addresses": "Direcciones"
 		},
 		"fieldSets": {
@@ -1882,7 +1887,6 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
-			"files": "Datos",
 			"stockRotation": "Movimientos de almacén",
 			"marketing": "Márketing"
 		},
@@ -2216,18 +2220,22 @@
 			"wrote": "escrito a "
 		},
 		"action": {
+			"edit": {
+				"title": "Editar nota"
+			},
 			"create": {
 				"main": "nueva nota",
-				"sub": "crear"
+				"sub": "crear",
+				"title": "Crear nueva nota"
 			}
 		},
-		"messages": {
-			"toasts": {
-				"saved": "nota ha sido grabada!",
-				"saveerror": "No ha podido grabar nota",
-				"delete": "nota ha sido borrada!",
-				"deleteerror": "No ha podido borrar nota!"
-			}
+		"dialogs": {
+			"delete": "¿Realmente quieres borrar esta nota?"
+		},
+		"toasts": {
+			"created": "¡Nota guardada!",
+			"changed": "¡Nota actualizada!",
+			"deleted": "¡Nota eliminada!"
 		}
 	},
 	"client": {
@@ -3536,9 +3544,6 @@
 				"empty": "There are no {label} for this news entry."
 			}
 		},
-		"tabs": {
-			"files": "Files"
-		},
 		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
@@ -3642,20 +3647,11 @@
 			},
 			"addItem": "+ Agregar artículo"
 		},
-		"views": {
-			"files": {
-				"title": "Archivos",
-				"empty": "No hay {label} disponible para el paquete dado."
-			}
-		},
 		"filters": {
 			"category": {
 				"label": "Elegir la categoría",
 				"none": "Mostrar paquetes sin categoría"
 			}
-		},
-		"tabs": {
-			"files": "Archivos"
 		},
 		"fieldSets": {
 			"general": "General",

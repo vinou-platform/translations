@@ -101,9 +101,16 @@
 			"salesAmmount": "Umsatz in {currency}"
 		},
 		"tabs": {
+			"files": "Dateien",
 			"general": "Allgemein",
 			"notes": "Notizen",
 			"statistics": "Statistiken"
+		},
+		"views": {
+			"files": {
+				"title": "Dateien",
+				"empty": "Es liegen keine {label} zu diesem Datensatz vor."
+			}
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -1583,7 +1590,6 @@
 			}
 		},
 		"tabs": {
-			"files": "Dateien",
 			"addresses": "Adressen"
 		},
 		"fieldSets": {
@@ -1660,7 +1666,6 @@
 			}
 		},
 		"tabs": {
-			"files": "Dateien",
 			"addresses": "Adressen"
 		},
 		"fieldSets": {
@@ -1883,7 +1888,6 @@
 		"tabs": {
 			"basedata": "Netzwerk-Stammdaten",
 			"vinougusto": "Vinou-Gusto",
-			"files": "Dateien",
 			"stockRotation": "Lagerbewegungen",
 			"marketing": "Vermarktung"
 		},
@@ -2217,18 +2221,22 @@
 			"wrote": "Schrieb am"
 		},
 		"action": {
+			"edit": {
+				"title": "Notiz bearbeiten"
+			},
 			"create": {
 				"main": "Neue Notiz",
-				"sub": "erstellen"
+				"sub": "erstellen",
+				"title": "Neue Notiz erstellen"
 			}
 		},
-		"messages": {
-			"toasts": {
-				"saved": "Notiz gespeichert!",
-				"saveerror": "Notiz konnte nicht gespeichert werden!",
-				"delete": "Notiz gelöscht!",
-				"deleteerror": "Notiz konnte nicht gelöscht werden!"
-			}
+		"dialogs": {
+			"delete": "Willst Du die Notiz wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Notiz gespeichert!",
+			"changed": "Notiz geändert!",
+			"deleted": "Notiz gelöscht!"
 		}
 	},
 	"client": {
@@ -3537,9 +3545,6 @@
 				"empty": "Es liegen keine {label} zu diesem Newsbeitrag vor."
 			}
 		},
-		"tabs": {
-			"files": "Dateien"
-		},
 		"fieldSets": {
 			"general": "Allgemeines",
 			"settings": "Einstellungen"
@@ -3643,20 +3648,11 @@
 			},
 			"addItem": "+ Artikel hinzufügen"
 		},
-		"views": {
-			"files": {
-				"title": "Dateien",
-				"empty": "Es liegen keine {label} zu diesem Weinpaket vor."
-			}
-		},
 		"filters": {
 			"category": {
 				"label": "Kategorie auswählen",
 				"none": "Pakete ohne Kategorie anzeigen"
 			}
-		},
-		"tabs": {
-			"files": "Dateien"
 		},
 		"fieldSets": {
 			"general": "Allgemeines",

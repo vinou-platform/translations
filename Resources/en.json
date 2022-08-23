@@ -101,9 +101,16 @@
 			"salesAmmount": "Sales ammount in {currency}"
 		},
 		"tabs": {
+			"files": "Files",
 			"general": "General",
 			"notes": "Notes",
 			"statistics": "Statistics"
+		},
+		"views": {
+			"files": {
+				"title": "Files",
+				"empty": "No {label} available for given entry."
+			}
 		},
 		"titles": {
 			"dr": "Dr.",
@@ -1583,7 +1590,6 @@
 			}
 		},
 		"tabs": {
-			"files": "Files",
 			"addresses": "Addresses"
 		},
 		"fieldSets": {
@@ -1660,7 +1666,6 @@
 			}
 		},
 		"tabs": {
-			"files": "Files",
 			"addresses": "Addresses"
 		},
 		"fieldSets": {
@@ -1882,7 +1887,6 @@
 		},
 		"tabs": {
 			"vinougusto": "Vinou-Gusto",
-			"files": "Files",
 			"stockRotation": "Stock rotation",
 			"marketing": "Marketing"
 		},
@@ -2216,18 +2220,22 @@
 			"wrote": "wrote on"
 		},
 		"action": {
+			"edit": {
+				"title": "Edit note"
+			},
 			"create": {
 				"main": "Create new",
-				"sub": "note"
+				"sub": "note",
+				"title": "Create new note"
 			}
 		},
-		"messages": {
-			"toasts": {
-				"saved": "Note saved!",
-				"saveerror": "Note could not saved!",
-				"delete": "Note deleted!",
-				"deleteerror": "Note could not deleted!"
-			}
+		"dialogs": {
+			"delete": "Do really want to delete this note?"
+		},
+		"toasts": {
+			"created": "Note saved!",
+			"changed": "Note updated!",
+			"deleted": "Note deleted!"
 		}
 	},
 	"client": {
@@ -3536,9 +3544,6 @@
 				"empty": "There are no {label} for this news entry."
 			}
 		},
-		"tabs": {
-			"files": "Files"
-		},
 		"fieldSets": {
 			"general": "General",
 			"settings": "Settings"
@@ -3642,20 +3647,11 @@
 			},
 			"addItem": "+ Add article"
 		},
-		"views": {
-			"files": {
-				"title": "Files",
-				"empty": "No {label} available for given bundle."
-			}
-		},
 		"filters": {
 			"category": {
 				"label": "Choose category",
 				"none": "Show bundles without category"
 			}
-		},
-		"tabs": {
-			"files": "Files"
 		},
 		"fieldSets": {
 			"general": "General",
