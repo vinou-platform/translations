@@ -1886,6 +1886,7 @@
 			"new": "{title} (Nouveau)"
 		},
 		"tabs": {
+			"basedata": "Données de base du réseau",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Mouvements de stock",
 			"marketing": "Commercialisation"
@@ -2239,6 +2240,10 @@
 		}
 	},
 	"client": {
+		"name": {
+			"singular": "Client",
+			"plural": "Clients"
+		},
 		"action": {
 			"create": {
 				"main": "Créer",
@@ -3954,7 +3959,7 @@
 			}
 		},
 		"network": {
-			"title": "Paramètres réseau",
+			"title": "Réseau",
 			"description": "Précisez ici comment vous souhaitez utiliser le réseau Vinou.",
 			"orderForwarding": {
 				"title": "Transfert de commande",
@@ -3971,14 +3976,30 @@
 			}
 		},
 		"general": {
-			"title": "Réglages généraux",
-			"description": "Spécifiez ici les paramètres généraux, tels que la devise que vous souhaitez utiliser dans Vinou.",
+			"title": "Système et applications",
+			"description": "Spécifiez ici les paramètres généraux de votre Vinou-Office, tels que la devise que vous souhaitez utiliser dans Vinou ou la gestion du texte pour des descriptions détaillées.",
 			"currency": {
 				"title": "Devise",
 				"description": "Sélectionnez une devise à utiliser par Vinou."
 			},
+			"html": {
+				"title": "Traitement HTML",
+				"description": "Les descriptions des vins, des produits et des lots sont rendues avec un éditeur de texte étendu."
+			},
 			"toasts": {
-				"changed": "Paramètres généraux mis à jour!"
+				"changed": "Paramètres mis à jour!"
+			}
+		},
+		"numbers": {
+			"title": "Plages de nombres",
+			"description": "Par exemple, spécifiez la longueur du numéro et le préfixe pour les enregistrements de données numérotés (tels que les documents, les clients et les conteneurs).",
+			"fields": {
+				"entry": "Enregistrer/Documenter",
+				"prefix": "Préfixe",
+				"numberlength": "Chiffres"
+			},
+			"toasts": {
+				"changed": "Plages de numéros mises à jour!"
 			}
 		},
 		"notification": {

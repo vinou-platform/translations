@@ -1886,6 +1886,7 @@
 			"new": "{title} (Nuovo)"
 		},
 		"tabs": {
+			"basedata": "Dati anagrafici di rete",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Movimenti delle stock",
 			"marketing": "Marketing"
@@ -2239,6 +2240,10 @@
 		}
 	},
 	"client": {
+		"name": {
+			"singular": "Client",
+			"plural": "Clienti"
+		},
 		"action": {
 			"create": {
 				"main": "Nuovo cliente",
@@ -3954,7 +3959,7 @@
 			}
 		},
 		"network": {
-			"title": "Impostazioni di rete",
+			"title": "Rete",
 			"description": "Determina qui come desideri utilizzare la rete Vinou.",
 			"orderForwarding": {
 				"title": "Noltro dell’ordine",
@@ -3971,14 +3976,30 @@
 			}
 		},
 		"general": {
-			"title": "impostazioni generali",
-			"description": "Specifica qui le impostazioni generali, come la valuta che desideri utilizzare all'interno di Vinou.",
+			"title": "Sistema e applicazione",
+			"description": "Specifica qui le impostazioni generali per il tuo Vinou-Office, come la valuta che desideri utilizzare all'interno di Vinou o la gestione del testo per descrizioni dettagliate.",
 			"currency": {
 				"title": "Moneta",
 				"description": "Seleziona una valuta da utilizzare per Vinou."
 			},
+			"html": {
+				"title": "Gestione HTML",
+				"description": "Le descrizioni di vini, prodotti e pacchetti sono rese con un editor di testo esteso."
+			},
 			"toasts": {
-				"changed": "Impostazioni generali aggiornate!"
+				"changed": "Impostazioni aggiornate!"
+			}
+		},
+		"numbers": {
+			"title": "Intervalli di numeri",
+			"description": "Ad esempio, specificare la lunghezza del numero e il prefisso per i record di dati numerati (come documenti, clienti e contenitori).",
+			"fields": {
+				"entry": "Registrazione/Documento",
+				"prefix": "Prefisso",
+				"numberlength": "Cifre"
+			},
+			"toasts": {
+				"changed": "Intervalli di numeri aggiornati!"
 			}
 		},
 		"notification": {
