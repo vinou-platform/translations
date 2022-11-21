@@ -2240,6 +2240,10 @@
 		}
 	},
 	"client": {
+		"name": {
+			"singular": "Kunde",
+			"plural": "Kunden"
+		},
 		"action": {
 			"create": {
 				"main": "Neuen Kunden",
@@ -3955,7 +3959,7 @@
 			}
 		},
 		"network": {
-			"title": "Netzwerk-Einstellungen",
+			"title": "Netzwerk",
 			"description": "Lege hier die Einstellungen fest, wie Du unser Netzwerk nutzen möchtest.",
 			"orderForwarding": {
 				"title": "Bestellweiterleitung",
@@ -3972,14 +3976,30 @@
 			}
 		},
 		"general": {
-			"title": "Allgemeine Einstellungen",
-			"description": "Lege hier die allgemeine Einstellungen fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest.",
+			"title": "System & Applikation",
+			"description": "Lege hier die Einstellungen für Dein Vinou-Office fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest oder wie die Verarbeitung von Texten durchgeführt wird.",
 			"currency": {
 				"title": "Währung",
 				"description": "Wähle eine Währung aus, die Vinou verwenden soll."
 			},
+			"html": {
+				"title": "HTML-Verarbeitung",
+				"description": "Beschreibungstexte von Weinen, Produkten und Weinpaketen werden mit einem ausführlichen HTML-Editor versehen."
+			},
 			"toasts": {
-				"changed": "Allgemeine Einstellungen aktualisiert!"
+				"changed": "System-Einstellungen aktualisiert!"
+			}
+		},
+		"numbers": {
+			"title": "Nummernkreise",
+			"description": "Lege hier z.B. Nummernlänge und Prefix für numerierte Datensätze (z.B. wie Dokumente, Kunden & Behälter) fest.",
+			"fields": {
+				"entry": "Datensatz/Dokument",
+				"prefix": "Prefix",
+				"numberlength": "Stellen"
+			},
+			"toasts": {
+				"changed": "Nummernkreise aktualisiert!"
 			}
 		},
 		"notification": {

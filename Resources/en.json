@@ -1886,6 +1886,7 @@
 			"new": "{title} (New)"
 		},
 		"tabs": {
+			"basedata": "Network master data",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Stock rotation",
 			"marketing": "Marketing"
@@ -2239,6 +2240,10 @@
 		}
 	},
 	"client": {
+		"name": {
+			"singular": "Client",
+			"plural": "Clients"
+		},
 		"action": {
 			"create": {
 				"main": "Add client",
@@ -3954,7 +3959,7 @@
 			}
 		},
 		"network": {
-			"title": "Network-Settings",
+			"title": "Network",
 			"description": "Define, how you would like to use the Vinou network.",
 			"orderForwarding": {
 				"title": "Order forwarding",
@@ -3971,14 +3976,30 @@
 			}
 		},
 		"general": {
-			"title": "General Settings",
-			"description": "Specify the general settings here, such as which currency you want to use within Vinou.",
+			"title": "System and application",
+			"description": "Specify the general settings for your Vinou-Office here, such as which currency you want to use within Vinou or text handling for detailed descriptions.",
 			"currency": {
 				"title": "Currency",
 				"description": "Select a currency for Vinou to use."
 			},
+			"html": {
+				"title": "HTML-Handling",
+				"description": "Descriptions of wines, products and bundles are rendered with an extended text editor."
+			},
 			"toasts": {
-				"changed": "General settings updated!"
+				"changed": "System settings updated!"
+			}
+		},
+		"numbers": {
+			"title": "Number ranges",
+			"description": "For example, specify the number length and prefix for numbered data records (such as documents, customers & containers).",
+			"fields": {
+				"entry": "Record/Document",
+				"prefix": "Prefix",
+				"numberlength": "Digits"
+			},
+			"toasts": {
+				"changed": "Number ranges updated!"
 			}
 		},
 		"notification": {
