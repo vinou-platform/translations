@@ -18,6 +18,17 @@
 		"clients.statistics": "Statistics",
 		"cronjobs": "Cronjobs",
 		"customers": "Customers",
+		"customers.wineries": "Wineries",
+		"customers.wineries.trial": "Trial",
+		"customers.wineries.publish": "Free",
+		"customers.wineries.regular": "Full-Account",
+		"customers.wineries.invitation": "Invitation",
+		"customers.merchants": "Merchants",
+		"customers.merchants.trial": "Trial",
+		"customers.merchants.publish": "Free",
+		"customers.merchants.regular": "Full-Account",
+		"customers.merchants.invitation": "Invitation",
+		"customers.laboratories": "Laboratories",
 		"dashboard": "Dashboard",
 		"marketing": "Marketing",
 		"marketing.campaigns": "Campaigns",
@@ -1375,6 +1386,9 @@
 				"bank": "Bancaccount for SEPA direct debit mandate"
 			}
 		},
+		"gallery": {
+			"showSettings": "Additional fields"
+		},
 		"action": {
 			"create": {
 				"main": "Create",
@@ -1400,7 +1414,8 @@
 			"invoice": "Invoice data"
 		},
 		"fields": {
-			"app": "App",
+			"app": "App License",
+			"storage": "Storage",
 			"mail": "E-Mail",
 			"password": "Passwort",
 			"phone": "Phone",
@@ -1427,18 +1442,18 @@
 			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
 			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
 			"payment": "I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
-			"pricing": "Account model",
+			"pricing": "Pricing",
 			"smallBusiness": {
 				"label": "Small business company",
 				"description": "Tax free invoice notes"
 			},
-			"crstamp": "Date of registration",
+			"crstamp": "Registered at",
 			"expire": "Expiration date",
 			"voucher_old": "Voucher",
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",
 			"state": "Status",
-			"type": "Member type"
+			"type": "Customer-Type"
 		},
 		"types": {
 			"winery": "Winery",
@@ -1447,12 +1462,16 @@
 			"laboratory": "Wine laboratory"
 		},
 		"pricingTypes": {
-			"acquisition": "In aquisition",
 			"trial": "Trial",
-			"publish": "Vinou-Promo",
-			"regular": "Vinou-Complete",
-			"cellar": "Vinou-Cellar",
+			"publish": "Free",
+			"regular": "Full-Account",
 			"invitation": "Invited"
+		},
+		"transactions": {
+			"name": "Transactions",
+			"label": "Chargeable transactions",
+			"current": "Current month",
+			"previous": "Previous month"
 		},
 		"views": {
 			"covid19Notification": {
@@ -1565,6 +1584,10 @@
 		}
 	},
 	"winery": {
+		"name": {
+			"singular": "Winery",
+			"plural": "Wineries"
+		},
 		"action": {
 			"add": {
 				"main": "Add winery",
@@ -1648,6 +1671,10 @@
 		}
 	},
 	"merchant": {
+		"name": {
+			"singular": "Merchant",
+			"plural": "Merchants"
+		},
 		"action": {
 			"add": {
 				"main": "Add",
@@ -1711,6 +1738,12 @@
 				"noentries": "No entries found",
 				"connectmerchant": "Connect to merchant"
 			}
+		}
+	},
+	"laboratory": {
+		"name": {
+			"singular": "Laboratory",
+			"plural": "Laboratories"
 		}
 	},
 	"wine": {

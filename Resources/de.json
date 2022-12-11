@@ -18,6 +18,17 @@
 		"clients.statistics": "Statistiken",
 		"cronjobs": "Cronjobs",
 		"customers": "Mitglieder",
+		"customers.wineries": "Weingüter",
+		"customers.wineries.trial": "Testkunden",
+		"customers.wineries.publish": "Free",
+		"customers.wineries.regular": "Voll-Accounts",
+		"customers.wineries.invitation": "Eingeladen",
+		"customers.merchants": "Händler",
+		"customers.merchants.trial": "Testkunden",
+		"customers.merchants.publish": "Free",
+		"customers.merchants.regular": "Voll-Accounts",
+		"customers.merchants.invitation": "Eingeladen",
+		"customers.laboratories": "Weinlabore",
 		"dashboard": "Dashboard",
 		"marketing": "Vermarktung",
 		"marketing.campaigns": "Kampagnen",
@@ -1375,6 +1386,9 @@
 				"bank": "Bankdaten für SEPA-Lastschrift"
 			}
 		},
+		"gallery": {
+			"showSettings": "Zusatzfelder einblenden"
+		},
 		"action": {
 			"create": {
 				"main": "Neues Mitglied",
@@ -1400,7 +1414,8 @@
 			"invoice": "Rechnungsangaben"
 		},
 		"fields": {
-			"app": "App",
+			"app": "App-Lizenz",
+			"storage": "Speicherplatz",
 			"mail": "E-Mail",
 			"password": "Passwort",
 			"phone": "Telefon",
@@ -1427,18 +1442,18 @@
 			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
 			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
-			"pricing": "Mitgliedschaft",
+			"pricing": "Abrechnungsmodell",
 			"smallBusiness": {
 				"label": "Kleinunternehmer",
 				"description": "Kein Ausweis von Umsatzsteuer gemäß § 19 UStG"
 			},
-			"crstamp": "Datum der Registrierung",
+			"crstamp": "Registriert am",
 			"expire": "Ablaufzeitpunkt der Testphase",
 			"voucher_old": "Gutschein-Code",
 			"source": "Akquiriert durch",
 			"notice": "Systemmails senden",
 			"state": "Status",
-			"type": "Typ"
+			"type": "Kunden-Typ"
 		},
 		"types": {
 			"winery": "Weingut",
@@ -1447,12 +1462,16 @@
 			"laboratory": "Weinlabor"
 		},
 		"pricingTypes": {
-			"acquisition": "In Akquise",
 			"trial": "Testzeitraum",
-			"publish": "Vinou-Promo",
-			"regular": "Vinou-Complete",
-			"cellar": "Vinou-Cellar",
+			"publish": "Free",
+			"regular": "Voll-Account",
 			"invitation": "Eingeladen"
+		},
+		"transactions": {
+			"name": "Transaktionen",
+			"label": "Kostenpflichtige Transaktionen",
+			"current": "Aktueller Monat",
+			"previous": "Vormonat"
 		},
 		"views": {
 			"covid19Notification": {
@@ -1565,6 +1584,10 @@
 		}
 	},
 	"winery": {
+		"name": {
+			"singular": "Weingut",
+			"plural": "Weingüter"
+		},
 		"action": {
 			"add": {
 				"main": "Neues Weingut",
@@ -1648,6 +1671,10 @@
 		}
 	},
 	"merchant": {
+		"name": {
+			"singular": "Händler",
+			"plural": "Händler"
+		},
 		"action": {
 			"add": {
 				"main": "Neuen Händler",
@@ -1711,6 +1738,12 @@
 				"noentries": "Noch keine Einträge vorhanden",
 				"connectmerchant": "Mit Händler verbinden"
 			}
+		}
+	},
+	"laboratory": {
+		"name": {
+			"singular": "Weinlabor",
+			"plural": "Weinlabore"
 		}
 	},
 	"wine": {

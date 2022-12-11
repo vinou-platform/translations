@@ -18,6 +18,17 @@
 		"clients.statistics": "Estadísticas",
 		"cronjobs": "Cronjobs",
 		"customers": "Miembros",
+		"customers.wineries": "Bodegas",
+		"customers.wineries.trial": "Prueba",
+		"customers.wineries.publish": "Libre",
+		"customers.wineries.regular": "Cuenta completa",
+		"customers.wineries.invitation": "Invitación",
+		"customers.merchants": "Comerciantes",
+		"customers.merchants.trial": "Prueba",
+		"customers.merchants.publish": "Libre",
+		"customers.merchants.regular": "Cuenta completa",
+		"customers.merchants.invitation": "Invitación",
+		"customers.laboratories": "Laboratorios",
 		"dashboard": "Tablero",
 		"marketing": "Márketing",
 		"marketing.campaigns": "Campañas",
@@ -1375,6 +1386,9 @@
 				"bank": "Datos bancarios para cargo de SEPA"
 			}
 		},
+		"gallery": {
+			"showSettings": "Campos Adicionales"
+		},
 		"action": {
 			"create": {
 				"main": "Miembro nuevo",
@@ -1400,7 +1414,8 @@
 			"invoice": "Datos de cuenta"
 		},
 		"fields": {
-			"app": "App",
+			"app": "Licencia de aplicación",
+			"storage": "Almacenamiento",
 			"mail": "Correo electrónico",
 			"password": "Contraseña",
 			"phone": "Teléfono",
@@ -1447,12 +1462,16 @@
 			"laboratory": "Laboratorio de vino"
 		},
 		"pricingTypes": {
-			"acquisition": "En adquisición",
-			"trial": "Período de prueba",
-			"publish": "Vinou-Promo",
-			"regular": "Vinou-Complete",
-			"cellar": "Vinou-Cellar",
+			"trial": "Prueba",
+			"publish": "Libre",
+			"regular": "Cuenta completa",
 			"invitation": "Invitado"
+		},
+		"transactions": {
+			"name": "Actas",
+			"label": "Transacciones facturables",
+			"current": "Mes actual",
+			"previous": "Mes anterior"
 		},
 		"views": {
 			"covid19Notification": {
@@ -1565,6 +1584,10 @@
 		}
 	},
 	"winery": {
+		"name": {
+			"singular": "Lagar",
+			"plural": "Bodegas"
+		},
 		"action": {
 			"add": {
 				"main": "nuevo propiedad vinícola",
@@ -1648,6 +1671,10 @@
 		}
 	},
 	"merchant": {
+		"name": {
+			"singular": "Comerciante",
+			"plural": "Comerciantes"
+		},
 		"action": {
 			"add": {
 				"main": "nuevo comerciante",
@@ -1711,6 +1738,12 @@
 				"noentries": "Todavía no hay inscripciones",
 				"connectmerchant": "conectar con comerciante"
 			}
+		}
+	},
+	"laboratory": {
+		"name": {
+			"singular": "Laboratorio",
+			"plural": "Laboratorios"
 		}
 	},
 	"wine": {
