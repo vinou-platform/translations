@@ -3973,6 +3973,14 @@
 			"title": "Invoice information",
 			"description": "Administrate your Vinou membership settings. These information are not public and won’t be shown in the Vinou network."
 		},
+		"documents": {
+			"deliveryNote": {
+				"alwaysUseDeliveryAddress": {
+					"title": "Delivery address always on the delivery note",
+					"description": "Set this setting to always show the delivery address on your delivery note (also for yard sales)."
+				}
+			}
+		},
 		"mail": {
 			"title": "Emails",
 			"description": "The Vinou-Network and also your webshop are sending automated mail notifications. Here you may configure your SMTP-Mailbox and decide, which emails you want to send."

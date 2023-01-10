@@ -3973,6 +3973,14 @@
 			"title": "Informaciones de cuenta",
 			"description": "Aqui administras tus datos de tu membresía de Vinou. Esas informaciones no se ve en público."
 		},
+		"documents": {
+			"deliveryNote": {
+				"alwaysUseDeliveryAddress": {
+					"title": "Dirección de entrega siempre en el albarán de entrega",
+					"description": "Establezca esta configuración para mostrar siempre la dirección de entrega en su nota de entrega (también para ventas de garaje)."
+				}
+			}
+		},
 		"mail": {
 			"title": "Correos electrónicos",
 			"description": "Vinou-Network y también su tienda web están enviando notificaciones automáticas por correo. Aquí puede configurar su buzón SMTP y decidir qué correos electrónicos desea enviar."

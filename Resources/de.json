@@ -3973,6 +3973,14 @@
 			"title": "Rechnungsinformationen",
 			"description": "Hier verwaltest Du die Daten für Deine Vinou-Mitgliedschaft."
 		},
+		"documents": {
+			"deliveryNote": {
+				"alwaysUseDeliveryAddress": {
+					"title": "Lieferadresse immer auf Lieferschein",
+					"description": "Setze diese Einstellung um die Lieferadresse immer (also auch bei Abhofverkauf) auf deinem Lieferschein zu zeigen."
+				}
+			}
+		},
 		"mail": {
 			"title": "E-Mails",
 			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen und entscheiden, welche E-Mails du senden möchtest."

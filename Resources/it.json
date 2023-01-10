@@ -3973,6 +3973,14 @@
 			"title": "Informazioni di fatturazione",
 			"description": "Qui, gestisci i tuoi dati per l'abbonamento Vinou. Queste informazioni non verranno visualizzate pubblicamente."
 		},
+		"documents": {
+			"deliveryNote": {
+				"alwaysUseDeliveryAddress": {
+					"title": "Indirizzo di consegna sempre sulla bolla di consegna",
+					"description": "Imposta questa impostazione per mostrare sempre l'indirizzo di consegna sulla bolla di consegna (anche per le vendite in piazzale)."
+				}
+			}
+		},
 		"mail": {
 			"title": "Email",
 			"description": "La rete Vinou e anche il tuo negozio online inviano notifiche di posta automatizzate. Qui puoi configurare la tua casella di posta SMTP e decidere quali email vuoi inviare."
