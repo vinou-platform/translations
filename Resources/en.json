@@ -3974,10 +3974,28 @@
 			"description": "Administrate your Vinou membership settings. These information are not public and won’t be shown in the Vinou network."
 		},
 		"documents": {
+			"title": "Documents",
+			"description": "Manage all settings to configure elements of PDF generation e.g. invoices, delivery notes and order.",
+			"hideLogo": {
+				"title": "Hide logo",
+				"description": "Activate to hide the logo on all business documents (invoice, delivery note, order confirmation, offer)."
+			},
+			"hideAdressBlock": {
+				"title": "Hide addressblock",
+				"description": "Activate to hide the address block with all company data on all business documents (invoice, delivery note, order confirmation, offer)."
+			},
+			"hideFooter": {
+				"title": "Hide footer",
+				"description": "Activate to hide the footer on all business documents (invoice, delivery note, order confirmation, offer)."
+			},
+			"hideDocLines": {
+				"title": "Hide fold marks",
+				"description": "Activate to hide the fold marks on all business documents (invoice, delivery note, order confirmation, offer)."
+			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
 					"title": "Delivery address always on the delivery note",
-					"description": "Set this setting to always show the delivery address on your delivery note (also for yard sales)."
+					"description": "Set this setting to always show the delivery address on your delivery note (also for yard sales)"
 				}
 			}
 		},

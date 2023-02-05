@@ -3974,6 +3974,24 @@
 			"description": "Aqui administras tus datos de tu membresía de Vinou. Esas informaciones no se ve en público."
 		},
 		"documents": {
+			"title": "Documentos",
+			"description": "Administre todos los ajustes para configurar elementos de generación de PDF, p. facturas, albaranes y pedidos.",
+			"hideLogo": {
+				"title": "Ocultar logotipo",
+				"description": "Activar para ocultar el logo en todos los documentos comerciales (factura, albarán, confirmación de pedido, oferta)."
+			},
+			"hideAdressBlock": {
+				"title": "Ocultar bloque de direcciones",
+				"description": "Activar para ocultar el bloque de direcciones con todos los datos de la empresa en todos los documentos comerciales (factura, albarán, confirmación de pedido, oferta)."
+			},
+			"hideFooter": {
+				"title": "Ocultar pie de página",
+				"description": "Activar para ocultar el pie de página en todos los documentos comerciales (factura, albarán, confirmación de pedido, oferta)."
+			},
+			"hideDocLines": {
+				"title": "Ocultar marcas de pliegue",
+				"description": "Actívelo para ocultar las marcas de pliegue en todos los documentos comerciales (factura, albarán, confirmación de pedido, oferta)."
+			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
 					"title": "Dirección de entrega siempre en el albarán de entrega",

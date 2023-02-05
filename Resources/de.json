@@ -3974,6 +3974,24 @@
 			"description": "Hier verwaltest Du die Daten für Deine Vinou-Mitgliedschaft."
 		},
 		"documents": {
+			"title": "Dokumente",
+			"description": "Verwalte alle Einstellungen rund um die Generierung von PDFs wie z.B. Rechnungen, Lieferscheine und Auftragsbestätigungen.",
+			"hideLogo": {
+				"title": "Logo ausblenden",
+				"description": "Aktivieren um das Logo auf allen betriebswirtschaftlichen Dokumenten (Rechnung, Lieferschein, Bestellbestätigung, Angebot) auszublenden."
+			},
+			"hideAdressBlock": {
+				"title": "Adressblock ausblenden",
+				"description": "Aktivieren um den Adressblock mit allen Firmendaten auf allen betriebswirtschaftlichen Dokumenten (Rechnung, Lieferschein, Bestellbestätigung, Angebot) auszublenden."
+			},
+			"hideFooter": {
+				"title": "Fußzeile ausblenden",
+				"description": "Aktivieren um die Fußzeile auf allen betriebswirtschaftlichen Dokumenten (Rechnung, Lieferschein, Bestellbestätigung, Angebot) auszublenden."
+			},
+			"hideDocLines": {
+				"title": "Falzmarken ausblenden",
+				"description": "Aktivieren um die Falzmarken auf allen betriebswirtschaftlichen Dokumenten (Rechnung, Lieferschein, Bestellbestätigung, Angebot) auszublenden."
+			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
 					"title": "Lieferadresse immer auf Lieferschein",

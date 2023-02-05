@@ -3974,6 +3974,24 @@
 			"description": "Ici, vous gérez vos données pour votre abonnement à Vinou. Ces informations ne seront pas affichées publiquement."
 		},
 		"documents": {
+			"title": "Documents",
+			"description": "Gérez tous les paramètres pour configurer les éléments de génération de PDF, par ex. factures, bons de livraison et commande.",
+			"hideLogo": {
+				"title": "Masquer le logo",
+				"description": "Activez pour masquer le logo sur tous les documents commerciaux (facture, bon de livraison, confirmation de commande, offre)."
+			},
+			"hideAdressBlock": {
+				"title": "Masquer le bloc d'adresse",
+				"description": "Activez pour masquer le bloc d'adresse avec toutes les données de l'entreprise sur tous les documents commerciaux (facture, bon de livraison, confirmation de commande, offre)."
+			},
+			"hideFooter": {
+				"title": "Masquer le pied de page",
+				"description": "Activez pour masquer le pied de page sur tous les documents commerciaux (facture, bon de livraison, confirmation de commande, offre)."
+			},
+			"hideDocLines": {
+				"title": "Masquer les marques de pli",
+				"description": "Activez pour masquer les marques de pli sur tous les documents commerciaux (facture, bon de livraison, confirmation de commande, offre)."
+			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
 					"title": "Adresse de livraison toujours sur le bon de livraison",

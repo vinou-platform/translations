@@ -3974,6 +3974,24 @@
 			"description": "Qui, gestisci i tuoi dati per l'abbonamento Vinou. Queste informazioni non verranno visualizzate pubblicamente."
 		},
 		"documents": {
+			"title": "Documenti",
+			"description": "Gestisci tutte le impostazioni per configurare gli elementi della generazione di PDF, ad es. fatture, bolle di consegna e ordine.",
+			"hideLogo": {
+				"title": "Nascondi logo",
+				"description": "Attiva per nascondere il logo su tutti i documenti aziendali (fattura, bolla di consegna, conferma d'ordine, offerta)."
+			},
+			"hideAdressBlock": {
+				"title": "Nascondi blocco indirizzi",
+				"description": "Attivare per nascondere il blocco indirizzi con tutti i dati aziendali su tutti i documenti commerciali (fattura, bolla di consegna, conferma d'ordine, offerta)."
+			},
+			"hideFooter": {
+				"title": "Nascondi piè di pagina",
+				"description": "Attiva per nascondere il piè di pagina su tutti i documenti aziendali (fattura, bolla di consegna, conferma d'ordine, offerta)."
+			},
+			"hideDocLines": {
+				"title": "Nascondi segni di piegatura",
+				"description": "Attiva per nascondere i segni di piegatura su tutti i documenti aziendali (fattura, bolla di consegna, conferma d'ordine, offerta)."
+			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
 					"title": "Indirizzo di consegna sempre sulla bolla di consegna",
