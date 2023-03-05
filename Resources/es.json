@@ -3042,7 +3042,24 @@
 		},
 		"fields": {
 			"itemType": "Tipo",
-			"name": "Designacion"
+			"name": "Designacion",
+			"quantity": "Cantidad",
+			"itemPrice": "Precio por ítem",
+			"price": "Precio"
+		},
+		"actions": {
+			"markAs": {
+				"deputate": "Marcar como prestación en especie",
+				"sample": "Marcar como muestra"
+			},
+			"meta": {
+				"manual": "Editar",
+				"editOff": "Deja de editar",
+				"reset": "Restablecer nombre y descripción",
+				"resetShort": "Reiniciar"
+			},
+			"editPrice": "Editar precio",
+			"delete": "Eliminar posición"
 		}
 	},
 	"package": {

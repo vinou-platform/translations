@@ -3042,7 +3042,24 @@
 		},
 		"fields": {
 			"itemType": "Typ",
-			"name": "Bezeichnung"
+			"name": "Bezeichnung",
+			"quantity": "Anzahl",
+			"itemPrice": "Einzelpreis",
+			"price": "Preis"
+		},
+		"actions": {
+			"markAs": {
+				"deputate": "Als Naturalleistung markieren",
+				"sample": "Als Probe markieren"
+			},
+			"meta": {
+				"manual": "manuell bearbeiten",
+				"editOff": "bearbeiten beenden",
+				"reset": "Name und Beschreibung zurücksetzen",
+				"resetShort": "zurücksetzen"
+			},
+			"editPrice": "Preis bearbeiten",
+			"delete": "Position löschen"
 		}
 	},
 	"package": {

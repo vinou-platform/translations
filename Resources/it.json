@@ -3042,7 +3042,24 @@
 		},
 		"fields": {
 			"itemType": "Tipo",
-			"name": "Designazione"
+			"name": "Designazione",
+			"quantity": "Quantità",
+			"itemPrice": "Prezzo per articolo",
+			"price": "Prezzo"
+		},
+		"actions": {
+			"markAs": {
+				"deputate": "Contrassegna come beneficio in natura",
+				"sample": "Segna come campione"
+			},
+			"meta": {
+				"manual": "Modificare",
+				"editOff": "Interrompi la modifica",
+				"reset": "Reimposta nome e descrizione",
+				"resetShort": "Ripristina"
+			},
+			"editPrice": "Modifica prezzo",
+			"delete": "Elimina posizione"
 		}
 	},
 	"package": {

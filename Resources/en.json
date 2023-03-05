@@ -3037,12 +3037,29 @@
 	},
 	"orderItem": {
 		"name": {
-			"singular": "Order item",
-			"plural": "Order items"
+			"singular": "Bestellposition",
+			"plural": "Bestellpositionen"
 		},
 		"fields": {
 			"itemType": "Type",
-			"name": "Title"
+			"name": "Title and description",
+			"quantity": "Quantity",
+			"itemPrice": "Price per Item",
+			"price": "Price"
+		},
+		"actions": {
+			"markAs": {
+				"deputate": "Mark as benefit in kind",
+				"sample": "Mark as sample"
+			},
+			"meta": {
+				"manual": "Edit",
+				"editOff": "Stop editing",
+				"reset": "Reset name and description",
+				"resetShort": "Reset"
+			},
+			"editPrice": "Edit price",
+			"delete": "Delete position"
 		}
 	},
 	"package": {

@@ -3042,7 +3042,24 @@
 		},
 		"fields": {
 			"itemType": "Type",
-			"name": "Désignation"
+			"name": "Désignation",
+			"quantity": "Quantité",
+			"itemPrice": "Prix par article",
+			"price": "Prix"
+		},
+		"actions": {
+			"markAs": {
+				"deputate": "Marquer comme avantage en nature",
+				"sample": "Marquer comme Échantillon"
+			},
+			"meta": {
+				"manual": "Modifier",
+				"editOff": "Arrêter l'édition",
+				"reset": "Réinitialiser le nom et la description",
+				"resetShort": "Réinitialiser"
+			},
+			"editPrice": "Modifier le prix",
+			"delete": "Supprimer le poste"
 		}
 	},
 	"package": {
