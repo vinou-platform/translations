@@ -203,6 +203,9 @@
 				"title": "WICHTIGER HINWEIS!!!"
 			}
 		},
+		"notifications": {
+			"new": "neu"
+		},
 		"errors": {
 			"common": "Es ist ein Fehler aufgetreten.",
 			"confirmationRequired": "Dieses Feld muss bestätigt werden",

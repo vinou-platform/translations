@@ -203,6 +203,9 @@
 				"title": "IMPORTANT NOTICE!!!"
 			}
 		},
+		"notifications": {
+			"new": "new"
+		},
 		"errors": {
 			"common": "An error occurred..",
 			"confirmationRequired": "This field needs to be confirmed",

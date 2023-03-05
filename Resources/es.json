@@ -203,6 +203,9 @@
 				"title": "¡¡¡NOTICIA IMPORTANTE!!!"
 			}
 		},
+		"notifications": {
+			"new": "nuevo"
+		},
 		"errors": {
 			"common": "Ocurrió un error.",
 			"confirmationRequired": "Hay que confirmar esa casilla",

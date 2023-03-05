@@ -203,6 +203,9 @@
 				"title": "AVIS IMPORTANT!!!"
 			}
 		},
+		"notifications": {
+			"new": "new"
+		},
 		"errors": {
 			"common": "Une erreur s'est produite.",
 			"confirmationRequired": "Ce champ doit être confirmé",
