@@ -4075,7 +4075,8 @@
 			"fields": {
 				"entry": "Enregistrer/Documenter",
 				"prefix": "Préfixe",
-				"numberlength": "Chiffres"
+				"numberlength": "Chiffres",
+				"start": "Commence avec"
 			},
 			"toasts": {
 				"changed": "Plages de numéros mises à jour!"

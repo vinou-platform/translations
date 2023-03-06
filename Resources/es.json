@@ -4075,7 +4075,8 @@
 			"fields": {
 				"entry": "Registro/Documento",
 				"prefix": "Prefijo",
-				"numberlength": "Digitos"
+				"numberlength": "Digitos",
+				"start": "Comienza con"
 			},
 			"toasts": {
 				"changed": "¡Rangos de números actualizados!"

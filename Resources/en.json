@@ -4075,7 +4075,8 @@
 			"fields": {
 				"entry": "Record/Document",
 				"prefix": "Prefix",
-				"numberlength": "Digits"
+				"numberlength": "Digits",
+				"start": "Start with"
 			},
 			"toasts": {
 				"changed": "Number ranges updated!"

@@ -4075,7 +4075,8 @@
 			"fields": {
 				"entry": "Registrazione/Documento",
 				"prefix": "Prefisso",
-				"numberlength": "Cifre"
+				"numberlength": "Cifre",
+				"start": "Inizia con"
 			},
 			"toasts": {
 				"changed": "Intervalli di numeri aggiornati!"

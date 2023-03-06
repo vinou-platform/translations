@@ -4075,7 +4075,8 @@
 			"fields": {
 				"entry": "Datensatz/Dokument",
 				"prefix": "Prefix",
-				"numberlength": "Stellen"
+				"numberlength": "Stellen",
+				"start": "Starte mit"
 			},
 			"toasts": {
 				"changed": "Nummernkreise aktualisiert!"
