@@ -1407,6 +1407,11 @@
 			},
 			"search": {
 				"placeholder": "Ad es.: nome, azienda, indirizzo"
+			},
+			"upgrade": {
+				"title": "Aggiorna ora!",
+				"trial": "<b>Account di prova!</b> Stai utilizzando un periodo di prova gratuito. <b>Il tuo account scadrà il {expire}!</b>",
+				"publish": "<b>Account Freemium!</b> Stai utilizzando il nostro account Freemium limitato."
 			}
 		},
 		"fieldSets": {

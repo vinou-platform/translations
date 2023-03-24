@@ -1400,13 +1400,18 @@
 				"modaltitle": "Create new member"
 			},
 			"login": {
-				"login": "Einloggen"
+				"login": "Login"
 			},
 			"renewauth": {
 				"button": "Renew Auth ID!"
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
+			},
+			"upgrade": {
+				"title": "Upgrade now!",
+				"trial": "<b>Trial account!</b> You're using a free trial period. <b>Your account will be expire on {expire}!</b>",
+				"publish": "<b>Freemium account!</b> You're using our restricted freemium account."
 			}
 		},
 		"fieldSets": {

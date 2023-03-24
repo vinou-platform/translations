@@ -1407,6 +1407,11 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, Firma, Addresse"
+			},
+			"upgrade": {
+				"title": "Jetzt upgraden!",
+				"trial": "<b>Testphase!</b> Du nutzt zur Zeit einen kostenfreien Test-Account. <b>Dein Account läuft am {expire} ab!</b>",
+				"publish": "<b>Eingeschränkter Account!</b> Du nutzt zur Zeit unseren eingeschänkten Free-Account."
 			}
 		},
 		"fieldSets": {
