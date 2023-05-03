@@ -114,6 +114,7 @@
 		"tabs": {
 			"files": "Dateien",
 			"general": "Allgemein",
+			"history": "Historie",
 			"notes": "Notizen",
 			"statistics": "Statistiken"
 		},
@@ -121,6 +122,10 @@
 			"files": {
 				"title": "Dateien",
 				"empty": "Es liegen keine {label} zu diesem Datensatz vor."
+			},
+			"history": {
+				"title": "Historie",
+				"empty": "Es liegen keine Einträge vor"
 			}
 		},
 		"titles": {
@@ -322,6 +327,10 @@
 	"ok": "OK",
 	"cancel": "Abbrechen",
 	"cellarAction": {
+		"name": {
+			"singular": "Vorgang",
+			"plural": "Vorgänge"
+		},
 		"fields": {
 			"additionVolume": "Zugang",
 			"analysisOrderNote": {

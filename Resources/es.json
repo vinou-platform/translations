@@ -114,6 +114,7 @@
 		"tabs": {
 			"files": "archivos",
 			"general": "Generalidades",
+			"history": "Historia",
 			"notes": "Noticias",
 			"statistics": "Estadísticas"
 		},
@@ -121,6 +122,10 @@
 			"files": {
 				"title": "Archivos",
 				"empty": "No hay {label} disponible para la entrada dada."
+			},
+			"history": {
+				"title": "Historia",
+				"empty": "Datos no disponible"
 			}
 		},
 		"titles": {
@@ -322,6 +327,10 @@
 	"ok": "OK",
 	"cancel": "cancelar",
 	"cellarAction": {
+		"name": {
+			"singular": "Paso",
+			"plural": "Pasos"
+		},
 		"fields": {
 			"additionVolume": "Acceso",
 			"analysisOrderNote": {

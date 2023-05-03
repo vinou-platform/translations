@@ -114,6 +114,7 @@
 		"tabs": {
 			"files": "Files",
 			"general": "General",
+			"history": "History",
 			"notes": "Notes",
 			"statistics": "Statistics"
 		},
@@ -121,6 +122,10 @@
 			"files": {
 				"title": "Files",
 				"empty": "No {label} available for given entry."
+			},
+			"history": {
+				"title": "History",
+				"empty": "No data available"
 			}
 		},
 		"titles": {
@@ -322,6 +327,10 @@
 	"ok": "OK",
 	"cancel": "Cancel",
 	"cellarAction": {
+		"name": {
+			"singular": "Step",
+			"plural": "Steps"
+		},
 		"fields": {
 			"additionVolume": "Addition amount",
 			"analysisOrderNote": {

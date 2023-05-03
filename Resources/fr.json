@@ -114,6 +114,7 @@
 		"tabs": {
 			"files": "Fichiers",
 			"general": "Général",
+			"history": "Histoire",
 			"notes": "Notes",
 			"statistics": "Statistiques"
 		},
@@ -121,6 +122,10 @@
 			"files": {
 				"title": "Des dossiers",
 				"empty": "Aucune {label} disponible pour l'entrée donnée."
+			},
+			"history": {
+				"title": "Histoire",
+				"empty": "Pas de données disponibles"
 			}
 		},
 		"titles": {
@@ -322,6 +327,10 @@
 	"ok": "OK",
 	"cancel": "Annuler",
 	"cellarAction": {
+		"name": {
+			"singular": "Marcher",
+			"plural": "Pas"
+		},
 		"fields": {
 			"additionVolume": "Addition",
 			"analysisOrderNote": {
