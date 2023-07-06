@@ -116,7 +116,8 @@
 			"general": "General",
 			"history": "History",
 			"notes": "Notes",
-			"statistics": "Statistics"
+			"statistics": "Statistics",
+			"qrcodes": "QR-Codes"
 		},
 		"views": {
 			"files": {
@@ -2265,12 +2266,12 @@
 		}
 	},
 	"note": {
-		"field": {
+		"fields": {
 			"content": "Content",
 			"edited": "edited on",
 			"wrote": "wrote on"
 		},
-		"action": {
+		"actions": {
 			"edit": {
 				"title": "Edit note"
 			},
@@ -2278,6 +2279,17 @@
 				"main": "Create new",
 				"sub": "note",
 				"title": "Create new note"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Create note"
+			},
+			"create": {
+				"title": "Edit note"
+			},
+			"list": {
+				"empty": "No note already exists"
 			}
 		},
 		"dialogs": {
@@ -3492,7 +3504,8 @@
 				"main": "Create new",
 				"sub": "file"
 			},
-			"save": "Save file"
+			"save": "Save file",
+			"uploadPreview": "Upload preview"
 		},
 		"fields": {
 			"title": "Title",
@@ -3992,6 +4005,51 @@
 		"hints": {
 			"empty": "There are no automations yet",
 			"imagesize": "<b>Recommendation for optimal display</b><br>Dimensions: 1000x1000px<br/>File format: .png (cropped)"
+		}
+	},
+	"qrcode": {
+		"name": {
+			"singular": "QR-Code",
+			"plural": "QR-Codes"
+		},
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "QR-Code"
+			},
+			"save": "Save QR-Code",
+			"testlink": "Open target",
+			"download": "Download SVG"
+		},
+		"fields": {
+			"name": "Name (optional)",
+			"target": "Type of target",
+			"targetUrl": "Target url",
+			"link": "External link",
+			"impressions": "Impressions"
+		},
+		"targetTypes": {
+			"default": "Default",
+			"external": "Manual link"
+		},
+		"views": {
+			"edit": {
+				"title": "Edit QR-Code"
+			},
+			"create": {
+				"title": "Create QR-Code"
+			},
+			"list": {
+				"empty": "No QR-Code already exists"
+			}
+		},
+		"dialogs": {
+			"delete": "Du you really want to delete this QR-Code?"
+		},
+		"toasts": {
+			"created": "QR-Code created!",
+			"changed": "QR-Code updated!",
+			"deleted": "QR-Code deleted!"
 		}
 	},
 	"settings": {
@@ -6263,6 +6321,9 @@
 		},
 		"636": {
 			"name": "Manto Negro"
+		},
+		"637": {
+			"name": "Rosenmuskateller"
 		}
 	},
 	"tastes": {

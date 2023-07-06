@@ -116,7 +116,8 @@
 			"general": "Allgemein",
 			"history": "Historie",
 			"notes": "Notizen",
-			"statistics": "Statistiken"
+			"statistics": "Statistiken",
+			"qrcodes": "QR-Codes"
 		},
 		"views": {
 			"files": {
@@ -2265,12 +2266,12 @@
 		}
 	},
 	"note": {
-		"field": {
+		"fields": {
 			"content": "Inhalt",
-			"edited": "Bearbeitete am",
+			"edited": "Bearbeitet am",
 			"wrote": "Schrieb am"
 		},
-		"action": {
+		"actions": {
 			"edit": {
 				"title": "Notiz bearbeiten"
 			},
@@ -2278,6 +2279,17 @@
 				"main": "Neue Notiz",
 				"sub": "erstellen",
 				"title": "Neue Notiz erstellen"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Notiz bearbeiten"
+			},
+			"create": {
+				"title": "Notiz hinzufügen"
+			},
+			"list": {
+				"empty": "Keine Notizen vorhanden"
 			}
 		},
 		"dialogs": {
@@ -3492,7 +3504,9 @@
 				"main": "Neue Datei",
 				"sub": "anlegen"
 			},
-			"save": "Datei speichern"
+			"save": "Datei speichern",
+			"uploadPreview": "Vorschaubild hochladen"
+
 		},
 		"fields": {
 			"title": "Titel",
@@ -3992,6 +4006,51 @@
 		"hints": {
 			"empty": "Du hast bisher noch keine Automatisierung erstellt",
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)"
+		}
+	},
+	"qrcode": {
+		"name": {
+			"singular": "QR-Code",
+			"plural": "QR-Codes"
+		},
+		"actions": {
+			"create": {
+				"main": "Neuen QR-Code",
+				"sub": "anlegen"
+			},
+			"save": "QR-Code speichern",
+			"testlink": "Zieladresse öffnen",
+			"download": "Download SVG"
+		},
+		"fields": {
+			"name": "Name (optional)",
+			"target": "Ziel-Typ",
+			"targetUrl": "Ziel-Url",
+			"link": "Externer Link",
+			"impressions": "Anzahl der Aufrufe"
+		},
+		"targetTypes": {
+			"default": "Standard",
+			"external": "Manueller Link"
+		},
+		"views": {
+			"edit": {
+				"title": "QR-Code bearbeiten"
+			},
+			"create": {
+				"title": "QR-Code hinzufügen"
+			},
+			"list": {
+				"empty": "Keine QR-Code vorhanden"
+			}
+		},
+		"dialogs": {
+			"delete": "Möchtest Du diesen QR-Code wirklich löschen?"
+		},
+		"toasts": {
+			"created": "QR-Code angelegt!",
+			"changed": "QR-Code geändert!",
+			"deleted": "QR-Code gelöscht!"
 		}
 	},
 	"settings": {
@@ -6263,6 +6322,9 @@
 		},
 		"636": {
 			"name": "Manto Negro"
+		},
+		"637": {
+			"name": "Rosenmuskateller"
 		}
 	},
 	"tastes": {

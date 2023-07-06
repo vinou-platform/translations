@@ -116,7 +116,8 @@
 			"general": "Generalidades",
 			"history": "Historia",
 			"notes": "Noticias",
-			"statistics": "Estadísticas"
+			"statistics": "Estadísticas",
+			"qrcodes": "Códigos QR"
 		},
 		"views": {
 			"files": {
@@ -2265,19 +2266,30 @@
 		}
 	},
 	"note": {
-		"field": {
+		"fields": {
 			"content": "contenido",
 			"edited": "editado a",
 			"wrote": "escrito a "
 		},
-		"action": {
+		"actions": {
 			"edit": {
 				"title": "Editar nota"
 			},
 			"create": {
 				"main": "nueva nota",
 				"sub": "crear",
-				"title": "Crear nueva nota"
+				"title": "Editar nota"
+			}
+		},
+		"views": {
+			"edit": {
+				"title": "Create note"
+			},
+			"create": {
+				"title": "Editar nota"
+			},
+			"list": {
+				"empty": "Ya no existe ninguna nota"
 			}
 		},
 		"dialogs": {
@@ -3492,7 +3504,8 @@
 				"main": "nuevo archivo",
 				"sub": "crear"
 			},
-			"save": "grabar archivo"
+			"save": "grabar archivo",
+			"uploadPreview": "Subir vista previa"
 		},
 		"fields": {
 			"title": "título",
@@ -3992,6 +4005,51 @@
 		"hints": {
 			"empty": "Aún no hay automatizaciones",
 			"imagesize": "<b>Recomendación para una visualización óptima</b><br>Dimensiones: 1000x1000px<br/>Formato de archivo: .png (recortado)"
+		}
+	},
+	"qrcode": {
+		"name": {
+			"singular": "Código QR",
+			"plural": "Códigos QR"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear nuevo",
+				"sub": "Código QR"
+			},
+			"save": "Guardar código QR",
+			"testlink": "Objetivo abierto",
+			"download": "Descargar SVG"
+		},
+		"fields": {
+			"name": "Nombre (optional)",
+			"target": "Tipo de objetivo",
+			"targetUrl": "URL de destino",
+			"link": "Enlace externo",
+			"impressions": "Impresiones"
+		},
+		"targetTypes": {
+			"default": "Por defecto",
+			"external": "Enlace manual"
+		},
+		"views": {
+			"edit": {
+				"title": "Editar código QR"
+			},
+			"create": {
+				"title": "Crear código QR"
+			},
+			"list": {
+				"empty": "Ya no existe ningún código QR"
+			}
+		},
+		"dialogs": {
+			"delete": "¿De verdad quieres borrar este código QR?"
+		},
+		"toasts": {
+			"created": "¡Código QR creado!",
+			"changed": "¡Código QR actualizado!",
+			"deleted": "Código QR eliminado!"
 		}
 	},
 	"settings": {
@@ -6263,6 +6321,9 @@
 		},
 		"636": {
 			"name": "Manto Negro"
+		},
+		"637": {
+			"name": "Rosenmuskateller"
 		}
 	},
 	"tastes": {
