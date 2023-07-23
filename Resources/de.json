@@ -3487,6 +3487,7 @@
 			}
 		},
 		"fields": {
+			"name": "Bezeichnung",
 			"clients": "Kunden"
 		},
 		"dialogs": {
@@ -4058,6 +4059,10 @@
 			"title": "Account-Einstellungen",
 			"description": "Verwalte hier Deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
 		},
+		"system": {
+			"title": "System-Einstellungen",
+			"description": "Verwalte hier alle Einstellungen rundum das Vinou-System"
+		},
 		"automations": {
 			"title": "Automatisierungen",
 			"description": "Mit Hilfe von Automatisierungen kannst Du anderen Vinou-Mitgliedern ermöglichen bestimmte Dinge vollautomatisch mit dir auszuführen. z.B. Weine von Weingütern auf deine Webseite freischalten."
@@ -4128,7 +4133,7 @@
 			}
 		},
 		"general": {
-			"title": "System & Applikation",
+			"title": "Applikation",
 			"description": "Lege hier die Einstellungen für Dein Vinou-Office fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest oder wie die Verarbeitung von Texten durchgeführt wird.",
 			"currency": {
 				"title": "Währung",

@@ -3487,6 +3487,7 @@
 			}
 		},
 		"fields": {
+			"name": "Nombre",
 			"clients": "clientes"
 		},
 		"dialogs": {
@@ -4057,6 +4058,10 @@
 			"title": "Ajustes de cuenta",
 			"description": "Administra tu direción de cuenta, membresía, cuenta bancaria etc."
 		},
+		"system": {
+			"title": "Ajustes del sistema",
+			"description": "Gestiona todos los ajustes relacionados con el sistema Vinou aquí"
+		},
 		"automations": {
 			"title": "Automatizaciones",
 			"description": "Con la ayuda de la automatización, puede permitir que otros miembros de Vinou hagan ciertas cosas de forma totalmente automática con usted, por ejemplo, activar vinos de bodegas en su sitio web."
@@ -4127,7 +4132,7 @@
 			}
 		},
 		"general": {
-			"title": "Sistema y aplicación",
+			"title": "Aplicación",
 			"description": "Especifique aquí la configuración general de su Vinou-Office, como la moneda que desea usar dentro de Vinou o el manejo de texto para obtener descripciones detalladas.",
 			"currency": {
 				"title": "Divisa",

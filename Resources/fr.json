@@ -3487,6 +3487,7 @@
 			}
 		},
 		"fields": {
+			"name": "Nom",
 			"clients": "Clients"
 		},
 		"dialogs": {
@@ -4057,6 +4058,10 @@
 			"title": "Cofiguration du compte",
 			"description": "Gérez ici votre adresse de facturation, votre abonnement, vos coordonnées bancaires, etc."
 		},
+		"system": {
+			"title": "Les paramètres du système",
+			"description": "Gérez tous les paramètres liés au système Vinou ici"
+		},
 		"automations": {
 			"title": "Automations",
 			"description": "Avec l'aide de l'automatisation, vous pouvez permettre à d'autres membres de Vinou de faire certaines choses de manière entièrement automatique avec vous, par exemple activer les vins de vignobles sur votre site Web."
@@ -4127,7 +4132,7 @@
 			}
 		},
 		"general": {
-			"title": "Système et applications",
+			"title": "Applications",
 			"description": "Spécifiez ici les paramètres généraux de votre Vinou-Office, tels que la devise que vous souhaitez utiliser dans Vinou ou la gestion du texte pour des descriptions détaillées.",
 			"currency": {
 				"title": "Devise",

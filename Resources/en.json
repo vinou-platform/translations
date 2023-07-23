@@ -3487,6 +3487,7 @@
 			}
 		},
 		"fields": {
+			"name": "Name",
 			"clients": "Clients"
 		},
 		"dialogs": {
@@ -4057,6 +4058,10 @@
 			"title": "Account settings",
 			"description": "Administrate your invoice address, membership, bank account etc."
 		},
+		"system": {
+			"title": "System settings",
+			"description": "Manage all settings related to the Vinou system here"
+		},
 		"automations": {
 			"title": "Automations",
 			"description": "With the help of automation you can enable other Vinou members to do certain things fully automatically with you, e.g. activate wines from wineries on your website."
@@ -4127,7 +4132,7 @@
 			}
 		},
 		"general": {
-			"title": "System and application",
+			"title": "Application",
 			"description": "Specify the general settings for your Vinou-Office here, such as which currency you want to use within Vinou or text handling for detailed descriptions.",
 			"currency": {
 				"title": "Currency",
