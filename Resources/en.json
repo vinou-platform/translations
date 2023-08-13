@@ -707,6 +707,7 @@
 				"vintage": "Vintage / year of production {vintage}",
 				"inTransfer": "This wine is earmarked for a transfer in the Vinou network. For legal reasons, you cannot carry out any further actions or corrections on this wine during the releasing process.",
 				"filters": {
+					"vintage": "Filter year of production",
 					"hideClosed": "Hide archived wine accounts",
 					"readyForBottling": "Ready for bottling"
 				}

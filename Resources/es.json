@@ -707,6 +707,7 @@
 				"vintage": "Cosecha / ano de produccion {vintage}",
 				"inTransfer": "Este vino está destinado a una transferencia en la red Vinou. Por razones legales, no se pueden realizar más acciones o correcciones sobre este vino durante el proceso de liberación.",
 				"filters": {
+					"vintage": "Año de producción del filtro",
 					"hideClosed": "Ocultar cuentas de vino archivadas",
 					"readyForBottling": "Listo para embotellar"
 				}
