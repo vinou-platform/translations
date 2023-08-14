@@ -855,6 +855,7 @@
 			"gallery": {
 				"currentState": "Estado acutal",
 				"filters": {
+					"location": "Filtrar ubicación",
 					"search": {
 						"placeholder": "E.j.: número de recipiente, ubicación para disponer, fabricante"
 					},

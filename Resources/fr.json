@@ -855,6 +855,7 @@
 			"gallery": {
 				"currentState": "État actuellement",
 				"filters": {
+					"location": "Emplacement du filtre",
 					"search": {
 						"placeholder": "p.ex.: Numéro du recipient, Location, Frabricant"
 					},

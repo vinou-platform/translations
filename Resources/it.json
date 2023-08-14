@@ -855,6 +855,7 @@
 			"gallery": {
 				"currentState": "Condizione attuale",
 				"filters": {
+					"location": "Posizione del filtro",
 					"search": {
 						"placeholder": "Ad es.: Recipiente-Nr., Installazione site, Fabbricante"
 					},

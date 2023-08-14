@@ -855,6 +855,7 @@
 			"gallery": {
 				"currentState": "Aktueller Zustand",
 				"filters": {
+					"location": "Aufstellort filtern",
 					"search": {
 						"placeholder": "Z.B.: Behälternr., Aufstellort, Hersteller"
 					},

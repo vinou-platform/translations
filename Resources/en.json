@@ -855,6 +855,7 @@
 			"gallery": {
 				"currentState": "Current state",
 				"filters": {
+					"location": "Filter location",
 					"search": {
 						"placeholder": "E.g.: Barrel-no., Location, Manufacturer"
 					},
