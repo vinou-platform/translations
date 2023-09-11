@@ -707,9 +707,19 @@
 				"vintage": "Jahrgang / Produktionsjahr {vintage}",
 				"inTransfer": "Dieser Wein ist im Vinou-Netzwerk für einen Transfer vorgesehen. Während der Freigabe kannst Du aus rechtlichen Gründen auf diesem Wein keine weiteren Aktionen und Korrekturen durchführen.",
 				"filters": {
-					"vintage": "Produktionsjahr filtern",
-					"hideClosed": "Archivierte Weinkonten ausblenden",
-					"readyForBottling": "Bereit zur Abfüllung"
+					"vintage": "Produktionsjahre",
+					"readyForBottling": "Bereit zur Abfüllung",
+					"state": {
+						"label": "Weinkonten filtern",
+						"closed": "Archivierte Weinkonten",
+						"empty": "Weinkonten ohne Bestand"
+					},
+					"actions": {
+						"label": "Kelleraktionen einschränken",
+						"regular": "Reguläre Vorgänge",
+						"measuring": "Messungen",
+						"analysisOrder": "Analyseaufträge"
+					}
 				}
 			},
 			"measurements": {
@@ -1938,11 +1948,17 @@
 			"original": "{title} (Original)",
 			"new": "{title} (Neu)"
 		},
+		"views": {
+			"legal": {
+				"title": "Lebensmittelrechtliche Angaben"
+			}
+		},
 		"tabs": {
 			"basedata": "Netzwerk-Stammdaten",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Lagerbewegungen",
-			"marketing": "Vermarktung"
+			"marketing": "Vermarktung",
+			"legal": "Rechtl. Angaben"
 		},
 		"dialogs": {
 			"connectAutomation": "Willst Du den Wein automatisiert in das Sortiment des Handelspartners übertragen?",
@@ -2646,6 +2662,103 @@
 		},
 		"toasts": {
 			"created": "Fasswein Lieferschein erstellt!"
+		}
+	},
+	"fact": {
+		"actions": {
+			"autocalc": "Automatisch berechnen"
+		},
+		"fields": {
+			"type": "Typ",
+			"quantity": "Menge",
+			"unit": "Einheit",
+			"label": "Zusätzliche Angaben",
+			"code": "Recyclingcode"
+		},
+		"views": {
+			"edit": {
+				"title": "Angaben bearbeiten"
+			},
+			"create": {
+				"title": "Neue Angabe anlegen"
+			}
+		},
+		"dialogs": {
+			"delete": "Willst Du diese Lebensmittelangabe wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Lebensmittelangabe erstellt",
+			"changed": "Lebensmittelangabe geändert",
+			"deleted": "Lebensmittelangabe gelöscht"
+		},
+		"types": {
+			"aluminium": "Aluminium",
+			"antioxidants": "Antioxidantien",
+			"brownGlas": "Braunglas",
+			"carbohydrates": "Kohlenhydrate",
+			"clearglas": "Klarglas",
+			"cork": "Kork",
+			"corrugatedCardboard": "Wellpappe",
+			"cotton": "Baumwolle",
+			"energy": "Energie",
+			"fat": "Fett",
+			"glasAluminium": "Glas/Aluminium",
+			"glasMetal": "Glas/verschiedene Metalle",
+			"glasPlastic": "Glas/Kunststoff",
+			"glasTinplate": "Glas/Weißblech",
+			"grapes": "Trauben",
+			"greenGlas": "Grünglas",
+			"iron": "Eisen",
+			"jute": "Jute",
+			"otherCardboard": "Sonstige Pappe",
+			"paper": "Papier",
+			"paperAluminium": "Papier und Pappe/Aluminium",
+			"paperMetal": "Papier und Pappe/verschiedene Metalle",
+			"paperPlastic": "Papier und Pappe/Kunststoff",
+			"paperPlasticAlu": "Papier und Pappe/Aluminium",
+			"paperPlasticMetal": "Papier und Pappe/Kunststoff/Aluminium/Weißblech",
+			"paperTinplate": "Papier und Pappe/Weißblech",
+			"pet": "Polyethylenterephtalat - PET",
+			"petHD": "Polyethylen High-density",
+			"petLD": "Polyethylen Low-density",
+			"plasticAluminium": "Kunststoff/Aluminium",
+			"plasticMetal": "Kunststoff/verschiedene Metalle",
+			"plasticTinplate": "Kunststoff/Weißblech",
+			"pp": "Polypropylen",
+			"preservatives": "Konservierungsstoffe",
+			"protein": "Eiweiß",
+			"ps": "Polystyrol",
+			"pvc": "Polyvinychlorid",
+			"salt": "Salz",
+			"saturatedFattyAcids": "gesättigte Fettsäuren",
+			"sugar": "Zucker",
+			"unsaturatedFattyAcids": "ungesättigte Fettsäuren",
+			"wood": "Holz"
+		},
+		"factgroups": {
+			"nutritionalInformation": {
+				"label": "Nährwertangaben",
+				"description": "<strong>Achte darauf dass die Nährwertangaben je 100ml angegeben werden.</strong> Die Angaben für Zucker und Energiegehalt berechnen sich automatisch aus den Weindaten Alkoholgehalt, Restsüße und Säuregehalt.</strong>",
+				"notAllRequired": "<strong>Wichtiger Hinweis!</strong><br>Die Angaben für Alkohol, Säuregehalt und Restzucker wurden nicht eingepflegt. Eine Automatische Berechnung steht nicht zur Verfügung."
+			},
+			"ingredients": {
+				"label": "Zutaten",
+				"description": "Die Zutaten innerhalb dieser Liste müssen nicht mit einer Mengenangabe versehen werden. Auf dem eLabel werden die Daten ggf. nur mit einer Menge ausgewiesen sofern eine rechtliche Verbindlichkeit besteht. Die Zutatenliste ergänzen wir ständig. Wenn Du eine Zutat vermisst, sende sie uns bitte kurz per Mail an kontakt@vinou.de. <strong>Allergene werden aus den Tab \"Allgemein\" übernommen.</strong>",
+				"notAllRequired": "<strong>Wichtiger Hinweis!</strong><br>Die Angaben für Allergene wurden nicht eingepflegt. Eine Automatische Vorbelegung steht nicht zur Verfügung."
+			},
+			"recycling": {
+				"label": "Recyclinginformationen",
+				"description": "Diese Informationen sind rechtlich nicht bindend aber helfen Deinen Kunden bei der richtigen Entsorgung. <strong>Im Bereich zusätzliche Angaben gibst du am Besten einen Begriff ein, der angibt wo der jeweilige Stoff in Verwendung ist z.B. Verschluss oder Flasche."
+			}
+		},
+		"subgroups": {
+			"plastic": "Kunststoffe",
+			"paper": "Papier & Pappe",
+			"metal": "Metalle",
+			"wood": "Holz",
+			"textiles": "Textilien",
+			"glas": "Glas",
+			"composite": "Verbundstoffe"
 		}
 	},
 	"invoice": {
