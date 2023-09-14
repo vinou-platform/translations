@@ -1840,6 +1840,7 @@
 				"placeholder": "Allergene suchen"
 			},
 			"articlenumber": "Art.-Nr.",
+			"apnumber": "AP-Nr.",
 			"barcode": "EAN-Code",
 			"barrique": "Im Barrique gereift",
 			"baseprice": "Preis pro Liter",
@@ -2662,6 +2663,21 @@
 		},
 		"toasts": {
 			"created": "Fasswein Lieferschein erstellt!"
+		}
+	},
+	"elabel": {
+		"name": {
+			"singular": "eLabel",
+			"plural": "eLabels"
+		},
+		"actions": {
+			"create": {
+				"main": "Neues eLabel",
+				"sub": "erstellen"
+			}
+		},
+		"labels": {
+			"listItem": "eLabel vom {timestamp}"
 		}
 	},
 	"fact": {
@@ -4147,7 +4163,8 @@
 		},
 		"targetTypes": {
 			"default": "Standard",
-			"external": "Manueller Link"
+			"external": "Manueller Link",
+			"elabel": "eLabel"
 		},
 		"views": {
 			"edit": {
