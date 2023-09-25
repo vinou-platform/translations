@@ -248,7 +248,8 @@
 		"buttons": {
 			"create": "Créer un nouveau",
 			"save": "Sauvegarder",
-			"download": "Télécharger"
+			"download": "Télécharger",
+			"unlock": "Ouvrir"
 		}
 	},
 	"loader": {
@@ -708,8 +709,18 @@
 				"inTransfer": "Ce vin est destiné à un transfert dans le réseau Vinou. Pour des raisons légales, vous ne pouvez pas effectuer d'autres actions ou corrections sur ce vin pendant le processus de libération.",
 				"filters": {
 					"vintage": "Filtrer l'année de production",
-					"hideClosed": "Masquer les comptes de vin archivés",
-					"readyForBottling": "Prêt à l'embouteillage"
+					"readyForBottling": "Prêt à l'embouteillage",
+					"state": {
+						"label": "Filtrer les comptes vins",
+						"closed": "Comptes viticoles archivés",
+						"empty": "Vins sans stock"
+					},
+					"actions": {
+						"label": "Filtrer les actions de la cave",
+						"regular": "Actions régulières",
+						"measuring": "Mesures",
+						"analysisOrder": "Ordres à analyser"
+					}
 				}
 			},
 			"measurements": {
@@ -1447,6 +1458,7 @@
 			"taxid": "Numéro fiscal",
 			"vatid": "NIF",
 			"creditorid": "ID de créanciers",
+			"gln": "GLN",
 			"address": "Rue et numéro",
 			"zip": "Code postal",
 			"city": "Ville",
@@ -1456,6 +1468,7 @@
 			"fax": "Fax",
 			"active": "Aktif",
 			"image": "Logo",
+			"letterhead": "Informations complémentaires pour le papier à en-tête",
 			"freetext": "Texte libre",
 			"authid": "ID d'authentification du développeur",
 			"template": "Modèle Expertisen",
@@ -1830,6 +1843,7 @@
 				"placeholder": "Rechercher allergènes"
 			},
 			"articlenumber": "No. d'article",
+			"apnumber": "Numéro de test officiel",
 			"barcode": "Code EAN",
 			"barrique": "Elevage en barriques",
 			"baseprice": "Prix au litre",
@@ -1839,6 +1853,7 @@
 				"placeholder": "FR-ECO-XXX"
 			},
 			"bottles": "Bouteilles",
+			"bottles_per_box": "Bouteilles par carton",
 			"bottlesize": "Taille de la bouteille",
 			"bottlingType": "Type de remplissage",
 			"cap": "Obturateur",
@@ -1851,6 +1866,7 @@
 				"long": "Description détaillée"
 			},
 			"drinktemperature": "Température de consommation",
+			"glycerin": "Glycérine",
 			"grapetypes": {
 				"label": "Cépag",
 				"placeholder": "Rechercher cépag"
@@ -1938,11 +1954,17 @@
 			"original": "{title} (Original)",
 			"new": "{title} (Nouveau)"
 		},
+		"views": {
+			"legal": {
+				"title": "Informations sur la législation alimentaire"
+			}
+		},
 		"tabs": {
 			"basedata": "Données de base du réseau",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Mouvements de stock",
-			"marketing": "Commercialisation"
+			"marketing": "Commercialisation",
+			"legal": "Décl. légales"
 		},
 		"dialogs": {
 			"connectAutomation": "Voulez-vous transférer automatiquement le vin dans la gamme de votre revendeur?",
@@ -2646,6 +2668,129 @@
 		},
 		"toasts": {
 			"created": "Bon de livraison de vin de baril créé!"
+		}
+	},
+	"elabel": {
+		"name": {
+			"singular": "eLabel",
+			"plural": "Étiquettes électroniques"
+		},
+		"actions": {
+			"create": {
+				"main": "Créer un nouveau",
+				"sub": "eLabel"
+			}
+		},
+		"labels": {
+			"listItem": "eLabel créé à {timestamp}"
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer cet eLabel ?"
+		},
+		"toasts": {
+			"delete": "Etiquette supprimée !"
+		}
+	},
+	"fact": {
+		"actions": {
+			"autocalc": "Calculer automatiquement"
+		},
+		"fields": {
+			"type": "Taper",
+			"quantity": "Quantité",
+			"unit": "Unité",
+			"label": "Etiquette supplémentaire",
+			"code": "Code de recyclage"
+		},
+		"views": {
+			"edit": {
+				"title": "Modifier les faits"
+			},
+			"create": {
+				"title": "Créer un nouveau fait"
+			}
+		},
+		"dialogs": {
+			"delete": "Voulez-vous vraiment supprimer ces informations sur les aliments?",
+			"calculate": {
+				"nutritionalInformation": "<strong>ATTENTION</strong> Les informations nutritionnelles sont désormais calculées sur la base des données analytiques existantes alcool, sucre résiduel et acide total. De plus, la valeur de la glycérine est incluse si elle est spécifiée. Voulez-vous calculer les informations nutritionnelles maintenant ?",
+				"ingredients": "Les ingrédients sont désormais calculés de manière standardisée. <strong>ATTENTION, les allergènes ne sont pas encore répertoriés séparément.</strong> Voulez-vous identifier les ingrédients maintenant ?"
+			}
+		},
+		"toasts": {
+			"created": "Informations alimentaires créées",
+			"changed": "Les informations sur les aliments ont changé",
+			"deleted": "Informations sur les aliments supprimées",
+			"calculated": "Informations alimentaires déterminées automatiquement"
+		},
+		"types": {
+			"aluminium": "Aluminium",
+			"antioxidants": "Antioxydants",
+			"brownGlas": "Verre marron",
+			"carbohydrates": "Les glucides",
+			"clearglas": "Verre propre",
+			"cork": "Liège",
+			"corrugatedCardboard": "Carton ondulé",
+			"cotton": "Coton",
+			"energy": "Énergie",
+			"fat": "Graisse",
+			"glasAluminium": "Verre/Aluminium",
+			"glasMetal": "Verre/Divers métaux",
+			"glasPlastic": "Verre/Plastique",
+			"glasTinplate": "Verre/fer blanc",
+			"grapes": "Raisins",
+			"greenGlas": "verre vert",
+			"iron": "Fer",
+			"jute": "Jute",
+			"otherCardboard": "Autre carton",
+			"paper": "Papier",
+			"paperAluminium": "Papier et carton/aluminium",
+			"paperMetal": "Papier et carton/métaux divers",
+			"paperPlastic": "Papier et carton/plastique",
+			"paperPlasticAlu": "Papier et carton/aluminium",
+			"paperPlasticMetal": "Papier et carton/plastique/aluminium/fer blanc",
+			"paperTinplate": "Papier et carton/fer blanc",
+			"pet": "Polyéthylène téréphtalate - PET",
+			"petHD": "Polyéthylène haute densité",
+			"petLD": "Polyéthylène basse densité",
+			"plasticAluminium": "Plastique/Aluminium",
+			"plasticMetal": "Plastique/Divers métaux",
+			"plasticTinplate": "Plastique/fer blanc",
+			"pp": "Polypropylène",
+			"preservatives": "Conservateurs",
+			"protein": "Protéine",
+			"ps": "Polystyrène",
+			"pvc": "Chlorure de polyvinyle",
+			"salt": "Sel",
+			"saturatedFattyAcids": "Les acides gras saturés",
+			"sugar": "Sucre",
+			"unsaturatedFattyAcids": "Acides gras insaturés",
+			"wood": "Bois"
+		},
+		"factgroups": {
+			"nutritionalInformation": {
+				"label": "Information nutritionnelle",
+				"description": "<strong>Assurez-vous que les informations nutritionnelles sont données pour 100 ml.</strong> Les informations sur la teneur en sucre et en énergie sont automatiquement calculées à partir des données du vin sur la teneur en alcool, la douceur résiduelle et l'acidité.</strong>",
+				"notAllRequired": "<strong>Remarque importante!</strong><br>Les informations sur l'alcool, l'acidité et le sucre résiduel n'ont pas été saisies. Le calcul automatique n'est pas disponible."
+			},
+			"ingredients": {
+				"label": "Ingrédients",
+				"description": "Il n'est pas nécessaire d'indiquer une quantité pour les ingrédients de cette liste. Les données ne peuvent être affichées qu'en une seule quantité sur l'eLabel s'il existe une obligation légale. Nous ajoutons constamment à la liste des ingrédients. Si vous manquez un ingrédient, veuillez nous l'envoyer par e-mail à kontakt@vinou.de. <strong>Les allergènes proviennent de l'onglet \"Général\" de l'eLabel.</strong>",
+				"notAllRequired": "<strong>Remarque importante!</strong><br>Les informations sur les allergènes n'ont pas été saisies. La pré-affectation automatique n'est pas disponible."
+			},
+			"recycling": {
+				"label": "Informations sur le recyclage",
+				"description": "Ces informations ne sont pas juridiquement contraignantes mais aideront vos clients à les éliminer correctement. <strong>Dans la zone d'informations complémentaires, il est préférable de saisir un terme indiquant où la substance concernée est utilisée, par ex. bouchon ou bouteille."
+			}
+		},
+		"subgroups": {
+			"plastic": "Plastiques",
+			"paper": "Papier et carton",
+			"metal": "Les métaux",
+			"wood": "Bois",
+			"textiles": "Textiles",
+			"glas": "Verre",
+			"composite": "Matériaux composites"
 		}
 	},
 	"invoice": {
@@ -4029,11 +4174,13 @@
 			"target": "Type de cible",
 			"targetUrl": "Cible URL",
 			"link": "Lien externe",
-			"impressions": "Impressions"
+			"impressions": "Impressions",
+			"elabel": "Étiquette électronique associée"
 		},
 		"targetTypes": {
 			"default": "Défaut",
-			"external": "Lien manuel"
+			"external": "Lien manuel",
+			"elabel": "eLabel"
 		},
 		"views": {
 			"edit": {
@@ -4047,7 +4194,9 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Tu veux vraiment supprimer ce QR code ?"
+			"delete": "Tu veux vraiment supprimer ce QR code ?",
+			"isLocked": "Le code QR est lié à un eLabel. Dans cet état, la suppression n'est pas autorisée.",
+			"unlock": "Le code QR est lié à un eLabel. La modification de cette adresse de destination peut affecter <strong>tous les codes QR déjà disponibles sur le marché</strong>. Voulez-vous vraiment changer ce code QR ?"
 		},
 		"toasts": {
 			"created": "Code QR créé!",

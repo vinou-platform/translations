@@ -248,7 +248,8 @@
 		"buttons": {
 			"create": "Crear nuevo",
 			"save": "Salvar",
-			"download": "Descargar"
+			"download": "Descargar",
+			"unlock": "Desbloquear"
 		}
 	},
 	"loader": {
@@ -708,8 +709,18 @@
 				"inTransfer": "Este vino está destinado a una transferencia en la red Vinou. Por razones legales, no se pueden realizar más acciones o correcciones sobre este vino durante el proceso de liberación.",
 				"filters": {
 					"vintage": "Año de producción del filtro",
-					"hideClosed": "Ocultar cuentas de vino archivadas",
-					"readyForBottling": "Listo para embotellar"
+					"readyForBottling": "Listo para embotellar",
+					"state": {
+						"label": "Filtrar cuentas de vino",
+						"closed": "Cuentas de vino archivadas",
+						"empty": "Vinos sin caldo"
+					},
+					"actions": {
+						"label": "Acciones de filtrado de la bodega",
+						"regular": "Acciones regulares",
+						"measuring": "Medidas",
+						"analysisOrder": "Órdenes para analizar"
+					}
 				}
 			},
 			"measurements": {
@@ -1447,6 +1458,7 @@
 			"taxid": "Número de indentificación fiscal",
 			"vatid": "Número de identificación a efecto del IVA",
 			"creditorid": "ID de acreedor",
+			"gln": "GLN",
 			"address": "Calle y número de casa",
 			"zip": "Código postal",
 			"city": "Ciudad",
@@ -1456,6 +1468,7 @@
 			"fax": "Fax",
 			"active": "Activo",
 			"image": "Logotipo",
+			"letterhead": "Información adicional para membrete",
 			"freetext": "Texto libre",
 			"authid": "ID de desarrollador",
 			"template": "Plantilla de peritaje",
@@ -1830,6 +1843,7 @@
 				"placeholder": "buscar alergenos"
 			},
 			"articlenumber": "artículo no.",
+			"apnumber": "Número de prueba oficial",
 			"barcode": "EAN-Code",
 			"barrique": "Madurado en barricas",
 			"baseprice": "Precio por litro",
@@ -1839,6 +1853,7 @@
 				"placeholder": "ES-ECO-XXX"
 			},
 			"bottles": "Botellas",
+			"bottles_per_box": "Botellas por caja",
 			"bottlesize": "tamaño de botella",
 			"bottlingType": "Tipo de relleno",
 			"cap": "cierre",
@@ -1851,6 +1866,7 @@
 				"long": "Descripción detallada"
 			},
 			"drinktemperature": "temperatura óptima para beber",
+			"glycerin": "Glicerina",
 			"grapetypes": {
 				"label": "variedades de uva",
 				"placeholder": "buscar variedad de uva"
@@ -1938,11 +1954,17 @@
 			"original": "{title} (original)",
 			"new": "{title} (nuevo)"
 		},
+		"views": {
+			"legal": {
+				"title": "Información sobre la legislación alimentaria."
+			}
+		},
 		"tabs": {
 			"basedata": "Datos maestros de la red",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Movimientos de almacén",
-			"marketing": "Márketing"
+			"marketing": "Márketing",
+			"legal": "Decl. Legales"
 		},
 		"dialogs": {
 			"connectAutomation": "Desea transferir automáticamente el vino a la gama de su socio minorista?",
@@ -2646,6 +2668,129 @@
 		},
 		"toasts": {
 			"created": "Boletín de entrega de vino de barril ha sido creado!"
+		}
+	},
+	"elabel": {
+		"name": {
+			"singular": "etiqueta electrónica",
+			"plural": "Etiquetas electrónicas"
+		},
+		"actions": {
+			"create": {
+				"main": "Crear nuevo",
+				"sub": "etiqueta electrónica"
+			}
+		},
+		"labels": {
+			"listItem": "Etiqueta electrónica creada a las {marca de tiempo}"
+		},
+		"dialogs": {
+			"delete": "¿Realmente desea eliminar esta etiqueta electrónica?"
+		},
+		"toasts": {
+			"delete": "¡Etiqueta eliminada!"
+		}
+	},
+	"fact": {
+		"actions": {
+			"autocalc": "Calcular automáticamente"
+		},
+		"fields": {
+			"type": "Tipo",
+			"quantity": "Cantidad",
+			"unit": "Unidad",
+			"label": "Etiqueta adicional",
+			"code": "Código de reciclaje"
+		},
+		"views": {
+			"edit": {
+				"title": "Editar hechos"
+			},
+			"create": {
+				"title": "Crear nuevo hecho"
+			}
+		},
+		"dialogs": {
+			"delete": "¿Realmente deseas eliminar esta información alimentaria?",
+			"calculate": {
+				"nutritionalInformation": "<strong>ATENCIÓN</strong> La información nutricional ahora se calcula en base a los datos analíticos existentes de alcohol, azúcar residual y acidez total. Además, se incluye el valor de la glicerina si se especifica. ¿Quieres calcular la información nutricional ahora?",
+				"ingredients": "Los ingredientes ahora se calculan de forma estandarizada. <strong>ATENCIÓN, los alérgenos no vuelven a aparecer por separado.</strong> ¿Quieres identificar los ingredientes ahora?"
+			}
+		},
+		"toasts": {
+			"created": "Información alimentaria creada",
+			"changed": "La información alimentaria cambió",
+			"deleted": "Información alimentaria eliminada",
+			"calculated": "Información alimentaria determinada automáticamente"
+		},
+		"types": {
+			"aluminium": "Aluminio",
+			"antioxidants": "Antioxidantes",
+			"brownGlas": "Vidrio marrón",
+			"carbohydrates": "carbohidratos",
+			"clearglas": "Vaso transparente",
+			"cork": "Corcho",
+			"corrugatedCardboard": "Cartón corrugado",
+			"cotton": "Algodón",
+			"energy": "Energía",
+			"fat": "Gordo",
+			"glasAluminium": "Vidrio/Aluminio",
+			"glasMetal": "Vidrio/Varios metales",
+			"glasPlastic": "Vidrio/Plástico",
+			"glasTinplate": "vidrio/hojalata",
+			"grapes": "Uvas",
+			"greenGlas": "Vidrio verde",
+			"iron": "Hierro",
+			"jute": "Yute",
+			"otherCardboard": "Otros cartones",
+			"paper": "Papel",
+			"paperAluminium": "Papel y cartón/aluminio",
+			"paperMetal": "Papel y cartón/metales varios",
+			"paperPlastic": "Papel y cartón/plástico",
+			"paperPlasticAlu": "Papel y cartón/aluminio",
+			"paperPlasticMetal": "Papel y cartón/plástico/aluminio/hojalata",
+			"paperTinplate": "Papel y cartón/hojalata",
+			"pet": "Tereftalato de polietileno - PET",
+			"petHD": "Polietileno de alta densidad",
+			"petLD": "Polietileno de baja densidad",
+			"plasticAluminium": "Plástico/Aluminio",
+			"plasticMetal": "Plástico/Metales varios",
+			"plasticTinplate": "Plástico/Hojalata",
+			"pp": "Polipropileno",
+			"preservatives": "Conservantes",
+			"protein": "Proteína",
+			"ps": "Poliestireno",
+			"pvc": "Cloruro de polivinilo",
+			"salt": "Sal",
+			"saturatedFattyAcids": "Ácidos grasos saturados",
+			"sugar": "Azúcar",
+			"unsaturatedFattyAcids": "Ácidos grasos insaturados",
+			"wood": "Madera"
+		},
+		"factgroups": {
+			"nutritionalInformation": {
+				"label": "Información nutricional",
+				"description": "<strong>Asegúrese de que la información nutricional se proporcione por 100 ml.</strong> La información sobre el contenido de azúcar y energía se calcula automáticamente a partir de los datos del vino: contenido de alcohol, dulzor residual y acidez.</strong>",
+				"notAllRequired": "<strong>¡Nota importante!</strong><br>No se han introducido los datos de alcohol, acidez y azúcar residual. El cálculo automático no está disponible."
+			},
+			"ingredients": {
+				"label": "Ingredientes",
+				"description": "No es necesario indicar una cantidad a los ingredientes de esta lista. Los datos sólo podrán mostrarse en una cantidad en la eLabel si existe obligación legal. Estamos constantemente agregando a la lista de ingredientes. Si omite algún ingrediente, envíenoslo por correo electrónico a kontakt@vinou.de. <strong>Los alérgenos se toman de la pestaña \"General\" de la etiqueta electrónica.</strong>",
+				"notAllRequired": "<strong>¡Nota importante!</strong><br>No se ha introducido la información de los alérgenos. La preasignación automática no está disponible."
+			},
+			"recycling": {
+				"label": "información sobre reciclaje",
+				"description": "Esta información no es legalmente vinculante pero ayudará a sus clientes a eliminarla adecuadamente. <strong>En el área de información adicional, es mejor ingresar un término que indique dónde se usa la sustancia respectiva, p.e. tapa o botella."
+			}
+		},
+		"subgroups": {
+			"plastic": "Plástica",
+			"paper": "Papel y cartón",
+			"metal": "Rieles",
+			"wood": "Madera",
+			"textiles": "Textiles",
+			"glas": "Vaso",
+			"composite": "Composicion"
 		}
 	},
 	"invoice": {
@@ -4029,11 +4174,13 @@
 			"target": "Tipo de objetivo",
 			"targetUrl": "URL de destino",
 			"link": "Enlace externo",
-			"impressions": "Impresiones"
+			"impressions": "Impresiones",
+			"elabel": "Etiqueta electrónica relacionada"
 		},
 		"targetTypes": {
 			"default": "Por defecto",
-			"external": "Enlace manual"
+			"external": "Enlace manual",
+			"elabel": "etiqueta electrónica"
 		},
 		"views": {
 			"edit": {
@@ -4047,7 +4194,9 @@
 			}
 		},
 		"dialogs": {
-			"delete": "¿De verdad quieres borrar este código QR?"
+			"delete": "¿De verdad quieres borrar este código QR?",
+			"isLocked": "El código QR está vinculado a una etiqueta electrónica. En este estado, no se permite la eliminación.",
+			"unlock": "El código QR está vinculado a una etiqueta electrónica. Cambiar esta dirección de destino puede afectar a <strong>todos los códigos QR que ya están en el mercado</strong>. ¿Realmente quieres cambiar este código QR?"
 		},
 		"toasts": {
 			"created": "¡Código QR creado!",
