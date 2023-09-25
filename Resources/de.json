@@ -248,7 +248,8 @@
 		"buttons": {
 			"create": "Neu anlegen",
 			"save": "Speichern",
-			"download": "Download"
+			"download": "Download",
+			"unlock": "Entsperren"
 		}
 	},
 	"loader": {
@@ -1457,6 +1458,7 @@
 			"taxid": "Steuernummer",
 			"vatid": "USt-ID.",
 			"creditorid": "Gläubiger-ID",
+			"gln": "GLN",
 			"address": "Straße und Hausnummer",
 			"zip": "PLZ",
 			"city": "Stadt",
@@ -1466,6 +1468,7 @@
 			"fax": "Fax",
 			"active": "aktiv",
 			"image": "Logo",
+			"letterhead": "Zusätzliche Informationen für den Briefkopf",
 			"freetext": "Freitext",
 			"authid": "Developer Auth ID",
 			"template": "Expertisen Template",
@@ -1850,6 +1853,7 @@
 				"placeholder": "DE-ÖKO-XXX"
 			},
 			"bottles": "Flaschen",
+			"bottles_per_box": "Flaschen pro Verkaufskarton",
 			"bottlesize": "Flaschengröße",
 			"bottlingType": "Art der Abfüllung",
 			"cap": "Verschluss",
@@ -1862,6 +1866,7 @@
 				"long": "Ausführliche Beschreibung"
 			},
 			"drinktemperature": "Trinktemperatur",
+			"glycerin": "Glycerin",
 			"grapetypes": {
 				"label": "Rebsorten",
 				"placeholder": "Rebsorte suchen"
@@ -2678,6 +2683,12 @@
 		},
 		"labels": {
 			"listItem": "eLabel vom {timestamp}"
+		},
+		"dialogs": {
+			"delete": "Möchtest Du das ELabel wirklich löschen?"
+		},
+		"toasts": {
+			"delete": "Elabel gelöscht!"
 		}
 	},
 	"fact": {
@@ -2700,12 +2711,17 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Willst Du diese Lebensmittelangabe wirklich löschen?"
+			"delete": "Willst Du diese Lebensmittelangabe wirklich löschen?",
+			"calculate": {
+				"nutritionalInformation": "<strong>ACHTUNG</strong> Die Nährwertangaben werden nun basierend auf den vorhandenen analytischen Daten Alcohol, Restzucker und Gesamtsäure berechnet. Zusätzlich wird der Wert von Glycerin hinzugezogen falls angegeben. Willst Du die Nährwertangaben jetzt berechnen?",
+				"ingredients": "Die Zutaten werden basierend werden nun standardisiert berechnet. <strong>ACHTUNG die Allergene werden nicht noch einmal separat aufgeführt.</strong> Willst Du die Zutaten jetzt ermitteln?"
+			}
 		},
 		"toasts": {
 			"created": "Lebensmittelangabe erstellt",
 			"changed": "Lebensmittelangabe geändert",
-			"deleted": "Lebensmittelangabe gelöscht"
+			"deleted": "Lebensmittelangabe gelöscht",
+			"calculated": "Lebensmittelangaben automatisch ermittelt"
 		},
 		"types": {
 			"aluminium": "Aluminium",
@@ -2759,7 +2775,7 @@
 			},
 			"ingredients": {
 				"label": "Zutaten",
-				"description": "Die Zutaten innerhalb dieser Liste müssen nicht mit einer Mengenangabe versehen werden. Auf dem eLabel werden die Daten ggf. nur mit einer Menge ausgewiesen sofern eine rechtliche Verbindlichkeit besteht. Die Zutatenliste ergänzen wir ständig. Wenn Du eine Zutat vermisst, sende sie uns bitte kurz per Mail an kontakt@vinou.de. <strong>Allergene werden aus den Tab \"Allgemein\" übernommen.</strong>",
+				"description": "Die Zutaten innerhalb dieser Liste müssen nicht mit einer Mengenangabe versehen werden. Auf dem eLabel werden die Daten ggf. nur mit einer Menge ausgewiesen sofern eine rechtliche Verbindlichkeit besteht. Die Zutatenliste ergänzen wir ständig. Wenn Du eine Zutat vermisst, sende sie uns bitte kurz per Mail an kontakt@vinou.de. <strong>Allergene werden auf dem eLabel aus den Tab \"Allgemein\" übernommen.</strong>",
 				"notAllRequired": "<strong>Wichtiger Hinweis!</strong><br>Die Angaben für Allergene wurden nicht eingepflegt. Eine Automatische Vorbelegung steht nicht zur Verfügung."
 			},
 			"recycling": {
@@ -4159,7 +4175,8 @@
 			"target": "Ziel-Typ",
 			"targetUrl": "Ziel-Url",
 			"link": "Externer Link",
-			"impressions": "Anzahl der Aufrufe"
+			"impressions": "Anzahl der Aufrufe",
+			"elabel": "Zugeordnetes E-Label"
 		},
 		"targetTypes": {
 			"default": "Standard",
@@ -4178,7 +4195,9 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Möchtest Du diesen QR-Code wirklich löschen?"
+			"delete": "Möchtest Du diesen QR-Code wirklich löschen?",
+			"isLocked": "Der QR-Code ist mit einem eLabel verknüpft. In diesem Zustand ist das löschen nicht erlaubt.",
+			"unlock": "Der QR-Code ist mit einem eLabel verknüpft. Das Ändern dieser Zieladresse beeinflusst möglicher Weise <strong>alle QR-Codes die sich bereits im Markt befinden</strong>. Willst Du wirklich diesen QR-Code ändern?"
 		},
 		"toasts": {
 			"created": "QR-Code angelegt!",
