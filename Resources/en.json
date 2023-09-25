@@ -248,7 +248,8 @@
 		"buttons": {
 			"create": "Create new",
 			"save": "Save",
-			"download": "Download"
+			"download": "Download",
+			"unlock": "Unlock"
 		}
 	},
 	"loader": {
@@ -708,8 +709,18 @@
 				"inTransfer": "This wine is earmarked for a transfer in the Vinou network. For legal reasons, you cannot carry out any further actions or corrections on this wine during the releasing process.",
 				"filters": {
 					"vintage": "Filter year of production",
-					"hideClosed": "Hide archived wine accounts",
-					"readyForBottling": "Ready for bottling"
+					"readyForBottling": "Ready for bottling",
+					"state": {
+						"label": "Filter wine accounts",
+						"closed": "Archived wine accounts",
+						"empty": "Wines without stock"
+					},
+					"actions": {
+						"label": "Filter cellar actions",
+						"regular": "Regular actions",
+						"measuring": "Measurements",
+						"analysisOrder": "Orders for analyse"
+					}
 				}
 			},
 			"measurements": {
@@ -1447,6 +1458,7 @@
 			"taxid": "Tax number",
 			"vatid": "Vat-ID",
 			"creditorid": "Creditor-ID",
+			"gln": "GLN",
 			"address": "Address",
 			"zip": "Zip",
 			"city": "City",
@@ -1456,6 +1468,7 @@
 			"fax": "Fax",
 			"active": "active",
 			"image": "Logo",
+			"letterhead": "Additional Informationen for letter head",
 			"freetext": "Freetext",
 			"authid": "Developer Auth ID",
 			"template": "Expertisen Template",
@@ -1830,6 +1843,7 @@
 				"placeholder": "Search for allergens"
 			},
 			"articlenumber": "Art. no.",
+			"apnumber": "Official test number",
 			"barcode": "GTIN",
 			"barrique": "Matured in barrique",
 			"baseprice": "Price per liter",
@@ -1839,6 +1853,7 @@
 				"placeholder": "GB-ECO-XXX"
 			},
 			"bottles": "Bottles",
+			"bottles_per_box": "Bottles per box",
 			"bottlesize": "Bottlesize",
 			"bottlingType": "Type of bottling",
 			"cap": "Cap",
@@ -1851,6 +1866,7 @@
 				"long": "Detailed description"
 			},
 			"drinktemperature": "Drink temperature",
+			"glycerin": "Glycerin",
 			"grapetypes": {
 				"label": "Grapetypes",
 				"placeholder": "Search for grapetypes"
@@ -1938,11 +1954,17 @@
 			"original": "{title} (Original)",
 			"new": "{title} (New)"
 		},
+		"views": {
+			"legal": {
+				"title": "Food law information"
+			}
+		},
 		"tabs": {
 			"basedata": "Network master data",
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Stock rotation",
-			"marketing": "Marketing"
+			"marketing": "Marketing",
+			"legal": "Legal Declarations"
 		},
 		"dialogs": {
 			"connectAutomation": "Do you want to automatically transfer the wine to the range of your retail partner?",
@@ -2646,6 +2668,129 @@
 		},
 		"toasts": {
 			"created": "Bulk wine delivery note generated!"
+		}
+	},
+	"elabel": {
+		"name": {
+			"singular": "eLabel",
+			"plural": "eLabels"
+		},
+		"actions": {
+			"create": {
+				"main": "Create new",
+				"sub": "eLabel"
+			}
+		},
+		"labels": {
+			"listItem": "eLabel created at {timestamp}"
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this eLabel?"
+		},
+		"toasts": {
+			"delete": "Elabel deleted!"
+		}
+	},
+	"fact": {
+		"actions": {
+			"autocalc": "Calculate automatically"
+		},
+		"fields": {
+			"type": "Type",
+			"quantity": "Quantity",
+			"unit": "Unit",
+			"label": "Additional label",
+			"code": "Recyclingcode"
+		},
+		"views": {
+			"edit": {
+				"title": "Edit facts"
+			},
+			"create": {
+				"title": "Create new fact"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete this food information?",
+			"calculate": {
+				"nutritionalInformation": "<strong>ATTENTION</strong> The nutritional information is now calculated based on the existing analytical data alcohol, residual sugar and total acid. Additionally, the value of glycerin is included if specified. Do you want to calculate the nutritional information now?",
+				"ingredients": "The ingredients are now calculated in a standardized way. <strong>ATTENTION the allergens are not listed separately again.</strong> Do you want to identify the ingredients now?"
+			}
+		},
+		"toasts": {
+			"created": "Food information created",
+			"changed": "Food information changed",
+			"deleted": "Food information deleted",
+			"calculated": "Food information determined automatically"
+		},
+		"types": {
+			"aluminium": "Aluminum",
+			"antioxidants": "Antioxidants",
+			"brownGlas": "Brown glass",
+			"carbohydrates": "Carbohydrates",
+			"clearglas": "Clear glass",
+			"cork": "Cork",
+			"corrugatedCardboard": "Corrugated cardboard",
+			"cotton": "Cotton",
+			"energy": "Energy",
+			"fat": "Fat",
+			"glasAluminium": "Glass/Aluminium",
+			"glasMetal": "Glass/Various metals",
+			"glasPlastic": "Glass/Plastic",
+			"glasTinplate": "Glass/Tinplate",
+			"grapes": "Grapes",
+			"greenGlas": "green Glass",
+			"iron": "Iron",
+			"jute": "Jute",
+			"otherCardboard": "Other cardboard",
+			"paper": "Paper",
+			"paperAluminium": "Paper and cardboard/aluminium",
+			"paperMetal": "Paper and cardboard/various metals",
+			"paperPlastic": "Paper and cardboard/plastic",
+			"paperPlasticAlu": "Paper and cardboard/aluminium",
+			"paperPlasticMetal": "Paper and cardboard/plastic/aluminium/tinplate",
+			"paperTinplate": "Paper and cardboard/tinplate",
+			"pet": "Polyethylene terephthalate - PET",
+			"petHD": "Polyethylene high density",
+			"petLD": "Polyethylene low density",
+			"plasticAluminium": "Plastic/Aluminium",
+			"plasticMetal": "Plastic/Various metals",
+			"plasticTinplate": "Plastic/Tinplate",
+			"pp": "Polypropylene",
+			"preservatives": "Preservatives",
+			"protein": "Protein",
+			"ps": "Polystyrene",
+			"pvc": "Polyvinyl chloride",
+			"salt": "Salt",
+			"saturatedFattyAcids": "Saturated fatty acids",
+			"sugar": "Sugar",
+			"unsaturatedFattyAcids": "Unsaturated fatty acids",
+			"wood": "Wood"
+		},
+		"factgroups": {
+			"nutritionalInformation": {
+				"label": "Nutritional information",
+				"description": "<strong>Make sure that the nutritional information is given per 100ml.</strong> The information for sugar and energy content is automatically calculated from the wine data alcohol content, residual sweetness and acidity.</strong>",
+				"notAllRequired": "<strong>Important note!</strong><br>The information for alcohol, acidity and residual sugar has not been entered. Automatic calculation is not available."
+			},
+			"ingredients": {
+				"label": "Ingredients",
+				"description": "The ingredients in this list do not need to be given a quantity. The data may only be shown in one quantity on the eLabel if there is a legal obligation. We are constantly adding to the list of ingredients. If you miss an ingredient, please send it to us via email to kontakt@vinou.de. <strong>Allergens are taken from the \"General\" tab on the eLabel.</strong>",
+				"notAllRequired": "<strong>Important note!</strong><br>The information for allergens has not been entered. Automatic pre-assignment is not available."
+			},
+			"recycling": {
+				"label": "recycling information",
+				"description": "This information is not legally binding but will help your customers with proper disposal. <strong>In the additional information area, it is best to enter a term that indicates where the respective substance is used, e.g. cap or bottle."
+			}
+		},
+		"subgroups": {
+			"plastic": "Plastics",
+			"paper": "Paper and cardboard",
+			"metal": "Metals",
+			"wood": "Wood",
+			"textiles": "Textiles",
+			"glas": "Glass",
+			"composite": "Composites"
 		}
 	},
 	"invoice": {
@@ -4029,11 +4174,13 @@
 			"target": "Type of target",
 			"targetUrl": "Target url",
 			"link": "External link",
-			"impressions": "Impressions"
+			"impressions": "Impressions",
+			"elabel": "Related e-label"
 		},
 		"targetTypes": {
 			"default": "Default",
-			"external": "Manual link"
+			"external": "Manual link",
+			"elabel": "eLabel"
 		},
 		"views": {
 			"edit": {
@@ -4047,7 +4194,9 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Du you really want to delete this QR-Code?"
+			"delete": "Du you really want to delete this QR-Code?",
+			"isLocked": "The QR code is linked to an eLabel. In this state, deletion is not permitted.",
+			"unlock": "The QR code is linked to an eLabel. Changing this destination address may affect <strong>all QR codes that are already in the market</strong>. Do you really want to change this QR code?"
 		},
 		"toasts": {
 			"created": "QR-Code created!",
