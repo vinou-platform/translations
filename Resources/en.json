@@ -2769,7 +2769,7 @@
 		},
 		"factgroups": {
 			"nutritionalInformation": {
-				"label": "Nutritional information",
+				"label": "Nutritional information per 100ml",
 				"description": "<strong>Make sure that the nutritional information is given per 100ml.</strong> The information for sugar and energy content is automatically calculated from the wine data alcohol content, residual sweetness and acidity.</strong>",
 				"notAllRequired": "<strong>Important note!</strong><br>The information for alcohol, acidity and residual sugar has not been entered. Automatic calculation is not available."
 			},

@@ -2769,7 +2769,7 @@
 		},
 		"factgroups": {
 			"nutritionalInformation": {
-				"label": "Information nutritionnelle",
+				"label": "Informations nutritionnelles pour 100 ml",
 				"description": "<strong>Assurez-vous que les informations nutritionnelles sont données pour 100 ml.</strong> Les informations sur la teneur en sucre et en énergie sont automatiquement calculées à partir des données du vin sur la teneur en alcool, la douceur résiduelle et l'acidité.</strong>",
 				"notAllRequired": "<strong>Remarque importante!</strong><br>Les informations sur l'alcool, l'acidité et le sucre résiduel n'ont pas été saisies. Le calcul automatique n'est pas disponible."
 			},

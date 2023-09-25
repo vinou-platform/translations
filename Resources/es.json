@@ -2769,7 +2769,7 @@
 		},
 		"factgroups": {
 			"nutritionalInformation": {
-				"label": "Información nutricional",
+				"label": "Información nutricional por 100ml",
 				"description": "<strong>Asegúrese de que la información nutricional se proporcione por 100 ml.</strong> La información sobre el contenido de azúcar y energía se calcula automáticamente a partir de los datos del vino: contenido de alcohol, dulzor residual y acidez.</strong>",
 				"notAllRequired": "<strong>¡Nota importante!</strong><br>No se han introducido los datos de alcohol, acidez y azúcar residual. El cálculo automático no está disponible."
 			},

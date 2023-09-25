@@ -2769,7 +2769,7 @@
 		},
 		"factgroups": {
 			"nutritionalInformation": {
-				"label": "Nährwertangaben",
+				"label": "Nährwertangaben je 100ml",
 				"description": "<strong>Achte darauf dass die Nährwertangaben je 100ml angegeben werden.</strong> Die Angaben für Zucker und Energiegehalt berechnen sich automatisch aus den Weindaten Alkoholgehalt, Restsüße und Säuregehalt.</strong>",
 				"notAllRequired": "<strong>Wichtiger Hinweis!</strong><br>Die Angaben für Alkohol, Säuregehalt und Restzucker wurden nicht eingepflegt. Eine Automatische Berechnung steht nicht zur Verfügung."
 			},
