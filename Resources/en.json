@@ -2700,7 +2700,7 @@
 			"quantity": "Quantity",
 			"unit": "Unit",
 			"label": "Additional label",
-			"code": "Recyclingcode"
+			"code": "Recycling code"
 		},
 		"views": {
 			"edit": {
@@ -2770,7 +2770,7 @@
 		"factgroups": {
 			"nutritionalInformation": {
 				"label": "Nutritional information per 100ml",
-				"description": "<strong>Make sure that the nutritional information is given per 100ml.</strong> The information for sugar and energy content is automatically calculated from the wine data alcohol content, residual sweetness and acidity.</strong>",
+				"description": "<strong>Make sure that the nutritional information is given per 100ml.</strong> The information for sugar and energy content is automatically calculated from the wine data alcohol content, residual sweetness and acidity.",
 				"notAllRequired": "<strong>Important note!</strong><br>The information for alcohol, acidity and residual sugar has not been entered. Automatic calculation is not available."
 			},
 			"ingredients": {
@@ -2780,7 +2780,7 @@
 			},
 			"recycling": {
 				"label": "recycling information",
-				"description": "This information is not legally binding but will help your customers with proper disposal. <strong>In the additional information area, it is best to enter a term that indicates where the respective substance is used, e.g. cap or bottle."
+				"description": "This information is not legally binding but will help your customers with proper disposal. <strong>In the additional information area, it is best to enter a term that indicates where the respective substance is used, e.g. cap or bottle.</strong>"
 			}
 		},
 		"subgroups": {
@@ -4194,7 +4194,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Du you really want to delete this QR-Code?",
+			"delete": "Do you really want to delete this QR-Code?",
 			"isLocked": "The QR code is linked to an eLabel. In this state, deletion is not permitted.",
 			"unlock": "The QR code is linked to an eLabel. Changing this destination address may affect <strong>all QR codes that are already in the market</strong>. Do you really want to change this QR code?"
 		},

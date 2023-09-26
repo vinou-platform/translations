@@ -2770,7 +2770,7 @@
 		"factgroups": {
 			"nutritionalInformation": {
 				"label": "Nährwertangaben je 100ml",
-				"description": "<strong>Achte darauf dass die Nährwertangaben je 100ml angegeben werden.</strong> Die Angaben für Zucker und Energiegehalt berechnen sich automatisch aus den Weindaten Alkoholgehalt, Restsüße und Säuregehalt.</strong>",
+				"description": "<strong>Achte darauf dass die Nährwertangaben je 100ml angegeben werden.</strong> Die Angaben für Zucker und Energiegehalt berechnen sich automatisch aus den Weindaten Alkoholgehalt, Restsüße und Säuregehalt.",
 				"notAllRequired": "<strong>Wichtiger Hinweis!</strong><br>Die Angaben für Alkohol, Säuregehalt und Restzucker wurden nicht eingepflegt. Eine Automatische Berechnung steht nicht zur Verfügung."
 			},
 			"ingredients": {
@@ -4194,7 +4194,7 @@
 			}
 		},
 		"dialogs": {
-			"delete": "Möchtest Du diesen QR-Code wirklich löschen?",
+			"delete": "Möchtest Du diesen QR-Code wirklich Löschen?",
 			"isLocked": "Der QR-Code ist mit einem eLabel verknüpft. In diesem Zustand ist das löschen nicht erlaubt.",
 			"unlock": "Der QR-Code ist mit einem eLabel verknüpft. Das Ändern dieser Zieladresse beeinflusst möglicher Weise <strong>alle QR-Codes die sich bereits im Markt befinden</strong>. Willst Du wirklich diesen QR-Code ändern?"
 		},

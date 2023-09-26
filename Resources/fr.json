@@ -2770,7 +2770,7 @@
 		"factgroups": {
 			"nutritionalInformation": {
 				"label": "Informations nutritionnelles pour 100 ml",
-				"description": "<strong>Assurez-vous que les informations nutritionnelles sont données pour 100 ml.</strong> Les informations sur la teneur en sucre et en énergie sont automatiquement calculées à partir des données du vin sur la teneur en alcool, la douceur résiduelle et l'acidité.</strong>",
+				"description": "<strong>Assurez-vous que les informations nutritionnelles sont données pour 100 ml.</strong> Les informations sur la teneur en sucre et en énergie sont automatiquement calculées à partir des données du vin sur la teneur en alcool, la douceur résiduelle et l'acidité.",
 				"notAllRequired": "<strong>Remarque importante!</strong><br>Les informations sur l'alcool, l'acidité et le sucre résiduel n'ont pas été saisies. Le calcul automatique n'est pas disponible."
 			},
 			"ingredients": {
@@ -2780,7 +2780,7 @@
 			},
 			"recycling": {
 				"label": "Informations sur le recyclage",
-				"description": "Ces informations ne sont pas juridiquement contraignantes mais aideront vos clients à les éliminer correctement. <strong>Dans la zone d'informations complémentaires, il est préférable de saisir un terme indiquant où la substance concernée est utilisée, par ex. bouchon ou bouteille."
+				"description": "Ces informations ne sont pas juridiquement contraignantes mais aideront vos clients à les éliminer correctement. <strong>Dans la zone d'informations complémentaires, il est préférable de saisir un terme indiquant où la substance concernée est utilisée, par ex. bouchon ou bouteille.</strong>"
 			}
 		},
 		"subgroups": {
