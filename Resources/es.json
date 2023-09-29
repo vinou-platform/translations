@@ -1964,7 +1964,7 @@
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Movimientos de almacén",
 			"marketing": "Márketing",
-			"legal": "Decl. Legales"
+			"legal": "eLabel"
 		},
 		"dialogs": {
 			"connectAutomation": "Desea transferir automáticamente el vino a la gama de su socio minorista?",
