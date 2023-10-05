@@ -712,6 +712,7 @@
 					"readyForBottling": "Pronto per l'imbottigliamento",
 					"state": {
 						"label": "Filtra account vino",
+						"inValid": "Conti vino non validi",
 						"closed": "Conti del vino archiviati",
 						"empty": "Vini senza stock"
 					},

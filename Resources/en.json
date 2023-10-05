@@ -712,6 +712,7 @@
 					"readyForBottling": "Ready for bottling",
 					"state": {
 						"label": "Filter wine accounts",
+						"inValid": "Invalid wine accounts",
 						"closed": "Archived wine accounts",
 						"empty": "Wines without stock"
 					},

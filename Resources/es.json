@@ -712,6 +712,7 @@
 					"readyForBottling": "Listo para embotellar",
 					"state": {
 						"label": "Filtrar cuentas de vino",
+						"inValid": "Cuentas de vino no válidas",
 						"closed": "Cuentas de vino archivadas",
 						"empty": "Vinos sin caldo"
 					},

@@ -712,6 +712,7 @@
 					"readyForBottling": "Bereit zur Abfüllung",
 					"state": {
 						"label": "Weinkonten filtern",
+						"inValid": "Weinkonten mit Warnung",
 						"closed": "Archivierte Weinkonten",
 						"empty": "Weinkonten ohne Bestand"
 					},
