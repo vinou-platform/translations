@@ -250,6 +250,17 @@
 			"save": "Salva",
 			"download": "Scaricamento",
 			"unlock": "Sbloccare"
+		},
+		"tooltips": {
+			"delete": "Eliminare",
+			"edit": "Modificare",
+			"save": "Salva",
+			"view": "Visualizzazione",
+			"download": "Scaricamento",
+			"lock": "Serratura",
+			"unlock": "Sbloccare",
+			"activate": "Attivare",
+			"deactivate": "Disattivare"
 		}
 	},
 	"loader": {

@@ -250,6 +250,17 @@
 			"save": "Salvar",
 			"download": "Descargar",
 			"unlock": "Desbloquear"
+		},
+		"tooltips": {
+			"delete": "Borrar",
+			"edit": "Editar",
+			"save": "Ahorrar",
+			"view": "Vista",
+			"download": "Descargar",
+			"lock": "Cerrar",
+			"unlock": "desbloquear",
+			"activate": "Activar",
+			"deactivate": "Desactivar"
 		}
 	},
 	"loader": {
