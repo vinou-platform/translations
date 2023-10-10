@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"analysisJobs": "Órdenes de análisis",
+		"apps": "Aplicaciones",
 		"articles": "Artículos",
 		"articles.bulkWines": "Vinos a granel",
 		"articles.bundles": "Paquete de productos",
@@ -30,23 +31,24 @@
 		"customers.merchants.invitation": "Invitación",
 		"customers.laboratories": "Laboratorios",
 		"dashboard": "Tablero",
+		"licenses": "Licencias",
 		"marketing": "Márketing",
 		"marketing.campaigns": "Campañas",
 		"marketing.catalogs": "Catálogos",
+		"marketing.news": "Noticias",
+		"marketing.texts": "Textos",
 		"merchants": "Comerciantes",
 		"network": "Mi red",
-		"news": "Noticias",
 		"qrcodes": "QR-Codes",
 		"reports": "Informes",
 		"sales": "Ventas",
 		"sales.offers": "Ofertas",
 		"sales.orders": "Ordenes",
 		"sales.statistics": "Estadísticas",
+		"settings": "Ajustes",
 		"tokens": "Conexiones",
 		"users": "Usuario",
-		"wineries": "Propiedades vinícolas",
-
-		"settings": "Ajustes"
+		"wineries": "Propiedades vinícolas"
 	},
 	"general": {
 		"actions": {
@@ -1199,6 +1201,9 @@
 				"active": "Usuario activo"
 			},
 			"gallery": {
+				"filters": {
+					"role": "Filtrar roles de usuario"
+				},
 				"lastModification": "Última modificación"
 			}
 		},
@@ -1229,6 +1234,11 @@
 			"delete": "No puede eliminar un usuario que haya iniciado sesión!",
 			"imageUpload": "Error durante el procesamiento de imágenes!",
 			"lostpasswordSend": "Error al enviar el correo electrónico!"
+		},
+		"roles": {
+			"1": "Raíz",
+			"2": "Administrador",
+			"3": "Usuario"
 		}
 	},
 	"statistic": {
@@ -3947,6 +3957,9 @@
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this text?"
+		},
+		"hints": {
+			"noContent": "¡No hay texto disponible!"
 		},
 		"identifier": {
 			"legalnotice": "Legal notice",

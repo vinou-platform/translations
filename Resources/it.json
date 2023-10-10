@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"analysisJobs": "Ordini di analisi",
+		"apps": "Applicazioni",
 		"articles": "Articolo",
 		"articles.bulkWines": "Vini sfusi",
 		"articles.bundles": "Pacchetto di prodotti",
@@ -29,24 +30,25 @@
 		"customers.merchants.regular": "Account completo",
 		"customers.merchants.invitation": "Invito",
 		"customers.laboratories": "Laboratori",
+		"licenses": "Licenze",
 		"dashboard": "Pannello",
 		"marketing": "Marketing",
 		"marketing.campaigns": "Campagne",
 		"marketing.catalogs": "Cataloghi",
+		"marketing.news": "Attuale",
+		"marketing.texts": "Testi",
 		"merchants": "Distributori",
 		"network": "Network",
-		"news": "Attuale",
 		"qrcodes": "Codice QR",
 		"reports": "Rapporti",
 		"sales": "Vendite",
 		"sales.offers": "Accordi",
 		"sales.orders": "Ordini",
 		"sales.statistics": "Statistiche",
+		"settings": "Impostazioni",
 		"tokens": "Token",
 		"users": "Utente",
-		"wineries": "Vigneti",
-
-		"settings": "Impostazioni"
+		"wineries": "Vigneti"
 	},
 	"general": {
 		"actions": {
@@ -1199,6 +1201,9 @@
 				"active": "Utente attivo"
 			},
 			"gallery": {
+				"filters": {
+					"role": "Filtra i ruoli utente"
+				},
 				"lastModification": "Ultima modifica"
 			}
 		},
@@ -1229,6 +1234,11 @@
 			"delete": "Non puoi eliminare un utente connesso!",
 			"imageUpload": "Errore durante l'elaborazione dell'immagine!",
 			"lostpasswordSend": "Errore durante l'invio dell'e-mail!"
+		},
+		"roles": {
+			"1": "Radice",
+			"2": "Amministratore",
+			"3": "Utente"
 		}
 	},
 	"statistic": {
@@ -3947,6 +3957,9 @@
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this text?"
+		},
+		"hints": {
+			"noContent": "Nessun testo disponibile!"
 		},
 		"identifier": {
 			"legalnotice": "Legal notice",

@@ -1,6 +1,7 @@
 {
 	"modules": {
 		"analysisJobs": "Analyseaufträge",
+		"apps": "Applikationen",
 		"articles": "Artikel",
 		"articles.bulkWines": "Fassweine",
 		"articles.bundles": "Weinpakete",
@@ -30,23 +31,24 @@
 		"customers.merchants.invitation": "Eingeladen",
 		"customers.laboratories": "Weinlabore",
 		"dashboard": "Dashboard",
+		"licenses": "Lizenz-Verträge",
 		"marketing": "Vermarktung",
 		"marketing.campaigns": "Kampagnen",
 		"marketing.catalogs": "Preislisten",
+		"marketing.news": "Neuigkeiten",
+		"marketing.texts": "Texte",
 		"merchants": "Händler",
 		"network": "Mein Netzwerk",
-		"news": "Neuigkeiten",
 		"qrcodes": "QR-Codes",
 		"reports": "Reports",
 		"sales": "Verkauf",
 		"sales.offers": "Angebote",
 		"sales.orders": "Bestellungen",
 		"sales.statistics": "Statistiken",
+		"settings": "Einstellungen",
 		"tokens": "Verknüpfungen",
 		"users": "Benutzer",
-		"wineries": "Weingüter",
-
-		"settings": "Einstellungen"
+		"wineries": "Weingüter"
 	},
 	"general": {
 		"actions": {
@@ -1199,6 +1201,9 @@
 				"active": "Aktive Benutzer"
 			},
 			"gallery": {
+				"filters": {
+					"role": "Benutzerrolle filtern"
+				},
 				"lastModification": "Letzte Änderung"
 			}
 		},
@@ -1229,6 +1234,11 @@
 			"delete": "Du kannst den aktuell angemeldeten Benutzer nicht löschen!",
 			"imageUpload": "Fehler beim Bildupload!",
 			"lostpasswordSend": "Mail senden fehlgeschlagen!"
+		},
+		"roles": {
+			"1": "Root",
+			"2": "Administrator",
+			"3": "Benutzer"
 		}
 	},
 	"statistic": {
@@ -3947,6 +3957,9 @@
 		},
 		"dialogs": {
 			"delete": "Möchtest Du diesen Text wirklich löschen?"
+		},
+		"hints": {
+			"noContent": "Kein Text vorhanden!"
 		},
 		"identifier": {
 			"legalnotice": "Impressum",
