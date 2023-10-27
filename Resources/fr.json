@@ -204,6 +204,7 @@
 			"imageSize": "<b>Recommandé pour un meilleur rendu</b><br/>Dimension: min. Largeur ou hauteur 1500px<br/>Format de fichier: .png (exempté)",
 			"multiselectable": "Sélection multiple possible (CTRL + clic)",
 			"required": "Champ obligatoire",
+			"minLength": "au moins {value} caractères",
 			"weight": "Poids, emballage compris (pour l'expédition)"
 		},
 		"messages": {
