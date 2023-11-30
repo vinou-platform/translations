@@ -2869,7 +2869,11 @@
 			"wineYeasts": "Weinhefen",
 			"caramel": "Karamell",
 			"allylIsothiocyanate": "Allylisothiocyanat",
-			"inactivatedYeastO": "Inaktivierte Hefen"
+			"inactivatedYeastO": "Inaktivierte Hefen",
+			"sucrose": "Saccharose",
+			"concentratedGrapeMust": "konzentrierter Traubenmost",
+			"fillingDosage": "Fülldosage",
+			"shippingDosage": "Versanddosage"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

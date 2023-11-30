@@ -2869,7 +2869,11 @@
 			"wineYeasts": "Lieviti di vino",
 			"caramel": "caramello",
 			"allylIsothiocyanate": "Isotiocianato di allile",
-			"inactivatedYeastO": "Lievito inattivato"
+			"inactivatedYeastO": "Lievito inattivato",
+			"sucrose": "Saccarosio",
+			"concentratedGrapeMust": "Mosto d'uva concentrato",
+			"fillingDosage": "Dosaggio di riempimento",
+			"shippingDosage": "Dose di spedizione"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

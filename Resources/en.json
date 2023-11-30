@@ -2869,7 +2869,11 @@
 			"wineYeasts": "Wine yeasts",
 			"caramel": "caramel",
 			"allylIsothiocyanate": "Allyl isothiocyanate",
-			"inactivatedYeastO": "Inactivated yeast"
+			"inactivatedYeastO": "Inactivated yeast",
+			"sucrose": "Sucrose",
+			"concentratedGrapeMust": "Concentrated grape must",
+			"fillingDosage": "Filling dosage",
+			"shippingDosage": "Shipping dosage"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

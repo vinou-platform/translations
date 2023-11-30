@@ -2869,7 +2869,11 @@
 			"wineYeasts": "Levures de vin",
 			"caramel": "caramel",
 			"allylIsothiocyanate": "Isothiocyanate d'allyle",
-			"inactivatedYeastO": "Levure inactivée"
+			"inactivatedYeastO": "Levure inactivée",
+			"sucrose": "Saccharose",
+			"concentratedGrapeMust": "Moût de raisin concentré",
+			"fillingDosage": "Dosage de remplissage",
+			"shippingDosage": "Dosage d'expédition"
 		},
 		"factgroups": {
 			"nutritionalInformation": {
