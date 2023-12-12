@@ -6808,7 +6808,13 @@
 			"8025": "Vorarlberg"
 		},
 		"au": {
-			"15001": "Australié du Sud-Est"
+			"15001": "South-Eastern Australia",
+			"15002": "Western Australia",
+			"15003": "South Australia",
+			"15004": "Queensland",
+			"15005": "Victoria",
+			"15006": "Tasmanien",
+			"15007": "New South Wales"
 		},
 		"be": {
 			"3000": "Hageland (VL)",
