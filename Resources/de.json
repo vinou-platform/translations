@@ -13,6 +13,7 @@
 		"cellar.analysisOrders": "Analyseaufträge",
 		"cellar.barrels": "Behälter",
 		"cellar.book": "Weine",
+		"cellar.reports": "Berichte",
 		"cellar.substances": "Stoffe",
 		"clients": "Kunden",
 		"clients.groups": "Gruppen",
@@ -162,6 +163,22 @@
 			"winesearch": {
 				"label": "WINESEARCH.io",
 				"description": "Sichtbar in der Weinsuchmaschine <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
+			}
+		},
+		"formats": {
+			"fileType": {
+				"label": "Dateityp",
+				"pdf": "PDF",
+				"xls": "Excel",
+				"csv": "CSV",
+				"json": "JSON"
+			},
+			"humanReadable": {
+				"label": "Menschenlesbare Werte und Kopfzeilen"
+			},
+			"qrCode": {
+				"label": "QR-Code",
+				"show": "einblenden"
 			}
 		},
 		"filters": {
@@ -695,7 +712,8 @@
 			"number": "Weinnr.",
 			"referenceNumber": "A.P.Nr./Losnr.",
 			"stock": "Bestand",
-			"volume": "Bestand"
+			"volume": "Bestand",
+			"bottleVolume": "Flaschenbestand"
 		},
 		"actions": {
 			"create": {
@@ -709,7 +727,8 @@
 				"cellarBook": "Kellerbuch",
 				"grapeMarcLogs": "Tresterbuch",
 				"substanceLogs": "Stoffliste",
-				"wineBook": "Weinbuch"
+				"wineBook": "Weinbuch",
+				"harvestBook": "Herbstbuch"
 			}
 		},
 		"views": {
@@ -781,6 +800,72 @@
 			"created": "Fassweinverkauf über Vinou Netzwerk erstellt.",
 			"changed": "Fassweinverkauf über Vinou Netzwerk bearbeitet.",
 			"deleted": "Fassweinverkauf über Vinou Netzwerk abgebrochen."
+		}
+	},
+	"cellarReport": {
+		"views": {
+			"legal": {
+				"title": "Berichte für die Weinkontrolle",
+				"description": "In diesem Bereich findest Du alle Berichte für die Auswertungen der Weinkontrolle, wie z.B. Journal, Kellerbuch, Behälterlist etc. Die Berichte sind dabei jeweils für die Produktionsjahre aufgelistet und können separat heruntergeladen werden."
+			},
+			"analysis": {
+				"title": "Analysen und Auswertungen",
+				"description": "In diesem Bereich findest Du Auswertungen die Dir helfen Deinen Keller im Blick zu behalten."
+			}
+		},
+		"fields": {
+			"vintage": "Jahrgang",
+			"deadline": "Stichtag",
+			"sum": "Gesamtmenge",
+			"currentVolume": "Bestand",
+			"currentBottles": "Flaschen",
+			"wineInfo": "Weininformationen",
+			"groupBy": {
+				"label": "Gruppierung",
+				"none": "Ohne",
+				"location": "Aufstellort",
+				"winetype": "Weintyp",
+				"vintage": "Jahrgang"
+			}
+		},
+		"types": {
+			"cellarBook": {
+				"title": "Kellerbuch",
+				"description": "<b>ACHTUNG!</b> Das Kellerbuch für Digitale Weinbuchführungssysteme besteht ausschließlich aus dem reinen Journal aus den durchgeführten Aktionen innerhalb des Kellers. Dabei werden alle durchgeführten Aktionen innerhalb des Kellers chronologisch aufgelistet inklusive des Durchführungszeitpunktes und des dazugehörigen Mitarbeiters."
+			},
+			"harvestBook": {
+				"title": "Herbstbuch",
+				"description": "Das Herbst stellt eine Übersicht aller Ernten je Produktionsjahr als PDF bereit."
+			},
+			"wineBook": {
+				"title": "Weinbuch",
+				"description": "Das Weinbuch stellt eine Übersicht aller Weinkonten je Produktionsjahr als PDF bereit."
+			},
+			"bottleBook": {
+				"title": "Flaschenbuch",
+				"description": "Das Flaschenbuch stellt eine Übersicht aller Flaschenbestände bereit.<br>"
+			},
+			"grapeMarcBook": {
+				"title": "Tresterbuch",
+				"description": "Im Tresterbuch sind alle Vorgänge dokumentiert die im Zusammenhang mit der Tresterverwertung stehen."
+			},
+			"barrelList": {
+				"title": "Behälterliste",
+				"description": "Listet alle aktuell im Keller vorhandenen Behälter auf."
+			},
+			"barrelFillLevel": {
+				"title": "Füllzustand zum Stichtag",
+				"description": "Listet alle Behälter mit ihrem Inhalt zu einem bestimmten Stichtag auf."
+			},
+			"wineStatus": {
+				"title": "Weinübersicht nach Jahrgang",
+				"description": "Listet alle Weine mit Bestand von einem Starttag bis zu einem bestimmten Stichtag auf."
+			}
+		},
+		"hints": {
+			"cellarBottleBook": "In <b>Vinou-Cellar</b> Werden alle Flaschenbewegungen regulär im Flaschenbuch dokumentiert. Nutzt du ein Warenwirtschaftssystem kannst du die Bestände einmalig über den Vorgang Flaschenwein- oder Fassweinfreigabe für die Überführung nutzen. Frage uns nach möglichen Schnittstellen <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
+			"officeBottleBook": "Durch die Nutzung von <b>Vinou-Office</b> werden die Flaschenbewegungen als Lagerbewegung in der Warenwirtschaft und NICHT im Keller dokumentiert. Die Bestände für Flaschenwein als auch für Fassweinverkäufe werden über den jeweiligen Freigabevorgang (Kelleraktion: Flaschenweinfreigabe & Fassweinfreigabe) einmalig in die Warenwirtschaft überführt.",
+			"emptyVintageFilter": "(Alle Jahrgänge wenn keiner gewählt)"
 		}
 	},
 	"barrel": {
@@ -857,6 +942,9 @@
 			},
 			"clay": {
 				"name": "Ton"
+			},
+			"beton": {
+				"name": "Beton"
 			},
 			"concrete": {
 				"name": "Beton"
