@@ -112,7 +112,8 @@
 			"metaDescription": "Meta-Description",
 			"pathSegment": "Pfadsegment",
 			"exactSearch": "Jedes Suchwort muss im Kunden-Datensatz vorkommen. Leerzeichen trennen Suchwörter.",
-			"salesAmmount": "Umsatz in {currency}"
+			"salesAmmount": "Umsatz in {currency}",
+			"sum": "Summe"
 		},
 		"tabs": {
 			"files": "Dateien",
@@ -222,7 +223,8 @@
 			"multiselectable": "Mehrfachauswahl möglich (STRG + Klick)",
 			"required": "Pflichtfeld",
 			"minLength": "mindestens {value} Zeichen",
-			"weight": "Gewicht inklusive Verpackung (für Versand)"
+			"weight": "Gewicht inklusive Verpackung (für Versand)",
+			"allIfEmpty": "(Alle wenn keiner gewählt)"
 		},
 		"messages": {
 			"danger": {
@@ -806,7 +808,7 @@
 		"views": {
 			"legal": {
 				"title": "Berichte für die Weinkontrolle",
-				"description": "In diesem Bereich findest Du alle Berichte für die Auswertungen der Weinkontrolle, wie z.B. Journal, Kellerbuch, Behälterlist etc. Die Berichte sind dabei jeweils für die Produktionsjahre aufgelistet und können separat heruntergeladen werden."
+				"description": "In diesem Bereich findest Du alle Berichte für die Auswertungen der Weinkontrolle, wie z.B. Journal, Kellerbuch, Behälterliste etc. Die Berichte sind dabei jeweils für die Produktionsjahre aufgelistet und können separat heruntergeladen werden."
 			},
 			"analysis": {
 				"title": "Analysen und Auswertungen",
@@ -853,19 +855,22 @@
 				"title": "Behälterliste",
 				"description": "Listet alle aktuell im Keller vorhandenen Behälter auf."
 			},
+			"substanceList": {
+				"title": "Stoffliste",
+				"description": "Listet alle Behandlungsstoffe mit Bestand auf, die gerade im Lager vorhanden sind."
+			},
 			"barrelFillLevel": {
 				"title": "Füllzustand zum Stichtag",
 				"description": "Listet alle Behälter mit ihrem Inhalt zu einem bestimmten Stichtag auf."
 			},
 			"wineStatus": {
-				"title": "Weinübersicht nach Jahrgang",
-				"description": "Listet alle Weine mit Bestand von einem Starttag bis zu einem bestimmten Stichtag auf."
+				"title": "Weinübersicht zum Stichtag",
+				"description": "Listet alle Weine mit Bestand, Flaschenvolumen und Behälter zu einem bestimmten Stichtag auf."
 			}
 		},
 		"hints": {
 			"cellarBottleBook": "In <b>Vinou-Cellar</b> Werden alle Flaschenbewegungen regulär im Flaschenbuch dokumentiert. Nutzt du ein Warenwirtschaftssystem kannst du die Bestände einmalig über den Vorgang Flaschenwein- oder Fassweinfreigabe für die Überführung nutzen. Frage uns nach möglichen Schnittstellen <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
-			"officeBottleBook": "Durch die Nutzung von <b>Vinou-Office</b> werden die Flaschenbewegungen als Lagerbewegung in der Warenwirtschaft und NICHT im Keller dokumentiert. Die Bestände für Flaschenwein als auch für Fassweinverkäufe werden über den jeweiligen Freigabevorgang (Kelleraktion: Flaschenweinfreigabe & Fassweinfreigabe) einmalig in die Warenwirtschaft überführt.",
-			"emptyVintageFilter": "(Alle Jahrgänge wenn keiner gewählt)"
+			"officeBottleBook": "Durch die Nutzung von <b>Vinou-Office</b> werden die Flaschenbewegungen als Lagerbewegung in der Warenwirtschaft und NICHT im Keller dokumentiert. Die Bestände für Flaschenwein als auch für Fassweinverkäufe werden über den jeweiligen Freigabevorgang (Kelleraktion: Flaschenweinfreigabe & Fassweinfreigabe) einmalig in die Warenwirtschaft überführt."
 		}
 	},
 	"barrel": {
