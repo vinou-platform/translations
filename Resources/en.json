@@ -13,6 +13,7 @@
 		"cellar.analysisOrders": "Analysis orders",
 		"cellar.barrels": "Barrels",
 		"cellar.book": "Wines",
+		"cellar.reports": "Reports",
 		"cellar.substances": "Substances",
 		"clients": "Clients",
 		"clients.groups": "Groups",
@@ -111,7 +112,8 @@
 			"metaDescription": "Meta description",
 			"pathSegment": "Path segment",
 			"exactSearch": "Client data must contain every search word. Whitespaces splits search phrase into search word.",
-			"salesAmmount": "Sales ammount in {currency}"
+			"salesAmmount": "Sales ammount in {currency}",
+			"sum": "Total sum"
 		},
 		"tabs": {
 			"files": "Files",
@@ -164,6 +166,22 @@
 				"description": "Visible to wine search engine <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
 			}
 		},
+		"formats": {
+			"fileType": {
+				"label": "Filetype",
+				"pdf": "PDF",
+				"xls": "Excel",
+				"csv": "CSV",
+				"json": "JSON"
+			},
+			"humanReadable": {
+				"label": "Human readable values and headlines"
+			},
+			"qrCode": {
+				"label": "QR-Code",
+				"show": "show"
+			}
+		},
 		"filters": {
 			"date": {
 				"from": "Start",
@@ -205,7 +223,8 @@
 			"multiselectable": "Multiple select possible (CTRL + click)",
 			"required": "Required",
 			"minLength": "at least {value} characters",
-			"weight": "Weight including packaging (for shipping)"
+			"weight": "Weight including packaging (for shipping)",
+			"allIfEmpty": "(All if nothing selected)"
 		},
 		"messages": {
 			"danger": {
@@ -695,7 +714,8 @@
 			"number": "Wine no.",
 			"referenceNumber": "Ref.-no.",
 			"stock": "Stock",
-			"volume": "Stock"
+			"volume": "Stock",
+			"bottleVolume": "Bottle stock"
 		},
 		"actions": {
 			"create": {
@@ -709,7 +729,8 @@
 				"cellarBook": "Cellar book",
 				"grapeMarcLogs": "Grape marc log",
 				"substanceLogs": "Substance log",
-				"wineBook": "Wine book"
+				"wineBook": "Wine book",
+				"harvestBook": "Harvest book"
 			}
 		},
 		"views": {
@@ -781,6 +802,75 @@
 			"created": "Bulk wine sale through Vinou network created.",
 			"changed": "Bulk wine sale through Vinou network changed.",
 			"deleted": "Bulk wine sale through Vinou network deleted."
+		}
+	},
+	"cellarReport": {
+		"views": {
+			"legal": {
+				"title": "Reports for legal control",
+				"description": "In this area you will find all reports for wine control evaluations, such as journal, cellar book, container list, etc. The reports are listed for the production years and can be downloaded separately."
+			},
+			"analysis": {
+				"title": "Analyzes and evaluations",
+				"description": "In this area you will find evaluations that will help you keep an eye on your cellar."
+			}
+		},
+		"fields": {
+			"vintage": "Vintage",
+			"deadline": "Deadline",
+			"sum": "Sum",
+			"currentVolume": "Barrels",
+			"currentBottles": "Bottles",
+			"wineInfo": "Wineinformations",
+			"groupBy": {
+				"label": "Group by",
+				"none": "None",
+				"location": "Location",
+				"winetype": "Type of wine",
+				"vintage": "Vintage"
+			}
+		},
+		"types": {
+			"cellarBook": {
+				"title": "Cellar book",
+				"description": "<b>ATTENTION!</b> The cellar book for digital wine accounting systems consists exclusively of the pure journal of the actions carried out within the cellar. All actions carried out within the cellar are listed chronologically, including the time at which they were carried out and the associated employee."
+			},
+			"harvestBook": {
+				"title": "Harvest book",
+				"description": "Autumn provides an overview of all harvests per production year as a PDF."
+			},
+			"wineBook": {
+				"title": "Wine book",
+				"description": "The wine book provides an overview of all wine accounts for each year of production as a PDF."
+			},
+			"bottleBook": {
+				"title": "Bottle book",
+				"description": "The bottle book provides an overview of all bottle stocks.<br>"
+			},
+			"grapeMarcBook": {
+				"title": "Grape marc book",
+				"description": "All processes related to pomace utilization are documented in the pomace book."
+			},
+			"barrelList": {
+				"title": "Barrel list",
+				"description": "Lists all containers currently in the basement."
+			},
+			"substanceList": {
+				"title": "Substance list",
+				"description": "Lists all treatment materials with inventory that are currently in the warehouse."
+			},
+			"barrelFillLevel": {
+				"title": "Filling status on the deadline",
+				"description": "Lists all containers and their contents as of a specific date."
+			},
+			"wineStatus": {
+				"title": "Wine overview as of the deadline",
+				"description": "Lists all wines with inventory, bottle volume and container as of a specific date."
+			}
+		},
+		"hints": {
+			"cellarBottleBook": "In <b>Vinou-Cellar</b> all bottle movements are regularly documented in the bottle book. If you use an inventory management system, you can use the inventory once for the transfer using the bottled wine or barrel wine release process. Ask us about possible interfaces <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
+			"officeBottleBook": "By using <b>Vinou-Office</b>, the bottle movements are documented as warehouse movements in the inventory management and NOT in the cellar. The stocks for bottled wine and for barrel wine sales are transferred to the merchandise management once via the respective release process (cellar campaign: bottled wine release & barrel wine release)."
 		}
 	},
 	"barrel": {

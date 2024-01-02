@@ -13,6 +13,7 @@
 		"cellar.analysisOrders": "Ordres d'analyse",
 		"cellar.barrels": "Récipient",
 		"cellar.book": "Livre de la cave",
+		"cellar.reports": "Rapports",
 		"cellar.substances": "Substances",
 		"clients": "Clients",
 		"clients.groups": "Groupes",
@@ -111,7 +112,8 @@
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segment de chemin",
 			"exactSearch": "Les données du client doivent contenir chaque mot de recherche. Les espaces blancs divisent la phrase de recherche en mot de recherche.",
-			"salesAmmount": "Montant des ventes en {currency}"
+			"salesAmmount": "Montant des ventes en {currency}",
+			"sum": "Somme totale"
 		},
 		"tabs": {
 			"files": "Fichiers",
@@ -164,6 +166,22 @@
 				"description": "Visible par le moteur de recherche de vins <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
 			}
 		},
+		"formats": {
+			"fileType": {
+				"label": "Type de fichier",
+				"pdf": "PDF",
+				"xls": "Excel",
+				"csv": "CSV",
+				"json": "JSON"
+			},
+			"humanReadable": {
+				"label": "Valeurs et titres lisibles par l'homme"
+			},
+			"qrCode": {
+				"label": "QR-Code",
+				"show": "montrer"
+			}
+		},
 		"filters": {
 			"date": {
 				"from": "À partir de",
@@ -205,7 +223,8 @@
 			"multiselectable": "Sélection multiple possible (CTRL + clic)",
 			"required": "Champ obligatoire",
 			"minLength": "au moins {value} caractères",
-			"weight": "Poids, emballage compris (pour l'expédition)"
+			"weight": "Poids, emballage compris (pour l'expédition)",
+			"allIfEmpty": "(Tout si rien n'est sélectionné)"
 		},
 		"messages": {
 			"danger": {
@@ -695,7 +714,8 @@
 			"number": "Numéro du vin",
 			"referenceNumber": "Numéro AP",
 			"stock": "Stock",
-			"volume": "Stock"
+			"volume": "Stock",
+			"bottleVolume": "Stock de bouteilles"
 		},
 		"actions": {
 			"create": {
@@ -709,7 +729,8 @@
 				"cellarBook": "Livre de la cave",
 				"grapeMarcLogs": "Livre du marc",
 				"substanceLogs": "List des substances",
-				"wineBook": "Livre de vin"
+				"wineBook": "Livre de vin",
+				"harvestBook": "Livre de récolte"
 			}
 		},
 		"views": {
@@ -783,6 +804,76 @@
 			"deleted": "Vente de vins en vrac via le réseau Vinou supprimée."
 		}
 	},
+	"cellarReport": {
+		"views": {
+			"legal": {
+				"title": "Rapports pour contrôle légal",
+				"description": "Dans cette zone, vous trouverez tous les rapports d'évaluation du contrôle du vin, tels que le journal, le livre de cave, la liste des conteneurs, etc. Les rapports sont répertoriés par années de production et peuvent être téléchargés séparément."
+			},
+			"analysis": {
+				"title": "Analyses et évaluations",
+				"description": "Vous trouverez dans cet espace des évaluations qui vous aideront à garder un œil sur votre cave."
+			}
+		},
+		"fields": {
+			"vintage": "Ancien",
+			"deadline": "Date limite",
+			"sum": "Somme",
+			"currentVolume": "Barils",
+			"currentBottles": "Bouteilles",
+			"wineInfo": "Informations sur le vin",
+			"groupBy": {
+				"label": "Par groupe",
+				"none": "Aucun",
+				"location": "Emplacement",
+				"winetype": "Type de vin",
+				"vintage": "Ancien"
+			}
+		},
+		"types": {
+			"cellarBook": {
+				"title": "Livre de cave",
+				"description": "<b>ATTENTION !</b> Le livre de cave pour les systèmes comptables numériques du vin est constitué exclusivement du pur journal des actions réalisées au sein de la cave. Toutes les actions réalisées au sein de la cave sont répertoriées chronologiquement, comprenant l'heure à laquelle elles ont été réalisées et le salarié associé."
+			},
+			"harvestBook": {
+				"title": "Livre de récolte",
+				"description": "Autumn fournit un aperçu de toutes les récoltes par année de production au format PDF."
+			},
+			"wineBook": {
+				"title": "Livre du vin",
+				"description": "Le livre du vin fournit un aperçu de tous les comptes du vin pour chaque année de production au format PDF."
+			},
+			"bottleBook": {
+				"title": "Livre de bouteilles",
+				"description": "Le livre des bouteilles donne un aperçu de tous les stocks de bouteilles.<br>"
+			},
+			"grapeMarcBook": {
+				"title": "Livre de marc de raisin",
+				"description": "Tous les processus liés à l'utilisation du marc sont documentés dans le livre du marc."
+			},
+			"barrelList": {
+				"title": "Liste des barils",
+				"description": "Répertorie tous les conteneurs actuellement au sous-sol."
+			},
+			"substanceList": {
+				"title": "Liste des substances",
+				"description": "Répertorie tous les matériaux de traitement en stock qui se trouvent actuellement dans l'entrepôt."
+			},
+			"barrelFillLevel": {
+				"title": "Statut de remplissage à la date limite",
+				"description": "Répertorie tous les conteneurs et leur contenu à une date précise."
+			},
+			"wineStatus": {
+				"title": "Aperçu des vins à la date limite",
+				"description": "Répertorie tous les vins avec inventaire, volume de bouteille et contenant à une date précise."
+			}
+		},
+		"hints": {
+			"cellarBottleBook": "Dans <b>Vinou-Cellar</b>, tous les mouvements de bouteilles sont régulièrement documentés dans le livre des bouteilles. Si vous utilisez un système de gestion des stocks, vous pouvez utiliser l'inventaire une seule fois pour le transfert en utilisant le processus de libération du vin en bouteille ou du vin en barrique. Renseignez-vous sur les interfaces possibles <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
+			"officeBottleBook": "En utilisant <b>Vinou-Office</b>, les mouvements de bouteilles sont documentés comme des mouvements d'entrepôt dans la gestion des stocks et NON dans la cave. Les stocks pour le vin en bouteille et pour la vente de vin en fût sont transférés une seule fois à la gestion des marchandises via le processus de libération correspondant (campagne de cave : libération du vin en bouteille et libération du vin en fût)."
+		}
+	},
+
 	"barrel": {
 		"fields": {
 			"bookingStamp": "Heure d'installation",

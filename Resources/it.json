@@ -13,6 +13,7 @@
 		"cellar.analysisOrders": "Ordini di analisi",
 		"cellar.barrels": "Recipiente",
 		"cellar.book": "Libro della cantina",
+		"cellar.reports": "Rapporti",
 		"cellar.substances": "Sostanza",
 		"clients": "Cliente",
 		"clients.groups": "Gruppi",
@@ -111,7 +112,8 @@
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segmento di percorso",
 			"exactSearch": "I dati del cliente devono contenere ogni parola di ricerca. Gli spazi bianchi suddividono la frase di ricerca nella parola di ricerca.",
-			"salesAmmount": "Importo delle vendite in {currency}"
+			"salesAmmount": "Importo delle vendite in {currency}",
+			"sum": "Somma totale"
 		},
 		"tabs": {
 			"files": "File",
@@ -164,6 +166,22 @@
 				"description": "Visibile al motore di ricerca del vino <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
 			}
 		},
+		"formats": {
+			"fileType": {
+				"label": "Tipo di file",
+				"pdf": "PDF",
+				"xls": "Excel",
+				"csv": "CSV",
+				"json": "JSON"
+			},
+			"humanReadable": {
+				"label": "Valeurs et titres lisibles par l'homme"
+			},
+			"qrCode": {
+				"label": "QR-Code",
+				"show": "spettacolo"
+			}
+		},
 		"filters": {
 			"date": {
 				"from": "di",
@@ -205,7 +223,8 @@
 			"multiselectable": "Scelta multipla è possibile (Ctrl + click)",
 			"required": "Campo obbligatore",
 			"minLength": "almeno {value} caratteri",
-			"weight": "Peso incluso imballo (per spedizione)"
+			"weight": "Peso incluso imballo (per spedizione)",
+			"allIfEmpty": "(Tutto se non è stato selezionato nulla)"
 		},
 		"messages": {
 			"danger": {
@@ -695,7 +714,8 @@
 			"number": "Vino-Nr.",
 			"referenceNumber": "Numero di omologazione ufficiale",
 			"stock": "Stock",
-			"volume": "Stock"
+			"volume": "Stock",
+			"bottleVolume": "Scorta di bottiglia"
 		},
 		"actions": {
 			"create": {
@@ -709,7 +729,8 @@
 				"cellarBook": "Cantina",
 				"grapeMarcLogs": "Libro del vinaccia",
 				"substanceLogs": "Elenco di sostanze",
-				"wineBook": "Libro del vino"
+				"wineBook": "Libro del vino",
+				"harvestBook": "Libro della vendemmia"
 			}
 		},
 		"views": {
@@ -781,6 +802,75 @@
 			"created": "Vendita di vino sfuso attraverso la rete Vinou creata.",
 			"changed": "Vendita di vino sfuso attraverso la rete Vinou è cambiata.",
 			"deleted": "Vendita di vino sfuso attraverso la rete Vinou cancellata."
+		}
+	},
+	"cellarReport": {
+		"views": {
+			"legal": {
+				"title": "Rapporti per il controllo legale",
+				"description": "In quest'area troverete tutti i report per le valutazioni del controllo del vino, come giornale, libro di cantina, elenco dei contenitori, ecc. I report sono elencati per le annate di produzione e possono essere scaricati separatamente."
+			},
+			"analysis": {
+				"title": "Analisi e valutazioni",
+				"description": "In quest'area troverai valutazioni che ti aiuteranno a tenere d'occhio la tua cantina."
+			}
+		},
+		"fields": {
+			"vintage": "Vintage",
+			"deadline": "Scadenza",
+			"sum": "Somma",
+			"currentVolume": "Barili",
+			"currentBottles": "Bottiglie",
+			"wineInfo": "Informazioni sul vino",
+			"groupBy": {
+				"label": "Raggruppa per",
+				"none": "Nessuno",
+				"location": "Posizione",
+				"winetype": "Tipo di vino",
+				"vintage": "Vintage"
+			}
+		},
+		"types": {
+			"cellarBook": {
+				"title": "Libro della cantina",
+				"description": "<b>ATTENZIONE!</b> Il libretto di cantina per i sistemi di contabilità digitale del vino è costituito esclusivamente dal puro registro delle azioni svolte in cantina. Tutte le azioni eseguite all'interno della cantina sono elencate in ordine cronologico, compreso l'orario in cui sono state eseguite e il dipendente ad esse associato."
+			},
+			"harvestBook": {
+				"title": "Libro della vendemmia",
+				"description": "L'autunno offre una panoramica di tutti i raccolti per anno di produzione in formato PDF."
+			},
+			"wineBook": {
+				"title": "Libro del vino",
+				"description": "Il libro dei vini fornisce una panoramica di tutti i conti del vino per ogni anno di produzione in formato PDF."
+			},
+			"bottleBook": {
+				"title": "Libro sulla bottiglia",
+				"description": "Il libro delle bottiglie fornisce una panoramica di tutte le scorte di bottiglie.<br>"
+			},
+			"grapeMarcBook": {
+				"title": "Libro delle vinacce",
+				"description": "Tutti i processi relativi all'utilizzo della sansa sono documentati nel libro della sansa."
+			},
+			"barrelList": {
+				"title": "Elenco dei barili",
+				"description": "Elenca tutti i contenitori attualmente nel seminterrato."
+			},
+			"substanceList": {
+				"title": "Elenco delle sostanze",
+				"description": "Elenca tutti i materiali di trattamento con inventario attualmente presenti nel magazzino."
+			},
+			"barrelFillLevel": {
+				"title": "Stato di compilazione alla scadenza",
+				"description": "Elenca tutti i contenitori e i relativi contenuti a partire da una data specifica."
+			},
+			"wineStatus": {
+				"title": "Panoramica dei vini alla scadenza",
+				"description": "Elenca tutti i vini con inventario, volume della bottiglia e contenitore a partire da una data specifica."
+			}
+		},
+		"hints": {
+			"cellarBottleBook": "In <b>Vinou-Cellar</b> tutti i movimenti delle bottiglie sono regolarmente documentati nel libro delle bottiglie. Se utilizzi un sistema di gestione dell'inventario, puoi utilizzare l'inventario una volta per il trasferimento utilizzando il processo di rilascio del vino in bottiglia o in botte. Chiedici informazioni sulle possibili interfacce <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
+			"officeBottleBook": "Utilizzando <b>Vinou-Office</b>, i movimenti delle bottiglie vengono documentati come movimenti di magazzino nella gestione dell'inventario e NON in cantina. Le scorte per il vino in bottiglia e per la vendita del vino in botte vengono trasferite una volta alla gestione delle merci tramite il rispettivo processo di rilascio (campagna di cantina: rilascio del vino in bottiglia e rilascio del vino in botte)."
 		}
 	},
 	"barrel": {

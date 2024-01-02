@@ -13,6 +13,7 @@
 		"cellar.analysisOrders": "Órdenes de análisis",
 		"cellar.barrels": "Recipientes",
 		"cellar.book": "Mi libro de bodega",
+		"cellar.reports": "Informes",
 		"cellar.substances": "Sustancias",
 		"clients": "Clientes",
 		"clients.groups": "Grupos",
@@ -111,7 +112,8 @@
 			"metaDescription": "Metadescripción",
 			"pathSegment": "Segmento de ruta",
 			"exactSearch": "Los datos del cliente deben contener todas las palabras de búsqueda. Los espacios en blanco dividen la frase de búsqueda en la palabra de búsqueda.",
-			"salesAmmount": "Cantidad de ventas en {currency}"
+			"salesAmmount": "Cantidad de ventas en {currency}",
+			"sum": "Suma total"
 		},
 		"tabs": {
 			"files": "archivos",
@@ -164,6 +166,22 @@
 				"description": "Visible para el buscador de vinos <a href=\"https://WINESEARCH.io\" target=\"_blank\">WINESEARCH.io</a>"
 			}
 		},
+		"formats": {
+			"fileType": {
+				"label": "Tipo de archivo",
+				"pdf": "PDF",
+				"xls": "Excel",
+				"csv": "CSV",
+				"json": "JSON"
+			},
+			"humanReadable": {
+				"label": "Valores y titulares legibles por humanos"
+			},
+			"qrCode": {
+				"label": "QR-Code",
+				"show": "espectáculo"
+			}
+		},
 		"filters": {
 			"date": {
 				"from": "de",
@@ -205,7 +223,8 @@
 			"multiselectable": "selección múltiple posible (Ctrl + clic)",
 			"required": "campo obligatorio",
 			"minLength": "al menos {value} caracteres",
-			"weight": "Peso incluido el embalaje (para envío)"
+			"weight": "Peso incluido el embalaje (para envío)",
+			"allIfEmpty": "(Todos si no se seleccionó nada)"
 		},
 		"messages": {
 			"danger": {
@@ -695,7 +714,8 @@
 			"number": "número de vino",
 			"referenceNumber": "AP-Número",
 			"stock": "inventario",
-			"volume": "inventario"
+			"volume": "inventario",
+			"bottleVolume": "botella de caldo"
 		},
 		"actions": {
 			"create": {
@@ -709,7 +729,8 @@
 				"cellarBook": "libro de bodega",
 				"grapeMarcLogs": "libro de orujo",
 				"substanceLogs": "lista de sustancia",
-				"wineBook": "libro de vinos"
+				"wineBook": "libro de vinos",
+				"harvestBook": "libro de cosecha"
 			}
 		},
 		"views": {
@@ -781,6 +802,75 @@
 			"created": "Venta de vino a granel a través de la red Vinou ha sido creado.",
 			"changed": "Venta de vino a granel a través de la red Vinou ha sido creado.",
 			"deleted": "Venta de vino a granel a través de la red Vinou ha sido eliminado."
+		}
+	},
+	"cellarReport": {
+		"views": {
+			"legal": {
+				"title": "Informes para control legal",
+				"description": "En esta área encontrará todos los informes para las evaluaciones de control del vino, como el diario, el libro de bodega, la lista de contenedores, etc. Los informes se enumeran para los años de producción y se pueden descargar por separado."
+			},
+			"analysis": {
+				"title": "Análisis y evaluaciones",
+				"description": "En esta área encontrará valoraciones que le ayudarán a vigilar su bodega."
+			}
+		},
+		"fields": {
+			"vintage": "Antiguo",
+			"deadline": "Fecha límite",
+			"sum": "Suma",
+			"currentVolume": "barriles",
+			"currentBottles": "Botellas",
+			"wineInfo": "Información sobre el vino",
+			"groupBy": {
+				"label": "Agrupar por",
+				"none": "Ninguno",
+				"location": "Ubicación",
+				"winetype": "Tipo de vino",
+				"vintage": "Antiguo"
+			}
+		},
+		"types": {
+			"cellarBook": {
+				"title": "Libro de bodega",
+				"description": "<b>¡ATENCIÓN!</b> El libro de bodega para sistemas digitales de contabilidad del vino se compone exclusivamente del diario puro de las actuaciones realizadas dentro de la bodega. Todas las acciones realizadas dentro de la bodega se enumeran cronológicamente, incluyendo el momento en que se realizaron y el empleado asociado."
+			},
+			"harvestBook": {
+				"title": "Libro de cosecha",
+				"description": "Autumn ofrece una visión general de todas las cosechas por año de producción en formato PDF"
+			},
+			"wineBook": {
+				"title": "libro de vino",
+				"description": "El libro del vino ofrece en formato PDF una visión general de todas las cuentas del vino para cada año de producción."
+			},
+			"bottleBook": {
+				"title": "Libro de botellas",
+				"description": "El libro de botellas ofrece una visión general de todas las existencias de botellas.<br>"
+			},
+			"grapeMarcBook": {
+				"title": "Libro de orujos",
+				"description": "Todos los procesos relacionados con la utilización del orujo están documentados en el libro de orujo."
+			},
+			"barrelList": {
+				"title": "Lista de barriles",
+				"description": "Enumera todos los contenedores actualmente en el sótano."
+			},
+			"substanceList": {
+				"title": "Lista de sustancias",
+				"description": "Enumera todos los materiales de tratamiento con inventario que se encuentran actualmente en el almacén."
+			},
+			"barrelFillLevel": {
+				"title": "Estado de llenado en la fecha límite",
+				"description": "Enumera todos los contenedores y su contenido a partir de una fecha específica."
+			},
+			"wineStatus": {
+				"title": "Resumen del vino a fecha límite",
+				"description": "Enumera todos los vinos con inventario, volumen de botella y envase a partir de una fecha específica."
+			}
+		},
+		"hints": {
+			"cellarBottleBook": "En <b>Vinou-Cellar</b> todos los movimientos de las botellas se documentan periódicamente en el libro de botellas. Si utiliza un sistema de gestión de inventario, puede utilizar el inventario una vez para la transferencia mediante el proceso de liberación de vino embotellado o vino en barrica. Pregúntenos sobre posibles interfaces <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
+			"officeBottleBook": "Al utilizar <b>Vinou-Office</b>, los movimientos de botellas se documentan como movimientos de almacén en la gestión de inventario y NO en la bodega. Las existencias para el vino embotellado y para la venta de vino en barrica se transfieren una vez a la gestión de mercancías mediante el proceso de liberación respectivo (campaña de bodega: liberación de vino embotellado y liberación de vino en barrica)."
 		}
 	},
 	"barrel": {
