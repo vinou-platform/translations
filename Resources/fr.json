@@ -2964,7 +2964,9 @@
 			"sucrose": "Saccharose",
 			"concentratedGrapeMust": "Moût de raisin concentré",
 			"fillingDosage": "Dosage de remplissage",
-			"shippingDosage": "Dosage d'expédition"
+			"shippingDosage": "Dosage d'expédition",
+			"flavors": "Les saveurs",
+			"carbonicAcid": "Acide carbonique"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

@@ -2963,7 +2963,9 @@
 			"sucrose": "Sucrose",
 			"concentratedGrapeMust": "Concentrated grape must",
 			"fillingDosage": "Filling dosage",
-			"shippingDosage": "Shipping dosage"
+			"shippingDosage": "Shipping dosage",
+			"flavors": "Flavors",
+			"carbonicAcid": "Carbonic acid"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

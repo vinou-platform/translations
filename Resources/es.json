@@ -2963,7 +2963,9 @@
 			"sucrose": "sacarosa",
 			"concentratedGrapeMust": "Mosta de uva concentrada",
 			"fillingDosage": "Dosificación de llenado",
-			"shippingDosage": "Dosificación de envío"
+			"shippingDosage": "Dosificación de envío",
+			"flavors": "Sabores",
+			"carbonicAcid": "ácido carbónico"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

@@ -837,7 +837,7 @@
 			},
 			"harvestBook": {
 				"title": "Herbstbuch",
-				"description": "Das Herbst stellt eine Übersicht aller Ernten je Produktionsjahr als PDF bereit."
+				"description": "Das Herbstbuch stellt eine Übersicht aller Ernten je Produktionsjahr als PDF bereit."
 			},
 			"wineBook": {
 				"title": "Weinbuch",
@@ -2966,7 +2966,9 @@
 			"sucrose": "Saccharose",
 			"concentratedGrapeMust": "konzentrierter Traubenmost",
 			"fillingDosage": "Fülldosage",
-			"shippingDosage": "Versanddosage"
+			"shippingDosage": "Versanddosage",
+			"flavors": "Aromen",
+			"carbonicAcid": "Kohlensäure"
 		},
 		"factgroups": {
 			"nutritionalInformation": {

@@ -2963,7 +2963,9 @@
 			"sucrose": "Saccarosio",
 			"concentratedGrapeMust": "Mosto d'uva concentrato",
 			"fillingDosage": "Dosaggio di riempimento",
-			"shippingDosage": "Dose di spedizione"
+			"shippingDosage": "Dose di spedizione",
+			"flavors": "Sapori",
+			"carbonicAcid": "Acido carbonico"
 		},
 		"factgroups": {
 			"nutritionalInformation": {
