@@ -4465,6 +4465,22 @@
 				}
 			}
 		},
+		"elabel": {
+			"title": "eLabel",
+			"description": "Verwalte die Darstellung auf Deinen eLabels. Bitte berücksichtige dass Vinou für die Anpassung keine rechtliche Haftung übernimmt.",
+			"hideBottleImage": {
+				"title": "Flaschenbild ausblenden",
+				"description": "Aktivieren um das Flaschenbild auf allen eLabels auszublenden."
+			},
+			"showAdditionalFacts": {
+				"title": "Infoblock \"Weitere Angaben\" einblenden",
+				"description": "Aktivieren um zusätzliche Daten wie Trinktemperatur etc. einzublenden"
+			},
+			"showDescriptions": {
+				"title": "Infoblock \"Weinbeschreibung\" einblenden",
+				"description": "Aktivieren um zusätzliche Weinbeschreibungen wie Boden, Ausbau, und Beschreibung einzublenden."
+			}
+		},
 		"mail": {
 			"title": "E-Mails",
 			"description": "Vinou und auch Dein Online-Shop versenden automatisch oder durch bestimmte Prozesse regelmäßig E-Mails. Für den Versand kannst Du hier Einstellungen für ein Postfach hinterlegen und entscheiden, welche E-Mails du senden möchtest."

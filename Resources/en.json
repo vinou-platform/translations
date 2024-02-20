@@ -4462,6 +4462,22 @@
 				}
 			}
 		},
+		"elabel": {
+			"title": "eLabel",
+			"description": "Manage visualization of eLabels. Be sure that you know what you are doing. Vinou assumes no legal liability.",
+			"hideBottleImage": {
+				"title": "Hide bottle image",
+				"description": "Activate to hide the bottle image on all eLabels."
+			},
+			"showAdditionalFacts": {
+				"title": "Show info block \"Further information\"",
+				"description": "Activate to show additional data such as drinking temperature etc."
+			},
+			"showDescriptions": {
+				"title": "Show info block \"Wine description\"",
+				"description": "Activate to show additional wine descriptions such as terroir, maturation and description."
+			}
+		},
 		"mail": {
 			"title": "Emails",
 			"description": "The Vinou-Network and also your webshop are sending automated mail notifications. Here you may configure your SMTP-Mailbox and decide, which emails you want to send."

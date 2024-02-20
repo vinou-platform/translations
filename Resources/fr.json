@@ -4463,6 +4463,22 @@
 				}
 			}
 		},
+		"elabel": {
+			"title": "eLabel",
+			"description": "Gérer la visualisation des eLabels. Assurez-vous de savoir ce que vous faites. Vinou n'assume aucune responsabilité légale.",
+			"hideBottleImage": {
+				"title": "Masquer l'image de la bouteille",
+				"description": "Activez pour masquer l'image de la bouteille sur toutes les eLabels."
+			},
+			"showAdditionalFacts": {
+				"title": "Afficher le bloc d'informations \"Informations complémentaires\"",
+				"description": "Activez pour afficher des données supplémentaires telles que la température de consommation, etc."
+			},
+			"showDescriptions": {
+				"title": "Afficher le bloc d'information \"Description du vin\"",
+				"description": "Activez pour afficher des descriptions de vins supplémentaires telles que le terroir, la maturation et la description."
+			}
+		},
 		"mail": {
 			"title": "Courriels",
 			"description": "Le réseau Vinou ainsi que votre boutique en ligne envoient des notifications automatiques par courrier. Ici, vous pouvez configurer votre boîte aux lettres SMTP et décider quels e-mails vous souhaitez envoyer."
