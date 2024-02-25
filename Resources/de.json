@@ -285,6 +285,24 @@
 			"deactivate": "Deaktivieren"
 		}
 	},
+	"system": {
+		"mailTypes": {
+			"monitoring": {
+				"switchToPublish": {
+					"title": "Deine Vinou-Testphase ist abgelaufen"
+				},
+				"reminder1": {
+					"title": "Die ersten 10 Tage deines Probe-Accounts"
+				},
+				"reminder2": {
+					"title": "Die letzten 10 Tage deines Probe-Accounts laufen"
+				},
+				"reminder3": {
+					"title": "Dein Probeaccount läuft in %s Tagen ab"
+				}
+			}
+		}
+	},
 	"loader": {
 		"inline": {
 			"label": "Daten werden geladen ..."

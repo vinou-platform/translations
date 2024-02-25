@@ -285,6 +285,24 @@
 			"deactivate": "Desactivar"
 		}
 	},
+	"system": {
+		"mailTypes": {
+			"monitoring": {
+				"switchToPublish": {
+					"title": "Tu periodo de prueba de Vinou ha caducado"
+				},
+				"reminder1": {
+					"title": "Los primeros 10 días de tu cuenta de prueba"
+				},
+				"reminder2": {
+					"title": "Los últimos 10 días de tu cuenta de prueba están corriendo"
+				},
+				"reminder3": {
+					"title": "Su cuenta de prueba caduca en %s días"
+				}
+			}
+		}
+	},
 	"loader": {
 		"inline": {
 			"label": "está cargando datos ..."

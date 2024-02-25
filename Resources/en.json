@@ -285,6 +285,24 @@
 			"deactivate": "Deactivate"
 		}
 	},
+	"system": {
+		"mailTypes": {
+			"monitoring": {
+				"switchToPublish": {
+					"title": "Your Vinou trial period has expired"
+				},
+				"reminder1": {
+					"title": "The first 10 days of your trial account"
+				},
+				"reminder2": {
+					"title": "The last 10 days of your trial account are running"
+				},
+				"reminder3": {
+					"title": "Your trial account expires in %s days"
+				}
+			}
+		}
+	},
 	"loader": {
 		"inline": {
 			"label": "Loading data ..."

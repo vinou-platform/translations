@@ -285,6 +285,24 @@
 			"deactivate": "Désactiver"
 		}
 	},
+	"system": {
+		"mailTypes": {
+			"monitoring": {
+				"switchToPublish": {
+					"title": "Votre période d'essai Vinou a expiré"
+				},
+				"reminder1": {
+					"title": "Les 10 premiers jours de votre compte d'essai"
+				},
+				"reminder2": {
+					"title": "Les 10 derniers jours de votre compte d'essai sont en cours d'exécution"
+				},
+				"reminder3": {
+					"title": "Votre compte d'essai expire dans %s jours"
+				}
+			}
+		}
+	},
 	"loader": {
 		"inline": {
 			"label": "Chargement des données"
