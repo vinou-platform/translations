@@ -58,7 +58,8 @@
 			"exportRaw": "Export (raw data)",
 			"import": "Import",
 			"importRaw": "Import (raw data)",
-			"exportQrCode": "Download QR-Code as vector file"
+			"exportQrCode": "Download QR-Code as vector file",
+			"back": "Back"
 		},
 		"fieldSets": {
 			"general": "General",
@@ -1573,7 +1574,8 @@
 			"contact": "Contact data",
 			"description": "Description",
 			"settings": "Settings",
-			"invoice": "Invoice data"
+			"invoice": "Invoice data",
+			"payment": "Payment settings"
 		},
 		"fields": {
 			"app": "App License",
@@ -1617,7 +1619,9 @@
 			"source": "Acquired by",
 			"notice": "Systemmails allowed",
 			"state": "Status",
-			"type": "Customer-Type"
+			"type": "Customer-Type",
+			"paymentMethod": "Payment method",
+			"freeTransactions": "Included free transactions"
 		},
 		"types": {
 			"winery": "Winery",
@@ -1630,6 +1634,10 @@
 			"publish": "Free",
 			"regular": "Full-Account",
 			"invitation": "Invited"
+		},
+		"paymentMethods": {
+			"invoice": "Invoice",
+			"debit": "SEPA direct debit mandate"
 		},
 		"transactions": {
 			"name": "Transactions",
@@ -1687,6 +1695,8 @@
 			"to": "Receiver",
 			"subject": "Subject",
 			"body": "Message",
+			"defaultSubject": "Default subject",
+			"template": "Text template",
 			"attachements": "Attachements",
 			"sendingStamp": "Sent at"
 		},
@@ -2735,6 +2745,68 @@
 		},
 		"toasts": {
 			"created": "Credit advice created and order cancelled!"
+		}
+	},
+	"debitMandate": {
+		"name": {
+			"singular": "SEPA direct debit mandate",
+			"plural": "SEPA direct debit mandates"
+		},
+		"actions": {
+			"create": {
+				"main": "Sepa direct debit mandate",
+				"sub": "register"
+			},
+			"download": "Download SEPA mandate",
+			"upload": "Upload signed PDF"
+		},
+		"fields": {
+			"accountOwner": "Account Owner",
+			"bank": "credit institution",
+			"bic": "BIC",
+			"expired": "Expired on/Invalid since",
+			"iban": "IBAN",
+			"number": "Mandate reference",
+			"status": "Status"
+		},
+		"views": {
+			"pdf": {
+				"allowedText": "I/We authorize <b>%s</b> to collect payments from my/our account by direct debit. At the same time, I/we instruct my/our credit institution to collect payments from <b >%s</b> to redeem direct debits drawn on my/our account.",
+				"bankInfo": "Account Information",
+				"creditor": "Name and address of the payment recipient (creditor)",
+				"creditorID": "Creditor ID",
+				"creditorCompany": "Company Name",
+				"customerInfo": "Customer Information",
+				"customerId": "Customer ID",
+				"hint": "Note: I/we can request a refund of the amount charged within eight weeks, starting from the debit date. The conditions agreed with my/our credit institution apply.",
+				"locationDate": "Location, date",
+				"nextSteps": "<strong>HOW TO CONTINUE!</strong><br><u><i>Upload the signed PDF</i></u> to Vinou<br>Or send an email to kontakt@vinou.de <br>Or by letter directly to us.",
+				"sign": "Signature of the account holder",
+				"title": "SEPA CORE direct debit mandate for recurring direct debits"
+			},
+			"createPaymentMandate": {
+				"title": "Set up a SEPA mandate for your Vinou fees",
+				"allowedText": "I/We authorize <b>{company}</b> to collect payments from my/our account by direct debit. At the same time, I/we instruct my/our credit institution to collect payments from < b>{company}</b> to redeem direct debits drawn on my/our account.",
+				"hint": "Note: I/we can request a refund of the amount charged within eight weeks, starting from the debit date. The conditions agreed with my/our credit institution apply."
+			},
+			"uploadPaymentMandate": {
+				"title": "Submit SEPA mandate",
+				"guideline": "<p><strong>This is how it works:</strong></p><ul class='check-list'><li>Download the PDF of the generated SEPA mandate.</li> <li>Sign the PDF. You can do this digitally, or you can print out the PDF, sign it and scan it again. </li><li>Upload the document here </li></ul>"
+			},
+			"needApprovement": {
+				"title": "SEPA mandate under review",
+				"guideline": "<p>Your SEPA mandate has been successfully transmitted to us. We are now checking your submitted file and will set up the mandate as quickly as possible."
+			}
+		},
+		"toasts": {
+			"uploaded": "SEPA mandate uploaded",
+			"saved": "SEPA mandate approved"
+		},
+		"statusTypes": {
+			"created": "Created",
+			"uploaded": "Sent",
+			"approved": "Accepted",
+			"declined": "Rejected"
 		}
 	},
 	"deliveryNote": {
@@ -4698,6 +4770,10 @@
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
+		},
+		"messageTemplates": {
+			"title": "Message Templates",
+			"description": "Manage all texts that are used as templates for your messages, such as email texts for offers, invoices and delivery notes."
 		}
 	},
 	"toasts": {

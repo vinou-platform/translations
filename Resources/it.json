@@ -58,7 +58,8 @@
 			"exportRaw": "Esportazione (dati non elaborati)",
 			"import": "Import",
 			"importRaw": "Import (dati non elaborati)",
-			"exportQrCode": "Scarica il codice QR come file vettoriale"
+			"exportQrCode": "Scarica il codice QR come file vettoriale",
+			"back": "Indietro"
 		},
 		"fieldSets": {
 			"general": "Generale",
@@ -1573,7 +1574,8 @@
 			"contact": "Contatto",
 			"description": "Descrizione",
 			"settings": "Configurazione",
-			"invoice": "Informazioni di fatturazione"
+			"invoice": "Informazioni di fatturazione",
+			"payment": "Impostazioni di pagamento"
 		},
 		"fields": {
 			"app": "Licenza dell'app",
@@ -1617,7 +1619,9 @@
 			"source": "Acquisito da",
 			"notice": "Invia e-mail di sistema",
 			"state": "Stato",
-			"type": "Tipo"
+			"type": "Tipo",
+			"paymentMethod": "Metodo di pagamento",
+			"freeTransactions": "Transazioni gratuite incluse"
 		},
 		"types": {
 			"winery": "Vigna",
@@ -1630,6 +1634,10 @@
 			"publish": "Gratuito",
 			"regular": "Account completo",
 			"invitation": "Invitato"
+		},
+		"paymentMethods": {
+			"invoice": "Fattura",
+			"debit": "Mandato di addebito diretto SEPA"
 		},
 		"transactions": {
 			"name": "Transazioni",
@@ -1687,6 +1695,8 @@
 			"to": "Ricevitore",
 			"subject": "Materia",
 			"body": "Messaggio",
+			"defaultSubject": "Oggetto predefinito",
+			"template": "Modello di testo",
 			"attachements": "Allegati",
 			"sendingStamp": "Inviato a"
 		},
@@ -2735,6 +2745,68 @@
 		},
 		"toasts": {
 			"created": "Credito creato e ordine annullato!"
+		}
+	},
+	"debitMandate": {
+		"name": {
+			"singular": "Mandato di addebito diretto SEPA",
+			"plural": "Mandati di addebito diretto SEPA"
+		},
+		"actions": {
+			"create": {
+				"main": "Mandato di addebito diretto Sepa",
+				"sub": "Registrati"
+			},
+			"download": "Scarica mandato SEPA",
+			"upload": "Carica PDF firmato"
+		},
+		"fields": {
+			"accountOwner": "Titolare dell'account",
+			"bank": "istituto di credito",
+			"bic": "BIC",
+			"expired": "Scaduto il/Non valido da",
+			"iban": "IBAN",
+			"number": "Riferimento mandato",
+			"status": "Stato"
+		},
+		"views": {
+			"pdf": {
+				"allowedText": "Autorizzo/autorizziamo <b>%s</b> a riscuotere i pagamenti dal mio/nostro conto tramite addebito diretto. Contestualmente diamo/incarico al mio/nostro istituto di credito di riscuotere i pagamenti da <b >%s< /b> per riscattare gli addebiti diretti prelevati sul mio/nostro conto.",
+				"bankInfo": "Informazioni account",
+				"creditor": "Nome e indirizzo del destinatario del pagamento (creditore)",
+				"creditorID": "ID creditore",
+				"creditorCompany": "Nome della ditta",
+				"customerInfo": "Informazioni per il cliente",
+				"customerId": "Identificativo del cliente",
+				"hint": "Nota: posso/possiamo richiedere il rimborso dell'importo addebitato entro otto settimane, a partire dalla data di addebito. Valgono le condizioni concordate con il mio/nostro istituto di credito.",
+				"locationDate": "Luogo, data",
+				"nextSteps": "<strong>COME CONTINUARE!</strong><br><u><i>Carica il PDF firmato</i></u> su Vinou<br>Oppure invia un'e-mail a kontakt@vinou.de <br >O tramite lettera direttamente a noi.",
+				"sign": "Firma del titolare del conto",
+				"title": "Mandato di addebito diretto SEPA CORE per addebiti diretti ricorrenti"
+			},
+			"createPaymentMandate": {
+				"title": "Imposta un mandato SEPA per le tue commissioni Vinou",
+				"allowedText": "Io/noi autorizziamo <b>{company}</b> a riscuotere i pagamenti dal mio/nostro conto tramite addebito diretto. Allo stesso tempo, incarichiamo/noi il mio/nostro istituto di credito a riscuotere i pagamenti da < b>{company }</b> per riscattare gli addebiti diretti prelevati sul mio/nostro conto.",
+				"hint": "Nota: posso/possiamo richiedere il rimborso dell'importo addebitato entro otto settimane, a partire dalla data di addebito. Valgono le condizioni concordate con il mio/nostro istituto di credito."
+			},
+			"uploadPaymentMandate": {
+				"title": "Invia mandato SEPA",
+				"guideline": "<p><strong>Ecco come funziona:</strong></p><ul class='check-list'><li>Scarica il PDF del mandato SEPA generato.</li> <li> Firma il PDF. Puoi farlo digitalmente oppure puoi stampare il PDF, firmarlo e scansionarlo di nuovo. </li><li>Carica il documento qui </li></ul>"
+			},
+			"needApprovement": {
+				"title": "Mandato SEPA in corso di revisione",
+				"guideline": "<p>Il tuo mandato SEPA ci è stato trasmesso con successo. Stiamo ora controllando il file inviato e configureremo il mandato il più rapidamente possibile."
+			}
+		},
+		"toasts": {
+			"uploaded": "Mandato SEPA caricato",
+			"saved": "Mandato SEPA approvato"
+		},
+		"statusTypes": {
+			"created": "Creato",
+			"uploaded": "Inviato",
+			"approved": "Accettato",
+			"declined": "Respinto"
 		}
 	},
 	"deliveryNote": {
@@ -4698,6 +4770,10 @@
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
+		},
+		"messageTemplates": {
+			"title": "Modèles de messages",
+			"description": "Gérez tous les textes utilisés comme modèles pour vos messages, tels que les textes d'e-mails pour les offres, les factures et les bons de livraison."
 		}
 	},
 	"toasts": {

@@ -58,7 +58,8 @@
 			"exportRaw": "Exportar (datos sin procesar)",
 			"import": "Importar",
 			"importRaw": "Importar (datos sin procesar)",
-			"exportQrCode": "Descargar QR-Code como archivo vector"
+			"exportQrCode": "Descargar QR-Code como archivo vector",
+			"back": "Atrás"
 		},
 		"fieldSets": {
 			"general": "generalidades",
@@ -1573,7 +1574,8 @@
 			"contact": "Datos de contacto",
 			"description": "Descripción",
 			"settings": "Ajustes",
-			"invoice": "Datos de cuenta"
+			"invoice": "Datos de cuenta",
+			"payment": "Payment settingsConfiguraciones de pago"
 		},
 		"fields": {
 			"app": "Licencia de aplicación",
@@ -1617,7 +1619,9 @@
 			"source": "Adquirido por",
 			"notice": "Enviar correos del sistema",
 			"state": "Estado",
-			"type": "Tipo"
+			"type": "Tipo",
+			"paymentMethod": "Método de pago",
+			"freeTransactions": "Transacciones gratuitas incluidas"
 		},
 		"types": {
 			"winery": "Propiedad vinícola",
@@ -1630,6 +1634,10 @@
 			"publish": "Libre",
 			"regular": "Cuenta completa",
 			"invitation": "Invitado"
+		},
+		"paymentMethods": {
+			"invoice": "Factura",
+			"debit": "Mandato de domiciliación bancaria SEPA"
 		},
 		"transactions": {
 			"name": "Actas",
@@ -1687,6 +1695,8 @@
 			"to": "Receptor",
 			"subject": "Tema",
 			"body": "Mensaje",
+			"defaultSubject": "Asunto predeterminado",
+			"template": "plantilla de texto",
 			"attachements": "Archivos adjuntos",
 			"sendingStamp": "Enviado a"
 		},
@@ -2735,6 +2745,68 @@
 		},
 		"toasts": {
 			"created": "Abono ha sido creado y la orden ha sido anulada!"
+		}
+	},
+	"debitMandate": {
+		"name": {
+			"singular": "Mandato de domiciliación bancaria SEPA",
+			"plural": "Mandatos de domiciliación bancaria SEPA"
+		},
+		"actions": {
+			"create": {
+				"main": "Mandato de domiciliación bancaria Sepa",
+				"sub": "registro"
+			},
+			"download": "Descargar mandato SEPA",
+			"upload": "Subir PDF firmado"
+		},
+		"fields": {
+			"accountOwner": "Propietario de la cuenta",
+			"bank": "entidad de crédito",
+			"bic": "BIC",
+			"expired": "Expirado el/No válido desde",
+			"iban": "IBAN",
+			"number": "Referencia de mandato",
+			"status": "Estado"
+		},
+		"views": {
+			"pdf": {
+				"allowedText": "Yo/nosotros autorizamos a <b>%s</b> a cobrar los pagos de mi/nuestra cuenta mediante débito directo. Al mismo tiempo, yo/nosotros instruimos a mi/nuestra institución de crédito a cobrar los pagos de <b >%s< /b> para canjear débitos directos realizados en mi/nuestra cuenta.",
+				"bankInfo": "Información de la cuenta",
+				"creditor": "Nombre y dirección del destinatario del pago (acreedor)",
+				"creditorID": "ID de acreedor",
+				"creditorCompany": "Nombre de empresa",
+				"customerInfo": "Información al cliente",
+				"customerId": "Identificación del cliente",
+				"hint": "Nota: Puedo/podemos solicitar el reembolso del importe cobrado en un plazo de ocho semanas a partir de la fecha de cargo. Se aplican las condiciones acordadas con mi/nuestra entidad de crédito.",
+				"locationDate": "Ubicación, fecha",
+				"nextSteps": "¡<strong>CÓMO CONTINUAR!</strong><br><u><i>Sube el PDF firmado</i></u> a Vinou<br>O envía un correo electrónico a kontakt@vinou.de <br >O por carta directamente a nosotros.",
+				"sign": "Firma del titular de la cuenta",
+				"title": "Mandato de domiciliación bancaria SEPA CORE para domiciliaciones recurrentes"
+			},
+			"createPaymentMandate": {
+				"title": "Establece un mandato SEPA para tus tarifas Vinou",
+				"allowedText": "Yo/nosotros autorizamos a <b>{company}</b> a cobrar los pagos de mi/nuestra cuenta mediante débito directo. Al mismo tiempo, yo/nosotros instruimos a mi/nuestra institución de crédito a cobrar los pagos de < b>{company }</b> para canjear débitos directos realizados en mi/nuestra cuenta.",
+				"hint": "Nota: Puedo/podemos solicitar el reembolso del importe cobrado en un plazo de ocho semanas a partir de la fecha de cargo. Se aplican las condiciones acordadas con mi/nuestra entidad de crédito."
+			},
+			"uploadPaymentMandate": {
+				"title": "Enviar mandato SEPA",
+				"guideline": "<p><strong>Así es como funciona:</strong></p><ul class='check-list'><li>Descarga el PDF del mandato SEPA generado.</li> <li> Firma el PDF. Puedes hacerlo digitalmente o puedes imprimir el PDF, firmarlo y escanearlo nuevamente. </li><li>Sube el documento aquí </li></ul>"
+			},
+			"needApprovement": {
+				"title": "El mandato SEPA en revisión",
+				"guideline": "<p>Su mandato SEPA nos ha sido transmitido exitosamente. Ahora estamos revisando el archivo enviado y configuraremos el mandato lo más rápido posible."
+			}
+		},
+		"toasts": {
+			"uploaded": "Se ha subido el mandato SEPA",
+			"saved": "Aprobado el mandato SEPA"
+		},
+		"statusTypes": {
+			"created": "Creado",
+			"uploaded": "Enviado",
+			"approved": "Aceptado",
+			"declined": "Rechazado"
 		}
 	},
 	"deliveryNote": {
@@ -4698,6 +4770,10 @@
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
+		},
+		"messageTemplates": {
+			"title": "Plantillas de mensajes",
+			"description": "Gestiona todos los textos que se utilizan como plantillas para tus mensajes, como textos de correo electrónico para ofertas, facturas y albaranes."
 		}
 	},
 	"toasts": {

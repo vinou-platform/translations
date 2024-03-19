@@ -58,7 +58,8 @@
 			"exportRaw": "Exporter (données brutes)",
 			"import": "Importer",
 			"importRaw": "Importer (données brutes)",
-			"exportQrCode": "Téléchargez le code QR sous forme de fichier vectoriel"
+			"exportQrCode": "Téléchargez le code QR sous forme de fichier vectoriel",
+			"back": "Dos"
 		},
 		"fieldSets": {
 			"general": "Général",
@@ -1574,7 +1575,8 @@
 			"contact": "Coordonnées",
 			"description": "Description",
 			"settings": "Configuration",
-			"invoice": "Informations de facturation"
+			"invoice": "Informations de facturation",
+			"payment": "Paramètres de paiement"
 		},
 		"fields": {
 			"app": "Licence d'application",
@@ -1618,7 +1620,9 @@
 			"source": "Acquis par",
 			"notice": "Envoyer des courriels système",
 			"state": "Statut",
-			"type": "Type"
+			"type": "Type",
+			"paymentMethod": "Metodo di pagamento",
+			"freeTransactions": "Transazioni gratuite incluse"
 		},
 		"types": {
 			"winery": "Établissement vinicole",
@@ -1631,6 +1635,10 @@
 			"publish": "Libre",
 			"regular": "Compte complet",
 			"invitation": "Invité"
+		},
+		"paymentMethods": {
+			"invoice": "Facture",
+			"debit": "Mandat de prélèvement SEPA"
 		},
 		"transactions": {
 			"name": "Transactions",
@@ -1687,6 +1695,8 @@
 			"from": "Créé par",
 			"to": "Destinataire",
 			"subject": "Matière",
+			"defaultSubject": "Sujet par défaut",
+			"template": "Modèle de texte",
 			"body": "Message",
 			"attachements": "Pièces jointes",
 			"sendingStamp": "Envoyé à"
@@ -2736,6 +2746,68 @@
 		},
 		"toasts": {
 			"created": "Crédit créé et ordre annulé!"
+		}
+	},
+	"debitMandate": {
+		"name": {
+			"singular": "Mandat de prélèvement SEPA",
+			"plural": "Mandats de prélèvement SEPA"
+		},
+		"actions": {
+			"create": {
+				"main": "Mandat de prélèvement Sepa",
+				"sub": "registre"
+			},
+			"download": "Télécharger le mandat SEPA",
+			"upload": "Télécharger un PDF signé"
+		},
+		"fields": {
+			"accountOwner": "Propriétaire du compte",
+			"bank": "établissement de crédit",
+			"bic": "BIC",
+			"expired": "Expiré le/Invalide depuis",
+			"iban": "IBAN",
+			"number": "Référence du mandat",
+			"status": "Statut"
+		},
+		"views": {
+			"pdf": {
+				"allowedText": "J'autorise/nous autorisons <b>%s</b> à encaisser les paiements de mon/notre compte par prélèvement automatique. Parallèlement, j'ordonne/nous donnons instruction à mon/notre établissement de crédit d'encaisser les paiements de <b >%s< /b> pour encaisser les prélèvements effectués sur mon/notre compte.",
+				"bankInfo": "Information sur le compte",
+				"creditor": "Nom et adresse du destinataire du paiement (créancier)",
+				"creditorID": "Identifiant du créancier",
+				"creditorCompany": "Nom de l'entreprise",
+				"customerInfo": "Informations client",
+				"customerId": "N ° de client",
+				"hint": "Remarque : je peux/nous pouvons demander le remboursement du montant débité dans un délai de huit semaines à compter de la date de débit. Les conditions convenues avec mon/notre établissement de crédit s'appliquent.",
+				"locationDate": "Lieu, date",
+				"nextSteps": "<strong>COMMENT CONTINUER !</strong><br><u><i>Téléchargez le PDF signé</i></u> sur Vinou<br>Ou envoyez un e-mail à kontakt@vinou.de <br >Ou par courrier directement à nous.",
+				"sign": "Signature du titulaire du compte",
+				"title": "Mandat de prélèvement SEPA CORE pour les prélèvements récurrents"
+			},
+			"createPaymentMandate": {
+				"title": "Mettre en place un mandat SEPA pour vos frais Vinou",
+				"allowedText": "J'autorise/Nous autorisons <b>{entreprise</b> à encaisser les paiements de mon/notre compte par prélèvement automatique. Parallèlement, j'ordonne/nous donnons instruction à mon/notre établissement de crédit d'encaisser les paiements de < b>{entreprise </b> pour réclamer des prélèvements automatiques tirés sur mon/notre compte.",
+				"hint": "Remarque : je peux/nous pouvons demander le remboursement du montant débité dans un délai de huit semaines à compter de la date de débit. Les conditions convenues avec mon/notre établissement de crédit s'appliquent."
+			},
+			"uploadPaymentMandate": {
+				"title": "Soumettre le mandat SEPA",
+				"guideline": "<p><strong>Voici comment cela fonctionne :</strong></p><ul class='check-list'><li>Téléchargez le PDF du mandat SEPA généré.</li> <li> Signez le PDF. Vous pouvez le faire numériquement, ou vous pouvez imprimer le PDF, le signer et le numériser à nouveau. </li><li>Téléchargez le document ici </li></ul>"
+			},
+			"needApprovement": {
+				"title": "Le mandat SEPA en cours de révision",
+				"guideline": "<p>Votre mandat SEPA nous a été transmis avec succès. Nous vérifions actuellement votre dossier soumis et établirons le mandat dans les plus brefs délais."
+			}
+		},
+		"toasts": {
+			"uploaded": "Mandat SEPA téléchargé",
+			"saved": "Mandat SEPA approuvé"
+		},
+		"statusTypes": {
+			"created": "Créé",
+			"uploaded": "Envoyé",
+			"approved": "Accepté",
+			"declined": "Rejeté"
 		}
 	},
 	"deliveryNote": {
@@ -4699,6 +4771,10 @@
 		"texts": {
 			"title": "Texts",
 			"description": "Create texts to provide information such as imprint, data protection agreement, cancellation form or terms and conditions. You can easily format your texts here. These texts, including the formatting, can be used in your own online shop, among other things."
+		},
+		"messageTemplates": {
+			"title": "Modèles de messages",
+			"description": "Gérez tous les textes utilisés comme modèles pour vos messages, tels que les textes d'e-mails pour les offres, les factures et les bons de livraison."
 		}
 	},
 	"toasts": {

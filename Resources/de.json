@@ -58,7 +58,8 @@
 			"exportRaw": "Export (EDV)",
 			"import": "Import",
 			"importRaw": "Import (EDV)",
-			"exportQrCode": "QR-Code als Vektor-Datei herunterladen"
+			"exportQrCode": "QR-Code als Vektor-Datei herunterladen",
+			"back": "Zurück"
 		},
 		"fieldSets": {
 			"general": "Allgemein",
@@ -575,7 +576,6 @@
 				"main": "Wasser",
 				"sub": "Hinzugabe"
 			},
-
 			"createBottling": {
 				"main": "Abfüllung",
 				"sub": " "
@@ -604,7 +604,6 @@
 				"main": "Konto",
 				"sub": "archivieren"
 			},
-
 			"vinouNetwork": {
 				"main": "Vinou Netzwerk",
 				"sub": " "
@@ -614,7 +613,6 @@
 				"sub": " ",
 				"description": "Übertrage Deinen Wein zu einem anderen Vinou Mitglied im Netzwerk. Bitte beachte, dass Dein Gegenüber den Transfer über den Vorgang Fassweinzukauf bestätigen muss."
 			},
-
 			"addSourceBarrel": {
 				"main": "Quellbehälter",
 				"sub": "hinzufügen"
@@ -1576,7 +1574,8 @@
 			"contact": "Kontaktdaten",
 			"description": "Beschreibung",
 			"settings": "Einstellungen",
-			"invoice": "Rechnungsangaben"
+			"invoice": "Rechnungsangaben",
+			"payment": "Zahlungseinstellungen"
 		},
 		"fields": {
 			"app": "App-Lizenz",
@@ -1620,7 +1619,9 @@
 			"source": "Akquiriert durch",
 			"notice": "Systemmails senden",
 			"state": "Status",
-			"type": "Kunden-Typ"
+			"type": "Kunden-Typ",
+			"paymentMethod": "Zahlungsmethode",
+			"freeTransactions": "monatl. kostenfreie Transaktionen"
 		},
 		"types": {
 			"winery": "Weingut",
@@ -1633,6 +1634,10 @@
 			"publish": "Free",
 			"regular": "Voll-Account",
 			"invitation": "Eingeladen"
+		},
+		"paymentMethods": {
+			"invoice": "Rechnung",
+			"debit": "SEPA-Lastschrift"
 		},
 		"transactions": {
 			"name": "Transaktionen",
@@ -1690,6 +1695,8 @@
 			"to": "Empfänger",
 			"subject": "Betreff",
 			"body": "Nachricht",
+			"defaultSubject": "Standard Betreff",
+			"template": "Textvorlage",
 			"attachements": "Anhänge",
 			"sendingStamp": "Versendet am"
 		},
@@ -2738,6 +2745,68 @@
 		},
 		"toasts": {
 			"created": "Gutschrift erstellt und Bestellung storniert!"
+		}
+	},
+	"debitMandate": {
+		"name": {
+			"singular": "SEPA-Lastschriftmandat",
+			"plural": "SEPA-Lastschriftmandate"
+		},
+		"actions": {
+			"create": {
+				"main": "Sepa-Lastschriftmandat",
+				"sub": "registrieren"
+			},
+			"download": "SEPA-Mandat herunterladen",
+			"upload": "Unterschriebenes PDF hochladen"
+		},
+		"fields": {
+			"accountOwner": "Kontoinhaber",
+			"bank": "Kreditinstitut",
+			"bic": "BIC",
+			"expired": "Abgelaufen am/Ungültig seit",
+			"iban": "IBAN",
+			"number": "Mandatsreferenz",
+			"status": "Status"
+		},
+		"views": {
+			"pdf": {
+				"allowedText": "Ich/Wir ermächtige(n) <b>%s</b>, Zahlungen von meinem/unserem Konto mittels Lastschrift einzuziehen. Zugleich weise(n) ich/wir mein/unser Kreditinstitut an, die von <b>%s</b> auf mein/unser Konto gezogenen Lastschriften einzulösen.",
+				"bankInfo": "Kontoinformationen",
+				"creditor": "Name und Anschrift des Zahlungsempfängers (Gläubiger/Creditor)",
+				"creditorID": "Gläubiger-ID",
+				"creditorCompany": "Firmenname",
+				"customerInfo": "Kundeninformationen",
+				"customerId": "Kunden-ID",
+				"hint": "Hinweis: Ich kann/Wir können innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrags verlangen. Es gelten dabei die mit meinem/unserem Kreditinstitut vereinbarten Bedingungen.",
+				"locationDate": "Ort, Datum",
+				"nextSteps": "<strong>SO GEHT'S WEITER!</strong><br><u><i>Unterschriebenes PDF</i></u> in Vinou hochladen<br>Oder per Mail an kontakt@vinou.de<br>Oder per Brief direkt an uns.",
+				"sign": "Unterschrift des Kontoinhabers",
+				"title": "SEPA CORE Lastschriftmandat für wiederkehrende Lastschriften"
+			},
+			"createPaymentMandate": {
+				"title": "SEPA-Mandat für Deine Vinou-Gebühren einrichten",
+				"allowedText": "Ich/Wir ermächtige(n) <b>{company}</b>, Zahlungen von meinem/unserem Konto mittels Lastschrift einzuziehen. Zugleich weise(n) ich/wir mein/unser Kreditinstitut an, die von <b>{company}</b> auf mein/unser Konto gezogenen Lastschriften einzulösen.",
+				"hint": "Hinweis: Ich kann/Wir können innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrags verlangen. Es gelten dabei die mit meinem/unserem Kreditinstitut vereinbarten Bedingungen."
+			},
+			"uploadPaymentMandate": {
+				"title": "SEPA-Mandat übermitteln",
+				"guideline": "<p><strong>So funktioniert's:</strong></p><ul class='check-list'><li>Lade Dir das PDF des generierten SEPA-Mandats herunter.</li><li>Unterschreibe das PDF. Gerne kannst Du das digital erledigen, oder Du druckst das PDF aus, unterschreibst es und scannst es wieder ein.</li><li>Lade das Dokument hier hoch</li></ul>"
+			},
+			"needApprovement": {
+				"title": "SEPA-Mandat wird überprüft",
+				"guideline": "<p>Dein SEPA-Mandat wurde erfolgreich an uns übermittelt. Wir überprüfen jetzt Deine übermittelte Datei und werden das Mandat schnellstmöglich einrichten."
+			}
+		},
+		"toasts": {
+			"uploaded": "SEPA-Mandat hochgeladen",
+			"saved": "SEPA-Mandat genehmigt"
+		},
+		"statusTypes": {
+			"created": "Angelegt",
+			"uploaded": "Gesendet",
+			"approved": "Angenommen",
+			"declined": "Abgelehnt"
 		}
 	},
 	"deliveryNote": {
@@ -4701,6 +4770,10 @@
 		"texts": {
 			"title": "Texte",
 			"description": "Lege Texte an, um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst Du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in Deinem eigenen Online-Shop verwendet werden."
+		},
+		"messageTemplates": {
+			"title": "Nachrichtenvorlagen",
+			"description": "Verwalte alle Texte die als Vorlage für deine Nachrichten genutzt werden, wie z.B. E-Mail-Texte für Angebot, Rechnung und Lieferschein."
 		}
 	},
 	"toasts": {
