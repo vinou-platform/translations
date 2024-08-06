@@ -885,6 +885,10 @@
 			"wineStatus": {
 				"title": "Resumen del vino a fecha límite",
 				"description": "Enumera todos los vinos con inventario, volumen de botella y envase a partir de una fecha específica."
+			},
+			"erpBottleBook": {
+				"title": "Inventario de botellas a la fecha del informe",
+				"description": "Genera un inventario de botellas a la fecha del informe en función de las <strong>publicaciones de inventario en el sistema de gestión de inventario</strong> (ventas, créditos, correcciones)."
 			}
 		},
 		"hints": {

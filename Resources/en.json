@@ -885,6 +885,10 @@
 			"wineStatus": {
 				"title": "Wine overview as of the deadline",
 				"description": "Lists all wines with inventory, bottle volume and container as of a specific date."
+			},
+			"erpBottleBook": {
+				"title": "Bottle inventory as of the reporting date",
+				"description": "Generates a bottle inventory as of the reporting date based on the <strong>inventory postings in the inventory management system</strong> (sales, credits, corrections)."
 			}
 		},
 		"hints": {

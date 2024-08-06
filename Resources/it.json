@@ -885,6 +885,10 @@
 			"wineStatus": {
 				"title": "Panoramica dei vini alla scadenza",
 				"description": "Elenca tutti i vini con inventario, volume della bottiglia e contenitore a partire da una data specifica."
+			},
+			"erpBottleBook": {
+				"title": "Inventario bottiglie alla data di reporting",
+				"description": "Genera un inventario bottiglie alla data di reporting in base alle <strong>registrazioni di inventario nel sistema di gestione inventario</strong> (vendite, accrediti, correzioni)."
 			}
 		},
 		"hints": {

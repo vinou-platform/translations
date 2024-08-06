@@ -882,6 +882,10 @@
 			"wineStatus": {
 				"title": "Weinübersicht zum Stichtag",
 				"description": "Listet alle Weine mit Bestand, Flaschenvolumen und Behälter zu einem bestimmten Stichtag auf."
+			},
+			"erpBottleBook": {
+				"title": "Flaschenbestand zum Stichtag",
+				"description": "Generiert einen Flaschenbestand zum Stichtag basierend auf den <strong>Bestandsbuchungen in der Warenwirtschaft</strong> (Abverkäufe, Gutschriften, Korrekturen)."
 			}
 		},
 		"hints": {

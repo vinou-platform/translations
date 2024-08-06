@@ -885,6 +885,10 @@
 			"wineStatus": {
 				"title": "Aperçu des vins à la date limite",
 				"description": "Répertorie tous les vins avec inventaire, volume de bouteille et contenant à une date précise."
+			},
+			"erpBottleBook": {
+				"title": "Inventaire des bouteilles à la date du rapport",
+				"description": "Génère un inventaire des bouteilles à la date du rapport sur la base des <strong>écritures d'inventaire dans le système de gestion des stocks</strong> (ventes, crédits, corrections)."
 			}
 		},
 		"hints": {
