@@ -2536,6 +2536,7 @@
 			"phone": "Telefon",
 			"mobile": "Mobil",
 			"fax": "Fax",
+			"externalNumber": "Externe Nummer (Zur Identifizierung)",
 			"newsletter": "Newsletter zugestimmt",
 			"active": "aktiv",
 			"image": "Logo",
