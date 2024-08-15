@@ -7,6 +7,7 @@
 		"articles.bundles": "Weinpakete",
 		"articles.categories": "Kategorien",
 		"articles.products": "Produkte",
+		"articles.reports": "Berichte",
 		"articles.statistics": "Statistiken",
 		"articles.wines": "Weine",
 		"cellar": "Mein Keller",
@@ -882,10 +883,6 @@
 			"wineStatus": {
 				"title": "Weinübersicht zum Stichtag",
 				"description": "Listet alle Weine mit Bestand, Flaschenvolumen und Behälter zu einem bestimmten Stichtag auf."
-			},
-			"erpBottleBook": {
-				"title": "Flaschenbestand zum Stichtag",
-				"description": "Generiert einen Flaschenbestand zum Stichtag basierend auf den <strong>Bestandsbuchungen in der Warenwirtschaft</strong> (Abverkäufe, Gutschriften, Korrekturen)."
 			}
 		},
 		"hints": {
@@ -1922,6 +1919,28 @@
 		"name": {
 			"singular": "Weinlabor",
 			"plural": "Weinlabore"
+		}
+	},
+	"articleReport": {
+		"views": {
+			"analysis": {
+				"title": "Lagerauswertungen",
+				"description": "In diesem Bereich findest Du alle Auswertungen die Dir helfen Deine Bestände im Blick zu behalten."
+			}
+		},
+		"fields": {
+			"deadline": "Stichtag"
+		},
+		"types": {
+			"erpBottleBook": {
+				"title": "Flaschenbestand zum Stichtag",
+				"description": "Generiert einen Flaschenbestand zum Stichtag basierend auf den <strong>Bestandsbuchungen in der Warenwirtschaft</strong> (Abverkäufe, Gutschriften, Korrekturen)."
+			},
+			"personalConsumption": {
+				"title": "Eigenverbrauch nach Artikel",
+				"description": "Ermitteln den Eigenverbrauch innerhalb eines gegebenen Zeitraums."
+			}
+
 		}
 	},
 	"wine": {

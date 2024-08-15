@@ -7,6 +7,7 @@
 		"articles.bundles": "Paquete de productos",
 		"articles.categories": "Categorias",
 		"articles.products": "Productos",
+		"articles.reports": "Informes",
 		"articles.statistics": "Estadísticas",
 		"articles.wines": "Vinos",
 		"cellar": "Mi bodega",
@@ -885,10 +886,6 @@
 			"wineStatus": {
 				"title": "Resumen del vino a fecha límite",
 				"description": "Enumera todos los vinos con inventario, volumen de botella y envase a partir de una fecha específica."
-			},
-			"erpBottleBook": {
-				"title": "Inventario de botellas a la fecha del informe",
-				"description": "Genera un inventario de botellas a la fecha del informe en función de las <strong>publicaciones de inventario en el sistema de gestión de inventario</strong> (ventas, créditos, correcciones)."
 			}
 		},
 		"hints": {
@@ -1922,6 +1919,28 @@
 		"name": {
 			"singular": "Laboratorio",
 			"plural": "Laboratorios"
+		}
+	},
+	"articleReport": {
+		"views": {
+			"analysis": {
+				"title": "Evaluaciones de stock",
+				"description": "En esta sección encontrarás todas las evaluaciones que te ayudarán a llevar un control de tus stocks."
+			}
+		},
+		"fields": {
+			"deadline": "Fecha límite"
+		},
+		"types": {
+			"erpBottleBook": {
+				"title": "Inventario de botellas a la fecha del informe",
+				"description": "Genera un inventario de botellas a la fecha del informe en función de las <strong>publicaciones de inventario en el sistema de gestión de inventario</strong> (ventas, créditos, correcciones)."
+			},
+			"personalConsumption": {
+				"title": "Consumo propio por artículo",
+				"description": "Determina tu consumo propio en un periodo determinado."
+			}
+
 		}
 	},
 	"wine": {

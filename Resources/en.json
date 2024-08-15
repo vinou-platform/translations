@@ -7,6 +7,7 @@
 		"articles.bundles": "Bundles",
 		"articles.categories": "Categories",
 		"articles.products": "Products",
+		"articles.reports": "Reports",
 		"articles.statistics": "Statistics",
 		"articles.wines": "Wines",
 		"cellar": "Cellar",
@@ -885,10 +886,6 @@
 			"wineStatus": {
 				"title": "Wine overview as of the deadline",
 				"description": "Lists all wines with inventory, bottle volume and container as of a specific date."
-			},
-			"erpBottleBook": {
-				"title": "Bottle inventory as of the reporting date",
-				"description": "Generates a bottle inventory as of the reporting date based on the <strong>inventory postings in the inventory management system</strong> (sales, credits, corrections)."
 			}
 		},
 		"hints": {
@@ -1922,6 +1919,28 @@
 		"name": {
 			"singular": "Laboratory",
 			"plural": "Laboratories"
+		}
+	},
+	"articleReport": {
+		"views": {
+			"analysis": {
+				"title": "Stock evaluations",
+				"description": "In this section you will find all the evaluations that will help you keep an eye on your stocks."
+			}
+		},
+		"fields": {
+			"deadline": "Deadline"
+		},
+		"types": {
+			"erpBottleBook": {
+				"title": "Bottle inventory as of the reporting date",
+				"description": "Generates a bottle inventory as of the reporting date based on the <strong>inventory postings in the inventory management system</strong> (sales, credits, corrections)."
+			},
+			"personalConsumption": {
+				"title": "Own consumption by item",
+				"description": "Determine your own consumption within a given period."
+			}
+
 		}
 	},
 	"wine": {

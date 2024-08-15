@@ -7,6 +7,7 @@
 		"articles.bundles": "Produits groupés",
 		"articles.categories": "Catégories",
 		"articles.products": "Produits",
+		"articles.reports": "Rapportes",
 		"articles.statistics": "Statistiques",
 		"articles.wines": "Vins",
 		"cellar": "Ma cave",
@@ -885,10 +886,6 @@
 			"wineStatus": {
 				"title": "Aperçu des vins à la date limite",
 				"description": "Répertorie tous les vins avec inventaire, volume de bouteille et contenant à une date précise."
-			},
-			"erpBottleBook": {
-				"title": "Inventaire des bouteilles à la date du rapport",
-				"description": "Génère un inventaire des bouteilles à la date du rapport sur la base des <strong>écritures d'inventaire dans le système de gestion des stocks</strong> (ventes, crédits, corrections)."
 			}
 		},
 		"hints": {
@@ -1923,6 +1920,28 @@
 		"name": {
 			"singular": "Laboratoire",
 			"plural": "Laboratoires"
+		}
+	},
+	"articleReport": {
+		"views": {
+			"analysis": {
+				"title": "Évaluations des stocks",
+				"description": "Dans cette section, vous trouverez toutes les évaluations qui vous aideront à garder un œil sur vos stocks."
+			}
+		},
+		"fields": {
+			"deadline": "Date limite"
+		},
+		"types": {
+			"erpBottleBook": {
+				"title": "Inventaire des bouteilles à la date du rapport",
+				"description": "Génère un inventaire des bouteilles à la date du rapport sur la base des <strong>écritures d'inventaire dans le système de gestion des stocks</strong> (ventes, crédits, corrections)."
+			},
+			"personalConsumption": {
+				"title": "Autoconsommation par article",
+				"description": "Déterminez votre propre consommation sur une période donnée."
+			}
+
 		}
 	},
 	"wine": {

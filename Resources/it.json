@@ -7,6 +7,7 @@
 		"articles.bundles": "Pacchetto di prodotti",
 		"articles.categories": "Categoria",
 		"articles.products": "Prodotti",
+		"articles.reports": "Rapporti",
 		"articles.statistics": "Statistiche",
 		"articles.wines": "Vini",
 		"cellar": "Cantina",
@@ -885,10 +886,6 @@
 			"wineStatus": {
 				"title": "Panoramica dei vini alla scadenza",
 				"description": "Elenca tutti i vini con inventario, volume della bottiglia e contenitore a partire da una data specifica."
-			},
-			"erpBottleBook": {
-				"title": "Inventario bottiglie alla data di reporting",
-				"description": "Genera un inventario bottiglie alla data di reporting in base alle <strong>registrazioni di inventario nel sistema di gestione inventario</strong> (vendite, accrediti, correzioni)."
 			}
 		},
 		"hints": {
@@ -1918,10 +1915,26 @@
 			}
 		}
 	},
-	"laboratory": {
-		"name": {
-			"singular": "Laboratorio",
-			"plural": "Laboratori"
+	"articleReport": {
+		"views": {
+			"analysis": {
+				"title": "Valutazioni delle scorte",
+				"description": "In questa sezione troverai tutte le valutazioni che ti aiuteranno a tenere d'occhio le tue scorte."
+			}
+		},
+		"fields": {
+			"deadline": "Scadenza"
+		},
+		"types": {
+			"erpBottleBook": {
+				"title": "Inventario bottiglie alla data di reporting",
+				"description": "Genera un inventario bottiglie alla data di reporting in base alle <strong>registrazioni di inventario nel sistema di gestione inventario</strong> (vendite, accrediti, correzioni)."
+			},
+			"personalConsumption": {
+				"title": "Autoconsumo per articolo",
+				"description": "Determina il tuo autoconsumo in un dato periodo."
+			}
+
 		}
 	},
 	"wine": {
