@@ -2693,6 +2693,7 @@
 			"fullname": "Nome",
 			"name": "Nome/Contatto",
 			"company": "Società",
+			"taxid": "Numero di codice fiscale",
 			"address": "Via e numero civico",
 			"address_supplement": "Indirizzo aggiuntivo",
 			"postNumber": "Numero postale del destinatario",
@@ -2707,7 +2708,8 @@
 			"defaultdeliveryaddress": "Indirizzo di consegna standard",
 			"defaultinvoiceaddress": "Indirizzo di fatturazione standard",
 			"defaultinvoicemsg": "L'indirizzo specificato qui è impostato nel campo 'Generale'",
-			"searchaddress": "Cerca l'indirizzo di consegna"
+			"searchaddress": "Cerca l'indirizzo di consegna",
+			"searchInvoiceAddress": "Cerca indirizzo fattura"
 		},
 		"types": {
 			"invoice": "Indirizzo di fatturazione",
@@ -2718,6 +2720,11 @@
 			"address": "Indirizzo",
 			"parcelStation": "Stazioni pacchi"
 		},
+		"fieldSets": {
+			"contact": "Dati di contatto",
+			"address": "Informazioni sull'indirizzo",
+			"additional": "Informazioni aggiuntive"
+		},
 		"dialogs": {
 			"delete": "Vuoi veramente cancellare questo indirizzo?"
 		},
@@ -2725,6 +2732,10 @@
 			"created": "Indirizzo è stato registrato.",
 			"changed": "Indirizzo è stato aggiornato.",
 			"deleted": "Indirizzo è stato cancellato."
+		},
+		"hints": {
+			"deliveryNoteRemark": "informazioni separate visualizzate sui documenti di consegna",
+			"invoiceNoteRemark": "informazioni separate visualizzate sui documenti di fattura"
 		}
 	},
 	"creditAdvice": {
@@ -3353,6 +3364,7 @@
 				"positions": " Continua alle posizioni",
 				"summary": "Continua al riepilogo dell'ordine"
 			},
+			"setDifferingBillingAddress": "Indirizzo di fatturazione diverso",
 			"setDifferingShippingAddress": {
 				"main": "Diverso indirizzo",
 				"sub": "di consegna"
@@ -3415,6 +3427,7 @@
 			"rebatesum": "Sconto",
 			"referenceNumber": "N° di riferimento esterno",
 			"same_invoice_addr": "Come l'indirizzo di fatturazione",
+			"invoiceLikeClient": "Dai dati del cliente",
 			"search_product": "Cerca prodotto",
 			"servicePeriod": {
 				"label": "Periodo di servizio",

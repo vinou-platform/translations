@@ -2699,6 +2699,7 @@
 			"fullname": "Name",
 			"name": "Name/Ansprechpartner",
 			"company": "Firma",
+			"taxid": "Steuernummer",
 			"address": "Straße und Hausnummer",
 			"address_supplement": "Adresszusatz",
 			"postNumber": "Postnummer des Empfänger",
@@ -2713,7 +2714,8 @@
 			"defaultdeliveryaddress": "Standardlieferadresse",
 			"defaultinvoiceaddress": "Standardrechnungsadresse",
 			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
-			"searchaddress": "Lieferadresse suchen"
+			"searchaddress": "Lieferadresse suchen",
+			"searchInvoiceAddress": "Rechnungsadresse suchen"
 		},
 		"types": {
 			"invoice": "Rechnungsadresse",
@@ -2724,6 +2726,11 @@
 			"address": "Adresse",
 			"parcelStation": "Packstation"
 		},
+		"fieldSets": {
+			"contact": "Kontaktdaten",
+			"address": "Adressinformationen",
+			"additional": "Weitere Informationen"
+		},
 		"dialogs": {
 			"delete": "Möchtest Du diese Adresse wirklich löschen?"
 		},
@@ -2731,6 +2738,10 @@
 			"created": "Adresse erstellt!",
 			"changed": "Adresse aktualisiert!",
 			"deleted": "Adresse gelöscht!"
+		},
+		"hints": {
+			"deliveryNoteRemark": "gesonderte Angabe die auf allen Liferdokumenten erscheinen",
+			"invoiceNoteRemark": "gesonderte Angabe die auf allen Rechnungsdokumenten erscheinen"
 		}
 	},
 	"creditAdvice": {
@@ -3359,6 +3370,7 @@
 				"positions": "Weiter zu den Positionen",
 				"summary": "Weiter zur Bestellübersicht"
 			},
+			"setDifferingBillingAddress": "Abweichende Rechnungsadresse",
 			"setDifferingShippingAddress": {
 				"main": "Abweichende",
 				"sub": "Lieferadresse"
@@ -3421,6 +3433,7 @@
 			"rebatesum": "Rabatt",
 			"referenceNumber": "Externe Referenznr.",
 			"same_invoice_addr": "Wie Rechnungsadresse",
+			"invoiceLikeClient": "Aus Kundendatensatz",
 			"search_product": "Produkt suchen",
 			"servicePeriod": {
 				"label": "Leistungszeitraum",

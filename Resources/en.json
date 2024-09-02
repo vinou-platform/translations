@@ -2699,6 +2699,7 @@
 			"fullname": "Name",
 			"name": "Contact person",
 			"company": "Company",
+			"taxid": "Tax Number",
 			"address": "Street",
 			"address_supplement": "Address supplement",
 			"postNumber": "Recipient's postal number",
@@ -2713,7 +2714,8 @@
 			"defaultdeliveryaddress": "Default shipping address",
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
-			"searchaddress": "Search delivery address"
+			"searchaddress": "Search delivery address",
+			"searchInvoiceAddress": "Search invoice address"
 		},
 		"types": {
 			"invoice": "Invoice address",
@@ -2724,6 +2726,11 @@
 			"address": "Address",
 			"parcelStation": "Parcel station"
 		},
+		"fieldSets": {
+			"contact": "Contact data",
+			"address": "Address information",
+			"additional": "Additional Informationen"
+		},
 		"dialogs": {
 			"delete": "Do you really want to delete this address?"
 		},
@@ -2731,6 +2738,10 @@
 			"created": "Address created.",
 			"changed": "Address changed.",
 			"deleted": "Address deleted."
+		},
+		"hints": {
+			"deliveryNoteRemark": "separate information displayed on delivery documents",
+			"invoiceNoteRemark": "separate information displayed on invoice documents"
 		}
 	},
 	"creditAdvice": {
@@ -3359,6 +3370,7 @@
 				"positions": "Next - positions",
 				"summary": "Next - summary"
 			},
+			"setDifferingBillingAddress": "Differing invoice address",
 			"setDifferingShippingAddress": {
 				"main": "Differing",
 				"sub": "delivery address"
@@ -3421,6 +3433,7 @@
 			"rebatesum": "Rebate",
 			"referenceNumber": "External reference no.",
 			"same_invoice_addr": "Same as billing address",
+			"invoiceLikeClient": "From client data",
 			"search_product": "Search product",
 			"servicePeriod": {
 				"label": "Service period",

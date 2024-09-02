@@ -2699,6 +2699,7 @@
 			"fullname": "nombre",
 			"name": "nombre/persona de contacto",
 			"company": "empresa",
+			"taxid": "Número de identificación fiscal",
 			"address": "calle y número de casa",
 			"address_supplement": "datos complementarios del domicilio",
 			"postNumber": "Número postal del destinatario",
@@ -2713,7 +2714,8 @@
 			"defaultdeliveryaddress": "dirección de entraga estándar",
 			"defaultinvoiceaddress": "dirección de cuenta estándar",
 			"defaultinvoicemsg": "La dirección indicada está puesto en la pestaña 'generalidades'.",
-			"searchaddress": "buscar dirección de entrega"
+			"searchaddress": "buscar dirección de entrega",
+			"searchInvoiceAddress": "Buscar dirección de facturación"
 		},
 		"types": {
 			"invoice": "Dirección de cuenta",
@@ -2724,6 +2726,11 @@
 			"address": "Dirección",
 			"parcelStation": "Estación de paquetería"
 		},
+		"fieldSets": {
+			"contact": "Datos de contacto",
+			"address": "Información de la dirección",
+			"additional": "Información adicional"
+		},
 		"dialogs": {
 			"delete": "Quieres borrar esa direción seguramente?"
 		},
@@ -2731,6 +2738,10 @@
 			"created": "Dirección ha sido grabada.",
 			"changed": "Dirección ha sido acutalizada.",
 			"deleted": "Dirección ha sido borrada."
+		},
+		"hints": {
+			"deliveryNoteRemark": "información separada que se muestra en los documentos de entrega",
+			"invoiceNoteRemark": "información separada que se muestra en los documentos de factura"
 		}
 	},
 	"creditAdvice": {
@@ -3359,6 +3370,7 @@
 				"positions": "Seguir a las posiciones",
 				"summary": "Seguir al resumen de ordenes"
 			},
+			"setDifferingBillingAddress": "Dirección de facturación diferente",
 			"setDifferingShippingAddress": {
 				"main": "Divergentes",
 				"sub": "boletín de entrega"
@@ -3421,6 +3433,7 @@
 			"rebatesum": "descuento",
 			"referenceNumber": "N° de referencia externa",
 			"same_invoice_addr": "como dirección de cuenta",
+			"invoiceLikeClient": "A partir de datos del cliente",
 			"search_product": "buscar producto",
 			"servicePeriod": {
 				"label": "Período de servicio",

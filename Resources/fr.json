@@ -2700,6 +2700,7 @@
 			"fullname": "Nom",
 			"name": "Nom/personne de contact",
 			"company": "Entreprise",
+			"taxid": "Numéro d'identification fiscale",
 			"address": "Rue et numéro",
 			"address_supplement": "Adresse supplémentaire",
 			"postNumber": "Numéro postal du destinataire",
@@ -2714,7 +2715,8 @@
 			"defaultdeliveryaddress": "Adresse de livraison standard",
 			"defaultinvoiceaddress": "Adresse de facturation standard",
 			"defaultinvoicemsg": "L'adresse spécifiée ici est définie dans l'onglet 'Général'.",
-			"searchaddress": "Rechercher adresse de livraison"
+			"searchaddress": "Rechercher adresse de livraison",
+			"searchInvoiceAddress": "Rechercher l'adresse de facturation"
 		},
 		"types": {
 			"invoice": "Adresse de facturation",
@@ -2725,6 +2727,11 @@
 			"address": "Adresse",
 			"parcelStation": "Poste colis"
 		},
+		"fieldSets": {
+			"contact": "Coordonnées",
+			"address": "Informations d'adresse",
+			"additional": "Informations supplémentaires"
+		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"
 		},
@@ -2732,6 +2739,10 @@
 			"created": "Adresse enregistrée.",
 			"changed": "Adresse mise à jour.",
 			"deleted": "Adresse supprimée."
+		},
+		"hints": {
+			"deliveryNoteRemark": "informations distinctes affichées sur les documents de livraison",
+			"invoiceNoteRemark": "informations distinctes affichées sur les documents de facturation"
 		}
 	},
 	"creditAdvice": {
@@ -3360,6 +3371,7 @@
 				"positions": "Continuer aux positions",
 				"summary": "Continuer vers l'aperçu de l'ordre"
 			},
+			"setDifferingBillingAddress": "Adresse de facturation différente",
 			"setDifferingShippingAddress": {
 				"main": "Adresse de livraison",
 				"sub": "différente"
@@ -3422,6 +3434,7 @@
 			"rebatesum": "Remise",
 			"referenceNumber": "N° de référence externe",
 			"same_invoice_addr": "Comme l'adresse de facturation",
+			"invoiceLikeClient": "À partir des données client",
 			"search_product": "Rechercher produit",
 			"servicePeriod": {
 				"label": "Période de service",
