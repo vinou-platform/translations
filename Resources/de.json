@@ -2042,6 +2042,7 @@
 					"notfound": "Bild konnte nicht gefunden werden"
 				}
 			},
+			"ingredients": "Individuelle Zutatenliste <span class=\"small\">(wird unterhalb der Zutatenliste ausgegeben, kann aber auch alternativ verwendet werden)</span>",
 			"inshop": "Im Shop anzeigen",
 			"instock": "auf Lager",
 			"inwinelist": "In Weinliste anzeigen",
@@ -2049,6 +2050,7 @@
 			"name": "Name",
 			"nostock": "ausgetrunken",
 			"nostocktext": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
+			"nutritionalInformation": "Zusätzliche Nährwertangaben <span class=\"small\">(werden im eLabel unterhalb der Nährwerttabelle dargestellt)</span>",
 			"packageQuantity": "Verpackungsäquivalent (in 0,75l Flaschen)",
 			"place": "Lage",
 			"price": "Preis",
@@ -3449,6 +3451,11 @@
 			"vatincluded": "inkl. {tax} MwSt.",
 			"vatexcluded": "zzgl. {tax} MwSt.",
 			"yardsale": "Abhofverkauf"
+		},
+		"deliveryMethods": {
+			"none": "Abhofverkauf",
+			"parcel": "Paketsendung",
+			"delivery": "Lieferung"
 		},
 		"paymenttypes": {
 			"cash": "Barzahlung",
@@ -4929,13 +4936,17 @@
 		"0.700": "0,7 l",
 		"0.750": "0,75 l (Normalflasche)",
 		"1.000": "1 l",
-		"1.500": "1,5 l (Magnum)",
+		"1.500": "1,5 l",
 		"2.000": "2 l (Doppler)",
 		"2.250": "2,25 l (Marie-Jeanne)",
-		"3.000": "3 l (Doppelmagnum)",
+		"2.500": "2,5 l",
+		"3.000": "3 l",
+		"5.000": "5 l",
 		"6.000": "6 l (Methusalem/Impériale)",
+		"10.000": "10 l",
 		"12.000": "12 l (Balthazar)",
-		"18.000": "18 l (Goliath/Melchior)"
+		"18.000": "18 l (Goliath/Melchior)",
+		"20.000": "20 l"
 	},
 	"grapetypes": {
 		"1": {
@@ -7019,6 +7030,7 @@
 		}
 	},
 	"wineregions": {
+		"none": "Ohne Herkunftsangabe",
 		"ar": {
 			"14001": "Mendoza"
 		},

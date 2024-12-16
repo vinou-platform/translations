@@ -2042,6 +2042,7 @@
 					"notfound": "Image could not be resolved"
 				}
 			},
+			"ingredients": "Individual ingredient list <span class=\"small\">(is displayed below the ingredient list, but can also be used as an alternative)</span>",
 			"inshop": "Show shop",
 			"instock": "in stock",
 			"inwinelist": "Show in winelist",
@@ -2049,6 +2050,7 @@
 			"name": "Name",
 			"nostock": "sold out",
 			"nostocktext": "alternativ text for sold out",
+			"nutritionalInformation": "Additional nutritional information <span class=\"small\">(is displayed in the eLabel below the nutritional table)</span>",
 			"packageQuantity": "Packaging equivalent (0,75l bottles)",
 			"place": "Place",
 			"price": "Price",
@@ -3449,6 +3451,11 @@
 			"vatincluded": "incl. VAT {tax}",
 			"vatexcluded": "excl. VAT {tax}",
 			"yardsale": "Yard sale"
+		},
+		"deliveryMethods": {
+			"none": "Farm sale",
+			"parcel": "Parcel Delivery",
+			"delivery": "Self Delivery"
 		},
 		"paymenttypes": {
 			"cash": "Cash",
@@ -4929,13 +4936,17 @@
 		"0.700": "0.7 l",
 		"0.750": "0.75 l (Standard)",
 		"1.000": "1 l",
-		"1.500": "1.5 l (Magnum)",
+		"1.500": "1.5 l",
 		"2.000": "2 l (Doppler)",
 		"2.250": "2.25 l (Marie-Jeanne)",
-		"3.000": "3 l (Double Magnum)",
+		"2.500": "2.5 l",
+		"3.000": "3 l",
+		"5.000": "5 l",
 		"6.000": "6 l (Methusalem/Impériale)",
+		"10.000": "10 l",
 		"12.000": "12 l (Balthazar)",
-		"18.000": "18 l (Goliath/Melchior)"
+		"18.000": "18 l (Goliath/Melchior)",
+		"20.000": "20 l"
 	},
 	"grapetypes": {
 		"1": {
@@ -7019,6 +7030,7 @@
 		}
 	},
 	"wineregions": {
+		"none": "Ohne Herkunftsangabe",
 		"ar": {
 			"14001": "Mendoza"
 		},
