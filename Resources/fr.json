@@ -7031,7 +7031,9 @@
 		}
 	},
 	"wineregions": {
-		"none": "Sans indication d'origine",
+		"none": {
+			"1": "Sans indication d'origine"
+		},
 		"ar": {
 			"14001": "Mendoza"
 		},
