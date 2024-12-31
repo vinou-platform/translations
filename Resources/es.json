@@ -3132,6 +3132,21 @@
 			"others": "Otros medios procesales"
 		}
 	},
+	"einvoice": {
+		"name": {
+			"singular": "Factura electrónica",
+			"plural": "Factura electrónica"
+		},
+		"actions": {
+			"download": "Descargar factura electrónica"
+		},
+		"hints": {
+			"new": {
+				"title": "Factura electrónica disponible",
+				"description": "<b>A partir del 1 de enero de 2025</b>, todos los PDF generados por Vinou estarán equipados con la denominada Factura XML integrada (factura electrónica). <b>Esto solo se aplica a las facturas B2B dentro de Europa</b>. Además, el archivo XML está disponible como descarga independiente detrás del documento. La descarga está marcada con el icono <i class='vinou-calc-price vinou-2x'></i>."
+			}
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Factura",
@@ -6900,6 +6915,7 @@
 		"lt": "Lituania",
 		"lu": "Luxemburgo",
 		"lv": "Letonia",
+		"mx": "México",
 		"mt": "Malta",
 		"nl": "Países bajos",
 		"no": "Noruega",

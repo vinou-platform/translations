@@ -3132,6 +3132,21 @@
 			"others": "Sonstige Verfahrensmittel"
 		}
 	},
+	"einvoice": {
+		"name": {
+			"singular": "E-Rechnung",
+			"plural": "E-Rechnungen"
+		},
+		"actions": {
+			"download": "E-Rechnung herunterladen"
+		},
+		"hints": {
+			"new": {
+				"title": "E-Rechnung verfügbar",
+				"description": "<b>Ab dem 01.01.2025</b> werden alle von Vinou generierten PDFs mit der sogenannten integrierten Factura XML (E-Rechnung) ausgestattet. <b>Dies gilt ausschließlich für B2B-Rechnungen im innereuropäischen Raum</b>. Zusätzlich steht Dir die XML-Datei als separater Download hinter dem Dokument zur Verfügung. Der Download ist mit dem Icon <i class='vinou-calc-price vinou-2x'></i> gekennzeichnet."
+			}
+		}
+	},
 	"invoice": {
 		"name": {
 			"singular": "Rechnung",
@@ -6900,6 +6915,7 @@
 		"lt": "Litauen",
 		"lu": "Luxemburg",
 		"lv": "Lettland",
+		"mx": "Mexiko",
 		"mt": "Malta",
 		"nl": "Niederlande",
 		"no": "Norwegen",
