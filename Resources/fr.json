@@ -2554,6 +2554,7 @@
 			"city": "Ville",
 			"country": "Pays",
 			"mail": "Courriel",
+			"billingMail": "E-mail pour la facturation",
 			"www": "Site Web",
 			"phone": "Téléphone",
 			"mobile": "Portable",

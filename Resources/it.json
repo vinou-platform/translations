@@ -2547,6 +2547,7 @@
 			"city": "Città",
 			"country": "Paese",
 			"mail": "E-Mail",
+			"billingMail": "E-mail per la fatturazione",
 			"www": "Sito web",
 			"phone": "Telefono",
 			"mobile": "Cellulare",

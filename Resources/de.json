@@ -2553,6 +2553,7 @@
 			"city": "Stadt",
 			"country": "Land",
 			"mail": "E-Mail",
+			"billingMail": "E-Mail für Rechnungsversand",
 			"www": "Internetseite",
 			"phone": "Telefon",
 			"mobile": "Mobil",

@@ -2553,6 +2553,7 @@
 			"city": "City",
 			"country": "Country",
 			"mail": "E-Mail",
+			"billingMail": "E-Mail for billing",
 			"www": "Website",
 			"phone": "Phone",
 			"mobile": "Mobile",
