@@ -172,7 +172,8 @@
 			"fileType": {
 				"label": "Tipo de archivo",
 				"pdf": "PDF",
-				"xls": "Excel",
+				"xlsx": "Excel (OpenXML .xlsx)",
+				"xls": "Excel (97 .xls)",
 				"csv": "CSV",
 				"json": "JSON"
 			},
