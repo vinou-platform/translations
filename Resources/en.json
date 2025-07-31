@@ -113,7 +113,7 @@
 			"metaTitle": "Title-tag",
 			"metaDescription": "Meta description",
 			"pathSegment": "Path segment",
-			"exactSearch": "Client data must contain every search word. Whitespaces splits search phrase into search word.",
+			"exactSearch": "Each search word must appear in the data record. Spaces separate search words.",
 			"salesAmmount": "Sales ammount in {currency}",
 			"sum": "Total sum"
 		},

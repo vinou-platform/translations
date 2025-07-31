@@ -113,7 +113,7 @@
 			"metaTitle": "Etichetta del titolo",
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segmento di percorso",
-			"exactSearch": "I dati del cliente devono contenere ogni parola di ricerca. Gli spazi bianchi suddividono la frase di ricerca nella parola di ricerca.",
+			"exactSearch": "Ogni parola di ricerca deve comparire nel record di dati. Gli spazi separano le parole di ricerca.",
 			"salesAmmount": "Importo delle vendite in {currency}",
 			"sum": "Somma totale"
 		},

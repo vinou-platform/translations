@@ -113,7 +113,7 @@
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
 			"pathSegment": "Pfadsegment",
-			"exactSearch": "Jedes Suchwort muss im Kunden-Datensatz vorkommen. Leerzeichen trennen Suchwörter.",
+			"exactSearch": "Jedes Suchwort muss im Datensatz vorkommen. Leerzeichen trennen Suchwörter.",
 			"salesAmmount": "Umsatz in {currency}",
 			"sum": "Summe"
 		},
