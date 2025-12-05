@@ -1556,11 +1556,19 @@
 				"title": "Neues Mitglied anlegen",
 				"modaltitle": "Neues Mitglied anlegen"
 			},
+			"createInvoicePreview": {
+				"main": "Rechnungsvorschau",
+				"sub": "erzeugen"
+			},
 			"login": {
 				"login": "Einloggen"
 			},
 			"renewauth": {
 				"button": "AuthID Erneuern!"
+			},
+			"saveInvoiceDraft": {
+				"main": "Rechnungsentwurf",
+				"sub": "speichern"
 			},
 			"search": {
 				"placeholder": "z.B. Name, Firma, Addresse"
@@ -1571,59 +1579,70 @@
 				"publish": "<b>Eingeschränkter Account!</b> Du nutzt zur Zeit unseren eingeschänkten Free-Account."
 			}
 		},
+		"tabs": {
+			"accounting": "Abrechnung"
+		},
 		"fieldSets": {
-			"membership": "Mitgliedschaft",
+			"accounting": "Abrechnung",
 			"contact": "Kontaktdaten",
 			"description": "Beschreibung",
-			"settings": "Einstellungen",
 			"invoice": "Rechnungsangaben",
-			"payment": "Zahlungseinstellungen"
+			"invoicesLatest": "Letzte Rechnungen",
+			"invoicePreview": {
+
+				"n": "Rechnungsvorschau für Q{n} {year}"
+			},
+			"membership": "Mitgliedschaft",
+			"payment": "Zahlungseinstellungen",
+			"settings": "Einstellungen"
 		},
 		"fields": {
-			"app": "App-Lizenz",
-			"storage": "Speicherplatz",
-			"mail": "E-Mail",
-			"password": "Passwort",
-			"phone": "Telefon",
-			"voucher": "Ich habe einen Gutschein-Code",
-			"copyright": "© Copyright {company} 2018",
-			"name": "Ansprechpartner",
-			"company": "Firma",
-			"winery": "Weingut",
-			"taxid": "Steuernummer",
-			"vatid": "USt-ID.",
-			"creditorid": "Gläubiger-ID",
-			"gln": "GLN",
-			"address": "Straße und Hausnummer",
-			"zip": "PLZ",
-			"city": "Stadt",
-			"zipcity": "PLZ - Stadt",
-			"country": "Land",
-			"www": "Internetseite",
-			"fax": "Fax",
 			"active": "aktiv",
+			"address": "Straße und Hausnummer",
+			"addOns": "Add-On-Lizenzen",
+			"app": "App-Lizenz",
+			"authid": "Developer Auth ID",
+			"city": "Stadt",
+			"company": "Firma",
+			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
+			"copyright": "© Copyright {company} 2018",
+			"country": "Land",
+			"creditorid": "Gläubiger-ID",
+			"crstamp": "Registriert am",
+			"expire": "Ablaufzeitpunkt der Testphase",
+			"fax": "Fax",
+			"freetext": "Freitext",
+			"freeTransactions": "monatl. kostenfreie Transaktionen",
+			"gln": "GLN",
 			"image": "Logo",
 			"letterhead": "Zusätzliche Informationen für den Briefkopf",
-			"freetext": "Freitext",
-			"authid": "Developer Auth ID",
-			"template": "Expertisen Template",
-			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
-			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
+			"mail": "E-Mail",
+			"name": "Ansprechpartner",
+			"notice": "Systemmails senden",
+			"password": "Passwort",
 			"payment": "Ich willige ein, dass Vinou die monatliche Grundgebühr zzgl. MwSt. und den Gebühren für vermittelte Bestellung monatlich von meinem Konto abbucht.",
+			"paymentMethod": "Zahlungsmethode",
+			"phone": "Telefon",
 			"pricing": "Abrechnungsmodell",
+			"sevdeskCustomerNumber": "sevdesk Kundennummer",
 			"smallBusiness": {
 				"label": "Kleinunternehmer",
 				"description": "Kein Ausweis von Umsatzsteuer gemäß § 19 UStG"
 			},
-			"crstamp": "Registriert am",
-			"expire": "Ablaufzeitpunkt der Testphase",
-			"voucher_old": "Gutschein-Code",
 			"source": "Akquiriert durch",
-			"notice": "Systemmails senden",
 			"state": "Status",
+			"storage": "Speicherplatz",
+			"taxid": "Steuernummer",
+			"template": "Expertisen Template",
+			"trust": "Ich bin einverstanden, dass mein Account gelöscht wird, sollte er nicht die Nutzungsbedingungen oder die Anmeldevoraussetzungen erfüllen.",
 			"type": "Kunden-Typ",
-			"paymentMethod": "Zahlungsmethode",
-			"freeTransactions": "monatl. kostenfreie Transaktionen"
+			"vatid": "USt-ID.",
+			"voucher_old": "Gutschein-Code",
+			"voucher": "Ich habe einen Gutschein-Code",
+			"winery": "Weingut",
+			"www": "Internetseite",
+			"zip": "PLZ",
+			"zipcity": "PLZ - Stadt"
 		},
 		"types": {
 			"winery": "Weingut",
@@ -1679,10 +1698,12 @@
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
 			},
-			"delete": "Möchtest Du diesen Kunden wirklich löschen?"
+			"delete": "Möchtest Du diesen Kunden wirklich löschen?",
+			"saveInvoiceDraft": "Möchtest Du diesen Rechnungsentwurf wirklich in sevdesk speichern?"
 		},
 		"toasts": {
-			"settingsSaved": "Deine Einstellungen wurden gespeichert!"
+			"settingsSaved": "Deine Einstellungen wurden gespeichert!",
+			"invoiceDraftSaved": "Dein Rechnungsentwurf wurde in sevdesk gespeichert."
 		},
 		"errors": {
 			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat."

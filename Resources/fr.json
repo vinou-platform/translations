@@ -1557,11 +1557,19 @@
 				"title": "Créer Membre",
 				"modaltitle": "Créer Membre"
 			},
+			"createInvoicePreview": {
+				"main": "Créer aperçu",
+				"sub": "de la facture"
+			},
 			"login": {
 				"login": "Se connecter"
 			},
 			"renewauth": {
 				"button": "Renouveler l'ID d'authentification!"
+			},
+			"saveInvoiceDraft": {
+				"main": "Enregistrer l'aperçu",
+				"sub": "de la facture"
 			},
 			"search": {
 				"placeholder": "p.ex. nom, entreprise, adresse"
@@ -1572,59 +1580,70 @@
 				"publish": "<b>Compte Freemium!</b> Vous utilisez notre compte freemium restreint."
 			}
 		},
+		"tabs": {
+			"accounting": "Décompte"
+		},
 		"fieldSets": {
-			"membership": "Adhésion",
+			"accounting": "Décompte",
 			"contact": "Coordonnées",
 			"description": "Description",
-			"settings": "Configuration",
 			"invoice": "Informations de facturation",
-			"payment": "Paramètres de paiement"
+			"invoicesLatest": "Factures récentes",
+			"invoicePreview": {
+				"1": "Aperçu des factures {n}er trimestre {year}",
+				"n": "Aperçu des factures {n}e trimestre {year}"
+			},
+			"membership": "Adhésion",
+			"payment": "Paramètres de paiement",
+			"settings": "Configuration"
 		},
 		"fields": {
-			"app": "Licence d'application",
-			"storage": "Stockage",
-			"mail": "Courriel",
-			"password": "Mot de passe",
-			"phone": "Téléphone",
-			"voucher": "J'ai un code promo",
-			"copyright": "© Copyright {company} 2018",
-			"name": "Personne de contact",
-			"company": "Entreprise",
-			"winery": "Établissement vinicole",
-			"taxid": "Numéro fiscal",
-			"vatid": "NIF",
-			"creditorid": "ID de créanciers",
-			"gln": "GLN",
-			"address": "Rue et numéro",
-			"zip": "Code postal",
-			"city": "Ville",
-			"zipcity": "Code postal - Ville",
-			"country": "Pays",
-			"www": "Site web",
-			"fax": "Fax",
 			"active": "Aktif",
+			"addOns": "Licences modules complémentaires",
+			"address": "Rue et numéro",
+			"app": "Licence d'application",
+			"authid": "ID d'authentification du développeur",
+			"city": "Ville",
+			"company": "Entreprise",
+			"cop": "J'ai lu les <a href='http://www.vinou.de/agb' target='blank'>termes et conditions</a> et les accepte.",
+			"copyright": "© Copyright {company} 2018",
+			"country": "Pays",
+			"creditorid": "ID de créanciers",
+			"crstamp": "Date d'enregistrement",
+			"expire": "Date d'expiration de la phase de test",
+			"fax": "Fax",
+			"freetext": "Texte libre",
+			"freeTransactions": "Transazioni gratuite incluse",
+			"gln": "GLN",
 			"image": "Logo",
 			"letterhead": "Informations complémentaires pour le papier à en-tête",
-			"freetext": "Texte libre",
-			"authid": "ID d'authentification du développeur",
-			"template": "Modèle Expertisen",
-			"cop": "J'ai lu les <a href='http://www.vinou.de/agb' target='blank'>termes et conditions</a> et les accepte.",
-			"trust": "Je conviens que mon compte sera supprimé s'il ne respecte pas les conditions d'utilisation ou les conditions d'enregistrement.",
+			"mail": "Courriel",
+			"name": "Personne de contact",
+			"notice": "Envoyer des courriels système",
+			"password": "Mot de passe",
 			"payment": "J'accepte que Vinou déduire les frais de base mensuel plus la TVA. et les frais d'ordre médiateé de mon compte.",
+			"paymentMethod": "Metodo di pagamento",
+			"phone": "Téléphone",
 			"pricing": "Adhésion",
+			"sevdeskCustomerNumber": "Numéro de client sevdesk",
 			"smallBusiness": {
 				"label": "Petite entreprise",
 				"description": "Factures hors taxes"
 			},
-			"crstamp": "Date d'enregistrement",
-			"expire": "Date d'expiration de la phase de test",
-			"voucher_old": "Code promo",
 			"source": "Acquis par",
-			"notice": "Envoyer des courriels système",
 			"state": "Statut",
+			"storage": "Stockage",
+			"taxid": "Numéro fiscal",
+			"template": "Modèle Expertisen",
+			"trust": "Je conviens que mon compte sera supprimé s'il ne respecte pas les conditions d'utilisation ou les conditions d'enregistrement.",
 			"type": "Type",
-			"paymentMethod": "Metodo di pagamento",
-			"freeTransactions": "Transazioni gratuite incluse"
+			"vatid": "NIF",
+			"voucher_old": "Code promo",
+			"voucher": "J'ai un code promo",
+			"winery": "Établissement vinicole",
+			"www": "Site web",
+			"zip": "Code postal",
+			"zipcity": "Code postal - Ville"
 		},
 		"types": {
 			"winery": "Établissement vinicole",
@@ -1680,10 +1699,12 @@
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
 			},
-			"delete": "Voulez-vous vraiment supprimer ce membre?"
+			"delete": "Voulez-vous vraiment supprimer ce membre?",
+			"saveInvoiceDraft": "Voulez-vous vraiment enregistrer cette facture provisoire dans sevdesk?"
 		},
 		"toasts": {
-			"settingsSaved": "Vos réglages ont été sauvegardés!"
+			"settingsSaved": "Vos réglages ont été sauvegardés!",
+			"invoiceDraftSaved": "Votre facture provisoire a été enregistrée dans sevdesk."
 		},
 		"errors": {
 			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
