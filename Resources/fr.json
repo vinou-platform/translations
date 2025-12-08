@@ -115,7 +115,8 @@
 			"pathSegment": "Segment de chemin",
 			"exactSearch": "Les données du client doivent contenir chaque mot de recherche. Les espaces blancs divisent la phrase de recherche en mot de recherche.",
 			"salesAmmount": "Montant des ventes en {currency}",
-			"sum": "Somme totale"
+			"sum": "Somme totale",
+			"captcha": "Saisissez les caractères de l'image"
 		},
 		"tabs": {
 			"files": "Fichiers",

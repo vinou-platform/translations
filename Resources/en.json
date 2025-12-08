@@ -115,7 +115,8 @@
 			"pathSegment": "Path segment",
 			"exactSearch": "Client data must contain every search word. Whitespaces splits search phrase into search word.",
 			"salesAmmount": "Sales ammount in {currency}",
-			"sum": "Total sum"
+			"sum": "Total sum",
+			"captcha": "Enter the characters from the image"
 		},
 		"tabs": {
 			"files": "Files",

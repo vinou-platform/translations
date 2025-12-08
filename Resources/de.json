@@ -115,7 +115,8 @@
 			"pathSegment": "Pfadsegment",
 			"exactSearch": "Jedes Suchwort muss im Kunden-Datensatz vorkommen. Leerzeichen trennen Suchwörter.",
 			"salesAmmount": "Umsatz in {currency}",
-			"sum": "Summe"
+			"sum": "Summe",
+			"captcha": "Geben Sie die Zeichen aus dem Bild ein"
 		},
 		"tabs": {
 			"files": "Dateien",
