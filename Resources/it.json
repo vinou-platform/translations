@@ -113,7 +113,7 @@
 			"metaTitle": "Etichetta del titolo",
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segmento di percorso",
-			"exactSearch": "I dati del cliente devono contenere ogni parola di ricerca. Gli spazi bianchi suddividono la frase di ricerca nella parola di ricerca.",
+			"exactSearch": "Ogni parola di ricerca deve comparire nel record di dati. Gli spazi separano le parole di ricerca.",
 			"salesAmmount": "Importo delle vendite in {currency}",
 			"sum": "Somma totale"
 		},
@@ -1556,8 +1556,16 @@
 				"title": "Creare nuovo membro",
 				"modaltitle": "Creare nuovo membro"
 			},
+			"createInvoicePreview": {
+				"main": "Anteprima fattura",
+				"sub": "creare"
+			},
 			"login": {
 				"login": "Connettersi"
+			},
+			"saveInvoiceDraft": {
+				"main": "anteprima fattura",
+				"sub": "salva"
 			},
 			"renewauth": {
 				"button": "Rinnova ID di autenticazione!"
@@ -1571,59 +1579,70 @@
 				"publish": "<b>Account Freemium!</b> Stai utilizzando il nostro account Freemium limitato."
 			}
 		},
+		"tabs": {
+			"accounting": "Fatturazione"
+		},
 		"fieldSets": {
-			"membership": "Membri",
+			"accounting": "Fatturazione",
 			"contact": "Contatto",
 			"description": "Descrizione",
-			"settings": "Configurazione",
 			"invoice": "Informazioni di fatturazione",
-			"payment": "Impostazioni di pagamento"
+			"invoicesLatest": "Recent invoices",
+			"invoicePreview": {
+
+				"n": "Anteprima fatture per il {n}° {year}"
+			},
+			"membership": "Membri",
+			"payment": "Impostazioni di pagamento",
+			"settings": "Configurazione"
 		},
 		"fields": {
-			"app": "Licenza dell'app",
-			"storage": "Magazzinaggio",
-			"mail": "E-Mail",
-			"password": "Password",
-			"phone": "Telefono",
-			"voucher": "Ho un codice promozionale",
-			"copyright": "© Copyright {company} 2018",
-			"name": "Persona di contatto",
-			"company": "Società",
-			"winery": "cantina",
-			"taxid": "Codice fiscale",
-			"vatid": "Numero di vendita tax-identificazione",
-			"creditorid": "ID creditore",
-			"gln": "GLN",
-			"address": "Via e numero",
-			"zip": "Codice postale",
-			"city": "Città",
-			"zipcity": "Codice postale - Città",
-			"country": "Paese",
-			"www": "Sito Web",
-			"fax": "Fax",
 			"active": "Aktif",
+			"addOns": "Licenze Add-On",
+			"address": "Via e numero",
+			"app": "Licenza dell'app",
+			"authid": "ID di autenticazione dello sviluppatore",
+			"city": "Città",
+			"company": "Società",
+			"cop": "Ho letto i termini e le condizioni e li accetto. <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a>",
+			"copyright": "© Copyright {company} 2018",
+			"country": "Paese",
+			"creditorid": "ID creditore",
+			"crstamp": "Data di registrazione",
+			"expire": "Data di scadenza della fase di prova",
+			"fax": "Fax",
+			"freetext": "Testo libero",
+			"freeTransactions": "Transazioni gratuite incluse",
+			"gln": "GLN",
 			"image": "Logo",
 			"letterhead": "Informazioni aggiuntive per la carta intestata",
-			"freetext": "Testo libero",
-			"authid": "ID di autenticazione dello sviluppatore",
-			"template": "modello competenza",
-			"cop": "Ho letto i termini e le condizioni e li accetto. <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a>",
-			"trust": "Accetto che il mio account verrà eliminato se non rispetta le condizioni d'uso o le condizioni di registrazione.",
+			"mail": "E-Mail",
+			"name": "Persona di contatto",
+			"notice": "Invia e-mail di sistema",
+			"password": "Password",
 			"payment": "Sono d'accordo che Vinou detrae la tariffa mensile di base più IVA e le commissioni dell'ordine mediate del mio conto.",
+			"paymentMethod": "Metodo di pagamento",
+			"phone": "Telefono",
 			"pricing": "Membri",
+			"sevdeskCustomerNumber": "Numero cliente sevdesk",
 			"smallBusiness": {
 				"label": "Piccola impresa",
 				"description": "Fatture esenti da imposte"
 			},
-			"crstamp": "Data di registrazione",
-			"expire": "Data di scadenza della fase di prova",
-			"voucher_old": "Codice promozionale",
 			"source": "Acquisito da",
-			"notice": "Invia e-mail di sistema",
 			"state": "Stato",
+			"storage": "Magazzinaggio",
+			"taxid": "Codice fiscale",
+			"template": "modello competenza",
+			"trust": "Accetto che il mio account verrà eliminato se non rispetta le condizioni d'uso o le condizioni di registrazione.",
 			"type": "Tipo",
-			"paymentMethod": "Metodo di pagamento",
-			"freeTransactions": "Transazioni gratuite incluse"
+			"vatid": "Numero di vendita tax-identificazione",
+			"voucher_old": "Codice promozionale",
+			"voucher": "Ho un codice promozionale",
+			"winery": "cantina",
+			"www": "Sito Web",
+			"zip": "Codice postale",
+			"zipcity": "Codice postale - Città"
 		},
 		"types": {
 			"winery": "Vigna",
@@ -1636,6 +1655,10 @@
 			"publish": "Gratuito",
 			"regular": "Account completo",
 			"invitation": "Invitato"
+		},
+		"invoiceStatus": {
+			"PAID": "Pagato",
+			"OPEN": "Aperto"
 		},
 		"paymentMethods": {
 			"invoice": "Fattura",
@@ -1679,10 +1702,12 @@
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
 			},
-			"delete": "Vuoi veramente cancellare questo cliente?"
+			"delete": "Vuoi veramente cancellare questo cliente?",
+			"saveInvoiceDraft": "Vuoi davvero salvare questa bozza di fattura su sevdesk?"
 		},
 		"toasts": {
-			"settingsSaved": "Le tue impostazioni sono state salvate!"
+			"settingsSaved": "Le tue impostazioni sono state salvate!",
+			"invoiceDraftSaved": "La bozza della fattura è stata salvata in sevdesk."
 		},
 		"errors": {
 			"registrationFailed": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto."

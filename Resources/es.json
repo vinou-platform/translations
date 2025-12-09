@@ -113,7 +113,7 @@
 			"metaTitle": "Etiqueta de título",
 			"metaDescription": "Metadescripción",
 			"pathSegment": "Segmento de ruta",
-			"exactSearch": "Los datos del cliente deben contener todas las palabras de búsqueda. Los espacios en blanco dividen la frase de búsqueda en la palabra de búsqueda.",
+			"exactSearch": "Cada palabra de búsqueda debe aparecer en el registro de datos. Los espacios separan las palabras de búsqueda.",
 			"salesAmmount": "Cantidad de ventas en {currency}",
 			"sum": "Suma total"
 		},
@@ -1556,11 +1556,19 @@
 				"title": "Crear miembro nuevo",
 				"modaltitle": "Crear miembro nuevo"
 			},
+			"createInvoicePreview": {
+				"main": "Vista previa",
+				"sub": "de factura crear"
+			},
 			"login": {
 				"login": "Login"
 			},
 			"renewauth": {
 				"button": "Renovar AuthID!"
+			},
+			"saveInvoiceDraft": {
+				"main": "Guardar vista previa",
+				"sub": "de la factura"
 			},
 			"search": {
 				"placeholder": "E.j. nombre, empresa, direción"
@@ -1571,59 +1579,70 @@
 				"publish": "<b>¡Cuenta freemium!</b> Estás usando nuestra cuenta freemium restringida."
 			}
 		},
+		"tabs": {
+			"accounting": "Facturación"
+		},
 		"fieldSets": {
-			"membership": "Membresía",
+			"accounting": "Facturación",
 			"contact": "Datos de contacto",
 			"description": "Descripción",
-			"settings": "Ajustes",
 			"invoice": "Datos de cuenta",
-			"payment": "Payment settingsConfiguraciones de pago"
+			"invoicesLatest": "Facturas recientes",
+			"invoicePreview": {
+
+				"n": "Vista previa de la factura {n}º trimestre {year}"
+			},
+			"membership": "Membresía",
+			"payment": "Payment settingsConfiguraciones de pago",
+			"settings": "Ajustes"
 		},
 		"fields": {
-			"app": "Licencia de aplicación",
-			"storage": "Almacenamiento",
-			"mail": "Correo electrónico",
-			"password": "Contraseña",
-			"phone": "Teléfono",
-			"voucher": "Tengo un código de vale",
-			"copyright": "© Copyright {company} 2018",
-			"name": "Persona de contacto",
-			"company": "Empresa",
-			"winery": "Propiedad vinícola",
-			"taxid": "Número de indentificación fiscal",
-			"vatid": "Número de identificación a efecto del IVA",
-			"creditorid": "ID de acreedor",
-			"gln": "GLN",
-			"address": "Calle y número de casa",
-			"zip": "Código postal",
-			"city": "Ciudad",
-			"zipcity": "Código postal - ciudad",
-			"country": "País",
-			"www": "Página web",
-			"fax": "Fax",
 			"active": "Activo",
+			"address": "Calle y número de casa",
+			"addOns": "Licencias complementarias",
+			"app": "Licencia de aplicación",
+			"authid": "ID de desarrollador",
+			"city": "Ciudad",
+			"company": "Empresa",
+			"cop": "He leido las <a href='http://www.vinou.de/agb' target='blank'>Condiciones Genereales de Contratación</a> y las acepto.",
+			"copyright": "© Copyright {company} 2018",
+			"country": "País",
+			"creditorid": "ID de acreedor",
+			"crstamp": "Fecha de registración",
+			"expire": "Fecha de vencimiento del período de prueba",
+			"fax": "Fax",
+			"freetext": "Texto libre",
+			"freeTransactions": "Transacciones gratuitas incluidas",
+			"gln": "GLN",
 			"image": "Logotipo",
 			"letterhead": "Información adicional para membrete",
-			"freetext": "Texto libre",
-			"authid": "ID de desarrollador",
-			"template": "Plantilla de peritaje",
-			"cop": "He leido las <a href='http://www.vinou.de/agb' target='blank'>Condiciones Genereales de Contratación</a> y las acepto.",
-			"trust": "Estoy de acuerdo que se borrará mi cuenta si no cumple las condiciones de utilización o las condiciones de la registración.",
+			"mail": "Correo electrónico",
+			"name": "Persona de contacto",
+			"notice": "Enviar correos del sistema",
+			"password": "Contraseña",
 			"payment": "Consiento que Vinou cobra mensualmente de mi cuenta la tarifa fija más el impuesto valor añadido y las tasas para las ordenes medidas.",
+			"paymentMethod": "Método de pago",
+			"phone": "Teléfono",
 			"pricing": "Membresía",
+			"sevdeskCustomerNumber": "Número de cliente de sevdesk",
 			"smallBusiness": {
 				"label": "Pequeña empresa",
 				"description": "Cuentas libre de impuestos"
 			},
-			"crstamp": "Fecha de registración",
-			"expire": "Fecha de vencimiento del período de prueba",
-			"voucher_old": "Código de vale",
 			"source": "Adquirido por",
-			"notice": "Enviar correos del sistema",
 			"state": "Estado",
+			"storage": "Almacenamiento",
+			"taxid": "Número de indentificación fiscal",
+			"template": "Plantilla de peritaje",
+			"trust": "Estoy de acuerdo que se borrará mi cuenta si no cumple las condiciones de utilización o las condiciones de la registración.",
 			"type": "Tipo",
-			"paymentMethod": "Método de pago",
-			"freeTransactions": "Transacciones gratuitas incluidas"
+			"vatid": "Número de identificación a efecto del IVA",
+			"voucher_old": "Código de vale",
+			"voucher": "Tengo un código de vale",
+			"winery": "Propiedad vinícola",
+			"www": "Página web",
+			"zip": "Código postal",
+			"zipcity": "Código postal - ciudad"
 		},
 		"types": {
 			"winery": "Propiedad vinícola",
@@ -1636,6 +1655,10 @@
 			"publish": "Libre",
 			"regular": "Cuenta completa",
 			"invitation": "Invitado"
+		},
+		"invoiceStatus": {
+			"PAID": "Pagado",
+			"OPEN": "Abierto"
 		},
 		"paymentMethods": {
 			"invoice": "Factura",
@@ -1679,10 +1702,12 @@
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
 			},
-			"delete": "Quieres borrar ese cliente seguramente?"
+			"delete": "Quieres borrar ese cliente seguramente?",
+			"saveInvoiceDraft": "¿Realmente desea guardar este borrador de factura en sevdesk?"
 		},
 		"toasts": {
-			"settingsSaved": "Su configuración ha sido guardada!"
+			"settingsSaved": "Su configuración ha sido guardada!",
+			"invoiceDraftSaved": "Su borrador de factura se ha guardado en sevdesk."
 		},
 		"errors": {
 			"registrationFailed": "Ha ocurrido un error durante tu registración, por favor contacta directamente nuestro equipo: kontakt@vinou.de oder +49 6131 6245390 o usa el Support-Chat."

@@ -113,7 +113,7 @@
 			"metaTitle": "Title-tag",
 			"metaDescription": "Meta description",
 			"pathSegment": "Path segment",
-			"exactSearch": "Client data must contain every search word. Whitespaces splits search phrase into search word.",
+			"exactSearch": "Each search word must appear in the data record. Spaces separate search words.",
 			"salesAmmount": "Sales ammount in {currency}",
 			"sum": "Total sum"
 		},
@@ -1556,11 +1556,19 @@
 				"title": "Create new member",
 				"modaltitle": "Create new member"
 			},
+			"createInvoicePreview": {
+				"main": "Create",
+				"sub": "invoice preview"
+			},
 			"login": {
 				"login": "Login"
 			},
 			"renewauth": {
 				"button": "Renew Auth ID!"
+			},
+			"saveInvoiceDraft": {
+				"main": "Save",
+				"sub": "invoice preview"
 			},
 			"search": {
 				"placeholder": "e.g. name, company, address"
@@ -1571,59 +1579,70 @@
 				"publish": "<b>Freemium account!</b> You're using our restricted freemium account."
 			}
 		},
+		"tabs": {
+			"accounting": "Accounting"
+		},
 		"fieldSets": {
-			"membership": "Membership",
+			"accounting": "Accounting",
 			"contact": "Contact data",
 			"description": "Description",
-			"settings": "Settings",
 			"invoice": "Invoice data",
-			"payment": "Payment settings"
+			"invoicesLatest": "Recent invoices",
+			"invoicePreview": {
+
+				"n": "Invoice preview for Q{n}/{year}"
+			},
+			"membership": "Membership",
+			"payment": "Payment settings",
+			"settings": "Settings"
 		},
 		"fields": {
-			"app": "App License",
-			"storage": "Storage",
-			"mail": "E-Mail",
-			"password": "Passwort",
-			"phone": "Phone",
-			"voucher": "I've got a voucher",
-			"copyright": "© Copyright {company} 2018",
-			"name": "Contact person",
-			"company": "Company",
-			"winery": "Winery",
-			"taxid": "Tax number",
-			"vatid": "Vat-ID",
-			"creditorid": "Creditor-ID",
-			"gln": "GLN",
-			"address": "Address",
-			"zip": "Zip",
-			"city": "City",
-			"zipcity": "Zip - City",
-			"country": "Country",
-			"www": "Website",
-			"fax": "Fax",
 			"active": "active",
+			"address": "Address",
+			"addOns": "Add-On licenses",
+			"app": "App License",
+			"authid": "Developer Auth ID",
+			"city": "City",
+			"company": "Company",
+			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
+			"copyright": "© Copyright {company} 2018",
+			"country": "Country",
+			"creditorid": "Creditor-ID",
+			"crstamp": "Registered at",
+			"expire": "Expiration date",
+			"fax": "Fax",
+			"freetext": "Freetext",
+			"freeTransactions": "Included free transactions",
+			"gln": "GLN",
 			"image": "Logo",
 			"letterhead": "Additional Informationen for letter head",
-			"freetext": "Freetext",
-			"authid": "Developer Auth ID",
-			"template": "Expertisen Template",
-			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
-			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
+			"mail": "E-Mail",
+			"name": "Contact person",
+			"notice": "Systemmails allowed",
+			"password": "Passwort",
 			"payment": "I accept that Vinou will debit the monthly fee with added value tax and the placements fee for each external orders from the given account.",
+			"paymentMethod": "Payment method",
+			"phone": "Phone",
 			"pricing": "Pricing",
+			"sevdeskCustomerNumber": "sevdesk customer number",
 			"smallBusiness": {
 				"label": "Small business company",
 				"description": "Tax free invoice notes"
 			},
-			"crstamp": "Registered at",
-			"expire": "Expiration date",
-			"voucher_old": "Voucher",
 			"source": "Acquired by",
-			"notice": "Systemmails allowed",
 			"state": "Status",
+			"storage": "Storage",
+			"taxid": "Tax number",
+			"template": "Expertisen Template",
+			"trust": "I accept that my account will be deleted if my usage doesn't fit to the conditions of use or the customers credentials aren't real",
 			"type": "Customer-Type",
-			"paymentMethod": "Payment method",
-			"freeTransactions": "Included free transactions"
+			"vatid": "Vat-ID",
+			"voucher_old": "Voucher",
+			"voucher": "I've got a voucher",
+			"winery": "Winery",
+			"www": "Website",
+			"zip": "Zip",
+			"zipcity": "Zip - City"
 		},
 		"types": {
 			"winery": "Winery",
@@ -1636,6 +1655,10 @@
 			"publish": "Free",
 			"regular": "Full-Account",
 			"invitation": "Invited"
+		},
+		"invoiceStatus": {
+			"PAID": "Paid",
+			"OPEN": "Open"
 		},
 		"paymentMethods": {
 			"invoice": "Invoice",
@@ -1679,10 +1702,12 @@
 				"net": "Netto-Preis",
 				"gross": "Brutto-Preis"
 			},
-			"delete": "Do you really want to delete this customer?"
+			"delete": "Do you really want to delete this customer?",
+			"saveInvoiceDraft": "Do you really want to save this draft invoice to sevdesk?"
 		},
 		"toasts": {
-			"settingsSaved": "Your settings have been saved!"
+			"settingsSaved": "Your settings have been saved!",
+			"invoiceDraftSaved": "Dein Rechnungsentwurf wurde in sevdesk gespeichert."
 		},
 		"errors": {
 			"registrationFailed": "Something went wrong during the registration process. Please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
