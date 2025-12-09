@@ -1590,7 +1590,7 @@
 			"invoicesLatest": "Letzte Rechnungen",
 			"invoicePreview": {
 
-				"n": "Rechnungsvorschau für Q{n} {year}"
+				"n": "Rechnungsvorschau für Q{n}/{year}"
 			},
 			"membership": "Mitgliedschaft",
 			"payment": "Zahlungseinstellungen",
@@ -1655,6 +1655,10 @@
 			"publish": "Free",
 			"regular": "Voll-Account",
 			"invitation": "Eingeladen"
+		},
+		"invoiceStatus": {
+			"PAID": "Bezahlt",
+			"OPEN": "Offen"
 		},
 		"paymentMethods": {
 			"invoice": "Rechnung",

@@ -1657,6 +1657,10 @@
 			"regular": "Compte complet",
 			"invitation": "Invité"
 		},
+		"invoiceStatus": {
+			"PAID": "Payé",
+			"OPEN": "Ouvert"
+		},
 		"paymentMethods": {
 			"invoice": "Facture",
 			"debit": "Mandat de prélèvement SEPA"
@@ -3810,7 +3814,7 @@
 		},
 		"periods": {
 			"daily": "du quotidien",
-            "weekly": "hebdomadaire",
+			"weekly": "hebdomadaire",
 			"twoweeks": "deux semaines",
 			"monthly": "mensuel"
 		},

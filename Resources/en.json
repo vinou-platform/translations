@@ -1590,7 +1590,7 @@
 			"invoicesLatest": "Recent invoices",
 			"invoicePreview": {
 
-				"n": "Invoice preview for Q{n} {year}"
+				"n": "Invoice preview for Q{n}/{year}"
 			},
 			"membership": "Membership",
 			"payment": "Payment settings",
@@ -1655,6 +1655,10 @@
 			"publish": "Free",
 			"regular": "Full-Account",
 			"invitation": "Invited"
+		},
+		"invoiceStatus": {
+			"PAID": "Paid",
+			"OPEN": "Open"
 		},
 		"paymentMethods": {
 			"invoice": "Invoice",

@@ -1656,6 +1656,10 @@
 			"regular": "Cuenta completa",
 			"invitation": "Invitado"
 		},
+		"invoiceStatus": {
+			"PAID": "Pagado",
+			"OPEN": "Abierto"
+		},
 		"paymentMethods": {
 			"invoice": "Factura",
 			"debit": "Mandato de domiciliación bancaria SEPA"
