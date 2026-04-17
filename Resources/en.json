@@ -106,8 +106,6 @@
 			"wwwAction": "Visit website of {name}",
 			"copyOf": {
 				"1": "Copy of {name}",
-				"2": "2nd copy of {name}",
-				"3": "3rd copy of {name}",
 				"n": "{n}th copy of {name}"
 			},
 			"metaTitle": "Title-tag",
@@ -2212,70 +2210,6 @@
 			"showPdf": {
 				"main": "Show exposé",
 				"sub": " "
-			}
-		},
-		"field": {
-			"acidity": "Acidity",
-			"active": "active",
-			"alcohol": "Alcohol",
-			"allergens": {
-				"label": "Allergens",
-				"placeholder": "Search for allergens"
-			},
-			"articleNumber": "Art. no.",
-			"barcode": "GTIN",
-			"bio": "Bio certified",
-			"bioRefNumber": {
-				"label": "Eco control number",
-				"placeholder": "GB-ECO-XXX"
-			},
-			"countrycode": "Country",
-			"cuvee": "Cuvée",
-			"description": "Description",
-			"drinkingTemperature": "Drink temperature",
-			"grapetypes": {
-				"label": "Grapetypes",
-				"placeholder": "Search for grapetypes"
-			},
-			"gross": "Gross price",
-			"image": {
-				"label": "Bottle picture",
-				"error": {
-					"notFound": "Image could not be resolved"
-				}
-			},
-			"maturation": "Maturation",
-			"name": "Name",
-			"noStock": "sold out",
-			"noStockText": "Alternative text to show when sold out",
-			"place": "Place",
-			"price": "Price",
-			"prices": "Prices",
-			"qrCode": {
-				"label": "QR code",
-				"hint": "QR code will be created after first save"
-			},
-			"qrCodeLink": {
-				"label": "Target address for QR code",
-				"placeholder": "Target address for QR code (Winepass if empty)"
-			},
-			"quality": "Classification",
-			"qualityNote": "Additional classification note",
-			"quantity": "Current Stock",
-			"region": "Region",
-			"residualSugar": "Sweetness",
-			"sorting": "Manual index (e.g. for shop use)",
-			"stock": "Available stock",
-			"tags": "Tags",
-			"taste": "Taste",
-			"terroir": "Terroir",
-			"topseller": "Topseller",
-			"type": "Type",
-			"vegan": "Vegan",
-			"vintage": "Vintage",
-			"winery": {
-				"label": "Winery",
-				"placeholder": "Search winery"
 			}
 		},
 		"fieldSets": {
