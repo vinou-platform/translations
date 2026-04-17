@@ -2218,7 +2218,6 @@
 			"composition": "Composition",
 			"description": "Description",
 			"facts": "Facts & Numbers",
-			"grapetype": "Grapetypes",
 			"prices": "Prices",
 			"profile": "Wine-Profile",
 			"qrCode": "QR code",
@@ -2226,14 +2225,6 @@
 			"shop": "Website and shop settings",
 			"stock": "Stock",
 			"grapetypes": "Grape varieties"
-		},
-		"viels": {
-			"files": {
-				"label": "Files",
-				"title": "Files regarding this wine"
-			},
-			"savours": "Vinou-Gusto",
-			"stockRotation": "Stock rotation"
 		},
 		"filters": {
 			"search": {
