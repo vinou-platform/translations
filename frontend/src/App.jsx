@@ -117,7 +117,7 @@ function compareFiles(sourceObj, targetObj) {
         path,
         targetPath: candidatePath,
         sourceKind: sourceMeta.kind,
-        sourceValue: sourceMeta.kind === 'leaf' ? sourceMeta.value : sourceMeta.value,
+        sourceValue: sourceMeta.kind === 'leaf' ? sourceMeta.value : undefined,
         targetValue: candidatePath ? getAtPath(targetObj, candidatePath) : undefined,
       })
       return
@@ -140,9 +140,8 @@ function compareFiles(sourceObj, targetObj) {
       diffs.push({
         type: 'extra',
         path,
-        sourceKind: undefined,
         targetKind: targetMeta.kind,
-        targetValue: targetMeta.kind === 'leaf' ? targetMeta.value : targetMeta.value,
+        targetValue: targetMeta.kind === 'leaf' ? targetMeta.value : undefined,
       })
     }
   })
@@ -248,6 +247,9 @@ export default function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [manualValue, setManualValue] = useState('')
   const [saveState, setSaveState] = useState('idle')
+  const [deeplApiKey, setDeeplApiKey] = useState('')
+  const [useDeepLOnCopy, setUseDeepLOnCopy] = useState(false)
+  const [actionState, setActionState] = useState('idle')
 
   useEffect(() => {
     fetch('/api/translations')
@@ -296,6 +298,55 @@ export default function App() {
     setManualValue(typeof currentTargetValue === 'string' ? currentTargetValue : '')
   }, [selectedDiff, targetData])
 
+  async function translateLeaf(text) {
+    if (!useDeepLOnCopy) return text
+    if (!deeplApiKey.trim()) {
+      throw new Error('DeepL API key missing')
+    }
+    const response = await fetch('/api/translate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        apiKey: deeplApiKey.trim(),
+        text,
+        targetLang: targetLang.toUpperCase(),
+        sourceLang: sourceLang.toUpperCase(),
+      }),
+    })
+
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({}))
+      throw new Error(payload.error || 'DeepL translation failed')
+    }
+
+    const payload = await response.json()
+    return payload.translation
+  }
+
+  async function translateStructure(value) {
+    if (typeof value === 'string') {
+      return await translateLeaf(value)
+    }
+
+    if (Array.isArray(value)) {
+      const translatedItems = []
+      for (const item of value) {
+        translatedItems.push(await translateStructure(item))
+      }
+      return translatedItems
+    }
+
+    if (isPlainObject(value)) {
+      const next = {}
+      for (const [key, nestedValue] of Object.entries(value)) {
+        next[key] = await translateStructure(nestedValue)
+      }
+      return next
+    }
+
+    return value
+  }
+
   function updateDraft(mutator) {
     const next = deepClone(targetData)
     mutator(next)
@@ -303,21 +354,36 @@ export default function App() {
     setDrafts((prev) => ({ ...prev, [targetLang]: next }))
   }
 
-  function copyFromSource(path) {
-    const sourceValue = getAtPath(sourceData, path)
-    updateDraft((draft) => setAtPath(draft, path, deepClone(sourceValue)))
+  async function copyFromSource(path) {
+    try {
+      setActionState('working')
+      const sourceValue = deepClone(getAtPath(sourceData, path))
+      const finalValue = await translateStructure(sourceValue)
+      updateDraft((draft) => setAtPath(draft, path, finalValue))
+      setActionState('idle')
+    } catch (error) {
+      setActionState('idle')
+      window.alert(error.message)
+    }
   }
 
   function moveToSourcePath(sourcePath, oldTargetPath) {
     const value = getAtPath(targetData, oldTargetPath)
     updateDraft((draft) => {
-      setAtPath(draft, sourcePath, deepClone(value))
+      setAtPath(draft, sourcePath, value)
       deleteAtPath(draft, oldTargetPath)
     })
   }
 
   function removeExtra(path) {
     updateDraft((draft) => deleteAtPath(draft, path))
+  }
+
+  function removeAllExtra() {
+    const extras = comparison.diffs.filter((d) => d.type === 'extra')
+    updateDraft((draft) => {
+      extras.forEach((diff) => deleteAtPath(draft, diff.path))
+    })
   }
 
   function saveManualValue() {
@@ -327,13 +393,38 @@ export default function App() {
     updateDraft((draft) => setAtPath(draft, selectedDiff.path, manualValue))
   }
 
-  function applyAllMissing() {
-    const missing = comparison.diffs.filter((d) => d.type === 'missing')
-    updateDraft((draft) => {
-      missing.forEach((diff) => {
-        setAtPath(draft, diff.path, deepClone(getAtPath(sourceData, diff.path)))
-      })
-    })
+  async function applyAllMissing() {
+    try {
+      setActionState('working')
+      const missing = comparison.diffs.filter((d) => d.type === 'missing')
+      const nextDraft = deepClone(targetData)
+
+      for (const diff of missing) {
+        const sourceValue = deepClone(getAtPath(sourceData, diff.path))
+        const finalValue = await translateStructure(sourceValue)
+        setAtPath(nextDraft, diff.path, finalValue)
+      }
+
+      cleanupEmptyObjects(nextDraft)
+      setDrafts((prev) => ({ ...prev, [targetLang]: nextDraft }))
+      setActionState('idle')
+    } catch (error) {
+      setActionState('idle')
+      window.alert(error.message)
+    }
+  }
+
+  async function replaceWithSourceStructure(path) {
+    try {
+      setActionState('working')
+      const sourceValue = deepClone(getAtPath(sourceData, path))
+      const finalValue = await translateStructure(sourceValue)
+      updateDraft((draft) => setAtPath(draft, path, finalValue))
+      setActionState('idle')
+    } catch (error) {
+      setActionState('idle')
+      window.alert(error.message)
+    }
   }
 
   async function saveTarget() {
@@ -384,12 +475,15 @@ export default function App() {
           <div>
             <div style={{ fontSize: 34, fontWeight: 900, letterSpacing: '-0.03em' }}>Translation Structure Diff Tool</div>
             <div style={{ marginTop: 8, color: '#475569', maxWidth: 760, lineHeight: 1.5 }}>
-              Compare two language files, visualize structural differences, copy missing keys, resolve moved keys, and edit target values directly.
+              Compare two language files, visualize structural differences, copy missing keys, remove all extra keys, resolve moved keys, and optionally translate copied values through DeepL.
             </div>
           </div>
 
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-            <button onClick={applyAllMissing} style={styles.secondaryButton}>Apply all missing keys</button>
+            <button onClick={applyAllMissing} style={styles.secondaryButton}>
+              {actionState === 'working' ? 'Working…' : 'Apply all missing keys'}
+            </button>
+            <button onClick={removeAllExtra} style={styles.secondaryButton}>Remove all extra keys</button>
             <button onClick={saveTarget} style={styles.primaryButton}>
               {saveState === 'saving' ? 'Saving…' : saveState === 'saved' ? 'Saved' : 'Save target'}
             </button>
@@ -404,7 +498,7 @@ export default function App() {
         </div>
 
         <div style={styles.panel}>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1.4fr 1fr', gap: 12, alignItems: 'end' }}>
             <div>
               <div style={styles.label}>Source</div>
               <select value={sourceLang} onChange={(e) => setSourceLang(e.target.value)} style={styles.select}>
@@ -423,7 +517,29 @@ export default function App() {
               </select>
             </div>
 
-            <div style={{ flex: 1, minWidth: 220 }}>
+            <div>
+              <div style={styles.label}>DeepL API key</div>
+              <input
+                type="password"
+                value={deeplApiKey}
+                onChange={(e) => setDeeplApiKey(e.target.value)}
+                placeholder="Paste your DeepL API key"
+                style={styles.input}
+              />
+            </div>
+
+            <label style={styles.checkboxWrap}>
+              <input
+                type="checkbox"
+                checked={useDeepLOnCopy}
+                onChange={(e) => setUseDeepLOnCopy(e.target.checked)}
+              />
+              <span>Use DeepL when copying structures and missing keys</span>
+            </label>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: 12, marginTop: 14 }}>
+            <div>
               <div style={styles.label}>Search</div>
               <input
                 value={search}
@@ -472,7 +588,7 @@ export default function App() {
                       </div>
 
                       <div style={{ marginTop: 8, fontSize: 12, color: '#64748b' }}>
-                        {diff.sourceKind === 'leaf' ? 'Leaf value' : diff.sourceKind === 'object' ? 'Structure node' : 'Target-only key'}
+                        {diff.sourceKind === 'leaf' ? 'Leaf value' : 'Structure node'}
                       </div>
 
                       {diff.targetPath && (
@@ -534,11 +650,11 @@ export default function App() {
                     )}
 
                     {selectedDiff.type === 'type_mismatch' && (
-                      <button onClick={() => copyFromSource(selectedDiff.path)} style={styles.primaryButton}>Replace with source structure</button>
+                      <button onClick={() => replaceWithSourceStructure(selectedDiff.path)} style={styles.primaryButton}>Replace with source structure</button>
                     )}
                   </div>
 
-                  {selectedDiff.sourceKind === 'leaf' ? (
+                  {selectedDiff?.sourceKind === 'leaf' ? (
                     <div>
                       <div style={styles.label}>Manual target value</div>
                       <textarea
@@ -607,6 +723,7 @@ const styles = {
     boxSizing: 'border-box',
   },
   select: {
+    width: '100%',
     minWidth: 150,
     padding: '12px 14px',
     borderRadius: 14,
@@ -715,5 +832,18 @@ const styles = {
     whiteSpace: 'pre-wrap',
     wordBreak: 'break-word',
     fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
+  },
+  checkboxWrap: {
+    display: 'flex',
+    gap: 10,
+    alignItems: 'center',
+    background: '#fff',
+    border: '1px solid #cbd5e1',
+    borderRadius: 14,
+    padding: '12px 14px',
+    minHeight: 48,
+    boxSizing: 'border-box',
+    fontSize: 14,
+    color: '#111827',
   },
 }

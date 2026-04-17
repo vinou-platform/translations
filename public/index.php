@@ -96,4 +96,67 @@ if ($path === '/api/save-translation' && $_SERVER['REQUEST_METHOD'] === 'POST') 
     jsonResponse(['success' => true]);
 }
 
+if ($path === '/api/translate' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    $input = json_decode(file_get_contents('php://input'), true);
+
+    $apiKey = $input['apiKey'] ?? null;
+    $text = $input['text'] ?? null;
+    $targetLang = $input['targetLang'] ?? null;
+    $sourceLang = $input['sourceLang'] ?? null;
+
+    if (!is_string($apiKey) || trim($apiKey) === '') {
+        jsonResponse(['error' => 'Missing DeepL API key'], 400);
+    }
+
+    if (!is_string($text)) {
+        jsonResponse(['error' => 'Missing text'], 400);
+    }
+
+    if (!is_string($targetLang) || trim($targetLang) === '') {
+        jsonResponse(['error' => 'Missing target language'], 400);
+    }
+
+    $payload = [
+        'text' => [$text],
+        'target_lang' => strtoupper($targetLang),
+    ];
+
+    if (is_string($sourceLang) && trim($sourceLang) !== '') {
+        $payload['source_lang'] = strtoupper($sourceLang);
+    }
+
+    $ch = curl_init('https://api.deepl.com/v2/translate');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Authorization: DeepL-Auth-Key ' . trim($apiKey),
+        'Content-Type: application/json',
+    ]);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+
+    $result = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);
+    curl_close($ch);
+
+    if ($result === false) {
+        jsonResponse(['error' => 'DeepL request failed: ' . $curlError], 500);
+    }
+
+    $decoded = json_decode($result, true);
+
+    if ($httpCode >= 400) {
+        $message = $decoded['message'] ?? 'DeepL request failed';
+        jsonResponse(['error' => $message], $httpCode);
+    }
+
+    $translation = $decoded['translations'][0]['text'] ?? null;
+
+    if (!is_string($translation)) {
+        jsonResponse(['error' => 'Invalid DeepL response'], 500);
+    }
+
+    jsonResponse(['translation' => $translation]);
+}
+
 echo 'Translation tool backend is running';
