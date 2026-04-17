@@ -924,7 +924,7 @@
 		},
 		"types": {
 			"stainlessSteel": {
-                "name": "Acciaio inossidabile",
+				"name": "Acciaio inossidabile",
 				"description": "es.: inox, acciaio VA"
 			},
 			"metal": {
@@ -1773,7 +1773,8 @@
 	},
 	"winery": {
 		"name": {
-			"plural": "Aziende vinicole"
+			"plural": "Aziende vinicole",
+			"singular": "Azienda vinicola"
 		},
 		"action": {
 			"add": {
@@ -2758,7 +2759,8 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Ordine"
+				"main": "Ordine",
+				"sub": "creare"
 			},
 			"download": {
 				"main": "Scarica",
@@ -7782,7 +7784,8 @@
 	},
 	"laboratory": {
 		"name": {
-			"singular": "Fare un passo"
+			"singular": "Fare un passo",
+			"plural": "Passi"
 		}
 	}
 }
