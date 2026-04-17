@@ -106,8 +106,6 @@
 			"wwwAction": "Visita il sito Web {name}",
 			"copyOf": {
 				"1": "copia di {name}",
-
-
 				"n": "copia {n} di {name}"
 			},
 			"metaTitle": "Etichetta del titolo",
@@ -384,8 +382,8 @@
 	"cancel": "Abortire",
 	"cellarAction": {
 		"name": {
-			"singular": "Fare un passo",
-			"plural": "Passi"
+			"plural": "Passi",
+			"singular": "Azienda vinicola"
 		},
 		"fields": {
 			"additionVolume": "Accesso",
@@ -468,7 +466,6 @@
 				"placeholder": "Cerca vino"
 			},
 			"withdrawalVolume": "Partenza",
-
 			"barrels": "Recipiente",
 			"addition": "Accesso",
 			"withdrawal": "Partenza",
@@ -483,7 +480,6 @@
 				"main": "Voce corretto",
 				"sub": " "
 			},
-
 			"createInventoryTakeover": {
 				"main": "Acquisizione",
 				"sub": "di inventario",
@@ -501,7 +497,6 @@
 				"main": "Vinaccia",
 				"sub": "valorizzazione"
 			},
-
 			"createStaticSettling": {
 				"main": "Demucillaginazione",
 				"sub": " "
@@ -523,7 +518,6 @@
 				"sub": " ",
 				"description": "Aggiungere questo vino a un altro come miscela per creare una cuvée. Si noti che il contenitore di destinazione deve essere già in uso e avere una capacità sufficiente."
 			},
-
 			"createPrivateConsumption": {
 				"main": "Autoconsumo",
 				"sub": "raccogliere"
@@ -544,12 +538,10 @@
 				"main": "Disalcoolazione",
 				"sub": " "
 			},
-
 			"createWineAddition": {
 				"main": "Riempimento",
 				"sub": " "
 			},
-
 			"createSubstanceAdd": {
 				"main": "Aggiunta di",
 				"sub": "sostanze"
@@ -578,7 +570,6 @@
 				"main": "Acqua",
 				"sub": "aggiungere"
 			},
-
 			"createBottling": {
 				"main": "Imbottigliamento",
 				"sub": " "
@@ -607,7 +598,6 @@
 				"main": "Chiudere",
 				"sub": "l'account"
 			},
-
 			"vinouNetwork": {
 				"main": "Rete Vinou",
 				"sub": " "
@@ -617,7 +607,6 @@
 				"sub": "vino sfuso",
 				"description": "Trasferisci il tuo vino a un altro membro Vinou nella rete. Si prega di notare che la controparte deve confermare il trasferimento creando un processo di acquisto del vino."
 			},
-
 			"addSourceBarrel": {
 				"main": "Contenitore di origine",
 				"sub": "aggiungere"
@@ -636,7 +625,6 @@
 			"harvest": "Raccolto",
 			"additionalPurchase": "Acquisto del vino",
 			"marcLiquidation": "Valorizzazione dei vinaccia",
-
 			"relocation": "Ricollocamento",
 			"decanting": "Travaso",
 			"staticSettling": "Demucillaginazione ",
@@ -648,9 +636,7 @@
 			"concentration": "Concentrazione",
 			"dealcoholization": "Disalcoolazione",
 			"measuring": "Misurazione",
-
 			"wineAddition": "Riempimento",
-
 			"substanceAdd": "Aggiunta di sostanze",
 			"enrichment": "Arricchimento",
 			"sweetening": "Dolcificazione",
@@ -658,7 +644,6 @@
 			"deacidification": "Disacidificazione",
 			"alcoholization": "Aggiunta di alcol",
 			"waterAddition": "Aggiungendo acqua",
-
 			"bottling": "Imbottigliamento",
 			"wineErpRelease": "Rilascio del vino ERP",
 			"bulkWineErpRelease": "Rilascio vino sfuso ERP",
@@ -731,12 +716,12 @@
 			"inputVolume": "Quantità ricevuta",
 			"mustAcidity": "Acido del mosto",
 			"mustWeight": "Peso del mosto",
-			"name": "Denominazione",
 			"number": "Vino-Nr.",
 			"referenceNumber": "Numero di omologazione ufficiale",
 			"stock": "Stock",
 			"volume": "Stock",
-			"bottleVolume": "Scorta di bottiglia"
+			"bottleVolume": "Scorta di bottiglia",
+			"name": "Acciaio inossidabile"
 		},
 		"actions": {
 			"create": {
@@ -939,7 +924,7 @@
 		},
 		"types": {
 			"stainlessSteel": {
-				"name": "Acciaio inossidabile",
+                "name": "Acciaio inossidabile",
 				"description": "es.: inox, acciaio VA"
 			},
 			"metal": {
@@ -982,6 +967,9 @@
 			"glass": {
 				"name": "Vetro",
 				"description": "Altri"
+			},
+			"beton": {
+				"name": "Denominazione"
 			}
 		},
 		"views": {
@@ -1589,7 +1577,6 @@
 			"invoice": "Informazioni di fatturazione",
 			"invoicesLatest": "Recent invoices",
 			"invoicePreview": {
-
 				"n": "Anteprima fatture per il {n}° {year}"
 			},
 			"membership": "Membri",
@@ -1786,7 +1773,6 @@
 	},
 	"winery": {
 		"name": {
-			"singular": "Azienda vinicola",
 			"plural": "Aziende vinicole"
 		},
 		"action": {
@@ -1882,7 +1868,7 @@
 				"sub": "Creato"
 			},
 			"create": {
-				"title" : "Creato mercante",
+				"title": "Creato mercante",
 				"modaltitle": "aggiungere mercante"
 			},
 			"edit": {
@@ -1890,7 +1876,7 @@
 			},
 			"search": {
 				"title": "Rechercher marchand",
-				"placeholder" : "Per es.: Nom de l'entreprise, personne de contact ou adresse"
+				"placeholder": "Per es.: Nom de l'entreprise, personne de contact ou adresse"
 			}
 		},
 		"tabs": {
@@ -1909,7 +1895,7 @@
 			"country": "Paese",
 			"taxid": "Numero di identificazione per l'imposta sul valore aggiunto",
 			"phone": "Telefono",
- 			"fax": "Fax",
+			"fax": "Fax",
 			"mail": "E-Mail",
 			"www": "Sito Web"
 		},
@@ -1960,7 +1946,6 @@
 				"title": "Autoconsumo per articolo",
 				"description": "Determina il tuo autoconsumo in un dato periodo."
 			}
-
 		}
 	},
 	"wine": {
@@ -2102,10 +2087,10 @@
 		},
 		"cap_types": {
 			"screw": "Tappo a vite",
-			"cork":	"Sughero naturale",
+			"cork": "Sughero naturale",
 			"crownCap": "Capsula",
 			"plastic": "Sughero di plastica",
-			"glas":	"Chiusura in vetro"
+			"glas": "Chiusura in vetro"
 		},
 		"gallery": {
 			"sortby": {
@@ -2286,17 +2271,17 @@
 		},
 		"fieldSets": {
 			"allergens": "Allergeni",
-			"analyse": "Analisi",
 			"composition": "Composizione",
 			"description": "Descrizione",
 			"facts": "Dati e fatti",
-			"grapetype": "Uva",
 			"prices": "Prezzo",
 			"profile": "Profilo del vino",
 			"qrCode": "QR-Code",
 			"region": "Regionale",
 			"shop": "Konfigurazione del sito Web e del negoziosite",
-			"stock": "Stock"
+			"stock": "Stock",
+			"analysis": "Analisi",
+			"grapetypes": "Varietà d'uva"
 		},
 		"views": {
 			"files": {
@@ -2446,7 +2431,6 @@
 			"tax": "IVA.",
 			"taxrate": "Aliquota fiscale",
 			"unit": "Unità",
-
 			"image": {
 				"error": {
 					"notfound": "L'immagine non è stata trovata"
@@ -2658,11 +2642,6 @@
 		"fieldSets": {
 			"general": "Generale"
 		},
-		"field": {
-			"name": "Nome",
-			"description": "Descrizione",
-			"crstamp": "Data di creazione"
-		},
 		"actions": {
 			"create": {
 				"main": "Creare nuovo",
@@ -2682,6 +2661,11 @@
 			"created": "Gruppo clienti creato!",
 			"changed": "Gruppo clienti cambiato!",
 			"deleted": "Gruppo clienti eliminato!"
+		},
+		"fields": {
+			"name": "Nome",
+			"description": "Descrizione del",
+			"crstamp": "Data di creazione"
 		}
 	},
 	"contact": {
@@ -2774,8 +2758,7 @@
 		},
 		"actions": {
 			"create": {
-				"main": "Ordine",
-				"create": "abortire"
+				"main": "Ordine"
 			},
 			"download": {
 				"main": "Scarica",
@@ -3271,7 +3254,6 @@
 				"main": "Visualizza",
 				"sub": "l'offerta"
 			},
-
 			"goto": {
 				"summary": "Continua al riepilogo dell'offerta"
 			}
@@ -3400,8 +3382,6 @@
 				"sub": "l'ordine"
 			},
 			"touch": "Contrassegna l'ordine come letto",
-
-			"add_position": "+ Aggiungi posizione",
 			"goto": {
 				"delivery": "Continua alla spedizione",
 				"payment": "Continua con le opzioni di pagamento",
@@ -3413,7 +3393,8 @@
 				"main": "Diverso indirizzo",
 				"sub": "di consegna"
 			},
-			"report": "Valutazioni"
+			"report": "Valutazioni",
+			"addPosition": "+ Aggiungi posizione"
 		},
 		"fieldsets": {
 			"billing": "Indirizzo di fattura",
@@ -4296,7 +4277,6 @@
 			"sorting": "Indice di ordinamento manuale (ad es. Per uso esterno in negozio)",
 			"tag": "Tag",
 			"topseller": "Miglior venditore",
-
 			"itemSum": {
 				"label": "Valore dei beni",
 				"net": "Netto",
@@ -5282,9 +5262,6 @@
 		"99": {
 			"name": "Rieslaner"
 		},
-		"129": {
-			"name": "Riesling"
-		},
 		"100": {
 			"name": "Rondo"
 		},
@@ -5371,6 +5348,9 @@
 		},
 		"128": {
 			"name": "Weißer Gutedel"
+		},
+		"129": {
+			"name": "Riesling"
 		},
 		"130": {
 			"name": "Wildmuskat"
@@ -6896,17 +6876,17 @@
 		"2": "halbtrocken",
 		"3": "feinherb",
 		"4": "lieblich",
+		"5": "doux (mild)",
 		"6": "süß",
 		"7": "edelsüß",
-		"11": "feinfruchtig",
-		"13": "brut zeró",
 		"8": "brut nature (naturherb)",
-		"10": "extra brut (extra herb)",
 		"9": "brut (herb)",
+		"10": "extra brut (extra herb)",
+		"11": "feinfruchtig",
 		"12": "trés sec (extra trocken)",
+		"13": "brut zeró",
 		"14": "sec (trocken)",
-		"15": "demi-sec (halbtrocken)",
-		"5": "doux (mild)"
+		"15": "demi-sec (halbtrocken)"
 	},
 	"countries": {
 		"ad": "Andorra",
@@ -7543,7 +7523,6 @@
 			"sweets": "Pasticceria",
 			"occasions": "Occasioni"
 		},
-
 		"beef": "Manzo",
 		"veal": "Vitello",
 		"pork": "Carne di maiale",
@@ -7554,18 +7533,15 @@
 		"shellfish": "Crostacei",
 		"shell": "Mollusco",
 		"sausage": "Salsiccia",
-
 		"grilled": "Grigliato",
 		"fried": "Fritto",
 		"smoked": "Affumicato",
 		"baked": "Al forno",
 		"steamed": "Cuit à la vapeur",
-
 		"dairyproduct": "Prodotti lattiero-caseari",
 		"softcheese": "Formaggio a pasta molle",
 		"bluecheese": "Gorgonzola",
 		"hardcheese": "Formaggio a pasta dura",
-
 		"bulb": "Piante di bulbo",
 		"salad": "Insalata",
 		"tubers": "Tuberi o rape",
@@ -7574,7 +7550,6 @@
 		"nuts": "Noccioline",
 		"treenuts": "Frutta buccia",
 		"asparagus": "asparago",
-
 		"pepper": "Pepe",
 		"chili": "Chile",
 		"spicy": "Caldo e piccante",
@@ -7582,19 +7557,16 @@
 		"cinnamon": "Cannella",
 		"exotic": "Spezie esotiche",
 		"vegetarian": "Vegetariano",
-
 		"toast": "Pane bianco",
 		"bread": "Pane",
 		"wholebread": "Pane integrale",
 		"pumpernickel": "Pumpernickel",
-
 		"fruits": "Frutta",
 		"cake": "Torta",
 		"creme": "Creme",
 		"ice": "Ghiaccio",
 		"chocolate": "Cioccolato",
 		"coffee": "Caffè",
-
 		"barbecue": "Barbecue",
 		"present": "Regalo",
 		"boysNight": "Serata tra ragazzi",
@@ -7806,6 +7778,11 @@
 					}
 				}
 			}
+		}
+	},
+	"laboratory": {
+		"name": {
+			"singular": "Fare un passo"
 		}
 	}
 }
