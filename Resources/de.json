@@ -1474,11 +1474,6 @@
 			"wineErpRelease": "Flaschenweinfreigabe"
 		}
 	},
-	"bank_edittitle": "Bankverbindung bearbeiten",
-	"bank_iban": "IBAN",
-	"bank_bic": "BIC",
-	"bank_bankname": "Name Kreditinstitut",
-	"bank_owner": "Kontoinhaber",
 	"cashlink_createtitle": "Cashlink Registrieren",
 	"cashlink_viewtitle": "Ihre Cashlink Daten",
 	"cashlink_business_title": "Firmendaten",
@@ -2955,19 +2950,21 @@
 			"delete": "Möchtest Du das ELabel wirklich löschen?"
 		},
 		"toasts": {
-			"delete": "Elabel gelöscht!"
+			"deleted": "Elabel gelöscht!"
 		}
 	},
 	"fact": {
 		"actions": {
-			"autocalc": "Automatisch berechnen"
+			"autocalc": "Automatisch berechnen",
+            "saveOrder": "Reihenfolge speichern"
 		},
 		"fields": {
 			"type": "Typ",
 			"quantity": "Menge",
 			"unit": "Einheit",
 			"label": "Zusätzliche Angaben",
-			"code": "Recyclingcode"
+			"code": "Recyclingcode",
+            "important": "Hervorgehoben"
 		},
 		"views": {
 			"edit": {
@@ -2988,11 +2985,14 @@
 			"created": "Lebensmittelangabe erstellt",
 			"changed": "Lebensmittelangabe geändert",
 			"deleted": "Lebensmittelangabe gelöscht",
-			"calculated": "Lebensmittelangaben automatisch ermittelt"
+			"calculated": "Lebensmittelangaben automatisch ermittelt",
+            "orderSaved": "Reihenfolge gespeichert"
 		},
 		"types": {
 			"aluminium": "Aluminium",
 			"antioxidants": "Antioxidantien",
+            "biograpes": "BIO Trauben",
+            "biosucrose": "BIO Sacharose",
 			"brownGlas": "Braunglas",
 			"carbohydrates": "Kohlenhydrate",
 			"clearglas": "Klarglas",
@@ -4600,10 +4600,6 @@
 			"title": "Account-Einstellungen",
 			"description": "Verwalte hier Deine Rechnungsadresse, Mitgliedschaft, Bankverbindung etc."
 		},
-		"system": {
-			"title": "System-Einstellungen",
-			"description": "Verwalte hier alle Einstellungen rundum das Vinou-System"
-		},
 		"automations": {
 			"title": "Automatisierungen",
 			"description": "Mit Hilfe von Automatisierungen kannst Du anderen Vinou-Mitgliedern ermöglichen bestimmte Dinge vollautomatisch mit dir auszuführen. z.B. Weine von Weingütern auf deine Webseite freischalten."
@@ -4642,16 +4638,35 @@
 			"title": "eLabel",
 			"description": "Verwalte die Darstellung auf Deinen eLabels. Bitte berücksichtige dass Vinou für die Anpassung keine rechtliche Haftung übernimmt.",
 			"hideBottleImage": {
-				"title": "Flaschenbild ausblenden",
-				"description": "Aktivieren um das Flaschenbild auf allen eLabels auszublenden."
+				"title": "Flaschenbild anzeigen",
+				"description": "Zeigt das Flaschenbild auf allen eLabels an."
+			},
+            "hideMainFacts": {
+				"title": "Weindaten anzeigen",
+				"description": "Zeigt die wichtigsten Weindaten wie Rebsorte, Jahrgang und Alkoholgehalt auf allen eLabels an."
 			},
 			"showAdditionalFacts": {
-				"title": "Infoblock \"Weitere Angaben\" einblenden",
-				"description": "Aktivieren um zusätzliche Daten wie Trinktemperatur etc. einzublenden"
+				"title": "Infoblock \"Weitere Angaben\" anzeigen",
+				"description": "Zeigt zusätzliche Informationen wie Trinktemperatur an."
 			},
 			"showDescriptions": {
-				"title": "Infoblock \"Weinbeschreibung\" einblenden",
-				"description": "Aktivieren um zusätzliche Weinbeschreibungen wie Boden, Ausbau, und Beschreibung einzublenden."
+				"title": "Infoblock \"Weinbeschreibung\" anzeigen",
+				"description": "Zeigt Details wie Boden, Ausbau und Beschreibung an."
+			}
+		},
+        "general": {
+			"title": "Applikation",
+			"description": "Lege hier die Einstellungen für Dein Vinou-Office fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest oder wie die Verarbeitung von Texten durchgeführt wird.",
+			"currency": {
+				"title": "Währung",
+				"description": "Wähle eine Währung aus, die Vinou verwenden soll."
+			},
+			"html": {
+				"title": "HTML-Verarbeitung",
+				"description": "Beschreibungstexte von Weinen, Produkten und Weinpaketen werden mit einem ausführlichen HTML-Editor versehen."
+			},
+			"toasts": {
+				"changed": "System-Einstellungen aktualisiert!"
 			}
 		},
 		"mail": {
@@ -4661,6 +4676,10 @@
 		"membership": {
 			"title": "Mitgliedschaft",
 			"description": "Das ist der Status Deiner aktuellen Mitgliedschaft."
+		},
+        "messageTemplates": {
+			"title": "Nachrichtenvorlagen",
+			"description": "Verwalte alle Texte die als Vorlage für deine Nachrichten genutzt werden, wie z.B. E-Mail-Texte für Angebot, Rechnung und Lieferschein."
 		},
 		"mycompanies": {
 			"merchants": {
@@ -4687,21 +4706,6 @@
 			},
 			"toasts": {
 				"changed": "Netzwerkeinstellungen aktualisiert!"
-			}
-		},
-		"general": {
-			"title": "Applikation",
-			"description": "Lege hier die Einstellungen für Dein Vinou-Office fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest oder wie die Verarbeitung von Texten durchgeführt wird.",
-			"currency": {
-				"title": "Währung",
-				"description": "Wähle eine Währung aus, die Vinou verwenden soll."
-			},
-			"html": {
-				"title": "HTML-Verarbeitung",
-				"description": "Beschreibungstexte von Weinen, Produkten und Weinpaketen werden mit einem ausführlichen HTML-Editor versehen."
-			},
-			"toasts": {
-				"changed": "System-Einstellungen aktualisiert!"
 			}
 		},
 		"numbers": {
@@ -4756,7 +4760,24 @@
 		"payments": {
 			"title": "Zahlungsmethoden",
 			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten.",
-			"bankaccount": "Bankverbindung",
+            "bank": {
+                "name": "Bankverbindung",
+                "title": "Bankverbindung bearbeiten",
+                "additional": "Zusätzliche Informationen",
+                "fields": {
+                    "iban": "IBAN",
+                    "bic": "BIC",
+                    "bankname": "Name Kreditinstitut",
+                    "owner": "Kontoinhaber",
+                    "additional": "Hinterlege weitere Informationen zur Bank(z.B. weitere Konten). Diese Informationen werden auf den generierten Rechnungen und Bestellbestätigungen angezeigt."
+                },
+                "toasts": {
+                    "changed": "Bankverbindung aktualisiert!"
+                },
+                "errors": {
+                    "save": "Ein Fehler beim Speichern der Bankverbindung ist aufgetreten!"
+                }
+            },
 			"paypal": {
 				"name": "Paypal",
 				"title": "Paypal-Einstellungen bearbeiten",
@@ -4845,6 +4866,10 @@
 				"failedToConnect": "Es konnte keine Test-Email gesendet werden. Bitte prüfe deine Einstellungen und die Erreichbarkeit des SMTP-Servers."
 			}
 		},
+        "system": {
+			"title": "System-Einstellungen",
+			"description": "Verwalte hier alle Einstellungen rundum das Vinou-System"
+		},
 		"technical": {
 			"title": "Technik",
 			"description": "Für einige Dinge kannst Du auch technische Konfigurationen vornehmen. Diese Einstellungen findest Du hier."
@@ -4856,14 +4881,9 @@
 		"texts": {
 			"title": "Texte",
 			"description": "Lege Texte an, um Informationen wie Impressum, Datenschutzvereinbarung, Widerrufsformular oder AGB bereit zu stellen. Deine Texte kannst Du hier bequem formatieren. Diese Texte können inklusive der Formatierung unter anderem in Deinem eigenen Online-Shop verwendet werden."
-		},
-		"messageTemplates": {
-			"title": "Nachrichtenvorlagen",
-			"description": "Verwalte alle Texte die als Vorlage für deine Nachrichten genutzt werden, wie z.B. E-Mail-Texte für Angebot, Rechnung und Lieferschein."
 		}
 	},
 	"toasts": {
-		"bank_settings_error": "Ein Fehler beim speichern der Bankverbindung ist aufgetreten!",
 		"category_saved": "Kategorie gespeichert!",
 		"category_changed": "Kategorie aktualisiert!",
 		"category_deleted": "Kategorie gelöscht!",
@@ -4881,7 +4901,6 @@
 		"merchant_changed": "Händler aktualisiert!",
 		"merchant_deleted": "Händler gelöscht!",
 		"merchant_save_error": "Speichern fehlgeschlagen!",
-		"settings_bank_changed": "Bankverbindung aktualisiert!",
 		"settings_cashlink_registered": "Cashlink registriert!",
 		"settings_cashlink_registererror": "Registrierung fehlgeschlagen, Mail eventuell bereits vergeben!",
 		"winery_created": "Weingut angelegt!",
