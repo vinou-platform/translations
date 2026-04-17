@@ -468,7 +468,6 @@
 				"placeholder": "Search wine"
 			},
 			"withdrawalVolume": "Withdrawal amount",
-
 			"barrels": "Barrels",
 			"addition": "Addition",
 			"withdrawal": "Withdrawal",
@@ -483,7 +482,6 @@
 				"main": "Right action",
 				"sub": " "
 			},
-
 			"createInventoryTakeover": {
 				"main": "Inventory",
 				"sub": "takeover",
@@ -501,7 +499,6 @@
 				"main": "Grape marc",
 				"sub": "liquidation"
 			},
-
 			"createStaticSettling": {
 				"main": "Static",
 				"sub": "settling"
@@ -523,7 +520,6 @@
 				"sub": " ",
 				"description": "Add this wine to another as a blend to create a cuvée. Please note that the target container has to already be in use and have sufficient capacity."
 			},
-
 			"createPrivateConsumption": {
 				"main": "Private",
 				"sub": "consumption"
@@ -544,12 +540,10 @@
 				"main": "Dealcoholization",
 				"sub": " "
 			},
-
 			"createWineAddition": {
 				"main": "Wine",
 				"sub": "addition"
 			},
-
 			"createSubstanceAdd": {
 				"main": "Add",
 				"sub": "substance"
@@ -578,7 +572,6 @@
 				"main": "Water",
 				"sub": "addition"
 			},
-
 			"createBottling": {
 				"main": "Bottling",
 				"sub": " "
@@ -607,7 +600,6 @@
 				"main": "Close account",
 				"sub": " "
 			},
-
 			"vinouNetwork": {
 				"main": "Vinou network",
 				"sub": " "
@@ -617,7 +609,6 @@
 				"sub": "sale",
 				"description": "Transfer your wine to another Vinou member in the network. Please note that your counterpart must confirm the transfer by creating a wine purchase process."
 			},
-
 			"addSourceBarrel": {
 				"main": "Add source",
 				"sub": "barrel"
@@ -636,7 +627,6 @@
 			"harvest": "Grape harvest",
 			"additionalPurchase": "Wine purchase",
 			"marcLiquidation": "Marc liquidation",
-
 			"relocation": "Relocation",
 			"decanting": "Decanting",
 			"staticSettling": "Static settling",
@@ -648,9 +638,7 @@
 			"concentration": "Concentration",
 			"dealcoholization": "Dealcoholization",
 			"measuring": "Measuring",
-
 			"wineAddition": "Wine addition",
-
 			"substanceAdd": "Add substance",
 			"enrichment": "Enrichment",
 			"sweetening": "Sweetening",
@@ -658,7 +646,6 @@
 			"deacidification": "Deacidification",
 			"alcoholization": "Alcohol addition",
 			"waterAddition": "Water addition",
-
 			"bottling": "Bottling",
 			"wineErpRelease": "Wine ERP release",
 			"bulkWineErpRelease": "Bulk wine ERP release",
@@ -982,6 +969,9 @@
 			"glass": {
 				"name": "Glass",
 				"description": "Other"
+			},
+			"beton": {
+				"name": "Concrete"
 			}
 		},
 		"views": {
@@ -1589,7 +1579,6 @@
 			"invoice": "Invoice data",
 			"invoicesLatest": "Recent invoices",
 			"invoicePreview": {
-
 				"n": "Invoice preview for Q{n}/{year}"
 			},
 			"membership": "Membership",
@@ -1882,7 +1871,7 @@
 				"sub": "merchant"
 			},
 			"create": {
-				"title" : "Create merchant",
+				"title": "Create merchant",
 				"modaltitle": "Create merchant"
 			},
 			"edit": {
@@ -1890,7 +1879,7 @@
 			},
 			"search": {
 				"title": "Search merchant",
-				"placeholder" : "e.g. company, contact or address"
+				"placeholder": "e.g. company, contact or address"
 			}
 		},
 		"tabs": {
@@ -1966,7 +1955,6 @@
 				"title": "Own consumption by item",
 				"description": "Determine your own consumption within a given period."
 			}
-
 		}
 	},
 	"wine": {
@@ -2108,10 +2096,10 @@
 		},
 		"cap_types": {
 			"screw": "Screw cap",
-			"cork":	"Natural cork",
+			"cork": "Natural cork",
 			"crownCap": "Crown cap",
 			"plastic": "Synthetic cork",
-			"glas":	"Glas"
+			"glas": "Glas"
 		},
 		"gallery": {
 			"sortby": {
@@ -2452,7 +2440,6 @@
 			"tax": "VAT",
 			"taxrate": "Taxrate",
 			"unit": "Unit",
-
 			"image": {
 				"error": {
 					"notfound": "Image could not be found"
@@ -3277,7 +3264,6 @@
 				"main": "Show",
 				"sub": "offer"
 			},
-
 			"goto": {
 				"summary": "Next - offer summary"
 			}
@@ -3406,7 +3392,6 @@
 				"sub": "order"
 			},
 			"touch": "Mark order as read",
-
 			"addPosition": "+ Add position",
 			"goto": {
 				"delivery": "Next - delivery",
@@ -4302,7 +4287,6 @@
 			"sorting": "Manual sort index (e.g. for external use in shop)",
 			"tag": "Tags",
 			"topseller": "Topseller",
-
 			"itemSum": {
 				"label": "Value of goods",
 				"net": "Net",
@@ -5288,9 +5272,6 @@
 		"99": {
 			"name": "Rieslaner"
 		},
-		"129": {
-			"name": "Riesling"
-		},
 		"100": {
 			"name": "Rondo"
 		},
@@ -5377,6 +5358,9 @@
 		},
 		"128": {
 			"name": "Weißer Gutedel"
+		},
+		"129": {
+			"name": "Riesling"
 		},
 		"130": {
 			"name": "Wildmuskat"
@@ -6902,17 +6886,17 @@
 		"2": "semidry",
 		"3": "off-dry",
 		"4": "semi-sweet",
+		"5": "mild (doux)",
 		"6": "sweet",
 		"7": "extra-sweet",
-		"11": "frooty",
-		"13": "brut zeró",
 		"8": "herb-based (brut nature)",
-		"10": "extra brut",
 		"9": "brut",
+		"10": "extra brut",
+		"11": "frooty",
 		"12": "extra-dry (trés sec)",
+		"13": "brut zeró",
 		"14": "dry (sec)",
-		"15": "semidry (demi-sec)",
-		"5": "mild (doux)"
+		"15": "semidry (demi-sec)"
 	},
 	"countries": {
 		"ad": "Andorra",
@@ -7549,7 +7533,6 @@
 			"sweets": "Sweets",
 			"occasions": "Occasions"
 		},
-
 		"beef": "Beef",
 		"veal": "Veal",
 		"pork": "Pork",
@@ -7560,18 +7543,15 @@
 		"shellfish": "Shellfish",
 		"shell": "Seeshells",
 		"sausage": "Sausage",
-
 		"grilled": "Grilled",
 		"fried": "Fried",
 		"smoked": "Smoked",
 		"baked": "Baked",
 		"steamed": "Steamed",
-
 		"dairyproduct": "Dairyproduct",
 		"softcheese": "Soft cheese",
 		"bluecheese": "Blue cheese",
 		"hardcheese": "Hard cheese",
-
 		"bulb": "Blub",
 		"salad": "Salad",
 		"tubers": "Tubes",
@@ -7580,7 +7560,6 @@
 		"nuts": "Nuts",
 		"treenuts": "Treenuts",
 		"asparagus": "Asparagus",
-
 		"pepper": "Pepper",
 		"chili": "Chili",
 		"spicy": "Hot & Spicy",
@@ -7588,19 +7567,16 @@
 		"cinnamon": "Cinnamon",
 		"exotic": "Exotic (Anis)",
 		"vegetarian": "Vegetarian",
-
 		"toast": "Toast",
 		"bread": "Bread",
 		"wholebread": "Wholebread",
 		"pumpernickel": "Pumpernickel",
-
 		"fruits": "Fruits",
 		"cake": "Cake",
 		"creme": "Creme",
 		"ice": "Ice",
 		"chocolate": "Chocolate",
 		"coffee": "Coffee",
-
 		"barbecue": "Barbecue",
 		"present": "Present",
 		"boysNight": "Boys' night",
