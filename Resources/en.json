@@ -2290,7 +2290,8 @@
 			"qrCode": "QR code",
 			"region": "Regional",
 			"shop": "Website and shop settings",
-			"stock": "Stock"
+			"stock": "Stock",
+			"grapetypes": "Grape varieties"
 		},
 		"viels": {
 			"files": {
@@ -2324,6 +2325,78 @@
 			"inStock": "in stock",
 			"liter": "Liter",
 			"stockDistribution": "Available stock {stock}, in order {ordered}"
+		},
+		"fields": {
+			"acidity": "Acidity",
+			"active": "active",
+			"alcohol": "Alcohol content",
+			"allergens": {
+				"label": "Allergens",
+				"placeholder": "Search for allergens"
+			},
+			"articleNumber": "Item no.",
+			"barcode": "EAN code",
+			"bio": "Certified organic",
+			"bioRefNumber": {
+				"label": "Organic control number",
+				"placeholder": "DE-ÖKO-XXX"
+			},
+			"countrycode": "Origin",
+			"cuvee": "Cuvée",
+			"description": "Description",
+			"drinkingTemperature": "Drinking temperature",
+			"grapetypes": {
+				"label": "Grape varieties",
+				"placeholder": "Search grape variety"
+			},
+			"gross": "Gross price",
+			"image": {
+				"label": "Image",
+				"error": {
+					"notFound": "Image could not be found"
+				}
+			},
+			"maturation": "Expansion",
+			"name": "Name",
+			"noStock": "drunk up",
+			"noStockText": "Display text when empty (e.g. available from ...)",
+			"place": "Location",
+			"price": "Price",
+			"prices": "Prices",
+			"qrCode": {
+				"label": "QR code",
+				"hint": "The QR code is generated after the first save"
+			},
+			"qrCodeLink": {
+				"label": "Destination address for QR code",
+				"placeholder": "Destination address for QR code (barrel wine PDF if empty)"
+			},
+			"quality": "Quality level",
+			"qualityNote": "Additional information Quality level",
+			"quantity": "Current stock",
+			"region": "Growing region",
+			"residualSugar": "Residual sweetness",
+			"sorting": "Manual sort index (e.g. for the store)",
+			"stock": "Available stock",
+			"tags": "Tags",
+			"taste": "Flavor",
+			"terroir": "Floor",
+			"topseller": "Top seller",
+			"type": "Type",
+			"vegan": "Vegan",
+			"vintage": "Vintage",
+			"winery": {
+				"label": "Winery",
+				"placeholder": "Search winery"
+			}
+		},
+		"views": {
+			"files": {
+				"label": "Files",
+				"title": "Files and documents relating to this bulk wine"
+			},
+			"savours": "Vinou-Gusto",
+			"stockRotation": "Stock movements"
 		}
 	},
 	"winecategory": {
@@ -2675,6 +2748,11 @@
 			"created": "Clientgroup created!",
 			"changed": "Clientgroup changed!",
 			"deleted": "Clientgroup deleted!"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Description",
+			"crstamp": "Creation date"
 		}
 	},
 	"contact": {
