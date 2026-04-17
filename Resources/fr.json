@@ -2273,7 +2273,8 @@
 				"label": "Zieladresse für QR-Code",
 				"placeholder": "Zieladresse für QR-Code (Fasswein PDF wenn leer)"
 			},
-			"qualityNote": "Zusatzangabe Qualitätsstufe"
+			"qualityNote": "Zusatzangabe Qualitätsstufe",
+			"residualSugar": "Sucre résiduel"
 		},
 		"fieldSets": {
 			"allergens": "Allergènes",
