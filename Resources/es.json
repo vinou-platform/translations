@@ -1462,11 +1462,6 @@
 			"wineErpRelease": "Lanzamiento de vino ERP"
 		}
 	},
-	"bank_edittitle": "editar cuenta bancaria",
-	"bank_iban": "IBAN",
-	"bank_bic": "BIC",
-	"bank_bankname": "nombre del entidad de crédito",
-	"bank_owner": "titular de la cuenta",
 	"cashlink_createtitle": "registrar Cashlink",
 	"cashlink_viewtitle": "Sus datos de Cashlink",
 	"cashlink_business_title": "datos de la empresa",
@@ -2940,19 +2935,21 @@
 			"delete": "¿Realmente desea eliminar esta etiqueta electrónica?"
 		},
 		"toasts": {
-			"delete": "¡Etiqueta eliminada!"
+			"deleted": "eLabel eliminada!"
 		}
 	},
 	"fact": {
 		"actions": {
-			"autocalc": "Calcular automáticamente"
+			"autocalc": "Calcular automáticamente",
+			"saveOrder": "Guardar pedido"
 		},
 		"fields": {
 			"type": "Tipo",
 			"quantity": "Cantidad",
 			"unit": "Unidad",
 			"label": "Etiqueta adicional",
-			"code": "Código de reciclaje"
+			"code": "Código de reciclaje",
+			"important": "Destacado"
 		},
 		"views": {
 			"edit": {
@@ -2973,7 +2970,8 @@
 			"created": "Información alimentaria creada",
 			"changed": "La información alimentaria cambió",
 			"deleted": "Información alimentaria eliminada",
-			"calculated": "Información alimentaria determinada automáticamente"
+			"calculated": "Información alimentaria determinada automáticamente",
+			"orderSaved": "Secuencia guardada"
 		},
 		"types": {
 			"aluminium": "Aluminio",
@@ -3104,7 +3102,9 @@
 			"fillingDosage": "Dosificación de llenado",
 			"shippingDosage": "Dosificación de envío",
 			"flavors": "Sabores",
-			"carbonicAcid": "ácido carbónico"
+			"carbonicAcid": "ácido carbónico",
+			"biograpes": "Uvas BIO",
+			"biosucrose": "BIO Sacharose"
 		},
 		"factgroups": {
 			"nutritionalInformation": {
@@ -4634,6 +4634,10 @@
 			"showDescriptions": {
 				"title": "Mostrar bloque de información \"Descripción del vino\"",
 				"description": "Actívelo para mostrar descripciones de vino adicionales, como terruño, maduración y descripción"
+			},
+			"hideMainFacts": {
+				"title": "Mostrar datos del vino",
+				"description": "Muestra los datos más importantes del vino, como la variedad de uva, la añada y el grado alcohólico, en todas las etiquetas electrónicas."
 			}
 		},
 		"mail": {
@@ -4738,7 +4742,6 @@
 		"payments": {
 			"title": "Metodos de pago",
 			"description": "Con ayuda de varias metodos de pago puedes ofrecer más opciones en el shop online a tus clientes de destino.",
-			"bankaccount": "Cuenta bancaria",
 			"paypal": {
 				"name": "Paypal",
 				"title": "Configuración de Paypal",
@@ -4781,6 +4784,24 @@
 				},
 				"errors": {
 					"deactivationNotPossible": "Actualmente, el procesamiento de pagos a través de Stripe no se puede desactivar. Verifique si los saldos de su cuenta de Stripe son cero y si hay pagos pendientes."
+				}
+			},
+			"bank": {
+				"name": "Datos bancarios",
+				"title": "Editar datos bancarios",
+				"additional": "Información complementaria",
+				"fields": {
+					"iban": "IBAN",
+					"bic": "BIC",
+					"bankname": "Nombre de la entidad de crédito",
+					"owner": "Titular de la cuenta",
+					"additional": "Introduzca más información sobre el banco (por ejemplo, otras cuentas). Esta información se muestra en las facturas y confirmaciones de pedido generadas."
+				},
+				"toasts": {
+					"changed": "Datos bancarios actualizados"
+				},
+				"errors": {
+					"save": "Se ha producido un error al guardar los datos bancarios."
 				}
 			}
 		},
@@ -4845,7 +4866,6 @@
 		}
 	},
 	"toasts": {
-		"bank_settings_error": "Ha ocurrido un error durante la grabación de la cuenta bancaria!",
 		"category_saved": "Categoría ha sido grabada!",
 		"category_changed": "Categoría ha sido actualizada!",
 		"category_deleted": "Categoría ha sido borrada!",
@@ -4863,7 +4883,6 @@
 		"merchant_changed": "Comerciante ha sido actualizado!",
 		"merchant_deleted": "Comerciante ha sido borrado!",
 		"merchant_save_error": "Grabación ha sido fallada !",
-		"settings_bank_changed": "Cuenta bancaria ha sido actualizada!",
 		"settings_cashlink_registered": "Cashlink ha sido registrado!",
 		"settings_cashlink_registererror": "Registración ha sido fallada, talvez el correo electrónico ya no está disponible más!",
 		"winery_created": "Propiedad vinícola ha sido creada!",

@@ -1462,11 +1462,6 @@
 			"wineErpRelease": "Sortie de vin ERP"
 		}
 	},
-	"bank_edittitle": "Éditer coordonnées bancaire",
-	"bank_iban": "IBAN",
-	"bank_bic": "BIC",
-	"bank_bankname": "Nom d'établissement de crédit",
-	"bank_owner": "Titulaire du compte",
 	"cashlink_createtitle": "Registre Cashlink",
 	"cashlink_viewtitle": "Vos données Cashlink",
 	"cashlink_business_title": "Données de l'entreprise",
@@ -2940,19 +2935,21 @@
 			"delete": "Voulez-vous vraiment supprimer cet eLabel ?"
 		},
 		"toasts": {
-			"delete": "Etiquette supprimée !"
+			"deleted": "eLabel supprimée!"
 		}
 	},
 	"fact": {
 		"actions": {
-			"autocalc": "Calculer automatiquement"
+			"autocalc": "Calculer automatiquement",
+			"saveOrder": "Enregistrer l'ordre"
 		},
 		"fields": {
 			"type": "Taper",
 			"quantity": "Quantité",
 			"unit": "Unité",
 			"label": "Etiquette supplémentaire",
-			"code": "Code de recyclage"
+			"code": "Code de recyclage",
+			"important": "Souligné"
 		},
 		"views": {
 			"edit": {
@@ -2973,7 +2970,8 @@
 			"created": "Informations alimentaires créées",
 			"changed": "Les informations sur les aliments ont changé",
 			"deleted": "Informations sur les aliments supprimées",
-			"calculated": "Informations alimentaires déterminées automatiquement"
+			"calculated": "Informations alimentaires déterminées automatiquement",
+			"orderSaved": "Ordre enregistré"
 		},
 		"types": {
 			"aluminium": "Aluminium",
@@ -3104,7 +3102,9 @@
 			"fillingDosage": "Dosage de remplissage",
 			"shippingDosage": "Dosage d'expédition",
 			"flavors": "Les saveurs",
-			"carbonicAcid": "Acide carbonique"
+			"carbonicAcid": "Acide carbonique",
+			"biograpes": "Raisins BIO",
+			"biosucrose": "Sacharose BIO"
 		},
 		"factgroups": {
 			"nutritionalInformation": {
@@ -4634,6 +4634,10 @@
 			"showDescriptions": {
 				"title": "Afficher le bloc d'information \"Description du vin\"",
 				"description": "Activez pour afficher des descriptions de vins supplémentaires telles que le terroir, la maturation et la description."
+			},
+			"hideMainFacts": {
+				"title": "Afficher les données sur le vin",
+				"description": "Affiche les principales données sur le vin telles que le cépage, le millésime et le degré d'alcool sur toutes les étiquettes électroniques."
 			}
 		},
 		"mail": {
@@ -4738,7 +4742,6 @@
 		"payments": {
 			"title": "Méthodes de paiement",
 			"description": "À l'aide des différentes méthodes de paiement, vous pouvez offrir à vos clients finaux davantage d'options dans la boutique en ligne.",
-			"bankaccount": "Coordonnées bancaire",
 			"paypal": {
 				"name": "Paypal",
 				"title": "Modifier la configuration Paypal",
@@ -4781,6 +4784,24 @@
 				},
 				"errors": {
 					"deactivationNotPossible": "Actuellement, le traitement des paiements via Stripe ne peut pas être désactivé. Veuillez vérifier si les soldes de votre compte Stripe sont nuls et s'il y a des paiements impayés."
+				}
+			},
+			"bank": {
+				"name": "Coordonnées bancaires",
+				"title": "Traiter les coordonnées bancaires",
+				"additional": "Informations complémentaires",
+				"fields": {
+					"iban": "IBAN",
+					"bic": "BIC",
+					"bankname": "Nom de l'établissement de crédit",
+					"owner": "Titulaire du compte",
+					"additional": "Enregistre d'autres informations sur la banque (par ex. d'autres comptes). Ces informations seront affichées sur les factures et les confirmations de commande générées."
+				},
+				"toasts": {
+					"changed": "Coordonnées bancaires mises à jour !"
+				},
+				"errors": {
+					"save": "Une erreur est survenue lors de l'enregistrement des coordonnées bancaires !"
 				}
 			}
 		},
@@ -4845,7 +4866,6 @@
 		}
 	},
 	"toasts": {
-		"bank_settings_error": "Une erreur s'est produite lors de l'enregistrement des coordonnées bancaires!",
 		"category_saved": "Categorie enregistrée!",
 		"category_changed": "Categorie mise à jour!",
 		"category_deleted": "Categorie supprimée!",
@@ -4863,7 +4883,6 @@
 		"merchant_changed": "Marchand mis à jour!",
 		"merchant_deleted": "Marchand supprimé!",
 		"merchant_save_error": "Échec de la enregistrement!",
-		"settings_bank_changed": "Coordonnées bancaires mises à jour!",
 		"settings_cashlink_registered": "Cashlink enregistré!",
 		"settings_cashlink_registererror": "Enregistrement échoué, courrier éventuellement déjà pris!",
 		"winery_created": "Établissement vinicole créé!",

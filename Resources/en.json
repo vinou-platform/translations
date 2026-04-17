@@ -1462,11 +1462,6 @@
 			"wineErpRelease": "Wine ERP release"
 		}
 	},
-	"bank_edittitle": "Edit bank account",
-	"bank_iban": "IBAN",
-	"bank_bic": "BIC",
-	"bank_bankname": "Creditinstitut",
-	"bank_owner": "Account owner",
 	"cashlink_createtitle": "Register Cashlink",
 	"cashlink_viewtitle": "Your Cashlink account data",
 	"cashlink_business_title": "Company data",
@@ -2940,19 +2935,21 @@
 			"delete": "Do you really want to delete this eLabel?"
 		},
 		"toasts": {
-			"delete": "Elabel deleted!"
+			"deleted": "eLabel deleted!"
 		}
 	},
 	"fact": {
 		"actions": {
-			"autocalc": "Calculate automatically"
+			"autocalc": "Calculate automatically",
+			"saveOrder": "Save ordering"
 		},
 		"fields": {
 			"type": "Type",
 			"quantity": "Quantity",
 			"unit": "Unit",
 			"label": "Additional label",
-			"code": "Recycling code"
+			"code": "Recycling code",
+			"important": "Highlighted"
 		},
 		"views": {
 			"edit": {
@@ -2973,7 +2970,8 @@
 			"created": "Food information created",
 			"changed": "Food information changed",
 			"deleted": "Food information deleted",
-			"calculated": "Food information determined automatically"
+			"calculated": "Food information determined automatically",
+			"orderSaved": "Ordering saved"
 		},
 		"types": {
 			"aluminium": "Aluminum",
@@ -3104,7 +3102,9 @@
 			"fillingDosage": "Filling dosage",
 			"shippingDosage": "Shipping dosage",
 			"flavors": "Flavors",
-			"carbonicAcid": "Carbonic acid"
+			"carbonicAcid": "Carbonic acid",
+			"biograpes": "BIO grapes",
+			"biosucrose": "BIO Sucrose"
 		},
 		"factgroups": {
 			"nutritionalInformation": {
@@ -4634,6 +4634,10 @@
 			"showDescriptions": {
 				"title": "Show info block \"Wine description\"",
 				"description": "Activate to show additional wine descriptions such as terroir, maturation and description."
+			},
+			"hideMainFacts": {
+				"title": "Show wine data",
+				"description": "Displays the most important wine data such as grape variety, vintage and alcohol content on all eLabels."
 			}
 		},
 		"mail": {
@@ -4738,7 +4742,6 @@
 		"payments": {
 			"title": "Payment methods",
 			"description": "With different payment methods you're able to make your webshop more attractive to your clients.",
-			"bankaccount": "Bank account",
 			"paypal": {
 				"name": "Paypal",
 				"title": "Edit Paypal-settings",
@@ -4781,6 +4784,24 @@
 				},
 				"errors": {
 					"deactivationNotPossible": "Currently payment processing through Stripe cannot be deactivated. Please check whether your Stripe account's balances are zero and whether there are any outstanding payments."
+				}
+			},
+			"bank": {
+				"name": "Bank details",
+				"title": "Edit bank details",
+				"additional": "Additional information",
+				"fields": {
+					"iban": "IBAN",
+					"bic": "BIC",
+					"bankname": "Name of credit institution",
+					"owner": "Account holder",
+					"additional": "Enter further information about the bank (e.g. other accounts). This information is displayed on the generated invoices and order confirmations."
+				},
+				"toasts": {
+					"changed": "Bank details updated!"
+				},
+				"errors": {
+					"save": "An error occurred while saving the bank details!"
 				}
 			}
 		},
@@ -4845,7 +4866,6 @@
 		}
 	},
 	"toasts": {
-		"bank_settings_error": "An error occured while saving the bank account!",
 		"category_saved": "Category saved!",
 		"category_changed": "Category updated!",
 		"category_deleted": "Category deleted!",
@@ -4863,7 +4883,6 @@
 		"merchant_changed": "Merchant updated!",
 		"merchant_deleted": "Merchant deleted!",
 		"merchant_save_error": "Error saving winery!",
-		"settings_bank_changed": "Bank account updated!",
 		"settings_cashlink_registered": "Cashlink registered!",
 		"settings_cashlink_registererror": "Registration failed, did you use the false mail address!",
 		"winery_created": "Winery created!",
