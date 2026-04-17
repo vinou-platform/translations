@@ -967,6 +967,9 @@
 			"glass": {
 				"name": "Verre",
 				"description": "Autres"
+			},
+			"beton": {
+				"name": "Beton"
 			}
 		},
 		"views": {
@@ -1411,9 +1414,9 @@
 			"purpose": "Type",
 			"quantity": "Quantité",
 			"referenceNumber": "Facture no., reçu no. (par ex. documents d'accompagnement, numéro du vin)",
-			"residualSugar": "Sucre résiduel",
 			"type": "Type",
-			"wineNumber": "Numéro du vin"
+			"wineNumber": "Numéro du vin",
+			"residualSugar": "Sucre résiduel"
 		},
 		"fieldsets": {
 			"analysisData": "Données analytiques"
@@ -2259,7 +2262,18 @@
 			"winery": {
 				"label": "Établissement vinicole",
 				"placeholder": "Rechercher établissement vinicole"
-			}
+			},
+			"noStock": "ausgetrunken",
+			"noStockText": "Anzeige Text wenn ausgetrunken (z.B. verfügbar ab ...)",
+			"qrCode": {
+				"label": "QR-Code",
+				"hint": "Der QR-Code wird nach dem ersten Speichern generiert"
+			},
+			"qrCodeLink": {
+				"label": "Zieladresse für QR-Code",
+				"placeholder": "Zieladresse für QR-Code (Fasswein PDF wenn leer)"
+			},
+			"qualityNote": "Zusatzangabe Qualitätsstufe"
 		},
 		"fieldSets": {
 			"allergens": "Allergènes",
@@ -2272,7 +2286,8 @@
 			"qrCode": "Code QR",
 			"region": "Régional",
 			"shop": "Configuration du site Web & de la boutique",
-			"stock": "Stock"
+			"stock": "Stock",
+			"grapetypes": "Rebsorten"
 		},
 		"views": {
 			"files": {
@@ -2304,7 +2319,8 @@
 		},
 		"hints": {
 			"liter": "Litre",
-			"stockDistribution": "Stock disponible {stock}, réservé {reserved}, en ordre {ordered}"
+			"stockDistribution": "Stock disponible {stock}, réservé {reserved}, en ordre {ordered}",
+			"inStock": "auf Lager"
 		}
 	},
 	"winecategory": {
@@ -2651,6 +2667,11 @@
 			"created": "Groupe de clients créé!",
 			"changed": "Le groupe de clients a changé!",
 			"deleted": "Groupe de clients supprimé!"
+		},
+		"fields": {
+			"name": "Name",
+			"description": "Beschreibung",
+			"crstamp": "Erstellungsdatum"
 		}
 	},
 	"contact": {
