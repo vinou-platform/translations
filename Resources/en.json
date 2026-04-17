@@ -2649,11 +2649,6 @@
 		"fieldSets": {
 			"general": "General"
 		},
-		"field": {
-			"name": "Name",
-			"description": "Description",
-			"crstamp": "Date of creation"
-		},
 		"actions": {
 			"create": {
 				"main": "Create new",
