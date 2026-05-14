@@ -1,6 +1,5 @@
 {
     "name": "vinou/translations",
-    "version": "4.1.0",
     "type": "library",
     "description": "Vinou Translation files",
     "keywords": [
