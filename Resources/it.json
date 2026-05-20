@@ -319,6 +319,11 @@
 			"currentMonth": "Corrente mese"
 		}
 	},
+	"document": {
+		"actions": {
+			"sendByMail": "Invia documento per e-mail"
+		}
+	},
 	"token": {
 		"fields": {
 			"token": "Token",
@@ -3183,6 +3188,10 @@
 			"show": {
 				"main": "Visualizza",
 				"sub": "fattura"
+			},
+			"regenerate": {
+				"main": "Rigenera",
+				"sub": "fattura"
 			}
 		},
 		"fields": {
@@ -3196,10 +3205,15 @@
 		},
 		"dialogs": {
 			"create": "Crea boletta ora?",
-			"createWithDeliveryNote": "Vuoi generare bolletta e bolla di consegna per l'ordine?"
+			"createWithDeliveryNote": "Vuoi generare bolletta e bolla di consegna per l'ordine?",
+			"regenerate": {
+				"title": "Rigenera fattura",
+				"msg": "Il PDF e – se disponibile – la fattura elettronica (XML) verranno ricreati con i modelli attuali. Il contenuto della fattura non verrà modificato."
+			}
 		},
 		"toasts": {
-			"created": "Fatturazione creata!"
+			"created": "Fatturazione creata!",
+			"regenerated": "Fattura rigenerata!"
 		}
 	},
 	"offer": {

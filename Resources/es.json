@@ -319,6 +319,11 @@
 			"currentMonth": "Mes actual"
 		}
 	},
+	"document": {
+		"actions": {
+			"sendByMail": "Enviar documento por correo"
+		}
+	},
 	"token": {
 		"fields": {
 			"token": "Simbólico",
@@ -3189,6 +3194,10 @@
 			"show": {
 				"main": "Mostrar",
 				"sub": "factura"
+			},
+			"regenerate": {
+				"main": "Regenerar",
+				"sub": "factura"
 			}
 		},
 		"fields": {
@@ -3202,10 +3211,15 @@
 		},
 		"dialogs": {
 			"create": "Generar la factura ahora?",
-			"createWithDeliveryNote": "Quieres generar la factura y el boletín de entrega para el envío?"
+			"createWithDeliveryNote": "Quieres generar la factura y el boletín de entrega para el envío?",
+			"regenerate": {
+				"title": "Regenerar factura",
+				"msg": "El PDF y – si está disponible – la e-factura (XML) se generarán de nuevo con las plantillas actuales. El contenido de la factura no cambiará."
+			}
 		},
 		"toasts": {
-			"created": "Factura ha sido creada!"
+			"created": "Factura ha sido creada!",
+			"regenerated": "¡Factura regenerada!"
 		}
 	},
 	"offer": {

@@ -321,6 +321,11 @@
 			"currentMonth": "Aktueller Monat"
 		}
 	},
+	"document": {
+		"actions": {
+			"sendByMail": "Dokument per Mail versenden"
+		}
+	},
 	"token": {
 		"fields": {
 			"token": "Schnittstelle (Token)",
@@ -3204,6 +3209,10 @@
 			"show": {
 				"main": "Rechnung",
 				"sub": "anzeigen"
+			},
+			"regenerate": {
+				"main": "Rechnung",
+				"sub": "neu generieren"
 			}
 		},
 		"fields": {
@@ -3217,10 +3226,15 @@
 		},
 		"dialogs": {
 			"create": "Rechung jetzt erstellen?",
-			"createWithDeliveryNote": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?"
+			"createWithDeliveryNote": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?",
+			"regenerate": {
+				"title": "Rechnung neu generieren",
+				"msg": "Das PDF und – sofern vorhanden – die E-Rechnung (XML) werden mit den aktuellen Vorlagen neu erstellt. Am Inhalt der Rechnung ändert sich dabei nichts."
+			}
 		},
 		"toasts": {
-			"created": "Rechnung erstellt!"
+			"created": "Rechnung erstellt!",
+			"regenerated": "Rechnung wurde neu generiert!"
 		}
 	},
 	"offer": {

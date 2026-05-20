@@ -319,6 +319,11 @@
 			"currentMonth": "Mois en cours"
 		}
 	},
+	"document": {
+		"actions": {
+			"sendByMail": "Envoyer le document par e-mail"
+		}
+	},
 	"token": {
 		"fields": {
 			"token": "Jeton",
@@ -3189,6 +3194,10 @@
 			"show": {
 				"main": "Afficher",
 				"sub": "facture"
+			},
+			"regenerate": {
+				"main": "Regénérer",
+				"sub": "la facture"
 			}
 		},
 		"fields": {
@@ -3202,10 +3211,15 @@
 		},
 		"dialogs": {
 			"create": "Créer facture maintenant?",
-			"createWithDeliveryNote": "Voulez-vous créer cette ordre avec facture et bon de livraison?"
+			"createWithDeliveryNote": "Voulez-vous créer cette ordre avec facture et bon de livraison?",
+			"regenerate": {
+				"title": "Regénérer la facture",
+				"msg": "Le PDF et – si disponible – la e-facture (XML) seront recréés avec les modèles actuels. Le contenu de la facture ne sera pas modifié."
+			}
 		},
 		"toasts": {
-			"created": "Facturation créée!"
+			"created": "Facturation créée!",
+			"regenerated": "Facture regénérée !"
 		}
 	},
 	"offer": {

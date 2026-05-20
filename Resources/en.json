@@ -319,6 +319,11 @@
 			"currentMonth": "Current month"
 		}
 	},
+	"document": {
+		"actions": {
+			"sendByMail": "Send document by email"
+		}
+	},
 	"token": {
 		"fields": {
 			"token": "Token",
@@ -3189,6 +3194,10 @@
 			"show": {
 				"main": "Show",
 				"sub": "invoice"
+			},
+			"regenerate": {
+				"main": "Regenerate",
+				"sub": "invoice"
 			}
 		},
 		"fields": {
@@ -3202,10 +3211,15 @@
 		},
 		"dialogs": {
 			"create": "Create invoice now?",
-			"createWithDeliveryNote": "Do you really want to create invoice and a delivery note to sent this order?"
+			"createWithDeliveryNote": "Do you really want to create invoice and a delivery note to sent this order?",
+			"regenerate": {
+				"title": "Regenerate invoice",
+				"msg": "The PDF and – if available – the e-invoice (XML) will be re-rendered using the current templates. The invoice content itself will not be changed."
+			}
 		},
 		"toasts": {
-			"created": "Invoice generated!"
+			"created": "Invoice generated!",
+			"regenerated": "Invoice regenerated!"
 		}
 	},
 	"offer": {
