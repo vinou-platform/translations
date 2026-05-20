@@ -2553,6 +2553,7 @@
 			"number": "N° del cliente",
 			"company": "empresa",
 			"taxid": "ID de impuestos",
+			"gln": "GLN (Número de Localización Global)",
 			"address": "calle y número de casa",
 			"address_supplement": "datos complementarios del domicilio",
 			"zip": "código postal",
@@ -4835,7 +4836,8 @@
 				"user": "Nombre de usuario",
 				"password": "Contraseña",
 				"fromMail": "Correo electrónico para correo electrónicos saliendo",
-				"fromName": "Remitente de corres electrónico saliendo"
+				"fromName": "Remitente de corres electrónico saliendo",
+				"active": "Enviar todos los correos electrónicos enviados por Vinou a través del servidor SMTP configurado"
 			},
 			"toasts": {
 				"changed": "Configuración de SMTP han sido actualizados!",

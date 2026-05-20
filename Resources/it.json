@@ -2547,6 +2547,7 @@
 			"number": "N° cliente",
 			"company": "Azienda",
 			"taxid": "Numero di identificazione fiscale",
+			"gln": "GLN (Numero di Localizzazione Globale)",
 			"address": "Via e numero",
 			"address_supplement": "Indirizzo aggiuntivo",
 			"zip": "Codice postale",
@@ -4829,7 +4830,8 @@
 				"user": "Nome utente",
 				"password": "Parola d'ordine",
 				"fromMail": "E-mail del mittente per le e-mail in uscita",
-				"fromName": "Nome del mittente per le email in uscita"
+				"fromName": "Nome del mittente per le email in uscita",
+				"active": "Inviare tutte le e-mail spedite da Vinou tramite il server SMTP configurato"
 			},
 			"toasts": {
 				"changed": "La configurazione SMTP è stata modificata!",

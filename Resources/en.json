@@ -2553,6 +2553,7 @@
 			"number": "Client no.",
 			"company": "Company",
 			"taxid": "Tax ID",
+			"gln": "GLN (Global Location Number)",
 			"address": "Street",
 			"address_supplement": "Address supplement",
 			"zip": "Zip",
@@ -4835,7 +4836,8 @@
 				"user": "Username",
 				"password": "Password",
 				"fromMail": "Sender email for outbound emails",
-				"fromName": "Sender name for outbound emails"
+				"fromName": "Sender name for outbound emails",
+				"active": "Send all emails dispatched by Vinou via the configured SMTP server"
 			},
 			"toasts": {
 				"changed": "SMTP-Settings updated!",
