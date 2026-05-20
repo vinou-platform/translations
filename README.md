@@ -159,7 +159,7 @@ This Library is developed by the Vinou GmbH.
 ![](http://static.vinou.io/brand/logo/red.svg)
 
 Vinou GmbH<br> 
-Mombacher Straße 68<br>
-55122 Mainz<br>
+Justus-von-Liebig-Straße 9e<br>
+55232 Alzey<br>
 E-Mail: [kontakt@vinou.de](mailto:kontakt@vinou.de)<br>
 Phone: [+49 6131 6245390](tel:+4961316245390)
