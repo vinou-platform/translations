@@ -744,7 +744,8 @@
 			"create": {
 				"title": "Weinkonto anlegen",
 				"main": "Neues Weinkonto",
-				"sub": "anlegen"
+				"sub": "anlegen",
+				"simple": "Neu anlegen"
 			},
 			"export": {
 				"barrelList": "Behälterliste",
@@ -763,6 +764,8 @@
 			},
 			"gallery": {
 				"currentState": "Aktueller Zustand",
+				"noVintage": "Ohne",
+				"yearLabel": "Produktionsjahr",
 				"vintage": "Jahrgang / Produktionsjahr {vintage}",
 				"inTransfer": "Dieser Wein ist im Vinou-Netzwerk für einen Transfer vorgesehen. Während der Freigabe kannst Du aus rechtlichen Gründen auf diesem Wein keine weiteren Aktionen und Korrekturen durchführen.",
 				"filters": {
@@ -779,7 +782,16 @@
 						"regular": "Reguläre Vorgänge",
 						"measuring": "Messungen",
 						"analysisOrder": "Analyseaufträge"
-					}
+					},
+					"archived": {
+						"label": "Archivierte Weinkonten",
+						"show": "Anzeigen"
+					},
+					"pageSize": {
+						"label": "Einträge pro Seite"
+					},
+					"toggle": "Filter einblenden",
+					"close": "Filter ausblenden"
 				}
 			},
 			"measurements": {
@@ -926,7 +938,8 @@
 		"actions": {
 			"create": {
 				"main": "Behälter",
-				"sub": "anlegen"
+				"sub": "anlegen",
+				"simple": "Neu anlegen"
 			},
 			"export": {
 				"qrCodeVector": "QR-Code als Vektor-Datei herunterladen"
@@ -1001,7 +1014,12 @@
 					"search": {
 						"placeholder": "Z.B.: Behälternr., Aufstellort, Hersteller"
 					},
-					"hideEmptyBarrels": "Leere Behälter ausblenden"
+					"hideEmptyBarrels": "Leere Behälter ausblenden",
+					"toggle": "Filter einblenden",
+					"close": "Filter ausblenden",
+					"pageSize": {
+						"label": "Einträge pro Seite"
+					}
 				}
 			}
 		},

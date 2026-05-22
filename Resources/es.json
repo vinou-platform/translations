@@ -732,7 +732,8 @@
 			"create": {
 				"title": "crear cuenta de vino",
 				"main": "nueva cuenta de vino",
-				"sub": "crear"
+				"sub": "crear",
+				"simple": "Crear nuevo"
 			},
 			"export": {
 				"barrelList": "lista de recipientes",
@@ -751,6 +752,8 @@
 			},
 			"gallery": {
 				"currentState": "estado acutal",
+				"noVintage": "Sin año",
+				"yearLabel": "Año de producción",
 				"vintage": "Cosecha / ano de produccion {vintage}",
 				"inTransfer": "Este vino está destinado a una transferencia en la red Vinou. Por razones legales, no se pueden realizar más acciones o correcciones sobre este vino durante el proceso de liberación.",
 				"filters": {
@@ -767,7 +770,16 @@
 						"regular": "Acciones regulares",
 						"measuring": "Medidas",
 						"analysisOrder": "Órdenes para analizar"
-					}
+					},
+					"archived": {
+						"label": "Cuentas de vino archivadas",
+						"show": "Mostrar"
+					},
+					"pageSize": {
+						"label": "Entradas por página"
+					},
+					"toggle": "Mostrar filtros",
+					"close": "Ocultar filtros"
 				}
 			},
 			"measurements": {
@@ -914,7 +926,8 @@
 		"actions": {
 			"create": {
 				"main": "Recipiente",
-				"sub": "crear"
+				"sub": "crear",
+				"simple": "Crear nuevo"
 			},
 			"export": {
 				"qrCodeVector": "Descargar QR-Code como archivo vector"
@@ -989,7 +1002,12 @@
 					"search": {
 						"placeholder": "E.j.: número de recipiente, ubicación para disponer, fabricante"
 					},
-					"hideEmptyBarrels": "Ocultar recipiente vacios"
+					"hideEmptyBarrels": "Ocultar recipiente vacios",
+					"toggle": "Mostrar filtros",
+					"close": "Ocultar filtros",
+					"pageSize": {
+						"label": "Entradas por página"
+					}
 				}
 			}
 		},

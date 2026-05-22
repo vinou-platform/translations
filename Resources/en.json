@@ -732,7 +732,8 @@
 			"create": {
 				"title": "Create new wine",
 				"main": "Create",
-				"sub": "new wine"
+				"sub": "new wine",
+				"simple": "Create new"
 			},
 			"export": {
 				"barrelList": "Barrel list",
@@ -751,6 +752,8 @@
 			},
 			"gallery": {
 				"currentState": "Current state",
+				"noVintage": "Without",
+				"yearLabel": "Year of production",
 				"vintage": "Vintage / year of production {vintage}",
 				"inTransfer": "This wine is earmarked for a transfer in the Vinou network. For legal reasons, you cannot carry out any further actions or corrections on this wine during the releasing process.",
 				"filters": {
@@ -767,7 +770,16 @@
 						"regular": "Regular actions",
 						"measuring": "Measurements",
 						"analysisOrder": "Orders for analyse"
-					}
+					},
+					"archived": {
+						"label": "Archived wine accounts",
+						"show": "Show"
+					},
+					"pageSize": {
+						"label": "Entries per page"
+					},
+					"toggle": "Show filters",
+					"close": "Hide filters"
 				}
 			},
 			"measurements": {
@@ -914,7 +926,8 @@
 		"actions": {
 			"create": {
 				"main": "Create new",
-				"sub": "barrel"
+				"sub": "barrel",
+				"simple": "Create new"
 			},
 			"export": {
 				"qrCodeVector": "Download QR code as vector file"
@@ -989,7 +1002,12 @@
 					"search": {
 						"placeholder": "E.g.: Barrel-no., Location, Manufacturer"
 					},
-					"hideEmptyBarrels": "Hide empty barrels"
+					"hideEmptyBarrels": "Hide empty barrels",
+					"toggle": "Show filters",
+					"close": "Hide filters",
+					"pageSize": {
+						"label": "Items per page"
+					}
 				}
 			}
 		},
