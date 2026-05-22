@@ -210,6 +210,11 @@
       },
       "general": {
         "empty": "Tutto"
+      },
+      "toggle": "Mostra filtri",
+      "close": "Nascondi filtri",
+      "pageSize": {
+        "label": "Voci per pagina"
       }
     },
     "intervals": {
@@ -776,12 +781,7 @@
           "archived": {
             "label": "Conti del vino archiviati",
             "show": "Mostra"
-          },
-          "pageSize": {
-            "label": "Voci per pagina"
-          },
-          "toggle": "Mostra filtri",
-          "close": "Nascondi filtri"
+          }
         }
       },
       "measurements": {
@@ -1003,12 +1003,7 @@
           "search": {
             "placeholder": "Ad es.: Recipiente-Nr., Installazione site, Fabbricante"
           },
-          "hideEmptyBarrels": "Nascondere recipiente vuoti",
-          "toggle": "Mostra filtri",
-          "close": "Nascondi filtri",
-          "pageSize": {
-            "label": "Voci per pagina"
-          }
+          "hideEmptyBarrels": "Nascondere recipiente vuoti"
         }
       }
     },
@@ -2549,10 +2544,7 @@
           "placeholder": "Ad es. Nom, Società, Indirizzo"
         },
         "toggle": "Mostra filtri",
-        "close": "Nascondi filtri",
-        "pageSize": {
-          "label": "Voci per pagina"
-        }
+        "close": "Nascondi filtri"
       }
     },
     "statistics": {
@@ -3576,12 +3568,7 @@
       },
       "listFields": {
         "label": "Informazioni aggiuntive"
-      },
-      "pageSize": {
-        "label": "Voci per pagina"
-      },
-      "toggle": "Mostra filtri",
-      "close": "Nascondi filtri"
+      }
     },
     "dialogs": {
       "create": {

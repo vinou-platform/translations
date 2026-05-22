@@ -210,6 +210,11 @@
       },
       "general": {
         "empty": "Show all"
+      },
+      "toggle": "Show filters",
+      "close": "Hide filters",
+      "pageSize": {
+        "label": "Items per page"
       }
     },
     "intervals": {
@@ -776,12 +781,7 @@
           "archived": {
             "label": "Archived wine accounts",
             "show": "Show"
-          },
-          "pageSize": {
-            "label": "Entries per page"
-          },
-          "toggle": "Show filters",
-          "close": "Hide filters"
+          }
         }
       },
       "measurements": {
@@ -1003,12 +1003,7 @@
           "search": {
             "placeholder": "E.g.: Barrel-no., Location, Manufacturer"
           },
-          "hideEmptyBarrels": "Hide empty barrels",
-          "toggle": "Show filters",
-          "close": "Hide filters",
-          "pageSize": {
-            "label": "Items per page"
-          }
+          "hideEmptyBarrels": "Hide empty barrels"
         }
       }
     },
@@ -2555,10 +2550,7 @@
           "placeholder": "e.g. name, company, address"
         },
         "toggle": "Show filters",
-        "close": "Hide filters",
-        "pageSize": {
-          "label": "Items per page"
-        }
+        "close": "Hide filters"
       }
     },
     "statistics": {
@@ -3582,12 +3574,7 @@
       },
       "listFields": {
         "label": "Additional information"
-      },
-      "pageSize": {
-        "label": "Items per page"
-      },
-      "toggle": "Show filters",
-      "close": "Hide filters"
+      }
     },
     "dialogs": {
       "create": {

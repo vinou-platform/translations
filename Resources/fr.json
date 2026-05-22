@@ -210,6 +210,11 @@
       },
       "general": {
         "empty": "Tous"
+      },
+      "toggle": "Afficher les filtres",
+      "close": "Masquer les filtres",
+      "pageSize": {
+        "label": "Entrées par page"
       }
     },
     "intervals": {
@@ -776,12 +781,7 @@
           "archived": {
             "label": "Comptes viticoles archivés",
             "show": "Afficher"
-          },
-          "pageSize": {
-            "label": "Entrées par page"
-          },
-          "toggle": "Afficher les filtres",
-          "close": "Masquer les filtres"
+          }
         }
       },
       "measurements": {
@@ -1003,12 +1003,7 @@
           "search": {
             "placeholder": "p.ex.: Numéro du recipient, Location, Frabricant"
           },
-          "hideEmptyBarrels": "Cacher les recipients vides",
-          "toggle": "Afficher les filtres",
-          "close": "Masquer les filtres",
-          "pageSize": {
-            "label": "Entrées par page"
-          }
+          "hideEmptyBarrels": "Cacher les recipients vides"
         }
       }
     },
@@ -2555,10 +2550,7 @@
           "placeholder": "p.ex. nom, entreprise, adresse"
         },
         "toggle": "Afficher les filtres",
-        "close": "Masquer les filtres",
-        "pageSize": {
-          "label": "Entrées par page"
-        }
+        "close": "Masquer les filtres"
       }
     },
     "statistics": {
@@ -3582,12 +3574,7 @@
       },
       "listFields": {
         "label": "Informations Complémentaires"
-      },
-      "pageSize": {
-        "label": "Entrées par page"
-      },
-      "toggle": "Afficher les filtres",
-      "close": "Masquer les filtres"
+      }
     },
     "dialogs": {
       "create": {

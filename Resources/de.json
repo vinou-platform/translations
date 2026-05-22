@@ -210,6 +210,11 @@
       },
       "general": {
         "empty": "Alle"
+      },
+      "toggle": "Filter einblenden",
+      "close": "Filter ausblenden",
+      "pageSize": {
+        "label": "Einträge pro Seite"
       }
     },
     "intervals": {
@@ -776,12 +781,7 @@
           "archived": {
             "label": "Archivierte Weinkonten",
             "show": "Anzeigen"
-          },
-          "pageSize": {
-            "label": "Einträge pro Seite"
-          },
-          "toggle": "Filter einblenden",
-          "close": "Filter ausblenden"
+          }
         }
       },
       "measurements": {
@@ -1003,12 +1003,7 @@
           "search": {
             "placeholder": "Z.B.: Behälternr., Aufstellort, Hersteller"
           },
-          "hideEmptyBarrels": "Leere Behälter ausblenden",
-          "toggle": "Filter einblenden",
-          "close": "Filter ausblenden",
-          "pageSize": {
-            "label": "Einträge pro Seite"
-          }
+          "hideEmptyBarrels": "Leere Behälter ausblenden"
         }
       }
     },
@@ -2555,10 +2550,7 @@
           "placeholder": "z.B. Name, Firma, Adresse"
         },
         "toggle": "Filter einblenden",
-        "close": "Filter ausblenden",
-        "pageSize": {
-          "label": "Einträge pro Seite"
-        }
+        "close": "Filter ausblenden"
       }
     },
     "statistics": {
@@ -3582,12 +3574,7 @@
       },
       "listFields": {
         "label": "Zusatzinformationen anzeigen"
-      },
-      "pageSize": {
-        "label": "Einträge pro Seite"
-      },
-      "toggle": "Filter einblenden",
-      "close": "Filter ausblenden"
+      }
     },
     "dialogs": {
       "create": {

@@ -210,6 +210,11 @@
       },
       "general": {
         "empty": "todos"
+      },
+      "toggle": "Mostrar filtros",
+      "close": "Ocultar filtros",
+      "pageSize": {
+        "label": "Entradas por página"
       }
     },
     "intervals": {
@@ -776,12 +781,7 @@
           "archived": {
             "label": "Cuentas de vino archivadas",
             "show": "Mostrar"
-          },
-          "pageSize": {
-            "label": "Entradas por página"
-          },
-          "toggle": "Mostrar filtros",
-          "close": "Ocultar filtros"
+          }
         }
       },
       "measurements": {
@@ -1003,12 +1003,7 @@
           "search": {
             "placeholder": "E.j.: número de recipiente, ubicación para disponer, fabricante"
           },
-          "hideEmptyBarrels": "Ocultar recipiente vacios",
-          "toggle": "Mostrar filtros",
-          "close": "Ocultar filtros",
-          "pageSize": {
-            "label": "Entradas por página"
-          }
+          "hideEmptyBarrels": "Ocultar recipiente vacios"
         }
       }
     },
@@ -2555,10 +2550,7 @@
           "placeholder": "e.j. nombre, empresa, dirección"
         },
         "toggle": "Mostrar filtros",
-        "close": "Ocultar filtros",
-        "pageSize": {
-          "label": "Entradas por página"
-        }
+        "close": "Ocultar filtros"
       }
     },
     "statistics": {
@@ -3582,12 +3574,7 @@
       },
       "listFields": {
         "label": "Información Adicional"
-      },
-      "pageSize": {
-        "label": "Entradas por página"
-      },
-      "toggle": "Mostrar filtros",
-      "close": "Ocultar filtros"
+      }
     },
     "dialogs": {
       "create": {
