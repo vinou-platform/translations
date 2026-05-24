@@ -13,6 +13,7 @@
     "cellar": "Mi bodega",
     "cellar.analysisOrders": "Órdenes de análisis",
     "cellar.barrels": "Recipientes",
+    "cellar.grapeQuantities": "Variedades de uva",
     "cellar.book": "Mi libro de bodega",
     "cellar.reports": "Informes",
     "cellar.substances": "Sustancias",
@@ -761,7 +762,7 @@
         "currentState": "estado acutal",
         "noVintage": "Sin año",
         "yearLabel": "Año de producción",
-        "vintage": "Cosecha / ano de produccion {vintage}",
+        "vintage": "Año de producción {vintage}",
         "inTransfer": "Este vino está destinado a una transferencia en la red Vinou. Por razones legales, no se pueden realizar más acciones o correcciones sobre este vino durante el proceso de liberación.",
         "filters": {
           "vintage": "Año de producción del filtro",
@@ -896,6 +897,25 @@
     "hints": {
       "cellarBottleBook": "En <b>Vinou-Cellar</b> todos los movimientos de las botellas se documentan periódicamente en el libro de botellas. Si utiliza un sistema de gestión de inventario, puede utilizar el inventario una vez para la transferencia mediante el proceso de liberación de vino embotellado o vino en barrica. Pregúntenos sobre posibles interfaces <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
       "officeBottleBook": "Al utilizar <b>Vinou-Office</b>, los movimientos de botellas se documentan como movimientos de almacén en la gestión de inventario y NO en la bodega. Las existencias para el vino embotellado y para la venta de vino en barrica se transfieren una vez a la gestión de mercancías mediante el proceso de liberación respectivo (campaña de bodega: liberación de vino embotellado y liberación de vino en barrica)."
+    }
+  },
+  "grapeQuantity": {
+    "fields": {
+      "grapetype": "Variedad de uva",
+      "volume": "Existencias",
+      "inputVolume": "Entrada",
+      "wineAccounts": "Cuentas de vino"
+    },
+    "tabs": {
+      "history": "Historial",
+      "barrels": "Recipientes",
+      "cellarWines": "Cuentas de vino"
+    },
+    "unassigned": "Sin asignar",
+    "unnamedWine": "Sin nombre",
+    "empty": "No hay entradas disponibles",
+    "filter": {
+      "showUnassigned": "Mostrar no asignados"
     }
   },
   "barrel": {
@@ -2526,8 +2546,7 @@
         "main": "nuevo cliente",
         "sub": "crear",
         "title": "crear cliente",
-        "modaltitle": "crear cliente",
-        "simple": "Crear nuevo"
+        "modaltitle": "crear cliente"
       },
       "edit": {
         "modaltitle": "editar cliente"

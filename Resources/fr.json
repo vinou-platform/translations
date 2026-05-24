@@ -13,6 +13,7 @@
     "cellar": "Ma cave",
     "cellar.analysisOrders": "Ordres d'analyse",
     "cellar.barrels": "Récipient",
+    "cellar.grapeQuantities": "Cépages",
     "cellar.book": "Livre de la cave",
     "cellar.reports": "Rapports",
     "cellar.substances": "Substances",
@@ -761,7 +762,7 @@
         "currentState": "État actuellement",
         "noVintage": "Sans année",
         "yearLabel": "Année de production",
-        "vintage": "Millésime / année de production {vintage}",
+        "vintage": "Année de production {vintage}",
         "inTransfer": "Ce vin est destiné à un transfert dans le réseau Vinou. Pour des raisons légales, vous ne pouvez pas effectuer d'autres actions ou corrections sur ce vin pendant le processus de libération.",
         "filters": {
           "vintage": "Filtrer l'année de production",
@@ -896,6 +897,25 @@
     "hints": {
       "cellarBottleBook": "Dans <b>Vinou-Cellar</b>, tous les mouvements de bouteilles sont régulièrement documentés dans le livre des bouteilles. Si vous utilisez un système de gestion des stocks, vous pouvez utiliser l'inventaire une seule fois pour le transfert en utilisant le processus de libération du vin en bouteille ou du vin en barrique. Renseignez-vous sur les interfaces possibles <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
       "officeBottleBook": "En utilisant <b>Vinou-Office</b>, les mouvements de bouteilles sont documentés comme des mouvements d'entrepôt dans la gestion des stocks et NON dans la cave. Les stocks pour le vin en bouteille et pour la vente de vin en fût sont transférés une seule fois à la gestion des marchandises via le processus de libération correspondant (campagne de cave : libération du vin en bouteille et libération du vin en fût)."
+    }
+  },
+  "grapeQuantity": {
+    "fields": {
+      "grapetype": "Cépage",
+      "volume": "Stock",
+      "inputVolume": "Entrée",
+      "wineAccounts": "Comptes de vin"
+    },
+    "tabs": {
+      "history": "Historique",
+      "barrels": "Récipients",
+      "cellarWines": "Comptes de vin"
+    },
+    "unassigned": "Non attribué",
+    "unnamedWine": "Sans nom",
+    "empty": "Aucune entrée disponible",
+    "filter": {
+      "showUnassigned": "Afficher les non attribués"
     }
   },
   "barrel": {
@@ -2526,8 +2546,7 @@
         "main": "Créer",
         "sub": "client",
         "title": "Créer client",
-        "modaltitle": "Créer client",
-        "simple": "Créer nouveau"
+        "modaltitle": "Créer client"
       },
       "edit": {
         "modaltitle": "Éditer client"

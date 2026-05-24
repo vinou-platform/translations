@@ -13,6 +13,7 @@
     "cellar": "Cantina",
     "cellar.analysisOrders": "Ordini di analisi",
     "cellar.barrels": "Recipiente",
+    "cellar.grapeQuantities": "Varietà di uva",
     "cellar.book": "Libro della cantina",
     "cellar.reports": "Rapporti",
     "cellar.substances": "Sostanza",
@@ -761,7 +762,7 @@
         "currentState": "Stato attuale",
         "noVintage": "Senza annata",
         "yearLabel": "Anno di produzione",
-        "vintage": "Annata / anno di produzione {vintage}",
+        "vintage": "Anno di produzione {vintage}",
         "inTransfer": "Questo vino è destinato a un trasferimento nella rete Vinou. Per motivi legali, non è possibile effettuare ulteriori azioni o correzioni su questo vino durante il processo di rilascio.",
         "filters": {
           "vintage": "Filtro anno di produzione",
@@ -896,6 +897,25 @@
     "hints": {
       "cellarBottleBook": "In <b>Vinou-Cellar</b> tutti i movimenti delle bottiglie sono regolarmente documentati nel libro delle bottiglie. Se utilizzi un sistema di gestione dell'inventario, puoi utilizzare l'inventario una volta per il trasferimento utilizzando il processo di rilascio del vino in bottiglia o in botte. Chiedici informazioni sulle possibili interfacce <a href=\"mailto:kontakt@vinou.de\" class=\"text-link\">kontakt@vinou.de</a>.",
       "officeBottleBook": "Utilizzando <b>Vinou-Office</b>, i movimenti delle bottiglie vengono documentati come movimenti di magazzino nella gestione dell'inventario e NON in cantina. Le scorte per il vino in bottiglia e per la vendita del vino in botte vengono trasferite una volta alla gestione delle merci tramite il rispettivo processo di rilascio (campagna di cantina: rilascio del vino in bottiglia e rilascio del vino in botte)."
+    }
+  },
+  "grapeQuantity": {
+    "fields": {
+      "grapetype": "Varietà di uva",
+      "volume": "Scorte",
+      "inputVolume": "Entrata",
+      "wineAccounts": "Conti del vino"
+    },
+    "tabs": {
+      "history": "Storico",
+      "barrels": "Recipienti",
+      "cellarWines": "Conti del vino"
+    },
+    "unassigned": "Non assegnato",
+    "unnamedWine": "Senza nome",
+    "empty": "Nessuna voce disponibile",
+    "filter": {
+      "showUnassigned": "Mostra non assegnati"
     }
   },
   "barrel": {
@@ -2520,8 +2540,7 @@
         "main": "Nuovo cliente",
         "sub": "Creare",
         "title": "Creare cliente",
-        "modaltitle": "Creare cliente",
-        "simple": "Crea nuovo"
+        "modaltitle": "Creare cliente"
       },
       "edit": {
         "modaltitle": "Modificare cliente"
