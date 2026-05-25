@@ -916,6 +916,9 @@
     "empty": "Aucune entrée disponible",
     "filter": {
       "showUnassigned": "Afficher les non attribués"
+    },
+    "actions": {
+      "downloadPdf": "Télécharger le PDF"
     }
   },
   "barrel": {
@@ -929,6 +932,7 @@
       "location": "Location",
       "manufacturer": "Frabricant",
       "note": "Notes",
+      "barrel": "Récipient",
       "number": "Numéro du recipient",
       "qrCode": {
         "label": "QR-Code",

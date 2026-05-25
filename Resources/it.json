@@ -916,6 +916,9 @@
     "empty": "Nessuna voce disponibile",
     "filter": {
       "showUnassigned": "Mostra non assegnati"
+    },
+    "actions": {
+      "downloadPdf": "Scarica PDF"
     }
   },
   "barrel": {
@@ -929,6 +932,7 @@
       "location": "Posto dell'elaborazione",
       "manufacturer": "Produttore",
       "note": "Note",
+      "barrel": "Recipiente",
       "number": "Recipiente-Nr.",
       "qrCode": {
         "label": "QR-Code",

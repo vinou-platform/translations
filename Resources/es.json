@@ -916,6 +916,9 @@
     "empty": "No hay entradas disponibles",
     "filter": {
       "showUnassigned": "Mostrar no asignados"
+    },
+    "actions": {
+      "downloadPdf": "Descargar PDF"
     }
   },
   "barrel": {
@@ -929,6 +932,7 @@
       "location": "Ubicación de disponer",
       "manufacturer": "Confeccionador",
       "note": "Notas",
+      "barrel": "Recipiente",
       "number": "Número del recipiente",
       "qrCode": {
         "label": "QR-Code",

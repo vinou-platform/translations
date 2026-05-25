@@ -916,6 +916,9 @@
     "empty": "No entries available",
     "filter": {
       "showUnassigned": "Show unassigned"
+    },
+    "actions": {
+      "downloadPdf": "Download PDF"
     }
   },
   "barrel": {
@@ -929,6 +932,7 @@
       "location": "Location",
       "manufacturer": "Manufacturer",
       "note": "Notices",
+      "barrel": "Container",
       "number": "Barrel-no.",
       "qrCode": {
         "label": "QR-Code",

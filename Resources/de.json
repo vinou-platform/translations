@@ -916,6 +916,9 @@
     "empty": "Keine Einträge vorhanden",
     "filter": {
       "showUnassigned": "Nicht zugeordnete anzeigen"
+    },
+    "actions": {
+      "downloadPdf": "PDF herunterladen"
     }
   },
   "barrel": {
@@ -929,6 +932,7 @@
       "location": "Aufstellort",
       "manufacturer": "Hersteller",
       "note": "Notizen",
+      "barrel": "Behälter",
       "number": "Behälternr.",
       "qrCode": {
         "label": "QR-Code",
