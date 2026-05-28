@@ -7923,6 +7923,22 @@
 		"filters": {
 			"showArchived": "Auch archivierte anzeigen"
 		},
+		"help": {
+			"title": "Hilfe & Ressourcen",
+			"description": "Hier findest du Antworten auf häufige Fragen, Anleitungen und nützliche Downloads.",
+			"faq": {
+				"title": "FAQ",
+				"description": "Antworten auf die häufigsten Fragen rund um Vinou – schnell und übersichtlich."
+			},
+			"guides": {
+				"title": "Anleitungen & Videos",
+				"description": "Schritt-für-Schritt-Anleitungen und Videoanleitungen für alle wichtigen Funktionen."
+			},
+			"downloads": {
+				"title": "Vorlagen & Downloads",
+				"description": "Vorlagen, Importlisten und weitere Ressourcen zum direkten Herunterladen."
+			}
+		},
 		"views": {
 			"list": {
 				"empty": "Keine Tickets vorhanden"

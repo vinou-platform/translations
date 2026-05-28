@@ -7961,6 +7961,22 @@
 		},
 		"filters": {
 			"showArchived": "Mostra archiviati"
+		},
+		"help": {
+			"title": "Aiuto e Risorse",
+			"description": "Qui trovi risposte alle domande frequenti, guide e download utili.",
+			"faq": {
+				"title": "FAQ",
+				"description": "Risposte rapide alle domande piu frequenti su Vinou."
+			},
+			"guides": {
+				"title": "Guide e Video",
+				"description": "Guide passo passo e video tutorial per tutte le funzioni principali."
+			},
+			"downloads": {
+				"title": "Modelli e Download",
+				"description": "Modelli, liste di importazione e altre risorse pronte da scaricare."
+			}
 		}
 	}
 }

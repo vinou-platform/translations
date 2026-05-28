@@ -7961,6 +7961,22 @@
 		},
 		"filters": {
 			"showArchived": "Mostrar archivados"
+		},
+		"help": {
+			"title": "Ayuda y Recursos",
+			"description": "Aqui encontraras respuestas a preguntas frecuentes, guias y descargas utiles.",
+			"faq": {
+				"title": "FAQ",
+				"description": "Respuestas rapidas a las preguntas mas frecuentes sobre Vinou."
+			},
+			"guides": {
+				"title": "Guias y Videos",
+				"description": "Guias paso a paso y tutoriales en video para todas las funciones clave."
+			},
+			"downloads": {
+				"title": "Plantillas y Descargas",
+				"description": "Plantillas, listas de importacion y mas recursos listos para descargar."
+			}
 		}
 	}
 }

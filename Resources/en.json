@@ -7923,6 +7923,22 @@
 		"filters": {
 			"showArchived": "Show archived tickets"
 		},
+		"help": {
+			"title": "Help & Resources",
+			"description": "Find answers to common questions, guides, and useful downloads here.",
+			"faq": {
+				"title": "FAQ",
+				"description": "Quick answers to the most common questions about Vinou."
+			},
+			"guides": {
+				"title": "Guides & Videos",
+				"description": "Step-by-step guides and video tutorials for all key features."
+			},
+			"downloads": {
+				"title": "Templates & Downloads",
+				"description": "Templates, import lists and further resources ready to download."
+			}
+		},
 		"views": {
 			"list": {
 				"empty": "No tickets available"
