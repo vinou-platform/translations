@@ -7996,7 +7996,8 @@
 				"submitLabel": "Pedir por 49,00 EUR neto/mes",
 				"successTitle": "¡Reserva realizada!",
 				"successText": "Tu Soporte Premium ha sido contratado. Nos pondremos en contacto contigo pronto."
-			}
+			},
+			"booked": "Contratado"
 		}
 	}
 }

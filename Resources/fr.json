@@ -7996,7 +7996,8 @@
 				"submitLabel": "Commander pour 49,00 EUR HT/mois",
 				"successTitle": "Réservation réussie!",
 				"successText": "Votre Support Premium a été réservé avec succès. Nous vous contacterons prochainement."
-			}
+			},
+			"booked": "Souscrit"
 		}
 	}
 }

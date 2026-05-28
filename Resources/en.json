@@ -7941,7 +7941,8 @@
 				"submitLabel": "Order for EUR 49.00 net/month",
 				"successTitle": "Booking successful!",
 				"successText": "Your Premium Support has been booked successfully. We will get back to you shortly."
-			}
+			},
+			"booked": "Booked"
 		},
 		"help": {
 			"title": "Help & Resources",

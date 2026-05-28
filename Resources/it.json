@@ -7996,7 +7996,8 @@
 				"submitLabel": "Ordina per 49,00 EUR netto/mese",
 				"successTitle": "Prenotazione riuscita!",
 				"successText": "Il tuo Supporto Premium è stato prenotato con successo. Ti contatteremo a breve."
-			}
+			},
+			"booked": "Prenotato"
 		}
 	}
 }

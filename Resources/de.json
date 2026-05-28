@@ -7941,7 +7941,8 @@
 				"submitLabel": "Kostenpflichtig bestellen – 49,00 EUR netto/Monat",
 				"successTitle": "Buchung erfolgreich!",
 				"successText": "Dein Premium Support wurde erfolgreich gebucht. Wir melden uns in Kürze bei dir."
-			}
+			},
+			"booked": "Gebucht"
 		},
 		"help": {
 			"title": "Hilfe & Ressourcen",
