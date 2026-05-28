@@ -7923,6 +7923,22 @@
 		"filters": {
 			"showArchived": "Auch archivierte anzeigen"
 		},
+		"premium": {
+			"ctaTitle": "Premium Support",
+			"ctaText": "Mit unserem Premium Support Paket erhältst du 30 Minuten persönlichen Telefonsupport pro Monat – direkt von unserem Expertenteam.",
+			"ctaButton": "Jetzt buchen",
+			"perMonth": "netto / Monat",
+			"priceNote": "zzgl. gesetzl. MwSt.",
+			"includes": "30 Minuten Telefonsupport pro Monat",
+			"booking": {
+				"title": "Premium Support buchen",
+				"customerLabel": "Rechnungsadresse",
+				"confirmLabel": "Ich bestätige die kostenpflichtige Bestellung für 49,00 EUR netto pro Monat. Die Buchung kann monatlich gekündigt werden.",
+				"submitLabel": "Kostenpflichtig bestellen – 49,00 EUR netto/Monat",
+				"successTitle": "Buchung erfolgreich!",
+				"successText": "Dein Premium Support wurde erfolgreich gebucht. Wir melden uns in Kürze bei dir."
+			}
+		},
 		"help": {
 			"title": "Hilfe & Ressourcen",
 			"description": "Hier findest du Antworten auf häufige Fragen, Anleitungen und nützliche Downloads.",

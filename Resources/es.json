@@ -7977,6 +7977,22 @@
 				"title": "Plantillas y Descargas",
 				"description": "Plantillas, listas de importacion y mas recursos listos para descargar."
 			}
+		},
+		"premium": {
+			"ctaTitle": "Soporte Premium",
+			"ctaText": "Con nuestro paquete de Soporte Premium obtienes 30 minutos de soporte telefónico personal al mes.",
+			"ctaButton": "Contratar ahora",
+			"perMonth": "neto / mes",
+			"priceNote": "más IVA legal.",
+			"includes": "30 minutos de soporte telefónico al mes",
+			"booking": {
+				"title": "Contratar Soporte Premium",
+				"customerLabel": "Dirección de facturación",
+				"confirmLabel": "Confirmo el pedido de pago por 49,00 EUR neto al mes. La suscripción puede cancelarse mensualmente.",
+				"submitLabel": "Pedir por 49,00 EUR neto/mes",
+				"successTitle": "¡Reserva realizada!",
+				"successText": "Tu Soporte Premium ha sido contratado. Nos pondremos en contacto contigo pronto."
+			}
 		}
 	}
 }

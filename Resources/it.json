@@ -7977,6 +7977,22 @@
 				"title": "Modelli e Download",
 				"description": "Modelli, liste di importazione e altre risorse pronte da scaricare."
 			}
+		},
+		"premium": {
+			"ctaTitle": "Supporto Premium",
+			"ctaText": "Con il nostro pacchetto Supporto Premium hai 30 minuti di supporto telefonico personale al mese.",
+			"ctaButton": "Prenota ora",
+			"perMonth": "netto / mese",
+			"priceNote": "più IVA di legge.",
+			"includes": "30 minuti di supporto telefonico al mese",
+			"booking": {
+				"title": "Prenota Supporto Premium",
+				"customerLabel": "Indirizzo di fatturazione",
+				"confirmLabel": "Confermo l'ordine a pagamento di 49,00 EUR netto al mese. L'abbonamento può essere disdetto mensilmente.",
+				"submitLabel": "Ordina per 49,00 EUR netto/mese",
+				"successTitle": "Prenotazione riuscita!",
+				"successText": "Il tuo Supporto Premium è stato prenotato con successo. Ti contatteremo a breve."
+			}
 		}
 	}
 }

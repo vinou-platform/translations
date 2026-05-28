@@ -7977,6 +7977,22 @@
 				"title": "Modeles et Telechargements",
 				"description": "Modeles, listes importation et autres ressources pretes a telecharger."
 			}
+		},
+		"premium": {
+			"ctaTitle": "Support Premium",
+			"ctaText": "Avec notre forfait Support Premium, bénéficiez de 30 minutes de support téléphonique personnel par mois.",
+			"ctaButton": "Réserver maintenant",
+			"perMonth": "HT / mois",
+			"priceNote": "TVA légale en sus.",
+			"includes": "30 minutes de support téléphonique par mois",
+			"booking": {
+				"title": "Réserver le Support Premium",
+				"customerLabel": "Adresse de facturation",
+				"confirmLabel": "Je confirme la commande payante de 49,00 EUR HT par mois. L'abonnement peut être résilié chaque mois.",
+				"submitLabel": "Commander pour 49,00 EUR HT/mois",
+				"successTitle": "Réservation réussie!",
+				"successText": "Votre Support Premium a été réservé avec succès. Nous vous contacterons prochainement."
+			}
 		}
 	}
 }

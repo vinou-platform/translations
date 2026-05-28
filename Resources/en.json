@@ -7923,6 +7923,22 @@
 		"filters": {
 			"showArchived": "Show archived tickets"
 		},
+		"premium": {
+			"ctaTitle": "Premium Support",
+			"ctaText": "With our Premium Support package you get 30 minutes of personal phone support per month – directly from our expert team.",
+			"ctaButton": "Book now",
+			"perMonth": "net / month",
+			"priceNote": "plus statutory VAT.",
+			"includes": "30 minutes phone support per month",
+			"booking": {
+				"title": "Book Premium Support",
+				"customerLabel": "Billing address",
+				"confirmLabel": "I confirm the paid order for EUR 49.00 net per month. The subscription can be cancelled monthly.",
+				"submitLabel": "Order for EUR 49.00 net/month",
+				"successTitle": "Booking successful!",
+				"successText": "Your Premium Support has been booked successfully. We will get back to you shortly."
+			}
+		},
 		"help": {
 			"title": "Help & Resources",
 			"description": "Find answers to common questions, guides, and useful downloads here.",
