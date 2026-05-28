@@ -1670,7 +1670,11 @@
 			"winery": "cantina",
 			"www": "Sito Web",
 			"zip": "Codice postale",
-			"zipcity": "Codice postale - Città"
+			"zipcity": "Codice postale - Città",
+			"premiumSupport": {
+				"active": "Supporto Premium attivo",
+				"description": "30 min. di supporto telefonico al mese · 49,00 EUR netto/mese"
+			}
 		},
 		"types": {
 			"winery": "Vigna",

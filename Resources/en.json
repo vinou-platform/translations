@@ -1670,7 +1670,11 @@
 			"winery": "Winery",
 			"www": "Website",
 			"zip": "Zip",
-			"zipcity": "Zip - City"
+			"zipcity": "Zip - City",
+			"premiumSupport": {
+				"active": "Premium Support active",
+				"description": "30 min. phone support per month · 49.00 EUR net/month"
+			}
 		},
 		"types": {
 			"winery": "Winery",

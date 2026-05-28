@@ -1670,7 +1670,11 @@
 			"winery": "Établissement vinicole",
 			"www": "Site web",
 			"zip": "Code postal",
-			"zipcity": "Code postal - Ville"
+			"zipcity": "Code postal - Ville",
+			"premiumSupport": {
+				"active": "Support Premium actif",
+				"description": "30 min. de support téléphonique par mois · 49,00 EUR HT/mois"
+			}
 		},
 		"types": {
 			"winery": "Établissement vinicole",

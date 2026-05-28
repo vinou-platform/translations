@@ -1670,7 +1670,11 @@
 			"winery": "Propiedad vinícola",
 			"www": "Página web",
 			"zip": "Código postal",
-			"zipcity": "Código postal - ciudad"
+			"zipcity": "Código postal - ciudad",
+			"premiumSupport": {
+				"active": "Soporte Premium activo",
+				"description": "30 min. de soporte telefónico al mes · 49,00 EUR neto/mes"
+			}
 		},
 		"types": {
 			"winery": "Propiedad vinícola",

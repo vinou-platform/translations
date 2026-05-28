@@ -1670,7 +1670,11 @@
 			"winery": "Weingut",
 			"www": "Internetseite",
 			"zip": "PLZ",
-			"zipcity": "PLZ - Stadt"
+			"zipcity": "PLZ - Stadt",
+			"premiumSupport": {
+				"active": "Premium Support aktiv",
+				"description": "30 Min. Telefonsupport pro Monat · 49,00 EUR netto/Monat"
+			}
 		},
 		"types": {
 			"winery": "Weingut",
