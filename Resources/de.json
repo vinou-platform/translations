@@ -216,6 +216,13 @@
 			},
 			"general": {
 				"empty": "Alle"
+			},
+			"toggle": "Filter anzeigen",
+			"close": "Filter ausblenden",
+			"all": "Alle",
+			"selectAll": "Alle",
+			"pageSize": {
+				"label": "Einträge pro Seite"
 			}
 		},
 		"intervals": {
@@ -293,6 +300,9 @@
 			"unlock": "Entsperren",
 			"activate": "Aktivieren",
 			"deactivate": "Deaktivieren"
+		},
+		"units": {
+			"days": "Tage"
 		}
 	},
 	"system": {
@@ -3218,23 +3228,59 @@
 			"show": {
 				"main": "Rechnung",
 				"sub": "anzeigen"
+			},
+			"regenerate": {
+				"main": "Neu generieren",
+				"sub": "Rechnung"
 			}
 		},
+		"title": "Rechnung",
 		"fields": {
 			"client": "Kunde",
 			"crstamp": "Rechnungsdatum",
+			"date": "Rechnungsdatum",
 			"grossPaid": "Gezahlter Betrag",
 			"grossOpen": "Offener Betrag",
+			"gross": "Brutto",
+			"tax": "Steuer",
+			"net": "Netto",
 			"number": "Rechnungsnr.",
 			"paymentDelay": "Zahlungsverzug (in Tagen)",
-			"remark": "Rechnungsnotiz"
+			"remark": "Rechnungsnotiz",
+			"taxid": "Steuernummer"
+		},
+		"columns": {
+			"pos": "Pos.",
+			"article": "Artikel",
+			"quantity": "Menge",
+			"unit_price": "Einzelpreis",
+			"total": "Gesamt"
+		},
+		"totals": {
+			"net": "Netto",
+			"tax": "MwSt.",
+			"gross": "Brutto",
+			"open": "Offener Betrag"
+		},
+		"payment": {
+			"title": "Bankverbindung",
+			"owner": "Kontoinhaber",
+			"reference": "Verwendungszweck"
+		},
+		"status": {
+			"paid": "Bezahlt"
 		},
 		"dialogs": {
 			"create": "Rechung jetzt erstellen?",
-			"createWithDeliveryNote": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?"
+			"createWithDeliveryNote": "Möchtest Du Rechnung und Lieferschein für den Versand generieren?",
+			"regenerate": {
+				"title": "Rechnung neu generieren",
+				"msg": "Das PDF und – sofern vorhanden – die E-Rechnung (XML) werden mit den aktuellen Vorlagen neu gerendert. Der Rechnungsinhalt selbst wird nicht verändert."
+			}
 		},
 		"toasts": {
-			"created": "Rechnung erstellt!"
+			"created": "Rechnung erstellt!",
+			"regenerated": "Rechnung neu generiert!"
 		}
 	},
 	"offer": {
@@ -3371,6 +3417,40 @@
 			"notActivatedYet": "Der Angebotszeitraum hat noch nicht begonnen.",
 			"orderNotCreatedYet": "Das Angebot wurde noch nicht angenommen.",
 			"reserved": "Im Angebot beinhaltete Artikel sind reserviert."
+		}
+	},
+	"openItems": {
+		"fields": {
+			"invoice_number": "Rechnungsnummer",
+			"order_number": "Bestellnummer",
+			"amount": "Betrag",
+			"due_since": "Fällig seit",
+			"due_date": "Fälligkeitsdatum",
+			"overdue_since": "Überfällig seit",
+			"due_in": "In {{ days }} Tagen fällig"
+		},
+		"actions": {
+			"viewInvoice": "Rechnung anzeigen",
+			"createPayment": "Zahlung erfassen"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "Rechnungsnr., Bestellnr. oder Kunde suchen …"
+			},
+			"overdue": {
+				"label": "Fälligkeit",
+				"all": "Alle",
+				"upcoming": "Noch nicht fällig",
+				"slight": "1–14 Tage überfällig",
+				"overdue": "15–30 Tage überfällig",
+				"critical": "Über 30 Tage überfällig"
+			},
+			"sort": {
+				"overdue": "Überfällig seit",
+				"amount": "Betrag",
+				"due_date": "Fälligkeitsdatum"
+			},
+			"results": "Offene Posten gefunden"
 		}
 	},
 	"order": {
@@ -3908,11 +3988,42 @@
 			"track": {
 				"main": "Sendungsverfolgung",
 				"sub": "öffnen"
-			}
+			},
+			"exportTitle": "Sendungen exportieren"
+		},
+		"filters": {
+			"search": {
+				"placeholder": "Sendungsverfolgungsnr. oder Bestellnr. suchen …"
+			},
+			"status": {
+				"label": "Status"
+			},
+			"results": "Sendungen gefunden"
+		},
+		"statuses": {
+			"active": "Aktiv",
+			"label_created": "Label erstellt",
+			"picked_up": "Abgeholt",
+			"transit": "Im Transport",
+			"out_for_delivery": "Zur Zustellung unterwegs",
+			"awaits_pickup_by_receiver": "Wartet auf Abholung",
+			"delayed": "Verzögert",
+			"exception": "Ausnahme",
+			"not_delivered": "Nicht zugestellt",
+			"canceled": "Abgebrochen",
+			"delivered": "Zugestellt",
+			"notUsed": "Nicht verwendet",
+			"archived": "Archiviert",
+			"destroyed": "Beschädigt/Vernichtet",
+			"notification": "Benachrichtigung",
+			"unknown": "Unbekannt"
 		},
 		"fields": {
 			"carrier": "Versanddienstleister",
 			"carrierTrackingNumber": "Sendungsverfolgungsnr.",
+			"tracking_no": "Sendungsverfolgungsnr.",
+			"status": "Status",
+			"crstamp": "Erstellt am",
 			"defaultCarrier": "Standard-Versanddienstleister",
 			"onlyOneCarrier": "Ausschließlich den Standard-Versanddienstleister nutzen?",
 			"packagingCapacity": "{capacity}er Karton",
