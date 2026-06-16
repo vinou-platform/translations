@@ -2346,7 +2346,6 @@
 			"type": "Typ",
 			"vegan": "Vegan",
 			"vintage": "Jahrgang",
-            "test": "Testfeld",
 			"winery": {
 				"label": "Weingut",
 				"placeholder": "Weingut suchen"
