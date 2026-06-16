@@ -67,7 +67,11 @@
 			"import": "Import",
 			"importRaw": "Import (EDV)",
 			"exportQrCode": "QR-Code als Vektor-Datei herunterladen",
-			"back": "Zurück"
+			"back": "Zurück",
+			"create": {
+				"simple": "Neu anlegen"
+			},
+			"save": "Speichern"
 		},
 		"fieldSets": {
 			"general": "Allgemein",
@@ -343,6 +347,11 @@
 			"pendingOrders": "Offene Bestellungen",
 			"pendingShipments": "Ausstehende Sendungen",
 			"showAll": "Alle anzeigen"
+		}
+	},
+	"document": {
+		"actions": {
+			"sendByMail": "Dokument per Mail versenden"
 		}
 	},
 	"token": {
@@ -782,6 +791,8 @@
 			},
 			"gallery": {
 				"currentState": "Aktueller Zustand",
+				"noVintage": "Ohne",
+				"yearLabel": "Produktionsjahr",
 				"vintage": "Jahrgang / Produktionsjahr {vintage}",
 				"inTransfer": "Dieser Wein ist im Vinou-Netzwerk für einen Transfer vorgesehen. Während der Freigabe kannst Du aus rechtlichen Gründen auf diesem Wein keine weiteren Aktionen und Korrekturen durchführen.",
 				"filters": {
@@ -798,6 +809,10 @@
 						"regular": "Reguläre Vorgänge",
 						"measuring": "Messungen",
 						"analysisOrder": "Analyseaufträge"
+					},
+					"archived": {
+						"label": "Archivierte Weinkonten",
+						"show": "Anzeigen"
 					}
 				}
 			},
@@ -915,6 +930,28 @@
 			"officeBottleBook": "Durch die Nutzung von <b>Vinou-Office</b> werden die Flaschenbewegungen als Lagerbewegung in der Warenwirtschaft und NICHT im Keller dokumentiert. Die Bestände für Flaschenwein als auch für Fassweinverkäufe werden über den jeweiligen Freigabevorgang (Kelleraktion: Flaschenweinfreigabe & Fassweinfreigabe) einmalig in die Warenwirtschaft überführt."
 		}
 	},
+	"grapeQuantity": {
+		"fields": {
+			"grapetype": "Rebsorte",
+			"volume": "Bestand",
+			"inputVolume": "Eingang",
+			"wineAccounts": "Weinkonten"
+		},
+		"tabs": {
+			"history": "Historie",
+			"barrels": "Behälter",
+			"cellarWines": "Weinkonten"
+		},
+		"unassigned": "Nicht zugewiesen",
+		"unnamedWine": "Ohne Bezeichnung",
+		"empty": "Keine Einträge vorhanden",
+		"filter": {
+			"showUnassigned": "Nicht zugeordnete anzeigen"
+		},
+		"actions": {
+			"downloadPdf": "PDF herunterladen"
+		}
+	},
 	"barrel": {
 		"fields": {
 			"bookingStamp": "Aufstellungszeitpunkt",
@@ -925,6 +962,7 @@
 			"label": "Kennzeichnung",
 			"location": "Aufstellort",
 			"manufacturer": "Hersteller",
+			"barrel": "Behälter",
 			"note": "Notizen",
 			"number": "Behälternr.",
 			"qrCode": {
@@ -1661,7 +1699,11 @@
 			"winery": "Weingut",
 			"www": "Internetseite",
 			"zip": "PLZ",
-			"zipcity": "PLZ - Stadt"
+			"zipcity": "PLZ - Stadt",
+			"premiumSupport": {
+				"active": "Premium Support aktiv",
+				"description": "30 Min. Telefonsupport pro Monat · 49,00 EUR netto/Monat"
+			}
 		},
 		"types": {
 			"winery": "Weingut",
@@ -2568,7 +2610,9 @@
 				"noGroup": "Kunden ohne Kundengruppe anzeigen",
 				"search": {
 					"placeholder": "z.B. Name, Firma, Adresse"
-				}
+				},
+				"toggle": "Filter einblenden",
+				"close": "Filter ausblenden"
 			}
 		},
 		"statistics": {
@@ -2593,6 +2637,7 @@
 			"number": "Kundennr.",
 			"company": "Firma",
 			"taxid": "SteuerID",
+			"gln": "GLN (Global Location Number)",
 			"address": "Straße und Hausnummer",
 			"address_supplement": "Adresszusatz",
 			"zip": "PLZ",
@@ -3197,6 +3242,63 @@
 				"title": "E-Rechnung verfügbar",
 				"description": "<b>Ab dem 01.01.2025</b> werden alle von Vinou generierten PDFs mit der sogenannten integrierten Factura XML (E-Rechnung) ausgestattet. <b>Dies gilt ausschließlich für B2B-Rechnungen im innereuropäischen Raum</b>. Zusätzlich steht Dir die XML-Datei als separater Download hinter dem Dokument zur Verfügung. Der Download ist mit dem Icon <i class='vinou-calc-price vinou-2x'></i> gekennzeichnet."
 			}
+		}
+	},
+	"cellar": {
+		"dashboard": {
+			"reports": "Berichte Download",
+			"toReports": "Alle Berichte",
+			"topGrapes": "Top-Rebsorten",
+			"toGrapeQuantities": "Alle Rebsorten"
+		}
+	},
+	"clients": {
+		"dashboard": {
+			"topClients": "Top-Kunden",
+			"toContacts": "Zum Adressbuch",
+			"clientTypes": "Kundensegmente (prozentual)",
+			"salesByType": "Umsatz nach Kundentyp",
+			"newClients": "Neue Kunden (3 Monate)"
+		}
+	},
+	"articles": {
+		"stats": {
+			"topProducts": "Top 5 Produkte",
+			"toProducts": "Zu den Produkten",
+			"showMore": "Mehr Statistiken",
+			"productSales": "Produktumsätze (3 Monate)",
+			"wineSales": "Weinumsätze (3 Monate)",
+			"toWines": "Zu den Weinen",
+			"topWines": "Top 5 Weine"
+		}
+	},
+	"sales": {
+		"stats": {
+			"orderRevenue": "Umsatz (3 Monate)",
+			"toOrders": "Zu den Bestellungen",
+			"overdueItems": "Überfällige Rechnungen",
+			"toOpenItems": "Zu den offenen Posten",
+			"openOrders": "Offene Bestellungen",
+			"pendingShipments": "Ausstehende Abholungen",
+			"toShipments": "Zu den Sendungen"
+		}
+	},
+	"marketing": {
+		"dashboard": {
+			"activeCampaigns": "Aktive Kampagnen",
+			"noCampaigns": "Keine aktiven Kampagnen",
+			"campaignUnlimited": "unbegrenzt",
+			"freeShipping": "Kostenloser Versand",
+			"toCampaigns": "Zu den Kampagnen",
+			"moduleHelp": "Modulübersicht",
+			"catalogTitle": "Preislisten & Kataloge",
+			"catalogDesc": "Erstelle individuelle PDF-Preislisten und Produktkataloge. Wähle Weine, Produkte und Pakete aus, gestalte Cover und Layout und teile den Katalog direkt mit Deinen Kunden.",
+			"campaignTitle": "Kampagnen & Aktionen",
+			"campaignDesc": "Richte Rabattaktionen ein – prozentual, als Festbetrag oder mit kostenlosem Versand. Weise einen Aktionscode zu, lege Laufzeiten und Nutzungslimits fest und kombiniere mehrere Aktionen.",
+			"newsTitle": "Neuigkeiten",
+			"newsDesc": "Veröffentliche Beiträge direkt in Deinen Kundenportalen. Mit Bild, Teaser und Volltext hältst Du Deine Kunden über Aktionen, Neuankömmlinge und Veranstaltungen informiert.",
+			"textTitle": "Texte & Vorlagen",
+			"textDesc": "Verwalte wiederverwendbare Textbausteine für Etiketten, E-Mails und andere Dokumente. Texte können in Katalogen und anderen Bereichen der Plattform verwendet werden."
 		}
 	},
 	"invoice": {
@@ -5146,7 +5248,8 @@
 				"user": "Benutzername",
 				"password": "Passwort",
 				"fromMail": "E-Mail für ausgehende E-Mails",
-				"fromName": "Absender für ausgehende E-Mails"
+				"fromName": "Absender für ausgehende E-Mails",
+				"active": "Alle E-Mails die von Vinou versendet werden mit dem konfigurierten SMTP Server versenden"
 			},
 			"toasts": {
 				"changed": "SMTP-Einstellungen aktualisiert!",
