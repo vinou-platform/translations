@@ -50,6 +50,8 @@
         },
         "sales.offers": "Ofertas",
         "sales.orders": "Ordenes",
+        "sales.shipments": "Envíos",
+        "sales.openItems": "Partidas abiertas",
         "sales.statistics": "Estadísticas",
         "settings": "Ajustes",
         "tokens": "Conexiones",

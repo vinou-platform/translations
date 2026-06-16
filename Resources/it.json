@@ -50,6 +50,8 @@
         },
         "sales.offers": "Accordi",
         "sales.orders": "Ordini",
+        "sales.shipments": "Spedizioni",
+        "sales.openItems": "Partite aperte",
         "sales.statistics": "Statistiche",
         "settings": "Impostazioni",
         "tokens": "Token",

@@ -14,9 +14,11 @@
 		"cellar.analysisOrders": "Analyseaufträge",
 		"cellar.barrels": "Behälter",
 		"cellar.book": "Weine",
+		"cellar.grapeQuantities": "Rebsortenmengen",
 		"cellar.reports": "Berichte",
 		"cellar.substances": "Stoffe",
 		"clients": "Kunden",
+		"clients.contacts": "Adressbuch",
 		"clients.groups": "Gruppen",
 		"clients.statistics": "Statistiken",
 		"cronjobs": "Cronjobs",
@@ -46,8 +48,13 @@
 		"sales": "Verkauf",
 		"sales.offers": "Angebote",
 		"sales.orders": "Bestellungen",
+		"sales.shipments": "Sendungen",
+		"sales.openItems": "Offene Posten",
 		"sales.statistics": "Statistiken",
 		"settings": "Einstellungen",
+		"support": "Support",
+		"system": "System",
+		"system.news": "Mitteilungen",
 		"tokens": "Verknüpfungen",
 		"users": "Benutzer",
 		"wineries": "Weingüter"
@@ -314,11 +321,18 @@
 	"dashboard": {
 		"fieldSets": {
 			"stats": "Aktuelle Kennzahlen",
-			"quickActions": "Schnellaktionen"
+			"quickActions": "Schnellaktionen",
+			"storage": "Dein Speicher"
 		},
 		"fields": {
 			"previousMonth": "Vormonat",
 			"currentMonth": "Aktueller Monat"
+		},
+		"widgets": {
+			"empty": "Keine Einträge",
+			"pendingOrders": "Offene Bestellungen",
+			"pendingShipments": "Ausstehende Sendungen",
+			"showAll": "Alle anzeigen"
 		}
 	},
 	"token": {
@@ -3987,6 +4001,173 @@
 			"common": "Bei der Erstellung des Abholungsauftrags ist ein Fehler aufgetreten.",
 			"invalidAddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen)."
 		}
+	},
+	"supportTicket": {
+		"fields": {
+			"title": "Betreff",
+			"description": "Beschreibung",
+			"type": "Typ",
+			"status": "Status",
+			"customer": "Kunde",
+			"assigned_to": "Zugewiesen an",
+			"number": "Ticket-Nr.",
+			"priority": "Priorität",
+			"customerAreaTitle": "Dein Vinou Support-Bereich",
+			"contactPerson": "Ansprechpartner",
+			"createdAt": "Erstellt am"
+		},
+		"types": {
+			"feature": "Neues Feature",
+			"bug": "Fehlerbericht",
+			"support": "Support-Anfrage",
+			"other": "Sonstiges"
+		},
+		"statusTypes": {
+			"new": "Neu",
+			"read": "Gelesen",
+			"in_progress": "In Bearbeitung",
+			"waiting": "Wartend / Feedback",
+			"done": "Erledigt",
+			"rejected": "Abgelehnt"
+		},
+		"actions": {
+			"create": {
+				"main": "Neues Ticket",
+				"sub": "erstellen",
+				"title": "Support-Ticket erstellen"
+			},
+			"edit": {
+				"title": "Ticket bearbeiten"
+			},
+			"close": {
+				"main": "Ticket schließen",
+				"title": "Ticket schließen"
+			},
+			"addNote": {
+				"main": "Kommentar senden"
+			},
+			"addNoteAndAssign": {
+				"main": "Kommentar senden & Kunden zuweisen"
+			},
+			"submitNote": {
+				"main": "Absenden"
+			},
+			"archive": {
+				"main": "Ticket archivieren"
+			}
+		},
+		"filters": {
+			"showArchived": "Archivierte Tickets anzeigen"
+		},
+		"premium": {
+			"ctaTitle": "Premium-Support",
+			"ctaText": "Mit unserem Premium-Support-Paket erhältst Du 30 Minuten persönlichen Telefonsupport pro Monat – direkt von unserem Expertenteam.",
+			"ctaButton": "Jetzt buchen",
+			"perMonth": "netto / Monat",
+			"priceNote": "zzgl. gesetzlicher MwSt.",
+			"includes": "30 Minuten Telefonsupport pro Monat",
+			"booking": {
+				"title": "Premium-Support buchen",
+				"customerLabel": "Rechnungsadresse",
+				"confirmLabel": "Ich bestätige die kostenpflichtige Bestellung für 49,00 € netto pro Monat. Das Abonnement ist monatlich kündbar.",
+				"submitLabel": "Für 49,00 € netto/Monat bestellen",
+				"successTitle": "Buchung erfolgreich!",
+				"successText": "Dein Premium-Support wurde erfolgreich gebucht. Wir melden uns in Kürze bei Dir."
+			},
+			"booked": "Gebucht"
+		},
+		"help": {
+			"title": "Hilfe & Ressourcen",
+			"description": "Hier findest Du Antworten auf häufige Fragen, Anleitungen und nützliche Downloads.",
+			"faq": {
+				"title": "FAQ",
+				"description": "Schnelle Antworten auf die häufigsten Fragen rund um Vinou."
+			},
+			"guides": {
+				"title": "Anleitungen & Videos",
+				"description": "Schritt-für-Schritt-Anleitungen und Video-Tutorials für alle wichtigen Funktionen."
+			},
+			"downloads": {
+				"title": "Vorlagen & Downloads",
+				"description": "Vorlagen, Importlisten und weitere Ressourcen zum Herunterladen."
+			}
+		},
+		"views": {
+			"list": {
+				"empty": "Keine Tickets vorhanden"
+			},
+			"create": {
+				"title": "Ticket erstellen"
+			},
+			"edit": {
+				"title": "Ticket bearbeiten"
+			},
+			"sectionTitle": "Deine Support-Tickets",
+			"sectionDescription": "Stelle hier Anfragen, melde Probleme oder beantworte Rückfragen."
+		},
+		"dialogs": {
+			"delete": "Möchtest Du dieses Ticket wirklich löschen?"
+		},
+		"toasts": {
+			"created": "Ticket erstellt!",
+			"changed": "Ticket aktualisiert!",
+			"deleted": "Ticket gelöscht!",
+			"closed": "Ticket geschlossen!",
+			"noteSaved": "Kommentar gespeichert!",
+			"archived": "Ticket archiviert!"
+		},
+		"assignedTo": {
+			"vinou": "Vinou-Team",
+			"customer": "Kunde",
+			"unassigned": "Nicht zugewiesen"
+		},
+		"comments": {
+			"title": "Kommentare",
+			"empty": "Noch keine Kommentare vorhanden",
+			"locked": "Dein Ticket wird gerade von unserem Team geprüft. Sobald wir Deine Rückmeldung benötigen, wird das Ticket wieder Dir zugewiesen."
+		},
+		"priorityTypes": {
+			"high": "Hoch",
+			"normal": "Normal",
+			"low": "Niedrig"
+		}
+	},
+	"systemNews": {
+		"fields": {
+			"date": "Datum",
+			"title": "Titel",
+			"titlePlaceholder": "Titel der Mitteilung",
+			"content": "Nachricht",
+			"contentPlaceholder": "Text der Mitteilung …",
+			"type": "Typ",
+			"important": "Mitteilung hervorheben",
+			"app": "App-Einschränkung"
+		},
+		"types": {
+			"info": "Info",
+			"warning": "Warnung",
+			"success": "Neuigkeit"
+		},
+		"apps": {
+			"all": "Alle Apps",
+			"office": "Office",
+			"cellar": "Cellar",
+			"elabel": "eLABEL"
+		},
+		"badges": {
+			"important": "Wichtig"
+		},
+		"actions": {
+			"compose": "Neue Mitteilung",
+			"send": "Senden",
+			"delete": "Löschen",
+			"showAll": "Alle Mitteilungen anzeigen",
+			"markAsRead": "Als gelesen markieren"
+		},
+		"fieldSets": {
+			"sent": "Gesendete Mitteilungen"
+		},
+		"empty": "Noch keine Mitteilungen vorhanden"
 	},
 	"sale": {
 		"name": {
