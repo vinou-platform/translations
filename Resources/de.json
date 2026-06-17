@@ -3249,7 +3249,7 @@
 	},
 	"cellar": {
 		"dashboard": {
-			"reports": "Berichte Download",
+			"reports": "Wichtige Berichte",
 			"toReports": "Alle Berichte",
 			"topGrapes": "Top-Rebsorten",
 			"toGrapeQuantities": "Alle Rebsorten"
@@ -4123,13 +4123,13 @@
 			"active": "Aktiv",
 			"label_created": "Label erstellt",
 			"picked_up": "Abgeholt",
-			"transit": "Im Transport",
+			"transit": "Unterwegs",
 			"out_for_delivery": "Zur Zustellung unterwegs",
 			"awaits_pickup_by_receiver": "Wartet auf Abholung",
 			"delayed": "Verzögert",
 			"exception": "Ausnahme",
 			"not_delivered": "Nicht zugestellt",
-			"canceled": "Abgebrochen",
+			"canceled": "Storniert",
 			"delivered": "Zugestellt",
 			"notUsed": "Nicht verwendet",
 			"archived": "Archiviert",
