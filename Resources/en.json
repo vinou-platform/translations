@@ -3010,7 +3010,7 @@
 			"due_since": "Due since",
 			"due_date": "Due date",
 			"overdue_since": "Overdue since",
-			"due_in": "In {{ days }} days"
+			"due_in": "In {days} days"
 		},
 		"actions": {
 			"viewInvoice": "View invoice",

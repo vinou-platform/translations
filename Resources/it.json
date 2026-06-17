@@ -3010,7 +3010,7 @@
 		"fields": {
 			"amount": "Importo",
 			"due_date": "Scadenza",
-			"due_in": "Tra {{ days }} giorni",
+			"due_in": "Tra {days} giorni",
 			"due_since": "Scaduto da",
 			"invoice_number": "Numero fattura",
 			"order_number": "Numero ordine",
