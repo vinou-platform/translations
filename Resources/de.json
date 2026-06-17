@@ -3544,7 +3544,7 @@
 			"due_since": "Fällig seit",
 			"due_date": "Fälligkeitsdatum",
 			"overdue_since": "Überfällig seit",
-			"due_in": "In {{ days }} Tagen fällig"
+			"due_in": "In {days} Tagen fällig"
 		},
 		"actions": {
 			"viewInvoice": "Rechnung anzeigen",

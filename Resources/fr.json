@@ -3010,7 +3010,7 @@
 		"fields": {
 			"amount": "Montant",
 			"due_date": "Échéance",
-			"due_in": "Dans {{ days }} jours",
+			"due_in": "Dans {days} jours",
 			"due_since": "Dû depuis",
 			"invoice_number": "Numéro de facture",
 			"order_number": "Numéro de commande",

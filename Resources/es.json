@@ -3010,7 +3010,7 @@
 		"fields": {
 			"amount": "Importe",
 			"due_date": "Fecha de vencimiento",
-			"due_in": "En {{ days }} días",
+			"due_in": "En {days} días",
 			"due_since": "Vencido desde",
 			"invoice_number": "Número de factura",
 			"order_number": "Número de pedido",
