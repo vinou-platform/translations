@@ -4557,7 +4557,11 @@
 		"views": {
 			"edit": {
 				"title": "Éditer modèles",
-				"warning": "Les modèles Vinou utilisent l'extension .vin – choisie pour des raisons de sécurité. Techniquement, il s'agit de modèles Twig. La création et la modification de modèles nécessitent des connaissances techniques approfondies et ne doivent être effectuées que par des professionnels qualifiés. Des modèles incorrects peuvent empêcher la génération correcte des documents."
+				"warning": "Les modèles Vinou utilisent l'extension .vin – choisie pour des raisons de sécurité. Techniquement, il s'agit de modèles Twig. La création et la modification de modèles nécessitent des connaissances techniques approfondies et ne doivent être effectuées que par des professionnels qualifiés. Des modèles incorrects peuvent empêcher la génération correcte des documents.",
+				"hintFileType": ".vin uniquement",
+				"hintMaxSize": "Max. 5 Mo",
+				"upload": "Choisir un fichier",
+				"delete": "Supprimer"
 			}
 		},
 		"dialogs": {
@@ -4687,7 +4691,9 @@
 				"mode": {
 					"label": "Mode",
 					"dev": "Développement",
-					"live": "Vivre"
+					"live": "Vivre",
+					"hintFileType": ".vin uniquement",
+					"hintMaxSize": "Max. 5 Mo"
 				}
 			}
 		},

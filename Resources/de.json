@@ -1271,7 +1271,11 @@
 		"views": {
 			"edit": {
 				"title": "Vorlagen bearbeiten",
-				"warning": "Vinou-Vorlagen tragen die Dateiendung .vin – diese wurde aus Sicherheitsgründen gewählt. Technisch handelt es sich um Twig-Templates. Das Erstellen und Bearbeiten von Vorlagen erfordert fundiertes technisches Wissen und sollte ausschließlich durch geschulte Fachleute erfolgen. Fehlerhafte Vorlagen können dazu führen, dass Dokumente nicht mehr korrekt erzeugt werden."
+				"warning": "Vinou-Vorlagen tragen die Dateiendung .vin – diese wurde aus Sicherheitsgründen gewählt. Technisch handelt es sich um Twig-Templates. Das Erstellen und Bearbeiten von Vorlagen erfordert fundiertes technisches Wissen und sollte ausschließlich durch geschulte Fachleute erfolgen. Fehlerhafte Vorlagen können dazu führen, dass Dokumente nicht mehr korrekt erzeugt werden.",
+				"hintFileType": "Nur .vin",
+				"hintMaxSize": "Max. 5 MB",
+				"upload": "Datei auswählen",
+				"delete": "Entfernen"
 			}
 		},
 		"dialogs": {
@@ -1377,7 +1381,9 @@
 			},
 			"gallery": {
 				"filters": {
-					"role": "Benutzerrolle filtern"
+					"role": "Benutzerrolle filtern",
+					"hintFileType": "Nur .vin",
+					"hintMaxSize": "Max. 5 MB"
 				},
 				"lastModification": "Letzte Änderung"
 			}

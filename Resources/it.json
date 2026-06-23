@@ -4557,7 +4557,11 @@
 		"views": {
 			"edit": {
 				"title": "Modificare modello",
-				"warning": "I template Vinou utilizzano l'estensione .vin – scelta per motivi di sicurezza. Tecnicamente si tratta di template Twig. La creazione e la modifica dei template richiedono conoscenze tecniche approfondite e devono essere eseguite esclusivamente da professionisti qualificati. Template errati possono impedire la corretta generazione dei documenti."
+				"warning": "I template Vinou utilizzano l'estensione .vin – scelta per motivi di sicurezza. Tecnicamente si tratta di template Twig. La creazione e la modifica dei template richiedono conoscenze tecniche approfondite e devono essere eseguite esclusivamente da professionisti qualificati. Template errati possono impedire la corretta generazione dei documenti.",
+				"hintFileType": "Solo .vin",
+				"hintMaxSize": "Max. 5 MB",
+				"upload": "Scegli file",
+				"delete": "Rimuovere"
 			}
 		},
 		"dialogs": {
@@ -4687,7 +4691,9 @@
 				"mode": {
 					"label": "Modalità",
 					"dev": "Sviluppo",
-					"live": "Vivere"
+					"live": "Vivere",
+					"hintFileType": "Solo .vin",
+					"hintMaxSize": "Max. 5 MB"
 				}
 			}
 		},
