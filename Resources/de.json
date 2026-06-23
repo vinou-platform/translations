@@ -119,8 +119,6 @@
 			"wwwAction": "Internetseite von {name} besuchen",
 			"copyOf": {
 				"1": "Kopie von {name}",
-
-
 				"n": "Kopie {n} von {name}"
 			},
 			"metaTitle": "Title-Tag",
@@ -202,7 +200,8 @@
 			"date": {
 				"from": "Von",
 				"to": "Bis",
-				"placeholder": "dd.MM.YYYY"
+				"placeholder": "dd.MM.YYYY",
+				"label": "Zeitraum"
 			},
 			"sortBy": {
 				"label": "Ansicht sortieren nach: "
@@ -503,7 +502,6 @@
 				"placeholder": "Wein suchen"
 			},
 			"withdrawalVolume": "Abgang",
-
 			"barrels": "Behälter",
 			"addition": "Zugang",
 			"withdrawal": "Abgang",
@@ -518,7 +516,6 @@
 				"main": "Eintrag korrigieren",
 				"sub": " "
 			},
-
 			"createInventoryTakeover": {
 				"main": "Bestandsübernahme",
 				"sub": " ",
@@ -536,7 +533,6 @@
 				"main": "Trester",
 				"sub": "Verwertung"
 			},
-
 			"createStaticSettling": {
 				"main": "Entschleimung",
 				"sub": " "
@@ -558,7 +554,6 @@
 				"sub": " ",
 				"description": "Gib diesen Wein einem Verschnittpartner in Deinem Weinkeller hinzu, um eine Cuvée zu erstellen. Beachte hierbei, dass der Zielbehälter bereits in Verwendung und genügend Kapazität gegeben sein muss."
 			},
-
 			"createPrivateConsumption": {
 				"main": "Eigenverbrauch",
 				"sub": "erfassen"
@@ -579,12 +574,10 @@
 				"main": "Entalkoholisierung",
 				"sub": " "
 			},
-
 			"createWineAddition": {
 				"main": "Beifüllung",
 				"sub": " "
 			},
-
 			"createSubstanceAdd": {
 				"main": "Stoffzugabe",
 				"sub": " "
@@ -668,7 +661,6 @@
 			"harvest": "Ernte",
 			"additionalPurchase": "Weinzukauf",
 			"marcLiquidation": "Tresterverwertung",
-
 			"relocation": "Umlagerung",
 			"decanting": "Abstich",
 			"staticSettling": "Entschleimung",
@@ -680,9 +672,7 @@
 			"concentration": "Konzentrierung",
 			"dealcoholization": "Entalkoholisierung",
 			"measuring": "Messung",
-
 			"wineAddition": "Beifüllung",
-
 			"substanceAdd": "Stoffzugabe",
 			"enrichment": "Anreicherung",
 			"sweetening": "Süßung",
@@ -690,7 +680,6 @@
 			"deacidification": "Entsäuerung",
 			"alcoholization": "Alkoholzusatz",
 			"waterAddition": "Wasser Hinzugabe",
-
 			"bottling": "Abfüllung",
 			"wineErpRelease": "Flaschenweinfreigabe",
 			"bulkWineErpRelease": "Fassweinfreigabe",
@@ -1648,7 +1637,6 @@
 			"invoice": "Rechnungsangaben",
 			"invoicesLatest": "Letzte Rechnungen",
 			"invoicePreview": {
-
 				"n": "Rechnungsvorschau für Q{n}/{year}"
 			},
 			"membership": "Mitgliedschaft",
@@ -2030,7 +2018,6 @@
 				"title": "Eigenverbrauch nach Artikel",
 				"description": "Ermitteln den Eigenverbrauch innerhalb eines gegebenen Zeitraums."
 			}
-
 		}
 	},
 	"wine": {
@@ -2516,7 +2503,6 @@
 			"tax": "MwSt.",
 			"taxrate": "Steuersatz",
 			"unit": "Einheit",
-
 			"image": {
 				"error": {
 					"notfound": "Bild konnte nicht gefunden werden"
@@ -3029,7 +3015,7 @@
 	"fact": {
 		"actions": {
 			"autocalc": "Automatisch berechnen",
-            "saveOrder": "Reihenfolge speichern"
+			"saveOrder": "Reihenfolge speichern"
 		},
 		"fields": {
 			"type": "Typ",
@@ -3037,7 +3023,7 @@
 			"unit": "Einheit",
 			"label": "Zusätzliche Angaben",
 			"code": "Recyclingcode",
-            "important": "Hervorgehoben"
+			"important": "Hervorgehoben"
 		},
 		"views": {
 			"edit": {
@@ -3059,13 +3045,13 @@
 			"changed": "Lebensmittelangabe geändert",
 			"deleted": "Lebensmittelangabe gelöscht",
 			"calculated": "Lebensmittelangaben automatisch ermittelt",
-            "orderSaved": "Reihenfolge gespeichert"
+			"orderSaved": "Reihenfolge gespeichert"
 		},
 		"types": {
 			"aluminium": "Aluminium",
 			"antioxidants": "Antioxidantien",
-            "biograpes": "BIO Trauben",
-            "biosucrose": "BIO Sacharose",
+			"biograpes": "BIO Trauben",
+			"biosucrose": "BIO Sacharose",
 			"brownGlas": "Braunglas",
 			"carbohydrates": "Kohlenhydrate",
 			"clearglas": "Klarglas",
@@ -3455,7 +3441,6 @@
 				"main": "Angebot",
 				"sub": "anzeigen"
 			},
-
 			"goto": {
 				"summary": "Weiter zur Angebotsübersicht"
 			}
@@ -3618,7 +3603,6 @@
 				"sub": "anzeigen"
 			},
 			"touch": "Bestellung als gelesen markieren",
-
 			"addPosition": "+ Position hinzufügen",
 			"goto": {
 				"delivery": "Weiter zum Versand",
@@ -4723,7 +4707,6 @@
 			"sorting": "Manueller Sortierindex (z.B. für den Shop)",
 			"tag": "Tags",
 			"topseller": "Topseller",
-
 			"itemSum": {
 				"label": "Warenwert",
 				"net": "Netto",
@@ -5048,6 +5031,24 @@
 				"title": "Falzmarken ausblenden",
 				"description": "Aktivieren um die Falzmarken auf allen betriebswirtschaftlichen Dokumenten (Rechnung, Lieferschein, Bestellbestätigung, Angebot) auszublenden."
 			},
+			"backgroundPdf": {
+				"title": "Hintergrund-PDF",
+				"description": "Wird als Hintergrund auf allen erzeugten Dokumenten genutzt – z.B. für Briefpapier oder Designvorlagen. Verwende unbedingt ein PDF mit Vektordaten, keine Rastergrafik.",
+				"hintPdfOnly": "Nur PDF",
+				"hintMaxSize": "Max. 1 MB",
+				"hintVector": "Vektordaten empfohlen",
+				"errorInvalidType": "Nur PDF-Dateien sind erlaubt.",
+				"errorTooLarge": "Die Datei darf maximal 1 MB groß sein.",
+				"current": "Aktuell",
+				"default": "Vinou-Standard",
+				"uploadedAt": "Hochgeladen am",
+				"placeholder": "Keine Datei gewählt",
+				"upload": "PDF hochladen",
+				"delete": "Hintergrund entfernen",
+				"uploaded": "Hintergrund-PDF gespeichert.",
+				"deleted": "Hintergrund-PDF entfernt.",
+				"confirmDelete": "Hintergrund-PDF wirklich entfernen?"
+			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
 					"title": "Lieferadresse immer auf Lieferschein",
@@ -5062,7 +5063,7 @@
 				"title": "Flaschenbild anzeigen",
 				"description": "Zeigt das Flaschenbild auf allen eLabels an."
 			},
-            "hideMainFacts": {
+			"hideMainFacts": {
 				"title": "Weindaten anzeigen",
 				"description": "Zeigt die wichtigsten Weindaten wie Rebsorte, Jahrgang und Alkoholgehalt auf allen eLabels an."
 			},
@@ -5075,7 +5076,7 @@
 				"description": "Zeigt Details wie Boden, Ausbau und Beschreibung an."
 			}
 		},
-        "general": {
+		"general": {
 			"title": "Applikation",
 			"description": "Lege hier die Einstellungen für Dein Vinou-Office fest, wie z.B. welche Währung du innerhalb von Vinou verwenden möchtest oder wie die Verarbeitung von Texten durchgeführt wird.",
 			"currency": {
@@ -5098,7 +5099,7 @@
 			"title": "Mitgliedschaft",
 			"description": "Das ist der Status Deiner aktuellen Mitgliedschaft."
 		},
-        "messageTemplates": {
+		"messageTemplates": {
 			"title": "Nachrichtenvorlagen",
 			"description": "Verwalte alle Texte die als Vorlage für deine Nachrichten genutzt werden, wie z.B. E-Mail-Texte für Angebot, Rechnung und Lieferschein."
 		},
@@ -5181,24 +5182,24 @@
 		"payments": {
 			"title": "Zahlungsmethoden",
 			"description": "Mit Hilfe der verschiedenen Zahlungsmethoden kannst Du Deinen Endkunden im Online-Shop mehr Optionen bieten.",
-            "bank": {
-                "name": "Bankverbindung",
-                "title": "Bankverbindung bearbeiten",
-                "additional": "Zusätzliche Informationen",
-                "fields": {
-                    "iban": "IBAN",
-                    "bic": "BIC",
-                    "bankname": "Name Kreditinstitut",
-                    "owner": "Kontoinhaber",
-                    "additional": "Hinterlege weitere Informationen zur Bank(z.B. weitere Konten). Diese Informationen werden auf den generierten Rechnungen und Bestellbestätigungen angezeigt."
-                },
-                "toasts": {
-                    "changed": "Bankverbindung aktualisiert!"
-                },
-                "errors": {
-                    "save": "Ein Fehler beim Speichern der Bankverbindung ist aufgetreten!"
-                }
-            },
+			"bank": {
+				"name": "Bankverbindung",
+				"title": "Bankverbindung bearbeiten",
+				"additional": "Zusätzliche Informationen",
+				"fields": {
+					"iban": "IBAN",
+					"bic": "BIC",
+					"bankname": "Name Kreditinstitut",
+					"owner": "Kontoinhaber",
+					"additional": "Hinterlege weitere Informationen zur Bank(z.B. weitere Konten). Diese Informationen werden auf den generierten Rechnungen und Bestellbestätigungen angezeigt."
+				},
+				"toasts": {
+					"changed": "Bankverbindung aktualisiert!"
+				},
+				"errors": {
+					"save": "Ein Fehler beim Speichern der Bankverbindung ist aufgetreten!"
+				}
+			},
 			"paypal": {
 				"name": "Paypal",
 				"title": "Paypal-Einstellungen bearbeiten",
@@ -5288,7 +5289,7 @@
 				"failedToConnect": "Es konnte keine Test-Email gesendet werden. Bitte prüfe deine Einstellungen und die Erreichbarkeit des SMTP-Servers."
 			}
 		},
-        "system": {
+		"system": {
 			"title": "System-Einstellungen",
 			"description": "Verwalte hier alle Einstellungen rundum das Vinou-System"
 		},
@@ -7990,7 +7991,6 @@
 			"sweets": "Süßigkeiten",
 			"occasions": "Anlässe"
 		},
-
 		"beef": "Rind",
 		"veal": "Kalb",
 		"pork": "Schwein",
@@ -8001,18 +8001,15 @@
 		"shellfish": "Krebstiere",
 		"shell": "Muscheln",
 		"sausage": "Wurst",
-
 		"grilled": "Gegrillt",
 		"fried": "Gebraten",
 		"smoked": "Geräuchert",
 		"baked": "Gebacken",
 		"steamed": "Gedünstet",
-
 		"dairyproduct": "Molkereiprodukte",
 		"softcheese": "Weichkäse",
 		"bluecheese": "Edelschimmel",
 		"hardcheese": "Hartkäse",
-
 		"bulb": "Zwiebelgewächse",
 		"salad": "Salat",
 		"tubers": "Knollen o. Rüben",
@@ -8021,7 +8018,6 @@
 		"nuts": "Nüsse",
 		"treenuts": "Schalenfrüchte",
 		"asparagus": "Spargel",
-
 		"pepper": "Pfeffer",
 		"chili": "Chili",
 		"spicy": "Hot & Spicy",
@@ -8029,19 +8025,16 @@
 		"cinnamon": "Zimt",
 		"exotic": "Exotische Gewürze",
 		"vegetarian": "Vegetarisch",
-
 		"toast": "Weißbrot",
 		"bread": "Brot",
 		"wholebread": "Vollkorn",
 		"pumpernickel": "Pumpernickel",
-
 		"fruits": "Früchte",
 		"cake": "Kuchen",
 		"creme": "Creme",
 		"ice": "Eis",
 		"chocolate": "Schokolade",
 		"coffee": "Kaffee",
-
 		"barbecue": "Grillabend",
 		"present": "Geschenk",
 		"boysNight": "Männerabend",

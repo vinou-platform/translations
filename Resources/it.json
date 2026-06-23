@@ -200,7 +200,8 @@
 			"date": {
 				"from": "di",
 				"to": "finché",
-				"placeholder": "dd.MM.YYYY"
+				"placeholder": "dd.MM.YYYY",
+				"label": "Periodo"
 			},
 			"sortBy": {
 				"label": "Ordina la vista per: "
@@ -3824,6 +3825,24 @@
 			"hideDocLines": {
 				"title": "Nascondi segni di piegatura",
 				"description": "Attiva per nascondere i segni di piegatura su tutti i documenti aziendali (fattura, bolla di consegna, conferma d'ordine, offerta)."
+			},
+			"backgroundPdf": {
+				"title": "PDF di sfondo",
+				"description": "Utilizzato come sfondo su tutti i documenti generati – ad es. per carta intestata o modelli grafici. Utilizzare un PDF con dati vettoriali, non un'immagine raster.",
+				"hintPdfOnly": "Solo PDF",
+				"hintMaxSize": "Max. 1 MB",
+				"hintVector": "Dati vettoriali consigliati",
+				"errorInvalidType": "Sono consentiti solo file PDF.",
+				"errorTooLarge": "Il file non può superare 1 MB.",
+				"current": "Attuale",
+				"default": "Standard Vinou",
+				"uploadedAt": "Caricato il",
+				"placeholder": "Nessun file selezionato",
+				"upload": "Carica PDF",
+				"delete": "Rimuovi sfondo",
+				"uploaded": "PDF di sfondo salvato.",
+				"deleted": "PDF di sfondo rimosso.",
+				"confirmDelete": "Rimuovere davvero il PDF di sfondo?"
 			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {

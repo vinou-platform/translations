@@ -200,7 +200,8 @@
 			"date": {
 				"from": "de",
 				"to": "á",
-				"placeholder": "dd.MM.YYYY"
+				"placeholder": "dd.MM.YYYY",
+				"label": "Período"
 			},
 			"sortBy": {
 				"label": "ordenar muestra por: "
@@ -3824,6 +3825,24 @@
 			"hideDocLines": {
 				"title": "Ocultar marcas de pliegue",
 				"description": "Actívelo para ocultar las marcas de pliegue en todos los documentos comerciales (factura, albarán, confirmación de pedido, oferta)."
+			},
+			"backgroundPdf": {
+				"title": "PDF de fondo",
+				"description": "Se utiliza como fondo en todos los documentos generados – por ej. para papel con membrete o plantillas de diseño. Utiliza un PDF con datos vectoriales, no una imagen rasterizada.",
+				"hintPdfOnly": "Solo PDF",
+				"hintMaxSize": "Máx. 1 MB",
+				"hintVector": "Datos vectoriales recomendados",
+				"errorInvalidType": "Solo se permiten archivos PDF.",
+				"errorTooLarge": "El archivo no puede superar 1 MB.",
+				"current": "Actual",
+				"default": "Estándar Vinou",
+				"uploadedAt": "Subido el",
+				"placeholder": "Ningún archivo seleccionado",
+				"upload": "Subir PDF",
+				"delete": "Eliminar fondo",
+				"uploaded": "PDF de fondo guardado.",
+				"deleted": "PDF de fondo eliminado.",
+				"confirmDelete": "¿Realmente eliminar el PDF de fondo?"
 			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {

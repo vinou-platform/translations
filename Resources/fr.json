@@ -200,7 +200,8 @@
 			"date": {
 				"from": "À partir de",
 				"to": "Jusqu'à",
-				"placeholder": "dd.MM.YYYY"
+				"placeholder": "dd.MM.YYYY",
+				"label": "Période"
 			},
 			"sortBy": {
 				"label": "Trier la vue par"
@@ -3824,6 +3825,24 @@
 			"hideDocLines": {
 				"title": "Masquer les marques de pli",
 				"description": "Activez pour masquer les marques de pli sur tous les documents commerciaux (facture, bon de livraison, confirmation de commande, offre)."
+			},
+			"backgroundPdf": {
+				"title": "PDF d'arrière-plan",
+				"description": "Utilisé comme arrière-plan sur tous les documents générés – par ex. pour du papier à en-tête ou des modèles graphiques. Veuillez utiliser un PDF avec des données vectorielles, pas une image raster.",
+				"hintPdfOnly": "PDF uniquement",
+				"hintMaxSize": "Max. 1 Mo",
+				"hintVector": "Données vectorielles recommandées",
+				"errorInvalidType": "Seuls les fichiers PDF sont autorisés.",
+				"errorTooLarge": "Le fichier ne doit pas dépasser 1 Mo.",
+				"current": "Actuel",
+				"default": "Standard Vinou",
+				"uploadedAt": "Chargé le",
+				"placeholder": "Aucun fichier sélectionné",
+				"upload": "Télécharger PDF",
+				"delete": "Supprimer l'arrière-plan",
+				"uploaded": "PDF d'arrière-plan enregistré.",
+				"deleted": "PDF d'arrière-plan supprimé.",
+				"confirmDelete": "Vraiment supprimer le PDF d'arrière-plan ?"
 			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {

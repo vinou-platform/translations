@@ -200,7 +200,8 @@
 			"date": {
 				"from": "Start",
 				"to": "End",
-				"placeholder": "dd.MM.YYYY"
+				"placeholder": "dd.MM.YYYY",
+				"label": "Period"
 			},
 			"sortBy": {
 				"label": "Sort view by: "
@@ -3824,6 +3825,24 @@
 			"hideDocLines": {
 				"title": "Hide fold marks",
 				"description": "Activate to hide the fold marks on all business documents (invoice, delivery note, order confirmation, offer)."
+			},
+			"backgroundPdf": {
+				"title": "Background PDF",
+				"description": "Used as background on all generated documents – e.g. for letterhead or design templates. Please use a PDF with vector data, not a raster image.",
+				"hintPdfOnly": "PDF only",
+				"hintMaxSize": "Max. 1 MB",
+				"hintVector": "Vector data recommended",
+				"errorInvalidType": "Only PDF files are allowed.",
+				"errorTooLarge": "The file must not exceed 1 MB.",
+				"current": "Current",
+				"default": "Vinou default",
+				"uploadedAt": "Uploaded on",
+				"placeholder": "No file selected",
+				"upload": "Upload PDF",
+				"delete": "Remove background",
+				"uploaded": "Background PDF saved.",
+				"deleted": "Background PDF removed.",
+				"confirmDelete": "Really remove the background PDF?"
 			},
 			"deliveryNote": {
 				"alwaysUseDeliveryAddress": {
