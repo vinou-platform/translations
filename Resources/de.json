@@ -1224,44 +1224,54 @@
 		"fields": {
 			"analysisOrder": {
 				"label": "Vorlage für Analyseaufträge",
-				"placeholder": "Standard P-Touch Etikett 100x62 mm"
+				"placeholder": "Standard P-Touch Etikett 100x62 mm",
+				"description": "Ersetzt die Standard-Analyseauftrag-Vorlage."
 			},
 			"catalog": {
 				"label": "Vorlage für PDF-Preislisten",
-				"placeholder": "Vinou-Preisliste (Standard)"
+				"placeholder": "Vinou-Preisliste (Standard)",
+				"description": "Ersetzt die Standard-Preislisten-Vorlage."
 			},
 			"creditAdvice": {
 				"label": "Vorlage für Gutschrift",
-				"placeholder": "Vinou-Gutschrift (Standard)"
+				"placeholder": "Vinou-Gutschrift (Standard)",
+				"description": "Ersetzt die Standard-Gutschrift-Vorlage."
 			},
 			"deliveryNote": {
 				"label": "Vorlage für Lieferschein",
-				"placeholder": "Vinou-Lieferschein (Standard)"
+				"placeholder": "Vinou-Lieferschein (Standard)",
+				"description": "Ersetzt die Standard-Lieferschein-Vorlage."
 			},
 			"expertise": {
 				"label": "Vorlage für PDF-Expertise",
-				"placeholder": "Vinou-Expertise (Standard)"
+				"placeholder": "Vinou-Expertise (Standard)",
+				"description": "Ersetzt die Standard-Expertise-Vorlage."
 			},
 			"invoice": {
 				"label": "Vorlage für Rechnung",
-				"placeholder": "Vinou-Rechnung (Standard)"
+				"placeholder": "Vinou-Rechnung (Standard)",
+				"description": "Ersetzt die Standard-Rechnungs-Vorlage."
 			},
 			"offer": {
 				"label": "Vorlage für Angebot",
-				"placeholder": "Vinou-Angebot (Standard)"
+				"placeholder": "Vinou-Angebot (Standard)",
+				"description": "Ersetzt die Standard-Angebots-Vorlage."
 			},
 			"order": {
 				"label": "Vorlage für Auftragsbestätigung",
-				"placeholder": "Vinou-Auftragsbestätigung (Standard)"
+				"placeholder": "Vinou-Auftragsbestätigung (Standard)",
+				"description": "Ersetzt die Standard-Auftragsbestätigungs-Vorlage."
 			},
 			"text": {
 				"label": "Vorlage für Text-PDFs",
-				"placeholder": "Vinou-Textdokument (Standard)"
+				"placeholder": "Vinou-Textdokument (Standard)",
+				"description": "Ersetzt die Standard-Textdokument-Vorlage."
 			}
 		},
 		"views": {
 			"edit": {
-				"title": "Vorlagen bearbeiten"
+				"title": "Vorlagen bearbeiten",
+				"warning": "Vinou-Vorlagen tragen die Dateiendung .vin – diese wurde aus Sicherheitsgründen gewählt. Technisch handelt es sich um Twig-Templates. Das Erstellen und Bearbeiten von Vorlagen erfordert fundiertes technisches Wissen und sollte ausschließlich durch geschulte Fachleute erfolgen. Fehlerhafte Vorlagen können dazu führen, dass Dokumente nicht mehr korrekt erzeugt werden."
 			}
 		},
 		"dialogs": {

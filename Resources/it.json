@@ -4510,44 +4510,54 @@
 		"fields": {
 			"analysisOrder": {
 				"label": "Modello di ordine di analisi",
-				"placeholder": "Etichetta standard P-Touch 100x62 mm"
+				"placeholder": "Etichetta standard P-Touch 100x62 mm",
+				"description": "Sostituisce il modello standard per l'ordine di analisi."
 			},
 			"catalog": {
 				"label": "Modello di listino prezzi",
-				"placeholder": "Vinou-Listino prezzi (Standard)"
+				"placeholder": "Vinou-Listino prezzi (Standard)",
+				"description": "Sostituisce il modello standard per il listino prezzi."
 			},
 			"creditAdvice": {
 				"label": "Modello di accredito",
-				"placeholder": "Vinou-Accredito (Standard)"
+				"placeholder": "Vinou-Accredito (Standard)",
+				"description": "Sostituisce il modello standard per la nota di credito."
 			},
 			"deliveryNote": {
 				"label": "Modello dei bolla di consegna",
-				"placeholder": "Vinou-Bolla di consegna (Standard)"
+				"placeholder": "Vinou-Bolla di consegna (Standard)",
+				"description": "Sostituisce il modello standard per il documento di consegna."
 			},
 			"expertise": {
 				"label": "Modello di esperienza",
-				"placeholder": "Vinou-Esperienza(Standard)"
+				"placeholder": "Vinou-Esperienza(Standard)",
+				"description": "Sostituisce il modello standard per l'expertise."
 			},
 			"invoice": {
 				"label": "Modello di fattura",
-				"placeholder": "Vinou-Fattura (Standard)"
+				"placeholder": "Vinou-Fattura (Standard)",
+				"description": "Sostituisce il modello standard per la fattura."
 			},
 			"offer": {
 				"label": "Modello di offerta",
-				"placeholder": "Vinou-Offerta (Standard)"
+				"placeholder": "Vinou-Offerta (Standard)",
+				"description": "Sostituisce il modello standard per il preventivo."
 			},
 			"order": {
 				"label": "Modello di conferma dell'ordine",
-				"placeholder": "Vinou-Conferma dell'ordine (Standard)"
+				"placeholder": "Vinou-Conferma dell'ordine (Standard)",
+				"description": "Sostituisce il modello standard per la conferma d'ordine."
 			},
 			"text": {
 				"label": "Modello di testo PDF",
-				"placeholder": "Vinou-Documento di testo (Standard)"
+				"placeholder": "Vinou-Documento di testo (Standard)",
+				"description": "Sostituisce il modello standard per i documenti di testo."
 			}
 		},
 		"views": {
 			"edit": {
-				"title": "Modificare modello"
+				"title": "Modificare modello",
+				"warning": "I template Vinou utilizzano l'estensione .vin – scelta per motivi di sicurezza. Tecnicamente si tratta di template Twig. La creazione e la modifica dei template richiedono conoscenze tecniche approfondite e devono essere eseguite esclusivamente da professionisti qualificati. Template errati possono impedire la corretta generazione dei documenti."
 			}
 		},
 		"dialogs": {

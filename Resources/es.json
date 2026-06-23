@@ -4510,44 +4510,54 @@
 		"fields": {
 			"analysisOrder": {
 				"label": "Modelo para órdenes de análisis",
-				"placeholder": "Etiqueta P-Touch estándar 100x62 mm"
+				"placeholder": "Etiqueta P-Touch estándar 100x62 mm",
+				"description": "Reemplaza la plantilla estándar de pedido de análisis."
 			},
 			"catalog": {
 				"label": "Modelo para lista de precios",
-				"placeholder": "Vinou-Lista de precios (estándar)"
+				"placeholder": "Vinou-Lista de precios (estándar)",
+				"description": "Reemplaza la plantilla estándar de lista de precios."
 			},
 			"creditAdvice": {
 				"label": "Modelos para abonos",
-				"placeholder": "Vinou-Abono (estándar)"
+				"placeholder": "Vinou-Abono (estándar)",
+				"description": "Reemplaza la plantilla estándar de nota de crédito."
 			},
 			"deliveryNote": {
 				"label": "Modelo para boletín de entrega",
-				"placeholder": "Vinou-Boletín de entrega (estándar)"
+				"placeholder": "Vinou-Boletín de entrega (estándar)",
+				"description": "Reemplaza la plantilla estándar de albarán."
 			},
 			"expertise": {
 				"label": "Modelo para PDF-peritaje",
-				"placeholder": "Vinou-Peritaje (estándar)"
+				"placeholder": "Vinou-Peritaje (estándar)",
+				"description": "Reemplaza la plantilla estándar de expertise."
 			},
 			"invoice": {
 				"label": "Modelo para factura",
-				"placeholder": "Vinou-Factura (estándar)"
+				"placeholder": "Vinou-Factura (estándar)",
+				"description": "Reemplaza la plantilla estándar de factura."
 			},
 			"offer": {
 				"label": "Modelo para oferta",
-				"placeholder": "Vinou-Offerta (estándar)"
+				"placeholder": "Vinou-Offerta (estándar)",
+				"description": "Reemplaza la plantilla estándar de oferta."
 			},
 			"order": {
 				"label": "Modelo para confirmación del pedido",
-				"placeholder": "Vinou-Confirmación del pedido (estándar)"
+				"placeholder": "Vinou-Confirmación del pedido (estándar)",
+				"description": "Reemplaza la plantilla estándar de confirmación de pedido."
 			},
 			"text": {
 				"label": "Modelo para PDF de texto",
-				"placeholder": "Vinou-Texto (estándar)"
+				"placeholder": "Vinou-Texto (estándar)",
+				"description": "Reemplaza la plantilla estándar de documento de texto."
 			}
 		},
 		"views": {
 			"edit": {
-				"title": "editar modelos"
+				"title": "editar modelos",
+				"warning": "Las plantillas Vinou utilizan la extensión .vin – elegida por razones de seguridad. Técnicamente son plantillas Twig. La creación y edición de plantillas requiere conocimientos técnicos profundos y solo debe ser realizada por profesionales capacitados. Las plantillas incorrectas pueden impedir la generación correcta de los documentos."
 			}
 		},
 		"dialogs": {

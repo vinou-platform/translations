@@ -4514,40 +4514,49 @@
 			},
 			"catalog": {
 				"label": "Template for catalog",
-				"placeholder": "Vinou price list (Default)"
+				"placeholder": "Vinou price list (Default)",
+				"description": "Replaces the default price list template."
 			},
 			"creditAdvice": {
 				"label": "Template for credit advices",
-				"placeholder": "Vinou credit advice (Default)"
+				"placeholder": "Vinou credit advice (Default)",
+				"description": "Replaces the default credit note template."
 			},
 			"deliveryNote": {
 				"label": "Template for delivery note",
-				"placeholder": "Vinou delivery note (Default)"
+				"placeholder": "Vinou delivery note (Default)",
+				"description": "Replaces the default delivery note template."
 			},
 			"expertise": {
 				"label": "Template for wine-factsheet",
-				"placeholder": "Vinou expertise (Default)"
+				"placeholder": "Vinou expertise (Default)",
+				"description": "Replaces the default expertise template."
 			},
 			"invoice": {
 				"label": "Template for invoice",
-				"placeholder": "Vinou invoice (Default)"
+				"placeholder": "Vinou invoice (Default)",
+				"description": "Replaces the default invoice template."
 			},
 			"offer": {
 				"label": "Template for offer",
-				"placeholder": "Vinou offer (Default)"
+				"placeholder": "Vinou offer (Default)",
+				"description": "Replaces the default offer template."
 			},
 			"order": {
 				"label": "Template for order confirmation",
-				"placeholder": "Vinou order confirmation (Default)"
+				"placeholder": "Vinou order confirmation (Default)",
+				"description": "Replaces the default order confirmation template."
 			},
 			"text": {
 				"label": "Template for text documents",
-				"placeholder": "Vinou text (Default)"
+				"placeholder": "Vinou text (Default)",
+				"description": "Replaces the default text document template."
 			}
 		},
 		"views": {
 			"edit": {
-				"title": "Edit Templates"
+				"title": "Edit Templates",
+				"warning": "Vinou templates use the file extension .vin – chosen for security reasons. Technically, these are Twig templates. Creating and editing templates requires in-depth technical knowledge and should only be done by trained professionals. Faulty templates may prevent documents from being generated correctly."
 			}
 		},
 		"dialogs": {
