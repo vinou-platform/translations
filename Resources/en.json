@@ -4556,7 +4556,11 @@
 		"views": {
 			"edit": {
 				"title": "Edit Templates",
-				"warning": "Vinou templates use the file extension .vin – chosen for security reasons. Technically, these are Twig templates. Creating and editing templates requires in-depth technical knowledge and should only be done by trained professionals. Faulty templates may prevent documents from being generated correctly."
+				"warning": "Vinou templates use the file extension .vin – chosen for security reasons. Technically, these are Twig templates. Creating and editing templates requires in-depth technical knowledge and should only be done by trained professionals. Faulty templates may prevent documents from being generated correctly.",
+				"hintFileType": ".vin only",
+				"hintMaxSize": "Max. 5 MB",
+				"upload": "Choose file",
+				"delete": "Remove"
 			}
 		},
 		"dialogs": {
@@ -4686,7 +4690,9 @@
 				"mode": {
 					"label": "Mode",
 					"dev": "Development",
-					"live": "Live"
+					"live": "Live",
+					"hintFileType": ".vin only",
+					"hintMaxSize": "Max. 5 MB"
 				}
 			}
 		},

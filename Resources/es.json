@@ -4557,7 +4557,11 @@
 		"views": {
 			"edit": {
 				"title": "editar modelos",
-				"warning": "Las plantillas Vinou utilizan la extensión .vin – elegida por razones de seguridad. Técnicamente son plantillas Twig. La creación y edición de plantillas requiere conocimientos técnicos profundos y solo debe ser realizada por profesionales capacitados. Las plantillas incorrectas pueden impedir la generación correcta de los documentos."
+				"warning": "Las plantillas Vinou utilizan la extensión .vin – elegida por razones de seguridad. Técnicamente son plantillas Twig. La creación y edición de plantillas requiere conocimientos técnicos profundos y solo debe ser realizada por profesionales capacitados. Las plantillas incorrectas pueden impedir la generación correcta de los documentos.",
+				"hintFileType": "Solo .vin",
+				"hintMaxSize": "Máx. 5 MB",
+				"upload": "Elegir archivo",
+				"delete": "Eliminar"
 			}
 		},
 		"dialogs": {
@@ -4687,7 +4691,9 @@
 				"mode": {
 					"label": "Modo",
 					"dev": "Desarrollo",
-					"live": "En Vivo"
+					"live": "En Vivo",
+					"hintFileType": "Solo .vin",
+					"hintMaxSize": "Máx. 5 MB"
 				}
 			}
 		},
