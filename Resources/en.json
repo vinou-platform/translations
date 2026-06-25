@@ -1451,6 +1451,17 @@
 			},
 			"measurements": {
 				"title": "History"
+			},
+			"detail": {
+				"backToList": "Back to wine list",
+				"currentState": "Current state",
+				"nextStep": "Next step",
+				"wineProduction": "Wine production",
+				"accountInfo": "Wine account info",
+				"correctEntry": "Correct entry",
+				"editAccount": "Edit wine account",
+				"showFermentation": "Show fermentation curve",
+				"showPdf": "Show PDF"
 			}
 		},
 		"dialogs": {

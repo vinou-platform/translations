@@ -1451,6 +1451,17 @@
 			},
 			"measurements": {
 				"title": "Histoire"
+			},
+			"detail": {
+				"backToList": "Retour à la liste des vins",
+				"currentState": "État actuel",
+				"nextStep": "Prochaine étape",
+				"wineProduction": "Vinification",
+				"accountInfo": "Infos sur le compte",
+				"correctEntry": "Corriger l'entrée",
+				"editAccount": "Modifier le compte",
+				"showFermentation": "Courbe de fermentation",
+				"showPdf": "Afficher le PDF"
 			}
 		},
 		"dialogs": {

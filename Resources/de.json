@@ -809,6 +809,17 @@
 			},
 			"measurements": {
 				"title": "Historie"
+			},
+			"detail": {
+				"backToList": "Zurück zur Weinliste",
+				"currentState": "Aktueller Zustand",
+				"nextStep": "Nächster Arbeitsschritt",
+				"wineProduction": "Weinbereitung",
+				"accountInfo": "Infos zum Weinkonto",
+				"correctEntry": "Eintrag korrigieren",
+				"editAccount": "Weinkonto bearbeiten",
+				"showFermentation": "Gärkurve anzeigen",
+				"showPdf": "PDF anzeigen"
 			}
 		},
 		"dialogs": {
@@ -3349,8 +3360,8 @@
 				"sub": "anzeigen"
 			},
 			"regenerate": {
-				"main": "Neu generieren",
-				"sub": "Rechnung"
+				"main": "Rechnung",
+				"sub": "neu generieren"
 			}
 		},
 		"title": "Rechnung",
