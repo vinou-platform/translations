@@ -1759,13 +1759,58 @@
 			"register": {
 				"title": "Registrare prova gratuita",
 				"description": "<p>Con tua prova gratuita di Vinou<sup>®</sup> <b>puoi usare tutte le funzioni di Vinou<sup>®</sup> per trenta giorni</b>. Dalla fine del mese tu puoi scegliere di Versione con obbligo di pagamento. Si chiama Vinou-Complete. Qualunque cosa tu faccia. Potrai continuare a usare la versione gratuita dopo trenta giorni. Si chiama Vinou-Promo. In ogni caso riceverai una notifica via e-mail puoi scegliere.</p>",
+				"signupDescription": "Prova Vinou<sup>®</sup> gratis per 30 giorni con tutte le funzioni. Poi decidi se proseguire con la versione a pagamento.",
+				"successTitle": "Account creato",
+				"successText": "Ti abbiamo inviato un'email. Clicca sul link al suo interno per attivare il tuo account e completare l'onboarding.",
 				"submit": "Creare account",
+				"backToLogin": "Torna al login",
 				"send": "Congratulazione, tuo account è stato elaborato. Riceverai una e-mail dopo qualche minuto per erigere tuo password e attivare qualità di socio",
 				"company": "Dati di azienda",
 				"contact": "interlocutore",
 				"field": {
 					"type": "sono un: "
 				}
+			},
+			"onboarding": {
+				"title": "Configura il tuo account Vinou",
+				"steps": {
+					"password": "Password",
+					"weingut": "La tua cantina",
+					"logo": "Logo",
+					"tank": "Serbatoio"
+				},
+				"password": {
+					"title": "Passo 1 - Password",
+					"hint": "Scegli una password sicura per il tuo account.",
+					"repeat": "Ripeti la password",
+					"mismatch": "Le password non corrispondono.",
+					"criteria": {
+						"length": "Almeno 12 caratteri",
+						"upper": "Lettera maiuscola",
+						"lower": "Lettera minuscola",
+						"digit": "Numero",
+						"special": "Carattere speciale"
+					}
+				},
+				"weingut": {
+					"title": "Passo 2 - La tua cantina"
+				},
+				"logo": {
+					"title": "Passo 3 - Logo",
+					"hint": "Il tuo logo viene utilizzato per le perizie e per la carta intestata su fatture e bolle di consegna. Puoi aggiungerlo anche in seguito.",
+					"upload": "Carica logo",
+					"formats": "Consentito: JPG o PNG, max 20 MB",
+					"skip": "Salta"
+				},
+				"tank": {
+					"title": "Passo 3 - Primo serbatoio",
+					"hint": "Crea il tuo primo serbatoio per iniziare subito con la gestione della cantina. Puoi aggiungerne altri in qualsiasi momento.",
+					"skip": "Salta",
+					"create": "Crea serbatoio"
+				},
+				"back": "Indietro",
+				"next": "Avanti",
+				"finish": "Configura account"
 			},
 			"verify": {
 				"title": "Inviare verifica",
@@ -1859,6 +1904,7 @@
 			"city": "Città",
 			"company": "Società",
 			"cop": "Ho letto i termini e le condizioni e li accetto. <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a>",
+			"consent": "Ho letto e accetto i <a href='http://www.vinou.de/agb' target='blank'>Termini e condizioni</a>.",
 			"copyright": "© Copyright {company} 2018",
 			"country": "Paese",
 			"creditorid": "ID creditore",

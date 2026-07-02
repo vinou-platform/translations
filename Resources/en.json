@@ -1759,13 +1759,58 @@
 			"register": {
 				"title": "Register trialaccount",
 				"description": "<p>You can use Your Vinou<sup>®</sup> trial account 1 months for free including all features of the Vinou<sup>®</sup> platform. After the 1 months trial phase you can choose using Vinou<sup>®</sup> further or your account will be deleted automatically. You’ll be reminded via email and can choose wisely.</p>",
+				"signupDescription": "Try Vinou<sup>®</sup> free for 30 days with all features. Afterwards you decide whether to continue with the paid version.",
+				"successTitle": "Account created",
+				"successText": "We've sent you an email. Click the link in it to activate your account and finish the onboarding.",
 				"submit": "Create account",
+				"backToLogin": "Back to login",
 				"send": "Congratulations your account was created. Within the next minutes you'll receive an email to activate your user and set a password.",
 				"company": "Company",
 				"contact": "Contact",
 				"field": {
 					"type": "I'm a: "
 				}
+			},
+			"onboarding": {
+				"title": "Set up your Vinou account",
+				"steps": {
+					"password": "Password",
+					"weingut": "Your winery",
+					"logo": "Logo",
+					"tank": "Tank"
+				},
+				"password": {
+					"title": "Step 1 - Password",
+					"hint": "Choose a secure password for your account.",
+					"repeat": "Repeat password",
+					"mismatch": "The passwords do not match.",
+					"criteria": {
+						"length": "At least 12 characters",
+						"upper": "Uppercase letter",
+						"lower": "Lowercase letter",
+						"digit": "Number",
+						"special": "Special character"
+					}
+				},
+				"weingut": {
+					"title": "Step 2 - Your winery"
+				},
+				"logo": {
+					"title": "Step 3 - Logo",
+					"hint": "Your logo is used for expertises and for letterheads on invoices and delivery notes. You can also add it later.",
+					"upload": "Upload logo",
+					"formats": "Allowed: JPG or PNG, max. 20 MB",
+					"skip": "Skip"
+				},
+				"tank": {
+					"title": "Step 3 - First tank",
+					"hint": "Create your first tank to get started with your cellar management right away. You can add more at any time.",
+					"skip": "Skip",
+					"create": "Create tank"
+				},
+				"back": "Back",
+				"next": "Next",
+				"finish": "Set up account"
 			},
 			"verify": {
 				"title": "Send verification",
@@ -1859,6 +1904,7 @@
 			"city": "City",
 			"company": "Company",
 			"cop": "I've read the <a href='http://www.vinou.de/agb' target='blank'>conditions of purchase</a> and agree",
+			"consent": "I have read and accept the <a href='http://www.vinou.de/agb' target='blank'>Terms and Conditions</a>.",
 			"copyright": "© Copyright {company} 2018",
 			"country": "Country",
 			"creditorid": "Creditor-ID",

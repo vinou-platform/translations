@@ -1579,13 +1579,58 @@
 			"register": {
 				"title": "Probeaccount registrieren",
 				"description": "<p>Mit Deinem Vinou<sup>®</sup> Probeaccount kannst Du <b>30 Tage lang alle Funktionen von Vinou<sup>®</sup> kostenlos nutzen</b>. Nach Ablauf des Monats kannst Du Dich für die kostenpflichtige Mitgliedschaft Vinou-Complete entscheiden. Egal was Du tust. Du kannst Vinou auch nach den 30 Tagen weiterhin mit der kostenfreien Vinou-Promo Mitgliedschaft nutzen. Du wirst in jedem Falle bequem per E-Mail benachrichtigt und kannst dann Deine Wahl treffen.</p>",
+				"signupDescription": "Teste Vinou<sup>®</sup> 30 Tage lang kostenlos mit allen Funktionen. Danach entscheidest Du, ob Du mit der kostenpflichtigen Version weitermachen möchtest.",
+				"successTitle": "Account angelegt",
+				"successText": "Wir haben Dir eine E-Mail geschickt. Klicke auf den Link darin, um Deinen Account zu aktivieren und das Onboarding abzuschließen.",
 				"submit": "Account erstellen",
+				"backToLogin": "Zurück zum Login",
 				"send": "Herzlichen Glückwunsch, Dein Account wurde erstellt. Du erhälst in den nächsten Minuten eine E-Mail, um Dein Passwort zu setzen und Deine Mitgliedschaft zu aktivieren",
 				"company": "Firmendaten",
 				"contact": "Kontaktperson",
 				"field": {
 					"type": "Ich bin ein: "
 				}
+			},
+			"onboarding": {
+				"title": "Dein Vinou-Account einrichten",
+				"steps": {
+					"password": "Passwort",
+					"weingut": "Dein Weingut",
+					"logo": "Logo",
+					"tank": "Tank"
+				},
+				"password": {
+					"title": "Schritt 1 - Passwort",
+					"hint": "Lege ein sicheres Passwort für Deinen Account fest.",
+					"repeat": "Passwort wiederholen",
+					"mismatch": "Die Passwörter stimmen nicht überein.",
+					"criteria": {
+						"length": "Mindestens 12 Zeichen",
+						"upper": "Großbuchstabe",
+						"lower": "Kleinbuchstabe",
+						"digit": "Zahl",
+						"special": "Sonderzeichen"
+					}
+				},
+				"weingut": {
+					"title": "Schritt 2 - Dein Weingut"
+				},
+				"logo": {
+					"title": "Schritt 3 - Logo",
+					"hint": "Dein Logo wird für Expertisen sowie für Briefbögen auf Rechnungen und Lieferscheinen verwendet. Du kannst es auch später hinzufügen.",
+					"upload": "Logo hochladen",
+					"formats": "Erlaubt: JPG oder PNG, max. 20 MB",
+					"skip": "Überspringen"
+				},
+				"tank": {
+					"title": "Schritt 3 - Erster Tank",
+					"hint": "Lege Deinen ersten Tank an, um direkt mit der Kellerverwaltung zu starten. Du kannst jederzeit weitere hinzufügen.",
+					"skip": "Überspringen",
+					"create": "Tank anlegen"
+				},
+				"back": "Zurück",
+				"next": "Weiter",
+				"finish": "Account einrichten"
 			},
 			"verify": {
 				"title": "Verifikation zusenden",
@@ -1679,6 +1724,7 @@
 			"city": "Stadt",
 			"company": "Firma",
 			"cop": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
+			"consent": "Ich habe die <a href='http://www.vinou.de/agb' target='blank'>Allgemeinen Geschäftsbedingungen</a> gelesen und akzeptiere diese.",
 			"copyright": "© Copyright {company} 2018",
 			"country": "Land",
 			"creditorid": "Gläubiger-ID",

@@ -1759,13 +1759,58 @@
 			"register": {
 				"title": "Registar cuenta a prueba",
 				"description": "<p>Con tu Vinou<sup>®</sup> <b>cuenta a prueba puedes usar todas funciones de Vinou gratuito por 30 dias</b>. Después del mes puedes comprar la membresía Vinou-Complete sujetada a gastos. Igual que vas a hacer. Puedes usar Vinou aun después de los 30 dias con la membresía gratuita de Vinou-Promo. In ambos casos vas a estar informado por correo electrónico y puedes decidir a continuación.</p>",
+				"signupDescription": "Prueba Vinou<sup>®</sup> gratis durante 30 días con todas las funciones. Después decides si quieres continuar con la versión de pago.",
+				"successTitle": "Cuenta creada",
+				"successText": "Te hemos enviado un correo electrónico. Haz clic en el enlace para activar tu cuenta y completar la configuración.",
 				"submit": "Crear cuenta",
+				"backToLogin": "Volver al inicio de sesión",
 				"send": "Felicidades, tu cuenta ha sido creada. En los próximos minutos vas a recibir un correo electrónico para poner tu contraseña y para activar tu membresía",
 				"company": "Datos de empresa",
 				"contact": "Contacto",
 				"field": {
 					"type": "Soy un: "
 				}
+			},
+			"onboarding": {
+				"title": "Configura tu cuenta de Vinou",
+				"steps": {
+					"password": "Contraseña",
+					"weingut": "Tu bodega",
+					"logo": "Logo",
+					"tank": "Depósito"
+				},
+				"password": {
+					"title": "Paso 1 - Contraseña",
+					"hint": "Elige una contraseña segura para tu cuenta.",
+					"repeat": "Repetir contraseña",
+					"mismatch": "Las contraseñas no coinciden.",
+					"criteria": {
+						"length": "Mínimo 12 caracteres",
+						"upper": "Letra mayúscula",
+						"lower": "Letra minúscula",
+						"digit": "Número",
+						"special": "Carácter especial"
+					}
+				},
+				"weingut": {
+					"title": "Paso 2 - Tu bodega"
+				},
+				"logo": {
+					"title": "Paso 3 - Logo",
+					"hint": "Tu logo se utiliza para peritajes y para membretes en facturas y albaranes. También puedes añadirlo más tarde.",
+					"upload": "Subir logo",
+					"formats": "Permitido: JPG o PNG, máx. 20 MB",
+					"skip": "Omitir"
+				},
+				"tank": {
+					"title": "Paso 3 - Primer depósito",
+					"hint": "Crea tu primer depósito para empezar de inmediato con la gestión de tu bodega. Puedes añadir más en cualquier momento.",
+					"skip": "Omitir",
+					"create": "Crear depósito"
+				},
+				"back": "Atrás",
+				"next": "Siguiente",
+				"finish": "Configurar cuenta"
 			},
 			"verify": {
 				"title": "Mandar verificación",
@@ -1859,6 +1904,7 @@
 			"city": "Ciudad",
 			"company": "Empresa",
 			"cop": "He leido las <a href='http://www.vinou.de/agb' target='blank'>Condiciones Genereales de Contratación</a> y las acepto.",
+			"consent": "He leído y acepto las <a href='http://www.vinou.de/agb' target='blank'>Condiciones Generales</a>.",
 			"copyright": "© Copyright {company} 2018",
 			"country": "País",
 			"creditorid": "ID de acreedor",

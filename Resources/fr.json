@@ -1759,13 +1759,58 @@
 			"register": {
 				"title": "Enregistrer un compte d'essai",
 				"description": "<p>Avec votre compte d'essai de Vinou<sup>®</sup>, <b>vous pouvez utiliser toutes les fonctionnalités de Vinou<sup>®</sup> pendant 30 jours gratuitement.</b>. Après expiration de période d'essai, vous pourrez opter pour l'adhésion payante Vinou-Complete. Peu importe ce que tu fais. Vous pouvez continuer à utiliser Vinou après 30 jours avec l’adhésion gratuite à Vinou-Promo. Dans tous les cas, vous serez facilement averti par e-mail et pourrez ensuite faire votre choix.</p>",
+				"signupDescription": "Testez Vinou<sup>®</sup> gratuitement pendant 30 jours avec toutes les fonctionnalités. Ensuite, vous décidez si vous souhaitez continuer avec la version payante.",
+				"successTitle": "Compte créé",
+				"successText": "Nous vous avons envoyé un e-mail. Cliquez sur le lien qu'il contient pour activer votre compte et terminer la configuration.",
 				"submit": "Créer compte",
+				"backToLogin": "Retour à la connexion",
 				"send": "Félicitations, votre compte a été créé. Vous recevrez un email dans les prochaines minutes pour définir votre mot de passe et activer votre abonnement.",
 				"company": "Données de l'entreprise",
 				"contact": "Personne de contact",
 				"field": {
 					"type": "Je suis: "
 				}
+			},
+			"onboarding": {
+				"title": "Configurez votre compte Vinou",
+				"steps": {
+					"password": "Mot de passe",
+					"weingut": "Votre domaine",
+					"logo": "Logo",
+					"tank": "Cuve"
+				},
+				"password": {
+					"title": "Étape 1 - Mot de passe",
+					"hint": "Choisissez un mot de passe sécurisé pour votre compte.",
+					"repeat": "Répéter le mot de passe",
+					"mismatch": "Les mots de passe ne correspondent pas.",
+					"criteria": {
+						"length": "Au moins 12 caractères",
+						"upper": "Lettre majuscule",
+						"lower": "Lettre minuscule",
+						"digit": "Chiffre",
+						"special": "Caractère spécial"
+					}
+				},
+				"weingut": {
+					"title": "Étape 2 - Votre domaine"
+				},
+				"logo": {
+					"title": "Étape 3 - Logo",
+					"hint": "Votre logo est utilisé pour les expertises ainsi que pour les en-têtes des factures et bons de livraison. Vous pouvez aussi l'ajouter plus tard.",
+					"upload": "Téléverser le logo",
+					"formats": "Autorisé : JPG ou PNG, max. 20 Mo",
+					"skip": "Ignorer"
+				},
+				"tank": {
+					"title": "Étape 3 - Première cuve",
+					"hint": "Créez votre première cuve pour démarrer immédiatement la gestion de votre cave. Vous pouvez en ajouter d'autres à tout moment.",
+					"skip": "Ignorer",
+					"create": "Créer la cuve"
+				},
+				"back": "Retour",
+				"next": "Suivant",
+				"finish": "Configurer le compte"
 			},
 			"verify": {
 				"title": "Envoyer vérification",
@@ -1859,6 +1904,7 @@
 			"city": "Ville",
 			"company": "Entreprise",
 			"cop": "J'ai lu les <a href='http://www.vinou.de/agb' target='blank'>termes et conditions</a> et les accepte.",
+			"consent": "J'ai lu et j'accepte les <a href='http://www.vinou.de/agb' target='blank'>conditions générales</a>.",
 			"copyright": "© Copyright {company} 2018",
 			"country": "Pays",
 			"creditorid": "ID de créanciers",
