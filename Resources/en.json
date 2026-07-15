@@ -3305,6 +3305,11 @@
 			},
 			"cancel": "Do you really want to cancel this order?",
 			"close": "Do you really want to mark this order as completed?",
+			"closeMissingStockDocument": {
+				"title": "Cannot complete order",
+				"invoice": "The order can only be completed once an invoice has been created, as it triggers the stock reduction.",
+				"deliveryNote": "The order can only be completed once a delivery note has been created, as it triggers the stock reduction."
+			},
 			"markSent": "Do you really want to set this order as dispatched?",
 			"deletePosition": "Do you really want to delete this item?"
 		},
@@ -3961,6 +3966,29 @@
 			},
 			"toasts": {
 				"changed": "Network settings updated!"
+			}
+		},
+		"orderWorkflow": {
+			"title": "Order workflow",
+			"description": "Configure key aspects of your personal order workflow.",
+			"flow": {
+				"title": "Document creation order",
+				"description": "By default the invoice is created first, then the delivery note. For customers with a special e-invoicing workflow – such as grocery retailers like Edeka – it can make sense to create the delivery note first, as it is required for the e-invoice.",
+				"options": {
+					"invoiceFirst": "Invoice, then delivery note",
+					"deliveryNoteFirst": "Delivery note, then invoice"
+				}
+			},
+			"stockReduction": {
+				"title": "Stock reduction timing",
+				"description": "By default stock is reduced directly when the invoice is created. In special cases it can make sense to reduce it only when the delivery note is created.",
+				"options": {
+					"invoice": "When the invoice is created",
+					"deliveryNote": "When the delivery note is created"
+				}
+			},
+			"toasts": {
+				"changed": "Order workflow updated!"
 			}
 		},
 		"general": {
@@ -8184,6 +8212,7 @@
 			"correction": "Correction",
 			"bulkWineErpRelease": "Bulk wine ERP release",
 			"creditAdvice": "Credit advice",
+			"deliveryNote": "Delivery note",
 			"deputate": "Payment in kind",
 			"external": "External (interface)",
 			"invoice": "Invoice",

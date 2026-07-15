@@ -3305,6 +3305,11 @@
 			},
 			"cancel": "¿Quieres anular esa orden seguramente?",
 			"close": "¿Quieres marcar ese orden como completado?",
+			"closeMissingStockDocument": {
+				"title": "No se puede completar el pedido",
+				"invoice": "El pedido solo puede completarse una vez creada la factura, ya que es la que reduce el stock.",
+				"deliveryNote": "El pedido solo puede completarse una vez creado el albarán, ya que es el que reduce el stock."
+			},
 			"markSent": "¿Quieres marcar ese orden como Enviado?",
 			"deletePosition": "¿Quieres borrar esa posición seguramente?"
 		},
@@ -3961,6 +3966,29 @@
 			},
 			"toasts": {
 				"changed": "¡Configuración de red actualizada!"
+			}
+		},
+		"orderWorkflow": {
+			"title": "Flujo de pedidos",
+			"description": "Configura los aspectos clave de tu flujo de pedidos personal.",
+			"flow": {
+				"title": "Orden de creación de documentos",
+				"description": "De forma predeterminada se crea primero la factura y luego el albarán. Para clientes con un flujo de facturación electrónica especial —como minoristas de alimentación tipo Edeka— puede ser útil crear primero el albarán, ya que es necesario para la factura electrónica.",
+				"options": {
+					"invoiceFirst": "Factura, luego albarán",
+					"deliveryNoteFirst": "Albarán, luego factura"
+				}
+			},
+			"stockReduction": {
+				"title": "Momento de la reducción de stock",
+				"description": "De forma predeterminada, el stock se reduce al crear la factura. En casos especiales puede ser útil reducirlo solo al crear el albarán.",
+				"options": {
+					"invoice": "Al crear la factura",
+					"deliveryNote": "Al crear el albarán"
+				}
+			},
+			"toasts": {
+				"changed": "¡Flujo de pedidos actualizado!"
 			}
 		},
 		"general": {
@@ -8185,6 +8213,7 @@
 			"bulkWineErpRelease": "Lanzamiento de vino a granel ERP",
 			"correction": "corrección",
 			"creditAdvice": "abono",
+			"deliveryNote": "Albarán",
 			"deputate": "Pago en especie",
 			"external": "externa (interfaz)",
 			"invoice": "cuenta",

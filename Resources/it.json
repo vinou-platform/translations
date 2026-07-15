@@ -3305,6 +3305,11 @@
 			},
 			"cancel": "Vuoi veramente cancellare questo ordine?",
 			"close": "Vuoi contrassegnare l'ordine come completato?",
+			"closeMissingStockDocument": {
+				"title": "Impossibile completare l'ordine",
+				"invoice": "L'ordine può essere completato solo dopo aver creato una fattura, poiché determina la riduzione delle giacenze.",
+				"deliveryNote": "L'ordine può essere completato solo dopo aver creato un documento di trasporto, poiché determina la riduzione delle giacenze."
+			},
 			"markSent": "Vuoi contrassegnare l'ordine come inviato?",
 			"deletePosition": "Vuoi veramente cancellare questo posto?"
 		},
@@ -3961,6 +3966,29 @@
 			},
 			"toasts": {
 				"changed": "Impostazioni di rete aggiornate!"
+			}
+		},
+		"orderWorkflow": {
+			"title": "Flusso degli ordini",
+			"description": "Configura gli aspetti principali del tuo flusso di ordini personale.",
+			"flow": {
+				"title": "Ordine di creazione dei documenti",
+				"description": "Per impostazione predefinita viene creata prima la fattura e poi il documento di trasporto. Per i clienti con un flusso di fatturazione elettronica particolare – come i rivenditori alimentari tipo Edeka – può essere utile creare prima il documento di trasporto, poiché è necessario per la fattura elettronica.",
+				"options": {
+					"invoiceFirst": "Fattura, poi documento di trasporto",
+					"deliveryNoteFirst": "Documento di trasporto, poi fattura"
+				}
+			},
+			"stockReduction": {
+				"title": "Momento della riduzione delle giacenze",
+				"description": "Per impostazione predefinita la giacenza viene ridotta al momento della creazione della fattura. In casi particolari può essere utile ridurla solo alla creazione del documento di trasporto.",
+				"options": {
+					"invoice": "Alla creazione della fattura",
+					"deliveryNote": "Alla creazione del documento di trasporto"
+				}
+			},
+			"toasts": {
+				"changed": "Flusso degli ordini aggiornato!"
 			}
 		},
 		"general": {
@@ -8185,6 +8213,7 @@
 			"bulkWineErpRelease": "Rilascio vino sfuso ERP",
 			"correction": "Correzione",
 			"creditAdvice": "Accredito",
+			"deliveryNote": "Documento di trasporto",
 			"deputate": "Pagamento in natura",
 			"external": "Esterno (interfaccia)",
 			"invoice": "Fattura",

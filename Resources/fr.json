@@ -3305,6 +3305,11 @@
 			},
 			"cancel": "Voulez-vous vraiment annuler cet ordre?",
 			"close": "Voulez-vous vraiment marquer cet ordre comme terminée?",
+			"closeMissingStockDocument": {
+				"title": "Clôture impossible",
+				"invoice": "La commande ne peut être clôturée qu'une fois la facture créée, car elle déclenche la réduction du stock.",
+				"deliveryNote": "La commande ne peut être clôturée qu'une fois le bon de livraison créé, car il déclenche la réduction du stock."
+			},
 			"markSent": "Voulez-vous vraiment marquer cet ordre comme expédiée?",
 			"deletePosition": "Voulez-vous vraiment supprimer cette position?"
 		},
@@ -3961,6 +3966,29 @@
 			},
 			"toasts": {
 				"changed": "Paramètres réseau mis à jour!"
+			}
+		},
+		"orderWorkflow": {
+			"title": "Flux de commande",
+			"description": "Configurez les aspects essentiels de votre flux de commande personnel.",
+			"flow": {
+				"title": "Ordre de création des documents",
+				"description": "Par défaut, la facture est créée en premier, puis le bon de livraison. Pour les clients ayant un flux de facturation électronique particulier – comme les distributeurs alimentaires tels qu'Edeka – il peut être utile de créer d'abord le bon de livraison, car il est nécessaire à la facture électronique.",
+				"options": {
+					"invoiceFirst": "Facture, puis bon de livraison",
+					"deliveryNoteFirst": "Bon de livraison, puis facture"
+				}
+			},
+			"stockReduction": {
+				"title": "Moment de la réduction du stock",
+				"description": "Par défaut, le stock est réduit dès la création de la facture. Dans certains cas, il peut être utile de ne le réduire qu'à la création du bon de livraison.",
+				"options": {
+					"invoice": "À la création de la facture",
+					"deliveryNote": "À la création du bon de livraison"
+				}
+			},
+			"toasts": {
+				"changed": "Flux de commande mis à jour !"
 			}
 		},
 		"general": {
@@ -8185,6 +8213,7 @@
 			"bulkWineErpRelease": "Sortie de vin en vrac ERP",
 			"correction": "Correction",
 			"creditAdvice": "Crédit",
+			"deliveryNote": "Bon de livraison",
 			"deputate": "Paiement en nature",
 			"external": "Interface externe",
 			"invoice": "Facture",

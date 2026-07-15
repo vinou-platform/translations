@@ -1542,6 +1542,7 @@
 			"bulkWineErpRelease": "Fassweinfreigabe",
 			"correction": "Korrektur",
 			"creditAdvice": "Gutschrift",
+			"deliveryNote": "Lieferschein",
 			"deputate": "Naturalleistung",
 			"external": "Extern (Schnittstelle)",
 			"invoice": "Rechnung",
@@ -3839,6 +3840,11 @@
 			},
 			"cancel": "Möchtest Du diese Bestellung wirklich stornieren?",
 			"close": "Möchtest Du diese Bestellung wirklich als abgeschlossen markieren?",
+			"closeMissingStockDocument": {
+				"title": "Abschluss nicht möglich",
+				"invoice": "Für den Abschluss muss zuerst eine Rechnung erzeugt werden, da darüber die Bestandsminderung erfolgt.",
+				"deliveryNote": "Für den Abschluss muss zuerst ein Lieferschein erzeugt werden, da darüber die Bestandsminderung erfolgt."
+			},
 			"markSent": "Möchtest Du die Bestellung als Versendet markieren?",
 			"deletePosition": "Möchtest Du diese Position wirklich löschen?"
 		},
@@ -5201,6 +5207,29 @@
 			},
 			"toasts": {
 				"changed": "Netzwerkeinstellungen aktualisiert!"
+			}
+		},
+		"orderWorkflow": {
+			"title": "Bestellworkflow",
+			"description": "Konfiguriere wichtige Anpassungen an deinem persönlichen Bestellworkflow.",
+			"flow": {
+				"title": "Reihenfolge der Belegerstellung",
+				"description": "Standardmäßig wird zuerst die Rechnung und dann der Lieferschein erzeugt. Bei Kunden mit speziellem eRechnungs-Workflow – etwa Lebensmitteleinzelhändlern wie Edeka – kann es sinnvoll sein, den Lieferschein zuerst zu erzeugen, da er für die eRechnung benötigt wird.",
+				"options": {
+					"invoiceFirst": "Rechnung, dann Lieferschein",
+					"deliveryNoteFirst": "Lieferschein, dann Rechnung"
+				}
+			},
+			"stockReduction": {
+				"title": "Zeitpunkt der Bestandsminderung",
+				"description": "Standardmäßig wird der Bestand direkt bei der Rechnungsstellung gemindert. In besonderen Fällen kann es sinnvoll sein, ihn erst bei Erstellung des Lieferscheins zu mindern.",
+				"options": {
+					"invoice": "Bei Rechnungserstellung",
+					"deliveryNote": "Bei Lieferscheinerstellung"
+				}
+			},
+			"toasts": {
+				"changed": "Bestellworkflow aktualisiert!"
 			}
 		},
 		"numbers": {
