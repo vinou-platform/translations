@@ -1957,9 +1957,12 @@
 		},
 		"pricingTypes": {
 			"trial": "Prueba",
-			"publish": "Libre",
-			"regular": "Cuenta completa",
-			"invitation": "Invitado"
+			"standard": "Estándar",
+			"pro": "Pro",
+			"partner": "Socio",
+			"paid": "De pago",
+			"invited": "Invitado",
+			"contracts": "Contratos"
 		},
 		"invoiceStatus": {
 			"PAID": "Pagado",
@@ -8275,7 +8278,7 @@
 	"system": {
 		"mailTypes": {
 			"monitoring": {
-				"switchToPublish": {
+				"trialExpired": {
 					"title": "Tu periodo de prueba de Vinou ha caducado"
 				},
 				"reminder1": {

@@ -1957,9 +1957,12 @@
 		},
 		"pricingTypes": {
 			"trial": "Essai",
-			"publish": "Libre",
-			"regular": "Compte complet",
-			"invitation": "Invité"
+			"standard": "Standard",
+			"pro": "Pro",
+			"partner": "Partenaire",
+			"paid": "Payant",
+			"invited": "Invité",
+			"contracts": "Contrats"
 		},
 		"invoiceStatus": {
 			"PAID": "Payé",
@@ -8275,7 +8278,7 @@
 	"system": {
 		"mailTypes": {
 			"monitoring": {
-				"switchToPublish": {
+				"trialExpired": {
 					"title": "Votre période d'essai Vinou a expiré"
 				},
 				"reminder1": {

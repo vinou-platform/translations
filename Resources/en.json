@@ -1957,9 +1957,12 @@
 		},
 		"pricingTypes": {
 			"trial": "Trial",
-			"publish": "Free",
-			"regular": "Full-Account",
-			"invitation": "Invited"
+			"standard": "Standard",
+			"pro": "Pro",
+			"partner": "Partner",
+			"paid": "Paying",
+			"invited": "Invited",
+			"contracts": "Contracts"
 		},
 		"invoiceStatus": {
 			"PAID": "Paid",
@@ -8274,7 +8277,7 @@
 	"system": {
 		"mailTypes": {
 			"monitoring": {
-				"switchToPublish": {
+				"trialExpired": {
 					"title": "Your Vinou trial period has expired"
 				},
 				"reminder1": {

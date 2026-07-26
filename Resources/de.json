@@ -313,7 +313,7 @@
 	"system": {
 		"mailTypes": {
 			"monitoring": {
-				"switchToPublish": {
+				"trialExpired": {
 					"title": "Deine Vinou-Testphase ist abgelaufen"
 				},
 				"reminder1": {
@@ -1780,10 +1780,13 @@
 			"laboratory": "Weinlabor"
 		},
 		"pricingTypes": {
-			"trial": "Testzeitraum",
-			"publish": "Free",
-			"regular": "Voll-Account",
-			"invitation": "Eingeladen"
+			"trial": "Testphase",
+			"standard": "Standard",
+			"pro": "Pro",
+			"partner": "Partner",
+			"paid": "Zahlend",
+			"invited": "Eingeladen",
+			"contracts": "Verträge"
 		},
 		"invoiceStatus": {
 			"PAID": "Bezahlt",
