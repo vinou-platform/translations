@@ -24,14 +24,14 @@
 		"customers": "Customers",
 		"customers.wineries": "Wineries",
 		"customers.wineries.trial": "Trial",
-		"customers.wineries.publish": "Free",
-		"customers.wineries.regular": "Full-Account",
-		"customers.wineries.invitation": "Invitation",
+		"customers.wineries.standard": "Standard",
+		"customers.wineries.pro": "Pro",
+		"customers.wineries.invited": "Invited",
 		"customers.merchants": "Merchants",
 		"customers.merchants.trial": "Trial",
-		"customers.merchants.publish": "Free",
-		"customers.merchants.regular": "Full-Account",
-		"customers.merchants.invitation": "Invitation",
+		"customers.merchants.standard": "Standard",
+		"customers.merchants.pro": "Pro",
+		"customers.merchants.invited": "Invited",
 		"customers.laboratories": "Laboratories",
 		"dashboard": "Dashboard",
 		"licenses": "Licenses",
@@ -1755,6 +1755,11 @@
 		}
 	},
 	"customer": {
+		"hints": {
+			"noContract": "No contract",
+			"contractTab": "Tariff and term are maintained in the contracts tab.",
+			"invited": "Invited through the network, has not responded yet"
+		},
 		"page": {
 			"register": {
 				"title": "Register trialaccount",
@@ -1896,6 +1901,7 @@
 			"settings": "Settings"
 		},
 		"fields": {
+			"invited": "Invited",
 			"active": "active",
 			"address": "Address",
 			"addOns": "Add-On licenses",

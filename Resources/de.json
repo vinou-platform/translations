@@ -25,14 +25,14 @@
 		"customers": "Mitglieder",
 		"customers.wineries": "Weingüter",
 		"customers.wineries.trial": "Testkunden",
-		"customers.wineries.publish": "Free",
-		"customers.wineries.regular": "Voll-Accounts",
-		"customers.wineries.invitation": "Eingeladen",
+		"customers.wineries.standard": "Standard",
+		"customers.wineries.pro": "Pro",
+		"customers.wineries.invited": "Eingeladen",
 		"customers.merchants": "Händler",
 		"customers.merchants.trial": "Testkunden",
-		"customers.merchants.publish": "Free",
-		"customers.merchants.regular": "Voll-Accounts",
-		"customers.merchants.invitation": "Eingeladen",
+		"customers.merchants.standard": "Standard",
+		"customers.merchants.pro": "Pro",
+		"customers.merchants.invited": "Eingeladen",
 		"customers.laboratories": "Weinlabore",
 		"dashboard": "Dashboard",
 		"licenses": "Lizenz-Verträge",
@@ -1584,6 +1584,11 @@
 	"cashlink_owner_birthday": "Geburtsdatum",
 	"view_beta_create": "ACHTUNG! Dieses Features befindet sich im Alpha Stadium, eventuell sind bestimmte Ansichten noch nicht verfügbar. Ansicht dennoch anlegen?",
 	"customer": {
+		"hints": {
+			"noContract": "Kein Vertrag",
+			"contractTab": "Tarif und Laufzeit werden im Reiter Verträge gepflegt.",
+			"invited": "Über das Netzwerk eingeladen, hat noch nicht reagiert"
+		},
 		"page": {
 			"register": {
 				"title": "Probeaccount registrieren",
@@ -1725,6 +1730,7 @@
 			"settings": "Einstellungen"
 		},
 		"fields": {
+			"invited": "Eingeladen",
 			"active": "aktiv",
 			"address": "Straße und Hausnummer",
 			"addOns": "Add-On-Lizenzen",

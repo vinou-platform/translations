@@ -24,14 +24,14 @@
 		"customers": "Membri",
 		"customers.wineries": "Cantine",
 		"customers.wineries.trial": "Prova",
-		"customers.wineries.publish": "Gratuito",
-		"customers.wineries.regular": "Account completo",
-		"customers.wineries.invitation": "Invito",
+		"customers.wineries.standard": "Standard",
+		"customers.wineries.pro": "Pro",
+		"customers.wineries.invited": "Invitati",
 		"customers.merchants": "Mercanti",
 		"customers.merchants.trial": "Prova",
-		"customers.merchants.publish": "Gratuito",
-		"customers.merchants.regular": "Account completo",
-		"customers.merchants.invitation": "Invito",
+		"customers.merchants.standard": "Standard",
+		"customers.merchants.pro": "Pro",
+		"customers.merchants.invited": "Invitati",
 		"customers.laboratories": "Laboratori",
 		"licenses": "Licenze",
 		"dashboard": "Pannello",
@@ -1755,6 +1755,11 @@
 		}
 	},
 	"customer": {
+		"hints": {
+			"noContract": "Nessun contratto",
+			"contractTab": "Tariffa e durata si gestiscono nella scheda Contratti.",
+			"invited": "Invitato tramite la rete, non ha ancora risposto"
+		},
 		"page": {
 			"register": {
 				"title": "Registrare prova gratuita",
@@ -1896,6 +1901,7 @@
 			"settings": "Configurazione"
 		},
 		"fields": {
+			"invited": "Invitato",
 			"active": "Aktif",
 			"addOns": "Licenze Add-On",
 			"address": "Via e numero",

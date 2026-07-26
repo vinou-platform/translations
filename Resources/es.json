@@ -24,14 +24,14 @@
 		"customers": "Miembros",
 		"customers.wineries": "Bodegas",
 		"customers.wineries.trial": "Prueba",
-		"customers.wineries.publish": "Libre",
-		"customers.wineries.regular": "Cuenta completa",
-		"customers.wineries.invitation": "Invitación",
+		"customers.wineries.standard": "Estándar",
+		"customers.wineries.pro": "Pro",
+		"customers.wineries.invited": "Invitados",
 		"customers.merchants": "Comerciantes",
 		"customers.merchants.trial": "Prueba",
-		"customers.merchants.publish": "Libre",
-		"customers.merchants.regular": "Cuenta completa",
-		"customers.merchants.invitation": "Invitación",
+		"customers.merchants.standard": "Estándar",
+		"customers.merchants.pro": "Pro",
+		"customers.merchants.invited": "Invitados",
 		"customers.laboratories": "Laboratorios",
 		"dashboard": "Tablero",
 		"licenses": "Licencias",
@@ -1755,6 +1755,11 @@
 		}
 	},
 	"customer": {
+		"hints": {
+			"noContract": "Sin contrato",
+			"contractTab": "La tarifa y la duración se gestionan en la pestaña de contratos.",
+			"invited": "Invitado a través de la red, aún no ha respondido"
+		},
 		"page": {
 			"register": {
 				"title": "Registar cuenta a prueba",
@@ -1896,6 +1901,7 @@
 			"settings": "Ajustes"
 		},
 		"fields": {
+			"invited": "Invitado",
 			"active": "Activo",
 			"address": "Calle y número de casa",
 			"addOns": "Licencias complementarias",

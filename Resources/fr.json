@@ -24,14 +24,14 @@
 		"customers": "Membres",
 		"customers.wineries": "Caves",
 		"customers.wineries.trial": "Essai",
-		"customers.wineries.publish": "Libre",
-		"customers.wineries.regular": "Compte complet",
-		"customers.wineries.invitation": "Invitation",
+		"customers.wineries.standard": "Standard",
+		"customers.wineries.pro": "Pro",
+		"customers.wineries.invited": "Invités",
 		"customers.merchants": "Marchands",
 		"customers.merchants.trial": "Essai",
-		"customers.merchants.publish": "Libre",
-		"customers.merchants.regular": "Compte complet",
-		"customers.merchants.invitation": "Invitation",
+		"customers.merchants.standard": "Standard",
+		"customers.merchants.pro": "Pro",
+		"customers.merchants.invited": "Invités",
 		"customers.laboratories": "Laboratoires",
 		"dashboard": "Tableau de bord",
 		"licenses": "Licences",
@@ -1755,6 +1755,11 @@
 		}
 	},
 	"customer": {
+		"hints": {
+			"noContract": "Aucun contrat",
+			"contractTab": "Le tarif et la durée se gèrent dans l'onglet Contrats.",
+			"invited": "Invité via le réseau, n'a pas encore réagi"
+		},
 		"page": {
 			"register": {
 				"title": "Enregistrer un compte d'essai",
@@ -1896,6 +1901,7 @@
 			"settings": "Configuration"
 		},
 		"fields": {
+			"invited": "Invité",
 			"active": "Aktif",
 			"addOns": "Licences modules complémentaires",
 			"address": "Rue et numéro",
