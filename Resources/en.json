@@ -4577,6 +4577,138 @@
 			"archived": "Archived tickets"
 		}
 	},
+	"license": {
+		"name": {
+			"singular": "Contract",
+			"plural": "Contracts"
+		},
+		"fieldSets": {
+			"subject": "Subject",
+			"term": "Term and billing",
+			"price": "Price",
+			"note": "Note",
+			"cancellation": "Cancellation"
+		},
+		"fields": {
+			"key": "Contract number",
+			"customer": "Customer",
+			"subject": "Subject",
+			"app": "Application",
+			"addOn": "Add-on",
+			"pricing": "Tariff",
+			"freeAccess": "Permanently free",
+			"status": "Status",
+			"billingCycle": "Billing",
+			"paymentMethod": "Payment method",
+			"minimumTerm": "Minimum term",
+			"renewalTerm": "Renewal",
+			"noticePeriod": "Notice period",
+			"startDate": "Start",
+			"endDate": "End",
+			"currentTermEnd": "Term ends",
+			"cancellableUntil": "Cancellable until",
+			"quantity": "Quantity",
+			"discount": "Discount",
+			"net": "Net",
+			"tax": "Tax",
+			"gross": "Gross",
+			"note": "Internal note",
+			"cancelledAt": "Cancelled on",
+			"cancelledBy": "Cancelled by",
+			"cancellationReason": "Reason for cancellation",
+			"billedUntil": "Billed until"
+		},
+		"statusTypes": {
+			"active": "Running",
+			"cancelled": "Cancelled",
+			"ended": "Ended",
+			"suspended": "Suspended"
+		},
+		"pricingTypes": {
+			"trial": "Trial",
+			"standard": "Standard",
+			"pro": "Pro"
+		},
+		"billingCycles": {
+			"monthly": "Monthly",
+			"quarterly": "Quarterly",
+			"annual": "Annually"
+		},
+		"paymentMethods": {
+			"invoice": "Invoice",
+			"debit": "Direct debit"
+		},
+		"subjects": {
+			"app": "Application",
+			"addon": "Add-on"
+		},
+		"terms": {
+			"1": "Monthly",
+			"12": "12 months",
+			"24": "24 months"
+		},
+		"cancelledByTypes": {
+			"customer": "Customer",
+			"vinou": "Vinou"
+		},
+		"actions": {
+			"create": {
+				"main": "Contract",
+				"sub": "create",
+				"title": "Create new contract"
+			},
+			"edit": {
+				"title": "Edit contract"
+			},
+			"search": {
+				"placeholder": "Search contract number or customer"
+			},
+			"cancel": "Cancel contract",
+			"revoke": "Withdraw cancellation",
+			"terminate": "End immediately",
+			"delete": "Delete",
+			"applyCatalogPrice": "Apply catalog price"
+		},
+		"dialogs": {
+			"cancel": {
+				"title": "Cancel contract",
+				"text": "The contract keeps running until the end of its term and ends afterwards.",
+				"reason": "Reason (optional)",
+				"confirm": "Register cancellation"
+			},
+			"terminate": "End this contract right away? The customer loses access with it.",
+			"delete": "Really delete this contract? A cancellation is usually the right way."
+		},
+		"toasts": {
+			"created": "Contract created",
+			"updated": "Contract saved",
+			"cancelled": "Cancellation registered",
+			"revoked": "Cancellation withdrawn",
+			"terminated": "Contract ended",
+			"deleted": "Contract deleted"
+		},
+		"views": {
+			"list": {
+				"empty": "No contracts available.",
+				"running": "Running contracts",
+				"archived": "Ended contracts",
+				"apps": "Applications",
+				"addOns": "Add-ons"
+			}
+		},
+		"filters": {
+			"status": "Status",
+			"pricing": "Tariff",
+			"app": "Application",
+			"showEnded": "Show ended",
+			"allApps": "All applications"
+		},
+		"hints": {
+			"priceSnapshot": "The price is copied from the catalog when the contract starts and stays unchanged afterwards.",
+			"freeAccess": "Partner access, free of charge.",
+			"allowedTerms": "This product can only be booked with certain minimum terms."
+		}
+	},
 	"systemNews": {
 		"fields": {
 			"date": "Date",

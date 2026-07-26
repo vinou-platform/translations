@@ -4577,6 +4577,138 @@
 			"archived": "Tickets archivados"
 		}
 	},
+	"license": {
+		"name": {
+			"singular": "Contrato",
+			"plural": "Contratos"
+		},
+		"fieldSets": {
+			"subject": "Objeto del contrato",
+			"term": "Duración y facturación",
+			"price": "Precio",
+			"note": "Nota",
+			"cancellation": "Cancelación"
+		},
+		"fields": {
+			"key": "Número de contrato",
+			"customer": "Cliente",
+			"subject": "Objeto del contrato",
+			"app": "Aplicación",
+			"addOn": "Complemento",
+			"pricing": "Tarifa",
+			"freeAccess": "Gratuito permanente",
+			"status": "Estado",
+			"billingCycle": "Facturación",
+			"paymentMethod": "Forma de pago",
+			"minimumTerm": "Permanencia mínima",
+			"renewalTerm": "Renovación",
+			"noticePeriod": "Plazo de preaviso",
+			"startDate": "Inicio",
+			"endDate": "Fin",
+			"currentTermEnd": "Vigente hasta",
+			"cancellableUntil": "Cancelable hasta",
+			"quantity": "Cantidad",
+			"discount": "Descuento",
+			"net": "Neto",
+			"tax": "Impuesto",
+			"gross": "Bruto",
+			"note": "Nota interna",
+			"cancelledAt": "Cancelado el",
+			"cancelledBy": "Cancelado por",
+			"cancellationReason": "Motivo de la cancelación",
+			"billedUntil": "Facturado hasta"
+		},
+		"statusTypes": {
+			"active": "Vigente",
+			"cancelled": "Cancelado",
+			"ended": "Finalizado",
+			"suspended": "Suspendido"
+		},
+		"pricingTypes": {
+			"trial": "Prueba",
+			"standard": "Estándar",
+			"pro": "Pro"
+		},
+		"billingCycles": {
+			"monthly": "Mensual",
+			"quarterly": "Trimestral",
+			"annual": "Anual"
+		},
+		"paymentMethods": {
+			"invoice": "Factura",
+			"debit": "Domiciliación"
+		},
+		"subjects": {
+			"app": "Aplicación",
+			"addon": "Complemento"
+		},
+		"terms": {
+			"1": "Mensual",
+			"12": "12 meses",
+			"24": "24 meses"
+		},
+		"cancelledByTypes": {
+			"customer": "Cliente",
+			"vinou": "Vinou"
+		},
+		"actions": {
+			"create": {
+				"main": "Contrato",
+				"sub": "crear",
+				"title": "Crear nuevo contrato"
+			},
+			"edit": {
+				"title": "Editar contrato"
+			},
+			"search": {
+				"placeholder": "Buscar número de contrato o cliente"
+			},
+			"cancel": "Cancelar contrato",
+			"revoke": "Retirar cancelación",
+			"terminate": "Finalizar de inmediato",
+			"delete": "Eliminar",
+			"applyCatalogPrice": "Aplicar precio del catálogo"
+		},
+		"dialogs": {
+			"cancel": {
+				"title": "Cancelar contrato",
+				"text": "El contrato sigue vigente hasta el final del periodo y finaliza después.",
+				"reason": "Motivo (opcional)",
+				"confirm": "Registrar cancelación"
+			},
+			"terminate": "¿Finalizar este contrato de inmediato? El cliente perderá el acceso.",
+			"delete": "¿Eliminar realmente este contrato? Normalmente la cancelación es la vía correcta."
+		},
+		"toasts": {
+			"created": "Contrato creado",
+			"updated": "Contrato guardado",
+			"cancelled": "Cancelación registrada",
+			"revoked": "Cancelación retirada",
+			"terminated": "Contrato finalizado",
+			"deleted": "Contrato eliminado"
+		},
+		"views": {
+			"list": {
+				"empty": "No hay contratos.",
+				"running": "Contratos vigentes",
+				"archived": "Contratos finalizados",
+				"apps": "Aplicaciones",
+				"addOns": "Complementos"
+			}
+		},
+		"filters": {
+			"status": "Estado",
+			"pricing": "Tarifa",
+			"app": "Aplicación",
+			"showEnded": "Mostrar finalizados",
+			"allApps": "Todas las aplicaciones"
+		},
+		"hints": {
+			"priceSnapshot": "El precio se toma del catálogo al crear el contrato y no cambia después.",
+			"freeAccess": "Acceso de socio sin cargo.",
+			"allowedTerms": "Este producto solo se puede contratar con determinadas permanencias mínimas."
+		}
+	},
 	"systemNews": {
 		"fields": {
 			"date": "Fecha",

@@ -4577,6 +4577,138 @@
 			"archived": "Ticket archiviati"
 		}
 	},
+	"license": {
+		"name": {
+			"singular": "Contratto",
+			"plural": "Contratti"
+		},
+		"fieldSets": {
+			"subject": "Oggetto del contratto",
+			"term": "Durata e fatturazione",
+			"price": "Prezzo",
+			"note": "Nota",
+			"cancellation": "Disdetta"
+		},
+		"fields": {
+			"key": "Numero contratto",
+			"customer": "Cliente",
+			"subject": "Oggetto del contratto",
+			"app": "Applicazione",
+			"addOn": "Componente aggiuntivo",
+			"pricing": "Tariffa",
+			"freeAccess": "Gratuito permanente",
+			"status": "Stato",
+			"billingCycle": "Fatturazione",
+			"paymentMethod": "Modalità di pagamento",
+			"minimumTerm": "Durata minima",
+			"renewalTerm": "Rinnovo",
+			"noticePeriod": "Preavviso",
+			"startDate": "Inizio",
+			"endDate": "Fine",
+			"currentTermEnd": "Valido fino al",
+			"cancellableUntil": "Disdicibile entro",
+			"quantity": "Quantità",
+			"discount": "Sconto",
+			"net": "Netto",
+			"tax": "Imposta",
+			"gross": "Lordo",
+			"note": "Nota interna",
+			"cancelledAt": "Disdetto il",
+			"cancelledBy": "Disdetto da",
+			"cancellationReason": "Motivo della disdetta",
+			"billedUntil": "Fatturato fino al"
+		},
+		"statusTypes": {
+			"active": "In corso",
+			"cancelled": "Disdetto",
+			"ended": "Terminato",
+			"suspended": "Sospeso"
+		},
+		"pricingTypes": {
+			"trial": "Prova",
+			"standard": "Standard",
+			"pro": "Pro"
+		},
+		"billingCycles": {
+			"monthly": "Mensile",
+			"quarterly": "Trimestrale",
+			"annual": "Annuale"
+		},
+		"paymentMethods": {
+			"invoice": "Fattura",
+			"debit": "Addebito diretto"
+		},
+		"subjects": {
+			"app": "Applicazione",
+			"addon": "Componente aggiuntivo"
+		},
+		"terms": {
+			"1": "Mensile",
+			"12": "12 mesi",
+			"24": "24 mesi"
+		},
+		"cancelledByTypes": {
+			"customer": "Cliente",
+			"vinou": "Vinou"
+		},
+		"actions": {
+			"create": {
+				"main": "Contratto",
+				"sub": "crea",
+				"title": "Crea nuovo contratto"
+			},
+			"edit": {
+				"title": "Modifica contratto"
+			},
+			"search": {
+				"placeholder": "Cerca numero contratto o cliente"
+			},
+			"cancel": "Disdire",
+			"revoke": "Revoca disdetta",
+			"terminate": "Termina subito",
+			"delete": "Elimina",
+			"applyCatalogPrice": "Applica prezzo di listino"
+		},
+		"dialogs": {
+			"cancel": {
+				"title": "Disdire il contratto",
+				"text": "Il contratto resta valido fino alla scadenza e termina successivamente.",
+				"reason": "Motivo (facoltativo)",
+				"confirm": "Registra disdetta"
+			},
+			"terminate": "Terminare subito questo contratto? Il cliente perde l'accesso.",
+			"delete": "Eliminare davvero questo contratto? Di norma la disdetta è la via corretta."
+		},
+		"toasts": {
+			"created": "Contratto creato",
+			"updated": "Contratto salvato",
+			"cancelled": "Disdetta registrata",
+			"revoked": "Disdetta revocata",
+			"terminated": "Contratto terminato",
+			"deleted": "Contratto eliminato"
+		},
+		"views": {
+			"list": {
+				"empty": "Nessun contratto presente.",
+				"running": "Contratti in corso",
+				"archived": "Contratti terminati",
+				"apps": "Applicazioni",
+				"addOns": "Componenti aggiuntivi"
+			}
+		},
+		"filters": {
+			"status": "Stato",
+			"pricing": "Tariffa",
+			"app": "Applicazione",
+			"showEnded": "Mostra terminati",
+			"allApps": "Tutte le applicazioni"
+		},
+		"hints": {
+			"priceSnapshot": "Il prezzo viene ripreso dal listino alla creazione del contratto e resta invariato.",
+			"freeAccess": "Accesso partner senza addebito.",
+			"allowedTerms": "Questo prodotto è disponibile solo con determinate durate minime."
+		}
+	},
 	"systemNews": {
 		"fields": {
 			"date": "Data",

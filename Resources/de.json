@@ -4490,6 +4490,138 @@
 			"archived": "Archivierte Tickets"
 		}
 	},
+	"license": {
+		"name": {
+			"singular": "Vertrag",
+			"plural": "Verträge"
+		},
+		"fieldSets": {
+			"subject": "Vertragsgegenstand",
+			"term": "Laufzeit und Abrechnung",
+			"price": "Preis",
+			"note": "Notiz",
+			"cancellation": "Kündigung"
+		},
+		"fields": {
+			"key": "Vertragsnummer",
+			"customer": "Kunde",
+			"subject": "Vertragsgegenstand",
+			"app": "Anwendung",
+			"addOn": "Add-On",
+			"pricing": "Tarif",
+			"freeAccess": "Dauerhaft kostenfrei",
+			"status": "Status",
+			"billingCycle": "Abrechnung",
+			"paymentMethod": "Zahlungsweise",
+			"minimumTerm": "Mindestlaufzeit",
+			"renewalTerm": "Verlängerung",
+			"noticePeriod": "Kündigungsfrist",
+			"startDate": "Beginn",
+			"endDate": "Ende",
+			"currentTermEnd": "Laufzeit bis",
+			"cancellableUntil": "Kündbar bis",
+			"quantity": "Menge",
+			"discount": "Rabatt",
+			"net": "Netto",
+			"tax": "Steuer",
+			"gross": "Brutto",
+			"note": "Interne Notiz",
+			"cancelledAt": "Gekündigt am",
+			"cancelledBy": "Gekündigt von",
+			"cancellationReason": "Kündigungsgrund",
+			"billedUntil": "Abgerechnet bis"
+		},
+		"statusTypes": {
+			"active": "Laufend",
+			"cancelled": "Gekündigt",
+			"ended": "Beendet",
+			"suspended": "Ausgesetzt"
+		},
+		"pricingTypes": {
+			"trial": "Testphase",
+			"standard": "Standard",
+			"pro": "Pro"
+		},
+		"billingCycles": {
+			"monthly": "Monatlich",
+			"quarterly": "Quartalsweise",
+			"annual": "Jährlich"
+		},
+		"paymentMethods": {
+			"invoice": "Rechnung",
+			"debit": "Lastschrift"
+		},
+		"subjects": {
+			"app": "Anwendung",
+			"addon": "Add-On"
+		},
+		"terms": {
+			"1": "Monatlich",
+			"12": "12 Monate",
+			"24": "24 Monate"
+		},
+		"cancelledByTypes": {
+			"customer": "Kunde",
+			"vinou": "Vinou"
+		},
+		"actions": {
+			"create": {
+				"main": "Vertrag",
+				"sub": "anlegen",
+				"title": "Neuen Vertrag anlegen"
+			},
+			"edit": {
+				"title": "Vertrag bearbeiten"
+			},
+			"search": {
+				"placeholder": "Vertragsnummer oder Kunde suchen"
+			},
+			"cancel": "Kündigen",
+			"revoke": "Kündigung zurückziehen",
+			"terminate": "Sofort beenden",
+			"delete": "Löschen",
+			"applyCatalogPrice": "Preis aus Katalog übernehmen"
+		},
+		"dialogs": {
+			"cancel": {
+				"title": "Vertrag kündigen",
+				"text": "Der Vertrag läuft bis zum Ende der Laufzeit weiter und wird danach beendet.",
+				"reason": "Grund (optional)",
+				"confirm": "Kündigung eintragen"
+			},
+			"terminate": "Diesen Vertrag sofort beenden? Der Kunde verliert damit den Zugang.",
+			"delete": "Diesen Vertrag wirklich löschen? Eine Kündigung ist in der Regel der richtige Weg."
+		},
+		"toasts": {
+			"created": "Vertrag angelegt",
+			"updated": "Vertrag gespeichert",
+			"cancelled": "Kündigung eingetragen",
+			"revoked": "Kündigung zurückgezogen",
+			"terminated": "Vertrag beendet",
+			"deleted": "Vertrag gelöscht"
+		},
+		"views": {
+			"list": {
+				"empty": "Keine Verträge vorhanden.",
+				"running": "Laufende Verträge",
+				"archived": "Beendete Verträge",
+				"apps": "Anwendungen",
+				"addOns": "Add-Ons"
+			}
+		},
+		"filters": {
+			"status": "Status",
+			"pricing": "Tarif",
+			"app": "Anwendung",
+			"showEnded": "Beendete anzeigen",
+			"allApps": "Alle Anwendungen"
+		},
+		"hints": {
+			"priceSnapshot": "Der Preis wird beim Anlegen aus dem Katalog übernommen und bleibt danach unverändert.",
+			"freeAccess": "Partnerzugang ohne Berechnung.",
+			"allowedTerms": "Dieses Produkt ist nur mit bestimmten Mindestlaufzeiten buchbar."
+		}
+	},
 	"systemNews": {
 		"fields": {
 			"date": "Datum",

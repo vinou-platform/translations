@@ -4577,6 +4577,138 @@
 			"archived": "Tickets archivés"
 		}
 	},
+	"license": {
+		"name": {
+			"singular": "Contrat",
+			"plural": "Contrats"
+		},
+		"fieldSets": {
+			"subject": "Objet du contrat",
+			"term": "Durée et facturation",
+			"price": "Prix",
+			"note": "Note",
+			"cancellation": "Résiliation"
+		},
+		"fields": {
+			"key": "Numéro de contrat",
+			"customer": "Client",
+			"subject": "Objet du contrat",
+			"app": "Application",
+			"addOn": "Module complémentaire",
+			"pricing": "Tarif",
+			"freeAccess": "Gratuit en permanence",
+			"status": "Statut",
+			"billingCycle": "Facturation",
+			"paymentMethod": "Mode de paiement",
+			"minimumTerm": "Durée minimale",
+			"renewalTerm": "Reconduction",
+			"noticePeriod": "Délai de résiliation",
+			"startDate": "Début",
+			"endDate": "Fin",
+			"currentTermEnd": "Échéance",
+			"cancellableUntil": "Résiliable jusqu'au",
+			"quantity": "Quantité",
+			"discount": "Remise",
+			"net": "Net",
+			"tax": "TVA",
+			"gross": "Brut",
+			"note": "Note interne",
+			"cancelledAt": "Résilié le",
+			"cancelledBy": "Résilié par",
+			"cancellationReason": "Motif de résiliation",
+			"billedUntil": "Facturé jusqu'au"
+		},
+		"statusTypes": {
+			"active": "En cours",
+			"cancelled": "Résilié",
+			"ended": "Terminé",
+			"suspended": "Suspendu"
+		},
+		"pricingTypes": {
+			"trial": "Essai",
+			"standard": "Standard",
+			"pro": "Pro"
+		},
+		"billingCycles": {
+			"monthly": "Mensuelle",
+			"quarterly": "Trimestrielle",
+			"annual": "Annuelle"
+		},
+		"paymentMethods": {
+			"invoice": "Facture",
+			"debit": "Prélèvement"
+		},
+		"subjects": {
+			"app": "Application",
+			"addon": "Module complémentaire"
+		},
+		"terms": {
+			"1": "Mensuel",
+			"12": "12 mois",
+			"24": "24 mois"
+		},
+		"cancelledByTypes": {
+			"customer": "Client",
+			"vinou": "Vinou"
+		},
+		"actions": {
+			"create": {
+				"main": "Contrat",
+				"sub": "créer",
+				"title": "Créer un nouveau contrat"
+			},
+			"edit": {
+				"title": "Modifier le contrat"
+			},
+			"search": {
+				"placeholder": "Rechercher un numéro de contrat ou un client"
+			},
+			"cancel": "Résilier",
+			"revoke": "Annuler la résiliation",
+			"terminate": "Terminer immédiatement",
+			"delete": "Supprimer",
+			"applyCatalogPrice": "Reprendre le prix du catalogue"
+		},
+		"dialogs": {
+			"cancel": {
+				"title": "Résilier le contrat",
+				"text": "Le contrat court jusqu'à la fin de sa durée puis prend fin.",
+				"reason": "Motif (facultatif)",
+				"confirm": "Enregistrer la résiliation"
+			},
+			"terminate": "Terminer ce contrat immédiatement ? Le client perd alors son accès.",
+			"delete": "Supprimer vraiment ce contrat ? Une résiliation est généralement la bonne voie."
+		},
+		"toasts": {
+			"created": "Contrat créé",
+			"updated": "Contrat enregistré",
+			"cancelled": "Résiliation enregistrée",
+			"revoked": "Résiliation annulée",
+			"terminated": "Contrat terminé",
+			"deleted": "Contrat supprimé"
+		},
+		"views": {
+			"list": {
+				"empty": "Aucun contrat.",
+				"running": "Contrats en cours",
+				"archived": "Contrats terminés",
+				"apps": "Applications",
+				"addOns": "Modules complémentaires"
+			}
+		},
+		"filters": {
+			"status": "Statut",
+			"pricing": "Tarif",
+			"app": "Application",
+			"showEnded": "Afficher les contrats terminés",
+			"allApps": "Toutes les applications"
+		},
+		"hints": {
+			"priceSnapshot": "Le prix est repris du catalogue à la création du contrat et reste ensuite inchangé.",
+			"freeAccess": "Accès partenaire sans facturation.",
+			"allowedTerms": "Ce produit n'est disponible qu'avec certaines durées minimales."
+		}
+	},
 	"systemNews": {
 		"fields": {
 			"date": "Date",
