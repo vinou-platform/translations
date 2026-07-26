@@ -4496,6 +4496,81 @@
 			"archived": "Archivierte Tickets"
 		}
 	},
+	"planCatalog": {
+		"apps": {
+			"title": "Anwendungen",
+			"description": "Die Apps, für die Kunden einen Vertrag abschließen können.",
+			"create": "Anwendung anlegen",
+			"edit": "Anwendung bearbeiten"
+		},
+		"addOns": {
+			"title": "Add-Ons",
+			"description": "Zusatzleistungen, die als eigener Vertrag gebucht werden.",
+			"create": "Add-On anlegen",
+			"edit": "Add-On bearbeiten"
+		},
+		"prices": {
+			"title": "Preise"
+		},
+		"fieldSets": {
+			"general": "Allgemein",
+			"scope": "Geltungsbereich"
+		},
+		"fields": {
+			"title": "Bezeichnung",
+			"name": "Technischer Name",
+			"domain": "Domain",
+			"licensePrefix": "Vertragsnummer-Präfix",
+			"description": "Beschreibung",
+			"type": "Art",
+			"scope": "Geltungsbereich",
+			"apps": "Verfügbar in",
+			"exclusiveGroup": "Ausschlussgruppe",
+			"bookable": "Buchbar",
+			"active": "Aktiv",
+			"notBookable": "Nicht buchbar",
+			"defaultTerm": "Vorauswahl Laufzeit (Monate)",
+			"defaultNotice": "Vorauswahl Kündigungsfrist (Tage)",
+			"limit": "Grenze",
+			"limitValue": "Grenzwert",
+			"limitUnit": "Einheit"
+		},
+		"types": {
+			"addon": "Add-On",
+			"storage": "Speicher",
+			"support": "Support",
+			"product": "Produkt"
+		},
+		"scopes": {
+			"customer": "Kundenweit",
+			"app": "Pro Anwendung"
+		},
+		"actions": {
+			"addPrice": "Preis hinzufügen"
+		},
+		"dialogs": {
+			"deletePrice": "Diesen Preis wirklich löschen? Laufende Verträge behalten ihren Preis."
+		},
+		"toasts": {
+			"saved": "Gespeichert",
+			"priceSaved": "Preis gespeichert",
+			"priceDeleted": "Preis gelöscht",
+			"termsRequired": "Mindestens eine Laufzeit muss zulässig sein.",
+			"appsRequired": "Ein app-bezogenes Add-On braucht mindestens eine Anwendung."
+		},
+		"hints": {
+			"technicalName": "Wird intern verwendet und lässt sich später nicht mehr ändern.",
+			"licensePrefix": "Drei Zeichen, mit denen die Vertragsnummern beginnen.",
+			"allowedTerms": "Nur die hier gewählten Laufzeiten sind buchbar – im Self-Service wie im Adminpanel.",
+			"scope": "Kundenweit gilt über alle Apps, pro Anwendung braucht je App einen eigenen Vertrag.",
+			"exclusiveGroup": "Add-Ons derselben Gruppe ersetzen sich gegenseitig, statt sich zu stapeln.",
+			"bookable": "Steuert, ob der Kunde das Add-On selbst buchen kann.",
+			"priceSnapshot": "Verträge übernehmen den Preis beim Abschluss. Änderungen hier gelten nur für neue Verträge.",
+			"pricePerPlan": "Für Support-Add-Ons hängt der Preis vom Tarif des Kunden ab.",
+			"saveFirst": "Bitte zuerst speichern, danach können Preise gepflegt werden.",
+			"noPrices": "Noch keine Preise hinterlegt."
+		}
+	},
 	"license": {
 		"name": {
 			"singular": "Vertrag",

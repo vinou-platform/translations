@@ -4583,6 +4583,81 @@
 			"archived": "Ticket archiviati"
 		}
 	},
+	"planCatalog": {
+		"apps": {
+			"title": "Applicazioni",
+			"description": "Le app per cui i clienti possono stipulare un contratto.",
+			"create": "Crea applicazione",
+			"edit": "Modifica applicazione"
+		},
+		"addOns": {
+			"title": "Componenti aggiuntivi",
+			"description": "Servizi aggiuntivi che si contrattano separatamente.",
+			"create": "Crea componente",
+			"edit": "Modifica componente"
+		},
+		"prices": {
+			"title": "Prezzi"
+		},
+		"fieldSets": {
+			"general": "Generale",
+			"scope": "Ambito"
+		},
+		"fields": {
+			"title": "Denominazione",
+			"name": "Nome tecnico",
+			"domain": "Dominio",
+			"licensePrefix": "Prefisso numero contratto",
+			"description": "Descrizione",
+			"type": "Tipo",
+			"scope": "Ambito",
+			"apps": "Disponibile in",
+			"exclusiveGroup": "Gruppo esclusivo",
+			"bookable": "Sottoscrivibile",
+			"active": "Attivo",
+			"notBookable": "Non sottoscrivibile",
+			"defaultTerm": "Durata predefinita (mesi)",
+			"defaultNotice": "Preavviso predefinito (giorni)",
+			"limit": "Limite",
+			"limitValue": "Valore limite",
+			"limitUnit": "Unità"
+		},
+		"types": {
+			"addon": "Componente",
+			"storage": "Archiviazione",
+			"support": "Supporto",
+			"product": "Prodotto"
+		},
+		"scopes": {
+			"customer": "Per tutto il cliente",
+			"app": "Per applicazione"
+		},
+		"actions": {
+			"addPrice": "Aggiungi prezzo"
+		},
+		"dialogs": {
+			"deletePrice": "Eliminare davvero questo prezzo? I contratti in corso mantengono il proprio."
+		},
+		"toasts": {
+			"saved": "Salvato",
+			"priceSaved": "Prezzo salvato",
+			"priceDeleted": "Prezzo eliminato",
+			"termsRequired": "Almeno una durata deve essere ammessa.",
+			"appsRequired": "Un componente per applicazione richiede almeno un'applicazione."
+		},
+		"hints": {
+			"technicalName": "Usato internamente, non è più modificabile in seguito.",
+			"licensePrefix": "Tre caratteri con cui iniziano i numeri di contratto.",
+			"allowedTerms": "Solo le durate selezionate qui sono sottoscrivibili, in self service come nel pannello.",
+			"scope": "Per tutto il cliente vale su tutte le app; per applicazione serve un contratto per ogni app.",
+			"exclusiveGroup": "I componenti dello stesso gruppo si sostituiscono invece di sommarsi.",
+			"bookable": "Determina se il cliente può sottoscriverlo da solo.",
+			"priceSnapshot": "I contratti riprendono il prezzo alla stipula. Le modifiche valgono solo per i nuovi contratti.",
+			"pricePerPlan": "Per i componenti di supporto il prezzo dipende dalla tariffa del cliente.",
+			"saveFirst": "Salva prima, i prezzi si gestiscono dopo.",
+			"noPrices": "Ancora nessun prezzo."
+		}
+	},
 	"license": {
 		"name": {
 			"singular": "Contratto",

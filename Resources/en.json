@@ -4583,6 +4583,81 @@
 			"archived": "Archived tickets"
 		}
 	},
+	"planCatalog": {
+		"apps": {
+			"title": "Applications",
+			"description": "The apps customers can hold a contract for.",
+			"create": "Create application",
+			"edit": "Edit application"
+		},
+		"addOns": {
+			"title": "Add-ons",
+			"description": "Extras booked as a contract of their own.",
+			"create": "Create add-on",
+			"edit": "Edit add-on"
+		},
+		"prices": {
+			"title": "Prices"
+		},
+		"fieldSets": {
+			"general": "General",
+			"scope": "Scope"
+		},
+		"fields": {
+			"title": "Title",
+			"name": "Technical name",
+			"domain": "Domain",
+			"licensePrefix": "Contract number prefix",
+			"description": "Description",
+			"type": "Type",
+			"scope": "Scope",
+			"apps": "Available in",
+			"exclusiveGroup": "Exclusive group",
+			"bookable": "Bookable",
+			"active": "Active",
+			"notBookable": "Not bookable",
+			"defaultTerm": "Default term (months)",
+			"defaultNotice": "Default notice period (days)",
+			"limit": "Limit",
+			"limitValue": "Limit value",
+			"limitUnit": "Unit"
+		},
+		"types": {
+			"addon": "Add-on",
+			"storage": "Storage",
+			"support": "Support",
+			"product": "Product"
+		},
+		"scopes": {
+			"customer": "Customer wide",
+			"app": "Per application"
+		},
+		"actions": {
+			"addPrice": "Add price"
+		},
+		"dialogs": {
+			"deletePrice": "Really delete this price? Running contracts keep the price they were signed with."
+		},
+		"toasts": {
+			"saved": "Saved",
+			"priceSaved": "Price saved",
+			"priceDeleted": "Price deleted",
+			"termsRequired": "At least one term has to be allowed.",
+			"appsRequired": "An app bound add-on needs at least one application."
+		},
+		"hints": {
+			"technicalName": "Used internally and cannot be changed later.",
+			"licensePrefix": "Three characters the contract numbers start with.",
+			"allowedTerms": "Only the terms selected here can be booked, in self service as well as in the admin panel.",
+			"scope": "Customer wide is valid across all apps, per application needs a contract for each app.",
+			"exclusiveGroup": "Add-ons of the same group replace each other instead of stacking.",
+			"bookable": "Controls whether customers can book the add-on themselves.",
+			"priceSnapshot": "Contracts copy the price when they start. Changes here only apply to new contracts.",
+			"pricePerPlan": "For support add-ons the price depends on the customer's tariff.",
+			"saveFirst": "Please save first, prices can be maintained afterwards.",
+			"noPrices": "No prices yet."
+		}
+	},
 	"license": {
 		"name": {
 			"singular": "Contract",

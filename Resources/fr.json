@@ -4583,6 +4583,81 @@
 			"archived": "Tickets archivés"
 		}
 	},
+	"planCatalog": {
+		"apps": {
+			"title": "Applications",
+			"description": "Les applications pour lesquelles les clients peuvent souscrire un contrat.",
+			"create": "Créer une application",
+			"edit": "Modifier l'application"
+		},
+		"addOns": {
+			"title": "Modules complémentaires",
+			"description": "Prestations supplémentaires souscrites comme contrat distinct.",
+			"create": "Créer un module",
+			"edit": "Modifier le module"
+		},
+		"prices": {
+			"title": "Tarifs"
+		},
+		"fieldSets": {
+			"general": "Général",
+			"scope": "Portée"
+		},
+		"fields": {
+			"title": "Désignation",
+			"name": "Nom technique",
+			"domain": "Domaine",
+			"licensePrefix": "Préfixe du numéro de contrat",
+			"description": "Description",
+			"type": "Type",
+			"scope": "Portée",
+			"apps": "Disponible dans",
+			"exclusiveGroup": "Groupe exclusif",
+			"bookable": "Souscriptible",
+			"active": "Actif",
+			"notBookable": "Non souscriptible",
+			"defaultTerm": "Durée par défaut (mois)",
+			"defaultNotice": "Préavis par défaut (jours)",
+			"limit": "Limite",
+			"limitValue": "Valeur limite",
+			"limitUnit": "Unité"
+		},
+		"types": {
+			"addon": "Module",
+			"storage": "Stockage",
+			"support": "Support",
+			"product": "Produit"
+		},
+		"scopes": {
+			"customer": "Pour tout le client",
+			"app": "Par application"
+		},
+		"actions": {
+			"addPrice": "Ajouter un tarif"
+		},
+		"dialogs": {
+			"deletePrice": "Supprimer vraiment ce tarif ? Les contrats en cours conservent le leur."
+		},
+		"toasts": {
+			"saved": "Enregistré",
+			"priceSaved": "Tarif enregistré",
+			"priceDeleted": "Tarif supprimé",
+			"termsRequired": "Au moins une durée doit être autorisée.",
+			"appsRequired": "Un module lié à une application a besoin d'au moins une application."
+		},
+		"hints": {
+			"technicalName": "Utilisé en interne, il ne peut plus être modifié ensuite.",
+			"licensePrefix": "Trois caractères par lesquels commencent les numéros de contrat.",
+			"allowedTerms": "Seules les durées sélectionnées ici sont souscriptibles, en libre-service comme dans le panneau.",
+			"scope": "Pour tout le client vaut sur toutes les applications ; par application, il faut un contrat par application.",
+			"exclusiveGroup": "Les modules d'un même groupe se remplacent au lieu de s'additionner.",
+			"bookable": "Détermine si le client peut souscrire lui-même.",
+			"priceSnapshot": "Les contrats reprennent le tarif à la signature. Les modifications ne valent que pour les nouveaux contrats.",
+			"pricePerPlan": "Pour les modules de support, le tarif dépend de la formule du client.",
+			"saveFirst": "Enregistre d'abord, les tarifs se gèrent ensuite.",
+			"noPrices": "Aucun tarif pour le moment."
+		}
+	},
 	"license": {
 		"name": {
 			"singular": "Contrat",
