@@ -4252,7 +4252,8 @@
 			"status": {
 				"label": "Status"
 			},
-			"results": "Shipments found"
+			"results": "Shipments found",
+			"showCustomer": "Show customer"
 		},
 		"statuses": {
 			"active": "Active",
@@ -4409,6 +4410,7 @@
 			"assigned_to": "Assigned to",
 			"number": "Ticket No.",
 			"priority": "Priority",
+			"billable": "Billable job",
 			"customerAreaTitle": "Your Vinou Support Area",
 			"contactPerson": "Contact Person",
 			"createdAt": "Created at"
@@ -4431,7 +4433,8 @@
 			"create": {
 				"main": "New Ticket",
 				"sub": "create",
-				"title": "Create Support Ticket"
+				"title": "Create Support Ticket",
+				"customerPlaceholder": "Search customer …"
 			},
 			"edit": {
 				"title": "Edit Ticket"
@@ -4446,11 +4449,20 @@
 			"addNoteAndAssign": {
 				"main": "Send comment & assign to customer"
 			},
+			"saveAndAssign": {
+				"main": "Save & assign to customer"
+			},
 			"submitNote": {
 				"main": "Submit"
 			},
 			"archive": {
 				"main": "Archive ticket"
+			},
+			"acceptBillable": {
+				"main": "Accept job"
+			},
+			"declineBillable": {
+				"main": "Decline job"
 			}
 		},
 		"filters": {
@@ -4503,7 +4515,19 @@
 			"sectionDescription": "Submit requests, report issues or reply to questions here."
 		},
 		"dialogs": {
-			"delete": "Do you really want to delete this ticket?"
+			"delete": "Do you really want to delete this ticket?",
+			"billableRequest": {
+				"title": "Request approval for a paid job?",
+				"text": "The ticket will be flagged as a paid support job of {amount} EUR net. The customer receives an email and has to approve the job before it may be carried out. Continue?"
+			},
+			"billableAccept": {
+				"title": "Accept job?",
+				"text": "You are bindingly accepting the paid support job of {amount} EUR net. The ticket goes back to the Vinou team and the effort will be invoiced after completion."
+			},
+			"billableDecline": {
+				"title": "Decline job?",
+				"text": "You are declining the paid support job of {amount} EUR net. The request will not be carried out, no costs are incurred and the ticket will be closed. You can open a new ticket at any time."
+			}
 		},
 		"toasts": {
 			"created": "Ticket created!",
@@ -4511,7 +4535,9 @@
 			"deleted": "Ticket deleted!",
 			"closed": "Ticket closed!",
 			"noteSaved": "Comment saved!",
-			"archived": "Ticket archived!"
+			"archived": "Ticket archived!",
+			"billableAccepted": "Job accepted – ticket handed to Vinou!",
+			"billableDeclined": "Job declined – ticket closed!"
 		},
 		"assignedTo": {
 			"vinou": "Vinou Team",
@@ -4527,6 +4553,25 @@
 			"high": "High",
 			"normal": "Normal",
 			"low": "Low"
+		},
+		"billableStatusTypes": {
+			"pending": "Approval pending",
+			"accepted": "Accepted",
+			"declined": "Declined"
+		},
+		"billable": {
+			"title": "Paid support job",
+			"pendingText": "Handling this request is not covered by free support. If you accept, the ticket goes back to our team and we start working on it. If you decline, no costs are incurred and the ticket is closed.",
+			"pendingAdminText": "Approval has been requested from the customer. The job may only be carried out once it has been accepted.",
+			"acceptedText": "You accepted the paid support job. The ticket is back with our team, the effort will be invoiced after completion.",
+			"declinedText": "You declined the paid support job. No costs are incurred, the request will not be carried out and the ticket has been closed.",
+			"netNote": "net, plus VAT",
+			"commentRequired": "Please explain the paid support job – the comment is sent to the customer along with the approval request.",
+			"amountRequired": "Please enter the effort in EUR – no approval can be requested without an amount."
+		},
+		"groups": {
+			"active": "Active tickets",
+			"archived": "Archived tickets"
 		}
 	},
 	"systemNews": {
@@ -8252,6 +8297,7 @@
 			"resetpassword": "Set new password",
 			"sendpasswordresetmail": "Send password mail",
 			"register": "Register",
+			"registernow": "Register now!",
 			"create": {
 				"main": "Create new",
 				"sub": "user"
@@ -8292,7 +8338,7 @@
 				"goto": "Go to login"
 			},
 			"lostpassword": {
-				"title": "Request reset link"
+				"title": "Reset password"
 			},
 			"resetpassword": {
 				"title": "Reset password"
@@ -8324,6 +8370,8 @@
 		},
 		"hints": {
 			"lostpassword": "Lost password?",
+			"backtologin": "Back to login",
+			"noaccount": "No account yet?",
 			"passwordmailsend": "An email with reset link was send. This link expires in 24 hours. Use this to reset your password.",
 			"passwordreset": "New password is set. The used link is not valid anymore.",
 			"register": "No account? <a href='/register'>Register now!</a>",

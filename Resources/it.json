@@ -4280,7 +4280,8 @@
 			},
 			"status": {
 				"label": "Stato spedizione"
-			}
+			},
+			"showCustomer": "Mostra cliente"
 		},
 		"statuses": {
 			"active": "In consegna",
@@ -4409,6 +4410,7 @@
 			"assigned_to": "Assegnato a",
 			"number": "N. ticket",
 			"priority": "Priorità",
+			"billable": "Incarico a pagamento",
 			"customerAreaTitle": "La tua area di supporto Vinou",
 			"contactPerson": "Persona di contatto",
 			"createdAt": "Creato il"
@@ -4431,7 +4433,8 @@
 			"create": {
 				"main": "Nuovo Ticket",
 				"sub": "creare",
-				"title": "Crea Ticket di Supporto"
+				"title": "Crea Ticket di Supporto",
+				"customerPlaceholder": "Cerca cliente …"
 			},
 			"edit": {
 				"title": "Modifica Ticket"
@@ -4446,11 +4449,20 @@
 			"addNoteAndAssign": {
 				"main": "Invia commento e assegna al cliente"
 			},
+			"saveAndAssign": {
+				"main": "Salva e assegna al cliente"
+			},
 			"submitNote": {
 				"main": "Invia"
 			},
 			"archive": {
 				"main": "Archivia ticket"
+			},
+			"acceptBillable": {
+				"main": "Accetta intervento"
+			},
+			"declineBillable": {
+				"main": "Rifiuta intervento"
 			}
 		},
 		"views": {
@@ -4467,7 +4479,19 @@
 			"sectionDescription": "Invia richieste, segnala problemi o rispondi alle domande qui."
 		},
 		"dialogs": {
-			"delete": "Vuoi davvero eliminare questo ticket?"
+			"delete": "Vuoi davvero eliminare questo ticket?",
+			"billableRequest": {
+				"title": "Richiedere approvazione per un intervento a pagamento?",
+				"text": "Il ticket verrà contrassegnato come intervento di assistenza a pagamento di {amount} EUR netti. Il cliente riceve un'e-mail e deve approvare l'intervento prima che possa essere eseguito. Continuare?"
+			},
+			"billableAccept": {
+				"title": "Accettare l'intervento?",
+				"text": "Accetti in modo vincolante l'intervento di assistenza a pagamento di {amount} EUR netti. Il ticket torna così al team Vinou e l'impegno verrà fatturato al termine dei lavori."
+			},
+			"billableDecline": {
+				"title": "Rifiutare l'intervento?",
+				"text": "Rifiuti l'intervento di assistenza a pagamento di {amount} EUR netti. La richiesta non verrà eseguita, non verranno addebitati costi e il ticket verrà chiuso. Puoi aprire un nuovo ticket in qualsiasi momento."
+			}
 		},
 		"toasts": {
 			"created": "Ticket creato!",
@@ -4475,7 +4499,9 @@
 			"deleted": "Ticket eliminato!",
 			"closed": "Ticket chiuso!",
 			"noteSaved": "Commento salvato!",
-			"archived": "Ticket archiviato!"
+			"archived": "Ticket archiviato!",
+			"billableAccepted": "Intervento accettato – ticket al team Vinou!",
+			"billableDeclined": "Intervento rifiutato – ticket chiuso!"
 		},
 		"assignedTo": {
 			"vinou": "Team Vinou",
@@ -4527,6 +4553,25 @@
 				"successText": "Il tuo Supporto Premium è stato prenotato con successo. Ti contatteremo a breve."
 			},
 			"booked": "Prenotato"
+		},
+		"billableStatusTypes": {
+			"pending": "In attesa di approvazione",
+			"accepted": "Accettato",
+			"declined": "Rifiutato"
+		},
+		"billable": {
+			"title": "Intervento di assistenza a pagamento",
+			"pendingText": "La gestione di questa richiesta non rientra nell'assistenza gratuita. Se accetti, il ticket torna al nostro team e iniziamo a lavorarci. Se rifiuti, non verranno addebitati costi e il ticket verrà chiuso.",
+			"pendingAdminText": "L'approvazione è stata richiesta al cliente. L'intervento può essere eseguito solo dopo l'accettazione.",
+			"acceptedText": "Hai accettato l'intervento a pagamento. Il ticket è di nuovo al nostro team, l'impegno verrà fatturato al termine.",
+			"declinedText": "Hai rifiutato l'intervento a pagamento. Non verranno addebitati costi, la richiesta non verrà eseguita e il ticket è stato chiuso.",
+			"netNote": "netto, IVA esclusa",
+			"commentRequired": "Motiva l'intervento a pagamento – il commento viene inviato al cliente insieme alla richiesta di approvazione.",
+			"amountRequired": "Indica l'importo in EUR – senza importo non è possibile richiedere l'approvazione."
+		},
+		"groups": {
+			"active": "Ticket attivi",
+			"archived": "Ticket archiviati"
 		}
 	},
 	"systemNews": {
@@ -8253,6 +8298,7 @@
 			"resetpassword": "Imposta nuova password",
 			"sendpasswordresetmail": "Invia email con password",
 			"register": "Registrati",
+			"registernow": "Registrati ora!",
 			"create": {
 				"main": "Creare nuovo",
 				"sub": "utente"
@@ -8293,7 +8339,7 @@
 				"goto": "Vai al login"
 			},
 			"lostpassword": {
-				"title": "Richiedi link di ripristino"
+				"title": "Reimposta la password"
 			},
 			"resetpassword": {
 				"title": "Resetta la password"
@@ -8325,6 +8371,8 @@
 		},
 		"hints": {
 			"lostpassword": "Password dimenticata?",
+			"backtologin": "Torna al login",
+			"noaccount": "Non hai ancora un account?",
 			"passwordmailsend": "È stata inviata un'e-mail con il link di ripristino. Questo collegamento scade tra 24 ore. Usalo per reimpostare la tua password.",
 			"passwordreset": "La nuova password è impostata. Il link utilizzato non è più valido.",
 			"register": "Nessun account? <a href='/register'>Registrati ora!</a>",

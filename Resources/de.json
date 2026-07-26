@@ -1336,6 +1336,7 @@
 			"resetpassword": "Passwort neu setzen",
 			"sendpasswordresetmail": "Passwort-Mail verschicken",
 			"register": "Registrieren",
+			"registernow": "Jetzt Registrieren!",
 			"create": {
 				"main": "Neuen Benutzer",
 				"sub": "anlegen"
@@ -1376,7 +1377,7 @@
 				"goto": "Zum Login"
 			},
 			"lostpassword": {
-				"title": "Link anfordern"
+				"title": "Passwort zurücksetzen"
 			},
 			"resetpassword": {
 				"title": "Passwort zurücksetzen"
@@ -1410,6 +1411,8 @@
 		},
 		"hints": {
 			"lostpassword": "Passwort vergessen?",
+			"backtologin": "Zurück zum Login",
+			"noaccount": "Noch keinen Account?",
 			"passwordmailsend": "Eine E-Mail mit einem Reset-Link wurde versendet. Dieser ist 24h gültig. Benutze diesen Link, um Dein Passwort zurückzusetzen",
 			"passwordreset": "Dein Passwort wurde neu gesetzt. Der genutzte Link ist nun nicht mehr gültig",
 			"register": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
@@ -4180,7 +4183,8 @@
 			"status": {
 				"label": "Status"
 			},
-			"results": "Sendungen gefunden"
+			"results": "Sendungen gefunden",
+			"showCustomer": "Kunden einblenden"
 		},
 		"statuses": {
 			"active": "Aktiv",
@@ -4314,6 +4318,7 @@
 			"assigned_to": "Zugewiesen an",
 			"number": "Ticket-Nr.",
 			"priority": "Priorität",
+			"billable": "Kostenpflichtiger Auftrag",
 			"customerAreaTitle": "Dein Vinou Support-Bereich",
 			"contactPerson": "Ansprechpartner",
 			"createdAt": "Erstellt am"
@@ -4336,7 +4341,8 @@
 			"create": {
 				"main": "Neues Ticket",
 				"sub": "erstellen",
-				"title": "Support-Ticket erstellen"
+				"title": "Support-Ticket erstellen",
+				"customerPlaceholder": "Kunde suchen …"
 			},
 			"edit": {
 				"title": "Ticket bearbeiten"
@@ -4351,11 +4357,20 @@
 			"addNoteAndAssign": {
 				"main": "Kommentar senden & Kunden zuweisen"
 			},
+			"saveAndAssign": {
+				"main": "Speichern & Kunden zuweisen"
+			},
 			"submitNote": {
 				"main": "Absenden"
 			},
 			"archive": {
 				"main": "Ticket archivieren"
+			},
+			"acceptBillable": {
+				"main": "Auftrag annehmen"
+			},
+			"declineBillable": {
+				"main": "Auftrag ablehnen"
 			}
 		},
 		"filters": {
@@ -4408,7 +4423,19 @@
 			"sectionDescription": "Stelle hier Anfragen, melde Probleme oder beantworte Rückfragen."
 		},
 		"dialogs": {
-			"delete": "Möchtest Du dieses Ticket wirklich löschen?"
+			"delete": "Möchtest Du dieses Ticket wirklich löschen?",
+			"billableRequest": {
+				"title": "Kostenpflichtigen Auftrag anfragen?",
+				"text": "Das Ticket wird als kostenpflichtiger Supportauftrag über {amount} EUR netto gekennzeichnet. Der Kunde erhält eine E-Mail und muss den Auftrag freigeben, bevor er umgesetzt werden darf. Fortfahren?"
+			},
+			"billableAccept": {
+				"title": "Auftrag annehmen?",
+				"text": "Du nimmst den kostenpflichtigen Supportauftrag über {amount} EUR netto verbindlich an. Das Ticket geht damit zurück an das Vinou-Team, der Aufwand wird nach Umsetzung in Rechnung gestellt."
+			},
+			"billableDecline": {
+				"title": "Auftrag ablehnen?",
+				"text": "Du lehnst den kostenpflichtigen Supportauftrag über {amount} EUR netto ab. Die Anfrage wird dann nicht umgesetzt, es entstehen keine Kosten und das Ticket wird geschlossen. Du kannst jederzeit ein neues Ticket eröffnen."
+			}
 		},
 		"toasts": {
 			"created": "Ticket erstellt!",
@@ -4416,7 +4443,9 @@
 			"deleted": "Ticket gelöscht!",
 			"closed": "Ticket geschlossen!",
 			"noteSaved": "Kommentar gespeichert!",
-			"archived": "Ticket archiviert!"
+			"archived": "Ticket archiviert!",
+			"billableAccepted": "Auftrag angenommen – Ticket an Vinou übergeben!",
+			"billableDeclined": "Auftrag abgelehnt – Ticket geschlossen!"
 		},
 		"assignedTo": {
 			"vinou": "Vinou-Team",
@@ -4432,6 +4461,25 @@
 			"high": "Hoch",
 			"normal": "Normal",
 			"low": "Niedrig"
+		},
+		"billableStatusTypes": {
+			"pending": "Freigabe ausstehend",
+			"accepted": "Angenommen",
+			"declined": "Abgelehnt"
+		},
+		"billable": {
+			"title": "Kostenpflichtiger Supportauftrag",
+			"pendingText": "Die Bearbeitung dieser Anfrage ist nicht vom kostenfreien Support abgedeckt. Nimmst Du den Auftrag an, geht das Ticket zurück an unser Team und wir starten mit der Umsetzung. Lehnst Du ab, entstehen keine Kosten und das Ticket wird geschlossen.",
+			"pendingAdminText": "Die Freigabe wurde beim Kunden angefragt. Der Auftrag darf erst nach Annahme umgesetzt werden.",
+			"acceptedText": "Du hast den kostenpflichtigen Auftrag angenommen. Das Ticket liegt jetzt wieder bei unserem Team, der Aufwand wird nach Umsetzung abgerechnet.",
+			"declinedText": "Du hast den kostenpflichtigen Auftrag abgelehnt. Es entstehen keine Kosten, die Anfrage wird nicht umgesetzt und das Ticket wurde geschlossen.",
+			"netNote": "netto, zzgl. MwSt.",
+			"commentRequired": "Bitte begründe den kostenpflichtigen Auftrag – der Kommentar geht mit der Freigabe-Anfrage an den Kunden.",
+			"amountRequired": "Bitte gib den Aufwand in EUR an – ohne Betrag kann keine Freigabe angefragt werden."
+		},
+		"groups": {
+			"active": "Aktive Tickets",
+			"archived": "Archivierte Tickets"
 		}
 	},
 	"systemNews": {

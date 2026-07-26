@@ -4280,7 +4280,8 @@
 			},
 			"status": {
 				"label": "Statut d'expédition"
-			}
+			},
+			"showCustomer": "Afficher le client"
 		},
 		"statuses": {
 			"active": "En livraison",
@@ -4409,6 +4410,7 @@
 			"assigned_to": "Assigné à",
 			"number": "N° ticket",
 			"priority": "Priorité",
+			"billable": "Prestation facturable",
 			"customerAreaTitle": "Votre espace support Vinou",
 			"contactPerson": "Personne de contact",
 			"createdAt": "Créé le"
@@ -4431,7 +4433,8 @@
 			"create": {
 				"main": "Nouveau Ticket",
 				"sub": "créer",
-				"title": "Créer un Ticket de Support"
+				"title": "Créer un Ticket de Support",
+				"customerPlaceholder": "Rechercher un client …"
 			},
 			"edit": {
 				"title": "Modifier le Ticket"
@@ -4446,11 +4449,20 @@
 			"addNoteAndAssign": {
 				"main": "Envoyer commentaire et assigner au client"
 			},
+			"saveAndAssign": {
+				"main": "Enregistrer et attribuer au client"
+			},
 			"submitNote": {
 				"main": "Envoyer"
 			},
 			"archive": {
 				"main": "Archiver le ticket"
+			},
+			"acceptBillable": {
+				"main": "Accepter la prestation"
+			},
+			"declineBillable": {
+				"main": "Refuser la prestation"
 			}
 		},
 		"views": {
@@ -4467,7 +4479,19 @@
 			"sectionDescription": "Soumettez des demandes, signalez des problèmes ou répondez aux questions ici."
 		},
 		"dialogs": {
-			"delete": "Voulez-vous vraiment supprimer ce ticket ?"
+			"delete": "Voulez-vous vraiment supprimer ce ticket ?",
+			"billableRequest": {
+				"title": "Demander la validation de la prestation payante ?",
+				"text": "Le ticket sera marqué comme prestation d'assistance payante de {amount} EUR HT. Le client reçoit un e-mail et doit valider la prestation avant sa réalisation. Continuer ?"
+			},
+			"billableAccept": {
+				"title": "Accepter la prestation ?",
+				"text": "Tu acceptes de manière ferme la prestation d'assistance payante de {amount} EUR HT. Le ticket revient ainsi à l'équipe Vinou et le temps passé sera facturé après réalisation."
+			},
+			"billableDecline": {
+				"title": "Refuser la prestation ?",
+				"text": "Tu refuses la prestation d'assistance payante de {amount} EUR HT. La demande ne sera pas réalisée, aucun frais ne sera engagé et le ticket sera clôturé. Tu peux ouvrir un nouveau ticket à tout moment."
+			}
 		},
 		"toasts": {
 			"created": "Ticket créé !",
@@ -4475,7 +4499,9 @@
 			"deleted": "Ticket supprimé !",
 			"closed": "Ticket fermé!",
 			"noteSaved": "Commentaire enregistré!",
-			"archived": "Ticket archivé!"
+			"archived": "Ticket archivé!",
+			"billableAccepted": "Prestation acceptée – ticket transmis à Vinou !",
+			"billableDeclined": "Prestation refusée – ticket clôturé !"
 		},
 		"assignedTo": {
 			"vinou": "Équipe Vinou",
@@ -4527,6 +4553,25 @@
 				"successText": "Votre Support Premium a été réservé avec succès. Nous vous contacterons prochainement."
 			},
 			"booked": "Souscrit"
+		},
+		"billableStatusTypes": {
+			"pending": "Validation en attente",
+			"accepted": "Acceptée",
+			"declined": "Refusée"
+		},
+		"billable": {
+			"title": "Prestation d'assistance payante",
+			"pendingText": "Le traitement de cette demande n'est pas couvert par l'assistance gratuite. Si tu acceptes, le ticket revient à notre équipe et nous commençons la réalisation. Si tu refuses, aucun frais n'est engagé et le ticket est clôturé.",
+			"pendingAdminText": "La validation a été demandée au client. La prestation ne peut être réalisée qu'après acceptation.",
+			"acceptedText": "Tu as accepté la prestation payante. Le ticket est de nouveau chez notre équipe, le temps passé sera facturé après réalisation.",
+			"declinedText": "Tu as refusé la prestation payante. Aucun frais n'est engagé, la demande ne sera pas réalisée et le ticket a été clôturé.",
+			"netNote": "HT, TVA en sus",
+			"commentRequired": "Merci de justifier la prestation payante – le commentaire est envoyé au client avec la demande de validation.",
+			"amountRequired": "Merci d'indiquer le montant en EUR – aucune validation ne peut être demandée sans montant."
+		},
+		"groups": {
+			"active": "Tickets actifs",
+			"archived": "Tickets archivés"
 		}
 	},
 	"systemNews": {
@@ -8253,6 +8298,7 @@
 			"resetpassword": "Definir un nouveau mot de passe",
 			"sendpasswordresetmail": "Envoyer un e-mail de mot de passe",
 			"register": "S'inscrire",
+			"registernow": "Inscrivez-vous maintenant !",
 			"create": {
 				"main": "Créer un nouveau",
 				"sub": "utilisateur"
@@ -8293,7 +8339,7 @@
 				"goto": "Aller à la connexion"
 			},
 			"lostpassword": {
-				"title": "Demander un lien de réinitialisation"
+				"title": "Réinitialiser le mot de passe"
 			},
 			"resetpassword": {
 				"title": "Réinitialiser le mot de passe"
@@ -8325,6 +8371,8 @@
 		},
 		"hints": {
 			"lostpassword": "Mot de passe perdu?",
+			"backtologin": "Retour à la connexion",
+			"noaccount": "Pas encore de compte ?",
 			"passwordmailsend": "Un e-mail avec un lien de réinitialisation a été envoyé. Ce lien expire dans 24 heures. Utilisez ceci pour réinitialiser votre mot de passe.",
 			"passwordreset": "Le nouveau mot de passe est défini. Le lien utilisé n'est plus valide.",
 			"register": "Pas de compte? <a href='/register'> Inscrivez-vous maintenant! </a>",

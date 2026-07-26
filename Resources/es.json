@@ -4280,7 +4280,8 @@
 			},
 			"status": {
 				"label": "Estado del envío"
-			}
+			},
+			"showCustomer": "Mostrar cliente"
 		},
 		"statuses": {
 			"active": "En entrega",
@@ -4409,6 +4410,7 @@
 			"assigned_to": "Asignado a",
 			"number": "N.º de ticket",
 			"priority": "Prioridad",
+			"billable": "Encargo facturable",
 			"customerAreaTitle": "Tu área de soporte Vinou",
 			"contactPerson": "Persona de contacto",
 			"createdAt": "Creado el"
@@ -4431,7 +4433,8 @@
 			"create": {
 				"main": "Nuevo Ticket",
 				"sub": "crear",
-				"title": "Crear Ticket de Soporte"
+				"title": "Crear Ticket de Soporte",
+				"customerPlaceholder": "Buscar cliente …"
 			},
 			"edit": {
 				"title": "Editar Ticket"
@@ -4446,11 +4449,20 @@
 			"addNoteAndAssign": {
 				"main": "Enviar comentario y asignar al cliente"
 			},
+			"saveAndAssign": {
+				"main": "Guardar y asignar al cliente"
+			},
 			"submitNote": {
 				"main": "Enviar"
 			},
 			"archive": {
 				"main": "Archivar ticket"
+			},
+			"acceptBillable": {
+				"main": "Aceptar encargo"
+			},
+			"declineBillable": {
+				"main": "Rechazar encargo"
 			}
 		},
 		"views": {
@@ -4467,7 +4479,19 @@
 			"sectionDescription": "Envía solicitudes, reporta errores o responde preguntas aquí."
 		},
 		"dialogs": {
-			"delete": "¿Realmente deseas eliminar este ticket?"
+			"delete": "¿Realmente deseas eliminar este ticket?",
+			"billableRequest": {
+				"title": "¿Solicitar aprobación de un encargo de pago?",
+				"text": "El ticket se marcará como encargo de soporte de pago por {amount} EUR netos. El cliente recibe un correo electrónico y debe aprobar el encargo antes de que pueda ejecutarse. ¿Continuar?"
+			},
+			"billableAccept": {
+				"title": "¿Aceptar el encargo?",
+				"text": "Aceptas de forma vinculante el encargo de soporte de pago por {amount} EUR netos. El ticket vuelve así al equipo de Vinou y el trabajo se facturará una vez realizado."
+			},
+			"billableDecline": {
+				"title": "¿Rechazar el encargo?",
+				"text": "Rechazas el encargo de soporte de pago por {amount} EUR netos. La solicitud no se ejecutará, no se generará ningún coste y el ticket se cerrará. Puedes abrir un nuevo ticket en cualquier momento."
+			}
 		},
 		"toasts": {
 			"created": "¡Ticket creado!",
@@ -4475,7 +4499,9 @@
 			"deleted": "¡Ticket eliminado!",
 			"closed": "¡Ticket cerrado!",
 			"noteSaved": "¡Comentario guardado!",
-			"archived": "¡Ticket archivado!"
+			"archived": "¡Ticket archivado!",
+			"billableAccepted": "¡Encargo aceptado, ticket enviado a Vinou!",
+			"billableDeclined": "¡Encargo rechazado, ticket cerrado!"
 		},
 		"assignedTo": {
 			"vinou": "Equipo Vinou",
@@ -4527,6 +4553,25 @@
 				"successText": "Tu Soporte Premium ha sido contratado. Nos pondremos en contacto contigo pronto."
 			},
 			"booked": "Contratado"
+		},
+		"billableStatusTypes": {
+			"pending": "Aprobación pendiente",
+			"accepted": "Aceptado",
+			"declined": "Rechazado"
+		},
+		"billable": {
+			"title": "Encargo de soporte de pago",
+			"pendingText": "La gestión de esta solicitud no está cubierta por el soporte gratuito. Si lo aceptas, el ticket vuelve a nuestro equipo y empezamos con la ejecución. Si lo rechazas, no se genera ningún coste y el ticket se cierra.",
+			"pendingAdminText": "Se ha solicitado la aprobación al cliente. El encargo solo puede ejecutarse tras su aceptación.",
+			"acceptedText": "Has aceptado el encargo de pago. El ticket está de nuevo con nuestro equipo y el trabajo se facturará una vez realizado.",
+			"declinedText": "Has rechazado el encargo de pago. No se genera ningún coste, la solicitud no se ejecutará y el ticket se ha cerrado.",
+			"netNote": "neto, más IVA",
+			"commentRequired": "Justifica el encargo de pago: el comentario se envía al cliente junto con la solicitud de aprobación.",
+			"amountRequired": "Indica el importe en EUR: sin importe no se puede solicitar la aprobación."
+		},
+		"groups": {
+			"active": "Tickets activos",
+			"archived": "Tickets archivados"
 		}
 	},
 	"systemNews": {
@@ -8253,6 +8298,7 @@
 			"resetpassword": "Establecer nueva contraseña",
 			"sendpasswordresetmail": "Enviar correo de contraseña",
 			"register": "Registrarse",
+			"registernow": "¡Regístrate ahora!",
 			"create": {
 				"main": "Crear nuevo",
 				"sub": "usario"
@@ -8293,7 +8339,7 @@
 				"goto": "Ir a iniciar sesión"
 			},
 			"lostpassword": {
-				"title": "Solicitar Restablecer Enlace"
+				"title": "Restablecer contraseña"
 			},
 			"resetpassword": {
 				"title": "Restablecer la contraseña"
@@ -8325,6 +8371,8 @@
 		},
 		"hints": {
 			"lostpassword": "Contraseña perdida?",
+			"backtologin": "Volver al inicio de sesión",
+			"noaccount": "¿Aún no tienes cuenta?",
 			"passwordmailsend": "Se envió un correo electrónico con el enlace de restablecimiento. Este enlace caduca en 24 horas. Use esto para restablecer su contraseña.",
 			"passwordreset": "Se establece una nueva contraseña. El enlace usado ya no es válido.",
 			"register": "No tienes cuenta? <a href='/register'>Regístrese ahora!</a>",
