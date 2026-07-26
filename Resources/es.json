@@ -8277,6 +8277,11 @@
 	"sysTool_account": "ajustes",
 	"system": {
 		"mailTypes": {
+			"licenses": {
+				"noticeReminder": {
+					"title": "Tu contrato finaliza pronto"
+				}
+			},
 			"monitoring": {
 				"trialExpired": {
 					"title": "Tu periodo de prueba de Vinou ha caducado"

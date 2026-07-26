@@ -312,6 +312,11 @@
 	},
 	"system": {
 		"mailTypes": {
+			"licenses": {
+				"noticeReminder": {
+					"title": "Deine Vertragslaufzeit endet bald"
+				}
+			},
 			"monitoring": {
 				"trialExpired": {
 					"title": "Deine Vinou-Testphase ist abgelaufen"

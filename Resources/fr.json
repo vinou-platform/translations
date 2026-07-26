@@ -8277,6 +8277,11 @@
 	"sysTool_account": "Configuration",
 	"system": {
 		"mailTypes": {
+			"licenses": {
+				"noticeReminder": {
+					"title": "Votre contrat arrive bientôt à échéance"
+				}
+			},
 			"monitoring": {
 				"trialExpired": {
 					"title": "Votre période d'essai Vinou a expiré"
