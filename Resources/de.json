@@ -1840,6 +1840,50 @@
 		},
 		"errors": {
 			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat."
+		},
+		"recalculation": {
+			"title": "Vorgang neugenerieren",
+			"hint": "Nur für nachweislich falsch berechnete Belege. Die Rechnungsnummer bleibt erhalten und der Beleg wird ersetzt – PDF und E-Invoice werden neu erzeugt. Vor der Neugenerierung muss die schriftliche Bestätigung des Kunden vorliegen. Der Kunde ist anschließend dafür verantwortlich, die neue Rechnung erneut zuzustellen und die alte Fassung beim Empfänger vernichten zu lassen.",
+			"before": "Vorher",
+			"after": "Nachher",
+			"unchanged": "Die Neuberechnung ergibt keine Abweichung. Eine Neugenerierung ist nicht möglich.",
+			"search": {
+				"label": "Vorgang suchen",
+				"placeholder": "Rechnungs- oder Bestellnummer"
+			},
+			"list": {
+				"order": "Bestellung",
+				"empty": "Kein Vorgang gefunden."
+			},
+			"table": {
+				"position": "Position",
+				"quantity": "Menge",
+				"taxrate": "Steuersatz",
+				"net": "Netto",
+				"tax": "Steuer",
+				"gross": "Brutto",
+				"sum": "Summe"
+			},
+			"actions": {
+				"open": "Vorgang neugenerieren",
+				"search": "Suchen",
+				"confirm": "Neu generieren"
+			},
+			"dialogs": {
+				"confirm": "Vorgang wirklich neu generieren? Bestellung und Rechnung werden neu berechnet und die Dokumente ersetzt."
+			},
+			"toasts": {
+				"done": "Vorgang wurde neu generiert.",
+				"failed": "Neugenerierung fehlgeschlagen.",
+				"searchFailed": "Suche fehlgeschlagen.",
+				"previewFailed": "Vorschau konnte nicht geladen werden."
+			},
+			"head": {
+				"sender": "Absender",
+				"recipient": "Rechnungsempfänger",
+				"invoice": "Rechnung",
+				"order": "Bestellung"
+			}
 		}
 	},
 	"message": {

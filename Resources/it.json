@@ -2016,6 +2016,50 @@
 		},
 		"errors": {
 			"registrationFailed": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto."
+		},
+		"recalculation": {
+			"title": "Rigenerare l’operazione",
+			"hint": "Solo per documenti con un errore di calcolo dimostrato. Il numero della fattura resta invariato e il documento viene sostituito: vengono rigenerati sia il PDF sia la fattura elettronica. Prima della rigenerazione deve essere disponibile la conferma scritta del cliente. Il cliente è poi responsabile di inviare nuovamente la nuova fattura e di far distruggere la versione precedente presso il destinatario.",
+			"before": "Prima",
+			"after": "Dopo",
+			"unchanged": "Il ricalcolo non produce alcuna differenza. La rigenerazione non è possibile.",
+			"search": {
+				"label": "Cerca operazione",
+				"placeholder": "Numero di fattura o d’ordine"
+			},
+			"list": {
+				"order": "Ordine",
+				"empty": "Nessuna operazione trovata."
+			},
+			"table": {
+				"position": "Voce",
+				"quantity": "Quantità",
+				"taxrate": "Aliquota",
+				"net": "Netto",
+				"tax": "Imposta",
+				"gross": "Lordo",
+				"sum": "Totale"
+			},
+			"actions": {
+				"open": "Rigenerare l’operazione",
+				"search": "Cerca",
+				"confirm": "Rigenera"
+			},
+			"dialogs": {
+				"confirm": "Rigenerare davvero questa operazione? Ordine e fattura verranno ricalcolati e i documenti sostituiti."
+			},
+			"toasts": {
+				"done": "Operazione rigenerata.",
+				"failed": "Rigenerazione non riuscita.",
+				"searchFailed": "Ricerca non riuscita.",
+				"previewFailed": "Impossibile caricare l’anteprima."
+			},
+			"head": {
+				"sender": "Mittente",
+				"recipient": "Destinatario della fattura",
+				"invoice": "Fattura",
+				"order": "Ordine"
+			}
 		}
 	},
 	"dashboard": {

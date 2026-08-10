@@ -2016,6 +2016,50 @@
 		},
 		"errors": {
 			"registrationFailed": "Something went wrong during the registration process. Please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
+		},
+		"recalculation": {
+			"title": "Regenerate transaction",
+			"hint": "Only for documents with a proven calculation error. The invoice number is kept and the document is replaced – both PDF and e-invoice are regenerated. The customer’s written confirmation must be obtained beforehand. Afterwards the customer is responsible for delivering the new invoice again and for having the previous version destroyed at the recipient.",
+			"before": "Before",
+			"after": "After",
+			"unchanged": "The recalculation yields no difference. Regeneration is not possible.",
+			"search": {
+				"label": "Search transaction",
+				"placeholder": "Invoice or order number"
+			},
+			"list": {
+				"order": "Order",
+				"empty": "No transaction found."
+			},
+			"table": {
+				"position": "Item",
+				"quantity": "Quantity",
+				"taxrate": "Tax rate",
+				"net": "Net",
+				"tax": "Tax",
+				"gross": "Gross",
+				"sum": "Total"
+			},
+			"actions": {
+				"open": "Regenerate transaction",
+				"search": "Search",
+				"confirm": "Regenerate"
+			},
+			"dialogs": {
+				"confirm": "Really regenerate this transaction? Order and invoice will be recalculated and the documents replaced."
+			},
+			"toasts": {
+				"done": "Transaction regenerated.",
+				"failed": "Regeneration failed.",
+				"searchFailed": "Search failed.",
+				"previewFailed": "Preview could not be loaded."
+			},
+			"head": {
+				"sender": "Sender",
+				"recipient": "Invoice recipient",
+				"invoice": "Invoice",
+				"order": "Order"
+			}
 		}
 	},
 	"dashboard": {

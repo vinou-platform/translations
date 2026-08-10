@@ -2016,6 +2016,50 @@
 		},
 		"errors": {
 			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
+		},
+		"recalculation": {
+			"title": "Régénérer l’opération",
+			"hint": "Uniquement pour les documents dont l’erreur de calcul est avérée. Le numéro de facture est conservé et le document est remplacé : le PDF et la facture électronique sont régénérés. La confirmation écrite du client doit être obtenue au préalable. Le client est ensuite responsable de renvoyer la nouvelle facture et de faire détruire l’ancienne version chez le destinataire.",
+			"before": "Avant",
+			"after": "Après",
+			"unchanged": "Le recalcul ne donne aucun écart. La régénération n’est pas possible.",
+			"search": {
+				"label": "Rechercher une opération",
+				"placeholder": "Numéro de facture ou de commande"
+			},
+			"list": {
+				"order": "Commande",
+				"empty": "Aucune opération trouvée."
+			},
+			"table": {
+				"position": "Poste",
+				"quantity": "Quantité",
+				"taxrate": "Taux de TVA",
+				"net": "Net",
+				"tax": "TVA",
+				"gross": "Brut",
+				"sum": "Total"
+			},
+			"actions": {
+				"open": "Régénérer l’opération",
+				"search": "Rechercher",
+				"confirm": "Régénérer"
+			},
+			"dialogs": {
+				"confirm": "Voulez-vous vraiment régénérer cette opération ? La commande et la facture seront recalculées et les documents remplacés."
+			},
+			"toasts": {
+				"done": "L’opération a été régénérée.",
+				"failed": "Échec de la régénération.",
+				"searchFailed": "Échec de la recherche.",
+				"previewFailed": "Impossible de charger l’aperçu."
+			},
+			"head": {
+				"sender": "Expéditeur",
+				"recipient": "Destinataire de la facture",
+				"invoice": "Facture",
+				"order": "Commande"
+			}
 		}
 	},
 	"dashboard": {

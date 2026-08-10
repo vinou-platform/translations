@@ -2016,6 +2016,50 @@
 		},
 		"errors": {
 			"registrationFailed": "Ha ocurrido un error durante tu registración, por favor contacta directamente nuestro equipo: kontakt@vinou.de oder +49 6131 6245390 o usa el Support-Chat."
+		},
+		"recalculation": {
+			"title": "Regenerar operación",
+			"hint": "Solo para documentos con un error de cálculo demostrado. El número de factura se mantiene y el documento se sustituye: se regeneran tanto el PDF como la factura electrónica. Antes de regenerar debe existir la confirmación por escrito del cliente. A continuación, el cliente es responsable de volver a enviar la nueva factura y de que se destruya la versión anterior en el destinatario.",
+			"before": "Antes",
+			"after": "Después",
+			"unchanged": "El nuevo cálculo no muestra ninguna diferencia. No es posible regenerar.",
+			"search": {
+				"label": "Buscar operación",
+				"placeholder": "Número de factura o de pedido"
+			},
+			"list": {
+				"order": "Pedido",
+				"empty": "No se ha encontrado ninguna operación."
+			},
+			"table": {
+				"position": "Posición",
+				"quantity": "Cantidad",
+				"taxrate": "Tipo impositivo",
+				"net": "Neto",
+				"tax": "Impuesto",
+				"gross": "Bruto",
+				"sum": "Total"
+			},
+			"actions": {
+				"open": "Regenerar operación",
+				"search": "Buscar",
+				"confirm": "Regenerar"
+			},
+			"dialogs": {
+				"confirm": "¿Regenerar realmente esta operación? El pedido y la factura se recalcularán y se sustituirán los documentos."
+			},
+			"toasts": {
+				"done": "La operación se ha regenerado.",
+				"failed": "Error al regenerar.",
+				"searchFailed": "Error en la búsqueda.",
+				"previewFailed": "No se ha podido cargar la vista previa."
+			},
+			"head": {
+				"sender": "Remitente",
+				"recipient": "Destinatario de la factura",
+				"invoice": "Factura",
+				"order": "Pedido"
+			}
 		}
 	},
 	"dashboard": {
