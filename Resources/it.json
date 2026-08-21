@@ -8408,6 +8408,17 @@
 					"role": "Filtra i ruoli utente"
 				},
 				"lastModification": "Ultima modifica"
+			},
+			"delete": {
+				"title": "Elimina utente",
+				"intro": "L'utente {name} verrà eliminato definitivamente. Questa azione non può essere annullata.",
+				"tokensIntro": "Su questo utente sono registrate delle interfacce. Affinché i collegamenti continuino a funzionare, ogni interfaccia deve essere trasferita a un altro utente prima dell'eliminazione.",
+				"assignAll": "Trasferisci tutte le interfacce a",
+				"selectPlaceholder": "Seleziona utente",
+				"target": "Nuovo utente",
+				"confirm": "Elimina utente",
+				"noCandidates": "Non esiste un altro utente attivo con il ruolo «{role}» a cui trasferire le interfacce.",
+				"noCandidatesHint": "Si prega di modificare o eliminare prima le interfacce nella gestione delle interfacce."
 			}
 		},
 		"toasts": {

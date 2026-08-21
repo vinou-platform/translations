@@ -8408,6 +8408,17 @@
 					"role": "Filtrer les rôles des utilisateurs"
 				},
 				"lastModification": "Dernière modification"
+			},
+			"delete": {
+				"title": "Supprimer l'utilisateur",
+				"intro": "L'utilisateur {name} sera définitivement supprimé. Cette action est irréversible.",
+				"tokensIntro": "Des interfaces sont enregistrées sur cet utilisateur. Pour que les connexions continuent de fonctionner, chaque interface doit être transférée à un autre utilisateur avant la suppression.",
+				"assignAll": "Transférer toutes les interfaces à",
+				"selectPlaceholder": "Choisir un utilisateur",
+				"target": "Nouvel utilisateur",
+				"confirm": "Supprimer l'utilisateur",
+				"noCandidates": "Il n'existe aucun autre utilisateur actif avec le rôle « {role} » auquel les interfaces pourraient être transférées.",
+				"noCandidatesHint": "Veuillez d'abord modifier ou supprimer les interfaces dans la gestion des interfaces."
 			}
 		},
 		"toasts": {

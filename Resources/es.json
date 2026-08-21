@@ -8408,6 +8408,17 @@
 					"role": "Filtrar roles de usuario"
 				},
 				"lastModification": "Última modificación"
+			},
+			"delete": {
+				"title": "Eliminar usuario",
+				"intro": "El usuario {name} se eliminará definitivamente. Esta acción no se puede deshacer.",
+				"tokensIntro": "Hay interfaces registradas en este usuario. Para que las conexiones sigan funcionando, cada interfaz debe transferirse a otro usuario antes de la eliminación.",
+				"assignAll": "Transferir todas las interfaces a",
+				"selectPlaceholder": "Seleccionar usuario",
+				"target": "Nuevo usuario",
+				"confirm": "Eliminar usuario",
+				"noCandidates": "No existe ningún otro usuario activo con el rol «{role}» al que se puedan transferir las interfaces.",
+				"noCandidatesHint": "Por favor, ajuste o elimine primero las interfaces en la gestión de interfaces."
 			}
 		},
 		"toasts": {

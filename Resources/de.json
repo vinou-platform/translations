@@ -1398,6 +1398,17 @@
 					"hintMaxSize": "Max. 5 MB"
 				},
 				"lastModification": "Letzte Änderung"
+			},
+			"delete": {
+				"title": "Benutzer löschen",
+				"intro": "Der Benutzer {name} wird endgültig gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+				"tokensIntro": "Auf diesen Benutzer sind Schnittstellen registriert. Damit die Anbindungen weiterlaufen, muss jede Schnittstelle vor dem Löschen auf einen anderen Benutzer übertragen werden.",
+				"assignAll": "Alle Schnittstellen übertragen auf",
+				"selectPlaceholder": "Benutzer wählen",
+				"target": "Neuer Benutzer",
+				"confirm": "Benutzer löschen",
+				"noCandidates": "Es gibt keinen weiteren aktiven Benutzer mit der Rolle „{role}“, auf den die Schnittstellen übertragen werden könnten.",
+				"noCandidatesHint": "Bitte die Schnittstellen zuerst in der Schnittstellenverwaltung anpassen oder löschen."
 			}
 		},
 		"toasts": {

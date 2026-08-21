@@ -8407,6 +8407,17 @@
 					"role": "Filter user roles"
 				},
 				"lastModification": "Last modified"
+			},
+			"delete": {
+				"title": "Delete user",
+				"intro": "The user {name} will be deleted permanently. This action cannot be undone.",
+				"tokensIntro": "Interfaces are registered on this user. To keep the connections working, every interface has to be handed over to another user before deletion.",
+				"assignAll": "Hand over all interfaces to",
+				"selectPlaceholder": "Select user",
+				"target": "New user",
+				"confirm": "Delete user",
+				"noCandidates": "There is no other active user with the role “{role}” the interfaces could be handed over to.",
+				"noCandidatesHint": "Please adjust or delete the interfaces in the interface management first."
 			}
 		},
 		"toasts": {
