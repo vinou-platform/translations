@@ -4268,7 +4268,11 @@
 				"main": "Seguimiento",
 				"sub": "de envío"
 			},
-			"exportTitle": "Exportar envíos"
+			"exportTitle": "Exportar envíos",
+			"calculate": {
+				"main": "Gastos de envío",
+				"sub": "calcular"
+			}
 		},
 		"fields": {
 			"carrier": "Prestador de servicios de envío",
@@ -4305,6 +4309,28 @@
 			},
 			"gallery": {
 				"empty": "No hay datos de envío"
+			},
+			"calculator": {
+				"title": "Calcular gastos de envío",
+				"intro": "Consulta el precio al transportista sin crear un envío.",
+				"target": "Dirección de destino",
+				"manualAddress": "Introducir dirección",
+				"existingClient": "Seleccionar cliente",
+				"searchClient": "Buscar cliente",
+				"searchPlaceholder": "p. ej. empresa, nombre, ciudad",
+				"noResults": "No se han encontrado clientes",
+				"changeClient": "Elegir otro cliente",
+				"firstName": "Nombre",
+				"lastName": "Apellidos",
+				"streetPlaceholder": "Calle Ejemplo 12",
+				"streetHint": "El número es necesario para la consulta.",
+				"parcel": "Envío",
+				"weight": "Peso (en kg)",
+				"calculate": "Calcular",
+				"errors": {
+					"load": "No se han podido cargar los transportistas ni las unidades de embalaje.",
+					"quote": "No se han podido determinar los gastos de envío."
+				}
 			}
 		},
 		"dialogs": {

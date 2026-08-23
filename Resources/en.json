@@ -4268,7 +4268,11 @@
 				"main": "Track order",
 				"sub": " "
 			},
-			"exportTitle": "Export shipments"
+			"exportTitle": "Export shipments",
+			"calculate": {
+				"main": "Shipping costs",
+				"sub": "calculate"
+			}
 		},
 		"fields": {
 			"carrier": "Carrier",
@@ -4333,6 +4337,28 @@
 			},
 			"gallery": {
 				"empty": "No shipments exists"
+			},
+			"calculator": {
+				"title": "Calculate shipping costs",
+				"intro": "Asks the carrier for the price without creating a shipment.",
+				"target": "Target address",
+				"manualAddress": "Enter address",
+				"existingClient": "Select client",
+				"searchClient": "Search client",
+				"searchPlaceholder": "e.g. company, name, city",
+				"noResults": "No clients found",
+				"changeClient": "Choose another client",
+				"firstName": "First name",
+				"lastName": "Last name",
+				"streetPlaceholder": "Sample Street 12",
+				"streetHint": "The house number is required for the request.",
+				"parcel": "Parcel",
+				"weight": "Weight (in kg)",
+				"calculate": "Calculate",
+				"errors": {
+					"load": "Carriers and packaging units could not be loaded.",
+					"quote": "The shipping costs could not be determined."
+				}
 			}
 		},
 		"dialogs": {

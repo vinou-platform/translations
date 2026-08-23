@@ -4268,7 +4268,11 @@
 				"main": "Suivi",
 				"sub": "d'expédition"
 			},
-			"exportTitle": "Exporter les expéditions"
+			"exportTitle": "Exporter les expéditions",
+			"calculate": {
+				"main": "Frais d'envoi",
+				"sub": "calculer"
+			}
 		},
 		"fields": {
 			"carrier": "Service d'expédition",
@@ -4305,6 +4309,28 @@
 			},
 			"gallery": {
 				"empty": "Aucune donnée d'envoi disponible"
+			},
+			"calculator": {
+				"title": "Calculer les frais d'envoi",
+				"intro": "Demande le prix au transporteur sans créer d'expédition.",
+				"target": "Adresse de destination",
+				"manualAddress": "Saisir une adresse",
+				"existingClient": "Choisir un client",
+				"searchClient": "Rechercher un client",
+				"searchPlaceholder": "p. ex. société, nom, ville",
+				"noResults": "Aucun client trouvé",
+				"changeClient": "Choisir un autre client",
+				"firstName": "Prénom",
+				"lastName": "Nom",
+				"streetPlaceholder": "Rue de l'Exemple 12",
+				"streetHint": "Le numéro de rue est nécessaire pour la demande.",
+				"parcel": "Colis",
+				"weight": "Poids (en kg)",
+				"calculate": "Calculer",
+				"errors": {
+					"load": "Les transporteurs et les unités d'emballage n'ont pas pu être chargés.",
+					"quote": "Les frais d'envoi n'ont pas pu être déterminés."
+				}
 			}
 		},
 		"dialogs": {

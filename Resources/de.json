@@ -4235,7 +4235,11 @@
 				"main": "Sendungsverfolgung",
 				"sub": "öffnen"
 			},
-			"exportTitle": "Sendungen exportieren"
+			"exportTitle": "Sendungen exportieren",
+			"calculate": {
+				"main": "Versandkosten",
+				"sub": "berechnen"
+			}
 		},
 		"filters": {
 			"search": {
@@ -4300,6 +4304,28 @@
 			},
 			"gallery": {
 				"empty": "Keine Sendungsdaten vorhanden"
+			},
+			"calculator": {
+				"title": "Versandkosten berechnen",
+				"intro": "Fragt den Preis beim Versanddienstleister an, ohne eine Sendung anzulegen.",
+				"target": "Zieladresse",
+				"manualAddress": "Adresse eingeben",
+				"existingClient": "Kunde auswählen",
+				"searchClient": "Kunde suchen",
+				"searchPlaceholder": "z.B. Firma, Name, Ort",
+				"noResults": "Keine Kunden gefunden",
+				"changeClient": "Anderen Kunden wählen",
+				"firstName": "Vorname",
+				"lastName": "Nachname",
+				"streetPlaceholder": "Musterstraße 12",
+				"streetHint": "Die Hausnummer wird für die Anfrage benötigt.",
+				"parcel": "Sendung",
+				"weight": "Gewicht (in kg)",
+				"calculate": "Berechnen",
+				"errors": {
+					"load": "Versanddienstleister und Versandeinheiten konnten nicht geladen werden.",
+					"quote": "Die Versandkosten konnten nicht ermittelt werden."
+				}
 			}
 		},
 		"dialogs": {

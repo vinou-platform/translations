@@ -4268,7 +4268,11 @@
 				"main": "Tracciabilità",
 				"sub": "della spedizione"
 			},
-			"exportTitle": "Esporta spedizioni"
+			"exportTitle": "Esporta spedizioni",
+			"calculate": {
+				"main": "Costi di spedizione",
+				"sub": "calcolare"
+			}
 		},
 		"fields": {
 			"carrier": "Servizio di spedizione",
@@ -4305,6 +4309,28 @@
 			},
 			"gallery": {
 				"empty": "Nessun dato di spedizione disponibile"
+			},
+			"calculator": {
+				"title": "Calcolare i costi di spedizione",
+				"intro": "Richiede il prezzo al corriere senza creare una spedizione.",
+				"target": "Indirizzo di destinazione",
+				"manualAddress": "Inserire indirizzo",
+				"existingClient": "Selezionare cliente",
+				"searchClient": "Cerca cliente",
+				"searchPlaceholder": "es. azienda, nome, città",
+				"noResults": "Nessun cliente trovato",
+				"changeClient": "Scegliere un altro cliente",
+				"firstName": "Nome",
+				"lastName": "Cognome",
+				"streetPlaceholder": "Via Esempio 12",
+				"streetHint": "Il numero civico è necessario per la richiesta.",
+				"parcel": "Spedizione",
+				"weight": "Peso (in kg)",
+				"calculate": "Calcola",
+				"errors": {
+					"load": "Non è stato possibile caricare corrieri e unità di imballaggio.",
+					"quote": "Non è stato possibile determinare i costi di spedizione."
+				}
 			}
 		},
 		"dialogs": {
