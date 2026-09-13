@@ -4778,6 +4778,7 @@
 				"importstatus": "{processed} von {total} Datensätzen verarbeitet"
 			},
 			"matching": {
+				"ruleid": "ID aus dem Vinou-Export",
 				"title": "Was mit bestehenden Kunden passiert",
 				"intro": "Vinou sucht für jede Zeile in dieser Reihenfolge:",
 				"rule1": "Kundennummer",

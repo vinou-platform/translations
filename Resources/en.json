@@ -2554,6 +2554,7 @@
 				"importstatus": "{processed} of {total} records processed"
 			},
 			"matching": {
+				"ruleid": "Id from the Vinou export",
 				"title": "What happens to existing clients",
 				"intro": "For every row Vinou looks in this order:",
 				"rule1": "Customer number",
