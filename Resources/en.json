@@ -2493,20 +2493,49 @@
 	},
 	"fileImport": {
 		"actions": {
+			"check": "Check file",
+			"executecount": "Import {count} records",
+			"running": "Import running …",
+			"otherfile": "Other file",
+			"close": "Done",
 			"analyse": "Start analyse",
 			"execute": "Execute import"
+		},
+		"steps": {
+			"file": "File",
+			"check": "Check",
+			"run": "Import"
+		},
+		"notes": {
+			"nofile": "No file chosen yet",
+			"hasfile": "File is ready",
+			"ready": "Checked and ready to import",
+			"willupdate": "Existing clients are updated, not created twice",
+			"rejected": "This file cannot be imported as it is",
+			"running": "Please keep this window open",
+			"done": "Import finished"
 		},
 		"views": {
 			"create": {
 				"title": "Data import"
 			},
 			"upload": {
+				"drop": "Drop a file here or choose one",
+				"formats": "Excel (xls, xlsx) or CSV using a semicolon · up to 20 MB",
+				"uploaded": "uploaded",
+				"hint": "The first row has to carry the field names. Fields Vinou does not know are listed while checking and skipped – everything else is imported anyway. You will find a template <a href='https://www.vinou.de/vorlagen'>here</a>.",
 				"title": "Step 1 - Upload data",
-				"description": "Only Excel files allowed (xls, xlsx). Filesize should be smaller than 5 MB. <strong>Please make sure that file contains a valid headline that contains only allowed fields. </strong> An example file could be downloaded <a href='http://www.vinou.de/vorlagen'>here</a>."
+				"description": "Allowed are Excel files (xls, xlsx) and CSV files using a semicolon as separator. The file must not exceed 20 MB. <strong>Please make sure that the file contains a header row and only holds fields that are allowed for import.</strong> You will find a template <a href='https://www.vinou.de/vorlagen'>here</a>.",
+				"clientmatching": "<strong>Existing clients are updated instead of being created twice.</strong> Every row is matched by customer number first. Without a match, company, zip, city and street are compared, then first name, last name, zip, city and street. Only if that fails as well a new client is created."
 			},
 			"analyse": {
+				"rows": "rows in the file",
+				"ready": "records ready",
+				"ignored": "fields are ignored",
+				"ignoredfields": "Ignored:",
+				"headrowfailedhint": "Without a readable header row no column can be mapped. Please check the first row of the file and upload it again.",
 				"title": "Step 2 - Analyse data",
-				"description": "Don't close the modal during analyse process.",
+				"description": "Please do not close this window during analysis. Only then the import can run cleanly afterwards.",
 				"result": "Step 2 - Analyse result",
 				"headrow": "Headline",
 				"headrowdetected": "The headline <strong>is detected as valid</strong>",
@@ -2518,15 +2547,39 @@
 				"noproperty": "<strong>{count}</strong> fields that couldn't be imported"
 			},
 			"execute": {
+				"running": "Import running",
+				"counter": "{processed} of {total} records",
+				"keepopen": "Please keep this window open until the import has finished.",
 				"title": "Step 3 - Import data",
-				"importstatus": "{imported} of {total} imported"
+				"importstatus": "{processed} of {total} records processed"
+			},
+			"matching": {
+				"title": "What happens to existing clients",
+				"intro": "For every row Vinou looks in this order:",
+				"rule1": "Customer number",
+				"rule2": "Company + zip + city + street",
+				"rule3": "First name + last name + zip + city + street",
+				"hit": "Match → the client is <strong>updated</strong>",
+				"miss": "No match → the client is <strong>created</strong>"
 			},
 			"importresult": {
+				"tiles": {
+					"created": "created",
+					"updated": "updated",
+					"aborted": "skipped"
+				},
+				"errorheadline": "{count} rows could not be imported",
+				"errorlines": "Affected are rows <strong>{errors}</strong> of the uploaded file. Most common cause: a required field is empty or a mail address already exists.",
+				"keepsdata": "Updated clients keep their customer number, their orders and their groups.",
 				"title": "Import finished",
-				"description": "Data successfulls imported",
+				"description": "Data imported successfully",
+				"summary": "Result",
+				"created": "<strong>{count} records</strong> created",
+				"updated": "<strong>{count} records</strong> updated",
+				"aborted": "<strong>{count} records</strong> skipped",
 				"errors": {
 					"headline": "IMPORTANT! The file contains faulty data",
-					"text": "<strong>{aborted} entries</strong> were not imported. The Lines <strong>{errors}</strong> are faulty. These lines can be duplicates."
+					"text": "<strong>{aborted} entries</strong> could not be imported. The following lines of the uploaded file are faulty: <strong>{errors}</strong>."
 				}
 			}
 		},

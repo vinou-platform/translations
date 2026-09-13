@@ -4717,20 +4717,49 @@
 	},
 	"fileImport": {
 		"actions": {
+			"check": "Datei prüfen",
+			"executecount": "{count} Datensätze importieren",
+			"running": "Import läuft …",
+			"otherfile": "Andere Datei",
+			"close": "Fertig",
 			"analyse": "Analyse starten",
 			"execute": "Import ausführen"
+		},
+		"steps": {
+			"file": "Datei",
+			"check": "Prüfung",
+			"run": "Import"
+		},
+		"notes": {
+			"nofile": "Noch keine Datei gewählt",
+			"hasfile": "Datei liegt bereit",
+			"ready": "Geprüft und bereit zum Import",
+			"willupdate": "Bestehende Kunden werden aktualisiert, nicht doppelt angelegt",
+			"rejected": "Die Datei lässt sich so nicht importieren",
+			"running": "Das Fenster bitte offen lassen",
+			"done": "Import abgeschlossen"
 		},
 		"views": {
 			"create": {
 				"title": "Datenimport"
 			},
 			"upload": {
+				"drop": "Datei hierher ziehen oder auswählen",
+				"formats": "Excel (xls, xlsx) oder CSV mit Semikolon · bis 20 MB",
+				"uploaded": "hochgeladen",
+				"hint": "Die erste Zeile muss die Feldnamen enthalten. Felder, die Vinou nicht kennt, werden beim Prüfen angezeigt und übersprungen – der Rest wird trotzdem importiert. Eine Vorlage findest Du <a href='https://www.vinou.de/vorlagen'>hier</a>.",
 				"title": "1. Schritt - Daten bereitstellen",
-				"description": "Erlaubt sind Excel-Dateien im Format xls, xlsx. Die Datei darf nicht ein Größe von 5 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Dateien eine Titelzeile enthalten und auch nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest Du <a href='http://www.vinou.de/vorlagen'>hier</a>."
+				"description": "Erlaubt sind Excel-Dateien (xls, xlsx) und CSV-Dateien mit Semikolon als Trennzeichen. Die Datei darf 20 MB nicht überschreiten. <strong>Bitte achte darauf, dass die Datei eine Titelzeile enthält und nur Felder übermittelt werden, die für den Import zugelassen sind.</strong> Eine Vorlage findest Du <a href='https://www.vinou.de/vorlagen'>hier</a>.",
+				"clientmatching": "<strong>Bestehende Kunden werden aktualisiert statt doppelt angelegt.</strong> Zu jeder Zeile wird zuerst nach der Kundennummer gesucht. Bleibt sie ohne Treffer, folgt der Abgleich über Firma, PLZ, Ort und Straße und danach über Vorname, Nachname, PLZ, Ort und Straße. Erst wenn auch das nichts findet, entsteht ein neuer Kunde."
 			},
 			"analyse": {
+				"rows": "Zeilen in der Datei",
+				"ready": "Datensätze bereit",
+				"ignored": "Felder werden ignoriert",
+				"ignoredfields": "Ignoriert:",
+				"headrowfailedhint": "Ohne lesbare Titelzeile lässt sich keine Spalte zuordnen. Bitte die erste Zeile der Datei prüfen und erneut hochladen.",
 				"title": "2. Schritt - Daten analysieren",
-				"description": "Bitte schließe während der Analyse, nicht das Fenster nur so kann später ein optimaler Import erfolgen.",
+				"description": "Bitte schließe das Fenster während der Analyse nicht. Nur so lässt sich der Import anschließend sauber ausführen.",
 				"result": "2. Schritt - Analyseergebnis",
 				"headrow": "Kopfzeile",
 				"headrowdetected": "Die Kopfzeile <strong>wurde richtig erkannt</strong>",
@@ -4742,15 +4771,39 @@
 				"noproperty": "<strong>{count}</strong> Felder die nicht importiert werden"
 			},
 			"execute": {
+				"running": "Import läuft",
+				"counter": "{processed} von {total} Datensätzen",
+				"keepopen": "Bitte das Fenster offen lassen, bis der Import durch ist.",
 				"title": "3. Schritt - Daten importieren",
-				"importstatus": "{imported} von {total} importiert"
+				"importstatus": "{processed} von {total} Datensätzen verarbeitet"
+			},
+			"matching": {
+				"title": "Was mit bestehenden Kunden passiert",
+				"intro": "Vinou sucht für jede Zeile in dieser Reihenfolge:",
+				"rule1": "Kundennummer",
+				"rule2": "Firma + PLZ + Ort + Straße",
+				"rule3": "Vorname + Nachname + PLZ + Ort + Straße",
+				"hit": "Treffer → Kunde wird <strong>aktualisiert</strong>",
+				"miss": "Kein Treffer → Kunde wird <strong>neu angelegt</strong>"
 			},
 			"importresult": {
+				"tiles": {
+					"created": "neu angelegt",
+					"updated": "aktualisiert",
+					"aborted": "übersprungen"
+				},
+				"errorheadline": "{count} Zeilen konnten nicht importiert werden",
+				"errorlines": "Betroffen sind die Zeilen <strong>{errors}</strong> der hochgeladenen Datei. Häufigste Ursache: ein Pflichtfeld ist leer oder eine Mailadresse gibt es schon.",
+				"keepsdata": "Die aktualisierten Kunden behalten ihre Kundennummer, ihre Bestellungen und ihre Gruppen.",
 				"title": "Import abgeschlossen",
 				"description": "Die Daten wurden erfolgreich importiert.",
+				"summary": "Ergebnis",
+				"created": "<strong>{count} Datensätze</strong> neu angelegt",
+				"updated": "<strong>{count} Datensätze</strong> aktualisiert",
+				"aborted": "<strong>{count} Datensätze</strong> übersprungen",
 				"errors": {
 					"headline": "ACHTUNG! Es sind fehlerhafte Daten vorhanden",
-					"text": "Es konnten <strong>{aborted} Einträge</strong> nicht importiert werden. Folgende Einträge <strong>{errors}</strong> sind fehlerhaft. Eventuell handelt es sich um Duplikate."
+					"text": "Es konnten <strong>{aborted} Einträge</strong> nicht importiert werden. Folgende Zeilen der hochgeladenen Datei sind fehlerhaft: <strong>{errors}</strong>."
 				}
 			}
 		},
