@@ -1350,7 +1350,8 @@
 				"action": "Action",
 				"note": "Details",
 				"bottled": "Bottled",
-				"hint": "Every wine takes at least two pages. The document is built in packages, so keep this window open until it is finished."
+				"hint": "Every wine takes at least two pages. The document is built in packages, so keep this window open until it is finished.",
+				"noWines": "No wine accounts match this selection. Pick another vintage or fewer wine types."
 			},
 			"harvestQuantities": {
 				"booking_stamp": "Date",

@@ -896,7 +896,8 @@
 				"action": "Vorgang",
 				"note": "Details",
 				"bottled": "Abgefüllt",
-				"hint": "Jeder Wein belegt mindestens zwei Seiten. Das Dokument wird in Paketen erzeugt, lass dieses Fenster bis zum Ende geöffnet."
+				"hint": "Jeder Wein belegt mindestens zwei Seiten. Das Dokument wird in Paketen erzeugt, lass dieses Fenster bis zum Ende geöffnet.",
+				"noWines": "Zu dieser Auswahl gibt es keine Weinkonten. Wähle einen anderen Jahrgang oder weniger Weintypen."
 			},
 			"harvestQuantities": {
 				"booking_stamp": "Datum",
