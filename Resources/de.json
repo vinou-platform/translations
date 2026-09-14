@@ -875,6 +875,50 @@
 			}
 		},
 		"fields": {
+			"wineReport": {
+				"loadFailed": "Die Historie konnte nicht geladen werden.",
+				"generate": "PDF erzeugen",
+				"generating": "Das Dokument wird erzeugt.",
+				"counter": "{processed} von {total} Weinkonten",
+				"saveResult": "Erzeugtes PDF herunterladen",
+				"failed": "Das Dokument konnte nicht erzeugt werden. Bitte versuche es erneut.",
+				"accounts": "Weinkonten",
+				"types": "Weintypen",
+				"measureLog": "Messprotokoll",
+				"noMeasureLog": "Für diesen Wein wurden noch keine Messwerte erfasst.",
+				"otherValues": "Weitere Messwerte",
+				"corridor": "Normalverlauf 5-10 °Oe pro Tag",
+				"curve": "Gärverlauf",
+				"noCurve": "Für diesen Wein liegen noch keine Messreihen vor, aus denen sich ein Verlauf zeichnen ließe.",
+				"log": "Arbeitsprotokoll",
+				"noLog": "Für diesen Wein wurden noch keine Kelleraktionen erfasst.",
+				"date": "Datum",
+				"action": "Vorgang",
+				"note": "Details",
+				"bottled": "Abgefüllt",
+				"hint": "Jeder Wein belegt mindestens zwei Seiten. Das Dokument wird in Paketen erzeugt, lass dieses Fenster bis zum Ende geöffnet."
+			},
+			"harvestQuantities": {
+				"booking_stamp": "Datum",
+				"cellar_wine_number": "Weinnummer",
+				"cellar_wine_name": "Wein",
+				"vintage": "Jahrgang",
+				"volume": "Menge",
+				"must_weight": "Mostgewicht",
+				"must_acidity": "Mostsäure",
+				"barrel_numbers": "Behälter"
+			},
+			"bottlings": {
+				"booking_stamp": "Datum",
+				"cellar_wine_number": "Weinnummer",
+				"cellar_wine_name": "Wein",
+				"vintage": "Jahrgang",
+				"bottle_count": "Flaschen",
+				"bottle_sizes": "Gebindegrößen",
+				"volume": "Menge",
+				"loss": "Verlust",
+				"ap_number": "AP-Nummer"
+			},
 			"vintage": "Jahrgang",
 			"deadline": "Stichtag",
 			"sum": "Gesamtmenge",
@@ -890,6 +934,22 @@
 			}
 		},
 		"types": {
+			"wineReports": {
+				"title": "Weinberichte je Jahrgang",
+				"description": "Bündelt die Weinberichte eines Jahrgangs in einem PDF, wahlweise eingegrenzt auf Weiß-, Rot- oder Roséweine."
+			},
+			"wineReport": {
+				"title": "Weinbericht",
+				"description": "Fasst ein Weinkonto auf einem Blatt zusammen: Eckdaten, Gärkurve und das Arbeitsprotokoll."
+			},
+			"harvestQuantities": {
+				"title": "Erntemengen im Zeitraum",
+				"description": "Listet alle Ernten eines frei gewählten Zeitraums mit Wein, Menge, Mostgewicht, Mostsäure und Behälter auf."
+			},
+			"bottlings": {
+				"title": "Abfüllungen im Zeitraum",
+				"description": "Listet alle Abfüllungen eines frei gewählten Zeitraums mit Wein, Flaschenzahl, Gebindegrößen, Menge und Verlust auf."
+			},
 			"cellarBook": {
 				"title": "Kellerbuch",
 				"description": "<b>ACHTUNG!</b> Das Kellerbuch für Digitale Weinbuchführungssysteme besteht ausschließlich aus dem reinen Journal aus den durchgeführten Aktionen innerhalb des Kellers. Dabei werden alle durchgeführten Aktionen innerhalb des Kellers chronologisch aufgelistet inklusive des Durchführungszeitpunktes und des dazugehörigen Mitarbeiters."

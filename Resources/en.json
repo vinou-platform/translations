@@ -1329,6 +1329,50 @@
 			}
 		},
 		"fields": {
+			"wineReport": {
+				"loadFailed": "The history could not be loaded.",
+				"generate": "Build pdf",
+				"generating": "The document is being built.",
+				"counter": "{processed} of {total} wine accounts",
+				"saveResult": "Download the built pdf",
+				"failed": "The document could not be built. Please try again.",
+				"accounts": "wine accounts",
+				"types": "Wine types",
+				"measureLog": "Measurement log",
+				"noMeasureLog": "No readings have been recorded for this wine yet.",
+				"otherValues": "Other readings",
+				"corridor": "Normal course, 5-10 °Oe per day",
+				"curve": "Fermentation curve",
+				"noCurve": "There are no measurement series for this wine yet that a curve could be drawn from.",
+				"log": "Work log",
+				"noLog": "No cellar actions have been recorded for this wine yet.",
+				"date": "Date",
+				"action": "Action",
+				"note": "Details",
+				"bottled": "Bottled",
+				"hint": "Every wine takes at least two pages. The document is built in packages, so keep this window open until it is finished."
+			},
+			"harvestQuantities": {
+				"booking_stamp": "Date",
+				"cellar_wine_number": "Wine number",
+				"cellar_wine_name": "Wine",
+				"vintage": "Vintage",
+				"volume": "Quantity",
+				"must_weight": "Must weight",
+				"must_acidity": "Must acidity",
+				"barrel_numbers": "Vessel"
+			},
+			"bottlings": {
+				"booking_stamp": "Date",
+				"cellar_wine_number": "Wine number",
+				"cellar_wine_name": "Wine",
+				"vintage": "Vintage",
+				"bottle_count": "Bottles",
+				"bottle_sizes": "Bottle sizes",
+				"volume": "Volume",
+				"loss": "Loss",
+				"ap_number": "AP number"
+			},
 			"vintage": "Vintage",
 			"deadline": "Deadline",
 			"sum": "Sum",
@@ -1344,6 +1388,22 @@
 			}
 		},
 		"types": {
+			"wineReports": {
+				"title": "Wine reports per vintage",
+				"description": "Bundles the wine reports of one vintage into a single pdf, optionally limited to white, red or rosé wines."
+			},
+			"wineReport": {
+				"title": "Wine report",
+				"description": "Sums up a wine account on one sheet: key data, fermentation curve and the work log."
+			},
+			"harvestQuantities": {
+				"title": "Harvest quantities within a period",
+				"description": "Lists every harvest of a freely chosen period with wine, quantity, must weight, must acidity and vessel."
+			},
+			"bottlings": {
+				"title": "Bottlings within a period",
+				"description": "Lists every bottling of a freely chosen period with wine, bottle count, bottle sizes, volume and loss."
+			},
 			"cellarBook": {
 				"title": "Cellar book",
 				"description": "<b>ATTENTION!</b> The cellar book for digital wine accounting systems consists exclusively of the pure journal of the actions carried out within the cellar. All actions carried out within the cellar are listed chronologically, including the time at which they were carried out and the associated employee."
