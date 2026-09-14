@@ -2137,7 +2137,10 @@
 		},
 		"fields": {
 			"previousMonth": "Previous month",
-			"currentMonth": "Current month"
+			"currentMonth": "Current month",
+			"storageHint": "Images, documents, labels and import files all count towards this. If it gets tight, a look into the file manager helps – or we extend your storage.",
+			"storageUsed": "used",
+			"storageFree": "free"
 		},
 		"widgets": {
 			"empty": "No entries",

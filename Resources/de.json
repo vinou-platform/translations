@@ -341,7 +341,10 @@
 		},
 		"fields": {
 			"previousMonth": "Vormonat",
-			"currentMonth": "Aktueller Monat"
+			"currentMonth": "Aktueller Monat",
+			"storageHint": "Hier zählen Bilder, Dokumente, Etiketten und Importdateien zusammen. Wird es eng, hilft ein Blick in die Dateiverwaltung – oder wir erweitern deinen Speicher.",
+			"storageUsed": "belegt",
+			"storageFree": "frei"
 		},
 		"widgets": {
 			"empty": "Keine Einträge",
