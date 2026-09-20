@@ -57,7 +57,8 @@
 		"system.news": "Mitteilungen",
 		"tokens": "Verknüpfungen",
 		"users": "Benutzer",
-		"wineries": "Weingüter"
+		"wineries": "Weingüter",
+		"apiMonitor": "API-Monitor"
 	},
 	"general": {
 		"actions": {
@@ -8614,6 +8615,86 @@
 					}
 				}
 			}
+		}
+	},
+	"apiMonitor": {
+		"kpi": {
+			"lastMinute": "Requests letzte Minute",
+			"lastHour": "Requests letzte 60 Min.",
+			"requests": "Requests",
+			"bots": "davon Bots",
+			"errors": "Fehlerquote (4xx / 5xx)",
+			"durationAvg": "Ø Antwortzeit"
+		},
+		"chart": {
+			"perMinute": "Requests pro Minute",
+			"perDay": "Requests pro Tag",
+			"day": "Tag"
+		},
+		"tables": {
+			"routes": "Endpunkte",
+			"customers": "Kunden",
+			"bots": "Bots",
+			"errors": "Server-Fehler (5xx, 30 Tage)",
+			"log": "Request-Log (letzte 60 Min.)"
+		},
+		"columns": {
+			"route": "Endpunkt",
+			"customer": "Kunde",
+			"bot": "Bot",
+			"requests": "Requests",
+			"lastHour": "60 Min.",
+			"last7days": "7 Tage",
+			"last30days": "30 Tage",
+			"total": "Gesamt",
+			"first": "Erstmals",
+			"last": "Zuletzt",
+			"time": "Zeit",
+			"status": "Status",
+			"info": "Fehler / Bot",
+			"level": "API-Level"
+		},
+		"ranges": {
+			"days": "{days} Tage",
+			"all": "Gesamt"
+		},
+		"trend": {
+			"new": "neu",
+			"gone": "inaktiv",
+			"rising": "steigend"
+		},
+		"empty": "Keine Daten im Zeitraum.",
+		"filter": {
+			"all": "Alle"
+		},
+		"detail": {
+			"request": "Request",
+			"client": "Client",
+			"error": "Fehlermeldung",
+			"params": "Parameter (sensible Werte maskiert)",
+			"onlyErrors": "Details wie Parameter, User und IP werden nur bei Server-Fehlern gespeichert."
+		},
+		"areas": {
+			"secured": "Secured",
+			"service": "Service",
+			"public": "Public",
+			"filterHint": "Klicken, um die Ansicht auf diesen Teil der API zu filtern; erneut klicken hebt den Filter auf."
+		},
+		"statsTitle": "Statistik der letzten 60 Minuten",
+		"historyLink": "Zur kompletten Historie",
+		"history": {
+			"title": "Komplette Historie",
+			"tabs": {
+				"stats": "Statistik",
+				"errors": "Fehlermeldungen"
+			},
+			"errorsKept": "Server-Fehler werden 30 Tage aufbewahrt – ältere sind nur noch in den Zahlen enthalten.",
+			"moreErrors": "Weitere laden"
+		},
+		"alert": {
+			"text": "API-Server-Fehler: {count} in den letzten 60 Minuten, zuletzt um {time} auf {route}.",
+			"link": "Zum Fehler",
+			"short": "{count}× Server-Fehler · zuletzt {time}"
 		}
 	}
 }

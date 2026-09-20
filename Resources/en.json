@@ -57,7 +57,8 @@
 		"support": "Support",
 		"system": "System",
 		"system.news": "Announcements",
-		"clients.contacts": "Address Book"
+		"clients.contacts": "Address Book",
+		"apiMonitor": "API monitor"
 	},
 	"general": {
 		"actions": {
@@ -8614,5 +8615,85 @@
 		}
 	},
 	"view_beta_create": "Caution! This feature is currently alpha some views might not be available. Still create view?",
-	"yes": "Yes"
+	"yes": "Yes",
+	"apiMonitor": {
+		"kpi": {
+			"lastMinute": "Requests last minute",
+			"lastHour": "Requests last 60 min.",
+			"requests": "Requests",
+			"bots": "thereof bots",
+			"errors": "Error rate (4xx / 5xx)",
+			"durationAvg": "Avg. response time"
+		},
+		"chart": {
+			"perMinute": "Requests per minute",
+			"perDay": "Requests per day",
+			"day": "day"
+		},
+		"tables": {
+			"routes": "Endpoints",
+			"customers": "Customers",
+			"bots": "Bots",
+			"errors": "Server errors (5xx, 30 days)",
+			"log": "Request log (last 60 min.)"
+		},
+		"columns": {
+			"route": "Endpoint",
+			"customer": "Customer",
+			"bot": "Bot",
+			"requests": "Requests",
+			"lastHour": "60 min.",
+			"last7days": "7 days",
+			"last30days": "30 days",
+			"total": "Total",
+			"first": "First seen",
+			"last": "Last seen",
+			"time": "Time",
+			"status": "Status",
+			"info": "Error / bot",
+			"level": "API level"
+		},
+		"ranges": {
+			"days": "{days} days",
+			"all": "All time"
+		},
+		"trend": {
+			"new": "new",
+			"gone": "inactive",
+			"rising": "rising"
+		},
+		"empty": "No data in this period.",
+		"filter": {
+			"all": "All"
+		},
+		"detail": {
+			"request": "Request",
+			"client": "Client",
+			"error": "Error message",
+			"params": "Parameters (sensitive values masked)",
+			"onlyErrors": "Details such as parameters, user and IP are only stored for server errors."
+		},
+		"areas": {
+			"secured": "Secured",
+			"service": "Service",
+			"public": "Public",
+			"filterHint": "Click to filter the view to this part of the API; click again to remove the filter."
+		},
+		"statsTitle": "Statistics of the last 60 minutes",
+		"historyLink": "Full history",
+		"history": {
+			"title": "Full history",
+			"tabs": {
+				"stats": "Statistics",
+				"errors": "Error messages"
+			},
+			"errorsKept": "Server errors are kept for 30 days – older ones only remain in the figures.",
+			"moreErrors": "Load more"
+		},
+		"alert": {
+			"text": "API server errors: {count} within the last 60 minutes, latest at {time} on {route}.",
+			"link": "Show error",
+			"short": "{count}× server error · latest {time}"
+		}
+	}
 }

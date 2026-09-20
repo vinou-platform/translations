@@ -57,7 +57,8 @@
 		"support": "Supporto",
 		"system": "Sistema",
 		"system.news": "Comunicazioni",
-		"clients.contacts": "Rubrica"
+		"clients.contacts": "Rubrica",
+		"apiMonitor": "Monitor API"
 	},
 	"general": {
 		"actions": {
@@ -8615,5 +8616,85 @@
 		}
 	},
 	"view_beta_create": "ATTENZIONE! Questa funzionalità  è in stato di Alpha. Eventuale alcune viste non sono disponibli. Comunque creare la vista?",
-	"yes": "Sì"
+	"yes": "Sì",
+	"apiMonitor": {
+		"kpi": {
+			"lastMinute": "Richieste ultimo minuto",
+			"lastHour": "Richieste ultimi 60 min.",
+			"requests": "Richieste",
+			"bots": "di cui bot",
+			"errors": "Tasso di errori (4xx / 5xx)",
+			"durationAvg": "Tempo di risposta medio"
+		},
+		"chart": {
+			"perMinute": "Richieste al minuto",
+			"perDay": "Richieste al giorno",
+			"day": "giorno"
+		},
+		"tables": {
+			"routes": "Endpoint",
+			"customers": "Clienti",
+			"bots": "Bot",
+			"errors": "Errori del server (5xx, 30 giorni)",
+			"log": "Log delle richieste (ultimi 60 min.)"
+		},
+		"columns": {
+			"route": "Endpoint",
+			"customer": "Cliente",
+			"bot": "Bot",
+			"requests": "Richieste",
+			"lastHour": "60 min.",
+			"last7days": "7 giorni",
+			"last30days": "30 giorni",
+			"total": "Totale",
+			"first": "Prima volta",
+			"last": "Ultima volta",
+			"time": "Ora",
+			"status": "Stato",
+			"info": "Errore / bot",
+			"level": "Livello API"
+		},
+		"ranges": {
+			"days": "{days} giorni",
+			"all": "Tutto"
+		},
+		"trend": {
+			"new": "nuovo",
+			"gone": "inattivo",
+			"rising": "in aumento"
+		},
+		"empty": "Nessun dato in questo periodo.",
+		"filter": {
+			"all": "Tutte"
+		},
+		"detail": {
+			"request": "Richiesta",
+			"client": "Client",
+			"error": "Messaggio di errore",
+			"params": "Parametri (valori sensibili mascherati)",
+			"onlyErrors": "Dettagli come parametri, utente e IP vengono salvati solo per gli errori del server."
+		},
+		"areas": {
+			"secured": "Secured",
+			"service": "Service",
+			"public": "Public",
+			"filterHint": "Clicca per filtrare la vista su questa parte dell'API; clicca di nuovo per rimuovere il filtro."
+		},
+		"statsTitle": "Statistica degli ultimi 60 minuti",
+		"historyLink": "Cronologia completa",
+		"history": {
+			"title": "Cronologia completa",
+			"tabs": {
+				"stats": "Statistica",
+				"errors": "Messaggi di errore"
+			},
+			"errorsKept": "Gli errori del server vengono conservati 30 giorni; quelli più vecchi restano solo nei numeri.",
+			"moreErrors": "Carica altri"
+		},
+		"alert": {
+			"text": "Errori del server dell'API: {count} negli ultimi 60 minuti, l'ultimo alle {time} su {route}.",
+			"link": "Vai all'errore",
+			"short": "{count}× errore del server · ultimo {time}"
+		}
+	}
 }
