@@ -81,7 +81,8 @@
 			"settings": "Opzioni",
 			"visibility": "Visibilità",
 			"qrcode": "QR-Code",
-			"seo": "Informazioni specifiche sui motori di ricerca"
+			"seo": "Informazioni specifiche sui motori di ricerca",
+			"websiteSettings": "Impostazioni del sito web"
 		},
 		"fields": {
 			"default": "Default",
@@ -125,9 +126,14 @@
 			"metaTitle": "Etichetta del titolo",
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segmento di percorso",
+			"pathSegmentManual": "Impostare manualmente il segmento di percorso",
 			"exactSearch": "Ogni parola di ricerca deve comparire nel record di dati. Gli spazi separano le parole di ricerca.",
 			"salesAmmount": "Importo delle vendite in {currency}",
-			"sum": "Somma totale"
+			"sum": "Somma totale",
+			"pathSegmentMode": {
+				"auto": "Automatico",
+				"manual": "Manuale"
+			}
 		},
 		"tabs": {
 			"files": "File",
@@ -135,7 +141,12 @@
 			"history": "Storia",
 			"notes": "Annotazioni",
 			"statistics": "Statistiche",
-			"qrcodes": "Codici QR"
+			"qrcodes": "Codici QR",
+			"more": "Altro",
+			"showAll": "Mostra tutte le sezioni",
+			"sections": "Sezioni",
+			"close": "Chiudi",
+			"visibilitySeo": "Visibilità e SEO"
 		},
 		"views": {
 			"files": {
@@ -247,7 +258,28 @@
 			"required": "Campo obbligatore",
 			"minLength": "almeno {value} caratteri",
 			"weight": "Peso incluso imballo (per spedizione)",
-			"allIfEmpty": "(Tutto se non è stato selezionato nulla)"
+			"allIfEmpty": "(Tutto se non è stato selezionato nulla)",
+			"pathSegmentChecking": "Verifica della disponibilità del segmento di percorso …",
+			"pathSegmentAvailable": "Segmento di percorso OK: «{value}» è disponibile.",
+			"pathSegmentTaken": "«{value}» è già usato da: {conflicts}. Scegline un altro.",
+			"pathSegmentDuplicate": "«{value}» è usato anche da: {conflicts}. Resta invariato al salvataggio; modificalo per un indirizzo univoco.",
+			"pathSegmentAuto": "Generato da {sources} e aggiornato quando cambiano.",
+			"pathSegmentManualRules": "Lettere minuscole, cifre e trattini. Gli altri caratteri vengono convertiti al salvataggio.",
+			"pathSegmentIntro": "Il segmento di percorso è l’ultima parte dell’indirizzo della voce, ad es. …/riesling-secco-2024. Deve essere univoco nel tuo account. Se cambia, gli indirizzi precedenti restano raggiungibili.",
+			"pathSegmentStatus": {
+				"checking": "Verifica in corso …",
+				"available": "Segmento di percorso OK!",
+				"taken": "Segmento di percorso non disponibile",
+				"duplicate": "Usato più volte"
+			},
+			"websiteSettingsIntro": "Qui definisci l’indirizzo con cui la voce è raggiungibile sul tuo sito web.",
+			"pathSegmentSources": {
+				"name": "il nome",
+				"title": "il titolo",
+				"dateTitle": "data e titolo",
+				"company": "il nome dell’azienda",
+				"articleNameVintage": "numero articolo, nome, annata e gusto"
+			}
 		},
 		"messages": {
 			"danger": {
@@ -309,6 +341,25 @@
 		},
 		"units": {
 			"days": "Giorni"
+		},
+		"steps": {
+			"progress": "Passo {current} di {total}",
+			"showAll": "Mostra tutti i passi",
+			"title": "Passi",
+			"locked": "Disponibile dopo aver completato il passo precedente",
+			"back": "Indietro"
+		},
+		"seo": {
+			"counter": "{count} / {max} caratteri",
+			"titleHint": "Senza un titolo proprio viene usato il nome.",
+			"descriptionHint": "Senza una descrizione propria viene usato l’inizio della descrizione.",
+			"previewTitle": "Anteprima del risultato di ricerca",
+			"previewHint": "Solo un esempio. L’indirizzo effettivo dipende dal vostro sito web.",
+			"intro": "I motori di ricerca come Google usano questi dati per il risultato di ricerca. Un titolo conciso e una buona descrizione aumentano la probabilità che la voce venga trovata e cliccata."
+		},
+		"switch": {
+			"on": "attivato",
+			"off": "disattivato"
 		}
 	},
 	"address": {
@@ -342,7 +393,8 @@
 			"defaultinvoiceaddress": "Indirizzo di fatturazione standard",
 			"defaultinvoicemsg": "L'indirizzo specificato qui è impostato nel campo 'Generale'",
 			"searchaddress": "Cerca l'indirizzo di consegna",
-			"searchInvoiceAddress": "Cerca indirizzo fattura"
+			"searchInvoiceAddress": "Cerca indirizzo fattura",
+			"defaultbillingaddress": "Indirizzo di fatturazione predefinito"
 		},
 		"types": {
 			"invoice": "Indirizzo di fatturazione",
@@ -716,7 +768,7 @@
 			"profile": "Profilo del vino",
 			"qrCode": "QR-Code",
 			"region": "Regionale",
-			"shop": "Konfigurazione del sito Web e del negoziosite",
+			"shop": "Configurazione del sito web e del negozio",
 			"stock": "Stock",
 			"analysis": "Analisi",
 			"grapetypes": "Varietà d'uva"
@@ -1942,7 +1994,8 @@
 			}
 		},
 		"tabs": {
-			"accounting": "Fatturazione"
+			"accounting": "Fatturazione",
+			"tasks": "Attività"
 		},
 		"fieldSets": {
 			"accounting": "Fatturazione",
@@ -2127,6 +2180,126 @@
 				"recipient": "Destinatario della fattura",
 				"invoice": "Fattura",
 				"order": "Ordine"
+			}
+		},
+		"tasks": {
+			"intro": "Attività di manutenzione per questo cliente. Ogni attività controlla prima e mostra cosa cambierebbe: nulla viene modificato finché non fai clic.",
+			"actions": {
+				"start": "Avvia",
+				"restart": "Controlla di nuovo",
+				"open": "Apri",
+				"close": "Chiudi"
+			},
+			"progress": "{done} di {total} completati",
+			"pathSegments": {
+				"title": "Controlla segmenti di percorso",
+				"description": "Trova vini, prodotti e pacchetti il cui segmento di percorso (parte dell’indirizzo web) è usato più volte.",
+				"empty": "Nessun segmento di percorso duplicato trovato.",
+				"summary": "{count} conflitti trovati.",
+				"hint": "In ogni gruppo un record mantiene il suo segmento di percorso (quello impostato manualmente, altrimenti il più vecchio). Gli altri ricevono la proposta mostrata e passano ad automatico.",
+				"types": {
+					"wine": "Vini",
+					"product": "Prodotti",
+					"bundle": "Pacchetti di vino"
+				},
+				"kinds": {
+					"current": "usato più volte",
+					"history": "indirizzo precedente di un altro record"
+				},
+				"manual": "manuale",
+				"keeps": "mantiene il segmento di percorso",
+				"suggestion": "Proposta",
+				"newSegment": "Nuovo segmento di percorso",
+				"formerOwners": "Vecchio indirizzo salvato presso",
+				"actions": {
+					"regenerate": "Rigenera",
+					"regenerateAll": "Rigenera tutti ({count})",
+					"cleanHistory": "Rimuovi vecchio indirizzo"
+				},
+				"states": {
+					"regenerated": "Rigenerato",
+					"cleaned": "Rimosso"
+				},
+				"errors": {
+					"failed": "Non ha funzionato. Controlla di nuovo."
+				},
+				"dialogs": {
+					"regenerateAll": {
+						"title": "Rigenerare tutti?",
+						"text": "Verranno applicate {count} modifiche: segmenti di percorso proposti e rimozione dei vecchi indirizzi. I link all’indirizzo duplicato porteranno solo al record che lo mantiene."
+					}
+				},
+				"toasts": {
+					"done": "Tutti i segmenti di percorso sono stati ripuliti.",
+					"partial": "Non è stato possibile ripulire tutti i segmenti di percorso."
+				}
+			},
+			"recalculation": {
+				"title": "Rigenera operazione",
+				"description": "Ricalcola e rigenera ordine e fattura di un’operazione, con confronto prima/dopo."
+			},
+			"expertises": {
+				"title": "Rigenera schede tecniche",
+				"description": "Controlla quali schede tecniche (PDF) mancano o sono più vecchie dei dati del vino o del modello e le rigenera.",
+				"stats": {
+					"total": "Vini",
+					"missing": "mancanti",
+					"outdated": "obsolete",
+					"ok": "aggiornate"
+				},
+				"allOk": "Tutte le schede tecniche sono aggiornate.",
+				"noWines": "Questo cliente non ha vini.",
+				"showPending": "Mostra {count} vini",
+				"errors": "Non è stato possibile generare {count} schede tecniche:",
+				"actions": {
+					"all": "Rigenera tutte ({count})",
+					"pending": "Genera mancanti e obsolete ({count})"
+				},
+				"dialogs": {
+					"pending": {
+						"title": "Generare le schede tecniche?",
+						"text": "Le schede tecniche di {count} vini verranno rigenerate. Ci vogliono alcuni secondi per vino."
+					},
+					"all": {
+						"title": "Rigenerare tutte le schede tecniche?",
+						"text": "Le schede tecniche di tutti i {count} vini verranno rigenerate. Ci vogliono alcuni secondi per vino."
+					}
+				},
+				"toasts": {
+					"done": "Le schede tecniche sono state generate.",
+					"partial": "Non è stato possibile generare tutte le schede tecniche."
+				}
+			},
+			"storage": {
+				"title": "Calcola spazio occupato",
+				"description": "Ricalcola lo spazio di archiviazione occupato e mostra quanto spazio occupa ogni cartella.",
+				"calculate": "Calcola",
+				"recalculate": "Ricalcola",
+				"of": "di {size} ({percent} %)",
+				"previous": "Ultimo calcolo: {size} il {date}",
+				"folder": "Cartella",
+				"size": "Dimensione",
+				"share": "Quota",
+				"empty": "Nessun file presente.",
+				"showAll": "Mostra tutti i {count}",
+				"showLess": "Mostra meno"
+			},
+			"shopQuality": {
+				"title": "Qualità dati shop",
+				"description": "Trova vini, prodotti e pacchetti attivi visibili nello shop o pubblicamente senza prezzo, immagine, descrizione o segmento di percorso.",
+				"summary": "{count} articoli visibili su {checked} sono incompleti.",
+				"hint": "Vengono controllati gli originali attivi (senza traduzioni) visibili nello shop o pubblicamente.",
+				"empty": "Tutti gli articoli visibili sono completi.",
+				"issues": {
+					"price": "Nessun prezzo",
+					"image": "Nessuna immagine",
+					"description": "Nessuna descrizione",
+					"pathSegment": "Nessun segmento di percorso"
+				},
+				"visible": {
+					"shop": "Shop",
+					"public": "Pubblico"
+				}
 			}
 		}
 	},
@@ -3240,6 +3413,9 @@
 			"notActivatedYet": "Il periodo di offerta non è ancora iniziato.",
 			"orderNotCreatedYet": "L'offerta non è stata ancora accettata.",
 			"reserved": "Gli articoli inclusi nell'offerta sono riservati."
+		},
+		"wizard": {
+			"submit": "Salva offerta"
 		}
 	},
 	"openItems": {
@@ -3519,6 +3695,42 @@
 			"openPaymentToday": "Importo pagamento aperto con pagamento in entrata di oggi: {gross}",
 			"paid": "Questo ordine è stato pagato per intero.",
 			"paymentInProgress": "In attesa di pagamento tramite fornitore di servizi di pagamento."
+		},
+		"wizard": {
+			"summary": "Riepilogo",
+			"change": "Modifica",
+			"pending": "segue al passo {step}",
+			"emptyPositions": "Ancora nessuna posizione",
+			"emptyPositionsHint": "Cerca sopra un vino, un prodotto, un vino sfuso o un pacchetto. Lo stesso articolo può essere aggiunto più volte.",
+			"freightFreeRemaining": "Mancano {amount} alla spedizione gratuita (da {limit}).",
+			"freeShipping": "Spedizione gratuita",
+			"clientHint": "Cerca per nome, azienda, numero cliente o indirizzo",
+			"clientAdopted": "Ripreso dal cliente: sconto, modalità di pagamento, tipo di fattura e note",
+			"parcelHint": "Spedizione all’indirizzo di fatturazione o di consegna. Imballaggio e spese di spedizione sono calcolati automaticamente.",
+			"yardsaleHint": "Nessuna consegna. Il cliente ritira la merce.",
+			"differingDeliveryHint": "Scegli tra gli indirizzi di consegna del cliente o creane uno nuovo",
+			"cashHint": "Il pagamento in contanti non prevede termine di pagamento né sconto cassa.",
+			"rebatePercent": "Percentuale",
+			"rebateAmount": "Importo",
+			"campaignHint": "Le campagne non applicabili sono visualizzate in grigio",
+			"notesHint": "Le note di fattura e di bolla sono precompilate dal cliente",
+			"sections": {
+				"client": "Cliente",
+				"deliveryType": "Tipo di spedizione",
+				"deliveryAddress": "Indirizzo di consegna",
+				"paymentType": "Modalità di pagamento",
+				"tax": "Imposte e fattura",
+				"conditions": "Condizioni",
+				"rebate": "Sconto",
+				"campaign": "Campagna",
+				"positions": "Posizioni",
+				"notes": "Riferimento e note",
+				"invoice": "Fattura e termine di pagamento",
+				"cashback": "Sconto cassa"
+			},
+			"submit": "Salva ordine",
+			"campaignSearch": "Cerca campagna",
+			"notesFilled": "{count} compilati"
 		}
 	},
 	"orderItem": {
@@ -3542,7 +3754,8 @@
 				"manual": "Modificare",
 				"editOff": "Interrompi la modifica",
 				"reset": "Reimposta nome e descrizione",
-				"resetShort": "Ripristina"
+				"resetShort": "Ripristina",
+				"edit": "Modifica nome e descrizione"
 			},
 			"editPrice": "Modifica prezzo",
 			"delete": "Elimina posizione"
@@ -3819,6 +4032,9 @@
 				"deleted": "Prodotto è stato cancellato!",
 				"copied": "Prodotto duplicato"
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Qui definisci l’indirizzo con cui il prodotto è raggiungibile sul tuo sito web e nello shop e come viene evidenziato e ordinato."
 		}
 	},
 	"qrcode": {
@@ -5114,7 +5330,7 @@
 			"bottle": "Bottiglia",
 			"profile": "Profilo del vino",
 			"network": "La mia rete",
-			"shopsettings": "Konfigurazione del sito Web e del negoziosite"
+			"shopsettings": "Configurazione del sito web e del negozio"
 		},
 		"field": {
 			"acid": "Contenuto acido",
@@ -5196,7 +5412,8 @@
 			"winery": {
 				"label": "Vigna",
 				"placeholder": "Ricerca vigna"
-			}
+			},
+			"topsellerHighlight": "Evidenzia il vino come più venduto"
 		},
 		"cap_types": {
 			"screw": "Tappo a vite",
@@ -5248,7 +5465,8 @@
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Movimenti delle stock",
 			"marketing": "Marketing",
-			"legal": "eLabel"
+			"legal": "eLabel",
+			"visibilitySeo": "Visibilità e SEO"
 		},
 		"dialogs": {
 			"connectAutomation": "Vuoi trasferire automaticamente il vino nella gamma del tuo partner retail?",
@@ -5277,7 +5495,9 @@
 		"hints": {
 			"stockDistribution": "Stock disponibile {stock}, in ordine {ordered}",
 			"maturationShort": "max. 200 caratteri",
-			"terroirShort": "max. 200 caratteri"
+			"terroirShort": "max. 200 caratteri",
+			"pathSegmentSources": "numero articolo, nome e annata",
+			"shopSettingsIntro": "Qui definisci l’indirizzo con cui il vino è raggiungibile sul tuo sito web e nello shop e come viene evidenziato e ordinato."
 		},
 		"errors": {
 			"missingWinery": "Nessuna cantina selezionata. Alcuni meccanismi di rete come l'inoltro degli ordini non possono essere attivati."
@@ -5418,6 +5638,9 @@
 				"created": "Vigna è stato creato",
 				"connected": "Ora sei collegato alla vigna."
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Qui stabilisci l’indirizzo con cui la cantina è raggiungibile sul tuo sito web e nello shop e come viene ordinata."
 		}
 	},
 	"allergens": {

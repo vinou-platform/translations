@@ -81,7 +81,8 @@
 			"settings": "Einstellungen",
 			"visibility": "Sichtbarkeit",
 			"qrcode": "QR-Code",
-			"seo": "Suchmaschinen spezifische Angaben"
+			"seo": "Suchmaschinen spezifische Angaben",
+			"websiteSettings": "Website-Einstellungen"
 		},
 		"fields": {
 			"default": "Standard",
@@ -125,9 +126,14 @@
 			"metaTitle": "Title-Tag",
 			"metaDescription": "Meta-Description",
 			"pathSegment": "Pfadsegment",
+			"pathSegmentManual": "Pfadsegment manuell setzen",
 			"exactSearch": "Jedes Suchwort muss im Datensatz vorkommen. Leerzeichen trennen Suchwörter.",
 			"salesAmmount": "Umsatz in {currency}",
-			"sum": "Summe"
+			"sum": "Summe",
+			"pathSegmentMode": {
+				"auto": "Automatisch",
+				"manual": "Manuell"
+			}
 		},
 		"tabs": {
 			"files": "Dateien",
@@ -135,7 +141,12 @@
 			"history": "Historie",
 			"notes": "Notizen",
 			"statistics": "Statistiken",
-			"qrcodes": "QR-Codes"
+			"qrcodes": "QR-Codes",
+			"more": "Mehr",
+			"showAll": "Alle Bereiche anzeigen",
+			"sections": "Bereiche",
+			"close": "Schließen",
+			"visibilitySeo": "Sichtbarkeit & SEO"
 		},
 		"views": {
 			"files": {
@@ -247,7 +258,28 @@
 			"required": "Pflichtfeld",
 			"minLength": "mindestens {value} Zeichen",
 			"weight": "Gewicht inklusive Verpackung (für Versand)",
-			"allIfEmpty": "(Alle wenn keiner gewählt)"
+			"allIfEmpty": "(Alle wenn keiner gewählt)",
+			"pathSegmentChecking": "Prüfe, ob das Pfadsegment verfügbar ist …",
+			"pathSegmentAvailable": "Pfadsegment OK – „{value}“ ist verfügbar.",
+			"pathSegmentTaken": "„{value}“ wird bereits verwendet von: {conflicts}. Bitte ein anderes wählen.",
+			"pathSegmentDuplicate": "„{value}“ nutzt auch: {conflicts}. Beim Speichern bleibt es unverändert; ändere es für eine eindeutige Adresse.",
+			"pathSegmentAuto": "Wird automatisch aus {sources} erzeugt und passt sich bei Änderungen an.",
+			"pathSegmentManualRules": "Kleinbuchstaben, Ziffern und Bindestriche. Andere Zeichen werden beim Speichern umgewandelt.",
+			"pathSegmentIntro": "Das Pfadsegment ist der letzte Teil der Adresse, unter der der Eintrag erreichbar ist, z. B. …/riesling-trocken-2024. Es muss innerhalb deines Accounts eindeutig sein. Wird es geändert, bleiben bisherige Adressen weiterhin erreichbar.",
+			"pathSegmentStatus": {
+				"checking": "Prüfe, ob verfügbar …",
+				"available": "Pfadsegment OK!",
+				"taken": "Pfadsegment nicht verfügbar",
+				"duplicate": "Mehrfach verwendet"
+			},
+			"websiteSettingsIntro": "Hier legst du fest, unter welcher Adresse der Eintrag auf deiner Website erreichbar ist.",
+			"pathSegmentSources": {
+				"name": "dem Namen",
+				"title": "dem Titel",
+				"dateTitle": "Datum und Titel",
+				"company": "dem Firmennamen",
+				"articleNameVintage": "Artikelnummer, Name, Jahrgang und Geschmack"
+			}
 		},
 		"messages": {
 			"danger": {
@@ -309,6 +341,25 @@
 		},
 		"units": {
 			"days": "Tage"
+		},
+		"steps": {
+			"progress": "Schritt {current} von {total}",
+			"showAll": "Alle Schritte anzeigen",
+			"title": "Schritte",
+			"locked": "Erst verfügbar, wenn der vorherige Schritt erledigt ist",
+			"back": "Zurück"
+		},
+		"seo": {
+			"counter": "{count} / {max} Zeichen",
+			"titleHint": "Ohne eigenen Title wird der Name verwendet.",
+			"descriptionHint": "Ohne eigene Description wird der Anfang der Beschreibung verwendet.",
+			"previewTitle": "Vorschau Suchergebnis",
+			"previewHint": "Beispielhafte Darstellung. Die tatsächliche Adresse hängt von deiner Website ab.",
+			"intro": "Diese Angaben nutzen Suchmaschinen wie Google für das Suchergebnis. Ein prägnanter Title und eine gute Beschreibung erhöhen die Chance, dass der Eintrag gefunden und angeklickt wird."
+		},
+		"switch": {
+			"on": "aktiviert",
+			"off": "nicht aktiviert"
 		}
 	},
 	"system": {
@@ -1780,7 +1831,8 @@
 			}
 		},
 		"tabs": {
-			"accounting": "Abrechnung"
+			"accounting": "Abrechnung",
+			"tasks": "Aufgaben"
 		},
 		"fieldSets": {
 			"accounting": "Abrechnung",
@@ -1966,6 +2018,126 @@
 				"invoice": "Rechnung",
 				"order": "Bestellung"
 			}
+		},
+		"tasks": {
+			"intro": "Wartungsaufgaben für diesen Kunden. Jede Aufgabe prüft zuerst und zeigt, was sich ändern würde – geändert wird erst auf Klick.",
+			"actions": {
+				"start": "Starten",
+				"restart": "Erneut prüfen",
+				"open": "Öffnen",
+				"close": "Schließen"
+			},
+			"progress": "{done} von {total} erledigt",
+			"pathSegments": {
+				"title": "Pfadsegmente überprüfen",
+				"description": "Findet Weine, Produkte und Weinpakete, deren Pfadsegment (Teil der Web-Adresse) mehrfach vergeben ist.",
+				"empty": "Keine doppelten Pfadsegmente gefunden.",
+				"summary": "{count} Konflikte gefunden.",
+				"hint": "Je Gruppe behält ein Datensatz sein Pfadsegment (ein manuell gesetztes, sonst der älteste). Die anderen erhalten den angezeigten Vorschlag und werden auf automatisch umgestellt.",
+				"types": {
+					"wine": "Weine",
+					"product": "Produkte",
+					"bundle": "Weinpakete"
+				},
+				"kinds": {
+					"current": "mehrfach vergeben",
+					"history": "frühere Adresse eines anderen Datensatzes"
+				},
+				"manual": "manuell",
+				"keeps": "behält das Pfadsegment",
+				"suggestion": "Vorschlag",
+				"newSegment": "Neues Pfadsegment",
+				"formerOwners": "Alte Adresse gespeichert bei",
+				"actions": {
+					"regenerate": "Neu generieren",
+					"regenerateAll": "Alle neu generieren ({count})",
+					"cleanHistory": "Alte Adresse entfernen"
+				},
+				"states": {
+					"regenerated": "Neu generiert",
+					"cleaned": "Entfernt"
+				},
+				"errors": {
+					"failed": "Das hat nicht geklappt. Bitte erneut prüfen."
+				},
+				"dialogs": {
+					"regenerateAll": {
+						"title": "Alle neu generieren?",
+						"text": "{count} Änderungen werden übernommen: vorgeschlagene Pfadsegmente und das Entfernen alter Adressen. Links auf die doppelte Adresse führen danach nur noch zu dem Datensatz, der sie behält."
+					}
+				},
+				"toasts": {
+					"done": "Alle Pfadsegmente sind bereinigt.",
+					"partial": "Nicht alle Pfadsegmente konnten bereinigt werden."
+				}
+			},
+			"recalculation": {
+				"title": "Vorgang neugenerieren",
+				"description": "Bestellung und Rechnung eines Vorgangs neu berechnen und erzeugen – mit Vorher-/Nachher-Vergleich."
+			},
+			"expertises": {
+				"title": "Exposés neu erzeugen",
+				"description": "Prüft, welche Wein-Exposés (PDF) fehlen oder älter sind als Weindaten bzw. Vorlage, und erzeugt sie neu.",
+				"stats": {
+					"total": "Weine",
+					"missing": "fehlend",
+					"outdated": "veraltet",
+					"ok": "aktuell"
+				},
+				"allOk": "Alle Exposés sind aktuell.",
+				"noWines": "Dieser Kunde hat keine Weine.",
+				"showPending": "{count} Weine anzeigen",
+				"errors": "{count} Exposés konnten nicht erzeugt werden:",
+				"actions": {
+					"all": "Alle neu erzeugen ({count})",
+					"pending": "Fehlende und veraltete erzeugen ({count})"
+				},
+				"dialogs": {
+					"pending": {
+						"title": "Exposés erzeugen?",
+						"text": "Für {count} Weine werden die Exposés neu erzeugt. Das dauert einige Sekunden je Wein."
+					},
+					"all": {
+						"title": "Alle Exposés neu erzeugen?",
+						"text": "Für alle {count} Weine werden die Exposés neu erzeugt. Das dauert einige Sekunden je Wein."
+					}
+				},
+				"toasts": {
+					"done": "Die Exposés wurden erzeugt.",
+					"partial": "Nicht alle Exposés konnten erzeugt werden."
+				}
+			},
+			"storage": {
+				"title": "Speicherverbrauch berechnen",
+				"description": "Berechnet den belegten Speicher neu und zeigt, welche Ordner wie viel Platz belegen.",
+				"calculate": "Berechnen",
+				"recalculate": "Neu berechnen",
+				"of": "von {size} ({percent} %)",
+				"previous": "Letzte Berechnung: {size} am {date}",
+				"folder": "Ordner",
+				"size": "Größe",
+				"share": "Anteil",
+				"empty": "Keine Dateien vorhanden.",
+				"showAll": "Alle {count} anzeigen",
+				"showLess": "Weniger anzeigen"
+			},
+			"shopQuality": {
+				"title": "Datenqualität Shop",
+				"description": "Findet aktive Weine, Produkte und Weinpakete, die im Shop oder öffentlich sichtbar sind, aber keinen Preis, kein Bild, keine Beschreibung oder kein Pfadsegment haben.",
+				"summary": "{count} von {checked} sichtbaren Artikeln sind unvollständig.",
+				"hint": "Geprüft werden aktive Originale (keine Übersetzungen) mit Sichtbarkeit Shop oder Öffentlich.",
+				"empty": "Alle sichtbaren Artikel sind vollständig.",
+				"issues": {
+					"price": "Kein Preis",
+					"image": "Kein Bild",
+					"description": "Keine Beschreibung",
+					"pathSegment": "Kein Pfadsegment"
+				},
+				"visible": {
+					"shop": "Shop",
+					"public": "Öffentlich"
+				}
+			}
 		}
 	},
 	"message": {
@@ -2124,6 +2296,9 @@
 				"created": "Weingut wurde angelegt",
 				"connected": "Du bist nun mit dem Weingut verbunden."
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Hier legst du fest, unter welcher Adresse das Weingut auf deiner Website und im Shop erreichbar ist und wie es dort einsortiert wird."
 		}
 	},
 	"merchant": {
@@ -2358,7 +2533,8 @@
 			"winery": {
 				"label": "Weingut",
 				"placeholder": "Weingut suchen"
-			}
+			},
+			"topsellerHighlight": "Wein als Topseller hervorheben"
 		},
 		"cap_types": {
 			"screw": "Schraubverschluss",
@@ -2410,7 +2586,8 @@
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Lagerbewegungen",
 			"marketing": "Vermarktung",
-			"legal": "eLabel"
+			"legal": "eLabel",
+			"visibilitySeo": "Sichtbarkeit & SEO"
 		},
 		"dialogs": {
 			"connectAutomation": "Willst Du den Wein automatisiert in das Sortiment des Handelspartners übertragen?",
@@ -2439,7 +2616,9 @@
 		"hints": {
 			"stockDistribution": "Verfügbarer Bestand {stock}, reserviert {reserved}, in Bestellung {ordered}",
 			"maturationShort": "max. 200 Zeichen",
-			"terroirShort": "max. 200 Zeichen"
+			"terroirShort": "max. 200 Zeichen",
+			"pathSegmentSources": "Artikelnummer, Name und Jahrgang",
+			"shopSettingsIntro": "Hier legst du fest, unter welcher Adresse der Wein auf deiner Website und im Shop erreichbar ist und wie er dort hervorgehoben und einsortiert wird."
 		},
 		"errors": {
 			"missingWinery": "Es ist kein Weingut ausgewählt. Dadurch können bestimmte Netzwerk-Mechanismen wie z.B. die Bestellweiterleitung nicht ausgelöst werden."
@@ -2732,6 +2911,9 @@
 				"deleted": "Produkt gelöscht!",
 				"copied": "Produkt dupliziert"
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Hier legst du fest, unter welcher Adresse das Produkt auf deiner Website und im Shop erreichbar ist und wie es dort hervorgehoben und einsortiert wird."
 		}
 	},
 	"note": {
@@ -3000,7 +3182,8 @@
 			"defaultinvoiceaddress": "Standardrechnungsadresse",
 			"defaultinvoicemsg": "Die hier angegebene Adresse wird im Reiter 'Allgemein' gesetzt.",
 			"searchaddress": "Lieferadresse suchen",
-			"searchInvoiceAddress": "Rechnungsadresse suchen"
+			"searchInvoiceAddress": "Rechnungsadresse suchen",
+			"defaultbillingaddress": "Standard-Rechnungsadresse"
 		},
 		"types": {
 			"invoice": "Rechnungsadresse",
@@ -3735,6 +3918,9 @@
 			"notActivatedYet": "Der Angebotszeitraum hat noch nicht begonnen.",
 			"orderNotCreatedYet": "Das Angebot wurde noch nicht angenommen.",
 			"reserved": "Im Angebot beinhaltete Artikel sind reserviert."
+		},
+		"wizard": {
+			"submit": "Angebot speichern"
 		}
 	},
 	"openItems": {
@@ -4014,6 +4200,42 @@
 			"openPaymentToday": "Offener Zahlungsbetrag bei heutigem Zahlungseingang: {gross}",
 			"paid": "Bestellung wurde vollständig bezahlt.",
 			"paymentInProgress": "Warten auf Zahlung über Zahlungsdienstleister."
+		},
+		"wizard": {
+			"summary": "Zusammenfassung",
+			"change": "Ändern",
+			"pending": "folgt in Schritt {step}",
+			"emptyPositions": "Noch keine Positionen",
+			"emptyPositionsHint": "Suche oben nach einem Wein, Produkt, Fasswein oder Paket. Gleiche Artikel können mehrfach hinzugefügt werden.",
+			"freightFreeRemaining": "Noch {amount} bis versandkostenfrei (ab {limit}).",
+			"freeShipping": "Kostenloser Versand",
+			"clientHint": "Suche nach Name, Firma, Kundennummer oder Adresse",
+			"clientAdopted": "Vom Kunden übernommen: Rabatt, Zahlungsart, Rechnungstyp und Notizen",
+			"parcelHint": "Versand an Rechnungs- oder Lieferadresse. Verpackung und Versandkosten werden automatisch berechnet.",
+			"yardsaleHint": "Keine Lieferung. Der Kunde holt die Ware ab.",
+			"differingDeliveryHint": "Aus den Lieferadressen des Kunden wählen oder neu anlegen",
+			"cashHint": "Bei Barzahlung entfallen Zahlungsziel und Skonto.",
+			"rebatePercent": "Prozent",
+			"rebateAmount": "Betrag",
+			"campaignHint": "Nicht anwendbare Kampagnen erscheinen ausgegraut",
+			"notesHint": "Rechnungs- und Liefernotiz sind vom Kunden vorbelegt",
+			"sections": {
+				"client": "Kunde",
+				"deliveryType": "Versandart",
+				"deliveryAddress": "Lieferadresse",
+				"paymentType": "Zahlungsart",
+				"tax": "Steuer und Rechnung",
+				"conditions": "Konditionen",
+				"rebate": "Rabatt",
+				"campaign": "Kampagne",
+				"positions": "Positionen",
+				"notes": "Referenz und Notizen",
+				"invoice": "Rechnung und Zahlungsziel",
+				"cashback": "Skonto"
+			},
+			"submit": "Bestellung speichern",
+			"campaignSearch": "Kampagne suchen",
+			"notesFilled": "{count} ausgefüllt"
 		}
 	},
 	"orderItem": {
@@ -4037,7 +4259,8 @@
 				"manual": "manuell bearbeiten",
 				"editOff": "bearbeiten beenden",
 				"reset": "Name und Beschreibung zurücksetzen",
-				"resetShort": "zurücksetzen"
+				"resetShort": "zurücksetzen",
+				"edit": "Name und Beschreibung bearbeiten"
 			},
 			"editPrice": "Preis bearbeiten",
 			"delete": "Position löschen"

@@ -81,7 +81,8 @@
 			"settings": "Configuration",
 			"visibility": "Visibilité",
 			"qrcode": "QR-Code",
-			"seo": "Informations spécifiques aux moteurs de recherche"
+			"seo": "Informations spécifiques aux moteurs de recherche",
+			"websiteSettings": "Paramètres du site web"
 		},
 		"fields": {
 			"default": "Standard",
@@ -125,9 +126,14 @@
 			"metaTitle": "Étiquette de titre",
 			"metaDescription": "Meta Description",
 			"pathSegment": "Segment de chemin",
+			"pathSegmentManual": "Définir le segment de chemin manuellement",
 			"exactSearch": "Chaque mot recherché doit apparaître dans l'enregistrement des données. Les espaces séparent les mots de recherche.",
 			"salesAmmount": "Montant des ventes en {currency}",
-			"sum": "Somme totale"
+			"sum": "Somme totale",
+			"pathSegmentMode": {
+				"auto": "Automatique",
+				"manual": "Manuel"
+			}
 		},
 		"tabs": {
 			"files": "Fichiers",
@@ -135,7 +141,12 @@
 			"history": "Histoire",
 			"notes": "Notes",
 			"statistics": "Statistiques",
-			"qrcodes": "Codes QR"
+			"qrcodes": "Codes QR",
+			"more": "Plus",
+			"showAll": "Afficher toutes les sections",
+			"sections": "Sections",
+			"close": "Fermer",
+			"visibilitySeo": "Visibilité et SEO"
 		},
 		"views": {
 			"files": {
@@ -247,7 +258,28 @@
 			"required": "Champ obligatoire",
 			"minLength": "au moins {value} caractères",
 			"weight": "Poids, emballage compris (pour l'expédition)",
-			"allIfEmpty": "(Tout si rien n'est sélectionné)"
+			"allIfEmpty": "(Tout si rien n'est sélectionné)",
+			"pathSegmentChecking": "Vérification de la disponibilité du segment de chemin …",
+			"pathSegmentAvailable": "Segment de chemin OK : « {value} » est disponible.",
+			"pathSegmentTaken": "« {value} » est déjà utilisé par : {conflicts}. Choisis-en un autre.",
+			"pathSegmentDuplicate": "« {value} » est aussi utilisé par : {conflicts}. Il reste inchangé à l’enregistrement ; modifie-le pour une adresse unique.",
+			"pathSegmentAuto": "Généré à partir de {sources} et mis à jour lorsqu’ils changent.",
+			"pathSegmentManualRules": "Minuscules, chiffres et tirets. Les autres caractères sont convertis à l’enregistrement.",
+			"pathSegmentIntro": "Le segment de chemin est la dernière partie de l’adresse de l’entrée, par ex. …/riesling-sec-2024. Il doit être unique dans ton compte. S’il change, les adresses précédentes restent accessibles.",
+			"pathSegmentStatus": {
+				"checking": "Vérification …",
+				"available": "Segment de chemin OK !",
+				"taken": "Segment de chemin indisponible",
+				"duplicate": "Utilisé plusieurs fois"
+			},
+			"websiteSettingsIntro": "Définis ici l’adresse à laquelle l’entrée est accessible sur ton site web.",
+			"pathSegmentSources": {
+				"name": "le nom",
+				"title": "le titre",
+				"dateTitle": "date et titre",
+				"company": "le nom de l’entreprise",
+				"articleNameVintage": "numéro d’article, nom, millésime et goût"
+			}
 		},
 		"messages": {
 			"danger": {
@@ -309,6 +341,25 @@
 		},
 		"units": {
 			"days": "Jours"
+		},
+		"steps": {
+			"progress": "Étape {current} sur {total}",
+			"showAll": "Afficher toutes les étapes",
+			"title": "Étapes",
+			"locked": "Disponible une fois l’étape précédente terminée",
+			"back": "Retour"
+		},
+		"seo": {
+			"counter": "{count} / {max} caractères",
+			"titleHint": "Sans titre propre, le nom est utilisé.",
+			"descriptionHint": "Sans description propre, le début de la description est utilisé.",
+			"previewTitle": "Aperçu du résultat de recherche",
+			"previewHint": "Exemple uniquement. L’adresse réelle dépend de votre site web.",
+			"intro": "Les moteurs de recherche comme Google utilisent ces informations pour le résultat de recherche. Un titre concis et une bonne description augmentent les chances que l’entrée soit trouvée et cliquée."
+		},
+		"switch": {
+			"on": "activé",
+			"off": "désactivé"
 		}
 	},
 	"address": {
@@ -342,7 +393,8 @@
 			"defaultinvoiceaddress": "Adresse de facturation standard",
 			"defaultinvoicemsg": "L'adresse spécifiée ici est définie dans l'onglet 'Général'.",
 			"searchaddress": "Rechercher adresse de livraison",
-			"searchInvoiceAddress": "Rechercher l'adresse de facturation"
+			"searchInvoiceAddress": "Rechercher l'adresse de facturation",
+			"defaultbillingaddress": "Adresse de facturation par défaut"
 		},
 		"types": {
 			"invoice": "Adresse de facturation",
@@ -1942,7 +1994,8 @@
 			}
 		},
 		"tabs": {
-			"accounting": "Décompte"
+			"accounting": "Décompte",
+			"tasks": "Tâches"
 		},
 		"fieldSets": {
 			"accounting": "Décompte",
@@ -2127,6 +2180,126 @@
 				"recipient": "Destinataire de la facture",
 				"invoice": "Facture",
 				"order": "Commande"
+			}
+		},
+		"tasks": {
+			"intro": "Tâches de maintenance pour ce client. Chaque tâche vérifie d’abord et montre ce qui changerait – rien n’est modifié avant ton clic.",
+			"actions": {
+				"start": "Démarrer",
+				"restart": "Vérifier à nouveau",
+				"open": "Ouvrir",
+				"close": "Fermer"
+			},
+			"progress": "{done} sur {total} effectués",
+			"pathSegments": {
+				"title": "Vérifier les segments de chemin",
+				"description": "Trouve les vins, produits et coffrets dont le segment de chemin (partie de l’adresse web) est utilisé plusieurs fois.",
+				"empty": "Aucun segment de chemin en double trouvé.",
+				"summary": "{count} conflits trouvés.",
+				"hint": "Dans chaque groupe, un enregistrement conserve son segment de chemin (celui défini manuellement, sinon le plus ancien). Les autres reçoivent la proposition affichée et passent en automatique.",
+				"types": {
+					"wine": "Vins",
+					"product": "Produits",
+					"bundle": "Coffrets"
+				},
+				"kinds": {
+					"current": "utilisé plusieurs fois",
+					"history": "ancienne adresse d’un autre enregistrement"
+				},
+				"manual": "manuel",
+				"keeps": "conserve le segment de chemin",
+				"suggestion": "Proposition",
+				"newSegment": "Nouveau segment de chemin",
+				"formerOwners": "Ancienne adresse enregistrée chez",
+				"actions": {
+					"regenerate": "Régénérer",
+					"regenerateAll": "Tout régénérer ({count})",
+					"cleanHistory": "Supprimer l’ancienne adresse"
+				},
+				"states": {
+					"regenerated": "Régénéré",
+					"cleaned": "Supprimée"
+				},
+				"errors": {
+					"failed": "Cela n’a pas fonctionné. Merci de vérifier à nouveau."
+				},
+				"dialogs": {
+					"regenerateAll": {
+						"title": "Tout régénérer ?",
+						"text": "{count} modifications seront appliquées : segments de chemin proposés et suppression des anciennes adresses. Les liens vers l’adresse en double ne mèneront plus qu’à l’enregistrement qui la conserve."
+					}
+				},
+				"toasts": {
+					"done": "Tous les segments de chemin ont été nettoyés.",
+					"partial": "Tous les segments de chemin n’ont pas pu être nettoyés."
+				}
+			},
+			"recalculation": {
+				"title": "Régénérer une opération",
+				"description": "Recalculer et régénérer la commande et la facture d’une opération – avec comparaison avant/après."
+			},
+			"expertises": {
+				"title": "Régénérer les fiches techniques",
+				"description": "Vérifie quelles fiches techniques (PDF) manquent ou sont plus anciennes que les données du vin ou le modèle, et les régénère.",
+				"stats": {
+					"total": "Vins",
+					"missing": "manquantes",
+					"outdated": "obsolètes",
+					"ok": "à jour"
+				},
+				"allOk": "Toutes les fiches techniques sont à jour.",
+				"noWines": "Ce client n’a pas de vins.",
+				"showPending": "Afficher {count} vins",
+				"errors": "{count} fiches techniques n’ont pas pu être générées :",
+				"actions": {
+					"all": "Tout régénérer ({count})",
+					"pending": "Générer manquantes et obsolètes ({count})"
+				},
+				"dialogs": {
+					"pending": {
+						"title": "Générer les fiches techniques ?",
+						"text": "Les fiches techniques de {count} vins seront régénérées. Cela prend quelques secondes par vin."
+					},
+					"all": {
+						"title": "Régénérer toutes les fiches techniques ?",
+						"text": "Les fiches techniques des {count} vins seront régénérées. Cela prend quelques secondes par vin."
+					}
+				},
+				"toasts": {
+					"done": "Les fiches techniques ont été générées.",
+					"partial": "Toutes les fiches techniques n’ont pas pu être générées."
+				}
+			},
+			"storage": {
+				"title": "Calculer l’espace utilisé",
+				"description": "Recalcule l’espace de stockage utilisé et montre la place occupée par chaque dossier.",
+				"calculate": "Calculer",
+				"recalculate": "Recalculer",
+				"of": "sur {size} ({percent} %)",
+				"previous": "Dernier calcul : {size} le {date}",
+				"folder": "Dossier",
+				"size": "Taille",
+				"share": "Part",
+				"empty": "Aucun fichier.",
+				"showAll": "Afficher les {count}",
+				"showLess": "Afficher moins"
+			},
+			"shopQuality": {
+				"title": "Qualité des données de la boutique",
+				"description": "Trouve les vins, produits et coffrets actifs visibles dans la boutique ou publiquement sans prix, image, description ou segment de chemin.",
+				"summary": "{count} articles visibles sur {checked} sont incomplets.",
+				"hint": "Sont vérifiés les originaux actifs (sans traductions) visibles dans la boutique ou publiquement.",
+				"empty": "Tous les articles visibles sont complets.",
+				"issues": {
+					"price": "Pas de prix",
+					"image": "Pas d’image",
+					"description": "Pas de description",
+					"pathSegment": "Pas de segment de chemin"
+				},
+				"visible": {
+					"shop": "Boutique",
+					"public": "Public"
+				}
 			}
 		}
 	},
@@ -3240,6 +3413,9 @@
 			"notActivatedYet": "La période de l'offre n'a pas encore commencé.",
 			"orderNotCreatedYet": "L'offre n'a pas encore été acceptée.",
 			"reserved": "Les articles inclus dans l'offre sont réservés."
+		},
+		"wizard": {
+			"submit": "Enregistrer l’offre"
 		}
 	},
 	"openItems": {
@@ -3519,6 +3695,42 @@
 			"openPaymentToday": "Montant du paiement ouvert avec le paiement entrant du jour: {gross}",
 			"paid": "Ordre a été payée en totalité.",
 			"paymentInProgress": "En attente de paiement via le prestataire de services de paiement."
+		},
+		"wizard": {
+			"summary": "Récapitulatif",
+			"change": "Modifier",
+			"pending": "suit à l’étape {step}",
+			"emptyPositions": "Aucune position pour l’instant",
+			"emptyPositionsHint": "Recherchez ci-dessus un vin, un produit, un vin en vrac ou un coffret. Un même article peut être ajouté plusieurs fois.",
+			"freightFreeRemaining": "Encore {amount} avant la livraison gratuite (dès {limit}).",
+			"freeShipping": "Livraison gratuite",
+			"clientHint": "Recherche par nom, société, numéro client ou adresse",
+			"clientAdopted": "Repris du client : remise, mode de paiement, type de facture et notes",
+			"parcelHint": "Expédition à l’adresse de facturation ou de livraison. L’emballage et les frais de port sont calculés automatiquement.",
+			"yardsaleHint": "Pas de livraison. Le client vient chercher la marchandise.",
+			"differingDeliveryHint": "Choisir parmi les adresses de livraison du client ou en créer une",
+			"cashHint": "Le paiement en espèces n’a ni délai de paiement ni escompte.",
+			"rebatePercent": "Pourcentage",
+			"rebateAmount": "Montant",
+			"campaignHint": "Les campagnes non applicables sont grisées",
+			"notesHint": "Les notes de facture et de bon de livraison sont reprises du client",
+			"sections": {
+				"client": "Client",
+				"deliveryType": "Mode d’expédition",
+				"deliveryAddress": "Adresse de livraison",
+				"paymentType": "Mode de paiement",
+				"tax": "Taxe et facture",
+				"conditions": "Conditions",
+				"rebate": "Remise",
+				"campaign": "Campagne",
+				"positions": "Positions",
+				"notes": "Référence et notes",
+				"invoice": "Facture et délai de paiement",
+				"cashback": "Escompte"
+			},
+			"submit": "Enregistrer la commande",
+			"campaignSearch": "Rechercher une campagne",
+			"notesFilled": "{count} renseigné(s)"
 		}
 	},
 	"orderItem": {
@@ -3542,7 +3754,8 @@
 				"manual": "Modifier",
 				"editOff": "Arrêter l'édition",
 				"reset": "Réinitialiser le nom et la description",
-				"resetShort": "Réinitialiser"
+				"resetShort": "Réinitialiser",
+				"edit": "Modifier le nom et la description"
 			},
 			"editPrice": "Modifier le prix",
 			"delete": "Supprimer le poste"
@@ -3819,6 +4032,9 @@
 				"deleted": "Produit supprimé!",
 				"copied": "Produit dupliqué"
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Définis ici l’adresse à laquelle le produit est accessible sur ton site web et dans la boutique, ainsi que sa mise en avant et son classement."
 		}
 	},
 	"qrcode": {
@@ -5196,7 +5412,8 @@
 			"winery": {
 				"label": "Établissement vinicole",
 				"placeholder": "Rechercher établissement vinicole"
-			}
+			},
+			"topsellerHighlight": "Mettre le vin en avant comme meilleure vente"
 		},
 		"cap_types": {
 			"screw": "Bouchon à vis",
@@ -5248,7 +5465,8 @@
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Mouvements de stock",
 			"marketing": "Commercialisation",
-			"legal": "eLabel"
+			"legal": "eLabel",
+			"visibilitySeo": "Visibilité et SEO"
 		},
 		"dialogs": {
 			"connectAutomation": "Voulez-vous transférer automatiquement le vin dans la gamme de votre revendeur?",
@@ -5277,7 +5495,9 @@
 		"hints": {
 			"stockDistribution": "Stock disponible {stock}, en ordre {ordered}",
 			"maturationShort": "max. 200 caractères",
-			"terroirShort": "max. 200 caractères"
+			"terroirShort": "max. 200 caractères",
+			"pathSegmentSources": "numéro d’article, nom et millésime",
+			"shopSettingsIntro": "Définis ici l’adresse à laquelle le vin est accessible sur ton site web et dans la boutique, ainsi que sa mise en avant et son classement."
 		},
 		"errors": {
 			"missingWinery": "Aucune cave sélectionnée. Certains mécanismes de réseau tels que la transmission de commandes ne peuvent pas être déclenchés."
@@ -5418,6 +5638,9 @@
 				"created": "Établissement vinicole créé.",
 				"connected": "Vous êtes maintenant connecté à l'établissement vinicole."
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Définis ici l’adresse à laquelle le domaine est accessible sur ton site web et dans la boutique, ainsi que son classement."
 		}
 	},
 	"allergens": {

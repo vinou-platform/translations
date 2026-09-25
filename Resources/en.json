@@ -81,7 +81,8 @@
 			"settings": "Settings",
 			"visibility": "Visibility",
 			"qrcode": "QR-Code",
-			"seo": "Search engine specific information"
+			"seo": "Search engine specific information",
+			"websiteSettings": "Website settings"
 		},
 		"fields": {
 			"default": "Default",
@@ -125,9 +126,14 @@
 			"metaTitle": "Title-tag",
 			"metaDescription": "Meta description",
 			"pathSegment": "Path segment",
+			"pathSegmentManual": "Set path segment manually",
 			"exactSearch": "Each search word must appear in the data record. Spaces separate search words.",
 			"salesAmmount": "Sales ammount in {currency}",
-			"sum": "Total sum"
+			"sum": "Total sum",
+			"pathSegmentMode": {
+				"auto": "Automatic",
+				"manual": "Manual"
+			}
 		},
 		"tabs": {
 			"files": "Files",
@@ -135,7 +141,12 @@
 			"history": "History",
 			"notes": "Notes",
 			"statistics": "Statistics",
-			"qrcodes": "QR-Codes"
+			"qrcodes": "QR-Codes",
+			"more": "More",
+			"showAll": "Show all sections",
+			"sections": "Sections",
+			"close": "Close",
+			"visibilitySeo": "Visibility & SEO"
 		},
 		"views": {
 			"files": {
@@ -247,7 +258,28 @@
 			"required": "Required",
 			"minLength": "at least {value} characters",
 			"weight": "Weight including packaging (for shipping)",
-			"allIfEmpty": "(All if nothing selected)"
+			"allIfEmpty": "(All if nothing selected)",
+			"pathSegmentChecking": "Checking whether the path segment is available …",
+			"pathSegmentAvailable": "Path segment OK – “{value}” is available.",
+			"pathSegmentTaken": "“{value}” is already used by: {conflicts}. Please choose another one.",
+			"pathSegmentDuplicate": "“{value}” is also used by: {conflicts}. It stays unchanged when saving; change it for a unique address.",
+			"pathSegmentAuto": "Generated from {sources} and updated when they change.",
+			"pathSegmentManualRules": "Lowercase letters, digits and hyphens. Other characters are converted when saving.",
+			"pathSegmentIntro": "The path segment is the last part of the address under which the entry can be found, e.g. …/riesling-dry-2024. It must be unique within your account. If it changes, previous addresses remain reachable.",
+			"pathSegmentStatus": {
+				"checking": "Checking availability …",
+				"available": "Path segment OK!",
+				"taken": "Path segment not available",
+				"duplicate": "Used more than once"
+			},
+			"websiteSettingsIntro": "Define the address under which the entry can be found on your website.",
+			"pathSegmentSources": {
+				"name": "the name",
+				"title": "the title",
+				"dateTitle": "date and title",
+				"company": "the company name",
+				"articleNameVintage": "article number, name, vintage and taste"
+			}
 		},
 		"messages": {
 			"danger": {
@@ -309,6 +341,25 @@
 		},
 		"units": {
 			"days": "Days"
+		},
+		"steps": {
+			"progress": "Step {current} of {total}",
+			"showAll": "Show all steps",
+			"title": "Steps",
+			"locked": "Available once the previous step is complete",
+			"back": "Back"
+		},
+		"seo": {
+			"counter": "{count} / {max} characters",
+			"titleHint": "Without an own title, the name is used.",
+			"descriptionHint": "Without an own description, the beginning of the description is used.",
+			"previewTitle": "Search result preview",
+			"previewHint": "Example only. The actual address depends on your website.",
+			"intro": "Search engines such as Google use these details for the search result. A concise title and a good description increase the chance that the entry is found and clicked."
+		},
+		"switch": {
+			"on": "enabled",
+			"off": "disabled"
 		}
 	},
 	"address": {
@@ -342,7 +393,8 @@
 			"defaultinvoiceaddress": "Default invoice address",
 			"defaultinvoicemsg": "This address is set in the 'General' tab.",
 			"searchaddress": "Search delivery address",
-			"searchInvoiceAddress": "Search invoice address"
+			"searchInvoiceAddress": "Search invoice address",
+			"defaultbillingaddress": "Default billing address"
 		},
 		"types": {
 			"invoice": "Invoice address",
@@ -1942,7 +1994,8 @@
 			}
 		},
 		"tabs": {
-			"accounting": "Accounting"
+			"accounting": "Accounting",
+			"tasks": "Tasks"
 		},
 		"fieldSets": {
 			"accounting": "Accounting",
@@ -2127,6 +2180,126 @@
 				"recipient": "Invoice recipient",
 				"invoice": "Invoice",
 				"order": "Order"
+			}
+		},
+		"tasks": {
+			"intro": "Maintenance tasks for this customer. Each task checks first and shows what would change – nothing is changed until you click.",
+			"actions": {
+				"start": "Start",
+				"restart": "Check again",
+				"open": "Open",
+				"close": "Close"
+			},
+			"progress": "{done} of {total} done",
+			"pathSegments": {
+				"title": "Check path segments",
+				"description": "Finds wines, products and bundles whose path segment (part of the web address) is used more than once.",
+				"empty": "No duplicate path segments found.",
+				"summary": "{count} conflicts found.",
+				"hint": "In each group one record keeps its path segment (a manually set one, otherwise the oldest). The others get the suggestion shown and are switched to automatic.",
+				"types": {
+					"wine": "Wines",
+					"product": "Products",
+					"bundle": "Bundles"
+				},
+				"kinds": {
+					"current": "used more than once",
+					"history": "former address of another record"
+				},
+				"manual": "manual",
+				"keeps": "keeps its path segment",
+				"suggestion": "Suggestion",
+				"newSegment": "New path segment",
+				"formerOwners": "Old address stored at",
+				"actions": {
+					"regenerate": "Regenerate",
+					"regenerateAll": "Regenerate all ({count})",
+					"cleanHistory": "Remove old address"
+				},
+				"states": {
+					"regenerated": "Regenerated",
+					"cleaned": "Removed"
+				},
+				"errors": {
+					"failed": "That did not work. Please check again."
+				},
+				"dialogs": {
+					"regenerateAll": {
+						"title": "Regenerate all?",
+						"text": "{count} changes will be applied: suggested path segments and removal of old addresses. Links to the duplicate address then only lead to the record keeping it."
+					}
+				},
+				"toasts": {
+					"done": "All path segments have been cleaned up.",
+					"partial": "Not all path segments could be cleaned up."
+				}
+			},
+			"recalculation": {
+				"title": "Regenerate transaction",
+				"description": "Recalculate and regenerate order and invoice of a transaction – with before/after comparison."
+			},
+			"expertises": {
+				"title": "Regenerate expertises",
+				"description": "Checks which wine expertises (PDF) are missing or older than the wine data or template, and regenerates them.",
+				"stats": {
+					"total": "Wines",
+					"missing": "missing",
+					"outdated": "outdated",
+					"ok": "up to date"
+				},
+				"allOk": "All expertises are up to date.",
+				"noWines": "This customer has no wines.",
+				"showPending": "Show {count} wines",
+				"errors": "{count} expertises could not be generated:",
+				"actions": {
+					"all": "Regenerate all ({count})",
+					"pending": "Generate missing and outdated ({count})"
+				},
+				"dialogs": {
+					"pending": {
+						"title": "Generate expertises?",
+						"text": "The expertises of {count} wines will be regenerated. This takes a few seconds per wine."
+					},
+					"all": {
+						"title": "Regenerate all expertises?",
+						"text": "The expertises of all {count} wines will be regenerated. This takes a few seconds per wine."
+					}
+				},
+				"toasts": {
+					"done": "The expertises have been generated.",
+					"partial": "Not all expertises could be generated."
+				}
+			},
+			"storage": {
+				"title": "Calculate storage usage",
+				"description": "Recalculates the used storage and shows how much space each folder takes.",
+				"calculate": "Calculate",
+				"recalculate": "Recalculate",
+				"of": "of {size} ({percent} %)",
+				"previous": "Last calculation: {size} on {date}",
+				"folder": "Folder",
+				"size": "Size",
+				"share": "Share",
+				"empty": "No files present.",
+				"showAll": "Show all {count}",
+				"showLess": "Show less"
+			},
+			"shopQuality": {
+				"title": "Shop data quality",
+				"description": "Finds active wines, products and bundles visible in the shop or publicly that lack a price, an image, a description or a path segment.",
+				"summary": "{count} of {checked} visible articles are incomplete.",
+				"hint": "Active originals (no translations) visible in the shop or publicly are checked.",
+				"empty": "All visible articles are complete.",
+				"issues": {
+					"price": "No price",
+					"image": "No image",
+					"description": "No description",
+					"pathSegment": "No path segment"
+				},
+				"visible": {
+					"shop": "Shop",
+					"public": "Public"
+				}
 			}
 		}
 	},
@@ -3240,6 +3413,9 @@
 			"notActivatedYet": "Offer period has not started yet.",
 			"orderNotCreatedYet": "Offer has not been accepted yet.",
 			"reserved": "Items included in the offer are reserved."
+		},
+		"wizard": {
+			"submit": "Save offer"
 		}
 	},
 	"openItems": {
@@ -3519,6 +3695,42 @@
 			"openPaymentToday": "Open payment amount with today's incoming payment: {gross}",
 			"paid": "The order has been paid for in full.",
 			"paymentInProgress": "Waiting for payment via payment service provider."
+		},
+		"wizard": {
+			"summary": "Summary",
+			"change": "Change",
+			"pending": "follows in step {step}",
+			"emptyPositions": "No items yet",
+			"emptyPositionsHint": "Search above for a wine, product, bulk wine or bundle. The same article can be added several times.",
+			"freightFreeRemaining": "{amount} left until free shipping (from {limit}).",
+			"freeShipping": "Free shipping",
+			"clientHint": "Search by name, company, customer number or address",
+			"clientAdopted": "Adopted from the customer: rebate, payment method, invoice type and notes",
+			"parcelHint": "Shipping to the billing or delivery address. Packaging and shipping costs are calculated automatically.",
+			"yardsaleHint": "No delivery. The customer picks up the goods.",
+			"differingDeliveryHint": "Choose from the customer’s delivery addresses or create a new one",
+			"cashHint": "Cash payment has no payment term and no cash discount.",
+			"rebatePercent": "Percent",
+			"rebateAmount": "Amount",
+			"campaignHint": "Campaigns that do not apply are greyed out",
+			"notesHint": "Invoice and delivery note remarks are prefilled from the customer",
+			"sections": {
+				"client": "Customer",
+				"deliveryType": "Shipping method",
+				"deliveryAddress": "Delivery address",
+				"paymentType": "Payment method",
+				"tax": "Tax and invoice",
+				"conditions": "Terms",
+				"rebate": "Rebate",
+				"campaign": "Campaign",
+				"positions": "Items",
+				"notes": "Reference and notes",
+				"invoice": "Invoice and payment term",
+				"cashback": "Cash discount"
+			},
+			"submit": "Save order",
+			"campaignSearch": "Search campaign",
+			"notesFilled": "{count} filled in"
 		}
 	},
 	"orderItem": {
@@ -3542,7 +3754,8 @@
 				"manual": "Edit",
 				"editOff": "Stop editing",
 				"reset": "Reset name and description",
-				"resetShort": "Reset"
+				"resetShort": "Reset",
+				"edit": "Edit name and description"
 			},
 			"editPrice": "Edit price",
 			"delete": "Delete position"
@@ -3819,6 +4032,9 @@
 				"deleted": "Product deleted!",
 				"copied": "Product copied!"
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Define the address under which the product can be found on your website and in the shop, and how it is highlighted and sorted there."
 		}
 	},
 	"qrcode": {
@@ -5195,7 +5411,8 @@
 			"winery": {
 				"label": "Winery",
 				"placeholder": "Search winery"
-			}
+			},
+			"topsellerHighlight": "Highlight wine as top seller"
 		},
 		"cap_types": {
 			"screw": "Screw cap",
@@ -5247,7 +5464,8 @@
 			"vinougusto": "Vinou-Gusto",
 			"stockRotation": "Stock rotation",
 			"marketing": "Marketing",
-			"legal": "eLabel"
+			"legal": "eLabel",
+			"visibilitySeo": "Visibility & SEO"
 		},
 		"dialogs": {
 			"connectAutomation": "Do you want to automatically transfer the wine to the range of your retail partner?",
@@ -5276,7 +5494,9 @@
 		"hints": {
 			"stockDistribution": "Available stock {stock}, in order {ordered}",
 			"maturationShort": "max. 200 chars",
-			"terroirShort": "max. 200 chars"
+			"terroirShort": "max. 200 chars",
+			"pathSegmentSources": "article number, name and vintage",
+			"shopSettingsIntro": "Define the address under which the wine can be found on your website and in the shop, and how it is highlighted and sorted there."
 		},
 		"errors": {
 			"missingWinery": "No winery selected. Certain network mechanisms such as order forwarding cannot be triggered."
@@ -5417,6 +5637,9 @@
 				"created": "Winery created",
 				"connected": "Winery connected."
 			}
+		},
+		"hints": {
+			"shopSettingsIntro": "Define the address under which the winery can be reached on your website and in the shop, and how it is sorted there."
 		}
 	},
 	"allergens": {
