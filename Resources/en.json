@@ -2136,7 +2136,8 @@
 			"invoiceDraftSaved": "Dein Rechnungsentwurf wurde in sevdesk gespeichert."
 		},
 		"errors": {
-			"registrationFailed": "Something went wrong during the registration process. Please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active."
+			"registrationFailed": "Something went wrong during the registration process. Please contact our support team at kontakt@vinou.de or +49 6131 6245390 or use the support chat if its active.",
+			"registrationRetry": "Your registration could not be completed. Please reload the page, enter your details by hand and submit the form again. If it still does not work, contact us at kontakt@vinou.de or +49 6131 6245390."
 		},
 		"recalculation": {
 			"title": "Regenerate transaction",
@@ -5007,6 +5008,7 @@
 			"contentPlaceholder": "Announcement text …",
 			"type": "Type",
 			"important": "Highlight message",
+			"public": "Publish on vinou.de",
 			"app": "App restriction"
 		},
 		"types": {
@@ -5021,14 +5023,16 @@
 			"elabel": "eLABEL"
 		},
 		"badges": {
-			"important": "Important"
+			"important": "Important",
+			"public": "Public"
 		},
 		"actions": {
 			"compose": "New Announcement",
 			"send": "Send",
 			"delete": "Delete",
 			"showAll": "Show all announcements",
-			"markAsRead": "Mark as read"
+			"markAsRead": "Mark as read",
+			"publish": "Publish"
 		},
 		"fieldSets": {
 			"sent": "Sent Announcements"

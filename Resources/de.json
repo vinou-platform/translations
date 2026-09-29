@@ -1973,7 +1973,8 @@
 			"invoiceDraftSaved": "Dein Rechnungsentwurf wurde in sevdesk gespeichert."
 		},
 		"errors": {
-			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat."
+			"registrationFailed": "Bei Deiner Registrierung ist leider etwas schiefgelaufen, wende Dich bitte umgehend an unser Team unter kontakt@vinou.de oder +49 6131 6245390 oder benutze einfach den Support-Chat.",
+			"registrationRetry": "Deine Registrierung konnte nicht abgeschlossen werden. Bitte lade die Seite neu, gib Deine Daten von Hand ein und sende das Formular erneut ab. Klappt es dann noch immer nicht, erreichst Du uns unter kontakt@vinou.de oder +49 6131 6245390."
 		},
 		"recalculation": {
 			"title": "Vorgang neugenerieren",
@@ -4879,6 +4880,7 @@
 			"contentPlaceholder": "Text der Mitteilung …",
 			"type": "Typ",
 			"important": "Mitteilung hervorheben",
+			"public": "Auf vinou.de veröffentlichen",
 			"app": "App-Einschränkung"
 		},
 		"types": {
@@ -4893,14 +4895,16 @@
 			"elabel": "eLABEL"
 		},
 		"badges": {
-			"important": "Wichtig"
+			"important": "Wichtig",
+			"public": "Öffentlich"
 		},
 		"actions": {
 			"compose": "Neue Mitteilung",
 			"send": "Senden",
 			"delete": "Löschen",
 			"showAll": "Alle Mitteilungen anzeigen",
-			"markAsRead": "Als gelesen markieren"
+			"markAsRead": "Als gelesen markieren",
+			"publish": "Veröffentlichen"
 		},
 		"fieldSets": {
 			"sent": "Gesendete Mitteilungen"

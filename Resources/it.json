@@ -2136,7 +2136,8 @@
 			"invoiceDraftSaved": "La bozza della fattura è stata salvata in sevdesk."
 		},
 		"errors": {
-			"registrationFailed": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto."
+			"registrationFailed": "Sfortunatamente, la tua registrazione è andata male. Si prega di contattare immediatamente il nostro team all'indirizzo kontakt@vinou.de o +49 6131 6245390 o semplicemente utilizzare la chat di aiuto.",
+			"registrationRetry": "Non è stato possibile completare la registrazione. Ricarica la pagina, inserisci i tuoi dati manualmente e invia di nuovo il modulo. Se il problema persiste, contattaci all'indirizzo kontakt@vinou.de o al numero +49 6131 6245390."
 		},
 		"recalculation": {
 			"title": "Rigenerare l’operazione",
@@ -5007,6 +5008,7 @@
 			"contentPlaceholder": "Testo della comunicazione …",
 			"type": "Tipo",
 			"important": "Evidenzia messaggio",
+			"public": "Pubblica su vinou.de",
 			"app": "Restrizione app"
 		},
 		"types": {
@@ -5021,14 +5023,16 @@
 			"elabel": "eLABEL"
 		},
 		"badges": {
-			"important": "Importante"
+			"important": "Importante",
+			"public": "Pubblico"
 		},
 		"actions": {
 			"compose": "Nuova comunicazione",
 			"send": "Invia",
 			"delete": "Elimina",
 			"showAll": "Mostra tutte le comunicazioni",
-			"markAsRead": "Segna come letto"
+			"markAsRead": "Segna come letto",
+			"publish": "Pubblica"
 		},
 		"fieldSets": {
 			"sent": "Comunicazioni inviate"

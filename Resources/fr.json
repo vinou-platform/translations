@@ -2136,7 +2136,8 @@
 			"invoiceDraftSaved": "Votre facture provisoire a été enregistrée dans sevdesk."
 		},
 		"errors": {
-			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance."
+			"registrationFailed": "Malheureusement, votre inscription a mal tourné. Veuillez contacter immédiatement notre équipe à l'adresse kontakt@vinou.de ou au +49 6131 6245390 ou utilisez simplement le chat d'assistance.",
+			"registrationRetry": "Votre inscription n'a pas pu être finalisée. Veuillez recharger la page, saisir vos données manuellement et renvoyer le formulaire. Si cela ne fonctionne toujours pas, contactez-nous à kontakt@vinou.de ou au +49 6131 6245390."
 		},
 		"recalculation": {
 			"title": "Régénérer l’opération",
@@ -5007,6 +5008,7 @@
 			"contentPlaceholder": "Texte de l'annonce …",
 			"type": "Type",
 			"important": "Mettre en avant le message",
+			"public": "Publier sur vinou.de",
 			"app": "Restriction d'app"
 		},
 		"types": {
@@ -5021,14 +5023,16 @@
 			"elabel": "eLABEL"
 		},
 		"badges": {
-			"important": "Important"
+			"important": "Important",
+			"public": "Public"
 		},
 		"actions": {
 			"compose": "Nouvelle annonce",
 			"send": "Envoyer",
 			"delete": "Supprimer",
 			"showAll": "Afficher toutes les annonces",
-			"markAsRead": "Marquer comme lu"
+			"markAsRead": "Marquer comme lu",
+			"publish": "Publier"
 		},
 		"fieldSets": {
 			"sent": "Annonces envoyées"
