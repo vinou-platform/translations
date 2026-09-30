@@ -5032,7 +5032,8 @@
 			"delete": "Eliminar",
 			"showAll": "Mostrar todos los comunicados",
 			"markAsRead": "Marcar como leído",
-			"publish": "Publicar"
+			"publish": "Publicar",
+			"unpublish": "Ocultar"
 		},
 		"fieldSets": {
 			"sent": "Comunicados enviados"

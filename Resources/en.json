@@ -5032,7 +5032,8 @@
 			"delete": "Delete",
 			"showAll": "Show all announcements",
 			"markAsRead": "Mark as read",
-			"publish": "Publish"
+			"publish": "Publish",
+			"unpublish": "Hide"
 		},
 		"fieldSets": {
 			"sent": "Sent Announcements"

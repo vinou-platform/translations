@@ -5032,7 +5032,8 @@
 			"delete": "Elimina",
 			"showAll": "Mostra tutte le comunicazioni",
 			"markAsRead": "Segna come letto",
-			"publish": "Pubblica"
+			"publish": "Pubblica",
+			"unpublish": "Nascondi"
 		},
 		"fieldSets": {
 			"sent": "Comunicazioni inviate"

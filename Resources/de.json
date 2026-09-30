@@ -4904,7 +4904,8 @@
 			"delete": "Löschen",
 			"showAll": "Alle Mitteilungen anzeigen",
 			"markAsRead": "Als gelesen markieren",
-			"publish": "Veröffentlichen"
+			"publish": "Veröffentlichen",
+			"unpublish": "Ausblenden"
 		},
 		"fieldSets": {
 			"sent": "Gesendete Mitteilungen"

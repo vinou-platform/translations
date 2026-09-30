@@ -5032,7 +5032,8 @@
 			"delete": "Supprimer",
 			"showAll": "Afficher toutes les annonces",
 			"markAsRead": "Marquer comme lu",
-			"publish": "Publier"
+			"publish": "Publier",
+			"unpublish": "Masquer"
 		},
 		"fieldSets": {
 			"sent": "Annonces envoyées"
