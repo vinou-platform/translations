@@ -5009,7 +5009,18 @@
 			"type": "Tipo",
 			"important": "Evidenzia messaggio",
 			"public": "Pubblica su vinou.de",
-			"app": "Restrizione app"
+			"app": "Restrizione app",
+			"cta": "Pulsante (call to action)",
+			"ctaLabel": "Testo del link",
+			"ctaLabelPlaceholder": "es. Scopri di più",
+			"ctaUrl": "Link",
+			"ctaUrlPlaceholder": "https://… o /percorso/nella/app",
+			"ctaIcon": "Icona",
+			"ctaIconNone": "Nessuna icona",
+			"ctaNone": "Senza pulsante",
+			"ctaButton": "Con pulsante",
+			"ctaPreview": "Anteprima",
+			"markMailed": "Segna come inviato"
 		},
 		"types": {
 			"info": "Info",
@@ -5024,7 +5035,8 @@
 		},
 		"badges": {
 			"important": "Importante",
-			"public": "Pubblico"
+			"public": "Pubblico",
+			"internal": "Interna"
 		},
 		"actions": {
 			"compose": "Nuova comunicazione",
@@ -5033,10 +5045,50 @@
 			"showAll": "Mostra tutte le comunicazioni",
 			"markAsRead": "Segna come letto",
 			"publish": "Pubblica",
-			"unpublish": "Nascondi"
+			"unpublish": "Nascondi",
+			"edit": "Modifica"
 		},
 		"fieldSets": {
 			"sent": "Comunicazioni inviate"
+		},
+		"hints": {
+			"cta": "Facoltativo: il pulsante appare in basso a sinistra nella comunicazione e nell'e-mail. I link che iniziano con / portano all'interno dell'app.",
+			"ctaIncomplete": "Testo del link e link vanno insieme. Il link inizia con http://, https:// o /.",
+			"mailedAt": "Già inviato via e-mail il",
+			"mailPending": "Verrà inviato con la prossima e-mail alle 07:00."
+		},
+		"icons": {
+			"arrow-right": "Freccia a destra",
+			"external-link": "Link esterno",
+			"world": "Mondo",
+			"news": "Novità",
+			"megaphone": "Megafono",
+			"help": "Aiuto",
+			"calendar": "Calendario",
+			"download": "Download",
+			"shop": "Negozio",
+			"mail": "E-mail"
+		},
+		"create": {
+			"main": "Comunicazione",
+			"sub": "crea nuova"
+		},
+		"filters": {
+			"visibility": {
+				"label": "Visibilità",
+				"all": "Tutte",
+				"public": "Solo pubbliche",
+				"internal": "Solo interne"
+			},
+			"apps": {
+				"label": "App"
+			}
+		},
+		"dialogs": {
+			"delete": "Vuoi davvero eliminare la comunicazione?"
+		},
+		"toasts": {
+			"deleted": "Comunicazione eliminata."
 		},
 		"empty": "Nessuna comunicazione ancora"
 	},

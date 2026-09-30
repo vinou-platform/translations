@@ -4881,7 +4881,18 @@
 			"type": "Typ",
 			"important": "Mitteilung hervorheben",
 			"public": "Auf vinou.de veröffentlichen",
-			"app": "App-Einschränkung"
+			"app": "App-Einschränkung",
+			"cta": "Button (Call-to-Action)",
+			"ctaLabel": "Linktext",
+			"ctaLabelPlaceholder": "z. B. Mehr erfahren",
+			"ctaUrl": "Link",
+			"ctaUrlPlaceholder": "https://… oder /pfad/in/der/app",
+			"ctaIcon": "Icon",
+			"ctaIconNone": "Kein Icon",
+			"ctaNone": "Ohne Button",
+			"ctaButton": "Mit Button",
+			"ctaPreview": "Vorschau",
+			"markMailed": "Als versendet markieren"
 		},
 		"types": {
 			"info": "Info",
@@ -4896,7 +4907,8 @@
 		},
 		"badges": {
 			"important": "Wichtig",
-			"public": "Öffentlich"
+			"public": "Öffentlich",
+			"internal": "Intern"
 		},
 		"actions": {
 			"compose": "Neue Mitteilung",
@@ -4905,10 +4917,50 @@
 			"showAll": "Alle Mitteilungen anzeigen",
 			"markAsRead": "Als gelesen markieren",
 			"publish": "Veröffentlichen",
-			"unpublish": "Ausblenden"
+			"unpublish": "Ausblenden",
+			"edit": "Bearbeiten"
 		},
 		"fieldSets": {
 			"sent": "Gesendete Mitteilungen"
+		},
+		"hints": {
+			"cta": "Optional: Der Button erscheint unten links in der Mitteilung und in der Mail. Links, die mit / beginnen, führen innerhalb der App.",
+			"ctaIncomplete": "Linktext und Link gehören zusammen. Der Link beginnt mit http://, https:// oder /.",
+			"mailedAt": "Bereits per Mail versendet am",
+			"mailPending": "Wird mit dem nächsten Mailversand um 07:00 Uhr verschickt."
+		},
+		"icons": {
+			"arrow-right": "Pfeil nach rechts",
+			"external-link": "Externer Link",
+			"world": "Welt",
+			"news": "Neuigkeiten",
+			"megaphone": "Megafon",
+			"help": "Hilfe",
+			"calendar": "Kalender",
+			"download": "Download",
+			"shop": "Shop",
+			"mail": "E-Mail"
+		},
+		"create": {
+			"main": "Mitteilung",
+			"sub": "neu anlegen"
+		},
+		"filters": {
+			"visibility": {
+				"label": "Sichtbarkeit",
+				"all": "Alle",
+				"public": "Nur öffentliche",
+				"internal": "Nur interne"
+			},
+			"apps": {
+				"label": "App"
+			}
+		},
+		"dialogs": {
+			"delete": "Willst Du die Mitteilung wirklich löschen?"
+		},
+		"toasts": {
+			"deleted": "Mitteilung gelöscht."
 		},
 		"empty": "Noch keine Mitteilungen vorhanden"
 	},

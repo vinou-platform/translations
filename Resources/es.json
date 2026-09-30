@@ -5009,7 +5009,18 @@
 			"type": "Tipo",
 			"important": "Destacar mensaje",
 			"public": "Publicar en vinou.de",
-			"app": "Restricción de app"
+			"app": "Restricción de app",
+			"cta": "Botón (llamada a la acción)",
+			"ctaLabel": "Texto del enlace",
+			"ctaLabelPlaceholder": "p. ej. Más información",
+			"ctaUrl": "Enlace",
+			"ctaUrlPlaceholder": "https://… o /ruta/en/la/app",
+			"ctaIcon": "Icono",
+			"ctaIconNone": "Sin icono",
+			"ctaNone": "Sin botón",
+			"ctaButton": "Con botón",
+			"ctaPreview": "Vista previa",
+			"markMailed": "Marcar como enviado"
 		},
 		"types": {
 			"info": "Info",
@@ -5024,7 +5035,8 @@
 		},
 		"badges": {
 			"important": "Importante",
-			"public": "Público"
+			"public": "Público",
+			"internal": "Interna"
 		},
 		"actions": {
 			"compose": "Nuevo comunicado",
@@ -5033,10 +5045,50 @@
 			"showAll": "Mostrar todos los comunicados",
 			"markAsRead": "Marcar como leído",
 			"publish": "Publicar",
-			"unpublish": "Ocultar"
+			"unpublish": "Ocultar",
+			"edit": "Editar"
 		},
 		"fieldSets": {
 			"sent": "Comunicados enviados"
+		},
+		"hints": {
+			"cta": "Opcional: el botón aparece abajo a la izquierda en el comunicado y en el correo. Los enlaces que empiezan por / llevan dentro de la app.",
+			"ctaIncomplete": "El texto del enlace y el enlace van juntos. El enlace empieza por http://, https:// o /.",
+			"mailedAt": "Ya enviado por correo el",
+			"mailPending": "Se enviará con el próximo correo a las 07:00."
+		},
+		"icons": {
+			"arrow-right": "Flecha a la derecha",
+			"external-link": "Enlace externo",
+			"world": "Mundo",
+			"news": "Noticias",
+			"megaphone": "Megáfono",
+			"help": "Ayuda",
+			"calendar": "Calendario",
+			"download": "Descarga",
+			"shop": "Tienda",
+			"mail": "Correo"
+		},
+		"create": {
+			"main": "Comunicado",
+			"sub": "crear nuevo"
+		},
+		"filters": {
+			"visibility": {
+				"label": "Visibilidad",
+				"all": "Todos",
+				"public": "Solo públicos",
+				"internal": "Solo internos"
+			},
+			"apps": {
+				"label": "App"
+			}
+		},
+		"dialogs": {
+			"delete": "¿Quieres eliminar realmente el comunicado?"
+		},
+		"toasts": {
+			"deleted": "Comunicado eliminado."
 		},
 		"empty": "Aún no hay comunicados"
 	},

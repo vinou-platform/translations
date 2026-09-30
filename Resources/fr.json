@@ -5009,7 +5009,18 @@
 			"type": "Type",
 			"important": "Mettre en avant le message",
 			"public": "Publier sur vinou.de",
-			"app": "Restriction d'app"
+			"app": "Restriction d'app",
+			"cta": "Bouton (appel à l'action)",
+			"ctaLabel": "Texte du lien",
+			"ctaLabelPlaceholder": "p. ex. En savoir plus",
+			"ctaUrl": "Lien",
+			"ctaUrlPlaceholder": "https://… ou /chemin/dans/l/app",
+			"ctaIcon": "Icône",
+			"ctaIconNone": "Aucune icône",
+			"ctaNone": "Sans bouton",
+			"ctaButton": "Avec bouton",
+			"ctaPreview": "Aperçu",
+			"markMailed": "Marquer comme envoyé"
 		},
 		"types": {
 			"info": "Info",
@@ -5024,7 +5035,8 @@
 		},
 		"badges": {
 			"important": "Important",
-			"public": "Public"
+			"public": "Public",
+			"internal": "Interne"
 		},
 		"actions": {
 			"compose": "Nouvelle annonce",
@@ -5033,10 +5045,50 @@
 			"showAll": "Afficher toutes les annonces",
 			"markAsRead": "Marquer comme lu",
 			"publish": "Publier",
-			"unpublish": "Masquer"
+			"unpublish": "Masquer",
+			"edit": "Modifier"
 		},
 		"fieldSets": {
 			"sent": "Annonces envoyées"
+		},
+		"hints": {
+			"cta": "Facultatif : le bouton apparaît en bas à gauche de l'annonce et dans l'e-mail. Les liens commençant par / mènent à l'intérieur de l'application.",
+			"ctaIncomplete": "Le texte du lien et le lien vont ensemble. Le lien commence par http://, https:// ou /.",
+			"mailedAt": "Déjà envoyé par e-mail le",
+			"mailPending": "Sera envoyé avec le prochain e-mail à 07h00."
+		},
+		"icons": {
+			"arrow-right": "Flèche droite",
+			"external-link": "Lien externe",
+			"world": "Monde",
+			"news": "Actualités",
+			"megaphone": "Mégaphone",
+			"help": "Aide",
+			"calendar": "Calendrier",
+			"download": "Téléchargement",
+			"shop": "Boutique",
+			"mail": "E-mail"
+		},
+		"create": {
+			"main": "Annonce",
+			"sub": "créer"
+		},
+		"filters": {
+			"visibility": {
+				"label": "Visibilité",
+				"all": "Toutes",
+				"public": "Publiques uniquement",
+				"internal": "Internes uniquement"
+			},
+			"apps": {
+				"label": "App"
+			}
+		},
+		"dialogs": {
+			"delete": "Veux-tu vraiment supprimer l'annonce ?"
+		},
+		"toasts": {
+			"deleted": "Annonce supprimée."
 		},
 		"empty": "Aucune annonce pour le moment"
 	},

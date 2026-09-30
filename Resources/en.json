@@ -5009,7 +5009,18 @@
 			"type": "Type",
 			"important": "Highlight message",
 			"public": "Publish on vinou.de",
-			"app": "App restriction"
+			"app": "App restriction",
+			"cta": "Button (call to action)",
+			"ctaLabel": "Link text",
+			"ctaLabelPlaceholder": "e.g. Learn more",
+			"ctaUrl": "Link",
+			"ctaUrlPlaceholder": "https://… or /path/in/the/app",
+			"ctaIcon": "Icon",
+			"ctaIconNone": "No icon",
+			"ctaNone": "No button",
+			"ctaButton": "With button",
+			"ctaPreview": "Preview",
+			"markMailed": "Mark as sent"
 		},
 		"types": {
 			"info": "Info",
@@ -5024,7 +5035,8 @@
 		},
 		"badges": {
 			"important": "Important",
-			"public": "Public"
+			"public": "Public",
+			"internal": "Internal"
 		},
 		"actions": {
 			"compose": "New Announcement",
@@ -5033,10 +5045,50 @@
 			"showAll": "Show all announcements",
 			"markAsRead": "Mark as read",
 			"publish": "Publish",
-			"unpublish": "Hide"
+			"unpublish": "Hide",
+			"edit": "Edit"
 		},
 		"fieldSets": {
 			"sent": "Sent Announcements"
+		},
+		"hints": {
+			"cta": "Optional: the button appears at the bottom left of the announcement and in the email. Links starting with / lead within the app.",
+			"ctaIncomplete": "Link text and link belong together. The link starts with http://, https:// or /.",
+			"mailedAt": "Already sent by email on",
+			"mailPending": "Will be sent with the next email at 07:00."
+		},
+		"icons": {
+			"arrow-right": "Arrow right",
+			"external-link": "External link",
+			"world": "World",
+			"news": "News",
+			"megaphone": "Megaphone",
+			"help": "Help",
+			"calendar": "Calendar",
+			"download": "Download",
+			"shop": "Shop",
+			"mail": "Email"
+		},
+		"create": {
+			"main": "Announcement",
+			"sub": "create new"
+		},
+		"filters": {
+			"visibility": {
+				"label": "Visibility",
+				"all": "All",
+				"public": "Public only",
+				"internal": "Internal only"
+			},
+			"apps": {
+				"label": "App"
+			}
+		},
+		"dialogs": {
+			"delete": "Do you really want to delete the announcement?"
+		},
+		"toasts": {
+			"deleted": "Announcement deleted."
 		},
 		"empty": "No announcements yet"
 	},
