@@ -74,7 +74,11 @@
 			},
 			"save": "Salva",
 			"activate": "Attiva",
-			"deactivate": "Disattiva"
+			"deactivate": "Disattiva",
+			"selectAll": "Seleziona tutto",
+			"deselectAll": "Deseleziona tutto",
+			"expand": "Espandi",
+			"collapse": "Comprimi"
 		},
 		"fieldSets": {
 			"general": "Generale",
@@ -8793,11 +8797,17 @@
 			},
 			"search": {
 				"placeholder": "per esempio. nome, posta"
-			}
+			},
+			"changeImage": "Cambia immagine",
+			"uploadImage": "Carica immagine"
 		},
 		"fieldSets": {
 			"appsettings": "Modifica le impostazioni dell'app",
-			"modules": "Moduli"
+			"modules": "Moduli",
+			"credentials": "Dati di accesso"
+		},
+		"tabs": {
+			"rolesRights": "Ruoli e permessi"
 		},
 		"fields": {
 			"name": {
@@ -8819,7 +8829,8 @@
 			"settings": {
 				"language": "linguaggio",
 				"startModule": "Modulo di avvio"
-			}
+			},
+			"inactive": "inattivo"
 		},
 		"views": {
 			"login": {
@@ -8877,7 +8888,10 @@
 			"register": "Nessun account? <a href='/register'>Registrati ora!</a>",
 			"passwordmatch": "La nuova digitazione della password non corrisponde.",
 			"imagesize": "<b>Consigliato per il miglior rendering</b> <br> Dimensioni: 1000x1000px <br/> Formato file: .png (escluso)",
-			"startModule": "Dopo aver effettuato l'accesso, verrai reindirizzato automaticamente a questo modulo."
+			"startModule": "Dopo aver effettuato l'accesso, verrai reindirizzato automaticamente a questo modulo.",
+			"credentials": "Nome ed e-mail sono obbligatori.",
+			"imageFormat": "PNG, scontornato, 1000 × 1000 px",
+			"passwordMail": "In alternativa, l'utente imposta la propria password tramite un link."
 		},
 		"errors": {
 			"emailempty": "Campo email vuoto",
@@ -8976,5 +8990,11 @@
 			"link": "Vai all'errore",
 			"short": "{count}× errore del server · ultimo {time}"
 		}
+	},
+	"moduleField": {
+		"summary": "{active} di {total}",
+		"subModules": "Sottomoduli",
+		"locked": "{name} è disattivato. Attiva il modulo nell'elenco per abilitare i sottomoduli.",
+		"noSubModules": "{name} non ha sottomoduli. L'accesso vale per l'intero modulo."
 	}
 }

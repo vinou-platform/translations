@@ -74,7 +74,11 @@
 			},
 			"save": "Enregistrer",
 			"activate": "Activer",
-			"deactivate": "Désactiver"
+			"deactivate": "Désactiver",
+			"selectAll": "Tout sélectionner",
+			"deselectAll": "Tout désélectionner",
+			"expand": "Déplier",
+			"collapse": "Replier"
 		},
 		"fieldSets": {
 			"general": "Général",
@@ -8793,11 +8797,17 @@
 			},
 			"search": {
 				"placeholder": "par exemple. nom, mail"
-			}
+			},
+			"changeImage": "Changer l'image",
+			"uploadImage": "Télécharger une image"
 		},
 		"fieldSets": {
 			"appsettings": "Modifier les paramètres de l'application",
-			"modules": "Modules"
+			"modules": "Modules",
+			"credentials": "Identifiants"
+		},
+		"tabs": {
+			"rolesRights": "Rôles et droits"
 		},
 		"fields": {
 			"name": {
@@ -8819,7 +8829,8 @@
 			"settings": {
 				"language": "Langue",
 				"startModule": "Module de démarrage"
-			}
+			},
+			"inactive": "inactif"
 		},
 		"views": {
 			"login": {
@@ -8877,7 +8888,10 @@
 			"register": "Pas de compte? <a href='/register'> Inscrivez-vous maintenant! </a>",
 			"passwordmatch": "La nouvelle saisie du mot de passe ne correspond pas.",
 			"imagesize": "<b>Recommandé pour un meilleur rendu</b><br/>Dimension: 1000x1000px<br/>Format de fichier: .png (exempté)",
-			"startModule": "Une fois connecté, vous serez automatiquement redirigé vers ce module."
+			"startModule": "Une fois connecté, vous serez automatiquement redirigé vers ce module.",
+			"credentials": "Le nom et l'e-mail sont obligatoires.",
+			"imageFormat": "PNG, détouré, 1000 × 1000 px",
+			"passwordMail": "Sinon, l'utilisateur définit lui-même son mot de passe via un lien."
 		},
 		"errors": {
 			"emailempty": "Champ de courriel vide",
@@ -8976,5 +8990,11 @@
 			"link": "Voir l'erreur",
 			"short": "{count}× erreur serveur · dernière {time}"
 		}
+	},
+	"moduleField": {
+		"summary": "{active} sur {total}",
+		"subModules": "Sous-modules",
+		"locked": "{name} est désactivé. Activez le module dans la liste pour autoriser les sous-modules.",
+		"noSubModules": "{name} n'a pas de sous-modules. L'accès s'applique à tout le module."
 	}
 }

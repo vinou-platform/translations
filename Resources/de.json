@@ -74,7 +74,11 @@
 			},
 			"save": "Speichern",
 			"activate": "Aktivieren",
-			"deactivate": "Deaktivieren"
+			"deactivate": "Deaktivieren",
+			"selectAll": "Alle auswählen",
+			"deselectAll": "Alle abwählen",
+			"expand": "Aufklappen",
+			"collapse": "Zuklappen"
 		},
 		"fieldSets": {
 			"general": "Allgemein",
@@ -1459,11 +1463,17 @@
 			},
 			"search": {
 				"placeholder": "z.B. Name, E-Mail"
-			}
+			},
+			"changeImage": "Bild ändern",
+			"uploadImage": "Bild hochladen"
 		},
 		"fieldSets": {
 			"appsettings": "App-Einstellungen bearbeiten",
-			"modules": "Module"
+			"modules": "Module",
+			"credentials": "Zugangsdaten"
+		},
+		"tabs": {
+			"rolesRights": "Rollen und Rechte"
 		},
 		"fields": {
 			"name": {
@@ -1485,7 +1495,8 @@
 			"settings": {
 				"language": "Sprache",
 				"startModule": "Startmodul"
-			}
+			},
+			"inactive": "inaktiv"
 		},
 		"views": {
 			"login": {
@@ -1545,7 +1556,10 @@
 			"register": "Noch keinen Account? <a href='/register'>Hier Registrieren!</a>",
 			"passwordmatch": "Die beiden Passwörter stimmen nicht überein.",
 			"imagesize": "<b>Empfehlung für optimale Darstellung</b><br>Abmessungen: 1000x1000px<br/>Datei-Format: .png (freigestellt)",
-			"startModule": "Nach dem Login wirst Du automatisch zu diesem Modul weitergeleitet."
+			"startModule": "Nach dem Login wirst Du automatisch zu diesem Modul weitergeleitet.",
+			"credentials": "Name und E-Mail sind Pflichtfelder.",
+			"imageFormat": "PNG, freigestellt, 1000 × 1000 px",
+			"passwordMail": "Alternativ: Der Benutzer legt sein Passwort selbst über einen Link fest."
 		},
 		"errors": {
 			"emailempty": "E-Mail Adresse nicht angegeben",
@@ -8976,5 +8990,11 @@
 			"link": "Zum Fehler",
 			"short": "{count}× Server-Fehler · zuletzt {time}"
 		}
+	},
+	"moduleField": {
+		"summary": "{active} von {total}",
+		"subModules": "Untermodule",
+		"locked": "{name} ist ausgeschaltet. Schalte das Modul in der Liste ein, um Untermodule freizugeben.",
+		"noSubModules": "{name} hat keine Untermodule. Die Freigabe gilt für das ganze Modul."
 	}
 }

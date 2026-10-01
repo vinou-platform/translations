@@ -74,7 +74,11 @@
 			},
 			"save": "Save",
 			"activate": "Activate",
-			"deactivate": "Deactivate"
+			"deactivate": "Deactivate",
+			"selectAll": "Select all",
+			"deselectAll": "Deselect all",
+			"expand": "Expand",
+			"collapse": "Collapse"
 		},
 		"fieldSets": {
 			"general": "General",
@@ -8792,11 +8796,17 @@
 			},
 			"search": {
 				"placeholder": "e.g. name, mail"
-			}
+			},
+			"changeImage": "Change image",
+			"uploadImage": "Upload image"
 		},
 		"fieldSets": {
 			"appsettings": "Edit App-Settings",
-			"modules": "Modules"
+			"modules": "Modules",
+			"credentials": "Login details"
+		},
+		"tabs": {
+			"rolesRights": "Roles and permissions"
 		},
 		"fields": {
 			"name": {
@@ -8818,7 +8828,8 @@
 			"settings": {
 				"language": "Language",
 				"startModule": "Start module"
-			}
+			},
+			"inactive": "inactive"
 		},
 		"views": {
 			"login": {
@@ -8876,7 +8887,10 @@
 			"register": "No account? <a href='/register'>Register now!</a>",
 			"passwordmatch": "Password retype didn't match.",
 			"imagesize": "<b>Recommended for best rendering</b><br>Dimension: 1000x1000px<br/>Fileformat: .png (exempted)",
-			"startModule": "After logging in, you will be automatically redirected to this module."
+			"startModule": "After logging in, you will be automatically redirected to this module.",
+			"credentials": "Name and email are required.",
+			"imageFormat": "PNG, transparent, 1000 × 1000 px",
+			"passwordMail": "Alternatively, the user sets their own password via a link."
 		},
 		"errors": {
 			"emailempty": "Email field empty",
@@ -8975,5 +8989,11 @@
 			"link": "Show error",
 			"short": "{count}× server error · latest {time}"
 		}
+	},
+	"moduleField": {
+		"summary": "{active} of {total}",
+		"subModules": "Submodules",
+		"locked": "{name} is switched off. Turn the module on in the list to enable submodules.",
+		"noSubModules": "{name} has no submodules. Access applies to the whole module."
 	}
 }
