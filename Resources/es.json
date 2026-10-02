@@ -1672,7 +1672,12 @@
 			"sales": "Estadísticas de ventas",
 			"month": "Últimos 30 días",
 			"quarter": "Últimos 3 meses",
-			"year": "El año pasado"
+			"year": "El año pasado",
+			"ordersTitle": "Historial de pedidos",
+			"allOrders": "Todos",
+			"noOrders": "Todavía no hay pedidos de este cliente.",
+			"noTops": "Todavía no hay ventas en los últimos 12 meses.",
+			"sold": "{count}× vendido"
 		},
 		"fieldSets": {
 			"general": "generalidades",

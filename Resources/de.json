@@ -3023,7 +3023,12 @@
 			"sales": "Umsatzstatistik",
 			"month": "Die letzten 30 Tage",
 			"quarter": "Das letzte Quartal",
-			"year": "Die letzten 12 Monate"
+			"year": "Die letzten 12 Monate",
+			"ordersTitle": "Auftragshistorie",
+			"allOrders": "Alle",
+			"noOrders": "Noch keine Aufträge für diesen Kunden.",
+			"noTops": "Noch keine Verkäufe in den letzten 12 Monaten.",
+			"sold": "{count}× verkauft"
 		},
 		"fieldSets": {
 			"general": "Allgemeines",
