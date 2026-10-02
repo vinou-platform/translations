@@ -1812,6 +1812,31 @@
 				"editAddress": "Modifica indirizzo",
 				"editContact": "Modifica persona di contatto"
 			}
+		},
+		"payments": {
+			"title": "Pagamenti",
+			"totalSales": "Fatturato totale",
+			"totalOrders": "da {count} ordini",
+			"openItems": "Partite aperte",
+			"openNone": "Nessuna partita aperta",
+			"openTitle": "Attenzione: partite aperte per {amount}",
+			"openOverdue": "{count} fattura/e aperta/e, di cui <strong>{amount} scaduto</strong> – fino a <strong>{days} giorni</strong>.",
+			"openNotDue": "{count} fattura/e aperta/e, <strong>non ancora scaduta/e</strong>.",
+			"noPaymentsOnAccount": "Ancora nessuna fattura a termine pagata.",
+			"lateTitle": "Attenzione: paga regolarmente in ritardo",
+			"lateText": "Le ultime <strong>{count} fatture scadute</strong> sono state pagate <u>in ritardo o non ancora pagate</u>.",
+			"moral": "Puntualità nei pagamenti",
+			"moralOnTime": "puntuale",
+			"moralLate": "in ritardo",
+			"moralOverdue": "scaduto",
+			"moralAvg": "I pagamenti in ritardo sono arrivati in media {days} giorni dopo la scadenza.",
+			"moralNone": "Finora tutte le fatture a termine pagate puntualmente."
+		},
+		"overview": {
+			"show": "Mostra dettagli",
+			"hide": "Nascondi dettagli",
+			"badgeOpen": "{amount} aperto",
+			"badgeLate": "paga in ritardo"
 		}
 	},
 	"clientgroup": {

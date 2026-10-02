@@ -1812,6 +1812,31 @@
 				"editAddress": "Modifier l'adresse",
 				"editContact": "Modifier la personne de contact"
 			}
+		},
+		"payments": {
+			"title": "Paiements",
+			"totalSales": "Chiffre d'affaires total",
+			"totalOrders": "sur {count} commandes",
+			"openItems": "Impayés",
+			"openNone": "Aucun impayé",
+			"openTitle": "Attention : impayés de {amount}",
+			"openOverdue": "{count} facture(s) ouverte(s), dont <strong>{amount} en retard</strong> – jusqu'à <strong>{days} jours</strong>.",
+			"openNotDue": "{count} facture(s) ouverte(s), <strong>pas encore échue(s)</strong>.",
+			"noPaymentsOnAccount": "Pas encore de factures à terme payées.",
+			"lateTitle": "Attention : paie régulièrement en retard",
+			"lateText": "Les <strong>{count} dernières factures échues</strong> ont été payées <u>en retard ou ne sont pas encore payées</u>.",
+			"moral": "Comportement de paiement",
+			"moralOnTime": "à l'heure",
+			"moralLate": "en retard",
+			"moralOverdue": "échu",
+			"moralAvg": "Les paiements en retard sont arrivés en moyenne {days} jours après l'échéance.",
+			"moralNone": "Jusqu'ici, toutes les factures à terme payées à l'heure."
+		},
+		"overview": {
+			"show": "Afficher les détails",
+			"hide": "Masquer les détails",
+			"badgeOpen": "{amount} impayé",
+			"badgeLate": "paie en retard"
 		}
 	},
 	"clientgroup": {

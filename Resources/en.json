@@ -1812,6 +1812,31 @@
 				"editAddress": "Edit address",
 				"editContact": "Edit contact person"
 			}
+		},
+		"payments": {
+			"title": "Payments",
+			"totalSales": "Total sales",
+			"totalOrders": "from {count} orders",
+			"openItems": "Open items",
+			"openNone": "No open items",
+			"openTitle": "Attention: open items of {amount}",
+			"openOverdue": "{count} open invoice(s), <strong>{amount} of it overdue</strong> – up to <strong>{days} days</strong>.",
+			"openNotDue": "{count} open invoice(s), <strong>not yet due</strong>.",
+			"noPaymentsOnAccount": "No paid invoices on account yet.",
+			"lateTitle": "Attention: regularly pays late",
+			"lateText": "The last <strong>{count} due invoices</strong> were paid <u>late or not at all yet</u>.",
+			"moral": "Payment behaviour",
+			"moralOnTime": "on time",
+			"moralLate": "late",
+			"moralOverdue": "overdue",
+			"moralAvg": "Late payments came {days} days after the due date on average.",
+			"moralNone": "All invoices on account paid on time so far."
+		},
+		"overview": {
+			"show": "Show details",
+			"hide": "Hide details",
+			"badgeOpen": "{amount} open",
+			"badgeLate": "pays late"
 		}
 	},
 	"clientgroup": {

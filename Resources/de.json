@@ -3163,6 +3163,31 @@
 				"editAddress": "Adresse bearbeiten",
 				"editContact": "Kontaktperson bearbeiten"
 			}
+		},
+		"payments": {
+			"title": "Zahlungen",
+			"totalSales": "Gesamtumsatz",
+			"totalOrders": "aus {count} Aufträgen",
+			"openItems": "Offene Posten",
+			"openNone": "Keine offenen Posten",
+			"openTitle": "Achtung: Offene Posten in Höhe von {amount}",
+			"openOverdue": "{count} offene Rechnung(en), davon <strong>{amount} überfällig</strong> – bis zu <strong>{days} Tage</strong>.",
+			"openNotDue": "{count} offene Rechnung(en), <strong>noch nicht fällig</strong>.",
+			"noPaymentsOnAccount": "Noch keine bezahlten Rechnungen auf Ziel.",
+			"lateTitle": "Achtung: zahlt regelmäßig zu spät",
+			"lateText": "Die letzten <strong>{count} fälligen Rechnungen</strong> wurden <u>zu spät oder noch gar nicht</u> bezahlt.",
+			"moral": "Zahlungsmoral",
+			"moralOnTime": "pünktlich",
+			"moralLate": "verspätet",
+			"moralOverdue": "überfällig",
+			"moralAvg": "Verspätete Zahlungen kamen im Schnitt {days} Tage nach dem Zahlungsziel.",
+			"moralNone": "Bisher alle Rechnungen auf Ziel pünktlich bezahlt."
+		},
+		"overview": {
+			"show": "Details anzeigen",
+			"hide": "Details ausblenden",
+			"badgeOpen": "{amount} offen",
+			"badgeLate": "zahlt zu spät"
 		}
 	},
 	"clientgroup": {

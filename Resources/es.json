@@ -1812,6 +1812,31 @@
 				"editAddress": "Editar dirección",
 				"editContact": "Editar persona de contacto"
 			}
+		},
+		"payments": {
+			"title": "Pagos",
+			"totalSales": "Facturación total",
+			"totalOrders": "de {count} pedidos",
+			"openItems": "Partidas abiertas",
+			"openNone": "Sin partidas abiertas",
+			"openTitle": "Atención: partidas abiertas por {amount}",
+			"openOverdue": "{count} factura(s) abierta(s), de ellas <strong>{amount} vencido</strong> – hasta <strong>{days} días</strong>.",
+			"openNotDue": "{count} factura(s) abierta(s), <strong>aún no vencida(s)</strong>.",
+			"noPaymentsOnAccount": "Todavía no hay facturas a crédito pagadas.",
+			"lateTitle": "Atención: paga con retraso regularmente",
+			"lateText": "Las últimas <strong>{count} facturas vencidas</strong> se pagaron <u>tarde o todavía no se han pagado</u>.",
+			"moral": "Comportamiento de pago",
+			"moralOnTime": "puntual",
+			"moralLate": "con retraso",
+			"moralOverdue": "vencido",
+			"moralAvg": "Los pagos con retraso llegaron de media {days} días después del vencimiento.",
+			"moralNone": "Hasta ahora todas las facturas a crédito pagadas puntualmente."
+		},
+		"overview": {
+			"show": "Mostrar detalles",
+			"hide": "Ocultar detalles",
+			"badgeOpen": "{amount} pendiente",
+			"badgeLate": "paga tarde"
 		}
 	},
 	"clientgroup": {
