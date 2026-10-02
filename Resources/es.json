@@ -382,6 +382,7 @@
 			"name": "nombre/persona de contacto",
 			"company": "empresa",
 			"taxid": "Número de identificación fiscal",
+			"gln": "GLN",
 			"address": "calle y número de casa",
 			"address_supplement": "datos complementarios del domicilio",
 			"postNumber": "Número postal del destinatario",
@@ -424,7 +425,8 @@
 		},
 		"hints": {
 			"deliveryNoteRemark": "información separada que se muestra en los documentos de entrega",
-			"invoiceNoteRemark": "información separada que se muestra en los documentos de factura"
+			"invoiceNoteRemark": "información separada que se muestra en los documentos de factura",
+			"gln": "Para la factura electrónica: en direcciones de facturación el GLN del destinatario de la factura (p. ej. el mayorista), en direcciones de entrega el GLN del destinatario de la mercancía."
 		}
 	},
 	"analysisOrder": {

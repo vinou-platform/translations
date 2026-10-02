@@ -382,6 +382,7 @@
 			"name": "Nome/Contatto",
 			"company": "Società",
 			"taxid": "Numero di codice fiscale",
+			"gln": "GLN",
 			"address": "Via e numero civico",
 			"address_supplement": "Indirizzo aggiuntivo",
 			"postNumber": "Numero postale del destinatario",
@@ -424,7 +425,8 @@
 		},
 		"hints": {
 			"deliveryNoteRemark": "informazioni separate visualizzate sui documenti di consegna",
-			"invoiceNoteRemark": "informazioni separate visualizzate sui documenti di fattura"
+			"invoiceNoteRemark": "informazioni separate visualizzate sui documenti di fattura",
+			"gln": "Per la fattura elettronica: negli indirizzi di fatturazione il GLN del destinatario della fattura (ad es. il grossista), negli indirizzi di consegna il GLN del destinatario della merce."
 		}
 	},
 	"analysisOrder": {

@@ -382,6 +382,7 @@
 			"name": "Contact person",
 			"company": "Company",
 			"taxid": "Tax Number",
+			"gln": "GLN",
 			"address": "Street",
 			"address_supplement": "Address supplement",
 			"postNumber": "Recipient's postal number",
@@ -424,7 +425,8 @@
 		},
 		"hints": {
 			"deliveryNoteRemark": "separate information displayed on delivery documents",
-			"invoiceNoteRemark": "separate information displayed on invoice documents"
+			"invoiceNoteRemark": "separate information displayed on invoice documents",
+			"gln": "For e-invoices: on invoice addresses the GLN of the invoice recipient (e.g. the wholesaler), on shipping addresses the GLN of the consignee."
 		}
 	},
 	"analysisOrder": {
