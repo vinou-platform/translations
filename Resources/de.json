@@ -3246,6 +3246,14 @@
 			"created": "Kontaktperson erstellt.",
 			"changed": "Kontaktperson aktualisiert.",
 			"deleted": "Kontaktperson gelöscht."
+		},
+		"fieldSets": {
+			"person": "Person",
+			"reach": "Erreichbarkeit"
+		},
+		"sectionHints": {
+			"person": "Wer ist die Person und wofür ist sie zuständig?",
+			"reach": "Wie du die Person am besten erreichst."
 		}
 	},
 	"address": {
@@ -3301,7 +3309,9 @@
 		"fieldSets": {
 			"contact": "Kontaktdaten",
 			"address": "Adressinformationen",
-			"additional": "Weitere Informationen"
+			"additional": "Weitere Informationen",
+			"recipient": "Empfänger",
+			"einvoice": "E-Rechnung"
 		},
 		"dialogs": {
 			"delete": "Möchtest Du diese Adresse wirklich löschen?"
@@ -3315,6 +3325,10 @@
 			"deliveryNoteRemark": "gesonderte Angabe die auf allen Liferdokumenten erscheinen",
 			"invoiceNoteRemark": "gesonderte Angabe die auf allen Rechnungsdokumenten erscheinen",
 			"gln": "Für die E-Rechnung: Bei Rechnungsadressen die GLN des Rechnungsempfängers (z. B. der Großhandlung), bei Lieferadressen die GLN des Warenempfängers."
+		},
+		"sectionHints": {
+			"recipient": "Firma oder Name – eins von beiden reicht.",
+			"parcelStation": "Postnummer und Nummer der Packstation stehen in der DHL-App oder auf der Kundenkarte."
 		}
 	},
 	"creditAdvice": {

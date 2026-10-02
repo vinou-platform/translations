@@ -419,7 +419,9 @@
 		"fieldSets": {
 			"contact": "Contact data",
 			"address": "Address information",
-			"additional": "Additional Informationen"
+			"additional": "Additional Informationen",
+			"recipient": "Recipient",
+			"einvoice": "E-invoice"
 		},
 		"dialogs": {
 			"delete": "Do you really want to delete this address?"
@@ -433,6 +435,10 @@
 			"deliveryNoteRemark": "separate information displayed on delivery documents",
 			"invoiceNoteRemark": "separate information displayed on invoice documents",
 			"gln": "For e-invoices: on invoice addresses the GLN of the invoice recipient (e.g. the wholesaler), on shipping addresses the GLN of the consignee."
+		},
+		"sectionHints": {
+			"recipient": "Company or name – one of them is enough.",
+			"parcelStation": "Post number and parcel station number are shown in the DHL app or on the customer card."
 		}
 	},
 	"analysisOrder": {
@@ -1907,6 +1913,14 @@
 			"created": "Contact created.",
 			"changed": "Contact changed.",
 			"deleted": "Contact deleted."
+		},
+		"fieldSets": {
+			"person": "Person",
+			"reach": "Contact details"
+		},
+		"sectionHints": {
+			"person": "Who is the person and what are they responsible for?",
+			"reach": "How to reach the person best."
 		}
 	},
 	"creditAdvice": {

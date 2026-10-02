@@ -419,7 +419,9 @@
 		"fieldSets": {
 			"contact": "Coordonnées",
 			"address": "Informations d'adresse",
-			"additional": "Informations supplémentaires"
+			"additional": "Informations supplémentaires",
+			"recipient": "Destinataire",
+			"einvoice": "Facture électronique"
 		},
 		"dialogs": {
 			"delete": "Voulez-vous vraiment supprimer cet adresse?"
@@ -433,6 +435,10 @@
 			"deliveryNoteRemark": "informations distinctes affichées sur les documents de livraison",
 			"invoiceNoteRemark": "informations distinctes affichées sur les documents de facturation",
 			"gln": "Pour la facture électronique : sur les adresses de facturation le GLN du destinataire de la facture (p. ex. le grossiste), sur les adresses de livraison le GLN du destinataire des marchandises."
+		},
+		"sectionHints": {
+			"recipient": "Entreprise ou nom – l'un des deux suffit.",
+			"parcelStation": "Le numéro postal et celui de la station de colis figurent dans l'app DHL ou sur la carte client."
 		}
 	},
 	"analysisOrder": {
@@ -1907,6 +1913,14 @@
 			"created": "Personne de contact enregistrée.",
 			"changed": "Personne de contact mise à jour.",
 			"deleted": "Personne de contact supprimée."
+		},
+		"fieldSets": {
+			"person": "Personne",
+			"reach": "Coordonnées"
+		},
+		"sectionHints": {
+			"person": "Qui est la personne et de quoi est-elle responsable ?",
+			"reach": "Comment joindre au mieux la personne."
 		}
 	},
 	"creditAdvice": {
