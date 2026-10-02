@@ -3078,7 +3078,8 @@
 			"addresses": "Adressen",
 			"contacts": "Kontaktpersonen",
 			"general": "Allgemein",
-			"notes": "Notizen"
+			"notes": "Notizen",
+			"addressBook": "Adressen & Kontakte"
 		},
 		"addresses": {
 			"title": "Adressen zu diesem Kunden"
@@ -3106,6 +3107,42 @@
 			"changed": "Kunde geändert!",
 			"copied": "Kunde dupliziert",
 			"deleted": "Kunde gelöscht!"
+		},
+		"addressBook": {
+			"title": "Adressen & Kontakte",
+			"intro": "Alle Anschriften und Ansprechpartner dieses Kunden auf einen Blick: Stammdaten, abweichende Rechnungs- und Lieferadressen sowie weitere Kontaktpersonen.",
+			"filters": {
+				"all": "Alle",
+				"invoice": "Rechnung",
+				"shipping": "Lieferung",
+				"contacts": "Kontakte"
+			},
+			"sections": {
+				"master": "Stammdaten",
+				"invoice": "Rechnungsadressen",
+				"shipping": "Lieferadressen",
+				"contacts": "Kontaktpersonen"
+			},
+			"badges": {
+				"master": "Stammdaten",
+				"defaultShipping": "Standard-Lieferadresse",
+				"parcelStation": "Packstation"
+			},
+			"hints": {
+				"master": "Wird im Reiter „Allgemein“ gepflegt und gilt für Rechnung und Lieferung, solange nichts anderes gewählt ist.",
+				"emptyInvoice": "Keine abweichende Rechnungsadresse – Rechnungen gehen an die Stammdaten.",
+				"emptyShipping": "Keine Lieferadresse – geliefert wird an die Stammdaten.",
+				"emptyContacts": "Noch keine weiteren Kontaktpersonen."
+			},
+			"actions": {
+				"back": "Zurück zur Übersicht",
+				"edit": "Bearbeiten",
+				"delete": "Löschen",
+				"newAddress": "Neue Adresse",
+				"newContact": "Neue Kontaktperson",
+				"editAddress": "Adresse bearbeiten",
+				"editContact": "Kontaktperson bearbeiten"
+			}
 		}
 	},
 	"clientgroup": {
@@ -3205,6 +3242,12 @@
 			"invoice": "Rechnungsadresse",
 			"shipping": "Lieferadresse",
 			"geolocation": "Geografischer Punkt"
+		},
+		"typeHints": {
+			"invoice": "Abweichende Anschrift für Rechnungen, z. B. Buchhaltung oder Großhandlung.",
+			"shipping": "Zusätzliche Anschrift, an die geliefert wird.",
+			"parcelStation": "Lieferung an eine DHL-Packstation.",
+			"geolocation": "Geografischer Punkt, z. B. Weinberg oder Lager."
 		},
 		"subtypes": {
 			"address": "Adresse",

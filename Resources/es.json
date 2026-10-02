@@ -406,6 +406,12 @@
 			"shipping": "Dirección de entrega",
 			"geolocation": "Geolocation"
 		},
+		"typeHints": {
+			"invoice": "Dirección divergente para facturas, p. ej. contabilidad o mayorista.",
+			"shipping": "Dirección adicional a la que se entrega.",
+			"parcelStation": "Entrega en una estación de paquetes DHL.",
+			"geolocation": "Punto geográfico, p. ej. viñedo o almacén."
+		},
 		"subtypes": {
 			"address": "Dirección",
 			"parcelStation": "Estación de paquetería"
@@ -1736,7 +1742,8 @@
 			"addresses": "direcciones",
 			"contacts": "personas de contacto",
 			"general": "generalidades",
-			"notes": "notas"
+			"notes": "notas",
+			"addressBook": "Direcciones y contactos"
 		},
 		"addresses": {
 			"title": "Direcciones relativas a este cliente"
@@ -1764,6 +1771,42 @@
 			"changed": "cliente ha sido editado!",
 			"copied": "cliente ha sido duplicado",
 			"deleted": "cliente ha sido borrado!"
+		},
+		"addressBook": {
+			"title": "Direcciones y contactos",
+			"intro": "Todas las direcciones y personas de contacto de este cliente de un vistazo: datos maestros, direcciones de facturación y de entrega divergentes y otras personas de contacto.",
+			"filters": {
+				"all": "Todas",
+				"invoice": "Factura",
+				"shipping": "Entrega",
+				"contacts": "Contactos"
+			},
+			"sections": {
+				"master": "Datos maestros",
+				"invoice": "Direcciones de facturación",
+				"shipping": "Direcciones de entrega",
+				"contacts": "Personas de contacto"
+			},
+			"badges": {
+				"master": "Datos maestros",
+				"defaultShipping": "Dirección de entrega estándar",
+				"parcelStation": "Estación de paquetes"
+			},
+			"hints": {
+				"master": "Se gestiona en la pestaña «General» y se usa para factura y entrega mientras no se elija otra cosa.",
+				"emptyInvoice": "Sin dirección de facturación divergente: las facturas van a los datos maestros.",
+				"emptyShipping": "Sin dirección de entrega: se entrega a los datos maestros.",
+				"emptyContacts": "Todavía no hay más personas de contacto."
+			},
+			"actions": {
+				"back": "Volver al resumen",
+				"edit": "Editar",
+				"delete": "Eliminar",
+				"newAddress": "Nueva dirección",
+				"newContact": "Nueva persona de contacto",
+				"editAddress": "Editar dirección",
+				"editContact": "Editar persona de contacto"
+			}
 		}
 	},
 	"clientgroup": {

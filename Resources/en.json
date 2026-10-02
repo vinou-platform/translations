@@ -406,6 +406,12 @@
 			"shipping": "Shipping address",
 			"geolocation": "Geolocation"
 		},
+		"typeHints": {
+			"invoice": "Differing address for invoices, e.g. accounting or wholesaler.",
+			"shipping": "Additional address goods are delivered to.",
+			"parcelStation": "Delivery to a DHL parcel station.",
+			"geolocation": "Geographic point, e.g. vineyard or warehouse."
+		},
 		"subtypes": {
 			"address": "Address",
 			"parcelStation": "Parcel station"
@@ -1736,7 +1742,8 @@
 			"addresses": "Addresses",
 			"contacts": "Contact persons",
 			"general": "General",
-			"notes": "Notes"
+			"notes": "Notes",
+			"addressBook": "Addresses & contacts"
 		},
 		"addresses": {
 			"title": "Addresses regarding this client"
@@ -1764,6 +1771,42 @@
 			"changed": "Client changed!",
 			"copied": "Client duplicated",
 			"deleted": "Client deleted!"
+		},
+		"addressBook": {
+			"title": "Addresses & contacts",
+			"intro": "All addresses and contact persons of this client at a glance: master data, differing invoice and shipping addresses and further contact persons.",
+			"filters": {
+				"all": "All",
+				"invoice": "Invoice",
+				"shipping": "Shipping",
+				"contacts": "Contacts"
+			},
+			"sections": {
+				"master": "Master data",
+				"invoice": "Invoice addresses",
+				"shipping": "Shipping addresses",
+				"contacts": "Contact persons"
+			},
+			"badges": {
+				"master": "Master data",
+				"defaultShipping": "Default shipping address",
+				"parcelStation": "Parcel station"
+			},
+			"hints": {
+				"master": "Maintained in the \"General\" tab and used for invoice and shipping unless something else is chosen.",
+				"emptyInvoice": "No differing invoice address – invoices go to the master data.",
+				"emptyShipping": "No shipping address – deliveries go to the master data.",
+				"emptyContacts": "No further contact persons yet."
+			},
+			"actions": {
+				"back": "Back to overview",
+				"edit": "Edit",
+				"delete": "Delete",
+				"newAddress": "New address",
+				"newContact": "New contact person",
+				"editAddress": "Edit address",
+				"editContact": "Edit contact person"
+			}
 		}
 	},
 	"clientgroup": {

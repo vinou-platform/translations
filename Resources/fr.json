@@ -406,6 +406,12 @@
 			"shipping": "Adresse de livraison",
 			"geolocation": "Géolocalisation"
 		},
+		"typeHints": {
+			"invoice": "Adresse divergente pour les factures, p. ex. comptabilité ou grossiste.",
+			"shipping": "Adresse supplémentaire de livraison.",
+			"parcelStation": "Livraison dans une station de colis DHL.",
+			"geolocation": "Point géographique, p. ex. vignoble ou entrepôt."
+		},
 		"subtypes": {
 			"address": "Adresse",
 			"parcelStation": "Poste colis"
@@ -1736,7 +1742,8 @@
 			"addresses": "Adresses",
 			"contacts": "Personne de contact",
 			"general": "Général",
-			"notes": "Notes"
+			"notes": "Notes",
+			"addressBook": "Adresses et contacts"
 		},
 		"addresses": {
 			"title": "Adresses concernant ce client"
@@ -1764,6 +1771,42 @@
 			"changed": "Client édité!",
 			"copied": "Image du client dupliqué",
 			"deleted": "Client supprimé!"
+		},
+		"addressBook": {
+			"title": "Adresses et contacts",
+			"intro": "Toutes les adresses et personnes de contact de ce client en un coup d'œil : données de base, adresses de facturation et de livraison divergentes et autres personnes de contact.",
+			"filters": {
+				"all": "Toutes",
+				"invoice": "Facture",
+				"shipping": "Livraison",
+				"contacts": "Contacts"
+			},
+			"sections": {
+				"master": "Données de base",
+				"invoice": "Adresses de facturation",
+				"shipping": "Adresses de livraison",
+				"contacts": "Personnes de contact"
+			},
+			"badges": {
+				"master": "Données de base",
+				"defaultShipping": "Adresse de livraison par défaut",
+				"parcelStation": "Station de colis"
+			},
+			"hints": {
+				"master": "Géré dans l'onglet « Général » et utilisé pour la facture et la livraison tant que rien d'autre n'est choisi.",
+				"emptyInvoice": "Pas d'adresse de facturation divergente – les factures vont aux données de base.",
+				"emptyShipping": "Pas d'adresse de livraison – la livraison se fait aux données de base.",
+				"emptyContacts": "Pas encore d'autres personnes de contact."
+			},
+			"actions": {
+				"back": "Retour à l'aperçu",
+				"edit": "Modifier",
+				"delete": "Supprimer",
+				"newAddress": "Nouvelle adresse",
+				"newContact": "Nouvelle personne de contact",
+				"editAddress": "Modifier l'adresse",
+				"editContact": "Modifier la personne de contact"
+			}
 		}
 	},
 	"clientgroup": {
