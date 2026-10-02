@@ -3163,7 +3163,11 @@
 	},
 	"message": {
 		"actions": {
-			"send": "Invia messaggio"
+			"send": "Invia messaggio",
+			"compose": "Nuovo messaggio",
+			"discard": "Scarta",
+			"back": "Torna ai messaggi",
+			"removeAttachement": "Rimuovi allegato"
 		},
 		"fields": {
 			"from": "Creato da",
@@ -3204,6 +3208,17 @@
 				"subject": "Il tuo credito {doc.number} per ordinare {order.number}",
 				"body": "<p>Buongiorno {salutation}<br><br>con la <strong>nota di credito {doc.number}</strong> ti abbiamo inviato consegne e servizi per il tuo ordine <strong>{order.number}</strong > da {order.crstamp} accreditato.<br><br>Puoi trovare il documento appropriato per i tuoi documenti in allegato.<br><br>Cordiali saluti<br>{customer.company}</p>"
 			}
+		},
+		"hints": {
+			"empty": "Ancora nessun messaggio per questo cliente.",
+			"emptyDetail": "Scrivi il primo messaggio – i documenti degli ordini si possono allegare direttamente.",
+			"noRecipient": "Per questo cliente non è salvato alcun indirizzo e-mail. Aggiungilo nella scheda «Generale».",
+			"attachements": "Cerca documento (fattura, bolla di consegna, …)",
+			"noAttachements": "Per questo cliente non ci sono ancora documenti."
+		},
+		"recipients": {
+			"main": "E-mail principale",
+			"billing": "E-mail di fatturazione"
 		}
 	},
 	"network": {

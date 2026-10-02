@@ -3163,7 +3163,11 @@
 	},
 	"message": {
 		"actions": {
-			"send": "Enviar mensaje"
+			"send": "Enviar mensaje",
+			"compose": "Nuevo mensaje",
+			"discard": "Descartar",
+			"back": "Volver a los mensajes",
+			"removeAttachement": "Quitar adjunto"
 		},
 		"fields": {
 			"from": "Creado por",
@@ -3204,6 +3208,17 @@
 				"subject": "Su crédito {doc.number} para ordenar {order.number}",
 				"body": "<p>Hola {salutation}<br><br>bajo la <strong>nota de crédito {doc.number}</strong> le hemos enviado entregas y servicios para su pedido <strong>{order.number}</strong > de {order.crstamp} acreditado.<br><br>Puede encontrar el documento apropiado para sus documentos en el archivo adjunto.<br><br>Saludos cordiales<br>{customer.company}</p>"
 			}
+		},
+		"hints": {
+			"empty": "Todavía no hay mensajes para este cliente.",
+			"emptyDetail": "Escribe el primer mensaje: los documentos de los pedidos se pueden adjuntar directamente.",
+			"noRecipient": "No hay ninguna dirección de correo electrónico para este cliente. Añádela en la pestaña «General».",
+			"attachements": "Buscar documento (factura, albarán, …)",
+			"noAttachements": "Todavía no hay documentos para este cliente."
+		},
+		"recipients": {
+			"main": "Correo principal",
+			"billing": "Correo de facturación"
 		}
 	},
 	"network": {

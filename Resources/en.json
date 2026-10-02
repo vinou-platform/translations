@@ -3163,7 +3163,11 @@
 	},
 	"message": {
 		"actions": {
-			"send": "Send message"
+			"send": "Send message",
+			"compose": "New message",
+			"discard": "Discard",
+			"back": "Back to messages",
+			"removeAttachement": "Remove attachment"
 		},
 		"fields": {
 			"from": "Created by",
@@ -3204,6 +3208,17 @@
 				"subject": "Your credit {doc.number} to order {order.number}",
 				"body": "<p>Hello {salutation}<br><br>under the <strong>credit note {doc.number}</strong> we have sent you deliveries and services for your order <strong>{order.number}</strong> from {order.crstamp} credited.<br><br>You can find the appropriate document for your documents in the attachment.<br><br>Best regards<br>{customer.company}</p>"
 			}
+		},
+		"hints": {
+			"empty": "No messages to this client yet.",
+			"emptyDetail": "Write the first message – documents of orders can be attached directly.",
+			"noRecipient": "No e-mail address is stored for this client. Please add it in the \"General\" tab.",
+			"attachements": "Search document (invoice, delivery note, …)",
+			"noAttachements": "There are no documents for this client yet."
+		},
+		"recipients": {
+			"main": "Main e-mail",
+			"billing": "Billing e-mail"
 		}
 	},
 	"network": {

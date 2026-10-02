@@ -3163,7 +3163,11 @@
 	},
 	"message": {
 		"actions": {
-			"send": "Envoyer le message"
+			"send": "Envoyer le message",
+			"compose": "Nouveau message",
+			"discard": "Abandonner",
+			"back": "Retour aux messages",
+			"removeAttachement": "Retirer la pièce jointe"
 		},
 		"fields": {
 			"from": "Créé par",
@@ -3204,6 +3208,17 @@
 				"subject": "Votre crédit {doc.number} pour commander {order.number}",
 				"body": "<p>Bonjour {salutation}<br><br>sous la <strong>note de crédit {doc.number}</strong> nous vous avons envoyé des livraisons et des services pour votre commande <strong>{order.number}</strong > de {order.crstamp} crédité.<br><br>Vous pouvez trouver le document approprié pour vos documents dans la pièce jointe.<br><br>Meilleures salutations<br>{customer.company}</p>"
 			}
+		},
+		"hints": {
+			"empty": "Pas encore de messages pour ce client.",
+			"emptyDetail": "Écris le premier message – les documents des commandes peuvent être joints directement.",
+			"noRecipient": "Aucune adresse e-mail n'est enregistrée pour ce client. Merci de la compléter dans l'onglet « Général ».",
+			"attachements": "Rechercher un document (facture, bon de livraison, …)",
+			"noAttachements": "Il n'y a pas encore de documents pour ce client."
+		},
+		"recipients": {
+			"main": "E-mail principal",
+			"billing": "E-mail de facturation"
 		}
 	},
 	"network": {

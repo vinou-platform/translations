@@ -2157,7 +2157,11 @@
 	},
 	"message": {
 		"actions": {
-			"send": "Nachricht senden"
+			"send": "Nachricht senden",
+			"compose": "Neue Nachricht",
+			"discard": "Verwerfen",
+			"back": "Zurück zu den Nachrichten",
+			"removeAttachement": "Anhang entfernen"
 		},
 		"fields": {
 			"from": "Erstellt von",
@@ -2198,6 +2202,17 @@
 				"subject": "Deine Gutschrift {doc.number} zu Bestellung {order.number}",
 				"body": "<p>Hallo {salutation}<br><br>unter der <strong>Gutschrift {doc.number}</strong> haben wir Dir Lieferungen und Leistungen zu Deiner Bestellung <strong>{order.number}</strong> vom {order.crstamp} gutgeschrieben.<br><br>Das passende Dokument für Deine Unterlagen findest Du im Anhang.<br><br>Viele Grüße<br>{customer.company}</p>"
 			}
+		},
+		"hints": {
+			"empty": "Noch keine Nachrichten an diesen Kunden.",
+			"emptyDetail": "Schreibe die erste Nachricht – Belege aus Aufträgen lassen sich direkt anhängen.",
+			"noRecipient": "Für diesen Kunden ist keine E-Mail-Adresse hinterlegt. Bitte im Reiter „Allgemein“ ergänzen.",
+			"attachements": "Beleg suchen (Rechnung, Lieferschein, …)",
+			"noAttachements": "Für diesen Kunden gibt es noch keine Belege."
+		},
+		"recipients": {
+			"main": "Haupt-E-Mail",
+			"billing": "Rechnungs-E-Mail"
 		}
 	},
 	"network": {
