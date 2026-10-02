@@ -4818,7 +4818,74 @@
 		},
 		"errors": {
 			"common": "An error occured while processing shipment labels.",
-			"invalidAddress": "Please check your sender address (Address data for your company within the settings) and check all order data and shipment address for possible typos."
+			"invalidAddress": "Please check your sender address (Address data for your company within the settings) and check all order data and shipment address for possible typos.",
+			"labelsDisabledLocally": "No charged labels are created in the local development environment."
+		},
+		"wizard": {
+			"title": "Ship order",
+			"steps": {
+				"service": "Service",
+				"check": "Check & price",
+				"result": "Labels"
+			},
+			"serviceHint": "Choose carrier and service. In the next step the carrier checks the delivery address and quotes the price – free of charge, nothing is booked yet.",
+			"noCarriers": "No carriers available. Please check the shipment settings.",
+			"checking": "The carrier is checking address and parcels …",
+			"checkFailed": "The check could not be performed.",
+			"accepted": "{carrier} accepts the shipment",
+			"acceptedHint": "Address and parcels are checked, the price is quoted. Labels are created <u>at a charge</u> <strong>only with the next click</strong>.",
+			"rejected": "{carrier} rejects the shipment",
+			"rejectedHint": "Please <strong>correct the delivery address in the order</strong> or choose another service and check again. Message of the carrier:",
+			"recipient": "Recipient on the label",
+			"notification": "Shipping notification to {mail}",
+			"parcels": "Parcels ({count})",
+			"parcel": "Parcel {no} · {quantity} bottles",
+			"total": "Total {service}",
+			"totalNet": "net {net}",
+			"created": "{count} label(s) created",
+			"createdHint": "The labels can now be <strong>printed</strong> or downloaded, the order is <strong>in delivery</strong>.",
+			"partial": "Only {created} of {total} labels created",
+			"failed": "No labels were created",
+			"cancel": "Cancel",
+			"back": "Back",
+			"check": "Check address & calculate price",
+			"recheck": "Check again",
+			"book": "Create labels at a charge ({amount})",
+			"bookUnavailable": "Create labels at a charge",
+			"done": "Done",
+			"fields": {
+				"company": "Company",
+				"care_of": "Address supplement",
+				"last_name": "Last name",
+				"first_name": "First name",
+				"street": "Street",
+				"street_no": "House number",
+				"city": "City",
+				"zip_code": "ZIP",
+				"country": "Country"
+			}
+		},
+		"checks": {
+			"truncated": {
+				"title": "{field} is shortened on the label",
+				"text": "\"{value}\" becomes <strong>\"{printed}\"</strong>. Shorten it in the order if needed."
+			},
+			"missingWeight": {
+				"title": "Weight missing",
+				"text": "The parcels weigh <strong>0 kg</strong> because the articles have no weight. The price may be <strong>too low</strong> or the carrier may <strong>reject the label</strong>."
+			},
+			"zeroPrice": {
+				"title": "Price 0.00 €",
+				"text": "The carrier reports <strong>no price</strong> – this happens e.g. with a <u>shipcloud test account</u>."
+			},
+			"carrierRejected": {
+				"title": "Rejected by the carrier",
+				"text": "The data was not accepted."
+			},
+			"noPrice": {
+				"title": "No price",
+				"text": "The carrier did <strong>not return a price</strong>."
+			}
 		}
 	},
 	"substance": {

@@ -4748,7 +4748,74 @@
 		},
 		"errors": {
 			"common": "Bei der Erstellung der Versandetiketten ist ein Fehler aufgetreten.",
-			"invalidAddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen) und prüfe ob in den Bestelldaten die Empfängeradresse und die Bestellungsdetails korrekt eingetragen sind."
+			"invalidAddress": "Bitte prüfe die Absendeanschrift (Eigene Firmenanschrift unter Einstellungen) und prüfe ob in den Bestelldaten die Empfängeradresse und die Bestellungsdetails korrekt eingetragen sind.",
+			"labelsDisabledLocally": "In der lokalen Entwicklungsumgebung werden keine kostenpflichtigen Etiketten erstellt."
+		},
+		"wizard": {
+			"title": "In den Versand geben",
+			"steps": {
+				"service": "Versandart",
+				"check": "Prüfung & Preis",
+				"result": "Etiketten"
+			},
+			"serviceHint": "Wähle Versanddienstleister und Leistung. Im nächsten Schritt prüft der Versanddienstleister die Lieferadresse und nennt den Preis – kostenlos, es wird noch nichts gebucht.",
+			"noCarriers": "Es sind keine Versanddienstleister verfügbar. Bitte prüfe die Einstellungen unter Versandmanagement.",
+			"checking": "Der Versanddienstleister prüft Adresse und Pakete …",
+			"checkFailed": "Die Prüfung konnte nicht durchgeführt werden.",
+			"accepted": "{carrier} akzeptiert die Sendung",
+			"acceptedHint": "Adresse und Pakete sind geprüft, der Preis ist angefragt. <strong>Erst mit dem nächsten Klick</strong> werden die Etiketten <u>kostenpflichtig</u> erstellt.",
+			"rejected": "{carrier} lehnt die Sendung ab",
+			"rejectedHint": "Bitte <strong>Lieferadresse im Auftrag korrigieren</strong> oder eine andere Leistung wählen und erneut prüfen. Meldung des Versanddienstleisters:",
+			"recipient": "Empfänger auf dem Etikett",
+			"notification": "Versandbenachrichtigung an {mail}",
+			"parcels": "Pakete ({count})",
+			"parcel": "Paket {no} · {quantity} Flaschen",
+			"total": "Gesamt {service}",
+			"totalNet": "netto {net}",
+			"created": "{count} Etikett(en) erstellt",
+			"createdHint": "Die Etiketten können jetzt <strong>gedruckt</strong> oder heruntergeladen werden, der Auftrag ist <strong>in Auslieferung</strong>.",
+			"partial": "Nur {created} von {total} Etiketten erstellt",
+			"failed": "Es wurden keine Etiketten erstellt",
+			"cancel": "Abbrechen",
+			"back": "Zurück",
+			"check": "Adresse prüfen & Preis berechnen",
+			"recheck": "Erneut prüfen",
+			"book": "Etiketten kostenpflichtig erstellen ({amount})",
+			"bookUnavailable": "Etiketten kostenpflichtig erstellen",
+			"done": "Fertig",
+			"fields": {
+				"company": "Firma",
+				"care_of": "Adresszusatz",
+				"last_name": "Nachname",
+				"first_name": "Vorname",
+				"street": "Straße",
+				"street_no": "Hausnummer",
+				"city": "Ort",
+				"zip_code": "PLZ",
+				"country": "Land"
+			}
+		},
+		"checks": {
+			"truncated": {
+				"title": "{field} wird auf dem Etikett gekürzt",
+				"text": "Aus „{value}“ wird <strong>„{printed}“</strong>. Bei Bedarf die Angabe im Auftrag kürzen."
+			},
+			"missingWeight": {
+				"title": "Gewicht fehlt",
+				"text": "Die Pakete wiegen <strong>0 kg</strong>, weil bei den Artikeln kein Gewicht gepflegt ist. Der Preis kann dadurch <strong>zu niedrig</strong> sein oder der Versanddienstleister <strong>lehnt das Etikett ab</strong>."
+			},
+			"zeroPrice": {
+				"title": "Preis 0,00 €",
+				"text": "Der Versanddienstleister meldet <strong>keinen Preis</strong> – das passiert z. B. mit einem <u>Shipcloud-Testzugang</u>."
+			},
+			"carrierRejected": {
+				"title": "Vom Versanddienstleister abgelehnt",
+				"text": "Die Daten wurden nicht akzeptiert."
+			},
+			"noPrice": {
+				"title": "Kein Preis",
+				"text": "Der Versanddienstleister hat <strong>keinen Preis</strong> geliefert."
+			}
 		}
 	},
 	"shipcloud": {

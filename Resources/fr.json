@@ -4790,7 +4790,8 @@
 		},
 		"errors": {
 			"common": "Une erreur s'est produite lors de la création des étiquettes d'expédition.",
-			"invalidAddress": "Veuillez vérifier l'adresse de l'expéditeur (adresse de l'entreprise propre sous Configuration) et vérifier si l'adresse du destinataire et les détails de l'ordre sont entrés correctement dans les détails de l'ordre'."
+			"invalidAddress": "Veuillez vérifier l'adresse de l'expéditeur (adresse de l'entreprise propre sous Configuration) et vérifier si l'adresse du destinataire et les détails de l'ordre sont entrés correctement dans les détails de l'ordre'.",
+			"labelsDisabledLocally": "Aucune étiquette payante n'est créée dans l'environnement de développement local."
 		},
 		"filters": {
 			"results": "Expéditions trouvées",
@@ -4819,6 +4820,72 @@
 			"picked_up": "Collecté",
 			"transit": "En transit",
 			"unknown": "Inconnu"
+		},
+		"wizard": {
+			"title": "Expédier la commande",
+			"steps": {
+				"service": "Mode d'envoi",
+				"check": "Vérification et prix",
+				"result": "Étiquettes"
+			},
+			"serviceHint": "Choisis le transporteur et le service. À l'étape suivante, le transporteur vérifie l'adresse de livraison et indique le prix – gratuitement, rien n'est encore réservé.",
+			"noCarriers": "Aucun transporteur disponible. Vérifie les paramètres d'expédition.",
+			"checking": "Le transporteur vérifie l'adresse et les colis …",
+			"checkFailed": "La vérification n'a pas pu être effectuée.",
+			"accepted": "{carrier} accepte l'envoi",
+			"acceptedHint": "Adresse et colis vérifiés, prix demandé. Les étiquettes ne sont créées <u>de manière payante</u> <strong>qu'au prochain clic</strong>.",
+			"rejected": "{carrier} refuse l'envoi",
+			"rejectedHint": "<strong>Corrige l'adresse de livraison dans la commande</strong> ou choisis un autre service et vérifie à nouveau. Message du transporteur :",
+			"recipient": "Destinataire sur l'étiquette",
+			"notification": "Notification d'expédition à {mail}",
+			"parcels": "Colis ({count})",
+			"parcel": "Colis {no} · {quantity} bouteilles",
+			"total": "Total {service}",
+			"totalNet": "net {net}",
+			"created": "{count} étiquette(s) créée(s)",
+			"createdHint": "Les étiquettes peuvent maintenant être <strong>imprimées</strong> ou téléchargées, la commande est <strong>en livraison</strong>.",
+			"partial": "Seulement {created} étiquettes sur {total} créées",
+			"failed": "Aucune étiquette n'a été créée",
+			"cancel": "Annuler",
+			"back": "Retour",
+			"check": "Vérifier l'adresse et calculer le prix",
+			"recheck": "Vérifier à nouveau",
+			"book": "Créer les étiquettes payantes ({amount})",
+			"bookUnavailable": "Créer les étiquettes payantes",
+			"done": "Terminé",
+			"fields": {
+				"company": "Entreprise",
+				"care_of": "Complément d'adresse",
+				"last_name": "Nom",
+				"first_name": "Prénom",
+				"street": "Rue",
+				"street_no": "Numéro",
+				"city": "Ville",
+				"zip_code": "Code postal",
+				"country": "Pays"
+			}
+		},
+		"checks": {
+			"truncated": {
+				"title": "{field} est raccourci sur l'étiquette",
+				"text": "« {value} » devient <strong>« {printed} »</strong>. Raccourcis-le dans la commande si nécessaire."
+			},
+			"missingWeight": {
+				"title": "Poids manquant",
+				"text": "Les colis pèsent <strong>0 kg</strong>, car aucun poids n'est renseigné pour les articles. Le prix peut être <strong>trop bas</strong> ou le transporteur peut <strong>refuser l'étiquette</strong>."
+			},
+			"zeroPrice": {
+				"title": "Prix 0,00 €",
+				"text": "Le transporteur n'indique <strong>aucun prix</strong> – c'est le cas p. ex. avec un <u>compte de test shipcloud</u>."
+			},
+			"carrierRejected": {
+				"title": "Refusé par le transporteur",
+				"text": "Les données n'ont pas été acceptées."
+			},
+			"noPrice": {
+				"title": "Aucun prix",
+				"text": "Le transporteur <strong>n'a fourni aucun prix</strong>."
+			}
 		}
 	},
 	"substance": {

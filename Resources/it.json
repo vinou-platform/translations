@@ -4790,7 +4790,8 @@
 		},
 		"errors": {
 			"common": "Si è verificato un errore durante la creazione delle etichette di spedizione.",
-			"invalidAddress": "Controllare l'indirizzo del mittente (indirizzo della propria azienda in Configurazione) e verificare che l'indirizzo del destinatario e i dettagli dell'ordine siano inseriti correttamente nei dettagli dell'ordine."
+			"invalidAddress": "Controllare l'indirizzo del mittente (indirizzo della propria azienda in Configurazione) e verificare che l'indirizzo del destinatario e i dettagli dell'ordine siano inseriti correttamente nei dettagli dell'ordine.",
+			"labelsDisabledLocally": "Nell'ambiente di sviluppo locale non vengono create etichette a pagamento."
 		},
 		"filters": {
 			"results": "Spedizioni trovate",
@@ -4819,6 +4820,72 @@
 			"picked_up": "Ritirato",
 			"transit": "In transito",
 			"unknown": "Sconosciuto"
+		},
+		"wizard": {
+			"title": "Spedisci ordine",
+			"steps": {
+				"service": "Tipo di spedizione",
+				"check": "Verifica e prezzo",
+				"result": "Etichette"
+			},
+			"serviceHint": "Scegli corriere e servizio. Nel passo successivo il corriere verifica l'indirizzo di consegna e indica il prezzo – gratuitamente, non viene ancora prenotato nulla.",
+			"noCarriers": "Nessun corriere disponibile. Controlla le impostazioni di spedizione.",
+			"checking": "Il corriere sta verificando indirizzo e pacchi …",
+			"checkFailed": "Non è stato possibile eseguire la verifica.",
+			"accepted": "{carrier} accetta la spedizione",
+			"acceptedHint": "Indirizzo e pacchi verificati, prezzo richiesto. Le etichette vengono create <u>a pagamento</u> <strong>solo con il prossimo clic</strong>.",
+			"rejected": "{carrier} rifiuta la spedizione",
+			"rejectedHint": "<strong>Correggi l'indirizzo di consegna nell'ordine</strong> o scegli un altro servizio e verifica di nuovo. Messaggio del corriere:",
+			"recipient": "Destinatario sull'etichetta",
+			"notification": "Notifica di spedizione a {mail}",
+			"parcels": "Pacchi ({count})",
+			"parcel": "Pacco {no} · {quantity} bottiglie",
+			"total": "Totale {service}",
+			"totalNet": "netto {net}",
+			"created": "{count} etichetta/e creata/e",
+			"createdHint": "Ora le etichette possono essere <strong>stampate</strong> o scaricate, l'ordine è <strong>in consegna</strong>.",
+			"partial": "Solo {created} di {total} etichette create",
+			"failed": "Nessuna etichetta creata",
+			"cancel": "Annulla",
+			"back": "Indietro",
+			"check": "Verifica indirizzo e calcola prezzo",
+			"recheck": "Verifica di nuovo",
+			"book": "Crea etichette a pagamento ({amount})",
+			"bookUnavailable": "Crea etichette a pagamento",
+			"done": "Fatto",
+			"fields": {
+				"company": "Azienda",
+				"care_of": "Complemento indirizzo",
+				"last_name": "Cognome",
+				"first_name": "Nome",
+				"street": "Via",
+				"street_no": "Numero civico",
+				"city": "Città",
+				"zip_code": "CAP",
+				"country": "Paese"
+			}
+		},
+		"checks": {
+			"truncated": {
+				"title": "{field} viene abbreviato sull'etichetta",
+				"text": "«{value}» diventa <strong>«{printed}»</strong>. Se necessario, abbrevialo nell'ordine."
+			},
+			"missingWeight": {
+				"title": "Peso mancante",
+				"text": "I pacchi pesano <strong>0 kg</strong> perché gli articoli non hanno un peso. Il prezzo potrebbe essere <strong>troppo basso</strong> o il corriere potrebbe <strong>rifiutare l'etichetta</strong>."
+			},
+			"zeroPrice": {
+				"title": "Prezzo 0,00 €",
+				"text": "Il corriere non indica <strong>alcun prezzo</strong> – succede ad es. con un <u>account di prova shipcloud</u>."
+			},
+			"carrierRejected": {
+				"title": "Rifiutato dal corriere",
+				"text": "I dati non sono stati accettati."
+			},
+			"noPrice": {
+				"title": "Nessun prezzo",
+				"text": "Il corriere <strong>non ha fornito alcun prezzo</strong>."
+			}
 		}
 	},
 	"substance": {

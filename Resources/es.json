@@ -4790,7 +4790,8 @@
 		},
 		"errors": {
 			"common": "Ha ocurrido un error durante la creación de las etiquetas de envío.",
-			"invalidAddress": "Por favor verifica la dirección del remitente (dirección propia de la empresa en los ajustes) y verifica si has digitado la dirreción del receptor y los detalles de la orden en los datos de la orden correctamente."
+			"invalidAddress": "Por favor verifica la dirección del remitente (dirección propia de la empresa en los ajustes) y verifica si has digitado la dirreción del receptor y los detalles de la orden en los datos de la orden correctamente.",
+			"labelsDisabledLocally": "En el entorno de desarrollo local no se crean etiquetas con coste."
 		},
 		"filters": {
 			"results": "Envíos encontrados",
@@ -4819,6 +4820,72 @@
 			"picked_up": "Recogido",
 			"transit": "En tránsito",
 			"unknown": "Desconocido"
+		},
+		"wizard": {
+			"title": "Enviar pedido",
+			"steps": {
+				"service": "Tipo de envío",
+				"check": "Comprobación y precio",
+				"result": "Etiquetas"
+			},
+			"serviceHint": "Elige transportista y servicio. En el siguiente paso el transportista comprueba la dirección de entrega e indica el precio, sin coste; todavía no se reserva nada.",
+			"noCarriers": "No hay transportistas disponibles. Comprueba los ajustes de envío.",
+			"checking": "El transportista está comprobando la dirección y los paquetes …",
+			"checkFailed": "No se pudo realizar la comprobación.",
+			"accepted": "{carrier} acepta el envío",
+			"acceptedHint": "Dirección y paquetes comprobados, precio consultado. Las etiquetas se crean <u>con coste</u> <strong>solo con el siguiente clic</strong>.",
+			"rejected": "{carrier} rechaza el envío",
+			"rejectedHint": "<strong>Corrige la dirección de entrega en el pedido</strong> o elige otro servicio y vuelve a comprobar. Mensaje del transportista:",
+			"recipient": "Destinatario en la etiqueta",
+			"notification": "Notificación de envío a {mail}",
+			"parcels": "Paquetes ({count})",
+			"parcel": "Paquete {no} · {quantity} botellas",
+			"total": "Total {service}",
+			"totalNet": "neto {net}",
+			"created": "{count} etiqueta(s) creada(s)",
+			"createdHint": "Ahora se pueden <strong>imprimir</strong> o descargar las etiquetas, el pedido está <strong>en reparto</strong>.",
+			"partial": "Solo se crearon {created} de {total} etiquetas",
+			"failed": "No se creó ninguna etiqueta",
+			"cancel": "Cancelar",
+			"back": "Atrás",
+			"check": "Comprobar dirección y calcular precio",
+			"recheck": "Volver a comprobar",
+			"book": "Crear etiquetas con coste ({amount})",
+			"bookUnavailable": "Crear etiquetas con coste",
+			"done": "Listo",
+			"fields": {
+				"company": "Empresa",
+				"care_of": "Complemento de dirección",
+				"last_name": "Apellido",
+				"first_name": "Nombre",
+				"street": "Calle",
+				"street_no": "Número",
+				"city": "Ciudad",
+				"zip_code": "Código postal",
+				"country": "País"
+			}
+		},
+		"checks": {
+			"truncated": {
+				"title": "{field} se acorta en la etiqueta",
+				"text": "«{value}» pasa a ser <strong>«{printed}»</strong>. Si es necesario, acórtalo en el pedido."
+			},
+			"missingWeight": {
+				"title": "Falta el peso",
+				"text": "Los paquetes pesan <strong>0 kg</strong> porque los artículos no tienen peso. El precio puede ser <strong>demasiado bajo</strong> o el transportista puede <strong>rechazar la etiqueta</strong>."
+			},
+			"zeroPrice": {
+				"title": "Precio 0,00 €",
+				"text": "El transportista no indica <strong>ningún precio</strong>; ocurre p. ej. con una <u>cuenta de prueba de shipcloud</u>."
+			},
+			"carrierRejected": {
+				"title": "Rechazado por el transportista",
+				"text": "Los datos no fueron aceptados."
+			},
+			"noPrice": {
+				"title": "Sin precio",
+				"text": "El transportista <strong>no ha devuelto ningún precio</strong>."
+			}
 		}
 	},
 	"substance": {
