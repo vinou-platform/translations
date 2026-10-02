@@ -3324,7 +3324,7 @@
 		"hints": {
 			"deliveryNoteRemark": "gesonderte Angabe die auf allen Liferdokumenten erscheinen",
 			"invoiceNoteRemark": "gesonderte Angabe die auf allen Rechnungsdokumenten erscheinen",
-			"gln": "Für die E-Rechnung: Bei Rechnungsadressen die GLN des Rechnungsempfängers (z. B. der Großhandlung), bei Lieferadressen die GLN des Warenempfängers."
+			"gln": "Bei Rechnungsadressen die GLN des Rechnungsempfängers (z. B. der Großhandlung), bei Lieferadressen die GLN des Warenempfängers."
 		},
 		"sectionHints": {
 			"recipient": "Firma oder Name – eins von beiden reicht.",

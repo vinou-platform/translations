@@ -434,7 +434,7 @@
 		"hints": {
 			"deliveryNoteRemark": "separate information displayed on delivery documents",
 			"invoiceNoteRemark": "separate information displayed on invoice documents",
-			"gln": "For e-invoices: on invoice addresses the GLN of the invoice recipient (e.g. the wholesaler), on shipping addresses the GLN of the consignee."
+			"gln": "On invoice addresses the GLN of the invoice recipient (e.g. the wholesaler), on shipping addresses the GLN of the consignee."
 		},
 		"sectionHints": {
 			"recipient": "Company or name – one of them is enough.",

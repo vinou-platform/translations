@@ -434,7 +434,7 @@
 		"hints": {
 			"deliveryNoteRemark": "informazioni separate visualizzate sui documenti di consegna",
 			"invoiceNoteRemark": "informazioni separate visualizzate sui documenti di fattura",
-			"gln": "Per la fattura elettronica: negli indirizzi di fatturazione il GLN del destinatario della fattura (ad es. il grossista), negli indirizzi di consegna il GLN del destinatario della merce."
+			"gln": "Negli indirizzi di fatturazione il GLN del destinatario della fattura (ad es. il grossista), negli indirizzi di consegna il GLN del destinatario della merce."
 		},
 		"sectionHints": {
 			"recipient": "Azienda o nome – basta uno dei due.",

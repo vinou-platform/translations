@@ -434,7 +434,7 @@
 		"hints": {
 			"deliveryNoteRemark": "información separada que se muestra en los documentos de entrega",
 			"invoiceNoteRemark": "información separada que se muestra en los documentos de factura",
-			"gln": "Para la factura electrónica: en direcciones de facturación el GLN del destinatario de la factura (p. ej. el mayorista), en direcciones de entrega el GLN del destinatario de la mercancía."
+			"gln": "En direcciones de facturación el GLN del destinatario de la factura (p. ej. el mayorista), en direcciones de entrega el GLN del destinatario de la mercancía."
 		},
 		"sectionHints": {
 			"recipient": "Empresa o nombre: basta con uno de los dos.",
